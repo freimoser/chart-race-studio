@@ -201,13 +201,9 @@ const praxisNeu = ['2019', '2020', '2021', '2022', '2023', '2024', '2025'].flatM
     { date, name: GEMISCHT, value: v('Nutztiere und Kleintiere') + v('Kleintiere und Pferde') + v('Nutztiere, Pferde und Kleintiere') },
   ]
 })
-// Praxisketten: Standorte je Gruppe. Einzige mehrjährige Quelle ist das Ranking von gesundheitsmarkt.de,
-// das pro Jahrgang nur die FÜNF größten Betreiber ausweist – wer aus den Top 5 fällt, hat in dem Jahr
-// keinen Wert, nicht den Wert null. 2025 ist kein Ranking erschienen und wird interpoliert.
-// Alles andere aus dieser Rohdatei (Bundeskartellamt, zm-online, Eigenangaben) sind datierte Einzelbelege
-// mit abweichender Zählweise; sie stehen in der Dateninfo, nicht in der Reihe.
-// Modellreihe 2015–2026 nach der Vorgabe vom 17.09.2026: lückenlos, jeder Wert mit Marker
-// (B belegt, B~ rund, B≥ Untergrenze, B/P Praxenzahl als Näherung, S geschätzt, 0 existierte nicht).
+// Praxisketten: Standorte je Gruppe. Modellreihe 2015–2026 nach der Vorgabe vom 17.09.2026: lückenlos,
+// jeder Wert mit Marker (B belegt, B~ rund, B≥ Untergrenze, B/P Praxenzahl als Näherung, S geschätzt,
+// 0 existierte nicht).
 // Die Marker stehen in data/raw/ds12-ketten-modell.json je Zelle; die Tabelle hier trägt nur die Zahlen.
 // TOTAL ist die Modellschätzung des Gesamtmarkts, verankert am Tierärzte Atlas (August 2024, rund 450).
 // Die Gesamtsumme heißt nach dem Datenstandard „Summe: …“: Sie ist keine Gruppe, sondern läuft als große

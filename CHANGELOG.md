@@ -57,6 +57,7 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ### Geändert
 
+- Ketten-Artikel auf den Datensatz vom 17.09.2026 gebracht: Tierarzt Plus Partner über 110 statt 106, VetPartners 30 statt 28, VetGruppen über 30 statt 26, TeamVet 27 statt 24, Veternicum Nesto über 25 statt 23, filu 11 statt 12; Summe mindestens 501 statt 483. Wo das Ranking vom 08.07.2026 abweicht, nennt der Artikel beide Werte. Die Methodenregel folgt jetzt dem Datensatz (neuerer Beleg, bei gleichem Stand der höhere) statt der alten Quellenhierarchie. `docs/DATASETS.md` 3f auf ds12 umgeschrieben.
 - Redaktionsplan korrigiert: AniCura 78 statt 69, TeamVet 27, filu 11, Anteil Kleintierpraxen 52,9 Prozent aller Inhaber, Katzen „fast verdreifacht“ statt „dreimal so stark“, Rinderbestand minus 39 statt „halbiert“, Nutztierpraxen ab dem gesamtdeutschen Wert 1991.
 - Impressum und Datenschutz sind statische Seiten mit `noindex, follow` statt Hash-Routen, aus einer JSON-Quelle erzeugt und aus der Sitemap genommen.
 - `check:launch` läuft gegen den Build und prüft zusätzlich Canonical, Sitemap gegen noindex in beiden Richtungen, Favicon-Größen und ob Datenschutztext und tatsächliche Einbindung zusammenpassen.

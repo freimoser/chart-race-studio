@@ -134,7 +134,7 @@ export const POSTS: RoadmapPost[] = [
     nr: 7, arc: 'ketten', status: 'geplant',
     title: '2015 gab es diesen Markt noch nicht',
     hook: 'Die Konsolidierung ist keine alte Entwicklung. AniCura hatte im Februar 2016 acht Standorte in Deutschland.',
-    figures: ['AniCura: 8 Standorte (02/2016), 30 (06/2018), 78 (2026)', 'Evidensia Deutschland GmbH: gegründet Anfang 2016', 'Tierarzt Plus: 2018 gegründet, 2026 bei 106'],
+    figures: ['AniCura: 8 Standorte (02/2016), 30 (06/2018), 78 (2026)', 'Evidensia Deutschland GmbH: gegründet Anfang 2016', 'Tierarzt Plus: 2018 gegründet, 2026 über 110'],
     sampleId: 'ketten', chart: 'line', dataStatus: 'belegt',
     dataNote: 'Bei IVC Evidensia sind nur 2016, 2018 und 2021 belegt, für 2019 und 2020 gibt es bei keiner Gruppe einen Beleg. Die Linie dazwischen ist eine Annahme – im Post erwähnen.',
     refs: [6],

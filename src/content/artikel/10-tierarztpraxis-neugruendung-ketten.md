@@ -33,7 +33,7 @@ Daraus folgt: Wachsende Kettenzahlen sind nicht dasselbe wie verkaufte Praxen. W
 |---|---:|---|
 | IVC Evidensia | über 120 | Kauf und Neugründung nicht getrennt |
 | VetPartners | 30 | Kauf und Neugründung nicht getrennt |
-| TeamVet | 24 bis 27 | Verbund ohne Investmentfonds |
+| TeamVet | 27 | Verbund ohne Investmentfonds |
 | Rex | 13 | Neugründungen |
 | filu | 11 | Neugründungen |
 | Cadomo Vets | 4 | tierärztlich geführt |
@@ -57,11 +57,9 @@ Die Frühwerte sind im Datensatz als Schätzung oder Interpolation markiert, nic
 
 **Offen:** Eröffnungsdatum je Standort für Rex, filu und Wolf & Tiger; die Städte von Rex und filu. Der Redaktionsplan beschreibt alle drei als auf Großstädte konzentriert, mit App-Terminbuchung und Preistransparenz. Belegt sind davon nur die drei Städte von Wolf & Tiger; der Rest ist vor Veröffentlichung zu prüfen.
 
-**Offen:** filu steht im Datensatz mit 11 Standorten, im Redaktionsplan und im Übersichtsartikel mit 12. Vor Veröffentlichung gegen die aktuelle Standortliste prüfen.
-
 ## Was die Zahl nicht sagt
 
-- **Die Zahlen sind Momentaufnahmen aus Standortlisten.** Rex zählt Praxen, filu und Wolf & Tiger zählen Standorte. Eine unabhängige Zählung gibt es nicht.
+- **Die Zahlen sind Momentaufnahmen aus Standortlisten.** Rex zählt Praxen, filu und Wolf & Tiger zählen Standorte. Eine unabhängige Zählung gibt es nicht. filu führt auf der Standortseite zwölf Adressen; Waiblingen öffnet laut eigener Angabe erst im November 2026 und zählt zum Stand 17. September 2026 noch nicht.
 - **„Neugründer“ beschreibt das Modell der Gruppe, nicht jeden Standort.** Ob tatsächlich jede einzelne Praxis neu eröffnet und keine übernommen wurde, ist nicht je Standort geprüft.
 - **Ob der Tierärzte Atlas Neugründer mitgezählt hat, ist nicht bekannt.** Seine rund 450 Standorte von 16 Ketten im August 2024 lassen sich deshalb nicht in gekauft und gegründet aufteilen.
 - **Größe ist nicht nur Standortzahl.** Wie viele Tierärztinnen und Tierärzte in den neuen Praxen arbeiten, geht aus den Daten nicht hervor.

@@ -16,19 +16,19 @@ Nein. Von den **505 Standorten**, die der Datensatz dieser Seite für 13 einzeln
 - AniCura mit 78 Standorten gehört seit 2018 zum US-Konzern Mars, 15,4 Prozent (berechnet).
 - TeamVet, Cadomo Vets und Wolf & Tiger arbeiten ohne Investmentfonds im Gesellschafterkreis beziehungsweise tierärztlich geführt: zusammen 34 Standorte, 6,7 Prozent (berechnet).
 - Für vier Gruppen mit zusammen 80 Standorten, 15,8 Prozent, nennen die Quellen dieses Datensatzes keinen Eigentümer.
-- Die Anteile bleiben praktisch gleich, wenn man mit den Einzelwerten aus dem Übersichtsartikel rechnet: 62,1, 16,1 und 6,4 Prozent.
+- Die Anteile bleiben praktisch gleich, wenn man Altano mit dem letzten Beleg von 26 statt der Schätzung von 30 rechnet: 62,5, 15,6 und 6,8 Prozent bei einer Summe von 501.
 
 ## Wem welche Gruppe gehört
 
 | Gruppe | Standorte 2026 | Eigentümer laut Quelle |
 |---|---:|---|
 | IVC Evidensia | über 120 | mehrheitlich EQT, beteiligt Silver Lake |
-| Tierarzt Plus Partner | 106 bis über 110 | ECONA, Inflexion |
+| Tierarzt Plus Partner | über 110 | ECONA, Inflexion |
 | VetGruppen (Vetopia) | über 30 | Axcel |
 | VetPartners | 30 | BC Partners |
 | Medivet (vormals SmartVet) | 20 | CVC |
 | AniCura | 78 | Mars, seit 2018 |
-| TeamVet | 24 bis 27 | Verbund ohne Investmentfonds im Gesellschafterkreis |
+| TeamVet | 27 | Verbund ohne Investmentfonds im Gesellschafterkreis |
 | Cadomo Vets | 4 | von Tierärzten gegründet und geführt |
 | Wolf & Tiger | 3 | von Tierärztinnen und Tierärzten gegründet |
 | Altano (Pferde) | 30 (geschätzt) | nicht erfasst |
@@ -36,7 +36,7 @@ Nein. Von den **505 Standorten**, die der Datensatz dieser Seite für 13 einzeln
 | Rex | 13 | nicht erfasst |
 | filu | 11 | nicht erfasst |
 
-Die Summe von 505 folgt dem Datensatz: Untergrenzen wie „über 120“ gehen mit dem nächsthöheren ganzen Wert ein, Tierarzt Plus Partner mit 111, TeamVet mit 27. Für Altano ist der letzte belegte Wert 26 Standorte aus dem Jahr 2023; die 30 für 2026 sind geschätzt.
+Die Summe von 505 folgt dem Datensatz: Untergrenzen wie „über 120“ gehen mit dem nächsthöheren ganzen Wert ein, „über 110“ bei Tierarzt Plus Partner also mit 111. Für Altano ist der letzte belegte Wert 26 Standorte aus dem Jahr 2023; die 30 für 2026 sind geschätzt.
 
 ## Drei Modelle, nicht eines
 
@@ -44,7 +44,7 @@ Die Summe von 505 folgt dem Datensatz: Untergrenzen wie „über 120“ gehen mi
 
 **Ein Konzern.** Unter den Gruppen mit bekanntem Eigentümer ist AniCura die einzige, die einem Konzern gehört: Mars übernahm sie 2018, als sie in Deutschland 30 Standorte hatte. Heute sind es 78.
 
-**Ohne Fonds.** TeamVet ist ein Verbund mit Beteiligungen, ausdrücklich ohne Investmentfonds im Gesellschafterkreis, und ist mit 24 bis 27 Standorten etwa so groß wie VetPartners. Cadomo Vets mit vier Praxen und Wolf & Tiger mit drei Standorten in Berlin, Stuttgart und Dresden wurden von Tierärztinnen und Tierärzten gegründet und werden von ihnen geführt.
+**Ohne Fonds.** TeamVet ist ein Verbund mit Beteiligungen, ausdrücklich ohne Investmentfonds im Gesellschafterkreis, und ist mit 27 Standorten etwa so groß wie VetPartners. Cadomo Vets mit vier Praxen und Wolf & Tiger mit drei Standorten in Berlin, Stuttgart und Dresden wurden von Tierärztinnen und Tierärzten gegründet und werden von ihnen geführt.
 
 ## Eigentümer wechseln, Standorte bleiben
 
@@ -60,7 +60,7 @@ Wer die Frage „Kette oder nicht“ nur am Namen festmacht, übersieht solche W
 
 - **Die Anteile beziehen sich auf 13 Gruppen, nicht auf den ganzen Markt.** Rund 72 weitere Standorte kleiner und regionaler Gruppen schätzt der Datensatz, ohne sie einzeln zu führen. Ihre Eigentümer sind nicht erfasst.
 - **„Nicht erfasst“ heißt nicht „unabhängig“.** Für Altano, Veternicum Nesto, Rex und filu nennen die Quellen dieses Datensatzes schlicht keinen Eigentümer.
-- **Eigentum ist nicht immer eindeutig.** TeamVet nennt selbst 24 Standorte, die Partnerliste der Website führt 33 Einträge, der Datensatz rechnet mit 27. Ein Verbund mit Beteiligungen zählt anders als eine Gruppe, der jede Praxis ganz gehört.
+- **Eigentum ist nicht immer eindeutig.** TeamVet nennt auf der Karriereseite 27 Standorte, an anderer Stelle 24, und die Partnerliste der Website führt 33 Einträge. Der Datensatz rechnet mit 27. Ein Verbund mit Beteiligungen zählt anders als eine Gruppe, der jede Praxis ganz gehört.
 - **Der Anteil sagt nichts über die Versorgung.** Ob eine Praxis einem Fonds, einem Konzern oder einer Tierärztin gehört, ist aus diesen Daten nicht mit Qualität, Preisen oder Arbeitsbedingungen verknüpft.
 - **Einkaufsgemeinschaften fehlen bewusst.** VetFamily, Smartemis, die vezzgroup und OneVet besitzen keine Praxen. Mehr dazu im Artikel [1.300 Praxen, die niemandem gehören](einkaufsgemeinschaft-tierarztpraxen.html).
 
@@ -72,12 +72,12 @@ IVC Evidensia (EQT, Silver Lake), Tierarzt Plus Partner (ECONA, Inflexion), VetG
 
 ### Gibt es Tierarztketten ohne Investoren?
 
-Ja. TeamVet hat ausdrücklich keine Investmentfonds im Gesellschafterkreis und kommt auf 24 bis 27 Standorte. Cadomo Vets und Wolf & Tiger wurden von Tierärztinnen und Tierärzten gegründet und haben vier beziehungsweise drei Standorte.
+Ja. TeamVet hat ausdrücklich keine Investmentfonds im Gesellschafterkreis und kommt auf 27 Standorte. Cadomo Vets und Wolf & Tiger wurden von Tierärztinnen und Tierärzten gegründet und haben vier beziehungsweise drei Standorte.
 
 ### Wem gehört Tierarzt Plus?
 
-Tierarzt Plus Partner gehört ECONA und dem Finanzinvestor Inflexion. Die Gruppe wurde 2018 gegründet und hat 2026 106 bis über 110 Standorte.
+Tierarzt Plus Partner gehört ECONA und dem Finanzinvestor Inflexion. Die Gruppe wurde 2018 gegründet und hat 2026 über 110 Praxen.
 
 ## Quelle und Methode
 
-Standortzahlen aus dem Datensatz „Der Aufstieg der Tierarztketten“ dieser Seite, Stand 17. September 2026, mit Belegmarkierung je Wert. Eigentümerangaben nach Betreiberangaben und Fachpresse, zusammengestellt im Artikel [Wer betreibt die Tierarztpraxen in Deutschland?](../artikel/tierarztketten-deutschland.html). Die Anteile sind berechnet, Summe 505; die Vergleichsrechnung mit den Einzelwerten der Übersicht ergibt eine Summe von 483. Einen amtlichen Nachweis über Eigentümer von Tierarztpraxen gibt es nicht. Gesamtanker des Marktes ist der [Tierärzte Atlas Deutschland 2024](https://www.bundestieraerztekammer.de/btk/dtbl/archiv/2025/artikel/DTBl_02_2025_Tieraerzte-Atlas.pdf) mit rund 450 Standorten von 16 Ketten im August 2024.
+Standortzahlen aus dem Datensatz „Der Aufstieg der Tierarztketten“ dieser Seite, Stand 17. September 2026, mit Belegmarkierung je Wert. Eigentümerangaben nach Betreiberangaben und Fachpresse, zusammengestellt im Artikel [Wer betreibt die Tierarztpraxen in Deutschland?](../artikel/tierarztketten-deutschland.html). Die Anteile sind berechnet, Summe 505; mit Altano nach dem letzten Beleg von 2023 sind es 501, die Summe im Übersichtsartikel. Einen amtlichen Nachweis über Eigentümer von Tierarztpraxen gibt es nicht. Gesamtanker des Marktes ist der [Tierärzte Atlas Deutschland 2024](https://www.bundestieraerztekammer.de/btk/dtbl/archiv/2025/artikel/DTBl_02_2025_Tieraerzte-Atlas.pdf) mit rund 450 Standorten von 16 Ketten im August 2024.

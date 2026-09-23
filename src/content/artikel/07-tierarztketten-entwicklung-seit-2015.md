@@ -32,9 +32,9 @@ Die Tabelle zeigt nur belegte Werte. „Über“ steht, wo die Quelle eine Unter
 | 2023 | etwa 75 | etwa 75 | | 11 |
 | 2024 | 79 | 76 | 96 | 17 |
 | 2025 | | | | 24 |
-| 2026 | 78 | über 120 | 106 bis über 110 | 30 |
+| 2026 | 78 | über 120 | über 110 | 30 |
 
-Die Evidensia Deutschland GmbH wurde Anfang 2016 gegründet, Tierarzt Plus 2018. Vor diesen Jahren gab es beide Gruppen in Deutschland nicht. Für 2022 nennen zwei Quellen für IVC Evidensia verschiedene Werte: Das Bundeskartellamt zählte im Juni 60 Standorte, ein Fachmedium im November „über 70“. Für Tierarzt Plus Partner 2026 nennt ein Ranking 106, die Datenkunde des Datensatzes führt „über 110“.
+Tierarzt Plus wurde 2018 gegründet, vorher gab es die Gruppe nicht. Die Evidensia Deutschland GmbH entstand Anfang 2016; nach eigener Angabe ist IVC Evidensia seit 2015 in Deutschland aktiv, der Datensatz setzt für 2015 geschätzt einen Standort an. Für 2022 nennen zwei Quellen für IVC Evidensia verschiedene Werte: Das Bundeskartellamt zählte im Juni 60 Standorte, ein Fachmedium im November „über 70“. Für Tierarzt Plus Partner 2026 nennt das Ranking von gesundheitsmarkt.de mit Stand 8. Juli 2026 106, eine spätere Stellenausschreibung der Gruppe „über 110 Tierarztpraxen“. Der Datensatz führt den neueren Wert.
 
 ## Vier Gruppen an der Spitze in elf Jahren
 
@@ -43,24 +43,24 @@ Aus den belegten Werten lässt sich ablesen, wer jeweils die meisten Standorte h
 1. **2015: SmartVet** mit rund 20 Standorten, gegenüber sieben bei AniCura. 2016 lagen beide bei 20.
 2. **2018: AniCura** mit 30 Standorten, gegenüber 13 bei IVC Evidensia. Im selben Jahr übernahm der Konzern Mars die Gruppe.
 3. **2024: Tierarzt Plus Partner** mit 96 Standorten laut Eigenangabe für Mitte 2024, vor AniCura mit 79 und IVC Evidensia mit 76. Selbst mit dem niedrigeren Wert von 86, den das Ranking von gesundheitsmarkt.de für 2024 nennt, läge die Gruppe vor den beiden anderen.
-4. **2026: IVC Evidensia** mit über 120 Standorten, vor Tierarzt Plus Partner mit 106 bis über 110 und AniCura mit 78.
+4. **2026: IVC Evidensia** mit über 120 Standorten, vor Tierarzt Plus Partner mit über 110 und AniCura mit 78.
 
 Zwischen diesen Punkten verlaufen die Linien im Diagramm geschätzt. Wann genau die Führung wechselte, ist nicht belegt.
 
 ## Wo das Wachstum seit 2024 herkommt
 
-Für sechs Gruppen gibt es sowohl für 2024 als auch für 2026 belegte Werte. Rechnet man die Differenzen zusammen, kommen diese sechs auf einen Zuwachs von gut 70 Standorten in zwei Jahren (berechnet):
+Für sechs Gruppen gibt es sowohl für 2024 als auch für 2026 belegte Werte. Rechnet man die Differenzen zusammen, kommen diese sechs auf einen Zuwachs von mindestens 77 Standorten in zwei Jahren (berechnet):
 
 | Gruppe | 2024 | 2026 | Veränderung |
 |---|---:|---:|---:|
 | IVC Evidensia | 76 | über 120 | mehr als +44 |
-| Tierarzt Plus Partner | 96 | 106 bis über 110 | +10 bis +15 |
+| Tierarzt Plus Partner | 96 | über 110 | mehr als +14 |
 | VetPartners | 17 | 30 | +13 |
 | Veternicum Nesto | 21 | über 25 | mehr als +4 |
 | Medivet | 20 | 20 | 0 |
 | AniCura | 79 | 78 | −1 |
 
-Mehr als die Hälfte dieses belegten Zuwachses entfällt auf IVC Evidensia, je nach Wert für Tierarzt Plus Partner 58 bis 63 Prozent (berechnet). AniCura, die Gruppe mit dem frühesten Einstieg, ist seit 2024 nicht mehr gewachsen.
+Mehr als die Hälfte dieses belegten Zuwachses entfällt auf IVC Evidensia, 58 Prozent (berechnet). AniCura, die Gruppe mit dem frühesten Einstieg, ist seit 2024 nicht mehr gewachsen.
 
 Die Stagnation ist nicht neu. SmartVet, gegründet 2005 und damit schon vor der Investorenwelle am Markt, hatte 2016 20 Standorte, 2021 18 und 2026 unter dem Namen Medivet wieder 20. Medivet übernahm 2021 die Mehrheit und Ende 2023 die ganze Gruppe. Wie es vor 2015 aussah, steht im Artikel [Wer betreibt die Tierarztpraxen in Deutschland?](../artikel/tierarztketten-deutschland.html).
 
@@ -76,7 +76,7 @@ Die Stagnation ist nicht neu. SmartVet, gegründet 2005 und damit schon vor der 
 
 ### Welche Tierarztkette hat die meisten Standorte in Deutschland?
 
-2026 IVC Evidensia mit über 120 Praxen und Kliniken, vor Tierarzt Plus Partner mit 106 bis über 110 und AniCura mit 78. 2024 lag noch Tierarzt Plus Partner vorn.
+2026 IVC Evidensia mit über 120 Praxen und Kliniken, vor Tierarzt Plus Partner mit über 110 und AniCura mit 78. 2024 lag noch Tierarzt Plus Partner vorn.
 
 ### Wie viele Standorte hat AniCura in Deutschland?
 
@@ -84,7 +84,7 @@ Die Stagnation ist nicht neu. SmartVet, gegründet 2005 und damit schon vor der 
 
 ### Wächst der Markt der Tierarztketten noch?
 
-Ja, aber nicht bei allen Gruppen. Zwischen 2024 und 2026 kamen bei den sechs Gruppen mit belegten Werten gut 70 Standorte hinzu, mehr als die Hälfte davon bei IVC Evidensia. AniCura und Medivet blieben praktisch gleich.
+Ja, aber nicht bei allen Gruppen. Zwischen 2024 und 2026 kamen bei den sechs Gruppen mit belegten Werten mindestens 77 Standorte hinzu, mehr als die Hälfte davon bei IVC Evidensia. AniCura und Medivet blieben praktisch gleich.
 
 ## Quelle und Methode
 
