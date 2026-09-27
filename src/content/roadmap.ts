@@ -112,7 +112,7 @@ export const POSTS: RoadmapPost[] = [
     refs: [2],
   },
   {
-    nr: 5, arc: 'praxis', status: 'geplant',
+    nr: 5, arc: 'praxis', status: 'naechster',
     title: 'Die Nachfrage wächst, die Zahl der Praxen nicht',
     hook: 'Dasselbe Bild mit zweiter Achse: Hunde und Katzen gegen Praxisinhaber. Zwei Kurven, die auseinanderlaufen.',
     figures: ['2012: rechnerisch 1.655 Hunde und Katzen je Praxisinhaber', '2025: 2.291', 'Hunde und Katzen zusammen: 9,9 Mio. (1991) auf 25,7 Mio. (2025)'],
@@ -121,7 +121,8 @@ export const POSTS: RoadmapPost[] = [
     refs: [4, 1],
   },
   {
-    nr: 6, arc: 'ketten', status: 'geplant',
+    nr: 6, arc: 'ketten', status: 'veroeffentlicht', publishedOn: '2026-09-27',
+    linkedInUrl: 'https://lnkd.in/p/gH7G3Qih',
     title: 'Wer die Tierarztpraxen kauft',
     hook: 'Die Antwort auf die offene Frage aus Post 4: Wenn immer weniger Menschen eine eigene Praxis führen, wem gehören die Praxen dann?',
     figures: ['Tierärzte Atlas, August 2024: rund 450 Standorte von 16 Praxisketten – die einzige belastbare Gesamtzahl', '2026: IVC Evidensia über 120 Standorte, Tierarzt Plus Partner über 110, AniCura 78', 'Bei rund 10.000 Praxen sind das etwa 4,5 Prozent der Standorte, aber ein deutlich höherer Umsatzanteil'],
@@ -214,7 +215,7 @@ export const POSTS: RoadmapPost[] = [
     refs: [2],
   },
   {
-    nr: 17, arc: 'tiere', status: 'naechster',
+    nr: 17, arc: 'tiere', status: 'geplant',
     title: 'Der Absturz des Deutschen Schäferhunds',
     hook: 'Der leichte Post für Reichweite, und trotzdem eine echte Geschichte über 30 Jahre Geschmackswandel.',
     figures: ['1992: 28.000 Welpen im VDH-Zuchtbuch', '2025: 6.374', 'Der Teckel fällt von 14.208 auf 4.508'],
