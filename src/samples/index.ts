@@ -145,7 +145,7 @@ export const SAMPLES: SampleDataset[] = [
     title: 'Heimtiere in Deutschland',
     subtitle: 'Bestand in Millionen laut Zentralverband Zoologischer Fachbetriebe und Industrieverband Heimtierbedarf, seit 1991',
     source: 'Quelle: ZZF/IVH, „Der Deutsche Heimtiermarkt“ (Jahresberichte 1991–2025); Erhebungsmethode mehrfach gewechselt (1999, 2002, 2012/2013)',
-    sourceUrl: 'https://www.ivh-online.de/der-verband/daten-fakten/anzahl-der-heimtiere-in-deutschland.html',
+    sourceUrl: 'https://www.ivh-online.de/der-verband/daten-fakten/der-deutsche-heimtiermarkt.html',
     unit: 'Mio.',
     description: "Katzen, Hunde, Kleintiere, Ziervögel, Aquarien und Terrarien seit 1991.",
     dataInfo: [
