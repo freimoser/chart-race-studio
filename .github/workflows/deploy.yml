@@ -26,8 +26,8 @@ jobs:
       - run: npm ci
       - run: npm test
       - name: Build
-        # Basis-Pfad = Repo-Name, damit Assets unter https://<user>.github.io/<repo>/ gefunden werden.
-        # Für eine Custom Domain / <user>.github.io-Repo: BASE_PATH auf "/" setzen.
+        # Die Seite läuft seit 28.09.2026 unter der eigenen Domain tiermedizin-in-zahlen.org, also im
+        # Wurzelpfad. Alte Links auf freimoser.github.io/chart-race-studio/… leitet GitHub dorthin um.
         #
         # VITE_SITE_URL ist keine Kosmetik: Ohne sie entstehen weder Canonical noch sitemap.xml,
         # robots.txt oder llms.txt. Als Repository-Variable hinterlegt
@@ -37,7 +37,7 @@ jobs:
           VITE_GA_ID: ${{ vars.VITE_GA_ID }}
           VITE_CF_BEACON: ${{ vars.VITE_CF_BEACON }}
           VITE_GSC_VERIFICATION: ${{ vars.VITE_GSC_VERIFICATION }}
-        run: BASE_PATH="/${GITHUB_REPOSITORY#*/}/" npm run build
+        run: BASE_PATH="/" npm run build
 
       - name: Livegang-Prüfung
         # Läuft gegen den Build. Bricht bei Blockern ab, damit keine Seite ohne
