@@ -81,6 +81,11 @@ export async function starteChrome({ breite = 1440, hoehe = 900, skala = 2, port
       fs.writeFileSync(datei, Buffer.from(data, 'base64'))
     },
     warte,
-    async ende() { ws.close(); proc.kill(); await warte(300); fs.rmSync(profil, { recursive: true, force: true }) },
+    async ende() {
+      ws.close(); proc.kill()
+      // Chrome schreibt beim Beenden noch ins Profil; Aufräumen darf den Lauf nicht scheitern lassen.
+      await warte(500)
+      try { fs.rmSync(profil, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 }) } catch { /* bleibt im Temp-Ordner */ }
+    },
   }
 }

@@ -71,6 +71,8 @@ export function Stage() {
       createChart(settings.chartType, container, input).then((h) => {
         if (cancelled) { h.destroy(); return }
         handleRef.current = h
+        // Nur im Dev-Modus: für die Glätteprüfung (scripts/pruefe-glaette.mjs) von außen erreichbar
+        if (import.meta.env.DEV) (window as unknown as { __crsChart?: ChartHandle }).__crsChart = h
         preview.attach(h, prevIndex, wasPlaying)
       })
     }, 120)

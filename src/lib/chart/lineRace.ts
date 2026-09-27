@@ -107,9 +107,13 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
     const { name, einheit } = summenSpalte(spalte)
     const zg = summenG.append('g').attr('transform', `translate(${k * (plotW * 0.34)},0)`)
     zg.append('text').attr('y', input.labelSize * 0.9).attr('fill', axisColor).style('font', axisTitleFont).text(name)
-    const zahl = zg.append('text').attr('y', input.labelSize * 0.9 + zahlSchrift).attr('fill', textColor)
+    // Zahl und Einheit in einer Zeile: Die Einheit folgt als tspan direkt auf die Zahl. Vorher wurde ihre
+    // Position gemessen, und bei Tabellenziffern lag „515“ über „Standorte“.
+    const zeile = zg.append('text').attr('y', input.labelSize * 0.9 + zahlSchrift)
+    const zahl = zeile.append('tspan').attr('fill', textColor)
       .style('font', fontString(zahlSchrift, 700, input.fontFamily)).style('font-variant-numeric', 'tabular-nums')
-    const zusatz = zg.append('text').attr('fill', axisColor).style('font', fontString(input.labelSize * 0.9, 500, input.fontFamily))
+    const zusatz = zeile.append('tspan').attr('fill', axisColor).attr('dx', input.labelSize * 0.35)
+      .style('font', fontString(input.labelSize * 0.9, 500, input.fontFamily))
     return { spalte, einheit, zahl, zusatz }
   })
 
@@ -155,6 +159,26 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
     return lo > 0 ? text.slice(0, lo) + '…' : ''
   }
 
+  // Zwischen zwei Jahren wird monoton kubisch interpoliert (Steffen, dieselbe Regel wie d3.curveMonotoneX):
+  // Die Linie hat an den Jahrespunkten keine Knicke mehr, schießt aber nie über einen echten Wert hinaus
+  // und erfindet keine Zwischenhochs. Kopf, Wert und Linie folgen derselben Kurve.
+  const steigungen = new Map<(number | null)[], number[]>()
+  const steigungFuer = (vals: (number | null)[]) => {
+    let m = steigungen.get(vals)
+    if (m) return m
+    m = vals.map((v, i) => {
+      if (v == null) return 0
+      const a = vals[i - 1], b = vals[i + 1]
+      const d0 = a == null ? null : v - a
+      const d1 = b == null ? null : b - v
+      if (d0 == null && d1 == null) return 0
+      if (d0 == null) return d1!
+      if (d1 == null) return d0
+      return (Math.sign(d0) + Math.sign(d1)) * Math.min(Math.abs(d0), Math.abs(d1), 0.5 * Math.abs((d0 + d1) / 2))
+    })
+    steigungen.set(vals, m)
+    return m
+  }
   const valueAt = (vals: (number | null)[], t: number): number | null => {
     const i = Math.floor(t)
     const f = t - i
@@ -162,11 +186,73 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
     if (a === null || a === undefined) return null
     if (f <= 0 || i + 1 >= P) return a
     const b = vals[i + 1]
-    return b === null || b === undefined ? a : a + (b - a) * f
+    if (b === null || b === undefined) return a
+    const m = steigungFuer(vals)
+    const f2 = f * f, f3 = f2 * f
+    return (2 * f3 - 3 * f2 + 1) * a + (f3 - 2 * f2 + f) * m[i] + (-2 * f3 + 3 * f2) * b + (f3 - f2) * m[i + 1]
   }
 
   let current = 0
   const listeners = new Set<(i: number, last: boolean) => void>()
+
+  // Erster Wert je Reihe: Eine neue Reihe blendet über eine ganze Periode ein, statt im ersten Bild voll dazustehen.
+  const ersterIndex = new Map(input.names.map((n) => [n, series.get(n)!.findIndex((v) => v !== null)]))
+  const minGap = input.labelSize * 1.35
+
+  /** Alle Reihen mit Wert zum Zeitpunkt tt, samt stetiger Deckkraft. */
+  function koepfe(tt: number) {
+    const liste: { name: string; v: number; op: number }[] = []
+    for (const n of names) {
+      const v = valueAt(series.get(n)!, tt)
+      if (v !== null) liste.push({ name: n, v, op: 1 })
+    }
+    // Für die Rangfolge zählt eine einsteigende Reihe erst allmählich: Ihr Rangwert wächst vom Achsenboden
+    // auf ihren echten Wert. Sonst verdrängt sie im ersten Bild eine andere Reihe aus den Top N.
+    const boden = y.domain()[0]
+    const rangListe = liste.map((h) => ({ name: h.name, v: boden + (h.v - boden) * einblenden(h.name, tt) }))
+    liste.forEach((h, i) => { h.op = deckkraft(rangListe[i], rangListe) * einblenden(h.name, tt) })
+    return liste
+  }
+  function einblenden(n: string, tt: number) {
+    const i = ersterIndex.get(n) ?? 0
+    if (i <= 0) return 1
+    const u = Math.max(0, Math.min(1, (tt - i) / 1))
+    return u * u * (3 - 2 * u)
+  }
+  // Stetige Deckkraft um die Top-N-Grenze: Die Grenze liegt zwischen dem N-ten und dem (N+1)-ten Wert,
+  // das Übergangsband ist mindestens 4 % der Achse breit. Wer die Grenze kreuzt, blendet über das Band weich
+  // ein oder aus. Unterhalb ist eine Reihe unsichtbar – keine Geisterlinien.
+  function deckkraft(h: { name: string; v: number }, liste: { name: string; v: number }[]) {
+    if (onRight(h.name)) return 1
+    const sortiert = liste.filter((x) => !onRight(x.name)).map((x) => x.v).sort((a, b) => b - a)
+    const hi = sortiert[input.topN - 1], lo = sortiert[input.topN]
+    if (hi === undefined || lo === undefined) return 1
+    const band = Math.max(1e-9, (y.domain()[1] - y.domain()[0]) * 0.04)
+    return Math.max(0, Math.min(1, 0.5 + (h.v - (hi + lo) / 2) / Math.max(hi - lo, band)))
+  }
+  // Beschriftungen blenden später ein als Linien: Eine Linie an der Top-N-Grenze darf halb sichtbar sein, ein
+  // halb sichtbarer Name dagegen liest sich wie ein Fehler und überlagert seine Nachbarn.
+  const labelDeckkraft = (op: number) => { const u = Math.max(0, Math.min(1, (op - 0.3) / 0.6)); return u * u * (3 - 2 * u) }
+  /** Kollisionsfreie Label-Positionen; jedes Label beansprucht nur so viel Abstand, wie es sichtbar ist. */
+  function anordnen(liste: { name: string; v: number; op: number }[]) {
+    const lo_ = input.labelSize * 0.75, hi_ = plotH - input.labelSize * 0.8
+    const placed = liste.filter((h) => h.op > 0.01).map((h) => ({ ...h, lop: labelDeckkraft(h.op), y: scaleFor(h.name)(h.v), ty: scaleFor(h.name)(h.v) }))
+    const abstand = (a: { lop: number }, b: { lop: number }) => minGap * Math.min(a.lop, b.lop)
+    for (let iter = 0; iter < 40; iter++) {
+      placed.sort((a, b) => a.ty - b.ty || a.y - b.y || (a.name < b.name ? -1 : 1))
+      let moved = false
+      for (let i = 1; i < placed.length; i++) {
+        const gap = placed[i].ty - placed[i - 1].ty
+        const soll = abstand(placed[i], placed[i - 1])
+        if (gap < soll - 0.01) { const push = (soll - gap) / 2; placed[i - 1].ty -= push; placed[i].ty += push; moved = true }
+      }
+      for (const p of placed) p.ty = Math.max(lo_, Math.min(hi_, p.ty))
+      for (let i = 1; i < placed.length; i++) { const soll = abstand(placed[i], placed[i - 1]); if (placed[i].ty - placed[i - 1].ty < soll - 0.01) placed[i].ty = Math.min(hi_, placed[i - 1].ty + soll) }
+      for (let i = placed.length - 2; i >= 0; i--) { const soll = abstand(placed[i + 1], placed[i]); if (placed[i + 1].ty - placed[i].ty < soll - 0.01) placed[i].ty = Math.max(lo_, placed[i + 1].ty - soll) }
+      if (!moved) break
+    }
+    return placed
+  }
 
   function renderAt(t: number) {
     t = Math.max(0, Math.min(P - 1, t))
@@ -175,30 +261,11 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
       const v = valueAt(series.get(s.spalte)!, t)
       const text = v == null ? '' : formatValue(v, { ...input.numberFormat, prefix: '', suffix: '' })
       s.zahl.text(text)
-      s.zusatz.attr('x', measure(text, fontString(zahlSchrift, 700, input.fontFamily)) + input.labelSize * 0.35)
-        .attr('y', input.labelSize * 0.9 + zahlSchrift).text(v == null ? '' : s.einheit)
+      s.zusatz.text(v == null ? '' : s.einheit)
     }
-    const heads: { name: string; v: number }[] = []
     const upto = Math.floor(t)
-    for (const n of names) {
-      const v = valueAt(series.get(n)!, t)
-      if (v !== null) heads.push({ name: n, v })
-    }
-
-    // Top-N-Zugehörigkeit (nur linke Achse) als stetige Deckkraft; rechte Achse immer voll
-    const sorted = heads.filter((h) => !onRight(h.name)).sort((a, b) => b.v - a.v)
-    const hi = sorted[input.topN - 1]?.v
-    const lo = sorted[input.topN]?.v
-    // Rang statt nur Wert: Bei Gleichstand an der Grenze (etwa mehrere Reihen bei 0) zählte vorher jede
-    // Reihe mit dem Grenzwert zur Spitze, und statt sechs standen fünfzehn Namen im Bild.
-    const rang = new Map(sorted.map((h, i) => [h.name, i]))
-    const opacityFor = (h: { name: string; v: number }) => {
-      if (onRight(h.name) || hi === undefined) return 1
-      const r = rang.get(h.name) ?? 0
-      if (lo === undefined || r < input.topN) return 1
-      if (h.v <= lo || hi === lo) return 0.18
-      return 0.18 + 0.82 * ((h.v - lo) / (hi - lo || 1))
-    }
+    const heads = koepfe(t)
+    const opacityFor = (h: { name: string; v: number }) => deckkraft(h, heads)
     const headOf = (n: string) => heads.find((h) => h.name === n)
 
     const paths = linesG.selectAll<SVGPathElement, string>('path').data(names, (d) => d)
@@ -207,37 +274,69 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
       .attr('stroke', (n) => input.colors[n])
       .attr('stroke-dasharray', (n) => (onRight(n) ? `${input.labelSize * 0.5} ${input.labelSize * 0.3}` : null))
       // Reihen ohne aktuellen Wert (beendet) bleiben als Verlauf sichtbar, nur gedämpft
-      .attr('opacity', (n) => { const h = headOf(n); return h ? opacityFor(h) : series.get(n)!.slice(0, upto + 1).some((v) => v !== null) ? 0.45 : 0 })
+      .attr('opacity', (n) => {
+        const h = headOf(n)
+        if (h) return opacityFor(h)
+        // Beendete Reihe: blendet innerhalb einer Periode nach ihrem letzten Wert aus, statt stehen zu bleiben
+        const vals = series.get(n)!
+        let letzter = -1
+        for (let i = 0; i <= upto; i++) if (vals[i] !== null) letzter = i
+        if (letzter < 0) return 0
+        return opacityFor({ name: n, v: vals[letzter]! }) * Math.max(0, 1 - (t - letzter))
+      })
       .attr('d', (n) => {
         const vals = series.get(n)!
         const sc = scaleFor(n)
-        const line = d3.line<[number, number]>().x((d) => x(d[0])).y((d) => sc(d[1]))
-        const pts: [number, number][] = []
-        for (let i = 0; i <= upto; i++) { const v = vals[i]; if (v !== null) pts.push([i, v]) }
-        const v = valueAt(vals, t)
-        if (v !== null && t > upto) pts.push([t, v])
-        return pts.length ? line(pts) : null
+        const line = d3.line<[number, number] | null>().defined((d) => d !== null).x((d) => x(d![0])).y((d) => sc(d![1]))
+        // Die Kurve wird in feinen Schritten aus derselben Interpolation gesampelt, aus der auch der Kopf
+        // seine Position hat – so sitzt der Punkt immer exakt auf der Linie.
+        const SCHRITTE = 8
+        const pts: ([number, number] | null)[] = []
+        for (let i = 0; i <= upto; i++) {
+          const v = vals[i]
+          if (v === null) { pts.push(null); continue }
+          pts.push([i, v])
+          const ende = Math.min(i + 1, t)
+          if (i + 1 < P && vals[i + 1] !== null && ende > i) {
+            for (let k = 1; k <= SCHRITTE; k++) {
+              const tk = i + (ende - i) * (k / SCHRITTE)
+              if (tk >= i + 1) break
+              pts.push([tk, valueAt(vals, tk)!])
+            }
+            if (ende < i + 1) pts.push([ende, valueAt(vals, ende)!])
+          }
+        }
+        return pts.some(Boolean) ? line(pts) : null
       })
 
     // Köpfe und einzeilige Labels („Name  Wert“) mit Kollisionsauflösung, innerhalb der Plot-Höhe geklemmt
-    const visible = heads.filter((h) => opacityFor(h) > 0.25)
-    const minGap = input.labelSize * 1.35
-    const placed = visible.map((h) => ({ ...h, y: scaleFor(h.name)(h.v), ty: scaleFor(h.name)(h.v) }))
-    // Label-Box (einzeilig, Grundlinie ty + 0.35·labelSize) vollständig innerhalb der Plot-Höhe halten
-    const lo_ = input.labelSize * 0.75, hi_ = plotH - input.labelSize * 0.8
-    for (let iter = 0; iter < 20; iter++) {
-      placed.sort((a, b) => a.ty - b.ty)
-      let moved = false
-      for (let i = 1; i < placed.length; i++) {
-        const gap = placed[i].ty - placed[i - 1].ty
-        if (gap < minGap - 0.01) { const push = (minGap - gap) / 2; placed[i - 1].ty -= push; placed[i].ty += push; moved = true }
+    // Beschriftungen: Die Anordnung wird nicht nur für t berechnet, sondern auch für benachbarte
+    // Zeitpunkte, und der Versatz jedes Labels (Label minus Punkt) wird gemittelt. Kreuzen sich zwei Linien,
+    // tauschen ihre Labels dadurch in einer gleitenden Bewegung die Plätze statt in einem Bild. Im
+    // Gleichlauf ist der Versatz konstant und das Mittel exakt. Rein aus den Daten berechnet, also für den
+    // Bild-für-Bild-Export weiterhin eine Funktion der Zeit.
+    const MITTEL = 12, FENSTER = 0.4
+    const versatz = new Map<string, { summe: number; n: number }>()
+    // Zum Ende hin schrumpft das Fenster auf null: Das letzte Bild steht als Standbild lange im Video und muss
+    // exakt kollisionsfrei sein. Am Anfang bleibt es voll – dort kreuzen sich Linien oft schon im ersten Jahr.
+    const fenster = Math.min(FENSTER, 2 * (P - 1 - t))
+    for (let k = 0; k < MITTEL; k++) {
+      // Fenster um t herum, an den Rändern geklemmt: Am Anfang und am Ende – dem Standbild – gilt damit exakt
+      // die kollisionsfreie Anordnung, und Labels beginnen einen Platztausch schon kurz vor dem Kreuzen.
+      const tk = Math.max(0, Math.min(P - 1, t + fenster * (k / (MITTEL - 1) - 0.5)))
+      for (const p of anordnen(tk === t ? heads : koepfe(tk))) {
+        const e = versatz.get(p.name) ?? { summe: 0, n: 0 }
+        e.summe += p.ty - p.y; e.n++
+        versatz.set(p.name, e)
       }
-      // Klemmen und ggf. nach innen schieben
-      for (const p of placed) p.ty = Math.max(lo_, Math.min(hi_, p.ty))
-      for (let i = 1; i < placed.length; i++) if (placed[i].ty - placed[i - 1].ty < minGap - 0.01) placed[i].ty = Math.min(hi_, placed[i - 1].ty + minGap)
-      for (let i = placed.length - 2; i >= 0; i--) if (placed[i + 1].ty - placed[i].ty < minGap - 0.01) placed[i].ty = Math.max(lo_, placed[i + 1].ty - minGap)
-      if (!moved) break
     }
+    const lo_ = input.labelSize * 0.75, hi_ = plotH - input.labelSize * 0.8
+    const placed = heads.filter((h) => h.op > 0.01).map((h) => {
+      const y0 = scaleFor(h.name)(h.v)
+      const e = versatz.get(h.name)
+      const ty = Math.max(lo_, Math.min(hi_, y0 + (e ? e.summe / e.n : 0)))
+      return { ...h, lop: labelDeckkraft(h.op), y: y0, ty }
+    })
     const xHead = x(t)
     const imgSize = imgSizeAll
     const hasImg = (n: string) => input.showImages && !!input.images[n]
@@ -249,16 +348,16 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
     enter.append('text').attr('class', 'name').style('font', labelFont)
     enter.append('text').attr('class', 'value').style('font', valueFont)
     const merged = enter.merge(heads$)
-    merged.attr('opacity', (d) => opacityFor(d))
+    merged.attr('opacity', 1)
     const x0 = xHead + input.labelSize * 0.5
-    merged.select<SVGCircleElement>('circle.dot').attr('cx', xHead).attr('cy', (d) => d.y).attr('r', Math.max(3, input.labelSize * 0.22)).attr('fill', (d) => input.colors[d.name])
+    merged.select<SVGCircleElement>('circle.dot').attr('opacity', (d) => d.op).attr('cx', xHead).attr('cy', (d) => d.y).attr('r', Math.max(3, input.labelSize * 0.22)).attr('fill', (d) => input.colors[d.name])
     // Verbindungslinie nur, wenn das Label verschoben werden musste
     merged.select<SVGPathElement>('path.leader')
-      .attr('stroke', (d) => input.colors[d.name]).attr('opacity', 0.6)
+      .attr('stroke', (d) => input.colors[d.name]).attr('opacity', (d) => 0.6 * d.lop)
       .attr('d', (d) => (Math.abs(d.ty - d.y) > 1 ? `M${xHead},${d.y} L${x0 - input.labelSize * 0.15},${d.ty}` : null))
     merged.select<SVGCircleElement>('circle.img')
       .attr('display', (d) => (hasImg(d.name) ? null : 'none'))
-      .attr('cx', x0 + imgSize / 2).attr('cy', (d) => d.ty)
+      .attr('opacity', (d) => d.lop).attr('cx', x0 + imgSize / 2).attr('cy', (d) => d.ty)
       .attr('r', imgSize / 2).attr('fill', (d) => `url(#${patternId(d.name)})`).attr('stroke', (d) => input.colors[d.name]).attr('stroke-width', 2)
     const textX = (d: typeof placed[number]) => x0 + (hasImg(d.name) ? imgSize + input.labelSize * 0.3 : 0)
     const baseline = (d: typeof placed[number]) => d.ty + input.labelSize * 0.35
@@ -267,8 +366,8 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
       const budget = headSpace - (textX(d) - x0) - input.labelSize * 0.4 - gapText - measure(formatValue(d.v, fmtFor(d.name)), valueFont)
       return fitText(d.name, budget, labelFont)
     }
-    merged.select<SVGTextElement>('text.name').attr('x', textX).attr('y', baseline).attr('fill', textColor).text(shownName)
-    merged.select<SVGTextElement>('text.value').attr('x', (d) => textX(d) + measure(shownName(d), labelFont) + gapText).attr('y', baseline).attr('fill', axisColor).text((d) => formatValue(d.v, fmtFor(d.name)))
+    merged.select<SVGTextElement>('text.name').attr('opacity', (d) => d.lop).attr('x', textX).attr('y', baseline).attr('fill', textColor).text(shownName)
+    merged.select<SVGTextElement>('text.value').attr('opacity', (d) => d.lop).attr('x', (d) => textX(d) + measure(shownName(d), labelFont) + gapText).attr('y', baseline).attr('fill', axisColor).text((d) => formatValue(d.v, fmtFor(d.name)))
     heads$.exit().remove()
   }
 

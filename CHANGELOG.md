@@ -4,6 +4,14 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Behoben (Line Race: flüssige Animation)
+
+- **Keine Knicke:** Zwischen den Jahren monoton kubisch interpoliert (Steffen, wie d3.curveMonotoneX) – die Linie läuft glatt durch jeden echten Wert, ohne zu überschießen; Punkt, Wert und Linie folgen derselben Kurve.
+- **Keine Geisterlinien:** Reihen außerhalb der Top N blenden stetig aus, statt blass stehen zu bleiben; beendete Reihen blenden innerhalb einer Periode aus.
+- **Keine Sprünge:** Beschriftungen tauschen beim Kreuzen zweier Linien gleitend die Plätze (zeitlich gemittelter Versatz, rein aus den Daten, also exportfest); neue Reihen wachsen weich in die Rangfolge; Namen blenden erst bei klarer Sichtbarkeit ein. Das Schlussbild ist exakt kollisionsfrei.
+- Summe: Zahl und Einheit in einer Zeile, „515Standorte“ klebte zusammen.
+- **`npm run check:glaette`** (`scripts/pruefe-glaette.mjs`): fährt jeden Datensatz mit 60 Bildern je Jahr ab und meldet jeden Sprung in Position oder Deckkraft. Stand: 7 Datensätze, 10.740 Bilder, 0 Sprünge.
+
 ### Behoben (Ketten-Chart)
 
 - Ketten-Datensatz: Der Marker „existierte noch nicht“ stand als 0 in der Tabelle – gegen den eigenen Datenstandard. Führende Nullen sind jetzt leer; 2015 erscheinen nur die fünf Gruppen, die es gab, statt fünfzehn mit „0“.

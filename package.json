@@ -13,7 +13,8 @@
     "legal": "node scripts/build-legal.mjs",
     "icons": "node scripts/gen-icons.mjs",
     "preview": "vite preview",
-    "artikel": "node scripts/build-artikel.mjs --entwuerfe"
+    "artikel": "node scripts/build-artikel.mjs --entwuerfe",
+    "check:glaette": "node scripts/pruefe-glaette.mjs"
   },
   "dependencies": {
     "@ffmpeg/ffmpeg": "^0.12.15",

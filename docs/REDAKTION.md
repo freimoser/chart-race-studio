@@ -37,6 +37,10 @@ verschwinden dann ebenfalls. Seit der Weltkarte als Post 3 betrifft das keinen D
 lesbar, und die Datensätze liegen weiterhin im ausgelieferten JavaScript. Die Schalter steuern, was die Seite
 anbietet und was Suchmaschinen finden, nicht was geheim ist.
 
+## Vor jedem Video
+
+`npm run dev`, dann `npm run check:glaette`: prüft Bild für Bild, dass das Line Race weder springt noch Beschriftungen umspringen lässt. Ein ✗ vor dem Export beheben, nicht im Video übersehen.
+
 ## Anleitungen
 
 Artikel mit `art: anleitung` statt `post:` gehören zu keinem Post und gehen online, sobald sie `bereit: ja` tragen. Screenshots nie von Hand: `npm run dev`, dann `node scripts/screenshots-anleitung.mjs`. Nach Änderungen am Datenstandard (`docs/DATENSTANDARD.md`) Vorlagen neu erzeugen: `node scripts/build-vorlagen.mjs`.

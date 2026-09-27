@@ -267,7 +267,7 @@ export const SAMPLES: SampleDataset[] = [
     headers: KETTEN.headers,
     rows: KETTEN.rows,
     suggested: {
-      chartType: 'line', topN: 6, decimals: 0, primaryAxisLabel: 'Standorte',
+      chartType: 'line', topN: 7, decimals: 0, primaryAxisLabel: 'Standorte',
       // Die drei Großen klar unterscheidbar, die Restgruppe bewusst grau – sie ist keine Kette.
       colors: { 'IVC Evidensia': '#0f4c5c', 'Tierarzt Plus Partner': '#e36414', 'AniCura': '#20b2aa', 'Weitere Gruppen': '#a3aab2', 'VetGruppen (Vetopia)': '#7b5ea7', 'VetPartners': '#c0392b', 'Altano (Pferde)': '#8a6d3b' },
     },
