@@ -6,6 +6,8 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ### Neu
 
+- **Summenspalten im Line Race** als große mitlaufende Zahl oben links statt als Linie, im Bar Race ausgeblendet. Der Ketten-Datensatz nutzt das: „Summe: Alle Gruppen (Standorte)“ statt „TOTAL Deutschland“, die Achse reicht damit bis 120 statt 600. Feste Farben je Reihe über `suggested.colors`, Restgruppe grau, Top 6.
+
 - **Weltkarte Hund oder Katze ist Post 3** mit eigenem Artikel „Mehr Katzen oder Hunde?“ (Welt und Deutschland). Die Posts 3–15 sind zu 4–16 aufgerückt, der alte Post 16 ist im neuen Post 3 aufgegangen. Der bereits veröffentlichte Tierärzte-Artikel bleibt über `vorabOnline` online.
 
 - **Kopf- und Fußzeile aus einer Quelle** für alle statischen Seiten (Artikel, Übersicht, Rechtstexte, 404): Die Kopfzeile bleibt beim Scrollen stehen und enthält nur Navigation, Impressum und Datenschutz stehen im Fuß. Die Seiten tragen Platzhalter, die Vite beim Build mit tiefenrichtigen Pfaden füllt.

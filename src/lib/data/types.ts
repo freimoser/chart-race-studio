@@ -107,6 +107,8 @@ export interface SampleDataset {
     chartType?: 'bar' | 'line' | 'map'
     divergingAt?: number
     divergingLabels?: [string, string]
+    /** Feste Farben je Reihe, z. B. Rest- und Sammelgruppen grau */
+    colors?: Record<string, string>
     labelsPosition?: 'inside' | 'outside'
     dateFormat?: string
     /** Line Race: Kategorien auf der rechten Achse */

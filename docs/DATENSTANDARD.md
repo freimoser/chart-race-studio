@@ -50,8 +50,11 @@ arbeiten, gibt es jede Vorlage zusätzlich als `.xlsx`.
 
 ## 4. Summenspalten
 
-- **Eine Spalte, deren Kopf mit `Summe:` beginnt, ist keine Fläche**, sondern erscheint als Mini-Linie unten
-  im Seitenpanel, mit dem aktuellen Wert. Gleichwertig: `Gesamt:`, `Total:`.
+- **Eine Spalte, deren Kopf mit `Summe:` beginnt, ist nie eine normale Reihe.** Gleichwertig: `Gesamt:`, `Total:`.
+  - **Karte:** Mini-Linie unten im Seitenpanel, mit dem aktuellen Wert.
+  - **Line Race:** große mitlaufende Zahl oben links im Diagramm. Als Linie würde die Summe die Achse so hochziehen,
+    dass alle Einzelreihen am Boden kleben – genau das passierte beim Ketten-Datensatz (Summe 577, Gruppen unter 125).
+  - **Bar Race:** ausgeblendet, sie wäre ein Balken, der alle anderen überragt.
 - Aufbau: `Summe: <Name> (<Einheit>)`, zum Beispiel `Summe: Hunde (Mio.)`. Angezeigt wird „Hunde“ mit
   „521 Mio.“.
 - **Die Summe steht in der Tabelle, sie wird nicht gerechnet.** Eine Summe über die Spalten einer Karte ist

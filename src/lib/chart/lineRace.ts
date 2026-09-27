@@ -1,6 +1,7 @@
 import * as d3 from 'd3'
 import type { ChartHandle, ChartInput } from './types'
 import { formatValue } from '../data/numbers'
+import { istSumme, summenSpalte } from './geo'
 import { createMeasurer, fontString } from '../layout'
 import { formatPeriod } from '../data/dates'
 
@@ -12,7 +13,12 @@ import { formatPeriod } from '../data/dates'
  */
 export function createLineRace(container: HTMLElement, input: ChartInput): ChartHandle {
   const measure = createMeasurer()
-  const { width: W, height: H, periods, names } = input
+  const { width: W, height: H, periods } = input
+  // Datenstandard: „Summe: …“-Spalten sind keine Linien. Sie laufen als große Zahl oben links im Plot
+  // mit – als Linie würde eine Summe die Achse so hochziehen, dass alle Einzelreihen am Boden kleben.
+  const summen = input.names.filter(istSumme)
+  const names = input.names.filter((n) => !istSumme(n))
+  const reihenRows = input.rows.filter((r) => !summen.includes(r.name))
   const P = periods.length
   const dark = input.theme === 'dark'
   const axisColor = dark ? '#9aa3ad' : '#7a828c'
@@ -25,14 +31,14 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
   // Werte-Matrix name -> index -> value|null
   const idx = new Map(periods.map((p, i) => [p.iso, i]))
   const series = new Map<string, (number | null)[]>()
-  for (const n of names) series.set(n, new Array<number | null>(P).fill(null))
+  for (const n of input.names) series.set(n, new Array<number | null>(P).fill(null))
   for (const r of input.rows) {
     const i = idx.get(r.date)
     if (i !== undefined) series.get(r.name)?.splice(i, 1, r.value)
   }
   const extent = (right: boolean) => {
     let max = 0, min = 0
-    for (const r of input.rows) if (onRight(r.name) === right) { if (r.value > max) max = r.value; if (r.value < min) min = r.value }
+    for (const r of reihenRows) if (onRight(r.name) === right) { if (r.value > max) max = r.value; if (r.value < min) min = r.value }
     return { max, min }
   }
   const extL = extent(false), extR = extent(true)
@@ -93,6 +99,20 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
   gridG.call(d3.axisLeft(y).ticks(5).tickSize(-plotW).tickFormat(() => ''))
   styleAxis(gridG)
 
+  // Summenanzeige oben links im Plot: Name klein, Zahl groß. Oben links ist bei wachsenden Reihen die
+  // freie Ecke; der Block sitzt unter dem Achsentitel und über den Gitterlinien.
+  const summenG = g.append('g').attr('class', 'summen').attr('transform', `translate(${input.labelSize * 0.6},${input.labelSize * 0.4})`)
+  const zahlSchrift = input.labelSize * 1.9
+  const summenZeilen = summen.map((spalte, k) => {
+    const { name, einheit } = summenSpalte(spalte)
+    const zg = summenG.append('g').attr('transform', `translate(${k * (plotW * 0.34)},0)`)
+    zg.append('text').attr('y', input.labelSize * 0.9).attr('fill', axisColor).style('font', axisTitleFont).text(name)
+    const zahl = zg.append('text').attr('y', input.labelSize * 0.9 + zahlSchrift).attr('fill', textColor)
+      .style('font', fontString(zahlSchrift, 700, input.fontFamily)).style('font-variant-numeric', 'tabular-nums')
+    const zusatz = zg.append('text').attr('fill', axisColor).style('font', fontString(input.labelSize * 0.9, 500, input.fontFamily))
+    return { spalte, einheit, zahl, zusatz }
+  })
+
   // Bild-Muster für Köpfe
   const patternId = (n: string) => `lr-img-${Math.abs(hash(n))}`
   if (input.showImages) {
@@ -151,6 +171,13 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
   function renderAt(t: number) {
     t = Math.max(0, Math.min(P - 1, t))
     current = t
+    for (const s of summenZeilen) {
+      const v = valueAt(series.get(s.spalte)!, t)
+      const text = v == null ? '' : formatValue(v, { ...input.numberFormat, prefix: '', suffix: '' })
+      s.zahl.text(text)
+      s.zusatz.attr('x', measure(text, fontString(zahlSchrift, 700, input.fontFamily)) + input.labelSize * 0.35)
+        .attr('y', input.labelSize * 0.9 + zahlSchrift).text(v == null ? '' : s.einheit)
+    }
     const heads: { name: string; v: number }[] = []
     const upto = Math.floor(t)
     for (const n of names) {

@@ -259,13 +259,17 @@ export const SAMPLES: SampleDataset[] = [
       "Nicht mitgezählt werden Einkaufsgemeinschaften und Kooperationsnetzwerke ohne gemeinsamen Betreiber. Das betrifft VetFamily mit über 1.300 Mitgliedspraxen, den VUK, Smartemis mit rund 90 Partnern, die vezzgroup mit rund 14 und OneVet Deutschland. Ebenfalls draußen: Pfotendoctor, ein telemedizinischer Dienst ohne eigene Standorte, der seit 2021 zu Tierarzt Plus Partner gehört.",
       "activet läuft bis 2022 als eigene Reihe und danach nicht mehr: Die fünf Praxen gehören seit August 2023 zu Tierarzt Plus Partner und stecken dort in der Zahl. SmartVet und Medivet sind eine Entwicklungslinie, weil Medivet 2021 die Mehrheit und Ende 2023 vollständig übernommen hat.",
       "Jeder einzelne Wert ist in data/raw/ds12-ketten-modell.json markiert: B belegt, B~ die Quelle nennt „rund“ oder „knapp“, B≥ belegte Untergrenze aus einer „über X“-Aussage, B/P belegte Praxenzahl als Näherung für Standorte, S geschätzt oder interpoliert, 0 die Gruppe existierte in Deutschland noch nicht.",
-      "Die Reihe TOTAL ist die Modellschätzung des Gesamtmarkts. Ihr einziger externer Anker ist der Tierärzte Atlas Deutschland 2024, der für August 2024 rund 450 Standorte von 16 Praxisketten nennt. Die einzeln modellierten Gruppen kommen 2024 auf 389, die restlichen rund 61 entfallen auf kleinere und regionale Gruppen, die hier nicht einzeln geführt werden.",
+      "Die Summe aller Gruppen („Summe: Alle Gruppen“, im Video als große Zahl oben links) ist die Modellschätzung des Gesamtmarkts. Ihr einziger externer Anker ist der Tierärzte Atlas Deutschland 2024, der für August 2024 rund 450 Standorte von 16 Praxisketten nennt. Die einzeln modellierten Gruppen kommen 2024 auf 389, die restlichen rund 61 entfallen auf kleinere und regionale Gruppen, die hier nicht einzeln geführt werden.",
       "Für 2026 liegen die einzeln modellierten Gruppen bei mindestens 505. Das ist konservativ, weil vier Angaben Untergrenzen sind: IVC Evidensia „mehr als 120“ wird als 121 gerechnet, Tierarzt Plus „über 110“ als 111, VetGruppen „über 30“ als 31 und Veternicum Nesto „über 25“ als 26. Mit einem geschätzten Rest von rund 72 ergibt das 577. Vernünftiges Unsicherheitsband: 550 bis 610.",
       "Historische Werte müssen nicht monoton wachsen. AniCura nennt für 2024 selbst 79 Standorte und für September 2026 78; Standorte können geschlossen, zusammengelegt oder aus der Gruppe ausgeschieden sein. Der ältere Höchstwert wird deshalb nicht fortgeschrieben.",
       "Die oft zitierte Angabe, 2022 seien „nicht mehr als 200 Praxen in Investorenhand“ gewesen, taugt hier nicht zur Gegenprobe: Sie meint nur klassische Konzern- und Private-Equity-Standorte, während diese Reihe auch unabhängige Betreibergruppen, Pferdegruppen und Neugründer erfasst.",
     ],
     headers: KETTEN.headers,
     rows: KETTEN.rows,
-    suggested: { chartType: 'line', topN: 8, decimals: 0, primaryAxisLabel: 'Standorte' },
+    suggested: {
+      chartType: 'line', topN: 6, decimals: 0, primaryAxisLabel: 'Standorte',
+      // Die drei Großen klar unterscheidbar, die Restgruppe bewusst grau – sie ist keine Kette.
+      colors: { 'IVC Evidensia': '#0f4c5c', 'Tierarzt Plus Partner': '#e36414', 'AniCura': '#20b2aa', 'Weitere Gruppen': '#a3aab2', 'VetGruppen (Vetopia)': '#7b5ea7', 'VetPartners': '#c0392b', 'Altano (Pferde)': '#8a6d3b' },
+    },
   },
 ]

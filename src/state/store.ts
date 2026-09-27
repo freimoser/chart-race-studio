@@ -107,7 +107,7 @@ export const useApp = create<AppState>()(
           loadedSampleId: sample.id,
           settings: {
             ...s.settings,
-            categories: {},
+            categories: Object.fromEntries(Object.entries(sug.colors ?? {}).map(([n, color]) => [n, { color }])),
             title: sample.title,
             subtitle: sample.subtitle,
             source: sample.source,

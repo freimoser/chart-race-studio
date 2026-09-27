@@ -210,10 +210,16 @@ const praxisNeu = ['2019', '2020', '2021', '2022', '2023', '2024', '2025'].flatM
 // (B belegt, B~ rund, B≥ Untergrenze, B/P Praxenzahl als Näherung, S geschätzt, 0 existierte nicht).
 // Die Marker stehen in data/raw/ds12-ketten-modell.json je Zelle; die Tabelle hier trägt nur die Zahlen.
 // TOTAL ist die Modellschätzung des Gesamtmarkts, verankert am Tierärzte Atlas (August 2024, rund 450).
-const MODELL_NAMEN = ['TOTAL Deutschland', 'IVC Evidensia', 'Tierarzt Plus Partner', 'AniCura', 'VetPartners',
+// Die Gesamtsumme heißt nach dem Datenstandard „Summe: …“: Sie ist keine Gruppe, sondern läuft als große
+// Zahl über dem Diagramm mit. Als eigene Linie drückte sie die Achse auf 600 und quetschte alle Gruppen
+// unter 120 zusammen.
+const MODELL_NAMEN = ['IVC Evidensia', 'Tierarzt Plus Partner', 'AniCura', 'VetPartners',
   'VetGruppen (Vetopia)', 'Altano (Pferde)', 'TeamVet', 'Veternicum Nesto', 'SmartVet → Medivet', 'Rex', 'filu',
-  'Cadomo Vets', 'Wolf & Tiger', 'activet (bis 2022)', 'Weitere Gruppen (Long Tail)']
-const w10 = wide(byMetric(d12, 'Standorte je Gruppe'), { names: MODELL_NAMEN })
+  'Cadomo Vets', 'Wolf & Tiger', 'activet (bis 2022)', 'Weitere Gruppen (Long Tail)', 'TOTAL Deutschland']
+const w10 = wide(byMetric(d12, 'Standorte je Gruppe'), {
+  names: MODELL_NAMEN,
+  rename: { 'TOTAL Deutschland': 'Summe: Alle Gruppen (Standorte)', 'Weitere Gruppen (Long Tail)': 'Weitere Gruppen' },
+})
 
 // Sammelreihe „Ketten“ für den Schwerpunkte-Chart: dieselbe TOTAL-Reihe wie im Ketten-Datensatz und im
 // Artikel. Vorher stand hier ein eigener Fünf-Gruppen-Korb – das ergab für dasselbe Wort zwei verschiedene

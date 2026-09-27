@@ -4,12 +4,15 @@ import type { ChartSettings } from '../settings'
 import { paletteColor } from '../palettes'
 import type { ChartInput } from './types'
 import type { Rect } from '../layout'
+import { istSumme } from './geo'
 
 /**
  * Baut aus Datensatz + Einstellungen die Eingabe für die Chart-Renderer.
  * Wird identisch für Vorschau und Export benutzt.
  */
 export function prepareChartInput(ds: Dataset, s: ChartSettings, chart: Rect, labelSize: number, fontFamily: string): ChartInput {
+  // Balkenrennen: Summenspalten (Datenstandard) wären ein Balken, der alle anderen überragt – ausblenden.
+  if (s.chartType === 'bar') ds = { ...ds, names: ds.names.filter((n) => !istSumme(n)), rows: ds.rows.filter((r) => !istSumme(r.name)) }
   const { periods, rows } = fillAndInterpolate(ds, s.gapFill, s.chartType === 'bar' ? s.subSteps : 1, s.chartType === 'bar')
   const colors: Record<string, string> = {}
   const images: Record<string, string> = {}
