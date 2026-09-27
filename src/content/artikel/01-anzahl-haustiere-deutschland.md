@@ -67,7 +67,7 @@ Zwei Einschränkungen gehören dazu. Die 20 Jahre überspannen den Methodenwechs
 
 ### Was ist das beliebteste Haustier in Deutschland?
 
-Gemessen an der Zahl der Tiere die Katze, mit 15,7 Millionen im Jahr 2025. Sie führt seit 2000 durchgehend, vor dem Hund mit 10,0 Millionen.
+Gemessen an der Zahl der Tiere die Katze, mit 15,7 Millionen im Jahr 2025. Sie führt seit 2000 durchgehend, vor dem Hund mit 10,0 Millionen. Wie das Verhältnis in anderen Ländern aussieht, steht im Artikel [Mehr Katzen oder Hunde?](mehr-katzen-oder-hunde.html).
 
 ### Wie viele Hunde und Katzen gab es im Jahr 2000 in Deutschland?
 

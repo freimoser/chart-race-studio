@@ -14,7 +14,8 @@
     "icons": "node scripts/gen-icons.mjs",
     "preview": "vite preview",
     "artikel": "node scripts/build-artikel.mjs --entwuerfe",
-    "check:glaette": "node scripts/pruefe-glaette.mjs"
+    "check:glaette": "node scripts/pruefe-glaette.mjs",
+    "check:links": "node scripts/pruefe-verlinkung.mjs"
   },
   "dependencies": {
     "@ffmpeg/ffmpeg": "^0.12.15",

@@ -244,7 +244,7 @@ ${entwurf ? `    <p class="entwurf">Entwurf · ${a.bereit ? 'bereit zur Freigabe
         ${bild}
 ${rumpf.split('\n').map((z) => '        ' + z).join('\n')}
         <aside class="kasten">
-${csv ? `          <p><a href="${csv}" download>Daten als CSV herunterladen</a> · ${esc(ds.titel)}</p>\n` : ''}${post.sampleId ? `          <p><a href="${tiefe}?beispiel=${post.sampleId}">Datensatz im Studio öffnen und selbst animieren</a></p>\n` : ''}${post.linkedInUrl ? `          <p><a href="${post.linkedInUrl}" rel="noopener">Zum Beitrag auf LinkedIn</a></p>\n` : ''}${verweise.length ? `          <p>Baut auf: ${verweise.join(' · ')}</p>\n` : ''}          <p><a href="${tiefe}artikel/datenherkunft.html">Woher die Zahlen kommen</a></p>
+${csv ? `          <p><a href="${csv}" download>Daten als CSV herunterladen</a> · ${esc(ds.titel)}</p>\n` : ''}${post.sampleId ? `          <p><a href="${tiefe}?beispiel=${post.sampleId}">Datensatz im Studio öffnen und selbst animieren</a></p>\n` : ''}${post.linkedInUrl ? `          <p><a href="${post.linkedInUrl}" rel="noopener">Zum Beitrag auf LinkedIn</a></p>\n` : ''}${verweise.length ? `          <p>Baut auf: ${verweise.join(' · ')}</p>\n` : ''}          <p><a href="${tiefe}artikel/datenherkunft.html">Woher die Zahlen kommen</a> · <a href="${entwurf ? '../' : './'}">Alle Artikel von ${esc(L.siteName)}</a></p>
         </aside>
       </article>
     </main>
@@ -274,7 +274,7 @@ function uebersicht(live) {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tiermedizin in Zahlen: Tierärzte, Praxen und Haustiere in Deutschland</title>
+    <title>Tiermedizin in Zahlen: Tierärzte, Praxen, Haustiere</title>
     <meta name="description" content="Wie viele Tierärzte, Tierarztpraxen und Haustiere gibt es in Deutschland? Zeitreihen seit 1991, jede Zahl mit Jahr und Quelle." />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="../favicon-96.png" sizes="96x96" type="image/png" />

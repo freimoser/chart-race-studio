@@ -48,7 +48,11 @@ jobs:
           VITE_CF_BEACON: ${{ vars.VITE_CF_BEACON }}
           VITE_GSC_VERIFICATION: ${{ vars.VITE_GSC_VERIFICATION }}
         run: npm run check:launch
-      - run: cp dist/index.html dist/404.html
+      - name: Interne Verlinkung prüfen
+        # Jede indexierbare Seite braucht mindestens drei eingehende Links aus dem Hauptteil.
+        run: npm run check:links
+      # Keine Kopie von index.html als 404.html: Es gibt eine eigene 404-Seite mit noindex, und das Studio
+      # nutzt Hash-Routen, braucht also keinen SPA-Fallback. Die Kopie überschrieb die Fehlerseite.
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

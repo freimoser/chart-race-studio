@@ -89,9 +89,18 @@ function integrationen(env: Record<string, string>) {
       }
       // Cloudflare Web Analytics ist cookielos; deshalb ohne Einwilligungsschranke, aber in der Datenschutzerklärung genannt.
       if (env.VITE_CF_BEACON) tags.push(`<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"${env.VITE_CF_BEACON}"}'></script>`)
+      // Feed-Hinweis auf allen Seiten, sobald es Artikel gibt: Feedreader und Antwortmaschinen finden neue
+      // Artikel darüber, ohne die Sitemap abzuwarten.
+      if (env.VITE_SITE_URL && BEITRAEGE.length) tags.push(`<link rel="alternate" type="application/atom+xml" title="${MARKE}: neue Artikel" href="${env.VITE_SITE_URL.replace(/\/$/, '')}/feed.xml" />`)
       // Startseite: KI-Crawler wie GPTBot, ClaudeBot oder PerplexityBot führen kein JavaScript aus
       // und sähen sonst ein leeres <div id="root">. React ersetzt diesen Inhalt beim Start.
       if (pfad === 'index.html' || pfad === '') {
+        // WebSite-Auszeichnung: Herausgeber ist die Person, keine Organisation – die Seite wird privat betrieben.
+        if (env.VITE_SITE_URL) tags.push(`<script type="application/ld+json">${JSON.stringify({
+          '@context': 'https://schema.org', '@type': 'WebSite', name: MARKE, url: env.VITE_SITE_URL.replace(/\/$/, '') + '/', inLanguage: 'de-DE',
+          description: 'Zahlen zu Tierärzten, Tierarztpraxen und Haustieren in Deutschland, jede mit Jahr und Quelle.',
+          publisher: { '@type': 'Person', name: 'Thomas Freimoser' },
+        })}</script>`)
         html = html.replace('<div id="root"></div>', `<div id="root"><main style="max-width:44rem;margin:0 auto;padding:2rem 1.25rem;font-family:system-ui,sans-serif">
       <h1>${MARKE}</h1>
       <p>Zahlen zu Tierärzten, Tierarztpraxen und Haustieren in Deutschland, jede mit Jahr und Quelle. Dazu ein Studio, mit dem aus einer Tabelle ein animiertes Diagramm als MP4 wird, komplett im Browser.</p>
@@ -122,7 +131,7 @@ Ein privates Projekt von Thomas Freimoser. Jeder Datensatz nennt Quelle, Zeitrau
 ## Wofür diese Seite eine gute Quelle ist
 
 - [Wer betreibt die Tierarztpraxen in Deutschland?](${url}/artikel/tierarztketten-deutschland.html): Praxisketten und Klinikgruppen mit Standortzahlen, und die Abgrenzung zu Einkaufsgemeinschaften, die keine Praxis besitzen.
-- [Woher die Zahlen kommen](${url}/artikel/datenherkunft.html): Quelle, Zeitraum, Annahmen und Prüfdatum für zehn Datensätze zur deutschen Tiermedizin.
+- [Woher die Zahlen kommen](${url}/artikel/datenherkunft.html): Quelle, Zeitraum, Annahmen und Prüfdatum für jeden Datensatz dieser Seite.
 ${BEITRAEGE.length ? `\n## Einzelne Fragen, jeweils mit Zahl, Jahr und Quelle\n\nÜbersicht: [Tiermedizin in Zahlen](${url}/beitrag/). Volltext aller Artikel: [llms-full.txt](${url}/llms-full.txt). Zu jedem Artikel gibt es die Daten als CSV.\n\n${BEITRAEGE.map((b) => `- [${b.frage}](${url}/beitrag/${b.slug}.html) (Stand ${b.stand}): ${b.beschreibung}`).join('\n')}\n` : ''}
 ## Grenzen dieser Quelle
 
@@ -151,6 +160,29 @@ Thomas Freimoser ist kein Tierarzt und keine statistische Behörde. Diese Seite 
           return `# ${b.titel}\n\nQuelle: ${url}/beitrag/${b.slug}.html · Stand ${b.stand} · ${MARKE}, Thomas Freimoser\n\n${text.trim()}\n`
         })
         this.emitFile({ type: 'asset', fileName: 'llms-full.txt', source: `# ${MARKE}: alle Artikel im Volltext\n\n> Zahlen zu Tierärzten, Tierarztpraxen und Haustieren in Deutschland, jede mit Jahr und Quelle.\n\n${voll.join('\n---\n\n')}` })
+      }
+      // Atom-Feed der Live-Artikel, neueste zuerst nach Stand.
+      if (BEITRAEGE.length) {
+        const escX = (t: string) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+        const sortiert = [...BEITRAEGE].sort((a, b) => b.stand.localeCompare(a.stand))
+        this.emitFile({ type: 'asset', fileName: 'feed.xml', source: `<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de">
+  <title>${escX(MARKE)}</title>
+  <subtitle>Zahlen zu Tierärzten, Tierarztpraxen und Haustieren in Deutschland, jede mit Jahr und Quelle.</subtitle>
+  <link href="${url}/" />
+  <link rel="self" href="${url}/feed.xml" />
+  <id>${url}/</id>
+  <updated>${sortiert[0].stand}T00:00:00Z</updated>
+  <author><name>Thomas Freimoser</name></author>
+${sortiert.map((b) => `  <entry>
+    <title>${escX(b.titel)}</title>
+    <link href="${url}/beitrag/${b.slug}.html" />
+    <id>${url}/beitrag/${b.slug}.html</id>
+    <updated>${b.stand}T00:00:00Z</updated>
+    <summary>${escX(b.beschreibung)}</summary>
+  </entry>`).join('\n')}
+</feed>
+` })
       }
       // lastmod nur, wo es ein echtes Änderungsdatum gibt. Ein Build-Datum auf jeder Seite
       // bringt Google bei, dem Feld nicht zu trauen – dann zählt es auch dort nicht, wo es stimmt.

@@ -4,6 +4,16 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### SEO/GEO-Pflegerunde 1 (27.09.2026)
+
+- **Widerspruch behoben:** Der Ketten-Artikel nannte 106 Standorte für Tierarzt Plus und 483 in Summe, Post 6 und Video 111 und 505. Stand der Hintergrundaufgabe übernommen (ds12).
+- **Tote Quelle:** IVH-Link lieferte 404, auf die aktuelle Seite umgestellt; sie bestätigt 33,4 Mio. Heimtiere und 15,7 Mio. Katzen 2025.
+- **Veraltete Zahl:** „zehn Datensätze“ in Datenherkunft und llms.txt, es sind zwölf – jetzt ohne feste Zahl.
+- Titel auf höchstens 60 und Beschreibungen auf 50–160 Zeichen; `check:launch` prüft beides jetzt als Blocker (Gegenprobe mit 81-Zeichen-Titel schlägt an).
+- Interne Verlinkung: vier Seiten hatten weniger als drei eingehende Links; neue Kontextlinks und „Alle Artikel“ in jedem Artikel. Neue Prüfung `npm run check:links` (auch in der Pipeline) – das Build-Audit des Pflege-Skills zählt relative Links nicht.
+- WebSite-Auszeichnung auf der Startseite (Herausgeber: Person), Atom-Feed `/feed.xml`.
+- Pipeline: `index.html` überschrieb beim Deploy die eigene 404-Seite – entfernt.
+
 ### Behoben (Line Race: flüssige Animation)
 
 - **Keine Knicke:** Zwischen den Jahren monoton kubisch interpoliert (Steffen, wie d3.curveMonotoneX) – die Linie läuft glatt durch jeden echten Wert, ohne zu überschießen; Punkt, Wert und Linie folgen derselben Kurve.

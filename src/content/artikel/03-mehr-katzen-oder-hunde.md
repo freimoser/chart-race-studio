@@ -1,7 +1,7 @@
 ---
 post: 3
 slug: mehr-katzen-oder-hunde
-titel: Mehr Katzen oder Hunde? Die Welt und Deutschland im Vergleich
+titel: Mehr Katzen oder Hunde? Welt und Deutschland im Vergleich
 beschreibung: Weltweit leben mehr Hunde als Katzen, in Deutschland mehr Katzen. In 84 von 197 Ländern verschiebt sich das Verhältnis seit 2000, fast immer zur Katze.
 frage: Gibt es mehr Katzen oder Hunde?
 suchbegriffe: gibt es mehr katzen oder hunde, gibt es mehr katzen oder hunde auf der welt, gibt es mehr katzen oder hunde in deutschland, wie viele hunde gibt es auf der welt, wie viele katzen gibt es in deutschland
@@ -35,7 +35,7 @@ Die Zahl der Länder mit Hundemehrheit ändert sich dabei kaum, von 130 auf 133.
 
 *Hundeanteil an Hunden und Katzen zusammen. Werte aus dem Datensatz, 2026 ist Projektion.*
 
-Die Ausnahme sind vor allem Nord- und Südamerika. In den USA wächst der Hundeanteil, in Brasilien bleibt er seit über zwanzig Jahren bei rund 69 Prozent – so zeigen es die nationalen Erhebungen von USDA, IBGE und Instituto Pet Brasil.
+Die Ausnahme sind vor allem Nord- und Südamerika. In den USA wächst der Hundeanteil, in Brasilien bleibt er seit über zwanzig Jahren bei rund 69 Prozent – so zeigen es die nationalen Erhebungen von USDA, IBGE und Instituto Pet Brasil. Wie eine solche Karte aus einer eigenen Tabelle entsteht, zeigt die [Anleitung zur animierten Weltkarte](weltkarte-laender-einfaerben-animieren.html).
 
 ## Deutschland: Katzenland seit den Neunzigern
 

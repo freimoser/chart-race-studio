@@ -69,6 +69,14 @@ for (const p of inhaltsSeiten) {
   for (const [, roh] of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
     try { JSON.parse(roh) } catch { blocker.push(`${route(p)}: strukturierte Daten sind kein gültiges JSON.`) }
   }
+  // Grenzen gegen Google, nicht gegen den eigenen Code: Titel werden bei rund 60 Zeichen gekürzt,
+  // Beschreibungen bei rund 160. Vorher galten hier 70 – dieselbe zu großzügige Zahl wie im Erzeuger.
+  if (!/name="robots" content="noindex/.test(html) && !p.endsWith('404.html')) {
+    const titel = (html.match(/<title>([^<]*)<\/title>/) ?? [])[1]?.replace(/&amp;/g, '&') ?? ''
+    const desc = (html.match(/<meta name="description" content="([^"]*)"/) ?? [])[1]?.replace(/&amp;/g, '&') ?? ''
+    if ([...titel].length > 60) blocker.push(`${route(p)}: Titel mit ${[...titel].length} Zeichen über 60 – Google kürzt ihn.`)
+    if ([...desc].length > 160 || [...desc].length < 50) blocker.push(`${route(p)}: Beschreibung mit ${[...desc].length} Zeichen außerhalb 50–160.`)
+  }
   if (!/property="og:image"/.test(html) && !/name="robots" content="noindex/.test(html)) hinweise.push(`${route(p)}: kein og:image – beim Teilen auf LinkedIn erscheint nur eine graue Kachel.`)
 }
 

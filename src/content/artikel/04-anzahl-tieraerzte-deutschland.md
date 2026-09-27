@@ -1,7 +1,7 @@
 ---
 post: 4
 slug: anzahl-tieraerzte-deutschland
-titel: Wie viele Tierärzte gibt es in Deutschland? Die Zahlen für 2025
+titel: Wie viele Tierärzte gibt es in Deutschland? Zahlen 2025
 beschreibung: Ende 2025 waren 34.476 Tierärzte in Deutschland tätig, 46.089 in einer Kammer. Erstmals arbeiten mehr Angestellte als Inhaber in den Praxen.
 frage: Wie viele Tierärzte gibt es in Deutschland?
 suchbegriffe: wie viele tierärzte gibt es in deutschland, anzahl tierärzte deutschland, tierärzte in deutschland anzahl, statistik tierärzte deutschland, angestellte tierärzte
@@ -38,7 +38,7 @@ Der Beruf selbst schrumpft nicht. Insgesamt waren 2025 laut Bundestierärztekamm
 
 Die Statistik nennt keine Gründe, aber sie zeigt, wo sich die Gruppen unterscheiden. Laut Tierärzte Atlas Deutschland 2024 sind 82 Prozent der angestellten Tierärztinnen und Tierärzte Frauen, unter den Selbstständigen 58 Prozent. Und Ende 2023 arbeitete jede zweite Frau in Teilzeit, aber nur 13 Prozent der Männer. Eine Anstellung passt offenbar besser zu dem Arbeitsmodell, das viele im Beruf suchen.
 
-Offen bleibt, welche Rolle die Praxisgruppen spielen, die seit 2016 in Deutschland Praxen kaufen und gründen. Die Kammerstatistik erfasst Eigentum nicht, der Zusammenhang lässt sich aus ihr also nicht ablesen. Was über diesen Markt belegt ist, steht im Artikel [Wer betreibt die Tierarztpraxen in Deutschland?](../artikel/tierarztketten-deutschland.html).
+Offen bleibt, welche Rolle die Praxisgruppen spielen, die seit 2016 in Deutschland Praxen kaufen und gründen. Die Kammerstatistik erfasst Eigentum nicht, der Zusammenhang lässt sich aus ihr also nicht ablesen. Was über diesen Markt belegt ist, steht im Artikel [Wer betreibt die Tierarztpraxen in Deutschland?](../artikel/tierarztketten-deutschland.html), welchen Anteil an allen Praxen das ausmacht, im Artikel [Anteil der Tierarztketten](anteil-tierarztketten-deutschland.html).
 
 ## Was die Zahl nicht sagt
 
