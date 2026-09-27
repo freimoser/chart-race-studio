@@ -1,7 +1,7 @@
 ---
 post: 21
 slug: kleintierpraxen-bundeslaender
-titel: Kleintierpraxen je Bundesland – wo die Kleintiermedizin wächst
+titel: Kleintierpraxen je Bundesland: wo Kleintiermedizin wächst
 beschreibung: NRW (1.272) und Bayern (1.062) haben die meisten Inhaber reiner Kleintierpraxen. Am stärksten wachsen Brandenburg und Rheinland-Pfalz, fast plus 80 Prozent.
 frage: In welchen Bundesländern gibt es die meisten Kleintierpraxen?
 suchbegriffe: kleintierpraxis bundesland, kleintierpraxen deutschland anzahl, kleintiertierarzt statistik, niedergelassene tierärzte bundesland

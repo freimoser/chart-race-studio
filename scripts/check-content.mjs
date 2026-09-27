@@ -105,7 +105,7 @@ for (const f of entwuerfe) {
   const wo = `Artikel ${f}`
   if (!f.startsWith(String(nr).padStart(2, '0') + '-')) melde('mangel', wo, `Dateiname passt nicht zu post: ${kopf.post}`)
   if ((kopf.beschreibung ?? '').length > 160) melde('mangel', wo, `Beschreibung mit ${kopf.beschreibung.length} Zeichen über 160 – Google schneidet ab`)
-  if ((kopf.titel ?? '').length > 70) melde('hinweis', wo, `Titel mit ${kopf.titel.length} Zeichen über 70`)
+  if ([...(kopf.titel ?? '')].length > 60) melde('mangel', wo, `Titel mit ${[...kopf.titel].length} Zeichen über 60 – Google kürzt bei rund 60`)
   const erster = text.trim().split(/\n{2,}/)[0] ?? ''
   if (!/\d/.test(erster)) melde('mangel', wo, 'erster Absatz ohne Zahl – er soll die Frage beantworten')
   for (const pflicht of ['## Das Wichtigste in Kürze', '## Was die Zahl nicht sagt', '## Quelle und Methode']) {

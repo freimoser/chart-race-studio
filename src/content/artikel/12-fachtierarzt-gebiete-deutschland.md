@@ -1,7 +1,7 @@
 ---
 post: 12
 slug: fachtierarzt-gebiete-deutschland
-titel: Fachtierärzte in Deutschland: welche Gebiete wachsen, 2007–2025
+titel: Fachtierärzte in Deutschland: welche Gebiete wachsen
 beschreibung: Ende 2025: 1.950 Fachtierarzt-Titel für Öffentliches Veterinärwesen, 1.410 für Kleintiere, 773 für Pferde. Elf Gebiete seit 2007 im Vergleich.
 frage: Auf welche Fachgebiete spezialisieren sich Tierärzte in Deutschland?
 suchbegriffe: fachtierarzt deutschland, fachtierarzt gebiete, fachtierärzte anzahl, spezialisierung tierarzt

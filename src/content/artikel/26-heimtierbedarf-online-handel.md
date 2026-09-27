@@ -1,7 +1,7 @@
 ---
 post: 26
 slug: heimtierbedarf-online-handel
-titel: Haustierbedarf online: Umsatz 2013 bis 2025 und der Wechsel 2022
+titel: Haustierbedarf online: Umsatz 2013 bis 2025
 beschreibung: Der Online-Handel mit Haustierbedarf wuchs von 400 Mio. Euro (2013) auf 1.521 Mio. (2025) und überholte 2022 das Zubehör im Laden.
 frage: Wie viel Umsatz macht der Online-Handel mit Haustierbedarf?
 suchbegriffe: ausgaben haustiere deutschland, haustierbedarf online, heimtierbedarf online-handel umsatz

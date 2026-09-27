@@ -1,7 +1,7 @@
 ---
 post: 19
 slug: franzoesische-bulldogge-statistik
-titel: Französische Bulldogge in Deutschland – was die Statistik zeigt
+titel: Französische Bulldogge in Deutschland: was die Zahlen zeigen
 beschreibung: Im VDH-Zuchtbuch stehen 2025 nur 43 Welpen der Französischen Bulldogge, 2010 waren es 325. Warum die Verbandszahl so wenig über die Rasse sagt.
 frage: Wie viele Französische Bulldoggen gibt es in Deutschland?
 suchbegriffe: französische bulldogge deutschland anzahl, französische bulldogge statistik, vdh welpenstatistik französische bulldogge, beliebteste hunderassen deutschland

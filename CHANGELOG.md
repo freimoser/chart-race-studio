@@ -6,6 +6,10 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ### SEO/GEO-Pflegerunde 1 (27.09.2026)
 
+- Artikelentwürfe 17 (VDH-Gesamtzahlen jetzt belegt in DATASETS.md), 24 (Aufteilung Nutztiere/Pferde ab 2019: 718 reine Nutztier-, 989 reine Pferdepraxen 2025) und 30 (Adresse, Quellcode) sind fertig; 27 von 31 bereit.
+- 14 Entwurfstitel über 60 Zeichen gekürzt; `check:content` meldet Titel über 60 jetzt als Mangel statt ab 70 als Hinweis.
+- Datendoku-Korrekturen und die Rinder-Deutschlandzeile aus den Hintergrundaufgaben übernommen.
+
 - **Widerspruch behoben:** Der Ketten-Artikel nannte 106 Standorte für Tierarzt Plus und 483 in Summe, Post 6 und Video 111 und 505. Stand der Hintergrundaufgabe übernommen (ds12).
 - **Tote Quelle:** IVH-Link lieferte 404, auf die aktuelle Seite umgestellt; sie bestätigt 33,4 Mio. Heimtiere und 15,7 Mio. Katzen 2025.
 - **Veraltete Zahl:** „zehn Datensätze“ in Datenherkunft und llms.txt, es sind zwölf – jetzt ohne feste Zahl.

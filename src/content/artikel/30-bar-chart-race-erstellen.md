@@ -5,8 +5,8 @@ titel: Bar Chart Race erstellen: kostenlos im Browser, ohne Upload
 beschreibung: Animierte Balken-, Linien- und Kartenrennen aus einer Tabelle, als MP4 in vier Formaten. Läuft im Browser, Open Source unter MIT, 12 Beispieldatensätze.
 frage: Wie erstellt man ein Bar Chart Race kostenlos?
 suchbegriffe: bar chart race erstellen, line chart race, animiertes diagramm video, chart race mp4
-stand: 2026-09-23
-bereit: nein
+stand: 2026-09-28
+bereit: ja
 ---
 Die Videos dieser Reihe sind mit dem **Studio von Tiermedizin in Zahlen** entstanden, einem selbstgebauten Werkzeug, das aus einer Tabelle animierte Balken-, Linien- und Kartenrennen macht und sie als **MP4 mit 30 Bildern pro Sekunde** in **vier Formaten** exportiert. Es läuft vollständig im Browser, braucht kein Konto und steht als Open Source unter der **MIT-Lizenz**.
 
@@ -43,7 +43,6 @@ Animierte Diagramme im Browser laufen normalerweise in Echtzeit. Ein langsamer R
 
 Von den 29 Beiträgen vor diesem stützen sich 23 auf einen der Beispieldatensätze (berechnet aus dem Redaktionsplan). Die übrigen sechs kamen ohne eigenes Video aus, weil eine Reihe fehlt oder, wie beim Beitrag [Was die Statistik nicht sagt](statistik-tieraerzte-grenzen.html), ein Text besser passt. Jeder Datensatz lässt sich im Werkzeug öffnen, anders einstellen und neu exportieren. Woher jede Zahl stammt, steht in der [Datenherkunft](../artikel/datenherkunft.html).
 
-**Offen:** Der Aufhänger im Redaktionsplan spricht von „allen 29 Videos“. Nach dem Plan sind es 23. Vor der Veröffentlichung den tatsächlichen Stand zählen.
 
 ## Was die Zahl nicht sagt
 
@@ -64,6 +63,6 @@ Nein. Tabellen werden im Browser verarbeitet, das Video entsteht auf dem eigenen
 
 ## Quelle und Methode
 
-Beschreibung nach Quellcode und Projektdokumentation, Stand 23.09.2026. Lizenz: MIT. Die Balkenanimation beruht auf der Bibliothek racing-bars von Hatem Hosny, ebenfalls MIT; Linien- und Kartenrennen sind eigene Renderer auf Basis von D3. Der MP4-Export nutzt WebCodecs mit H.264. Gezählt sind die Beispieldatensätze im Werkzeug und die Beiträge mit Datensatz im Redaktionsplan.
+Beschreibung nach Quellcode und Projektdokumentation, Stand 28.09.2026. Lizenz: MIT. Die Balkenanimation beruht auf der Bibliothek racing-bars von Hatem Hosny, ebenfalls MIT; Linien- und Kartenrennen sind eigene Renderer auf Basis von D3. Der MP4-Export nutzt WebCodecs mit H.264. Gezählt sind die Beispieldatensätze im Werkzeug und die Beiträge mit Datensatz im Redaktionsplan.
 
-**Offen:** Adresse der Seite und Link zum Quellcode eintragen, sobald beides öffentlich ist. Den Namen des Werkzeugs prüfen, falls die Marke bis dahin wechselt.
+Das Studio läuft unter [tiermedizin-in-zahlen.org](https://tiermedizin-in-zahlen.org/), der Quellcode liegt öffentlich auf [GitHub](https://github.com/freimoser/chart-race-studio).

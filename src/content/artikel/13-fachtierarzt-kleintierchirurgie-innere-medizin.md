@@ -1,7 +1,7 @@
 ---
 post: 13
 slug: fachtierarzt-kleintierchirurgie-innere-medizin
-titel: Fachtierarzt Kleintierchirurgie und Innere Medizin, 2007–2025
+titel: Fachtierarzt Kleintierchirurgie und Innere Medizin
 beschreibung: Kleintierchirurgie: 4 Fachtierarzt-Titel 2007, 194 Ende 2025. Innere Medizin der Kleintiere: 54 (2018) auf 165. Die am schnellsten wachsenden Gebiete.
 frage: Wie viele Fachtierärzte für Kleintierchirurgie gibt es in Deutschland?
 suchbegriffe: fachtierarzt kleintierchirurgie, fachtierarzt innere medizin kleintiere, tierarzt spezialist chirurgie, fachtierarzt kleintiere

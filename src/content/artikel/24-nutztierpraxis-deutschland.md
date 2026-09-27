@@ -1,14 +1,14 @@
 ---
 post: 24
 slug: nutztierpraxis-deutschland
-titel: Nutztierpraxen in Deutschland: 1991 bis 2018 fast halbiert
-beschreibung: 1991 führten 1.859 Tierärzte eine reine Nutz- oder Großtierpraxis, 2018 nur noch 971. Warum der Anstieg ab 2019 kein Comeback belegt.
+titel: Nutztierpraxen in Deutschland: 718 im Jahr 2025
+beschreibung: 2025 führten 718 Tierärzte eine reine Nutztierpraxis, 989 eine reine Pferdepraxis. 1991 waren es 1.859 Nutz- und Großtierpraxen zusammen.
 frage: Wie viele reine Nutztierpraxen gibt es in Deutschland?
 suchbegriffe: statistik tierärzte deutschland, wie viele niedergelassene tierärzte gibt es in deutschland
-stand: 2026-09-23
-bereit: nein
+stand: 2026-09-28
+bereit: ja
 ---
-1991 führten in Deutschland **1.859 Tierärztinnen und Tierärzte eine reine Nutz- oder Großtierpraxis**, 2018 waren es noch **971** – ein Rückgang um 47,8 Prozent (berechnet aus der Statistik der Bundestierärztekammer). Unter allen Inhaberinnen und Inhabern, die ihren Schwerpunkt angaben, sank ihr Anteil von 22,6 auf 8,3 Prozent. Die Zahlen ab 2019 sind damit nicht vergleichbar, weil die Kammer seitdem Pferde getrennt abfragt.
+1991 führten in Deutschland **1.859 Tierärztinnen und Tierärzte eine reine Nutz- oder Großtierpraxis**, 2018 waren es noch **971** – ein Rückgang um 47,8 Prozent (berechnet aus der Statistik der Bundestierärztekammer). Unter allen Inhaberinnen und Inhabern, die ihren Schwerpunkt angaben, sank ihr Anteil von 22,6 auf 8,3 Prozent. Seit 2019 fragt die Kammer Pferde getrennt ab: Ende 2025 führten **718 Inhaberinnen und Inhaber eine reine Nutztierpraxis**, 989 eine reine Pferdepraxis.
 
 ## Das Wichtigste in Kürze
 
@@ -44,7 +44,18 @@ Am saubersten ist der Abschnitt 2007 bis 2018, weil die Kategorien darin gleich 
 
 Innerhalb der neuen Abfrage steigt der Anteil der Gruppe an allen Angaben von 15,6 Prozent (2019) auf 17,7 Prozent (2025), berechnet. Ob dahinter mehr Pferdepraxen oder mehr Nutztierpraxen stehen, zeigt die zusammengefasste Reihe nicht.
 
-**Offen:** Aufteilung 2019 bis 2025 nach Nutztieren, Pferden sowie Nutztieren und Pferden. Die Einzelwerte sind in der Recherche dokumentiert (docs/DATASETS-RESEARCH-KLEINTIER.md, Segment IV), stehen aber noch nicht in data.ts oder docs/DATASETS.md. Erst mit ihnen lässt sich die Titelfrage für die Jahre ab 2019 beantworten.
+Die Kammer weist die drei Kategorien seit 2019 aber auch einzeln aus, und die Aufteilung beantwortet die Frage: Es sind die Pferde, nicht die Nutztiere.
+
+| Jahr | Nur Nutztiere | Nur Pferde | Nutztiere und Pferde | zusammen |
+|---|---:|---:|---:|---:|
+| 2019 | 838 | 693 | 182 | 1.713 |
+| 2021 | 768 | 827 | 192 | 1.787 |
+| 2023 | 705 | 891 | 213 | 1.809 |
+| 2025 | 718 | 989 | 225 | 1.932 |
+
+*Praxisinhaberinnen und Praxisinhaber nach Tierart, Statistik der Bundestierärztekammer, Tab. 2, Block Niedergelassene.*
+
+Reine Nutztierpraxen führten Ende 2025 noch **718 Inhaberinnen und Inhaber**, 14,3 Prozent weniger als 2019 (berechnet). Reine Pferdepraxen wuchsen im selben Zeitraum von 693 auf 989, um 42,7 Prozent. Seit 2021 gibt es mehr reine Pferde- als reine Nutztierpraxen. Der scheinbare Anstieg der zusammengefassten Gruppe ist also ein Pferdeeffekt; die Nutztierpraxis im engeren Sinn schrumpft weiter.
 
 ## Was neben der Praxisstatistik schrumpft
 
@@ -54,7 +65,8 @@ Auch die Fachtierarzt-Titel zeigen, dass „Nutz- und Großtiere“ zwei gegenl�
 
 ## Was die Zahl nicht sagt
 
-- **Bis 2018 stecken die Pferdepraxen in der Zahl.** Die 971 von 2018 umfassen auch reine Pferdepraxen. Wie stark die Nutztierpraxis im engeren Sinn geschrumpft ist, lässt sich aus dieser Reihe nicht ablesen.
+- **Bis 2018 stecken die Pferdepraxen in der Zahl.** Die 971 von 2018 umfassen auch reine Pferdepraxen. Wie stark die Nutztierpraxis im engeren Sinn vor 2019 geschrumpft ist, lässt sich nicht ablesen; getrennt gezählt wird erst seit 2019.
+- **Nicht alle antworten, 2024 doppelt.** Seit 2019 fehlen in der Aufteilung je nach Jahr 3 bis 9 Prozent der Inhaber. 2024 übersteigt die Summe der Kategorien die Zahl der Inhaber, dort waren Mehrfachnennungen möglich; das Jahr fehlt deshalb in der Tabelle.
 - **Nutztiere werden nicht nur in reinen Nutztierpraxen behandelt.** 2018 gaben 4.554 Inhaber eine gemischte Praxis für Nutz- und Kleintiere an, fast fünfmal so viele wie reine Nutztierpraxen.
 - **Gezählt werden Inhaber, keine Praxen** und keine angestellten Tierärztinnen und Tierärzte.
 - **1990 ist nicht der Startpunkt.** Die Zeile für 1990 mit 1.206 reinen Großtierpraxen umfasst nur die alten Bundesländer und ist mit den gesamtdeutschen Werten ab 1991 nicht vergleichbar.

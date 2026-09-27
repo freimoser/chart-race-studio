@@ -1,7 +1,7 @@
 ---
 post: 14
 slug: fachtierarzt-rinder-schweine-lebensmittel
-titel: Fachtierarzt Rinder, Schweine, Lebensmittel: Rückgang seit 2007
+titel: Fachtierärzte für Rinder und Schweine: Rückgang seit 2007
 beschreibung: Fachtierarzt-Titel für Rinder fielen von 860 (2007) auf 596, für Lebensmittel von 634 auf 419, für Schweine von 667 auf 561. Zahlen der Tierärztekammer.
 frage: Wie viele Fachtierärzte für Rinder und Schweine gibt es in Deutschland?
 suchbegriffe: fachtierarzt rinder, fachtierarzt schweine, nutztierpraxis tierärzte, fachtierarzt lebensmittel

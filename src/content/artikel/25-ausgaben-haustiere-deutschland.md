@@ -1,7 +1,7 @@
 ---
 post: 25
 slug: ausgaben-haustiere-deutschland
-titel: Ausgaben für Haustiere in Deutschland: Futter, Zubehör, Online
+titel: Ausgaben für Haustiere in Deutschland: Futter und Zubehör
 beschreibung: 2025 setzte der Handel im Laden 2.315 Mio. Euro mit Katzenfutter um, 2011 waren es 1.486 Mio. Die Ausgaben für Haustiere nach Segment, mit Quelle.
 frage: Wie viel geben die Deutschen für Haustiere aus?
 suchbegriffe: ausgaben haustiere deutschland, heimtiermarkt deutschland umsatz, umsatz katzenfutter deutschland, umsatz hundefutter deutschland

@@ -1,7 +1,7 @@
 ---
 post: 28
 slug: frauenanteil-tiermedizin
-titel: Frauenanteil in der Tiermedizin: 71,7 Prozent der Tierärzte 2025
+titel: Frauenanteil in der Tiermedizin: 71,7 Prozent 2025
 beschreibung: 2025 waren 71,7 Prozent der tätigen Tierärzte in Deutschland Frauen. Unter Angestellten 82 Prozent, unter Selbstständigen 58. Zahlen mit Quelle.
 frage: Wie viel Prozent der Tierärzte sind weiblich?
 suchbegriffe: frauenanteil tiermedizin, tierärztinnen deutschland anzahl, wie viele tierärzte gibt es in deutschland, statistik tierärzte deutschland

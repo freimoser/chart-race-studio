@@ -1,7 +1,7 @@
 ---
 post: 22
 slug: tierarztdichte-bundeslaender
-titel: Tierarztdichte – Tierärzte je 100.000 Einwohner nach Bundesland
+titel: Tierarztdichte: Tierärzte je 100.000 Einwohner je Land
 beschreibung: Wie viele Tierärztinnen und Tierärzte kommen auf 100.000 Einwohner? Die 46.089 Kammermitglieder von 2025 je Bundesland, bezogen auf die Bevölkerung.
 frage: Wie viele Tierärzte kommen auf 100.000 Einwohner?
 suchbegriffe: tierarztdichte deutschland, tierärzte pro einwohner, tierärzte je 100.000 einwohner, tierärztliche versorgung bundesland

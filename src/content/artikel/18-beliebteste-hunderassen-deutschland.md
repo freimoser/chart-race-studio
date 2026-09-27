@@ -1,7 +1,7 @@
 ---
 post: 18
 slug: beliebteste-hunderassen-deutschland
-titel: Beliebteste Hunderassen in Deutschland – die Aufsteiger seit 1992
+titel: Beliebteste Hunderassen in Deutschland: Aufsteiger seit 1992
 beschreibung: Labrador, Golden Retriever, Malinois: Der Labrador steigt von 685 VDH-Welpen (1992) auf 2.401 und steht 2025 erstmals auf Platz 3.
 frage: Welche Hunderassen sind in Deutschland am beliebtesten?
 suchbegriffe: beliebteste hunderassen deutschland, beliebteste hunderassen 2025, vdh welpenstatistik, labrador welpen anzahl

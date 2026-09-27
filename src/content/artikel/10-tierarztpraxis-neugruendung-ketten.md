@@ -1,7 +1,7 @@
 ---
 post: 10
 slug: tierarztpraxis-neugruendung-ketten
-titel: Neue Tierarztpraxen statt Übernahmen: Rex, filu, Wolf & Tiger
+titel: Neugründungen statt Übernahmen: Rex, filu, Wolf & Tiger
 beschreibung: Rex mit 13 Praxen, filu mit 11 und Wolf & Tiger mit 3 Standorten eröffnen neue Tierarztpraxen, statt bestehende zu kaufen. Was belegt ist.
 frage: Welche Tierarztgruppen eröffnen neue Praxen, statt bestehende zu kaufen?
 suchbegriffe: tierarztpraxis neu eröffnen, rex tierarzt standorte, filu tierarzt, wolf und tiger tierarzt, tierarztkette neugründung

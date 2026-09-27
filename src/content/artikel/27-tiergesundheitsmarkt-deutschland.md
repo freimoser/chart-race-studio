@@ -1,7 +1,7 @@
 ---
 post: 27
 slug: tiergesundheitsmarkt-deutschland
-titel: Tiergesundheitsmarkt Deutschland: 1.098 Mio. Euro im Jahr 2025
+titel: Tiergesundheitsmarkt Deutschland: 1.098 Mio. Euro 2025
 beschreibung: Der Markt für Tierarzneimittel wuchs 2025 um 4,7 Prozent auf 1.098 Mio. Euro, 60,6 Prozent entfallen auf Kleintiere. Einordnung mit Quelle.
 frage: Wie groß ist der Tiergesundheitsmarkt in Deutschland?
 suchbegriffe: tiergesundheitsmarkt deutschland, umsatz tierärzte deutschland, tierarzneimittel umsatz deutschland

@@ -5,8 +5,8 @@ titel: Deutscher Schäferhund: Welpenzahlen im VDH seit 1992
 beschreibung: 1992 trugen VDH-Vereine 28.000 Schäferhund-Welpen ein, 2025 noch 6.374. Trotzdem ist er bis heute die Nummer eins der VDH-Welpenstatistik.
 frage: Ist der Deutsche Schäferhund noch die beliebteste Hunderasse in Deutschland?
 suchbegriffe: deutscher schäferhund statistik, schäferhund welpen anzahl, teckel statistik
-stand: 2026-09-23
-bereit: nein
+stand: 2026-09-28
+bereit: ja
 ---
 Im Zuchtbuch ja: Der **Deutsche Schäferhund** ist in der Welpenstatistik des VDH in jedem Jahr von 1992 bis 2025 die Rasse mit den meisten eingetragenen Welpen. Die Zahl ist aber von **28.000 Welpen im Jahr 1992 auf 6.374 im Jahr 2025** gefallen, um 77,2 Prozent (berechnet).
 
@@ -68,4 +68,3 @@ In VDH-Zuchtbüchern wurden 2025 6.374 Welpen des Deutschen Schäferhunds einget
 
 Verband für das Deutsche Hundewesen (VDH), [Welpenstatistik der VDH-Mitgliedsvereine](https://www.vdh.de/ueber-den-vdh/welpenstatistik/). 2011 bis 2025 aus der aktuellen Onlinetabelle, 1992 bis 2010 aus fünf archivierten Fassungen der alten Tabelle im Internet Archive; alle Überschneidungen stimmen überein. Der Datensatz enthält 47 Rassen, nämlich jede, die zwischen 1992 und 2025 mindestens einmal unter den ersten 20 war. Deshalb sind Platz 1 bis 3 in jedem Jahr sicher bestimmt. Veränderungen, Verhältnisse, Anteile und die Summe der 47 Rassen sind berechnet.
 
-**Offen:** Die Gesamtzahlen aller VDH-Welpen (80.719 für 2011, 55.053 für 2025) und die daraus berechneten Anteile stehen bisher nur in der Rechercheliste zur VDH-Tabelle, nicht in data.ts oder docs/DATASETS.md. Vor der Freigabe dort übernehmen oder die Anteile streichen.
