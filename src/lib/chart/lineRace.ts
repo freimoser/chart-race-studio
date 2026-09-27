@@ -189,10 +189,14 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
     const sorted = heads.filter((h) => !onRight(h.name)).sort((a, b) => b.v - a.v)
     const hi = sorted[input.topN - 1]?.v
     const lo = sorted[input.topN]?.v
+    // Rang statt nur Wert: Bei Gleichstand an der Grenze (etwa mehrere Reihen bei 0) zählte vorher jede
+    // Reihe mit dem Grenzwert zur Spitze, und statt sechs standen fünfzehn Namen im Bild.
+    const rang = new Map(sorted.map((h, i) => [h.name, i]))
     const opacityFor = (h: { name: string; v: number }) => {
       if (onRight(h.name) || hi === undefined) return 1
-      if (lo === undefined || h.v >= hi) return 1
-      if (h.v <= lo) return 0.18
+      const r = rang.get(h.name) ?? 0
+      if (lo === undefined || r < input.topN) return 1
+      if (h.v <= lo || hi === lo) return 0.18
       return 0.18 + 0.82 * ((h.v - lo) / (hi - lo || 1))
     }
     const headOf = (n: string) => heads.find((h) => h.name === n)

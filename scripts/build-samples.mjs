@@ -220,6 +220,16 @@ const w10 = wide(byMetric(d12, 'Standorte je Gruppe'), {
   names: MODELL_NAMEN,
   rename: { 'TOTAL Deutschland': 'Summe: Alle Gruppen (Standorte)', 'Weitere Gruppen (Long Tail)': 'Weitere Gruppen' },
 })
+// Marker „0 = existierte in Deutschland noch nicht“: Das ist keine Null, sondern „kein Wert“. Nach dem
+// Datenstandard wird das zur leeren Zelle – sonst stehen 2015 fünfzehn Gruppen mit „0“ im Bild und die
+// Top-N-Auswahl bricht an den Gleichständen. Nachlaufende Nullen (activet nach der Übernahme) bleiben:
+// Die Marke gibt es danach wirklich nicht mehr, der Balken soll auf null fallen.
+for (let c = 1; c < w10.headers.length; c++) {
+  for (const zeile of w10.rows) {
+    if (zeile[c] === 0) zeile[c] = null
+    else if (zeile[c] != null) break
+  }
+}
 
 // Sammelreihe „Ketten“ für den Schwerpunkte-Chart: dieselbe TOTAL-Reihe wie im Ketten-Datensatz und im
 // Artikel. Vorher stand hier ein eigener Fünf-Gruppen-Korb – das ergab für dasselbe Wort zwei verschiedene

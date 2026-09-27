@@ -4,6 +4,12 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Behoben (Ketten-Chart)
+
+- Ketten-Datensatz: Der Marker „existierte noch nicht“ stand als 0 in der Tabelle – gegen den eigenen Datenstandard. Führende Nullen sind jetzt leer; 2015 erscheinen nur die fünf Gruppen, die es gab, statt fünfzehn mit „0“.
+- Line Race: Top N nach Rang statt nach Wert – bei Gleichstand an der Grenze wurden alle Reihen mit dem Grenzwert hervorgehoben.
+- Nach einem Deploy lädt ein offener Tab einmal neu, wenn ein nachgeladener Programmteil fehlt. Vorher startete dann etwa das Bar Race einfach nicht.
+
 ### Neu
 
 - **Summenspalten im Line Race** als große mitlaufende Zahl oben links statt als Linie, im Bar Race ausgeblendet. Der Ketten-Datensatz nutzt das: „Summe: Alle Gruppen (Standorte)“ statt „TOTAL Deutschland“, die Achse reicht damit bis 120 statt 600. Feste Farben je Reihe über `suggested.colors`, Restgruppe grau, Top 6.
