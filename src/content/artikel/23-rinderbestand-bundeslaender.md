@@ -54,7 +54,7 @@ Das sind parallele Bewegungen, kein nachgewiesener Zusammenhang. Die Daten zeige
 
 ## Was die Zahl nicht sagt
 
-- **Der Stichtag der Zählung wechselt.** Bis 1997 wurde im Dezember gezählt, 1998 im November, ab 1999 überwiegend im Mai, dazwischen einzelne Novembererhebungen (2007, 2010). Rinderbestände schwanken saisonal um ein bis zwei Prozent, deutlich weniger als der langfristige Rückgang. Kleine Ausschläge können aber am Stichtag liegen: Der größte Anstieg der Reihe, plus 2,1 Prozent von 2007 auf 2008, folgt auf eine Novemberzählung.
+- **Der Stichtag der Zählung wechselt.** Bis 1997 wurde im Dezember gezählt, 1998 im November, 1999 bis 2006 sowie 2008 und 2009 im Mai, 2007 und seit 2010 wieder im November. Rinderbestände schwanken saisonal um ein bis zwei Prozent, deutlich weniger als der langfristige Rückgang. Kleine Ausschläge können aber am Stichtag liegen: Der größte Anstieg der Reihe, plus 2,1 Prozent von 2007 auf 2008, folgt auf eine Novemberzählung.
 - **Tiere, nicht Betriebe.** Die Reihe sagt nichts darüber, wie viele Höfe Rinder halten, und trennt nicht zwischen Milchkühen, Mastrindern und Kälbern.
 - **Ohne Stadtstaaten.** Berlin, Hamburg und Bremen sind nicht enthalten, die Summe gilt für die 13 Flächenländer.
 - **Eine Lücke:** Für Sachsen-Anhalt fehlt der Wert 2002, die Summe ist für dieses Jahr nicht berechnet.

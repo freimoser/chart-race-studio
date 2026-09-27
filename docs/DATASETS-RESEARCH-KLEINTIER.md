@@ -201,10 +201,12 @@ Spaltendefinition ab 2012 wörtlich aus der Quelle: „ges.: gesamt (inkl. Ruhes
 | 2004 | – | 503 | 404 | 408 | – | – | – | 141 | – | – |
 | 2007 | 1.398 | 860 | 667 | 501 | 634 | 485 | 252 | 305 | 4 | – |
 | 2011 | 1.481 | 808 | 630 | 557 | 604 | 480 | 278 | 291 | 29 | – |
-| 2014 | 1.593 | 786 | 635 | 622 | 591 | 494 | 300 | 327 | – | – |
+| 2014 | 1.593 | 786 | 635 | 622 | 591 | 494 | 300 | 327 | 44 | – |
 | 2019 | 1.768 | 720 | 612 | 691 | 529 | 470 | 338 | 296 | 107 | 75 |
 | 2022 | 1.870 | 661 | 588 | 726 | 477 | 460 | 303 | 281 | 144 | 116 |
 | 2025 | 1.950 | 596 | 561 | 773 | 419 | 440 | 302 | 254 | 194 | 165 |
+
+Kleintierchirurgie 2013 (40), 2014 (44) und 2018 (102) wurden am 23.09.2026 aus den Originaltabellen nachgetragen; Quellenauffälligkeiten (Pferde 2012, Mikrobiologie 2013, Meldeänderung Berlin 2025) stehen in den `notes` der Rohdatei.
 
 Vollständige Jahresreihen dieser Titel stehen in `ds9-fachtieraerzte.json` (alle oben belegten Jahre). Deutlich sichtbar: **Kleintiere + Kleintierchirurgie + Innere Medizin der Kleintiere** wachsen, **Rinder/Schweine/Lebensmittel** schrumpfen – geeignete Chart-Race-Story.
 

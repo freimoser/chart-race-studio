@@ -40,7 +40,7 @@ Ein Hinweis auf die Arbeitsmodelle steht in der Datenkunde zur Kammerstatistik: 
 
 Dieser Beitrag hat kein Video, weil die Reihe des Frauenanteils seit 1991 noch nicht als Datensatz vorliegt. Sie steht in denselben Jahrgängen der BTK-Statistik wie die Zahlen zu Inhabern und Angestellten.
 
-**Offen:** Die Reihe ist in den Recherchenotizen des Projekts bereits teilweise ausgelesen, aber nicht als Datensatz geprüft. Dort ergibt sich für 2025 aus Kammermitgliedern und Tierärztinnen ein Anteil von 67,0 Prozent, nicht 66,8 Prozent wie im Redaktionsplan. Vor der Freigabe klären, welcher Wert der BTK-Meldung entspricht und worauf er sich bezieht.
+**Offen:** Die Reihe ist in den Recherchenotizen des Projekts bereits teilweise ausgelesen, aber nicht als Datensatz geprüft. Zu den Anteilen 2025: 66,8 und 71,7 Prozent stehen wörtlich in der [Pressemitteilung der Bundestierärztekammer](https://www.bundestieraerztekammer.de/presse/2026/06/Tieraerztestatistik-2025.php). Tab. 1 derselben Statistik ergibt dagegen 30.892 Tierärztinnen unter 46.089 Mitgliedern (67,0 Prozent) und 24.815 unter 34.476 Tätigen (72,0 Prozent) – dann wären es 24.815 tätige Frauen statt rechnerisch rund 24.700. Beide Angaben stammen von der Kammer. Vor der Freigabe einen Wert wählen und im Text die passende Quelle nennen.
 
 ## Was die Zahl nicht sagt
 

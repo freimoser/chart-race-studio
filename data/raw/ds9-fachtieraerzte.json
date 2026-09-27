@@ -2,7 +2,7 @@
  "title": "Fachtierärztinnen und Fachtierärzte in Deutschland nach Gebietsbezeichnung, 2001–2025 (Schwerpunkt Kleintiere)",
  "source": "Bundestierärztekammer / Zentrale Tierärztedatei, Statistik „Tierärzteschaft in der Bundesrepublik Deutschland“ (Deutsches Tierärzteblatt)",
  "sourceUrl": "https://www.bundestieraerztekammer.de/btk/statistik/",
- "notes": "Titelbezeichnung wechselt: 2001–2004 „Kleintiere, kleine Haustiere“; 2005–2014 „Klein- und Heimtiere“; ab 2018 „Kleintiere“ (Fußnote der BTK: inkl. Klein- und Heimtiere). Zählbasis wechselt: 2005 nur TÄ bis 65 Jahre; ab 2006 alle Titelträger inkl. Ruheständler; ab 2012 zusätzlich Spalte „aktiv“. LÜCKEN: 2015, 2016, 2017 (die BTK druckte in diesen Jahrgängen nur „Tab. 3: Fachtierarztabschlüsse“ = Neuanerkennungen, keine Bestandstabelle) und 2020 (die Seiten mit Tab. 5–7 sind im veröffentlichten PDF 2020.pdf leer). 2000 und früher nicht online. Mehrfachanerkennungen sind möglich: die Summe aller Gebietsbezeichnungen ist größer als die Zahl der Fachtierärzt:innen.",
+ "notes": "Titelbezeichnung wechselt: 2001–2004 „Kleintiere, kleine Haustiere“; 2005–2014 „Klein- und Heimtiere“; ab 2018 „Kleintiere“ (Fußnote der BTK: inkl. Klein- und Heimtiere). Zählbasis wechselt: 2005 nur TÄ bis 65 Jahre; ab 2006 alle Titelträger inkl. Ruheständler; ab 2012 zusätzlich Spalte „aktiv“. LÜCKEN: 2015, 2016, 2017 (die BTK druckte in diesen Jahrgängen nur „Tab. 3: Fachtierarztabschlüsse“ = Neuanerkennungen, keine Bestandstabelle) und 2020 (die Seiten mit Tab. 5–7 sind im veröffentlichten PDF 2020.pdf leer). 2000 und früher nicht online. Mehrfachanerkennungen sind möglich: die Summe aller Gebietsbezeichnungen ist größer als die Zahl der Fachtierärzt:innen. QUELLENAUFFÄLLIGKEITEN: 2012 Pferde – Tab. 4 weist 116 unter „Pferde“ und 461 unter „Pferdechirurgie“ aus (Vorjahr Pferdechirurgie einstellig, 2013 10); die Kammer Bayern hat ihre Pferde-Fachtierärzt:innen offenbar in der falschen Zeile gemeldet (Bayern: Pferde 0, Pferdechirurgie 127). Der Wert ist nicht verwendbar und bleibt leer. 2013 Mikrobiologie – ges. 605 steht so in Tab. 4 (DTBl_06_2014_Statistik.pdf), bei 481 (2012) und 494 (2014); die Spalte „aktiv“ (307 / 321 / 305) zeigt keinen Sprung, der Ausreißer liegt also bei den Ruheständlern und ist vermutlich ein Meldefehler. Übernommen wie publiziert, aber markiert. 2025 – zehn von elf geführten Gebieten sinken gegenüber 2024 zusammen um 412 Bezeichnungen. Alle Werte entsprechen Tab. 6a in 2025_korr.pdf. Hauptursache ist die Kammer Berlin: Sie meldet 2025 in der Spalte „ges.“ nur noch aktive Fachtierärzt:innen (ges. = aktiv in allen Zeilen), die Ruheständler fehlen. Allein das erklärt rund 330 der 412, z. B. Kleintiere Berlin 130 → 53, Öffentliches Veterinärwesen 144 → 82, Pathologie 73 → 24. Die Spalte „aktiv“ bundesweit bleibt stabil (Kleintiere 1.244 → 1.233, Öff. Veterinärwesen 1.361 → 1.382).",
  "rows": [
   {
    "date": "2001",
@@ -1255,6 +1255,16 @@
    "notes": ""
   },
   {
+   "date": "2013",
+   "metric": "Fachtierarzt-Gebietsbezeichnung",
+   "name": "Fachtierarzt für Kleintierchirurgie",
+   "value": 40,
+   "unit": "Personen (ges.)",
+   "source": "BTK/ZTD, Tab. 4 Gebietsbezeichnungen, Spalte „gesamt“ (ges.) | https://www.bundestieraerztekammer.de/btk/statistik/downloads/DTBl_06_2014_Statistik.pdf",
+   "quality": "publiziert",
+   "notes": "Nr. 18; ges. 40 / aktiv 40 / w 11 / WBE 28. Nachgetragen 23.09.2026, fehlte in der ersten Extraktion."
+  },
+  {
    "date": "2014",
    "metric": "Fachtierarzt-Gebietsbezeichnung",
    "name": "Fachtierarzt für Klein- und Heimtiere",
@@ -1373,6 +1383,16 @@
    "source": "BTK/ZTD, Tab. 3 Gebietsbezeichnungen, Spalte „gesamt“ (ges.) | https://www.bundestieraerztekammer.de/btk/statistik/downloads/Statistik-2014.pdf",
    "quality": "publiziert",
    "notes": ""
+  },
+  {
+   "date": "2014",
+   "metric": "Fachtierarzt-Gebietsbezeichnung",
+   "name": "Fachtierarzt für Kleintierchirurgie",
+   "value": 44,
+   "unit": "Personen (ges.)",
+   "source": "BTK/ZTD, Tab. 3 Gebietsbezeichnungen, Spalte „gesamt“ (ges.) | https://www.bundestieraerztekammer.de/btk/statistik/downloads/Statistik-2014.pdf",
+   "quality": "publiziert",
+   "notes": "Nr. 17; ges. 44 / aktiv 43 / w 10 / WBE 32. Nachgetragen 23.09.2026, fehlte in der ersten Extraktion."
   },
   {
    "date": "2018",
@@ -1503,6 +1523,16 @@
    "source": "BTK/ZTD, Tab. 6a Gebietsbezeichnungen gemäß Muster-WBO, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/Statistik_2018.pdf",
    "quality": "publiziert",
    "notes": ""
+  },
+  {
+   "date": "2018",
+   "metric": "Fachtierarzt-Gebietsbezeichnung",
+   "name": "Fachtierarzt für Kleintierchirurgie",
+   "value": 102,
+   "unit": "Personen (ges.)",
+   "source": "BTK/ZTD, Tab. 6a Gebietsbezeichnungen gemäß Muster-WBO, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/Statistik_2018.pdf",
+   "quality": "publiziert",
+   "notes": "Nr. 16 (Fußnote: inkl. Teilgebiet Kleintierchirurgie); ges. 102 / aktiv 99 / w 34 / WBE 62. Nachgetragen 23.09.2026, fehlte in der ersten Extraktion."
   },
   {
    "date": "2019",

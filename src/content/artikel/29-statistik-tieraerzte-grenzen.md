@@ -14,7 +14,7 @@ Von den **12 Datensätzen** auf dieser Seite beruht nur **einer** auf amtlicher 
 
 - Die Bundestierärztekammer zählt Personen, keine Vollzeitstellen. 2023 arbeitete laut Tierärzte Atlas jede zweite Frau im Beruf in Teilzeit, aber nur 13 Prozent der Männer.
 - Praxisketten erhebt keine amtliche Stelle. Die einzige belastbare Gesamtzahl sind rund 450 Standorte von 16 Ketten im August 2024, genannt im Tierärzte Atlas.
-- Ab 2019 beantworten nur noch 91 bis 96 Prozent der Niedergelassenen die Frage nach dem Praxisschwerpunkt, vorher 97 bis 99 Prozent.
+- Von 2019 bis 2023 beantworten nur 91 bis 96,5 Prozent der Niedergelassenen die Frage nach dem Praxisschwerpunkt, 2001 bis 2015 praktisch alle (berechnet).
 - Ein Heimtierregister gibt es nicht. Der Sprung bei Hunden und Katzen von 13,6 Millionen (2011) auf 19,7 Millionen (2012) ist ein Wechsel der Erhebungsmethode.
 - Die Fachtierarzt-Statistik zählt Titel, nicht Personen, und für 2015 bis 2017 sowie 2020 fehlen die Tabellen.
 

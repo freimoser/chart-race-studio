@@ -4,7 +4,7 @@
  "sourceUrl": "https://www.bmel-statistik.de/landwirtschaft/tierhaltung/viehbestand ; https://www.bmel-statistik.de/fileadmin/daten/3100200-0000.xlsx ; https://www.bmel-statistik.de/fileadmin/daten/0117090-0000.xlsx ; https://www.bmel-statistik.de/fileadmin/daten/0117130-0000.xlsx ; https://www.bmel-statistik.de/fileadmin/daten/0117260-0000.xlsx ; https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Landwirtschaft-Forstwirtschaft-Fischerei/Tiere-Tierische-Erzeugung/_inhalt.html",
  "unit": "1.000 Tiere (national: Stichtag November bzw. Jahresangabe der BMEL-Reihe; Bundesland: 3. November des Jahres; Schafe: November)",
  "license": "Datenlizenz Deutschland – Namensnennung – Version 2.0 (dl-de/by-2-0), © Statistisches Bundesamt (Destatis) / BMEL",
- "notes": "Nationale Reihe (BMEL 3100200): 1990, 1995, 2000–2025 für Rinder, Schweine, Schafe; Ziegen nur in Erhebungsjahren (1990–2010 jährlich, dann 2013, 2016, 2020, 2021, 2023). Milchkühe (November) 2005, 2008–2025 aus BMEL 3100900; für 1990–2004 nicht in den frei zugänglichen BMEL-Tabellen (GENESIS 41311-0001 erfordert Login). Methodenbrüche: Rinder ab 2008 aus HIT-Datenbank (nur bedingt vergleichbar mit früher); Schweine ab 2010 nur Betriebe ≥50 Schweine/≥10 Zuchtsauen (Erfassungsgrenze angehoben, Bestand dadurch ~2–3 % niedriger); Schafe ab 2011 nur Betriebe ≥20 Schafe (Sprung 2010→2011 von 2,09 auf 1,66 Mio. ist überwiegend methodisch), 2020 Agrarstrukturerhebung (Vollerhebung, daher höher). Bundesland: Rinder, Milchkühe, Schweine jährlich Nov 2010–2025 (Stadtstaaten bei Schweinen/Schafen nicht ausgewiesen), Schafe Nov 2012–2025. Rohdaten in Stück wurden auf 1.000 Tiere umgerechnet (1 Nachkommastelle).",
+ "notes": "Nationale Reihe (BMEL 3100200): 1990, 1995, 2000–2025 für Rinder, Schweine, Schafe; Ziegen nur in Erhebungsjahren (1990–2010 jährlich, dann 2013, 2016, 2020, 2021, 2023). Milchkühe (November) 2005, 2008–2025 aus BMEL 3100900; für 1990–2004 nicht in den frei zugänglichen BMEL-Tabellen (GENESIS 41311-0001 erfordert Login). Methodenbrüche: Rinder ab 2008 aus HIT-Datenbank (nur bedingt vergleichbar mit früher); Schweine ab 2010 nur Betriebe ≥50 Schweine/≥10 Zuchtsauen (Erfassungsgrenze angehoben, Bestand dadurch ~2–3 % niedriger); Schafe ab 2011 nur Betriebe ≥20 Schafe (Sprung 2010→2011 von 2,09 auf 1,66 Mio. ist überwiegend methodisch), 2020 Agrarstrukturerhebung (Vollerhebung, daher höher). Bundesland: Rinder, Milchkühe, Schweine jährlich Nov 2010–2025 (Stadtstaaten bei Schweinen/Schafen nicht ausgewiesen), Schafe Nov 2012–2025. Rohdaten in Stück wurden auf 1.000 Tiere umgerechnet (1 Nachkommastelle). Korrektur 23.09.2026: Die Zeile „Deutschland“ bei „Rinder nach Bundesland (November)“ und „Milchkühe nach Bundesland (November)“ war für 2010–2023 falsch, weil der Deutschland-Block der BMEL-Tabelle 0117090 (Stand 26.06.2026) falsch beschriftet ist: Dort stehen die Werte nach Monat sortiert (erst alle Mai-Erhebungen 2010–2024, dann alle November-Erhebungen 2010–2023), die Zeilen sind aber chronologisch abwechselnd mit 05/… und 11/… beschriftet. Die Deutschland-Werte sind jetzt die November-Werte aus diesem Block, jeder einzelne ist auf das Stück identisch mit der Summe der 16 Länder desselben Novembers; Rinder zusätzlich gegengeprüft mit BMEL 3100900 (November-Erhebung) und der nationalen Reihe 3100200. Nicht übernommen wurden die Novemberwerte 2017 und 2019 aus 3100900, die dort ebenfalls fehlerhaft sind (Rinder 2017: 12.264,3 statt 12.281,2; 2019: 11.707,8 statt 11.639,5; Milchkühe 2019: 4.067,0 = Mai-Wert statt 4.011,7). Die Länderzeilen waren nicht betroffen.",
  "attribution": "Quelle: Statistisches Bundesamt (Destatis), Viehbestandserhebung; Aufbereitung BMEL-Statistik – Datenlizenz Deutschland (dl-de/by-2-0)",
  "rows": [
   {
@@ -2650,98 +2650,98 @@
    "date": "2010",
    "metric": "Rinder nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 12562.6,
+   "value": 12706.2,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2011",
    "metric": "Rinder nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 12587.0,
+   "value": 12527.8,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2012",
    "metric": "Rinder nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 12653.1,
+   "value": 12506.8,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2013",
    "metric": "Rinder nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 12365.5,
+   "value": 12686.0,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2014",
    "metric": "Rinder nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 11763.4,
+   "value": 12742.2,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2015",
    "metric": "Rinder nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 11176.2,
+   "value": 12635.5,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2016",
    "metric": "Rinder nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 10936.8,
+   "value": 12466.6,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2017",
    "metric": "Rinder nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 12706.2,
+   "value": 12281.2,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2018",
    "metric": "Rinder nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 12506.8,
+   "value": 11949.1,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2019",
    "metric": "Rinder nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 12742.2,
+   "value": 11639.5,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2020",
    "metric": "Rinder nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 12466.6,
+   "value": 11301.9,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2021",
    "metric": "Rinder nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 11949.1,
+   "value": 11039.7,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2022",
    "metric": "Rinder nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 11301.9,
+   "value": 10997.0,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2023",
    "metric": "Rinder nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 10997.0,
+   "value": 10836.2,
    "unit": "1.000 Tiere"
   },
   {
@@ -4554,98 +4554,98 @@
    "date": "2010",
    "metric": "Milchkühe nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 4185.0,
+   "value": 4181.7,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2011",
    "metric": "Milchkühe nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 4223.0,
+   "value": 4190.1,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2012",
    "metric": "Milchkühe nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 4286.7,
+   "value": 4190.5,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2013",
    "metric": "Milchkühe nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 4214.3,
+   "value": 4267.6,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2014",
    "metric": "Milchkühe nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 4067.0,
+   "value": 4295.7,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2015",
    "metric": "Milchkühe nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 3891.5,
+   "value": 4284.6,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2016",
    "metric": "Milchkühe nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 3775.2,
+   "value": 4217.7,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2017",
    "metric": "Milchkühe nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 4181.7,
+   "value": 4199.0,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2018",
    "metric": "Milchkühe nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 4190.5,
+   "value": 4100.9,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2019",
    "metric": "Milchkühe nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 4295.7,
+   "value": 4011.7,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2020",
    "metric": "Milchkühe nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 4217.7,
+   "value": 3921.4,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2021",
    "metric": "Milchkühe nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 4100.9,
+   "value": 3832.7,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2022",
    "metric": "Milchkühe nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 3921.4,
+   "value": 3809.7,
    "unit": "1.000 Tiere"
   },
   {
    "date": "2023",
    "metric": "Milchkühe nach Bundesland (November)",
    "name": "Deutschland",
-   "value": 3809.7,
+   "value": 3712.8,
    "unit": "1.000 Tiere"
   },
   {

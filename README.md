@@ -2,19 +2,24 @@
 
 Zahlen zu Tierärzten, Praxen und Haustieren in Deutschland, mit Quelle je Wert – und das Studio dahinter (vormals „Chart Race Studio“).
 
-Animierte **Bar Chart Races** und **Line Chart Races** aus eigenen Daten erstellen und direkt im Browser als **MP4** (außerdem GIF und PNG) für Social Media exportieren. Läuft komplett client-seitig auf GitHub Pages, ohne Login, ohne Backend, ohne Tracking.
+Animierte **Bar Chart Races** und **Line Chart Races** aus eigenen Daten erstellen und direkt im Browser als **MP4** (außerdem GIF und PNG) für Social Media exportieren. Läuft komplett client-seitig auf GitHub Pages, ohne Login und ohne Backend. Hochgeladene Daten verlassen den Browser nicht. Reichweitenmessung ist vorbereitet und nur aktiv, wenn sie beim Build konfiguriert wird: Google Analytics 4 erst nach Einwilligung im Cookie-Banner, Cloudflare Web Analytics cookielos ohne Einwilligung, beides in der Datenschutzerklärung genannt (siehe `FEATURES` in [`src/content/site.ts`](src/content/site.ts)).
 
 Personal-Branding-Werkzeug von **Thomas Freimoser**. Diagramm-Animation auf Basis von [racing-bars](https://github.com/hatemhosny/racing-bars) (MIT) von Hatem Hosny.
 
 ## Funktionen
 
 - **Daten:** CSV/XLSX-Upload oder editierbare Tabelle; Wide- und Long-Format werden erkannt (manuell korrigierbar); Datenprüfung mit klaren Hinweisen; Lücken interpolieren oder letzten Wert fortschreiben.
-- **Chart-Typen:** Bar Chart Race (racing-bars), Line Chart Race und **Choroplethenkarte der Bundesländer** (eigener D3-Renderer, Geometrie wird mitgeliefert, nichts wird nachgeladen) (eigener D3-Renderer, optional mit zweiter Y-Achse rechts für Reihen in anderer Einheit), umschaltbar ohne erneuten Upload.
+- **Chart-Typen:** Bar Chart Race (racing-bars), Line Chart Race (eigener D3-Renderer, optional mit zweiter Y-Achse rechts für Reihen in anderer Einheit) und **Choroplethenkarte** der Bundesländer oder der Welt (eigener D3-Renderer, Geometrie wird mitgeliefert, nichts wird nachgeladen), umschaltbar ohne erneuten Upload.
 - **Formate:** 16:9 (1920×1080), 1:1 (1080×1080), 4:5 (1080×1350), 9:16 (1080×1920) mit formatabhängigem Layout und Live-Vorschau in Zielauflösung.
 - **Einstellungen:** Animationsdauer (Sekunden) oder Dauer je Zeitschritt, voreingestellt sind 30 s Animation plus 1 s Standbild am Anfang und 15 s am Ende, Zwischenschritte, **Standbild am Anfang und Ende** (in Datei und Gesamtlänge enthalten), Titel/Untertitel/Quelle, Farben je Kategorie plus Paletten, Bilder/Flaggen je Kategorie, Top N, **Labels im Balken oder außerhalb links mit automatisch reservierter Breite**, Zahlenformat, Datumsformat, Hell/Dunkel.
 - **Wasserzeichen:** Name/Handle und optional Logo, standardmäßig aktiv, Position/Deckkraft/Größe einstellbar, wird eingebrannt.
 - **Export:** deterministisch Frame für Frame (30 fps) über WebCodecs `VideoEncoder` (H.264) + `mp4-muxer` in einem Web Worker; Fallback `ffmpeg.wasm`; Fortschritt und Abbrechen; GIF (gifenc) und PNG.
-- **Beispiel-Datensätze** mit recherchierten, realen Zahlen aus der Tiermedizin: Tierärzteschaft (BTK) national und je Bundesland, Heimtierbestand (IVH/ZZF), VDH-Welpenstatistik, Rinderbestand (Destatis). Details und Quellen: [`docs/DATASETS.md`](docs/DATASETS.md).
+- **12 Beispiel-Datensätze** aus der Tiermedizin, nach Rubriken gruppiert:
+  - *Tierarztpraxen & Beruf* (Bundestierärztekammer): Inhaber vs. Angestellte, Angestellte überholen die Praxisinhaber, Praxisschwerpunkte, Fachtierarzt-Gebiete, Kleintiermedizin je Bundesland, Tierärzt:innen je Bundesland, dazu der Aufstieg der Tierarztketten (Modellreihe aus Betreiberangaben, verankert am Tierärzte Atlas 2024)
+  - *Heimtiere & Markt*: Heimtierbestand und Heimtiermarkt-Umsatz (IVH/ZZF), VDH-Welpenstatistik, Hund oder Katze weltweit (FEDIAF und nationale Quellen, als Beispieldaten markiert)
+  - *Nutztiere*: Rinderbestand je Bundesland (Destatis)
+
+  Bis auf die zwei Modellreihen (Ketten, Hund oder Katze weltweit) sind alle Werte publizierte Zahlen. Details, Lücken und Quellen: [`docs/DATASETS.md`](docs/DATASETS.md) und [`artikel/datenherkunft.html`](artikel/datenherkunft.html).
 
 ## Schnellstart
 

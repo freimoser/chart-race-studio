@@ -147,7 +147,8 @@ const w4 = wide(breedRowsU, { names: breedNames, from: '1990' })
 // 5 Rinder nach Bundesland (Flächenländer), 1991–2025. 1991–2010 aus der Eurostat-Regionaltabelle
 // mit Destatis-Daten (ds7), ab 2010 aus der BMEL-Aufbereitung (ds4); die 2010er Werte beider
 // Quellen sind identisch. Achtung: Der Erhebungsstichtag wechselt (Dezember bis 1997, November 1998,
-// ab 1999 überwiegend Mai) – siehe docs/DATASETS.md.
+// 1999–2006 und 2008/2009 Mai, 2007 und ab 2010 November) – siehe docs/DATASETS.md.
+// Sachsen-Anhalt 2002 ist in der Quelle nicht nachgewiesen und bleibt null.
 const ohneStadtstaaten = (r) => !['Deutschland', 'Berlin', 'Bremen', 'Hamburg'].includes(r.name)
 const w5 = wide(dedupe([
   ...byMetric(d4, 'Rinder nach Bundesland (November)').filter(ohneStadtstaaten),
@@ -252,6 +253,7 @@ const w7 = wide(
 // 8 Fachtierarzt-Gebiete ab 2007. 2005 zählt nur Tierärzt:innen bis 65 Jahre und ist nicht
 // vergleichbar, 2006 ist durch dieselbe Baden-Württemberg-Lücke verzerrt; beide bleiben draußen.
 // 2015–2017 und 2020 hat die BTK nicht bzw. unvollständig veröffentlicht und wird interpoliert.
+// Pferde 2012 fehlt bewusst (Quelle bucht die Werte unter Pferdechirurgie), siehe notes in ds9.
 const fachMap = {
   'Fachtierarzt für Kleintiere, kleine Haustiere': 'Kleintiere', 'Fachtierarzt für Klein- und Heimtiere': 'Kleintiere', 'Fachtierarzt für Kleintiere': 'Kleintiere',
   'Fachtierarzt für Lebensmittelhygiene': 'Lebensmittel(hygiene)', 'Fachtierarzt für Lebensmittel': 'Lebensmittel(hygiene)',

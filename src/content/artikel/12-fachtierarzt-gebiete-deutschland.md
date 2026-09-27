@@ -64,8 +64,8 @@ Das ist eine Rechnung über zwei verschiedene Zählungen, Titel und Personen, un
 
 - **Gezählt werden Titel, nicht Personen.** Wer zwei Gebietsbezeichnungen führt, erscheint zweimal. Wie viele Menschen hinter den 7.064 Titeln stehen, sagt die Reihe nicht.
 - **Elf Gebiete sind eine Auswahl.** Die Kammer weist weitere Gebietsbezeichnungen aus. Eine Gesamtzahl aller Fachtierärztinnen und Fachtierärzte enthält dieser Datensatz nicht.
-- **2015 bis 2017 und 2020 fehlen.** Die Kammer hat diese Tabellen nicht oder unvollständig veröffentlicht. In der Animation sind die Jahre interpoliert, in diesem Artikel wird keiner dieser Werte zitiert. Einzelne Reihen haben weitere Lücken, etwa die Kleintierchirurgie 2013, 2014 und 2018.
-- **Einzelne Jahre springen.** 2025 sank die Zahl in zehn von elf Gebieten, zusammen um 386 Titel. Mikrobiologie springt 2013 auf 605 und fällt im Jahr darauf auf 494 zurück. Einen Grund nennt die Statistik nicht, deshalb lohnt der Blick auf die lange Linie statt auf ein einzelnes Jahr.
+- **2015 bis 2017 und 2020 fehlen.** Die Kammer hat diese Tabellen nicht oder unvollständig veröffentlicht. In der Animation sind die Jahre interpoliert, in diesem Artikel wird keiner dieser Werte zitiert. Einzelne Reihen haben weitere Lücken: Pferde 2012, weil die Quelle die Werte dort offensichtlich unter Pferdechirurgie verbucht, und die Innere Medizin der Kleintiere, die erst ab 2018 ausgewiesen ist.
+- **Einzelne Jahre springen.** 2025 sank die Zahl in zehn von elf Gebieten, zusammen um 412 Titel. Das ist überwiegend eine Meldeänderung: Die Kammer Berlin zählt 2025 nur noch aktive Fachtierärztinnen und Fachtierärzte, ihre Ruheständler fehlen, und das allein macht rund 330 Titel aus (berechnet aus der Kammertabelle). Mikrobiologie springt 2013 auf 605 und fällt im Jahr darauf auf 494 zurück; bei den aktiv Tätigen gibt es diesen Sprung nicht. Deshalb lohnt der Blick auf die lange Linie statt auf ein einzelnes Jahr.
 - **Ein Titel ist kein Arbeitsplatz.** Wer den Fachtierarzt für Rinder führt, kann heute in einer Kleintierpraxis oder im Amt arbeiten.
 
 ## Häufige Fragen
