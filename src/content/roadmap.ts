@@ -113,11 +113,11 @@ export const POSTS: RoadmapPost[] = [
   },
   {
     nr: 5, arc: 'praxis', status: 'naechster',
-    title: 'Die Nachfrage wächst, die Zahl der Praxen nicht',
-    hook: 'Dasselbe Bild mit zweiter Achse: Hunde und Katzen gegen Praxisinhaber. Zwei Kurven, die auseinanderlaufen.',
-    figures: ['2012: rechnerisch 1.655 Hunde und Katzen je Praxisinhaber', '2025: 2.291', 'Hunde und Katzen zusammen: 9,9 Mio. (1991) auf 25,7 Mio. (2025)'],
+    title: 'Tierarztmangel? Kommt darauf an, wen man zählt',
+    hook: 'Hunde und Katzen gegen Praxisinhaber, zwei Kurven, die auseinanderlaufen. Rechnet man die Angestellten dazu, verschwindet die Lücke fast. Dazu: Die Seite ist online.',
+    figures: ['Hunde und Katzen: 19,7 Mio. (2012) auf 25,7 Mio. (2025)', 'Je Praxisinhaber: 1.655 (2012) auf 2.291 (2025), plus 38 Prozent', 'Je Tierärztin oder Tierarzt in der Praxis: 1.079 auf 1.101, plus 2 Prozent', 'Seit 2019 803 Praxisinhaber weniger'],
     sampleId: 'tieraerzteschaft-deutschland', chart: 'line', dataStatus: 'belegt',
-    dataNote: 'Heimtierzahlen haben 2012 einen Methodenbruch (ZZF/IVH). Den Vergleich erst ab 2012 beschriften.',
+    dataNote: 'Heimtierzahlen haben 2012 einen Methodenbruch (ZZF/IVH), der Vergleich beginnt deshalb 2012. Inhaber sind nicht Praxen: In Gemeinschaftspraxen teilen sich mehrere Inhaber einen Betrieb. Mit diesem Post wird die Seite angekündigt, der Artikel-Link steht im Post selbst.',
     refs: [4, 1],
   },
   {

@@ -1,6 +1,6 @@
 # Redaktion: Visiten, Freigabe, Artikel
 
-**Stand:** 23.09.2026
+**Stand:** 29.09.2026
 
 ## Visiten
 
@@ -11,27 +11,44 @@ Bett. Die Postnummern laufen durch: Visite 1 sind die Posts 1–30, Visite 2 beg
 Definiert in `src/content/roadmap.ts` (`VISITEN`, `POSTS_JE_VISITE`). Eine neue Visite: Eintrag in `VISITEN`
 mit Titel und Leitfrage, dann Posts ab der nächsten Nummer anlegen.
 
+## Lokal und live
+
+Seit 29.09.2026 zeigt die Seite **live nur, was schon gepostet ist**, plus eine Vorschau. **Lokal
+(`npm run dev`) ist alles sichtbar**, alle Datensätze und alle 30 Posts mit Zahlen – dort entstehen die Videos.
+
+| | lokal (`npm run dev`) | live (tiermedizin-in-zahlen.org) |
+|---|---|---|
+| Datensätze im Studio | alle | nur aus veröffentlichten Posts und dem aktuellen Post |
+| Redaktionsplan | alle 30 Posts, voll, je Post ein Hinweis „live: …“ | veröffentlichte Posts, der aktuelle Post und 3 Vorschauen ohne Zahlen |
+| Artikel | alle Entwürfe unter `/beitrag/entwurf/` | nur ab Status `naechster` mit `bereit: ja` |
+
+**Live gegen lokal prüfen:** unten links im Entwicklungsserver auf „Live-Ansicht prüfen“ klicken (oder `?live`
+an die Adresse hängen). Die Seite zeigt dann genau das, was online steht. Die Artikelseiten entstehen erst im
+Build; für sie `npm run build && npm run preview` und dort nachsehen.
+
 ## Ablauf je Post
 
-1. Post im Redaktionsplan auf `naechster`, Artikelentwurf in `src/content/artikel/NN-slug.md` auf `bereit: ja`.
-2. Video im Studio exportieren, Post auf LinkedIn veröffentlichen.
-3. Im Redaktionsplan: `status: 'veroeffentlicht'`, `publishedOn`, `linkedInUrl`.
-4. Push. Ist die Freigabe an, gehen damit Datensatz und Artikel automatisch online.
-5. Den Artikel-Link in den ersten Kommentar setzen.
+1. **Video lokal:** `npm run dev`, Datensatz im Studio öffnen, `npm run check:glaette`, exportieren. Der Post darf
+   dabei noch auf `geplant` stehen.
+2. **Am Posttag:** Post auf `naechster`, Artikelentwurf auf `bereit: ja`, pushen. Damit gehen Artikel und
+   Datensatz online, und die Vorschau rückt nach. Live prüfen, ob der Artikel-Link lädt.
+3. **Post auf LinkedIn** mit dem Artikel-Link im Post selbst.
+4. Im Redaktionsplan: `status: 'veroeffentlicht'`, `publishedOn`, `linkedInUrl`. Push.
 
-Nach Änderungen an Titel oder Beschreibung eines Artikels: `node scripts/og-bilder.mjs` (braucht lokales Chrome) und die Bilder in `public/beitrag/og/` einchecken – das ist die Vorschau, die LinkedIn im Kommentar zeigt.
+Nach Änderungen an Titel oder Beschreibung eines Artikels: `node scripts/og-bilder.mjs` (braucht lokales Chrome) und die Bilder in `public/beitrag/og/` einchecken – das ist die Vorschau, die LinkedIn unter dem Link zeigt.
 
 Optional: ein Standbild des Charts als `public/beitrag/<slug>.png` ablegen – der Artikel zeigt es dann unter dem ersten Absatz.
 
 ## Freigabe (`src/content/freigabe.json`)
 
-| Schalter | an | aus |
+| Schalter | Wert | Wirkung |
 |---|---|---|
-| `beispieleErstNachVeroeffentlichung` | Das Studio zeigt nur Datensätze, die ein veröffentlichter Post verwendet | alle Datensätze sichtbar |
-| `artikelLive` (**an seit 23.09.2026**) | Artikel von Posts auf `naechster` oder `veroeffentlicht` mit `bereit: ja` werden als Seite gebaut, dazu Übersicht `/beitrag/`, CSV je Datensatz unter `/daten/`, Sitemap und llms.txt | kein Artikel online |
+| `beispieleErstNachVeroeffentlichung` | an seit 29.09.2026 | live nur Datensätze aus veröffentlichten Posts und dem aktuellen Post (`naechster`), lokal alle |
+| `vorschauPosts` | 4 | so viele offene Posts zeigt der Plan live: der aktuelle und die nächsten drei, ohne Zahlen und Datensatz |
+| `artikelLive` | an seit 23.09.2026 | Artikel von Posts auf `naechster` oder `veroeffentlicht` mit `bereit: ja` werden als Seite gebaut, dazu Übersicht `/beitrag/`, CSV je Datensatz unter `/daten/`, Sitemap und llms.txt |
 
-**Vor dem Einschalten von `beispieleErstNachVeroeffentlichung`:** Datensätze, die in keinem Post vorkommen,
-verschwinden dann ebenfalls. Seit der Weltkarte als Post 3 betrifft das keinen Datensatz mehr.
+Das Vorschaufenster zählt nur offene Posts: Wurde ein späterer Post vorgezogen (Post 6 vor Post 5), rückt der
+nächste geplante nach. Regel und Test: `sichtbarkeiten()` in `src/content/freigabe.ts`, `src/test/freigabe.test.ts`.
 
 **Was „verborgen“ nicht heißt:** Das Repository ist öffentlich. Entwürfe, Redaktionsplan und Rohdaten sind dort
 lesbar, und die Datensätze liegen weiterhin im ausgelieferten JavaScript. Die Schalter steuern, was die Seite
@@ -50,6 +67,14 @@ Artikel mit `art: anleitung` statt `post:` gehören zu keinem Post und gehen onl
 Format und Regeln: `src/content/artikel/README.md`. Vorschau aller Entwürfe mit `npm run dev` unter
 `/beitrag/entwurf/`. `npm run check:content` prüft jeden Entwurf auf Pflichtabschnitte, Länge der
 Beschreibung, eine Zahl im ersten Absatz und offene Stellen.
+
+## Einschübe außerhalb der Nummerierung
+
+Beiträge, die zu keinem Datensatz gehören, bekommen keine Postnummer, damit „siehe Post 7“ gültig bleibt.
+
+| nach Post | Format | Thema | Entwurf |
+|---|---|---|---|
+| 5 | LinkedIn-Artikel | Vibecoding, Datenforschung und mehr: wie die Seite entsteht | `docs/linkedin/vibecoding-datenforschung.md` |
 
 ## Kandidaten für Visite 2
 

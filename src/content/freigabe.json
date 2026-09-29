@@ -1,4 +1,5 @@
 {
-  "beispieleErstNachVeroeffentlichung": false,
-  "artikelLive": true
+  "beispieleErstNachVeroeffentlichung": true,
+  "artikelLive": true,
+  "vorschauPosts": 4
 }

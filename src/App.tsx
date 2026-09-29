@@ -8,6 +8,7 @@ import { DesignPanel } from '@/components/DesignPanel'
 import { ExportPanel } from '@/components/ExportPanel'
 import { Roadmap } from '@/components/Roadmap'
 import { Consent } from '@/components/Consent'
+import { AnsichtSchalter } from '@/components/AnsichtSchalter'
 import { FEATURES } from '@/content/site'
 import { SICHTBARE_SAMPLES } from '@/content/freigabe'
 import { Wordmark } from '@/components/ui'
@@ -125,6 +126,7 @@ export default function App() {
       </main>
       )}
       <Consent />
+      <AnsichtSchalter />
     </div>
   )
 }

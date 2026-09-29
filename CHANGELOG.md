@@ -4,6 +4,15 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Lokal alles, live nur Gepostetes (29.09.2026)
+
+- **Freigabe an:** Live bietet das Studio nur Datensätze aus veröffentlichten Posts und dem aktuellen Post an (6 statt 12). Der Redaktionsplan zeigt live die veröffentlichten Posts, den aktuellen und drei Vorschauen ohne Zahlen und Datensatz (`vorschauPosts: 4`), dazu „Weitere N Posts folgen“.
+- **Lokal bleibt alles sichtbar** für die Videos. Unten links schaltet der Entwicklungsserver auf die Live-Ansicht um (`?live`); jeder Post nennt lokal, wie er live erscheint.
+- Verweise „baut auf Post N“ nur noch auf Posts, die live auch stehen.
+- Post 5 heißt „Tierarztmangel? Kommt darauf an, wen man zählt“: Die Kammer zählt Inhaber, nicht Praxen.
+- Test für das Vorschaufenster, auch für vorgezogene Posts (`src/test/freigabe.test.ts`).
+- Entwurf LinkedIn-Artikel „Vibecoding, Datenforschung und mehr“ (`docs/linkedin/`), Einschub nach Post 5.
+
 ### SEO/GEO-Pflegerunde 1 (27.09.2026)
 
 - Artikelentwürfe 17 (VDH-Gesamtzahlen jetzt belegt in DATASETS.md), 24 (Aufteilung Nutztiere/Pferde ab 2019: 718 reine Nutztier-, 989 reine Pferdepraxen 2025) und 30 (Adresse, Quellcode) sind fertig; 27 von 31 bereit.

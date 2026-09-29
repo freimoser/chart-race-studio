@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { ArrowUpRight, CheckCircle2, CircleDashed, Clock3, FileText, Link2, PlayCircle } from 'lucide-react'
 import { ARCS, POSTS, POSTS_JE_VISITE, VISITEN, visiteVon, type DataStatus, type RoadmapPost } from '@/content/roadmap'
-import { ARTIKEL, datensatzFreigegeben } from '@/content/freigabe'
+import { ARTIKEL, LIVE_ANSICHT, datensatzFreigegeben, sichtbarkeitVon, type Sichtbarkeit } from '@/content/freigabe'
 import { SAMPLES } from '@/samples'
 import { useApp } from '@/state/store'
 import { LEGAL, SITE } from '@/content/site'
@@ -17,6 +17,13 @@ const DATA_CLASS: Record<DataStatus, string> = {
   offen: 'border-line bg-surface-2 text-ink-muted',
 }
 
+const LIVE_LABEL: Record<Sichtbarkeit, string> = {
+  veroeffentlicht: 'live: voll sichtbar',
+  aktuell: 'live: aktueller Post',
+  vorschau: 'live: Vorschau ohne Zahlen',
+  verborgen: 'live: verborgen',
+}
+
 function Badge({ children, className = '' }: { children: React.ReactNode; className?: string }) {
   return <span className={`inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[11px] font-medium ${className}`}>{children}</span>
 }
@@ -29,6 +36,8 @@ export function Roadmap({ onOpenStudio }: { onOpenStudio: () => void }) {
   const [visite, setVisite] = useState(laufend)
   const aktuelleVisite = VISITEN.find((v) => v.nr === visite)!
   const inVisite = useMemo(() => POSTS.filter((p) => visiteVon(p.nr) === visite), [visite])
+  // Live nur Veröffentlichtes, den aktuellen Post und die Vorschau; lokal alles, damit die Videos vorab entstehen.
+  const gezeigt = useMemo(() => LIVE_ANSICHT ? inVisite.filter((p) => sichtbarkeitVon(p) !== 'verborgen') : inVisite, [inVisite])
 
   const zahlen = useMemo(() => ({
     veroeffentlicht: inVisite.filter((p) => p.status === 'veroeffentlicht').length,
@@ -37,7 +46,8 @@ export function Roadmap({ onOpenStudio }: { onOpenStudio: () => void }) {
     artikel: inVisite.filter((p) => ARTIKEL.some((a) => a.post === p.nr)).length,
   }), [inVisite])
 
-  const sichtbar = arc === 'alle' ? inVisite : inVisite.filter((p) => p.arc === arc)
+  const sichtbar = arc === 'alle' ? gezeigt : gezeigt.filter((p) => p.arc === arc)
+  const folgen = POSTS_JE_VISITE - zahlen.veroeffentlicht - gezeigt.filter((p) => p.status !== 'veroeffentlicht').length
 
   function imStudioOeffnen(post: RoadmapPost) {
     const sample = SAMPLES.find((s) => s.id === post.sampleId)
@@ -60,14 +70,18 @@ export function Roadmap({ onOpenStudio }: { onOpenStudio: () => void }) {
         <h1 className="text-2xl font-semibold tracking-tight text-ink lg:text-3xl">Visite {aktuelleVisite.nr}: {aktuelleVisite.titel}</h1>
         <p className="mt-2 max-w-3xl text-sm leading-relaxed text-ink-muted">
           {aktuelleVisite.leitfrage} Jede Visite umfasst {POSTS_JE_VISITE} aufeinander aufbauende LinkedIn-Posts. Jeder Post nennt
-          seinen Datensatz und die Zahlen, die im Text stehen sollen. Veröffentlichte Beiträge werden hier verlinkt.
+          {LIVE_ANSICHT
+            ? 'seinen Datensatz und die Zahlen. Veröffentlichte Beiträge werden hier verlinkt, die nächsten stehen als Vorschau darunter.'
+            : 'seinen Datensatz und die Zahlen, die im Text stehen sollen. Veröffentlichte Beiträge werden hier verlinkt.'}
         </p>
         {inVisite.length > 0 && (
           <dl className="mt-5 flex flex-wrap gap-x-8 gap-y-3 text-sm">
             <div><dt className="text-ink-faint">Veröffentlicht</dt><dd className="text-lg font-semibold text-ink">{zahlen.veroeffentlicht} von {POSTS_JE_VISITE}</dd></div>
-            <div><dt className="text-ink-faint">Mit belegtem Datensatz</dt><dd className="text-lg font-semibold text-ink">{zahlen.belegt}</dd></div>
-            <div><dt className="text-ink-faint">Recherche offen</dt><dd className="text-lg font-semibold text-ink">{zahlen.offen}</dd></div>
-            <div><dt className="text-ink-faint">Artikel vorbereitet</dt><dd className="text-lg font-semibold text-ink">{zahlen.artikel}</dd></div>
+            {!LIVE_ANSICHT && (<>
+              <div><dt className="text-ink-faint">Mit belegtem Datensatz</dt><dd className="text-lg font-semibold text-ink">{zahlen.belegt}</dd></div>
+              <div><dt className="text-ink-faint">Recherche offen</dt><dd className="text-lg font-semibold text-ink">{zahlen.offen}</dd></div>
+              <div><dt className="text-ink-faint">Artikel vorbereitet</dt><dd className="text-lg font-semibold text-ink">{zahlen.artikel}</dd></div>
+            </>)}
           </dl>
         )}
       </header>
@@ -83,7 +97,7 @@ export function Roadmap({ onOpenStudio }: { onOpenStudio: () => void }) {
           className={`rounded-full border px-3 py-1.5 text-[13px] transition-colors ${arc === 'alle' ? 'border-primary bg-primary text-white' : 'border-line bg-surface text-ink-muted hover:text-ink'}`}>
           Alle Kapitel
         </button>
-        {ARCS.filter((a) => inVisite.some((p) => p.arc === a.id)).map((a) => (
+        {ARCS.filter((a) => gezeigt.some((p) => p.arc === a.id)).map((a) => (
           <button key={a.id} type="button" onClick={() => setArc(a.id)} aria-pressed={arc === a.id} title={a.claim}
             className={`rounded-full border px-3 py-1.5 text-[13px] transition-colors ${arc === a.id ? 'border-primary bg-primary text-white' : 'border-line bg-surface text-ink-muted hover:text-ink'}`}>
             {a.label}
@@ -110,6 +124,10 @@ export function Roadmap({ onOpenStudio }: { onOpenStudio: () => void }) {
         {sichtbar.map((post) => {
           const arcInfo = ARCS.find((a) => a.id === post.arc)
           const artikel = ARTIKEL.find((a) => a.post === post.nr)
+          const sb = sichtbarkeitVon(post)
+          const vorschau = LIVE_ANSICHT && sb === 'vorschau'
+          // Verweise nur auf Posts, die hier auch stehen – live sonst ein Sprung ins Leere.
+          const refs = (post.refs ?? []).filter((r) => gezeigt.some((p) => p.nr === r))
           return (
             <li key={post.nr} id={`post-${post.nr}`} className="card scroll-mt-20 p-4 lg:p-5">
               <div className="flex flex-wrap items-center gap-2">
@@ -117,24 +135,25 @@ export function Roadmap({ onOpenStudio }: { onOpenStudio: () => void }) {
                 <h2 className="mr-auto text-base font-semibold text-ink">{post.title}</h2>
                 {post.status === 'veroeffentlicht' && <Badge className="border-primary/30 bg-primary/10 text-primary"><CheckCircle2 size={12} /> veröffentlicht</Badge>}
                 {post.status === 'naechster' && <Badge className="border-accent/40 bg-accent/10 text-accent"><Clock3 size={12} /> als Nächstes</Badge>}
-                {post.status === 'geplant' && <Badge className="border-line bg-surface-2 text-ink-faint"><CircleDashed size={12} /> geplant</Badge>}
-                <Badge className={DATA_CLASS[post.dataStatus]}>{DATA_LABEL[post.dataStatus]}</Badge>
-                {artikel && !artikel.live && (
+                {post.status === 'geplant' && <Badge className="border-line bg-surface-2 text-ink-faint"><CircleDashed size={12} /> {vorschau ? 'Vorschau' : 'geplant'}</Badge>}
+                {!vorschau && <Badge className={DATA_CLASS[post.dataStatus]}>{DATA_LABEL[post.dataStatus]}</Badge>}
+                {!LIVE_ANSICHT && <Badge className="border-dashed border-line text-ink-faint">{LIVE_LABEL[sb]}</Badge>}
+                {!LIVE_ANSICHT && artikel && !artikel.live && (
                   <Badge className="border-line bg-surface-2 text-ink-faint"><FileText size={12} /> Artikel {artikel.bereit ? 'vorbereitet' : 'im Entwurf'}</Badge>
                 )}
               </div>
 
               <p className="mt-3 text-sm leading-relaxed text-ink">{post.hook}</p>
 
-              <ul className="mt-3 flex flex-col gap-1">
+              {!vorschau && <ul className="mt-3 flex flex-col gap-1">
                 {post.figures.map((f) => (
                   <li key={f} className="flex gap-2 text-[13px] leading-relaxed text-ink-muted">
                     <span aria-hidden className="text-ink-faint">·</span>{f}
                   </li>
                 ))}
-              </ul>
+              </ul>}
 
-              {post.dataNote && (
+              {post.dataNote && !vorschau && (
                 <p className="mt-3 rounded-md bg-surface-2 px-3 py-2 text-[12px] leading-relaxed text-ink-muted">
                   <span className="font-medium text-ink">Zu beachten:</span> {post.dataNote}
                 </p>
@@ -143,10 +162,10 @@ export function Roadmap({ onOpenStudio }: { onOpenStudio: () => void }) {
               <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-[12px] text-ink-faint">
                 <span>{arcInfo?.label}</span>
                 {post.publishedOn && <span>{new Date(post.publishedOn).toLocaleDateString('de-DE', { day: '2-digit', month: 'long', year: 'numeric' })}</span>}
-                {post.refs?.length ? (
+                {refs.length ? (
                   <span className="inline-flex items-center gap-1">
                     <Link2 size={12} /> baut auf{' '}
-                    {post.refs.map((r, i) => (
+                    {refs.map((r, i) => (
                       <span key={r}>
                         {i > 0 && ', '}
                         <a href={`#post-${r}`} className="underline hover:text-ink">Post {r}</a>
@@ -159,7 +178,7 @@ export function Roadmap({ onOpenStudio }: { onOpenStudio: () => void }) {
                     <FileText size={13} /> Artikel lesen
                   </a>
                 )}
-                {post.sampleId && datensatzFreigegeben(post.sampleId) && (
+                {post.sampleId && !vorschau && datensatzFreigegeben(post.sampleId) && (
                   <button type="button" onClick={() => imStudioOeffnen(post)} className="inline-flex items-center gap-1 text-left text-primary underline hover:text-primary-strong">
                     <PlayCircle size={13} className="shrink-0" />
                     Datensatz öffnen: „{SAMPLES.find((s) => s.id === post.sampleId)?.title ?? post.sampleId}“
@@ -178,6 +197,10 @@ export function Roadmap({ onOpenStudio }: { onOpenStudio: () => void }) {
           )
         })}
       </ol>
+
+      {LIVE_ANSICHT && folgen > 0 && arc === 'alle' && (
+        <p className="mt-4 text-sm text-ink-muted">Weitere {folgen} Posts dieser Visite folgen. Neue Beiträge erscheinen hier, sobald sie auf LinkedIn stehen.</p>
+      )}
 
       <p className="mt-10 text-[12px] leading-relaxed text-ink-faint">
         Alle Zahlen stammen aus den Beispiel-Datensätzen dieser Seite und den dort genannten Quellen. Datenlage, Lücken und
