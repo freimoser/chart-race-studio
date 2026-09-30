@@ -38,6 +38,22 @@ Nein. Von den **505 Standorten**, die der Datensatz dieser Seite für 13 einzeln
 
 Die Summe von 505 folgt dem Datensatz: Untergrenzen wie „über 120“ gehen mit dem nächsthöheren ganzen Wert ein, „über 110“ bei Tierarzt Plus Partner also mit 111. Für Altano ist der letzte belegte Wert 26 Standorte aus dem Jahr 2023; die 30 für 2026 sind geschätzt.
 
+## Wie die Blöcke seit 2015 gewachsen sind
+
+Ordnet man jede Gruppe dem Eigentümer zu, dem sie heute gehört, und verfolgt sie zurück, zeigt sich, wo das Wachstum herkommt:
+
+| Jahr | Beteiligungsgesellschaften | Mars (AniCura) | ohne Fonds, tierärztlich geführt | Eigentümer nicht erfasst | weitere Gruppen | alle |
+|---|---:|---:|---:|---:|---:|---:|
+| 2015 | 21 | 7 | – | – | 7 | 35 |
+| 2018 | 38 | 30 | 5 | 8 | 14 | 95 |
+| 2021 | 106 | 60 | 16 | 26 | 30 | 238 |
+| 2024 | 221 | 79 | 27 | 62 | 61 | 450 |
+| 2026 | 313 | 78 | 34 | 80 | 72 | 577 |
+
+*Zuordnung nach dem Eigentümer im September 2026, nicht nach dem im jeweiligen Jahr: SmartVet gehört erst seit 2021 mehrheitlich zu Medivet, activet seit August 2023 zu Tierarzt Plus Partner. Die Werte folgen dem Ketten-Datensatz dieser Seite; 2019 und 2020 sind geschätzt, die Gesamtzahlen außer 2024 ebenfalls.*
+
+Seit 2024 ist fast der ganze Zuwachs bei den Gruppen mit Finanzinvestoren angefallen: plus 92 Standorte in zwei Jahren (berechnet). AniCura liegt seit 2023 praktisch unverändert bei 75 bis 79. 2016 lagen Mars und die heutigen Investorengruppen mit 20 zu 28 noch nah beieinander, 2026 steht es 78 zu 313.
+
 ## Drei Modelle, nicht eines
 
 **Beteiligungsgesellschaften.** Der größte Block. Vier der fünf größten Gruppen gehören Beteiligungsgesellschaften, die fünfte ist AniCura; hinzu kommt Medivet mit 20 Standorten. VetGruppen Deutschland etwa ist Teil von Vetopia, 2021 aus Gruppen in Dänemark und Norwegen entstanden und mit über 220 Kliniken in acht Ländern tätig.

@@ -162,3 +162,14 @@ Eine neue Rubrik anlegen: Eintrag in `SAMPLE_CATEGORIES` ergänzen, dann bei den
 1. Rohdaten als Wide-Tabelle (`Jahr | Kategorie A | Kategorie B | …`) aufbereiten.
 2. In `src/samples/data.ts` als `export const NAME = { headers, rows }` ablegen.
 3. In `src/samples/index.ts` einen Eintrag mit `category`, Titel, Untertitel, Quelle, einsätziger `description`, `dataInfo` und `suggested`-Voreinstellungen anlegen. `isExample: true` setzen, wenn die Zahlen nicht belastbar sind – die App zeigt dann ein Badge „Beispieldaten“.
+
+## Wem die Tierarztketten gehören (`ketten-eigentuemer`)
+
+**Erstellt/geprüft:** 30.09.2026 · **Verwendet in:** Post 8
+
+Abgeleitet, nicht eigenständig erhoben: `KETTEN_EIGENTUEMER` in `src/samples/data.ts` summiert die Reihen von
+`KETTEN` zu fünf Blöcken nach dem Eigentümer im September 2026 (Beteiligungsgesellschaften, Mars, ohne Fonds bzw.
+tierärztlich geführt, Eigentümer nicht erfasst, weitere Gruppen) plus die Summenspalte. Belege, Schätzungen und
+Lücken sind die des Ketten-Datensatzes (`data/raw/ds12-ketten-modell.json`). Eigentümer laut Artikel zu Post 8.
+Ein Block ist leer, solange keine seiner Gruppen existierte. Wichtig für jede Darstellung: Zugeordnet wird nach
+dem heutigen Eigentümer, nicht nach dem im jeweiligen Jahr.

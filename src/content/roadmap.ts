@@ -141,10 +141,11 @@ export const POSTS: RoadmapPost[] = [
   },
   {
     nr: 8, arc: 'ketten', status: 'naechster',
-    title: 'Nicht jede Gruppe gehört einem Fonds',
-    hook: 'In der Debatte klingt Kette immer nach Private Equity. TeamVet und Cadomo Vets zeigen, dass es auch anders geht.',
-    figures: ['TeamVet: 27 Standorte, Gesellschafterstruktur ausdrücklich ohne Investmentfonds', 'Cadomo Vets: von Tierärzten gegründet und geführt, 4 Praxen', 'Dagegen: IVC Evidensia (EQT, Silver Lake), AniCura (Mars), Tierarzt Plus (Inflexion)'],
-    sampleId: 'ketten', chart: 'bar', dataStatus: 'belegt',
+    title: 'Nicht jede Kette gehört einem Fonds',
+    hook: 'Dieselben Standorte wie in Post 6, aber nach Eigentümer: Die Gruppen, die heute Beteiligungsgesellschaften gehören, hatten 2015 zusammen 21 Standorte, 2026 sind es 313.',
+    figures: ['Beteiligungsgesellschaften: 21 (2015), 106 (2021), 313 (2026)', 'Mars (AniCura): 7 (2015), 78 (2026), seit 2023 praktisch unverändert', 'Ohne Fonds oder tierärztlich geführt: 34 Standorte 2026 (TeamVet, Cadomo Vets, Wolf & Tiger)', 'Seit 2024: Beteiligungsgesellschaften plus 92, Mars minus 1'],
+    sampleId: 'ketten-eigentuemer', chart: 'line', dataStatus: 'belegt',
+    dataNote: 'Eigener Datensatz, abgeleitet aus „Der Aufstieg der Tierarztketten“ – nicht dasselbe Video wie Post 6. Zuordnung nach dem Eigentümer 2026, nicht nach dem im jeweiligen Jahr; im Post so sagen. 2019 und 2020 sind geschätzt.',
     refs: [6, 7],
   },
   {

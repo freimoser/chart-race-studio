@@ -1,5 +1,5 @@
 import type { SampleDataset } from '@/lib/data/types'
-import { FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data'
+import { FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -273,6 +273,29 @@ export const SAMPLES: SampleDataset[] = [
       chartType: 'line', topN: 7, decimals: 0, primaryAxisLabel: 'Standorte',
       // Die drei Großen klar unterscheidbar, die Restgruppe bewusst grau – sie ist keine Kette.
       colors: { 'IVC Evidensia': '#0f4c5c', 'Tierarzt Plus Partner': '#e36414', 'AniCura': '#20b2aa', 'Weitere Gruppen': '#a3aab2', 'VetGruppen (Vetopia)': '#7b5ea7', 'VetPartners': '#c0392b', 'Altano (Pferde)': '#8a6d3b' },
+    },
+  },
+  {
+    id: 'ketten-eigentuemer',
+    erstellt: '2026-09-30', geprueft: '2026-09-30',
+    category: 'praxis',
+    title: 'Wem die Tierarztketten gehören',
+    subtitle: 'Standorte der Tierarztgruppen in Deutschland nach heutigem Eigentümer, 2015 bis 2026',
+    source: 'Quelle: abgeleitet aus dem Datensatz „Der Aufstieg der Tierarztketten“ (Modellreihe aus Betreiberangaben, Bundeskartellamt und Fachpresse, verankert am Tierärzte Atlas 2024); Eigentümer laut Betreiber- und Presseangaben, Stand September 2026',
+    sourceUrl: 'https://www.bundestieraerztekammer.de/btk/dtbl/archiv/2025/artikel/DTBl_02_2025_Tieraerzte-Atlas.pdf',
+    unit: 'Standorte',
+    description: "Gruppen, die heute Beteiligungsgesellschaften gehören: 21 Standorte 2015, 313 im Jahr 2026.",
+    dataInfo: [
+      "Dieselben Standorte wie im Datensatz „Der Aufstieg der Tierarztketten“, zusammengefasst in fünf Blöcke. Die Werte werden im Code aus jenem Datensatz berechnet, nicht getrennt gepflegt; Belege, Schätzungen und Lücken gelten unverändert. Von den 104 Jahreswerten der einzeln erfassten Gruppen sind 41 belegt, für 2019 und 2020 gibt es keinen einzigen Beleg.",
+      "Zugeordnet wird nach dem Eigentümer im September 2026, nicht nach dem Eigentümer im jeweiligen Jahr. Der Block „Beteiligungsgesellschaften“ zeigt also, wie die Gruppen gewachsen sind, die heute Finanzinvestoren gehören: IVC Evidensia (EQT, Silver Lake), Tierarzt Plus Partner (ECONA, Inflexion), VetGruppen (Axcel), VetPartners (BC Partners) und Medivet (CVC). SmartVet gehört erst seit 2021 mehrheitlich zu Medivet, activet seit August 2023 zu Tierarzt Plus Partner.",
+      "„Mars (AniCura)“: AniCura gehört seit 2018 zum US-Konzern Mars. „Ohne Fonds, tierärztlich geführt“: TeamVet (Verbund ohne Investmentfonds im Gesellschafterkreis), Cadomo Vets und Wolf & Tiger (von Tierärztinnen und Tierärzten gegründet). „Eigentümer nicht erfasst“: Altano, Veternicum Nesto, Rex und filu, für die die Quellen keinen Eigentümer nennen.",
+      "„Weitere Gruppen“ ist der Rest bis zur Modellsumme: kleinere und regionale Gruppen, die nicht einzeln geführt werden und deren Eigentümer deshalb offen sind. Die Summe (im Video oben links) ist dieselbe Modellschätzung wie im Ketten-Datensatz, 577 für 2026 mit einem Band von 550 bis 610.",
+    ],
+    headers: KETTEN_EIGENTUEMER.headers,
+    rows: KETTEN_EIGENTUEMER.rows,
+    suggested: {
+      chartType: 'line', topN: 5, decimals: 0, primaryAxisLabel: 'Standorte',
+      colors: { 'Beteiligungsgesellschaften': '#0f4c5c', 'Mars (AniCura)': '#20b2aa', 'Ohne Fonds, tierärztlich geführt': '#e36414', 'Eigentümer nicht erfasst': '#8a6d3b', 'Weitere Gruppen': '#a3aab2' },
     },
   },
 ]

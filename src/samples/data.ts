@@ -380,3 +380,23 @@ export const HUND_KATZE_WELT = {
     ["2026", 54.8, 47.7, 39.8, 45, 54.9, 56.6, 74.1, 37.7, 54.9, 29.1, 37.7, 56.8, 37.7, 54.8, 56.8, 44.9, 39.8, 64.8, 54.9, 54.7, 69.9, 47.9, 54.9, 69.4, 61.8, 47.7, 54.9, 54.9, 61.8, 54.9, 52.9, 54.9, 54.9, 54.9, 69.9, 41.6, 69.9, 54.8, 64.9, 62.9, 56.8, 76.4, 61.3, 54.9, 47.8, 54.8, 57, 56.8, 69.9, 39.8, 64.9, 54.8, 54.9, 44.6, 54.8, 54.9, 57.9, 44.1, 36.6, 54.9, 54.9, 37.7, 39.6, 54.9, 51.7, 56.9, 64.9, 54.9, 54.8, 69.9, 56.8, 64.9, 53.9, 40.9, 54.8, 61.8, 54.8, 37.7, 58, 37.7, 42.9, 54.9, 56.8, 41.1, 37.7, 44.8, 54.9, 57.8, 47.3, 37.7, 44.8, 61.8, 39.5, 37.7, 54.9, 54.9, 39.8, 17.9, 65.5, 30.8, 54.9, 54.9, 25.7, 55, 54.9, 81.2, 57.6, 54.9, 54.9, 64.9, 58.1, 47.7, 44.8, 50.6, 48.1, 39.8, 54.9, 61.8, 54.9, 57.9, 54.8, 35.5, 54.9, 64.9, 54.9, 54.9, 50.6, 47.8, 41.1, 37.7, 54.8, 58.6, 37.7, 64.9, 57.9, 69.9, 69.9, 95.3, 52.4, 59, 37.7, 54.9, 48.8, 44.9, 54.9, 57, 56.8, 56.8, 57.9, 44.7, 55.4, 37.7, 54.9, 47.7, 55, 54.9, 61.8, 72.7, 39.1, 57.9, 54.9, 54.9, 63.3, 54.9, 58.3, 54.8, 39.8, 69.9, 39.9, 25.2, 37.7, 50.6, 44.8, 54.9, 85.9, 61.8, 54.9, 58, 56.8, 39.8, 38.2, 44.8, 56.2, 54.9, 39.3, 37.7, 51.9, 54.7, 69.9, 44.8, 57.8, 50, 69.9, 73.9, 37.7, 54.9, 54.9, 521, 442.8],
   ],
 }
+
+// Dieselben Standorte wie KETTEN, gebündelt nach dem Eigentümer im September 2026 (Artikel zu Post 8).
+// Abgeleitet statt abgetippt, damit beide Datensätze nie auseinanderlaufen. activet zählt zu den
+// Beteiligungsgesellschaften, weil die Praxen seit August 2023 zu Tierarzt Plus Partner gehören.
+const EIGENTUEMER_BLOECKE: [string, string[]][] = [
+  ['Beteiligungsgesellschaften', ['IVC Evidensia', 'Tierarzt Plus Partner', 'VetGruppen (Vetopia)', 'VetPartners', 'SmartVet → Medivet', 'activet (bis 2022)']],
+  ['Mars (AniCura)', ['AniCura']],
+  ['Ohne Fonds, tierärztlich geführt', ['TeamVet', 'Cadomo Vets', 'Wolf & Tiger']],
+  ['Eigentümer nicht erfasst', ['Altano (Pferde)', 'Veternicum Nesto', 'Rex', 'filu']],
+  ['Weitere Gruppen', ['Weitere Gruppen']],
+  ['Summe: Alle Gruppen (Standorte)', ['Summe: Alle Gruppen (Standorte)']],
+]
+export const KETTEN_EIGENTUEMER = {
+  headers: ['Jahr', ...EIGENTUEMER_BLOECKE.map(([name]) => name)],
+  rows: KETTEN.rows.map((zeile) => [zeile[0], ...EIGENTUEMER_BLOECKE.map(([, gruppen]) => {
+    const werte = gruppen.map((g) => zeile[KETTEN.headers.indexOf(g)]).filter((w): w is number => typeof w === 'number')
+    // Leer bleibt leer: Ein Block, dessen Gruppen es noch nicht gab, ist nicht erhoben, nicht 0.
+    return werte.length ? werte.reduce((a, b) => a + b, 0) : null
+  })]),
+}
