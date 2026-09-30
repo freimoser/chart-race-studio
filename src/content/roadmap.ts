@@ -140,12 +140,13 @@ export const POSTS: RoadmapPost[] = [
     refs: [6],
   },
   {
-    nr: 8, arc: 'ketten', status: 'naechster',
+    nr: 8, arc: 'ketten', status: 'veroeffentlicht', publishedOn: '2026-09-30',
+    linkedInUrl: 'https://www.linkedin.com/pulse/wem-geh%C3%B6ren-die-tierarztketten-deutschland-s-thomas-freimoser-noe0c',
     title: 'Nicht jede Kette gehört einem Fonds',
     hook: 'Dieselben Standorte wie in Post 6, aber nach Eigentümer: Die Gruppen, die heute Beteiligungsgesellschaften gehören, hatten 2015 zusammen 21 Standorte, 2026 sind es 313.',
     figures: ['Beteiligungsgesellschaften: 21 (2015), 106 (2021), 313 (2026)', 'Mars (AniCura): 7 (2015), 78 (2026), seit 2023 praktisch unverändert', 'Ohne Fonds oder tierärztlich geführt: 34 Standorte 2026 (TeamVet, Cadomo Vets, Wolf & Tiger)', 'Seit 2024: Beteiligungsgesellschaften plus 92, Mars minus 1'],
     sampleId: 'ketten-eigentuemer', chart: 'line', dataStatus: 'belegt',
-    dataNote: 'Eigener Datensatz, abgeleitet aus „Der Aufstieg der Tierarztketten“ – nicht dasselbe Video wie Post 6. Zuordnung nach dem Eigentümer 2026, nicht nach dem im jeweiligen Jahr; im Post so sagen. 2019 und 2020 sind geschätzt.',
+    dataNote: 'Am 30.09.2026 als LinkedIn-Artikel erschienen (gekürzte Fassung des Seitenartikels, docs/linkedin/artikel-post-08-eigentuemer.md); der Videopost folgt ein bis zwei Tage später mit Link auf den LinkedIn-Artikel. Eigener Datensatz, abgeleitet aus „Der Aufstieg der Tierarztketten“ – nicht dasselbe Video wie Post 6. Zuordnung nach dem Eigentümer 2026, nicht nach dem im jeweiligen Jahr; im Post so sagen. 2019 und 2020 sind geschätzt.',
     refs: [6, 7],
   },
   {
