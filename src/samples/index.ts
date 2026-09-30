@@ -295,7 +295,7 @@ export const SAMPLES: SampleDataset[] = [
     rows: KETTEN_EIGENTUEMER.rows,
     suggested: {
       chartType: 'line', topN: 5, decimals: 0, primaryAxisLabel: 'Standorte',
-      colors: { 'Beteiligungsgesellschaften': '#0f4c5c', 'Mars (AniCura)': '#20b2aa', 'Ohne Fonds, tierärztlich geführt': '#e36414', 'Eigentümer nicht erfasst': '#8a6d3b', 'Weitere Gruppen': '#a3aab2' },
+      colors: { 'Beteiligungsgesellschaften': '#0f4c5c', 'Mars (AniCura)': '#20b2aa', 'Ohne Fonds, tierärztlich geführt': '#e36414', 'Eigentümer nicht erfasst': '#c2b9ad', 'Weitere Gruppen': '#a3aab2' },
     },
   },
 ]
