@@ -5,7 +5,7 @@ https://tiermedizin-in-zahlen.org/beitrag/tierarztketten-investoren-eigentuemer.
 **Stand:** 30.09.2026
 
 **Hinweis zum Editor:** LinkedIn-Artikel können keine Tabellen. Die Tabellen der Website stehen hier als Listen.
-Titelbild: `public/beitrag/og/tierarztketten-investoren-eigentuemer.png` oder ein Standbild aus dem Video (16:9).
+Titelbild: `docs/linkedin/header-post-08.png` (1920 × 1080).
 
 ---
 
