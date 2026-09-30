@@ -43,7 +43,7 @@ Optional: ein Standbild des Charts als `public/beitrag/<slug>.png` ablegen – d
 
 | Schalter | Wert | Wirkung |
 |---|---|---|
-| `beispieleErstNachVeroeffentlichung` | an seit 29.09.2026 | live nur Datensätze aus veröffentlichten Posts und dem aktuellen Post (`naechster`), lokal alle |
+| `beispieleErstNachVeroeffentlichung` | an seit 29.09.2026 | live nur Datensätze aus veröffentlichten Posts, dem aktuellen Post (`naechster`) und Posts mit `vorabOnline`, lokal alle |
 | `vorschauPosts` | 4 | so viele offene Posts zeigt der Plan live: der aktuelle und die nächsten drei, ohne Zahlen und Datensatz |
 | `artikelLive` | an seit 23.09.2026 | Artikel von Posts auf `naechster` oder `veroeffentlicht` mit `bereit: ja` werden als Seite gebaut, dazu Übersicht `/beitrag/`, CSV je Datensatz unter `/daten/`, Sitemap und llms.txt |
 
@@ -70,11 +70,13 @@ Beschreibung, eine Zahl im ersten Absatz und offene Stellen.
 
 ## Einschübe außerhalb der Nummerierung
 
+**Post zurückstellen:** Status zurück auf `geplant`, `vorabOnline: true`, wenn sein Artikel schon online war – sonst wird die Seite zur 404. Post 5 ist am 30.09.2026 so zurückgestellt worden, Post 7 kam vor.
+
 Beiträge, die zu keinem Datensatz gehören, bekommen keine Postnummer, damit „siehe Post 7“ gültig bleibt.
 
 | nach Post | Format | Thema | Entwurf |
 |---|---|---|---|
-| 5 | LinkedIn-Artikel | Vibecoding, Datenforschung und mehr: wie die Seite entsteht | `docs/linkedin/vibecoding-datenforschung.md` |
+| 5 → 7 | LinkedIn-Artikel | Vibecoding, Datenforschung und mehr: wie die Seite entsteht | `docs/linkedin/vibecoding-datenforschung.md` |
 
 ## Kandidaten für Visite 2
 

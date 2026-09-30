@@ -1,6 +1,6 @@
 # LinkedIn-Artikel: Vibecoding, Datenforschung und mehr
 
-**Format:** LinkedIn-Artikel (nicht Post), Einschub nach Post 5, keine Postnummer.
+**Format:** LinkedIn-Artikel (nicht Post), Einschub nach Post 7, keine Postnummer.
 **Stand:** 29.09.2026 · Entwurf. Stellen mit **[prüfen]** kann nur Thomas bestätigen.
 **Titelbild:** Screenshot des Studios mit laufendem Line Race (1920 × 1080), etwa die Weltkarte oder Post 4.
 
@@ -91,7 +91,7 @@ erhoben“, eine 0 ist eine echte Null.
 2. In der Datenarbeit ist die KI eine hervorragende Rechercheassistentin und eine schlechte Quelle.
 3. Die meiste Zeit geht nicht ins Bauen, sondern ins Nachfragen: Was zählt diese Zahl eigentlich?
 
-Visite 1 hat 30 Posts, sechs sind draußen. Die nächsten drei handeln davon, wer die Tierarztpraxen kauft.
+Visite 1 hat 30 Posts, sechs sind draußen. Die nächsten handeln davon, wem die Praxisgruppen gehören und wer neu gründet statt kauft.
 
 Wenn ihr Daten kennt, die in die Reihe gehören, oder einen Fehler findet: Schreibt mir.
 

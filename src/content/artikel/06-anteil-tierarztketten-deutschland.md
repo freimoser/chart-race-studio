@@ -42,7 +42,7 @@ Die 450 Standorte verteilen sich nicht gleichmäßig auf 16 Ketten. Für die dre
 | IVC Evidensia | 76 |
 | Zusammen (berechnet) | 251 |
 
-Das sind 55,8 Prozent der Atlas-Zahl. Auf die übrigen 13 Ketten entfallen rechnerisch rund 200 Standorte. Nimmt man die drei nächsten belegten Werte für 2024 hinzu, Veternicum Nesto mit 21, Medivet mit 20 und VetPartners mit 17, kommen sechs Gruppen auf 309 Standorte, rund zwei Drittel.
+Das sind 55,8 Prozent der Atlas-Zahl. Auf die übrigen 13 Ketten entfallen rechnerisch rund 200 Standorte. Nimmt man die drei nächsten belegten Werte für 2024 hinzu, Veternicum Nesto mit 21, Medivet mit 20 und VetPartners mit 17, kommen sechs Gruppen auf 309 Standorte, rund zwei Drittel. Wie die Gruppen seit 2015 dorthin gewachsen sind, zeigt der Artikel [Tierarztketten seit 2015](tierarztketten-entwicklung-seit-2015.html).
 
 Vorsicht beim Nachrechnen: Die Einzelwerte stammen aus anderen Quellen als die Atlas-Zahl und haben andere Stichtage. Welche 16 Ketten der Atlas genau gezählt hat, ist nicht vollständig bekannt. Der Anteil der drei Größten ist deshalb eine Größenordnung, keine exakte Quote.
 

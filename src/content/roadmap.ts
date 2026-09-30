@@ -112,12 +112,12 @@ export const POSTS: RoadmapPost[] = [
     refs: [2],
   },
   {
-    nr: 5, arc: 'praxis', status: 'naechster',
+    nr: 5, arc: 'praxis', status: 'geplant', vorabOnline: true,
     title: 'Tierarztmangel? Kommt darauf an, wen man zählt',
-    hook: 'Hunde und Katzen gegen Praxisinhaber, zwei Kurven, die auseinanderlaufen. Rechnet man die Angestellten dazu, verschwindet die Lücke fast. Dazu: Die Seite ist online.',
+    hook: 'Hunde und Katzen gegen Praxisinhaber, zwei Kurven, die auseinanderlaufen. Rechnet man die Angestellten dazu, verschwindet die Lücke fast.',
     figures: ['Hunde und Katzen: 19,7 Mio. (2012) auf 25,7 Mio. (2025)', 'Je Praxisinhaber: 1.655 (2012) auf 2.291 (2025), plus 38 Prozent', 'Je Tierärztin oder Tierarzt in der Praxis: 1.079 auf 1.101, plus 2 Prozent', 'Seit 2019 803 Praxisinhaber weniger'],
     sampleId: 'tieraerzteschaft-deutschland', chart: 'line', dataStatus: 'belegt',
-    dataNote: 'Heimtierzahlen haben 2012 einen Methodenbruch (ZZF/IVH), der Vergleich beginnt deshalb 2012. Inhaber sind nicht Praxen: In Gemeinschaftspraxen teilen sich mehrere Inhaber einen Betrieb. Mit diesem Post wird die Seite angekündigt, der Artikel-Link steht im Post selbst.',
+    dataNote: 'Heimtierzahlen haben 2012 einen Methodenbruch (ZZF/IVH), der Vergleich beginnt deshalb 2012. Inhaber sind nicht Praxen: In Gemeinschaftspraxen teilen sich mehrere Inhaber einen Betrieb. Am 30.09.2026 zurückgestellt, Post 7 kam vor. Der Artikel war schon online und bleibt es (vorabOnline). Für ein besseres Video: eigener Datensatz ab 2012 mit Hunden und Katzen je Inhaber und je Kopf in der Praxis.',
     refs: [4, 1],
   },
   {
@@ -131,7 +131,7 @@ export const POSTS: RoadmapPost[] = [
     refs: [4],
   },
   {
-    nr: 7, arc: 'ketten', status: 'geplant',
+    nr: 7, arc: 'ketten', status: 'naechster',
     title: '2015 gab es diesen Markt noch nicht',
     hook: 'Die Konsolidierung ist keine alte Entwicklung. AniCura hatte im Februar 2016 acht Standorte in Deutschland.',
     figures: ['AniCura: 8 Standorte (02/2016), 30 (06/2018), 78 (2026)', 'Evidensia Deutschland GmbH: gegründet Anfang 2016', 'Tierarzt Plus: 2018 gegründet, 2026 über 110'],

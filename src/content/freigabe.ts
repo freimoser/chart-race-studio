@@ -4,7 +4,7 @@
  * Schalter in freigabe.json:
  *
  * - `beispieleErstNachVeroeffentlichung` (an seit 29.09.2026): Ein Datensatz erscheint live erst, wenn
- *   ihn ein veröffentlichter Post oder der aktuelle Post (`naechster`) verwendet. Der aktuelle Post zählt
+ *   ihn ein veröffentlichter Post, der aktuelle Post (`naechster`) oder ein Post mit `vorabOnline` verwendet. Der aktuelle Post zählt
  *   mit, weil sein Artikel am Tag des Posts schon online ist und auf das Studio verlinkt.
  * - `vorschauPosts`: Wie viele noch nicht veröffentlichte Posts der Redaktionsplan live zeigt – der
  *   aktuelle und die nächsten danach, ohne Zahlen und ohne Datensatz. Alle weiteren bleiben verborgen.
@@ -51,9 +51,12 @@ const SICHTBARKEIT = sichtbarkeiten(POSTS, FREIGABE.vorschauPosts)
 /** Wie der Post live erscheint. Lokal ohne `?live` zeigt der Plan trotzdem alles und nennt diesen Wert nur. */
 export const sichtbarkeitVon = (post: RoadmapPost): Sichtbarkeit => SICHTBARKEIT.get(post.nr) ?? 'verborgen'
 
-/** Datensätze, die live angeboten werden: aus veröffentlichten Posts und dem aktuellen. */
+/**
+ * Datensätze, die live angeboten werden: aus veröffentlichten Posts, dem aktuellen und aus Posts mit
+ * `vorabOnline`. Ist der Artikel online, muss sein Link „Datensatz im Studio öffnen“ auch funktionieren.
+ */
 export const FREIGEGEBENE_DATENSAETZE = new Set(
-  POSTS.filter((p) => p.sampleId && (p.status === 'veroeffentlicht' || p.status === 'naechster')).map((p) => p.sampleId as string),
+  POSTS.filter((p) => p.sampleId && (p.status === 'veroeffentlicht' || p.status === 'naechster' || p.vorabOnline)).map((p) => p.sampleId as string),
 )
 
 export function datensatzFreigegeben(id: string): boolean {

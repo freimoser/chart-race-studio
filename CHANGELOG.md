@@ -11,7 +11,8 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 - Verweise „baut auf Post N“ nur noch auf Posts, die live auch stehen.
 - Post 5 heißt „Tierarztmangel? Kommt darauf an, wen man zählt“: Die Kammer zählt Inhaber, nicht Praxen.
 - Test für das Vorschaufenster, auch für vorgezogene Posts (`src/test/freigabe.test.ts`).
-- Entwurf LinkedIn-Artikel „Vibecoding, Datenforschung und mehr“ (`docs/linkedin/`), Einschub nach Post 5.
+- Entwurf LinkedIn-Artikel „Vibecoding, Datenforschung und mehr“ (`docs/linkedin/`), Einschub nach Post 7.
+- Post 7 („2015 gab es diesen Markt noch nicht“) vorgezogen, Post 5 zurückgestellt; sein Artikel bleibt über `vorabOnline` online, und Datensätze von `vorabOnline`-Posts sind live freigegeben, damit „Datensatz im Studio öffnen“ funktioniert. Zwei Kontextlinks auf den Post-7-Artikel.
 
 ### SEO/GEO-Pflegerunde 1 (27.09.2026)
 
