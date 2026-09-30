@@ -70,13 +70,13 @@ Beschreibung, eine Zahl im ersten Absatz und offene Stellen.
 
 ## Einschübe außerhalb der Nummerierung
 
-**Post zurückstellen:** Status zurück auf `geplant`, `vorabOnline: true`, wenn sein Artikel schon online war – sonst wird die Seite zur 404. Post 5 ist am 30.09.2026 so zurückgestellt worden, Post 7 kam vor.
+**Post zurückstellen:** Status zurück auf `geplant`, `vorabOnline: true`, wenn sein Artikel schon online war – sonst wird die Seite zur 404. Am 30.09.2026 so zurückgestellt: Post 5 (Video zu schwach) und Post 7 (Post 6 hatte dieselbe Geschichte schon erzählt), Post 8 kam vor.
 
 Beiträge, die zu keinem Datensatz gehören, bekommen keine Postnummer, damit „siehe Post 7“ gültig bleibt.
 
 | nach Post | Format | Thema | Entwurf |
 |---|---|---|---|
-| 5 → 7 | LinkedIn-Artikel | Vibecoding, Datenforschung und mehr: wie die Seite entsteht | `docs/linkedin/vibecoding-datenforschung.md` |
+| 8 | LinkedIn-Artikel | Vibecoding, Datenforschung und mehr: wie die Seite entsteht | `docs/linkedin/vibecoding-datenforschung.md` |
 
 ## Kandidaten für Visite 2
 

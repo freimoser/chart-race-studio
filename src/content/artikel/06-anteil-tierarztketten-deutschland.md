@@ -50,7 +50,7 @@ Vorsicht beim Nachrechnen: Die Einzelwerte stammen aus anderen Quellen als die A
 
 Gesucht wird das Thema meist als „Tierarztpraxen aufgekauft“. Die Zahl der Kettenstandorte misst aber etwas anderes. Der Datensatz dieser Seite zählt jeden Standort einer Betreibergruppe, gleich ob er gekauft oder neu eröffnet wurde. Rex, filu und Wolf & Tiger eröffnen neue Praxen, statt bestehende zu kaufen; sie kamen 2026 zusammen auf 27 Standorte. Mehr dazu im Artikel [Gründen statt kaufen](tierarztpraxis-neugruendung-ketten.html).
 
-Aus demselben Grund taugt eine oft zitierte ältere Zahl nicht als Vergleich. 2022 hieß es in der Fachpresse, es seien „nicht mehr als 200 Praxen und Kliniken in Investoren- beziehungsweise Konzernhand“. Diese Angabe meint nur Standorte im Besitz von Konzernen und Beteiligungsgesellschaften. Unabhängige Betreibergruppen, Pferdegruppen und Neugründer fehlen darin. Wer 200 (2022) und 450 (2024) nebeneinanderstellt, vergleicht zwei Definitionen, keine Entwicklung.
+Aus demselben Grund taugt eine oft zitierte ältere Zahl nicht als Vergleich. 2022 hieß es in der Fachpresse, es seien „nicht mehr als 200 Praxen und Kliniken in Investoren- beziehungsweise Konzernhand“. Diese Angabe meint nur Standorte im Besitz von Konzernen und Beteiligungsgesellschaften. Welche Gruppen heute wem gehören, steht im Artikel [Tierarztketten und Investoren](tierarztketten-investoren-eigentuemer.html). Unabhängige Betreibergruppen, Pferdegruppen und Neugründer fehlen darin. Wer 200 (2022) und 450 (2024) nebeneinanderstellt, vergleicht zwei Definitionen, keine Entwicklung.
 
 ## Wem gehören die übrigen 95 Prozent?
 

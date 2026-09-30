@@ -1,6 +1,6 @@
 # LinkedIn-Artikel: Vibecoding, Datenforschung und mehr
 
-**Format:** LinkedIn-Artikel (nicht Post), Einschub nach Post 7, keine Postnummer.
+**Format:** LinkedIn-Artikel (nicht Post), Einschub nach Post 8, keine Postnummer.
 **Stand:** 29.09.2026 · Entwurf. Stellen mit **[prüfen]** kann nur Thomas bestätigen.
 **Titelbild:** Screenshot des Studios mit laufendem Line Race (1920 × 1080), etwa die Weltkarte oder Post 4.
 

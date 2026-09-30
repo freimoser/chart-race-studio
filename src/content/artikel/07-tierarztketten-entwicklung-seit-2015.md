@@ -62,7 +62,7 @@ Für sechs Gruppen gibt es sowohl für 2024 als auch für 2026 belegte Werte. Re
 
 Mehr als die Hälfte dieses belegten Zuwachses entfällt auf IVC Evidensia, 58 Prozent (berechnet). AniCura, die Gruppe mit dem frühesten Einstieg, ist seit 2024 nicht mehr gewachsen.
 
-Die Stagnation ist nicht neu. SmartVet, gegründet 2005 und damit schon vor der Investorenwelle am Markt, hatte 2016 20 Standorte, 2021 18 und 2026 unter dem Namen Medivet wieder 20. Medivet übernahm 2021 die Mehrheit und Ende 2023 die ganze Gruppe. Wie es vor 2015 aussah, steht im Artikel [Wer betreibt die Tierarztpraxen in Deutschland?](../artikel/tierarztketten-deutschland.html).
+Die Stagnation ist nicht neu. SmartVet, gegründet 2005 und damit schon vor der Investorenwelle am Markt, hatte 2016 20 Standorte, 2021 18 und 2026 unter dem Namen Medivet wieder 20. Medivet übernahm 2021 die Mehrheit und Ende 2023 die ganze Gruppe. Wem die Gruppen heute gehören, zeigt der Artikel [Tierarztketten und Investoren](tierarztketten-investoren-eigentuemer.html). Wie es vor 2015 aussah, steht im Artikel [Wer betreibt die Tierarztpraxen in Deutschland?](../artikel/tierarztketten-deutschland.html).
 
 ## Was die Zahl nicht sagt
 

@@ -13,6 +13,7 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 - Test für das Vorschaufenster, auch für vorgezogene Posts (`src/test/freigabe.test.ts`).
 - Entwurf LinkedIn-Artikel „Vibecoding, Datenforschung und mehr“ (`docs/linkedin/`), Einschub nach Post 7.
 - Post 7 („2015 gab es diesen Markt noch nicht“) vorgezogen, Post 5 zurückgestellt; sein Artikel bleibt über `vorabOnline` online, und Datensätze von `vorabOnline`-Posts sind live freigegeben, damit „Datensatz im Studio öffnen“ funktioniert. Zwei Kontextlinks auf den Post-7-Artikel.
+- Post 8 („Nicht jede Gruppe gehört einem Fonds“) statt Post 7: Post 6 hatte die Entwicklung seit 2015 auf LinkedIn schon erzählt. Der Post-7-Artikel bleibt über `vorabOnline` online.
 
 ### SEO/GEO-Pflegerunde 1 (27.09.2026)
 
