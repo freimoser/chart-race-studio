@@ -181,7 +181,10 @@ dem heutigen Eigentümer, nicht nach dem im jeweiligen Jahr.
 Alle 24 Jahrgänge der BTK-Statistik 2002–2025, Tab. 1, je Jahr: Kammermitglieder gesamt und Frauen, tierärztlich
 Tätige gesamt und Frauen (einschließlich Ausland, wie in Tab. 1), Praxisinhaber und Praxisassistenten je gesamt und
 Frauen. Jeder Wert mit Quell-PDF und Tabelle in der Rohdatei; nichts interpoliert. Anker geprüft: 2020 (43.461 /
-27.500; 32.582 / 22.121) und 2025 (Pressemitteilung 66,8 / 71,7 %). Die Gesamtzahlen stimmen auf die Person mit
+27.500; 32.582 / 22.121) und 2025 (Pressemitteilung 66,8 / 71,7 %). Am 02.10.2026 zusätzlich von Hand gegen Tab. 1
+geprüft, alle Werte gleich: 2002 (Praktizierende 7.024 m / 3.451 w, Assistenten 1.045 m / 2.739 w), 2006 (Tätige 11.872 m /
+11.901 w, Praktizierende 7.030 / 4.328, Assistenten 1.053 / 3.384), 2014, 2015, 2016, 2019 und 2025 (Inhaber und
+Angestellte gesamt und Frauen). 2002 bis 2011 druckt die BTK die Männer selbst aus, ab 2012 sind sie berechnet. Die Gesamtzahlen stimmen auf die Person mit
 `TIERAERZTESCHAFT_DEUTSCHLAND` überein.
 
 Bekannte Eigenheiten: 2005 von der BTK selbst als unvollständig bezeichnet (Umzug der Zentralen Tierärztedatei);
