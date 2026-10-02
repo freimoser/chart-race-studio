@@ -16,6 +16,7 @@ const d4 = load('ds4-nutztiere.json'), d5 = load('ds5-tieraerzte-bundesland-1991
 const d8 = load('ds8-praxisarten-1996-2025.json'), d9 = load('ds9-fachtieraerzte.json'), d10 = load('ds10-kleintiere-bundesland.json')
 const d12 = load('ds12-ketten-modell.json')
 const d13 = load('ds13-hund-katze-welt.json')
+const d14 = load('ds14-geschlecht.json')
 
 /** long rows -> wide table (Jahr × names). Bei Dubletten gewinnt die zuerst genannte Quelle. */
 function wide(rows, { names, from, to, rename = {} }) {
@@ -285,9 +286,38 @@ const w9 = wide(
   {},
 )
 
+// Dieselben Ketten-Standorte, gebündelt nach dem Eigentümer im September 2026 (Post 8). Abgeleitet statt
+// abgetippt, damit beide Datensätze nie auseinanderlaufen. activet zählt zu den Beteiligungsgesellschaften,
+// weil die Praxen seit August 2023 zu Tierarzt Plus Partner gehören.
+const EIGENTUEMER_BLOECKE = [
+  ['Beteiligungsgesellschaften', ['IVC Evidensia', 'Tierarzt Plus Partner', 'VetGruppen (Vetopia)', 'VetPartners', 'SmartVet → Medivet', 'activet (bis 2022)']],
+  ['Mars (AniCura)', ['AniCura']],
+  ['Ohne Fonds, tierärztlich geführt', ['TeamVet', 'Cadomo Vets', 'Wolf & Tiger']],
+  ['Eigentümer nicht erfasst', ['Altano (Pferde)', 'Veternicum Nesto', 'Rex', 'filu']],
+  ['Weitere Gruppen', ['Weitere Gruppen']],
+  ['Summe: Alle Gruppen (Standorte)', ['Summe: Alle Gruppen (Standorte)']],
+]
+const w11 = {
+  headers: ['Jahr', ...EIGENTUEMER_BLOECKE.map(([name]) => name)],
+  rows: w10.rows.map((zeile) => [zeile[0], ...EIGENTUEMER_BLOECKE.map(([, gruppen]) => {
+    const werte = gruppen.map((g) => zeile[w10.headers.indexOf(g)]).filter((v) => typeof v === 'number')
+    // Leer bleibt leer: Ein Block, dessen Gruppen es noch nicht gab, ist nicht erhoben, nicht 0.
+    return werte.length ? werte.reduce((x, y) => x + y, 0) : null
+  })]),
+}
+
+// Frauen und Männer in der Praxis, 2002–2025 (Post 28). Jeder Wert aus Tab. 1 der BTK-Jahrgänge, nichts
+// interpoliert; Männer = gesamt minus Frauen. Der Frauenanteil aller Tätigen läuft als große Zahl mit
+// („Gesamt:“-Spalte nach dem Datenstandard), er ist keine eigene Linie.
+const w12 = {
+  headers: ['Jahr', 'Angestellte Tierärztinnen', 'Praxisinhaberinnen', 'Praxisinhaber', 'Angestellte Tierärzte', 'Gesamt: Frauenanteil aller Tätigen (%)'],
+  rows: (d14.jahre ?? []).map((j) => [String(j.jahr), j.angestellte_frauen, j.inhaber_frauen, j.inhaber_gesamt - j.inhaber_frauen,
+    j.angestellte_gesamt - j.angestellte_frauen, Math.round((1000 * j.taetig_frauen) / j.taetig_gesamt) / 10]),
+}
+
 const lit = (v) => (v == null ? 'null' : typeof v === 'number' ? String(v) : JSON.stringify(v))
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 const out = `// Automatisch erzeugt von scripts/build-samples.mjs aus data/raw/*.json – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('TIERAERZTE_BUNDESLAND', w1), emit('TIERAERZTESCHAFT_DEUTSCHLAND', w2), emit('INHABER_ANGESTELLTE', w2b), emit('HEIMTIERE', w3), emit('HUNDERASSEN', w4), emit('RINDER_BUNDESLAND', w5), emit('HEIMTIERMARKT', w6), emit('PRAXISSCHWERPUNKTE', w7), emit('FACHTIERAERZTE', w8), emit('KLEINTIERE_BUNDESLAND', w9), emit('KETTEN', w10), emit('HUND_KATZE_WELT', { headers: d13.headers ?? ['Jahr'], rows: d13.rows ?? [] })].join('\n')
+  [emit('TIERAERZTE_BUNDESLAND', w1), emit('TIERAERZTESCHAFT_DEUTSCHLAND', w2), emit('INHABER_ANGESTELLTE', w2b), emit('HEIMTIERE', w3), emit('HUNDERASSEN', w4), emit('RINDER_BUNDESLAND', w5), emit('HEIMTIERMARKT', w6), emit('PRAXISSCHWERPUNKTE', w7), emit('FACHTIERAERZTE', w8), emit('KLEINTIERE_BUNDESLAND', w9), emit('KETTEN', w10), emit('KETTEN_EIGENTUEMER', w11), emit('GESCHLECHT_PRAXIS', w12), emit('HUND_KATZE_WELT', { headers: d13.headers ?? ['Jahr'], rows: d13.rows ?? [] })].join('\n')
 fs.writeFileSync('src/samples/data.ts', out)
-for (const [n, w] of Object.entries({ w1, w2, w2b, w3, w4, w5, w6, w7, w8, w9, w10 })) console.log(n, w.headers.length - 1, 'Kategorien,', w.rows.length, 'Perioden', w.rows[0]?.[0], '–', w.rows.at(-1)?.[0])
+for (const [n, w] of Object.entries({ w1, w2, w2b, w3, w4, w5, w6, w7, w8, w9, w10, w11, w12 })) console.log(n, w.headers.length - 1, 'Kategorien,', w.rows.length, 'Perioden', w.rows[0]?.[0], '–', w.rows.at(-1)?.[0])

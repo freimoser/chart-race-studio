@@ -1,59 +1,83 @@
 ---
 post: 28
 slug: frauenanteil-tiermedizin
-titel: Frauenanteil in der Tiermedizin: 71,7 Prozent 2025
-beschreibung: 2025 waren 71,7 Prozent der tätigen Tierärzte in Deutschland Frauen. Unter Angestellten 82 Prozent, unter Selbstständigen 58. Zahlen mit Quelle.
+titel: Frauenanteil in der Tiermedizin: 72 Prozent 2025
+beschreibung: 2025 waren 72 Prozent der tätigen Tierärzte in Deutschland Frauen, 2002 noch 44 Prozent. Seit 2016 gibt es mehr Praxisinhaberinnen als Inhaber.
 frage: Wie viel Prozent der Tierärzte sind weiblich?
 suchbegriffe: frauenanteil tiermedizin, tierärztinnen deutschland anzahl, wie viele tierärzte gibt es in deutschland, statistik tierärzte deutschland
-stand: 2026-09-23
-bereit: nein
+stand: 2026-10-02
+bereit: ja
 ---
-2025 waren in Deutschland **71,7 Prozent der tierärztlich Tätigen Frauen** und **66,8 Prozent aller Mitglieder der Tierärztekammern**, so die Bundestierärztekammer. Bei 34.476 Tätigen entspricht das rechnerisch rund 24.700 Tierärztinnen.
+2025 waren in Deutschland **72,0 Prozent der tierärztlich Tätigen Frauen**, 24.815 von 34.476, und 67,0 Prozent aller Mitglieder der Tierärztekammern. 2002 lag der Anteil unter den Tätigen bei 44,3 Prozent. Seit 2006 arbeiten mehr Tierärztinnen als Tierärzte, seit 2016 führen mehr Frauen als Männer eine eigene Praxis. Ausgelesen aus allen 24 Jahrgängen der Statistik der Bundestierärztekammer von 2002 bis 2025.
 
 ## Das Wichtigste in Kürze
 
-- Unter den angestellten Tierärztinnen und Tierärzten sind laut Tierärzte Atlas Deutschland 2024 82 Prozent Frauen, unter den Selbstständigen 58 Prozent.
-- Bei den unter 40-Jährigen liegt der Frauenanteil bei 82 Prozent, unter den Studierenden der Tiermedizin bei 87 Prozent.
-- Den höchsten Frauenanteil hat der Öffentliche Dienst mit 74 Prozent.
-- In den nächsten 15 Jahren scheiden fast zwei Drittel der noch tätigen Männer aus dem Beruf aus, besonders unter den Praxisinhabern.
+- Tätige Tierärztinnen: 9.706 im Jahr 2002, 24.815 im Jahr 2025, plus 156 Prozent. Tätige Tierärzte: 12.225 und 9.661, minus 21 Prozent (berechnet).
+- 2006 waren erstmals mehr Frauen als Männer tierärztlich tätig, 11.901 zu 11.872.
+- 2016 gab es erstmals mehr Praxisinhaberinnen als Praxisinhaber, 5.999 zu 5.973. 2025 stehen 6.616 Inhaberinnen 4.600 Inhabern gegenüber.
+- Unter den angestellten Tierärztinnen und Tierärzten in Praxen sind seit 2010 mehr als 80 Prozent Frauen, 2025 9.993 von 12.125.
+- Die größte Gruppe in der Praxis hat gewechselt: 2002 waren es die Praxisinhaber mit 7.024 Männern, 2025 sind es die angestellten Tierärztinnen mit 9.993.
+- Laut Tierärzte Atlas Deutschland 2024 sind unter den unter 40-Jährigen 82 Prozent Frauen, unter den Studierenden der Tiermedizin 87 Prozent.
 
-## Warum die Praxis nach Geschlecht zwei Gesichter hat
+## Die Reihe seit 2002
 
-Die beiden Anteile aus dem Tierärzte Atlas lassen sich auf die Kammerstatistik legen. Der Atlas beschreibt den Stand Ende 2023; damals standen 11.437 Praxisinhaber 11.429 Angestellten gegenüber. Setzt man die Anteile ein, ergibt sich eine grobe Näherung:
+| Jahr | Tierärztinnen tätig | Tierärzte tätig | Frauenanteil der Tätigen | Frauenanteil aller Kammermitglieder |
+|---|---:|---:|---:|---:|
+| 2002 | 9.706 | 12.225 | 44,3 % | 43,6 % |
+| 2006 | 11.901 | 11.872 | 50,1 % | 48,3 % |
+| 2010 | 14.681 | 11.313 | 56,5 % | 53,0 % |
+| 2016 | 18.972 | 10.674 | 64,0 % | 59,7 % |
+| 2020 | 22.121 | 10.461 | 67,9 % | 63,3 % |
+| 2025 | 24.815 | 9.661 | 72,0 % | 67,0 % |
 
-| Ende 2023, rechnerisch | Frauen | Männer |
-|---|---:|---:|
-| Praxisinhaber (58 % Frauen) | rund 6.600 | rund 4.800 |
-| Angestellte in Praxen (82 % Frauen) | rund 9.400 | rund 2.100 |
+*Tätig einschließlich der Tierärztinnen und Tierärzte im Ausland, wie in Tab. 1 der Statistik. Männer und Anteile berechnet. Die Jahre dazwischen stehen im Datensatz.*
 
-*Berechnet aus BTK-Statistik 2023 und den Anteilen des Tierärzte Atlas 2024. Der Atlas spricht von Selbstständigen, die Kammerstatistik von Niedergelassenen; beides ist nicht exakt dasselbe.*
+Der Anteil steigt in jedem einzelnen Jahr, am schnellsten zwischen 2002 und 2012 mit gut anderthalb Punkten pro Jahr, seit 2020 im Schnitt um 0,8 Punkte (berechnet). Die Zahl der tätigen Männer sinkt seit 2002 fast jedes Jahr.
 
-Das Ergebnis ist deutlich. Unter den Männern führen mehr als doppelt so viele eine eigene Praxis, wie angestellt arbeiten. Unter den Frauen ist es umgekehrt: Auf zehn Praxisinhaberinnen kommen rund vierzehn angestellte Tierärztinnen. Der Wechsel von 2024, als die Angestellten die Inhaber erstmals überholten, ist deshalb auch eine Frage der Generation und des Geschlechts. Die Kurve dazu steht im Beitrag [Mehr angestellte Tierärzte als Praxisinhaber](anzahl-tieraerzte-deutschland.html).
+## In der Praxis: Inhaberinnen und angestellte Tierärztinnen
 
-## Was der Generationswechsel für die Praxisinhaber heißt
+| Jahr | Praxisinhaberinnen | Praxisinhaber | angestellte Tierärztinnen | angestellte Tierärzte |
+|---|---:|---:|---:|---:|
+| 2002 | 3.451 | 7.024 | 2.739 | 1.045 |
+| 2006 | 4.328 | 7.030 | 3.384 | 1.053 |
+| 2010 | 5.101 | 6.656 | 4.454 | 1.080 |
+| 2016 | 5.999 | 5.973 | 6.597 | 1.335 |
+| 2020 | 6.515 | 5.486 | 8.032 | 1.700 |
+| 2025 | 6.616 | 4.600 | 9.993 | 2.132 |
 
-Die Zahl der Praxisinhaberinnen und Praxisinhaber erreichte 2019 mit 12.019 ihren Höchststand und lag Ende 2025 bei 11.216. Wenn in den nächsten 15 Jahren fast zwei Drittel der tätigen Männer ausscheiden, besonders unter den Inhabern, geht ein großer Teil der heute selbstständig geführten Praxen in andere Hände. Ob Tierärztinnen diese Praxen übernehmen, ob sie in Gruppen aufgehen oder schließen, sagt keine Statistik voraus. Was über Praxisketten belegt ist, steht im Artikel [Wer betreibt die Tierarztpraxen in Deutschland?](../artikel/tierarztketten-deutschland.html).
+*Angestellte sind in der Statistik die „Praxisassistenten“, also angestellte Tierärztinnen und Tierärzte, keine Tiermedizinischen Fachangestellten. Praxisinhaber heißen bis 2011 „Praktizierende“, ab 2012 „Niedergelassene“. Männer berechnet als gesamt minus Frauen.*
 
-Ein Hinweis auf die Arbeitsmodelle steht in der Datenkunde zur Kammerstatistik: Laut Tierärzte Atlas arbeitete 2023 jede zweite Frau im Beruf in Teilzeit, aber nur 13 Prozent der Männer. Das passt eher zu einer Anstellung als zu einer eigenen Praxis; belegen lässt sich der Zusammenhang aus diesen Zahlen allein aber nicht.
+Drei Kreuzungen liegen dicht beieinander: 2014 überholen die angestellten Tierärztinnen die Praxisinhaberinnen, 2015 auch die männlichen Praxisinhaber, 2016 die Inhaberinnen die Inhaber. Seitdem ist die angestellte Tierärztin die größte Gruppe in der Praxis.
 
-## Wo die Zeitreihe fehlt
+Die Zahlen bestätigen die Aufschlüsselung des Tierärzte Atlas, der für Ende 2023 58 Prozent Frauen unter den Selbstständigen und 82 Prozent unter den Angestellten nennt. Die Kammerstatistik ergibt für dasselbe Jahr 57,8 und 82,3 Prozent.
 
-Dieser Beitrag hat kein Video, weil die Reihe des Frauenanteils seit 1991 noch nicht als Datensatz vorliegt. Sie steht in denselben Jahrgängen der BTK-Statistik wie die Zahlen zu Inhabern und Angestellten.
+## Der Rückgang der Inhaber ist ein Rückgang der Männer
 
-**Offen:** Die Reihe ist in den Recherchenotizen des Projekts bereits teilweise ausgelesen, aber nicht als Datensatz geprüft. Zu den Anteilen 2025: 66,8 und 71,7 Prozent stehen wörtlich in der [Pressemitteilung der Bundestierärztekammer](https://www.bundestieraerztekammer.de/presse/2026/06/Tieraerztestatistik-2025.php). Tab. 1 derselben Statistik ergibt dagegen 30.892 Tierärztinnen unter 46.089 Mitgliedern (67,0 Prozent) und 24.815 unter 34.476 Tätigen (72,0 Prozent) – dann wären es 24.815 tätige Frauen statt rechnerisch rund 24.700. Beide Angaben stammen von der Kammer. Vor der Freigabe einen Wert wählen und im Text die passende Quelle nennen.
+Die Zahl der Praxisinhaber insgesamt erreichte 2019 mit 12.019 ihren Höchststand und lag Ende 2025 bei 11.216. Nach Geschlecht getrennt sieht das anders aus: Die Inhaber verloren in diesen sechs Jahren 1.038 Köpfe, die Inhaberinnen gewannen 235 hinzu (berechnet). Seit 2021 liegt die Zahl der Praxisinhaberinnen nahezu unverändert zwischen 6.570 und 6.690.
+
+Der Wechsel von 2024, als die Angestellten die Inhaber erstmals überholten, ist deshalb vor allem eine Frage von Generation und Geschlecht: Männer, die eine Praxis führten, gehen in den Ruhestand, und die Frauen, die nachkommen, arbeiten überwiegend angestellt. Die Kurve dazu steht im Beitrag [Mehr angestellte Tierärzte als Praxisinhaber](anzahl-tieraerzte-deutschland.html).
+
+Laut Tierärzte Atlas scheiden in den nächsten 15 Jahren fast zwei Drittel der noch tätigen Männer aus dem Beruf aus, besonders unter den Praxisinhabern. Ob Tierärztinnen diese Praxen übernehmen, ob sie in Gruppen aufgehen oder schließen, sagt keine Statistik voraus. Was über Praxisketten belegt ist, steht im Artikel [Wer betreibt die Tierarztpraxen in Deutschland?](../artikel/tierarztketten-deutschland.html).
+
+Ein Hinweis auf die Arbeitsmodelle: Laut Tierärzte Atlas arbeitete 2023 jede zweite Frau im Beruf in Teilzeit, aber nur 13 Prozent der Männer. Das passt eher zu einer Anstellung als zu einer eigenen Praxis; belegen lässt sich der Zusammenhang aus diesen Zahlen allein aber nicht.
 
 ## Was die Zahl nicht sagt
 
-- **Zwei Anteile, zwei Grundgesamtheiten.** 66,8 Prozent beziehen sich auf alle Kammermitglieder einschließlich Ruhestand und nicht tierärztlich Tätiger, 71,7 Prozent nur auf die Tätigen. Dass der Anteil unter den Tätigen höher liegt, heißt rechnerisch: Unter den nicht mehr Tätigen sind Männer stärker vertreten.
-- **Personen, keine Arbeitszeit.** Die Kammer zählt Köpfe. Weil Frauen im Beruf deutlich häufiger in Teilzeit arbeiten, ist ihr Anteil an der geleisteten Arbeitszeit kleiner als 71,7 Prozent. Wie viel kleiner, ist nicht erhoben.
-- **Die Quellen stammen aus verschiedenen Jahren.** Die BTK-Anteile gelten für Ende 2025, die Aufschlüsselung des Tierärzte Atlas für Ende 2023. Die Tabelle oben mischt deshalb nicht, sondern rechnet mit den Zahlen von 2023.
+- **Zwei Anteile, zwei Grundgesamtheiten.** 67,0 Prozent beziehen sich auf alle Kammermitglieder einschließlich Ruhestand und nicht tierärztlich Tätiger, 72,0 Prozent nur auf die Tätigen. Dass der Anteil unter den Tätigen höher liegt, heißt rechnerisch: Unter den nicht mehr Tätigen sind Männer stärker vertreten.
+- **Personen, keine Arbeitszeit.** Die Kammer zählt Köpfe zum 31. Dezember. Weil Frauen im Beruf deutlich häufiger in Teilzeit arbeiten, ist ihr Anteil an der geleisteten Arbeitszeit kleiner als 72 Prozent. Wie viel kleiner, ist nicht erhoben.
+- **Zwei Werte für 2025.** Die Pressemitteilung der Bundestierärztekammer nennt 71,7 und 66,8 Prozent. Tab. 1 der korrigierten Statistik ergibt 72,0 und 67,0 Prozent; die Meldung beruht vermutlich auf der ersten, inzwischen ersetzten Fassung. Dieser Artikel rechnet mit der Tabelle.
+- **2005 ist unsicher.** Die zentrale Tierärztedatei zog in diesem Jahr um, die Kammer selbst nennt die Daten unvollständig.
 - **Studierende sind noch keine Tierärztinnen.** 87 Prozent beschreiben das Studium, nicht die Approbationen eines Jahrgangs.
 
 ## Häufige Fragen
 
 ### Wie viele Tierärztinnen gibt es in Deutschland?
 
-Rechnerisch rund 24.700 tierärztlich tätige Frauen Ende 2025: 71,7 Prozent von 34.476 Tätigen. Rechnet man Ruhestand und nicht tätige Mitglieder dazu, liegt der Frauenanteil unter allen Kammermitgliedern bei 66,8 Prozent.
+Ende 2025 waren 24.815 Tierärztinnen tätig, 72,0 Prozent der 34.476 Tätigen. Unter allen Kammermitgliedern einschließlich Ruhestand sind es 30.892 Frauen von 46.089, 67,0 Prozent.
+
+### Seit wann gibt es mehr Tierärztinnen als Tierärzte?
+
+Unter den tierärztlich Tätigen seit 2006, mit 11.901 Frauen und 11.872 Männern. Unter allen Kammermitgliedern seit 2008. Unter den Praxisinhabern seit 2016.
 
 ### Wie viele Tierärzte gibt es in Deutschland?
 
@@ -61,4 +85,4 @@ Ende 2025 waren 34.476 Tierärztinnen und Tierärzte tätig. 11.216 führten ein
 
 ## Quelle und Methode
 
-[Statistik der Deutschen Tierärzteschaft](https://www.bundestieraerztekammer.de/btk/statistik/) der Bundestierärztekammer, Stichtag 31.12.2025, und BTK-Meldung zur Statistik 2025. Aufschlüsselung nach Stellung, Alter, Studium und Arbeitsbereich sowie die Angabe zu den ausscheidenden Männern: [Tierärzte Atlas Deutschland 2024](https://www.bundestieraerztekammer.de/btk/dtbl/archiv/2025/artikel/DTBl_02_2025_Tieraerzte-Atlas.pdf), Deutsches Tierärzteblatt 2/2025. Berechnet sind die Zahl der tätigen Frauen 2025 und die Näherung für Inhaber und Angestellte nach Geschlecht Ende 2023.
+[Statistik der Deutschen Tierärzteschaft](https://www.bundestieraerztekammer.de/btk/statistik/) der Bundestierärztekammer, Tab. 1 der Jahrgänge 2002 bis 2025, jeweils Stichtag 31. Dezember; für 2012, 2017 und 2025 die korrigierten Fassungen. Jeder Wert ist aus der Jahrgangsstatistik gelesen, keiner interpoliert. Berechnet sind die Zahl der Männer als Differenz, alle Anteile und Veränderungsraten. Tätig umfasst wie in Tab. 1 die Tierärztinnen und Tierärzte im Ausland. Aufschlüsselung nach Alter und Studium, Teilzeit und die Angabe zu den ausscheidenden Männern: [Tierärzte Atlas Deutschland 2024](https://www.bundestieraerztekammer.de/btk/dtbl/archiv/2025/artikel/DTBl_02_2025_Tieraerzte-Atlas.pdf), Deutsches Tierärzteblatt 2/2025. Der Datensatz steht im Studio als „Die Tiermedizin wird weiblich“.

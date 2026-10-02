@@ -4,6 +4,13 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Post 28: Die Tiermedizin wird weiblich (02.10.2026)
+
+- **Neuer Datensatz** `geschlecht-praxis`: Praxisinhaberinnen, Praxisinhaber und angestellte Tierärztinnen und Tierärzte 2002–2025, dazu der Frauenanteil aller Tätigen als mitlaufende Zahl. Alle 24 Jahrgänge aus Tab. 1 der BTK-Statistik gelesen (`data/raw/ds14-geschlecht.json`), nichts interpoliert; ersetzt eine zugelieferte Vorlage mit 19 von 26 interpolierten Jahren. `check:glaette`: 1.380 Bilder, 0 Sprünge.
+- **Artikel 28** fertig und online: Zeitreihe statt Näherung, 72,0 statt 71,7 Prozent (Tab. 1 der korrigierten Fassung, Pressemitteilung im Text erklärt). Befund: Der Rückgang der Praxisinhaber seit 2019 ist ein Rückgang der Männer (minus 1.038, Frauen plus 235).
+- Datenherkunft um „Die Tiermedizin wird weiblich“ und das bisher fehlende „Wem die Tierarztketten gehören“ ergänzt.
+- **Behoben:** Die Eigentümer-Ableitung stand von Hand in der erzeugten Datei `src/samples/data.ts` und wäre beim nächsten `build-samples` verloren gegangen. Sie steht jetzt im Generator.
+
 ### Gestaltung: ein Auftritt für Magazin und Studio (02.10.2026)
 
 - Kopfzeile aller statischen Seiten: dasselbe Zeichen wie im Studio, „Studio“ als Knopf, der aktuelle Bereich markiert, auf dem Handy eine einzeilige, wischbare Navigation statt Umbruch.

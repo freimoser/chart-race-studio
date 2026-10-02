@@ -348,6 +348,54 @@ export const KETTEN = {
   ],
 }
 
+export const KETTEN_EIGENTUEMER = {
+  headers: ["Jahr","Beteiligungsgesellschaften","Mars (AniCura)","Ohne Fonds, tierärztlich geführt","Eigentümer nicht erfasst","Weitere Gruppen","Summe: Alle Gruppen (Standorte)"],
+  rows: [
+    ["2015", 21, 7, null, null, 7, 35],
+    ["2016", 28, 20, null, null, 10, 58],
+    ["2017", 33, 22, null, 4, 13, 72],
+    ["2018", 38, 30, 5, 8, 14, 95],
+    ["2019", 51, 40, 8, 13, 18, 130],
+    ["2020", 70, 50, 12, 19, 24, 175],
+    ["2021", 106, 60, 16, 26, 30, 238],
+    ["2022", 147, 70, 19, 34, 35, 305],
+    ["2023", 191, 75, 23, 45, 46, 380],
+    ["2024", 221, 79, 27, 62, 61, 450],
+    ["2025", 268, 78, 30, 70, 68, 514],
+    ["2026", 313, 78, 34, 80, 72, 577],
+  ],
+}
+
+export const GESCHLECHT_PRAXIS = {
+  headers: ["Jahr","Angestellte Tierärztinnen","Praxisinhaberinnen","Praxisinhaber","Angestellte Tierärzte","Gesamt: Frauenanteil aller Tätigen (%)"],
+  rows: [
+    ["2002", 2739, 3451, 7024, 1045, 44.3],
+    ["2003", 2966, 3596, 6972, 1069, 46],
+    ["2004", 3094, 3782, 6931, 1098, 47.2],
+    ["2005", 3215, 4111, 6961, 1041, 48.7],
+    ["2006", 3384, 4328, 7030, 1053, 50.1],
+    ["2007", 3615, 4554, 6888, 1024, 51.9],
+    ["2008", 3871, 4762, 6784, 1055, 53.7],
+    ["2009", 4161, 4905, 6732, 1064, 55],
+    ["2010", 4454, 5101, 6656, 1080, 56.5],
+    ["2011", 4848, 5253, 6579, 1132, 57.9],
+    ["2012", 5192, 5430, 6476, 1154, 59.4],
+    ["2013", 5503, 5571, 6367, 1189, 60.6],
+    ["2014", 5867, 5683, 6250, 1252, 61.7],
+    ["2015", 6273, 5776, 6150, 1322, 62.7],
+    ["2016", 6597, 5999, 5973, 1335, 64],
+    ["2017", 6927, 6149, 5827, 1438, 65.1],
+    ["2018", 7320, 6228, 5782, 1532, 65.8],
+    ["2019", 7713, 6381, 5638, 1637, 66.9],
+    ["2020", 8032, 6515, 5486, 1700, 67.9],
+    ["2021", 8443, 6611, 5278, 1784, 68.9],
+    ["2022", 8756, 6685, 5058, 1896, 69.8],
+    ["2023", 9404, 6608, 4829, 2025, 70.9],
+    ["2024", 9783, 6569, 4695, 2207, 71.2],
+    ["2025", 9993, 6616, 4600, 2132, 72],
+  ],
+}
+
 export const HUND_KATZE_WELT = {
   headers: ["Jahr","Afghanistan","Albania","Algeria","Andorra","Angola","Antigua and Barbuda","Argentina","Armenia","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bhutan","Bolivia","Bosnia and Herzegovina","Botswana","Brazil","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Central African Republic","Chad","Chile","China","Colombia","Comoros","Costa Rica","Croatia","Cuba","Cyprus","Czechia","DR Congo","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Eswatini","Ethiopia","Fiji","Finland","France","Gabon","Gambia","Georgia","Germany","Ghana","Greece","Grenada","Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","Honduras","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Ivory Coast","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati","Kosovo","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Morocco","Mozambique","Myanmar","Namibia","Nauru","Nepal","Netherlands","New Zealand","Nicaragua","Niger","Nigeria","North Korea","North Macedonia","Norway","Oman","Pakistan","Palau","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Qatar","Republic of the Congo","Romania","Russian Federation","Rwanda","Saint Kitts and Nevis","Saint Lucia","Saint Vincent and the Grenadines","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Korea","South Sudan","Spain","Sri Lanka","Sudan","Suriname","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor-Leste","Togo","Tonga","Trinidad and Tobago","Tunisia","Turkey","Turkmenistan","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Yemen","Zambia","Zimbabwe","Summe: Hunde (Mio.)","Summe: Katzen (Mio.)"],
   rows: [
@@ -379,24 +427,4 @@ export const HUND_KATZE_WELT = {
     ["2025", 55, 47.8, 40, 44.9, 55, 57.1, 74.2, 38, 55, 29.2, 38, 57, 38, 55, 57, 45, 39.9, 65, 55, 54.9, 70, 47.9, 55, 69.4, 62, 47.8, 55, 55, 62, 55, 53, 55.1, 55, 55, 70, 42, 70, 55.1, 65, 63, 57, 76.4, 61.4, 55, 47.9, 54.9, 57.1, 57, 70, 40, 65, 55, 55, 44.7, 54.9, 55, 58, 44.2, 36.7, 55, 55, 38, 39.7, 55, 51.8, 56.9, 65, 55, 55, 70, 57, 65, 54, 41, 55, 62, 55, 38, 58.1, 38, 43, 55, 57, 41.5, 38, 45, 55, 58, 47.5, 38, 45, 62, 39.6, 38, 55, 55, 40, 18, 65.6, 30.8, 55, 55, 25.9, 55.2, 55, 81.2, 58.6, 55, 55, 65, 58, 47.8, 44.8, 51, 48.2, 40, 55, 62, 55, 57.9, 55, 35.6, 55, 65, 55, 55, 51, 47.9, 41.2, 38, 55, 57.1, 38, 65, 58, 70, 70, 95.3, 52.5, 59.1, 38, 55, 48.9, 45, 55, 57.1, 57.1, 57.2, 58.1, 45.2, 55.6, 38, 55, 47.8, 55, 55, 62, 72.8, 39.2, 58, 55, 55, 63.6, 55, 58.4, 55, 40, 70, 40, 25.2, 38, 51, 45, 55, 86, 62, 55, 57.8, 57, 40, 38.5, 45, 60, 55, 39.4, 38, 52, 54.8, 70, 45, 58, 50, 70, 74.1, 38, 55, 55, 512.6, 433.2],
     ["2026", 54.8, 47.7, 39.8, 45, 54.9, 56.6, 74.1, 37.7, 54.9, 29.1, 37.7, 56.8, 37.7, 54.8, 56.8, 44.9, 39.8, 64.8, 54.9, 54.7, 69.9, 47.9, 54.9, 69.4, 61.8, 47.7, 54.9, 54.9, 61.8, 54.9, 52.9, 54.9, 54.9, 54.9, 69.9, 41.6, 69.9, 54.8, 64.9, 62.9, 56.8, 76.4, 61.3, 54.9, 47.8, 54.8, 57, 56.8, 69.9, 39.8, 64.9, 54.8, 54.9, 44.6, 54.8, 54.9, 57.9, 44.1, 36.6, 54.9, 54.9, 37.7, 39.6, 54.9, 51.7, 56.9, 64.9, 54.9, 54.8, 69.9, 56.8, 64.9, 53.9, 40.9, 54.8, 61.8, 54.8, 37.7, 58, 37.7, 42.9, 54.9, 56.8, 41.1, 37.7, 44.8, 54.9, 57.8, 47.3, 37.7, 44.8, 61.8, 39.5, 37.7, 54.9, 54.9, 39.8, 17.9, 65.5, 30.8, 54.9, 54.9, 25.7, 55, 54.9, 81.2, 57.6, 54.9, 54.9, 64.9, 58.1, 47.7, 44.8, 50.6, 48.1, 39.8, 54.9, 61.8, 54.9, 57.9, 54.8, 35.5, 54.9, 64.9, 54.9, 54.9, 50.6, 47.8, 41.1, 37.7, 54.8, 58.6, 37.7, 64.9, 57.9, 69.9, 69.9, 95.3, 52.4, 59, 37.7, 54.9, 48.8, 44.9, 54.9, 57, 56.8, 56.8, 57.9, 44.7, 55.4, 37.7, 54.9, 47.7, 55, 54.9, 61.8, 72.7, 39.1, 57.9, 54.9, 54.9, 63.3, 54.9, 58.3, 54.8, 39.8, 69.9, 39.9, 25.2, 37.7, 50.6, 44.8, 54.9, 85.9, 61.8, 54.9, 58, 56.8, 39.8, 38.2, 44.8, 56.2, 54.9, 39.3, 37.7, 51.9, 54.7, 69.9, 44.8, 57.8, 50, 69.9, 73.9, 37.7, 54.9, 54.9, 521, 442.8],
   ],
-}
-
-// Dieselben Standorte wie KETTEN, gebündelt nach dem Eigentümer im September 2026 (Artikel zu Post 8).
-// Abgeleitet statt abgetippt, damit beide Datensätze nie auseinanderlaufen. activet zählt zu den
-// Beteiligungsgesellschaften, weil die Praxen seit August 2023 zu Tierarzt Plus Partner gehören.
-const EIGENTUEMER_BLOECKE: [string, string[]][] = [
-  ['Beteiligungsgesellschaften', ['IVC Evidensia', 'Tierarzt Plus Partner', 'VetGruppen (Vetopia)', 'VetPartners', 'SmartVet → Medivet', 'activet (bis 2022)']],
-  ['Mars (AniCura)', ['AniCura']],
-  ['Ohne Fonds, tierärztlich geführt', ['TeamVet', 'Cadomo Vets', 'Wolf & Tiger']],
-  ['Eigentümer nicht erfasst', ['Altano (Pferde)', 'Veternicum Nesto', 'Rex', 'filu']],
-  ['Weitere Gruppen', ['Weitere Gruppen']],
-  ['Summe: Alle Gruppen (Standorte)', ['Summe: Alle Gruppen (Standorte)']],
-]
-export const KETTEN_EIGENTUEMER = {
-  headers: ['Jahr', ...EIGENTUEMER_BLOECKE.map(([name]) => name)],
-  rows: KETTEN.rows.map((zeile) => [zeile[0], ...EIGENTUEMER_BLOECKE.map(([, gruppen]) => {
-    const werte = gruppen.map((g) => zeile[KETTEN.headers.indexOf(g)]).filter((w): w is number => typeof w === 'number')
-    // Leer bleibt leer: Ein Block, dessen Gruppen es noch nicht gab, ist nicht erhoben, nicht 0.
-    return werte.length ? werte.reduce((a, b) => a + b, 0) : null
-  })]),
 }

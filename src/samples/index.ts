@@ -1,5 +1,5 @@
 import type { SampleDataset } from '@/lib/data/types'
-import { FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data'
+import { FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -273,6 +273,29 @@ export const SAMPLES: SampleDataset[] = [
       chartType: 'line', topN: 7, decimals: 0, primaryAxisLabel: 'Standorte',
       // Die drei Großen klar unterscheidbar, die Restgruppe bewusst grau – sie ist keine Kette.
       colors: { 'IVC Evidensia': '#0f4c5c', 'Tierarzt Plus Partner': '#e36414', 'AniCura': '#20b2aa', 'Weitere Gruppen': '#a3aab2', 'VetGruppen (Vetopia)': '#7b5ea7', 'VetPartners': '#c0392b', 'Altano (Pferde)': '#8a6d3b' },
+    },
+  },
+  {
+    id: 'geschlecht-praxis',
+    erstellt: '2026-10-02', geprueft: '2026-10-02',
+    category: 'praxis',
+    title: 'Die Tiermedizin wird weiblich',
+    subtitle: 'Praxisinhaber und angestellte Tierärzt:innen in Praxen nach Geschlecht, 2002 bis 2025',
+    source: 'Quelle: Bundestierärztekammer, Statistik der Tierärzteschaft, Tab. 1 der Jahrgänge 2002–2025 (Deutsches Tierärzteblatt); Männer als Differenz berechnet',
+    sourceUrl: 'https://www.bundestieraerztekammer.de/btk/statistik/',
+    unit: 'Personen',
+    description: "2002 war der typische Praxistierarzt ein Mann mit eigener Praxis, 2025 ist es eine angestellte Tierärztin.",
+    dataInfo: [
+      "Jeder Wert stammt aus Tab. 1 der jeweiligen Jahrgangsstatistik der Bundestierärztekammer, ausgelesen aus allen 24 Jahrgängen von 2002 bis 2025. Nichts ist interpoliert. Gezählt werden Personen zum 31. Dezember, keine Vollzeitstellen. Die Männer sind berechnet als gesamt minus Frauen.",
+      "Praxisinhaber heißen in der Statistik bis 2011 „Praktizierende“, ab 2012 „Niedergelassene“. Angestellte sind die Zeile „Praxisassistenten“, also angestellte Tierärztinnen und Tierärzte in Praxen, ohne Praxisvertreter. Beide Reihen stimmen mit dem Datensatz „Tierarztpraxen im Wandel“ überein.",
+      "Die große Zahl oben links ist der Frauenanteil unter allen tierärztlich Tätigen, einschließlich der Tätigen außerhalb von Praxen und im Ausland, auf eine Nachkommastelle gerundet und im Video ganzzahlig angezeigt.",
+      "2025 ergibt Tab. 1 der korrigierten Statistik 72,0 Prozent Frauen unter den Tätigen und 67,0 Prozent unter allen Kammermitgliedern. Die Pressemitteilung der Bundestierärztekammer nennt 71,7 und 66,8 Prozent; sie beruht vermutlich auf der ersten, inzwischen ersetzten Fassung. 2005 hält die Bundestierärztekammer selbst für unvollständig, weil die zentrale Tierärztedatei umzog.",
+    ],
+    headers: GESCHLECHT_PRAXIS.headers,
+    rows: GESCHLECHT_PRAXIS.rows,
+    suggested: {
+      chartType: 'line', topN: 4, decimals: 0, primaryAxisLabel: 'Personen',
+      colors: { 'Angestellte Tierärztinnen': '#e36414', 'Praxisinhaberinnen': '#f2a65a', 'Praxisinhaber': '#0f4c5c', 'Angestellte Tierärzte': '#6aa3ad' },
     },
   },
   {

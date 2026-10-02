@@ -309,12 +309,12 @@ export const POSTS: RoadmapPost[] = [
     refs: [25, 26, 6],
   },
   {
-    nr: 28, arc: 'markt', status: 'geplant',
+    nr: 28, arc: 'markt', status: 'naechster',
     title: 'Die Tiermedizin wird weiblich',
-    hook: 'Die vielleicht größte Veränderung des Berufs steht in keiner der bisherigen Kurven.',
-    figures: ['2025: 66,8 Prozent der Kammermitglieder und 71,7 Prozent der tierärztlich Tätigen sind Frauen (BTK-Pressemitteilung; aus Tab. 1 der Statistik nachgerechnet 67,0 und 72,0 Prozent)', 'Der Tierärzte Atlas schlüsselt auf: 58 Prozent der Selbstständigen, aber 82 Prozent der angestellten Tierärzt:innen sind weiblich', 'Bei den unter 40-Jährigen sind es 82 Prozent, unter den Studierenden 87', 'Höchster Frauenanteil im Öffentlichen Dienst mit 74 Prozent', 'In den nächsten 15 Jahren scheiden fast zwei Drittel der noch tätigen Männer aus – besonders unter den Praxisinhabern'],
-    dataStatus: 'teilweise',
-    dataNote: 'Alle Einzelwerte sind belegt (BTK-Meldung 2025, Tierärzte Atlas 2024). Die Pressemitteilung zur Statistik 2025 nennt 66,8 und 71,7 Prozent; Tab. 1 derselben Statistik ergibt 30.892 von 46.089 (67,0 Prozent) und 24.815 von 34.476 (72,0 Prozent). Vor der Veröffentlichung einen Wert wählen und die Quelle dazu nennen. Für ein Video fehlt die Reihe seit 1991; sie steht in den Jahrgängen der Statistik und muss noch ausgelesen werden – dieselbe Quelle wie Datensatz 1.',
+    hook: '2002 war der typische Praxistierarzt ein Mann mit eigener Praxis. 2025 ist es eine angestellte Tierärztin.',
+    figures: ['Tätige Tierärztinnen: 9.706 (2002) auf 24.815 (2025), Tierärzte: 12.225 auf 9.661; Frauenanteil 44,3 auf 72,0 Prozent', '2006 erstmals mehr Tierärztinnen als Tierärzte, 11.901 zu 11.872', '2016 erstmals mehr Praxisinhaberinnen als Inhaber, 5.999 zu 5.973', 'Angestellte Tierärztinnen in Praxen: 2.739 auf 9.993, seit 2015 die größte Gruppe in der Praxis', 'Seit 2019: Inhaber minus 1.038, Inhaberinnen plus 235'],
+    sampleId: 'geschlecht-praxis', chart: 'line', dataStatus: 'belegt',
+    dataNote: 'Am 02.10.2026 vorgezogen. Alle 24 Jahrgänge 2002–2025 aus Tab. 1 der BTK-Statistik gelesen (data/raw/ds14-geschlecht.json), nichts interpoliert. 2025: Tab. 1 der korrigierten Fassung ergibt 72,0 / 67,0 Prozent, die Pressemitteilung 71,7 / 66,8 – im Text gilt die Tabelle. Die ursprüngliche Vorlage mit interpolierten Jahren wurde dadurch ersetzt.',
     refs: [4, 15],
   },
   {

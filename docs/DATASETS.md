@@ -173,3 +173,20 @@ tierärztlich geführt, Eigentümer nicht erfasst, weitere Gruppen) plus die Sum
 Lücken sind die des Ketten-Datensatzes (`data/raw/ds12-ketten-modell.json`). Eigentümer laut Artikel zu Post 8.
 Ein Block ist leer, solange keine seiner Gruppen existierte. Wichtig für jede Darstellung: Zugeordnet wird nach
 dem heutigen Eigentümer, nicht nach dem im jeweiligen Jahr.
+
+## Die Tiermedizin wird weiblich (`geschlecht-praxis`)
+
+**Erstellt/geprüft:** 02.10.2026 · **Verwendet in:** Post 28 · **Rohdaten:** `data/raw/ds14-geschlecht.json`
+
+Alle 24 Jahrgänge der BTK-Statistik 2002–2025, Tab. 1, je Jahr: Kammermitglieder gesamt und Frauen, tierärztlich
+Tätige gesamt und Frauen (einschließlich Ausland, wie in Tab. 1), Praxisinhaber und Praxisassistenten je gesamt und
+Frauen. Jeder Wert mit Quell-PDF und Tabelle in der Rohdatei; nichts interpoliert. Anker geprüft: 2020 (43.461 /
+27.500; 32.582 / 22.121) und 2025 (Pressemitteilung 66,8 / 71,7 %). Die Gesamtzahlen stimmen auf die Person mit
+`TIERAERZTESCHAFT_DEUTSCHLAND` überein.
+
+Bekannte Eigenheiten: 2005 von der BTK selbst als unvollständig bezeichnet (Umzug der Zentralen Tierärztedatei);
+Referendare 2006 in keiner Summe, 2007 nur in der Gesamtsumme, ab 2008 bei den Tätigen; 2011 fehlt die Ausland-Zeile
+lesbar (null); für 2025 weicht Tab. 1 der korrigierten Fassung (67,0 / 72,0 %) von der Pressemitteilung ab.
+Nebenbefund: Die Rohdatei enthält die Praxisassistenten für 2002 (3.784), die im Datensatz 1 fehlen.
+
+Ersetzt eine extern zugelieferte Vorlage, in der 19 von 26 Jahren interpoliert oder zurückgerechnet waren.
