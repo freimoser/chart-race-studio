@@ -58,7 +58,11 @@ const ZUSATZ = {
   'N. Cyprus': ['Northern Cyprus', 'Nordzypern'],
 }
 
-const nachName = new Map(codes.map((c) => [norm(en.of(c)), c]))
+// Nur gültige Codes: CLDR kennt auch veraltete wie FX (France), DD, HV oder YU unter demselben Namen.
+// Ohne diesen Filter bekam Frankreich FX statt FR, und eine Spalte „FR“ blieb grau. Veraltet ist ein
+// Code, den Intl auf einen anderen kanonisiert (FX -> FR).
+const gueltig = (c) => Intl.getCanonicalLocales(`und-${c}`)[0] === `und-${c}`
+const nachName = new Map(codes.filter(gueltig).map((c) => [norm(en.of(c)), c]))
 const aus = {}
 let ohneCode = []
 for (const f of welt.features) {

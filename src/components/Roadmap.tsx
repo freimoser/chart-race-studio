@@ -218,7 +218,9 @@ export function Roadmap({ onOpenStudio }: { onOpenStudio: () => void }) {
           <a className="underline hover:text-ink" href="artikel/tierarztketten-deutschland.html">Artikel: Wer betreibt die Tierarztpraxen?</a>
           {' · '}
           {ARTIKEL.some((x) => x.live) && (<><a className="underline hover:text-ink" href="beitrag/">Tiermedizin in Zahlen: alle Artikel</a>{' · '}</>)}
-          <a className="underline hover:text-ink" href="artikel/datenherkunft.html">Datenherkunft</a>
+          <a className="underline hover:text-ink" href="datenformat/">Datenformat</a>
+            {' · '}
+            <a className="underline hover:text-ink" href="artikel/datenherkunft.html">Datenherkunft</a>
           {' · '}
           <a className="underline hover:text-ink" href="impressum.html">Impressum</a>
           {' · '}

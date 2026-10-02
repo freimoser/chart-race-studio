@@ -66,6 +66,7 @@ export default function App() {
               <Map size={14} aria-hidden /> Redaktionsplan
             </button>
           </div>
+          <a href="datenformat/" className="hidden whitespace-nowrap text-sm text-ink-muted underline-offset-2 hover:text-ink hover:underline md:inline">Datenformat</a>
           <label className="hidden items-center gap-2 text-xs text-ink-muted sm:flex">
             Design-Richtung
             <select className="input !w-auto !py-1" value={brand} onChange={(e) => setBrand(e.target.value as BrandId)} aria-label="Design-Richtung">
@@ -114,6 +115,8 @@ export default function App() {
             <a className="underline hover:text-ink" href="#redaktionsplan">Redaktionsplan</a>
             {' · '}
             <a className="underline hover:text-ink" href="artikel/tierarztketten-deutschland.html">Tierarztketten</a>
+            {' · '}
+            <a className="underline hover:text-ink" href="datenformat/">Datenformat</a>
             {' · '}
             <a className="underline hover:text-ink" href="artikel/datenherkunft.html">Datenherkunft</a>
             {' · '}

@@ -106,7 +106,8 @@ export function DataPanel() {
           </div>
           <input ref={fileRef} type="file" accept=".csv,.tsv,.txt,.xlsx,.xls,.ods,.xlsm" className="hidden" onChange={(e) => onFiles(e.target.files)} />
           <p className="text-[11px] text-ink-faint">
-            Wide-Format (eine Spalte je Kategorie) oder Long-Format (Spalten: Zeit, Kategorie, Wert) – wird automatisch erkannt.
+            Wide-Format (eine Spalte je Kategorie) oder Long-Format (Spalten: Zeit, Kategorie, Wert) – wird automatisch erkannt.{' '}
+            <a className="underline hover:text-ink" href="datenformat/">So muss die Tabelle aussehen</a>. Die Datei wird nur in diesem Browser gelesen und nicht hochgeladen.
           </p>
           <p className="text-[11px] text-ink-faint">
             Vorlagen nach unserem Datenstandard:{' '}

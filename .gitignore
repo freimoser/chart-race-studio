@@ -37,3 +37,7 @@ dist-ssr
 
 # Aus den Datensätzen der Live-Artikel erzeugt (scripts/build-artikel.mjs)
 /public/daten/
+
+# Aus src/content/datenformat/*.md erzeugt (scripts/build-artikel.mjs)
+/datenformat/
+/public/datenformat/

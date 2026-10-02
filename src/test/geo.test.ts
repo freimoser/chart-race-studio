@@ -10,6 +10,13 @@ describe('Datenstandard: Karten', () => {
     expect(z.spalteFuer.get('Germany')).toBe('Deutschland')
     expect(z.spalteFuer.get('Democratic Republic of the Congo')).toBe('DR Congo')
   })
+  it('kennt die gültigen ISO-Codes, nicht die veralteten aus CLDR', () => {
+    // Frankreich stand mit FX statt FR in der Namenstabelle, dazu Benin, Burkina Faso, Großbritannien und Serbien.
+    const z = ordneZu(['DE', 'FR', 'GB', 'RS', 'BJ', 'BF', 'CD'])
+    expect(z.ohneFlaeche).toEqual([])
+    expect(z.spalteFuer.get('France')).toBe('FR')
+    expect(z.spalteFuer.get('Germany')).toBe('DE')
+  })
   it('trennt Summenspalten ab und liest Name und Einheit', () => {
     const z = ordneZu(['Deutschland', 'Summe: Hunde (Mio.)', 'gesamt: Katzen'])
     expect(z.summen).toEqual(['Summe: Hunde (Mio.)', 'gesamt: Katzen'])

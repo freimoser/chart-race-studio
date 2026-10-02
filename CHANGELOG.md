@@ -4,6 +4,15 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Bereich „Datenformat“ (02.10.2026)
+
+- **Neuer Menüpunkt Datenformat** (`/datenformat/`): Hauptseite „Tabellen für animierte Diagramme vorbereiten“ und Unterseiten für Bar Race, Line Race, Karte und Einstellungen. Quellen in `src/content/datenformat/*.md`, gebaut von `scripts/build-artikel.mjs` mit TechArticle-, Breadcrumb- und FAQ-Auszeichnung; in Sitemap, llms.txt, Kopf- und Fußzeile, Studio-Kopf und Datenpanel verlinkt.
+- **Für KI-Assistenten:** jede Seite auch als Markdown (`/datenformat/<seite>.md`), alle zusammen in `/datenformat/datenformat.md` mit absoluten Links, dazu ein Prompt zum Kopieren.
+- **Datenschutz-Abschnitt** auf der Hauptseite: Tabellen werden nur im Browser gelesen, liegen nur im Arbeitsspeicher des Tabs und kommen nie beim Betreiber an. Gespeichert werden lokal nur Einstellungen.
+- **Datenschutzerklärung korrigiert:** Sie sagte „keine Nachladung von fremden Servern“, aber ohne WebCodecs lädt der Export ffmpeg.wasm von jsDelivr. Jetzt offengelegt, mit Verantwortlichem laut jsDelivr; dazu, welche eingegebenen Texte im lokalen Speicher landen.
+- **Ländernamen:** Frankreich (FR), Großbritannien (GB), Serbien (RS), Benin (BJ) und Burkina Faso (BF) waren unter veralteten CLDR-Codes (FX, YU, DY, HV) eingetragen, eine Spalte „FR“ blieb grau. `build-laendernamen.mjs` lässt veraltete Codes jetzt aus, Test in `geo.test.ts`.
+- Generator: Codeblöcke in Markdown, ohne sichtbare Einrückung in `<pre>`.
+
 ### Lokal alles, live nur Gepostetes (29.09.2026)
 
 - **Freigabe an:** Live bietet das Studio nur Datensätze aus veröffentlichten Posts und dem aktuellen Post an (6 statt 12). Der Redaktionsplan zeigt live die veröffentlichten Posts, den aktuellen und drei Vorschauen ohne Zahlen und Datensatz (`vorschauPosts: 4`), dazu „Weitere N Posts folgen“.

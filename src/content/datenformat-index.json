@@ -1,0 +1,52 @@
+[
+  {
+    "slug": "index",
+    "pfad": "datenformat/",
+    "titel": "Datenformat: Tabellen für animierte Diagramme vorbereiten",
+    "menue": "Überblick",
+    "beschreibung": "So muss eine Tabelle aussehen, damit das Studio daraus ein Bar Race, Line Race oder eine animierte Karte macht. Mit Vorlagen und Regeln für KI-Assistenten.",
+    "frage": "Wie muss ich meine Daten strukturieren, damit das Studio sie in ein animiertes Diagramm verwandelt?",
+    "stand": "2026-10-02",
+    "bereit": true
+  },
+  {
+    "slug": "bar-race",
+    "pfad": "datenformat/bar-race.html",
+    "titel": "Bar Race: Daten für ein Balkenrennen vorbereiten",
+    "menue": "Bar Race",
+    "beschreibung": "Welche Tabelle ein Bar Chart Race braucht, wie viele Balken sinnvoll sind und was mit Lücken, Summen und Flaggen passiert. Mit Beispiel zum Kopieren.",
+    "frage": "Wie muss eine Tabelle für ein Bar Chart Race aussehen?",
+    "stand": "2026-10-02",
+    "bereit": true
+  },
+  {
+    "slug": "line-race",
+    "pfad": "datenformat/line-race.html",
+    "titel": "Line Race: Daten für ein Linienrennen vorbereiten",
+    "menue": "Line Race",
+    "beschreibung": "Welche Tabelle ein animiertes Liniendiagramm braucht, wann eine zweite Achse hilft und warum Gesamtzahlen als Summenspalte besser sind als als Linie.",
+    "frage": "Wie muss eine Tabelle für ein animiertes Liniendiagramm aussehen?",
+    "stand": "2026-10-02",
+    "bereit": true
+  },
+  {
+    "slug": "karte",
+    "pfad": "datenformat/karte.html",
+    "titel": "Animierte Karte: Daten für Welt- und Deutschlandkarte",
+    "menue": "Karte",
+    "beschreibung": "Welche Tabelle eine animierte Weltkarte oder Bundesländerkarte braucht: Ländernamen, ISO-Codes, Kipppunkt, Summen und warum ein Land grau bleibt.",
+    "frage": "Wie muss eine Tabelle für eine animierte Welt- oder Deutschlandkarte aussehen?",
+    "stand": "2026-10-02",
+    "bereit": true
+  },
+  {
+    "slug": "einstellungen",
+    "pfad": "datenformat/einstellungen.html",
+    "titel": "Einstellungen im Studio: was jede Option bewirkt",
+    "menue": "Einstellungen",
+    "beschreibung": "Format, Videolänge, Texte, Achsen, Datenlücken, Farben, Zahlenformat und Wasserzeichen: alle Optionen des Studios mit ihren Voreinstellungen erklärt.",
+    "frage": "Welche Einstellungen hat das Studio, und was bewirken sie?",
+    "stand": "2026-10-02",
+    "bereit": true
+  }
+]

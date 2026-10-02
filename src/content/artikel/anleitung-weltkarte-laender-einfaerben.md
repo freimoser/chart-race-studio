@@ -66,6 +66,8 @@ Mit der Wiedergabe unter der Vorschau lässt sich jedes Jahr ansteuern. Unter **
 
 Die Summe steht bewusst in der Tabelle und wird nicht aus den Ländern errechnet: Anteile lassen sich nicht addieren, und wo Länder fehlen, wäre eine errechnete Summe still zu klein. Wer die Summe liefert, weiß auch, woher sie kommt.
 
+Alle Regeln ausführlich, auch für Bar Race und Line Race, und als Datei für KI-Assistenten stehen unter [Datenformat](../datenformat/). Für die Karte im Einzelnen: [Daten für Welt- und Deutschlandkarte](../datenformat/karte.html).
+
 ## Was die Karte nicht kann
 
 - **Keine Regionen unterhalb der Bundesländer.** Landkreise, Städte oder Postleitzahlen erkennt das Studio nicht.

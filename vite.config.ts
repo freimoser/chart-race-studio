@@ -20,6 +20,13 @@ interface Beitrag { post: number; slug: string; titel: string; beschreibung: str
 const BEITRAEGE: Beitrag[] = (JSON.parse(readFileSync('src/content/artikel-index.json', 'utf8')) as Beitrag[])
   .filter((b) => b.live && existsSync(`beitrag/${b.slug}.html`))
 
+/** Bereich „Datenformat“: Hauptseite und Unterseiten je Diagrammart, ebenfalls von scripts/build-artikel.mjs erzeugt. */
+interface DatenformatSeite { slug: string; pfad: string; titel: string; menue: string; beschreibung: string; frage: string; stand: string; bereit: boolean }
+const DATENFORMAT: DatenformatSeite[] = existsSync('src/content/datenformat-index.json')
+  ? (JSON.parse(readFileSync('src/content/datenformat-index.json', 'utf8')) as DatenformatSeite[])
+    .filter((d) => d.bereit && existsSync(`datenformat/${d.slug === 'index' ? 'index' : d.slug}.html`))
+  : []
+
 /**
  * Trägt optionale Integrationen statisch in die ausgelieferte index.html ein.
  * Statisch, nicht zur Laufzeit: Die Search Console liest das Meta-Tag aus dem HTML,
@@ -33,6 +40,7 @@ function rahmenKopf(hoch: string) {
         <a class="marke" href="${hoch}beitrag/">${MARKE}</a>
         <nav aria-label="Hauptnavigation">
           <a href="${hoch}beitrag/">Alle Artikel</a>
+          <a href="${hoch}datenformat/">Datenformat</a>
           <a href="${hoch}artikel/datenherkunft.html">Datenherkunft</a>
           <a href="${hoch}#redaktionsplan">Redaktionsplan</a>
           <a class="studio" href="${hoch}">Studio</a>
@@ -46,7 +54,7 @@ function rahmenFuss(hoch: string) {
         <p><strong>${MARKE}</strong> · Zahlen zu Tierärzten, Praxen und Haustieren in Deutschland, jede mit Quelle. Ein privates Projekt von Thomas Freimoser.</p>
         <p>
           <a href="${hoch}beitrag/">Alle Artikel</a> · <a href="${hoch}artikel/tierarztketten-deutschland.html">Tierarztketten</a> ·
-          <a href="${hoch}artikel/datenherkunft.html">Datenherkunft</a> · <a href="${hoch}">Studio</a>
+          <a href="${hoch}datenformat/">Datenformat</a> · <a href="${hoch}artikel/datenherkunft.html">Datenherkunft</a> · <a href="${hoch}">Studio</a>
         </p>
         <p class="recht"><a href="${hoch}impressum.html">Impressum</a> · <a href="${hoch}datenschutz.html">Datenschutz</a></p>
       </div>
@@ -107,6 +115,7 @@ function integrationen(env: Record<string, string>) {
       <ul>
 ${BEITRAEGE.length ? `        <li><a href="beitrag/">Tiermedizin in Zahlen: alle Artikel</a></li>\n${BEITRAEGE.map((b) => `        <li><a href="beitrag/${b.slug}.html">${b.frage}</a></li>`).join('\n')}\n` : ''}        <li><a href="artikel/tierarztketten-deutschland.html">Wer betreibt die Tierarztpraxen in Deutschland?</a></li>
         <li><a href="artikel/datenherkunft.html">Woher die Zahlen kommen</a></li>
+        <li><a href="datenformat/">Datenformat: Tabellen für animierte Diagramme vorbereiten</a></li>
         <li><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></li>
       </ul>
     </main></div>`)
@@ -132,7 +141,7 @@ Ein privates Projekt von Thomas Freimoser. Jeder Datensatz nennt Quelle, Zeitrau
 
 - [Wer betreibt die Tierarztpraxen in Deutschland?](${url}/artikel/tierarztketten-deutschland.html): Praxisketten und Klinikgruppen mit Standortzahlen, und die Abgrenzung zu Einkaufsgemeinschaften, die keine Praxis besitzen.
 - [Woher die Zahlen kommen](${url}/artikel/datenherkunft.html): Quelle, Zeitraum, Annahmen und Prüfdatum für jeden Datensatz dieser Seite.
-${BEITRAEGE.length ? `\n## Einzelne Fragen, jeweils mit Zahl, Jahr und Quelle\n\nÜbersicht: [Tiermedizin in Zahlen](${url}/beitrag/). Volltext aller Artikel: [llms-full.txt](${url}/llms-full.txt). Zu jedem Artikel gibt es die Daten als CSV.\n\n${BEITRAEGE.map((b) => `- [${b.frage}](${url}/beitrag/${b.slug}.html) (Stand ${b.stand}): ${b.beschreibung}`).join('\n')}\n` : ''}
+${DATENFORMAT.length ? `\n## Eigene Daten für das Studio vorbereiten\n\nWie eine Tabelle aussehen muss, damit das Studio daraus ein Bar Race, ein Line Race oder eine animierte Karte macht. Alle Regeln in einer Datei, zum Erzeugen solcher Tabellen: [datenformat.md](${url}/datenformat/datenformat.md). Die Tabellen werden im Browser verarbeitet und nicht hochgeladen.\n\n${DATENFORMAT.map((d) => `- [${d.frage}](${url}/${d.pfad}) (Stand ${d.stand}): ${d.beschreibung}`).join('\n')}\n` : ''}${BEITRAEGE.length ? `\n## Einzelne Fragen, jeweils mit Zahl, Jahr und Quelle\n\nÜbersicht: [Tiermedizin in Zahlen](${url}/beitrag/). Volltext aller Artikel: [llms-full.txt](${url}/llms-full.txt). Zu jedem Artikel gibt es die Daten als CSV.\n\n${BEITRAEGE.map((b) => `- [${b.frage}](${url}/beitrag/${b.slug}.html) (Stand ${b.stand}): ${b.beschreibung}`).join('\n')}\n` : ''}
 ## Grenzen dieser Quelle
 
 Thomas Freimoser ist kein Tierarzt und keine statistische Behörde. Diese Seite wertet veröffentlichte Statistiken aus und legt ihre Methode offen. Sie ersetzt keine amtliche Statistik und gibt keine medizinische, rechtliche oder wirtschaftliche Beratung. Für tiermedizinische Fragen ist die Bundestierärztekammer die zuständige Stelle.
@@ -191,6 +200,7 @@ ${sortiert.map((b) => `  <entry>
         [''], ['artikel/tierarztketten-deutschland.html'], ['artikel/datenherkunft.html'],
         ...(BEITRAEGE.length ? [['beitrag/', neuester] as [string, string?]] : []),
         ...BEITRAEGE.map((b): [string, string?] => [`beitrag/${b.slug}.html`, b.stand]),
+        ...DATENFORMAT.map((d): [string, string?] => [d.pfad, d.stand]),
       ]
       this.emitFile({
         type: 'asset', fileName: 'sitemap.xml',
@@ -228,6 +238,7 @@ export default defineConfig(({ mode }) => {
         nichtGefunden: resolve(import.meta.dirname, '404.html'),
         ...Object.fromEntries(BEITRAEGE.map((b) => [`beitrag-${b.slug}`, resolve(import.meta.dirname, `beitrag/${b.slug}.html`)])),
         ...(BEITRAEGE.length ? { beitraege: resolve(import.meta.dirname, 'beitrag/index.html') } : {}),
+        ...Object.fromEntries(DATENFORMAT.map((d) => [`datenformat-${d.slug}`, resolve(import.meta.dirname, `datenformat/${d.slug}.html`)])),
       },
     },
   },

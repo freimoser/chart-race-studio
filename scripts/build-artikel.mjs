@@ -84,6 +84,9 @@ function inline(s) {
 }
 
 function markdown(text) {
+  // Codeblöcke (```) zuerst herausnehmen: Sie dürfen Leerzeilen enthalten, an denen sonst Absätze getrennt würden.
+  const codes = []
+  text = text.replace(/^```(\w*)\n([\s\S]*?)\n```$/gm, (_, sprache, code) => `\u0000CODE${codes.push({ sprache, code }) - 1}\u0000`)
   const bloecke = text.split(/\n{2,}/)
   const html = []
   const faq = []
@@ -91,6 +94,12 @@ function markdown(text) {
   for (let i = 0; i < bloecke.length; i++) {
     const b = bloecke[i].trim()
     if (!b) continue
+    const code = b.match(/^\u0000CODE(\d+)\u0000$/)
+    if (code) {
+      const { sprache, code: inhalt } = codes[Number(code[1])]
+      html.push(`<pre${sprache ? ` data-sprache="${esc(sprache)}"` : ''}><code>${esc(inhalt)}</code></pre>`)
+      continue
+    }
     const zeilen = b.split('\n')
     const bild = b.match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/)
     if (bild) {
@@ -131,6 +140,18 @@ function markdown(text) {
     }
   }
   return { html: html.join('\n\n'), faq }
+}
+
+// Rückt HTML für die Lesbarkeit des Quelltexts ein, aber nie innerhalb von <pre>: Dort wäre jede
+// Einrückung sichtbar.
+function einruecken(html, tiefe = '        ') {
+  let inPre = false
+  return html.split('\n').map((z) => {
+    const zeile = inPre ? z : tiefe + z
+    if (/<pre[\s>]/.test(z)) inPre = true
+    if (/<\/pre>/.test(z)) inPre = false
+    return zeile
+  }).join('\n')
 }
 
 // ---------- Seite ----------
@@ -242,7 +263,7 @@ ${entwurf ? `    <p class="entwurf">Entwurf · ${a.bereit ? 'bereit zur Freigabe
         ${lead}
         <p class="meta">Stand ${datumDe(a.stand)} · von ${esc(L.operator)}${post.publishedOn ? ` · auf LinkedIn seit ${datumDe(post.publishedOn)}` : ''}</p>
         ${bild}
-${rumpf.split('\n').map((z) => '        ' + z).join('\n')}
+${einruecken(rumpf)}
         <aside class="kasten">
 ${csv ? `          <p><a href="${csv}" download>Daten als CSV herunterladen</a> · ${esc(ds.titel)}</p>\n` : ''}${post.sampleId ? `          <p><a href="${tiefe}?beispiel=${post.sampleId}">Datensatz im Studio öffnen und selbst animieren</a></p>\n` : ''}${post.linkedInUrl ? `          <p><a href="${post.linkedInUrl}" rel="noopener">Zum Beitrag auf LinkedIn</a></p>\n` : ''}${verweise.length ? `          <p>Baut auf: ${verweise.join(' · ')}</p>\n` : ''}          <p><a href="${tiefe}artikel/datenherkunft.html">Woher die Zahlen kommen</a> · <a href="${entwurf ? '../' : './'}">Alle Artikel von ${esc(L.siteName)}</a></p>
         </aside>
@@ -350,3 +371,129 @@ const index = artikel.map((a) => ({ post: a.post, ...(a.anleitung ? { art: 'anle
 fs.writeFileSync('src/content/artikel-index.json', JSON.stringify(index, null, 2) + '\n')
 
 console.log(`Artikel: ${artikel.length} Entwürfe, ${artikel.filter((a) => a.bereit).length} bereit, ${live.length} online${FREIGABE.artikelLive ? '' : ' (Freigabe aus)'}${mitEntwuerfen ? `, Vorschau unter /${ENTWURF}/` : ''}`)
+
+// ---------- Bereich „Datenformat“ ----------
+// Eine Hauptseite und je Diagrammart eine Unterseite: wie eine Tabelle aussehen muss, damit das Studio
+// sie liest. Gehört zu keinem Post und ist immer online, sobald `bereit: ja`. Jede Seite gibt es
+// zusätzlich als Markdown unter /datenformat/<slug>.md, alle zusammen in /datenformat/datenformat.md –
+// für KI-Assistenten, die daraus Datensätze erzeugen sollen.
+const DF_QUELLE = 'src/content/datenformat'
+const DF_ZIEL = 'datenformat'
+const DF_MD = 'public/datenformat'
+
+function dfLesen(datei) {
+  const roh = fs.readFileSync(path.join(DF_QUELLE, datei), 'utf8')
+  const m = roh.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/)
+  if (!m) throw new Error(`${datei}: Kopfbereich zwischen --- fehlt`)
+  const kopf = {}
+  for (const zeile of m[1].split('\n')) { const k = zeile.match(/^(\w+):\s*(.*)$/); if (k) kopf[k[1]] = k[2].trim() }
+  for (const pflicht of ['slug', 'titel', 'menue', 'beschreibung', 'frage', 'stand', 'reihenfolge', 'bereit']) {
+    if (!kopf[pflicht]) throw new Error(`${datei}: Feld „${pflicht}“ fehlt`)
+  }
+  return { datei, ...kopf, reihenfolge: Number(kopf.reihenfolge), bereit: kopf.bereit === 'ja', text: m[2].trim() }
+}
+
+const dfDatei = (s) => s.slug === 'index' ? 'index.html' : `${s.slug}.html`
+const dfPfad = (s) => s.slug === 'index' ? `${DF_ZIEL}/` : `${DF_ZIEL}/${s.slug}.html`
+
+function dfSeite(s, alle) {
+  const { html, faq } = markdown(s.text)
+  const [ersterBlock, ...rest] = html.split('\n\n')
+  if (!ersterBlock.startsWith('<p>')) throw new Error(`${s.datei}: Der Text muss mit einem Absatz beginnen, der die Frage beantwortet`)
+  const haupt = alle.find((x) => x.slug === 'index')
+  const url = BASIS ? `${BASIS}/${dfPfad(s)}` : ''
+  const jsonld = [{
+    '@context': 'https://schema.org', '@type': 'TechArticle',
+    headline: s.titel, description: s.beschreibung, inLanguage: 'de-DE',
+    author: { '@type': 'Person', name: L.operator }, dateModified: s.stand, about: s.frage,
+    ...(url ? { mainEntityOfPage: url } : {}),
+  }, {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: L.siteName, ...(BASIS ? { item: `${BASIS}/` } : {}) },
+      { '@type': 'ListItem', position: 2, name: haupt?.menue ?? 'Datenformat', ...(BASIS ? { item: `${BASIS}/${DF_ZIEL}/` } : {}) },
+      ...(s.slug === 'index' ? [] : [{ '@type': 'ListItem', position: 3, name: s.menue, ...(url ? { item: url } : {}) }]),
+    ],
+  }]
+  const teil = s.text.split(/\n## /).find((t) => /^Schritt für Schritt/.test(t)) ?? ''
+  const schritte = [...teil.matchAll(/^### (.+)$/gm)].map((m) => m[1].replace(/^\d+\.\s*/, ''))
+  if (schritte.length) jsonld.push({
+    '@context': 'https://schema.org', '@type': 'HowTo', name: s.titel, description: s.beschreibung, inLanguage: 'de-DE',
+    tool: { '@type': 'HowToTool', name: `Studio von ${L.siteName}` },
+    step: schritte.map((name, i) => ({ '@type': 'HowToStep', position: i + 1, name })),
+  })
+  if (faq.length) jsonld.push({
+    '@context': 'https://schema.org', '@type': 'FAQPage',
+    mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.frage, acceptedAnswer: { '@type': 'Answer', text: f.antwort } })),
+  })
+  const nav = alle.map((x) => x.slug === s.slug
+    ? `<li><strong aria-current="page">${esc(x.menue)}</strong></li>`
+    : `<li><a href="${x.slug === 'index' ? './' : `${x.slug}.html`}">${esc(x.menue)}</a></li>`).join('')
+  const titel = s.titel.length + L.siteName.length + 3 <= 65 ? `${s.titel} | ${L.siteName}` : s.titel
+  return `<!doctype html>
+<html lang="de" data-brand="klar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>${esc(titel)}</title>
+    <meta name="description" content="${esc(s.beschreibung)}" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../favicon-96.png" sizes="96x96" type="image/png" />
+    <link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+    <link rel="alternate" type="text/markdown" href="${s.slug}.md" title="Diese Seite als Markdown" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="${esc(s.titel)}" />
+    <meta property="og:description" content="${esc(s.beschreibung)}" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:site_name" content="${esc(L.siteName)}" />
+    <meta property="article:modified_time" content="${s.stand}" />
+    <script type="application/ld+json">${JSON.stringify(jsonld)}</script>
+    <script type="module" src="/src/article.ts"></script>
+  </head>
+  <body>
+    <!--rahmen:kopf-->
+
+    <main class="wrap">
+      <article>
+        <p class="meta">${s.slug === 'index' ? 'Datenformat' : `<a href="./">Datenformat</a> · ${esc(s.menue)}`}</p>
+        <h1>${esc(s.titel)}</h1>
+        ${ersterBlock.replace(/^<p>/, '<p class="lead">')}
+        <p class="meta">Stand ${datumDe(s.stand)} · Datenstandard 1.0 · von ${esc(L.operator)} · <a href="${s.slug}.md">als Markdown</a></p>
+        <nav class="unternav" aria-label="Datenformat"><ul>${nav}</ul></nav>
+${einruecken(rest.join('\n\n'))}
+        <aside class="kasten">
+          <p><a href="../">Zum Studio</a> · <a href="../vorlagen/vorlage-zeitreihe.xlsx">Vorlage Zeitreihe</a> · <a href="../vorlagen/vorlage-weltkarte.xlsx">Vorlage Weltkarte</a> · <a href="../vorlagen/vorlage-bundeslaender.xlsx">Vorlage Bundesländer</a></p>
+          <p>Alle Regeln in einer Datei für KI-Assistenten: <a href="datenformat.md">datenformat.md</a></p>
+        </aside>
+      </article>
+    </main>
+    <!--rahmen:fuss-->
+  </body>
+</html>
+`
+}
+
+const dfDateien = fs.existsSync(DF_QUELLE) ? fs.readdirSync(DF_QUELLE).filter((f) => f.endsWith('.md')).sort() : []
+const dfSeiten = dfDateien.map(dfLesen).sort((a, b) => a.reihenfolge - b.reihenfolge)
+if (dfSeiten.length && !dfSeiten.some((x) => x.slug === 'index')) throw new Error(`${DF_QUELLE}: Hauptseite mit slug „index“ fehlt`)
+const dfLive = dfSeiten.filter((x) => x.bereit)
+fs.rmSync(DF_ZIEL, { recursive: true, force: true })
+fs.rmSync(DF_MD, { recursive: true, force: true })
+if (dfLive.length) {
+  fs.mkdirSync(DF_ZIEL, { recursive: true })
+  fs.mkdirSync(DF_MD, { recursive: true })
+  // Markdown mit absoluten Adressen: Eine KI, die die Datei einzeln bekommt, kann relative Links nicht auflösen.
+  const absolut = (t) => !BASIS ? t : t
+    .replace(/\]\(\.\/\)/g, `](${BASIS}/${DF_ZIEL}/)`)
+    .replace(/\]\(\.\.\/([^)]*)\)/g, `](${BASIS}/$1)`)
+    .replace(/\]\(([a-z0-9-]+\.(html|md))\)/g, `](${BASIS}/${DF_ZIEL}/$1)`)
+  const alsMd = (x) => `# ${x.titel}\n\nQuelle: ${BASIS ? `${BASIS}/${dfPfad(x)}` : dfPfad(x)} · Stand ${x.stand} · Datenstandard 1.0 · ${L.siteName}, ${L.operator}\n\n${absolut(x.text)}\n`
+  for (const x of dfLive) {
+    fs.writeFileSync(path.join(DF_ZIEL, dfDatei(x)), dfSeite(x, dfLive))
+    fs.writeFileSync(path.join(DF_MD, `${x.slug}.md`), alsMd(x))
+  }
+  fs.writeFileSync(path.join(DF_MD, 'datenformat.md'), `# Datenformat für das Studio von ${L.siteName} (Datenstandard 1.0)\n\n> Wie eine Tabelle aussehen muss, damit das Studio daraus ein Bar Race, ein Line Race oder eine animierte Karte macht. Alle Seiten des Bereichs in einer Datei, gedacht für KI-Assistenten, die solche Tabellen erzeugen.\n\n${dfLive.map(alsMd).join('\n---\n\n')}`)
+}
+fs.writeFileSync('src/content/datenformat-index.json', JSON.stringify(dfSeiten.map((x) => ({ slug: x.slug, pfad: dfPfad(x), titel: x.titel, menue: x.menue, beschreibung: x.beschreibung, frage: x.frage, stand: x.stand, bereit: x.bereit })), null, 2) + '\n')
+console.log(`Datenformat: ${dfSeiten.length} Seiten, ${dfLive.length} online`)

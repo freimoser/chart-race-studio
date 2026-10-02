@@ -1,8 +1,10 @@
 # Datenstandard „Tiermedizin in Zahlen“ 1.0
 
-**Stand:** 24.09.2026 · Gilt für alle Tabellen, die ins Studio geladen werden, und für alle eigenen Datensätze
-unter `src/samples/`. Öffentliche Fassung für Leserinnen und Leser: Artikel „Weltkarte nach Daten einfärben und
-animieren“ (`src/content/artikel/anleitung-weltkarte-laender-einfaerben.md`). Vorlagen: `public/vorlagen/`
+**Stand:** 02.10.2026 · Gilt für alle Tabellen, die ins Studio geladen werden, und für alle eigenen Datensätze
+unter `src/samples/`. Öffentliche Fassung: Bereich **Datenformat** unter `/datenformat/` (Quellen in
+`src/content/datenformat/*.md`, als Markdown für KI-Assistenten unter `/datenformat/datenformat.md`), dazu die Anleitung
+„Weltkarte nach Daten einfärben und animieren“ (`src/content/artikel/anleitung-weltkarte-laender-einfaerben.md`).
+Wer hier eine Regel ändert, ändert sie auch dort. Vorlagen: `public/vorlagen/`
 (erzeugt mit `scripts/build-vorlagen.mjs`).
 
 Der Standard ist bewusst klein. Jede Regel hier ist im Code umgesetzt und wird im Studio geprüft – steht
