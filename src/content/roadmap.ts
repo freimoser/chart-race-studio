@@ -309,7 +309,8 @@ export const POSTS: RoadmapPost[] = [
     refs: [25, 26, 6],
   },
   {
-    nr: 28, arc: 'markt', status: 'naechster',
+    nr: 28, arc: 'markt', status: 'veroeffentlicht', publishedOn: '2026-10-02',
+    linkedInUrl: 'https://lnkd.in/p/geJDNxx5',
     title: 'Die Tiermedizin wird weiblich',
     hook: '2002 war der typische Praxistierarzt ein Mann mit eigener Praxis. 2025 ist es eine angestellte Tierärztin.',
     figures: ['Tätige Tierärztinnen: 9.706 (2002) auf 24.815 (2025), Tierärzte: 12.225 auf 9.661; Frauenanteil 44,3 auf 72,0 Prozent', '2006 erstmals mehr Tierärztinnen als Tierärzte, 11.901 zu 11.872', '2016 erstmals mehr Praxisinhaberinnen als Inhaber, 5.999 zu 5.973', 'Angestellte Tierärztinnen in Praxen: 2.739 auf 9.993, seit 2015 die größte Gruppe in der Praxis', 'Seit 2019: Inhaber minus 1.038, Inhaberinnen plus 235'],
