@@ -34,14 +34,18 @@ const DATENFORMAT: DatenformatSeite[] = existsSync('src/content/datenformat-inde
  * Ohne gesetzte Variable wird nichts eingefügt.
  */
 /** Kopfzeile: nur Navigation. Rechtliches steht im Fuß – so erwarten es Leser, und der Kopf bleibt kurz. */
-function rahmenKopf(hoch: string) {
+// Dasselbe Zeichen wie im Studio (Wordmark in src/components/ui.tsx), damit Magazin und Werkzeug als eine Seite erkennbar sind.
+const ZEICHEN = `<svg class="zeichen" width="26" height="26" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="7" fill="var(--brand-primary)"/><rect x="6" y="7" width="16" height="3.2" rx="1.6" fill="#fff"/><rect x="6" y="12.4" width="11" height="3.2" rx="1.6" fill="var(--brand-accent)"/><rect x="6" y="17.8" width="7" height="3.2" rx="1.6" fill="#fff" opacity=".75"/></svg>`
+function rahmenKopf(hoch: string, seitePfad = '') {
+  // Der Bereich, in dem die Seite liegt, wird markiert – Leser sehen, wo sie sind.
+  const aktiv = (bereich: string) => (seitePfad.startsWith(bereich) ? ' aria-current="page"' : '')
   return `<header class="site">
       <div class="wrap">
-        <a class="marke" href="${hoch}beitrag/">${MARKE}</a>
+        <a class="marke" href="${hoch}beitrag/">${ZEICHEN}<span>${MARKE}</span></a>
         <nav aria-label="Hauptnavigation">
-          <a href="${hoch}beitrag/">Alle Artikel</a>
-          <a href="${hoch}datenformat/">Datenformat</a>
-          <a href="${hoch}artikel/datenherkunft.html">Datenherkunft</a>
+          <a href="${hoch}beitrag/"${aktiv('beitrag/')}>Artikel</a>
+          <a href="${hoch}datenformat/"${aktiv('datenformat/')}>Datenformat</a>
+          <a href="${hoch}artikel/datenherkunft.html"${aktiv('artikel/datenherkunft')}>Datenherkunft</a>
           <a href="${hoch}#redaktionsplan">Redaktionsplan</a>
           <a class="studio" href="${hoch}">Studio</a>
         </nav>
@@ -73,7 +77,7 @@ function integrationen(env: Record<string, string>) {
       if (html.includes('<!--rahmen:')) {
         const seitePfad = (ctx.path ?? '/').replace(/^\/+/, '')
         const hoch = seitePfad === '404.html' ? base : '../'.repeat(seitePfad.split('/').length - 1) || './'
-        html = html.replace('<!--rahmen:kopf-->', rahmenKopf(hoch)).replace('<!--rahmen:fuss-->', rahmenFuss(hoch))
+        html = html.replace('<!--rahmen:kopf-->', rahmenKopf(hoch, seitePfad)).replace('<!--rahmen:fuss-->', rahmenFuss(hoch))
       }
       const tags: string[] = []
       if (env.VITE_GSC_VERIFICATION) tags.push(`<meta name="google-site-verification" content="${env.VITE_GSC_VERIFICATION}" />`)

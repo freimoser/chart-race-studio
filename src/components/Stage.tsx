@@ -93,12 +93,12 @@ export function Stage() {
           className="absolute left-0 top-0 origin-top-left select-none overflow-hidden"
           style={{ width: W, height: H, transform: `scale(${scale})`, background: colors.bg, color: colors.fg, fontFamily: family }}
         >
-          {layout.title && (
+          {input && layout.title && (
             <div className="absolute" style={{ left: layout.title.align === 'center' ? 0 : layout.title.x, width: layout.title.align === 'center' ? W : undefined, top: layout.title.y, textAlign: layout.title.align, fontSize: layout.title.size, lineHeight: `${layout.title.lineHeight}px`, fontWeight: 700, whiteSpace: 'pre' }}>
               {layout.title.lines.join('\n')}
             </div>
           )}
-          {layout.subtitle && (
+          {input && layout.subtitle && (
             <div className="absolute" style={{ left: layout.subtitle.align === 'center' ? 0 : layout.subtitle.x, width: layout.subtitle.align === 'center' ? W : undefined, top: layout.subtitle.y, textAlign: layout.subtitle.align, fontSize: layout.subtitle.size, lineHeight: `${layout.subtitle.lineHeight}px`, fontWeight: 400, color: colors.muted, whiteSpace: 'pre' }}>
               {layout.subtitle.lines.join('\n')}
             </div>
@@ -109,17 +109,12 @@ export function Stage() {
             </div>
           )}
           <div ref={chartRef} className="absolute" style={{ left: layout.chart.x, top: layout.chart.y, width: layout.chart.w, height: layout.chart.h }} />
-          {!input && (
-            <div className="absolute inset-0 flex items-center justify-center" style={{ fontSize: Math.round(W / 40), color: colors.muted }}>
-              Daten laden, um die Vorschau zu sehen
-            </div>
-          )}
-          {layout.caption && (
+          {input && layout.caption && (
             <div className="absolute" style={{ left: layout.caption.x, top: layout.caption.y - layout.caption.size * 0.8, fontSize: layout.caption.size, lineHeight: `${layout.caption.lineHeight}px`, color: colors.muted, whiteSpace: 'pre' }}>
               {layout.caption.lines.join('\n')}
             </div>
           )}
-          {layout.watermark && settings.watermarkEnabled && (
+          {input && layout.watermark && settings.watermarkEnabled && (
             <div
               className="absolute flex items-center"
               style={{
@@ -138,6 +133,22 @@ export function Stage() {
             </div>
           )}
         </div>
+        {!input && (
+          // Ohne Daten keine Bühne mit verwaistem Titel, sondern der Weg zum ersten Video.
+          <div className="absolute inset-0 flex items-center justify-center p-6">
+            <div className="max-w-sm rounded-lg bg-surface/95 p-5 text-center">
+              <p className="text-base font-semibold text-ink">Noch keine Daten geladen</p>
+              <p className="mt-2 text-sm leading-relaxed text-ink-muted">
+                Rechts einen Beispiel-Datensatz wählen oder eine eigene Tabelle laden: erste Spalte die Zeit, eine Spalte je Reihe, in den Zellen nur Zahlen.
+              </p>
+              <div className="mt-4 flex flex-wrap justify-center gap-2">
+                <a href="datenformat/" className="btn-primary !min-h-9 !px-3 text-sm">So muss die Tabelle aussehen</a>
+                <a href="vorlagen/vorlage-zeitreihe.xlsx" download className="btn-ghost !min-h-9 !px-3 text-sm">Vorlage herunterladen</a>
+              </div>
+              <p className="mt-3 text-xs text-ink-faint">Die Tabelle wird nur in diesem Browser gelesen und nicht hochgeladen.</p>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   )

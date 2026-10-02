@@ -311,7 +311,8 @@ function uebersicht(live) {
   <body>
     <!--rahmen:kopf-->
     <main class="wrap">
-      <h1>Tiermedizin in Zahlen</h1>
+      <p class="meta">Alle Artikel</p>
+      <h1>Tierärzte, Praxen und Haustiere in Zahlen</h1>
       <p class="lead">Wie viele Tierärzte, Tierarztpraxen und Haustiere gibt es in Deutschland, und wie hat sich das seit 1991 verändert? Jeder Artikel beantwortet eine Frage mit Zahl, Jahr und Quelle und nennt, was die Zahl nicht sagt.</p>
 ${nachKapitel.map((k) => `      <h2>${esc(k.arc.label)}</h2>
       <ul class="liste">

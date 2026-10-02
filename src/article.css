@@ -16,15 +16,29 @@ body {
   font-feature-settings: 'tnum' 1;
 }
 .wrap { max-width: 44rem; margin: 0 auto; padding: 1.5rem 1.25rem 4rem; }
-/* Kopfzeile bleibt beim Scrollen stehen. Nur Navigation – Impressum und Datenschutz stehen im Fuß. */
+/* Kopfzeile bleibt beim Scrollen stehen. Nur Navigation – Impressum und Datenschutz stehen im Fuß.
+   Etwas breiter als der Text, damit Zeichen, Navigation und Studio-Knopf in eine Zeile passen. */
 header.site { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--brand-line);
   background: color-mix(in srgb, var(--brand-surface) 92%, transparent); backdrop-filter: saturate(1.4) blur(8px); -webkit-backdrop-filter: saturate(1.4) blur(8px); }
-header.site .wrap { padding: 0.75rem 1.25rem; display: flex; gap: 0.5rem 1.25rem; align-items: center; flex-wrap: wrap; }
-header.site a { color: var(--brand-ink-muted); text-decoration: none; font-size: 0.875rem; }
+header.site .wrap { max-width: 56rem; padding: 0.6rem 1.25rem; display: flex; gap: 0.5rem 1.5rem; align-items: center; }
+header.site a { color: var(--brand-ink-muted); text-decoration: none; font-size: 0.875rem; white-space: nowrap; }
 header.site a:hover { color: var(--brand-ink); }
-header.site .marke { font-size: 0.95rem; font-weight: 700; color: var(--brand-ink); margin-right: auto; }
-header.site nav { display: flex; gap: 0.25rem 1rem; flex-wrap: wrap; align-items: center; }
-header.site .studio { color: var(--brand-primary); font-weight: 600; }
+header.site .marke { display: inline-flex; align-items: center; gap: 0.6rem; font-size: 0.95rem; font-weight: 700; letter-spacing: -0.01em; color: var(--brand-ink); margin-right: auto; }
+header.site .zeichen { flex: none; display: block; }
+header.site nav { display: flex; gap: 1.25rem; align-items: center; }
+header.site nav a[aria-current] { color: var(--brand-ink); font-weight: 600; }
+header.site .studio { color: #fff; background: var(--brand-primary); font-weight: 600; padding: 0.4rem 0.9rem; border-radius: 999px; }
+header.site .studio:hover { color: #fff; background: var(--brand-primary-strong); }
+/* Schmal: Zeichen und Studio-Knopf oben, die Navigation darunter in einer wischbaren Zeile statt umzubrechen. */
+@media (max-width: 40rem) {
+  header.site .wrap { flex-wrap: wrap; padding-bottom: 0; }
+  header.site nav { order: 3; width: 100%; overflow-x: auto; gap: 0.7rem; padding: 0.15rem 0 0.6rem; scrollbar-width: none; }
+  header.site nav a { font-size: 0.8125rem; }
+  header.site nav .studio { font-size: 0.8125rem; }
+  header.site nav::-webkit-scrollbar { display: none; }
+  header.site nav .studio { position: absolute; top: 0.55rem; right: 1.25rem; }
+  header.site .wrap { position: relative; }
+}
 /* Sprungziele nicht unter der Kopfzeile verstecken */
 h2[id], h3[id], [id] { scroll-margin-top: 4.5rem; }
 
@@ -62,7 +76,11 @@ footer.site { border-top: 1px solid var(--brand-line); margin-top: 3rem; padding
 figure { margin: 1.5rem 0; }
 figure img { display: block; max-width: 100%; height: auto; border-radius: var(--brand-radius); border: 1px solid var(--brand-line); }
 .entwurf { margin: 0; padding: 0.5rem 1.25rem; background: var(--brand-accent); color: #fff; font-size: 0.8125rem; font-weight: 600; text-align: center; }
-.liste li { margin: 0.9rem 0; }
+.liste { list-style: none; padding: 0; margin: 0.5rem 0 0; }
+.liste li { margin: 0; padding: 0.85rem 0; border-top: 1px solid var(--brand-line); font-size: 0.9375rem; line-height: 1.55; }
+.liste li:last-child { border-bottom: 1px solid var(--brand-line); }
+.liste a { display: inline-block; margin-bottom: 0.15rem; font-size: 1.0625rem; font-weight: 600; color: var(--brand-ink); text-decoration: none; }
+.liste a:hover { color: var(--brand-primary); text-decoration: underline; text-underline-offset: 3px; }
 figcaption { font-size: 0.8125rem; color: var(--brand-ink-faint); margin-top: 0.4rem; }
 code { font-size: 0.9em; background: var(--brand-surface-2); padding: 0.05em 0.3em; border-radius: 4px; }
 
@@ -72,3 +90,5 @@ pre code { background: none; padding: 0; font-size: inherit; white-space: pre; }
 .unternav { margin: 1.5rem 0 0.5rem; padding: 0.6rem 0.9rem; border: 1px solid var(--brand-line); border-radius: var(--brand-radius); }
 .unternav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.25rem 1.1rem; font-size: 0.9rem; }
 .unternav strong { color: var(--brand-ink); }
+
+@media (max-width: 40rem) { h1 { font-size: 1.65rem; margin-top: 1.5rem; } }

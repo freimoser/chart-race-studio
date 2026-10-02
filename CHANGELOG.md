@@ -4,6 +4,13 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Gestaltung: ein Auftritt für Magazin und Studio (02.10.2026)
+
+- Kopfzeile aller statischen Seiten: dasselbe Zeichen wie im Studio, „Studio“ als Knopf, der aktuelle Bereich markiert, auf dem Handy eine einzeilige, wischbare Navigation statt Umbruch.
+- Artikelübersicht: beschreibende Überschrift statt des Markennamens, Artikelliste als ruhige Zeilen mit Trennlinien statt Aufzählung mit unterstrichenen Links.
+- Studio-Kopf: Links zu Artikeln und Datenformat, Ansichtsumschalter ohne Zeilenumbruch, Design-Auswahl ohne losen Begleittext.
+- Leere Bühne: statt eines verwaisten Titels aus dem letzten Datensatz ein Startzustand mit Weg zum Datenformat und zur Vorlage. Im Datenpanel ein sichtbarer Hinweis „So muss die Tabelle aussehen“.
+
 ### Bereich „Datenformat“ (02.10.2026)
 
 - **Neuer Menüpunkt Datenformat** (`/datenformat/`): Hauptseite „Tabellen für animierte Diagramme vorbereiten“ und Unterseiten für Bar Race, Line Race, Karte und Einstellungen. Quellen in `src/content/datenformat/*.md`, gebaut von `scripts/build-artikel.mjs` mit TechArticle-, Breadcrumb- und FAQ-Auszeichnung; in Sitemap, llms.txt, Kopf- und Fußzeile, Studio-Kopf und Datenpanel verlinkt.

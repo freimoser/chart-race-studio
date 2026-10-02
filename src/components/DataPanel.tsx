@@ -1,5 +1,5 @@
 import { useRef, useState, type DragEvent } from 'react'
-import { AlertTriangle, Download, FileSpreadsheet, Info, Upload, XCircle, Table2, Sparkles } from 'lucide-react'
+import { AlertTriangle, BookOpen, Download, FileSpreadsheet, Info, Upload, XCircle, Table2, Sparkles } from 'lucide-react'
 import { useApp } from '@/state/store'
 import { parseFile, toCsv } from '@/lib/data/parse'
 import { SICHTBARE_SAMPLES as SAMPLES } from '@/content/freigabe'
@@ -105,9 +105,15 @@ export function DataPanel() {
             <button type="button" className="btn-ghost" onClick={startEmpty}><Table2 size={16} /> Leere Tabelle</button>
           </div>
           <input ref={fileRef} type="file" accept=".csv,.tsv,.txt,.xlsx,.xls,.ods,.xlsm" className="hidden" onChange={(e) => onFiles(e.target.files)} />
+          <a href="datenformat/" className="group flex items-start gap-2.5 rounded-md border border-line bg-surface-2/60 px-3 py-2.5 transition-colors hover:border-primary">
+            <BookOpen size={16} className="mt-0.5 shrink-0 text-primary" aria-hidden />
+            <span className="text-[13px] leading-snug">
+              <span className="block font-medium text-ink group-hover:text-primary">So muss die Tabelle aussehen</span>
+              <span className="block text-ink-muted">Erste Spalte die Zeit, eine Spalte je Reihe. Regeln je Diagrammart, auch für KI-Assistenten.</span>
+            </span>
+          </a>
           <p className="text-[11px] text-ink-faint">
-            Wide-Format (eine Spalte je Kategorie) oder Long-Format (Spalten: Zeit, Kategorie, Wert) – wird automatisch erkannt.{' '}
-            <a className="underline hover:text-ink" href="datenformat/">So muss die Tabelle aussehen</a>. Die Datei wird nur in diesem Browser gelesen und nicht hochgeladen.
+            Breites Format (eine Spalte je Reihe) oder langes Format (Zeit, Name, Wert) wird automatisch erkannt. Die Datei wird nur in diesem Browser gelesen und nicht hochgeladen.
           </p>
           <p className="text-[11px] text-ink-faint">
             Vorlagen nach unserem Datenstandard:{' '}

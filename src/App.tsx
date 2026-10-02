@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Database, Map, Palette, Share2 } from 'lucide-react'
+import { Clapperboard, Database, Map, Palette, Share2 } from 'lucide-react'
 import { useApp } from '@/state/store'
 import { Stage } from '@/components/Stage'
 import { Transport } from '@/components/Transport'
@@ -59,17 +59,22 @@ export default function App() {
     <div className="flex h-full min-h-0 flex-col">
       <header className="flex items-center justify-between gap-3 border-b border-line bg-surface px-4 py-2.5">
         <Wordmark />
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
+          <nav aria-label="Seiten" className="hidden items-center gap-4 text-sm md:flex">
+            <a href="beitrag/" className="text-ink-muted transition-colors hover:text-ink">Artikel</a>
+            <a href="datenformat/" className="text-ink-muted transition-colors hover:text-ink">Datenformat</a>
+          </nav>
           <div className="seg" role="group" aria-label="Ansicht">
-            <button type="button" aria-pressed={view === 'studio'} onClick={() => zeige('studio')}>Studio</button>
-            <button type="button" aria-pressed={view === 'roadmap'} onClick={() => zeige('roadmap')} className="whitespace-nowrap">
+            <button type="button" aria-pressed={view === 'studio'} onClick={() => zeige('studio')} className="inline-flex items-center gap-1.5 whitespace-nowrap">
+              <Clapperboard size={14} aria-hidden /> Studio
+            </button>
+            <button type="button" aria-pressed={view === 'roadmap'} onClick={() => zeige('roadmap')} className="inline-flex items-center gap-1.5 whitespace-nowrap">
               <Map size={14} aria-hidden /> Redaktionsplan
             </button>
           </div>
-          <a href="datenformat/" className="hidden whitespace-nowrap text-sm text-ink-muted underline-offset-2 hover:text-ink hover:underline md:inline">Datenformat</a>
-          <label className="hidden items-center gap-2 text-xs text-ink-muted sm:flex">
-            Design-Richtung
-            <select className="input !w-auto !py-1" value={brand} onChange={(e) => setBrand(e.target.value as BrandId)} aria-label="Design-Richtung">
+          <label className="hidden items-center lg:flex" title="Design-Richtung">
+            <span className="sr-only">Design-Richtung</span>
+            <select className="input !w-auto !py-1 text-xs" value={brand} onChange={(e) => setBrand(e.target.value as BrandId)}>
               <option value="klar">Klar (Inter)</option>
               <option value="editorial">Editorial (IBM Plex)</option>
               <option value="signal">Signal (Manrope)</option>
