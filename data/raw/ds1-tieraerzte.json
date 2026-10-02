@@ -80,6 +80,14 @@
   {
    "date": "2002",
    "metric": "Deutschland",
+   "name": "Praxisassistent:innen (angestellt in Praxis)",
+   "value": 3784,
+   "unit": "Personen",
+   "quelle": "BTK, Statistik 2002 (DTBl 6/2003), Tab. 1, https://www.bundestieraerztekammer.de/btk/statistik/downloads/statistik_02.pdf; nachgetragen 02.10.2026, siehe ds14-geschlecht.json"
+  },
+  {
+   "date": "2002",
+   "metric": "Deutschland",
    "name": "Frauenanteil (%) – berechnet",
    "value": 43.6,
    "unit": "%"

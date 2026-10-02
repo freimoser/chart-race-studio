@@ -23,7 +23,7 @@ Von den **12 Datensätzen** auf dieser Seite beruht nur **einer** auf amtlicher 
 | Datensatz | Quelle | Art der Zahl | Wichtigste Grenze |
 |---|---|---|---|
 | Tierarztpraxen im Wandel | BTK | gezählt | Personen statt Vollzeitstellen; „außerhalb von Praxen“ ist berechnet |
-| Angestellte überholen die Praxisinhaber | BTK | gezählt | 2002 fehlt die Zahl der Angestellten |
+| Angestellte überholen die Praxisinhaber | BTK | gezählt | 1991 bis 1995 nur aus einer Dissertation, die die gedruckten Jahrgänge zitiert |
 | Praxisschwerpunkte | BTK | Selbstauskunft | Pferde ab 2019 getrennt abgefragt |
 | Fachtierarzt-Gebiete | BTK | gezählt | Titel statt Personen, vier Jahre interpoliert |
 | Kleintiermedizin je Bundesland | BTK | Selbstauskunft | endet 2018 wegen des Pferde-Bruchs und fehlender Kammermeldungen |
