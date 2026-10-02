@@ -135,7 +135,27 @@ Die Langfassung mit allen 13 Gruppen und ihren Eigentümern steht im Artikel.
 
 ---
 
-## Videopost ein bis zwei Tage später
+## Videopost am 02.10.2026
 
-Der Text von Post 8 aus dem Redaktionsplan, mit dem Video „Wem die Tierarztketten gehören“ (4:5). Link auf den
-LinkedIn-Artikel im Post.
+Video: „Wem die Tierarztketten gehören“ (Datensatz `ketten-eigentuemer`), Line Race, 4:5.
+
+2016 lagen sie fast gleichauf.
+2026 nicht mehr.
+
+Das Video zeigt die Standorte der Tierarztketten in Deutschland, sortiert danach, wem die Gruppen heute gehören:
+
+→ Gruppen mit Finanzinvestoren: 28 Standorte 2016, 313 im Jahr 2026
+→ Mars (AniCura): 20 Standorte 2016, 78 im Jahr 2026, seit 2023 praktisch unverändert
+→ Ohne Fonds, tierärztlich geführt: 34 Standorte
+
+Seit 2024 ist fast der ganze Zuwachs bei den Investorengruppen angefallen: plus 92 Standorte in zwei Jahren.
+Mars plus minus null.
+
+Zugeordnet ist nach dem heutigen Eigentümer, nicht nach dem im jeweiligen Jahr. 2019 und 2020 sind geschätzt.
+
+Welche Gruppe wem gehört, mit allen 13 Gruppen und Quellen, steht in meinem Artikel von Mittwoch:
+https://www.linkedin.com/pulse/wem-geh%C3%B6ren-die-tierarztketten-deutschland-s-thomas-freimoser-noe0c
+
+Was meint ihr: Ist die Frage, wem eine Praxis gehört, für Tierhalter überhaupt relevant?
+
+#Tiermedizin #Tierarztketten #PrivateEquity #Tierarztpraxis #Praxisnachfolge
