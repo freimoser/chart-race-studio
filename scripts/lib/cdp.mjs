@@ -4,7 +4,7 @@
  * dem echten Studio entstehen statt von Hand.
  *
  *   const b = await starteChrome({ breite: 1440, hoehe: 900 })
- *   await b.oeffne('http://localhost:5173/?beispiel=hund-katze-welt')
+ *   await b.oeffne('http://localhost:5173/studio/?beispiel=hund-katze-welt')
  *   await b.js('document.title')
  *   await b.foto('bild.png', { selektor: '.card' })
  *   await b.ende()
@@ -20,7 +20,7 @@ const CHROME = process.env.CHROME_BIN ?? [
 
 const warte = (ms) => new Promise((r) => setTimeout(r, ms))
 
-export async function starteChrome({ breite = 1440, hoehe = 900, skala = 2, port = 9333 } = {}) {
+export async function starteChrome({ breite = 1440, hoehe = 900, skala = 2, port = 9333, mobil = false } = {}) {
   if (!CHROME) throw new Error('Kein Chrome gefunden. Pfad über CHROME_BIN setzen.')
   const profil = fs.mkdtempSync(path.join(os.tmpdir(), 'cdp-'))
   const proc = spawn(CHROME, ['--headless=new', `--remote-debugging-port=${port}`, `--user-data-dir=${profil}`,
@@ -48,7 +48,12 @@ export async function starteChrome({ breite = 1440, hoehe = 900, skala = 2, port
   const cdp = (method, params = {}) => new Promise((r, f) => { const n = ++id; offen.set(n, { r, f }); ws.send(JSON.stringify({ id: n, method, params })) })
   await cdp('Page.enable')
   await cdp('Runtime.enable')
-  await cdp('Emulation.setDeviceMetricsOverride', { width: breite, height: hoehe, deviceScaleFactor: skala, mobile: false })
+  await cdp('Emulation.setDeviceMetricsOverride', { width: breite, height: hoehe, deviceScaleFactor: skala, mobile: mobil })
+  // Mobil: Touch und Telefon-Kennung, damit Seiten sich verhalten wie auf einem echten Gerät (hover, pointer: coarse).
+  if (mobil) {
+    await cdp('Emulation.setTouchEmulationEnabled', { enabled: true, maxTouchPoints: 5 })
+    await cdp('Emulation.setUserAgentOverride', { userAgent: 'Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Mobile Safari/537.36' })
+  }
 
   const js = async (ausdruck) => {
     const r = await cdp('Runtime.evaluate', { expression: ausdruck, awaitPromise: true, returnByValue: true })

@@ -32,8 +32,10 @@ dist-ssr
 /impressum.html
 /datenschutz.html
 
-# Aus src/content/artikel/*.md erzeugt (scripts/build-artikel.mjs), inklusive Entwurfsvorschau
+# Aus src/content/artikel/*.md erzeugt (scripts/build-artikel.mjs), inklusive Entwurfsvorschau,
+# dazu die Startseite. Das Studio liegt in studio/index.html.
 /beitrag/
+/index.html
 
 # Aus den Datensätzen der Live-Artikel erzeugt (scripts/build-artikel.mjs)
 /public/daten/

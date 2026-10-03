@@ -111,7 +111,13 @@ const restRows = [...new Set(natRows.map((r) => r.date))].flatMap((date) => {
 // In diesem Datensatz sind alle Werte publiziert, liegen vor 2002 aber nur als Stützjahre vor
 // (Tätige 1991 und 1998, Heimtiere 1992/1999/2001). Sie werden alle behalten, damit jede Reihe
 // wirklich 1991 beginnt; die Zwischenjahre interpoliert die App und weist sie in der Datenprüfung aus.
-const w2 = wide([...natRows, ...restRows, ...petAxis], { names: [NIED, ASSI, REST, TAET, PETS], from: '1991' })
+// Kurze Namen wie in 2b: Mit den langen Namen der Statistik („Niedergelassene Tierärzt:innen
+// (Praxisinhaber)“) wurden die Kopf-Labels in 4:5, 1:1 und in der Grafik der Artikel gekürzt. Dass es
+// Tierärztinnen und Tierärzte sind, sagt der Achsentitel.
+const w2 = wide([...natRows, ...restRows, ...petAxis], {
+  names: [NIED, ASSI, REST, TAET, PETS], from: '1991',
+  rename: { [NIED]: 'Praxisinhaber:innen', [ASSI]: 'Angestellte in Praxen', [REST]: 'Außerhalb von Praxen', [TAET]: 'Tätige gesamt', [PETS]: 'Hunde und Katzen' },
+})
 
 // 2b Zugespitzte Fassung für die Aussage „Angestellte überholen die Inhaber“: nur die beiden Reihen,
 // um die es geht. Im vollen Datensatz steht „Tierärztlich Tätige gesamt“ mit 34.476 daneben – die

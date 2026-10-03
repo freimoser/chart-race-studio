@@ -16,6 +16,16 @@ mit Titel und Leitfrage, dann Posts ab der nächsten Nummer anlegen.
 Seit 29.09.2026 zeigt die Seite **live nur, was schon gepostet ist**, plus eine Vorschau. **Lokal
 (`npm run dev`) ist alles sichtbar**, alle Datensätze und alle 30 Posts mit Zahlen – dort entstehen die Videos.
 
+**Adressen seit 03.10.2026:** Die Startseite ist das Magazin, das Studio liegt unter `/studio/`.
+
+| | lokal | live |
+|---|---|---|
+| Startseite (neuester Artikel mit Grafik, alle Artikel) | <http://localhost:5173/> | <https://tiermedizin-in-zahlen.org/> |
+| Studio, hier entstehen die Videos | <http://localhost:5173/studio/> | <https://tiermedizin-in-zahlen.org/studio/> |
+| Redaktionsplan | <http://localhost:5173/studio/#redaktionsplan> | <https://tiermedizin-in-zahlen.org/studio/#redaktionsplan> |
+
+Alte Links auf `/?beispiel=…` und `/#redaktionsplan` leitet die Startseite ins Studio weiter.
+
 | | lokal (`npm run dev`) | live (tiermedizin-in-zahlen.org) |
 |---|---|---|
 | Datensätze im Studio | alle | nur aus veröffentlichten Posts und dem aktuellen Post |
@@ -37,7 +47,14 @@ Build; für sie `npm run build && npm run preview` und dort nachsehen.
 
 Nach Änderungen an Titel oder Beschreibung eines Artikels: `node scripts/og-bilder.mjs` (braucht lokales Chrome) und die Bilder in `public/beitrag/og/` einchecken – das ist die Vorschau, die LinkedIn unter dem Link zeigt.
 
-Optional: ein Standbild des Charts als `public/beitrag/<slug>.png` ablegen – der Artikel zeigt es dann unter dem ersten Absatz.
+**Grafik im Artikel:** Unter dem ersten Absatz läuft der Datensatz des Posts als animierte Grafik, mit Knopf
+„Im Studio öffnen“. Sie startet, sobald sie zur Hälfte im Bild ist, und wählt ihr Format selbst: hochkant 4:5
+auf dem Telefon, 16:9 am Rechner. Ein anderer Datensatz oder eine andere Diagrammart im Kopf des Entwurfs:
+`grafik: heimtiere bar`; keine Grafik: `grafik: keine`. Ohne Datensatz zeigt der Artikel ein Standbild unter
+`public/beitrag/<slug>.png`, falls es eines gibt.
+
+**Vor dem Push bei Änderungen an Layout oder Grafik:** `npm run check:mobil` (Entwicklungsserver muss laufen)
+lädt jede Seite auf 360 Pixel Breite und meldet waagrechtes Scrollen und überstehende Elemente.
 
 ## Freigabe (`src/content/freigabe.json`)
 

@@ -6,9 +6,10 @@ beschreibung: Eine Excel-Tabelle mit Jahr, Ländern und Werten reicht: So wird d
 frage: Wie kann ich eine Weltkarte nach Daten einfärben und animieren?
 suchbegriffe: weltkarte länder einfärben, weltkarte länder einfärben kostenlos, animierte karte erstellen kostenlos, weltkarte excel länder einfärben, bar chart race erstellen
 stand: 2026-09-24
+grafik: hund-katze-welt
 bereit: ja
 ---
-Eine animierte Weltkarte braucht nur **eine Tabelle: in der ersten Spalte das Jahr, in jeder weiteren Spalte ein Land**, in den Zellen die Werte. Das [Studio](../) färbt daraus jedes Land nach seinem Wert ein, lässt die Jahre ablaufen und exportiert das Ergebnis als MP4-Video – kostenlos, ohne Anmeldung und vollständig im Browser, die Daten verlassen den Rechner nicht.
+Eine animierte Weltkarte braucht nur **eine Tabelle: in der ersten Spalte das Jahr, in jeder weiteren Spalte ein Land**, in den Zellen die Werte. Das [Studio](../studio/) färbt daraus jedes Land nach seinem Wert ein, lässt die Jahre ablaufen und exportiert das Ergebnis als MP4-Video – kostenlos, ohne Anmeldung und vollständig im Browser, die Daten verlassen den Rechner nicht.
 
 ## Das Wichtigste in Kürze
 
@@ -32,7 +33,7 @@ Die Vorlage oben zeigt den Hundeanteil an allen Hunden und Katzen für sechs Lä
 
 ![Spaltenzuordnung nach dem Laden: Zeitspalte „Jahr“, acht Spalten erkannt, 27 Perioden von 2000 bis 2026](anleitung/02-datei-laden.png)
 
-Im [Studio](../) unter **Daten → Eigene Daten** die Datei hineinziehen oder „Datei wählen“ klicken. Gelesen werden Excel (`.xlsx`, `.xls`), LibreOffice (`.ods`) und CSV mit Komma, Semikolon oder Tabulator als Trennzeichen. Das Studio erkennt die Zeitspalte selbst und meldet, wie viele Jahre und Spalten es gefunden hat.
+Im [Studio](../studio/) unter **Daten → Eigene Daten** die Datei hineinziehen oder „Datei wählen“ klicken. Gelesen werden Excel (`.xlsx`, `.xls`), LibreOffice (`.ods`) und CSV mit Komma, Semikolon oder Tabulator als Trennzeichen. Das Studio erkennt die Zeitspalte selbst und meldet, wie viele Jahre und Spalten es gefunden hat.
 
 ### 3. Prüfen, ob jedes Land erkannt wurde
 

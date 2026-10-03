@@ -18,15 +18,15 @@ export const SAMPLES: SampleDataset[] = [
     description: "Wo Tierärztinnen und Tierärzte arbeiten, seit 1991. 2024 überholen die Angestellten erstmals die Praxisinhaber.",
     dataInfo: [
       "Gezählt werden ausschließlich approbierte Tierärzt:innen als Kammermitglieder, und zwar Personen, nicht Vollzeitstellen. Praxen und Tiermedizinische Fachangestellte sind nicht enthalten.",
-      "„Tätig außerhalb von Praxen“ meint Veterinärämter und Fleischhygiene, Industrie, Hochschulen, Forschung, Bundeswehr und Auslandstätigkeit, rund ein Drittel aller Tätigen. Der Wert ist berechnet als Tätige minus Niedergelassene minus Angestellte.",
-      "Lücken: Niedergelassene und Angestellte sind lückenlos belegt; die Angestellten für 2002 sind am 02.10.2026 aus Tab. 1 der BTK-Statistik 2002 nachgetragen. Bei den tierärztlich Tätigen fehlen 1992, 1993 und 2001, damit auch bei „Tätig außerhalb von Praxen“. Bei Hunden und Katzen fehlt 1992. Alle Lücken werden interpoliert.",
+      "„Außerhalb von Praxen“ meint Veterinärämter und Fleischhygiene, Industrie, Hochschulen, Forschung, Bundeswehr und Auslandstätigkeit, rund ein Drittel aller Tätigen. Der Wert ist berechnet als Tätige minus Niedergelassene minus Angestellte.",
+      "Lücken: Niedergelassene und Angestellte sind lückenlos belegt; die Angestellten für 2002 sind am 02.10.2026 aus Tab. 1 der BTK-Statistik 2002 nachgetragen. Bei den tierärztlich Tätigen fehlen 1992, 1993 und 2001, damit auch bei „Außerhalb von Praxen“. Bei Hunden und Katzen fehlt 1992. Alle Lücken werden interpoliert.",
       "Die rechte Achse zeigt Hunde und Katzen. Der Sprung 2012 ist ein Wechsel der Erhebungsmethode von der Verbandsschätzung zur repräsentativen Haushaltsbefragung, keine reale Verdopplung.",
     ],
     headers: TIERAERZTESCHAFT_DEUTSCHLAND.headers,
     rows: TIERAERZTESCHAFT_DEUTSCHLAND.rows,
     suggested: {
       chartType: 'line', topN: 4, decimals: 0,
-      secondaryAxis: ['Hunde und Katzen (Mio.)'], secondaryDecimals: 1, secondarySuffix: ' Mio.',
+      secondaryAxis: ['Hunde und Katzen'], secondaryDecimals: 1, secondarySuffix: ' Mio.',
       primaryAxisLabel: 'Tierärzt:innen (Personen)', secondaryAxisLabel: 'Hunde und Katzen (Mio.)',
     },
   },

@@ -28,7 +28,7 @@ npm install
 npm run dev
 ```
 
-Dann <http://localhost:5173> öffnen. Weitere Skripte:
+Dann <http://localhost:5173> öffnen: die Startseite mit den Artikeln. Das Studio liegt unter <http://localhost:5173/studio/>. Weitere Skripte:
 
 ```bash
 npm test          # Unit-Tests (Vitest, einmalig)
@@ -36,6 +36,7 @@ node scripts/build-geo.mjs   # Bundesland-Geometrie aus data/geo/ neu erzeugen
 npm run lint      # oxlint
 npm run build     # Produktions-Build nach dist/
 npm run preview   # dist/ lokal ansehen
+npm run check:mobil  # jede Seite auf 360 px Breite prüfen (Entwicklungsserver muss laufen)
 ```
 
 Zum Testen des Fallback-Encoders die App mit `?encoder=ffmpeg` in der URL öffnen.
@@ -44,7 +45,7 @@ Voraussetzungen: Node.js 20 oder neuer. Für den MP4-Export im Browser ist WebCo
 
 ## Redaktionsplan
 
-Die Seite hat neben dem Studio eine zweite Ansicht: den **Redaktionsplan** unter `#redaktionsplan`, erreichbar über den Umschalter oben rechts. Dort stehen 30 aufeinander aufbauende LinkedIn-Posts mit Aufhänger, Kernzahlen, dem zugehörigen Datensatz und dem Datenstatus (`belegt`, `teilweise`, `offen`). Ein Klick auf „Datensatz im Studio öffnen“ lädt den passenden Datensatz und Diagrammtyp.
+Das Studio hat eine zweite Ansicht: den **Redaktionsplan** unter `/studio/#redaktionsplan`, erreichbar über die Navigation oben. Dort stehen 30 aufeinander aufbauende LinkedIn-Posts mit Aufhänger, Kernzahlen, dem zugehörigen Datensatz und dem Datenstatus (`belegt`, `teilweise`, `offen`). Ein Klick auf „Datensatz im Studio öffnen“ lädt den passenden Datensatz und Diagrammtyp.
 
 - Inhalte: [`src/content/roadmap.ts`](src/content/roadmap.ts) – hier nach der Veröffentlichung `linkedInUrl` und `publishedOn` eintragen, dann verlinkt die Ansicht den Beitrag.
 - Angaben zur Seite und Datenschutztext: [`src/content/site.ts`](src/content/site.ts). **Das Impressum ist bewusst leer** und muss vor dem öffentlichen Betrieb ausgefüllt werden; solange `impressum.anschrift` leer ist, blendet die Seite den Block aus.

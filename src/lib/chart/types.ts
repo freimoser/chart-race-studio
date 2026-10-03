@@ -16,6 +16,8 @@ export interface ChartInput {
   fixedScale: boolean
   labelsPosition: 'inside' | 'outside'
   labelSize: number
+  /** Line Race: Mindestbreite der Zeichenfläche als Anteil, Voreinstellung 0,45. Kleiner heißt mehr Platz für lange Namen. */
+  minPlotAnteil?: number
   fontFamily: string
   theme: 'light' | 'dark'
   numberFormat: NumberFormatSettings

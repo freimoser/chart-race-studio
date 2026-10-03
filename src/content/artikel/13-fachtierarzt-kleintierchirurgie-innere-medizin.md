@@ -42,7 +42,7 @@ Die Innere Medizin der Kleintiere taucht 2018 mit 54 Titeln in der Reihe auf und
 
 Das Gebiet Kleintiere ist der breite Fachtierarzt für Hund, Katze und Heimtiere. Die beiden jungen Gebiete sind Spezialisierungen darin. Ihr Gewicht wächst schneller als das des breiten Titels: 2007 kam rechnerisch auf rund 230 Titel im Gebiet Kleintiere ein einziger in der Kleintierchirurgie. 2025 kamen auf 100 Kleintier-Titel 25 in Chirurgie oder Innerer Medizin (berechnet aus 1.410 und 359).
 
-Das passt zum Bild aus der Praxisstatistik: Die reinen Kleintierpraxen stellen 2025 mit 5.930 Inhaberinnen und Inhabern 54 Prozent aller Praxisinhaber (Post 2 im [Redaktionsplan](../#redaktionsplan)). Wo die Kleintiermedizin die Praxis bestimmt, teilt sie sich auch fachlich weiter auf. Ob das eine das andere verursacht, lässt sich aus den beiden Reihen nicht ablesen.
+Das passt zum Bild aus der Praxisstatistik: Die reinen Kleintierpraxen stellen 2025 mit 5.930 Inhaberinnen und Inhabern 54 Prozent aller Praxisinhaber (Post 2 im [Redaktionsplan](../studio/#redaktionsplan)). Wo die Kleintiermedizin die Praxis bestimmt, teilt sie sich auch fachlich weiter auf. Ob das eine das andere verursacht, lässt sich aus den beiden Reihen nicht ablesen.
 
 Den Überblick über alle elf Gebiete gibt der Artikel [Worauf sich Tierärztinnen und Tierärzte spezialisieren](fachtierarzt-gebiete-deutschland.html).
 

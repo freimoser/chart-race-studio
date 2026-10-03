@@ -6,7 +6,7 @@ import { buildDataset, effectivePeriodCount } from '@/lib/data/transform'
 import { DEFAULT_ANIMATION_SEC, DEFAULT_HOLD_END, DEFAULT_SETTINGS, stepDurationForAnimation, type ChartSettings } from '@/lib/settings'
 import type { BrandId } from '@/lib/fonts'
 import { defaultTemplateFor } from '@/lib/data/dates'
-import { formatById } from '@/lib/formats'
+import { beispielLaden } from '@/lib/beispiel'
 
 export interface AppState {
   brand: BrandId
@@ -95,43 +95,8 @@ export const useApp = create<AppState>()(
         set({ mapping, dataset })
       },
       loadSample: (sample) => {
-        const table: RawTable = { headers: sample.headers, rows: sample.rows, sourceName: sample.title }
-        const mapping = detectMapping(table)
-        const dataset = rebuild(table, mapping)
-        const kind = dataset.periods[0]?.kind ?? 'year'
-        const sug = sample.suggested ?? {}
-        set((s) => ({
-          table,
-          mapping,
-          dataset,
-          loadedSampleId: sample.id,
-          settings: {
-            ...s.settings,
-            categories: Object.fromEntries(Object.entries(sug.colors ?? {}).map(([n, color]) => [n, { color }])),
-            title: sample.title,
-            subtitle: sample.subtitle,
-            source: sample.source,
-            dateTemplate: sug.dateFormat ?? defaultTemplateFor(kind),
-            topN: sug.topN ?? formatById(s.settings.format).preset.topN,
-            decimals: sug.decimals ?? 0,
-            suffix: sug.suffix ?? '',
-            prefix: '',
-            compact: false,
-            chartType: sug.chartType ?? s.settings.chartType,
-            labelsPosition: sug.labelsPosition ?? s.settings.labelsPosition,
-            showImages: false,
-            secondaryAxis: sug.secondaryAxis ?? [],
-            secondaryDecimals: sug.secondaryDecimals ?? 1,
-            secondarySuffix: sug.secondarySuffix ?? '',
-            primaryAxisLabel: sug.primaryAxisLabel ?? '',
-            // Kipppunkt der Farbskala: bewusst zurücksetzen, wenn der Datensatz keinen nennt –
-            // sonst behält ein Anteilsdatensatz seine Skala für den nächsten, der keine hat.
-            divergingAt: sug.divergingAt,
-            divergingLabels: sug.divergingLabels,
-            secondaryAxisLabel: sug.secondaryAxisLabel ?? '',
-            stepDuration: stepDurationForAnimation(sug.animationSec ?? DEFAULT_ANIMATION_SEC, effectivePeriodCount(dataset.periods, DEFAULT_SETTINGS.gapFill)),
-          },
-        }))
+        const { table, mapping, dataset, settings } = beispielLaden(sample, get().settings)
+        set({ table, mapping, dataset, loadedSampleId: sample.id, settings })
       },
       updateCell: (row, col, value) => {
         const { table, mapping } = get()

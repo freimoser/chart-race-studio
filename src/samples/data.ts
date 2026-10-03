@@ -31,7 +31,7 @@ export const TIERAERZTE_BUNDESLAND = {
 }
 
 export const TIERAERZTESCHAFT_DEUTSCHLAND = {
-  headers: ["Jahr","Niedergelassene Tierärzt:innen (Praxisinhaber)","Angestellte Tierärzt:innen (in Praxen)","Tätig außerhalb von Praxen","Tierärztlich Tätige gesamt","Hunde und Katzen (Mio.)"],
+  headers: ["Jahr","Praxisinhaber:innen","Angestellte in Praxen","Außerhalb von Praxen","Tätige gesamt","Hunde und Katzen"],
   rows: [
     ["1991", 8510, 1880, 6759, 17149, 9.9],
     ["1992", 8514, 1966, null, null, null],

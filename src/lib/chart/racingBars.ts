@@ -178,7 +178,7 @@ export function attachValueFormatter(root: HTMLElement, input: ChartInput): () =
     if (ticks.length > 1) {
       let minGap = Infinity
       for (let i = 1; i < ticks.length; i++) minGap = Math.min(minGap, ticks[i].x - ticks[i - 1].x)
-      const k = minGap > 0 && Number.isFinite(minGap) ? Math.max(1, Math.ceil((widest * 1.25) / minGap)) : 1
+      const k = minGap > 0 && Number.isFinite(minGap) ? Math.max(1, Math.ceil((widest * 1.6) / minGap)) : 1
       ticks.forEach((t, i) => { t.text!.style.display = i % k === 0 ? '' : 'none' })
     }
   }

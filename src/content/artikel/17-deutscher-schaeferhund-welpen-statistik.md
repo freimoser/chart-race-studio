@@ -44,7 +44,7 @@ Im selben Zeitraum verlor der Schäferhund 52,2 Prozent, der Teckel 28,5 Prozent
 
 Dass er dennoch vorn bleibt, liegt am Vorsprung, mit dem er gestartet ist. 1992 stand er für fast doppelt so viele Welpen wie der Teckel, 28.000 zu 14.208. Selbst nach drei Jahrzehnten Rückgang reicht dieser Vorsprung für Platz 1. Der Abstand zum Teckel ist dabei geschrumpft, von 13.792 auf 1.866 Welpen.
 
-Wer den Platz der klassischen deutschen Rassen einnimmt, ist Thema von Post 18, die Französische Bulldogge als Rasse, die in dieser Statistik kaum vorkommt, Thema von Post 19. Beide stehen im [Redaktionsplan](../#redaktionsplan).
+Wer den Platz der klassischen deutschen Rassen einnimmt, ist Thema von Post 18, die Französische Bulldogge als Rasse, die in dieser Statistik kaum vorkommt, Thema von Post 19. Beide stehen im [Redaktionsplan](../studio/#redaktionsplan).
 
 ## Was die Zahl nicht sagt
 

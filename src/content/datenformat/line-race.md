@@ -6,6 +6,7 @@ beschreibung: Welche Tabelle ein animiertes Liniendiagramm braucht, wann eine zw
 frage: Wie muss eine Tabelle für ein animiertes Liniendiagramm aussehen?
 stand: 2026-10-02
 reihenfolge: 3
+grafik: inhaber-angestellte
 bereit: ja
 ---
 Ein Line Race braucht **eine Zeile je Zeitpunkt und eine Spalte je Linie**. Das Studio zeichnet die Linien Zeitpunkt für Zeitpunkt nach rechts, mit Name und aktuellem Wert am Ende jeder Linie, auf Achsen, die über den ganzen Zeitraum fest bleiben. Es eignet sich für Entwicklungen über lange Zeiträume und für den Moment, in dem sich zwei Kurven kreuzen.

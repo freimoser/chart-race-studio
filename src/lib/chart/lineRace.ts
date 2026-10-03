@@ -57,7 +57,7 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
   // Die Label-Spalte darf den Plot nicht auffressen: in schmalen Formaten (9:16, besonders mit zweiter
   // Achse) bleibt die Zeichenfläche mindestens 45 % breit, Namen werden dann gekürzt.
   const headNeeded = Math.ceil(widestLabel) + input.labelSize * 1.2 + (input.showImages ? imgSizeAll + input.labelSize * 0.3 : 0)
-  const headMax = Math.max(input.labelSize * 3, W - leftTicks - rightTicks - W * 0.45)
+  const headMax = Math.max(input.labelSize * 3, W - leftTicks - rightTicks - W * (input.minPlotAnteil ?? 0.45))
   const headSpace = Math.min(headNeeded, headMax)
   const titleSpace = input.primaryAxisLabel || (hasRight && input.secondaryAxisLabel) ? input.labelSize * 1.4 : 0
   // Zweite Achse steht ganz außen, hinter der Label-Spalte, damit sich Ticks und Kopf-Labels nie überlagern.

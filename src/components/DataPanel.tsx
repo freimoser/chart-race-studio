@@ -7,6 +7,7 @@ import { TableEditor } from './TableEditor'
 import { Field, Section, Segmented } from './ui'
 import { SAMPLE_CATEGORIES, type ColumnMapping } from '@/lib/data/types'
 import { ordneZu } from '@/lib/chart/geo'
+import { wurzel } from '@/lib/pfade'
 
 export function DataPanel() {
   const { table, mapping, dataset, setTable, setMapping, loadSample, loadedSampleId, clearData } = useApp()
@@ -55,7 +56,7 @@ export function DataPanel() {
                     <button type="button" onClick={() => loadSample(s)} className="flex flex-1 flex-col gap-1 p-3 text-left hover:bg-surface-2/60">
                       <span className="flex items-start justify-between gap-2">
                         <span className="text-[13px] font-semibold leading-snug">{s.title}</span>
-                        {s.isExample && <span className="shrink-0 rounded bg-warn/15 px-1.5 py-0.5 text-[10px] font-medium text-warn">Beispieldaten</span>}
+                        {s.isExample && <span className="shrink-0 rounded bg-warn/15 px-1.5 py-0.5 text-[11px] font-medium text-warn">Beispieldaten</span>}
                       </span>
                       <span className="text-xs leading-snug text-ink-muted">{s.description}</span>
                     </button>
@@ -77,7 +78,7 @@ export function DataPanel() {
                             )}
                             <span className="flex flex-wrap gap-x-3">
                               <a href={s.sourceUrl} target="_blank" rel="noreferrer" className="text-[11px] text-primary underline underline-offset-2">Quelle öffnen</a>
-                              <a href={`artikel/datenherkunft.html#${s.id}`} className="text-[11px] text-primary underline underline-offset-2">Datenherkunft im Detail</a>
+                              <a href={wurzel(`artikel/datenherkunft.html#${s.id}`)} className="text-[11px] text-primary underline underline-offset-2">Datenherkunft im Detail</a>
                             </span>
                           </div>
                         )}
@@ -105,7 +106,7 @@ export function DataPanel() {
             <button type="button" className="btn-ghost" onClick={startEmpty}><Table2 size={16} /> Leere Tabelle</button>
           </div>
           <input ref={fileRef} type="file" accept=".csv,.tsv,.txt,.xlsx,.xls,.ods,.xlsm" className="hidden" onChange={(e) => onFiles(e.target.files)} />
-          <a href="datenformat/" className="group flex items-start gap-2.5 rounded-md border border-line bg-surface-2/60 px-3 py-2.5 transition-colors hover:border-primary">
+          <a href={wurzel('datenformat/')} className="group flex items-start gap-2.5 rounded-md border border-line bg-surface-2/60 px-3 py-2.5 transition-colors hover:border-primary">
             <BookOpen size={16} className="mt-0.5 shrink-0 text-primary" aria-hidden />
             <span className="text-[13px] leading-snug">
               <span className="block font-medium text-ink group-hover:text-primary">So muss die Tabelle aussehen</span>
@@ -117,10 +118,10 @@ export function DataPanel() {
           </p>
           <p className="text-[11px] text-ink-faint">
             Vorlagen nach unserem Datenstandard:{' '}
-            <a className="underline hover:text-ink" href="vorlagen/vorlage-weltkarte.xlsx" download>Weltkarte</a>{' · '}
-            <a className="underline hover:text-ink" href="vorlagen/vorlage-bundeslaender.xlsx" download>Bundesländer</a>{' · '}
-            <a className="underline hover:text-ink" href="vorlagen/vorlage-zeitreihe.xlsx" download>Zeitreihe</a>
-            {' '}(Excel, auch als .csv) · <a className="underline hover:text-ink" href="beitrag/weltkarte-laender-einfaerben-animieren.html">Anleitung</a>
+            <a className="underline hover:text-ink" href={wurzel('vorlagen/vorlage-weltkarte.xlsx')} download>Weltkarte</a>{' · '}
+            <a className="underline hover:text-ink" href={wurzel('vorlagen/vorlage-bundeslaender.xlsx')} download>Bundesländer</a>{' · '}
+            <a className="underline hover:text-ink" href={wurzel('vorlagen/vorlage-zeitreihe.xlsx')} download>Zeitreihe</a>
+            {' '}(Excel, auch als .csv) · <a className="underline hover:text-ink" href={wurzel('beitrag/weltkarte-laender-einfaerben-animieren.html')}>Anleitung</a>
           </p>
         </div>
         {error && <p className="flex items-center gap-2 text-[13px] text-err"><XCircle size={16} /> {error}</p>}
@@ -258,7 +259,7 @@ function Kartenabgleich({ names }: { names: string[] }) {
           </p>
         )}
         <p className="text-[12px] text-ink-faint">
-          Welche Namen gelten und wie Summenspalten heißen: <a className="underline" href="beitrag/weltkarte-laender-einfaerben-animieren.html">Anleitung und Datenstandard</a>.
+          Welche Namen gelten und wie Summenspalten heißen: <a className="underline" href={wurzel('beitrag/weltkarte-laender-einfaerben-animieren.html')}>Anleitung und Datenstandard</a>.
         </p>
       </div>
     </Section>

@@ -52,7 +52,7 @@ Fasst man die Gebiete nach Tierart zusammen, zeigt sich dieselbe Drehung wie bei
 
 Zwischen den gemessenen Jahren 2021 und 2022 wechselt die Führung. Ende 2025 hat allein das Gebiet Kleintiere mit 1.410 Titeln fast genauso viele wie Rinder, Schweine und Geflügel zusammen mit 1.411.
 
-Bei den Praxisinhabern hatten die reinen Kleintierpraxen schon 2002 mit den gemischten Praxen gleichgezogen, auf die Person genau mit 4.419 zu 4.419. Das steht in Post 2 im [Redaktionsplan](../#redaktionsplan). Bei den Fachtiteln kam der Wechsel damit rund zwanzig Jahre später.
+Bei den Praxisinhabern hatten die reinen Kleintierpraxen schon 2002 mit den gemischten Praxen gleichgezogen, auf die Person genau mit 4.419 zu 4.419. Das steht in Post 2 im [Redaktionsplan](../studio/#redaktionsplan). Bei den Fachtiteln kam der Wechsel damit rund zwanzig Jahre später.
 
 ## Die Spezialisierung wächst langsamer als der Beruf
 

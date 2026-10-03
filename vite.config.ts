@@ -39,15 +39,18 @@ const ZEICHEN = `<svg class="zeichen" width="26" height="26" viewBox="0 0 28 28"
 function rahmenKopf(hoch: string, seitePfad = '') {
   // Der Bereich, in dem die Seite liegt, wird markiert – Leser sehen, wo sie sind.
   const aktiv = (bereich: string) => (seitePfad.startsWith(bereich) ? ' aria-current="page"' : '')
+  // Die Marke führt zur Startseite, dem Magazin. Das Studio steht als letzter Punkt, umrandet statt
+  // gefüllt: erreichbar, aber nicht der erste Weg. Der Redaktionsplan fehlt auf dem Telefon (Klasse
+  // „breit“), damit die Navigation in eine Zeile passt; er steht im Fuß jeder Seite.
   return `<header class="site">
       <div class="wrap">
-        <a class="marke" href="${hoch}beitrag/">${ZEICHEN}<span>${MARKE}</span></a>
+        <a class="marke" href="${hoch}">${ZEICHEN}<span>${MARKE}</span></a>
         <nav aria-label="Hauptnavigation">
           <a href="${hoch}beitrag/"${aktiv('beitrag/')}>Artikel</a>
           <a href="${hoch}datenformat/"${aktiv('datenformat/')}>Datenformat</a>
           <a href="${hoch}artikel/datenherkunft.html"${aktiv('artikel/datenherkunft')}>Datenherkunft</a>
-          <a href="${hoch}#redaktionsplan">Redaktionsplan</a>
-          <a class="studio" href="${hoch}">Studio</a>
+          <a class="breit" href="${hoch}studio/#redaktionsplan">Redaktionsplan</a>
+          <a class="studio" href="${hoch}studio/">Studio</a>
         </nav>
       </div>
     </header>`
@@ -57,8 +60,8 @@ function rahmenFuss(hoch: string) {
       <div class="wrap">
         <p><strong>${MARKE}</strong> · Zahlen zu Tierärzten, Praxen und Haustieren in Deutschland, jede mit Quelle. Ein privates Projekt von Thomas Freimoser.</p>
         <p>
-          <a href="${hoch}beitrag/">Alle Artikel</a> · <a href="${hoch}artikel/tierarztketten-deutschland.html">Tierarztketten</a> ·
-          <a href="${hoch}datenformat/">Datenformat</a> · <a href="${hoch}artikel/datenherkunft.html">Datenherkunft</a> · <a href="${hoch}">Studio</a>
+          <a href="${hoch}">Startseite</a> · <a href="${hoch}beitrag/">Alle Artikel</a> · <a href="${hoch}artikel/tierarztketten-deutschland.html">Tierarztketten</a> ·
+          <a href="${hoch}datenformat/">Datenformat</a> · <a href="${hoch}artikel/datenherkunft.html">Datenherkunft</a> · <a href="${hoch}studio/#redaktionsplan">Redaktionsplan</a> · <a href="${hoch}studio/">Studio</a>
         </p>
         <p class="recht"><a href="${hoch}impressum.html">Impressum</a> · <a href="${hoch}datenschutz.html">Datenschutz</a></p>
       </div>
@@ -75,7 +78,7 @@ function integrationen(env: Record<string, string>) {
       // die Pfade richten sich nach der Ordnertiefe, die 404-Seite bekommt absolute Pfade, weil
       // GitHub Pages sie unter jeder beliebigen Adresse ausliefert.
       if (html.includes('<!--rahmen:')) {
-        const seitePfad = (ctx.path ?? '/').replace(/^\/+/, '')
+        const seitePfad = (ctx.path ?? '/').replace(/^\/+/, '').replace(/(^|\/)$/, '$1index.html')
         const hoch = seitePfad === '404.html' ? base : '../'.repeat(seitePfad.split('/').length - 1) || './'
         html = html.replace('<!--rahmen:kopf-->', rahmenKopf(hoch, seitePfad)).replace('<!--rahmen:fuss-->', rahmenFuss(hoch))
       }
@@ -84,8 +87,9 @@ function integrationen(env: Record<string, string>) {
       // Canonical JE SEITE. Ein einziges Canonical für alle Seiten – der erste Wurf hier –
       // lässt jede Unterseite behaupten, sie sei die Startseite, und nimmt sie damit aus dem
       // Index. Seiten mit noindex bekommen keines, sie sollen gar nicht indexiert werden.
-      const pfad = (ctx.path ?? '/').replace(/^\/+/, '')
-      const istRecht = /^(impressum|datenschutz|404)\.html$/.test(pfad)
+      const pfad = (ctx.path ?? '/').replace(/^\/+/, '').replace(/(^|\/)$/, '$1index.html')
+      // Ohne Canonical: Rechtstexte und 404 (noindex) sowie die internen Rahmen für Grafik und Export.
+      const istRecht = /^(impressum|datenschutz|404|grafik|export)\.html$/.test(pfad)
       if (env.VITE_SITE_URL && !istRecht) {
         const basis = env.VITE_SITE_URL.replace(/\/$/, '')
         // …/index.html kanonisch als Verzeichnis, damit /beitrag/ und /beitrag/index.html nicht
@@ -104,23 +108,23 @@ function integrationen(env: Record<string, string>) {
       // Feed-Hinweis auf allen Seiten, sobald es Artikel gibt: Feedreader und Antwortmaschinen finden neue
       // Artikel darüber, ohne die Sitemap abzuwarten.
       if (env.VITE_SITE_URL && BEITRAEGE.length) tags.push(`<link rel="alternate" type="application/atom+xml" title="${MARKE}: neue Artikel" href="${env.VITE_SITE_URL.replace(/\/$/, '')}/feed.xml" />`)
-      // Startseite: KI-Crawler wie GPTBot, ClaudeBot oder PerplexityBot führen kein JavaScript aus
+      // Startseite: WebSite-Auszeichnung. Herausgeber ist die Person, keine Organisation – die Seite wird privat betrieben.
+      if (pfad === 'index.html' && env.VITE_SITE_URL) tags.push(`<script type="application/ld+json">${JSON.stringify({
+        '@context': 'https://schema.org', '@type': 'WebSite', name: MARKE, url: env.VITE_SITE_URL.replace(/\/$/, '') + '/', inLanguage: 'de-DE',
+        description: 'Zahlen zu Tierärzten, Tierarztpraxen und Haustieren in Deutschland, jede mit Jahr und Quelle.',
+        publisher: { '@type': 'Person', name: 'Thomas Freimoser' },
+      })}</script>`)
+      // Studio: KI-Crawler wie GPTBot, ClaudeBot oder PerplexityBot führen kein JavaScript aus
       // und sähen sonst ein leeres <div id="root">. React ersetzt diesen Inhalt beim Start.
-      if (pfad === 'index.html' || pfad === '') {
-        // WebSite-Auszeichnung: Herausgeber ist die Person, keine Organisation – die Seite wird privat betrieben.
-        if (env.VITE_SITE_URL) tags.push(`<script type="application/ld+json">${JSON.stringify({
-          '@context': 'https://schema.org', '@type': 'WebSite', name: MARKE, url: env.VITE_SITE_URL.replace(/\/$/, '') + '/', inLanguage: 'de-DE',
-          description: 'Zahlen zu Tierärzten, Tierarztpraxen und Haustieren in Deutschland, jede mit Jahr und Quelle.',
-          publisher: { '@type': 'Person', name: 'Thomas Freimoser' },
-        })}</script>`)
+      if (pfad === 'studio/index.html') {
         html = html.replace('<div id="root"></div>', `<div id="root"><main style="max-width:44rem;margin:0 auto;padding:2rem 1.25rem;font-family:system-ui,sans-serif">
-      <h1>${MARKE}</h1>
-      <p>Zahlen zu Tierärzten, Tierarztpraxen und Haustieren in Deutschland, jede mit Jahr und Quelle. Dazu ein Studio, mit dem aus einer Tabelle ein animiertes Diagramm als MP4 wird, komplett im Browser.</p>
+      <h1>Studio für animierte Diagramme</h1>
+      <p>Aus einer Tabelle wird ein animiertes Diagramm als MP4: Bar Race, Line Race oder animierte Karte. Das Studio läuft komplett im Browser, die Daten verlassen das Gerät nicht.</p>
       <ul>
-${BEITRAEGE.length ? `        <li><a href="beitrag/">Tiermedizin in Zahlen: alle Artikel</a></li>\n${BEITRAEGE.map((b) => `        <li><a href="beitrag/${b.slug}.html">${b.frage}</a></li>`).join('\n')}\n` : ''}        <li><a href="artikel/tierarztketten-deutschland.html">Wer betreibt die Tierarztpraxen in Deutschland?</a></li>
-        <li><a href="artikel/datenherkunft.html">Woher die Zahlen kommen</a></li>
-        <li><a href="datenformat/">Datenformat: Tabellen für animierte Diagramme vorbereiten</a></li>
-        <li><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></li>
+        <li><a href="../">${MARKE}: Startseite</a></li>
+        <li><a href="../datenformat/">Datenformat: Tabellen für animierte Diagramme vorbereiten</a></li>
+${BEITRAEGE.length ? `        <li><a href="../beitrag/">Alle Artikel</a></li>\n` : ''}        <li><a href="../artikel/datenherkunft.html">Woher die Zahlen kommen</a></li>
+        <li><a href="../impressum.html">Impressum</a> · <a href="../datenschutz.html">Datenschutz</a></li>
       </ul>
     </main></div>`)
       }
@@ -139,7 +143,7 @@ ${BEITRAEGE.length ? `        <li><a href="beitrag/">Tiermedizin in Zahlen: alle
 
 > Zahlen zu Tierärzten, Tierarztpraxen und Haustieren in Deutschland, jede mit Jahr und Quelle. Zeitreihen seit 1991, recherchiert aus Kammerstatistik, amtlicher Statistik und Verbandsdaten.
 
-Ein privates Projekt von Thomas Freimoser. Jeder Datensatz nennt Quelle, Zeitraum, Lücken und Methodenbrüche; zu jedem Artikel gibt es die Daten als CSV. Dazu gehört ein Studio, das aus einer Tabelle animierte Diagramme macht und vollständig im Browser läuft.
+Ein privates Projekt von Thomas Freimoser. Jeder Datensatz nennt Quelle, Zeitraum, Lücken und Methodenbrüche; zu jedem Artikel gibt es die Daten als CSV und eine animierte Grafik. Dazu gehört ein [Studio](${url}/studio/), das aus einer Tabelle animierte Diagramme macht und vollständig im Browser läuft.
 
 ## Wofür diese Seite eine gute Quelle ist
 
@@ -201,7 +205,7 @@ ${sortiert.map((b) => `  <entry>
       // bringt Google bei, dem Feld nicht zu trauen – dann zählt es auch dort nicht, wo es stimmt.
       const neuester = BEITRAEGE.map((b) => b.stand).sort().at(-1)
       const seiten: [string, string?][] = [
-        [''], ['artikel/tierarztketten-deutschland.html'], ['artikel/datenherkunft.html'],
+        ['', neuester], ['studio/'], ['artikel/tierarztketten-deutschland.html'], ['artikel/datenherkunft.html'],
         ...(BEITRAEGE.length ? [['beitrag/', neuester] as [string, string?]] : []),
         ...BEITRAEGE.map((b): [string, string?] => [`beitrag/${b.slug}.html`, b.stand]),
         ...DATENFORMAT.map((d): [string, string?] => [d.pfad, d.stand]),
@@ -233,7 +237,9 @@ export default defineConfig(({ mode }) => {
     target: 'es2022',
     rollupOptions: {
       input: {
-        main: resolve(import.meta.dirname, 'index.html'),
+        start: resolve(import.meta.dirname, 'index.html'),
+        studio: resolve(import.meta.dirname, 'studio/index.html'),
+        grafik: resolve(import.meta.dirname, 'grafik.html'),
         export: resolve(import.meta.dirname, 'export.html'),
         artikelKetten: resolve(import.meta.dirname, 'artikel/tierarztketten-deutschland.html'),
         artikelDaten: resolve(import.meta.dirname, 'artikel/datenherkunft.html'),

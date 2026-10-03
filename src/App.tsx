@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Clapperboard, Database, Map, Palette, Share2 } from 'lucide-react'
+import { Database, Palette, Share2 } from 'lucide-react'
 import { useApp } from '@/state/store'
 import { Stage } from '@/components/Stage'
 import { Transport } from '@/components/Transport'
@@ -13,6 +13,8 @@ import { FEATURES } from '@/content/site'
 import { SICHTBARE_SAMPLES } from '@/content/freigabe'
 import { Wordmark } from '@/components/ui'
 import type { BrandId } from '@/lib/fonts'
+import { wurzel } from '@/lib/pfade'
+import { formatById } from '@/lib/formats'
 
 type Tab = 'data' | 'design' | 'export'
 type View = 'studio' | 'roadmap'
@@ -28,6 +30,9 @@ const HASH: Record<View, string> = { studio: '', roadmap: '#redaktionsplan' }
 export default function App() {
   const brand = useApp((s) => s.brand)
   const setBrand = useApp((s) => s.setBrand)
+  const dataset = useApp((s) => s.dataset)
+  const format = formatById(useApp((s) => s.settings.format))
+  const hatDaten = Boolean(dataset && dataset.periods.length >= 2 && dataset.names.length > 0)
   const [tab, setTab] = useState<Tab>('data')
   const [view, setView] = useState<View>(viewFromHash)
 
@@ -55,23 +60,22 @@ export default function App() {
     window.location.hash = HASH[v]
   }
 
+  // Navigationspunkt der Kopfzeile, gleich gestaltet wie auf den Artikelseiten (article.css, header.site).
+  const navLink = 'shrink-0 whitespace-nowrap py-2 text-sm text-ink-muted transition-colors hover:text-ink aria-[current=page]:font-semibold aria-[current=page]:text-ink'
+
   return (
-    <div className="flex h-full min-h-0 flex-col">
-      <header className="flex items-center justify-between gap-3 border-b border-line bg-surface px-4 py-2.5">
-        <Wordmark />
-        <div className="flex items-center gap-3">
-          <nav aria-label="Seiten" className="hidden items-center gap-4 text-sm md:flex">
-            <a href="beitrag/" className="text-ink-muted transition-colors hover:text-ink">Artikel</a>
-            <a href="datenformat/" className="text-ink-muted transition-colors hover:text-ink">Datenformat</a>
+    <div className="flex min-h-dvh flex-col lg:h-full lg:min-h-0">
+      {/* Telefon: Marke oben, darunter die Navigation in einer Zeile. Breit: alles in einer Zeile. */}
+      <header className="border-b border-line bg-surface">
+        <div className="flex flex-wrap items-center gap-x-6 px-4 pt-2.5 lg:flex-nowrap lg:py-2">
+          <a href={wurzel()} className="mr-auto" title="Zur Startseite"><Wordmark /></a>
+          <nav aria-label="Hauptnavigation" className="order-3 -mx-4 flex w-[calc(100%+2rem)] gap-5 overflow-x-auto px-4 pb-0.5 [scrollbar-width:none] lg:order-none lg:mx-0 lg:w-auto lg:px-0 lg:pb-0">
+            <a href={wurzel('beitrag/')} className={navLink}>Artikel</a>
+            <a href={wurzel('datenformat/')} className={navLink}>Datenformat</a>
+            <a href={wurzel('artikel/datenherkunft.html')} className={`${navLink} hidden sm:inline`}>Datenherkunft</a>
+            <a href="#redaktionsplan" onClick={(e) => { e.preventDefault(); zeige('roadmap') }} aria-current={view === 'roadmap' ? 'page' : undefined} className={navLink}>Redaktionsplan</a>
+            <a href="#" onClick={(e) => { e.preventDefault(); zeige('studio') }} aria-current={view === 'studio' ? 'page' : undefined} className={navLink}>Studio</a>
           </nav>
-          <div className="seg" role="group" aria-label="Ansicht">
-            <button type="button" aria-pressed={view === 'studio'} onClick={() => zeige('studio')} className="inline-flex items-center gap-1.5 whitespace-nowrap">
-              <Clapperboard size={14} aria-hidden /> Studio
-            </button>
-            <button type="button" aria-pressed={view === 'roadmap'} onClick={() => zeige('roadmap')} className="inline-flex items-center gap-1.5 whitespace-nowrap">
-              <Map size={14} aria-hidden /> Redaktionsplan
-            </button>
-          </div>
           <label className="hidden items-center lg:flex" title="Design-Richtung">
             <span className="sr-only">Design-Richtung</span>
             <select className="input !w-auto !py-1 text-xs" value={brand} onChange={(e) => setBrand(e.target.value as BrandId)}>
@@ -84,20 +88,25 @@ export default function App() {
       </header>
 
       {view === 'roadmap' ? (
-        <main className="min-h-0 flex-1 overflow-y-auto bg-surface-2/40">
+        <main className="flex-1 bg-surface-2/40 lg:min-h-0 lg:overflow-y-auto">
           <Roadmap onOpenStudio={() => zeige('studio')} />
         </main>
       ) : (
-      <main className="grid min-h-0 flex-1 grid-cols-1 lg:grid-cols-[minmax(0,1fr)_420px] xl:grid-cols-[minmax(0,1fr)_460px]">
-        <section className="flex min-h-[46vh] flex-col gap-3 p-3 lg:min-h-0 lg:p-5">
-          <div className="min-h-0 flex-1 rounded-[var(--radius-brand)] bg-surface-2/60 p-3 lg:p-5">
+      // Breit: Bühne links, Bedienung rechts, beide mit eigenem Scrollbereich. Telefon: alles untereinander,
+      // die Seite scrollt als Ganzes; die Bühne hat das Seitenverhältnis des Videos, höchstens 70 % der Höhe.
+      <main className="grid flex-1 grid-cols-1 lg:min-h-0 lg:grid-cols-[minmax(0,1fr)_420px] xl:grid-cols-[minmax(0,1fr)_460px]">
+        <section className="flex flex-col gap-3 p-3 lg:min-h-0 lg:p-5">
+          <div
+            className={`rounded-[var(--radius-brand)] bg-surface-2/60 p-2 lg:min-h-0 lg:flex-1 lg:p-5 ${hatDaten ? 'buehne-mobil' : ''}`}
+            style={{ ['--seitenverhaeltnis' as string]: `${format.width} / ${format.height}` }}
+          >
             <Stage />
           </div>
           <Transport />
         </section>
 
-        <aside className="flex min-h-0 flex-col border-t border-line bg-surface lg:border-l lg:border-t-0">
-          <nav className="grid grid-cols-3 border-b border-line" aria-label="Bereiche">
+        <aside className="flex flex-col border-t border-line bg-surface lg:min-h-0 lg:border-l lg:border-t-0">
+          <nav className="sticky top-0 z-10 grid grid-cols-3 border-b border-line bg-surface lg:static" aria-label="Bereiche">
             {([
               ['data', 'Daten', Database],
               ['design', 'Gestaltung', Palette],
@@ -108,26 +117,26 @@ export default function App() {
               </button>
             ))}
           </nav>
-          <div className="min-h-0 flex-1 overflow-y-auto">
+          <div className="lg:min-h-0 lg:flex-1 lg:overflow-y-auto">
             {tab === 'data' && <DataPanel />}
             {tab === 'design' && <DesignPanel />}
             {tab === 'export' && <ExportPanel />}
           </div>
-          <footer className="border-t border-line px-4 py-2 text-[11px] leading-snug text-ink-faint">
+          <footer className="border-t border-line px-4 py-3 text-xs leading-relaxed text-ink-faint lg:py-2 lg:text-[11px] lg:leading-snug">
             Läuft komplett im Browser, keine Daten verlassen das Gerät. Diagramm-Animation mit{' '}
             <a className="underline hover:text-ink" href="https://github.com/hatemhosny/racing-bars" target="_blank" rel="noreferrer">racing-bars</a> (MIT). Open Source unter MIT.
             <br />
-            <a className="underline hover:text-ink" href="#redaktionsplan">Redaktionsplan</a>
+            <a className="underline hover:text-ink" href={wurzel()}>Startseite</a>
             {' · '}
-            <a className="underline hover:text-ink" href="artikel/tierarztketten-deutschland.html">Tierarztketten</a>
+            <a className="underline hover:text-ink" href={wurzel('artikel/tierarztketten-deutschland.html')}>Tierarztketten</a>
             {' · '}
-            <a className="underline hover:text-ink" href="datenformat/">Datenformat</a>
+            <a className="underline hover:text-ink" href={wurzel('datenformat/')}>Datenformat</a>
             {' · '}
-            <a className="underline hover:text-ink" href="artikel/datenherkunft.html">Datenherkunft</a>
+            <a className="underline hover:text-ink" href={wurzel('artikel/datenherkunft.html')}>Datenherkunft</a>
             {' · '}
-            <a className="underline hover:text-ink" href="impressum.html">Impressum</a>
+            <a className="underline hover:text-ink" href={wurzel('impressum.html')}>Impressum</a>
             {' · '}
-            <a className="underline hover:text-ink" href="datenschutz.html">Datenschutz</a>
+            <a className="underline hover:text-ink" href={wurzel('datenschutz.html')}>Datenschutz</a>
             {FEATURES.gaId && <>{' · '}<button type="button" data-consent-reset className="underline hover:text-ink">Cookie-Auswahl</button></>}
           </footer>
         </aside>

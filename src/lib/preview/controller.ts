@@ -9,7 +9,7 @@ interface Snapshot { state: PreviewState; index: number; total: number; playing:
  * Steuert die Live-Vorschau inkl. Standbild am Anfang/Ende und Loop.
  * Unabhängig vom Chart-Typ – arbeitet gegen ChartHandle.
  */
-class PreviewController {
+export class PreviewController {
   private handle: ChartHandle | null = null
   private unsub: (() => void) | null = null
   private timer: ReturnType<typeof setTimeout> | null = null
@@ -114,6 +114,7 @@ class PreviewController {
 
 export const preview = new PreviewController()
 
-export function usePreview(): Snapshot {
-  return useSyncExternalStore(preview.subscribe, preview.getSnapshot, preview.getSnapshot)
+/** Zustand eines Controllers. Ohne Argument der des Studios; die Grafik in den Artikeln hat einen eigenen. */
+export function usePreview(c: PreviewController = preview): Snapshot {
+  return useSyncExternalStore(c.subscribe, c.getSnapshot, c.getSnapshot)
 }

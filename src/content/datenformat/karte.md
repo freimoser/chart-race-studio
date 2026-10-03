@@ -6,6 +6,7 @@ beschreibung: Welche Tabelle eine animierte Weltkarte oder Bundesländerkarte br
 frage: Wie muss eine Tabelle für eine animierte Welt- oder Deutschlandkarte aussehen?
 stand: 2026-10-02
 reihenfolge: 4
+grafik: hund-katze-welt
 bereit: ja
 ---
 Eine animierte Karte braucht **eine Zeile je Zeitpunkt und eine Spalte je Land oder Bundesland**, in den Zellen den Wert. Das Studio färbt jede Fläche nach ihrem Wert, lässt die Zeit ablaufen und zeigt daneben eine Rangliste oder eine Zählung je Stufe. Ob eine Welt- oder eine Deutschlandkarte entsteht, erkennt es an den Spaltenköpfen.

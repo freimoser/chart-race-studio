@@ -69,7 +69,7 @@ export function computeLayout(format: VideoFormat, s: ChartSettings, measure: Me
   }
   let subtitle: StageLayout['subtitle'] = null
   if (s.subtitle.trim()) {
-    const lines = wrapText(s.subtitle, textW, subFont, measure, 2)
+    const lines = wrapText(s.subtitle, textW, subFont, measure, p.subtitleLines ?? 2)
     const lh = p.subtitleSize * 1.3
     subtitle = { x: s.titleAlign === 'center' ? W / 2 : pad, y, size: p.subtitleSize, lines, lineHeight: lh, align: s.titleAlign }
     y += lines.length * lh
@@ -131,7 +131,13 @@ export function computeLayout(format: VideoFormat, s: ChartSettings, measure: Me
  * Canvas-basierte Textmessung mit Cache. Der Cache wird geleert, sobald
  * Webfonts fertig geladen sind – sonst bleiben Maße der Fallback-Schrift stehen.
  */
-export function createMeasurer(): MeasureFn {
+/**
+ * Misst Text über ein Canvas, mit Zwischenspeicher. `leeren()` verwirft alle Maße: Wer gemessen hat, bevor
+ * die Schrift geladen war, hat die Maße der Ersatzschrift im Speicher. Das Ereignis „loadingdone“ leert
+ * ihn zwar auch, kommt aber oft erst nach dem Promise von document.fonts.load – dann rechnet das Layout
+ * mit alten Breiten, und ein Titel läuft unter die Jahreszahl.
+ */
+export function createMeasurer(): MeasureFn & { leeren: () => void } {
   const canvas = typeof document !== 'undefined' ? document.createElement('canvas') : null
   const ctx = canvas?.getContext('2d') ?? null
   const cache = new Map<string, number>()
@@ -139,7 +145,7 @@ export function createMeasurer(): MeasureFn {
     document.fonts.addEventListener('loadingdone', () => cache.clear())
     if (document.fonts.status === 'loading') document.fonts.ready.then(() => cache.clear())
   }
-  return (text, font) => {
+  return Object.assign((text: string, font: string) => {
     if (!ctx) return text.length * 10
     const key = font + '|' + text
     const c = cache.get(key)
@@ -148,5 +154,5 @@ export function createMeasurer(): MeasureFn {
     const w = ctx.measureText(text).width
     cache.set(key, w)
     return w
-  }
+  }, { leeren: () => cache.clear() })
 }

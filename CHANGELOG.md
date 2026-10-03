@@ -4,6 +4,18 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Mobil zuerst: Startseite, Grafik in jedem Artikel, Studio unter /studio/ (03.10.2026)
+
+- **Startseite ist das Magazin:** `/` zeigt den neuesten Artikel mit laufender Grafik, alle Artikel und das Studio als Angebot zum Selbermachen. Erzeugt von `scripts/build-artikel.mjs`, statisch und ohne JavaScript lesbar.
+- **Studio unter `/studio/`**, Redaktionsplan unter `/studio/#redaktionsplan`. Alte Links (`/?beispiel=…`, `/#redaktionsplan`) leitet die Startseite weiter. In der Kopfzeile steht das Studio als letzter Punkt, umrandet statt gefüllt.
+- **Animierte Grafik in jedem Artikel**, direkt unter dem ersten Absatz, mit „Im Studio öffnen“ und CSV. Sie läuft in einem schlanken iframe (`grafik.html`, `src/grafik/`), lädt erst in der Nähe des Bildschirms, startet, sobald sie zur Hälfte sichtbar ist, und hält an, wenn sie hinausscrollt. Hochkant 4:5 auf dem Telefon, 16:9 am Rechner, mit eigenen Rechenformaten, damit die Beschriftung auf 360 Pixel bei gut 10 Pixeln liegt statt bei 7. Auch auf den Seiten zu Bar Race, Line Race, Karte und im Artikel über die Tierarztketten. Steuerbar über `grafik:` im Kopf eines Entwurfs.
+- **Studio auf dem Telefon:** Die Seite scrollt als Ganzes statt in eingeklemmten Bereichen, die Bühne hat das Seitenverhältnis des Videos, die Reiter Daten, Gestaltung, Export bleiben oben stehen. Der Leerzustand ragte aus der Bühne, jetzt steht er im normalen Fluss. Kopfzeile wie auf den Artikelseiten, ohne waagrechtes Scrollen.
+- **Artikelseiten auf dem Telefon:** Navigation passt in eine Zeile, Tippziele mindestens 36 Pixel, ruhigere Listen, Grafik bis an den Rand.
+- **Neue Prüfung `npm run check:mobil`** (`scripts/pruefe-mobil.mjs`): lädt jede Seite auf 360 Pixeln mit Touch und meldet waagrechtes Scrollen, überstehende Elemente, zu kleine Schrift und Tippziele. Läuft auch mit `--breite 320`/`768` und `--fotos`.
+- **Behoben:** Layout wurde manchmal mit den Maßen der Ersatzschrift berechnet, weil das Ereignis „loadingdone“ nach dem Promise von `document.fonts.load` kommt; ein Titel konnte dann unter die Jahreszahl laufen. Der Messspeicher wird jetzt nach dem Laden der Schrift ausdrücklich geleert.
+- **Kürzere Reihennamen** im Datensatz „Tierarztpraxen im Wandel“ (Praxisinhaber:innen, Angestellte in Praxen, Außerhalb von Praxen, Tätige gesamt, Hunde und Katzen), weil die langen Namen der Statistik in 4:5 und in der Grafik gekürzt wurden. Achsenzahlen im Bar Race werden in schmalen Formaten früher ausgedünnt.
+- Technik: Die Bühne ist als `Buehne` aus dem Studio gelöst (Daten, Einstellungen und Abspielsteuerung als Props), `beispielLaden()` macht aus einem Datensatz Tabelle und Einstellungen für Studio und Grafik gleichermaßen.
+
 ### Post 28: Die Tiermedizin wird weiblich (02.10.2026)
 
 - **Neuer Datensatz** `geschlecht-praxis`: Praxisinhaberinnen, Praxisinhaber und angestellte Tierärztinnen und Tierärzte 2002–2025, dazu der Frauenanteil aller Tätigen als mitlaufende Zahl. Alle 24 Jahrgänge aus Tab. 1 der BTK-Statistik gelesen (`data/raw/ds14-geschlecht.json`), nichts interpoliert; ersetzt eine zugelieferte Vorlage mit 19 von 26 interpolierten Jahren. `check:glaette`: 1.380 Bilder, 0 Sprünge.

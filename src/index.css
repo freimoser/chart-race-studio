@@ -26,7 +26,10 @@
   --radius-brand: var(--brand-radius);
 }
 
-html, body, #root { height: 100%; }
+/* Breit füllt das Studio genau den Bildschirm und scrollt in seinen Bereichen. Auf dem Telefon scrollt
+   die Seite als Ganzes – eingeklemmte Scrollbereiche in einem kleinen Fenster lassen sich kaum bedienen. */
+@media (min-width: 1024px) { html, body, #root { height: 100%; } }
+@media (max-width: 1023.98px) { .buehne-mobil { aspect-ratio: var(--seitenverhaeltnis); max-height: 70vh; } }
 body {
   margin: 0;
   background: var(--brand-bg);

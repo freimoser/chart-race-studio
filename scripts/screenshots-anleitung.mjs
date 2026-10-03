@@ -12,7 +12,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { starteChrome } from './lib/cdp.mjs'
 
-const BASIS = process.env.STUDIO_URL ?? 'http://localhost:5173/'
+const BASIS = process.env.STUDIO_URL ?? 'http://localhost:5173/studio/'
 const ZIEL = 'public/beitrag/anleitung'
 const VORLAGE = path.resolve('public/vorlagen/vorlage-weltkarte.csv')
 fs.mkdirSync(ZIEL, { recursive: true })

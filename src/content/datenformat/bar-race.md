@@ -6,6 +6,7 @@ beschreibung: Welche Tabelle ein Bar Chart Race braucht, wie viele Balken sinnvo
 frage: Wie muss eine Tabelle für ein Bar Chart Race aussehen?
 stand: 2026-10-02
 reihenfolge: 2
+grafik: heimtiere bar
 bereit: ja
 ---
 Ein Bar Race braucht **eine Zeile je Zeitpunkt und eine Spalte je Balken**. Zu jedem Zeitpunkt sortiert das Studio die Balken nach ihrem Wert, zeigt die größten und lässt sie gleitend die Plätze tauschen, wenn sich die Werte kreuzen. Es eignet sich für Rangfolgen, die sich über die Zeit verschieben: Länder, Marken, Gruppen, Rassen.

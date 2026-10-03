@@ -5,6 +5,7 @@ import { ARTIKEL, LIVE_ANSICHT, datensatzFreigegeben, sichtbarkeitVon, type Sich
 import { SAMPLES } from '@/samples'
 import { useApp } from '@/state/store'
 import { LEGAL, SITE } from '@/content/site'
+import { wurzel } from '@/lib/pfade'
 
 const DATA_LABEL: Record<DataStatus, string> = {
   belegt: 'Daten belegt',
@@ -110,7 +111,7 @@ export function Roadmap({ onOpenStudio }: { onOpenStudio: () => void }) {
       )}
 
       {visite === 1 && (arc === 'alle' || arc === 'ketten') && (
-        <a href="artikel/tierarztketten-deutschland.html" className="card mb-6 block p-4 transition-colors hover:border-primary">
+        <a href={wurzel('artikel/tierarztketten-deutschland.html')} className="card mb-6 block p-4 transition-colors hover:border-primary">
           <span className="text-[11px] font-medium tracking-wide text-ink-faint uppercase">Artikel</span>
           <span className="mt-1 block text-base font-semibold text-ink">Wer betreibt die Tierarztpraxen in Deutschland?</span>
           <span className="mt-1 block text-[13px] leading-relaxed text-ink-muted">
@@ -174,7 +175,7 @@ export function Roadmap({ onOpenStudio }: { onOpenStudio: () => void }) {
                   </span>
                 ) : null}
                 {artikel?.live && (
-                  <a href={`beitrag/${artikel.slug}.html`} className="inline-flex items-center gap-1 text-primary underline hover:text-primary-strong">
+                  <a href={wurzel(`beitrag/${artikel.slug}.html`)} className="inline-flex items-center gap-1 text-primary underline hover:text-primary-strong">
                     <FileText size={13} /> Artikel lesen
                   </a>
                 )}
@@ -215,16 +216,16 @@ export function Roadmap({ onOpenStudio }: { onOpenStudio: () => void }) {
           <a className="underline hover:text-ink" href="https://github.com/hatemhosny/racing-bars" target="_blank" rel="noreferrer">racing-bars</a> (MIT).
         </p>
         <p className="mt-3 text-[13px] text-ink-muted">
-          <a className="underline hover:text-ink" href="artikel/tierarztketten-deutschland.html">Artikel: Wer betreibt die Tierarztpraxen?</a>
+          <a className="underline hover:text-ink" href={wurzel('artikel/tierarztketten-deutschland.html')}>Artikel: Wer betreibt die Tierarztpraxen?</a>
           {' · '}
-          {ARTIKEL.some((x) => x.live) && (<><a className="underline hover:text-ink" href="beitrag/">Tiermedizin in Zahlen: alle Artikel</a>{' · '}</>)}
-          <a className="underline hover:text-ink" href="datenformat/">Datenformat</a>
+          {ARTIKEL.some((x) => x.live) && (<><a className="underline hover:text-ink" href={wurzel('beitrag/')}>Tiermedizin in Zahlen: alle Artikel</a>{' · '}</>)}
+          <a className="underline hover:text-ink" href={wurzel('datenformat/')}>Datenformat</a>
             {' · '}
-            <a className="underline hover:text-ink" href="artikel/datenherkunft.html">Datenherkunft</a>
+            <a className="underline hover:text-ink" href={wurzel('artikel/datenherkunft.html')}>Datenherkunft</a>
           {' · '}
-          <a className="underline hover:text-ink" href="impressum.html">Impressum</a>
+          <a className="underline hover:text-ink" href={wurzel('impressum.html')}>Impressum</a>
           {' · '}
-          <a className="underline hover:text-ink" href="datenschutz.html">Datenschutz</a>
+          <a className="underline hover:text-ink" href={wurzel('datenschutz.html')}>Datenschutz</a>
         </p>
       </section>
     </div>

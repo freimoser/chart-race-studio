@@ -6,6 +6,7 @@ beschreibung: So muss eine Tabelle aussehen, damit das Studio daraus ein Bar Rac
 frage: Wie muss ich meine Daten strukturieren, damit das Studio sie in ein animiertes Diagramm verwandelt?
 stand: 2026-10-02
 reihenfolge: 1
+grafik: tieraerzteschaft-deutschland
 bereit: ja
 ---
 Das Studio braucht **eine Tabelle: in der ersten Zeile die Spaltenköpfe, in der ersten Spalte die Zeit, in jeder weiteren Spalte eine Reihe, in den Zellen nur Zahlen**. Aus derselben Tabelle entstehen ein Bar Race, ein Line Race oder eine animierte Karte, ohne sie umzubauen. Die Tabelle wird in deinem Browser gelesen und verlässt dein Gerät nicht.

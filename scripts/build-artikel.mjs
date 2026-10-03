@@ -154,6 +154,34 @@ function einruecken(html, tiefe = '        ') {
   }).join('\n')
 }
 
+// ---------- Animierte Grafik ----------
+// Die Grafik zum Artikel, direkt unter dem ersten Absatz: Wer den Artikel öffnet, sieht nach drei, vier
+// Sätzen die Entwicklung laufen. Sie läuft in einem iframe (grafik.html, src/grafik/), das erst lädt,
+// wenn es in die Nähe des Bildschirms kommt. Ohne JavaScript bleibt der Rahmen leer, der Text trägt
+// trotzdem alles. Das Format wählt die Grafik selbst: unter 560 Pixel Breite hochkant 4:5, sonst 16:9.
+//
+// Im Kopf eines Entwurfs überschreibt `grafik: <Datensatz> [bar|line|map]` den Datensatz des Posts,
+// `grafik: keine` lässt sie weg.
+// Live zeigt die Grafik nur freigegebene Datensätze (src/content/freigabe.ts). Eine Seite, die immer
+// online ist, darf deshalb nur auf einen solchen zeigen – sonst stünde dort „noch nicht freigegeben“.
+const freigegeben = (id) => POSTS.some((p) => p.sampleId === id && (FREIGABEFAEHIG.has(p.status) || p.vorabOnline))
+function grafikVon(kopfwert, sampleId, { mussFrei = false } = {}) {
+  if (kopfwert === 'keine') return null
+  const [id, art] = (kopfwert || sampleId || '').split(/\s+/)
+  if (!id) return null
+  if (!DATENSAETZE[id]) throw new Error(`grafik: Datensatz „${id}“ gibt es nicht in src/samples/index.ts`)
+  if (mussFrei && !freigegeben(id)) throw new Error(`grafik: Datensatz „${id}“ ist live noch nicht freigegeben`)
+  if (art && !['bar', 'line', 'map'].includes(art)) throw new Error(`grafik: Diagrammart „${art}“ unbekannt (bar, line oder map)`)
+  return { id, art }
+}
+function grafikFigur(g, { tiefe, csv, hinweis }) {
+  const ds = DATENSAETZE[g.id]
+  return `<figure class="grafik">
+          <div class="grafik-rahmen"><iframe src="${tiefe}grafik.html?d=${g.id}${g.art ? `&amp;art=${g.art}` : ''}" title="Animierte Grafik: ${esc(ds.titel)}" loading="lazy"></iframe></div>
+          <figcaption><span>${hinweis ?? esc(ds.titel)}${csv ? ` · <a href="${csv}" download>Daten als CSV</a>` : ''}</span><a class="knopf" href="${tiefe}studio/?beispiel=${g.id}">Im Studio öffnen</a></figcaption>
+        </figure>`
+}
+
 // ---------- Seite ----------
 function seite(a, { entwurf, alle }) {
   const post = a.anleitung ? { nr: 0, title: a.titel, refs: [] } : POSTS.find((p) => p.nr === a.post)
@@ -179,7 +207,7 @@ function seite(a, { entwurf, alle }) {
   const verweise = (post.refs ?? []).map((r) => {
     const ziel = alle.find((x) => x.post === r && (entwurf || x.live))
     const titel = POSTS.find((p) => p.nr === r)?.title ?? `Post ${r}`
-    return ziel ? `<a href="${ziel.slug}.html">${esc(titel)}</a>` : `<a href="${tiefe}#redaktionsplan">${esc(titel)}</a>`
+    return ziel ? `<a href="${ziel.slug}.html">${esc(titel)}</a>` : `<a href="${tiefe}studio/#redaktionsplan">${esc(titel)}</a>`
   })
 
   const basis = BASIS
@@ -230,8 +258,10 @@ function seite(a, { entwurf, alle }) {
     })
   }
 
-  const bild = fs.existsSync(path.join('public', ZIEL, `${a.slug}.png`))
-    ? `<figure><img src="${tiefe}${ZIEL}/${a.slug}.png" alt="${esc(post.title)}" loading="lazy" /></figure>` : ''
+  const g = grafikVon(a.grafik, post.sampleId, { mussFrei: a.live })
+  const bild = g ? grafikFigur(g, { tiefe, csv })
+    : fs.existsSync(path.join('public', ZIEL, `${a.slug}.png`))
+      ? `<figure><img src="${tiefe}${ZIEL}/${a.slug}.png" alt="${esc(post.title)}" loading="lazy" /></figure>` : ''
 
   return `<!doctype html>
 <html lang="de" data-brand="klar">
@@ -265,7 +295,7 @@ ${entwurf ? `    <p class="entwurf">Entwurf · ${a.bereit ? 'bereit zur Freigabe
         ${bild}
 ${einruecken(rumpf)}
         <aside class="kasten">
-${csv ? `          <p><a href="${csv}" download>Daten als CSV herunterladen</a> · ${esc(ds.titel)}</p>\n` : ''}${post.sampleId ? `          <p><a href="${tiefe}?beispiel=${post.sampleId}">Datensatz im Studio öffnen und selbst animieren</a></p>\n` : ''}${post.linkedInUrl ? `          <p><a href="${post.linkedInUrl}" rel="noopener">Zum Beitrag auf LinkedIn</a></p>\n` : ''}${verweise.length ? `          <p>Baut auf: ${verweise.join(' · ')}</p>\n` : ''}          <p><a href="${tiefe}artikel/datenherkunft.html">Woher die Zahlen kommen</a> · <a href="${entwurf ? '../' : './'}">Alle Artikel von ${esc(L.siteName)}</a></p>
+${csv ? `          <p><a href="${csv}" download>Daten als CSV herunterladen</a> · ${esc(ds.titel)}</p>\n` : ''}${post.sampleId ? `          <p><a href="${tiefe}studio/?beispiel=${post.sampleId}">Datensatz im Studio öffnen und selbst animieren</a></p>\n` : ''}${post.linkedInUrl ? `          <p><a href="${post.linkedInUrl}" rel="noopener">Zum Beitrag auf LinkedIn</a></p>\n` : ''}${verweise.length ? `          <p>Baut auf: ${verweise.join(' · ')}</p>\n` : ''}          <p><a href="${tiefe}artikel/datenherkunft.html">Woher die Zahlen kommen</a> · <a href="${entwurf ? '../' : './'}">Alle Artikel von ${esc(L.siteName)}</a></p>
         </aside>
       </article>
     </main>
@@ -295,7 +325,7 @@ function uebersicht(live) {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tiermedizin in Zahlen: Tierärzte, Praxen, Haustiere</title>
+    <title>Alle Artikel: Tierärzte, Praxen und Haustiere in Zahlen</title>
     <meta name="description" content="Wie viele Tierärzte, Tierarztpraxen und Haustiere gibt es in Deutschland? Zeitreihen seit 1991, jede Zahl mit Jahr und Quelle." />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="../favicon-96.png" sizes="96x96" type="image/png" />
@@ -318,7 +348,70 @@ ${nachKapitel.map((k) => `      <h2>${esc(k.arc.label)}</h2>
       <ul class="liste">
 ${k.liste.map((a) => `        <li><a href="${a.slug}.html">${esc(a.frage)}</a><br />${esc(a.beschreibung)}</li>`).join('\n')}
       </ul>`).join('\n')}
-      <p class="meta">Dazu: <a href="../artikel/tierarztketten-deutschland.html">Wer betreibt die Tierarztpraxen in Deutschland?</a> · <a href="../artikel/datenherkunft.html">Woher die Zahlen kommen</a></p>
+      <p class="meta">Dazu: <a href="../artikel/tierarztketten-deutschland.html">Wer betreibt die Tierarztpraxen in Deutschland?</a> · <a href="../artikel/datenherkunft.html">Woher die Zahlen kommen</a> · <a href="../studio/#redaktionsplan">Redaktionsplan</a></p>
+    </main>
+    <!--rahmen:fuss-->
+  </body>
+</html>
+`
+}
+
+// ---------- Startseite ----------
+// Die Wurzel der Seite ist das Magazin, nicht das Werkzeug: Die meisten kommen über einen LinkedIn-Beitrag
+// und mit dem Telefon. Oben der neueste Artikel mit laufender Grafik, darunter alle Artikel, das Studio
+// als Angebot für alle, die selbst animieren wollen. Alte Links auf das Studio (/?beispiel=…,
+// /#redaktionsplan) leitet ein kleines Skript im Kopf nach /studio/ weiter; GitHub Pages kann keine
+// Weiterleitung auf dem Server.
+function startseite(live) {
+  const artikel = live.filter((a) => !a.anleitung).sort((x, y) => (y.veroeffentlicht ?? '').localeCompare(x.veroeffentlicht ?? '') || (y.post ?? 0) - (x.post ?? 0))
+  const neu = artikel.find((a) => grafikVon(a.grafik, POSTS.find((p) => p.nr === a.post)?.sampleId))
+  const gNeu = neu && grafikVon(neu.grafik, POSTS.find((p) => p.nr === neu.post)?.sampleId)
+  const csvNeu = gNeu && DATENSAETZE[gNeu.id]?.daten ? `daten/${gNeu.id}.csv` : ''
+  const anleitungen = live.filter((a) => a.anleitung)
+  return `<!doctype html>
+<html lang="de" data-brand="klar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>(function () { var s = location.search, h = location.hash; if (/[?&]beispiel=/.test(s) || /^#(redaktionsplan|post-)/.test(h)) location.replace('studio/' + s + h) })()</script>
+    <title>Tiermedizin in Zahlen: Tierärzte, Praxen und Haustiere</title>
+    <meta name="description" content="Wie viele Tierärzte, Praxen und Haustiere gibt es in Deutschland? Zeitreihen seit 1991 als animierte Grafik, jede Zahl mit Jahr und Quelle." />
+    <meta name="theme-color" content="#0f3b3d" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="favicon-96.png" sizes="96x96" type="image/png" />
+    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Tiermedizin in Zahlen" />
+    <meta property="og:description" content="Tierärzte, Tierarztpraxen und Haustiere in Deutschland: Zeitreihen mit Quelle, als animierte Grafik." />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:site_name" content="${esc(L.siteName)}" />
+    <script type="module" src="/src/article.ts"></script>
+  </head>
+  <body>
+    <!--rahmen:kopf-->
+    <main class="wrap">
+      <h1>Tierärzte, Praxen und Haustiere in Zahlen</h1>
+      <p class="lead">Wie viele Tierärztinnen und Tierärzte, Praxen und Haustiere gibt es in Deutschland, und was hat sich seit 1991 verschoben? Jeder Artikel beantwortet eine Frage mit Zahl, Jahr und Quelle, zeigt die Entwicklung als animierte Grafik und sagt, was die Zahl nicht sagt.</p>
+${neu ? `      <section class="neu" aria-labelledby="neu-titel">
+        <p class="meta">Neu${neu.veroeffentlicht ? ` · ${datumDe(neu.veroeffentlicht)}` : ''}</p>
+        <h2 id="neu-titel"><a href="beitrag/${neu.slug}.html">${esc(neu.titel)}</a></h2>
+        <p>${esc(neu.beschreibung)}</p>
+        ${grafikFigur(gNeu, { tiefe: '', csv: csvNeu })}
+        <p><a href="beitrag/${neu.slug}.html">Artikel lesen</a></p>
+      </section>
+` : ''}${artikel.length ? `      <h2>Alle Artikel</h2>
+      <ul class="liste">
+${artikel.filter((a) => a !== neu).map((a) => `        <li><a href="beitrag/${a.slug}.html">${esc(a.frage)}</a><br />${esc(a.beschreibung)}</li>`).join('\n')}
+        <li><a href="artikel/tierarztketten-deutschland.html">Wer betreibt die Tierarztpraxen in Deutschland?</a><br />Praxisketten und Klinikgruppen mit Standortzahlen, und warum Einkaufsgemeinschaften keine Ketten sind.</li>
+      </ul>
+      <p class="meta"><a href="beitrag/">Alle Artikel nach Thema</a> · <a href="studio/#redaktionsplan">Was als Nächstes kommt</a></p>
+` : ''}      <section class="selbst" aria-labelledby="selbst-titel">
+        <h2 id="selbst-titel">Eigene Daten animieren</h2>
+        <p>Jede Grafik dieser Seite entsteht im Studio: eine Tabelle hinein, ein MP4-Video heraus, als Bar Race, Line Race oder animierte Karte. Es läuft vollständig im Browser, die Daten verlassen das Gerät nicht. Am bequemsten am Rechner.</p>
+        <p class="knoepfe"><a class="knopf" href="studio/">Studio öffnen</a><a class="knopf zweit" href="datenformat/">So muss die Tabelle aussehen</a></p>
+${anleitungen.length ? `        <p class="meta">Anleitung: ${anleitungen.map((a) => `<a href="beitrag/${a.slug}.html">${esc(a.titel)}</a>`).join(' · ')}</p>\n` : ''}      </section>
+      <p class="meta">Woher jede Zahl stammt, mit Quelle, Zeitraum und Lücken: <a href="artikel/datenherkunft.html">Datenherkunft</a></p>
     </main>
     <!--rahmen:fuss-->
   </body>
@@ -346,6 +439,8 @@ const live = artikel.filter((a) => a.live)
 if (live.length || mitEntwuerfen) fs.mkdirSync(ZIEL, { recursive: true })
 for (const a of live) fs.writeFileSync(path.join(ZIEL, `${a.slug}.html`), seite(a, { entwurf: false, alle: artikel }))
 if (live.length) fs.writeFileSync(path.join(ZIEL, 'index.html'), uebersicht(live))
+// Die Startseite entsteht immer, auch ohne Live-Artikel: Sie ist die Wurzel der Seite.
+fs.writeFileSync('index.html', startseite(live))
 
 // CSV je Datensatz eines Live-Artikels. Nur freigegebene – dieselbe Regel wie für die Seiten.
 fs.rmSync(DATEN_ZIEL, { recursive: true, force: true })
@@ -461,10 +556,10 @@ function dfSeite(s, alle) {
         <h1>${esc(s.titel)}</h1>
         ${ersterBlock.replace(/^<p>/, '<p class="lead">')}
         <p class="meta">Stand ${datumDe(s.stand)} · Datenstandard 1.0 · von ${esc(L.operator)} · <a href="${s.slug}.md">als Markdown</a></p>
-        <nav class="unternav" aria-label="Datenformat"><ul>${nav}</ul></nav>
+${grafikVon(s.grafik, undefined, { mussFrei: true }) ? `        ${grafikFigur(grafikVon(s.grafik), { tiefe: '../', hinweis: `So sieht das Ergebnis aus: ${esc(DATENSAETZE[grafikVon(s.grafik).id].titel)}` })}\n` : ''}        <nav class="unternav" aria-label="Datenformat"><ul>${nav}</ul></nav>
 ${einruecken(rest.join('\n\n'))}
         <aside class="kasten">
-          <p><a href="../">Zum Studio</a> · <a href="../vorlagen/vorlage-zeitreihe.xlsx">Vorlage Zeitreihe</a> · <a href="../vorlagen/vorlage-weltkarte.xlsx">Vorlage Weltkarte</a> · <a href="../vorlagen/vorlage-bundeslaender.xlsx">Vorlage Bundesländer</a></p>
+          <p><a href="../studio/">Zum Studio</a> · <a href="../vorlagen/vorlage-zeitreihe.xlsx">Vorlage Zeitreihe</a> · <a href="../vorlagen/vorlage-weltkarte.xlsx">Vorlage Weltkarte</a> · <a href="../vorlagen/vorlage-bundeslaender.xlsx">Vorlage Bundesländer</a></p>
           <p>Alle Regeln in einer Datei für KI-Assistenten: <a href="datenformat.md">datenformat.md</a></p>
         </aside>
       </article>

@@ -22,6 +22,8 @@ export interface FormatPreset {
   watermarkSize: number
   /** Datumszähler oben rechts (true) oder unten rechts im Diagramm (false) */
   dateTopRight: boolean
+  /** Höchstzahl der Untertitelzeilen, danach wird gekürzt. Ohne Angabe 2. */
+  subtitleLines?: number
 }
 
 export const FORMATS: VideoFormat[] = [

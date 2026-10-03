@@ -38,7 +38,7 @@ Liegt es nur daran, dass es weniger Rinder gibt? Die Viehzählung erlaubt eine G
 
 Die Zahl der Fachtierarzt-Titel für Rinder ist im selben Zeitraum um 30,7 Prozent gefallen, also deutlich stärker. Je Million Rinder kamen 2007 rechnerisch 67,8 Titel, 2025 noch 57,3.
 
-Die Statistik zeigt damit, dass der Rückgang über den Tierbestand hinausgeht. Warum das so ist, zeigt sie nicht. Wie sich der Rinderbestand je Bundesland entwickelt, ist Thema von Post 23 im [Redaktionsplan](../#redaktionsplan). Für Schweine enthält dieser Datenbestand keine Tierzahlen, die Gegenrechnung ist dort nicht möglich.
+Die Statistik zeigt damit, dass der Rückgang über den Tierbestand hinausgeht. Warum das so ist, zeigt sie nicht. Wie sich der Rinderbestand je Bundesland entwickelt, ist Thema von Post 23 im [Redaktionsplan](../studio/#redaktionsplan). Für Schweine enthält dieser Datenbestand keine Tierzahlen, die Gegenrechnung ist dort nicht möglich.
 
 ## Das Pferd zieht am Rind vorbei
 
