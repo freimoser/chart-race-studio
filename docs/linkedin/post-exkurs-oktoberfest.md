@@ -32,7 +32,7 @@ Mehrere Säulen nebeneinander, Preise als Linien darüber, die Veränderung in P
 Für die Tiermedizin brauche ich es demnächst auch.
 
 Tabelle, Methode und alle Jahre zum Download:
-https://tiermedizin-in-zahlen.org/beitrag/oktoberfest-masspreis-inflation.html
+https://tiermedizin-in-zahlen.org/beitrag/oktoberfest-masspreis-inflation
 
 Welches Bier in welchem Zelt läuft, steht auf meiner zweiten Seite rund ums Bier:
 https://bierdurst.org/oktoberfest/
@@ -52,6 +52,6 @@ Für alle, die es ohne Bier mögen 😄 hier die reduzierte Fassung: nur Besuche
 Die Besucher schwanken seit 40 Jahren zwischen 5,5 und 7,4 Millionen. Die Maß hat sich davon längst gelöst: plus 390 Prozent, die Verbraucherpreise plus 124 Prozent.
 
 Beide Grafiken laufen animiert im Artikel, die Daten gibt es als CSV:
-https://tiermedizin-in-zahlen.org/beitrag/oktoberfest-masspreis-inflation.html
+https://tiermedizin-in-zahlen.org/beitrag/oktoberfest-masspreis-inflation
 
 Und ehrlich: Ab welchem Maßpreis bleibt ihr zu Hause? 🍺
