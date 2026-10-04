@@ -1,5 +1,5 @@
 import type { SampleDataset } from '@/lib/data/types'
-import { OKTOBERFEST, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data'
+import { OKTOBERFEST, OKTOBERFEST_PREIS, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -320,6 +320,28 @@ export const SAMPLES: SampleDataset[] = [
       chartType: 'combo', decimals: 1, primaryAxisLabel: 'Millionen (Liter bzw. Besucher)', secondaryAxisLabel: 'Preis einer Maß',
       secondaryAxis: ['Maß', 'Maß mit Inflation'], secondaryDecimals: 2, secondarySuffix: ' €', showChange: true, gapFill: 'none',
       colors: { 'Bier (Mio. Liter)': '#f3a712', 'Besucher (Mio.)': '#7fb7be', 'Maß': '#0f4c5c', 'Maß mit Inflation': '#8a949e' },
+    },
+  },
+  {
+    id: 'oktoberfest-preis',
+    erstellt: '2026-10-04', geprueft: '2026-10-04',
+    category: 'exkurs',
+    title: 'Die Maß wird teurer, die Wiesn voller',
+    subtitle: 'Oktoberfest München: Besucher (Säulen) und Preis einer Maß (Linien), 1985 bis 2026',
+    source: 'Quelle: Landeshauptstadt München, Statistisches Amt (Open Data, dl-de/by-2-0), 2026 vorläufig nach Bilanz der Stadt; Verbraucherpreisindex: Destatis. 2020/21 keine Wiesn',
+    sourceUrl: 'https://opendata.muenchen.de/dataset/oktoberfest',
+    unit: 'Mio. Besucher',
+    description: 'Die reduzierte Fassung ohne Bier: Besucher, Maßpreis und der Preis, den die Maß nur mit der Inflation hätte.',
+    dataInfo: [
+      "Dieselben Werte wie „Die Maß wird teurer, getrunken wird mehr“, nur ohne die Biermenge: Besucher als Säulen, Maßpreis und „Maß mit Inflation“ als Linien. Quellen, Berechnung und die vorläufigen Werte 2026 stehen dort und in der Datenherkunft.",
+      "2020 und 2021 fiel die Wiesn wegen Corona aus; diese Jahre bleiben leer, nur die Inflation läuft weiter.",
+    ],
+    headers: OKTOBERFEST_PREIS.headers,
+    rows: OKTOBERFEST_PREIS.rows,
+    suggested: {
+      chartType: 'combo', decimals: 1, primaryAxisLabel: 'Besucher in Mio.', secondaryAxisLabel: 'Preis einer Maß',
+      secondaryAxis: ['Maß', 'Maß mit Inflation'], secondaryDecimals: 2, secondarySuffix: ' €', showChange: true, gapFill: 'none',
+      colors: { 'Besucher (Mio.)': '#7fb7be', 'Maß': '#0f4c5c', 'Maß mit Inflation': '#8a949e' },
     },
   },
   {

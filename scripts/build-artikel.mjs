@@ -101,6 +101,10 @@ function markdown(text) {
       html.push(`<pre${sprache ? ` data-sprache="${esc(sprache)}"` : ''}><code>${esc(inhalt)}</code></pre>`)
       continue
     }
+    // Weitere Grafik mitten im Text: eine Zeile „::grafik <Datensatz> [Diagrammart]“. Hier nur ein
+    // Platzhalter; seite() setzt die Grafik ein, weil erst dort Pfadtiefe, CSV und Freigabe bekannt sind.
+    const weitere = b.match(/^::grafik ([a-z0-9-]+)(?: (bar|line|map|combo))?$/)
+    if (weitere) { html.push(`\u0000GRAFIK ${weitere[1]} ${weitere[2] ?? ''}\u0000`); continue }
     const zeilen = b.split('\n')
     const bild = b.match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/)
     if (bild) {
@@ -201,6 +205,7 @@ function seite(a, { entwurf, alle }) {
   const entlinken = (h) => entwurf ? h : h.replace(/<a href="([a-z0-9-]+)\.html">(.*?)<\/a>/g, (m, slug, text) =>
     alle.some((x) => x.slug === slug && x.live) ? m : text)
   const rumpf = entlinken(restBloecke.join('\n\n').replace(/href="\.\.\//g, `href="${tiefe}`))
+    .replace(/\u0000GRAFIK ([a-z0-9-]+) (\w*)\u0000/g, (_, id, art) => grafikFigur(grafikVon(`${id} ${art}`.trim(), undefined, { mussFrei: a.live }), { tiefe, csv: !entwurf && DATENSAETZE[id]?.daten ? `${tiefe}daten/${id}.csv` : '' }))
     .replace(/<img src="(?!https?:|\.\.\/)/g, entwurf ? '<img src="../' : '<img src="')
     .replace(/href="(vorlagen\/)/g, `href="${tiefe}$1`)
 
@@ -447,7 +452,9 @@ fs.writeFileSync('index.html', startseite(live))
 
 // CSV je Datensatz eines Live-Artikels. Nur freigegebene – dieselbe Regel wie für die Seiten.
 fs.rmSync(DATEN_ZIEL, { recursive: true, force: true })
-const csvIds = [...new Set(live.map((a) => POSTS.find((p) => p.nr === a.post)?.sampleId ?? grafikVon(a.grafik)?.id).filter((id) => id && DATENSAETZE[id]?.daten))]
+// Dazu die Datensätze weiterer Grafiken im Text (::grafik), auch sie bekommen ihren CSV-Download.
+const imText = (a) => [...a.text.matchAll(/^::grafik ([a-z0-9-]+)/gm)].map((m) => m[1])
+const csvIds = [...new Set(live.flatMap((a) => [POSTS.find((p) => p.nr === a.post)?.sampleId ?? grafikVon(a.grafik)?.id, ...imText(a)]).filter((id) => id && DATENSAETZE[id]?.daten))]
 if (csvIds.length) fs.mkdirSync(DATEN_ZIEL, { recursive: true })
 const zelle = (v) => v == null ? '' : /[",;\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v)
 for (const id of csvIds) {

@@ -41,6 +41,10 @@ Auf dieser Seite geht es sonst um Tierärzte, Praxen und Haustiere. Heute, am le
 
 ## Teurer als die Inflation, Jahr für Jahr
 
+Ohne das Bier wird das Bild ruhiger: nur Besucher und Preise. Die Besuchersäulen bewegen sich über 40 Jahre zwischen 5,5 und 7,4 Millionen, die beiden Preislinien laufen davon unabhängig auseinander.
+
+::grafik oktoberfest-preis
+
 Die beiden Linien laufen schon in den ersten Jahren auseinander und kommen sich nie wieder nahe. 1995 kostete die Maß 5,15 Euro, mit der Inflation wären es 4,07 gewesen. 2015 lag der Abstand bei fast fünf Euro, 2025 bei 8,34 Euro. Den größten Sprung gab es nach der Corona-Pause: von 11,71 Euro 2019 auf 13,45 Euro 2022, ein Plus von 15 Prozent in einem Schritt.
 
 Gemessen an der Teuerung insgesamt hat sich die Maß damit real mehr als verdoppelt. 2026 kostete sie laut Stadt München je nach Zelt zwischen 14,80 und 15,90 Euro, im Schnitt 2,4 Prozent mehr als im Vorjahr. Die Verbraucherpreise stiegen in den ersten neun Monaten 2026 im Mittel um 2,6 Prozent: In diesem einen Jahr ist die Maß also ausnahmsweise etwas langsamer teurer geworden als alles andere.
