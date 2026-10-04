@@ -1,7 +1,7 @@
 import type { FormatId } from './formats'
 import type { GapFill } from './data/types'
 
-export type ChartType = 'bar' | 'line' | 'map'
+export type ChartType = 'bar' | 'line' | 'map' | 'combo'
 export type Corner = 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right'
 export type TitleAlign = 'left' | 'center'
 
@@ -28,6 +28,8 @@ export interface ChartSettings {
   holdStart: number // Sekunden
   holdEnd: number // Sekunden
   loopPreview: boolean
+  /** Line Race, Säulen + Linie: hinter jedem Wert die Veränderung seit dem ersten Wert in Prozent */
+  showChange: boolean
 
   // Daten
   gapFill: GapFill
@@ -87,6 +89,7 @@ export const DEFAULT_SETTINGS: ChartSettings = {
   holdStart: DEFAULT_HOLD_START,
   holdEnd: DEFAULT_HOLD_END,
   loopPreview: true,
+  showChange: false,
   gapFill: 'interpolate',
   topN: 10,
   fixedScale: false,

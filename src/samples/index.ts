@@ -1,5 +1,5 @@
 import type { SampleDataset } from '@/lib/data/types'
-import { FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data'
+import { OKTOBERFEST, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -296,6 +296,29 @@ export const SAMPLES: SampleDataset[] = [
     suggested: {
       chartType: 'line', topN: 4, decimals: 0, primaryAxisLabel: 'Personen',
       colors: { 'Angestellte Tierärztinnen': '#e36414', 'Praxisinhaberinnen': '#f2a65a', 'Praxisinhaber': '#0f4c5c', 'Angestellte Tierärzte': '#6aa3ad' },
+    },
+  },
+  {
+    id: 'oktoberfest',
+    erstellt: '2026-10-04', geprueft: '2026-10-04',
+    category: 'exkurs',
+    title: 'Die Maß wird teurer, getrunken wird mehr',
+    subtitle: 'Oktoberfest München: Bier in Mio. Liter (Säulen) und Preis einer Maß, 1985 bis 2025',
+    source: 'Quelle: Landeshauptstadt München, Statistisches Amt (Open Data, dl-de/by-2-0); Verbraucherpreisindex: Destatis. 2020/21 keine Wiesn',
+    sourceUrl: 'https://opendata.muenchen.de/dataset/oktoberfest',
+    unit: 'Mio. Liter',
+    description: 'Die Maß kostet fast fünfmal so viel wie 1985, mit der Inflation allein wären es 6,99 Euro. Getrunken wird trotzdem mehr.',
+    dataInfo: [
+      "Bier, Maßpreis und Besucher stammen unverändert aus der Oktoberfest-Statistik des Statistischen Amts München (Open Data Portal, Stand 13.07.2026). Bier ist der Ausschank laut Festwirten, umgerechnet von Hektolitern in Millionen Liter; Besucher sind geschätzt. Der Maßpreis ist der Durchschnitt aller Zelte, vor 2002 aus D-Mark in Euro umgerechnet.",
+      "„Maß mit Inflation“ ist berechnet: der Maßpreis von 1985, fortgeschrieben mit dem Verbraucherpreisindex für Deutschland (Destatis, Jahresdurchschnitte). Für 1985 bis 1990 gibt es keinen gesamtdeutschen Index; dort gilt der Index des früheren Bundesgebiets, 1991 verkettet. 2025 ist aus der amtlichen Jahresrate von 2,2 Prozent fortgeschrieben.",
+      "2020 und 2021 fiel die Wiesn wegen Corona aus. Diese Jahre bleiben leer, es wird nichts aufgefüllt; nur die Inflation läuft weiter. Die Wiesn dauerte je nach Jahr 16 bis 18 Tage, das erklärt einen Teil der Schwankungen bei Bier und Besuchern.",
+    ],
+    headers: OKTOBERFEST.headers,
+    rows: OKTOBERFEST.rows,
+    suggested: {
+      chartType: 'combo', decimals: 1, primaryAxisLabel: 'Bier in Mio. Liter', secondaryAxisLabel: 'Preis einer Maß',
+      secondaryAxis: ['Maß', 'Maß mit Inflation'], secondaryDecimals: 2, secondarySuffix: ' €', showChange: true, gapFill: 'none',
+      colors: { 'Bier (Mio. Liter)': '#f3a712', 'Maß': '#0f4c5c', 'Maß mit Inflation': '#8a949e' },
     },
   },
   {

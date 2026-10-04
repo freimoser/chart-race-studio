@@ -1,0 +1,465 @@
+{
+ "title": "Oktoberfest München 1985–2025: Besucher, Bier, Maßpreis, Hendl; dazu der Verbraucherpreisindex",
+ "source": "Landeshauptstadt München, Statistisches Amt: Oktoberfest 1985–2025 (Open Data Portal München, Datenlizenz Deutschland – Namensnennung – Version 2.0); Verbraucherpreisindex: Statistisches Bundesamt (Destatis)",
+ "sourceUrl": "https://opendata.muenchen.de/dataset/oktoberfest",
+ "abgerufen": "2026-10-04",
+ "lizenz": "dl-de/by-2-0, Namensnennung: Datenquelle Landeshauptstadt München, Statistisches Amt",
+ "notes": "Oktoberfest: unverändert aus der Datei oktoberfestgesamt19852025.csv (Stand 13.07.2026). 2020 und 2021 fiel die Wiesn wegen Corona aus. Maß- und Hendlpreis in Euro, vor 2002 aus DM umgerechnet (so in der Quelle). Bier und Hendl beruhen auf Angaben der Festwirte, Besucher sind geschätzt. 2001 halbiert sich die Hendl-Zahl in einem Jahr (681.242 auf 351.705); vermutlich eine geänderte Erfassung, die Quelle erklärt es nicht. Die Wiesn dauerte 16 bis 18 Tage.",
+ "felder": {
+  "jahr": "Jahr",
+  "dauer_tage": "Dauer in Tagen",
+  "besucher_mio": "Besucher gesamt in Mio. (geschätzt)",
+  "besucher_tag_tsd": "Besucher je Tag in Tsd.",
+  "masspreis_eur": "Durchschnittlicher Preis einer Maß (1 Liter) in Euro",
+  "bier_hl": "Bierausschank in Hektoliter (Angaben der Wirte)",
+  "hendlpreis_eur": "Durchschnittlicher Preis eines halben Hendl in Euro",
+  "hendl_stueck": "Verkaufte Hendl (Angaben der Wirte)"
+ },
+ "oktoberfest": [
+  {
+   "jahr": 1985,
+   "dauer_tage": 16,
+   "besucher_mio": 7.1,
+   "besucher_tag_tsd": 444,
+   "masspreis_eur": 3.2,
+   "bier_hl": 54541,
+   "hendlpreis_eur": 4.77,
+   "hendl_stueck": 629520
+  },
+  {
+   "jahr": 1986,
+   "dauer_tage": 16,
+   "besucher_mio": 6.7,
+   "besucher_tag_tsd": 419,
+   "masspreis_eur": 3.3,
+   "bier_hl": 53807,
+   "hendlpreis_eur": 3.92,
+   "hendl_stueck": 698137
+  },
+  {
+   "jahr": 1987,
+   "dauer_tage": 16,
+   "besucher_mio": 6.5,
+   "besucher_tag_tsd": 406,
+   "masspreis_eur": 3.37,
+   "bier_hl": 51842,
+   "hendlpreis_eur": 3.98,
+   "hendl_stueck": 732859
+  },
+  {
+   "jahr": 1988,
+   "dauer_tage": 16,
+   "besucher_mio": 5.7,
+   "besucher_tag_tsd": 356,
+   "masspreis_eur": 3.45,
+   "bier_hl": 50951,
+   "hendlpreis_eur": 4.19,
+   "hendl_stueck": 720139
+  },
+  {
+   "jahr": 1989,
+   "dauer_tage": 16,
+   "besucher_mio": 6.2,
+   "besucher_tag_tsd": 388,
+   "masspreis_eur": 3.6,
+   "bier_hl": 51241,
+   "hendlpreis_eur": 4.22,
+   "hendl_stueck": 775674
+  },
+  {
+   "jahr": 1990,
+   "dauer_tage": 16,
+   "besucher_mio": 6.7,
+   "besucher_tag_tsd": 419,
+   "masspreis_eur": 3.77,
+   "bier_hl": 54300,
+   "hendlpreis_eur": 4.47,
+   "hendl_stueck": 750947
+  },
+  {
+   "jahr": 1991,
+   "dauer_tage": 16,
+   "besucher_mio": 6.4,
+   "besucher_tag_tsd": 400,
+   "masspreis_eur": 4.21,
+   "bier_hl": 54686,
+   "hendlpreis_eur": 4.81,
+   "hendl_stueck": 807710
+  },
+  {
+   "jahr": 1992,
+   "dauer_tage": 16,
+   "besucher_mio": 5.9,
+   "besucher_tag_tsd": 369,
+   "masspreis_eur": 4.42,
+   "bier_hl": 48888,
+   "hendlpreis_eur": 5.11,
+   "hendl_stueck": 725612
+  },
+  {
+   "jahr": 1993,
+   "dauer_tage": 16,
+   "besucher_mio": 6.5,
+   "besucher_tag_tsd": 406,
+   "masspreis_eur": 4.71,
+   "bier_hl": 51933,
+   "hendlpreis_eur": 5.25,
+   "hendl_stueck": 733517
+  },
+  {
+   "jahr": 1994,
+   "dauer_tage": 16,
+   "besucher_mio": 6.6,
+   "besucher_tag_tsd": 413,
+   "masspreis_eur": 4.89,
+   "bier_hl": 52108,
+   "hendlpreis_eur": 5.39,
+   "hendl_stueck": 663135
+  },
+  {
+   "jahr": 1995,
+   "dauer_tage": 16,
+   "besucher_mio": 6.7,
+   "besucher_tag_tsd": 419,
+   "masspreis_eur": 5.15,
+   "bier_hl": 50162,
+   "hendlpreis_eur": 5.54,
+   "hendl_stueck": 628890
+  },
+  {
+   "jahr": 1996,
+   "dauer_tage": 16,
+   "besucher_mio": 6.9,
+   "besucher_tag_tsd": 431,
+   "masspreis_eur": 5.24,
+   "bier_hl": 52622,
+   "hendlpreis_eur": 5.45,
+   "hendl_stueck": 595580
+  },
+  {
+   "jahr": 1997,
+   "dauer_tage": 16,
+   "besucher_mio": 6.4,
+   "besucher_tag_tsd": 400,
+   "masspreis_eur": 5.45,
+   "bier_hl": 55891,
+   "hendlpreis_eur": 5.38,
+   "hendl_stueck": 699562
+  },
+  {
+   "jahr": 1998,
+   "dauer_tage": 16,
+   "besucher_mio": 6.5,
+   "besucher_tag_tsd": 406,
+   "masspreis_eur": 5.6,
+   "bier_hl": 54782,
+   "hendlpreis_eur": 5.34,
+   "hendl_stueck": 603746
+  },
+  {
+   "jahr": 1999,
+   "dauer_tage": 16,
+   "besucher_mio": 6.5,
+   "besucher_tag_tsd": 406,
+   "masspreis_eur": 5.8,
+   "bier_hl": 60054,
+   "hendlpreis_eur": 5.38,
+   "hendl_stueck": 609661
+  },
+  {
+   "jahr": 2000,
+   "dauer_tage": 18,
+   "besucher_mio": 6.9,
+   "besucher_tag_tsd": 383,
+   "masspreis_eur": 6.35,
+   "bier_hl": 64591,
+   "hendlpreis_eur": 7.85,
+   "hendl_stueck": 681242
+  },
+  {
+   "jahr": 2001,
+   "dauer_tage": 16,
+   "besucher_mio": 5.5,
+   "besucher_tag_tsd": 344,
+   "masspreis_eur": 6.47,
+   "bier_hl": 48698,
+   "hendlpreis_eur": 8.12,
+   "hendl_stueck": 351705
+  },
+  {
+   "jahr": 2002,
+   "dauer_tage": 16,
+   "besucher_mio": 5.9,
+   "besucher_tag_tsd": 369,
+   "masspreis_eur": 6.75,
+   "bier_hl": 57614,
+   "hendlpreis_eur": 8.1,
+   "hendl_stueck": 459259
+  },
+  {
+   "jahr": 2003,
+   "dauer_tage": 16,
+   "besucher_mio": 6.3,
+   "besucher_tag_tsd": 394,
+   "masspreis_eur": 6.75,
+   "bier_hl": 62294,
+   "hendlpreis_eur": 8.14,
+   "hendl_stueck": 487487
+  },
+  {
+   "jahr": 2004,
+   "dauer_tage": 16,
+   "besucher_mio": 5.9,
+   "besucher_tag_tsd": 369,
+   "masspreis_eur": 7.02,
+   "bier_hl": 61163,
+   "hendlpreis_eur": 8.28,
+   "hendl_stueck": 481649
+  },
+  {
+   "jahr": 2005,
+   "dauer_tage": 17,
+   "besucher_mio": 6.1,
+   "besucher_tag_tsd": 359,
+   "masspreis_eur": 7.15,
+   "bier_hl": 61772,
+   "hendlpreis_eur": 8.35,
+   "hendl_stueck": 479610
+  },
+  {
+   "jahr": 2006,
+   "dauer_tage": 18,
+   "besucher_mio": 6.5,
+   "besucher_tag_tsd": 361,
+   "masspreis_eur": 7.42,
+   "bier_hl": 68617,
+   "hendlpreis_eur": 8.5,
+   "hendl_stueck": 494135
+  },
+  {
+   "jahr": 2007,
+   "dauer_tage": 16,
+   "besucher_mio": 6.2,
+   "besucher_tag_tsd": 388,
+   "masspreis_eur": 7.85,
+   "bier_hl": 69406,
+   "hendlpreis_eur": 8.87,
+   "hendl_stueck": 521872
+  },
+  {
+   "jahr": 2008,
+   "dauer_tage": 16,
+   "besucher_mio": 6.0,
+   "besucher_tag_tsd": 375,
+   "masspreis_eur": 8.25,
+   "bier_hl": 64922,
+   "hendlpreis_eur": 9.06,
+   "hendl_stueck": 459356
+  },
+  {
+   "jahr": 2009,
+   "dauer_tage": 16,
+   "besucher_mio": 5.7,
+   "besucher_tag_tsd": 356,
+   "masspreis_eur": 8.53,
+   "bier_hl": 66436,
+   "hendlpreis_eur": 9.18,
+   "hendl_stueck": 488137
+  },
+  {
+   "jahr": 2010,
+   "dauer_tage": 17,
+   "besucher_mio": 6.4,
+   "besucher_tag_tsd": 376,
+   "masspreis_eur": 8.79,
+   "bier_hl": 71000,
+   "hendlpreis_eur": 9.6,
+   "hendl_stueck": 505901
+  },
+  {
+   "jahr": 2011,
+   "dauer_tage": 17,
+   "besucher_mio": 6.9,
+   "besucher_tag_tsd": 406,
+   "masspreis_eur": 9.09,
+   "bier_hl": 79225,
+   "hendlpreis_eur": 9.83,
+   "hendl_stueck": 522821
+  },
+  {
+   "jahr": 2012,
+   "dauer_tage": 16,
+   "besucher_mio": 6.4,
+   "besucher_tag_tsd": 400,
+   "masspreis_eur": 9.41,
+   "bier_hl": 74025,
+   "hendlpreis_eur": 10.07,
+   "hendl_stueck": 508958
+  },
+  {
+   "jahr": 2013,
+   "dauer_tage": 16,
+   "besucher_mio": 6.4,
+   "besucher_tag_tsd": 400,
+   "masspreis_eur": 9.78,
+   "bier_hl": 77031,
+   "hendlpreis_eur": 11.1,
+   "hendl_stueck": 482361
+  },
+  {
+   "jahr": 2014,
+   "dauer_tage": 16,
+   "besucher_mio": 6.3,
+   "besucher_tag_tsd": 394,
+   "masspreis_eur": 9.98,
+   "bier_hl": 76808,
+   "hendlpreis_eur": 10.49,
+   "hendl_stueck": 509420
+  },
+  {
+   "jahr": 2015,
+   "dauer_tage": 16,
+   "besucher_mio": 5.9,
+   "besucher_tag_tsd": 369,
+   "masspreis_eur": 10.27,
+   "bier_hl": 75134,
+   "hendlpreis_eur": 10.75,
+   "hendl_stueck": 503510
+  },
+  {
+   "jahr": 2016,
+   "dauer_tage": 17,
+   "besucher_mio": 5.6,
+   "besucher_tag_tsd": 329,
+   "masspreis_eur": 10.57,
+   "bier_hl": 66231,
+   "hendlpreis_eur": 11.0,
+   "hendl_stueck": 366876
+  },
+  {
+   "jahr": 2017,
+   "dauer_tage": 18,
+   "besucher_mio": 6.2,
+   "besucher_tag_tsd": 344,
+   "masspreis_eur": 10.87,
+   "bier_hl": 77836,
+   "hendlpreis_eur": 11.41,
+   "hendl_stueck": 466747
+  },
+  {
+   "jahr": 2018,
+   "dauer_tage": 16,
+   "besucher_mio": 6.3,
+   "besucher_tag_tsd": 394,
+   "masspreis_eur": 11.3,
+   "bier_hl": 78705,
+   "hendlpreis_eur": 11.67,
+   "hendl_stueck": 436492
+  },
+  {
+   "jahr": 2019,
+   "dauer_tage": 16,
+   "besucher_mio": 6.3,
+   "besucher_tag_tsd": 394,
+   "masspreis_eur": 11.71,
+   "bier_hl": 78502,
+   "hendlpreis_eur": 12.15,
+   "hendl_stueck": 434998
+  },
+  {
+   "jahr": 2022,
+   "dauer_tage": 17,
+   "besucher_mio": 5.7,
+   "besucher_tag_tsd": 335,
+   "masspreis_eur": 13.45,
+   "bier_hl": 71340,
+   "hendlpreis_eur": 13.96,
+   "hendl_stueck": 313636
+  },
+  {
+   "jahr": 2023,
+   "dauer_tage": 18,
+   "besucher_mio": 7.2,
+   "besucher_tag_tsd": 400,
+   "masspreis_eur": 14.33,
+   "bier_hl": 74418,
+   "hendlpreis_eur": 15.89,
+   "hendl_stueck": 396141
+  },
+  {
+   "jahr": 2024,
+   "dauer_tage": 16,
+   "besucher_mio": 6.8,
+   "besucher_tag_tsd": 425,
+   "masspreis_eur": 14.9,
+   "bier_hl": 69564,
+   "hendlpreis_eur": 18.08,
+   "hendl_stueck": 368308
+  },
+  {
+   "jahr": 2025,
+   "dauer_tage": 16,
+   "besucher_mio": 6.5,
+   "besucher_tag_tsd": 406,
+   "masspreis_eur": 15.33,
+   "bier_hl": 67127,
+   "hendlpreis_eur": 18.53,
+   "hendl_stueck": 351461
+  }
+ ],
+ "vpi": {
+  "quelle": "Destatis, Statistischer Bericht „Verbraucherpreisindex für Deutschland – Lange Reihen ab 1948“, Juni 2025 (letzte Ausgabe), Tabelle 611xx-01, Jahresdurchschnitte; 2025 aus der Jahresrate +2,2 % (Pressemitteilung Nr. 019 vom 16.01.2026)",
+  "quelleUrl": "https://www.destatis.de/DE/Themen/Wirtschaft/Preise/Verbraucherpreisindex/Publikationen/Downloads-Verbraucherpreise/statistischer-bericht-verbraucherpreisindex-lange-reihen-5611103.html",
+  "methode": "Deutschland (2020=100) ab 1991. 1985–1990 gibt es keinen gesamtdeutschen Index; dort gilt der Preisindex für die Lebenshaltung aller privaten Haushalte im früheren Bundesgebiet (1995=100), 1991 auf den gesamtdeutschen Index verkettet (Faktor 61,9 / 89,0). 2025 = 119,3 × 1,022.",
+  "deutschland_2020_100": {
+   "1991": 61.9,
+   "1992": 65,
+   "1993": 67.9,
+   "1994": 69.7,
+   "1995": 71,
+   "1996": 72,
+   "1997": 73.4,
+   "1998": 74,
+   "1999": 74.5,
+   "2000": 75.5,
+   "2001": 77,
+   "2002": 78.1,
+   "2003": 78.9,
+   "2004": 80.2,
+   "2005": 81.5,
+   "2006": 82.8,
+   "2007": 84.7,
+   "2008": 86.9,
+   "2009": 87.2,
+   "2010": 88.1,
+   "2011": 90,
+   "2012": 91.7,
+   "2013": 93.1,
+   "2014": 94,
+   "2015": 94.5,
+   "2016": 95,
+   "2017": 96.4,
+   "2018": 98.1,
+   "2019": 99.5,
+   "2020": 100,
+   "2021": 103.1,
+   "2022": 110.2,
+   "2023": 116.7,
+   "2024": 119.3
+  },
+  "frueheres_bundesgebiet_1995_100": {
+   "1984": 78.6,
+   "1985": 80.2,
+   "1986": 80.1,
+   "1987": 80.3,
+   "1988": 81.3,
+   "1989": 83.6,
+   "1990": 85.8,
+   "1991": 89.0
+  },
+  "jahr_2025_aus_rate": {
+   "rate_prozent": 2.2,
+   "index": 121.9
+  }
+ }
+}

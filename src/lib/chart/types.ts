@@ -16,6 +16,10 @@ export interface ChartInput {
   fixedScale: boolean
   labelsPosition: 'inside' | 'outside'
   labelSize: number
+  /** Säulen + Linie: Reihen der linken Achse als Säulen statt als Linien. */
+  saeulen?: boolean
+  /** Hinter jedem Wert die Veränderung seit dem ersten Wert der Reihe in Prozent. */
+  veraenderungZeigen?: boolean
   /** Line Race: Mindestbreite der Zeichenfläche als Anteil, Voreinstellung 0,45. Kleiner heißt mehr Platz für lange Namen. */
   minPlotAnteil?: number
   fontFamily: string
@@ -36,7 +40,7 @@ export interface ChartInput {
 
 export interface ChartHandle {
   /** Nur Bar (racing-bars): das Race-Objekt */
-  kind: 'bar' | 'line' | 'map'
+  kind: 'bar' | 'line' | 'map' | 'combo'
   /** Alle Datums-Strings in Reihenfolge */
   dates: string[]
   /** Zu einem Datum springen (Bar: mit Übergang, Line: sofort) */

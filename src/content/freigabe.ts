@@ -22,7 +22,7 @@ import ARTIKEL_JSON from './artikel-index.json'
 import { POSTS, type RoadmapPost } from './roadmap'
 import { SAMPLES } from '@/samples'
 
-export const FREIGABE: { beispieleErstNachVeroeffentlichung: boolean; artikelLive: boolean; vorschauPosts: number } = FREIGABE_JSON
+export const FREIGABE: { beispieleErstNachVeroeffentlichung: boolean; artikelLive: boolean; vorschauPosts: number; datensaetzeOhnePost?: string[] } = FREIGABE_JSON
 
 /** true = die Seite zeigt, was online zu sehen ist. Im Entwicklungsserver nur mit `?live`. */
 export const LIVE_ANSICHT = !import.meta.env.DEV
@@ -55,9 +55,11 @@ export const sichtbarkeitVon = (post: RoadmapPost): Sichtbarkeit => SICHTBARKEIT
  * Datensätze, die live angeboten werden: aus veröffentlichten Posts, dem aktuellen und aus Posts mit
  * `vorabOnline`. Ist der Artikel online, muss sein Link „Datensatz im Studio öffnen“ auch funktionieren.
  */
-export const FREIGEGEBENE_DATENSAETZE = new Set(
-  POSTS.filter((p) => p.sampleId && (p.status === 'veroeffentlicht' || p.status === 'naechster' || p.vorabOnline)).map((p) => p.sampleId as string),
-)
+export const FREIGEGEBENE_DATENSAETZE = new Set([
+  ...POSTS.filter((p) => p.sampleId && (p.status === 'veroeffentlicht' || p.status === 'naechster' || p.vorabOnline)).map((p) => p.sampleId as string),
+  // Datensätze außerhalb der Post-Reihe, etwa für einen Exkurs: freigegeben, sobald sie hier stehen.
+  ...(FREIGABE.datensaetzeOhnePost ?? []),
+])
 
 export function datensatzFreigegeben(id: string): boolean {
   return !LIVE_ANSICHT || !FREIGABE.beispieleErstNachVeroeffentlichung || FREIGEGEBENE_DATENSAETZE.has(id)

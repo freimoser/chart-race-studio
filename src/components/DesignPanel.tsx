@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import { BarChart3, ImagePlus, LineChart, Moon, Sun, X, Map } from 'lucide-react'
+import { BarChart3, ImagePlus, LineChart, Moon, Sun, X, Map, ChartColumnBig } from 'lucide-react'
 import { useApp } from '@/state/store'
 import { FORMATS, formatById } from '@/lib/formats'
 import { PALETTES } from '@/lib/palettes'
@@ -38,6 +38,7 @@ export function DesignPanel() {
           <Segmented value={settings.chartType} onChange={(chartType) => update({ chartType })} ariaLabel="Diagrammtyp" options={[
             { value: 'bar', label: <span className="inline-flex items-center gap-1.5"><BarChart3 size={15} /> Bar Race</span> },
             { value: 'line', label: <span className="inline-flex items-center gap-1.5"><LineChart size={15} /> Line Race</span> },
+            { value: 'combo', label: <span className="inline-flex items-center gap-1.5"><ChartColumnBig size={15} /> Säulen + Linie</span>, title: 'Säulen + Linie: Reihen der linken Achse als Säulen, Reihen mit Y2 als Linien' },
             { value: 'map', label: <span className="inline-flex items-center gap-1.5"><Map size={15} /> Karte</span>, title: 'Karte: Spalten sind Länder oder Bundesländer (deutsch, englisch oder ISO-Code)' },
           ]} />
           <Segmented value={settings.theme} onChange={(theme) => update({ theme })} ariaLabel="Farbschema" options={[
@@ -93,8 +94,8 @@ export function DesignPanel() {
         )}
       </Section>
 
-      <Section title={settings.chartType === 'map' ? 'Karte & Beschriftung' : settings.chartType === 'line' ? 'Linien & Achsen' : 'Balken & Beschriftung'}>
-        {settings.chartType !== 'map' && <Slider label={settings.chartType === 'bar' ? 'Sichtbare Balken (Top N)' : 'Hervorgehobene Linien (Top N)'} value={settings.topN} min={1} max={Math.max(3, Math.min(30, dataset?.names.length ?? 12))} onChange={(topN) => update({ topN })} />}
+      <Section title={settings.chartType === 'map' ? 'Karte & Beschriftung' : settings.chartType === 'line' ? 'Linien & Achsen' : settings.chartType === 'combo' ? 'Säulen, Linien & Achsen' : 'Balken & Beschriftung'}>
+        {settings.chartType !== 'map' && settings.chartType !== 'combo' && <Slider label={settings.chartType === 'bar' ? 'Sichtbare Balken (Top N)' : 'Hervorgehobene Linien (Top N)'} value={settings.topN} min={1} max={Math.max(3, Math.min(30, dataset?.names.length ?? 12))} onChange={(topN) => update({ topN })} />}
         {settings.chartType === 'map' && settings.divergingAt == null && (
           <Slider label="Zeilen der Rangliste im Panel" value={settings.topN} min={1} max={Math.max(3, Math.min(30, dataset?.names.length ?? 12))} onChange={(topN) => update({ topN })} />
         )}
@@ -106,8 +107,8 @@ export function DesignPanel() {
         {settings.chartType === 'bar' && <Slider label="Eckenrundung" value={settings.barRounding} min={0} max={1} step={0.05} onChange={(barRounding) => update({ barRounding })} format={(v) => `${Math.round(v * 100)} %`} />}
         {settings.chartType === 'bar' ? (
           <Toggle label="Feste Achse (kein Mitwachsen)" checked={settings.fixedScale} onChange={(fixedScale) => update({ fixedScale })} />
-        ) : settings.chartType === 'line' ? (
-          <p className="text-[11px] text-ink-faint">Die Y-Achsen des Line Race sind über den gesamten Zeitraum fest, damit die Skala nicht springt.</p>
+        ) : settings.chartType === 'line' || settings.chartType === 'combo' ? (
+          <p className="text-[11px] text-ink-faint">Die Y-Achsen sind über den gesamten Zeitraum fest, damit die Skala nicht springt.</p>
         ) : (
           <p className="text-[11px] text-ink-faint">Die Farbskala der Karte ist über den gesamten Zeitraum fest, damit Veränderungen sichtbar bleiben.</p>
         )}
@@ -125,9 +126,12 @@ export function DesignPanel() {
             <Field label="Überschrift der Zählung"><input className="input" value={settings.primaryAxisLabel} onChange={(e) => update({ primaryAxisLabel: e.target.value })} placeholder="z.B. Länder je Stufe" /></Field>
           </div>
         )}
-        {settings.chartType === 'line' && (
+        {(settings.chartType === 'line' || settings.chartType === 'combo') && (
           <div className="flex flex-col gap-2 rounded-md border border-line p-2.5">
-            <p className="text-xs text-ink-muted">Zweite Y-Achse: Kategorien unter „Farben & Bilder“ mit <b>Y2</b> auf die rechte Achse legen (gestrichelt). Praktisch für Vergleiche mit anderer Einheit.</p>
+            {settings.chartType === 'combo'
+              ? <p className="text-xs text-ink-muted">Reihen der linken Achse werden <b>Säulen</b>, Reihen mit <b>Y2</b> (unter „Farben & Bilder“) werden <b>Linien</b> auf der rechten Achse. Gedacht für zwei Einheiten, etwa Menge und Preis.</p>
+              : <p className="text-xs text-ink-muted">Zweite Y-Achse: Kategorien unter „Farben & Bilder“ mit <b>Y2</b> auf die rechte Achse legen (gestrichelt). Praktisch für Vergleiche mit anderer Einheit.</p>}
+            <Toggle label="Veränderung seit Beginn in % hinter dem Wert" checked={settings.showChange} onChange={(showChange) => update({ showChange })} />
             <div className="grid grid-cols-2 gap-2">
               <Field label="Titel linke Achse"><input className="input" value={settings.primaryAxisLabel} onChange={(e) => update({ primaryAxisLabel: e.target.value })} placeholder="z.B. Personen" /></Field>
               <Field label="Titel rechte Achse"><input className="input" value={settings.secondaryAxisLabel} onChange={(e) => update({ secondaryAxisLabel: e.target.value })} placeholder="z.B. Heimtiere in Mio." /></Field>

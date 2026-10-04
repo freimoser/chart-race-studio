@@ -69,6 +69,7 @@ export const SAMPLE_CATEGORIES = [
   { id: 'praxis', label: 'Tierarztpraxen & Beruf' },
   { id: 'heimtiere', label: 'Heimtiere & Markt' },
   { id: 'nutztiere', label: 'Nutztiere' },
+  { id: 'exkurs', label: 'Exkurs: über die Tiermedizin hinaus' },
 ] as const
 
 export type SampleCategory = (typeof SAMPLE_CATEGORIES)[number]['id']
@@ -104,7 +105,11 @@ export interface SampleDataset {
     topN?: number
     decimals?: number
     suffix?: string
-    chartType?: 'bar' | 'line' | 'map'
+    chartType?: 'bar' | 'line' | 'map' | 'combo'
+    /** Veränderung seit dem ersten Wert hinter jedem Wert (Line Race, Säulen + Linie) */
+    showChange?: boolean
+    /** Lücken: Voreinstellung ist Interpolieren. 'none' für Daten, bei denen eine Lücke eine Aussage ist. */
+    gapFill?: GapFill
     divergingAt?: number
     divergingLabels?: [string, string]
     /** Feste Farben je Reihe, z. B. Rest- und Sammelgruppen grau */

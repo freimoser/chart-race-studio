@@ -9,7 +9,7 @@ reihenfolge: 1
 grafik: tieraerzteschaft-deutschland
 bereit: ja
 ---
-Das Studio braucht **eine Tabelle: in der ersten Zeile die Spaltenköpfe, in der ersten Spalte die Zeit, in jeder weiteren Spalte eine Reihe, in den Zellen nur Zahlen**. Aus derselben Tabelle entstehen ein Bar Race, ein Line Race oder eine animierte Karte, ohne sie umzubauen. Die Tabelle wird in deinem Browser gelesen und verlässt dein Gerät nicht.
+Das Studio braucht **eine Tabelle: in der ersten Zeile die Spaltenköpfe, in der ersten Spalte die Zeit, in jeder weiteren Spalte eine Reihe, in den Zellen nur Zahlen**. Aus derselben Tabelle entstehen ein Bar Race, ein Line Race, eine animierte Karte oder Säulen mit Linie, ohne sie umzubauen. Die Tabelle wird in deinem Browser gelesen und verlässt dein Gerät nicht.
 
 ## Das Wichtigste in Kürze
 
@@ -78,11 +78,12 @@ Unter **Spaltenzuordnung** im Studio lässt sich korrigieren, welche Spalte Zeit
 
 ## Je Diagrammart
 
-Dieselbe Tabelle passt für alle drei, aber jede Diagrammart hat eigene Stärken und ein paar eigene Regeln:
+Dieselbe Tabelle passt für alle, aber jede Diagrammart hat eigene Stärken und ein paar eigene Regeln:
 
 - [Bar Race](bar-race.html): Rangfolgen, die sich über die Zeit verschieben. Bis zu 30 Balken gleichzeitig.
 - [Line Race](line-race.html): Entwicklungen über lange Zeiträume, auch mit zweiter Achse für eine andere Einheit.
 - [Karte](karte.html): Werte je Land oder Bundesland, als Verlauf oder in Stufen um einen Kipppunkt.
+- [Säulen + Linie](saeulen-linie.html): zwei Einheiten in einem Bild, etwa Menge als Säulen und Preis als Linie.
 - [Einstellungen](einstellungen.html): was jede Option im Studio bewirkt, von der Videolänge bis zum Wasserzeichen.
 
 ## Deine Daten bleiben auf deinem Gerät
@@ -110,7 +111,7 @@ Erstelle eine CSV-Tabelle für das Studio von Tiermedizin in Zahlen
 Thema: <was gezeigt werden soll>
 Zeitraum: <von–bis>, Takt: <Jahr | Monat | Quartal>
 Reihen: <Länder, Gruppen, Kategorien>
-Diagrammart: <Bar Race | Line Race | Karte>
+Diagrammart: <Bar Race | Line Race | Karte | Säulen + Linie>
 
 Regeln:
 - Erste Zeile Spaltenköpfe, erste Spalte die Zeit, eine Spalte je Reihe.

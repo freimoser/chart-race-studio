@@ -15,6 +15,6 @@ const p = new URLSearchParams(window.location.search)
 const art = p.get('art')
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Grafik id={p.get('d') ?? ''} art={art === 'bar' || art === 'line' || art === 'map' ? art : undefined} />
+    <Grafik id={p.get('d') ?? ''} art={art === 'bar' || art === 'line' || art === 'map' || art === 'combo' ? art : undefined} />
   </StrictMode>,
 )

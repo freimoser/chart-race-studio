@@ -193,3 +193,11 @@ lesbar (null); für 2025 weicht Tab. 1 der korrigierten Fassung (67,0 / 72,0 %) 
 Die Praxisassistenten 2002 (3.784) aus dieser Auswertung sind seit 02.10.2026 auch in Datensatz 1 nachgetragen.
 
 Ersetzt eine extern zugelieferte Vorlage, in der 19 von 26 Jahren interpoliert oder zurückgerechnet waren.
+
+## Die Maß wird teurer, getrunken wird mehr (`oktoberfest`, Exkurs)
+
+- **Quelle:** Statistisches Amt München, „Oktoberfest 1985–2025“ (Open Data Portal München, Stand 13.07.2026, dl-de/by-2-0, Namensnennung Pflicht). Verbraucherpreisindex: Destatis, Lange Reihen ab 1948, Jahresdurchschnitte; 2025 aus der Jahresrate +2,2 % (PM 019/2026). Rohdaten mit allen Feldern in `data/raw/ds15-oktoberfest.json`.
+- **Reihen:** Bier in Mio. Liter (Säulen, aus Hektolitern umgerechnet), Maß und Maß mit Inflation in Euro (Linien auf der rechten Achse), `Gesamt: Besucher (Mio.)` als mitlaufende Zahl. Diagrammart „Säulen + Linie“, Veränderung seit 1985 hinter jedem Wert, Lücken nicht aufgefüllt.
+- **Berechnet:** „Maß mit Inflation“ = Maßpreis 1985 × VPI(Jahr) / VPI(1985). 1985–1990 Index des früheren Bundesgebiets, 1991 verkettet (61,9 / 89,0).
+- **Lücken und Brüche:** 2020/21 keine Wiesn (Corona), die Zeilen haben nur den Inflationswert. Hendl (nicht im Diagramm, im Artikel): 2001 halbiert sich die Zahl, vermutlich geänderte Erfassung. Dauer 16–18 Tage.
+- **Freigabe:** gehört zu keinem Post; freigegeben über `datensaetzeOhnePost` in `src/content/freigabe.json`. Rubrik „Exkurs“.

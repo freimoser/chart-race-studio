@@ -10,6 +10,11 @@ import { formatPeriod } from '../data/dates'
  * `renderAt(t)` zeichnet den Zustand zu einem beliebigen (auch gebrochenen)
  * Datums-Index – ohne Transitions, dadurch exakt reproduzierbar im Export.
  * Unterstützt eine zweite Y-Achse rechts (input.secondaryAxis).
+ *
+ * Mit `input.saeulen` wird daraus „Säulen + Linie“: Reihen der linken Achse stehen als Säulen je Periode,
+ * Reihen der rechten Achse laufen als Linien darüber. Gedacht für zwei Einheiten, die zusammen eine
+ * Geschichte erzählen, etwa Menge und Preis. Eine Säule wächst in der Periode vor ihrem Jahr hoch und steht
+ * voll, wenn die Linien ihr Jahr erreichen. Leere Zellen bleiben leer, es wird keine Säule erfunden.
  */
 export function createLineRace(container: HTMLElement, input: ChartInput): ChartHandle {
   const measure = createMeasurer()
@@ -27,6 +32,8 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
   const onRight = (n: string) => input.secondaryAxis.includes(n)
   const hasRight = names.some(onRight)
   const fmtFor = (n: string) => (onRight(n) ? input.secondaryFormat : input.numberFormat)
+  const saeulen = Boolean(input.saeulen)
+  const istSaeule = (n: string) => saeulen && !onRight(n)
 
   // Werte-Matrix name -> index -> value|null
   const idx = new Map(periods.map((p, i) => [p.iso, i]))
@@ -43,6 +50,17 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
   }
   const extL = extent(false), extR = extent(true)
 
+  // Optional hinter dem Wert die Veränderung seit dem ersten Wert der Reihe, etwa „15,33 € (+379 %)“.
+  const ersterWert = new Map(input.names.map((n) => [n, series.get(n)!.find((v) => v !== null) ?? null]))
+  const wertText = (n: string, v: number) => {
+    const basis = formatValue(v, fmtFor(n))
+    const a = ersterWert.get(n)
+    if (!input.veraenderungZeigen || a == null || a === 0) return basis
+    const pct = Math.round((v / a - 1) * 100)
+    // Am Anfang (und wo eine Reihe genau auf ihren Startwert zurückkehrt) steht kein „(+0 %)“.
+    if (pct === 0) return basis
+    return `${basis} (${pct >= 0 ? '+' : '−'}${Math.abs(pct).toLocaleString('de-DE')} %)`
+  }
   const labelFont = fontString(input.labelSize, 600, input.fontFamily)
   const valueFont = fontString(input.labelSize * 0.9, 500, input.fontFamily)
   const tickFont = fontString(input.labelSize * 0.8, 400, input.fontFamily)
@@ -50,7 +68,12 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
   // Kopf-Labels sind einzeilig: „Name  Wert“. Platz rechts = breitestes Label + Bild + Abstand.
   const gapText = input.labelSize * 0.45
   const imgSizeAll = input.labelSize * 1.3 * input.imageScale
-  const labelWidth = (n: string) => measure(n, labelFont) + gapText + measure(formatValue(onRight(n) ? extR.max : extL.max, fmtFor(n)), valueFont)
+  // Breitester Wert je Reihe: ihr größter Wert, mit Veränderung der größte Anstieg.
+  const breitesterWert = (n: string) => {
+    const vals = series.get(n)!.filter((v): v is number => v !== null)
+    return vals.reduce((m, v) => Math.max(m, measure(wertText(n, v), valueFont)), 0)
+  }
+  const labelWidth = (n: string) => measure(n, labelFont) + gapText + breitesterWert(n)
   const widestLabel = names.reduce((m, n) => Math.max(m, labelWidth(n)), 0)
   const leftTicks = Math.ceil(Math.max(measure(formatValue(extL.max, input.numberFormat), tickFont), measure(formatValue(extL.min, input.numberFormat), tickFont))) + 16
   const rightTicks = hasRight ? Math.ceil(measure(formatValue(extR.max, input.secondaryFormat), tickFont)) + 16 : 0
@@ -72,6 +95,7 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
   const yAxisG = g.append('g').attr('class', 'y-axis')
   const y2AxisG = g.append('g').attr('class', 'y2-axis').attr('transform', `translate(${plotW + headSpace},0)`)
   const xAxisG = g.append('g').attr('class', 'x-axis').attr('transform', `translate(0,${plotH})`)
+  const saeulenG = g.append('g').attr('class', 'saeulen')
   const linesG = g.append('g').attr('class', 'lines')
   const headsG = g.append('g').attr('class', 'heads')
   const defs = svg.append('defs')
@@ -80,7 +104,10 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
   if (input.primaryAxisLabel) g.append('text').attr('x', -margin.left + 4).attr('y', -input.labelSize * 0.9).attr('fill', axisColor).style('font', axisTitleFont).text(input.primaryAxisLabel)
   if (hasRight && input.secondaryAxisLabel) g.append('text').attr('x', plotW + headSpace + rightTicks - 4).attr('y', -input.labelSize * 0.9).attr('fill', axisColor).attr('text-anchor', 'end').style('font', axisTitleFont).text(input.secondaryAxisLabel)
 
-  const x = d3.scaleLinear().domain([0, Math.max(1, P - 1)]).range([0, plotW])
+  // Mit Säulen braucht die erste und letzte Periode eine halbe Säulenbreite Rand.
+  const x = saeulen
+    ? d3.scaleLinear().domain([-0.5, Math.max(1, P - 1) + 0.5]).range([0, plotW])
+    : d3.scaleLinear().domain([0, Math.max(1, P - 1)]).range([0, plotW])
   // Feste Achsen über den gesamten Zeitraum: keine springende Skala während der Animation.
   const y = d3.scaleLinear().domain([extL.min, (extL.max || 1) * 1.06]).nice().range([plotH, 0])
   const y2 = d3.scaleLinear().domain([extR.min, (extR.max || 1) * 1.06]).nice().range([plotH, 0])
@@ -90,10 +117,14 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
     sel.selectAll('text').attr('fill', axisColor).style('font', tickFont)
     sel.selectAll('line').attr('stroke', gridColor)
   }
-  yAxisG.call(d3.axisLeft(y).ticks(5).tickSize(0).tickPadding(8).tickFormat((v) => formatValue(Number(v), input.numberFormat)))
+  // Sind alle Achsenwerte ganze Zahlen, ohne Nachkommastellen: „15 €“ statt „15,00 €“. Die Werte an den
+  // Linien behalten ihre Stellen.
+  const achsenFormat = (sc: d3.ScaleLinear<number, number>, fmt: typeof input.numberFormat) => (sc.ticks(5).every(Number.isInteger) ? { ...fmt, decimals: 0 } : fmt)
+  const fmtY = achsenFormat(y, input.numberFormat), fmtY2 = achsenFormat(y2, input.secondaryFormat)
+  yAxisG.call(d3.axisLeft(y).ticks(5).tickSize(0).tickPadding(8).tickFormat((v) => formatValue(Number(v), fmtY)))
   styleAxis(yAxisG)
   if (hasRight) {
-    y2AxisG.call(d3.axisRight(y2).ticks(5).tickSize(0).tickPadding(8).tickFormat((v) => formatValue(Number(v), input.secondaryFormat)))
+    y2AxisG.call(d3.axisRight(y2).ticks(5).tickSize(0).tickPadding(8).tickFormat((v) => formatValue(Number(v), fmtY2)))
     styleAxis(y2AxisG)
   }
   gridG.call(d3.axisLeft(y).ticks(5).tickSize(-plotW).tickFormat(() => ''))
@@ -143,8 +174,11 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
   xAxisG.select('.domain').attr('stroke', gridColor)
   xAxisG.selectAll('text').attr('fill', axisColor).style('font', tickFont)
   // Erstes/letztes Jahr nach innen ausrichten: kollidiert sonst mit dem „0“ der Y-Achse bzw. der Label-Spalte
-  xAxisG.selectAll<SVGTextElement, number>('.tick text').attr('text-anchor', (_, i, nodes) => (i === 0 ? 'start' : i === nodes.length - 1 ? 'end' : 'middle'))
-  xAxisG.selectAll<SVGTextElement, number>('.tick text').attr('dx', (_, i, nodes) => (i === 0 ? -input.labelSize * 0.3 : i === nodes.length - 1 ? input.labelSize * 0.3 : 0))
+  // (Mit Säulen steht jedes Jahr mittig unter seiner Säule, dort gibt es keinen Konflikt.)
+  if (!saeulen) {
+    xAxisG.selectAll<SVGTextElement, number>('.tick text').attr('text-anchor', (_, i, nodes) => (i === 0 ? 'start' : i === nodes.length - 1 ? 'end' : 'middle'))
+    xAxisG.selectAll<SVGTextElement, number>('.tick text').attr('dx', (_, i, nodes) => (i === 0 ? -input.labelSize * 0.3 : i === nodes.length - 1 ? input.labelSize * 0.3 : 0))
+  }
 
   /** Kürzt einen Text mit Auslassungspunkten auf die verfügbare Breite. */
   const fitText = (text: string, maxW: number, font: string): string => {
@@ -210,14 +244,27 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
     // auf ihren echten Wert. Sonst verdrängt sie im ersten Bild eine andere Reihe aus den Top N.
     const boden = y.domain()[0]
     const rangListe = liste.map((h) => ({ name: h.name, v: boden + (h.v - boden) * einblenden(h.name, tt) }))
-    liste.forEach((h, i) => { h.op = deckkraft(rangListe[i], rangListe) * einblenden(h.name, tt) })
+    liste.forEach((h, i) => { h.op = deckkraft(rangListe[i], rangListe) * einblenden(h.name, tt) * ausblenden(h.name, tt) })
     return liste
   }
+  // Einblenden zählt ab dem Beginn des aktuellen Abschnitts: nach dem ersten Wert und ebenso nach einer
+  // Lücke (zwei Jahre ohne Wiesn). Sonst stünde die Beschriftung nach der Lücke in einem Bild wieder da.
   function einblenden(n: string, tt: number) {
-    const i = ersterIndex.get(n) ?? 0
-    if (i <= 0) return 1
+    const vals = series.get(n)!
+    let i = Math.min(P - 1, Math.floor(tt))
+    if (vals[i] === null) return 1
+    while (i > 0 && vals[i - 1] !== null) i--
+    if (i <= 0 || i === ersterIndex.get(n) && i === 0) return 1
     const u = Math.max(0, Math.min(1, (tt - i) / 1))
     return u * u * (3 - 2 * u)
+  }
+  // Vor einer Lücke oder dem Ende der Reihe blendet der Kopf über die letzte Periode aus, statt zu verschwinden.
+  function ausblenden(n: string, tt: number) {
+    const vals = series.get(n)!
+    const i = Math.floor(tt)
+    if (i + 1 >= P || vals[i] === null || vals[i + 1] !== null) return 1
+    const u = Math.max(0, Math.min(1, tt - i))
+    return 1 - u * u * (3 - 2 * u)
   }
   // Stetige Deckkraft um die Top-N-Grenze: Die Grenze liegt zwischen dem N-ten und dem (N+1)-ten Wert,
   // das Übergangsband ist mindestens 4 % der Achse breit. Wer die Grenze kreuzt, blendet über das Band weich
@@ -254,6 +301,39 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
     return placed
   }
 
+  // Säulen: je Periode eine Gruppe, mehrere Reihen der linken Achse nebeneinander. Die Säule des Jahres i
+  // wächst zwischen i − 0,6 und i hoch (weich auslaufend) und steht voll, wenn die Linien bei i ankommen.
+  const saeulenNamen = names.filter(istSaeule)
+  const gruppenBreite = Math.abs(x(1) - x(0)) * 0.72
+  const saeulenBreite = gruppenBreite / Math.max(1, saeulenNamen.length)
+  const radius = Math.min(saeulenBreite * 0.18, input.labelSize * 0.2)
+  function zeichneSaeulen(t: number) {
+    const daten: { key: string; name: string; i: number; v: number; k: number }[] = []
+    for (let i = 0; i < P; i++) {
+      const u = Math.max(0, Math.min(1, (t - (i - 0.6)) / 0.6))
+      if (u <= 0) break
+      const wachsen = 1 - (1 - u) * (1 - u) * (1 - u)
+      saeulenNamen.forEach((n, k) => {
+        const v = series.get(n)![i]
+        if (v !== null) daten.push({ key: `${n}|${i}`, name: n, i, v: v * wachsen, k })
+      })
+    }
+    const y0 = y(Math.max(0, y.domain()[0]))
+    const bars = saeulenG.selectAll<SVGPathElement, typeof daten[number]>('path').data(daten, (d) => d.key)
+    bars.enter().append('path').merge(bars)
+      .attr('fill', (d) => input.colors[d.name])
+      .attr('d', (d) => {
+        const left = x(d.i) - gruppenBreite / 2 + d.k * saeulenBreite + saeulenBreite * 0.06
+        const w = saeulenBreite * 0.88
+        const top = y(d.v)
+        const h = Math.max(0, y0 - top)
+        const r = Math.min(radius, h / 2, w / 2)
+        // Oben abgerundet, unten gerade auf der Grundlinie
+        return `M${left},${y0} V${top + r} Q${left},${top} ${left + r},${top} H${left + w - r} Q${left + w},${top} ${left + w},${top + r} V${y0} Z`
+      })
+    bars.exit().remove()
+  }
+
   function renderAt(t: number) {
     t = Math.max(0, Math.min(P - 1, t))
     current = t
@@ -268,11 +348,13 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
     const opacityFor = (h: { name: string; v: number }) => deckkraft(h, heads)
     const headOf = (n: string) => heads.find((h) => h.name === n)
 
-    const paths = linesG.selectAll<SVGPathElement, string>('path').data(names, (d) => d)
+    if (saeulen) zeichneSaeulen(t)
+    const paths = linesG.selectAll<SVGPathElement, string>('path').data(names.filter((n) => !istSaeule(n)), (d) => d)
     paths.enter().append('path').attr('fill', 'none').attr('stroke-width', Math.max(2, input.labelSize * 0.14)).attr('stroke-linejoin', 'round').attr('stroke-linecap', 'round')
       .merge(paths)
       .attr('stroke', (n) => input.colors[n])
-      .attr('stroke-dasharray', (n) => (onRight(n) ? `${input.labelSize * 0.5} ${input.labelSize * 0.3}` : null))
+      // Gestrichelt nur, wo Linien beider Achsen nebeneinander stehen; bei Säulen + Linie ist die Linie die Linie.
+      .attr('stroke-dasharray', (n) => (onRight(n) && !saeulen ? `${input.labelSize * 0.5} ${input.labelSize * 0.3}` : null))
       // Reihen ohne aktuellen Wert (beendet) bleiben als Verlauf sichtbar, nur gedämpft
       .attr('opacity', (n) => {
         const h = headOf(n)
@@ -282,7 +364,9 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
         let letzter = -1
         for (let i = 0; i <= upto; i++) if (vals[i] !== null) letzter = i
         if (letzter < 0) return 0
-        return opacityFor({ name: n, v: vals[letzter]! }) * Math.max(0, 1 - (t - letzter))
+        // Eine Lücke mitten in der Reihe (etwa zwei Jahre ohne Wiesn) ist kein Ende: Der Verlauf bleibt stehen.
+        const geht_weiter = vals.slice(upto + 1).some((v) => v !== null)
+        return opacityFor({ name: n, v: vals[letzter]! }) * (geht_weiter ? 1 : Math.max(0, 1 - (t - letzter)))
       })
       .attr('d', (n) => {
         const vals = series.get(n)!
@@ -350,11 +434,11 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
     const merged = enter.merge(heads$)
     merged.attr('opacity', 1)
     const x0 = xHead + input.labelSize * 0.5
-    merged.select<SVGCircleElement>('circle.dot').attr('opacity', (d) => d.op).attr('cx', xHead).attr('cy', (d) => d.y).attr('r', Math.max(3, input.labelSize * 0.22)).attr('fill', (d) => input.colors[d.name])
+    merged.select<SVGCircleElement>('circle.dot').attr('opacity', (d) => (istSaeule(d.name) ? 0 : d.op)).attr('cx', xHead).attr('cy', (d) => d.y).attr('r', Math.max(3, input.labelSize * 0.22)).attr('fill', (d) => input.colors[d.name])
     // Verbindungslinie nur, wenn das Label verschoben werden musste
     merged.select<SVGPathElement>('path.leader')
       .attr('stroke', (d) => input.colors[d.name]).attr('opacity', (d) => 0.6 * d.lop)
-      .attr('d', (d) => (Math.abs(d.ty - d.y) > 1 ? `M${xHead},${d.y} L${x0 - input.labelSize * 0.15},${d.ty}` : null))
+      .attr('d', (d) => (Math.abs(d.ty - d.y) > 1 && !istSaeule(d.name) ? `M${xHead},${d.y} L${x0 - input.labelSize * 0.15},${d.ty}` : null))
     merged.select<SVGCircleElement>('circle.img')
       .attr('display', (d) => (hasImg(d.name) ? null : 'none'))
       .attr('opacity', (d) => d.lop).attr('cx', x0 + imgSize / 2).attr('cy', (d) => d.ty)
@@ -363,11 +447,11 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
     const baseline = (d: typeof placed[number]) => d.ty + input.labelSize * 0.35
     // Namen auf den verbleibenden Platz kürzen, damit nichts über die zweite Achse hinausläuft
     const shownName = (d: typeof placed[number]) => {
-      const budget = headSpace - (textX(d) - x0) - input.labelSize * 0.4 - gapText - measure(formatValue(d.v, fmtFor(d.name)), valueFont)
+      const budget = headSpace - (textX(d) - x0) - input.labelSize * 0.4 - gapText - measure(wertText(d.name, d.v), valueFont)
       return fitText(d.name, budget, labelFont)
     }
     merged.select<SVGTextElement>('text.name').attr('opacity', (d) => d.lop).attr('x', textX).attr('y', baseline).attr('fill', textColor).text(shownName)
-    merged.select<SVGTextElement>('text.value').attr('opacity', (d) => d.lop).attr('x', (d) => textX(d) + measure(shownName(d), labelFont) + gapText).attr('y', baseline).attr('fill', axisColor).text((d) => formatValue(d.v, fmtFor(d.name)))
+    merged.select<SVGTextElement>('text.value').attr('opacity', (d) => d.lop).attr('x', (d) => textX(d) + measure(shownName(d), labelFont) + gapText).attr('y', baseline).attr('fill', axisColor).text((d) => wertText(d.name, d.v))
     heads$.exit().remove()
   }
 

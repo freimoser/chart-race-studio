@@ -40,6 +40,16 @@
     "bereit": true
   },
   {
+    "slug": "saeulen-linie",
+    "pfad": "datenformat/saeulen-linie.html",
+    "titel": "Säulen + Linie: Menge und Preis in einem Diagramm",
+    "menue": "Säulen + Linie",
+    "beschreibung": "Welche Tabelle ein animiertes Säulen-Linien-Diagramm braucht: Säulen für die linke Achse, Linien für die rechte, Veränderung in Prozent und echte Lücken.",
+    "frage": "Wie muss eine Tabelle für ein animiertes Diagramm mit Säulen und Linie aussehen?",
+    "stand": "2026-10-04",
+    "bereit": true
+  },
+  {
     "slug": "einstellungen",
     "pfad": "datenformat/einstellungen.html",
     "titel": "Einstellungen im Studio: was jede Option bewirkt",

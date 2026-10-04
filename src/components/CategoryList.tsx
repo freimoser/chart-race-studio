@@ -18,7 +18,7 @@ export function CategoryList() {
   const dataset = useApp((s) => s.dataset)
   const settings = useApp((s) => s.settings)
   const { setCategoryStyle, resetCategoryStyles, toggleSecondaryAxis } = useApp()
-  const isLine = settings.chartType === 'line'
+  const isLine = settings.chartType === 'line' || settings.chartType === 'combo'
   const [flagFor, setFlagFor] = useState<string | null>(null)
   const fileRef = useRef<HTMLInputElement>(null)
   const pendingName = useRef<string | null>(null)

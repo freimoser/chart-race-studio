@@ -60,7 +60,8 @@ function lesen(datei) {
     if (k) kopf[k[1]] = k[2].trim()
   }
   // Anleitungen gehören zu keinem Post: Sie erklären das Werkzeug und sind jederzeit gültig.
-  const anleitung = kopf.art === 'anleitung'
+  // Exkurse (etwa das Oktoberfest als Beispiel für ein neues Diagramm) gehören ebenfalls zu keinem Post.
+  const anleitung = kopf.art === 'anleitung' || kopf.art === 'exkurs'
   for (const pflicht of [...(anleitung ? [] : ['post']), 'slug', 'titel', 'beschreibung', 'frage', 'stand', 'bereit']) {
     if (!kopf[pflicht]) throw new Error(`${datei}: Feld „${pflicht}“ fehlt`)
   }
@@ -164,7 +165,7 @@ function einruecken(html, tiefe = '        ') {
 // `grafik: keine` lässt sie weg.
 // Live zeigt die Grafik nur freigegebene Datensätze (src/content/freigabe.ts). Eine Seite, die immer
 // online ist, darf deshalb nur auf einen solchen zeigen – sonst stünde dort „noch nicht freigegeben“.
-const freigegeben = (id) => POSTS.some((p) => p.sampleId === id && (FREIGABEFAEHIG.has(p.status) || p.vorabOnline))
+const freigegeben = (id) => (FREIGABE.datensaetzeOhnePost ?? []).includes(id) || POSTS.some((p) => p.sampleId === id && (FREIGABEFAEHIG.has(p.status) || p.vorabOnline))
 function grafikVon(kopfwert, sampleId, { mussFrei = false } = {}) {
   if (kopfwert === 'keine') return null
   const [id, art] = (kopfwert || sampleId || '').split(/\s+/)
@@ -212,7 +213,9 @@ function seite(a, { entwurf, alle }) {
 
   const basis = BASIS
   const ogBild = fs.existsSync(path.join('public', ZIEL, 'og', `${a.slug}.png`)) && basis ? `${basis}/${ZIEL}/og/${a.slug}.png` : ''
-  const ds = post.sampleId ? DATENSAETZE[post.sampleId] : undefined
+  // Datensatz des Posts; bei Beiträgen ohne Post (Anleitung, Exkurs) der der Grafik.
+  const dsId = post.sampleId ?? grafikVon(a.grafik)?.id
+  const ds = dsId ? DATENSAETZE[dsId] : undefined
   const csv = ds?.daten && !entwurf ? `${tiefe}daten/${ds.id}.csv` : ''
   const jsonld = [{
     '@context': 'https://schema.org', '@type': 'Article',
@@ -233,7 +236,7 @@ function seite(a, { entwurf, alle }) {
       name: ds.titel, description: `${ds.untertitel ?? ds.titel}. ${a.beschreibung}`,
       creator: { '@type': 'Person', name: L.operator },
       ...(jahre.length ? { temporalCoverage: `${jahre[0]}/${jahre.at(-1)}` } : {}),
-      spatialCoverage: post.sampleId === 'hund-katze-welt' ? 'Welt' : 'Deutschland',
+      spatialCoverage: ds.id === 'hund-katze-welt' ? 'Welt' : ds.id === 'oktoberfest' ? 'München' : 'Deutschland',
       variableMeasured: ds.daten.headers.slice(1),
       ...(ds.quelleUrl ? { isBasedOn: ds.quelleUrl } : {}),
       ...(ds.quelle ? { citation: ds.quelle } : {}),
@@ -288,7 +291,7 @@ ${entwurf ? `    <p class="entwurf">Entwurf · ${a.bereit ? 'bereit zur Freigabe
 
     <main class="wrap">
       <article>
-        <p class="meta">${a.anleitung ? 'Anleitung' : `Visite ${visiteVon(post.nr)} · Post ${post.nr}: ${esc(post.title)}`}</p>
+        <p class="meta">${a.art === 'exkurs' ? 'Exkurs · Neu im Studio' : a.anleitung ? 'Anleitung' : `Visite ${visiteVon(post.nr)} · Post ${post.nr}: ${esc(post.title)}`}</p>
         <h1>${esc(a.titel)}</h1>
         ${lead}
         <p class="meta">Stand ${datumDe(a.stand)} · von ${esc(L.operator)}${post.publishedOn ? ` · auf LinkedIn seit ${datumDe(post.publishedOn)}` : ''}</p>
@@ -311,7 +314,7 @@ ${csv ? `          <p><a href="${csv}" download>Daten als CSV herunterladen</a> 
 function uebersicht(live) {
   const nachKapitel = [
     ...ARCS.map((arc) => ({ arc, liste: live.filter((a) => POSTS.find((p) => p.nr === a.post)?.arc === arc.id) })),
-    { arc: { label: 'Anleitungen' }, liste: live.filter((a) => a.anleitung) },
+    { arc: { label: 'Anleitungen und Exkurse' }, liste: live.filter((a) => a.anleitung) },
   ].filter((k) => k.liste.length)
   const jsonld = {
     '@context': 'https://schema.org', '@type': 'CollectionPage',
@@ -363,11 +366,11 @@ ${k.liste.map((a) => `        <li><a href="${a.slug}.html">${esc(a.frage)}</a><b
 // /#redaktionsplan) leitet ein kleines Skript im Kopf nach /studio/ weiter; GitHub Pages kann keine
 // Weiterleitung auf dem Server.
 function startseite(live) {
-  const artikel = live.filter((a) => !a.anleitung).sort((x, y) => (y.veroeffentlicht ?? '').localeCompare(x.veroeffentlicht ?? '') || (y.post ?? 0) - (x.post ?? 0))
+  const artikel = live.filter((a) => !a.anleitung || a.art === 'exkurs').sort((x, y) => (y.veroeffentlicht ?? '').localeCompare(x.veroeffentlicht ?? '') || (y.post ?? 0) - (x.post ?? 0))
   const neu = artikel.find((a) => grafikVon(a.grafik, POSTS.find((p) => p.nr === a.post)?.sampleId))
   const gNeu = neu && grafikVon(neu.grafik, POSTS.find((p) => p.nr === neu.post)?.sampleId)
   const csvNeu = gNeu && DATENSAETZE[gNeu.id]?.daten ? `daten/${gNeu.id}.csv` : ''
-  const anleitungen = live.filter((a) => a.anleitung)
+  const anleitungen = live.filter((a) => a.anleitung && a.art !== 'exkurs')
   return `<!doctype html>
 <html lang="de" data-brand="klar">
   <head>
@@ -444,7 +447,7 @@ fs.writeFileSync('index.html', startseite(live))
 
 // CSV je Datensatz eines Live-Artikels. Nur freigegebene – dieselbe Regel wie für die Seiten.
 fs.rmSync(DATEN_ZIEL, { recursive: true, force: true })
-const csvIds = [...new Set(live.map((a) => POSTS.find((p) => p.nr === a.post)?.sampleId).filter((id) => id && DATENSAETZE[id]?.daten))]
+const csvIds = [...new Set(live.map((a) => POSTS.find((p) => p.nr === a.post)?.sampleId ?? grafikVon(a.grafik)?.id).filter((id) => id && DATENSAETZE[id]?.daten))]
 if (csvIds.length) fs.mkdirSync(DATEN_ZIEL, { recursive: true })
 const zelle = (v) => v == null ? '' : /[",;\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v)
 for (const id of csvIds) {
@@ -463,7 +466,7 @@ if (mitEntwuerfen) {
 
 // Übersicht für Oberfläche, Sitemap und llms.txt. Deterministisch sortiert, damit sie nur bei
 // echten Änderungen im Diff auftaucht.
-const index = artikel.map((a) => ({ post: a.post, ...(a.anleitung ? { art: 'anleitung' } : {}), slug: a.slug, titel: a.titel, beschreibung: a.beschreibung, frage: a.frage, stand: a.stand, bereit: a.bereit, live: a.live }))
+const index = artikel.map((a) => ({ post: a.post, ...(a.anleitung ? { art: a.art } : {}), slug: a.slug, titel: a.titel, beschreibung: a.beschreibung, frage: a.frage, stand: a.stand, bereit: a.bereit, live: a.live }))
 fs.writeFileSync('src/content/artikel-index.json', JSON.stringify(index, null, 2) + '\n')
 
 console.log(`Artikel: ${artikel.length} Entwürfe, ${artikel.filter((a) => a.bereit).length} bereit, ${live.length} online${FREIGABE.artikelLive ? '' : ' (Freigabe aus)'}${mitEntwuerfen ? `, Vorschau unter /${ENTWURF}/` : ''}`)

@@ -31,6 +31,8 @@ export function beispielLaden(sample: SampleDataset, basis: ChartSettings): { ta
       prefix: '',
       compact: false,
       chartType: sug.chartType ?? basis.chartType,
+      showChange: sug.showChange ?? false,
+      gapFill: sug.gapFill ?? DEFAULT_SETTINGS.gapFill,
       labelsPosition: sug.labelsPosition ?? basis.labelsPosition,
       showImages: false,
       secondaryAxis: sug.secondaryAxis ?? [],

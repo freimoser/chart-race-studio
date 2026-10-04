@@ -4,6 +4,15 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Neues Format „Säulen + Linie“, Exkurs Oktoberfest (04.10.2026)
+
+- **Neue Diagrammart Säulen + Linie** (`combo`): Reihen der linken Achse als Säulen, Reihen mit Y2 als Linien. Umgesetzt als Modus des Linienrenderers, damit feste Achsen, mitlaufende Summen, Glätte und der Bild-für-Bild-Export gleich bleiben. Jede Säule wächst hoch, bis die Linien ihr Jahr erreichen. Im Studio unter Format & Diagrammtyp, in der Grafik der Artikel und im Export.
+- **Veränderung seit Beginn in Prozent** hinter jedem Wert (Line Race und Säulen + Linie), etwa „15,33 € (+379 %)“. Ohne Veränderung steht nichts dahinter.
+- **Lücken mitten in einer Reihe** (zwei Jahre ohne Wiesn): Die Linie bleibt stehen statt zu verschwinden, Beschriftungen blenden vor der Lücke aus und danach wieder ein. `check:glaette` prüft das, 0 Sprünge.
+- Achsenbeschriftung ohne Nachkommastellen, wenn alle Achsenwerte ganze Zahlen sind („15 €“ statt „15,00 €“).
+- **Neuer Datensatz** `oktoberfest` (Statistisches Amt München, 1985–2025, plus Verbraucherpreisindex von Destatis), Rubrik „Exkurs“, freigegeben über `datensaetzeOhnePost`.
+- **Artikel** „Oktoberfest in Zahlen: Maßpreis, Bier und Inflation“ als neue Art `exkurs` (ohne Post, auf der Startseite als „Neu“), Datenformat-Seite „Säulen + Linie“, Eintrag in der Datenherkunft, Vorschaubild, LinkedIn-Text in `docs/linkedin/post-exkurs-oktoberfest.md`.
+
 ### Mobil zuerst: Startseite, Grafik in jedem Artikel, Studio unter /studio/ (03.10.2026)
 
 - **Startseite ist das Magazin:** `/` zeigt den neuesten Artikel mit laufender Grafik, alle Artikel und das Studio als Angebot zum Selbermachen. Erzeugt von `scripts/build-artikel.mjs`, statisch und ohne JavaScript lesbar.

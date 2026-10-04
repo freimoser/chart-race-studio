@@ -308,5 +308,15 @@
     "stand": "2026-09-24",
     "bereit": true,
     "live": true
+  },
+  {
+    "art": "exkurs",
+    "slug": "oktoberfest-masspreis-inflation",
+    "titel": "Oktoberfest in Zahlen: Maßpreis, Bier und Inflation",
+    "beschreibung": "Die Maß kostet 15,33 Euro, fast fünfmal so viel wie 1985. Mit der Inflation allein wären es 6,99 Euro. Getrunken wird trotzdem mehr. Daten seit 1985.",
+    "frage": "Wie stark ist der Bierpreis auf dem Oktoberfest gestiegen?",
+    "stand": "2026-10-04",
+    "bereit": true,
+    "live": true
   }
 ]

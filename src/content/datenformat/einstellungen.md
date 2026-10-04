@@ -5,7 +5,7 @@ menue: Einstellungen
 beschreibung: Format, Videolänge, Texte, Achsen, Datenlücken, Farben, Zahlenformat und Wasserzeichen: alle Optionen des Studios mit ihren Voreinstellungen erklärt.
 frage: Welche Einstellungen hat das Studio, und was bewirken sie?
 stand: 2026-10-02
-reihenfolge: 5
+reihenfolge: 6
 bereit: ja
 ---
 Das Studio hat drei Bereiche: **Daten** zum Laden und Prüfen der Tabelle, **Gestaltung** für alles, was im Video zu sehen ist, und **Export** für die Datei. Die Voreinstellungen ergeben ein Video von 46 Sekunden: 1 Sekunde Standbild, 30 Sekunden Animation und 15 Sekunden Standbild am Ende. Alle Einstellungen bleiben im lokalen Speicher deines Browsers, die Tabelle nicht.
@@ -28,7 +28,7 @@ Das Studio hat drei Bereiche: **Daten** zum Laden und Prüfen der Tabelle, **Ges
 | 4:5 | 1080 × 1350 | LinkedIn- und Instagram-Feed, die meiste Fläche im Feed |
 | 9:16 | 1080 × 1920 | TikTok, Reels, Stories |
 
-Dazu der **Diagrammtyp**: [Bar Race](bar-race.html), [Line Race](line-race.html) oder [Karte](karte.html), und das Farbschema hell oder dunkel. Ein Formatwechsel setzt die Zahl der sichtbaren Balken auf die Voreinstellung des Formats.
+Dazu der **Diagrammtyp**: [Bar Race](bar-race.html), [Line Race](line-race.html), [Karte](karte.html) oder [Säulen + Linie](saeulen-linie.html), und das Farbschema hell oder dunkel. Ein Formatwechsel setzt die Zahl der sichtbaren Balken auf die Voreinstellung des Formats.
 
 ## Zeit und Ablauf
 

@@ -1,5 +1,6 @@
 {
   "beispieleErstNachVeroeffentlichung": true,
   "artikelLive": true,
-  "vorschauPosts": 4
+  "vorschauPosts": 4,
+  "datensaetzeOhnePost": ["oktoberfest"]
 }
