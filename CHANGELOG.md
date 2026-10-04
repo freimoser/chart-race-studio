@@ -6,6 +6,8 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ### Neues Format „Säulen + Linie“, Exkurs Oktoberfest (04.10.2026)
 
+- **Nachtrag am Abend:** Wiesn 2026 vorläufig ergänzt (Bilanz der Stadt: 7,4 Mio. Besucher, Rekord; Bier und Maßpreis aus den gemeldeten Steigerungen fortgeschrieben, Inflation aus den Monatsraten). Besucher stehen jetzt als zweite Säule neben dem Bier statt als Zahl oben links. Artikel um „Mehr Gäste, weniger Bier pro Kopf“ erweitert (0,93 Liter je Besucher, niedrigster Wert seit 2001).
+
 - **Neue Diagrammart Säulen + Linie** (`combo`): Reihen der linken Achse als Säulen, Reihen mit Y2 als Linien. Umgesetzt als Modus des Linienrenderers, damit feste Achsen, mitlaufende Summen, Glätte und der Bild-für-Bild-Export gleich bleiben. Jede Säule wächst hoch, bis die Linien ihr Jahr erreichen. Im Studio unter Format & Diagrammtyp, in der Grafik der Artikel und im Export.
 - **Veränderung seit Beginn in Prozent** hinter jedem Wert (Line Race und Säulen + Linie), etwa „15,33 € (+379 %)“. Ohne Veränderung steht nichts dahinter.
 - **Lücken mitten in einer Reihe** (zwei Jahre ohne Wiesn): Die Linie bleibt stehen statt zu verschwinden, Beschriftungen blenden vor der Lücke aus und danach wieder ein. `check:glaette` prüft das, 0 Sprünge.

@@ -460,6 +460,31 @@
   "jahr_2025_aus_rate": {
    "rate_prozent": 2.2,
    "index": 121.9
+  },
+  "jahr_2026_aus_monatsraten": {
+   "raten_jan_bis_sep_prozent": [
+    2.1,
+    1.9,
+    2.7,
+    2.9,
+    2.6,
+    2.3,
+    2.8,
+    2.9,
+    3.3
+   ],
+   "mittel_prozent": 2.61,
+   "index": 125.1,
+   "quelle": "Destatis, Pressemitteilungen zu den Monaten Januar bis September 2026 (September vorläufig); Mittel der Vorjahresraten als Näherung für den Jahresdurchschnitt"
   }
+ },
+ "vorlaeufig_2026": {
+  "jahr": 2026,
+  "dauer_tage": 16,
+  "besucher_mio": 7.4,
+  "bier_hl": 68939,
+  "masspreis_eur": 15.69,
+  "quelle": "Stadt München, vorläufige Schlussbilanz vom 04.10.2026 (https://www.muenchen.de/veranstaltungen/oktoberfest/aktuell/oktoberfest-bilanz-2026) und Bierpreise 2026 (https://www.muenchen.de/veranstaltungen/oktoberfest/wiesn-zahlen-rekorde)",
+  "methode": "Besucher: erste Schätzung der Festleitung, 7,4 Mio. Bier: Der Verein Münchner Brauereien meldet +2,7 % Festbier (6,7 Mio. Maß nach 6,5 Mio.). Die amtliche Reihe zählt anders (2025: 67.127 hl = 6,71 Mio. Liter, die Wirte meldeten 6,5 Mio. Maß); deshalb ist 2026 der amtliche Wert 2025 mal 1,027. Maßpreis: Die Stadt nennt für 2026 eine durchschnittliche Steigerung von 2,38 %; 2026 = amtlicher Wert 2025 mal 1,0238. Alle drei Werte vorläufig, bis das Statistische Amt die Reihe fortschreibt."
  }
 }

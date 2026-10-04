@@ -323,23 +323,24 @@ const w12 = {
 }
 
 const lit = (v) => (v == null ? 'null' : typeof v === 'number' ? String(v) : JSON.stringify(v))
-// 13 Oktoberfest 1985–2025 (Exkurs, Beispiel für „Säulen + Linie“): Bier als Säulen, auf der rechten Achse
-// der Maßpreis und der Preis, den die Maß hätte, wenn sie seit 1985 nur mit den Verbraucherpreisen
-// gestiegen wäre. Besucher laufen als Zahl mit. 2020 und 2021 bleiben leer – keine Wiesn, kein Bier,
-// kein Maßpreis; nur die Inflation läuft weiter.
+// 13 Oktoberfest 1985–2026 (Exkurs, Beispiel für „Säulen + Linie“): Bier und Besucher als Säulen nebeneinander,
+// auf der rechten Achse der Maßpreis und der Preis, den die Maß hätte, wenn sie seit 1985 nur mit den
+// Verbraucherpreisen gestiegen wäre. 2020 und 2021 bleiben leer – keine Wiesn, kein Bier, kein Maßpreis;
+// nur die Inflation läuft weiter. 2026 ist vorläufig (Bilanz der Stadt vom 04.10.2026, siehe Rohdaten).
 const vpi = (j) => {
   const v = d15.vpi
+  if (j === 2026) return v.jahr_2026_aus_monatsraten.index
   if (j >= 1991) return v.deutschland_2020_100[j] ?? (j === 2025 ? v.jahr_2025_aus_rate.index : null)
   const w = v.frueheres_bundesgebiet_1995_100[j]
   return w == null ? null : w * v.deutschland_2020_100[1991] / v.frueheres_bundesgebiet_1995_100[1991]
 }
-const wiesn = new Map(d15.oktoberfest.map((r) => [r.jahr, r]))
+const wiesn = new Map([...d15.oktoberfest, d15.vorlaeufig_2026].map((r) => [r.jahr, r]))
 const mass85 = wiesn.get(1985).masspreis_eur, vpi85 = vpi(1985)
 const w13 = {
-  headers: ['Jahr', 'Bier (Mio. Liter)', 'Maß', 'Maß mit Inflation', 'Gesamt: Besucher (Mio.)'],
-  rows: Array.from({ length: 2025 - 1985 + 1 }, (_, k) => 1985 + k).map((j) => {
+  headers: ['Jahr', 'Bier (Mio. Liter)', 'Besucher (Mio.)', 'Maß', 'Maß mit Inflation'],
+  rows: Array.from({ length: 2026 - 1985 + 1 }, (_, k) => 1985 + k).map((j) => {
     const r = wiesn.get(j)
-    return [String(j), r ? Math.round(r.bier_hl / 100) / 100 : null, r ? r.masspreis_eur : null, Math.round(mass85 * vpi(j) / vpi85 * 100) / 100, r ? r.besucher_mio : null]
+    return [String(j), r ? Math.round(r.bier_hl / 100) / 100 : null, r ? r.besucher_mio : null, r ? r.masspreis_eur : null, Math.round(mass85 * vpi(j) / vpi85 * 100) / 100]
   }),
 }
 

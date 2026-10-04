@@ -22,15 +22,15 @@ Säulen + Linie braucht **dieselbe Tabelle wie ein Line Race: eine Zeile je Zeit
 ## Beispiel
 
 ```csv
-Jahr,Bier (Mio. Liter),Maß,Maß mit Inflation,Gesamt: Besucher (Mio.)
-2018,7.87,11.3,5.63,6.3
-2019,7.85,11.71,5.71,6.3
-2020,,,5.74,
-2021,,,5.91,
-2022,7.13,13.45,6.32,5.7
+Jahr,Bier (Mio. Liter),Besucher (Mio.),Maß,Maß mit Inflation
+2018,7.87,6.3,11.3,5.63
+2019,7.85,6.3,11.71,5.71
+2020,,,,5.74
+2021,,,,5.91
+2022,7.13,5.7,13.45,6.32
 ```
 
-Ausschnitt aus dem Datensatz zum Oktoberfest: Bier als Säulen, Maßpreis und der mit der Inflation fortgeschriebene Preis von 1985 als Linien, Besucher als mitlaufende Zahl. 2020 und 2021 fiel die Wiesn aus; diese Zeilen haben nur den Inflationswert. Mehr dazu im Artikel [Oktoberfest in Zahlen](../beitrag/oktoberfest-masspreis-inflation.html).
+Ausschnitt aus dem Datensatz zum Oktoberfest: Bier und Besucher als zwei Säulen nebeneinander, beide in Millionen auf der linken Achse; Maßpreis und der mit der Inflation fortgeschriebene Preis von 1985 als Linien rechts. 2020 und 2021 fiel die Wiesn aus; diese Zeilen haben nur den Inflationswert. Mehr dazu im Artikel [Oktoberfest in Zahlen](../beitrag/oktoberfest-masspreis-inflation.html).
 
 ## Wann Säulen + Linie passt
 
