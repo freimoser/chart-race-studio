@@ -51,4 +51,4 @@ Länge: 500 bis 900 Wörter. Länger nur, wenn die Zahlen es tragen.
 - Keine Werbung, keine Firmennennung als Absender. Die Seite wird privat betrieben.
 - Unterstützt: Absätze, `##`, `###`, `- ` Listen, `1. ` Listen, Tabellen mit Kopfzeile (`---:` = rechtsbündig), `> ` Zitate, `**fett**`, `*kursiv*`, `[Link](url)`.
 - **Grafiken:** Unter dem ersten Absatz läuft automatisch der Datensatz des Posts (anders: `grafik: <Datensatz> [bar|line|map|combo]` im Kopf, keine: `grafik: keine`). Eine weitere Grafik mitten im Text: eine eigene Zeile `::grafik <Datensatz> [Diagrammart]`. Der Datensatz muss live freigegeben sein, sonst bricht der Build ab.
-- Artenkopf `art: anleitung` oder `art: exkurs` für Beiträge ohne Post. Ein Exkurs erscheint auf der Startseite als „Neu“.
+- Artenkopf `art: anleitung` oder `art: exkurs` für Beiträge ohne Post. Ein Exkurs erscheint auf der Startseite als „Neu“. Ist er auf LinkedIn erschienen: `linkedin_datum: JJJJ-MM-TT` und `linkedin: <URL>`.

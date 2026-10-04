@@ -7,6 +7,7 @@ frage: Wie stark ist der Bierpreis auf dem Oktoberfest gestiegen?
 suchbegriffe: maßpreis oktoberfest entwicklung, bierpreis wiesn seit 1985, oktoberfest statistik, maß bier preis inflation, oktoberfest bierkonsum
 stand: 2026-10-04
 grafik: oktoberfest
+linkedin_datum: 2026-10-04
 bereit: ja
 ---
 Eine Maß auf dem Oktoberfest kostete 2025 im Schnitt **15,33 Euro, fast fünfmal so viel wie 1985** mit 3,20 Euro, 2026 nach vorläufigen Zahlen rund 15,69 Euro. Wäre sie nur mit den Verbraucherpreisen gestiegen, läge sie heute bei **gut 7 Euro**. Getrunken wird trotzdem mehr als 1985, und die Wiesn 2026 hatte mit **7,4 Millionen Gästen** so viele wie nie. Pro Kopf floss dabei aber so wenig Bier wie seit 2001 nicht mehr. Das zeigen die Zahlen des Statistischen Amts München für 39 Wiesn seit 1985 und die Bilanz der Stadt von heute.

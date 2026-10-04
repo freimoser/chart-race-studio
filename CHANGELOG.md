@@ -6,6 +6,7 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ### Neues Format „Säulen + Linie“, Exkurs Oktoberfest (04.10.2026)
 
+- **Auf LinkedIn gepostet** am 04.10.2026: Der Artikel zeigt „auf LinkedIn seit“. Neu: `linkedin_datum` und `linkedin` im Kopf von Beiträgen ohne Post. Kommentarbild der reduzierten Fassung in `docs/linkedin/`.
 - **Zweite Grafik im Artikel:** reduzierte Fassung `oktoberfest-preis` ohne Bier (Besucher als Säulen, Maßpreis und Inflation als Linien). Neu im Artikel-Generator: `::grafik <Datensatz> [Diagrammart]` als eigene Zeile bettet eine weitere Grafik mitten im Text ein, samt CSV.
 - **Nachtrag am Abend:** Wiesn 2026 vorläufig ergänzt (Bilanz der Stadt: 7,4 Mio. Besucher, Rekord; Bier und Maßpreis aus den gemeldeten Steigerungen fortgeschrieben, Inflation aus den Monatsraten). Besucher stehen jetzt als zweite Säule neben dem Bier statt als Zahl oben links. Artikel um „Mehr Gäste, weniger Bier pro Kopf“ erweitert (0,93 Liter je Besucher, niedrigster Wert seit 2001).
 

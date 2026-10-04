@@ -189,7 +189,9 @@ function grafikFigur(g, { tiefe, csv, hinweis }) {
 
 // ---------- Seite ----------
 function seite(a, { entwurf, alle }) {
-  const post = a.anleitung ? { nr: 0, title: a.titel, refs: [] } : POSTS.find((p) => p.nr === a.post)
+  // Beiträge ohne Post (Anleitung, Exkurs) können im Kopf `linkedin_datum` und `linkedin` tragen, wenn sie
+  // auf LinkedIn erschienen sind; dann zeigen sie Datum und Link wie ein Post aus dem Redaktionsplan.
+  const post = a.anleitung ? { nr: 0, title: a.titel, refs: [], publishedOn: a.linkedin_datum, linkedInUrl: a.linkedin } : POSTS.find((p) => p.nr === a.post)
   if (!post) throw new Error(`${a.datei}: Post ${a.post} steht nicht im Redaktionsplan`)
   const tiefe = entwurf ? '../../' : '../'
   const { html, faq } = markdown(a.text)
@@ -439,7 +441,7 @@ for (const a of artikel) {
   const post = POSTS.find((p) => p.nr === a.post)
   a.live = Boolean(FREIGABE.artikelLive && (a.anleitung || FREIGABEFAEHIG.has(post?.status) || post?.vorabOnline) && a.bereit)
   // Veröffentlichungsdatum des Artikels: das LinkedIn-Datum, sonst der Stand beim Freischalten.
-  a.veroeffentlicht = post?.publishedOn ?? (a.live ? a.stand : undefined)
+  a.veroeffentlicht = post?.publishedOn ?? a.linkedin_datum ?? (a.live ? a.stand : undefined)
 }
 
 fs.rmSync(ZIEL, { recursive: true, force: true })

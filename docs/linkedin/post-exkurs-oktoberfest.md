@@ -1,5 +1,9 @@
 # LinkedIn-Post: Exkurs Oktoberfest (04.10.2026, letzter Wiesn-Tag)
 
+**Gepostet am 04.10.2026** mit Video 1 (Bier und Besucher), Text wie unten mit kleinen Änderungen beim Posten:
+„Heute endet die Wiesn (das Oktoberfest in München)“, „=> Wäre sie nur …“. Link zum Post: noch eintragen
+(`linkedin:` im Kopf von `src/content/artikel/exkurs-oktoberfest-masspreis.md`).
+
 **Video:** lokal im Studio `http://localhost:5173/studio/?beispiel=oktoberfest`, Format 4:5, Voreinstellungen
 (30 s Animation, 15 s Standbild am Ende), MP4 exportieren.
 
@@ -38,3 +42,16 @@ Quelle: Statistisches Amt München (Open Data), 2026 vorläufig nach der Bilanz 
 Prost, und ab morgen wieder Tiermedizin.
 
 #Oktoberfest #Wiesn #Datenvisualisierung #Inflation
+
+---
+
+## Erster Kommentar (mit Bild `kommentar-oktoberfest-ohne-bier.png`)
+
+Für alle, die es ohne Bier mögen 😄 hier die reduzierte Fassung: nur Besucher und Preise.
+
+Die Besucher schwanken seit 40 Jahren zwischen 5,5 und 7,4 Millionen. Die Maß hat sich davon längst gelöst: plus 390 Prozent, die Verbraucherpreise plus 124 Prozent.
+
+Beide Grafiken laufen animiert im Artikel, die Daten gibt es als CSV:
+https://tiermedizin-in-zahlen.org/beitrag/oktoberfest-masspreis-inflation.html
+
+Und ehrlich: Ab welchem Maßpreis bleibt ihr zu Hause? 🍺
