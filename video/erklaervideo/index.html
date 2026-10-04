@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Manrope"; src: url("assets/fonts/manrope.woff2") format("woff2"); font-weight: 200 800; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/inter.woff2") format("woff2"); font-weight: 100 900; }
+      :root {
+        --petrol: #0f4c5c; --petrol2: #2a8a92; --teal: #7fb7be; --orange: #e36414; --sand: #f2a65a;
+        --orangeText: #c2500e; --cream: #f7f1e6; --paper: #fffaf2; --ink: #1d2a30; --muted: #4c5a60; --skin: #f3c9a8;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: var(--cream); }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: var(--cream); color: var(--ink); font-family: "Inter", sans-serif; }
+
+      /* Hintergrund: Punktraster, weiche Farbflächen, treibende Pfoten und Plus-Zeichen */
+      #bg { position: absolute; inset: 0; }
+      #bg .raster { position: absolute; inset: -40px; background-image: radial-gradient(rgba(15, 76, 92, 0.16) 2.4px, transparent 2.6px); background-size: 52px 52px; }
+      #bg .fleck { position: absolute; border-radius: 50%; }
+      #bg .deko { position: absolute; }
+
+      .scene { position: absolute; inset: 0; opacity: 0; }
+      #s1 { opacity: 1; }
+      .abs { position: absolute; }
+      .figur { position: absolute; overflow: visible; }
+
+      .cap { position: absolute; left: 120px; top: 84px; margin: 0; font-family: "Manrope", sans-serif; font-weight: 800; font-size: 84px; line-height: 1.14; letter-spacing: -0.025em; color: var(--ink); }
+      .cap .akz { color: var(--orangeText); }
+      .sub { position: absolute; left: 124px; margin: 0; font-family: "Inter", sans-serif; font-weight: 500; font-size: 36px; line-height: 1.35; color: var(--muted); }
+      .wort { display: inline-block; }
+
+      /* Szene 1 */
+      #logo { left: 330px; top: 300px; width: 270px; height: 270px; border-radius: 68px; background: var(--petrol); box-shadow: 0 26px 0 rgba(15, 76, 92, 0.18); }
+      #logo .bar { position: absolute; left: 58px; height: 31px; border-radius: 16px; transform-origin: left center; }
+      #wm { left: 660px; top: 286px; margin: 0; font-family: "Manrope", sans-serif; font-weight: 800; font-size: 138px; line-height: 1.08; letter-spacing: -0.035em; color: var(--ink); }
+      #wm .wort { display: block; }
+      #wm .z2 { color: var(--orangeText); }
+      #s1 .sub { left: 668px; top: 590px; font-size: 40px; }
+      .blase { position: absolute; padding: 18px 30px; border-radius: 40px; background: var(--paper); border: 5px solid var(--ink); font-family: "Manrope", sans-serif; font-weight: 800; font-size: 44px; color: var(--ink); }
+      .blase::after { content: ""; position: absolute; left: 34px; bottom: -26px; width: 30px; height: 30px; background: var(--paper); border-right: 5px solid var(--ink); border-bottom: 5px solid var(--ink); transform: rotate(45deg) skew(10deg, 10deg); }
+
+      /* Szene 2: Schlagzeilen */
+      .karte { position: absolute; width: 470px; padding: 26px 30px 24px; border-radius: 26px; background: var(--paper); border: 5px solid var(--ink); box-shadow: 10px 12px 0 rgba(29, 42, 48, 0.14); }
+      .karte .ressort { display: block; font-family: "Inter", sans-serif; font-weight: 700; font-size: 22px; letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.2; color: var(--orangeText); }
+      .karte .zeile { display: block; margin-top: 16px; font-family: "Manrope", sans-serif; font-weight: 800; font-size: 40px; line-height: 1.1; color: var(--ink); }
+      .karte .striche { display: block; margin-top: 14px; height: 10px; border-radius: 5px; background: rgba(29, 42, 48, 0.14); width: 80%; }
+      .frage { position: absolute; font-family: "Manrope", sans-serif; font-weight: 800; color: var(--orange); }
+
+      /* Szene 3: Quellen und Tabelle */
+      .doku { position: absolute; width: 300px; height: 380px; border-radius: 20px; background: var(--paper); border: 5px solid var(--ink); padding: 30px 26px; }
+      .doku b { display: block; font-family: "Manrope", sans-serif; font-weight: 800; font-size: 34px; line-height: 1.1; color: var(--petrol); }
+      .doku i { display: block; margin-top: 18px; height: 12px; border-radius: 6px; background: rgba(29, 42, 48, 0.14); }
+      #tab { left: 1150px; top: 330px; width: 660px; border-radius: 28px; background: var(--paper); border: 5px solid var(--ink); box-shadow: 12px 14px 0 rgba(29, 42, 48, 0.14); overflow: hidden; }
+      #tab .kopf, #tab .reihe { display: grid; grid-template-columns: 120px 1fr 150px; align-items: center; padding: 0 28px; height: 92px; font-size: 30px; }
+      #tab .kopf { background: var(--petrol); color: var(--paper); font-weight: 700; font-size: 26px; letter-spacing: 0.04em; height: 72px; }
+      #tab .reihe { border-top: 3px solid rgba(29, 42, 48, 0.1); font-weight: 600; color: var(--ink); }
+      #tab .reihe .q { color: var(--petrol2); font-weight: 700; }
+      .chip { position: absolute; padding: 10px 22px; border-radius: 30px; background: var(--orange); color: var(--paper); font-family: "Manrope", sans-serif; font-weight: 800; font-size: 32px; }
+      .stempel { position: absolute; width: 190px; height: 190px; border-radius: 50%; border: 8px solid var(--orange); display: flex; align-items: center; justify-content: center; font-family: "Manrope", sans-serif; font-weight: 800; font-size: 38px; color: var(--orangeText); background: rgba(255, 250, 242, 0.9); }
+
+      /* Szene 4: Tafel */
+      #tafel { left: 700px; top: 170px; width: 1110px; height: 760px; border-radius: 40px; background: var(--paper); border: 6px solid var(--ink); box-shadow: 14px 16px 0 rgba(29, 42, 48, 0.14); }
+      .panel { position: absolute; inset: 0; padding: 48px 56px; }
+      .panel h3 { margin: 0; font-family: "Manrope", sans-serif; font-weight: 800; font-size: 50px; line-height: 1.08; letter-spacing: -0.02em; color: var(--ink); max-width: 760px; }
+      .panel .quelle { position: absolute; left: 56px; bottom: 34px; font-size: 24px; font-weight: 600; color: var(--muted); }
+      .zahl { position: absolute; font-family: "Manrope", sans-serif; font-weight: 800; color: var(--orangeText); font-variant-numeric: tabular-nums; }
+      .etikett { position: absolute; font-family: "Inter", sans-serif; font-weight: 700; font-size: 30px; }
+
+      /* Szene 5 */
+      .tabkarte { position: absolute; width: 330px; border-radius: 18px; background: var(--paper); border: 5px solid var(--ink); overflow: hidden; }
+      .tabkarte .k { height: 50px; background: var(--petrol2); }
+      .tabkarte .z { height: 46px; border-top: 3px solid rgba(29, 42, 48, 0.12); display: grid; grid-template-columns: 1fr 1fr 1fr; }
+      .tabkarte .z i { border-left: 3px solid rgba(29, 42, 48, 0.12); }
+      .pille { position: absolute; display: flex; align-items: center; gap: 22px; padding: 22px 40px; border-radius: 60px; background: var(--petrol); color: var(--paper); font-family: "Inter", sans-serif; font-weight: 700; font-size: 34px; }
+
+      /* Szene 6 */
+      #url { left: 0; width: 1920px; top: 420px; margin: 0; text-align: center; font-family: "Manrope", sans-serif; font-weight: 800; font-size: 92px; letter-spacing: -0.03em; color: var(--petrol); }
+      #s6 .sub { left: 0; width: 1920px; text-align: center; }
+
+      /* Übergang: die drei Logobalken */
+      #wisch { position: absolute; inset: 0; pointer-events: none; z-index: 50; }
+      #wisch div { position: absolute; left: 0; width: 1920px; height: 360px; }
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-qbnw" id="root" data-composition-id="main" data-start="0" data-duration="60" data-width="1920" data-height="1080">
+      <div data-hf-id="hf-2xc0" id="bg">
+        <div data-hf-id="hf-42yf" class="raster"></div>
+        <div data-hf-id="hf-2mxw" class="fleck" id="fleck1" style="left: -260px; top: -300px; width: 900px; height: 900px; background: radial-gradient(closest-side, rgba(127, 183, 190, 0.38), rgba(127, 183, 190, 0))"></div>
+        <div data-hf-id="hf-q09j" class="fleck" id="fleck2" style="left: 1320px; top: 520px; width: 1000px; height: 1000px; background: radial-gradient(closest-side, rgba(242, 166, 90, 0.32), rgba(242, 166, 90, 0))"></div>
+        <div data-hf-id="hf-4836" id="deko"></div>
+      </div>
+
+      <!-- Szene 1: Logo -->
+      <div data-hf-id="hf-yihu" class="scene" id="s1">
+        <div data-hf-id="hf-dtb3" class="abs" id="logo">
+          <div data-hf-id="hf-z6vf" class="bar" id="lb1" style="top: 68px; width: 154px; background: var(--paper)"></div>
+          <div data-hf-id="hf-f54y" class="bar" id="lb2" style="top: 120px; width: 106px; background: var(--orange)"></div>
+          <div data-hf-id="hf-wqmy" class="bar" id="lb3" style="top: 172px; width: 68px; background: rgba(255, 250, 242, 0.78)"></div>
+        </div>
+        <h1 data-hf-id="hf-jke0" class="abs" id="wm"><span data-hf-id="hf-b512" class="wort" data-layout-allow-overlap="" id="wm1">Tiermedizin</span> <span data-hf-id="hf-i1zo" class="wort z2" data-layout-allow-overlap="" id="wm2">in Zahlen</span></h1>
+        <p data-hf-id="hf-vou6" class="sub" id="s1sub">Zahlen zu Tierärzten, Praxen und Haustieren. Jede mit Quelle.</p>
+        <div data-hf-id="hf-v4om" class="abs" id="s1bruno" style="left: 1330px; top: 790px; width: 430px; height: 224px"></div>
+        <div data-hf-id="hf-rn4l" class="blase" id="wuff" style="left: 1560px; top: 640px">Wuff?</div>
+      </div>
+
+      <!-- Szene 2: Zu viele Zahlen -->
+      <div data-hf-id="hf-ukdt" class="scene" id="s2">
+        <h2 data-hf-id="hf-pttg" class="cap" id="s2cap"><span data-hf-id="hf-gsmg" class="wort">Viele</span> <span data-hf-id="hf-d0mr" class="wort">Zahlen.</span></h2>
+        <h2 data-hf-id="hf-w3x1" class="cap" id="s2cap2" style="top: 176px"><span data-hf-id="hf-zzp7" class="wort akz">Aber</span> <span data-hf-id="hf-8ncx" class="wort akz">welche</span> <span data-hf-id="hf-sgyj" class="wort akz">stimmen?</span></h2>
+        <div data-hf-id="hf-v8yg" class="karte" id="k1" style="left: 1270px; top: 150px"><span data-hf-id="hf-xt2y" class="ressort" data-layout-allow-overlap="">Schlagzeile</span><span data-hf-id="hf-ouis" class="zeile" data-layout-allow-overlap="">Tierarztmangel!</span><span data-hf-id="hf-wt9v" class="striche"></span></div>
+        <div data-hf-id="hf-ndzf" class="karte" id="k2" style="left: 1330px; top: 430px"><span data-hf-id="hf-mwmp" class="ressort" data-layout-allow-overlap="">Studie</span><span data-hf-id="hf-dd8w" class="zeile" data-layout-allow-overlap="">So viele Tierärzte wie nie!</span><span data-hf-id="hf-g58z" class="striche"></span></div>
+        <div data-hf-id="hf-rfhw" class="karte" id="k3" style="left: 1240px; top: 720px"><span data-hf-id="hf-nab4" class="ressort" data-layout-allow-overlap="">Branche</span><span data-hf-id="hf-l7qh" class="zeile" data-layout-allow-overlap="">Ketten übernehmen alles!</span><span data-hf-id="hf-fqxy" class="striche"></span></div>
+        <div data-hf-id="hf-k766" class="karte" id="k4" style="left: 110px; top: 470px; width: 430px"><span data-hf-id="hf-o1s2" class="ressort" data-layout-allow-overlap="">Umfrage</span><span data-hf-id="hf-pfop" class="zeile" data-layout-allow-overlap="">Hund oder Katze, wer liegt vorn?</span><span data-hf-id="hf-fcmx" class="striche"></span></div>
+        <div data-hf-id="hf-3l1c" class="abs" id="s2lena" style="left: 640px; top: 330px; width: 380px; height: 697px"></div>
+        <div data-hf-id="hf-ycre" class="frage" id="f1" style="left: 680px; top: 300px; font-size: 100px">?</div>
+        <div data-hf-id="hf-ol36" class="frage" id="f2" style="left: 790px; top: 268px; font-size: 128px">?</div>
+        <div data-hf-id="hf-zdt1" class="frage" id="f3" style="left: 930px; top: 310px; font-size: 92px">?</div>
+        <div data-hf-id="hf-qw26" class="abs" id="s2bruno" style="left: 150px; top: 840px; width: 400px; height: 209px"></div>
+        <div data-hf-id="hf-0myc" class="abs" id="s2mimi" style="left: 1660px; top: 760px; width: 200px; height: 250px"></div>
+      </div>
+
+      <!-- Szene 3: Nachgelesen -->
+      <div data-hf-id="hf-tsq0" class="scene" id="s3">
+        <h2 data-hf-id="hf-5mbr" class="cap" id="s3cap"><span data-hf-id="hf-wjay" class="wort">Nachgelesen</span> <span data-hf-id="hf-s92v" class="wort akz">statt</span> <span data-hf-id="hf-vnct" class="wort akz">nachgeplappert.</span></h2>
+        <p data-hf-id="hf-6fz7" class="sub" id="s3sub" style="top: 190px">Jede Zahl mit Jahr und Quelle. Zeitreihen seit 1991.</p>
+        <div data-hf-id="hf-kxv5" class="abs" id="s3lena" style="left: 70px; top: 360px; width: 380px; height: 697px"></div>
+        <div data-hf-id="hf-x61j" class="doku" data-layout-allow-overlap="" data-layout-allow-occlusion="" id="d3" style="left: 700px; top: 470px; transform-origin: 50% 100%"><b data-hf-id="hf-c010" data-layout-allow-overlap="" data-layout-allow-occlusion="">IVH / ZZF</b><i data-hf-id="hf-wt6k"></i><i data-hf-id="hf-kxx1" style="width: 70%"></i><i data-hf-id="hf-zeb8"></i><i data-hf-id="hf-dp8c" style="width: 55%"></i></div>
+        <div data-hf-id="hf-03bf" class="doku" data-layout-allow-overlap="" data-layout-allow-occlusion="" id="d2" style="left: 670px; top: 440px; transform-origin: 50% 100%"><b data-hf-id="hf-107b" data-layout-allow-overlap="" data-layout-allow-occlusion="">Destatis</b><i data-hf-id="hf-y7e5"></i><i data-hf-id="hf-h2lg" style="width: 60%"></i><i data-hf-id="hf-ylp6"></i><i data-hf-id="hf-3doa" style="width: 75%"></i></div>
+        <div data-hf-id="hf-ysay" class="doku" data-layout-allow-overlap="" data-layout-allow-occlusion="" id="d1" style="left: 640px; top: 410px; transform-origin: 50% 100%"><b data-hf-id="hf-c6y0" data-layout-allow-overlap="" data-layout-allow-occlusion="">BTK-Statistik 1991–2025</b><i data-hf-id="hf-0l8b"></i><i data-hf-id="hf-0n9u" style="width: 80%"></i><i data-hf-id="hf-0zjc"></i><i data-hf-id="hf-oufb" style="width: 50%"></i></div>
+        <div data-hf-id="hf-lhqo" class="abs" id="tab" data-layout-allow-overflow="">
+          <div data-hf-id="hf-9go8" class="kopf"><span data-hf-id="hf-qwlq">Jahr</span><span data-hf-id="hf-xakz">Wert</span><span data-hf-id="hf-oe69">Quelle</span></div>
+          <div data-hf-id="hf-kjec" class="reihe" id="r1"><span data-hf-id="hf-dwgq">2025</span><span data-hf-id="hf-yfh9">34.476 Tierärzt:innen</span><span data-hf-id="hf-sv2h" class="q">BTK</span></div>
+          <div data-hf-id="hf-t7a7" class="reihe" id="r2"><span data-hf-id="hf-r5q6">2025</span><span data-hf-id="hf-f6eq">15,7 Mio. Katzen</span><span data-hf-id="hf-9jca" class="q">IVH/ZZF</span></div>
+          <div data-hf-id="hf-p966" class="reihe" id="r3"><span data-hf-id="hf-di5p">2024</span><span data-hf-id="hf-umun">11.990 Angestellte</span><span data-hf-id="hf-gb3x" class="q">BTK</span></div>
+          <div data-hf-id="hf-xx21" class="reihe" id="r4"><span data-hf-id="hf-mrdx">1991</span><span data-hf-id="hf-i3vz">8.510 Praxisinhaber</span><span data-hf-id="hf-hi10" class="q">BTK</span></div>
+        </div>
+        <div data-hf-id="hf-feef" class="chip" data-layout-allow-overlap="" id="c1" style="left: 700px; top: 470px">34.476</div>
+        <div data-hf-id="hf-mxty" class="chip" data-layout-allow-overlap="" id="c2" style="left: 760px; top: 520px">15,7 Mio.</div>
+        <div data-hf-id="hf-pyzf" class="chip" data-layout-allow-overlap="" id="c3" style="left: 690px; top: 560px">11.990</div>
+        <div data-hf-id="hf-9y12" class="chip" data-layout-allow-overlap="" id="c4" style="left: 740px; top: 500px">1991</div>
+        <div data-hf-id="hf-gjuy" class="stempel" id="st1" style="left: 1690px; top: 140px">Jahr ✓</div>
+        <div data-hf-id="hf-qctv" class="stempel" data-layout-allow-overlap="" id="st2" style="left: 1690px; top: 790px">Quelle ✓</div>
+        <div data-hf-id="hf-224l" class="abs" id="s3bruno" style="left: 640px; top: 860px; width: 400px; height: 209px"></div>
+        <div data-hf-id="hf-r116" class="abs" data-layout-allow-overlap="" data-layout-allow-occlusion="" id="blatt" style="left: 990px; top: 852px; width: 74px; height: 92px; border-radius: 10px; background: var(--paper); border: 4px solid var(--ink)"></div>
+      </div>
+
+      <!-- Szene 4: Geschichten -->
+      <div data-hf-id="hf-pulz" class="scene" id="s4">
+        <h2 data-hf-id="hf-o7jn" class="cap" id="s4cap" style="font-size: 76px; max-width: 560px"><span data-hf-id="hf-9k44" class="wort">Aus</span> <span data-hf-id="hf-v9u7" class="wort">Zahlen</span> <span data-hf-id="hf-p8ac" class="wort">werden</span> <span data-hf-id="hf-kxce" class="wort akz">Geschichten.</span></h2>
+        <div data-hf-id="hf-7ha6" class="abs" id="s4lena" style="left: 150px; top: 370px; width: 380px; height: 697px"></div>
+        <div data-hf-id="hf-6vm4" class="abs" id="tafel">
+          <div data-hf-id="hf-h5yh" class="panel" id="pa">
+            <h3 data-hf-id="hf-auar" style="max-width: 560px">Frauenanteil in der Tiermedizin</h3>
+            <div data-hf-id="hf-t7vu" class="zahl" id="za" style="right: 60px; top: 30px; font-size: 150px">44 %</div>
+            <svg data-hf-id="hf-96lk" class="abs" id="charta" style="left: 56px; top: 226px" width="990" height="432" viewBox="0 0 990 432" />
+            <div data-hf-id="hf-v488" class="quelle">Tätige Tierärztinnen, 2002 bis 2025 · Quelle: Bundestierärztekammer</div>
+          </div>
+          <div data-hf-id="hf-dw09" class="panel" id="pb" style="opacity: 0">
+            <h3 data-hf-id="hf-dhn5">Haustiere 2025: Katzen vor Hunden</h3>
+            <svg data-hf-id="hf-8tc7" class="abs" id="chartb" style="left: 56px; top: 170px" width="990" height="500" viewBox="0 0 990 500" />
+            <div data-hf-id="hf-1tto" class="quelle">Katzen und Hunde in deutschen Haushalten · Quelle: IVH/ZZF</div>
+          </div>
+          <div data-hf-id="hf-9thq" class="panel" id="pc" style="opacity: 0">
+            <h3 data-hf-id="hf-hg1j">2024 erstmals mehr Angestellte als Praxisinhaber</h3>
+            <svg data-hf-id="hf-tasj" class="abs" id="chartc" style="left: 56px; top: 210px" width="990" height="440" viewBox="0 0 990 440" />
+            <div data-hf-id="hf-xazk" class="quelle">Tierärzt:innen in Praxen, 1991 bis 2025 · Quelle: Bundestierärztekammer</div>
+          </div>
+        </div>
+        <div data-hf-id="hf-3c54" class="abs" id="s4mimi" style="left: 987px; top: 266px; width: 170px; height: 212px"></div>
+        <div data-hf-id="hf-55ts" class="blase" id="hmpf" style="left: 1540px; top: 760px; font-size: 38px; padding: 12px 24px">Hmpf!</div>
+        <div data-hf-id="hf-xgqn" class="abs" data-layout-allow-overflow="" id="s4bruno" style="left: 1500px; top: 884px; width: 380px; height: 198px"></div>
+      </div>
+
+      <!-- Szene 5: Studio -->
+      <div data-hf-id="hf-lwhy" class="scene" id="s5">
+        <h2 data-hf-id="hf-qnfh" class="cap" id="s5cap"><span data-hf-id="hf-azyj" class="wort">Das</span> <span data-hf-id="hf-fqfj" class="wort">Studio:</span> <span data-hf-id="hf-k5h4" class="wort akz">Tabelle</span> <span data-hf-id="hf-0g8z" class="wort akz">rein,</span> <span data-hf-id="hf-nzwe" class="wort akz">Video</span> <span data-hf-id="hf-eoao" class="wort akz">raus.</span></h2>
+        <div data-hf-id="hf-gtzy" class="abs" id="s5lena" style="left: 60px; top: 360px; width: 380px; height: 697px"></div>
+        <svg data-hf-id="hf-6q96" class="abs" id="laptop" style="left: 520px; top: 300px" width="860" height="560" viewBox="0 0 860 560" />
+        <div data-hf-id="hf-2fmz" class="tabkarte" id="tk" style="left: 785px; top: 300px"><div data-hf-id="hf-t717" class="k"></div><div data-hf-id="hf-abq2" class="z"><i data-hf-id="hf-zsm9"></i><i data-hf-id="hf-06xa"></i><i data-hf-id="hf-26gf"></i></div><div data-hf-id="hf-sx6m" class="z"><i data-hf-id="hf-2krg"></i><i data-hf-id="hf-oz7w"></i><i data-hf-id="hf-okwv"></i></div><div data-hf-id="hf-tbhn" class="z"><i data-hf-id="hf-o6lu"></i><i data-hf-id="hf-jqbp"></i><i data-hf-id="hf-qkg0"></i></div></div>
+        <svg data-hf-id="hf-7i5j" class="abs" id="handy" style="left: 1500px; top: 250px" width="290" height="560" viewBox="0 0 290 560" />
+        <div data-hf-id="hf-e07r" class="abs" id="mp4" style="left: 860px; top: 420px; width: 190px; height: 130px; border-radius: 22px; background: var(--orange); border: 5px solid var(--ink); display: flex; align-items: center; justify-content: center; gap: 12px; font-family: Manrope, sans-serif; font-weight: 800; font-size: 40px; color: var(--paper)"><span data-hf-id="hf-jkkj" style="display: inline-block; width: 0; height: 0; border-left: 30px solid var(--paper); border-top: 19px solid transparent; border-bottom: 19px solid transparent"></span>MP4</div>
+        <div data-hf-id="hf-xcj2" class="pille" id="schild" style="left: 600px; top: 900px">
+          <svg data-hf-id="hf-irgu" width="46" height="54" viewBox="0 0 46 54"><path data-hf-id="hf-dpq7" d="M23 2 L44 10 V26 C44 40 34 49 23 52 C12 49 2 40 2 26 V10 Z" fill="#7fb7be" stroke="#fffaf2" stroke-width="4" /><path data-hf-id="hf-vvmg" d="M13 27 L20 34 L33 19" fill="none" stroke="#0f4c5c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          Läuft im Browser. Deine Daten bleiben auf deinem Gerät.
+        </div>
+      </div>
+
+      <!-- Szene 6: Abschluss -->
+      <div data-hf-id="hf-hydx" class="scene" id="s6">
+        <div data-hf-id="hf-tklh" class="abs" id="logo6" style="left: 760px; top: 150px; width: 400px; height: 120px">
+          <svg data-hf-id="hf-1m9m" width="120" height="120" viewBox="0 0 28 28"><rect data-hf-id="hf-8orr" width="28" height="28" rx="7" fill="#0f4c5c" /><rect data-hf-id="hf-5hr1" x="6" y="7" width="16" height="3.2" rx="1.6" fill="#fffaf2" /><rect data-hf-id="hf-z0ae" x="6" y="12.4" width="11" height="3.2" rx="1.6" fill="#e36414" /><rect data-hf-id="hf-d35x" x="6" y="17.8" width="7" height="3.2" rx="1.6" fill="#fffaf2" opacity=".78" /></svg>
+        </div>
+        <p data-hf-id="hf-7sjz" class="abs" id="name6" style="left: 0; width: 1920px; top: 296px; margin: 0; text-align: center; font-family: Manrope, sans-serif; font-weight: 800; font-size: 64px; letter-spacing: -0.02em; color: var(--ink)">Tiermedizin in Zahlen</p>
+        <h2 data-hf-id="hf-tm3l" class="abs" id="url">tiermedizin-in-zahlen.org</h2>
+        <p data-hf-id="hf-k31y" class="sub" id="s6sub" style="top: 570px">Zahlen zu Tierärzten, Praxen und Haustieren. Jede mit Quelle.</p>
+        <p data-hf-id="hf-iqxq" class="sub" id="s6von" style="top: 636px; font-size: 30px">Ein Projekt von Thomas Freimoser</p>
+        <div data-hf-id="hf-1u3x" id="konfetti"></div>
+        <div data-hf-id="hf-0r43" class="abs" id="s6lena" style="left: 40px; top: 470px; width: 300px; height: 550px"></div>
+        <div data-hf-id="hf-rrmu" class="abs" id="s6bruno" style="left: 1190px; top: 850px; width: 380px; height: 198px"></div>
+        <div data-hf-id="hf-emuj" class="abs" id="s6mimi" style="left: 1600px; top: 800px; width: 190px; height: 238px"></div>
+      </div>
+
+      <div data-hf-id="hf-meht" id="wisch">
+        <div data-hf-id="hf-d1kd" id="w1" style="top: 0; background: #0f4c5c"></div>
+        <div data-hf-id="hf-5aw9" id="w2" style="top: 360px; background: #e36414"></div>
+        <div data-hf-id="hf-vmdc" id="w3" style="top: 720px; background: #7fb7be"></div>
+      </div>
+    </div>
+
+    <script>
+      // ---------------------------------------------------------------------------------------------
+      // Figuren. Jede Figur ist eine SVG-Puppe mit benannten Gelenken; die Ids tragen ein Präfix, damit
+      // dieselbe Figur in mehreren Szenen vorkommen kann. Alle Drehpunkte stehen als feste Koordinaten
+      // im Code (svgOrigin), nichts wird zur Laufzeit gemessen.
+      // ---------------------------------------------------------------------------------------------
+      const HAUT = "#f3c9a8", HAAR = "#4a2c22", KITTEL = "#2a8a92", HOSE = "#0b3a45", TINTE = "#1d2a30";
+
+      function lena(p) {
+        return `<svg class="figur" viewBox="0 0 360 660" width="100%" height="100%">
+          <ellipse cx="180" cy="646" rx="118" ry="13" fill="${TINTE}" opacity=".13"/>
+          <g id="${p}-all">
+            <g id="${p}-legA"><rect x="138" y="468" width="36" height="152" rx="17" fill="${HOSE}"/><ellipse cx="150" cy="628" rx="32" ry="15" fill="${TINTE}"/></g>
+            <g id="${p}-legB"><rect x="186" y="468" width="36" height="152" rx="17" fill="${HOSE}"/><ellipse cx="210" cy="628" rx="32" ry="15" fill="${TINTE}"/></g>
+            <g id="${p}-armA">
+              <rect x="100" y="316" width="37" height="98" rx="18" fill="${KITTEL}"/>
+              <g id="${p}-foreA"><rect x="103" y="396" width="31" height="90" rx="15" fill="${HAUT}"/><circle cx="118" cy="492" r="19" fill="${HAUT}"/></g>
+            </g>
+            <rect x="163" y="258" width="34" height="46" rx="12" fill="#e7b48f"/>
+            <path d="M112 334 Q114 300 150 296 L210 296 Q246 300 248 334 L262 488 Q262 502 248 502 L112 502 Q98 502 98 488 Z" fill="${KITTEL}"/>
+            <path d="M150 296 L180 344 L210 296 Z" fill="#e7b48f"/>
+            <path d="M150 296 L180 344 L210 296" fill="none" stroke="#1f6f77" stroke-width="5" stroke-linejoin="round"/>
+            <rect x="122" y="420" width="44" height="40" rx="8" fill="#1f6f77"/>
+            <rect x="196" y="362" width="44" height="28" rx="7" fill="#fffaf2"/><circle cx="208" cy="376" r="6" fill="#e36414"/><rect x="218" y="372" width="16" height="8" rx="4" fill="#7fb7be"/>
+            <path d="M152 302 C136 352 150 398 170 412" fill="none" stroke="#5f6f74" stroke-width="7" stroke-linecap="round"/>
+            <path d="M208 302 C222 340 214 380 192 410" fill="none" stroke="#5f6f74" stroke-width="7" stroke-linecap="round"/>
+            <circle cx="181" cy="418" r="13" fill="#9aa7ab" stroke="#5f6f74" stroke-width="5"/>
+            <g id="${p}-head">
+              <ellipse cx="180" cy="198" rx="94" ry="98" fill="${HAAR}"/>
+              <circle cx="180" cy="94" r="36" fill="${HAAR}"/>
+              <rect x="158" y="118" width="44" height="12" rx="6" fill="#e36414"/>
+              <circle cx="100" cy="214" r="17" fill="${HAUT}"/><circle cx="260" cy="214" r="17" fill="${HAUT}"/>
+              <ellipse cx="180" cy="212" rx="80" ry="84" fill="${HAUT}"/>
+              <path d="M100 196 Q116 124 180 120 Q244 124 262 192 Q232 152 186 164 Q150 170 132 158 Q118 176 100 196 Z" fill="${HAAR}"/>
+              <path id="${p}-browA" d="M138 178 Q152 168 167 175" fill="none" stroke="${HAAR}" stroke-width="7" stroke-linecap="round"/>
+              <path id="${p}-browB" d="M193 175 Q208 168 222 178" fill="none" stroke="${HAAR}" stroke-width="7" stroke-linecap="round"/>
+              <g id="${p}-eyes">
+                <g id="${p}-eyeA"><ellipse cx="153" cy="208" rx="10.5" ry="13.5" fill="${TINTE}"/><circle cx="157" cy="203" r="3.8" fill="#fff"/></g>
+                <g id="${p}-eyeB"><ellipse cx="207" cy="208" rx="10.5" ry="13.5" fill="${TINTE}"/><circle cx="211" cy="203" r="3.8" fill="#fff"/></g>
+              </g>
+              <circle cx="128" cy="240" r="14" fill="#ff8f7a" opacity=".42"/><circle cx="232" cy="240" r="14" fill="#ff8f7a" opacity=".42"/>
+              <path d="M181 214 Q188 232 177 237" fill="none" stroke="#d99b78" stroke-width="5" stroke-linecap="round"/>
+              <path id="${p}-mSmile" d="M157 254 Q180 274 203 254" fill="none" stroke="${TINTE}" stroke-width="6.5" stroke-linecap="round"/>
+              <g id="${p}-mGrin" opacity="0"><path d="M152 250 Q180 292 208 250 Z" fill="${TINTE}"/><path d="M165 268 Q180 282 195 268 Q180 262 165 268 Z" fill="#ff7a6b"/></g>
+              <ellipse id="${p}-mOh" cx="180" cy="260" rx="11" ry="14" fill="${TINTE}" opacity="0"/>
+              <path id="${p}-mWorry" d="M159 264 Q169 253 180 261 Q191 269 201 258" fill="none" stroke="${TINTE}" stroke-width="6.5" stroke-linecap="round" opacity="0"/>
+            </g>
+            <g id="${p}-armB">
+              <rect x="223" y="316" width="37" height="98" rx="18" fill="${KITTEL}"/>
+              <g id="${p}-foreB">
+                <rect x="226" y="396" width="31" height="90" rx="15" fill="${HAUT}"/>
+                <g id="${p}-phone" opacity="0"><g id="${p}-phoneIn"><rect x="212" y="438" width="60" height="100" rx="12" fill="${TINTE}"/><rect x="219" y="447" width="46" height="80" rx="7" fill="#7fb7be"/><rect x="226" y="458" width="32" height="8" rx="4" fill="#fffaf2"/><rect x="226" y="474" width="24" height="8" rx="4" fill="#e36414"/></g></g>
+                <g id="${p}-lupe" opacity="0"><rect x="235" y="500" width="14" height="40" rx="7" fill="${TINTE}"/><circle cx="242" cy="584" r="44" fill="rgba(127,183,190,.35)" stroke="${TINTE}" stroke-width="11"/><path d="M220 566 Q230 552 246 550" fill="none" stroke="#fffaf2" stroke-width="7" stroke-linecap="round"/></g>
+                <circle cx="242" cy="492" r="19" fill="${HAUT}"/>
+                <path id="${p}-daumen" d="M238 488 L222 512" stroke="${HAUT}" stroke-width="14" stroke-linecap="round" opacity="0"/>
+              </g>
+            </g>
+          </g>
+        </svg>`;
+      }
+
+      function bruno(p) {
+        return `<svg class="figur" viewBox="0 0 460 240" width="100%" height="100%">
+          <ellipse cx="225" cy="228" rx="180" ry="10" fill="${TINTE}" opacity=".13"/>
+          <g id="${p}-all">
+            <g id="${p}-tail"><path d="M78 122 Q34 98 40 58" fill="none" stroke="#8a4a26" stroke-width="16" stroke-linecap="round"/></g>
+            <rect x="96" y="150" width="26" height="66" rx="13" fill="#8a4a26"/><rect x="132" y="150" width="26" height="66" rx="13" fill="#8a4a26"/>
+            <rect x="288" y="150" width="26" height="66" rx="13" fill="#8a4a26"/><rect x="322" y="150" width="26" height="66" rx="13" fill="#8a4a26"/>
+            <rect x="70" y="94" width="292" height="92" rx="46" fill="#b0602e"/>
+            <ellipse cx="214" cy="166" rx="112" ry="17" fill="#cf8650" opacity=".75"/>
+            <rect x="300" y="88" width="24" height="80" rx="10" fill="#e36414"/><circle cx="312" cy="160" r="9" fill="#f2c14e" stroke="#8a4a26" stroke-width="3"/>
+            <g id="${p}-head">
+              <ellipse cx="352" cy="94" rx="56" ry="47" fill="#b0602e"/>
+              <ellipse cx="402" cy="110" rx="40" ry="25" fill="#c9783f"/>
+              <ellipse cx="436" cy="102" rx="12" ry="10" fill="${TINTE}"/>
+              <g id="${p}-eye"><ellipse cx="364" cy="83" rx="8.5" ry="10.5" fill="${TINTE}"/><circle cx="367" cy="79" r="3" fill="#fff"/></g>
+              <path id="${p}-brow" d="M354 66 Q364 61 374 66" fill="none" stroke="#6e381b" stroke-width="5" stroke-linecap="round"/>
+              <path id="${p}-mund" d="M396 128 Q409 137 422 128" fill="none" stroke="${TINTE}" stroke-width="5" stroke-linecap="round"/>
+              <path id="${p}-trotz" d="M398 134 Q409 126 420 134" fill="none" stroke="${TINTE}" stroke-width="5" stroke-linecap="round" opacity="0"/>
+              <ellipse id="${p}-zunge" cx="411" cy="140" rx="8" ry="12" fill="#ff7a6b" opacity="0"/>
+              <g id="${p}-ear"><path d="M332 66 Q300 78 306 142 Q320 154 334 138 Q348 100 342 70 Z" fill="#7a3e1f"/></g>
+            </g>
+          </g>
+        </svg>`;
+      }
+
+      function mimi(p) {
+        return `<svg class="figur" viewBox="0 0 240 300" width="100%" height="100%">
+          <ellipse cx="120" cy="290" rx="92" ry="9" fill="${TINTE}" opacity=".13"/>
+          <g id="${p}-all">
+            <g id="${p}-tail"><path d="M168 262 Q232 252 222 190 Q216 160 196 170" fill="none" stroke="#e08a3c" stroke-width="18" stroke-linecap="round"/></g>
+            <path d="M68 284 Q58 172 120 152 Q182 172 172 284 Z" fill="#f2a65a"/>
+            <path d="M80 200 Q96 204 100 220 M160 200 Q146 204 142 220 M76 240 Q92 242 98 256" fill="none" stroke="#e08a3c" stroke-width="7" stroke-linecap="round"/>
+            <ellipse cx="120" cy="230" rx="30" ry="42" fill="#fde3c4"/>
+            <ellipse cx="100" cy="284" rx="20" ry="11" fill="#fde3c4"/>
+            <g id="${p}-paw"><rect x="132" y="190" width="26" height="92" rx="13" fill="#f2a65a"/><ellipse cx="145" cy="282" rx="20" ry="11" fill="#fde3c4"/></g>
+            <g id="${p}-head">
+              <path d="M70 92 L80 28 L116 70 Z" fill="#f2a65a"/><path d="M83 78 L88 46 L106 68 Z" fill="#ff9e8a"/>
+              <path d="M170 92 L160 28 L124 70 Z" fill="#f2a65a"/><path d="M157 78 L152 46 L134 68 Z" fill="#ff9e8a"/>
+              <ellipse cx="120" cy="106" rx="60" ry="51" fill="#f2a65a"/>
+              <path d="M108 62 L110 80 M120 58 L120 80 M132 62 L130 80" stroke="#e08a3c" stroke-width="6" stroke-linecap="round"/>
+              <g id="${p}-eyes"><ellipse cx="98" cy="104" rx="9.5" ry="11.5" fill="${TINTE}"/><ellipse cx="142" cy="104" rx="9.5" ry="11.5" fill="${TINTE}"/><circle cx="101" cy="100" r="3" fill="#fff"/><circle cx="145" cy="100" r="3" fill="#fff"/></g>
+              <g id="${p}-lid" opacity="0"><path d="M86 104 Q98 90 110 104 Z" fill="#f2a65a"/><path d="M130 104 Q142 90 154 104 Z" fill="#f2a65a"/><path d="M86 104 L110 104 M130 104 L154 104" stroke="#c97a33" stroke-width="4" stroke-linecap="round"/></g>
+              <path d="M114 118 L126 118 L120 126 Z" fill="#ff8f86"/>
+              <path d="M108 132 Q114 138 120 131 Q126 138 132 132" fill="none" stroke="${TINTE}" stroke-width="4" stroke-linecap="round"/>
+              <path d="M78 124 L46 118 M78 132 L48 138 M162 124 L194 118 M162 132 L192 138" stroke="#c97a33" stroke-width="3" stroke-linecap="round"/>
+            </g>
+          </g>
+        </svg>`;
+      }
+
+      // Figuren in ihre Plätze setzen
+      const PLAETZE = { s1bruno: bruno, s2lena: lena, s2bruno: bruno, s2mimi: mimi, s3lena: lena, s3bruno: bruno, s4lena: lena, s4mimi: mimi, s4bruno: bruno, s5lena: lena, s6lena: lena, s6bruno: bruno, s6mimi: mimi };
+      for (const [id, f] of Object.entries(PLAETZE)) document.getElementById(id).innerHTML = f(id);
+
+      // Hintergrund-Deko: Pfoten, Pluszeichen und kleine Balken an festen, pseudozufälligen Plätzen
+      let saat = 7;
+      const zufall = () => { saat = (saat * 16807) % 2147483647; return saat / 2147483647; };
+      const PFOTE = `<svg viewBox="0 0 60 60" width="100%" height="100%"><ellipse cx="30" cy="40" rx="15" ry="12" fill="currentColor"/><circle cx="14" cy="24" r="6" fill="currentColor"/><circle cx="25" cy="15" r="6" fill="currentColor"/><circle cx="37" cy="15" r="6" fill="currentColor"/><circle cx="47" cy="24" r="6" fill="currentColor"/></svg>`;
+      const PLUS = `<svg viewBox="0 0 40 40" width="100%" height="100%"><rect x="15" y="2" width="10" height="36" rx="5" fill="currentColor"/><rect x="2" y="15" width="36" height="10" rx="5" fill="currentColor"/></svg>`;
+      const BALKEN = `<svg viewBox="0 0 60 40" width="100%" height="100%"><rect x="2" y="2" width="52" height="9" rx="4.5" fill="currentColor"/><rect x="2" y="16" width="36" height="9" rx="4.5" fill="currentColor"/><rect x="2" y="30" width="22" height="9" rx="4.5" fill="currentColor"/></svg>`;
+      const FARBEN = ["rgba(15,76,92,.20)", "rgba(227,100,20,.24)", "rgba(42,138,146,.22)"];
+      const deko = document.getElementById("deko");
+      const dekoTeile = [];
+      for (let i = 0; i < 16; i++) {
+        const form = [PFOTE, PLUS, BALKEN][i % 3];
+        const groesse = 44 + Math.round(zufall() * 46);
+        const el = document.createElement("div");
+        el.className = "deko";
+        el.style.cssText = `left:${Math.round(zufall() * 1840)}px;top:${Math.round(zufall() * 1000)}px;width:${groesse}px;height:${groesse}px;color:${FARBEN[i % 3]}`;
+        el.innerHTML = form;
+        deko.appendChild(el);
+        dekoTeile.push({ el, dreh: Math.round(zufall() * 60 - 30), dx: Math.round(zufall() * 40 - 20), dy: Math.round(zufall() * 30 + 14) });
+      }
+
+      // Konfetti für den Schluss: kleine Balken in den Markenfarben, fester Zufall
+      const konfetti = document.getElementById("konfetti");
+      const konfettiTeile = [];
+      for (let i = 0; i < 42; i++) {
+        const el = document.createElement("div");
+        el.className = "abs";
+        const b = 18 + Math.round(zufall() * 30);
+        el.style.cssText = `left:${940 + Math.round(zufall() * 40)}px;top:${520}px;width:${b}px;height:12px;border-radius:6px;background:${["#0f4c5c", "#e36414", "#7fb7be", "#f2a65a"][i % 4]}`;
+        konfetti.appendChild(el);
+        const winkel = zufall() * Math.PI * 2;
+        const weite = 360 + zufall() * 620;
+        konfettiTeile.push({ el, x: Math.cos(winkel) * weite, y: Math.sin(winkel) * weite * 0.55 - 120, r: Math.round(zufall() * 720 - 360) });
+      }
+
+      // ---------------------------------------------------------------------------------------------
+      // Diagramme (Szene 4) und Requisiten (Szene 5) als SVG, aus echten Zahlen
+      // ---------------------------------------------------------------------------------------------
+      const NS = "http://www.w3.org/2000/svg";
+      function svgEl(parent, tag, attrs) { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); parent.appendChild(e); return e; }
+
+      // A: Frauenanteil tätige Tierärzt:innen (BTK, Tab. 1)
+      const FA = [[2002, 44.3], [2006, 50.1], [2010, 56.5], [2016, 64.0], [2020, 67.9], [2025, 72.0]];
+      const ca = document.getElementById("charta");
+      const ax = (j) => 70 + (j - 2002) / 23 * 880, ay = (v) => 380 - (v - 40) / 35 * 340;
+      for (const v of [40, 50, 60, 70]) { svgEl(ca, "line", { x1: 70, x2: 950, y1: ay(v), y2: ay(v), stroke: "rgba(29,42,48,.12)", "stroke-width": 3 }); const t = svgEl(ca, "text", { x: 0, y: ay(v) + 10, "font-size": 28, "font-family": "Inter", "font-weight": 600, fill: "#4c5a60" }); t.textContent = v + " %"; }
+      for (const j of [2002, 2010, 2025]) { const t = svgEl(ca, "text", { x: ax(j), y: 418, "font-size": 28, "font-family": "Inter", "font-weight": 600, fill: "#4c5a60", "text-anchor": j === 2002 ? "start" : j === 2025 ? "end" : "middle" }); t.textContent = j; }
+      const linieA = svgEl(ca, "polyline", { points: FA.map(([j, v]) => `${ax(j)},${ay(v)}`).join(" "), fill: "none", stroke: "#e36414", "stroke-width": 12, "stroke-linecap": "round", "stroke-linejoin": "round" });
+      const LAENGE_A = FA.slice(1).reduce((s, [j, v], i) => s + Math.hypot(ax(j) - ax(FA[i][0]), ay(v) - ay(FA[i][1])), 0);
+      linieA.setAttribute("stroke-dasharray", LAENGE_A); linieA.setAttribute("stroke-dashoffset", LAENGE_A);
+      const punktA = svgEl(ca, "circle", { cx: ax(2002), cy: ay(44.3), r: 16, fill: "#e36414", stroke: "#fffaf2", "stroke-width": 6 });
+
+      // B: Katzen und Hunde 2025 (IVH/ZZF)
+      const cb = document.getElementById("chartb");
+      const BASIS_B = 470, MASS_B = 22;
+      svgEl(cb, "line", { x1: 120, x2: 900, y1: BASIS_B, y2: BASIS_B, stroke: "#1d2a30", "stroke-width": 5, "stroke-linecap": "round" });
+      const saeuleKatze = svgEl(cb, "rect", { x: 185, y: BASIS_B - 15.7 * MASS_B, width: 250, height: 15.7 * MASS_B, rx: 22, fill: "#e36414" });
+      const saeuleHund = svgEl(cb, "rect", { x: 555, y: BASIS_B - 10 * MASS_B, width: 250, height: 10 * MASS_B, rx: 22, fill: "#0f4c5c" });
+      const tKatze = svgEl(cb, "text", { x: 310, y: BASIS_B - 15.7 * MASS_B + 70, "text-anchor": "middle", "font-size": 46, "font-family": "Manrope", "font-weight": 800, fill: "#fffaf2" }); tKatze.textContent = "15,7 Mio.";
+      const tHund = svgEl(cb, "text", { x: 680, y: BASIS_B - 10 * MASS_B + 70, "text-anchor": "middle", "font-size": 46, "font-family": "Manrope", "font-weight": 800, fill: "#fffaf2" }); tHund.textContent = "10,0 Mio.";
+      const lKatze = svgEl(cb, "text", { x: 310, y: BASIS_B - 40, "text-anchor": "middle", "font-size": 40, "font-family": "Inter", "font-weight": 700, fill: "#fffaf2" }); lKatze.textContent = "Katzen";
+      const lHund = svgEl(cb, "text", { x: 680, y: BASIS_B - 40, "text-anchor": "middle", "font-size": 40, "font-family": "Inter", "font-weight": 700, fill: "#fffaf2" }); lHund.textContent = "Hunde";
+
+      // C: Praxisinhaber und Angestellte 1991–2025 (BTK)
+      const IA = [[1991, 8510, 1880], [1995, 9046, 2685], [2000, 10247, 3493], [2005, 11072, 4256], [2010, 11757, 5534], [2015, 11926, 7595], [2019, 12019, 9350], [2021, 11889, 10227], [2023, 11437, 11429], [2024, 11264, 11990], [2025, 11216, 12125]];
+      const cc = document.getElementById("chartc");
+      const cx_ = (j) => 90 + (j - 1991) / 34 * 860, cy_ = (v) => 390 - v / 13000 * 360;
+      for (const v of [0, 4000, 8000, 12000]) { svgEl(cc, "line", { x1: 90, x2: 950, y1: cy_(v), y2: cy_(v), stroke: "rgba(29,42,48,.12)", "stroke-width": 3 }); const t = svgEl(cc, "text", { x: 0, y: cy_(v) + 10, "font-size": 26, "font-family": "Inter", "font-weight": 600, fill: "#4c5a60" }); t.textContent = v.toLocaleString("de-DE"); }
+      for (const j of [1991, 2008, 2025]) { const t = svgEl(cc, "text", { x: cx_(j), y: 432, "font-size": 28, "font-family": "Inter", "font-weight": 600, fill: "#4c5a60", "text-anchor": j === 1991 ? "start" : j === 2025 ? "end" : "middle" }); t.textContent = j; }
+      const pktI = IA.map(([j, a]) => [cx_(j), cy_(a)]), pktA = IA.map(([j, , b]) => [cx_(j), cy_(b)]);
+      const lang = (pk) => pk.slice(1).reduce((s, q, i) => s + Math.hypot(q[0] - pk[i][0], q[1] - pk[i][1]), 0);
+      const linieI = svgEl(cc, "polyline", { points: pktI.map((q) => q.join(",")).join(" "), fill: "none", stroke: "#0f4c5c", "stroke-width": 11, "stroke-linecap": "round", "stroke-linejoin": "round" });
+      const linieAng = svgEl(cc, "polyline", { points: pktA.map((q) => q.join(",")).join(" "), fill: "none", stroke: "#e36414", "stroke-width": 11, "stroke-linecap": "round", "stroke-linejoin": "round" });
+      const LI = lang(pktI), LA2 = lang(pktA);
+      linieI.setAttribute("stroke-dasharray", LI); linieI.setAttribute("stroke-dashoffset", LI);
+      linieAng.setAttribute("stroke-dasharray", LA2); linieAng.setAttribute("stroke-dashoffset", LA2);
+      const tInh = svgEl(cc, "text", { x: 300, y: cy_(11000) - 24, "font-size": 32, "font-family": "Inter", "font-weight": 700, fill: "#0f4c5c" }); tInh.textContent = "Praxisinhaber";
+      const tAng = svgEl(cc, "text", { x: 420, y: cy_(4400) + 50, "font-size": 32, "font-family": "Inter", "font-weight": 700, fill: "#e36414" }); tAng.textContent = "Angestellte";
+      // Schnittpunkt zwischen 2023 und 2024
+      const kreuzX = cx_(2023 + 8 / (8 + 726)), kreuzY = cy_(11437 - (11437 - 11264) * 8 / 734);
+      const knall = svgEl(cc, "g", { id: "knall" });
+      for (let i = 0; i < 10; i++) { const w = i / 10 * Math.PI * 2; svgEl(knall, "line", { x1: kreuzX + Math.cos(w) * 26, y1: kreuzY + Math.sin(w) * 26, x2: kreuzX + Math.cos(w) * 54, y2: kreuzY + Math.sin(w) * 54, stroke: "#f2a65a", "stroke-width": 8, "stroke-linecap": "round" }); }
+      svgEl(knall, "circle", { cx: kreuzX, cy: kreuzY, r: 16, fill: "#e36414", stroke: "#fffaf2", "stroke-width": 6 });
+
+      // Laptop mit Mini-Balkenrennen und Handy mit Video-Karte
+      const lt = document.getElementById("laptop");
+      svgEl(lt, "rect", { x: 90, y: 10, width: 680, height: 440, rx: 30, fill: "#1d2a30" });
+      svgEl(lt, "rect", { x: 116, y: 36, width: 628, height: 388, rx: 14, fill: "#fffaf2" });
+      svgEl(lt, "path", { d: "M20 466 H840 Q850 466 846 478 L830 520 Q826 532 812 532 H48 Q34 532 30 520 L14 478 Q10 466 20 466 Z", fill: "#2f3f46" });
+      svgEl(lt, "rect", { x: 360, y: 466, width: 140, height: 16, rx: 8, fill: "#1d2a30" });
+      const RENNEN = [["#0f4c5c", 520], ["#e36414", 430], ["#7fb7be", 340], ["#f2a65a", 250]];
+      const rennBalken = RENNEN.map(([farbe, b], i) => svgEl(lt, "rect", { x: 160, y: 96 + i * 74, width: b, height: 52, rx: 14, fill: farbe }));
+      const hd = document.getElementById("handy");
+      svgEl(hd, "rect", { x: 10, y: 10, width: 270, height: 540, rx: 42, fill: "#1d2a30" });
+      svgEl(hd, "rect", { x: 26, y: 40, width: 238, height: 480, rx: 28, fill: "#fffaf2" });
+      svgEl(hd, "circle", { cx: 66, cy: 92, r: 24, fill: "#7fb7be" });
+      svgEl(hd, "rect", { x: 102, y: 80, width: 120, height: 12, rx: 6, fill: "#1d2a30" }); svgEl(hd, "rect", { x: 102, y: 100, width: 80, height: 10, rx: 5, fill: "rgba(29,42,48,.3)" });
+      const feedKarte = svgEl(hd, "g", { id: "feed" });
+      svgEl(feedKarte, "rect", { x: 42, y: 140, width: 206, height: 250, rx: 18, fill: "#0f4c5c" });
+      for (let i = 0; i < 3; i++) svgEl(feedKarte, "rect", { x: 66, y: 200 + i * 46, width: [150, 110, 72][i], height: 28, rx: 14, fill: ["#fffaf2", "#e36414", "#7fb7be"][i] });
+      svgEl(feedKarte, "circle", { cx: 214, cy: 176, r: 20, fill: "#e36414" }); svgEl(feedKarte, "path", { d: "M207 165 L224 176 L207 187 Z", fill: "#fffaf2" });
+      for (let i = 0; i < 3; i++) svgEl(hd, "rect", { x: 42, y: 412 + i * 30, width: [200, 160, 120][i], height: 14, rx: 7, fill: "rgba(29,42,48,.16)" });
+
+      // ---------------------------------------------------------------------------------------------
+      // Choreografie: eine pausierte Zeitleiste für alles
+      // ---------------------------------------------------------------------------------------------
+      const tl = gsap.timeline({ paused: true });
+      const q = (s) => document.querySelector(s);
+
+      // Werkzeuge für die Puppen
+      const ARM = { A: { schulter: "118 330", ellbogen: "118 405" }, B: { schulter: "242 330", ellbogen: "242 405" } };
+      function arm(p, seite, oben, unten, t, d = 0.45, ease = "back.out(1.7)") {
+        tl.to(`#${p}-arm${seite}`, { rotation: oben, svgOrigin: ARM[seite].schulter, duration: d, ease }, t);
+        tl.to(`#${p}-fore${seite}`, { rotation: unten, svgOrigin: ARM[seite].ellbogen, duration: d, ease }, t);
+      }
+      function armSofort(p, seite, oben, unten) {
+        tl.set(`#${p}-arm${seite}`, { rotation: oben, svgOrigin: ARM[seite].schulter }, 0);
+        tl.set(`#${p}-fore${seite}`, { rotation: unten, svgOrigin: ARM[seite].ellbogen }, 0);
+      }
+      const MUENDER = ["mSmile", "mGrin", "mOh", "mWorry"];
+      function mund(p, welcher, t) { for (const m of MUENDER) tl.set(`#${p}-${m}`, { opacity: m === welcher ? 1 : 0 }, t); }
+      function blinzeln(p, zeiten) {
+        for (const t of zeiten) {
+          tl.to(`#${p}-eyeA`, { scaleY: 0.1, svgOrigin: "153 208", duration: 0.07, ease: "power1.in" }, t).to(`#${p}-eyeA`, { scaleY: 1, svgOrigin: "153 208", duration: 0.09, ease: "power1.out" }, t + 0.07);
+          tl.to(`#${p}-eyeB`, { scaleY: 0.1, svgOrigin: "207 208", duration: 0.07, ease: "power1.in" }, t).to(`#${p}-eyeB`, { scaleY: 1, svgOrigin: "207 208", duration: 0.09, ease: "power1.out" }, t + 0.07);
+        }
+      }
+      function blick(p, dx, dy, t, d = 0.25) { tl.to(`#${p}-eyes`, { x: dx, y: dy, duration: d, ease: "power2.out" }, t); }
+      function brauen(p, a, b, dy, t, d = 0.25) {
+        tl.to(`#${p}-browA`, { rotation: a, y: dy, svgOrigin: "152 174", duration: d, ease: "power2.out" }, t);
+        tl.to(`#${p}-browB`, { rotation: b, y: dy, svgOrigin: "208 174", duration: d, ease: "power2.out" }, t);
+      }
+      function kopf(p, grad, t, d = 0.4, ease = "power2.inOut") { tl.to(`#${p}-head`, { rotation: grad, svgOrigin: "180 290", duration: d, ease }, t); }
+      function atmen(p, von, bis, origin = "180 640") {
+        const n = Math.max(0, Math.floor((bis - von) / 1.6) - 1);
+        tl.fromTo(`#${p}-all`, { scaleY: 1, svgOrigin: origin }, { scaleY: 1.012, svgOrigin: origin, duration: 0.8, ease: "sine.inOut", yoyo: true, repeat: n * 2 + 1 }, von);
+      }
+      function wedeln(p, von, bis, tempo = 0.16, weite = 22) {
+        const n = Math.max(1, Math.floor((bis - von) / tempo));
+        tl.fromTo(`#${p}-tail`, { rotation: -weite, svgOrigin: "78 122" }, { rotation: weite, svgOrigin: "78 122", duration: tempo, ease: "sine.inOut", yoyo: true, repeat: n - 1 }, von);
+      }
+      function katzenschwanz(p, von, bis) {
+        const n = Math.max(1, Math.floor((bis - von) / 0.9));
+        tl.fromTo(`#${p}-tail`, { rotation: -8, svgOrigin: "168 262" }, { rotation: 10, svgOrigin: "168 262", duration: 0.9, ease: "sine.inOut", yoyo: true, repeat: n - 1 }, von);
+      }
+      function laufen(p, von, dauer) {
+        const n = Math.max(1, Math.floor(dauer / 0.22));
+        tl.fromTo(`#${p}-legA`, { rotation: -14, svgOrigin: "156 470" }, { rotation: 14, svgOrigin: "156 470", duration: 0.22, ease: "sine.inOut", yoyo: true, repeat: n - 1 }, von);
+        tl.fromTo(`#${p}-legB`, { rotation: 14, svgOrigin: "204 470" }, { rotation: -14, svgOrigin: "204 470", duration: 0.22, ease: "sine.inOut", yoyo: true, repeat: n - 1 }, von);
+        tl.fromTo(`#${p}-all`, { y: 0 }, { y: -10, duration: 0.11, ease: "sine.inOut", yoyo: true, repeat: n * 2 - 1 }, von);
+        tl.set(`#${p}-legA`, { rotation: 0, svgOrigin: "156 470" }, von + n * 0.22);
+        tl.set(`#${p}-legB`, { rotation: 0, svgOrigin: "204 470" }, von + n * 0.22);
+      }
+      function woerter(sel, t, stagger = 0.08) {
+        tl.fromTo(`${sel} .wort`, { y: 70, opacity: 0, rotation: 4 }, { y: 0, opacity: 1, rotation: 0, duration: 0.55, ease: "back.out(1.8)", stagger }, t);
+      }
+      function wisch(grenze, alt, neu) {
+        const t0 = grenze - 0.42;
+        tl.fromTo(["#w1", "#w2", "#w3"], { xPercent: -101 }, { xPercent: 0, duration: 0.36, ease: "power3.in", stagger: 0.06 }, t0);
+        tl.set(alt, { opacity: 0 }, grenze);
+        tl.set(neu, { opacity: 1 }, grenze);
+        tl.to(["#w1", "#w2", "#w3"], { xPercent: 101, duration: 0.4, ease: "power3.out", stagger: 0.06 }, grenze + 0.02);
+      }
+      tl.set(["#w1", "#w2", "#w3"], { xPercent: -101 }, 0);
+
+      // Hintergrund: langsames Treiben über die ganze Länge
+      dekoTeile.forEach((d, i) => {
+        const periode = 4.5 + (i % 5) * 0.7;
+        const n = Math.floor(60 / periode) - 1;
+        tl.fromTo(d.el, { x: 0, y: 0, rotation: d.dreh }, { x: d.dx, y: -d.dy, rotation: d.dreh + 12, duration: periode, ease: "sine.inOut", yoyo: true, repeat: n }, 0);
+      });
+      tl.fromTo("#fleck1", { scale: 1 }, { scale: 1.12, duration: 5, ease: "sine.inOut", yoyo: true, repeat: 11 }, 0);
+      tl.fromTo("#fleck2", { scale: 1.1 }, { scale: 0.96, duration: 6, ease: "sine.inOut", yoyo: true, repeat: 9 }, 0);
+
+      // ---------- Szene 1 (0–6 s): Logo baut sich auf, Bruno schaut vorbei ----------
+      tl.fromTo("#logo", { scale: 0, rotation: -14 }, { scale: 1, rotation: 0, duration: 0.7, ease: "back.out(1.7)" }, 0.25);
+      tl.fromTo(["#lb1", "#lb2", "#lb3"], { scaleX: 0 }, { scaleX: 1, duration: 0.55, ease: "power3.out", stagger: 0.14 }, 0.7);
+      tl.fromTo("#wm1", { y: 90, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "back.out(1.6)" }, 1.2);
+      tl.fromTo("#wm2", { y: 90, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "back.out(1.6)" }, 1.45);
+      tl.fromTo("#s1sub", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, 2.1);
+      tl.to("#logo", { rotation: -4, duration: 0.25, ease: "power2.out", yoyo: true, repeat: 1 }, 2.6);
+      tl.fromTo("#s1bruno", { y: 320 }, { y: 0, duration: 0.6, ease: "back.out(1.9)" }, 2.7);
+      wedeln("s1bruno", 2.9, 5.6, 0.14, 26);
+      tl.to("#s1bruno-head", { rotation: -10, svgOrigin: "330 110", duration: 0.2, ease: "power2.out", yoyo: true, repeat: 3 }, 3.3);
+      tl.to("#s1bruno-ear", { rotation: 16, svgOrigin: "334 72", duration: 0.18, ease: "sine.inOut", yoyo: true, repeat: 5 }, 3.3);
+      tl.set("#s1bruno-zunge", { opacity: 1 }, 3.5);
+      tl.fromTo("#wuff", { scale: 0, rotation: -10, transformOrigin: "20% 100%" }, { scale: 1, rotation: 0, duration: 0.45, ease: "back.out(2.2)" }, 3.9);
+      tl.to("#wuff", { y: -10, duration: 0.3, ease: "sine.inOut", yoyo: true, repeat: 2 }, 4.4);
+      tl.to("#s1bruno-eye", { scaleY: 0.1, svgOrigin: "364 83", duration: 0.07, yoyo: true, repeat: 1 }, 4.9);
+      wisch(6, "#s1", "#s2");
+
+      // ---------- Szene 2 (6–16 s): Lena und die widersprüchlichen Schlagzeilen ----------
+      armSofort("s2lena", "A", 8, 0);
+      armSofort("s2lena", "B", -30, 150);
+      tl.set("#s2lena-phone", { opacity: 1 }, 0);
+      tl.set("#s2lena-phoneIn", { rotation: -120, svgOrigin: "242 488" }, 0);
+      tl.set("#s2lena-head", { rotation: 8, svgOrigin: "180 290" }, 0);
+      blick("s2lena", 6, 8, 0, 0.01);
+      tl.fromTo("#s2lena", { x: -760 }, { x: 0, duration: 1.4, ease: "power2.out" }, 6.0);
+      laufen("s2lena", 6.0, 1.3);
+      atmen("s2lena", 7.4, 15.6);
+      tl.fromTo("#s2bruno", { x: -560 }, { x: 0, duration: 1.2, ease: "power2.out" }, 6.25);
+      wedeln("s2bruno", 6.3, 10.6);
+      woerter("#s2cap", 6.6);
+      // Schlagzeilen poppen nacheinander auf; Lena reagiert auf jede
+      const KARTEN = [["#k1", 7.6, -6, 10, -4], ["#k2", 8.3, 5, 14, -2], ["#k3", 9.0, -4, 12, 4], ["#k4", 9.7, 4, -18, 2]];
+      for (const [k, t, rot, dx, dy] of KARTEN) {
+        tl.fromTo(k, { scale: 0, rotation: rot * 4 }, { scale: 1, rotation: rot, duration: 0.5, ease: "back.out(2)" }, t);
+        tl.to(k, { y: -12, duration: 1.2, ease: "sine.inOut", yoyo: true, repeat: 3 }, t + 0.5);
+        blick("s2lena", dx, dy, t + 0.05, 0.18);
+      }
+      kopf("s2lena", -4, 7.7, 0.5);
+      mund("s2lena", "mOh", 7.7);
+      brauen("s2lena", -8, 8, -8, 7.7);
+      kopf("s2lena", 6, 8.4, 0.4);
+      kopf("s2lena", -6, 9.1, 0.4);
+      // ratlos
+      arm("s2lena", "B", -20, 20, 10.3, 0.4, "power2.out");
+      tl.set("#s2lena-phone", { opacity: 0 }, 10.5);
+      arm("s2lena", "A", 40, -60, 10.4, 0.5, "back.out(1.6)");
+      arm("s2lena", "B", -40, 60, 10.4, 0.5, "back.out(1.6)");
+      mund("s2lena", "mWorry", 10.5);
+      brauen("s2lena", 14, -14, -4, 10.5);
+      kopf("s2lena", 10, 10.5, 0.5, "back.out(1.6)");
+      blick("s2lena", 0, -4, 10.5);
+      woerter("#s2cap2", 10.9);
+      tl.fromTo(["#f1", "#f2", "#f3"], { scale: 0, y: 40, rotation: -30 }, { scale: 1, y: 0, rotation: (i) => [-12, 6, 18][i], duration: 0.5, ease: "back.out(2.4)", stagger: 0.12 }, 10.7);
+      tl.to(["#f1", "#f2", "#f3"], { y: -14, duration: 0.6, ease: "sine.inOut", yoyo: true, repeat: 5, stagger: 0.15 }, 11.3);
+      blinzeln("s2lena", [8.9, 12.6, 14.8]);
+      tl.to("#s2bruno-head", { rotation: -14, svgOrigin: "330 110", duration: 0.4, ease: "back.out(2)" }, 11.0);
+      tl.set("#s2bruno-zunge", { opacity: 0 }, 0);
+      // Mimi kommt und wischt eine Schlagzeile weg
+      tl.fromTo("#s2mimi", { x: 320 }, { x: 0, duration: 0.8, ease: "power2.out" }, 11.6);
+      katzenschwanz("s2mimi", 11.6, 15.8);
+      tl.to("#s2mimi-paw", { rotation: -150, svgOrigin: "145 196", duration: 0.2, ease: "power3.out" }, 12.7);
+      tl.to("#s2mimi-paw", { rotation: 0, svgOrigin: "145 196", duration: 0.35, ease: "power2.inOut" }, 12.95);
+      tl.to("#k3", { x: 900, y: 520, rotation: 80, duration: 0.7, ease: "power3.in" }, 12.8);
+      tl.set("#s2mimi-lid", { opacity: 1 }, 13.3);
+      // Lena muss lachen
+      mund("s2lena", "mGrin", 13.6);
+      brauen("s2lena", 0, 0, -6, 13.6);
+      kopf("s2lena", 0, 13.6, 0.5);
+      blick("s2lena", 18, 8, 13.6);
+      arm("s2lena", "A", 8, 0, 13.7, 0.5, "power2.inOut");
+      arm("s2lena", "B", -8, 0, 13.7, 0.5, "power2.inOut");
+      // Lena lacht mit (14,4–15,6 s)
+      tl.to("#s2lena-all", { y: -8, duration: 0.14, ease: "sine.inOut", yoyo: true, repeat: 5 }, 14.4);
+      kopf("s2lena", -5, 14.4, 0.3);
+      kopf("s2lena", 3, 14.9, 0.4);
+      tl.to("#s2bruno-head", { rotation: 0, svgOrigin: "330 110", duration: 0.3, ease: "power2.out" }, 14.3);
+      wedeln("s2bruno", 14.3, 15.7, 0.12, 28);
+      tl.set("#s2bruno-zunge", { opacity: 1 }, 14.4);
+      wisch(16, "#s2", "#s3");
+
+      // ---------- Szene 3 (16–27 s): nachlesen, prüfen, ordnen ----------
+      armSofort("s3lena", "A", 8, 0);
+      armSofort("s3lena", "B", -10, 0);
+      woerter("#s3cap", 16.4, 0.1);
+      tl.fromTo("#s3sub", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, 17.1);
+      tl.fromTo("#s3lena", { x: -500 }, { x: 0, duration: 1.0, ease: "power2.out" }, 16.2);
+      laufen("s3lena", 16.2, 0.9);
+      atmen("s3lena", 17.2, 26.6);
+      tl.fromTo(["#d1", "#d2", "#d3"], { y: 520, rotation: (i) => [-10, 6, 12][i] }, { y: 0, rotation: (i) => [-4, 2, 5][i], duration: 0.6, ease: "back.out(1.5)", stagger: 0.12 }, 16.5);
+      // Lupe heben und über die Quellen führen
+      tl.set("#s3lena-lupe", { opacity: 1 }, 17.4);
+      arm("s3lena", "B", -78, -22, 17.4, 0.5);
+      mund("s3lena", "mOh", 17.5);
+      brauen("s3lena", -6, 6, -6, 17.5);
+      blick("s3lena", 14, 4, 17.5);
+      tl.to("#s3lena-armB", { rotation: -64, svgOrigin: ARM.B.schulter, duration: 0.8, ease: "sine.inOut", yoyo: true, repeat: 3 }, 18.0);
+      kopf("s3lena", 6, 18.0, 0.8);
+      // Zahlen fliegen aus den Quellen in die Tabelle
+      const CHIPS = [["#c1", "#r1", 19.2, 700, 470, 1300, 430], ["#c2", "#r2", 19.7, 760, 520, 1300, 522], ["#c3", "#r3", 20.2, 690, 560, 1300, 614], ["#c4", "#r4", 20.7, 740, 500, 1300, 706]];
+      tl.fromTo("#tab", { x: 700, rotation: 6 }, { x: 0, rotation: 0, duration: 0.7, ease: "back.out(1.4)" }, 18.4);
+      tl.set(["#r1", "#r2", "#r3", "#r4"], { opacity: 0 }, 0);
+      tl.set(["#c1", "#c2", "#c3", "#c4"], { opacity: 0 }, 0);
+      for (const [c, r, t, x0, y0, x1, y1] of CHIPS) {
+        tl.fromTo(c, { opacity: 0, scale: 0.4, x: 0, y: 0 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(2)" }, t);
+        tl.to(c, { x: x1 - x0, y: y1 - y0 - 120, duration: 0.3, ease: "power2.out" }, t + 0.2);
+        tl.to(c, { y: y1 - y0, scale: 0.6, opacity: 0, duration: 0.25, ease: "power2.in" }, t + 0.5);
+        tl.fromTo(r, { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.35, ease: "power2.out" }, t + 0.62);
+      }
+      blinzeln("s3lena", [19.6, 23.4, 25.8]);
+      // Stempel
+      tl.set("#s3lena-lupe", { opacity: 0 }, 21.7);
+      arm("s3lena", "B", -10, 0, 21.6, 0.4, "power2.inOut");
+      tl.fromTo("#st1", { scale: 2.6, opacity: 0, rotation: -30 }, { scale: 1, opacity: 1, rotation: -12, duration: 0.32, ease: "power4.in" }, 22.0);
+      tl.fromTo("#st2", { scale: 2.6, opacity: 0, rotation: 24 }, { scale: 1, opacity: 1, rotation: 9, duration: 0.32, ease: "power4.in" }, 22.5);
+      tl.fromTo("#tab", { x: 0 }, { x: 8, duration: 0.05, yoyo: true, repeat: 3, immediateRender: false }, 22.32);
+      mund("s3lena", "mGrin", 22.4);
+      brauen("s3lena", 0, 0, -8, 22.4);
+      blick("s3lena", 20, 0, 22.4);
+      arm("s3lena", "A", 120, -40, 22.6, 0.5);
+      tl.set("#s3lena-daumen", { opacity: 0 }, 0);
+      // Bruno bringt ein Blatt
+      tl.fromTo("#s3bruno", { x: 1400 }, { x: 0, duration: 1.4, ease: "power2.out" }, 23.0);
+      tl.fromTo("#blatt", { x: 1400, rotation: 0 }, { x: 0, rotation: -8, duration: 1.4, ease: "power2.out" }, 23.0);
+      wedeln("s3bruno", 24.3, 26.6);
+      tl.to("#blatt", { y: -30, rotation: 12, duration: 0.3, ease: "back.out(2)", yoyo: true, repeat: 1 }, 24.6);
+      tl.to("#s3bruno-ear", { rotation: 14, svgOrigin: "334 72", duration: 0.2, ease: "sine.inOut", yoyo: true, repeat: 5 }, 24.4);
+      arm("s3lena", "A", 8, 0, 24.8, 0.5, "power2.inOut");
+      // Lena nickt zufrieden, Bruno legt das Blatt ab (25,4–26,6 s)
+      kopf("s3lena", -6, 25.4, 0.25);
+      kopf("s3lena", 4, 25.65, 0.25);
+      kopf("s3lena", -3, 25.9, 0.3);
+      tl.to("#blatt", { y: 46, rotation: -2, duration: 0.4, ease: "bounce.out" }, 25.5);
+      tl.set("#s3bruno-zunge", { opacity: 1 }, 25.6);
+      tl.to("#st1", { scale: 1.08, duration: 0.18, ease: "power2.out", yoyo: true, repeat: 1 }, 26.0);
+      wisch(27, "#s3", "#s4");
+
+      // ---------- Szene 4 (27–41 s): drei echte Befunde an der Tafel ----------
+      armSofort("s4lena", "A", 8, 0);
+      armSofort("s4lena", "B", -10, 0);
+      woerter("#s4cap", 27.3, 0.09);
+      tl.fromTo("#tafel", { y: 900, rotation: 4 }, { y: 0, rotation: 0, duration: 0.8, ease: "back.out(1.3)" }, 27.2);
+      tl.fromTo("#s4lena", { x: -560 }, { x: 0, duration: 0.9, ease: "power2.out" }, 27.4);
+      laufen("s4lena", 27.4, 0.9);
+      atmen("s4lena", 28.4, 40.6);
+      arm("s4lena", "B", -96, -8, 28.3, 0.5);
+      mund("s4lena", "mSmile", 28.3);
+      blick("s4lena", 20, -2, 28.3);
+      // A: Frauenanteil
+      const proxA = { p: 0 };
+      tl.fromTo(proxA, { p: 0 }, {
+        p: 1, duration: 3.2, ease: "power1.inOut",
+        onUpdate: () => {
+          const p = proxA.p;
+          linieA.setAttribute("stroke-dashoffset", LAENGE_A * (1 - p));
+          // Position und Wert entlang der Messpunkte
+          const ziel = p * LAENGE_A;
+          let s = 0, x = ax(FA[0][0]), y = ay(FA[0][1]), v = FA[0][1];
+          for (let i = 1; i < FA.length; i++) {
+            const x0 = ax(FA[i - 1][0]), y0 = ay(FA[i - 1][1]), x1 = ax(FA[i][0]), y1 = ay(FA[i][1]);
+            const l = Math.hypot(x1 - x0, y1 - y0);
+            if (s + l >= ziel) { const f = (ziel - s) / l; x = x0 + (x1 - x0) * f; y = y0 + (y1 - y0) * f; v = FA[i - 1][1] + (FA[i][1] - FA[i - 1][1]) * f; break; }
+            s += l; x = x1; y = y1; v = FA[i][1];
+          }
+          punktA.setAttribute("cx", x); punktA.setAttribute("cy", y);
+          document.getElementById("za").textContent = `${Math.round(v)} %`;
+        },
+      }, 28.6);
+      tl.fromTo("#za", { scale: 1 }, { scale: 1.12, duration: 0.25, ease: "power2.out", yoyo: true, repeat: 1, transformOrigin: "100% 50%" }, 31.8);
+      blinzeln("s4lena", [30.2, 33.6, 37.1, 39.9]);
+      mund("s4lena", "mGrin", 31.7);
+      // B: Katzen vor Hunden
+      tl.to("#pa", { opacity: 0, x: -60, duration: 0.35, ease: "power2.in" }, 32.6);
+      tl.fromTo("#pb", { opacity: 0, x: 60 }, { opacity: 1, x: 0, duration: 0.4, ease: "power2.out" }, 32.9);
+      tl.fromTo([saeuleKatze, saeuleHund], { scaleY: 0, svgOrigin: `0 ${BASIS_B}` }, { scaleY: 1, svgOrigin: `0 ${BASIS_B}`, duration: 0.8, ease: "back.out(1.4)", stagger: 0.18 }, 33.1);
+      tl.fromTo([tKatze, tHund, lKatze, lHund], { opacity: 0 }, { opacity: 1, duration: 0.3, stagger: 0.1 }, 33.7);
+      tl.fromTo("#s4mimi", { y: 260, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "back.out(1.8)" }, 33.9);
+      tl.set("#s4mimi-lid", { opacity: 1 }, 34.5);
+      katzenschwanz("s4mimi", 34.0, 36.6);
+      tl.fromTo("#s4bruno", { x: 520 }, { x: 0, duration: 0.6, ease: "power2.out" }, 34.1);
+      tl.set(["#s4bruno-mund"], { opacity: 0 }, 34.7);
+      tl.set(["#s4bruno-trotz"], { opacity: 1 }, 34.7);
+      tl.to("#s4bruno-ear", { rotation: -18, svgOrigin: "334 72", duration: 0.3, ease: "power2.out" }, 34.7);
+      tl.to("#s4bruno-head", { rotation: 12, svgOrigin: "330 110", duration: 0.4, ease: "power2.out" }, 34.7);
+      tl.to("#s4bruno-brow", { rotation: 18, svgOrigin: "364 64", duration: 0.3 }, 34.7);
+      arm("s4lena", "B", -110, -20, 33.2, 0.4);
+      kopf("s4lena", 5, 34.8, 0.4);
+      // Bruno beleidigt, Mimi putzt sich (35,2–36,6 s)
+      tl.fromTo("#hmpf", { scale: 0, transformOrigin: "20% 100%" }, { scale: 1, duration: 0.35, ease: "back.out(2.4)" }, 35.2);
+      tl.to("#hmpf", { scale: 0, duration: 0.2, ease: "power2.in" }, 36.4);
+      tl.to("#s4bruno-head", { rotation: 4, svgOrigin: "330 110", duration: 0.12, ease: "sine.inOut", yoyo: true, repeat: 5 }, 35.3);
+      tl.to("#s4mimi-paw", { rotation: -70, svgOrigin: "145 196", duration: 0.25, ease: "power2.out", yoyo: true, repeat: 3 }, 35.4);
+      kopf("s4lena", -4, 35.5, 0.4);
+      // C: Angestellte überholen Inhaber
+      tl.to("#pb", { opacity: 0, x: -60, duration: 0.35, ease: "power2.in" }, 36.6);
+      tl.to("#s4mimi", { y: 240, opacity: 0, duration: 0.4, ease: "power2.in" }, 36.6);
+      tl.to("#s4bruno", { x: 520, duration: 0.5, ease: "power2.in" }, 36.6);
+      tl.fromTo("#pc", { opacity: 0, x: 60 }, { opacity: 1, x: 0, duration: 0.4, ease: "power2.out" }, 36.9);
+      tl.fromTo([linieI, linieAng], { attr: { "stroke-dashoffset": (i) => [LI, LA2][i] } }, { attr: { "stroke-dashoffset": 0 }, duration: 2.4, ease: "power1.inOut" }, 37.1);
+      tl.fromTo([tInh, tAng], { opacity: 0 }, { opacity: 1, duration: 0.3, stagger: 0.2 }, 37.4);
+      tl.fromTo("#knall", { scale: 0, opacity: 0, svgOrigin: `${kreuzX} ${kreuzY}` }, { scale: 1, opacity: 1, svgOrigin: `${kreuzX} ${kreuzY}`, duration: 0.45, ease: "back.out(2.6)" }, 39.3);
+      mund("s4lena", "mOh", 39.2);
+      brauen("s4lena", -10, 10, -10, 39.2);
+      arm("s4lena", "B", -130, -10, 37.2, 0.5);
+      mund("s4lena", "mGrin", 39.9);
+      wisch(41, "#s4", "#s5");
+
+      // ---------- Szene 5 (41–52 s): das Studio ----------
+      armSofort("s5lena", "A", 8, 0);
+      armSofort("s5lena", "B", -10, 0);
+      woerter("#s5cap", 41.3, 0.07);
+      tl.fromTo("#laptop", { y: 700, rotation: -3 }, { y: 0, rotation: 0, duration: 0.8, ease: "back.out(1.3)" }, 41.3);
+      tl.fromTo("#s5lena", { x: -520 }, { x: 0, duration: 0.9, ease: "power2.out" }, 41.5);
+      laufen("s5lena", 41.5, 0.9);
+      atmen("s5lena", 42.5, 51.6);
+      tl.set(rennBalken, { scaleX: 0, svgOrigin: "160 0" }, 0);
+      // Tabelle fällt in den Laptop
+      tl.fromTo("#tk", { y: -560, rotation: -16, scale: 1 }, { y: 70, rotation: 4, duration: 0.7, ease: "power2.in" }, 42.6);
+      tl.to("#tk", { scale: 0.2, opacity: 0, y: 150, duration: 0.3, ease: "power2.in" }, 43.3);
+      tl.fromTo("#laptop", { scaleY: 1 }, { scaleY: 0.97, transformOrigin: "50% 100%", duration: 0.1, yoyo: true, repeat: 1, immediateRender: false }, 43.4);
+      // Balkenrennen auf dem Bildschirm
+      tl.to(rennBalken, { scaleX: 1, svgOrigin: "160 0", duration: 0.6, ease: "power3.out", stagger: 0.1 }, 43.6);
+      const TAUSCH = [[44.5, [0, 2, 1, 3], [0.62, 0.95, 0.8, 0.45]], [45.3, [2, 0, 3, 1], [1, 0.82, 0.58, 0.7]], [46.0, [2, 3, 0, 1], [1.05, 0.9, 0.7, 0.66]]];
+      for (const [t, rang, breite] of TAUSCH) rennBalken.forEach((b, i) => {
+        tl.to(b, { y: (rang[i] - i) * 74, duration: 0.5, ease: "power2.inOut" }, t);
+        tl.to(b, { scaleX: breite[i], svgOrigin: "160 0", duration: 0.5, ease: "power2.inOut" }, t);
+      });
+      mund("s5lena", "mOh", 43.5);
+      blick("s5lena", 18, 0, 43.5);
+      // MP4 springt heraus und fliegt aufs Handy
+      tl.fromTo("#mp4", { scale: 0, opacity: 0, x: 0, y: 0, rotation: 0 }, { scale: 1, opacity: 1, y: -170, rotation: -8, duration: 0.55, ease: "back.out(2.2)" }, 46.7);
+      tl.fromTo("#handy", { x: 520, rotation: 8 }, { x: 0, rotation: 0, duration: 0.7, ease: "back.out(1.4)" }, 46.5);
+      tl.to("#mp4", { x: 720, y: -60, rotation: 6, scale: 0.7, duration: 0.6, ease: "power2.inOut" }, 47.4);
+      tl.to("#mp4", { scale: 0.2, opacity: 0, duration: 0.2, ease: "power2.in" }, 48.0);
+      tl.fromTo("#feed", { opacity: 0, scale: 0.6, svgOrigin: "145 265" }, { opacity: 1, scale: 1, svgOrigin: "145 265", duration: 0.45, ease: "back.out(2)" }, 48.1);
+      tl.fromTo("#handy", { y: 0 }, { y: -16, duration: 0.18, ease: "power2.out", yoyo: true, repeat: 1, immediateRender: false }, 48.1);
+      mund("s5lena", "mGrin", 48.2);
+      brauen("s5lena", 0, 0, -8, 48.2);
+      // Daumen hoch
+      arm("s5lena", "B", -20, 150, 48.4, 0.5);
+      tl.set("#s5lena-daumen", { opacity: 1 }, 48.6);
+      tl.fromTo("#schild", { y: 160, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "back.out(1.6)" }, 48.9);
+      blinzeln("s5lena", [45.1, 49.8]);
+      kopf("s5lena", -6, 49.2, 0.5);
+      // Schild und Video-Karte leben weiter (49,8–51,6 s)
+      tl.to("#schild", { scale: 1.04, duration: 0.3, ease: "sine.inOut", yoyo: true, repeat: 3 }, 49.8);
+      tl.to("#feed", { scale: 1.05, svgOrigin: "145 265", duration: 0.3, ease: "sine.inOut", yoyo: true, repeat: 3 }, 50.2);
+      kopf("s5lena", 4, 50.4, 0.4);
+      tl.to("#s5lena-all", { y: -10, duration: 0.18, ease: "power2.out", yoyo: true, repeat: 1 }, 50.9);
+      wisch(52, "#s5", "#s6");
+
+      // ---------- Szene 6 (52–60 s): Abschluss ----------
+      armSofort("s6lena", "A", 8, 0);
+      armSofort("s6lena", "B", -10, 0);
+      mund("s6lena", "mGrin", 0);
+      tl.fromTo("#logo6", { scale: 0, rotation: -20 }, { scale: 1, rotation: 0, transformOrigin: "60px 60px", duration: 0.6, ease: "back.out(2)" }, 52.25);
+      tl.fromTo("#name6", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, 52.6);
+      tl.fromTo("#url", { scale: 0.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: "back.out(1.8)" }, 52.9);
+      tl.fromTo("#s6sub", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, 53.4);
+      tl.fromTo("#s6von", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, 53.7);
+      konfettiTeile.forEach((k, i) => {
+        tl.fromTo(k.el, { x: 0, y: 0, rotation: 0, opacity: 0 }, { x: k.x, y: k.y, rotation: k.r, opacity: 1, duration: 1.1, ease: "power3.out" }, 53.0 + (i % 6) * 0.03);
+        tl.to(k.el, { y: k.y + 380, opacity: 0, rotation: k.r + 140, duration: 2.6, ease: "power1.in" }, 54.1 + (i % 6) * 0.03);
+      });
+      tl.fromTo("#s6lena", { y: 700 }, { y: 0, duration: 0.7, ease: "back.out(1.5)" }, 52.4);
+      tl.fromTo("#s6bruno", { y: 300 }, { y: 0, duration: 0.6, ease: "back.out(1.8)" }, 52.7);
+      tl.fromTo("#s6mimi", { y: 320 }, { y: 0, duration: 0.6, ease: "back.out(1.8)" }, 52.9);
+      atmen("s6lena", 53.2, 59.9);
+      // Winken
+      arm("s6lena", "B", -160, -10, 53.4, 0.5);
+      tl.fromTo("#s6lena-foreB", { rotation: -10, svgOrigin: ARM.B.ellbogen }, { rotation: -42, svgOrigin: ARM.B.ellbogen, duration: 0.3, ease: "sine.inOut", yoyo: true, repeat: 15, immediateRender: false }, 53.95);
+      kopf("s6lena", -6, 53.6, 0.5);
+      blinzeln("s6lena", [55.2, 57.9]);
+      wedeln("s6bruno", 53.0, 59.9, 0.14, 26);
+      tl.set("#s6bruno-zunge", { opacity: 1 }, 53.3);
+      tl.to("#s6bruno-head", { rotation: -8, svgOrigin: "330 110", duration: 0.35, ease: "sine.inOut", yoyo: true, repeat: 7 }, 53.5);
+      katzenschwanz("s6mimi", 53.0, 59.9);
+      tl.set("#s6mimi-lid", { opacity: 1 }, 55.5);
+      tl.set("#s6mimi-lid", { opacity: 0 }, 55.7);
+      tl.to("#url", { scale: 1.04, duration: 0.8, ease: "sine.inOut", yoyo: true, repeat: 4 }, 55.2);
+      tl.to("#logo6", { rotation: -6, transformOrigin: "60px 60px", duration: 0.3, ease: "sine.inOut", yoyo: true, repeat: 1 }, 58.2);
+      tl.to("#s6bruno-all", { y: -18, duration: 0.2, ease: "power2.out", yoyo: true, repeat: 3 }, 58.0);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
