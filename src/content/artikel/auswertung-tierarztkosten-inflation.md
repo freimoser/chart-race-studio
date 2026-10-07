@@ -17,7 +17,7 @@ Ja, seit 2000 sind die Tierarztkosten stärker gestiegen als die Verbraucherprei
 - **Routinejahr, einfacher Satz mit Mehrwertsteuer:** Katze von 26,10 auf 83,59 Euro (plus 220 Prozent), Hund von 34,40 auf 83,59 Euro (plus 143 Prozent), Pferd von 45,08 auf 100,63 Euro (plus 123 Prozent). Der Warenkorb ist eine eigene Rechnung aus der Gebührenordnung.
 - **21 Jahre unter der Inflation:** Von 2000 bis 2021 stieg das Routinejahr um 29 Prozent, die Verbraucherpreise um 37 Prozent. In jedem dieser Jahre lag der Korb darunter.
 - **Die GOT 2022 brachte im Schnitt plus 37,5 Prozent.** So viel sprang der Preisindex im Dezember 2022. Routineleistungen stiegen weit stärker, manche Operationen gar nicht.
-- **Zum Vergleich:** Die Maß auf der Wiesn wurde im selben Zeitraum um 147 Prozent teurer.
+- **Zum Vergleich:** Die Maß auf der Wiesn wurde im selben Zeitraum um 147 Prozent teurer, von 6,35 auf 15,69 Euro. Im [Exkurs Oktoberfest](oktoberfest-masspreis-inflation.html) stehen plus 390 Prozent, weil er 1985 bei 3,20 Euro beginnt.
 
 ## Woher die Zahlen kommen
 
