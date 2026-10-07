@@ -61,7 +61,7 @@ function lesen(datei) {
   }
   // Anleitungen gehören zu keinem Post: Sie erklären das Werkzeug und sind jederzeit gültig.
   // Exkurse (etwa das Oktoberfest als Beispiel für ein neues Diagramm) gehören ebenfalls zu keinem Post.
-  const anleitung = kopf.art === 'anleitung' || kopf.art === 'exkurs'
+  const anleitung = kopf.art === 'anleitung' || kopf.art === 'exkurs' || kopf.art === 'auswertung'
   for (const pflicht of [...(anleitung ? [] : ['post']), 'slug', 'titel', 'beschreibung', 'frage', 'stand', 'bereit']) {
     if (!kopf[pflicht]) throw new Error(`${datei}: Feld „${pflicht}“ fehlt`)
   }
@@ -298,7 +298,7 @@ ${entwurf ? `    <p class="entwurf">Entwurf · ${a.bereit ? 'bereit zur Freigabe
 
     <main class="wrap">
       <article>
-        <p class="meta">${a.art === 'exkurs' ? 'Exkurs · Neu im Studio' : a.anleitung ? 'Anleitung' : `Visite ${visiteVon(post.nr)} · Post ${post.nr}: ${esc(post.title)}`}</p>
+        <p class="meta">${a.art === 'exkurs' ? 'Exkurs · Neu im Studio' : a.art === 'auswertung' ? 'Sonderauswertung' : a.anleitung ? 'Anleitung' : `Visite ${visiteVon(post.nr)} · Post ${post.nr}: ${esc(post.title)}`}</p>
         <h1>${esc(a.titel)}</h1>
         ${lead}
         <p class="meta">Stand ${datumDe(a.stand)} · von ${esc(L.operator)}${post.publishedOn ? ` · auf LinkedIn seit ${datumDe(post.publishedOn)}` : ''}</p>
@@ -321,7 +321,7 @@ ${csv ? `          <p><a href="${csv}" download>Daten als CSV herunterladen</a> 
 function uebersicht(live) {
   const nachKapitel = [
     ...ARCS.map((arc) => ({ arc, liste: live.filter((a) => POSTS.find((p) => p.nr === a.post)?.arc === arc.id) })),
-    { arc: { label: 'Anleitungen und Exkurse' }, liste: live.filter((a) => a.anleitung) },
+    { arc: { label: 'Sonderauswertungen, Exkurse und Anleitungen' }, liste: live.filter((a) => a.anleitung) },
   ].filter((k) => k.liste.length)
   const jsonld = {
     '@context': 'https://schema.org', '@type': 'CollectionPage',
@@ -373,11 +373,11 @@ ${k.liste.map((a) => `        <li><a href="${a.slug}.html">${esc(a.frage)}</a><b
 // /#redaktionsplan) leitet ein kleines Skript im Kopf nach /studio/ weiter; GitHub Pages kann keine
 // Weiterleitung auf dem Server.
 function startseite(live) {
-  const artikel = live.filter((a) => !a.anleitung || a.art === 'exkurs').sort((x, y) => (y.veroeffentlicht ?? '').localeCompare(x.veroeffentlicht ?? '') || (y.post ?? 0) - (x.post ?? 0))
+  const artikel = live.filter((a) => !a.anleitung || a.art === 'exkurs' || a.art === 'auswertung').sort((x, y) => (y.veroeffentlicht ?? '').localeCompare(x.veroeffentlicht ?? '') || (y.post ?? 0) - (x.post ?? 0))
   const neu = artikel.find((a) => grafikVon(a.grafik, POSTS.find((p) => p.nr === a.post)?.sampleId))
   const gNeu = neu && grafikVon(neu.grafik, POSTS.find((p) => p.nr === neu.post)?.sampleId)
   const csvNeu = gNeu && DATENSAETZE[gNeu.id]?.daten ? `daten/${gNeu.id}.csv` : ''
-  const anleitungen = live.filter((a) => a.anleitung && a.art !== 'exkurs')
+  const anleitungen = live.filter((a) => a.anleitung && a.art === 'anleitung')
   return `<!doctype html>
 <html lang="de" data-brand="klar">
   <head>

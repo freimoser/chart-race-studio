@@ -203,3 +203,10 @@ Ersetzt eine extern zugelieferte Vorlage, in der 19 von 26 Jahren interpoliert o
 - **Lücken und Brüche:** 2020/21 keine Wiesn (Corona), die Zeilen haben nur den Inflationswert. Hendl (nicht im Diagramm, im Artikel): 2001 halbiert sich die Zahl, vermutlich geänderte Erfassung. Dauer 16–18 Tage.
 - **Reduzierte Fassung** `oktoberfest-preis`: dieselben Werte ohne Bier (Besucher als Säulen, Maß und Maß mit Inflation als Linien), zweite Grafik im Artikel.
 - **Freigabe:** gehört zu keinem Post; freigegeben über `datensaetzeOhnePost` in `src/content/freigabe.json`. Rubrik „Exkurs“.
+
+## Tierarzt, Inflation und Maß (`tierarzt-inflation`, Sonderauswertung)
+
+- **Quelle:** Destatis Verbraucherpreisindex (GENESIS 61111-0001/-0003/-0004, Position CC13-0935 „Veterinär- u.a. Dienstleistungen für Haustiere“, ausgelesen über die öffentliche Tabellenansicht am 07.10.2026); GOT 1999/2008/2017/2022 aus dem BGBl.; Maß aus `ds15-oktoberfest.json`. Rohdaten in `data/raw/ds16-tierarztkosten.json`.
+- **Reihen:** Anstieg seit 2000 in Prozent: Katze, Hund, Pferd (allgemeine Untersuchung, einfacher GOT-Satz netto, Stand Jahresende), Tierarzt gesamt (Index), Inflation (Gesamtindex), Maß auf der Wiesn.
+- **Vorläufig:** 2026 beim Gesamtindex (Monatsraten Jan–Sep) und bei der Maß. Ersetzen, sobald Jahreswerte vorliegen.
+- **Freigabe:** über `datensaetzeOhnePost`.

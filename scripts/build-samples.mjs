@@ -18,6 +18,7 @@ const d12 = load('ds12-ketten-modell.json')
 const d13 = load('ds13-hund-katze-welt.json')
 const d14 = load('ds14-geschlecht.json')
 const d15 = load('ds15-oktoberfest.json')
+const d16 = load('ds16-tierarztkosten.json')
 
 /** long rows -> wide table (Jahr × names). Bei Dubletten gewinnt die zuerst genannte Quelle. */
 function wide(rows, { names, from, to, rename = {} }) {
@@ -347,8 +348,30 @@ const w13 = {
 // 13b Reduzierte Fassung ohne Bier: Besucher als Säulen, Maßpreis und Inflation als Linien. Dieselben Werte.
 const w13b = { headers: ['Jahr', 'Besucher (Mio.)', 'Maß', 'Maß mit Inflation'], rows: w13.rows.map((r) => [r[0], r[2], r[3], r[4]]) }
 
+// 14 Tierarztkosten gegen Inflation seit 2000: Anstieg in Prozent. Katze, Hund, Pferd sind die allgemeine
+// Untersuchung laut GOT (einfacher Satz, Stand Jahresende, 1999er DM-Beträge zum amtlichen Kurs), dazu der
+// Verbraucherpreisindex für Tierarztleistungen, der Gesamtindex und – als Querverweis zum Exkurs – die Maß
+// auf der Wiesn (2020/21 keine Wiesn). 2026: Tierarzt-Index Jan–Aug, Gesamtindex aus den Monatsraten.
+const GOT = d16.got_allgemeine_untersuchung.versionen
+const gebuehr = (tier, jahr) => {
+  const ab = { 'GOT 1999': 1999, '2. ÄndVO': 2008, '3. ÄndVO': 2017, 'GOT 2022': 2022 }
+  let wert = null
+  for (const v of GOT) if (ab[v.version] <= jahr) wert = v[tier] ?? v[`${tier}_dm`] / 1.95583
+  return wert
+}
+const vet = (j) => (j === 2026 ? d16.jahr_2026.veterinaer : d16.veterinaer_2020_100[j])
+const ges = (j) => (j === 2026 ? d16.jahr_2026.vpi_gesamt_naeherung : d16.vpi_gesamt_2020_100[j])
+const mass = (j) => wiesn.get(j)?.masspreis_eur ?? null
+const anstieg = (a, b) => (a == null || b == null ? null : Math.round((a / b - 1) * 1000) / 10)
+const w14 = {
+  headers: ['Jahr', 'Katze', 'Hund', 'Pferd', 'Tierarzt gesamt', 'Inflation', 'Maß auf der Wiesn'],
+  rows: Array.from({ length: 2026 - 2000 + 1 }, (_, k) => 2000 + k).map((j) => [String(j),
+    anstieg(gebuehr('katze', j), gebuehr('katze', 2000)), anstieg(gebuehr('hund', j), gebuehr('hund', 2000)), anstieg(gebuehr('pferd', j), gebuehr('pferd', 2000)),
+    anstieg(vet(j), vet(2000)), anstieg(ges(j), ges(2000)), anstieg(mass(j), mass(2000))]),
+}
+
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 const out = `// Automatisch erzeugt von scripts/build-samples.mjs aus data/raw/*.json – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('TIERAERZTE_BUNDESLAND', w1), emit('TIERAERZTESCHAFT_DEUTSCHLAND', w2), emit('INHABER_ANGESTELLTE', w2b), emit('HEIMTIERE', w3), emit('HUNDERASSEN', w4), emit('RINDER_BUNDESLAND', w5), emit('HEIMTIERMARKT', w6), emit('PRAXISSCHWERPUNKTE', w7), emit('FACHTIERAERZTE', w8), emit('KLEINTIERE_BUNDESLAND', w9), emit('KETTEN', w10), emit('KETTEN_EIGENTUEMER', w11), emit('GESCHLECHT_PRAXIS', w12), emit('OKTOBERFEST', w13), emit('OKTOBERFEST_PREIS', w13b), emit('HUND_KATZE_WELT', { headers: d13.headers ?? ['Jahr'], rows: d13.rows ?? [] })].join('\n')
+  [emit('TIERAERZTE_BUNDESLAND', w1), emit('TIERAERZTESCHAFT_DEUTSCHLAND', w2), emit('INHABER_ANGESTELLTE', w2b), emit('HEIMTIERE', w3), emit('HUNDERASSEN', w4), emit('RINDER_BUNDESLAND', w5), emit('HEIMTIERMARKT', w6), emit('PRAXISSCHWERPUNKTE', w7), emit('FACHTIERAERZTE', w8), emit('KLEINTIERE_BUNDESLAND', w9), emit('KETTEN', w10), emit('KETTEN_EIGENTUEMER', w11), emit('GESCHLECHT_PRAXIS', w12), emit('OKTOBERFEST', w13), emit('OKTOBERFEST_PREIS', w13b), emit('TIERARZT_INFLATION', w14), emit('HUND_KATZE_WELT', { headers: d13.headers ?? ['Jahr'], rows: d13.rows ?? [] })].join('\n')
 fs.writeFileSync('src/samples/data.ts', out)
-for (const [n, w] of Object.entries({ w1, w2, w2b, w3, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w13b })) console.log(n, w.headers.length - 1, 'Kategorien,', w.rows.length, 'Perioden', w.rows[0]?.[0], '–', w.rows.at(-1)?.[0])
+for (const [n, w] of Object.entries({ w1, w2, w2b, w3, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w13b, w14 })) console.log(n, w.headers.length - 1, 'Kategorien,', w.rows.length, 'Perioden', w.rows[0]?.[0], '–', w.rows.at(-1)?.[0])

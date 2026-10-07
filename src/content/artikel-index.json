@@ -310,6 +310,16 @@
     "live": true
   },
   {
+    "art": "auswertung",
+    "slug": "tierarztkosten-inflation",
+    "titel": "Tierarztkosten seit 2000 im Vergleich zur Inflation",
+    "beschreibung": "Die Untersuchung einer Katze kostet 3,3-mal so viel wie 2000, die Verbraucherpreise stiegen um 66 Prozent. Tierarztpreise steigen in Stufen, nicht stetig.",
+    "frage": "Sind Tierarztkosten stärker gestiegen als die Inflation?",
+    "stand": "2026-10-07",
+    "bereit": true,
+    "live": true
+  },
+  {
     "art": "exkurs",
     "slug": "oktoberfest-masspreis-inflation",
     "titel": "Oktoberfest in Zahlen: Maßpreis, Bier und Inflation",

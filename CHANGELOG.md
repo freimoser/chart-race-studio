@@ -4,6 +4,12 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Sonderauswertung Tierarztkosten gegen Inflation (07.10.2026)
+
+- **Neuer Datensatz** `tierarzt-inflation`: Anstieg seit 2000 für die allgemeine Untersuchung von Katze (+230 %), Hund (+120 %) und Pferd (+101 %) laut GOT, Tierarztleistungen laut Verbraucherpreisindex (+85 %), Inflation (+66 %) und Maß (+147 %). Die Destatis-Reihe stammt aus der öffentlichen GENESIS-Tabellenansicht, die GOT-Beträge aus den Bundesgesetzblättern 1999, 2008, 2017 und der GOT 2022.
+- **Artikel** „Tierarztkosten seit 2000 im Vergleich zur Inflation“ als neue Art `auswertung` (ohne Post, auf der Startseite als „Neu“), Eintrag in der Datenherkunft, Vorschaubild.
+- Datensatz-Vorschläge können ein Präfix setzen (`prefix: '+'`).
+
 ### Neues Format „Säulen + Linie“, Exkurs Oktoberfest (04.10.2026)
 
 - **Auf LinkedIn gepostet** am 04.10.2026: Der Artikel zeigt „auf LinkedIn seit“. Neu: `linkedin_datum` und `linkedin` im Kopf von Beiträgen ohne Post. Kommentarbild der reduzierten Fassung in `docs/linkedin/`.

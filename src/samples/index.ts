@@ -1,5 +1,5 @@
 import type { SampleDataset } from '@/lib/data/types'
-import { OKTOBERFEST, OKTOBERFEST_PREIS, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data'
+import { OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -296,6 +296,28 @@ export const SAMPLES: SampleDataset[] = [
     suggested: {
       chartType: 'line', topN: 4, decimals: 0, primaryAxisLabel: 'Personen',
       colors: { 'Angestellte Tierärztinnen': '#e36414', 'Praxisinhaberinnen': '#f2a65a', 'Praxisinhaber': '#0f4c5c', 'Angestellte Tierärzte': '#6aa3ad' },
+    },
+  },
+  {
+    id: 'tierarzt-inflation',
+    erstellt: '2026-10-07', geprueft: '2026-10-07',
+    category: 'praxis',
+    title: 'Tierarzt, Inflation und Maß: was seit 2000 teurer wurde',
+    subtitle: 'Anstieg seit 2000. Katze, Hund, Pferd: allgemeine Untersuchung laut Gebührenordnung (einfacher Satz)',
+    source: 'Quelle: Destatis (Verbraucherpreisindex, Tierarztleistungen), GOT 1999–2022 (BGBl.), Stat. Amt München (Maß). 2026 teils vorläufig',
+    sourceUrl: 'https://www-genesis.destatis.de/datenbank/online/statistic/61111/table/61111-0003',
+    unit: 'Prozent',
+    description: 'Die Untersuchung der Katze kostet 3,3-mal so viel wie 2000, die Inflation liegt bei plus 66 Prozent. Der Tierarzt steigt in Stufen, nicht gleichmäßig.',
+    dataInfo: [
+      "Katze, Hund und Pferd sind die allgemeine Untersuchung mit Beratung laut Gebührenordnung für Tierärzte (GOT), einfacher Satz ohne Umsatzsteuer, jeweils Stand Jahresende: GOT 1999 (21, 14 und 30 DM, zum amtlichen Kurs in Euro), Erhöhungen um 12 Prozent im Juli 2008 und Juli 2017, neue GOT ab 22.11.2022 (23,62 Euro für Hund und Katze, 30,78 Euro für das Pferd). Seitdem keine Änderung.",
+      "„Tierarzt gesamt“ ist der Verbraucherpreisindex für Veterinär- und andere Dienstleistungen für Haustiere (Destatis), einschließlich Umsatzsteuer, Jahresdurchschnitt. „Inflation“ ist der Verbraucherpreisindex insgesamt; 2026 als Näherung aus den Monatsraten Januar bis September. Die Maß ist der durchschnittliche Preis auf dem Oktoberfest (Statistisches Amt München), 2026 vorläufig, 2020 und 2021 keine Wiesn.",
+      "Der einfache Satz ist seit der GOT 2022 der Mindestpreis. Tierärztinnen und Tierärzte dürfen bis zum Dreifachen berechnen, im Notdienst mehr. Die Rechnung kann also deutlich höher liegen als die Werte hier.",
+    ],
+    headers: TIERARZT_INFLATION.headers,
+    rows: TIERARZT_INFLATION.rows,
+    suggested: {
+      chartType: 'line', topN: 6, decimals: 0, prefix: '+', suffix: ' %', gapFill: 'none', primaryAxisLabel: 'Anstieg seit 2000',
+      colors: { 'Katze': '#e36414', 'Hund': '#0f4c5c', 'Pferd': '#8a5a3c', 'Tierarzt gesamt': '#5aa3ad', 'Inflation': '#8a949e', 'Maß auf der Wiesn': '#f3a712' },
     },
   },
   {

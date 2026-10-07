@@ -492,6 +492,39 @@ export const OKTOBERFEST_PREIS = {
   ],
 }
 
+export const TIERARZT_INFLATION = {
+  headers: ["Jahr","Katze","Hund","Pferd","Tierarzt gesamt","Inflation","Maß auf der Wiesn"],
+  rows: [
+    ["2000", 0, 0, 0, 0, 0, 0],
+    ["2001", 0, 0, 0, 0, 2, 1.9],
+    ["2002", 0, 0, 0, 0.1, 3.4, 6.3],
+    ["2003", 0, 0, 0, 0.3, 4.5, 6.3],
+    ["2004", 0, 0, 0, 0.3, 6.2, 10.6],
+    ["2005", 0, 0, 0, 0.8, 7.9, 12.6],
+    ["2006", 0, 0, 0, 1.1, 9.7, 16.9],
+    ["2007", 0, 0, 0, 3.7, 12.2, 23.6],
+    ["2008", 12, 12, 12, 13.1, 15.1, 29.9],
+    ["2009", 12, 12, 12, 19.7, 15.5, 34.3],
+    ["2010", 12, 12, 12, 19.7, 16.7, 38.4],
+    ["2011", 12, 12, 12, 19.7, 19.2, 43.1],
+    ["2012", 12, 12, 12, 19.7, 21.5, 48.2],
+    ["2013", 12, 12, 12, 19.7, 23.3, 54],
+    ["2014", 12, 12, 12, 19.7, 24.5, 57.2],
+    ["2015", 12, 12, 12, 19.7, 25.2, 61.7],
+    ["2016", 12, 12, 12, 19.7, 25.8, 66.5],
+    ["2017", 25.5, 25.5, 25.4, 26, 27.7, 71.2],
+    ["2018", 25.5, 25.5, 25.4, 34.2, 29.9, 78],
+    ["2019", 25.5, 25.5, 25.4, 34.2, 31.8, 84.4],
+    ["2020", 25.5, 25.5, 25.4, 32.5, 32.5, null],
+    ["2021", 25.5, 25.5, 25.4, 34.2, 36.6, null],
+    ["2022", 230, 120, 100.7, 39.6, 46, 111.8],
+    ["2023", 230, 120, 100.7, 84.5, 54.6, 125.7],
+    ["2024", 230, 120, 100.7, 84.5, 58, 134.6],
+    ["2025", 230, 120, 100.7, 84.5, 61.5, 141.4],
+    ["2026", 230, 120, 100.7, 84.5, 65.7, 147.1],
+  ],
+}
+
 export const HUND_KATZE_WELT = {
   headers: ["Jahr","Afghanistan","Albania","Algeria","Andorra","Angola","Antigua and Barbuda","Argentina","Armenia","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bhutan","Bolivia","Bosnia and Herzegovina","Botswana","Brazil","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Central African Republic","Chad","Chile","China","Colombia","Comoros","Costa Rica","Croatia","Cuba","Cyprus","Czechia","DR Congo","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Eswatini","Ethiopia","Fiji","Finland","France","Gabon","Gambia","Georgia","Germany","Ghana","Greece","Grenada","Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","Honduras","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Ivory Coast","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati","Kosovo","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Morocco","Mozambique","Myanmar","Namibia","Nauru","Nepal","Netherlands","New Zealand","Nicaragua","Niger","Nigeria","North Korea","North Macedonia","Norway","Oman","Pakistan","Palau","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Qatar","Republic of the Congo","Romania","Russian Federation","Rwanda","Saint Kitts and Nevis","Saint Lucia","Saint Vincent and the Grenadines","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Korea","South Sudan","Spain","Sri Lanka","Sudan","Suriname","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor-Leste","Togo","Tonga","Trinidad and Tobago","Tunisia","Turkey","Turkmenistan","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Yemen","Zambia","Zimbabwe","Summe: Hunde (Mio.)","Summe: Katzen (Mio.)"],
   rows: [

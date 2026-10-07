@@ -28,7 +28,7 @@ export function beispielLaden(sample: SampleDataset, basis: ChartSettings): { ta
       topN: sug.topN ?? formatById(basis.format).preset.topN,
       decimals: sug.decimals ?? 0,
       suffix: sug.suffix ?? '',
-      prefix: '',
+      prefix: sug.prefix ?? '',
       compact: false,
       chartType: sug.chartType ?? basis.chartType,
       showChange: sug.showChange ?? false,

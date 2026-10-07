@@ -108,6 +108,8 @@ export interface SampleDataset {
     chartType?: 'bar' | 'line' | 'map' | 'combo'
     /** Veränderung seit dem ersten Wert hinter jedem Wert (Line Race, Säulen + Linie) */
     showChange?: boolean
+    /** Präfix vor jedem Wert, etwa „+“ für Veränderungen in Prozent */
+    prefix?: string
     /** Lücken: Voreinstellung ist Interpolieren. 'none' für Daten, bei denen eine Lücke eine Aussage ist. */
     gapFill?: GapFill
     divergingAt?: number
