@@ -1,0 +1,161 @@
+{
+ "title": "Umsatz der Tierarztpraxen in Deutschland, 2009–2024 (Umsatzsteuerstatistik)",
+ "abgerufen": "2026-10-07",
+ "quelle": "Statistisches Bundesamt (Destatis), GENESIS-Online, Tabelle 73311-0002: Umsatzsteuerpflichtige, Steuerbarer Umsatz, Umsatzsteuer (Voranmeldungen), Deutschland, Jahre, Wirtschaftszweige (WZ2008). WZ08-75001 „Tierarztpraxen“, WZ08-75009 „Sonstiges Veterinärwesen“, WZ08-75 „Veterinärwesen“ insgesamt.",
+ "quelleUrl": "https://www-genesis.destatis.de/datenbank/online/statistic/73311/table/73311-0002",
+ "einheit": "Steuerbarer Umsatz in Tausend Euro (ohne Umsatzsteuer); Steuerpflichtige als Anzahl",
+ "notes": "Erfasst sind Unternehmen, die Umsatzsteuer-Voranmeldungen abgeben (Jahresumsatz über der Kleinunternehmergrenze, 17.500 € bis 2019, 22.000 € ab 2020). Der Umsatz enthält alles, was Praxen abrechnen: Leistungen nach GOT zu jedem Faktor, Medikamente, Futter, Nutztier- und Pferdepraxis. Er misst also Ausgaben (Preis × Menge), keinen Preis. Für die Jahre vor 2009 gibt es in GENESIS nur die WZ-2003-Abteilung 85 (Gesundheits-, Veterinär- und Sozialwesen), nicht das Veterinärwesen allein. 2025 noch nicht veröffentlicht.",
+ "tierarztpraxen_umsatz_tsd_eur": {
+  "2009": 2359266,
+  "2010": 2418182,
+  "2011": 2526292,
+  "2012": 2582544,
+  "2013": 2672507,
+  "2014": 2816618,
+  "2015": 2910144,
+  "2016": 3053723,
+  "2017": 3207216,
+  "2018": 3344914,
+  "2019": 3547201,
+  "2020": 3864833,
+  "2021": 4190282,
+  "2022": 4343602,
+  "2023": 5048629,
+  "2024": 5376370
+ },
+ "tierarztpraxen_steuerpflichtige": {
+  "2009": 9308,
+  "2010": 9395,
+  "2011": 9493,
+  "2012": 9480,
+  "2013": 9541,
+  "2014": 9596,
+  "2015": 9627,
+  "2016": 9703,
+  "2017": 9677,
+  "2018": 9637,
+  "2019": 9603,
+  "2020": 9372,
+  "2021": 9357,
+  "2022": 9304,
+  "2023": 9215,
+  "2024": 9222
+ },
+ "veterinaerwesen_umsatz_tsd_eur": {
+  "2009": 2597607,
+  "2010": 2676596,
+  "2011": 2772885,
+  "2012": 2843152,
+  "2013": 2935378,
+  "2014": 3091145,
+  "2015": 3198989,
+  "2016": 3357385,
+  "2017": 3533876,
+  "2018": 3689310,
+  "2019": 3878229,
+  "2020": 4268970,
+  "2021": 4599098,
+  "2022": 4814627,
+  "2023": 5600228,
+  "2024": 5941086
+ },
+ "sonstiges_veterinaerwesen_umsatz_tsd_eur": {
+  "2009": 238341,
+  "2010": 258414,
+  "2011": 246593,
+  "2012": 260607,
+  "2013": 262871,
+  "2014": 274527,
+  "2015": 288845,
+  "2016": 303662,
+  "2017": 326660,
+  "2018": 344397,
+  "2019": 331029,
+  "2020": 404138,
+  "2021": 408816,
+  "2022": 471025,
+  "2023": 551599,
+  "2024": 564717
+ },
+ "hicp_cp0935_2015_100": {
+  "quelle": "Eurostat, prc_hicp_aind, COICOP CP0935 „Veterinary and other services for pets“, Jahresdurchschnitt, Stand 06.02.2026 (abgerufen 07.10.2026)",
+  "quelleUrl": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_aind/default/table",
+  "DE": {
+   "2015": 100,
+   "2016": 100,
+   "2017": 105,
+   "2018": 112,
+   "2019": 112,
+   "2020": 110.6,
+   "2021": 112,
+   "2022": 116.6,
+   "2023": 154.8,
+   "2024": 154.8,
+   "2025": 155.1
+  },
+  "NL": {
+   "2010": 86.26,
+   "2011": 89.78,
+   "2012": 93.12,
+   "2013": 96.47,
+   "2014": 98.08,
+   "2015": 100,
+   "2016": 101.57,
+   "2017": 103.53,
+   "2018": 105.67,
+   "2019": 107.92,
+   "2020": 110.32,
+   "2021": 113.68,
+   "2022": 122.12,
+   "2023": 130.85,
+   "2024": 142.02,
+   "2025": 150.45
+  },
+  "AT": {
+   "2013": 96.59,
+   "2014": 98.27,
+   "2015": 100,
+   "2016": 102.01,
+   "2017": 104.03,
+   "2018": 105.57,
+   "2019": 106.73,
+   "2020": 109.15,
+   "2021": 111.78,
+   "2022": 115.19,
+   "2023": 122.08,
+   "2024": 129.25,
+   "2025": 133.76
+  },
+  "gesamtindex_cp00_2015_100": {
+   "NL": {
+    "2010": 92.05,
+    "2013": 99.47,
+    "2024": 131.92
+   },
+   "AT": {
+    "2010": 90.14,
+    "2013": 97.77,
+    "2024": 134.21
+   },
+   "hinweis": "Eurostat prc_hicp_aind, CP00, zum Vergleich mit der Inflation im jeweiligen Land (abgerufen 07.10.2026)"
+  }
+ },
+ "abrechnungsfaktor": {
+  "wert_2019_normalbetrieb": 1.44,
+  "wert_2019_notdienst": 2.25,
+  "quelle": "AFC Public Services im Auftrag der BLE/des BMEL: Prüfung der finanziellen und strukturellen Auswirkungen hinsichtlich der Angemessenheit der Gebührensätze der GOT, Abschlussbericht Februar 2021, S. 66 f. (Befragung, Selbstauskunft, Gebührensätze 2019)",
+  "quelleUrl": "https://www.bmel.de/SharedDocs/Downloads/DE/_Tiere/Tiergesundheit/abschlussbericht-pruefung-tieraerztegebuehrenverordnung.pdf?__blob=publicationFile&v=2",
+  "nach_2022": "Kein gemessener Durchschnittsfaktor gefunden (Recherche 07.10.2026). Die GOT-Evaluierung läuft, Ergebnisse Ende 2026 (BT-Drs. 21/4442)."
+ },
+ "verordnungsbegruendung_got_2022": {
+  "quelle": "BR-Drs. 247/22 vom 25.05.2022",
+  "quelleUrl": "https://dserver.bundestag.de/brd/2022/0247-22.pdf",
+  "mehrkosten": "„Diese können jedoch nicht beziffert werden.“",
+  "positionen": "In circa 84 Prozent der Leistungen Erhöhungen der einfachen Gebührensätze, in circa 16 Prozent Absenkungen."
+ },
+ "plausibilitaet_versicherer": {
+  "uelzener": "Durchschnittliche Schadenkosten 1. Halbjahr 2022 → 1. Halbjahr 2024: +36 bis +77 % je nach Versicherungs- und Tierart (Interview F. Garlipp, cash-online, 13.07.2026). Keine eigene Veröffentlichung der Uelzener, keine Zeitreihe.",
+  "quelleUrl": "https://www.cash-online.de/a/eine-groessere-op-kostet-heute-schnell-so-viel-wie-ein-familienurlaub-721950/"
+ },
+ "gegenprobe_eurostat_sbs": "Eurostat-Strukturstatistik (sbs_ovw_act), Nettoumsatz Veterinärwesen: 2022 5.082, 2023 6.171 Mio. € (+21 %). Andere Abgrenzung als die Umsatzsteuerstatistik (dort Tierarztpraxen +16 %), Reihenbrüche 2018 und 2021; deshalb nur Gegenprobe."
+}

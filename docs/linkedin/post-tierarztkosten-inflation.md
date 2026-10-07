@@ -7,31 +7,29 @@
 
 Neulich die Maß, heute der Tierarzt. 🐾
 
-Seit 2000 stiegen die Verbraucherpreise um 66 %.
-Die Maß auf der Wiesn um 147 %.
-Und der Tierarzt?
+Sind Tierarztkosten stärker gestiegen als die Inflation? Ich habe drei amtliche Quellen übereinandergelegt, 2010 bis 2024:
 
-Laut Destatis um 85 %. Aber wer die Monatswerte anschaut, sieht keine Kurve, sondern eine Treppe: Der Index springt nur, wenn sich die Gebührenordnung ändert. 2008 plus 12 %, 2017 plus 12 %, dazwischen neun Jahre nichts.
+🇩🇪 Tierarztpreise Deutschland: +54 %
+🇳🇱 Tierarztpreise Niederlande: +65 %
+💶 Umsatz der Tierarztpraxen: +122 %
+📈 Inflation: +35 %
+🍺 Maß auf der Wiesn: +70 %
 
-Dann der 22. November 2022: neue GOT, plus 37,5 % auf einen Schlag. Die „plus 40 %“, von denen alle sprachen, stimmen also. Als Durchschnitt.
+Die Antwort ist also ja. Spannend ist der Weg dorthin.
 
-Ich habe deshalb einen eigenen Warenkorb gerechnet: ein Routinejahr mit einer Impfung und einem Krankheitsbesuch, einfacher Satz, mit MwSt.
+In den Niederlanden gibt es keine Gebührenordnung. Dort steigen die Preise jedes Jahr ein Stück.
+In Deutschland folgt der Preisindex der GOT aufs Komma: neun Jahre Stillstand, 2017 plus 12 %, im Dezember 2022 plus 37,5 % auf einen Schlag. 2023 lagen beide Länder fast gleichauf.
 
-🐱 Katze: 26,10 € → 83,59 € (+220 %)
-🐶 Hund: 34,40 € → 83,59 € (+143 %)
-🐴 Pferd: 45,08 € → 100,63 € (+123 %)
+Und was kam auf den Rechnungen an? Der Umsatz der Praxen wuchs jedes Jahr gleichmäßig, auch als die Gebühren eingefroren waren. 2023 waren es plus 16 %, nicht plus 37 %.
+Ein Grund: Schon 2019 rechneten Praxen im Schnitt den 1,44-fachen Satz ab (Studie fürs Ministerium). Ein Teil der Erhöhung stand also längst auf der Rechnung.
 
-Bis 2021 lag dieser Korb jedes Jahr unter der Inflation. Erst die Reform hat ihn darüber gehoben, und zwar deutlich. Hund und Katze kosten seitdem dasselbe, und die Impfung hat keine eigene, günstige Position mehr.
+Mein Fazit: Die GOT 2022 war weniger eine Explosion als ein Nachholen in einem Schritt. Für einzelne Leistungen war der Sprung trotzdem groß, etwa für die Untersuchung der Katze.
 
-Gleichzeitig wurde die Kastration einer Hündin, bei der nur die Eierstöcke entfernt werden, sogar günstiger. Die Reform hat umgebaut, nicht nur erhöht.
-
-Was Tierhalter wirklich zahlen, weiß übrigens niemand. Abgerechnet wird zwischen dem einfachen und dem dreifachen Satz, und das erfasst keine Statistik.
-
-War die Reform überfällig oder zu viel auf einmal?
+Hättet ihr lieber jedes Jahr ein bisschen mehr, oder alle paar Jahre einen großen Schritt?
 
 Alle Zahlen, Tabellen und Methode:
 https://tiermedizin-in-zahlen.org/beitrag/tierarztkosten-inflation
 
-Quellen: Destatis (Verbraucherpreisindex), Gebührenordnung für Tierärzte 1999–2022, Statistisches Amt München.
+Quellen: Destatis (Verbraucherpreisindex, Umsatzsteuerstatistik), Eurostat, AFC-Studie zur GOT (2021), Statistisches Amt München.
 
 #Tiermedizin #Tierarzt #Inflation #GOT

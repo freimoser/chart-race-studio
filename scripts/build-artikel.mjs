@@ -278,7 +278,7 @@ function seite(a, { entwurf, alle }) {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>${esc(a.titel.length + L.siteName.length + 3 <= 65 ? `${a.titel} | ${L.siteName}` : a.titel)}</title>
+    <title>${esc(a.titel.length + L.siteName.length + 3 <= 60 ? `${a.titel} | ${L.siteName}` : a.titel)}</title>
     <meta name="description" content="${esc(a.beschreibung)}" />
 ${entwurf ? '    <meta name="robots" content="noindex, nofollow" />\n' : ''}    <link rel="icon" href="${tiefe}favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="${tiefe}favicon-96.png" sizes="96x96" type="image/png" />
@@ -537,7 +537,7 @@ function dfSeite(s, alle) {
   const nav = alle.map((x) => x.slug === s.slug
     ? `<li><strong aria-current="page">${esc(x.menue)}</strong></li>`
     : `<li><a href="${x.slug === 'index' ? './' : `${x.slug}.html`}">${esc(x.menue)}</a></li>`).join('')
-  const titel = s.titel.length + L.siteName.length + 3 <= 65 ? `${s.titel} | ${L.siteName}` : s.titel
+  const titel = s.titel.length + L.siteName.length + 3 <= 60 ? `${s.titel} | ${L.siteName}` : s.titel
   return `<!doctype html>
 <html lang="de" data-brand="klar">
   <head>

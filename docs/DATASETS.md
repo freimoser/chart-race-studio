@@ -206,8 +206,8 @@ Ersetzt eine extern zugelieferte Vorlage, in der 19 von 26 Jahren interpoliert o
 
 ## Tierarzt, Inflation und Maß (`tierarzt-inflation`, Sonderauswertung)
 
-- **Quelle:** Destatis Verbraucherpreisindex (GENESIS 61111-0001/-0003/-0004, Position CC13-0935 „Veterinär- u.a. Dienstleistungen für Haustiere“, ausgelesen über die öffentliche Tabellenansicht am 07.10.2026); GOT 1999/2008/2017/2022 aus dem BGBl.; Maß aus `ds15-oktoberfest.json`. Rohdaten in `data/raw/ds16-tierarztkosten.json`.
-- **Reihen:** Anstieg seit 2000 in Prozent: Katze, Hund, Pferd (eigener Warenkorb „Routinejahr“ = 2 × Untersuchung + Impfung + Injektion, einfacher GOT-Satz mit MwSt., Jahresdurchschnitt nach Geltungstagen; Positionen in `got_routinekorb`), Tierarzt gesamt (Index), Inflation (Gesamtindex), Maß auf der Wiesn (2020/21 linear zwischen 2019 und 2022).
-- **Index = GOT:** Der Monatsindex springt nur zu GOT- und MwSt.-Terminen (siehe `methodik_index`). Echte Rechnungen (Faktor 1–3) erfasst keine amtliche Statistik; EVS (63221) und LWR (63111) gliedern nicht so tief.
-- **Vorläufig:** 2026 beim Gesamtindex (Monatsraten Jan–Sep) und bei der Maß. Ersetzen, sobald Jahreswerte vorliegen.
+- **Quelle:** Destatis Verbraucherpreisindex (GENESIS 61111-0001/-0003/-0004, CC13-0935) und Umsatzsteuerstatistik (73311-0002, WZ08-75001 Tierarztpraxen), Eurostat HICP CP0935 (NL, AT), alle über die öffentlichen Schnittstellen am 07.10.2026; Maß aus `ds15-oktoberfest.json`. Rohdaten in `data/raw/ds16-tierarztkosten.json` (Preise, GOT-Positionen, Warenkorb) und `data/raw/ds17-tierarzt-umsatz.json` (Umsatz, HICP, Abrechnungsfaktor, Verordnungsbegründung).
+- **Reihen:** Anstieg seit 2010 in Prozent, 2010–2024: Tierarztpreise (deutscher Index), Tierarztpreise NL, Praxisumsatz, Inflation, Maß (2020/21 linear zwischen 2019 und 2022).
+- **Warum so:** Der deutsche Index bildet nur die GOT-Sätze ab (Stufen). Die erste Fassung mit GOT-Einzelleistungen ab 2000 sah angreifbar aus; deshalb überlagern jetzt drei unabhängige Blickwinkel. Der GOT-Warenkorb „Routinejahr“ (`korbJahr`) steht nur noch als Lupe im Artikel, mit Abrechnungsfaktor 1,44 (AFC 2019) als Szenario.
+- **Grenzen:** Umsatz = Preis × Menge. Faktor nach 2022 unbekannt. Umsatz 2025 erscheint 2027; dann um ein Jahr verlängern.
 - **Freigabe:** über `datensaetzeOhnePost`.
