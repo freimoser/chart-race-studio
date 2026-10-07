@@ -2,41 +2,41 @@
 art: auswertung
 slug: tierarztkosten-inflation
 titel: Tierarztkosten im Vergleich zur Inflation
-beschreibung: Tierarztpreise stiegen seit 2010 um 54 Prozent, die Inflation um 35. Am stärksten die Routine: Untersuchung und Impfung der Katze kosten fast dreimal so viel.
+beschreibung: Tierarztpreise stiegen seit 2010 um 54 Prozent, die Inflation um 42. Am stärksten die Routine: Untersuchung und Impfung der Katze kosten fast dreimal so viel.
 frage: Sind Tierarztkosten stärker gestiegen als die Inflation?
 suchbegriffe: tierarztkosten gestiegen, tierarzt kosten inflation, got 2022 erhöhung, tierarzt untersuchung kosten katze hund, gebührenordnung tierärzte entwicklung, impfung tierarzt kosten
 stand: 2026-10-07
 grafik: tierarzt-inflation
 bereit: ja
 ---
-Ja, und zwar deutlich. Von 2010 bis 2024 stiegen die **Tierarztpreise in Deutschland um 54 Prozent**, die Verbraucherpreise insgesamt um 35 Prozent. Am stärksten verteuerte sich die Routine: Ein Jahr mit einem Impftermin und einem Krankheitsbesuch kostet nach der Gebührenordnung für eine **Katze 179 Prozent mehr**, für einen Hund 111 und für ein Pferd 94 Prozent mehr. Explodiert ist dabei weniger der Markt als die Gebührenordnung: Neun Jahre blieben die Sätze gleich, im November 2022 holte die neue GOT das in einem Schritt nach und verteilte dabei um. Untersuchung und Impfung stiegen weit überdurchschnittlich, einige Operationen wurden günstiger.
+Ja, und zwar deutlich. Von 2010 bis 2026 stiegen die **Tierarztpreise in Deutschland um 54 Prozent**, die Verbraucherpreise insgesamt um 42 Prozent. Am stärksten verteuerte sich die Routine: Ein Jahr mit einem Impftermin und einem Krankheitsbesuch kostet nach der Gebührenordnung für eine **Katze 179 Prozent mehr**, für einen Hund 111 und für ein Pferd 94 Prozent mehr. Explodiert ist dabei weniger der Markt als die Gebührenordnung: Neun Jahre blieben die Sätze gleich, im November 2022 holte die neue GOT das in einem Schritt nach und verteilte dabei um. Untersuchung und Impfung stiegen weit überdurchschnittlich, einige Operationen wurden günstiger.
 
 ## Das Wichtigste in Kürze
 
-- **Routine am teuersten:** Das Routinejahr laut GOT stieg von 2010 bis 2024 bei der Katze um 179 Prozent, beim Hund um 111, beim Pferd um 94 Prozent (gleicher Abrechnungsfaktor, berechnet).
-- **Preise insgesamt:** Tierarztleistungen plus 54 Prozent, Verbraucherpreise plus 35 Prozent (Destatis). Seit 2000 gerechnet: plus 85 gegen plus 66 Prozent bis 2026.
+- **Routine am teuersten:** Das Routinejahr laut GOT stieg von 2010 bis 2026 bei der Katze um 179 Prozent, beim Hund um 111, beim Pferd um 94 Prozent (gleicher Abrechnungsfaktor, berechnet).
+- **Preise insgesamt:** Tierarztleistungen plus 54 Prozent, Verbraucherpreise plus 42 Prozent (Destatis, 2026 vorläufig). Seit 2000 gerechnet: plus 85 gegen plus 66 Prozent.
 - **Stufen statt Rampe:** Der deutsche Preisindex folgt der Gebührenordnung für Tierärzte (GOT). Er stand von 2009 bis Mitte 2017 still und sprang im Dezember 2022 um 37,5 Prozent.
-- **Niederlande, ohne Gebührenordnung:** plus 65 Prozent im selben Zeitraum, gleichmäßig verteilt; die Verbraucherpreise dort stiegen um 43 Prozent (Eurostat).
-- **Umsatz der Tierarztpraxen:** plus 122 Prozent, jedes Jahr zwischen 2 und 9 Prozent, 2023 plus 16 Prozent. Darin stecken auch mehr Tiere und mehr Behandlungen.
+- **Niederlande, ohne Gebührenordnung:** plus 84 Prozent bis 2026 (vorläufig), gleichmäßig verteilt; bis 2024 waren es 65 Prozent bei 43 Prozent Inflation dort (Eurostat).
+- **Umsatz der Tierarztpraxen:** plus 122 Prozent bis 2024, jedes Jahr zwischen 2 und 9 Prozent, 2023 plus 16 Prozent; bis 2026 geschätzt plus 152 Prozent. Darin stecken auch mehr Tiere und mehr Behandlungen.
 - **Abgerechnet wurde schon vorher mehr:** 2019 berechneten Praxen im Normalbetrieb im Schnitt den 1,44-fachen Satz. Wer damals so viel und heute den einfachen Satz zahlt, zahlt für das Routinejahr eines Hundes rund ein Drittel mehr als 2021, nicht das Doppelte.
 
 ## Was seit 2010 teurer wurde
 
-| Seit 2010 | 2021 | 2022 | 2023 | 2024 |
+| Seit 2010 | 2021 | 2023 | 2024 | 2026 vorl. |
 |---|---:|---:|---:|---:|
-| Katze | 12 % | 30 % | 179 % | 179 % |
-| Hund | 12 % | 23 % | 111 % | 111 % |
-| Pferd | 12 % | 21 % | 94 % | 94 % |
-| Tierarzt DE | 12 % | 17 % | 54 % | 54 % |
-| Tierarzt NL | 32 % | 42 % | 52 % | 65 % |
-| Praxisumsatz | 73 % | 80 % | 109 % | 122 % |
-| Inflation | 17 % | 25 % | 32 % | 35 % |
+| Katze | 12 % | 179 % | 179 % | 179 % |
+| Hund | 12 % | 111 % | 111 % | 111 % |
+| Pferd | 12 % | 94 % | 94 % | 94 % |
+| Tierarzt DE | 12 % | 54 % | 54 % | 54 % |
+| Tierarzt NL | 32 % | 52 % | 65 % | 84 % |
+| Praxisumsatz | 73 % | 109 % | 122 % | 152 % |
+| Inflation | 17 % | 32 % | 35 % | 42 % |
 
-*Katze, Hund, Pferd: Routinejahr mit Impftermin und Krankheitsbesuch nach GOT, einfacher Satz mit Mehrwertsteuer (berechnet). Tierarzt DE und NL: Preisindizes für Tierarztleistungen (Destatis, Eurostat). Praxisumsatz: steuerbarer Umsatz der Tierarztpraxen laut Umsatzsteuerstatistik. Inflation: Verbraucherpreise insgesamt. Jahresdurchschnitte, alle Veränderungsraten berechnet.*
+*Katze, Hund, Pferd: Routinejahr mit Impftermin und Krankheitsbesuch nach GOT, einfacher Satz mit Mehrwertsteuer (berechnet). Tierarzt DE und NL: Preisindizes für Tierarztleistungen (Destatis, Eurostat). Praxisumsatz: steuerbarer Umsatz der Tierarztpraxen laut Umsatzsteuerstatistik. Inflation: Verbraucherpreise insgesamt. Jahresdurchschnitte, alle Veränderungsraten berechnet. 2026 vorläufig (Monate bis August bzw. September), Praxisumsatz 2026 geschätzt.*
 
 Bis 2021 stiegen die drei Routinekörbe und der deutsche Preisindex fast gleich, weil alle Gebühren um denselben Prozentsatz stiegen. Erst die GOT 2022 trennt sie: Die Routine sprang weit stärker als der Durchschnitt aller Leistungen.
 
-Beim Gesamtpreis lagen Deutschland und die Niederlande 2023 fast gleichauf, 2024 zogen die Niederlande wieder davon. Der Weg war verschieden: In den Niederlanden stiegen die Tierarztpreise schneller als die dortigen Verbraucherpreise (plus 43 Prozent), aber gleichmäßig. In Deutschland blieben sie bis 2022 meist darunter und holten dann auf einen Schlag auf. In Österreich, für das es Werte erst ab 2013 gibt, stiegen die Tierarztpreise bis 2024 um 34 Prozent, ebenfalls ohne Sprung und etwas weniger als die dortigen Verbraucherpreise (plus 37 Prozent).
+Beim Gesamtpreis lagen Deutschland und die Niederlande 2023 fast gleichauf, seitdem ziehen die Niederlande wieder davon: 2026 plus 84 gegen plus 54 Prozent. Der Weg war verschieden: In den Niederlanden stiegen die Tierarztpreise schneller als die dortigen Verbraucherpreise (plus 43 Prozent), aber gleichmäßig. In Deutschland blieben sie bis 2022 meist darunter und holten dann auf einen Schlag auf. In Österreich, für das es Werte erst ab 2013 gibt, stiegen die Tierarztpreise bis 2024 um 34 Prozent, ebenfalls ohne Sprung und etwas weniger als die dortigen Verbraucherpreise (plus 37 Prozent).
 
 ## Warum die deutschen Preise Stufen machen
 
@@ -106,13 +106,13 @@ Wer die Praxen heute führt und wer dort arbeitet, steht in den Artikeln über [
 - **Umsatz ist kein Preis.** Er wächst auch mit der Zahl der Tiere und Behandlungen und enthält Medikamente, Pferde- und Nutztierpraxen. Er zeigt, wie viel Geld fließt, nicht was eine einzelne Leistung kostet.
 - **Die Niederlande sind ein anderer Markt.** Der Vergleich zeigt, wie Tierarztpreise ohne Gebührenordnung verlaufen, nicht was sie in Deutschland ohne GOT gekostet hätten.
 - **Der Faktor seit 2022 ist unbekannt.** Die 1,44 sind eine Selbstauskunft für 2019.
-- **Die Grafik endet 2024.** Umsätze für 2025 sind noch nicht veröffentlicht. Der Preisindex blieb bis August 2026 unverändert.
+- **2026 ist vorläufig, der Umsatz 2025 und 2026 geschätzt.** Die Preisindizes für 2026 sind Mittel der Monate bis August, die Inflation aus den Monatsraten bis September. Die Umsatzsteuerstatistik erscheint mit zwei Jahren Abstand; bis dahin ist der Umsatz mit dem Wachstum von 2024 (plus 6,5 Prozent) fortgeschrieben, dem letzten belegten Jahr ohne Gebührenänderung.
 
 ## Häufige Fragen
 
 ### Sind Tierarztkosten stärker gestiegen als die Inflation?
 
-Ja. Die Tierarztpreise stiegen von 2010 bis 2024 um 54 Prozent, die Verbraucherpreise um 35 Prozent. Bis 2022 lagen sie meist darunter; den Ausschlag gab die neue Gebührenordnung. In den Niederlanden, ohne Gebührenordnung, stiegen sie im selben Zeitraum gleichmäßig um 65 Prozent.
+Ja. Die Tierarztpreise stiegen von 2010 bis 2026 um 54 Prozent, die Verbraucherpreise um 42 Prozent. Bis 2022 lagen sie meist darunter; den Ausschlag gab die neue Gebührenordnung. In den Niederlanden, ohne Gebührenordnung, stiegen sie im selben Zeitraum gleichmäßig um 84 Prozent.
 
 ### Um wie viel Prozent stieg die GOT 2022?
 

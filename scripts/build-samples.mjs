@@ -435,7 +435,7 @@ const w13b = { headers: ['Jahr', 'Besucher (Mio.)', 'Maß', 'Maß mit Inflation'
 // 14 Tierarzt gegen Inflation, 2010–2024: Anstieg seit 2010 in Prozent. Vier Reihen, eine Aussage
 // („Deutschland steigt in Stufen“): deutscher Preisindex (folgt den GOT-Sätzen), Preisindex der Niederlande (keine
 // Gebührenordnung), Umsatz der Tierarztpraxen (Umsatzsteuerstatistik, Preis × Menge) und die Inflation.
-// 2010 ist das erste Jahr mit allen Reihen, 2024 das letzte.
+// 2010 ist das erste Jahr mit allen Reihen; bis 2026, mit den unten beschriebenen Schätzungen für 2025/2026.
 // 14b Routinejahr in Euro, 2010–2026: eigener GOT-Warenkorb (Impftermin + Krankheitsbesuch), einfacher Satz mit
 // MwSt., Jahresdurchschnitt nach Geltungstagen. In Euro statt Prozent, damit die drei Tierarten bis 2021 nicht
 // aufeinanderliegen (in Prozent stiegen sie gleich).
@@ -462,11 +462,16 @@ const korbJahr = (tier, jahr) => {
 const vet = (j) => (j === 2026 ? d16.jahr_2026.veterinaer : d16.veterinaer_2020_100[j])
 const ges = (j) => (j === 2026 ? d16.jahr_2026.vpi_gesamt_naeherung : d16.vpi_gesamt_2020_100[j])
 const anstieg = (a, b) => (a == null || b == null ? null : Math.round((a / b - 1) * 1000) / 10)
-const umsatz = (j) => d17.tierarztpraxen_umsatz_tsd_eur[j] ?? null
-const preiseNL = (j) => d17.hicp_cp0935_2015_100.NL[j] ?? null
+// 2025/2026 (Regel „Lückenlose Reihen“): Umsatz geschätzt mit dem Wachstum von 2024, dem letzten belegten Jahr
+// ohne Gebührenänderung; Niederlande 2026 als Mittel der Monate Januar–August (Eurostat, ECOICOP 2).
+const U = d17.tierarztpraxen_umsatz_tsd_eur
+const umsatzWachstum = U['2024'] / U['2023']
+const umsatz = (j) => U[j] ?? (j > 2024 ? U['2024'] * umsatzWachstum ** (j - 2024) : null)
+const nlMonate = (jahr) => Object.entries(d17.hicp_cp0935_2015_100.NL_monate_2025_2026.werte).filter(([m]) => m.startsWith(String(jahr))).map(([, v]) => v)
+const preiseNL = (j) => d17.hicp_cp0935_2015_100.NL[j] ?? (nlMonate(j).length ? nlMonate(j).reduce((a, b) => a + b, 0) / nlMonate(j).length : null)
 const w14 = {
   headers: ['Jahr', 'Tierarztpreise DE', 'Tierarztpreise NL', 'Praxisumsatz DE', 'Inflation DE'],
-  rows: Array.from({ length: 2024 - 2010 + 1 }, (_, k) => 2010 + k).map((j) => [String(j),
+  rows: Array.from({ length: 2026 - 2010 + 1 }, (_, k) => 2010 + k).map((j) => [String(j),
     anstieg(vet(j), vet(2010)), anstieg(preiseNL(j), preiseNL(2010)), anstieg(umsatz(j), umsatz(2010)), anstieg(ges(j), ges(2010))]),
 }
 const w14b = {

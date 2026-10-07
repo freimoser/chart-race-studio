@@ -7,12 +7,12 @@
 
 Ist der Tierarzt wirklich explodiert? 🐾
 
-Ich habe drei amtliche Quellen übereinandergelegt, 2010 bis 2024:
+Ich habe drei amtliche Quellen übereinandergelegt, 2010 bis 2026:
 
 🇩🇪 Tierarztpreise Deutschland: +54 %
-🇳🇱 Tierarztpreise Niederlande: +65 %
-💶 Umsatz der Tierarztpraxen: +122 %
-📈 Inflation: +35 %
+🇳🇱 Tierarztpreise Niederlande: +84 %
+💶 Umsatz der Tierarztpraxen: +152 % (2025/26 geschätzt)
+📈 Inflation: +42 %
 
 Und ein Routinejahr laut Gebührenordnung (Impfung + Krankheitsbesuch, einfacher Satz):
 🐱 Katze: 29,99 € → 83,59 € (+179 %)
@@ -23,7 +23,7 @@ Drei Erkenntnisse:
 
 1️⃣ Ja, der Tierarzt wurde schneller teurer als das Leben insgesamt. Auch in den Niederlanden, ganz ohne Gebührenordnung.
 
-2️⃣ Nicht explodiert, sondern aufgestaut. Neun Jahre blieben die GOT-Sätze gleich, im Dezember 2022 kamen +37,5 % auf einen Schlag. Die Niederlande landeten 2023 am selben Punkt, nur gleichmäßig.
+2️⃣ Nicht explodiert, sondern aufgestaut. Neun Jahre blieben die GOT-Sätze gleich, im Dezember 2022 kamen +37,5 % auf einen Schlag. Die Niederlande landeten 2023 am selben Punkt, nur gleichmäßig – und ziehen seitdem wieder davon.
 
 3️⃣ Umverteilt. Untersuchung und Impfung stiegen weit überdurchschnittlich, die Kastration einer Hündin (nur Eierstöcke) wurde sogar günstiger. Am stärksten trifft es deshalb die Routine, vor allem bei Katzen.
 
@@ -31,7 +31,7 @@ Und auf der Rechnung? Schon 2019 rechneten Praxen im Schnitt den 1,44-fachen Sat
 
 Lieber jedes Jahr ein bisschen mehr oder alle paar Jahre ein großer Schritt?
 
-Gerechnet: Das Routinejahr ist mein eigener Warenkorb aus den GOT-Sätzen (zweimal Untersuchung, Impfung, Injektion; einfacher Satz mit MwSt.). Alle Prozentwerte sind berechnet; der Faktor nach 2022 ist eine Annahme, weil ihn niemand erhoben hat.
+Gerechnet: Das Routinejahr ist mein eigener Warenkorb aus den GOT-Sätzen (zweimal Untersuchung, Impfung, Injektion; einfacher Satz mit MwSt.). Alle Prozentwerte sind berechnet; der Faktor nach 2022 ist eine Annahme, weil ihn niemand erhoben hat. 2026 ist vorläufig (Monate bis August). Den Praxisumsatz 2025 und 2026 gibt es noch nicht, er ist mit dem Wachstum von 2024 (+6,5 %) fortgeschrieben.
 Wo sich Quellen überschneiden: Destatis und Eurostat messen beim Tierarzt-Preis 2023 denselben Sprung (+32 bzw. +33 %). Beim Umsatz zeigt die Umsatzsteuerstatistik +16 %, die Eurostat-Strukturstatistik +21 % (anders abgegrenzt). Ein Versicherer (Uelzener) meldet bei seinen Schäden 2022–2024 sogar +36 bis +77 %.
 
 Alle Zahlen, Tabellen und Methode:

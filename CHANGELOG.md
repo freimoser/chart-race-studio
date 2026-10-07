@@ -4,6 +4,10 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Tierarzt gegen Inflation bis 2026 (07.10.2026)
+
+- Kopfgrafik `tierarzt-inflation` reicht jetzt bis 2026: deutscher Index und Inflation amtlich (2026 vorläufig), Niederlande 2025/2026 aus der neuen Eurostat-Tabelle `prc_hicp_minr` (ECOICOP 2, Position CP0945; Jahresmittel 2025 deckungsgleich mit der alten Reihe), Praxisumsatz 2025/2026 mit dem Wachstum von 2024 geschätzt. Artikel, Post, Datenherkunft angepasst; 2026: DE +54 %, NL +84 %, Umsatz +152 % (geschätzt), Inflation +42 %.
+
 ### Post 5 vorbereitet, Testwoche ein Post pro Tag (07.10.2026)
 
 - **Neuer Datensatz `tierarztmangel`** für Post 5: Hunde und Katzen je Praxisinhaber:in und je Tierärzt:in in der Praxis, 2012–2025 (zwei Linien, eine Aussage). Der Redaktionsplan hatte das schon als bessere Grafik vorgesehen. Post-Text `docs/linkedin/post-05-tierarztmangel.md` mit Block „Gerechnet / Quellen“.

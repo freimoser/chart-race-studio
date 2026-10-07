@@ -207,10 +207,10 @@ Ersetzt eine extern zugelieferte Vorlage, in der 19 von 26 Jahren interpoliert o
 ## Tierarzt gegen Inflation (`tierarzt-inflation`) und Routinejahr (`tierarzt-routinejahr`), Sonderauswertung
 
 - **Quelle:** Destatis Verbraucherpreisindex (GENESIS 61111-0001/-0003/-0004, CC13-0935) und Umsatzsteuerstatistik (73311-0002, WZ08-75001 Tierarztpraxen), Eurostat HICP CP0935 (NL, AT), alle über die öffentlichen Schnittstellen am 07.10.2026; GOT 1999/2008/2017/2022 aus dem BGBl. Rohdaten in `data/raw/ds16-tierarztkosten.json` (Preise, GOT-Positionen, Warenkorb) und `data/raw/ds17-tierarzt-umsatz.json` (Umsatz, HICP, Abrechnungsfaktor, Verordnungsbegründung).
-- **`tierarzt-inflation`** (Kopfgrafik): Anstieg seit 2010 in Prozent, 2010–2024: Tierarztpreise DE, Tierarztpreise NL, Praxisumsatz DE, Inflation DE. Aussage: „Deutschland steigt in Stufen“.
+- **`tierarzt-inflation`** (Kopfgrafik): Anstieg seit 2010 in Prozent, 2010–2026: Tierarztpreise DE, Tierarztpreise NL, Praxisumsatz DE, Inflation DE. Aussage: „Deutschland steigt in Stufen“. 2026 vorläufig (NL aus `prc_hicp_minr`, CP0945, Monate Jan–Aug); Praxisumsatz 2025/2026 geschätzt mit dem Wachstum 2024 – ersetzen, sobald 73311-0002 die Jahre enthält.
 - **`tierarzt-routinejahr`** (zweite Grafik im Artikel, `::grafik`): GOT-Warenkorb „Routinejahr“ (`korbJahr`) in Euro, 2010–2026, Katze/Hund/Pferd. In Euro statt Prozent, weil die drei Tierarten in Prozent bis 2021 deckungsgleich laufen und ihre Labels dann nicht zuzuordnen sind.
 - **Warum zwei Grafiken:** Eine Fassung mit sieben Linien (Körbe + Markt) war unlesbar – vier Linien lagen bis 2021 übereinander. Eine Grafik, eine Aussage. Die Maß ist seit dem 07.10.2026 auf Wunsch raus.
-- **Grenzen:** Umsatz = Preis × Menge. Faktor nach 2022 unbekannt (2019: 1,44). Umsatz 2025 erscheint 2027; dann `tierarzt-inflation` um ein Jahr verlängern.
+- **Grenzen:** Umsatz = Preis × Menge. Faktor nach 2022 unbekannt (2019: 1,44). Umsatz 2025 erscheint voraussichtlich 2027; dann die Schätzung in `tierarzt-inflation` ersetzen.
 - **Freigabe:** über `datensaetzeOhnePost`.
 
 ## Heimtiere und Pferde (`heimtiere-alle`) und DACH (`heimtiere-dach`)

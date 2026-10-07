@@ -138,6 +138,32 @@
     "2024": 134.21
    },
    "hinweis": "Eurostat prc_hicp_aind, CP00, zum Vergleich mit der Inflation im jeweiligen Land (abgerufen 07.10.2026)"
+  },
+  "NL_monate_2025_2026": {
+   "quelle": "Eurostat prc_hicp_minr (ECOICOP 2, ab Januar 2026), Position CP0945 „Veterinary and other services for pets“, Index 2015 = 100, Stand 02.10.2026 (abgerufen 07.10.2026). Jahresmittel 2025 aus den Monaten = 150,45, identisch mit dem Jahreswert der alten Tabelle – die Reihe ist verkettet.",
+   "werte": {
+    "2025-01": 148.1,
+    "2025-02": 148.1,
+    "2025-03": 148.1,
+    "2025-04": 150.47,
+    "2025-05": 150.47,
+    "2025-06": 150.47,
+    "2025-07": 150.21,
+    "2025-08": 150.21,
+    "2025-09": 150.21,
+    "2025-10": 153.02,
+    "2025-11": 153.02,
+    "2025-12": 153.02,
+    "2026-01": 156.37,
+    "2026-02": 156.37,
+    "2026-03": 156.37,
+    "2026-04": 159.9,
+    "2026-05": 159.9,
+    "2026-06": 159.9,
+    "2026-07": 160.04,
+    "2026-08": 160.04
+   },
+   "2026_berechnet": "Mittel Januar bis August 2026 = 158,61 (vorläufig, wie beim deutschen Index)"
   }
  },
  "abrechnungsfaktor": {
@@ -157,5 +183,9 @@
   "uelzener": "Durchschnittliche Schadenkosten 1. Halbjahr 2022 → 1. Halbjahr 2024: +36 bis +77 % je nach Versicherungs- und Tierart (Interview F. Garlipp, cash-online, 13.07.2026). Keine eigene Veröffentlichung der Uelzener, keine Zeitreihe.",
   "quelleUrl": "https://www.cash-online.de/a/eine-groessere-op-kostet-heute-schnell-so-viel-wie-ein-familienurlaub-721950/"
  },
- "gegenprobe_eurostat_sbs": "Eurostat-Strukturstatistik (sbs_ovw_act), Nettoumsatz Veterinärwesen: 2022 5.082, 2023 6.171 Mio. € (+21 %). Andere Abgrenzung als die Umsatzsteuerstatistik (dort Tierarztpraxen +16 %), Reihenbrüche 2018 und 2021; deshalb nur Gegenprobe."
+ "gegenprobe_eurostat_sbs": "Eurostat-Strukturstatistik (sbs_ovw_act), Nettoumsatz Veterinärwesen: 2022 5.082, 2023 6.171 Mio. € (+21 %). Andere Abgrenzung als die Umsatzsteuerstatistik (dort Tierarztpraxen +16 %), Reihenbrüche 2018 und 2021; deshalb nur Gegenprobe.",
+ "umsatz_fortschreibung": {
+  "methode": "Praxisumsatz 2025 und 2026 noch nicht veröffentlicht (Umsatzsteuerstatistik erscheint mit rund zwei Jahren Abstand). Geschätzt: 2024 × 1,0649 je Jahr, das Wachstum von 2024 (5.376.370 / 5.048.629), dem letzten belegten Jahr ohne Gebührenänderung. Ersetzen, sobald Destatis die Werte veröffentlicht.",
+  "zum_vergleich": "Jahre ohne Gebührenänderung: 2011 +4,5 %, 2012 +2,2 %, 2013 +3,5 %, 2014 +5,4 %, 2015 +3,3 %, 2016 +4,9 %, 2019 +6,0 %, 2024 +6,5 %."
+ }
 }
