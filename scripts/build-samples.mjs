@@ -349,13 +349,13 @@ const w13 = {
 // 13b Reduzierte Fassung ohne Bier: Besucher als Säulen, Maßpreis und Inflation als Linien. Dieselben Werte.
 const w13b = { headers: ['Jahr', 'Besucher (Mio.)', 'Maß', 'Maß mit Inflation'], rows: w13.rows.map((r) => [r[0], r[2], r[3], r[4]]) }
 
-// 14 Tierarztkosten gegen Inflation, 2010–2024: Anstieg seit 2010 in Prozent.
-// Katze, Hund, Pferd: eigener Warenkorb „Routinejahr“ aus der GOT (Impftermin + Krankheitsbesuch), einfacher Satz
-// mit MwSt., Jahresdurchschnitt nach Geltungstagen. Der Faktor ist über die Zeit gleich gehalten – so rechnet jeder
-// Preisindex; wie sich der tatsächlich berechnete Faktor verschoben hat, zeigt der Artikel als Szenario.
-// Dazu drei Blickwinkel auf den ganzen Markt, alle amtlich: deutscher Preisindex (folgt den GOT-Sätzen, Stufen),
-// Preisindex der Niederlande (keine Gebührenordnung) und Umsatz der Tierarztpraxen (Umsatzsteuerstatistik, Preis
-// × Menge), und die Inflation. 2010 ist das erste Jahr mit allen Reihen, 2024 das letzte.
+// 14 Tierarzt gegen Inflation, 2010–2024: Anstieg seit 2010 in Prozent. Vier Reihen, eine Aussage
+// („Deutschland steigt in Stufen“): deutscher Preisindex (folgt den GOT-Sätzen), Preisindex der Niederlande (keine
+// Gebührenordnung), Umsatz der Tierarztpraxen (Umsatzsteuerstatistik, Preis × Menge) und die Inflation.
+// 2010 ist das erste Jahr mit allen Reihen, 2024 das letzte.
+// 14b Routinejahr in Euro, 2010–2026: eigener GOT-Warenkorb (Impftermin + Krankheitsbesuch), einfacher Satz mit
+// MwSt., Jahresdurchschnitt nach Geltungstagen. In Euro statt Prozent, damit die drei Tierarten bis 2021 nicht
+// aufeinanderliegen (in Prozent stiegen sie gleich).
 const DM = 1.95583
 const GOT = d16.got_allgemeine_untersuchung.versionen
 const KORB = d16.got_routinekorb.versionen
@@ -382,16 +382,20 @@ const anstieg = (a, b) => (a == null || b == null ? null : Math.round((a / b - 1
 const umsatz = (j) => d17.tierarztpraxen_umsatz_tsd_eur[j] ?? null
 const preiseNL = (j) => d17.hicp_cp0935_2015_100.NL[j] ?? null
 const w14 = {
-  headers: ['Jahr', 'Katze', 'Hund', 'Pferd', 'Tierarztpreise', 'Tierarztpreise NL', 'Praxisumsatz', 'Inflation'],
+  headers: ['Jahr', 'Tierarztpreise DE', 'Tierarztpreise NL', 'Praxisumsatz DE', 'Inflation DE'],
   rows: Array.from({ length: 2024 - 2010 + 1 }, (_, k) => 2010 + k).map((j) => [String(j),
-    ...['katze', 'hund', 'pferd'].map((t) => anstieg(korbJahr(t, j), korbJahr(t, 2010))),
     anstieg(vet(j), vet(2010)), anstieg(preiseNL(j), preiseNL(2010)), anstieg(umsatz(j), umsatz(2010)), anstieg(ges(j), ges(2010))]),
+}
+const w14b = {
+  headers: ['Jahr', 'Katze', 'Hund', 'Pferd'],
+  rows: Array.from({ length: 2026 - 2010 + 1 }, (_, k) => 2010 + k).map((j) => [String(j),
+    ...['katze', 'hund', 'pferd'].map((t) => Math.round(korbJahr(t, j) * 100) / 100)]),
 }
 // Kontrollausgabe für die Lupe im Artikel: Routinejahr (einfacher Satz, mit MwSt.)
 for (const t of ['katze', 'hund', 'pferd']) console.log('Routinejahr', t, [2010, 2021, 2024, 2026].map((j) => korbJahr(t, j).toFixed(2)).join(' / '))
 
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 const out = `// Automatisch erzeugt von scripts/build-samples.mjs aus data/raw/*.json – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('TIERAERZTE_BUNDESLAND', w1), emit('TIERAERZTESCHAFT_DEUTSCHLAND', w2), emit('INHABER_ANGESTELLTE', w2b), emit('HEIMTIERE', w3), emit('HUNDERASSEN', w4), emit('RINDER_BUNDESLAND', w5), emit('HEIMTIERMARKT', w6), emit('PRAXISSCHWERPUNKTE', w7), emit('FACHTIERAERZTE', w8), emit('KLEINTIERE_BUNDESLAND', w9), emit('KETTEN', w10), emit('KETTEN_EIGENTUEMER', w11), emit('GESCHLECHT_PRAXIS', w12), emit('OKTOBERFEST', w13), emit('OKTOBERFEST_PREIS', w13b), emit('TIERARZT_INFLATION', w14), emit('HUND_KATZE_WELT', { headers: d13.headers ?? ['Jahr'], rows: d13.rows ?? [] })].join('\n')
+  [emit('TIERAERZTE_BUNDESLAND', w1), emit('TIERAERZTESCHAFT_DEUTSCHLAND', w2), emit('INHABER_ANGESTELLTE', w2b), emit('HEIMTIERE', w3), emit('HUNDERASSEN', w4), emit('RINDER_BUNDESLAND', w5), emit('HEIMTIERMARKT', w6), emit('PRAXISSCHWERPUNKTE', w7), emit('FACHTIERAERZTE', w8), emit('KLEINTIERE_BUNDESLAND', w9), emit('KETTEN', w10), emit('KETTEN_EIGENTUEMER', w11), emit('GESCHLECHT_PRAXIS', w12), emit('OKTOBERFEST', w13), emit('OKTOBERFEST_PREIS', w13b), emit('TIERARZT_INFLATION', w14), emit('TIERARZT_ROUTINEJAHR', w14b), emit('HUND_KATZE_WELT', { headers: d13.headers ?? ['Jahr'], rows: d13.rows ?? [] })].join('\n')
 fs.writeFileSync('src/samples/data.ts', out)
-for (const [n, w] of Object.entries({ w1, w2, w2b, w3, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w13b, w14 })) console.log(n, w.headers.length - 1, 'Kategorien,', w.rows.length, 'Perioden', w.rows[0]?.[0], '–', w.rows.at(-1)?.[0])
+for (const [n, w] of Object.entries({ w1, w2, w2b, w3, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w13b, w14, w14b })) console.log(n, w.headers.length - 1, 'Kategorien,', w.rows.length, 'Perioden', w.rows[0]?.[0], '–', w.rows.at(-1)?.[0])

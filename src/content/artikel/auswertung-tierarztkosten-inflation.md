@@ -34,7 +34,7 @@ Ja, und zwar deutlich. Von 2010 bis 2024 stiegen die **Tierarztpreise in Deutsch
 
 *Katze, Hund, Pferd: Routinejahr mit Impftermin und Krankheitsbesuch nach GOT, einfacher Satz mit Mehrwertsteuer (berechnet). Tierarzt DE und NL: Preisindizes für Tierarztleistungen (Destatis, Eurostat). Praxisumsatz: steuerbarer Umsatz der Tierarztpraxen laut Umsatzsteuerstatistik. Inflation: Verbraucherpreise insgesamt. Jahresdurchschnitte, alle Veränderungsraten berechnet.*
 
-Bis 2021 laufen die drei Routinelinien und der deutsche Preisindex fast gleich, weil alle Gebühren um denselben Prozentsatz stiegen. Erst die GOT 2022 trennt sie: Die Routine sprang weit stärker als der Durchschnitt aller Leistungen.
+Bis 2021 stiegen die drei Routinekörbe und der deutsche Preisindex fast gleich, weil alle Gebühren um denselben Prozentsatz stiegen. Erst die GOT 2022 trennt sie: Die Routine sprang weit stärker als der Durchschnitt aller Leistungen.
 
 Beim Gesamtpreis lagen Deutschland und die Niederlande 2023 fast gleichauf, 2024 zogen die Niederlande wieder davon. Der Weg war verschieden: In den Niederlanden stiegen die Tierarztpreise schneller als die dortigen Verbraucherpreise (plus 43 Prozent), aber gleichmäßig. In Deutschland blieben sie bis 2022 meist darunter und holten dann auf einen Schlag auf. In Österreich, für das es Werte erst ab 2013 gibt, stiegen die Tierarztpreise bis 2024 um 34 Prozent, ebenfalls ohne Sprung und etwas weniger als die dortigen Verbraucherpreise (plus 37 Prozent).
 
@@ -67,7 +67,9 @@ Versicherer sehen bei ihren Schäden dagegen eher mehr. Die Uelzener nannte in e
 
 ## Das Routinejahr und der Abrechnungsfaktor
 
-Der Warenkorb in der Grafik ist bewusst klein: ein Impftermin und ein Krankheitsbesuch im Jahr, also zweimal Untersuchung, einmal Impfung, einmal Injektion, mit Mehrwertsteuer. Gerechnet mit gleichem Faktor, wie jeder Preisindex. Was ein Tierhalter tatsächlich mehr zahlt, hängt aber auch daran, welchen Faktor seine Praxis vorher und nachher berechnet:
+::grafik tierarzt-routinejahr
+
+Der Warenkorb in der Grafik ist bewusst klein: ein Impftermin und ein Krankheitsbesuch im Jahr, also zweimal Untersuchung, einmal Impfung, einmal Injektion, mit Mehrwertsteuer. Gerechnet zum einfachen Satz, also mit gleichem Faktor, wie jeder Preisindex. Bis 2021 lag die Katze ein Viertel unter dem Hund, seit 2023 kostet sie genauso viel: 83,59 Euro. Was ein Tierhalter tatsächlich mehr zahlt, hängt aber auch daran, welchen Faktor seine Praxis vorher und nachher berechnet:
 
 | Routinejahr in € | 2021 (×1,44) | 2026 (×1,0) | 2026 (×1,44) |
 |---|---:|---:|---:|

@@ -1,21 +1,23 @@
 # LinkedIn-Post: Tierarztkosten gegen Inflation (07.10.2026)
 
-**Video:** lokal `http://localhost:5173/studio/?beispiel=tierarzt-inflation`, Format 4:5, MP4 exportieren.
+**Video:** lokal `http://localhost:5173/studio/?beispiel=tierarzt-inflation`, Format 4:5, MP4 exportieren (Kopfgrafik „Deutschland steigt in Stufen“). Die Routinejahr-Grafik (`tierarzt-routinejahr`) passt als Bild in den ersten Kommentar.
 **Bester Zeitpunkt heute (Mittwoch):** 15–17 Uhr, Alternative 11 Uhr.
 
 ---
 
 Ist der Tierarzt wirklich explodiert? 🐾
 
-Ich habe vier Quellen übereinandergelegt, 2010 bis 2024:
+Ich habe drei amtliche Quellen übereinandergelegt, 2010 bis 2024:
 
-🐱 Routinejahr Katze (Impfung + Krankheitsbesuch laut GOT): +179 %
-🐶 Routinejahr Hund: +111 %
-🐴 Routinejahr Pferd: +94 %
-🇩🇪 Tierarztpreise insgesamt: +54 %
+🇩🇪 Tierarztpreise Deutschland: +54 %
 🇳🇱 Tierarztpreise Niederlande: +65 %
 💶 Umsatz der Tierarztpraxen: +122 %
 📈 Inflation: +35 %
+
+Und ein Routinejahr laut Gebührenordnung (Impfung + Krankheitsbesuch, einfacher Satz):
+🐱 Katze: 29,99 € → 83,59 € (+179 %)
+🐶 Hund: 39,53 € → 83,59 € (+111 %)
+🐴 Pferd: 51,79 € → 100,63 € (+94 %)
 
 Drei Erkenntnisse:
 

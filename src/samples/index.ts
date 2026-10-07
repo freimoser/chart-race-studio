@@ -1,5 +1,5 @@
 import type { SampleDataset } from '@/lib/data/types'
-import { OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data'
+import { OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -302,22 +302,44 @@ export const SAMPLES: SampleDataset[] = [
     id: 'tierarzt-inflation',
     erstellt: '2026-10-07', geprueft: '2026-10-07',
     category: 'praxis',
-    title: 'Tierarzt gegen Inflation: was seit 2010 teurer wurde',
-    subtitle: 'Katze, Hund, Pferd: Routinejahr laut Gebührenordnung. Dazu Tierarztpreise DE und NL, Praxisumsatz',
-    source: 'Quelle: GOT 2008–2022 (eigener Warenkorb), Destatis (Verbraucherpreisindex, Umsatzsteuerstatistik), Eurostat (HICP Niederlande)',
+    title: 'Tierarzt gegen Inflation: Deutschland steigt in Stufen',
+    subtitle: 'Tierarztpreise in Deutschland und den Niederlanden, Umsatz der deutschen Tierarztpraxen. Anstieg seit 2010',
+    source: 'Quelle: Destatis (Verbraucherpreisindex, Umsatzsteuerstatistik), Eurostat (HICP Niederlande)',
     sourceUrl: 'https://www-genesis.destatis.de/datenbank/online/statistic/61111/table/61111-0003',
     unit: 'Prozent',
-    description: 'Tierarztpreise stiegen schneller als die Inflation. Am stärksten verteuerte sich die Routine: ein Impftermin und ein Krankheitsbesuch, vor allem für Katzen.',
+    description: 'Tierarztpreise stiegen schneller als die Inflation. In den Niederlanden gleichmäßig, in Deutschland in Stufen: neun Jahre Stillstand, dann die GOT 2022.',
     dataInfo: [
-      "Katze, Hund und Pferd sind ein eigener Warenkorb „Routinejahr“: ein Impftermin (allgemeine Untersuchung mit Beratung und Impfung) und ein Krankheitsbesuch (Untersuchung und Injektion) nach der Gebührenordnung für Tierärzte (GOT), einfacher Satz mit Umsatzsteuer, Jahresdurchschnitt nach Geltungstagen. Der Faktor bleibt über die Zeit gleich, so wie bei jedem Preisindex. Bis 2022 laufen die drei Linien gemeinsam, weil alle Gebühren um denselben Prozentsatz stiegen.",
-      "„Tierarztpreise“ ist der deutsche Verbraucherpreisindex für Veterinär- und andere Dienstleistungen für Haustiere (Destatis). Er folgt den GOT-Sätzen und springt nur, wenn sie sich ändern: Juli 2017 plus 12 Prozent, Dezember 2022 plus 37,5 Prozent im Schnitt aller Leistungen. „Tierarztpreise NL“ ist derselbe Index für die Niederlande (Eurostat), wo es keine Gebührenordnung gibt.",
-      "„Praxisumsatz“ ist der steuerbare Umsatz der Tierarztpraxen aus der Umsatzsteuerstatistik (Destatis), ohne Umsatzsteuer. Er misst echtes Geld, also Preise mal Menge: mehr Tiere, mehr Behandlungen, Medikamente, Nutztier- und Pferdepraxis eingeschlossen. „Inflation“ ist der Verbraucherpreisindex insgesamt. Die Grafik beginnt 2010 und endet 2024, weil es nur dafür alle Reihen gibt.",
+      "„Tierarztpreise DE“ ist der deutsche Verbraucherpreisindex für Veterinär- und andere Dienstleistungen für Haustiere (Destatis), Jahresdurchschnitt. Er folgt den Sätzen der Gebührenordnung für Tierärzte (GOT) und springt nur, wenn sie sich ändern: Juli 2017 plus 12 Prozent, Dezember 2022 plus 37,5 Prozent.",
+      "„Tierarztpreise NL“ ist derselbe Index für die Niederlande (Eurostat, harmonisierter Verbraucherpreisindex), wo es keine Gebührenordnung gibt. „Praxisumsatz DE“ ist der steuerbare Umsatz der deutschen Tierarztpraxen (Umsatzsteuerstatistik, ohne Umsatzsteuer): echtes Geld, also Preise mal Menge, mit mehr Tieren, mehr Behandlungen und Medikamenten. „Inflation DE“ ist der Verbraucherpreisindex insgesamt.",
+      "Die Grafik beginnt 2010 und endet 2024, weil es nur dafür alle Reihen gibt. Was einzelne Leistungen für Katze, Hund und Pferd kosten, zeigt der Datensatz „Was ein Routinejahr beim Tierarzt kostet“.",
     ],
     headers: TIERARZT_INFLATION.headers,
     rows: TIERARZT_INFLATION.rows,
     suggested: {
-      chartType: 'line', topN: 7, decimals: 0, prefix: '+', suffix: ' %', gapFill: 'none', primaryAxisLabel: 'Anstieg seit 2010',
-      colors: { 'Katze': '#e36414', 'Hund': '#e0a800', 'Pferd': '#8a5a3c', 'Tierarztpreise': '#0f4c5c', 'Tierarztpreise NL': '#5c7aea', 'Praxisumsatz': '#7b2cbf', 'Inflation': '#8a949e' },
+      chartType: 'line', topN: 4, decimals: 0, prefix: '+', suffix: ' %', gapFill: 'none', primaryAxisLabel: 'Anstieg seit 2010',
+      colors: { 'Tierarztpreise DE': '#0f4c5c', 'Tierarztpreise NL': '#5c7aea', 'Praxisumsatz DE': '#7b2cbf', 'Inflation DE': '#8a949e' },
+    },
+  },
+  {
+    id: 'tierarzt-routinejahr',
+    erstellt: '2026-10-07', geprueft: '2026-10-07',
+    category: 'praxis',
+    title: 'Was ein Routinejahr beim Tierarzt kostet',
+    subtitle: 'Impftermin und Krankheitsbesuch laut Gebührenordnung, einfacher Satz mit Mehrwertsteuer, in Euro',
+    source: 'Quelle: Gebührenordnung für Tierärzte 2008, 2017, 2022 (BGBl.), eigener Warenkorb, berechnet',
+    sourceUrl: 'https://www.gesetze-im-internet.de/got_2022/anlage.html',
+    unit: 'Euro',
+    description: 'Ein Impftermin und ein Krankheitsbesuch kosten für die Katze heute fast dreimal so viel wie 2010. Seit 2022 zahlt sie so viel wie der Hund.',
+    dataInfo: [
+      "Eigener Warenkorb „Routinejahr“: ein Impftermin (allgemeine Untersuchung mit Beratung und Impfung) und ein Krankheitsbesuch (Untersuchung und Injektion), einfacher Satz der Gebührenordnung für Tierärzte (GOT) mit Umsatzsteuer, Jahresdurchschnitt nach Geltungstagen der Fassungen 2008, 2017 und 2022.",
+      "Seit der GOT 2022 kostet die Untersuchung für Hund und Katze gleich viel (23,62 Euro netto), und die Impfung wird als Injektion abgerechnet (11,50 statt 4,49 Euro). Deshalb springt die Katze am stärksten.",
+      "Der einfache Satz ist der Mindestpreis. Praxen berechneten 2019 im Normalbetrieb im Schnitt den 1,44-fachen Satz (Studie für das Bundeslandwirtschaftsministerium); wie viel seit 2022, hat niemand erhoben. Echte Rechnungen liegen also über diesen Werten.",
+    ],
+    headers: TIERARZT_ROUTINEJAHR.headers,
+    rows: TIERARZT_ROUTINEJAHR.rows,
+    suggested: {
+      chartType: 'line', topN: 3, decimals: 2, suffix: ' €', gapFill: 'none', primaryAxisLabel: 'Routinejahr in Euro',
+      colors: { 'Katze': '#e36414', 'Hund': '#e0a800', 'Pferd': '#8a5a3c' },
     },
   },
   {

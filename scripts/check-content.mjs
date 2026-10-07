@@ -53,9 +53,10 @@ for (let i = 0; i < posts.length; i++) {
 const sm = lies('src/samples/index.ts')
 for (const b of sm.split('    id: ').slice(1)) {
   const id = (b.match(/^'(.*?)'/) ?? [])[1]
-  const desc = (b.match(/description: "(.*?)",\n/s) ?? [])[1] ?? ''
+  // Einfache und doppelte Anführungszeichen: neuere Datensätze stehen in '…', ältere in "…"
+  const desc = (b.match(/description: (["'])(.*?)\1,\n/s) ?? [])[2] ?? ''
   const info = (b.match(/dataInfo: \[(.*?)\n    \],/s) ?? [])[1] ?? ''
-  const absaetze = (info.match(/^\s*"/gm) ?? []).length
+  const absaetze = (info.match(/^\s*["']/gm) ?? []).length
   const src = /source: '/.test(b), url = /sourceUrl: '/.test(b)
   if (desc.length < 40) melde('mangel', `Datensatz ${id}`, `Kachel-Text mit ${desc.length} Zeichen zu kurz`)
   if (desc.length > 170) melde('hinweis', `Datensatz ${id}`, `Kachel-Text mit ${desc.length} Zeichen zu lang – gehört in die Dateninfo`)

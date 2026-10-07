@@ -204,10 +204,11 @@ Ersetzt eine extern zugelieferte Vorlage, in der 19 von 26 Jahren interpoliert o
 - **Reduzierte Fassung** `oktoberfest-preis`: dieselben Werte ohne Bier (Besucher als Säulen, Maß und Maß mit Inflation als Linien), zweite Grafik im Artikel.
 - **Freigabe:** gehört zu keinem Post; freigegeben über `datensaetzeOhnePost` in `src/content/freigabe.json`. Rubrik „Exkurs“.
 
-## Tierarzt gegen Inflation (`tierarzt-inflation`, Sonderauswertung)
+## Tierarzt gegen Inflation (`tierarzt-inflation`) und Routinejahr (`tierarzt-routinejahr`), Sonderauswertung
 
 - **Quelle:** Destatis Verbraucherpreisindex (GENESIS 61111-0001/-0003/-0004, CC13-0935) und Umsatzsteuerstatistik (73311-0002, WZ08-75001 Tierarztpraxen), Eurostat HICP CP0935 (NL, AT), alle über die öffentlichen Schnittstellen am 07.10.2026; GOT 1999/2008/2017/2022 aus dem BGBl. Rohdaten in `data/raw/ds16-tierarztkosten.json` (Preise, GOT-Positionen, Warenkorb) und `data/raw/ds17-tierarzt-umsatz.json` (Umsatz, HICP, Abrechnungsfaktor, Verordnungsbegründung).
-- **Reihen:** Anstieg seit 2010 in Prozent, 2010–2024: Katze, Hund, Pferd (GOT-Warenkorb „Routinejahr“, `korbJahr`, gleicher Faktor), Tierarztpreise (deutscher Index), Tierarztpreise NL, Praxisumsatz, Inflation. Die Maß ist seit dem 07.10.2026 auf Wunsch raus.
-- **Warum so:** Der deutsche Index bildet nur die GOT-Sätze ab (Stufen). Die erste Fassung (nur GOT, ab 2000) sah angreifbar aus; deshalb stehen die Routine-Körbe jetzt neben drei unabhängigen Blickwinkeln auf den Markt. Abrechnungsfaktor 1,44 (AFC 2019) als Szenario im Artikel. Farben mit dem dataviz-Validator geprüft (alle Paare CVD/normal bestanden, Hund-Gelb nur mit Direktbeschriftung).
-- **Grenzen:** Umsatz = Preis × Menge. Faktor nach 2022 unbekannt. Umsatz 2025 erscheint 2027; dann um ein Jahr verlängern.
+- **`tierarzt-inflation`** (Kopfgrafik): Anstieg seit 2010 in Prozent, 2010–2024: Tierarztpreise DE, Tierarztpreise NL, Praxisumsatz DE, Inflation DE. Aussage: „Deutschland steigt in Stufen“.
+- **`tierarzt-routinejahr`** (zweite Grafik im Artikel, `::grafik`): GOT-Warenkorb „Routinejahr“ (`korbJahr`) in Euro, 2010–2026, Katze/Hund/Pferd. In Euro statt Prozent, weil die drei Tierarten in Prozent bis 2021 deckungsgleich laufen und ihre Labels dann nicht zuzuordnen sind.
+- **Warum zwei Grafiken:** Eine Fassung mit sieben Linien (Körbe + Markt) war unlesbar – vier Linien lagen bis 2021 übereinander. Eine Grafik, eine Aussage. Die Maß ist seit dem 07.10.2026 auf Wunsch raus.
+- **Grenzen:** Umsatz = Preis × Menge. Faktor nach 2022 unbekannt (2019: 1,44). Umsatz 2025 erscheint 2027; dann `tierarzt-inflation` um ein Jahr verlängern.
 - **Freigabe:** über `datensaetzeOhnePost`.
