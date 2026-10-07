@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { FEATURES } from '@/content/site'
 import { wurzel } from '@/lib/pfade'
+import { ladeAnalytics, liesEinwilligung, loescheEinwilligung, schreibEinwilligung } from '@/lib/consent'
 
 /**
  * ═══════════════════════════════════════════════════════════════════
@@ -18,27 +19,9 @@ import { wurzel } from '@/lib/pfade'
  *  - Keine Werbesignale: Google Signals und Ad-Personalisierung sind abgeschaltet.
  */
 
-const KEY = 'crs-consent-statistik'
-
-declare global {
-  interface Window { dataLayer?: unknown[]; __crsGa?: boolean }
-}
-
-function ladeAnalytics(gaId: string) {
-  if (window.__crsGa) return
-  window.__crsGa = true
-  const s = document.createElement('script')
-  s.async = true
-  s.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`
-  document.head.appendChild(s)
-  window.dataLayer = window.dataLayer || []
-  const gtag = (...args: unknown[]) => { window.dataLayer!.push(args) }
-  gtag('js', new Date())
-  gtag('config', gaId, { anonymize_ip: true, allow_google_signals: false, allow_ad_personalization_signals: false })
-}
-
-const lies = () => { try { return localStorage.getItem(KEY) } catch { return null } }
-const schreib = (v: string) => { try { localStorage.setItem(KEY, v) } catch { /* Speicher gesperrt */ } }
+// Speicher und Lader teilen sich Studio und statische Seiten (lib/consent.ts).
+const lies = liesEinwilligung
+const schreib = schreibEinwilligung
 
 export function Consent() {
   const gaId = FEATURES.gaId
@@ -54,7 +37,7 @@ export function Consent() {
       const ziel = (ev.target as HTMLElement | null)?.closest('[data-consent-reset]')
       if (!ziel) return
       ev.preventDefault()
-      try { localStorage.removeItem(KEY) } catch { /* ignorieren */ }
+      loescheEinwilligung()
       setOffen(true)
     }
     document.addEventListener('click', aufWiderruf)

@@ -134,7 +134,11 @@ if (!env.VITE_GSC_VERIFICATION) hinweise.push('VITE_GSC_VERIFICATION nicht geset
 
 // Datenschutztext und tatsächliche Einbindung müssen zusammenpassen
 const ds = fs.existsSync(path.join(DIST, 'datenschutz.html')) ? lies(path.join(DIST, 'datenschutz.html')) : ''
-const gaImBuild = seiten.some((p) => /googletagmanager/.test(lies(p)))
+// Google Analytics wird erst nach der Einwilligung aus dem Skript nachgeladen. Der Lader steht immer im
+// JavaScript-Bündel; eingebunden ist GA erst, wenn eine Messkennung (G-…) einkompiliert ist. Im HTML zählt
+// dagegen schon das Skript-Tag selbst.
+const skripte = fs.existsSync(path.join(DIST, 'assets')) ? fs.readdirSync(path.join(DIST, 'assets')).filter((f) => f.endsWith('.js')).map((f) => path.join(DIST, 'assets', f)) : []
+const gaImBuild = seiten.some((p) => /googletagmanager/.test(lies(p))) || skripte.some((p) => /["'`]G-[A-Z0-9]{6,}["'`]/.test(lies(p)))
 const gaImText = /Google Analytics/.test(ds)
 if (gaImBuild !== gaImText) blocker.push(`Datenschutzerklärung und Einbindung passen nicht zusammen: Google Analytics ${gaImBuild ? 'ist eingebunden, steht aber nicht im Text' : 'steht im Text, ist aber nicht eingebunden'}.`)
 if (!L.companyName && /Petleo|GmbH|UG /.test(ds + lies(path.join(DIST, 'impressum.html')))) {

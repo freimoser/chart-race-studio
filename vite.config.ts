@@ -55,7 +55,7 @@ function rahmenKopf(hoch: string, seitePfad = '') {
       </div>
     </header>`
 }
-function rahmenFuss(hoch: string) {
+function rahmenFuss(hoch: string, cookieWahl: boolean) {
   return `<footer class="seite">
       <div class="wrap">
         <p><strong>${MARKE}</strong> · Zahlen zu Tierärzten, Praxen und Haustieren in Deutschland, jede mit Quelle. Ein privates Projekt von Thomas Freimoser.</p>
@@ -63,7 +63,7 @@ function rahmenFuss(hoch: string) {
           <a href="${hoch}">Startseite</a> · <a href="${hoch}beitrag/">Alle Artikel</a> · <a href="${hoch}artikel/tierarztketten-deutschland.html">Tierarztketten</a> ·
           <a href="${hoch}datenformat/">Datenformat</a> · <a href="${hoch}artikel/datenherkunft.html">Datenherkunft</a> · <a href="${hoch}studio/#redaktionsplan">Redaktionsplan</a> · <a href="${hoch}studio/">Studio</a>
         </p>
-        <p class="recht"><a href="${hoch}impressum.html">Impressum</a> · <a href="${hoch}datenschutz.html">Datenschutz</a></p>
+        <p class="recht"><a href="${hoch}impressum.html">Impressum</a> · <a href="${hoch}datenschutz.html">Datenschutz</a>${cookieWahl ? ' · <button type="button" data-consent-reset>Cookie-Auswahl</button>' : ''}</p>
       </div>
     </footer>`
 }
@@ -80,7 +80,7 @@ function integrationen(env: Record<string, string>) {
       if (html.includes('<!--rahmen:')) {
         const seitePfad = (ctx.path ?? '/').replace(/^\/+/, '').replace(/(^|\/)$/, '$1index.html')
         const hoch = seitePfad === '404.html' ? base : '../'.repeat(seitePfad.split('/').length - 1) || './'
-        html = html.replace('<!--rahmen:kopf-->', rahmenKopf(hoch, seitePfad)).replace('<!--rahmen:fuss-->', rahmenFuss(hoch))
+        html = html.replace('<!--rahmen:kopf-->', rahmenKopf(hoch, seitePfad)).replace('<!--rahmen:fuss-->', rahmenFuss(hoch, Boolean(env.VITE_GA_ID)))
       }
       const tags: string[] = []
       if (env.VITE_GSC_VERIFICATION) tags.push(`<meta name="google-site-verification" content="${env.VITE_GSC_VERIFICATION}" />`)

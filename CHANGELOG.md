@@ -4,6 +4,13 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Google Analytics 4 mit Einwilligung auf allen Seiten (07.10.2026)
+
+- **Messkennung `G-B7KKZGD0J2`** als Repository-Variable `VITE_GA_ID`. Ohne Variable bleibt alles aus wie bisher.
+- **Einwilligung jetzt auch auf den statischen Seiten** (Startseite, Artikel, Datenherkunft, Rechtstexte, 404): Bisher gab es das Banner nur im Studio, die Artikel hätten also nie gemessen. Gemeinsame Bausteine in `src/lib/consent.ts`, ein Speicherschlüssel für die ganze Seite. Das Google-Skript lädt erst nach „Einverstanden“; „Nein danke“ ist gleich groß. Widerruf über „Cookie-Auswahl“ im Fuß jeder Seite und in der Datenschutzerklärung.
+- **Fehler behoben, der nie aufgefallen war:** Der Lader im Studio schob ein Array in den dataLayer; gtag.js erwartet das `arguments`-Objekt und hätte die Einträge verworfen.
+- **Livegang-Prüfung:** erkennt GA jetzt auch, wenn es aus dem JavaScript-Bündel nachgeladen wird (einkompilierte Messkennung), und meldet weiter einen Blocker, wenn Datenschutzerklärung und Einbindung auseinanderlaufen (Gegentest durchgeführt).
+
 ### Sonderauswertung Tierarztkosten gegen Inflation (07.10.2026)
 
 - **Neuer Datensatz** `tierarzt-inflation`: Anstieg seit 2000 für die allgemeine Untersuchung von Katze (+230 %), Hund (+120 %) und Pferd (+101 %) laut GOT, Tierarztleistungen laut Verbraucherpreisindex (+85 %), Inflation (+66 %) und Maß (+147 %). Die Destatis-Reihe stammt aus der öffentlichen GENESIS-Tabellenansicht, die GOT-Beträge aus den Bundesgesetzblättern 1999, 2008, 2017 und der GOT 2022.
