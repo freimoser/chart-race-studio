@@ -4,6 +4,12 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Heimtiere: zwei neue Fassungen (07.10.2026)
+
+- **`heimtiere-alle`:** Heimtiere in Deutschland mit Gartenteichen (ab 2002) und Pferden (FN: 1,25 Mio. 2019, 1,3 Mio. 2025). Eine Zierfisch-Reihe gibt es nicht (nur 1999/2000, rund 85 Mio.).
+- **`heimtiere-dach`:** Deutschland, Österreich und Schweiz zusammen, 2016–2025, Katzen, Hunde, Kleintiere, Ziervögel. Nationale Primärquellen (ÖHTV, VHN, AMICUS) statt FEDIAF.
+- **Line Race:** Reihen, die gleichauf enden, tauschten im letzten Bild die Beschriftung, weil bei Gleichstand das Alphabet entschied, kurz davor aber eine Rundungsdifferenz. Jetzt bleibt oben, wer zuletzt höher lag. Glätteprüfung über alle 15 Datensätze: 0 Sprünge; die Endbilder der alten Grafiken bleiben gleich.
+
 ### Google Analytics 4 mit Einwilligung auf allen Seiten (07.10.2026)
 
 - **Messkennung `G-B7KKZGD0J2`** als Repository-Variable `VITE_GA_ID`. Ohne Variable bleibt alles aus wie bisher.

@@ -1,0 +1,20 @@
+{
+ "title": "Pferde in Deutschland: Schätzung der FN und Zählung in landwirtschaftlichen Betrieben",
+ "abgerufen": "2026-10-07",
+ "unit": "Mio. Pferde (FN) bzw. Anzahl (Destatis)",
+ "notes": "Für die Heimtier-Grafik gilt die FN-Reihe, weil sie alle Pferde erfasst, überwiegend Freizeitpferde. Sie besteht nur aus gerundeten Einzelschätzungen; dazwischen wird in der Grafik linear gerechnet. Die FN nannte auch für 2013 und 2015 „rund 1,2 Millionen“, das ist aber nur über Zweitquellen belegt (Wikipedia „Deutsche Pferdebranche“; Hölker 2016, Uni Göttingen) und deshalb nicht übernommen. Destatis zählt nur Pferde in landwirtschaftlichen Betrieben (etwa 35–40 % aller Pferde), mit Methodenbrüchen 1998 (nur noch landwirtschaftliche Betriebe) und 2010 (Erfassungsgrenze 5 ha, Kategorie „Einhufer“ einschließlich Esel).",
+ "fn": {
+  "rows": [
+   {"date": "2019", "name": "Pferde", "value": 1.25, "quelle": "FN, Facts and Figures about Horse Sport and Breeding, August 2022: „According to projections, the number of privately owned horses is about 1.25 million“ (Ipsos-Studie 2019)", "quelleUrl": "https://www.wbfsh.com/downloads/general-assembly/2022/figures-data-facts-fn.pdf"},
+   {"date": "2025", "name": "Pferde", "value": 1.3, "quelle": "FN, Kernforderungen an den 21. Deutschen Bundestag, Februar 2025: „1,3 Millionen registrierte Pferde in Deutschland“", "quelleUrl": "https://www.ipzv.de/asset/6379921D-34AF-4F8D-B81A7038356DCC8D/"}
+  ]
+ },
+ "destatis_landwirtschaftliche_betriebe": {
+  "quelle": "Destatis GENESIS 41311-0001 (bis 2007, Pferde einschl. Ponys) und 41141-0004 (ab 2010, Einhufer); 1999 und 2005 über Eurostat ef_ls_ovaareg bzw. BMEL; Recherche 07.10.2026",
+  "werte": {"1990": 490954, "1992": 530957, "1994": 598848, "1996": 652444, "1999": 475820, "2003": 524753, "2005": 500380, "2007": 541890, "2010": 461779, "2013": 461300, "2016": 441954, "2020": 453662, "2023": 486500}
+ },
+ "zierfische": {
+  "hinweis": "Eine Zeitreihe der Zierfische gibt es nicht. Seit 2003 zählen IVH/ZZF nur Aquarien und Gartenteiche mit Fischen. Belegt sind 84,6 Mio. Zierfische 1999 (ZZF, Datenbasis BBE) und „rund 85 Millionen Zierfische in 3 Mio. Aquarien“ 2000 (ZZF/IVH, Heimtiermarkt 2000).",
+  "quelleUrl": "https://web.archive.org/web/20011224122039id_/http://www.zzf.de:80/markt/markt2000.html"
+ }
+}

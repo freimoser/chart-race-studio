@@ -20,6 +20,8 @@ const d14 = load('ds14-geschlecht.json')
 const d15 = load('ds15-oktoberfest.json')
 const d16 = load('ds16-tierarztkosten.json')
 const d17 = load('ds17-tierarzt-umsatz.json')
+const d18 = load('ds18-pferde.json')
+const d19 = load('ds19-heimtiere-dach.json')
 
 /** long rows -> wide table (Jahr × names). Bei Dubletten gewinnt die zuerst genannte Quelle. */
 function wide(rows, { names, from, to, rename = {} }) {
@@ -140,6 +142,35 @@ const petRowsU = dedupe([
   ...d2bClean.rows.filter((r) => r.metric === 'Bestand'),
 ])
 const w3 = wide(petRowsU, { names: petNames, from: '1991' })
+
+// 3b Heimtiere mit Pferden und Gartenteichen. Gleiche Reihen wie w3, dazu die Gartenteiche (mit Zierfischen),
+// die IVH/ZZF seit 2002 getrennt ausweisen, und die Pferde laut FN-Schätzung (alle Pferde, nicht nur
+// landwirtschaftliche Betriebe). Die FN-Werte sind Einzelschätzungen, dazwischen interpoliert die Grafik.
+// Zierfische selbst gibt es nur für 1999/2000 – keine Reihe.
+const TEICH = 'Gartenteiche (mit Zierfischen)'
+const teichRows = d2d.rows.filter((r) => r.metric === 'Bestand' && r.name === 'Gartenteiche mit Fischen').map((r) => ({ ...r, name: TEICH }))
+const w3b = wide(dedupe([...petRowsU, ...teichRows, ...d18.fn.rows]), { names: [...petNames, TEICH, 'Pferde'], from: '1991' })
+
+// 3c Heimtiere in DACH, 2016–2025: Deutschland (IVH/ZZF) plus Österreich und Schweiz. Nur die vier
+// Kategorien, die alle drei Länder vergleichbar zählen. Österreich und Schweiz liegen nur als Stützjahre vor
+// (Umfragen alle 2–3 Jahre); dazwischen linear, nach dem letzten Stützjahr fortgeschrieben (AT 2025).
+const DACH_TIERE = ['Katzen', 'Hunde', 'Kleintiere (Kleinsäuger)', 'Ziervögel']
+const stuetze = (punkte, jahr) => {
+  const js = Object.keys(punkte).map(Number).sort((a, b) => a - b)
+  if (punkte[jahr] != null) return punkte[jahr]
+  const vor = js.filter((x) => x < jahr).at(-1), nach = js.find((x) => x > jahr)
+  if (vor == null) return null
+  if (nach == null) return punkte[vor]
+  return punkte[vor] + (punkte[nach] - punkte[vor]) * (jahr - vor) / (nach - vor)
+}
+const deWert = (name, jahr) => w3.rows.find((r) => r[0] === String(jahr))?.[w3.headers.indexOf(name)] ?? null
+const w3c = {
+  headers: ['Jahr', ...DACH_TIERE],
+  rows: Array.from({ length: 2025 - 2016 + 1 }, (_, k) => 2016 + k).map((j) => [String(j), ...DACH_TIERE.map((n) => {
+    const de = deWert(n, j), at = stuetze(d19.at[n], j), ch = stuetze(d19.ch[n], j)
+    return de == null || at == null || ch == null ? null : Math.round((de + at / 1000 + ch / 1000) * 100) / 100
+  })]),
+}
 
 // 4 Hunderassen: ohne Summenzeile, 1992–2025 (1990/1991 nirgends online verfügbar)
 // ds3 deckt nur die 23 Rassen ab, die 2011–2025 einmal in den Top 15 waren. ds3c ergänzt die
@@ -396,6 +427,6 @@ for (const t of ['katze', 'hund', 'pferd']) console.log('Routinejahr', t, [2010,
 
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 const out = `// Automatisch erzeugt von scripts/build-samples.mjs aus data/raw/*.json – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('TIERAERZTE_BUNDESLAND', w1), emit('TIERAERZTESCHAFT_DEUTSCHLAND', w2), emit('INHABER_ANGESTELLTE', w2b), emit('HEIMTIERE', w3), emit('HUNDERASSEN', w4), emit('RINDER_BUNDESLAND', w5), emit('HEIMTIERMARKT', w6), emit('PRAXISSCHWERPUNKTE', w7), emit('FACHTIERAERZTE', w8), emit('KLEINTIERE_BUNDESLAND', w9), emit('KETTEN', w10), emit('KETTEN_EIGENTUEMER', w11), emit('GESCHLECHT_PRAXIS', w12), emit('OKTOBERFEST', w13), emit('OKTOBERFEST_PREIS', w13b), emit('TIERARZT_INFLATION', w14), emit('TIERARZT_ROUTINEJAHR', w14b), emit('HUND_KATZE_WELT', { headers: d13.headers ?? ['Jahr'], rows: d13.rows ?? [] })].join('\n')
+  [emit('TIERAERZTE_BUNDESLAND', w1), emit('TIERAERZTESCHAFT_DEUTSCHLAND', w2), emit('INHABER_ANGESTELLTE', w2b), emit('HEIMTIERE', w3), emit('HEIMTIERE_ALLE', w3b), emit('HEIMTIERE_DACH', w3c), emit('HUNDERASSEN', w4), emit('RINDER_BUNDESLAND', w5), emit('HEIMTIERMARKT', w6), emit('PRAXISSCHWERPUNKTE', w7), emit('FACHTIERAERZTE', w8), emit('KLEINTIERE_BUNDESLAND', w9), emit('KETTEN', w10), emit('KETTEN_EIGENTUEMER', w11), emit('GESCHLECHT_PRAXIS', w12), emit('OKTOBERFEST', w13), emit('OKTOBERFEST_PREIS', w13b), emit('TIERARZT_INFLATION', w14), emit('TIERARZT_ROUTINEJAHR', w14b), emit('HUND_KATZE_WELT', { headers: d13.headers ?? ['Jahr'], rows: d13.rows ?? [] })].join('\n')
 fs.writeFileSync('src/samples/data.ts', out)
-for (const [n, w] of Object.entries({ w1, w2, w2b, w3, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w13b, w14, w14b })) console.log(n, w.headers.length - 1, 'Kategorien,', w.rows.length, 'Perioden', w.rows[0]?.[0], '–', w.rows.at(-1)?.[0])
+for (const [n, w] of Object.entries({ w1, w2, w2b, w3, w3b, w3c, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w13b, w14, w14b })) console.log(n, w.headers.length - 1, 'Kategorien,', w.rows.length, 'Perioden', w.rows[0]?.[0], '–', w.rows.at(-1)?.[0])

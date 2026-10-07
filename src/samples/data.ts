@@ -152,6 +152,62 @@ export const HEIMTIERE = {
   ],
 }
 
+export const HEIMTIERE_ALLE = {
+  headers: ["Jahr","Katzen","Hunde","Kleintiere (Kleinsäuger)","Ziervögel","Aquarien","Terrarien","Gartenteiche (mit Zierfischen)","Pferde"],
+  rows: [
+    ["1991", 5.3, 4.6, 3, 6.8, 3, null, null, null],
+    ["1993", 5.5, 4.8, 3.5, 6.8, 3.1, null, null, null],
+    ["1994", 5.8, 4.9, 3.7, 5.5, 3.1, null, null, null],
+    ["1995", 6, 5, 3.8, 5.4, 3.1, null, null, null],
+    ["1996", 6.2, 5.1, 4, 5.1, 3.2, null, null, null],
+    ["1997", 6.3, 5, 4.5, 5, 3.2, null, null, null],
+    ["1998", 6.4, 5.1, 4.5, 5, 3.2, null, null, null],
+    ["1999", 6.3, 4.8, 4.6, 6.5, null, null, null, null],
+    ["2000", 6.8, 5, 4.8, 4.9, 3, null, null, null],
+    ["2001", 6.9, 4.7, 5.7, 4.9, 3, null, null, null],
+    ["2002", 7.2, 5, 5.8, 4.7, 1.9, 0.4, 1.7, null],
+    ["2003", 7.3, 5, 5.9, 4.6, 1.9, 0.4, 1.2, null],
+    ["2004", 7.5, 5.3, 6.1, 4.2, 1.95, 0.42, 1.25, null],
+    ["2005", 7.6, 5.3, 6.2, 3.9, 1.9, 0.42, 1.3, null],
+    ["2006", 7.8, 5.3, 6.3, 3.8, 1.95, 0.42, 1.4, null],
+    ["2007", 7.9, 5.3, 6.6, 3.4, 2.1, 0.42, 2.3, null],
+    ["2008", 8.2, 5.5, 6.2, 3.4, 2, 0.4, 2.3, null],
+    ["2009", 8.2, 5.4, 5.6, 3.4, 2, 0.44, 2.1, null],
+    ["2010", 8.2, 5.3, 5.3, 3.5, 2, 0.44, 2.2, null],
+    ["2011", 8.2, 5.4, 5.1, 3.3, 1.9, 0.4, 2.2, null],
+    ["2012", 12.3, 7.4, 7.6, 3.7, 2.3, 0.8, 2.6, null],
+    ["2013", 11.5, 6.9, 6.1, 3.4, 2, 0.8, 1.7, null],
+    ["2014", 11.8, 6.8, 5.9, 4, 2.1, 0.8, 1.8, null],
+    ["2015", 12.9, 7.9, 5.1, 4.2, 2, 0.7, 1.6, null],
+    ["2016", 13.4, 8.6, 5, 4.6, 2, 0.7, 1.6, null],
+    ["2017", 13.7, 9.2, 6.1, 5.3, 2.1, 0.8, 1.6, null],
+    ["2018", 14.8, 9.4, 5.4, 4.8, 1.9, 1, 1.5, null],
+    ["2019", 14.7, 10.1, 5.2, 4, 1.6, 1.2, 1.2, 1.25],
+    ["2020", 15.7, 10.7, 5, 3.5, 1.8, 1.3, 1.4, null],
+    ["2021", 16.7, 10.3, 4.6, 3.1, 2.3, 1.2, 1.4, null],
+    ["2022", 15.2, 10.6, 4.9, 3.7, 2.3, 1.3, 1.4, null],
+    ["2023", 15.7, 10.5, 4.6, 3.5, 2.2, 1.2, 1.3, null],
+    ["2024", 15.9, 10.5, 4.3, 3.2, 2, 1.1, 1.1, null],
+    ["2025", 15.7, 10, 4.4, 3.3, 2.1, 1, 1, 1.3],
+  ],
+}
+
+export const HEIMTIERE_DACH = {
+  headers: ["Jahr","Katzen","Hunde","Kleintiere (Kleinsäuger)","Ziervögel"],
+  rows: [
+    ["2016", 16.87, 9.72, 6.33, 5.05],
+    ["2017", 17.16, 10.34, 7.27, 5.76],
+    ["2018", 18.36, 10.63, 6.4, 5.23],
+    ["2019", 18.41, 11.43, 6.27, 4.4],
+    ["2020", 19.44, 12.05, 6.15, 3.94],
+    ["2021", 20.49, 11.67, 5.67, 3.54],
+    ["2022", 19.04, 11.99, 5.89, 4.14],
+    ["2023", 19.44, 11.89, 5.56, 3.87],
+    ["2024", 19.54, 11.89, 5.24, 3.5],
+    ["2025", 19.23, 11.39, 5.31, 3.54],
+  ],
+}
+
 export const HUNDERASSEN = {
   headers: ["Jahr","Deutscher Schäferhund","Teckel","Deutsch Drahthaar","Pudel","Labrador Retriever","Golden Retriever","Rottweiler","Boxer","English Cocker Spaniel","Deutsche Dogge","Deutsch Kurzhaar","West Highland White Terrier","Berner Sennenhund","Collie (Langhaar)","Kleiner Münsterländer","Riesenschnauzer","Hovawart","Zwergschnauzer","Airedale Terrier","Dalmatiner","Yorkshire Terrier","Border Collie","Deutscher Jagdterrier","Cavalier King Charles Spaniel","Parson Russell Terrier","Sheltie (Shetland Sheepdog)","Chihuahua","Dobermann","Rhodesian Ridgeback","Bearded Collie","Deutscher Wachtelhund","Tibet Terrier","Cairn Terrier","Beagle","Neufundländer","Schnauzer","Foxterrier (Drahthaar)","Malinois","Havaneser","Weimaraner","Siberian Husky","Mops","Whippet","Australian Shepherd","Lagotto Romagnolo","Französische Bulldogge","Jack Russell Terrier"],
   rows: [

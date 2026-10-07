@@ -281,12 +281,25 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
   // halb sichtbarer Name dagegen liest sich wie ein Fehler und überlagert seine Nachbarn.
   const labelDeckkraft = (op: number) => { const u = Math.max(0, Math.min(1, (op - 0.3) / 0.6)); return u * u * (3 - 2 * u) }
   /** Kollisionsfreie Label-Positionen; jedes Label beansprucht nur so viel Abstand, wie es sichtbar ist. */
-  function anordnen(liste: { name: string; v: number; op: number }[]) {
+  /** Gleichstand (unter 0,01 px): oben bleibt, wer zuletzt höher lag. So entscheidet das Standbild am Ende
+   *  wie die Bilder davor, in denen die Linien noch auseinanderliefen. Erst ohne jeden Unterschied in der
+   *  Vergangenheit gilt der Name. Bildschirm-y wächst nach unten, also zuerst die Reihe mit dem höheren Wert. */
+  const vorher = (a: string, b: string, tk: number) => {
+    const va = series.get(a), vb = series.get(b)
+    if (va && vb) for (let i = Math.min(P - 1, Math.ceil(tk)); i >= 0; i--) {
+      const x = va[i], y = vb[i]
+      if (x != null && y != null && Math.abs(x - y) > 1e-9) return scaleFor(a)(x) - scaleFor(b)(y)
+    }
+    return a < b ? -1 : 1
+  }
+  function anordnen(liste: { name: string; v: number; op: number }[], tk: number) {
     const lo_ = input.labelSize * 0.75, hi_ = plotH - input.labelSize * 0.8
     const placed = liste.filter((h) => h.op > 0.01).map((h) => ({ ...h, lop: labelDeckkraft(h.op), y: scaleFor(h.name)(h.v), ty: scaleFor(h.name)(h.v) }))
     const abstand = (a: { lop: number }, b: { lop: number }) => minGap * Math.min(a.lop, b.lop)
     for (let iter = 0; iter < 40; iter++) {
-      placed.sort((a, b) => a.ty - b.ty || a.y - b.y || (a.name < b.name ? -1 : 1))
+      // Praktisch gleiche Höhe gilt als Gleichstand (siehe vorher). Vorher entschied im letzten Bild der Name,
+      // davor eine Rundungsdifferenz der Glättung – gleichauf endende Reihen tauschten dann im Standbild.
+      placed.sort((a, b) => (Math.abs(a.ty - b.ty) > 0.01 ? a.ty - b.ty : 0) || (Math.abs(a.y - b.y) > 0.01 ? a.y - b.y : 0) || vorher(a.name, b.name, tk))
       let moved = false
       for (let i = 1; i < placed.length; i++) {
         const gap = placed[i].ty - placed[i - 1].ty
@@ -411,7 +424,7 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
       // entschiede sonst der Name über die Reihenfolge, eine Periode später der Wert, und das Mittel aus beiden
       // Anordnungen legte Labels übereinander.
       const tk = Math.max(1e-3, Math.min(P - 1, t + fenster * (k / (MITTEL - 1) - 0.5)))
-      for (const p of anordnen(tk === t ? heads : koepfe(tk))) {
+      for (const p of anordnen(tk === t ? heads : koepfe(tk), tk)) {
         const e = versatz.get(p.name) ?? { summe: 0, n: 0 }
         e.summe += p.ty - p.y; e.n++
         versatz.set(p.name, e)

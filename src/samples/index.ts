@@ -1,5 +1,5 @@
 import type { SampleDataset } from '@/lib/data/types'
-import { OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data'
+import { HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -159,6 +159,46 @@ export const SAMPLES: SampleDataset[] = [
     headers: HEIMTIERE.headers,
     rows: HEIMTIERE.rows,
     suggested: { chartType: 'bar', topN: 6, decimals: 1, suffix: ' Mio.' },
+  },
+  {
+    id: 'heimtiere-alle',
+    erstellt: '2026-10-07', geprueft: '2026-10-07',
+    category: 'heimtiere',
+    title: 'Heimtiere in Deutschland, mit Pferden und Gartenteichen',
+    subtitle: 'Bestand in Millionen: Heimtiere laut ZZF/IVH, Gartenteiche mit Zierfischen, Pferde laut Reiterlicher Vereinigung',
+    source: 'Quelle: ZZF/IVH, „Der Deutsche Heimtiermarkt“ (1991–2025); Pferde: Deutsche Reiterliche Vereinigung (FN), Schätzungen 2019 und 2025',
+    sourceUrl: 'https://www.ivh-online.de/der-verband/daten-fakten/der-deutsche-heimtiermarkt.html',
+    unit: 'Mio.',
+    description: 'Dieselben Heimtiere wie in der Grundfassung, dazu Gartenteiche mit Zierfischen seit 2002 und rund 1,3 Millionen Pferde.',
+    dataInfo: [
+      "Katzen, Hunde, Kleintiere, Ziervögel, Aquarien und Terrarien wie im Datensatz „Heimtiere in Deutschland“: Hochrechnungen aus Haushaltsbefragungen der Verbände, mit den dort beschriebenen Lücken und Methodenwechseln (1994, 1999, 2002, 2012/2013).",
+      "Gartenteiche mit Zierfischen weisen ZZF/IVH seit 2002 getrennt aus. Gezählt werden Teiche, nicht Fische. Zierfische selbst gibt es nur für 1999 und 2000: rund 85 Millionen in etwa 3 Millionen Aquarien. Eine Zeitreihe dazu existiert nicht.",
+      "Pferde laut Deutscher Reiterlicher Vereinigung (FN): rund 1,25 Millionen in Privatbesitz 2019 (Hochrechnung aus einer Ipsos-Studie) und 1,3 Millionen registrierte Pferde im Februar 2025. Dazwischen ist linear gerechnet; ältere FN-Angaben sind nur über Zweitquellen belegt und fehlen deshalb.",
+      "Zum Vergleich zählt das Statistische Bundesamt nur Pferde in landwirtschaftlichen Betrieben: 486.500 Einhufer im März 2023, etwa ein Drittel aller Pferde.",
+    ],
+    headers: HEIMTIERE_ALLE.headers,
+    rows: HEIMTIERE_ALLE.rows,
+    suggested: { chartType: 'bar', topN: 8, decimals: 1, suffix: ' Mio.' },
+  },
+  {
+    id: 'heimtiere-dach',
+    erstellt: '2026-10-07', geprueft: '2026-10-07',
+    category: 'heimtiere',
+    title: 'Heimtiere in Deutschland, Österreich und der Schweiz',
+    subtitle: 'Bestand in Millionen, alle drei Länder zusammen, seit 2016',
+    source: 'Quelle: ZZF/IVH (DE); ÖHTV, FEDIAF (AT); VHN, Identitas AMICUS (CH). Jahre zwischen den Umfragen gerechnet',
+    sourceUrl: 'https://www.vhn.ch/',
+    unit: 'Mio.',
+    description: 'Gut 19 Millionen Katzen und 11 Millionen Hunde leben in Deutschland, Österreich und der Schweiz. Deutschland stellt davon gut acht von zehn.',
+    dataInfo: [
+      "Summe aus Deutschland (IVH/ZZF, jährliche Haushaltsbefragung), Österreich (Österreichische Heimtierfuttermittel Vereinigung ÖHTV: Umfragen 2019, 2022 und 2024; 2016 und 2017 laut europäischem Verband FEDIAF) und der Schweiz (Verband für Heimtiernahrung VHN: Umfragen 2016, 2018, 2020, 2022 und 2025; Hunde aus dem Pflichtregister AMICUS, jedes Jahr).",
+      "Österreich und die Schweiz zählen nur alle zwei bis drei Jahre. Die Jahre dazwischen sind linear gerechnet, Österreich 2025 ist der Wert von 2024. Weil beide Länder zusammen nur etwa ein Fünftel der Katzen und ein Zehntel der Hunde stellen, verschiebt das die Summe kaum.",
+      "Methodenbrüche: Österreich 2017 zu 2019 (neue Umfrage, Hunde von 640.000 auf 827.000), Schweiz 2025 (Onlinepanel statt bisheriger Erhebung, Katzen von 1,85 auf 1,51 Millionen, Vögel von 300.000 auf 108.000).",
+      "Aquarien, Terrarien, Gartenteiche und Pferde fehlen, weil die drei Länder sie nicht vergleichbar zählen: Die Schweiz erfasste bis 2020 Fische statt Aquarien und bis 2022 Reptilien statt Terrarien, Österreich hat für Pferde keine Jahresreihe.",
+    ],
+    headers: HEIMTIERE_DACH.headers,
+    rows: HEIMTIERE_DACH.rows,
+    suggested: { chartType: 'bar', topN: 4, decimals: 1, suffix: ' Mio.' },
   },
   {
     id: 'heimtiermarkt',

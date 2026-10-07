@@ -212,3 +212,10 @@ Ersetzt eine extern zugelieferte Vorlage, in der 19 von 26 Jahren interpoliert o
 - **Warum zwei Grafiken:** Eine Fassung mit sieben Linien (Körbe + Markt) war unlesbar – vier Linien lagen bis 2021 übereinander. Eine Grafik, eine Aussage. Die Maß ist seit dem 07.10.2026 auf Wunsch raus.
 - **Grenzen:** Umsatz = Preis × Menge. Faktor nach 2022 unbekannt (2019: 1,44). Umsatz 2025 erscheint 2027; dann `tierarzt-inflation` um ein Jahr verlängern.
 - **Freigabe:** über `datensaetzeOhnePost`.
+
+## Heimtiere mit Pferden und Gartenteichen (`heimtiere-alle`) und DACH (`heimtiere-dach`)
+
+- **`heimtiere-alle`:** wie `heimtiere`, dazu Gartenteiche (mit Zierfischen) ab 2002 (IVH/ZZF; 2002/2003 aus ds2d unter „Gartenteiche mit Fischen“) und Pferde laut FN 2019 (1,25 Mio.) und 2025 (1,3 Mio.), dazwischen interpoliert. Rohdaten Pferde/Zierfische: `data/raw/ds18-pferde.json` (auch die Destatis-Reihe nur landwirtschaftlicher Betriebe, nicht verwendet).
+- **`heimtiere-dach`:** Summe DE + AT + CH, 2016–2025, nur Katzen, Hunde, Kleintiere, Ziervögel. AT: ÖHTV 2019/2022/2024, FEDIAF 2016/2017. CH: VHN 2016–2025, Hunde AMICUS jährlich. Zwischenjahre linear, AT 2025 fortgeschrieben. Rohdaten `data/raw/ds19-heimtiere-dach.json`. FEDIAF taugt für AT/CH nicht als Jahresreihe (schreibt Umfragewerte fort, teils fehlerhaft).
+- **Nachziehen:** ÖHTV-Umfrage 2026 angekündigt; VHN etwa alle zwei bis drei Jahre.
+
