@@ -36,6 +36,32 @@ const byMetric = (d, m) => d.rows.filter((r) => r.metric === m)
 // Dubletten (Datum|Name) entfernen – die zuerst gelistete Quelle gewinnt.
 const dedupe = (rows) => { const s = new Set(); return rows.filter((r) => { const k = r.date + '|' + r.name; return s.has(k) ? false : (s.add(k), true) }) }
 
+// ---------- Lückenlose Reihen (Regel seit 07.10.2026, docs/DATENSTANDARD.md Abschnitt 7) ----------
+// Neue Datensätze haben in jedem Jahr einen Wert. Was keine Quelle hat, wird mit naheliegenden Daten gerechnet
+// und in Dateninfo und Post benannt: zwischen zwei Belegen linear, davor/danach der nächste Beleg gehalten –
+// oder, wo es eine verwandte Reihe gibt, über deren Verhältnis fortgeschrieben (siehe DACH).
+/** Wert aus Stützpunkten {Jahr: Wert}: belegt, sonst linear zwischen zwei Belegen, außen der nächste Beleg. */
+const stuetze = (punkte, jahr) => {
+  if (punkte[jahr] != null) return punkte[jahr]
+  const js = Object.keys(punkte).filter((k) => punkte[k] != null).map(Number).sort((x, y) => x - y)
+  const vor = js.filter((x) => x < jahr).at(-1), nach = js.find((x) => x > jahr)
+  if (vor == null) return nach == null ? null : punkte[nach]
+  if (nach == null) return punkte[vor]
+  return punkte[vor] + (punkte[nach] - punkte[vor]) * (jahr - vor) / (nach - vor)
+}
+const r3 = (v) => (v == null ? null : Math.round(v * 1000) / 1000)
+/** Breite Tabelle → jede Spalte über alle Jahre von–bis nach `stuetze` gefüllt; `ersatz` überschreibt Spalten. */
+function lueckenlos(w, { von, bis, ersatz = {} }) {
+  const spalte = (i) => Object.fromEntries(w.rows.filter((r) => r[i] != null).map((r) => [Number(r[0]), r[i]]))
+  const punkte = w.headers.slice(1).map((_, i) => spalte(i + 1))
+  return {
+    headers: w.headers,
+    rows: Array.from({ length: bis - von + 1 }, (_, k) => von + k).map((j) => [String(j),
+      ...w.headers.slice(1).map((n, i) => r3(ersatz[n] ? ersatz[n](j) : stuetze(punkte[i], j)))]),
+  }
+}
+
+
 // 1 Tierärzt:innen gesamt nach Bundesland. 2006–2025 aus ds1, 2002–2005 aus den archivierten
 // BTK-Statistiken (ds5, nach Kammerbereich – Nordrhein und Westfalen-Lippe werden wie in ds1 zu
 // Nordrhein-Westfalen addiert). Vor 2002 hat die BTK selbst keine Kammerdaten.
@@ -119,10 +145,20 @@ const restRows = [...new Set(natRows.map((r) => r.date))].flatMap((date) => {
 // Kurze Namen wie in 2b: Mit den langen Namen der Statistik („Niedergelassene Tierärzt:innen
 // (Praxisinhaber)“) wurden die Kopf-Labels in 4:5, 1:1 und in der Grafik der Artikel gekürzt. Dass es
 // Tierärztinnen und Tierärzte sind, sagt der Achsentitel.
-const w2 = wide([...natRows, ...restRows, ...petAxis], {
+const w2Roh = wide([...natRows, ...restRows, ...petAxis], {
   names: [NIED, ASSI, REST, TAET, PETS], from: '1991',
   rename: { [NIED]: 'Praxisinhaber:innen', [ASSI]: 'Angestellte in Praxen', [REST]: 'Außerhalb von Praxen', [TAET]: 'Tätige gesamt', [PETS]: 'Hunde und Katzen' },
 })
+// Lückenlos (Regel 07.10.2026): Tätige 1992, 1993, 2001 und Hunde/Katzen 1992 linear zwischen den Nachbarjahren;
+// „Außerhalb von Praxen“ bleibt die Differenz Tätige − Inhaber − Angestellte, jetzt auch für diese drei Jahre.
+const w2Taet = lueckenlos(w2Roh, { von: 1991, bis: 2025 })
+const spalte2 = (n) => w2Taet.headers.indexOf(n)
+const w2 = { headers: w2Taet.headers, rows: w2Taet.rows.map((r) => {
+  const z = [...r]
+  z[spalte2('Tätige gesamt')] = Math.round(z[spalte2('Tätige gesamt')])
+  z[spalte2('Außerhalb von Praxen')] = z[spalte2('Tätige gesamt')] - z[spalte2('Praxisinhaber:innen')] - z[spalte2('Angestellte in Praxen')]
+  return z
+}) }
 
 // 2b Zugespitzte Fassung für die Aussage „Angestellte überholen die Inhaber“: nur die beiden Reihen,
 // um die es geht. Im vollen Datensatz steht „Tierärztlich Tätige gesamt“ mit 34.476 daneben – die
@@ -142,31 +178,6 @@ const petRowsU = dedupe([
   ...d2bClean.rows.filter((r) => r.metric === 'Bestand'),
 ])
 const w3 = wide(petRowsU, { names: petNames, from: '1991' })
-
-// ---------- Lückenlose Reihen (Regel seit 07.10.2026, docs/DATENSTANDARD.md Abschnitt 7) ----------
-// Neue Datensätze haben in jedem Jahr einen Wert. Was keine Quelle hat, wird mit naheliegenden Daten gerechnet
-// und in Dateninfo und Post benannt: zwischen zwei Belegen linear, davor/danach der nächste Beleg gehalten –
-// oder, wo es eine verwandte Reihe gibt, über deren Verhältnis fortgeschrieben (siehe DACH).
-/** Wert aus Stützpunkten {Jahr: Wert}: belegt, sonst linear zwischen zwei Belegen, außen der nächste Beleg. */
-const stuetze = (punkte, jahr) => {
-  if (punkte[jahr] != null) return punkte[jahr]
-  const js = Object.keys(punkte).filter((k) => punkte[k] != null).map(Number).sort((x, y) => x - y)
-  const vor = js.filter((x) => x < jahr).at(-1), nach = js.find((x) => x > jahr)
-  if (vor == null) return nach == null ? null : punkte[nach]
-  if (nach == null) return punkte[vor]
-  return punkte[vor] + (punkte[nach] - punkte[vor]) * (jahr - vor) / (nach - vor)
-}
-const r3 = (v) => (v == null ? null : Math.round(v * 1000) / 1000)
-/** Breite Tabelle → jede Spalte über alle Jahre von–bis nach `stuetze` gefüllt; `ersatz` überschreibt Spalten. */
-function lueckenlos(w, { von, bis, ersatz = {} }) {
-  const spalte = (i) => Object.fromEntries(w.rows.filter((r) => r[i] != null).map((r) => [Number(r[0]), r[i]]))
-  const punkte = w.headers.slice(1).map((_, i) => spalte(i + 1))
-  return {
-    headers: w.headers,
-    rows: Array.from({ length: bis - von + 1 }, (_, k) => von + k).map((j) => [String(j),
-      ...w.headers.slice(1).map((n, i) => r3(ersatz[n] ? ersatz[n](j) : stuetze(punkte[i], j)))]),
-  }
-}
 
 // 3b Heimtiere und Pferde in Deutschland, 1991–2025, ohne leere Jahre. Pferde sind keine Heimtiere (IVH/ZZF
 // zählen sie nicht); deshalb heißt der Datensatz „Heimtiere und Pferde“. Dazu Gartenteiche mit Zierfischen.
@@ -198,6 +209,19 @@ const w3c = {
   headers: ['Jahr', ...DACH_TIERE],
   rows: Array.from({ length: 2025 - 1991 + 1 }, (_, k) => 1991 + k).map((j) => [String(j), ...DACH_TIERE.map((n) =>
     Math.round((deWert(n, j) + landWert(d19.at[n], n, j) / 1000 + landWert(chPunkte[n], n, j) / 1000) * 100) / 100)]),
+}
+
+// 2c Post 5 „Tierarztmangel? Kommt darauf an, wen man zählt“: Hunde und Katzen je Praxisinhaber:in und je
+// Tierärzt:in in der Praxis (Inhaber + Angestellte), 2012–2025 – wie im Artikel. Vor 2012 schätzten die Verbände
+// die Heimtiere (nicht vergleichbar); 2013 stellten sie noch einmal um, der Artikel nennt beide Startjahre.
+// Beide Reihen sind berechnet (Quotient), keine Lücken.
+const w2Wert = (n, j) => w2.rows.find((r) => r[0] === String(j))?.[w2.headers.indexOf(n)]
+const hk = (j) => (deWert('Katzen', j) + deWert('Hunde', j)) * 1e6
+const w2c = {
+  headers: ['Jahr', 'Je Praxisinhaber:in', 'Je Tierärzt:in in der Praxis'],
+  rows: Array.from({ length: 2025 - 2012 + 1 }, (_, k) => 2012 + k).map((j) => [String(j),
+    Math.round(hk(j) / w2Wert('Praxisinhaber:innen', j)),
+    Math.round(hk(j) / (w2Wert('Praxisinhaber:innen', j) + w2Wert('Angestellte in Praxen', j)))]),
 }
 
 // 4 Hunderassen: ohne Summenzeile, 1992–2025 (1990/1991 nirgends online verfügbar)
@@ -455,6 +479,6 @@ for (const t of ['katze', 'hund', 'pferd']) console.log('Routinejahr', t, [2010,
 
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 const out = `// Automatisch erzeugt von scripts/build-samples.mjs aus data/raw/*.json – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('TIERAERZTE_BUNDESLAND', w1), emit('TIERAERZTESCHAFT_DEUTSCHLAND', w2), emit('INHABER_ANGESTELLTE', w2b), emit('HEIMTIERE', w3), emit('HEIMTIERE_ALLE', w3b), emit('HEIMTIERE_DACH', w3c), emit('HUNDERASSEN', w4), emit('RINDER_BUNDESLAND', w5), emit('HEIMTIERMARKT', w6), emit('PRAXISSCHWERPUNKTE', w7), emit('FACHTIERAERZTE', w8), emit('KLEINTIERE_BUNDESLAND', w9), emit('KETTEN', w10), emit('KETTEN_EIGENTUEMER', w11), emit('GESCHLECHT_PRAXIS', w12), emit('OKTOBERFEST', w13), emit('OKTOBERFEST_PREIS', w13b), emit('TIERARZT_INFLATION', w14), emit('TIERARZT_ROUTINEJAHR', w14b), emit('HUND_KATZE_WELT', { headers: d13.headers ?? ['Jahr'], rows: d13.rows ?? [] })].join('\n')
+  [emit('TIERAERZTE_BUNDESLAND', w1), emit('TIERAERZTESCHAFT_DEUTSCHLAND', w2), emit('INHABER_ANGESTELLTE', w2b), emit('TIERARZTMANGEL', w2c), emit('HEIMTIERE', w3), emit('HEIMTIERE_ALLE', w3b), emit('HEIMTIERE_DACH', w3c), emit('HUNDERASSEN', w4), emit('RINDER_BUNDESLAND', w5), emit('HEIMTIERMARKT', w6), emit('PRAXISSCHWERPUNKTE', w7), emit('FACHTIERAERZTE', w8), emit('KLEINTIERE_BUNDESLAND', w9), emit('KETTEN', w10), emit('KETTEN_EIGENTUEMER', w11), emit('GESCHLECHT_PRAXIS', w12), emit('OKTOBERFEST', w13), emit('OKTOBERFEST_PREIS', w13b), emit('TIERARZT_INFLATION', w14), emit('TIERARZT_ROUTINEJAHR', w14b), emit('HUND_KATZE_WELT', { headers: d13.headers ?? ['Jahr'], rows: d13.rows ?? [] })].join('\n')
 fs.writeFileSync('src/samples/data.ts', out)
-for (const [n, w] of Object.entries({ w1, w2, w2b, w3, w3b, w3c, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w13b, w14, w14b })) console.log(n, w.headers.length - 1, 'Kategorien,', w.rows.length, 'Perioden', w.rows[0]?.[0], '–', w.rows.at(-1)?.[0])
+for (const [n, w] of Object.entries({ w1, w2, w2b, w2c, w3, w3b, w3c, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w13b, w14, w14b })) console.log(n, w.headers.length - 1, 'Kategorien,', w.rows.length, 'Perioden', w.rows[0]?.[0], '–', w.rows.at(-1)?.[0])

@@ -116,8 +116,8 @@ export const POSTS: RoadmapPost[] = [
     title: 'Tierarztmangel? Kommt darauf an, wen man zählt',
     hook: 'Hunde und Katzen gegen Praxisinhaber, zwei Kurven, die auseinanderlaufen. Rechnet man die Angestellten dazu, verschwindet die Lücke fast.',
     figures: ['Hunde und Katzen: 19,7 Mio. (2012) auf 25,7 Mio. (2025)', 'Je Praxisinhaber: 1.655 (2012) auf 2.291 (2025), plus 38 Prozent', 'Je Tierärztin oder Tierarzt in der Praxis: 1.079 auf 1.101, plus 2 Prozent', 'Seit 2019 803 Praxisinhaber weniger'],
-    sampleId: 'tieraerzteschaft-deutschland', chart: 'line', dataStatus: 'belegt',
-    dataNote: 'Heimtierzahlen haben 2012 einen Methodenbruch (ZZF/IVH), der Vergleich beginnt deshalb 2012. Inhaber sind nicht Praxen: In Gemeinschaftspraxen teilen sich mehrere Inhaber einen Betrieb. Am 30.09.2026 zurückgestellt, Post 7 kam vor. Der Artikel war schon online und bleibt es (vorabOnline). Für ein besseres Video: eigener Datensatz ab 2012 mit Hunden und Katzen je Inhaber und je Kopf in der Praxis.',
+    sampleId: 'tierarztmangel', chart: 'line', dataStatus: 'belegt',
+    dataNote: 'Eigener Datensatz „tierarztmangel“ seit 07.10.2026 (eine Aussage, zwei Linien). Heimtierzahlen haben 2012 einen Methodenbruch (ZZF/IVH), der Vergleich beginnt deshalb 2012. Inhaber sind nicht Praxen: In Gemeinschaftspraxen teilen sich mehrere Inhaber einen Betrieb. Am 30.09.2026 zurückgestellt, Post 7 kam vor. Der Artikel war schon online und bleibt es (vorabOnline). Für ein besseres Video: eigener Datensatz ab 2012 mit Hunden und Katzen je Inhaber und je Kopf in der Praxis.',
     refs: [4, 1],
   },
   {

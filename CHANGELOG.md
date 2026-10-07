@@ -4,6 +4,11 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Post 5 vorbereitet, Testwoche ein Post pro Tag (07.10.2026)
+
+- **Neuer Datensatz `tierarztmangel`** für Post 5: Hunde und Katzen je Praxisinhaber:in und je Tierärzt:in in der Praxis, 2012–2025 (zwei Linien, eine Aussage). Der Redaktionsplan hatte das schon als bessere Grafik vorgesehen. Post-Text `docs/linkedin/post-05-tierarztmangel.md` mit Block „Gerechnet / Quellen“.
+- **`tieraerzteschaft-deutschland` lückenlos:** Tätige 1992, 1993, 2001 und Hunde/Katzen 1992 linear; „Außerhalb von Praxen“ dort als Differenz. Übrige Werte unverändert.
+
 ### Regel „Lückenlose Reihen“ und Heimtier-Fassungen nachgebessert (07.10.2026)
 
 - **Neue verbindliche Regel** (Projekt-`CLAUDE.md`, `docs/DATENSTANDARD.md` Abschnitt 7, `docs/REDAKTION.md`): keine leeren Jahre; fehlende Werte recherchieren, sonst mit naheliegenden Daten rechnen (linear, verketten, über verwandte Reihe fortschreiben, nächsten Beleg halten) und in Dateninfo, Datenherkunft und Post benennen. Neuer Test `src/test/luecken.test.ts` für alle Datensätze ab 07.10.2026; schlug vor der Korrektur bei `heimtiere-alle` an (53 leere Zellen, Jahr 1992 fehlte).

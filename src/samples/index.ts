@@ -1,5 +1,5 @@
 import type { SampleDataset } from '@/lib/data/types'
-import { HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data'
+import { TIERARZTMANGEL, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -19,7 +19,7 @@ export const SAMPLES: SampleDataset[] = [
     dataInfo: [
       "Gezählt werden ausschließlich approbierte Tierärzt:innen als Kammermitglieder, und zwar Personen, nicht Vollzeitstellen. Praxen und Tiermedizinische Fachangestellte sind nicht enthalten.",
       "„Außerhalb von Praxen“ meint Veterinärämter und Fleischhygiene, Industrie, Hochschulen, Forschung, Bundeswehr und Auslandstätigkeit, rund ein Drittel aller Tätigen. Der Wert ist berechnet als Tätige minus Niedergelassene minus Angestellte.",
-      "Lücken: Niedergelassene und Angestellte sind lückenlos belegt; die Angestellten für 2002 sind am 02.10.2026 aus Tab. 1 der BTK-Statistik 2002 nachgetragen. Bei den tierärztlich Tätigen fehlen 1992, 1993 und 2001, damit auch bei „Außerhalb von Praxen“. Bei Hunden und Katzen fehlt 1992. Alle Lücken werden interpoliert.",
+      "Gerechnet: Niedergelassene und Angestellte sind lückenlos belegt; die Angestellten für 2002 sind am 02.10.2026 aus Tab. 1 der BTK-Statistik 2002 nachgetragen. Für die tierärztlich Tätigen gibt es 1992, 1993 und 2001 keine Zahl; diese drei Jahre sind linear zwischen den Nachbarjahren gerechnet (17.491, 17.834 und 21.437), „Außerhalb von Praxen“ ist auch dort die Differenz. Hunde und Katzen 1992 ebenso linear (10,1 Millionen).",
       "Die rechte Achse zeigt Hunde und Katzen. Der Sprung 2012 ist ein Wechsel der Erhebungsmethode von der Verbandsschätzung zur repräsentativen Haushaltsbefragung, keine reale Verdopplung.",
     ],
     headers: TIERAERZTESCHAFT_DEUTSCHLAND.headers,
@@ -29,6 +29,25 @@ export const SAMPLES: SampleDataset[] = [
       secondaryAxis: ['Hunde und Katzen'], secondaryDecimals: 1, secondarySuffix: ' Mio.',
       primaryAxisLabel: 'Tierärzt:innen (Personen)', secondaryAxisLabel: 'Hunde und Katzen (Mio.)',
     },
+  },
+  {
+    id: 'tierarztmangel',
+    erstellt: '2026-10-07', geprueft: '2026-10-07',
+    category: 'praxis',
+    title: 'Hunde und Katzen je Tierärztin und Tierarzt',
+    subtitle: 'Hunde und Katzen in Deutschland je Praxisinhaber:in und je Tierärzt:in in der Praxis (Inhaber und Angestellte)',
+    source: 'Quelle: Bundestierärztekammer (Statistik), IVH/ZZF (Heimtiere); Quotienten berechnet',
+    sourceUrl: 'https://www.bundestieraerztekammer.de/btk/statistik/',
+    unit: 'Hunde und Katzen',
+    description: 'Je Praxisinhaber kommen heute 38 Prozent mehr Hunde und Katzen als 2012, je Tierärztin oder Tierarzt in der Praxis nur 2 Prozent mehr.',
+    dataInfo: [
+      "Berechnet: Hunde und Katzen (IVH/ZZF, Haushaltsbefragung) geteilt durch die Praxisinhaber:innen bzw. durch Inhaber:innen plus angestellte Tierärzt:innen in Praxen (Bundestierärztekammer, jeweils zum Jahresende).",
+      "Gezählt werden Köpfe, keine Vollzeitstellen. Unter den Angestellten arbeiten deutlich mehr Menschen in Teilzeit; ob die Arbeitszeit Schritt gehalten hat, sagt die Statistik nicht.",
+      "Beginn 2012: Vorher schätzten die Verbände die Heimtiere, die Werte sind nicht vergleichbar. 2013 stellten sie noch einmal um, daher der Knick im zweiten Jahr; ab 2013 gerechnet steigt die Zahl je Inhaber um 49 statt 38 Prozent. Keine Lücken, kein Jahr geschätzt.",
+    ],
+    headers: TIERARZTMANGEL.headers,
+    rows: TIERARZTMANGEL.rows,
+    suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'Hunde und Katzen je Kopf', colors: { 'Je Praxisinhaber:in': '#0f4c5c', 'Je Tierärzt:in in der Praxis': '#e36414' } },
   },
   {
     id: 'inhaber-angestellte',
