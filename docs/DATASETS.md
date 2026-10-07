@@ -213,9 +213,8 @@ Ersetzt eine extern zugelieferte Vorlage, in der 19 von 26 Jahren interpoliert o
 - **Grenzen:** Umsatz = Preis × Menge. Faktor nach 2022 unbekannt (2019: 1,44). Umsatz 2025 erscheint 2027; dann `tierarzt-inflation` um ein Jahr verlängern.
 - **Freigabe:** über `datensaetzeOhnePost`.
 
-## Heimtiere mit Pferden und Gartenteichen (`heimtiere-alle`) und DACH (`heimtiere-dach`)
+## Heimtiere und Pferde (`heimtiere-alle`) und DACH (`heimtiere-dach`)
 
-- **`heimtiere-alle`:** wie `heimtiere`, dazu Gartenteiche (mit Zierfischen) ab 2002 (IVH/ZZF; 2002/2003 aus ds2d unter „Gartenteiche mit Fischen“) und Pferde laut FN 2019 (1,25 Mio.) und 2025 (1,3 Mio.), dazwischen interpoliert. Rohdaten Pferde/Zierfische: `data/raw/ds18-pferde.json` (auch die Destatis-Reihe nur landwirtschaftlicher Betriebe, nicht verwendet).
-- **`heimtiere-dach`:** Summe DE + AT + CH, 2016–2025, nur Katzen, Hunde, Kleintiere, Ziervögel. AT: ÖHTV 2019/2022/2024, FEDIAF 2016/2017. CH: VHN 2016–2025, Hunde AMICUS jährlich. Zwischenjahre linear, AT 2025 fortgeschrieben. Rohdaten `data/raw/ds19-heimtiere-dach.json`. FEDIAF taugt für AT/CH nicht als Jahresreihe (schreibt Umfragewerte fort, teils fehlerhaft).
-- **Nachziehen:** ÖHTV-Umfrage 2026 angekündigt; VHN etwa alle zwei bis drei Jahre.
-
+- **`heimtiere-alle`** („Heimtiere und Pferde in Deutschland“ – Pferde sind keine Heimtiere): wie `heimtiere`, dazu Gartenteiche (mit Zierfischen) und Pferde, 1991–2025 lückenlos (`lueckenlos`). Pferde-Stützjahre in `ds18-pferde.json` → `stuetzpunkte_grafik`: Destatis-Viehzählung aller Halter 1990–1996, FN 2015 (1,2 Mio., zitiert in BÜL 2016), 2019 (1,25), 2025 (1,3). Gartenteiche/Terrarien 1991–2001 = Wert 2002; Aquarien 1999 und Jahr 1992 linear.
+- **`heimtiere-dach`:** Summe DE + AT + CH, 1991–2025, Katzen, Hunde, Kleintiere, Ziervögel. AT: FEDIAF 2010–2017, ÖHTV 2019/2022/2024. CH: VHN 2010–2025, Hunde AMICUS ab 2016 (VHN 2010/2012 verkettet über 2016), Kleintiere/Vögel FEDIAF 2010–2014 (verkettet über 2016). Vor 2010: Anteil an DE wie 2010. Rohdaten `data/raw/ds19-heimtiere-dach.json`. FEDIAF taugt für AT/CH nicht allein als Jahresreihe (schreibt Umfragewerte fort, teils fehlerhaft).
+- **Nachziehen:** ÖHTV-Umfrage 2026 angekündigt; VHN etwa alle zwei bis drei Jahre; FN-Zahl jährlich prüfen.

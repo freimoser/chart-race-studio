@@ -143,33 +143,61 @@ const petRowsU = dedupe([
 ])
 const w3 = wide(petRowsU, { names: petNames, from: '1991' })
 
-// 3b Heimtiere mit Pferden und Gartenteichen. Gleiche Reihen wie w3, dazu die Gartenteiche (mit Zierfischen),
-// die IVH/ZZF seit 2002 getrennt ausweisen, und die Pferde laut FN-Schätzung (alle Pferde, nicht nur
-// landwirtschaftliche Betriebe). Die FN-Werte sind Einzelschätzungen, dazwischen interpoliert die Grafik.
-// Zierfische selbst gibt es nur für 1999/2000 – keine Reihe.
-const TEICH = 'Gartenteiche (mit Zierfischen)'
-const teichRows = d2d.rows.filter((r) => r.metric === 'Bestand' && r.name === 'Gartenteiche mit Fischen').map((r) => ({ ...r, name: TEICH }))
-const w3b = wide(dedupe([...petRowsU, ...teichRows, ...d18.fn.rows]), { names: [...petNames, TEICH, 'Pferde'], from: '1991' })
-
-// 3c Heimtiere in DACH, 2016–2025: Deutschland (IVH/ZZF) plus Österreich und Schweiz. Nur die vier
-// Kategorien, die alle drei Länder vergleichbar zählen. Österreich und Schweiz liegen nur als Stützjahre vor
-// (Umfragen alle 2–3 Jahre); dazwischen linear, nach dem letzten Stützjahr fortgeschrieben (AT 2025).
-const DACH_TIERE = ['Katzen', 'Hunde', 'Kleintiere (Kleinsäuger)', 'Ziervögel']
+// ---------- Lückenlose Reihen (Regel seit 07.10.2026, docs/DATENSTANDARD.md Abschnitt 7) ----------
+// Neue Datensätze haben in jedem Jahr einen Wert. Was keine Quelle hat, wird mit naheliegenden Daten gerechnet
+// und in Dateninfo und Post benannt: zwischen zwei Belegen linear, davor/danach der nächste Beleg gehalten –
+// oder, wo es eine verwandte Reihe gibt, über deren Verhältnis fortgeschrieben (siehe DACH).
+/** Wert aus Stützpunkten {Jahr: Wert}: belegt, sonst linear zwischen zwei Belegen, außen der nächste Beleg. */
 const stuetze = (punkte, jahr) => {
-  const js = Object.keys(punkte).map(Number).sort((a, b) => a - b)
   if (punkte[jahr] != null) return punkte[jahr]
+  const js = Object.keys(punkte).filter((k) => punkte[k] != null).map(Number).sort((x, y) => x - y)
   const vor = js.filter((x) => x < jahr).at(-1), nach = js.find((x) => x > jahr)
-  if (vor == null) return null
+  if (vor == null) return nach == null ? null : punkte[nach]
   if (nach == null) return punkte[vor]
   return punkte[vor] + (punkte[nach] - punkte[vor]) * (jahr - vor) / (nach - vor)
 }
-const deWert = (name, jahr) => w3.rows.find((r) => r[0] === String(jahr))?.[w3.headers.indexOf(name)] ?? null
+const r3 = (v) => (v == null ? null : Math.round(v * 1000) / 1000)
+/** Breite Tabelle → jede Spalte über alle Jahre von–bis nach `stuetze` gefüllt; `ersatz` überschreibt Spalten. */
+function lueckenlos(w, { von, bis, ersatz = {} }) {
+  const spalte = (i) => Object.fromEntries(w.rows.filter((r) => r[i] != null).map((r) => [Number(r[0]), r[i]]))
+  const punkte = w.headers.slice(1).map((_, i) => spalte(i + 1))
+  return {
+    headers: w.headers,
+    rows: Array.from({ length: bis - von + 1 }, (_, k) => von + k).map((j) => [String(j),
+      ...w.headers.slice(1).map((n, i) => r3(ersatz[n] ? ersatz[n](j) : stuetze(punkte[i], j)))]),
+  }
+}
+
+// 3b Heimtiere und Pferde in Deutschland, 1991–2025, ohne leere Jahre. Pferde sind keine Heimtiere (IVH/ZZF
+// zählen sie nicht); deshalb heißt der Datensatz „Heimtiere und Pferde“. Dazu Gartenteiche mit Zierfischen.
+//  - Pferde: amtliche Zählung aller Halter 1990–1996, FN-Hochrechnungen 2015, 2019, 2025, dazwischen linear.
+//  - Gartenteiche und Terrarien werden erst seit 2002 getrennt gezählt: 1991–2001 der Wert von 2002 gehalten.
+//  - Aquarien 1999 (Quelle zählte Fische) und das ganze Jahr 1992 (fehlt in der Verbandsreihe): linear.
+const TEICH = 'Gartenteiche (mit Zierfischen)'
+const teichRows = d2d.rows.filter((r) => r.metric === 'Bestand' && r.name === 'Gartenteiche mit Fischen').map((r) => ({ ...r, name: TEICH }))
+const w3bRoh = wide(dedupe([...petRowsU, ...teichRows]), { names: [...petNames, TEICH, 'Pferde'], from: '1991' })
+const w3b = lueckenlos(w3bRoh, { von: 1991, bis: 2025, ersatz: { Pferde: (j) => stuetze(d18.stuetzpunkte_grafik.werte, j) } })
+
+// 3c Heimtiere in DACH, 1991–2025: Deutschland (IVH/ZZF, lückenlos wie 3b) plus Österreich und Schweiz, nur die
+// vier Kategorien, die alle drei Länder vergleichbar zählen. Österreich und Schweiz:
+//  - zwischen den Umfragen linear, nach der letzten gehalten (stuetze);
+//  - fremde Quellen vor 2016 über das Überlappungsjahr 2016 an die Hauptquelle angeschlossen (Verkettung);
+//  - vor 2010 der Anteil an Deutschland wie 2010 (berechnet, keine Quelle).
+const DACH_TIERE = ['Katzen', 'Hunde', 'Kleintiere (Kleinsäuger)', 'Ziervögel']
+const deVoll = lueckenlos(w3, { von: 1991, bis: 2025 })
+const deWert = (name, jahr) => deVoll.rows.find((r) => r[0] === String(jahr))?.[deVoll.headers.indexOf(name)] ?? null
+const kette = (punkte, faktor) => Object.fromEntries(Object.entries(punkte).map(([j, v]) => [j, v * faktor]))
+const chPunkte = {
+  Katzen: d19.ch.Katzen,
+  Hunde: { ...kette({ 2010: d19.ch.vhn_hunde_umfrage['2010'], 2012: d19.ch.vhn_hunde_umfrage['2012'] }, d19.ch.Hunde['2016'] / d19.ch.vhn_hunde_umfrage['2016']), ...d19.ch.Hunde },
+  'Kleintiere (Kleinsäuger)': { ...kette(d19.ch.fediaf_vor_2016['Kleintiere (Kleinsäuger)'], d19.ch['Kleintiere (Kleinsäuger)']['2016'] / d19.ch.fediaf_vor_2016['Kleintiere (Kleinsäuger)']['2016']), ...d19.ch['Kleintiere (Kleinsäuger)'] },
+  Ziervögel: { ...kette(d19.ch.fediaf_vor_2016.Ziervögel, d19.ch.Ziervögel['2016'] / d19.ch.fediaf_vor_2016.Ziervögel['2016']), ...d19.ch.Ziervögel },
+}
+const landWert = (punkte, n, j) => (j >= 2010 ? stuetze(punkte, j) : deWert(n, j) / deWert(n, 2010) * stuetze(punkte, 2010))
 const w3c = {
   headers: ['Jahr', ...DACH_TIERE],
-  rows: Array.from({ length: 2025 - 2016 + 1 }, (_, k) => 2016 + k).map((j) => [String(j), ...DACH_TIERE.map((n) => {
-    const de = deWert(n, j), at = stuetze(d19.at[n], j), ch = stuetze(d19.ch[n], j)
-    return de == null || at == null || ch == null ? null : Math.round((de + at / 1000 + ch / 1000) * 100) / 100
-  })]),
+  rows: Array.from({ length: 2025 - 1991 + 1 }, (_, k) => 1991 + k).map((j) => [String(j), ...DACH_TIERE.map((n) =>
+    Math.round((deWert(n, j) + landWert(d19.at[n], n, j) / 1000 + landWert(chPunkte[n], n, j) / 1000) * 100) / 100)]),
 }
 
 // 4 Hunderassen: ohne Summenzeile, 1992–2025 (1990/1991 nirgends online verfügbar)

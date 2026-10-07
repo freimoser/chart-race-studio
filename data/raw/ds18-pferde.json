@@ -5,16 +5,62 @@
  "notes": "Für die Heimtier-Grafik gilt die FN-Reihe, weil sie alle Pferde erfasst, überwiegend Freizeitpferde. Sie besteht nur aus gerundeten Einzelschätzungen; dazwischen wird in der Grafik linear gerechnet. Die FN nannte auch für 2013 und 2015 „rund 1,2 Millionen“, das ist aber nur über Zweitquellen belegt (Wikipedia „Deutsche Pferdebranche“; Hölker 2016, Uni Göttingen) und deshalb nicht übernommen. Destatis zählt nur Pferde in landwirtschaftlichen Betrieben (etwa 35–40 % aller Pferde), mit Methodenbrüchen 1998 (nur noch landwirtschaftliche Betriebe) und 2010 (Erfassungsgrenze 5 ha, Kategorie „Einhufer“ einschließlich Esel).",
  "fn": {
   "rows": [
-   {"date": "2019", "name": "Pferde", "value": 1.25, "quelle": "FN, Facts and Figures about Horse Sport and Breeding, August 2022: „According to projections, the number of privately owned horses is about 1.25 million“ (Ipsos-Studie 2019)", "quelleUrl": "https://www.wbfsh.com/downloads/general-assembly/2022/figures-data-facts-fn.pdf"},
-   {"date": "2025", "name": "Pferde", "value": 1.3, "quelle": "FN, Kernforderungen an den 21. Deutschen Bundestag, Februar 2025: „1,3 Millionen registrierte Pferde in Deutschland“", "quelleUrl": "https://www.ipzv.de/asset/6379921D-34AF-4F8D-B81A7038356DCC8D/"}
+   {
+    "date": "2019",
+    "name": "Pferde",
+    "value": 1.25,
+    "quelle": "FN, Facts and Figures about Horse Sport and Breeding, August 2022: „According to projections, the number of privately owned horses is about 1.25 million“ (Ipsos-Studie 2019)",
+    "quelleUrl": "https://www.wbfsh.com/downloads/general-assembly/2022/figures-data-facts-fn.pdf"
+   },
+   {
+    "date": "2025",
+    "name": "Pferde",
+    "value": 1.3,
+    "quelle": "FN, Kernforderungen an den 21. Deutschen Bundestag, Februar 2025: „1,3 Millionen registrierte Pferde in Deutschland“",
+    "quelleUrl": "https://www.ipzv.de/asset/6379921D-34AF-4F8D-B81A7038356DCC8D/"
+   }
   ]
  },
  "destatis_landwirtschaftliche_betriebe": {
   "quelle": "Destatis GENESIS 41311-0001 (bis 2007, Pferde einschl. Ponys) und 41141-0004 (ab 2010, Einhufer); 1999 und 2005 über Eurostat ef_ls_ovaareg bzw. BMEL; Recherche 07.10.2026",
-  "werte": {"1990": 490954, "1992": 530957, "1994": 598848, "1996": 652444, "1999": 475820, "2003": 524753, "2005": 500380, "2007": 541890, "2010": 461779, "2013": 461300, "2016": 441954, "2020": 453662, "2023": 486500}
+  "werte": {
+   "1990": 490954,
+   "1992": 530957,
+   "1994": 598848,
+   "1996": 652444,
+   "1999": 475820,
+   "2003": 524753,
+   "2005": 500380,
+   "2007": 541890,
+   "2010": 461779,
+   "2013": 461300,
+   "2016": 441954,
+   "2020": 453662,
+   "2023": 486500
+  }
  },
  "zierfische": {
   "hinweis": "Eine Zeitreihe der Zierfische gibt es nicht. Seit 2003 zählen IVH/ZZF nur Aquarien und Gartenteiche mit Fischen. Belegt sind 84,6 Mio. Zierfische 1999 (ZZF, Datenbasis BBE) und „rund 85 Millionen Zierfische in 3 Mio. Aquarien“ 2000 (ZZF/IVH, Heimtiermarkt 2000).",
   "quelleUrl": "https://web.archive.org/web/20011224122039id_/http://www.zzf.de:80/markt/markt2000.html"
+ },
+ "stuetzpunkte_grafik": {
+  "hinweis": "Pferde gesamt in Mio. für die Grafik „Heimtiere und Pferde in Deutschland“. Belegte Stützjahre; dazwischen linear (build-samples.mjs, stuetze). Bis 1996 zählte die Allgemeine Viehzählung alle Pferdehalter, seit 1998 nur landwirtschaftliche Betriebe; ab 2015 FN-Hochrechnungen aller Pferde.",
+  "werte": {
+   "1990": 0.491,
+   "1992": 0.531,
+   "1994": 0.599,
+   "1996": 0.652,
+   "2015": 1.2,
+   "2019": 1.25,
+   "2025": 1.3
+  },
+  "quellen": {
+   "1990–1996": "Destatis, Allgemeine Viehzählung (GENESIS 41311-0001), Pferde einschl. Ponys, alle Halter, Dezember",
+   "2015": "FN, Zahlen, Daten, Fakten 2015, zitiert in Hölker u. a., Berichte über Landwirtschaft 94 (3), Dezember 2016: „rund 1,2 Millionen Pferde“ (https://buel.bmel.de/index.php/buel/article/download/130/H%C3%B6lker%20Pferde.pdf/1728)",
+   "2019": "FN, Facts and Figures, August 2022 (Ipsos 2019): about 1.25 million privately owned horses",
+   "2025": "FN, Kernforderungen an den 21. Bundestag, Februar 2025: 1,3 Millionen registrierte Pferde"
+  },
+  "gerechnet": "1991, 1993, 1995, 1997–2014, 2016–2018, 2020–2024 linear zwischen den Stützjahren",
+  "gegenproben": "Destatis landwirtschaftliche Betriebe 1999–2023: 0,44–0,54 Mio. (Untergrenze, etwa 35–40 % aller Pferde); Tierseuchenkassen 2014: über 0,915 Mio. gemeldete Pferde (Hölker 2016) – beide passen unter die FN-Reihe."
  }
 }

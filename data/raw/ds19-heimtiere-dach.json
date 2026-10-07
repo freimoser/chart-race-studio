@@ -1,5 +1,5 @@
 {
- "title": "Heimtiere in Österreich und der Schweiz (für die DACH-Summe), 2016–2025",
+ "title": "Heimtiere in Österreich und der Schweiz (für die DACH-Summe), 1991–2025",
  "abgerufen": "2026-10-07",
  "unit": "Tausend Tiere",
  "notes": "Stützjahre aus Haushaltsbefragungen bzw. Register; Jahre dazwischen rechnet build-samples.mjs linear, nach dem letzten Stützjahr wird der letzte Wert fortgeschrieben (AT 2025). Aquarien, Terrarien und Gartenteiche sind nicht summierbar: Die Schweiz zählte bis 2020 Fische statt Aquarien und bis 2022 Reptilien statt Terrarien, Österreich weist sie nur über FEDIAF bzw. als „Aquarien und Teiche“ aus. Pferde: nur die Schweiz hat eine Jahresreihe (Identitas TVD), Österreich nicht.",
@@ -9,25 +9,125 @@
    "2017": "FEDIAF Facts & Figures 2017",
    "2019": "ÖHTV-Umfrage Januar/Februar 2019 (Hunde, Katzen, Vögel); Kleinsäuger 500.000 laut FEDIAF Facts & Figures 2018, die dieselbe Umfrage wiedergibt",
    "2022": "ÖHTV-Umfrage Januar/Februar 2022, https://www.oehtv.at/heimtiere/",
-   "2024": "ÖHTV und WKO-Zoofachhandel, Pressemitteilung 14.05.2024 (GfK, 4.000 Haushalte): Katzen und Hunde; Vögel und Kleinsäuger laut FEDIAF Facts & Figures 2025"
+   "2024": "ÖHTV und WKO-Zoofachhandel, Pressemitteilung 14.05.2024 (GfK, 4.000 Haushalte): Katzen und Hunde; Vögel und Kleinsäuger laut FEDIAF Facts & Figures 2025",
+   "2010–2014": "FEDIAF Facts & Figures 2010, 2012, 2014 (Werte für Österreich)"
   },
-  "Katzen": {"2016": 1810, "2017": 1810, "2019": 2034, "2022": 1985, "2024": 2019},
-  "Hunde": {"2016": 630, "2017": 640, "2019": 827, "2022": 837, "2024": 836},
-  "Kleintiere (Kleinsäuger)": {"2016": 515, "2017": 520, "2019": 500, "2022": 500, "2024": 500},
-  "Ziervögel": {"2016": 255, "2017": 245, "2019": 130, "2022": 140, "2024": 128}
+  "Katzen": {
+   "2010": 1744,
+   "2012": 1740,
+   "2014": 1765,
+   "2016": 1810,
+   "2017": 1810,
+   "2019": 2034,
+   "2022": 1985,
+   "2024": 2019
+  },
+  "Hunde": {
+   "2010": 612,
+   "2012": 615,
+   "2014": 623,
+   "2016": 630,
+   "2017": 640,
+   "2019": 827,
+   "2022": 837,
+   "2024": 836
+  },
+  "Kleintiere (Kleinsäuger)": {
+   "2010": 500,
+   "2012": 503,
+   "2014": 515,
+   "2016": 515,
+   "2017": 520,
+   "2019": 500,
+   "2022": 500,
+   "2024": 500
+  },
+  "Ziervögel": {
+   "2010": 281,
+   "2012": 270,
+   "2014": 262,
+   "2016": 255,
+   "2017": 245,
+   "2019": 130,
+   "2022": 140,
+   "2024": 128
+  }
  },
  "ch": {
   "quellen": {
    "VHN": "Verband für Heimtiernahrung, Heimtierstatistik 2016, 2018, 2020, 2022, 2025 (vhn.ch/dokumente/statistik-vhn-heimtierpopulation-<Jahr>.pdf); 2025 neue Methode (YouGov-Onlinepanel, n = 2.000)",
    "AMICUS": "Identitas AG, AMICUS, registrierte Hunde (Pflichtregister), jeweils Dezember, https://tierstatistik.identitas.ch/data/dogs-CH.csv"
   },
-  "Katzen": {"2016": 1656, "2018": 1634, "2020": 1722, "2022": 1853, "2025": 1512},
-  "Hunde": {"2016": 488.989, "2017": 495.976, "2018": 500.942, "2019": 506.431, "2020": 518.029, "2021": 536.720, "2022": 549.588, "2023": 555.558, "2024": 555.248, "2025": 552.538},
-  "Kleintiere (Kleinsäuger)": {"2016": 814, "2018": 494, "2020": 649, "2022": 493, "2025": 408},
-  "Ziervögel": {"2016": 191, "2018": 241, "2020": 302, "2022": 300, "2025": 108},
+  "Katzen": {
+   "2010": 1507,
+   "2012": 1487,
+   "2016": 1656,
+   "2018": 1634,
+   "2020": 1722,
+   "2022": 1853,
+   "2025": 1512
+  },
+  "Hunde": {
+   "2016": 488.989,
+   "2017": 495.976,
+   "2018": 500.942,
+   "2019": 506.431,
+   "2020": 518.029,
+   "2021": 536.72,
+   "2022": 549.588,
+   "2023": 555.558,
+   "2024": 555.248,
+   "2025": 552.538
+  },
+  "Kleintiere (Kleinsäuger)": {
+   "2016": 814,
+   "2018": 494,
+   "2020": 649,
+   "2022": 493,
+   "2025": 408
+  },
+  "Ziervögel": {
+   "2016": 191,
+   "2018": 241,
+   "2020": 302,
+   "2022": 300,
+   "2025": 108
+  },
   "Kleintiere_hinweis": "Kaninchen/Hasen + Nager laut VHN (2016: 485 + 329, 2018: 242 + 253, 2020: 389 + 260, 2022: 248 + 245); 2025 „Kleintiere“.",
-  "Ziervögel_hinweis": "2016–2022 „Vögel“ laut VHN (ohne Park-/Ziervögel), 2025 „Ziervögel“ (neue Methode)."
+  "Ziervögel_hinweis": "2016–2022 „Vögel“ laut VHN (ohne Park-/Ziervögel), 2025 „Ziervögel“ (neue Methode).",
+  "vhn_hunde_umfrage": {
+   "2010": 445,
+   "2012": 506,
+   "2016": 522
+  },
+  "fediaf_vor_2016": {
+   "Kleintiere (Kleinsäuger)": {
+    "2010": 580,
+    "2012": 582,
+    "2014": 584,
+    "2016": 580
+   },
+   "Ziervögel": {
+    "2010": 383,
+    "2012": 373,
+    "2014": 366,
+    "2016": 360
+   }
+  },
+  "verkettung": "Vor 2016 werden andere Quellen über das Überlappungsjahr 2016 an die Hauptquelle angeschlossen: Hunde VHN-Umfrage × (AMICUS 2016 / VHN 2016 = 489/522); Kleintiere und Vögel FEDIAF × (VHN 2016 / FEDIAF 2016: 814/580 bzw. 191/360)."
  },
- "ch_equiden_identitas": {"2016": 108541, "2017": 110440, "2018": 111250, "2019": 111238, "2020": 111506, "2021": 111754, "2022": 111729, "2023": 111219, "2024": 110345, "2025": 109496},
- "at_pferde": "Keine Jahresreihe. Agrarstrukturerhebung (nur landwirtschaftliche Betriebe): 2020 74.915, 2023 71.226 Einhufer; BMLUK-Schätzung insgesamt rund 150.000 Pferde."
+ "ch_equiden_identitas": {
+  "2016": 108541,
+  "2017": 110440,
+  "2018": 111250,
+  "2019": 111238,
+  "2020": 111506,
+  "2021": 111754,
+  "2022": 111729,
+  "2023": 111219,
+  "2024": 110345,
+  "2025": 109496
+ },
+ "at_pferde": "Keine Jahresreihe. Agrarstrukturerhebung (nur landwirtschaftliche Betriebe): 2020 74.915, 2023 71.226 Einhufer; BMLUK-Schätzung insgesamt rund 150.000 Pferde.",
+ "rueckrechnung_vor_2010": "Österreich und Schweiz vor 2010: Anteil an Deutschland wie 2010 je Kategorie gehalten (berechnet, keine Quelle)."
 }

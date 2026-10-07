@@ -84,6 +84,24 @@ Für die Datensätze unter `src/samples/` zusätzlich, damit jede Zahl belegbar 
 4. **`isExample: true`**, wenn ein wesentlicher Teil modelliert ist.
 5. Ein Eintrag in `docs/DATASETS.md`.
 
+## 7. Lückenlose Reihen (eigene Datensätze, seit 07.10.2026)
+
+Jede Reihe eines eigenen Datensatzes hat in jedem Jahr des gezeigten Zeitraums einen Wert. Was keine Quelle hat,
+wird recherchiert und, wenn es keinen Beleg gibt, mit naheliegenden Daten gerechnet – nie leer gelassen.
+
+| Lage | Vorgehen | Beispiel |
+|---|---|---|
+| Lücke zwischen zwei Belegen | linear | Aquarien 1999 zwischen 1998 und 2000 |
+| Quellenwechsel mit gemeinsamem Jahr | verketten: ältere Quelle × (neue / alte im Überlappungsjahr) | Schweizer Hunde VHN-Umfrage → Register AMICUS über 2016 |
+| vor dem ersten / nach dem letzten Beleg, mit verwandter Reihe | über das Verhältnis zur verwandten Reihe im nächsten gemeinsamen Jahr | Österreich vor 2010: Anteil an Deutschland wie 2010 |
+| vor dem ersten / nach dem letzten Beleg, ohne verwandte Reihe | nächsten Beleg halten | Terrarien 1991–2001 = Wert 2002 |
+
+Jede berechnete Zahl wird benannt: in der Rohdatei (Methode), in der Dateninfo, in der Datenherkunft und im
+LinkedIn-Post (Block „Gerechnet / Quellen“), ebenso jede Stelle, an der sich Quellen überschneiden. Umgesetzt in
+`scripts/build-samples.mjs` (`stuetze`, `lueckenlos`, `kette`), geprüft von `src/test/luecken.test.ts`.
+
+Für Tabellen, die Nutzer ins Studio laden, gilt weiter Abschnitt 2: Leer heißt „nicht erhoben“.
+
 ## Änderungen am Standard
 
 Neue Regel → erst hier eintragen, dann im Code umsetzen, dann die Vorlagen neu erzeugen

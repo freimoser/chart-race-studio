@@ -31,6 +31,9 @@ Und auf der Rechnung? Schon 2019 rechneten Praxen im Schnitt den 1,44-fachen Sat
 
 Lieber jedes Jahr ein bisschen mehr oder alle paar Jahre ein großer Schritt?
 
+Gerechnet: Das Routinejahr ist mein eigener Warenkorb aus den GOT-Sätzen (zweimal Untersuchung, Impfung, Injektion; einfacher Satz mit MwSt.). Alle Prozentwerte sind berechnet; der Faktor nach 2022 ist eine Annahme, weil ihn niemand erhoben hat.
+Wo sich Quellen überschneiden: Destatis und Eurostat messen beim Tierarzt-Preis 2023 denselben Sprung (+32 bzw. +33 %). Beim Umsatz zeigt die Umsatzsteuerstatistik +16 %, die Eurostat-Strukturstatistik +21 % (anders abgegrenzt). Ein Versicherer (Uelzener) meldet bei seinen Schäden 2022–2024 sogar +36 bis +77 %.
+
 Alle Zahlen, Tabellen und Methode:
 https://tiermedizin-in-zahlen.org/beitrag/tierarztkosten-inflation
 

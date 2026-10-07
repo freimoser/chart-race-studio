@@ -45,6 +45,10 @@ Build; für sie `npm run build && npm run preview` und dort nachsehen.
 3. **Post auf LinkedIn** mit dem Artikel-Link im Post selbst.
 4. Im Redaktionsplan: `status: 'veroeffentlicht'`, `publishedOn`, `linkedInUrl`. Push.
 
+**Im Post-Text immer** (vor der Quellenzeile) ein Block „Gerechnet / Quellen“: welche Werte berechnet sind und
+wie, und wo sich Quellen überschneiden. Grundlage ist die Dateninfo des Datensatzes (Regel „Lückenlose Reihen“,
+`docs/DATENSTANDARD.md` Abschnitt 7). Titel prüfen: Passt jeder Begriff zur Definition der Quelle?
+
 Nach Änderungen an Titel oder Beschreibung eines Artikels: `node scripts/og-bilder.mjs` (braucht lokales Chrome) und die Bilder in `public/beitrag/og/` einchecken – das ist die Vorschau, die LinkedIn unter dem Link zeigt.
 
 **Grafik im Artikel:** Unter dem ersten Absatz läuft der Datensatz des Posts als animierte Grafik, mit Knopf

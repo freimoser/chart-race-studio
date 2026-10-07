@@ -4,6 +4,13 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Regel „Lückenlose Reihen“ und Heimtier-Fassungen nachgebessert (07.10.2026)
+
+- **Neue verbindliche Regel** (Projekt-`CLAUDE.md`, `docs/DATENSTANDARD.md` Abschnitt 7, `docs/REDAKTION.md`): keine leeren Jahre; fehlende Werte recherchieren, sonst mit naheliegenden Daten rechnen (linear, verketten, über verwandte Reihe fortschreiben, nächsten Beleg halten) und in Dateninfo, Datenherkunft und Post benennen. Neuer Test `src/test/luecken.test.ts` für alle Datensätze ab 07.10.2026; schlug vor der Korrektur bei `heimtiere-alle` an (53 leere Zellen, Jahr 1992 fehlte).
+- **`heimtiere-alle`** heißt jetzt „Heimtiere und Pferde in Deutschland“ (Pferde sind keine Heimtiere) und ist 1991–2025 lückenlos: Pferde aus der Viehzählung aller Halter 1990–1996 und FN 2015/2019/2025, dazwischen linear; Gartenteiche und Terrarien vor 2002 mit dem Wert von 2002.
+- **`heimtiere-dach`** reicht jetzt von 1991 bis 2025: AT/CH 2010–2015 aus FEDIAF und VHN (über 2016 verkettet), vor 2010 mit dem Anteil an Deutschland wie 2010.
+- Post „Tierarzt gegen Inflation“ mit Block „Gerechnet / Quellen“.
+
 ### Heimtiere: zwei neue Fassungen (07.10.2026)
 
 - **`heimtiere-alle`:** Heimtiere in Deutschland mit Gartenteichen (ab 2002) und Pferden (FN: 1,25 Mio. 2019, 1,3 Mio. 2025). Eine Zierfisch-Reihe gibt es nicht (nur 1999/2000, rund 85 Mio.).
