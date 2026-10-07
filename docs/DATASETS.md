@@ -204,10 +204,10 @@ Ersetzt eine extern zugelieferte Vorlage, in der 19 von 26 Jahren interpoliert o
 - **Reduzierte Fassung** `oktoberfest-preis`: dieselben Werte ohne Bier (Besucher als Säulen, Maß und Maß mit Inflation als Linien), zweite Grafik im Artikel.
 - **Freigabe:** gehört zu keinem Post; freigegeben über `datensaetzeOhnePost` in `src/content/freigabe.json`. Rubrik „Exkurs“.
 
-## Tierarzt, Inflation und Maß (`tierarzt-inflation`, Sonderauswertung)
+## Tierarzt gegen Inflation (`tierarzt-inflation`, Sonderauswertung)
 
-- **Quelle:** Destatis Verbraucherpreisindex (GENESIS 61111-0001/-0003/-0004, CC13-0935) und Umsatzsteuerstatistik (73311-0002, WZ08-75001 Tierarztpraxen), Eurostat HICP CP0935 (NL, AT), alle über die öffentlichen Schnittstellen am 07.10.2026; Maß aus `ds15-oktoberfest.json`. Rohdaten in `data/raw/ds16-tierarztkosten.json` (Preise, GOT-Positionen, Warenkorb) und `data/raw/ds17-tierarzt-umsatz.json` (Umsatz, HICP, Abrechnungsfaktor, Verordnungsbegründung).
-- **Reihen:** Anstieg seit 2010 in Prozent, 2010–2024: Tierarztpreise (deutscher Index), Tierarztpreise NL, Praxisumsatz, Inflation, Maß (2020/21 linear zwischen 2019 und 2022).
-- **Warum so:** Der deutsche Index bildet nur die GOT-Sätze ab (Stufen). Die erste Fassung mit GOT-Einzelleistungen ab 2000 sah angreifbar aus; deshalb überlagern jetzt drei unabhängige Blickwinkel. Der GOT-Warenkorb „Routinejahr“ (`korbJahr`) steht nur noch als Lupe im Artikel, mit Abrechnungsfaktor 1,44 (AFC 2019) als Szenario.
+- **Quelle:** Destatis Verbraucherpreisindex (GENESIS 61111-0001/-0003/-0004, CC13-0935) und Umsatzsteuerstatistik (73311-0002, WZ08-75001 Tierarztpraxen), Eurostat HICP CP0935 (NL, AT), alle über die öffentlichen Schnittstellen am 07.10.2026; GOT 1999/2008/2017/2022 aus dem BGBl. Rohdaten in `data/raw/ds16-tierarztkosten.json` (Preise, GOT-Positionen, Warenkorb) und `data/raw/ds17-tierarzt-umsatz.json` (Umsatz, HICP, Abrechnungsfaktor, Verordnungsbegründung).
+- **Reihen:** Anstieg seit 2010 in Prozent, 2010–2024: Katze, Hund, Pferd (GOT-Warenkorb „Routinejahr“, `korbJahr`, gleicher Faktor), Tierarztpreise (deutscher Index), Tierarztpreise NL, Praxisumsatz, Inflation. Die Maß ist seit dem 07.10.2026 auf Wunsch raus.
+- **Warum so:** Der deutsche Index bildet nur die GOT-Sätze ab (Stufen). Die erste Fassung (nur GOT, ab 2000) sah angreifbar aus; deshalb stehen die Routine-Körbe jetzt neben drei unabhängigen Blickwinkeln auf den Markt. Abrechnungsfaktor 1,44 (AFC 2019) als Szenario im Artikel. Farben mit dem dataviz-Validator geprüft (alle Paare CVD/normal bestanden, Hund-Gelb nur mit Direktbeschriftung).
 - **Grenzen:** Umsatz = Preis × Menge. Faktor nach 2022 unbekannt. Umsatz 2025 erscheint 2027; dann um ein Jahr verlängern.
 - **Freigabe:** über `datensaetzeOhnePost`.

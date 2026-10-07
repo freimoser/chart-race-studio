@@ -349,12 +349,13 @@ const w13 = {
 // 13b Reduzierte Fassung ohne Bier: Besucher als Säulen, Maßpreis und Inflation als Linien. Dieselben Werte.
 const w13b = { headers: ['Jahr', 'Besucher (Mio.)', 'Maß', 'Maß mit Inflation'], rows: w13.rows.map((r) => [r[0], r[2], r[3], r[4]]) }
 
-// 14 Tierarztkosten gegen Inflation, 2010–2024: Anstieg seit 2010 in Prozent. Drei unabhängige Blickwinkel
-// auf den Tierarzt, alle amtlich: der deutsche Preisindex (folgt den GOT-Sätzen, deshalb Stufen), der Preisindex
-// der Niederlande (keine Gebührenordnung) und der Umsatz der Tierarztpraxen (Umsatzsteuerstatistik, echtes Geld,
-// Preis × Menge). Dazu Inflation und Maß (2020/21 ohne Wiesn: linear zwischen 2019 und 2022 gerechnet).
-// 2010 ist das erste Jahr, für das alle Reihen vorliegen, 2024 das letzte.
-// Der GOT-Warenkorb „Routinejahr“ (korbJahr) steht nicht in der Grafik, nur als Lupe im Artikel.
+// 14 Tierarztkosten gegen Inflation, 2010–2024: Anstieg seit 2010 in Prozent.
+// Katze, Hund, Pferd: eigener Warenkorb „Routinejahr“ aus der GOT (Impftermin + Krankheitsbesuch), einfacher Satz
+// mit MwSt., Jahresdurchschnitt nach Geltungstagen. Der Faktor ist über die Zeit gleich gehalten – so rechnet jeder
+// Preisindex; wie sich der tatsächlich berechnete Faktor verschoben hat, zeigt der Artikel als Szenario.
+// Dazu drei Blickwinkel auf den ganzen Markt, alle amtlich: deutscher Preisindex (folgt den GOT-Sätzen, Stufen),
+// Preisindex der Niederlande (keine Gebührenordnung) und Umsatz der Tierarztpraxen (Umsatzsteuerstatistik, Preis
+// × Menge), und die Inflation. 2010 ist das erste Jahr mit allen Reihen, 2024 das letzte.
 const DM = 1.95583
 const GOT = d16.got_allgemeine_untersuchung.versionen
 const KORB = d16.got_routinekorb.versionen
@@ -377,19 +378,17 @@ const korbJahr = (tier, jahr) => {
 }
 const vet = (j) => (j === 2026 ? d16.jahr_2026.veterinaer : d16.veterinaer_2020_100[j])
 const ges = (j) => (j === 2026 ? d16.jahr_2026.vpi_gesamt_naeherung : d16.vpi_gesamt_2020_100[j])
-const massBelegt = (j) => wiesn.get(j)?.masspreis_eur ?? null
-const mass = (j) => massBelegt(j) ?? (j === 2020 || j === 2021 ? massBelegt(2019) + (massBelegt(2022) - massBelegt(2019)) * (j - 2019) / 3 : null)
 const anstieg = (a, b) => (a == null || b == null ? null : Math.round((a / b - 1) * 1000) / 10)
 const umsatz = (j) => d17.tierarztpraxen_umsatz_tsd_eur[j] ?? null
 const preiseNL = (j) => d17.hicp_cp0935_2015_100.NL[j] ?? null
 const w14 = {
-  headers: ['Jahr', 'Tierarztpreise', 'Tierarztpreise NL', 'Praxisumsatz', 'Inflation', 'Maß auf der Wiesn'],
+  headers: ['Jahr', 'Katze', 'Hund', 'Pferd', 'Tierarztpreise', 'Tierarztpreise NL', 'Praxisumsatz', 'Inflation'],
   rows: Array.from({ length: 2024 - 2010 + 1 }, (_, k) => 2010 + k).map((j) => [String(j),
-    anstieg(vet(j), vet(2010)), anstieg(preiseNL(j), preiseNL(2010)), anstieg(umsatz(j), umsatz(2010)),
-    anstieg(ges(j), ges(2010)), anstieg(mass(j), mass(2010))]),
+    ...['katze', 'hund', 'pferd'].map((t) => anstieg(korbJahr(t, j), korbJahr(t, 2010))),
+    anstieg(vet(j), vet(2010)), anstieg(preiseNL(j), preiseNL(2010)), anstieg(umsatz(j), umsatz(2010)), anstieg(ges(j), ges(2010))]),
 }
 // Kontrollausgabe für die Lupe im Artikel: Routinejahr (einfacher Satz, mit MwSt.)
-for (const t of ['katze', 'hund', 'pferd']) console.log('Routinejahr', t, [2000, 2021, 2026].map((j) => korbJahr(t, j).toFixed(2)).join(' / '))
+for (const t of ['katze', 'hund', 'pferd']) console.log('Routinejahr', t, [2010, 2021, 2024, 2026].map((j) => korbJahr(t, j).toFixed(2)).join(' / '))
 
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 const out = `// Automatisch erzeugt von scripts/build-samples.mjs aus data/raw/*.json – nicht von Hand editieren.\n/* eslint-disable */\n` +

@@ -5,31 +5,33 @@
 
 ---
 
-Neulich die Maß, heute der Tierarzt. 🐾
+Ist der Tierarzt wirklich explodiert? 🐾
 
-Sind Tierarztkosten stärker gestiegen als die Inflation? Ich habe drei amtliche Quellen übereinandergelegt, 2010 bis 2024:
+Ich habe vier Quellen übereinandergelegt, 2010 bis 2024:
 
-🇩🇪 Tierarztpreise Deutschland: +54 %
+🐱 Routinejahr Katze (Impfung + Krankheitsbesuch laut GOT): +179 %
+🐶 Routinejahr Hund: +111 %
+🐴 Routinejahr Pferd: +94 %
+🇩🇪 Tierarztpreise insgesamt: +54 %
 🇳🇱 Tierarztpreise Niederlande: +65 %
 💶 Umsatz der Tierarztpraxen: +122 %
 📈 Inflation: +35 %
-🍺 Maß auf der Wiesn: +70 %
 
-Die Antwort ist also ja. Spannend ist der Weg dorthin.
+Drei Erkenntnisse:
 
-In den Niederlanden gibt es keine Gebührenordnung. Dort steigen die Preise jedes Jahr ein Stück.
-In Deutschland folgt der Preisindex der GOT aufs Komma: neun Jahre Stillstand, 2017 plus 12 %, im Dezember 2022 plus 37,5 % auf einen Schlag. 2023 lagen beide Länder fast gleichauf.
+1️⃣ Ja, der Tierarzt wurde schneller teurer als das Leben insgesamt. Auch in den Niederlanden, ganz ohne Gebührenordnung.
 
-Und was kam auf den Rechnungen an? Der Umsatz der Praxen wuchs jedes Jahr gleichmäßig, auch als die Gebühren eingefroren waren. 2023 waren es plus 16 %, nicht plus 37 %.
-Ein Grund: Schon 2019 rechneten Praxen im Schnitt den 1,44-fachen Satz ab (Studie fürs Ministerium). Ein Teil der Erhöhung stand also längst auf der Rechnung.
+2️⃣ Nicht explodiert, sondern aufgestaut. Neun Jahre blieben die GOT-Sätze gleich, im Dezember 2022 kamen +37,5 % auf einen Schlag. Die Niederlande landeten 2023 am selben Punkt, nur gleichmäßig.
 
-Mein Fazit: Die GOT 2022 war weniger eine Explosion als ein Nachholen in einem Schritt. Für einzelne Leistungen war der Sprung trotzdem groß, etwa für die Untersuchung der Katze.
+3️⃣ Umverteilt. Untersuchung und Impfung stiegen weit überdurchschnittlich, die Kastration einer Hündin (nur Eierstöcke) wurde sogar günstiger. Am stärksten trifft es deshalb die Routine, vor allem bei Katzen.
 
-Hättet ihr lieber jedes Jahr ein bisschen mehr, oder alle paar Jahre einen großen Schritt?
+Und auf der Rechnung? Schon 2019 rechneten Praxen im Schnitt den 1,44-fachen Satz ab. Wer damals so bezahlt hat und heute den einfachen Satz, zahlt für das Routinejahr eines Hundes etwa ein Drittel mehr, nicht das Doppelte.
+
+Lieber jedes Jahr ein bisschen mehr oder alle paar Jahre ein großer Schritt?
 
 Alle Zahlen, Tabellen und Methode:
 https://tiermedizin-in-zahlen.org/beitrag/tierarztkosten-inflation
 
-Quellen: Destatis (Verbraucherpreisindex, Umsatzsteuerstatistik), Eurostat, AFC-Studie zur GOT (2021), Statistisches Amt München.
+Quellen: Gebührenordnung für Tierärzte, Destatis (Verbraucherpreisindex, Umsatzsteuerstatistik), Eurostat, AFC-Studie zur GOT (2021).
 
 #Tiermedizin #Tierarzt #Inflation #GOT
