@@ -168,7 +168,7 @@ export const POSTS: RoadmapPost[] = [
     refs: [6, 8, 9],
   },
   {
-    nr: 11, arc: 'praxis', status: 'geplant', vorabOnline: true,
+    nr: 11, arc: 'praxis', status: 'geplant',
     title: 'Die stille dritte Gruppe',
     hook: 'Neben Inhabern und Angestellten wächst eine dritte Gruppe, über die niemand spricht: Tierärztinnen und Tierärzte außerhalb von Praxen.',
     figures: ['1991: 6.759', '2025: 11.135', 'Veterinärämter, Überwachung, Industrie, Forschung, Lehre'],
