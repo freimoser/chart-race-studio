@@ -407,7 +407,10 @@ export function createLineRace(container: HTMLElement, input: ChartInput): Chart
     for (let k = 0; k < MITTEL; k++) {
       // Fenster um t herum, an den Rändern geklemmt: Am Anfang und am Ende – dem Standbild – gilt damit exakt
       // die kollisionsfreie Anordnung, und Labels beginnen einen Platztausch schon kurz vor dem Kreuzen.
-      const tk = Math.max(0, Math.min(P - 1, t + fenster * (k / (MITTEL - 1) - 0.5)))
+      // Untergrenze knapp über 0: Im ersten Bild stehen oft alle Reihen auf demselben Wert (Anstieg 0 %). Dort
+      // entschiede sonst der Name über die Reihenfolge, eine Periode später der Wert, und das Mittel aus beiden
+      // Anordnungen legte Labels übereinander.
+      const tk = Math.max(1e-3, Math.min(P - 1, t + fenster * (k / (MITTEL - 1) - 0.5)))
       for (const p of anordnen(tk === t ? heads : koepfe(tk))) {
         const e = versatz.get(p.name) ?? { summe: 0, n: 0 }
         e.summe += p.ty - p.y; e.n++
