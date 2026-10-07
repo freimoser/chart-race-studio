@@ -9,6 +9,7 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 - **Neuer Datensatz** `tierarzt-inflation`: Anstieg seit 2000 für die allgemeine Untersuchung von Katze (+230 %), Hund (+120 %) und Pferd (+101 %) laut GOT, Tierarztleistungen laut Verbraucherpreisindex (+85 %), Inflation (+66 %) und Maß (+147 %). Die Destatis-Reihe stammt aus der öffentlichen GENESIS-Tabellenansicht, die GOT-Beträge aus den Bundesgesetzblättern 1999, 2008, 2017 und der GOT 2022.
 - **Artikel** „Tierarztkosten seit 2000 im Vergleich zur Inflation“ als neue Art `auswertung` (ohne Post, auf der Startseite als „Neu“), Eintrag in der Datenherkunft, Vorschaubild.
 - Datensatz-Vorschläge können ein Präfix setzen (`prefix: '+'`).
+- **Nachgeprüft und umgebaut (gleicher Tag):** Die Monatswerte des Index springen genau zu den GOT- und Steuerterminen (Dezember 2022 +37,5 %); er bildet also Gebührensätze ab. Statt einer einzelnen Untersuchung zeigen Katze, Hund und Pferd jetzt einen eigenen Warenkorb „Routinejahr“ (Impftermin + Krankheitsbesuch, einfacher Satz mit MwSt., Jahresdurchschnitt nach Geltungstagen): Katze +220 %, Hund +143 %, Pferd +123 %. Alle GOT-Positionen aus den vollständigen Gebührenverzeichnissen 1999, 2008, 2017 und 2022 gelesen. Die Maß ist 2020/21 linear gerechnet. Artikel mit Index-Treppe, Warenkorb, Kastrationen und Rechenbeispiel zum Abrechnungsfaktor.
 
 ### Neues Format „Säulen + Linie“, Exkurs Oktoberfest (04.10.2026)
 

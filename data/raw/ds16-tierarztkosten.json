@@ -35,7 +35,7 @@
   "2017": 95.1,
   "2018": 101.3,
   "2019": 101.3,
-  "2020": 100.0,
+  "2020": 100,
   "2021": 101.3,
   "2022": 105.4,
   "2023": 139.3,
@@ -44,16 +44,16 @@
  },
  "vpi_gesamt_2020_100": {
   "1991": 61.9,
-  "1992": 65.0,
+  "1992": 65,
   "1993": 67.9,
   "1994": 69.7,
-  "1995": 71.0,
-  "1996": 72.0,
+  "1995": 71,
+  "1996": 72,
   "1997": 73.4,
-  "1998": 74.0,
+  "1998": 74,
   "1999": 74.5,
   "2000": 75.5,
-  "2001": 77.0,
+  "2001": 77,
   "2002": 78.1,
   "2003": 78.9,
   "2004": 80.2,
@@ -63,16 +63,16 @@
   "2008": 86.9,
   "2009": 87.2,
   "2010": 88.1,
-  "2011": 90.0,
+  "2011": 90,
   "2012": 91.7,
   "2013": 93.1,
-  "2014": 94.0,
+  "2014": 94,
   "2015": 94.5,
-  "2016": 95.0,
+  "2016": 95,
   "2017": 96.4,
   "2018": 98.1,
   "2019": 99.5,
-  "2020": 100.0,
+  "2020": 100,
   "2021": 103.1,
   "2022": 110.2,
   "2023": 116.7,
@@ -127,5 +127,70 @@
   ],
   "weitere_aenderungen": "1. ÄndVO 2005 (BGBl. 2005 I S. 1160) nur Ost-Abschlag 10 %; 4. ÄndVO 2020 (BGBl. 2020 I S. 158) Notdienstgebühr 50 € ab 14.02.2020; Korrektur 2023 (BGBl. 2023 I Nr. 70) nur Nr. 193. Seither bis Oktober 2026 keine Änderung; das BMLEH evaluiert die GOT, Ergebnisse erwartet Ende 2026 (https://www.bmleh.de/DE/themen/tiere/got.html).",
   "geprueft": "Werte aus den BGBl.-PDFs gelesen (Recherche 07.10.2026); 2022 Pferd und Hund/Katze direkt gegen gesetze-im-internet.de geprüft. Innere Probe: 21 DM ÷ 1,95583 × 1,12 = 12,03 €, × 1,12 = 13,47 €."
- }
+ },
+ "got_routinekorb": {
+  "beschreibung": "Eigener Warenkorb „Routinejahr“ je Tierart: ein Impftermin (allgemeine Untersuchung mit Beratung + Impfung) und ein Krankheitsbesuch (allgemeine Untersuchung mit Beratung + Injektion subkutan/intramuskulär). Einfacher Gebührensatz der GOT, netto; die Auswertung schlägt die Umsatzsteuer tagesgenau auf (16 % bis 2006, 19 % ab 2007, 16 % Juli–Dezember 2020) und bildet Jahresdurchschnitte nach Geltungstagen der GOT-Fassungen.",
+  "positionen": {
+   "untersuchung": "siehe got_allgemeine_untersuchung (GOT 1999–2017 Nr. 20, GOT 2022 Nr. 4 Pferd und Nr. 16 Hund/Katze)",
+   "impfung": "GOT 1999–2017 Nr. 602 „Schutzimpfungen“ a) Pferd, g) Hund, Katze; die GOT 2022 hat keine eigene Impfposition für Pferd, Hund und Katze mehr, die Impfung wird als Injektion abgerechnet (Nr. 212 Pferd, Nr. 221 Hund/Katze)",
+   "injektion": "GOT 1999–2017 Nr. 504 a) aa) „Pferd, Hund, Katze“; GOT 2022 Nr. 212 Pferd, Nr. 221 Hund/Katze"
+  },
+  "versionen": [
+   {
+    "version": "GOT 1999",
+    "in_kraft": "1999-08-01",
+    "impfung_dm": 7,
+    "injektion_dm": 9
+   },
+   {
+    "version": "2. ÄndVO",
+    "in_kraft": "2008-07-08",
+    "impfung": 4.01,
+    "injektion": 5.15
+   },
+   {
+    "version": "3. ÄndVO",
+    "in_kraft": "2017-07-27",
+    "impfung": 4.49,
+    "injektion": 5.77
+   },
+   {
+    "version": "GOT 2022",
+    "in_kraft": "2022-11-22",
+    "impfung": 11.5,
+    "injektion": 11.5
+   }
+  ],
+  "zum_vergleich_kastration": {
+   "hinweis": "Nicht im Warenkorb (einmalige Leistung), nur für den Artikel. GOT 1999–2017 G 5.1 b, G 5.3, G 5.4; GOT 2022 Nr. 368, 377, 378, 600, 601. Weiblich: 1999–2017 „Kastration weiblich“, 2022 Ovarektomie (die Ovariohysterektomie hat eine eigene Position: 2022 Hündin 192,00, Kätzin 89,00 €).",
+   "ruede": {
+    "2017": 51.31,
+    "2022": 70.6,
+    "1999_dm": 80
+   },
+   "huendin": {
+    "2017": 160.34,
+    "2022": 128.27,
+    "1999_dm": 250
+   },
+   "kater": {
+    "2017": 19.24,
+    "2022": 30.32,
+    "1999_dm": 30
+   },
+   "kaetzin": {
+    "2017": 57.72,
+    "2022": 56.48,
+    "1999_dm": 90
+   },
+   "hengst": {
+    "2017": 64.14,
+    "2022": 192,
+    "1999_dm": 100
+   }
+  },
+  "geprueft": "Alle Beträge am 07.10.2026 aus den BGBl.-PDFs 1999 (S. 1694 ff.), 2008 und 2017 (jeweils vollständiges Gebührenverzeichnis) sowie aus gesetze-im-internet.de/got_2022/anlage.html gelesen. Innere Probe: 7 DM ÷ 1,95583 × 1,12 = 4,01 €, × 1,12 = 4,49 €; 9 DM → 5,15 € → 5,77 €.",
+  "reale_rechnungen": "Keine amtliche Statistik erfasst tatsächliche Tierarztrechnungen (Faktor 1 bis 3, Notdienst bis 4, Notdienstgebühr 50 € seit 14.02.2020). Geprüft am 07.10.2026: Destatis-Tabellen der Einkommens- und Verbrauchsstichprobe (63221) und der Laufenden Wirtschaftsrechnungen (63111) gliedern nicht bis zu Tierarztleistungen."
+ },
+ "methodik_index": "Der Monatsindex 61111-0004 (CC13-0935) springt genau zu den GOT-Terminen und Steueränderungen: Januar 2007 +2,6 % (Mehrwertsteuer 16→19 %), Juli 2008 +12,4 %, August 2017 +12,1 %, Juli–Dezember 2020 −2,5 % (Steuersenkung), Dezember 2022 +37,5 % (101,3 → 139,3; November 112,7 als Teilmonat). Dazwischen bleibt er auf die Kommastelle gleich. Daraus folgt (eigene Schlussfolgerung, keine Methodenangabe von Destatis gefunden): Der Index bildet die Gebührensätze der GOT ab, nicht beobachtete Rechnungen."
 }

@@ -348,25 +348,40 @@ const w13 = {
 // 13b Reduzierte Fassung ohne Bier: Besucher als Säulen, Maßpreis und Inflation als Linien. Dieselben Werte.
 const w13b = { headers: ['Jahr', 'Besucher (Mio.)', 'Maß', 'Maß mit Inflation'], rows: w13.rows.map((r) => [r[0], r[2], r[3], r[4]]) }
 
-// 14 Tierarztkosten gegen Inflation seit 2000: Anstieg in Prozent. Katze, Hund, Pferd sind die allgemeine
-// Untersuchung laut GOT (einfacher Satz, Stand Jahresende, 1999er DM-Beträge zum amtlichen Kurs), dazu der
-// Verbraucherpreisindex für Tierarztleistungen, der Gesamtindex und – als Querverweis zum Exkurs – die Maß
-// auf der Wiesn (2020/21 keine Wiesn). 2026: Tierarzt-Index Jan–Aug, Gesamtindex aus den Monatsraten.
+// 14 Tierarztkosten gegen Inflation seit 2000: Anstieg in Prozent. Katze, Hund, Pferd sind ein eigener
+// Warenkorb „Routinejahr“ aus der GOT (einfacher Satz): ein Impftermin (Untersuchung + Impfung) und ein
+// Krankheitsbesuch (Untersuchung + Injektion), mit Umsatzsteuer, als Jahresdurchschnitt nach Geltungstagen –
+// so wie die Verbraucherpreisindizes daneben. 1999er DM-Beträge zum amtlichen Kurs. Dazu der Index für
+// Tierarztleistungen, der Gesamtindex und die Maß (2020/21 ohne Wiesn: linear zwischen 2019 und 2022 gerechnet).
+const DM = 1.95583
 const GOT = d16.got_allgemeine_untersuchung.versionen
-const gebuehr = (tier, jahr) => {
-  const ab = { 'GOT 1999': 1999, '2. ÄndVO': 2008, '3. ÄndVO': 2017, 'GOT 2022': 2022 }
-  let wert = null
-  for (const v of GOT) if (ab[v.version] <= jahr) wert = v[tier] ?? v[`${tier}_dm`] / 1.95583
-  return wert
+const KORB = d16.got_routinekorb.versionen
+const gotStufen = GOT.map((v, k) => {
+  const w = KORB[k]
+  const eur = (o, f) => o[f] ?? o[`${f}_dm`] / DM
+  return { ab: v.in_kraft, u: { katze: eur(v, 'katze'), hund: eur(v, 'hund'), pferd: eur(v, 'pferd') }, impfung: eur(w, 'impfung'), injektion: eur(w, 'injektion') }
+})
+const ust = (tag) => (tag < '2007-01-01' || (tag >= '2020-07-01' && tag < '2021-01-01') ? 0.16 : 0.19)
+const korbAm = (tier, tag) => {
+  let g = null
+  for (const s of gotStufen) if (s.ab <= tag) g = s
+  return (2 * g.u[tier] + g.impfung + g.injektion) * (1 + ust(tag))
+}
+const korbJahr = (tier, jahr) => {
+  const ende = jahr === 2026 ? Date.UTC(2026, 9, 1) : Date.UTC(jahr + 1, 0, 1) // 2026 bis Ende September
+  let summe = 0, tage = 0
+  for (let t = Date.UTC(jahr, 0, 1); t < ende; t += 864e5) { summe += korbAm(tier, new Date(t).toISOString().slice(0, 10)); tage++ }
+  return summe / tage
 }
 const vet = (j) => (j === 2026 ? d16.jahr_2026.veterinaer : d16.veterinaer_2020_100[j])
 const ges = (j) => (j === 2026 ? d16.jahr_2026.vpi_gesamt_naeherung : d16.vpi_gesamt_2020_100[j])
-const mass = (j) => wiesn.get(j)?.masspreis_eur ?? null
+const massBelegt = (j) => wiesn.get(j)?.masspreis_eur ?? null
+const mass = (j) => massBelegt(j) ?? (j === 2020 || j === 2021 ? massBelegt(2019) + (massBelegt(2022) - massBelegt(2019)) * (j - 2019) / 3 : null)
 const anstieg = (a, b) => (a == null || b == null ? null : Math.round((a / b - 1) * 1000) / 10)
 const w14 = {
   headers: ['Jahr', 'Katze', 'Hund', 'Pferd', 'Tierarzt gesamt', 'Inflation', 'Maß auf der Wiesn'],
   rows: Array.from({ length: 2026 - 2000 + 1 }, (_, k) => 2000 + k).map((j) => [String(j),
-    anstieg(gebuehr('katze', j), gebuehr('katze', 2000)), anstieg(gebuehr('hund', j), gebuehr('hund', 2000)), anstieg(gebuehr('pferd', j), gebuehr('pferd', 2000)),
+    anstieg(korbJahr('katze', j), korbJahr('katze', 2000)), anstieg(korbJahr('hund', j), korbJahr('hund', 2000)), anstieg(korbJahr('pferd', j), korbJahr('pferd', 2000)),
     anstieg(vet(j), vet(2000)), anstieg(ges(j), ges(2000)), anstieg(mass(j), mass(2000))]),
 }
 
