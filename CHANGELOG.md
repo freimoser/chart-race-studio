@@ -7,7 +7,8 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 ### Startseite zeigt den Post des Tages, Tierarztmangel seit 2000 (08.10.2026)
 
 - **Startseite:** Oben stand am Tag von Post 5 noch die Sonderauswertung von gestern (Tierarztkosten mit Praxisumsatz), weil ein Post ohne `publishedOn` nach seinem Entwurfsdatum sortiert wurde. Jetzt steht der Post auf `naechster` oben, ohne Datum bis zur Veröffentlichung.
-- **Neuer Datensatz `tierarztmangel-2000`** (noch nicht freigegeben): Hunde und Katzen je Praxisinhaber:in und je Tierärzt:in in der Praxis, 2000–2025. Vor 2012 die Verbandsschätzung, mit dem Faktor 1,45 an die Erhebung ab 2012 verkettet; ab 2012 gleich wie `tierarztmangel`. Je Inhaber 2000–2012 gleichbleibend um 1.650–1.730, danach Anstieg auf 2.291; je Tierärzt:in in der Praxis 1.244 (2000) auf 1.101 (2025). Glätteprüfung 0 Sprünge, Lückentest grün.
+- **Post 5 rechnet jetzt ab 2000:** Video, Artikel (Kurzfassung, Tabelle ab 2000, Abschnitt „Warum die Jahre vor 2012 gerechnet sind“, FAQ, Beschreibung), Post-Text mit Block „Gerechnet / Quellen“, Redaktionsplan, Datenherkunft und Vorschaubild auf `tierarztmangel-2000` umgestellt. `og-bilder.mjs` rendert mit Slug-Argument nur einzelne Artikel.
+- **Neuer Datensatz `tierarztmangel-2000`**: Hunde und Katzen je Praxisinhaber:in und je Tierärzt:in in der Praxis, 2000–2025. Vor 2012 die Verbandsschätzung, mit dem Faktor 1,45 an die Erhebung ab 2012 verkettet; ab 2012 gleich wie `tierarztmangel`. Je Inhaber 2000–2012 gleichbleibend um 1.650–1.730, danach Anstieg auf 2.291; je Tierärzt:in in der Praxis 1.244 (2000) auf 1.101 (2025). Glätteprüfung 0 Sprünge, Lückentest grün.
 
 ### Eingebettete Grafik lädt nur noch ihren Datensatz (08.10.2026, Branch `grafik-buendel`)
 

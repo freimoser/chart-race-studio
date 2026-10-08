@@ -2,7 +2,7 @@
  * Erzeugt die Vorschaubilder (1200 × 630), die LinkedIn, Slack und Messenger beim Teilen eines
  * Links zeigen. Ohne sie erscheint im ersten Kommentar unter einem Post nur eine graue Kachel.
  *
- *   node scripts/og-bilder.mjs
+ *   node scripts/og-bilder.mjs [slug …]
  *
  * Rendert mit einem lokal installierten Chrome im Headless-Modus, deshalb läuft das Skript nicht
  * im Build, sondern von Hand – die Bilder werden eingecheckt:
@@ -57,9 +57,11 @@ function render(html, ziel) {
     '--window-size=1200,630', `--screenshot=${path.resolve(ziel)}`, pathToFileURL(f).href], { stdio: 'ignore' })
 }
 
-render(karte({ oben: 'Tiermedizin in Zahlen', titel: 'Tierärzte, Praxen und Haustiere in Deutschland', text: 'Zeitreihen seit 1991 – jede Zahl mit Jahr und Quelle.' }), 'public/og-standard.png')
-let n = 1
-for (const a of INDEX.filter((x) => x.bereit)) {
+// Mit Slugs als Argument nur diese Artikel (node scripts/og-bilder.mjs tierarztmangel-deutschland), sonst alle.
+const NUR = process.argv.slice(2)
+if (!NUR.length) render(karte({ oben: 'Tiermedizin in Zahlen', titel: 'Tierärzte, Praxen und Haustiere in Deutschland', text: 'Zeitreihen seit 1991 – jede Zahl mit Jahr und Quelle.' }), 'public/og-standard.png')
+let n = NUR.length ? 0 : 1
+for (const a of INDEX.filter((x) => x.bereit && (!NUR.length || NUR.includes(x.slug)))) {
   const ersterSatz = a.beschreibung.match(/^.*?[.!?](\s|$)/)?.[0].trim() ?? a.beschreibung
   render(karte({ oben: 'Tiermedizin in Zahlen', titel: a.titel, text: ersterSatz }), `public/beitrag/og/${a.slug}.png`)
   n++
