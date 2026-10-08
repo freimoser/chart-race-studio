@@ -146,6 +146,23 @@ if (!L.companyName && /Petleo|GmbH|UG /.test(ds + lies(path.join(DIST, 'impressu
   hinweise.push('Ein Geschäftsname taucht im Text auf, ist aber nicht als companyName gepflegt. Nach § 5 DDG gehört zur Firma die Rechtsform.')
 }
 
+// Eingebettete Grafiken laden ihren Datensatz aus grafik-daten/<id>.json. Fehlt die Datei, bleibt der Rahmen
+// still leer. Umgekehrt gehört kein Datensatz dorthin, den die Freigabe live noch nicht zeigt.
+const grafikDaten = path.join(DIST, 'grafik-daten')
+const datenDateien = new Set(fs.existsSync(grafikDaten) ? fs.readdirSync(grafikDaten).filter((f) => f.endsWith('.json')).map((f) => f.slice(0, -5)) : [])
+for (const p of inhaltsSeiten) {
+  for (const [, id] of lies(p).matchAll(/grafik\.html\?d=([a-z0-9-]+)/g)) {
+    if (!datenDateien.has(id)) blocker.push(`${route(p)}: eingebettete Grafik „${id}“ hat keine Datei grafik-daten/${id}.json.`)
+  }
+}
+const { POSTS } = await import('../src/content/roadmap.ts')
+const { freigegebeneDatensaetze } = await import('../src/content/freigabe-regel.ts')
+const FREIGABE = JSON.parse(lies('src/content/freigabe.json'))
+const frei = freigegebeneDatensaetze(POSTS, FREIGABE.datensaetzeOhnePost)
+for (const id of datenDateien) {
+  if (FREIGABE.beispieleErstNachVeroeffentlichung && !frei.has(id)) blocker.push(`grafik-daten/${id}.json liegt im Build, der Datensatz ist live aber nicht freigegeben.`)
+}
+
 const zeige = (titel, liste) => { if (!liste.length) return; console.log(`\n${titel} (${liste.length})`); for (const t of liste) console.log(`  - ${t}`) }
 zeige('BLOCKER', blocker)
 zeige('Hinweise', hinweise)

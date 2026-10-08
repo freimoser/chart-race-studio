@@ -6,7 +6,11 @@ import { resolve } from 'node:path'
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
 
 // Markenname aus einer einzigen Quelle – die Rechtsseiten, Artikel, Oberfläche und diese Datei lesen alle legal.json.
+import { SAMPLES } from './src/samples/index.ts'
+import { POSTS } from './src/content/roadmap.ts'
+import { freigegebeneDatensaetze } from './src/content/freigabe-regel.ts'
 const MARKE: string = JSON.parse(readFileSync('src/content/legal.json', 'utf8')).siteName
+const FREIGABE: { beispieleErstNachVeroeffentlichung: boolean; datensaetzeOhnePost?: string[] } = JSON.parse(readFileSync('src/content/freigabe.json', 'utf8'))
 
 // BASE_PATH wird im GitHub-Actions-Workflow auf "/<repo-name>/" gesetzt.
 // Lokal bleibt es "/".
@@ -133,6 +137,13 @@ ${BEITRAEGE.length ? `        <li><a href="../beitrag/">Alle Artikel</a></li>\n`
     generateBundle(this: { emitFile: (f: { type: 'asset'; fileName: string; source: string }) => void }) {
       // robots.txt und sitemap.xml nur mit bekannter Adresse – eine Sitemap mit falscher Domain
       // ist schlechter als keine.
+      // Je Datensatz eine eigene Datei für die eingebettete Grafik (src/grafik/Grafik.tsx): Sie lädt nur den
+      // einen, den sie zeigt. Nur freigegebene, dieselbe Regel wie in der Seite und für die CSV-Dateien.
+      const frei = freigegebeneDatensaetze(POSTS, FREIGABE.datensaetzeOhnePost)
+      for (const s of SAMPLES) {
+        if (FREIGABE.beispieleErstNachVeroeffentlichung && !frei.has(s.id)) continue
+        this.emitFile({ type: 'asset', fileName: `grafik-daten/${s.id}.json`, source: JSON.stringify(s) })
+      }
       const url = env.VITE_SITE_URL?.replace(/\/$/, '')
       if (!url) return
       this.emitFile({ type: 'asset', fileName: 'robots.txt', source: `User-agent: *\nAllow: /\n\nSitemap: ${url}/sitemap.xml\n` })
