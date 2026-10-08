@@ -1,4 +1,15 @@
 {
+ "verkettung_2012": {
+  "zweck": "Datensatz tierarztmangel-2000: Hunde und Katzen 2000–2011 (Verbandsschätzung) an die Erhebung ab 2012 angeschlossen.",
+  "faktor": "19,7 / 13,6 = 1,4485 (Hunde und Katzen 2012 neu zu 2011 alt, Mio.)",
+  "annahme": "Der ganze Sprung 2011→2012 ist Methode, kein echter Zuwachs. Gerechnet, keine Quelle.",
+  "stuetzen": [
+   "Haushaltsanteile in dieser Datei: Hund 13,3 % (2009) und 13,4 % (2012), Katze 16,5 % (2009) und 16,5 % (2012)",
+   "Futterumsatz (ds2-heimtiere.json): Hundefutter 1.146 → 1.176 Mio. EUR, Katzenfutter 1.486 → 1.537 Mio. EUR (2011 → 2012), kein Sprung"
+  ],
+  "grenze": "Für 2000–2011 gibt es keine zweite unabhängige Zählung der Hunde und Katzen. Der Verlauf 2000–2011 hängt nicht am Faktor, nur die Höhe gegenüber 2012.",
+  "eingetragen": "2026-10-08"
+ },
  "title": "Heimtierbestand in Deutschland 1992–2013 (IVH/ZZF) – Ergänzung zu ds2 (2008–2025)",
  "source": "Industrieverband Heimtierbedarf (IVH) e.V.: Datenblätter „Der Deutsche Heimtiermarkt“ 2004–2009 und IVH-Pressedienst (archivierte Seiten von ivh-online.de im Internet Archive); ZZF-Pressemitteilungen 2012 (IMR) und 2014 (Skopos), wiedergegeben auf petcom.at; Wikipedia „Heimtierbedarf“ (IVH-Schätzung 1992); ZZF „Entwicklung des Heimtiermarktes“ (2000)",
  "sourceUrl": "https://web.archive.org/web/20071025114328/http://www.ivh-online.de/de/home/der-verband/daten-fakten/archiv.html ; https://petcom.at/deutschland/marktdaten/Heimtier-Populationen-Deutschland.html",

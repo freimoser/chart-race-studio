@@ -378,7 +378,10 @@ ${k.liste.map((a) => `        <li><a href="${a.slug}.html">${esc(a.titel)}</a><b
 // /#redaktionsplan) leitet ein kleines Skript im Kopf nach /studio/ weiter; GitHub Pages kann keine
 // Weiterleitung auf dem Server.
 function startseite(live) {
-  const artikel = live.filter((a) => !a.anleitung || a.art === 'exkurs' || a.art === 'auswertung').sort((x, y) => (y.veroeffentlicht ?? '').localeCompare(x.veroeffentlicht ?? '') || (y.post ?? 0) - (x.post ?? 0))
+  // Der Post des Tages (`naechster`) steht oben: Wer von LinkedIn auf die Startseite kommt, sucht ihn. Ohne
+  // `publishedOn` sortierte er sonst nach seinem Entwurfsdatum hinter ältere Artikel.
+  const aktuell = (a) => POSTS.find((p) => p.nr === a.post)?.status === 'naechster'
+  const artikel = live.filter((a) => !a.anleitung || a.art === 'exkurs' || a.art === 'auswertung').sort((x, y) => Number(aktuell(y)) - Number(aktuell(x)) || (y.veroeffentlicht ?? '').localeCompare(x.veroeffentlicht ?? '') || (y.post ?? 0) - (x.post ?? 0))
   const neu = artikel.find((a) => grafikVon(a.grafik, POSTS.find((p) => p.nr === a.post)?.sampleId))
   const gNeu = neu && grafikVon(neu.grafik, POSTS.find((p) => p.nr === neu.post)?.sampleId)
   const csvNeu = gNeu && DATENSAETZE[gNeu.id]?.daten ? `daten/${gNeu.id}.csv` : ''
@@ -410,7 +413,7 @@ function startseite(live) {
       <h1>Tierärzte, Praxen und Haustiere in Zahlen</h1>
       <p class="lead">Wie viele Tierärztinnen und Tierärzte, Praxen und Haustiere gibt es in Deutschland, und was hat sich seit 1991 verschoben? Jeder Artikel beantwortet eine Frage mit Zahl, Jahr und Quelle, zeigt die Entwicklung als animierte Grafik und sagt, was die Zahl nicht sagt.</p>
 ${neu ? `      <section class="neu" aria-labelledby="neu-titel">
-        <p class="meta">Neu${neu.veroeffentlicht ? ` · ${datumDe(neu.veroeffentlicht)}` : ''}</p>
+        <p class="meta">Neu${neu.veroeffentlicht && !aktuell(neu) ? ` · ${datumDe(neu.veroeffentlicht)}` : ''}</p>
         <h2 id="neu-titel"><a href="beitrag/${neu.slug}.html">${esc(neu.titel)}</a></h2>
         <p>${esc(neu.beschreibung)}</p>
         ${grafikFigur(gNeu, { tiefe: '', csv: csvNeu })}

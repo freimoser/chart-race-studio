@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../lib/data/types.ts'
-import { TIERARZTMANGEL, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
+import { TIERARZTMANGEL, TIERARZTMANGEL_2000, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -47,6 +47,25 @@ export const SAMPLES: SampleDataset[] = [
     ],
     headers: TIERARZTMANGEL.headers,
     rows: TIERARZTMANGEL.rows,
+    suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'Hunde und Katzen je Kopf', colors: { 'Je Praxisinhaber:in': '#0f4c5c', 'Je Tierärzt:in in der Praxis': '#e36414' } },
+  },
+  {
+    id: 'tierarztmangel-2000',
+    erstellt: '2026-10-08', geprueft: '2026-10-08',
+    category: 'praxis',
+    title: 'Hunde und Katzen je Tierärztin und Tierarzt seit 2000',
+    subtitle: 'Hunde und Katzen in Deutschland je Praxisinhaber:in und je Tierärzt:in in der Praxis; vor 2012 an die heutige Zählung angeschlossen',
+    source: 'Quelle: Bundestierärztekammer (Statistik), IVH/ZZF (Heimtiere); Quotienten berechnet, vor 2012 verkettet',
+    sourceUrl: 'https://www.bundestieraerztekammer.de/btk/statistik/',
+    unit: 'Hunde und Katzen',
+    description: 'Je Praxisinhaber blieb die Zahl der Hunde und Katzen von 2000 bis 2012 gleich und stieg erst danach; je Tierärztin oder Tierarzt in der Praxis sank sie seit 2000 um 11 Prozent.',
+    dataInfo: [
+      "Berechnet wie „Hunde und Katzen je Tierärztin und Tierarzt“ (ab 2012): Hunde und Katzen (IVH/ZZF) geteilt durch die Praxisinhaber:innen bzw. durch Inhaber:innen plus angestellte Tierärzt:innen in Praxen (Bundestierärztekammer, jeweils zum Jahresende). Ab 2012 sind die Werte gleich.",
+      "2000 bis 2011 verkettet: Bis 2011 schätzten die Verbände die Heimtiere, ab 2012 erheben sie sie. Die Schätzung ist mit dem Faktor 1,45 (19,7 Mio. Hunde und Katzen 2012 zu 13,6 Mio. 2011) an die Erhebung angeschlossen. Das rechnet den ganzen Sprung der Methode zu; dafür sprechen die gleichbleibenden Haushaltsanteile (Hund 13,3 und 13,4 %, Katze 16,5 und 16,5 %, 2009 und 2012) und der Futterumsatz ohne Sprung (2011 auf 2012: Hund +2,6 %, Katze +3,4 %).",
+      "Der Verlauf 2000 bis 2011 hängt nicht am Faktor, nur seine Höhe gegenüber 2012. Für die Heimtiere vor 2012 gibt es keine zweite unabhängige Zählung. Gezählt werden Köpfe, keine Vollzeitstellen. 2013 stellten die Verbände noch einmal um, daher der Knick.",
+    ],
+    headers: TIERARZTMANGEL_2000.headers,
+    rows: TIERARZTMANGEL_2000.rows,
     suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'Hunde und Katzen je Kopf', colors: { 'Je Praxisinhaber:in': '#0f4c5c', 'Je Tierärzt:in in der Praxis': '#e36414' } },
   },
   {

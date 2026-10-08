@@ -224,6 +224,21 @@ const w2c = {
     Math.round(hk(j) / (w2Wert('Praxisinhaber:innen', j) + w2Wert('Angestellte in Praxen', j)))]),
 }
 
+// 2d Dieselbe Rechnung ab 2000 (neue Fassung, 2c bleibt unverändert). Vor 2012 gibt es nur die Schätzung der
+// Verbände; sie wird an die Erhebung ab 2012 angeschlossen (verkettet): Faktor = Hunde und Katzen 2012 / 2011 =
+// 19,7 / 13,6. Das rechnet den ganzen Sprung 2011→2012 der Methode zu. Dafür sprechen die gleichbleibenden
+// Haushaltsanteile (Hund 13,3 → 13,4 %, Katze 16,5 → 16,5 %, 2009 → 2012) und der Futterumsatz ohne Sprung
+// (Hund +2,6 %, Katze +3,4 %, 2011 → 2012). Vermerk in data/raw/ds2b-heimtiere-1990-2013.json (verkettung_2012).
+// Der Verlauf 2000–2011 hängt nicht am Faktor, nur die Höhe gegenüber 2012.
+const FAKTOR_2012 = hk(2012) / hk(2011)
+const hkVerkettet = (j) => (j < 2012 ? hk(j) * FAKTOR_2012 : hk(j))
+const w2d = {
+  headers: w2c.headers,
+  rows: Array.from({ length: 2025 - 2000 + 1 }, (_, k) => 2000 + k).map((j) => [String(j),
+    Math.round(hkVerkettet(j) / w2Wert('Praxisinhaber:innen', j)),
+    Math.round(hkVerkettet(j) / (w2Wert('Praxisinhaber:innen', j) + w2Wert('Angestellte in Praxen', j)))]),
+}
+
 // 4 Hunderassen: ohne Summenzeile, 1992–2025 (1990/1991 nirgends online verfügbar)
 // ds3 deckt nur die 23 Rassen ab, die 2011–2025 einmal in den Top 15 waren. ds3c ergänzt die
 // übrigen Rassen aus derselben VDH-Tabelle, damit keine Reihe 2010 abbricht.
@@ -484,6 +499,6 @@ for (const t of ['katze', 'hund', 'pferd']) console.log('Routinejahr', t, [2010,
 
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 const out = `// Automatisch erzeugt von scripts/build-samples.mjs aus data/raw/*.json – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('TIERAERZTE_BUNDESLAND', w1), emit('TIERAERZTESCHAFT_DEUTSCHLAND', w2), emit('INHABER_ANGESTELLTE', w2b), emit('TIERARZTMANGEL', w2c), emit('HEIMTIERE', w3), emit('HEIMTIERE_ALLE', w3b), emit('HEIMTIERE_DACH', w3c), emit('HUNDERASSEN', w4), emit('RINDER_BUNDESLAND', w5), emit('HEIMTIERMARKT', w6), emit('PRAXISSCHWERPUNKTE', w7), emit('FACHTIERAERZTE', w8), emit('KLEINTIERE_BUNDESLAND', w9), emit('KETTEN', w10), emit('KETTEN_EIGENTUEMER', w11), emit('GESCHLECHT_PRAXIS', w12), emit('OKTOBERFEST', w13), emit('OKTOBERFEST_PREIS', w13b), emit('TIERARZT_INFLATION', w14), emit('TIERARZT_ROUTINEJAHR', w14b), emit('HUND_KATZE_WELT', { headers: d13.headers ?? ['Jahr'], rows: d13.rows ?? [] })].join('\n')
+  [emit('TIERAERZTE_BUNDESLAND', w1), emit('TIERAERZTESCHAFT_DEUTSCHLAND', w2), emit('INHABER_ANGESTELLTE', w2b), emit('TIERARZTMANGEL', w2c), emit('TIERARZTMANGEL_2000', w2d), emit('HEIMTIERE', w3), emit('HEIMTIERE_ALLE', w3b), emit('HEIMTIERE_DACH', w3c), emit('HUNDERASSEN', w4), emit('RINDER_BUNDESLAND', w5), emit('HEIMTIERMARKT', w6), emit('PRAXISSCHWERPUNKTE', w7), emit('FACHTIERAERZTE', w8), emit('KLEINTIERE_BUNDESLAND', w9), emit('KETTEN', w10), emit('KETTEN_EIGENTUEMER', w11), emit('GESCHLECHT_PRAXIS', w12), emit('OKTOBERFEST', w13), emit('OKTOBERFEST_PREIS', w13b), emit('TIERARZT_INFLATION', w14), emit('TIERARZT_ROUTINEJAHR', w14b), emit('HUND_KATZE_WELT', { headers: d13.headers ?? ['Jahr'], rows: d13.rows ?? [] })].join('\n')
 fs.writeFileSync('src/samples/data.ts', out)
-for (const [n, w] of Object.entries({ w1, w2, w2b, w2c, w3, w3b, w3c, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w13b, w14, w14b })) console.log(n, w.headers.length - 1, 'Kategorien,', w.rows.length, 'Perioden', w.rows[0]?.[0], '–', w.rows.at(-1)?.[0])
+for (const [n, w] of Object.entries({ w1, w2, w2b, w2c, w2d, w3, w3b, w3c, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w13b, w14, w14b })) console.log(n, w.headers.length - 1, 'Kategorien,', w.rows.length, 'Perioden', w.rows[0]?.[0], '–', w.rows.at(-1)?.[0])

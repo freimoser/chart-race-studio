@@ -12,7 +12,7 @@
 import { starteChrome } from './lib/cdp.mjs'
 
 const URL = process.env.STUDIO_URL ?? 'http://localhost:5173/studio/'
-const DATENSAETZE = process.argv.slice(2).length ? process.argv.slice(2) : ['ketten', 'ketten-eigentuemer', 'geschlecht-praxis', 'inhaber-angestellte', 'heimtiere', 'tieraerzteschaft-deutschland', 'praxisschwerpunkte', 'heimtiermarkt', 'fachtieraerzte', 'oktoberfest', 'oktoberfest-preis', 'tierarzt-inflation', 'tierarzt-routinejahr', 'heimtiere-alle', 'heimtiere-dach', 'tierarztmangel']
+const DATENSAETZE = process.argv.slice(2).length ? process.argv.slice(2) : ['ketten', 'ketten-eigentuemer', 'geschlecht-praxis', 'inhaber-angestellte', 'heimtiere', 'tieraerzteschaft-deutschland', 'praxisschwerpunkte', 'heimtiermarkt', 'fachtieraerzte', 'oktoberfest', 'oktoberfest-preis', 'tierarzt-inflation', 'tierarzt-routinejahr', 'heimtiere-alle', 'heimtiere-dach', 'tierarztmangel', 'tierarztmangel-2000']
 const b = await starteChrome({ breite: 1440, hoehe: 1000, skala: 1 })
 let fehler = 0
 try {
