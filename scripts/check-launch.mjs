@@ -75,7 +75,8 @@ for (const p of inhaltsSeiten) {
     const titel = (html.match(/<title>([^<]*)<\/title>/) ?? [])[1]?.replace(/&amp;/g, '&') ?? ''
     const desc = (html.match(/<meta name="description" content="([^"]*)"/) ?? [])[1]?.replace(/&amp;/g, '&') ?? ''
     if ([...titel].length > 60) blocker.push(`${route(p)}: Titel mit ${[...titel].length} Zeichen über 60 – Google kürzt ihn.`)
-    if ([...desc].length > 160 || [...desc].length < 50) blocker.push(`${route(p)}: Beschreibung mit ${[...desc].length} Zeichen außerhalb 50–160.`)
+    // 155 statt 160: Google kürzt je nach Zeichenbreite schon ab etwa 155; die SEO-Prüfung vom 08.10.2026 legt 155 fest.
+    if ([...desc].length > 155 || [...desc].length < 50) blocker.push(`${route(p)}: Beschreibung mit ${[...desc].length} Zeichen außerhalb 50–155.`)
   }
   if (!/property="og:image"/.test(html) && !/name="robots" content="noindex/.test(html)) hinweise.push(`${route(p)}: kein og:image – beim Teilen auf LinkedIn erscheint nur eine graue Kachel.`)
 }

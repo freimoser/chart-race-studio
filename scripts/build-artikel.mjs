@@ -115,7 +115,9 @@ function markdown(text) {
       const [, alt, src] = bild
       let masse = ''
       try {
-        const kopfBytes = fs.readFileSync(path.join('public', ZIEL, src)).subarray(16, 24)
+        // WebP wird ausgeliefert (kleiner), die Maße stehen im PNG daneben, das der Screenshot-Lauf erzeugt.
+        const kopfBytes = fs.readFileSync(path.join('public', ZIEL, src.replace(/\.webp$/, '.png'))).subarray(16, 24)
+        if (!fs.existsSync(path.join('public', ZIEL, src))) throw new Error('fehlt')
         masse = ` width="${kopfBytes.readUInt32BE(0) / 2}" height="${kopfBytes.readUInt32BE(4) / 2}"`
       } catch { throw new Error(`Bild ${src} fehlt unter public/${ZIEL}/`) }
       html.push(`<figure><img src="${src}" alt="${esc(alt)}"${masse} loading="lazy" /><figcaption>${inline(alt)}</figcaption></figure>`)

@@ -8,7 +8,7 @@ suchbegriffe: wie viele tierärzte gibt es in deutschland, anzahl tierärzte deu
 stand: 2026-09-23
 bereit: ja
 ---
-Ende 2025 waren in Deutschland **34.476 Tierärztinnen und Tierärzte tätig**, 71,7 Prozent davon Frauen. Mitglied einer Tierärztekammer waren **46.089** – die Differenz sind Kammermitglieder, die nicht tierärztlich tätig sind, etwa im Ruhestand. In den Praxen arbeiteten **12.125 Angestellte** und **11.216 Inhaberinnen und Inhaber**; seit 2024 sind die Angestellten damit erstmals in der gesamtdeutschen Statistik die größere Gruppe.
+Ende 2025 waren in Deutschland **34.476 Tierärztinnen und Tierärzte tätig**, 72 Prozent davon Frauen. Mitglied einer Tierärztekammer waren **46.089** – die Differenz sind Kammermitglieder, die nicht tierärztlich tätig sind, etwa im Ruhestand. In den Praxen arbeiteten **12.125 Angestellte** und **11.216 Inhaberinnen und Inhaber**; seit 2024 sind die Angestellten damit erstmals in der gesamtdeutschen Statistik die größere Gruppe.
 
 ## Das Wichtigste in Kürze
 
@@ -62,7 +62,7 @@ Rund 10.000 Tierarztpraxen und Tierkliniken nennt der Tierärzte Atlas Deutschla
 
 ### Wie viel Prozent der Tierärzte sind weiblich?
 
-71,7 Prozent der tierärztlich Tätigen waren Ende 2025 Frauen. Unter den angestellten Tierärztinnen und Tierärzten ist der Anteil laut Tierärzte Atlas mit 82 Prozent deutlich höher als unter den Selbstständigen mit 58 Prozent.
+72,0 Prozent der tierärztlich Tätigen waren Ende 2025 Frauen, so die korrigierte Statistik der Kammer; ihre Pressemitteilung nannte 71,7 Prozent. Wie sich der Anteil seit 2002 entwickelt hat, zeigt der Artikel [Frauenanteil in der Tiermedizin](frauenanteil-tiermedizin.html). Unter den angestellten Tierärztinnen und Tierärzten ist der Anteil laut Tierärzte Atlas mit 82 Prozent deutlich höher als unter den Selbstständigen mit 58 Prozent.
 
 ### Seit wann gibt es mehr angestellte Tierärzte als Praxisinhaber?
 

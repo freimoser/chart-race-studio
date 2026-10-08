@@ -88,7 +88,7 @@ for (const f of fs.existsSync(AD) ? fs.readdirSync(AD).filter((x) => /^anleitung
   const text = roh.replace(/^---[\s\S]*?\n---\n/, '')
   const beschreibung = (roh.match(/^beschreibung: (.*)$/m) ?? [])[1] ?? ''
   if (!/^art: anleitung$/m.test(roh)) melde('mangel', `Anleitung ${f}`, 'Kopf braucht „art: anleitung“')
-  if (beschreibung.length > 160) melde('mangel', `Anleitung ${f}`, `Beschreibung mit ${beschreibung.length} Zeichen über 160`)
+  if (beschreibung.length > 155) melde('mangel', `Anleitung ${f}`, `Beschreibung mit ${beschreibung.length} Zeichen über 155`)
   for (const pflicht of ['## Das Wichtigste in Kürze', '## Schritt für Schritt', '## Häufige Fragen']) {
     if (!text.includes(pflicht)) melde('mangel', `Anleitung ${f}`, `Abschnitt „${pflicht.slice(3)}“ fehlt`)
   }
@@ -105,7 +105,7 @@ for (const f of entwuerfe) {
   mitArtikel.add(nr)
   const wo = `Artikel ${f}`
   if (!f.startsWith(String(nr).padStart(2, '0') + '-')) melde('mangel', wo, `Dateiname passt nicht zu post: ${kopf.post}`)
-  if ((kopf.beschreibung ?? '').length > 160) melde('mangel', wo, `Beschreibung mit ${kopf.beschreibung.length} Zeichen über 160 – Google schneidet ab`)
+  if ((kopf.beschreibung ?? '').length > 155) melde('mangel', wo, `Beschreibung mit ${kopf.beschreibung.length} Zeichen über 155 – Google schneidet ab`)
   if ([...(kopf.titel ?? '')].length > 60) melde('mangel', wo, `Titel mit ${[...kopf.titel].length} Zeichen über 60 – Google kürzt bei rund 60`)
   const erster = text.trim().split(/\n{2,}/)[0] ?? ''
   if (!/\d/.test(erster)) melde('mangel', wo, 'erster Absatz ohne Zahl – er soll die Frage beantworten')

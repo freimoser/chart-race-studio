@@ -123,6 +123,14 @@ export default function App() {
             {tab === 'export' && <ExportPanel />}
           </div>
           <footer className="border-t border-line px-4 py-3 text-xs leading-relaxed text-ink-faint lg:py-2 lg:text-[11px] lg:leading-snug">
+            <span className="mb-1.5 block">
+              Das Studio macht aus einer Tabelle ein animiertes Diagramm: ein Bar Race, in dem Balken die Plätze tauschen, ein
+              Line Race, in dem Linien über die Zeit wachsen, Säulen und Linie kombiniert oder eine animierte Welt- und
+              Deutschlandkarte. Heraus kommt ein MP4 in 16:9, 1:1, 4:5 oder 9:16, etwa für LinkedIn oder Präsentationen.
+              Tabellen aus Excel, CSV oder ODS; wie sie aussehen müssen, steht im{' '}
+              <a className="underline hover:text-ink" href={wurzel('datenformat/')}>Datenformat</a>. Alle Grafiken von{' '}
+              <a className="underline hover:text-ink" href={wurzel()}>Tiermedizin in Zahlen</a> sind hier entstanden, jedes Beispiel lässt sich öffnen und mit eigenen Zahlen nachbauen.
+            </span>
             Läuft komplett im Browser, keine Daten verlassen das Gerät. Diagramm-Animation mit{' '}
             <a className="underline hover:text-ink" href="https://github.com/hatemhosny/racing-bars" target="_blank" rel="noreferrer">racing-bars</a> (MIT). Open Source unter MIT.
             <br />
@@ -133,6 +141,8 @@ export default function App() {
             <a className="underline hover:text-ink" href={wurzel('datenformat/')}>Datenformat</a>
             {' · '}
             <a className="underline hover:text-ink" href={wurzel('artikel/datenherkunft.html')}>Datenherkunft</a>
+            {' · '}
+            <a className="underline hover:text-ink" href={wurzel('ueber-das-projekt.html')}>Über das Projekt</a>
             {' · '}
             <a className="underline hover:text-ink" href={wurzel('impressum.html')}>Impressum</a>
             {' · '}

@@ -23,7 +23,7 @@ Eine animierte Weltkarte braucht nur **eine Tabelle: in der ersten Spalte das Ja
 
 ### 1. Die Tabelle anlegen
 
-![Die Vorlage Weltkarte: Jahr in der ersten Spalte, sechs Länder in gemischter Schreibweise, zwei Summenspalten rechts](anleitung/01-tabelle.png)
+![Die Vorlage Weltkarte: Jahr in der ersten Spalte, sechs Länder in gemischter Schreibweise, zwei Summenspalten rechts](anleitung/01-tabelle.webp)
 
 In Excel, Numbers, LibreOffice oder Google Tabellen: oben die Spaltenköpfe, darunter eine Zeile je Jahr. In die Zellen gehört nur die Zahl, die Einheit steht im Spaltenkopf in Klammern. Eine leere Zelle bedeutet „nicht erhoben“ und wird überbrückt, eine 0 wird als echter Wert gezeichnet. Keine Formeln, keine verbundenen Zellen, keine Summenzeile unten.
 
@@ -31,25 +31,25 @@ Die Vorlage oben zeigt den Hundeanteil an allen Hunden und Katzen für sechs Lä
 
 ### 2. Die Datei ins Studio laden
 
-![Spaltenzuordnung nach dem Laden: Zeitspalte „Jahr“, acht Spalten erkannt, 27 Perioden von 2000 bis 2026](anleitung/02-datei-laden.png)
+![Spaltenzuordnung nach dem Laden: Zeitspalte „Jahr“, acht Spalten erkannt, 27 Perioden von 2000 bis 2026](anleitung/02-datei-laden.webp)
 
 Im [Studio](../studio/) unter **Daten → Eigene Daten** die Datei hineinziehen oder „Datei wählen“ klicken. Gelesen werden Excel (`.xlsx`, `.xls`), LibreOffice (`.ods`) und CSV mit Komma, Semikolon oder Tabulator als Trennzeichen. Das Studio erkennt die Zeitspalte selbst und meldet, wie viele Jahre und Spalten es gefunden hat.
 
 ### 3. Prüfen, ob jedes Land erkannt wurde
 
-![Kartenabgleich: Weltkarte erkannt, sechs von sechs Ländern zugeordnet, zwei Summenspalten als Mini-Linie](anleitung/03-kartenabgleich.png)
+![Kartenabgleich: Weltkarte erkannt, sechs von sechs Ländern zugeordnet, zwei Summenspalten als Mini-Linie](anleitung/03-kartenabgleich.webp)
 
 Unter **Gestaltung** als Diagrammtyp **Karte** wählen. Im Reiter Daten erscheint dann der **Kartenabgleich**: Er zeigt, welche Karte erkannt wurde – Welt oder deutsche Bundesländer – und welche Spalten keiner Fläche zugeordnet werden konnten. Steht dort ein Land, ist entweder der Name unbekannt oder das Land zu klein für die Karte, etwa Malta oder Singapur. Kleinstaaten zählen trotzdem in der Stufenzählung mit.
 
 ### 4. Farbstufen und Beschriftung einstellen
 
-![Gestaltung der Karte: Kipppunkt 50, unten „Katzen“, oben „Hunde“, Überschrift „Länder je Stufe“](anleitung/04-gestaltung.png)
+![Gestaltung der Karte: Kipppunkt 50, unten „Katzen“, oben „Hunde“, Überschrift „Länder je Stufe“](anleitung/04-gestaltung.webp)
 
 Bei Anteilen, bei denen die Seite die Aussage ist, **„Farbstufen um einen Kipppunkt“** einschalten, den Kipppunkt setzen und beide Seiten benennen. Die Karte zeigt dann fünf Stufen: deutlich und leicht darüber, etwa gleich, leicht und deutlich darunter. Bei allen anderen Werten – Einwohner, Tierärzte, Umsatz – bleibt der Schalter aus. Dann färbt ein stufenloser Verlauf ab 0, und das Seitenpanel zeigt eine Rangliste. Titel, Untertitel und Quelle stehen unter **Gestaltung → Texte**.
 
 ### 5. Abspielen und als Video exportieren
 
-![Das fertige Bild für 2026 im Format 1:1: Karte, Länder je Stufe und die weltweite Summe als Mini-Linie](anleitung/05-ergebnis.png)
+![Das fertige Bild für 2026 im Format 1:1: Karte, Länder je Stufe und die weltweite Summe als Mini-Linie](anleitung/05-ergebnis.webp)
 
 Mit der Wiedergabe unter der Vorschau lässt sich jedes Jahr ansteuern. Unter **Export** wird das Video im gewählten Format erzeugt: 16:9 für YouTube und Präsentationen, 1:1 oder 4:5 für LinkedIn- und Instagram-Posts, 9:16 für Stories und Reels. Die Farbskala bleibt über alle Jahre fest, damit eine Veränderung auch als Veränderung zu sehen ist.
 

@@ -6,7 +6,9 @@
  *   npm run dev            (in einem zweiten Terminal)
  *   node scripts/screenshots-anleitung.mjs
  *
- * Ergebnis: public/beitrag/anleitung/*.png in doppelter Auflösung.
+ * Ergebnis: public/beitrag/anleitung/*.png in doppelter Auflösung. Ausgeliefert wird WebP (halb so groß):
+ * danach je Bild eine .webp daneben erzeugen, z. B. mit Python/Pillow (quality 88). Die Maße liest
+ * build-artikel.mjs weiter aus dem PNG.
  */
 import fs from 'node:fs'
 import path from 'node:path'

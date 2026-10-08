@@ -58,6 +58,8 @@ Drei Dinge zeigt sie aber doch:
 - **Mehr Köpfe heißt nicht mehr Stunden.** Laut Tierärzte Atlas arbeitete 2023 jede zweite Tierärztin in Teilzeit, aber nur 13 Prozent der Männer. Unter den Angestellten sind 82 Prozent Frauen.
 - **In der Nutztiermedizin wird es tatsächlich dünner.** Die Zahl der Inhaber mit reiner Nutz- oder Großtierpraxis fiel von 1.859 im Jahr 1991 auf 971 im Jahr 2018, bevor die Kammer die Kategorien änderte.
 
+Für Tierhalter zeigt sich die Lage auch im Preis: Seit der neuen Gebührenordnung 2022 liegen die Tierarztpreise deutlich über der Inflation, mehr dazu im Artikel [Tierarztkosten im Vergleich zur Inflation](tierarztkosten-inflation.html).
+
 ## Was die Zahl nicht sagt
 
 - **Es ist eine Rechengröße, kein Versorgungsmaß.** Nicht jede Inhaberin und jeder Inhaber behandelt Hunde und Katzen: 2025 gaben 1.932 eine reine Nutztier- oder Pferdepraxis an. Und Hunde und Katzen sind nicht die einzigen Patienten, dazu kommen 4,4 Millionen Kleintiere.

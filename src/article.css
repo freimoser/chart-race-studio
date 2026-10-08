@@ -48,7 +48,7 @@ h2[id], h3[id], [id] { scroll-margin-top: 4.5rem; }
 
 footer.seite { border-top: 1px solid var(--brand-line); background: var(--brand-surface); }
 footer.seite .wrap { padding: 1.5rem 1.25rem 2rem; font-size: 0.8125rem; }
-footer.seite p { margin: 0.4rem 0; color: var(--brand-ink-faint); }
+footer.seite p { margin: 0.4rem 0; color: var(--brand-ink-muted); }
 footer.seite a { color: var(--brand-ink-muted); }
 footer.seite .recht { margin-top: 0.9rem; }
 h1 { font-size: 2rem; line-height: 1.2; letter-spacing: -0.02em; margin: 2rem 0 0.75rem; }
@@ -59,7 +59,7 @@ ul, ol { padding-left: 1.3rem; }
 li { margin: 0.3rem 0; }
 p { margin: 0.75rem 0; }
 .lead { font-size: 1.1rem; color: var(--brand-ink); }
-.meta { font-size: 0.8125rem; color: var(--brand-ink-faint); margin-top: 0.5rem; }
+.meta { font-size: 0.8125rem; color: var(--brand-ink-muted); margin-top: 0.5rem; }
 a { color: var(--brand-primary); }
 strong { color: var(--brand-ink); }
 table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: 0.9375rem; }
@@ -72,7 +72,7 @@ td { color: var(--brand-ink-muted); }
 blockquote { margin: 1.25rem 0; padding-left: 1rem; border-left: 3px solid var(--brand-primary); font-style: italic; color: var(--brand-ink); }
 .faq dt { font-weight: 600; color: var(--brand-ink); margin-top: 1.25rem; }
 .faq dd { margin: 0.35rem 0 0; color: var(--brand-ink-muted); }
-footer.site { border-top: 1px solid var(--brand-line); margin-top: 3rem; padding-top: 1.25rem; font-size: 0.8125rem; color: var(--brand-ink-faint); }
+footer.site { border-top: 1px solid var(--brand-line); margin-top: 3rem; padding-top: 1.25rem; font-size: 0.8125rem; color: var(--brand-ink-muted); }
 
 .warnung { background: var(--brand-accent-soft, #fdf3e3); border-left: 3px solid var(--brand-accent); padding: 0.75rem 1rem; border-radius: 0; color: var(--brand-ink); font-size: 0.9375rem; }
 
@@ -87,7 +87,7 @@ figure img { display: block; max-width: 100%; height: auto; border-radius: var(-
 .liste li:last-child { border-bottom: 1px solid var(--brand-line); }
 .liste a { display: inline-block; margin-bottom: 0.15rem; font-size: 1.0625rem; font-weight: 600; color: var(--brand-ink); text-decoration: none; }
 .liste a:hover { color: var(--brand-primary); text-decoration: underline; text-underline-offset: 3px; }
-figcaption { font-size: 0.8125rem; color: var(--brand-ink-faint); margin-top: 0.4rem; }
+figcaption { font-size: 0.8125rem; color: var(--brand-ink-muted); margin-top: 0.4rem; }
 code { font-size: 0.9em; background: var(--brand-surface-2); padding: 0.05em 0.3em; border-radius: 4px; }
 
 /* Codeblöcke (Beispieltabellen, Prompt) und Unternavigation im Bereich Datenformat */
@@ -144,7 +144,7 @@ pre code { background: none; padding: 0; font-size: inherit; white-space: pre; }
 /* Einwilligungsbanner (nur mit konfiguriertem Google Analytics, siehe lib/consent.ts) */
 .einwilligung { position: fixed; inset: auto 0 0 0; z-index: 50; border-top: 1px solid var(--brand-line);
   background: var(--brand-surface); box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.10); padding: 1rem 0; }
-.einwilligung .wrap { display: flex; flex-direction: column; gap: 0.9rem; }
+.einwilligung .wrap { display: flex; flex-direction: column; gap: 0.9rem; padding-top: 0; padding-bottom: 0; }
 .einwilligung p { margin: 0.2rem 0; font-size: 0.85rem; line-height: 1.55; color: var(--brand-ink-muted); }
 .einwilligung p strong { color: var(--brand-ink); font-size: 0.9rem; }
 .einwilligung a { color: inherit; text-decoration: underline; }
@@ -156,3 +156,16 @@ pre code { background: none; padding: 0; font-size: inherit; white-space: pre; }
   .einwilligung .wahl .knopf { flex: none; }
 }
 footer.seite button[data-consent-reset] { background: none; border: 0; padding: 0; font: inherit; color: inherit; text-decoration: underline; cursor: pointer; }
+
+/* Video auf der Seite „Über das Projekt“ */
+figure.video { margin: 1.5rem 0; }
+figure.video video { display: block; width: 100%; height: auto; border-radius: 12px; background: var(--brand-surface); box-shadow: 0 0 0 1px var(--brand-line); }
+
+/* Einwilligungsbanner auf dem Telefon kompakter: weniger Höhe über dem Inhalt (SEO-Prüfung 08.10.2026) */
+@media (max-width: 639px) {
+  .einwilligung { padding: 0.6rem 0; }
+  .einwilligung .wrap { gap: 0.5rem; }
+  .einwilligung p { font-size: 0.75rem; line-height: 1.4; margin: 0.1rem 0; }
+  .einwilligung p strong { font-size: 0.8125rem; }
+  .einwilligung .wahl .knopf { min-height: 2.25rem; padding: 0.35rem 0.8rem; }
+}

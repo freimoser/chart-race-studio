@@ -4,6 +4,16 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### SEO-Prüfung und Korrekturen (08.10.2026, Branch `seo-fixes-2026-10-08`)
+
+- **Autorenseite `/ueber-das-projekt.html`:** wer schreibt, Methode, Korrekturweg, Erklärvideo (720p, 2 MB, mit Textbeschreibung), AboutPage-, Person- und VideoObject-Schema. Autor in allen Artikeln verlinkt; Person-Schema überall mit eigener URL und LinkedIn-Profil (`sameAs`). Link im Fuß jeder Seite.
+- **Startseite und Archiv entdoppelt** (72 % → 24 % gleicher Text): Startseite zeigt das Neueste, fünf Titel und die Themen; `/beitrag/` ist das Archiv nach Thema mit Einleitung je Thema und Ankern.
+- **Kannibalisierung aufgelöst:** Suchbegriffe von Post 2, 6, 8 und 28 getrennt; die Ketten-Übersicht heißt „Tierarztketten in Deutschland: Liste aller Gruppen“.
+- **Belege:** Ketten-Übersicht mit verlinkten Quellen je Gruppe, abgerufen am 08.10.2026 (Abweichung bei Veternicum offen benannt). Datenherkunft: veralteter Einstieg und der Grundsatz „Lücke statt Schätzung“ auf die Regel „Lückenlose Reihen“ umgestellt, Abschnitte für `tierarztmangel` und `oktoberfest-preis` ergänzt. Frauenanteil in Artikel 4 an die korrigierte Kammerstatistik angeglichen (72,0 % statt 71,7 % aus der Pressemitteilung, beides genannt).
+- **Studio:** fester Beschreibungstext unter der App, WebApplication-Schema.
+- **Technik:** Beschreibungen höchstens 155 Zeichen (Prüfungen `check:launch` und `check:content` angepasst, vier Texte gekürzt); lastmod für alle 24 Sitemap-Adressen über `<meta name="dcterms.modified">`; Kontrast der Metazeilen (Barrierefreiheit); Anleitungsbilder als WebP (halb so groß); Einwilligungsbanner auf dem Telefon kompakter; `llms.txt` mit Autorenseite.
+- **Offen:** Blockierzeit der Startseite (Grafik lädt alle Datensätze in einem Bündel), Lighthouse-Leistung trotzdem ≥ 90.
+
 ### Tierarzt gegen Inflation bis 2026 (07.10.2026)
 
 - Kopfgrafik `tierarzt-inflation` reicht jetzt bis 2026: deutscher Index und Inflation amtlich (2026 vorläufig), Niederlande 2025/2026 aus der neuen Eurostat-Tabelle `prc_hicp_minr` (ECOICOP 2, Position CP0945; Jahresmittel 2025 deckungsgleich mit der alten Reihe), Praxisumsatz 2025/2026 mit dem Wachstum von 2024 geschätzt. Artikel, Post, Datenherkunft angepasst; 2026: DE +54 %, NL +84 %, Umsatz +152 % (geschätzt), Inflation +42 %.

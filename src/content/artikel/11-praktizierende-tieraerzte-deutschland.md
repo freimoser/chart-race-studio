@@ -2,7 +2,7 @@
 post: 11
 slug: praktizierende-tieraerzte-deutschland
 titel: Praktizierende Tierärzte in Deutschland – und wer fehlt
-beschreibung: 2025 arbeiteten 23.341 Tierärztinnen und Tierärzte in Praxen und 11.135 außerhalb. Der Anteil außerhalb der Praxis sank seit 1991 von 39,4 auf 32,3 Prozent.
+beschreibung: 2025 arbeiteten 23.341 Tierärztinnen und Tierärzte in Praxen und 11.135 außerhalb. Der Anteil außerhalb sank seit 1991 von 39,4 auf 32,3 Prozent.
 frage: Wie viele praktizierende Tierärzte gibt es in Deutschland?
 suchbegriffe: wie viele praktizierende tierärzte gibt es in deutschland, statistik tierärzte deutschland, tierärzte anzahl deutschland
 stand: 2026-09-23

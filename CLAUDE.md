@@ -36,6 +36,10 @@ Diese Regeln stammen aus Fehlern, die schon passiert sind. Vor jeder Auswertung,
 
 ## Website
 
+- SEO-Grenzen: Titel höchstens 60, Meta-Description höchstens 155 Zeichen (geprüft von `check:launch` und
+  `check:content`). Jede Seite verlinkt den Autor auf `/ueber-das-projekt.html`; handgeschriebene Seiten tragen
+  `<meta name="dcterms.modified">` für das lastmod der Sitemap. Quellen in Artikeln verlinken, mit Abrufdatum.
+
 - Google Analytics nur über `VITE_GA_ID` und Einwilligung (`src/lib/consent.ts`), **nie** als festes Snippet im
   `<head>` (§ 25 TDDDG). Vor jedem Deploy `npm run check:launch`.
 - Vor dem Push: `npm run build`, `npm test`, `npm run check:links`; bei Layout `npm run check:mobil`.

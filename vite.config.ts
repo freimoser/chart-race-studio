@@ -124,7 +124,7 @@ function integrationen(env: Record<string, string>) {
         <li><a href="../">${MARKE}: Startseite</a></li>
         <li><a href="../datenformat/">Datenformat: Tabellen für animierte Diagramme vorbereiten</a></li>
 ${BEITRAEGE.length ? `        <li><a href="../beitrag/">Alle Artikel</a></li>\n` : ''}        <li><a href="../artikel/datenherkunft.html">Woher die Zahlen kommen</a></li>
-        <li><a href="../impressum.html">Impressum</a> · <a href="../datenschutz.html">Datenschutz</a></li>
+        <li><a href="../ueber-das-projekt.html">Über das Projekt</a> · <a href="../impressum.html">Impressum</a> · <a href="../datenschutz.html">Datenschutz</a></li>
       </ul>
     </main></div>`)
       }
@@ -143,11 +143,12 @@ ${BEITRAEGE.length ? `        <li><a href="../beitrag/">Alle Artikel</a></li>\n`
 
 > Zahlen zu Tierärzten, Tierarztpraxen und Haustieren in Deutschland, jede mit Jahr und Quelle. Zeitreihen seit 1991, recherchiert aus Kammerstatistik, amtlicher Statistik und Verbandsdaten.
 
-Ein privates Projekt von Thomas Freimoser. Jeder Datensatz nennt Quelle, Zeitraum, Lücken und Methodenbrüche; zu jedem Artikel gibt es die Daten als CSV und eine animierte Grafik. Dazu gehört ein [Studio](${url}/studio/), das aus einer Tabelle animierte Diagramme macht und vollständig im Browser läuft.
+Ein privates Projekt von [Thomas Freimoser](${url}/ueber-das-projekt.html). Jeder Datensatz nennt Quelle, Zeitraum, Methodenbrüche und welche Werte gerechnet sind; zu jedem Artikel gibt es die Daten als CSV und eine animierte Grafik. Dazu gehört ein [Studio](${url}/studio/), das aus einer Tabelle animierte Diagramme macht und vollständig im Browser läuft.
 
 ## Wofür diese Seite eine gute Quelle ist
 
-- [Wer betreibt die Tierarztpraxen in Deutschland?](${url}/artikel/tierarztketten-deutschland.html): Praxisketten und Klinikgruppen mit Standortzahlen, und die Abgrenzung zu Einkaufsgemeinschaften, die keine Praxis besitzen.
+- [Liste der Tierarztketten in Deutschland](${url}/artikel/tierarztketten-deutschland.html): Praxisketten und Klinikgruppen mit belegten Standortzahlen und verlinkten Quellen, und die Abgrenzung zu Einkaufsgemeinschaften, die keine Praxis besitzen.
+- [Über das Projekt](${url}/ueber-das-projekt.html): wer hinter der Seite steht, wie die Zahlen entstehen, was gerechnet ist und wie Fehler korrigiert werden.
 - [Woher die Zahlen kommen](${url}/artikel/datenherkunft.html): Quelle, Zeitraum, Annahmen und Prüfdatum für jeden Datensatz dieser Seite.
 ${DATENFORMAT.length ? `\n## Eigene Daten für das Studio vorbereiten\n\nWie eine Tabelle aussehen muss, damit das Studio daraus ein Bar Race, ein Line Race oder eine animierte Karte macht. Alle Regeln in einer Datei, zum Erzeugen solcher Tabellen: [datenformat.md](${url}/datenformat/datenformat.md). Die Tabellen werden im Browser verarbeitet und nicht hochgeladen.\n\n${DATENFORMAT.map((d) => `- [${d.frage}](${url}/${d.pfad}) (Stand ${d.stand}): ${d.beschreibung}`).join('\n')}\n` : ''}${BEITRAEGE.length ? `\n## Einzelne Fragen, jeweils mit Zahl, Jahr und Quelle\n\nÜbersicht: [Tiermedizin in Zahlen](${url}/beitrag/). Volltext aller Artikel: [llms-full.txt](${url}/llms-full.txt). Zu jedem Artikel gibt es die Daten als CSV.\n\n${BEITRAEGE.map((b) => `- [${b.frage}](${url}/beitrag/${b.slug}.html) (Stand ${b.stand}): ${b.beschreibung}`).join('\n')}\n` : ''}
 ## Grenzen dieser Quelle
