@@ -4,6 +4,14 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Eingebettete Grafik lädt nur noch ihren Datensatz (08.10.2026, Branch `grafik-buendel`)
+
+- **Vorher** lud jede Grafik in Artikeln und auf der Startseite alle 21 Datensätze, die Welt- und Deutschlandkarte und racing-bars, bevor sie das erste Bild zeigte: 300 KB (gzip). **Jetzt** 127 KB plus 2–10 KB für den einen Datensatz. Kartendaten und racing-bars kommen nur noch, wenn die Grafik eine Karte oder ein Balkenrennen ist.
+- **Datensätze als Dateien:** Der Build legt je freigegebenem Datensatz `grafik-daten/<id>.json` an (15 Dateien). Gesperrte Datensätze bekommen keine Datei, dieselbe Regel wie für die CSV-Downloads. Die Regel steht jetzt einmal in `src/content/freigabe-regel.ts`, Seite, Build und Livegang-Prüfung lesen sie dort.
+- **Code:** Summenspalten in eigener Datei `summen.ts` (das Line Race zog darüber die Kartendaten mit), Karte per `import()` nachgeladen, Freigabe-Regel ohne Datensätze in `freigabe-basis.ts`. Studio, Diagramm-Code und Videoexport unverändert.
+- **Neue Prüfungen:** `check:launch` meldet einen Blocker, wenn eine eingebettete Grafik keine Datei hat oder eine Datei für einen gesperrten Datensatz im Build liegt (Gegentest mit beiden Fehlern). `npm run check:grafiken` öffnet jede eingebettete Grafik in Chrome und prüft, dass sie zeichnet: 16 von 16, Gegenprobe greift. Glätteprüfung über 16 Datensätze: 0 Sprünge.
+- Post 5 (Tierarztmangel) im Redaktionsplan auf „nächster“.
+
 ### SEO-Prüfung und Korrekturen (08.10.2026, Branch `seo-fixes-2026-10-08`)
 
 - **Autorenseite `/ueber-das-projekt.html`:** wer schreibt, Methode, Korrekturweg, Erklärvideo (720p, 2 MB, mit Textbeschreibung), AboutPage-, Person- und VideoObject-Schema. Autor in allen Artikeln verlinkt; Person-Schema überall mit eigener URL und LinkedIn-Profil (`sameAs`). Link im Fuß jeder Seite.
@@ -12,7 +20,7 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 - **Belege:** Ketten-Übersicht mit verlinkten Quellen je Gruppe, abgerufen am 08.10.2026 (Abweichung bei Veternicum offen benannt). Datenherkunft: veralteter Einstieg und der Grundsatz „Lücke statt Schätzung“ auf die Regel „Lückenlose Reihen“ umgestellt, Abschnitte für `tierarztmangel` und `oktoberfest-preis` ergänzt. Frauenanteil in Artikel 4 an die korrigierte Kammerstatistik angeglichen (72,0 % statt 71,7 % aus der Pressemitteilung, beides genannt).
 - **Studio:** fester Beschreibungstext unter der App, WebApplication-Schema.
 - **Technik:** Beschreibungen höchstens 155 Zeichen (Prüfungen `check:launch` und `check:content` angepasst, vier Texte gekürzt); lastmod für alle 24 Sitemap-Adressen über `<meta name="dcterms.modified">`; Kontrast der Metazeilen (Barrierefreiheit); Anleitungsbilder als WebP (halb so groß); Einwilligungsbanner auf dem Telefon kompakter; `llms.txt` mit Autorenseite.
-- **Offen:** Blockierzeit der Startseite (Grafik lädt alle Datensätze in einem Bündel), Lighthouse-Leistung trotzdem ≥ 90.
+- **Offen:** Blockierzeit der Startseite (Grafik lädt alle Datensätze in einem Bündel); erledigt im Eintrag darüber.
 
 ### Tierarzt gegen Inflation bis 2026 (07.10.2026)
 

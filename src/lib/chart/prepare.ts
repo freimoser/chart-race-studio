@@ -4,7 +4,7 @@ import type { ChartSettings } from '../settings'
 import { paletteColor } from '../palettes'
 import type { ChartInput } from './types'
 import type { Rect } from '../layout'
-import { istSumme } from './geo'
+import { istSumme } from './summen'
 
 /**
  * Baut aus Datensatz + Einstellungen die Eingabe für die Chart-Renderer.

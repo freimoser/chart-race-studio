@@ -2,7 +2,8 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { Pause, Play, RotateCcw } from 'lucide-react'
 import { Buehne } from '@/components/Buehne'
 import { PreviewController, usePreview } from '@/lib/preview/controller'
-import { SICHTBARE_SAMPLES } from '@/content/freigabe'
+import { datensatzFreigegeben } from '@/content/freigabe-basis'
+import type { SampleDataset } from '@/lib/data/types'
 import { beispielLaden } from '@/lib/beispiel'
 import { DEFAULT_SETTINGS, type ChartType } from '@/lib/settings'
 import type { FormatId, VideoFormat } from '@/lib/formats'
@@ -30,8 +31,26 @@ const RECHENFORMAT: Record<'4:5' | '16:9', VideoFormat> = {
 // Name („Angestellte Tierärzti…“) ist schlimmer als eine etwas schmalere Zeichenfläche.
 const SCHMAL_DIAGRAMM = { minPlotAnteil: 0.33 }
 
+/**
+ * Lädt genau den einen Datensatz der Grafik: im Build als eigene Datei grafik-daten/<id>.json (erzeugt in
+ * vite.config.ts), lokal aus dem Quelltext. So steht nicht jede eingebettete Grafik mit allen Datensätzen
+ * im Bündel. undefined = lädt noch, null = nicht freigegeben oder nicht vorhanden.
+ */
+function useDatensatz(id: string): SampleDataset | null | undefined {
+  const [sample, setSample] = useState<SampleDataset | null | undefined>(undefined)
+  useEffect(() => {
+    let aktiv = true
+    const laden: Promise<SampleDataset | null> = !datensatzFreigegeben(id) ? Promise.resolve(null)
+      : import.meta.env.DEV ? import('@/samples').then((m) => m.SAMPLES.find((x) => x.id === id) ?? null)
+        : fetch(`${import.meta.env.BASE_URL}grafik-daten/${encodeURIComponent(id)}.json`).then((r) => (r.ok ? r.json() : null))
+    laden.then((x) => { if (aktiv) setSample(x) }, () => { if (aktiv) setSample(null) })
+    return () => { aktiv = false }
+  }, [id])
+  return sample
+}
+
 export function Grafik({ id, art }: { id: string; art?: ChartType }) {
-  const sample = SICHTBARE_SAMPLES.find((s) => s.id === id)
+  const sample = useDatensatz(id)
   const [format, setFormat] = useState<FormatId>(() => formatFuer(window.innerWidth))
   const controller = useMemo(() => new PreviewController(), [])
   const snap = usePreview(controller)
@@ -79,6 +98,8 @@ export function Grafik({ id, art }: { id: string; art?: ChartType }) {
 
   useEffect(() => controller.subscribe(() => { if (controller.getSnapshot().playing) setLief(true) }), [controller])
 
+  // Während der Datensatz lädt: leere Fläche statt Hinweis, sonst blitzt „nicht freigegeben“ kurz auf.
+  if (sample === undefined) return <div className="h-full" aria-busy="true" />
   if (!sample || !geladen) {
     return <div className="flex h-full items-center justify-center p-6 text-center text-sm text-ink-muted">Diese Grafik ist noch nicht freigegeben.</div>
   }

@@ -16,7 +16,8 @@
     "artikel": "node scripts/build-artikel.mjs --entwuerfe",
     "check:glaette": "node scripts/pruefe-glaette.mjs",
     "check:links": "node scripts/pruefe-verlinkung.mjs",
-    "check:mobil": "node scripts/pruefe-mobil.mjs"
+    "check:mobil": "node scripts/pruefe-mobil.mjs",
+    "check:grafiken": "node scripts/pruefe-grafiken.mjs"
   },
   "dependencies": {
     "@ffmpeg/ffmpeg": "^0.12.15",

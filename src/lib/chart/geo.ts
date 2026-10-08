@@ -1,6 +1,7 @@
 import geoDe from '../../assets/bundeslaender.json'
 import geoWelt from '../../assets/welt.json'
 import laendernamen from '../../assets/laendernamen.json'
+import { istSumme } from './summen'
 
 /**
  * Zuordnung von Tabellenspalten zu Kartenflächen – die eine Stelle, an der der Datenstandard
@@ -13,16 +14,7 @@ export const KARTEN = {
   welt: (geoWelt as { features: GeoFeature[] }).features,
 }
 
-/** Spalten mit diesem Präfix sind Summen: nicht auf der Karte, sondern als Mini-Linie im Panel. */
-export const SUMMEN_PRAEFIX = /^\s*(summe|gesamt|total)\s*:\s*/i
-export const istSumme = (spalte: string) => SUMMEN_PRAEFIX.test(spalte)
-
-/** „Summe: Hunde (Mio.)“ -> { name: 'Hunde', einheit: 'Mio.' } */
-export function summenSpalte(spalte: string): { name: string; einheit: string } {
-  const rest = spalte.replace(SUMMEN_PRAEFIX, '').trim()
-  const m = rest.match(/^(.*?)\s*\(([^)]*)\)\s*$/)
-  return m ? { name: m[1].trim(), einheit: m[2].trim() } : { name: rest, einheit: '' }
-}
+export { SUMMEN_PRAEFIX, istSumme, summenSpalte } from './summen'
 
 const norm = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
   .replace(/ß/g, 'ss').replace(/&/g, 'and').replace(/[^a-z0-9]+/g, ' ').trim()

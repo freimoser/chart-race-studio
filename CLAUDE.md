@@ -41,4 +41,5 @@ Diese Regeln stammen aus Fehlern, die schon passiert sind. Vor jeder Auswertung,
   `<meta name="dcterms.modified">` für das lastmod der Sitemap. Quellen in Artikeln verlinken, mit Abrufdatum.
 - Google Analytics nur über `VITE_GA_ID` und Einwilligung (`src/lib/consent.ts`), **nie** als festes Snippet im
   `<head>` (§ 25 TDDDG). Vor jedem Deploy `npm run check:launch`.
-- Vor dem Push: `npm run build`, `npm test`, `npm run check:links`; bei Layout `npm run check:mobil`.
+- Vor dem Push: `npm run build`, `npm test`, `npm run check:links`; bei Layout `npm run check:mobil`; bei Änderungen
+  an der eingebetteten Grafik `npm run check:grafiken` (gegen `npm run preview`).

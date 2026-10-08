@@ -1,7 +1,7 @@
 import * as d3 from 'd3'
 import type { ChartHandle, ChartInput } from './types'
 import { formatValue } from '../data/numbers'
-import { istSumme, summenSpalte } from './geo'
+import { istSumme, summenSpalte } from './summen'
 import { createMeasurer, fontString } from '../layout'
 import { formatPeriod } from '../data/dates'
 
