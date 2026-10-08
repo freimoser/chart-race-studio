@@ -15,7 +15,7 @@ Je Inhaber:in kommen damit 2.291 Hunde und Katzen statt 1.655. Plus 38 %.
 Aber die Inhaber behandeln nicht allein. Die angestellten Tierärztinnen und Tierärzte in Praxen haben sich fast verdoppelt, von 6.346 auf 12.125.
 Je Kopf in der Praxis kommen heute 1.101 Hunde und Katzen. 2012 waren es 1.079. Plus 2 %.
 
-Gemessen an Köpfen gibt es also keinen Mangel. Knapp werden etwas anderes:
+Gemessen an Köpfen gibt es also keinen Mangel. Knapp wird etwas anderes:
 👉 Menschen, die eine Praxis führen und Notdienst und Nachfolge tragen
 👉 Arbeitszeit: Jede zweite Tierärztin arbeitet in Teilzeit, aber nur 13 % der Männer (Tierärzte Atlas 2023)
 👉 die Nutztierpraxis auf dem Land
