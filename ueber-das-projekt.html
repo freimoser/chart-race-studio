@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="de" data-brand="klar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Über Tiermedizin in Zahlen: wer schreibt und wie</title>
+    <meta name="description" content="Wer hinter Tiermedizin in Zahlen steht, woher die Zahlen kommen, was gerechnet ist und wie Fehler korrigiert werden. Privates Projekt von Thomas Freimoser." />
+    <meta name="dcterms.modified" content="2026-10-08" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="favicon-96.png" sizes="96x96" type="image/png" />
+    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Über Tiermedizin in Zahlen" />
+    <meta property="og:description" content="Ein privates Projekt von Thomas Freimoser: Zahlen zu Tierärzten, Praxen und Haustieren, jede mit Jahr und Quelle." />
+    <meta property="og:locale" content="de_DE" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"AboutPage","name":"Über Tiermedizin in Zahlen","inLanguage":"de-DE","dateModified":"2026-10-08","mainEntity":{"@type":"Person","@id":"https://tiermedizin-in-zahlen.org/ueber-das-projekt.html#thomas-freimoser","name":"Thomas Freimoser","url":"https://tiermedizin-in-zahlen.org/ueber-das-projekt.html","sameAs":["https://www.linkedin.com/in/thomas-freimoser"]},"about":{"@type":"WebSite","name":"Tiermedizin in Zahlen","url":"https://tiermedizin-in-zahlen.org/"},"video":{"@type":"VideoObject","name":"Tiermedizin in Zahlen in 60 Sekunden","description":"Erklärvideo: Viele Zahlen über die Tiermedizin, aber welche stimmen? Wie jede Zahl mit Jahr und Quelle geprüft wird und wie daraus animierte Grafiken entstehen.","thumbnailUrl":"https://tiermedizin-in-zahlen.org/video/erklaervideo-poster.webp","contentUrl":"https://tiermedizin-in-zahlen.org/video/erklaervideo-720.mp4","uploadDate":"2026-10-04","duration":"PT60S"}}</script>
+    <script type="module" src="/src/article.ts"></script>
+  </head>
+  <body>
+    <!--rahmen:kopf-->
+
+    <main class="wrap">
+      <article>
+        <p class="meta">Über das Projekt</p>
+        <h1>Wer hinter Tiermedizin in Zahlen steht</h1>
+        <p class="lead">
+          Tiermedizin in Zahlen ist ein privates Projekt von <strong>Thomas Freimoser</strong> aus München. Es
+          beantwortet Fragen zu Tierärztinnen und Tierärzten, Praxen und Haustieren in Deutschland mit Zahlen, die
+          jede eine Quelle und ein Jahr haben, und zeigt ihre Entwicklung als animierte Grafik. Es läuft privat und
+          gehört keinem Unternehmen.
+        </p>
+        <p class="meta">Stand 8. Oktober 2026 · <a href="https://www.linkedin.com/in/thomas-freimoser" rel="noopener me">Thomas Freimoser auf LinkedIn</a></p>
+
+        <figure class="video">
+          <video controls preload="none" playsinline width="1280" height="720" poster="video/erklaervideo-poster.webp" aria-describedby="video-text">
+            <source src="video/erklaervideo-720.mp4" type="video/mp4" />
+          </video>
+          <figcaption id="video-text">Das Projekt in 60 Sekunden, ohne Ton: Viele Schlagzeilen über die Tiermedizin, aber
+          welche Zahlen stimmen? Jede Zahl wird an ihrer Quelle nachgelesen und mit Jahr festgehalten. Daraus werden
+          Zeitreihen, etwa der Frauenanteil in der Tiermedizin oder Katzen gegen Hunde, und im Studio animierte
+          Grafiken.</figcaption>
+        </figure>
+
+        <h2>Warum es diese Seite gibt</h2>
+        <p>
+          Über die Tiermedizin kursieren viele Zahlen: Tierarztmangel, Praxisketten, Haustierboom, steigende Kosten.
+          Oft fehlt dabei, aus welchem Jahr eine Zahl stammt, wer sie erhoben hat und was sie eigentlich zählt.
+          Diese Seite trägt die Zahlen aus der Kammerstatistik, der amtlichen Statistik und von Verbänden zusammen,
+          legt sie als Zeitreihe nebeneinander und sagt bei jeder, was sie nicht sagt.
+        </p>
+        <p>
+          Thomas Freimoser ist kein Tierarzt und keine statistische Behörde. Die Seite wertet veröffentlichte
+          Statistiken aus und legt ihre Methode offen. Sie ersetzt keine amtliche Statistik und gibt keine
+          medizinische, rechtliche oder wirtschaftliche Beratung.
+        </p>
+
+        <h2>Wie die Zahlen entstehen</h2>
+        <ul>
+          <li><strong>Quelle und Jahr für jede Zahl.</strong> Jeder Artikel nennt seine Quellen, jeder Datensatz steht
+            mit Quelle, Zeitraum und Prüfdatum in der <a href="artikel/datenherkunft.html">Datenherkunft</a> und ist als
+            CSV herunterladbar.</li>
+          <li><strong>Mehrere Quellen statt einer.</strong> Wo eine Statistik nur einen Teil misst, etwa
+            Gebührensätze statt Rechnungen, kommen unabhängige Quellen daneben. Widersprechen sie sich, steht das im
+            Artikel.</li>
+          <li><strong>Gerechnetes ist gekennzeichnet.</strong> Fehlt für ein Jahr eine Zahl, wird sie zwischen
+            belegten Jahren gerechnet oder über eine verwandte Reihe fortgeschrieben, und der Artikel sagt, welche
+            Werte das sind. Methodenbrüche einer Quelle bleiben sichtbar.</li>
+          <li><strong>Prüfdatum.</strong> Amtliche Zahlen erscheinen jährlich, Unternehmensangaben ändern sich
+            laufend. Was älter als ein Jahr ist, wird vor der Wiederverwendung erneut an der Quelle geprüft.</li>
+        </ul>
+
+        <h2>Wie die Grafiken entstehen</h2>
+        <p>
+          Alle Grafiken entstehen im <a href="studio/">Studio</a> dieser Seite: Eine Tabelle wird zu einem Bar Race,
+          einem Line Race oder einer animierten Karte und lässt sich als MP4 speichern. Es läuft vollständig im
+          Browser, die Daten verlassen das Gerät nicht. Wie eine Tabelle dafür aussehen muss, steht im
+          <a href="datenformat/">Datenformat</a>. Was als Nächstes erscheint, zeigt der
+          <a href="studio/#redaktionsplan">Redaktionsplan</a>.
+        </p>
+
+        <h2>Fehler gefunden?</h2>
+        <p>
+          Wer eine Zahl anders kennt oder eine bessere Quelle hat, schreibt am schnellsten eine Nachricht über
+          <a href="https://www.linkedin.com/in/thomas-freimoser" rel="noopener">LinkedIn</a>; die E-Mail-Adresse steht im
+          <a href="impressum.html">Impressum</a>. Korrekturen werden im betroffenen Artikel und in der Datenherkunft
+          vermerkt, mit Datum.
+        </p>
+
+        <h2>Wo es weitergeht</h2>
+        <p>
+          <a href="beitrag/">Alle Artikel nach Thema</a> · <a href="artikel/tierarztketten-deutschland.html">Liste der Tierarztketten</a> ·
+          <a href="artikel/datenherkunft.html">Woher die Zahlen kommen</a>
+        </p>
+      </article>
+    </main>
+
+    <!--rahmen:fuss-->
+  </body>
+</html>

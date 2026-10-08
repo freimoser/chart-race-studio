@@ -438,6 +438,7 @@ export const SAMPLES: SampleDataset[] = [
     dataInfo: [
       "Dieselben Werte wie „Die Maß wird teurer, getrunken wird mehr“, nur ohne die Biermenge: Besucher als Säulen, Maßpreis und „Maß mit Inflation“ als Linien. Quellen, Berechnung und die vorläufigen Werte 2026 stehen dort und in der Datenherkunft.",
       "2020 und 2021 fiel die Wiesn wegen Corona aus; diese Jahre bleiben leer, nur die Inflation läuft weiter.",
+      "„Maß mit Inflation“ ist berechnet: der Maßpreis von 1985, fortgeschrieben mit dem Verbraucherpreisindex. 2026 ist vorläufig, nach der Bilanz der Stadt vom 04.10.2026; Maßpreis und Besucher 2026 stehen dort.",
     ],
     headers: OKTOBERFEST_PREIS.headers,
     rows: OKTOBERFEST_PREIS.rows,

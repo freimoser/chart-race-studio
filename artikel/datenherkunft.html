@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Datenherkunft: Quellen und Methode aller Datensätze</title>
+    <meta name="dcterms.modified" content="2026-10-08" />
     <meta name="description" content="Für jeden Beispiel-Datensatz: Quelle, Zeitraum, Annahmen, was für die Grafik aufbereitet wurde und wann zuletzt geprüft." />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="../favicon-96.png" sizes="96x96" type="image/png" />
@@ -22,15 +23,15 @@
       <article>
         <h1>Woher die Zahlen kommen</h1>
         <p class="lead">
-          Zwölf Beispiel-Datensätze aus der deutschen Tiermedizin, zehn davon mit ausschließlich publizierten Zahlen, zwei als ausgewiesene Modellreihen. Diese Seite sagt für
-          jeden einzelnen, aus welcher Quelle er stammt, wo eine Annahme getroffen werden musste, was für die
+          21 Datensätze, 19 zu Tierärzten, Praxen und Haustieren und zwei zum Exkurs Oktoberfest. Diese Seite sagt für jeden einzelnen, aus
+          welcher Quelle er stammt, wo eine Annahme getroffen werden musste, welche Werte gerechnet sind, was für die
           Darstellung aufbereitet wurde und wann zuletzt gegen die Quelle geprüft wurde.
         </p>
         <p>
           Wie eine eigene Tabelle aufgebaut sein muss, damit das Studio sie liest, steht in der
           <a href="../beitrag/weltkarte-laender-einfaerben-animieren.html">Anleitung mit unserem Datenstandard</a>.
         </p>
-        <p class="meta">Stand 23. September 2026 · von Thomas Freimoser</p>
+        <p class="meta">Stand 8. Oktober 2026 · von <a href="../ueber-das-projekt.html">Thomas Freimoser</a></p>
 
         <div class="note">
           <strong>Warum das Datum wichtig ist:</strong> Amtliche Statistiken erscheinen jährlich, Unternehmensangaben
@@ -38,10 +39,18 @@
           ist, wird vor der Wiederverwendung erneut gegen die Quelle gehalten – nicht stillschweigend fortgeschrieben.
         </div>
 
-        <h2>Drei Grundsätze</h2>
+        <h2>Vier Grundsätze</h2>
         <p>
-          <strong>Nur publizierte Werte.</strong> Wo eine Zahl fehlt, steht eine Lücke, kein geschätzter Ersatz.
-          Ausnahmen sind ausdrücklich gekennzeichnet, und zwar im Datensatz selbst, nicht nur hier.
+          <strong>Jede Zahl mit Quelle und Jahr.</strong> Primärquellen zuerst; eine Zweitquelle nur mit Fundstelle.
+          Wo eine Statistik nur einen Teil misst, kommen unabhängige Quellen daneben.
+        </p>
+        <p>
+          <strong>Gerechnetes ist gekennzeichnet.</strong> Eine Grafik hat keine leeren Jahre. Fehlt eine Zahl, wird
+          sie aus naheliegenden Daten gerechnet: zwischen zwei belegten Jahren linear, bei einem Quellenwechsel über ein
+          gemeinsames Jahr verkettet, vor dem ersten oder nach dem letzten Beleg über eine verwandte Reihe
+          fortgeschrieben. Welche Werte das sind, steht im jeweiligen Abschnitt hier, im Datensatz und im Artikel.
+          Diese Regel gilt seit dem 7. Oktober 2026; ältere Datensätze werden beim nächsten Einsatz nachgezogen, bis
+          dahin bleiben ihre Lücken sichtbar.
         </p>
         <p>
           <strong>Methodenbrüche werden gezeigt, nicht geglättet.</strong> Wenn eine Behörde ihre Kategorien ändert,
@@ -354,6 +363,23 @@
         </p>
         <p class="meta">Recherchiert 07.10.2026 · zuletzt geprüft 07.10.2026</p>
 
+        <h2 id="tierarztmangel">Hunde und Katzen je Tierärztin und Tierarzt</h2>
+        <p>
+          <strong>Quelle:</strong> Statistik der Bundestierärztekammer (Praxisinhaber:innen und angestellte Tierärzt:innen in
+          Praxen, jeweils 31. Dezember) und IVH/ZZF, „Der Deutsche Heimtiermarkt“ (Hunde und Katzen).
+          <strong>Zeitraum:</strong> 2012 bis 2025.
+        </p>
+        <p>
+          <strong>Gerechnet:</strong> beide Reihen sind Quotienten, Hunde und Katzen geteilt durch Inhaber:innen bzw. durch
+          Inhaber:innen plus Angestellte. Kein Jahr ist geschätzt. Gezählt werden Köpfe, keine Vollzeitstellen.
+        </p>
+        <p>
+          <strong>Beginn 2012:</strong> Vorher schätzten die Verbände die Heimtiere, die Werte sind nicht vergleichbar. 2013
+          stellten sie die Erhebung noch einmal um; der Knick im zweiten Jahr der Grafik kommt daher. Erläutert im Artikel
+          <a href="../beitrag/tierarztmangel-deutschland.html">Tierarztmangel in Deutschland</a>.
+        </p>
+        <p class="meta">Recherchiert 07.10.2026 · zuletzt geprüft 08.10.2026</p>
+
         <h2 id="tierarzt-routinejahr">Was ein Routinejahr beim Tierarzt kostet</h2>
         <p>
           <strong>Quelle:</strong> Gebührenordnung für Tierärzte in den Fassungen von 2008 (BGBl. 2008 I S. 1110), 2017
@@ -397,6 +423,17 @@
         </p>
         <p class="meta">Recherchiert 04.10.2026 · zuletzt geprüft 04.10.2026</p>
 
+
+        <h2 id="oktoberfest-preis">Die Maß wird teurer, die Wiesn voller (reduzierte Fassung)</h2>
+        <p>
+          <strong>Quelle:</strong> dieselbe wie im Abschnitt davor (Statistisches Amt München, Verbraucherpreisindex von
+          Destatis). <strong>Zeitraum:</strong> 1985 bis 2026.
+        </p>
+        <p>
+          <strong>Aufbereitet:</strong> dieselben Werte ohne die Biermenge: Besucher als Säulen, Maßpreis und „Maß mit
+          Inflation“ als Linien. 2026 vorläufig nach der Bilanz der Stadt; 2020 und 2021 fiel die Wiesn aus.
+        </p>
+        <p class="meta">Recherchiert 04.10.2026 · zuletzt geprüft 08.10.2026</p>
         <h2>Was hier nicht steht</h2>
         <p>
           Diese Seite nennt Quellen, Annahmen und Stand. Wie aus einer Tabelle am Ende ein Video wird – die Aufbereitung
@@ -420,8 +457,8 @@
         "description": "Für alle Datensätze aus der deutschen Tiermedizin: Quelle, Zeitraum, Annahmen, Aufbereitung und Stand der Recherche.",
         "inLanguage": "de-DE",
         "datePublished": "2026-09-17",
-        "dateModified": "2026-09-23",
-        "author": { "@type": "Person", "name": "Thomas Freimoser" }
+        "dateModified": "2026-10-08",
+        "author": { "@type": "Person", "name": "Thomas Freimoser", "url": "https://tiermedizin-in-zahlen.org/ueber-das-projekt.html", "sameAs": ["https://www.linkedin.com/in/thomas-freimoser"] }
       }
     </script>
   </body>

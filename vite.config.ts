@@ -63,7 +63,7 @@ function rahmenFuss(hoch: string, cookieWahl: boolean) {
           <a href="${hoch}">Startseite</a> · <a href="${hoch}beitrag/">Alle Artikel</a> · <a href="${hoch}artikel/tierarztketten-deutschland.html">Tierarztketten</a> ·
           <a href="${hoch}datenformat/">Datenformat</a> · <a href="${hoch}artikel/datenherkunft.html">Datenherkunft</a> · <a href="${hoch}studio/#redaktionsplan">Redaktionsplan</a> · <a href="${hoch}studio/">Studio</a>
         </p>
-        <p class="recht"><a href="${hoch}impressum.html">Impressum</a> · <a href="${hoch}datenschutz.html">Datenschutz</a>${cookieWahl ? ' · <button type="button" data-consent-reset>Cookie-Auswahl</button>' : ''}</p>
+        <p class="recht"><a href="${hoch}ueber-das-projekt.html">Über das Projekt</a> · <a href="${hoch}impressum.html">Impressum</a> · <a href="${hoch}datenschutz.html">Datenschutz</a>${cookieWahl ? ' · <button type="button" data-consent-reset>Cookie-Auswahl</button>' : ''}</p>
       </div>
     </footer>`
 }
@@ -112,7 +112,7 @@ function integrationen(env: Record<string, string>) {
       if (pfad === 'index.html' && env.VITE_SITE_URL) tags.push(`<script type="application/ld+json">${JSON.stringify({
         '@context': 'https://schema.org', '@type': 'WebSite', name: MARKE, url: env.VITE_SITE_URL.replace(/\/$/, '') + '/', inLanguage: 'de-DE',
         description: 'Zahlen zu Tierärzten, Tierarztpraxen und Haustieren in Deutschland, jede mit Jahr und Quelle.',
-        publisher: { '@type': 'Person', name: 'Thomas Freimoser' },
+        publisher: { '@type': 'Person', name: 'Thomas Freimoser', url: env.VITE_SITE_URL.replace(/\/$/, '') + '/ueber-das-projekt.html', sameAs: ['https://www.linkedin.com/in/thomas-freimoser'] },
       })}</script>`)
       // Studio: KI-Crawler wie GPTBot, ClaudeBot oder PerplexityBot führen kein JavaScript aus
       // und sähen sonst ein leeres <div id="root">. React ersetzt diesen Inhalt beim Start.
@@ -204,8 +204,11 @@ ${sortiert.map((b) => `  <entry>
       // lastmod nur, wo es ein echtes Änderungsdatum gibt. Ein Build-Datum auf jeder Seite
       // bringt Google bei, dem Feld nicht zu trauen – dann zählt es auch dort nicht, wo es stimmt.
       const neuester = BEITRAEGE.map((b) => b.stand).sort().at(-1)
+      // Handgeschriebene Seiten tragen ihr Änderungsdatum selbst (<meta name="dcterms.modified">); ohne Meta kein lastmod.
+      const geaendert = (datei: string) => (readFileSync(datei, 'utf8').match(/<meta name="dcterms\.modified" content="(\d{4}-\d{2}-\d{2})"/) ?? [])[1]
       const seiten: [string, string?][] = [
-        ['', neuester], ['studio/'], ['artikel/tierarztketten-deutschland.html'], ['artikel/datenherkunft.html'],
+        ['', neuester], ['studio/', geaendert('studio/index.html')], ['ueber-das-projekt.html', geaendert('ueber-das-projekt.html')],
+        ['artikel/tierarztketten-deutschland.html', geaendert('artikel/tierarztketten-deutschland.html')], ['artikel/datenherkunft.html', geaendert('artikel/datenherkunft.html')],
         ...(BEITRAEGE.length ? [['beitrag/', neuester] as [string, string?]] : []),
         ...BEITRAEGE.map((b): [string, string?] => [`beitrag/${b.slug}.html`, b.stand]),
         ...DATENFORMAT.map((d): [string, string?] => [d.pfad, d.stand]),
@@ -243,6 +246,7 @@ export default defineConfig(({ mode }) => {
         export: resolve(import.meta.dirname, 'export.html'),
         artikelKetten: resolve(import.meta.dirname, 'artikel/tierarztketten-deutschland.html'),
         artikelDaten: resolve(import.meta.dirname, 'artikel/datenherkunft.html'),
+        ueber: resolve(import.meta.dirname, 'ueber-das-projekt.html'),
         impressum: resolve(import.meta.dirname, 'impressum.html'),
         datenschutz: resolve(import.meta.dirname, 'datenschutz.html'),
         nichtGefunden: resolve(import.meta.dirname, '404.html'),

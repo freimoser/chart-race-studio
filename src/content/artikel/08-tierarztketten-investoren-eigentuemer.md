@@ -4,7 +4,7 @@ slug: tierarztketten-investoren-eigentuemer
 titel: Tierarztketten und Investoren: wem die Praxisgruppen gehören
 beschreibung: Rund 62 Prozent der Standorte von 13 erfassten Tierarztgruppen entfallen auf Gruppen mit Finanzinvestoren, 15 Prozent auf Mars. Und der Rest?
 frage: Gehören alle Tierarztketten in Deutschland Finanzinvestoren?
-suchbegriffe: tierarztpraxen investoren, private equity tierarzt, wem gehören tierarztketten, tierarztkette ohne investor
+suchbegriffe: wem gehören tierarztketten, wem gehören tierarztpraxen, tierarztpraxen investoren, private equity tierarzt, tierarztkette ohne investor
 stand: 2026-09-23
 bereit: ja
 ---

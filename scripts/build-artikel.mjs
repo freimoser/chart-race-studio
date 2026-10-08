@@ -30,6 +30,8 @@ const mitEntwuerfen = process.argv.includes('--entwuerfe')
 const FREIGABE = JSON.parse(fs.readFileSync('src/content/freigabe.json', 'utf8'))
 const L = JSON.parse(fs.readFileSync('src/content/legal.json', 'utf8'))
 const BASIS = (process.env.VITE_SITE_URL ?? '').replace(/\/$/, '')
+// Autor: eine Person mit eigener Seite und Profil, damit Suchmaschinen sie zuordnen können (E-E-A-T).
+const AUTOR = { '@type': 'Person', name: L.operator, url: `${BASIS || ''}/ueber-das-projekt.html`, sameAs: ['https://www.linkedin.com/in/thomas-freimoser'] }
 const DATEN_ZIEL = 'public/daten'
 
 // Metadaten der Beispiel-Datensätze. src/samples/index.ts ist über den Pfad-Alias @/ nicht direkt
@@ -227,7 +229,7 @@ function seite(a, { entwurf, alle }) {
   const jsonld = [{
     '@context': 'https://schema.org', '@type': 'Article',
     headline: a.titel, description: a.beschreibung, inLanguage: 'de-DE',
-    author: { '@type': 'Person', name: L.operator },
+    author: AUTOR,
     ...(a.veroeffentlicht ? { datePublished: a.veroeffentlicht } : {}),
     dateModified: a.stand,
     ...(ogBild ? { image: ogBild } : {}),
@@ -241,7 +243,7 @@ function seite(a, { entwurf, alle }) {
     jsonld.push({
       '@context': 'https://schema.org', '@type': 'Dataset',
       name: ds.titel, description: `${ds.untertitel ?? ds.titel}. ${a.beschreibung}`,
-      creator: { '@type': 'Person', name: L.operator },
+      creator: AUTOR,
       ...(jahre.length ? { temporalCoverage: `${jahre[0]}/${jahre.at(-1)}` } : {}),
       spatialCoverage: ds.id === 'hund-katze-welt' ? 'Welt' : ds.id === 'oktoberfest' ? 'München' : 'Deutschland',
       variableMeasured: ds.daten.headers.slice(1),
@@ -301,7 +303,7 @@ ${entwurf ? `    <p class="entwurf">Entwurf · ${a.bereit ? 'bereit zur Freigabe
         <p class="meta">${a.art === 'exkurs' ? 'Exkurs · Neu im Studio' : a.art === 'auswertung' ? 'Sonderauswertung' : a.anleitung ? 'Anleitung' : `Visite ${visiteVon(post.nr)} · Post ${post.nr}: ${esc(post.title)}`}</p>
         <h1>${esc(a.titel)}</h1>
         ${lead}
-        <p class="meta">Stand ${datumDe(a.stand)} · von ${esc(L.operator)}${post.publishedOn ? ` · auf LinkedIn seit ${datumDe(post.publishedOn)}` : ''}</p>
+        <p class="meta">Stand ${datumDe(a.stand)} · von <a href="${tiefe}ueber-das-projekt.html">${esc(L.operator)}</a>${post.publishedOn ? ` · auf LinkedIn seit ${datumDe(post.publishedOn)}` : ''}</p>
         ${bild}
 ${einruecken(rumpf)}
         <aside class="kasten">
@@ -327,7 +329,7 @@ function uebersicht(live) {
     '@context': 'https://schema.org', '@type': 'CollectionPage',
     name: 'Tiermedizin in Zahlen', inLanguage: 'de-DE',
     description: 'Zahlen zu Tierärzten, Tierarztpraxen und Haustieren in Deutschland – jede mit Jahr und Quelle.',
-    author: { '@type': 'Person', name: L.operator },
+    author: AUTOR,
     mainEntity: { '@type': 'ItemList', itemListElement: live.map((a, i) => ({ '@type': 'ListItem', position: i + 1, name: a.titel, ...(BASIS ? { url: `${BASIS}/${ZIEL}/${a.slug}.html` } : {}) })) },
   }
   return `<!doctype html>
@@ -335,7 +337,7 @@ function uebersicht(live) {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alle Artikel: Tierärzte, Praxen und Haustiere in Zahlen</title>
+    <title>Alle Artikel nach Thema: Tierärzte, Praxen, Haustiere</title>
     <meta name="description" content="Wie viele Tierärzte, Tierarztpraxen und Haustiere gibt es in Deutschland? Zeitreihen seit 1991, jede Zahl mit Jahr und Quelle." />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="../favicon-96.png" sizes="96x96" type="image/png" />
@@ -351,14 +353,15 @@ function uebersicht(live) {
   <body>
     <!--rahmen:kopf-->
     <main class="wrap">
-      <p class="meta">Alle Artikel</p>
-      <h1>Tierärzte, Praxen und Haustiere in Zahlen</h1>
-      <p class="lead">Wie viele Tierärzte, Tierarztpraxen und Haustiere gibt es in Deutschland, und wie hat sich das seit 1991 verändert? Jeder Artikel beantwortet eine Frage mit Zahl, Jahr und Quelle und nennt, was die Zahl nicht sagt.</p>
-${nachKapitel.map((k) => `      <h2>${esc(k.arc.label)}</h2>
+      <p class="meta">Archiv</p>
+      <h1>Alle Artikel nach Thema</h1>
+      <p class="lead">Hier stehen alle ${live.length} Artikel, sortiert nach den Themen der Reihe: die Tiere, die Praxis, die Käufer der Praxen und mehr. Jeder beantwortet eine Frage mit Zahl, Jahr und Quelle und nennt, was die Zahl nicht sagt.</p>
+${nachKapitel.map((k) => `      <h2 id="${k.arc.id ?? 'mehr'}">${esc(k.arc.label)}</h2>
+      <p>${esc(k.arc.claim ?? 'Auswertungen über die Reihe hinaus, ein Blick über den Tellerrand und Anleitungen für eigene Grafiken.')}</p>
       <ul class="liste">
-${k.liste.map((a) => `        <li><a href="${a.slug}.html">${esc(a.frage)}</a><br />${esc(a.beschreibung)}</li>`).join('\n')}
+${k.liste.map((a) => `        <li><a href="${a.slug}.html">${esc(a.titel)}</a><br />${esc(a.beschreibung)}</li>`).join('\n')}${k.arc.id === 'ketten' ? `\n        <li><a href="../artikel/tierarztketten-deutschland.html">Liste der Tierarztketten in Deutschland</a><br />Alle Gruppen mit belegten Standortzahlen und Eigentümern, und warum Einkaufsgemeinschaften keine Ketten sind.</li>` : ''}
       </ul>`).join('\n')}
-      <p class="meta">Dazu: <a href="../artikel/tierarztketten-deutschland.html">Wer betreibt die Tierarztpraxen in Deutschland?</a> · <a href="../artikel/datenherkunft.html">Woher die Zahlen kommen</a> · <a href="../studio/#redaktionsplan">Redaktionsplan</a></p>
+      <p class="meta">Dazu: <a href="../artikel/datenherkunft.html">Woher die Zahlen kommen</a> · <a href="../ueber-das-projekt.html">Über das Projekt</a> · <a href="../studio/#redaktionsplan">Redaktionsplan</a></p>
     </main>
     <!--rahmen:fuss-->
   </body>
@@ -378,6 +381,7 @@ function startseite(live) {
   const gNeu = neu && grafikVon(neu.grafik, POSTS.find((p) => p.nr === neu.post)?.sampleId)
   const csvNeu = gNeu && DATENSAETZE[gNeu.id]?.daten ? `daten/${gNeu.id}.csv` : ''
   const anleitungen = live.filter((a) => a.anleitung && a.art === 'anleitung')
+  const themen = ARCS.map((arc) => ({ arc, n: live.filter((a) => POSTS.find((p) => p.nr === a.post)?.arc === arc.id).length })).filter((t) => t.n)
   return `<!doctype html>
 <html lang="de" data-brand="klar">
   <head>
@@ -410,18 +414,26 @@ ${neu ? `      <section class="neu" aria-labelledby="neu-titel">
         ${grafikFigur(gNeu, { tiefe: '', csv: csvNeu })}
         <p><a href="beitrag/${neu.slug}.html">Artikel lesen</a></p>
       </section>
-` : ''}${artikel.length ? `      <h2>Alle Artikel</h2>
-      <ul class="liste">
-${artikel.filter((a) => a !== neu).map((a) => `        <li><a href="beitrag/${a.slug}.html">${esc(a.frage)}</a><br />${esc(a.beschreibung)}</li>`).join('\n')}
-        <li><a href="artikel/tierarztketten-deutschland.html">Wer betreibt die Tierarztpraxen in Deutschland?</a><br />Praxisketten und Klinikgruppen mit Standortzahlen, und warum Einkaufsgemeinschaften keine Ketten sind.</li>
+` : ''}${artikel.length ? `      <h2>Zuletzt erschienen</h2>
+      <ul class="liste kurz">
+${artikel.filter((a) => a !== neu).slice(0, 5).map((a) => `        <li><a href="beitrag/${a.slug}.html">${esc(a.titel)}</a></li>`).join('\n')}
       </ul>
-      <p class="meta"><a href="beitrag/">Alle Artikel nach Thema</a> · <a href="studio/#redaktionsplan">Was als Nächstes kommt</a></p>
+      <h2>Themen</h2>
+      <ul class="liste themen">
+${themen.map((t) => `        <li><a href="beitrag/#${t.arc.id}">${esc(t.arc.label)}</a> · ${t.n} Artikel<br />${esc(t.arc.claim)}</li>`).join('\n')}
+        <li><a href="artikel/tierarztketten-deutschland.html">Liste der Tierarztketten</a><br />Praxisketten und Klinikgruppen mit Standortzahlen, und warum Einkaufsgemeinschaften keine Ketten sind.</li>
+${live.some((a) => a.anleitung) ? `        <li><a href="beitrag/#mehr">Auswertungen, Exkurse und Anleitungen</a> · ${live.filter((a) => a.anleitung).length} Artikel<br />${esc(live.filter((a) => a.anleitung).map((a) => a.titel).join(' · '))}</li>\n` : ''}      </ul>
+      <p class="meta"><a href="beitrag/">Alle ${live.length} Artikel nach Thema</a> · <a href="studio/#redaktionsplan">Was als Nächstes kommt</a></p>
 ` : ''}      <section class="selbst" aria-labelledby="selbst-titel">
         <h2 id="selbst-titel">Eigene Daten animieren</h2>
         <p>Jede Grafik dieser Seite entsteht im Studio: eine Tabelle hinein, ein MP4-Video heraus, als Bar Race, Line Race oder animierte Karte. Es läuft vollständig im Browser, die Daten verlassen das Gerät nicht. Am bequemsten am Rechner.</p>
         <p class="knoepfe"><a class="knopf" href="studio/">Studio öffnen</a><a class="knopf zweit" href="datenformat/">So muss die Tabelle aussehen</a></p>
 ${anleitungen.length ? `        <p class="meta">Anleitung: ${anleitungen.map((a) => `<a href="beitrag/${a.slug}.html">${esc(a.titel)}</a>`).join(' · ')}</p>\n` : ''}      </section>
-      <p class="meta">Woher jede Zahl stammt, mit Quelle, Zeitraum und Lücken: <a href="artikel/datenherkunft.html">Datenherkunft</a></p>
+      <section class="ueber" aria-labelledby="ueber-titel">
+        <h2 id="ueber-titel">Wer hier schreibt</h2>
+        <p>Ein privates Projekt von Thomas Freimoser, kein Tierarzt und keine Behörde: veröffentlichte Statistiken, nachgelesen an der Quelle, mit offener Methode. Was gerechnet ist, steht dabei.</p>
+        <p class="meta"><a href="ueber-das-projekt.html">Über das Projekt, mit Video in 60 Sekunden</a> · <a href="artikel/datenherkunft.html">Woher jede Zahl stammt</a></p>
+      </section>
     </main>
     <!--rahmen:fuss-->
   </body>
@@ -513,7 +525,7 @@ function dfSeite(s, alle) {
   const jsonld = [{
     '@context': 'https://schema.org', '@type': 'TechArticle',
     headline: s.titel, description: s.beschreibung, inLanguage: 'de-DE',
-    author: { '@type': 'Person', name: L.operator }, dateModified: s.stand, about: s.frage,
+    author: AUTOR, dateModified: s.stand, about: s.frage,
     ...(url ? { mainEntityOfPage: url } : {}),
   }, {
     '@context': 'https://schema.org', '@type': 'BreadcrumbList',
