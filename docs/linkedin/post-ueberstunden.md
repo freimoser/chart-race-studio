@@ -1,6 +1,6 @@
 # LinkedIn-Post: Überstunden in der Tierarztpraxis (Fr 09.10.2026, abends)
 
-**Format:** Textpost mit Bild `grafik-ueberstunden.png` (4:5, aus `grafik-ueberstunden.json` mit `node scripts/balkenbild.mjs`; nur Werte der BaT-Befragung, keine gerechneten). Link nicht in den Post, sondern in den ersten Kommentar.
+**Format:** Karussell aus 5 Bildern (`karussell-ueberstunden.json` → `node scripts/balkenbild.mjs`): LinkedIn als Dokument `karussell-ueberstunden.pdf` (Titel beim Hochladen: „Überstunden in der Tierarztpraxis“), Instagram die PNGs 1–5. Folie 1 = `grafik-ueberstunden.png`. Link nicht in den Post, sondern in den ersten Kommentar.
 **Zahlen geprüft am 09.10.2026** an den Originalen:
 - AFC-Gutachten für das BMEL zur GOT, Befragung 2020, ca. 1.300 Praktiker:innen (laut Bericht repräsentativ): Inhaber 50,43 h/Woche (Mittel), Angestellte 35,10 h; Anteil Arbeitszeit am Tier inkl. Beratung: Inhaber im Mittel 56 %, Angestellte 69 %; nur ca. 2 % der Angestellten ≥ 50 h. https://www.bmleh.de/SharedDocs/Downloads/DE/_Tiere/Tiergesundheit/abschlussbericht-pruefung-tieraerztegebuehrenverordnung.pdf
 - Jensen et al., Veterinary Sciences 13 (2026) 494, BaT-Befragung Sep.–Dez. 2025, bis 1.184 angestellte Tierärzt:innen (6 %), Gelegenheitsstichprobe: 30,1 % ohne Überstunden, im Mittel 3 h/Woche, ein Viertel ≥ 5 h; 17,4 % Überstunden verfallen; 54,6 % Teilzeit (< 38 h); 75,2 % Notdienst; 22,1 % > 10 h mind. einmal pro Woche; 40 % ohne 30-Minuten-Pause mind. einmal pro Woche. https://www.mdpi.com/2306-7381/13/5/494
@@ -15,7 +15,7 @@ Wie lange dort gearbeitet wird, misst keine amtliche Statistik. Drei Befragungen
 
 ⏱️ Praxisinhaber:innen arbeiten im Schnitt 50 Stunden pro Woche. Nur 56 % davon am Tier oder im Gespräch mit den Halter:innen. Der Rest geht in Verwaltung, Personal und Fahrten: rund 22 Stunden pro Woche.
 
-🕘 7 von 10 angestellten Tierärzt:innen machen Überstunden, obwohl gut die Hälfte in Teilzeit arbeitet. Jede:r Vierte kommt auf 5 Stunden oder mehr pro Woche. Bei 17 % verfallen sie einfach.
+🕘 7 von 10 angestellten Tierärzt:innen machen Überstunden, obwohl gut die Hälfte in Teilzeit arbeitet. Jede:r Vierte kommt auf 5 Stunden oder mehr pro Woche, bei Pferd und Nutztier sind es im Median 5 bzw. 4. Ausbezahlt bekommt sie nur jede:r Vierte, bei 17 % verfallen sie einfach.
 
 🚨 22 % arbeiten mindestens einmal pro Woche länger als 10 Stunden, die Grenze des Arbeitszeitgesetzes. 40 % schaffen mindestens einmal pro Woche ihre Pause nicht. 3 von 4 machen Nacht- oder Wochenenddienste.
 

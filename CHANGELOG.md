@@ -9,6 +9,7 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 - **Bildposts:** `scripts/balkenbild.mjs` setzt jeden Inhalt in einen genormten Rahmen: Band unten mit Logo, „Tiermedizin in Zahlen“ und `tiermedizin-in-zahlen.org`, Quelle und „Grafik: Thomas Freimoser“ darüber. Erstes Bild: Überstunden (`docs/linkedin/grafik-ueberstunden.png`).
 - **Videos:** Standard-Wasserzeichen im Studio jetzt `tiermedizin-in-zahlen.org` statt des Namens. Die Vorschau zeichnet es ohne Tabellenziffern wie der Export; vorher standen die Bindestriche breit und der Text war länger als vom Layout berechnet.
 - Regel in `CLAUDE.md` (Abschnitt Posts).
+- **Karussells:** `balkenbild.mjs` kann mehrere Folien (`folien`), gestapelte Balken und Textfolien und erzeugt dazu ein PDF für LinkedIn-Dokumente. Folien ohne Quelle bricht es ab. Erstes Karussell: Überstunden in 5 Bildern (`docs/linkedin/karussell-ueberstunden.*`).
 
 ### Korrektur Teilzeit, Post „Überstunden“ (09.10.2026)
 

@@ -1,12 +1,19 @@
 /*
- * Statisches Balkenbild für Posts ohne Zeitreihe (eine Erhebung, ein Jahr): 1080 × 1350 (4:5, LinkedIn-Feed),
+ * Statische Bilder für Posts ohne Zeitreihe (eine Erhebung, ein Jahr): 1080 × 1350 (4:5, LinkedIn und Instagram),
  * im Stil der Studio-Grafiken. Für Zeitreihen bleibt das Studio zuständig.
  *
- *   node scripts/balkenbild.mjs docs/linkedin/grafik-ueberstunden.json
+ *   node scripts/balkenbild.mjs docs/linkedin/grafik-ueberstunden.json     → grafik-ueberstunden.png
+ *   node scripts/balkenbild.mjs docs/linkedin/karussell-ueberstunden.json  → karussell-ueberstunden-1.png … und .pdf
  *
- * Die JSON-Datei nennt titel, untertitel, jahr, quelle, einheit (z. B. " %"), max (Achsenende) und balken
- * [{ name, wert }]. Das PNG landet neben der JSON-Datei. Eine Grafik, eine Aussage: alle Balken in einer
- * Farbe, Werte direkt am Balken, keine Legende.
+ * Eine Datei beschreibt ein Bild oder mit `folien: [...]` ein Karussell. Das PDF ist für LinkedIn (Karussell als
+ * Dokument), die PNGs für Instagram. Eine Folie mit `aus: "<datei>.json"` übernimmt ein vorhandenes Einzelbild, so
+ * stehen die Werte nur an einer Stelle.
+ *
+ * Arten (`art`):
+ *   balken     (Standard) titel, untertitel, jahr, quelle, einheit, max, balken [{ name, wert }]
+ *   gestapelt  wie balken, dazu teile [Name je Abschnitt], balken [{ name, zusatz, werte [je Abschnitt] }]
+ *   text       titel, absaetze [...], hinweis, quelle
+ * Eine Grafik, eine Aussage: Werte direkt am Balken, keine Achse; Quelle immer im Bild.
  */
 import fs from 'node:fs'
 import path from 'node:path'
@@ -22,20 +29,23 @@ const quelle = process.argv[2]
 if (!quelle) { console.error('Aufruf: node scripts/balkenbild.mjs <spec.json>'); process.exit(1) }
 
 const L = JSON.parse(fs.readFileSync('src/content/legal.json', 'utf8'))
-const S = JSON.parse(fs.readFileSync(quelle, 'utf8'))
+const lies = (f) => JSON.parse(fs.readFileSync(f, 'utf8'))
+const S = lies(quelle)
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 const FONT = pathToFileURL(path.resolve('node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2')).href
 const zahl = (v) => v.toLocaleString('de-DE')
-const max = S.max ?? Math.max(...S.balken.map((b) => b.wert))
+const FARBEN = ['#0f4c5c', '#e36414']
 
-// Genormter Rahmen (Regel seit 09.10.2026, CLAUDE.md): Jedes Bild trägt unten das Band mit Logo, Name und Adresse
-// der Seite. Weitere Bildarten setzen ihren Inhalt nur in rahmen() ein, das Band bleibt überall gleich.
+// Genormter Rahmen (Regel seit 09.10.2026, CLAUDE.md): Jede Folie trägt unten das Band mit Logo, Name und Adresse
+// der Seite. Die Arten setzen nur ihren Inhalt ein, Band und Quellenzeile bleiben überall gleich.
 const LOGO = '<svg viewBox="0 0 28 28" width="52" height="52" aria-hidden="true"><rect width="28" height="28" rx="7" fill="#fff"/><rect x="6" y="7" width="16" height="3.2" rx="1.6" fill="#0f4c5c"/><rect x="6" y="12.4" width="11" height="3.2" rx="1.6" fill="#e36414"/><rect x="6" y="17.8" width="7" height="3.2" rx="1.6" fill="#0f4c5c" opacity=".75"/></svg>'
 const ADRESSE = 'tiermedizin-in-zahlen.org'
-const rahmen = (inhalt, quelleText) => `<!doctype html><html lang="de"><head><meta charset="utf-8"><style>
+const CSS = `
 @font-face { font-family: Inter; src: url('${FONT}') format('woff2'); font-weight: 100 900; }
-* { margin: 0; box-sizing: border-box; }
-body { width: 1080px; height: 1350px; font-family: Inter, sans-serif; background: #fff; color: #1d2329; display: flex; flex-direction: column; }
+@page { size: 1080px 1350px; margin: 0; }
+* { margin: 0; box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { font-family: Inter, sans-serif; background: #fff; color: #1d2329; }
+.seite { width: 1080px; height: 1350px; display: flex; flex-direction: column; overflow: hidden; break-after: page; }
 .inhalt { flex: 1; padding: 72px 64px 32px; display: flex; flex-direction: column; }
 .kopf { display: flex; justify-content: space-between; gap: 32px; align-items: flex-start; }
 h1 { font-size: 58px; line-height: 1.1; font-weight: 750; letter-spacing: -0.02em; }
@@ -43,33 +53,76 @@ h1 { font-size: 58px; line-height: 1.1; font-weight: 750; letter-spacing: -0.02e
 .unter { margin-top: 24px; font-size: 30px; line-height: 1.35; color: #6e7681; max-width: 900px; }
 .balken { margin-top: 72px; display: flex; flex-direction: column; gap: 42px; }
 .name { font-size: 31px; font-weight: 600; line-height: 1.25; }
+.zusatz { font-size: 27px; font-weight: 500; color: #6e7681; margin-top: 6px; }
 .zeile { margin-top: 14px; display: flex; align-items: center; gap: 20px; }
 .spur { flex: 1; height: 44px; background: #eef1f3; border-radius: 4px; position: relative; }
 .fuell { position: absolute; inset: 0 auto 0 0; background: #0f4c5c; border-radius: 4px; }
-.wert { font-feature-settings: 'tnum' 1; width: 120px; text-align: right; font-size: 44px; font-weight: 750; }
-.quelle { margin-top: auto; font-size: 22px; line-height: 1.4; color: #6e7681; }
+.wert { font-feature-settings: 'tnum' 1; width: 150px; text-align: right; font-size: 44px; font-weight: 750; white-space: nowrap; }
+.legende { margin-top: 40px; display: flex; flex-direction: column; gap: 14px; font-size: 28px; font-weight: 600; }
+.legende span { display: inline-block; width: 28px; height: 28px; border-radius: 4px; margin-right: 16px; vertical-align: -4px; }
+.stapel { margin-top: 16px; height: 96px; display: flex; gap: 4px; }
+.teil { border-radius: 4px; color: #fff; font-size: 38px; font-weight: 750; display: flex; align-items: center; padding-left: 22px; font-feature-settings: 'tnum' 1; white-space: nowrap; }
+.gross { font-size: 76px; line-height: 1.08; font-weight: 750; letter-spacing: -0.02em; }
+.absatz { margin-top: 40px; font-size: 40px; line-height: 1.38; color: #2b3138; }
+.hinweis { margin-top: 56px; padding: 32px 36px; background: #eef5f4; border-left: 10px solid #0f4c5c; border-radius: 4px; font-size: 36px; line-height: 1.35; font-weight: 600; }
+.quelle { margin-top: auto; padding-top: 24px; font-size: 22px; line-height: 1.4; color: #6e7681; }
 .band { height: 112px; background: #0f4c5c; color: #fff; padding: 0 64px; display: flex; align-items: center; justify-content: space-between; border-top: 8px solid #e36414; }
 .marke { display: flex; align-items: center; gap: 18px; font-size: 32px; font-weight: 700; letter-spacing: -0.01em; }
-.adresse { font-size: 30px; font-weight: 600; color: #9adbcf; }
-</style></head><body>
-<div class="inhalt">
-${inhalt}
-<p class="quelle">${esc(quelleText)}</p>
-</div>
-<div class="band"><div class="marke">${LOGO}${esc(L.siteName)}</div><div class="adresse">${ADRESSE}</div></div>
-</body></html>`
+.adresse { font-size: 30px; font-weight: 600; color: #9adbcf; }`
 
-const html = rahmen(`<div class="kopf"><h1>${esc(S.titel)}</h1><div class="jahr">${esc(S.jahr)}</div></div>
-<p class="unter">${esc(S.untertitel)}</p>
+const kopf = (F) => `<div class="kopf"><h1>${esc(F.titel)}</h1>${F.jahr ? `<div class="jahr">${esc(F.jahr)}</div>` : ''}</div>
+${F.untertitel ? `<p class="unter">${esc(F.untertitel)}</p>` : ''}`
+
+const ARTEN = {
+  balken: (F) => {
+    const max = F.max ?? Math.max(...F.balken.map((b) => b.wert))
+    return `${kopf(F)}
 <div class="balken">
-${S.balken.map((b) => `  <div><div class="name">${esc(b.name)}</div><div class="zeile"><div class="spur"><div class="fuell" style="width:${(b.wert / max * 100).toFixed(2)}%"></div></div><div class="wert">${zahl(b.wert)}${esc(S.einheit ?? '')}</div></div></div>`).join('\n')}
-</div>`, `${S.quelle} · Grafik: ${L.operator}`)
+${F.balken.map((b) => `  <div><div class="name">${esc(b.name)}</div><div class="zeile"><div class="spur"><div class="fuell" style="width:${(b.wert / max * 100).toFixed(2)}%"></div></div><div class="wert">${zahl(b.wert)}${esc(F.einheit ?? '')}</div></div></div>`).join('\n')}
+</div>`
+  },
+  gestapelt: (F) => {
+    const max = F.max ?? Math.max(...F.balken.map((b) => b.werte.reduce((x, y) => x + y, 0)))
+    return `${kopf(F)}
+<div class="legende">${F.teile.map((t, i) => `<div><span style="background:${FARBEN[i]}"></span>${esc(t)}</div>`).join('')}</div>
+<div class="balken">
+${F.balken.map((b) => {
+    const summe = b.werte.reduce((x, y) => x + y, 0)
+    return `  <div><div class="name">${esc(b.name)}</div>${b.zusatz ? `<div class="zusatz">${esc(b.zusatz)}</div>` : ''}
+    <div class="stapel" style="width:${(summe / max * 100).toFixed(2)}%">${b.werte.map((w, i) => `<div class="teil" style="flex:${w};background:${FARBEN[i]}">${zahl(w)}${esc(F.einheit ?? '')}</div>`).join('')}</div></div>`
+  }).join('\n')}
+</div>`
+  },
+  text: (F) => `<h2 class="gross">${esc(F.titel)}</h2>
+${(F.absaetze ?? []).map((a) => `<p class="absatz">${esc(a)}</p>`).join('\n')}
+${F.hinweis ? `<p class="hinweis">${esc(F.hinweis)}</p>` : ''}`,
+}
 
-const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'balken-'))
-const f = path.join(tmp, 'bild.html')
-fs.writeFileSync(f, html)
-const ziel = quelle.replace(/\.json$/, '.png')
-execFileSync(CHROME, ['--headless=new', '--disable-gpu', '--hide-scrollbars', '--force-device-scale-factor=1',
-  '--window-size=1080,1350', `--screenshot=${path.resolve(ziel)}`, pathToFileURL(f).href], { stdio: 'ignore' })
+const seite = (F) => {
+  const art = ARTEN[F.art ?? 'balken']
+  if (!art) throw new Error(`Unbekannte Art „${F.art}“`)
+  if (!F.quelle) throw new Error(`Folie „${F.titel}“ ohne Quelle – kein Bild ohne Quelle im Bild.`)
+  return `<section class="seite"><div class="inhalt">
+${art(F)}
+<p class="quelle">${esc(F.quelle)} · ${F.art === 'text' ? '' : 'Grafik: '}${esc(L.operator)}</p>
+</div>
+<div class="band"><div class="marke">${LOGO}${esc(L.siteName)}</div><div class="adresse">${ADRESSE}</div></div></section>`
+}
+const dokument = (seiten) => `<!doctype html><html lang="de"><head><meta charset="utf-8"><style>${CSS}</style></head><body>${seiten.join('\n')}</body></html>`
+
+const folien = (S.folien ?? [S]).map((F) => (F.aus ? lies(path.join(path.dirname(quelle), F.aus)) : F))
+const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'bild-'))
+const chrome = (args, html) => {
+  const f = path.join(tmp, 'bild.html')
+  fs.writeFileSync(f, html)
+  execFileSync(CHROME, ['--headless=new', '--disable-gpu', '--hide-scrollbars', '--force-device-scale-factor=1', ...args, pathToFileURL(f).href], { stdio: 'ignore' })
+}
+const basis = quelle.replace(/\.json$/, '')
+const ziele = folien.map((_, i) => (S.folien ? `${basis}-${i + 1}.png` : `${basis}.png`))
+folien.forEach((F, i) => chrome(['--window-size=1080,1350', `--screenshot=${path.resolve(ziele[i])}`], dokument([seite(F)])))
+if (S.folien) {
+  chrome([`--print-to-pdf=${path.resolve(basis + '.pdf')}`, '--no-pdf-header-footer'], dokument(folien.map(seite)))
+  ziele.push(`${basis}.pdf`)
+}
 fs.rmSync(tmp, { recursive: true, force: true })
-console.log(`${ziel} erzeugt.`)
+console.log(`${ziele.join(', ')} erzeugt.`)
