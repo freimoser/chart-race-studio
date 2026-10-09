@@ -34,4 +34,4 @@ Quellen: AFC-Gutachten zur GOT für das Bundeslandwirtschaftsministerium; Jensen
 
 **Erster Kommentar:**
 
-Die Studien zum Nachlesen: Befragung angestellter Tierärzt:innen 2025 https://www.mdpi.com/2306-7381/13/5/494 · Und ob es überhaupt einen Tierarztmangel gibt: https://tiermedizin-in-zahlen.org/beitrag/tierarztmangel-deutschland
+Der ganze Artikel mit allen 5 Bildern, Zahlen und Quellen: https://tiermedizin-in-zahlen.org/beitrag/ueberstunden-tierarztpraxis

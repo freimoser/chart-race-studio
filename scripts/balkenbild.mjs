@@ -4,6 +4,8 @@
  *
  *   node scripts/balkenbild.mjs docs/linkedin/grafik-ueberstunden.json     → grafik-ueberstunden.png
  *   node scripts/balkenbild.mjs docs/linkedin/karussell-ueberstunden.json  → karussell-ueberstunden-1.png … und .pdf
+ *   node scripts/balkenbild.mjs docs/linkedin/karussell-ueberstunden.json --web public/beitrag/ueberstunden
+ *                                                    → 1.png/1.webp … für den Artikel, ohne Zähler und „wischen“
  *
  * Eine Datei beschreibt ein Bild oder mit `folien: [...]` ein Karussell. Das PDF ist für LinkedIn (Karussell als
  * Dokument), die PNGs für Instagram. Eine Folie mit `aus: "<datei>.json"` übernimmt ein vorhandenes Einzelbild, so
@@ -13,7 +15,8 @@
  *   balken     (Standard) titel, untertitel, jahr, quelle, einheit, max, balken [{ name, wert }]
  *   gestapelt  wie balken, dazu teile [Name je Abschnitt], balken [{ name, zusatz, werte [je Abschnitt] }]
  *   text       titel, absaetze [...], hinweis, quelle
- * Eine Grafik, eine Aussage: Werte direkt am Balken, keine Achse; Quelle immer im Bild.
+ * Eine Grafik, eine Aussage: Werte direkt am Balken, keine Achse; Quelle immer im Bild. Im Karussell zeigt jede
+ * Folie oben, dass sie Teil einer Reihe ist (Leiste und „Bild 2 von 5“, auf Bild 1 „wischen →“).
  */
 import fs from 'node:fs'
 import path from 'node:path'
@@ -26,6 +29,7 @@ const CHROME = process.env.CHROME_BIN ?? [
 ].find((p) => fs.existsSync(p))
 if (!CHROME) { console.error('Kein Chrome gefunden. Pfad über CHROME_BIN setzen.'); process.exit(1) }
 const quelle = process.argv[2]
+const webZiel = process.argv.includes('--web') ? process.argv[process.argv.indexOf('--web') + 1] : null
 if (!quelle) { console.error('Aufruf: node scripts/balkenbild.mjs <spec.json>'); process.exit(1) }
 
 const L = JSON.parse(fs.readFileSync('src/content/legal.json', 'utf8'))
@@ -47,6 +51,14 @@ const CSS = `
 body { font-family: Inter, sans-serif; background: #fff; color: #1d2329; }
 .seite { width: 1080px; height: 1350px; display: flex; flex-direction: column; overflow: hidden; break-after: page; }
 .inhalt { flex: 1; padding: 72px 64px 32px; display: flex; flex-direction: column; }
+.mit-reihe .inhalt { padding-top: 48px; }
+.mit-reihe .balken { margin-top: 56px; gap: 34px; }
+.reihe { display: flex; align-items: center; gap: 24px; margin-bottom: 40px; }
+.segmente { flex: 1; display: flex; gap: 10px; }
+.segmente i { flex: 1; height: 10px; border-radius: 5px; background: #e3e8ea; }
+.segmente i.war { background: #0f4c5c; }
+.segmente i.jetzt { background: #e36414; }
+.zaehler { font-size: 26px; font-weight: 700; color: #0f4c5c; white-space: nowrap; font-feature-settings: 'tnum' 1; }
 .kopf { display: flex; justify-content: space-between; gap: 32px; align-items: flex-start; }
 h1 { font-size: 58px; line-height: 1.1; font-weight: 750; letter-spacing: -0.02em; }
 .jahr { font-feature-settings: 'tnum' 1; font-size: 112px; line-height: 0.9; font-weight: 750; color: #3d4248; }
@@ -98,19 +110,22 @@ ${(F.absaetze ?? []).map((a) => `<p class="absatz">${esc(a)}</p>`).join('\n')}
 ${F.hinweis ? `<p class="hinweis">${esc(F.hinweis)}</p>` : ''}`,
 }
 
-const seite = (F) => {
+// Reihe oben: Leiste mit einem Abschnitt je Folie und „Bild n von m“. Fehlt bei Einzelbildern und im Web-Modus.
+const reihe = (nr, gesamt) => `<div class="reihe"><div class="segmente">${Array.from({ length: gesamt }, (_, i) => `<i class="${i + 1 < nr ? 'war' : i + 1 === nr ? 'jetzt' : ''}"></i>`).join('')}</div><span class="zaehler">Bild ${nr} von ${gesamt}${nr === 1 ? ' · wischen →' : ''}</span></div>`
+const seite = (F, nr = 0, gesamt = 0) => {
   const art = ARTEN[F.art ?? 'balken']
   if (!art) throw new Error(`Unbekannte Art „${F.art}“`)
   if (!F.quelle) throw new Error(`Folie „${F.titel}“ ohne Quelle – kein Bild ohne Quelle im Bild.`)
-  return `<section class="seite"><div class="inhalt">
-${art(F)}
+  return `<section class="seite${gesamt > 1 ? ' mit-reihe' : ''}"><div class="inhalt">
+${gesamt > 1 ? reihe(nr, gesamt) : ''}${art(F)}
 <p class="quelle">${esc(F.quelle)} · ${F.art === 'text' ? '' : 'Grafik: '}${esc(L.operator)}</p>
 </div>
 <div class="band"><div class="marke">${LOGO}${esc(L.siteName)}</div><div class="adresse">${ADRESSE}</div></div></section>`
 }
 const dokument = (seiten) => `<!doctype html><html lang="de"><head><meta charset="utf-8"><style>${CSS}</style></head><body>${seiten.join('\n')}</body></html>`
 
-const folien = (S.folien ?? [S]).map((F) => (F.aus ? lies(path.join(path.dirname(quelle), F.aus)) : F))
+// `web` in einer Folie ersetzt im Web-Modus einzelne Felder (etwa „Schreibt in die Kommentare“, das es auf der Seite nicht gibt).
+const folien = (S.folien ?? [S]).map((F) => (F.aus ? lies(path.join(path.dirname(quelle), F.aus)) : F)).map((F) => (webZiel && F.web ? { ...F, ...F.web } : F))
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'bild-'))
 const chrome = (args, html) => {
   const f = path.join(tmp, 'bild.html')
@@ -118,11 +133,27 @@ const chrome = (args, html) => {
   execFileSync(CHROME, ['--headless=new', '--disable-gpu', '--hide-scrollbars', '--force-device-scale-factor=1', ...args, pathToFileURL(f).href], { stdio: 'ignore' })
 }
 const basis = quelle.replace(/\.json$/, '')
-const ziele = folien.map((_, i) => (S.folien ? `${basis}-${i + 1}.png` : `${basis}.png`))
-folien.forEach((F, i) => chrome(['--window-size=1080,1350', `--screenshot=${path.resolve(ziele[i])}`], dokument([seite(F)])))
-if (S.folien) {
-  chrome([`--print-to-pdf=${path.resolve(basis + '.pdf')}`, '--no-pdf-header-footer'], dokument(folien.map(seite)))
-  ziele.push(`${basis}.pdf`)
+const n = S.folien ? folien.length : 0
+const ziele = []
+if (webZiel) {
+  // Für den Artikel: ohne Reihe (auf der Seite wird nicht gewischt), PNG für die Maße und WebP zum Ausliefern.
+  fs.mkdirSync(webZiel, { recursive: true })
+  folien.forEach((F, i) => {
+    const png = path.join(webZiel, `${i + 1}.png`)
+    chrome(['--window-size=1080,1350', `--screenshot=${path.resolve(png)}`], dokument([seite(F)]))
+    execFileSync('cwebp', ['-quiet', '-q', '88', png, '-o', png.replace(/\.png$/, '.webp')])
+    ziele.push(png, png.replace(/\.png$/, '.webp'))
+  })
+} else {
+  folien.forEach((F, i) => {
+    const ziel = S.folien ? `${basis}-${i + 1}.png` : `${basis}.png`
+    chrome(['--window-size=1080,1350', `--screenshot=${path.resolve(ziel)}`], dokument([seite(F, i + 1, n)]))
+    ziele.push(ziel)
+  })
+  if (S.folien) {
+    chrome([`--print-to-pdf=${path.resolve(basis + '.pdf')}`, '--no-pdf-header-footer'], dokument(folien.map((F, i) => seite(F, i + 1, n))))
+    ziele.push(`${basis}.pdf`)
+  }
 }
 fs.rmSync(tmp, { recursive: true, force: true })
 console.log(`${ziele.join(', ')} erzeugt.`)

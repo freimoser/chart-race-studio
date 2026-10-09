@@ -43,7 +43,7 @@ Die Kennzahl „je Praxisinhaber“ ist anschaulich, erzählt aber nur die halbe
 
 Rechnet man beide Gruppen zusammen, ergibt sich ein anderes Bild. Je Kopf in der Praxis sank die Zahl der Hunde und Katzen von 1.244 im Jahr 2000 auf 1.079 im Jahr 2012, stieg bis 2021 auf 1.221 und ist seitdem jedes Jahr gesunken, 2025 auf 1.101. Gemessen an Personen haben die Praxen also mit dem Wachstum der Tierzahlen mehr als Schritt gehalten – aber nur, weil die Angestellten die fehlenden Inhaber mehr als ersetzen.
 
-Ob das auch für die Arbeitszeit gilt, lässt sich aus der Statistik nicht ablesen. Sie zählt Personen, keine Vollzeitstellen, und unter den Angestellten arbeiten viele in Teilzeit: In einer [Befragung des Bundes angestellter Tierärzte](https://www.mdpi.com/2306-7381/13/5/494) Ende 2025 war es gut die Hälfte (54,6 Prozent, unter 38 Wochenstunden). Im Gutachten zur Gebührenordnung gaben Angestellte im Mittel 35 Wochenstunden an, Praxisinhaber 50.
+Ob das auch für die Arbeitszeit gilt, lässt sich aus der Statistik nicht ablesen. Sie zählt Personen, keine Vollzeitstellen, und unter den Angestellten arbeiten viele in Teilzeit: In einer [Befragung des Bundes angestellter Tierärzte](https://www.mdpi.com/2306-7381/13/5/494) Ende 2025 war es gut die Hälfte (54,6 Prozent, unter 38 Wochenstunden). Im Gutachten zur Gebührenordnung gaben Angestellte im Mittel 35 Wochenstunden an, Praxisinhaber 50. Wie viele Überstunden dazukommen, steht im Artikel [Überstunden in der Tierarztpraxis](ueberstunden-tierarztpraxis.html).
 
 ## Warum die Jahre vor 2012 gerechnet sind
 

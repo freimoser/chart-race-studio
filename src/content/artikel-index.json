@@ -320,6 +320,16 @@
     "live": true
   },
   {
+    "art": "auswertung",
+    "slug": "ueberstunden-tierarztpraxis",
+    "titel": "Überstunden in der Tierarztpraxis: was die Zahlen zeigen",
+    "beschreibung": "7 von 10 angestellten Tierärzten machen Überstunden, Inhaber arbeiten 50 Stunden pro Woche. Drei Befragungen zu Arbeitszeit, Notdienst und Pausen.",
+    "frage": "Wie viele Überstunden machen Tierärztinnen und Tierärzte?",
+    "stand": "2026-10-09",
+    "bereit": true,
+    "live": true
+  },
+  {
     "art": "exkurs",
     "slug": "oktoberfest-masspreis-inflation",
     "titel": "Oktoberfest in Zahlen: Maßpreis, Bier und Inflation",

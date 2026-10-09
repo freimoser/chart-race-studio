@@ -4,6 +4,11 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Artikel „Überstunden in der Tierarztpraxis“ mit Bildserie (09.10.2026)
+
+- **Neuer Artikel** `/beitrag/ueberstunden-tierarztpraxis` (Sonderauswertung) mit allen fünf Bildern, Werten im Text, Vergleichstabelle der drei Befragungen, häufigen Fragen und verlinkten Quellen mit Abrufdatum. Der LinkedIn-Post ist die Vorschau, der erste Kommentar verlinkt den Artikel. Querverweise aus den Artikeln 4, 5 und 28, Abschnitt in der Datenherkunft.
+- **Karussell als Reihe erkennbar:** Jede Folie zeigt oben eine Leiste mit fünf Abschnitten und „Bild n von 5“, Bild 1 dazu „wischen →“. Für den Artikel rendert `balkenbild.mjs --web` die Bilder ohne Leiste als PNG und WebP; Folien können für das Web eigene Texte haben (`web`).
+
 ### Marke in jedem Bild und Video (09.10.2026)
 
 - **Bildposts:** `scripts/balkenbild.mjs` setzt jeden Inhalt in einen genormten Rahmen: Band unten mit Logo, „Tiermedizin in Zahlen“ und `tiermedizin-in-zahlen.org`, Quelle und „Grafik: Thomas Freimoser“ darüber. Erstes Bild: Überstunden (`docs/linkedin/grafik-ueberstunden.png`).

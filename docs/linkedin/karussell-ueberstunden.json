@@ -1,7 +1,9 @@
 {
   "_herkunft": "Geprüft am 09.10.2026. Folie 1 aus grafik-ueberstunden.json. Folie 2: AFC-Gutachten zur GOT für das BMEL, Onlinebefragung 2020 (ca. 1.300 Teilnehmende, Inhaber N = 611): Wochenarbeitszeit Inhaber 50,43 h, Angestellte 35,10 h (Mittelwerte); produktive Arbeitszeit („Zeit am Tier“ inkl. Beratung) Inhaber 56 %, Angestellte 69 % (Mittelwerte, Abb. 43). Gerechnet: 50,43 × 0,56 = 28,2 → 28 h, Rest 22,2 → 22 h; 35,10 × 0,69 = 24,2 → 24 h, Rest 10,9 → 11 h. Folien 3 und 4: Jensen et al., Veterinary Sciences 13 (2026) 494: Überstunden-Median Pferd 5, Nutztier 4, Kleintier und nicht kurativ 2 h/Woche; Umgang mit Überstunden (Mehrfachauswahl): eigene Wahl 40,9 %, nach Vorgabe 38,2 %, ausbezahlt 24,9 %, verfallen 17,4 %, Bonus 2,7 %.",
   "folien": [
-    { "aus": "grafik-ueberstunden.json" },
+    {
+      "aus": "grafik-ueberstunden.json"
+    },
     {
       "art": "gestapelt",
       "titel": "Wie viel der Woche am Tier bleibt",
@@ -9,10 +11,27 @@
       "jahr": "2020",
       "einheit": " Std.",
       "max": 52,
-      "teile": ["Am Tier und in der Beratung", "Verwaltung, Personal, Fahrten und Sonstiges"],
+      "teile": [
+        "Am Tier und in der Beratung",
+        "Verwaltung, Personal, Fahrten und Sonstiges"
+      ],
       "balken": [
-        { "name": "Praxisinhaber:innen", "zusatz": "50 Stunden pro Woche, davon 44 % nicht am Tier", "werte": [28, 22] },
-        { "name": "Angestellte Tierärzt:innen", "zusatz": "35 Stunden pro Woche, davon 31 % nicht am Tier", "werte": [24, 11] }
+        {
+          "name": "Praxisinhaber:innen",
+          "zusatz": "50 Stunden pro Woche, davon 44 % nicht am Tier",
+          "werte": [
+            28,
+            22
+          ]
+        },
+        {
+          "name": "Angestellte Tierärzt:innen",
+          "zusatz": "35 Stunden pro Woche, davon 31 % nicht am Tier",
+          "werte": [
+            24,
+            11
+          ]
+        }
       ],
       "quelle": "Quelle: AFC-Gutachten zur Gebührenordnung für das Bundeslandwirtschaftsministerium, Onlinebefragung 2020 (rund 1.300 Praktiker:innen). Stunden berechnet: Wochenstunden mal Anteil am Tier (56 bzw. 69 %), Mittelwerte"
     },
@@ -23,9 +42,18 @@
       "einheit": " Std.",
       "max": 6,
       "balken": [
-        { "name": "Pferde", "wert": 5 },
-        { "name": "Nutztiere", "wert": 4 },
-        { "name": "Kleintiere und nicht kurativ Tätige", "wert": 2 }
+        {
+          "name": "Pferde",
+          "wert": 5
+        },
+        {
+          "name": "Nutztiere",
+          "wert": 4
+        },
+        {
+          "name": "Kleintiere und nicht kurativ Tätige",
+          "wert": 2
+        }
       ],
       "quelle": "Quelle: Jensen et al., Veterinary Sciences 2026 (Befragung des Bundes angestellter Tierärzte, Sep.–Dez. 2025, bis 1.184 Angestellte); freiwillige Online-Befragung"
     },
@@ -36,11 +64,26 @@
       "einheit": " %",
       "max": 100,
       "balken": [
-        { "name": "Freizeit nach eigener Wahl", "wert": 41 },
-        { "name": "Freizeitausgleich nach Vorgabe der Praxis", "wert": 38 },
-        { "name": "Werden ausbezahlt", "wert": 25 },
-        { "name": "Verfallen", "wert": 17 },
-        { "name": "Bonus", "wert": 3 }
+        {
+          "name": "Freizeit nach eigener Wahl",
+          "wert": 41
+        },
+        {
+          "name": "Freizeitausgleich nach Vorgabe der Praxis",
+          "wert": 38
+        },
+        {
+          "name": "Werden ausbezahlt",
+          "wert": 25
+        },
+        {
+          "name": "Verfallen",
+          "wert": 17
+        },
+        {
+          "name": "Bonus",
+          "wert": 3
+        }
       ],
       "quelle": "Quelle: Jensen et al., Veterinary Sciences 2026 (Befragung des Bundes angestellter Tierärzte, Sep.–Dez. 2025, bis 1.184 Angestellte); freiwillige Online-Befragung"
     },
@@ -49,10 +92,18 @@
       "titel": "Und wie sieht eure Woche aus?",
       "absaetze": [
         "Berichte für die Klinik, Befunde zur Rücküberweisung, Rückrufe bei Halter:innen: In den Zahlen steckt das unter „Verwaltung“.",
-        "Wie viel davon nach Feierabend passiert, dazu gibt es für Deutschland keine Zahlen."
+        "Wie viel davon nach Feierabend passiert, dazu gibt es für Deutschland keine Zahlen.",
+        "Alle Zahlen, Quellen und Methode im Artikel auf tiermedizin-in-zahlen.org."
       ],
       "hinweis": "Schreibt in die Kommentare, wie viele Stunden pro Woche bei euch dafür draufgehen.",
-      "quelle": "Quellen der Bilder: Jensen et al., Veterinary Sciences 2026; AFC-Gutachten zur GOT für das BMEL (Befragung 2020)"
+      "quelle": "Quellen der Bilder: Jensen et al., Veterinary Sciences 2026; AFC-Gutachten zur GOT für das BMEL (Befragung 2020)",
+      "web": {
+        "absaetze": [
+          "Berichte für die Klinik, Befunde zur Rücküberweisung, Rückrufe bei Halter:innen: In den Zahlen steckt das unter „Verwaltung“.",
+          "Wie viel davon nach Feierabend passiert, dazu gibt es für Deutschland keine Zahlen."
+        ],
+        "hinweis": "Wie viele Stunden sind es bei euch? Schreibt es mir auf LinkedIn."
+      }
     }
   ]
 }

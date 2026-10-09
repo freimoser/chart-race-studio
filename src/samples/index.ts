@@ -58,7 +58,7 @@ export const SAMPLES: SampleDataset[] = [
     source: 'Quelle: Bundestierärztekammer (Statistik), IVH/ZZF (Heimtiere); Quotienten berechnet, vor 2012 verkettet',
     sourceUrl: 'https://www.bundestieraerztekammer.de/btk/statistik/',
     unit: 'Hunde und Katzen',
-    description: 'Je Praxisinhaber blieb die Zahl der Hunde und Katzen von 2000 bis 2012 gleich und stieg erst danach; je Tierärztin oder Tierarzt in der Praxis sank sie seit 2000 um 11 Prozent.',
+    description: 'Je Praxisinhaber bis 2012 gleich, danach steigend; je Tierärztin oder Tierarzt in der Praxis seit 2000 um 11 Prozent gesunken.',
     dataInfo: [
       "Berechnet wie „Hunde und Katzen je Tierärztin und Tierarzt“ (ab 2012): Hunde und Katzen (IVH/ZZF) geteilt durch die Praxisinhaber:innen bzw. durch Inhaber:innen plus angestellte Tierärzt:innen in Praxen (Bundestierärztekammer, jeweils zum Jahresende). Ab 2012 sind die Werte gleich.",
       "2000 bis 2011 verkettet: Bis 2011 schätzten die Verbände die Heimtiere, ab 2012 erheben sie sie. Die Schätzung ist mit dem Faktor 1,45 (19,7 Mio. Hunde und Katzen 2012 zu 13,6 Mio. 2011) an die Erhebung angeschlossen. Das rechnet den ganzen Sprung der Methode zu; dafür sprechen die gleichbleibenden Haushaltsanteile (Hund 13,3 und 13,4 %, Katze 16,5 und 16,5 %, 2009 und 2012) und der Futterumsatz ohne Sprung (2011 auf 2012: Hund +2,6 %, Katze +3,4 %).",

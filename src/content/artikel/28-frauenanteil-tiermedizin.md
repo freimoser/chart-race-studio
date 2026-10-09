@@ -59,7 +59,7 @@ Der Wechsel von 2024, als die Angestellten die Inhaber erstmals überholten, ist
 
 Laut Tierärzte Atlas scheiden in den nächsten 15 Jahren fast zwei Drittel der noch tätigen Männer aus dem Beruf aus, besonders unter den Praxisinhabern. Ob Tierärztinnen diese Praxen übernehmen, ob sie in Gruppen aufgehen oder schließen, sagt keine Statistik voraus. Was über Praxisketten belegt ist, steht im Artikel [Wer betreibt die Tierarztpraxen in Deutschland?](../artikel/tierarztketten-deutschland.html).
 
-Ein Hinweis auf die Arbeitsmodelle: In einer [Befragung des Bundes angestellter Tierärzte](https://www.mdpi.com/2306-7381/13/5/494) Ende 2025 arbeitete gut die Hälfte der Angestellten in Teilzeit (54,6 Prozent, unter 38 Wochenstunden); der Tierärzte Atlas nennt aus früheren Stichproben 34 bis 43 Prozent für die ganze Branche. Teilzeit passt eher zu einer Anstellung als zu einer eigenen Praxis; belegen lässt sich der Zusammenhang aus diesen Zahlen allein aber nicht.
+Ein Hinweis auf die Arbeitsmodelle: In einer [Befragung des Bundes angestellter Tierärzte](https://www.mdpi.com/2306-7381/13/5/494) Ende 2025 arbeitete gut die Hälfte der Angestellten in Teilzeit (54,6 Prozent, unter 38 Wochenstunden); der Tierärzte Atlas nennt aus früheren Stichproben 34 bis 43 Prozent für die ganze Branche. Wie lang die Wochen in der Praxis sind, zeigt der Artikel [Überstunden in der Tierarztpraxis](ueberstunden-tierarztpraxis.html). Teilzeit passt eher zu einer Anstellung als zu einer eigenen Praxis; belegen lässt sich der Zusammenhang aus diesen Zahlen allein aber nicht.
 
 ## Was die Zahl nicht sagt
 
