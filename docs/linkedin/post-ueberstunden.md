@@ -9,31 +9,21 @@
 
 ---
 
-Freitagabend, und du bist noch auf LinkedIn? In vielen Tierarztpraxen brennt jetzt auch noch Licht. 🌙
+Freitagabend, und du bist noch auf LinkedIn? In vielen Tierarztpraxen brennt auch noch Licht. 🌙
 
-Wie lange dort gearbeitet wird, misst keine amtliche Statistik. Drei Befragungen ergeben trotzdem ein klares Bild, in 5 Bildern zum Durchwischen 👉
+Die Zahlen in 5 Bildern 👉 und ausführlich hier:
+https://tiermedizin-in-zahlen.org/beitrag/ueberstunden-tierarztpraxis
 
-⏱️ Praxisinhaber:innen arbeiten im Schnitt 50 Stunden pro Woche. Nur 56 % davon am Tier oder im Gespräch mit den Halter:innen. Der Rest geht in Verwaltung, Personal und Fahrten: rund 22 Stunden pro Woche.
+⏱️ 7 von 10 angestellten Tierärzt:innen machen Überstunden
+🚨 22 % arbeiten mindestens einmal pro Woche länger als 10 Stunden
+📝 Praxisinhaber:innen arbeiten 50 Stunden pro Woche, rund 22 davon nicht am Tier
 
-🕘 7 von 10 angestellten Tierärzt:innen machen Überstunden, obwohl gut die Hälfte in Teilzeit arbeitet. Jede:r Vierte kommt auf 5 Stunden oder mehr pro Woche, bei Pferd und Nutztier sind es im Median 5 bzw. 4. Ausbezahlt bekommt sie nur jede:r Vierte, bei 17 % verfallen sie einfach.
+Wie viele Stunden gehen bei euch für Berichte, Befunde und Rückrufe drauf?
 
-🚨 22 % arbeiten mindestens einmal pro Woche länger als 10 Stunden, die Grenze des Arbeitszeitgesetzes. 40 % schaffen mindestens einmal pro Woche ihre Pause nicht. 3 von 4 machen Nacht- oder Wochenenddienste.
+Gerechnet / Quellen: 22 Std. = 50,4 Wochenstunden × 44 % nicht am Tier, „7 von 10“ = 100 % − 30,1 % ohne Überstunden. Befragungen, keine amtliche Statistik: Bund angestellter Tierärzte (Ende 2025, 1.184 Angestellte, Veterinary Sciences 2026) und GOT-Gutachten für das BMEL (2020, rund 1.300 Praktiker:innen). Die 50 Wochenstunden bestätigt eine Befragung der FU Berlin von 2016.
 
-📝 Und dann das, was keine Studie einzeln zählt: der Überweisungsbericht für die Klinik, der Befund zur Rücküberweisung, der Rückruf bei der Halterin, die Abrechnung. In den Zahlen oben steckt das unter „Verwaltung“. Wie viel davon nach Feierabend passiert, dazu habe ich für Deutschland keine Zahlen gefunden.
-
-Deshalb meine Frage an euch: Wie viele Stunden pro Woche gehen bei euch für Berichte, Befunde und Rückrufe drauf?
-
-Alle Zahlen, Quellen und Methode im Artikel, Link im ersten Kommentar.
-
-Gerechnet: Die 22 Stunden sind 50,4 Wochenstunden mal 44 % nicht am Tier (Mittelwerte, gerundet). „7 von 10“ = 100 % minus 30,1 % ohne Überstunden.
-Wo sich Quellen überschneiden: Rund 50 Wochenstunden finden sich in zwei Befragungen, 50,4 Stunden im Mittel bei Praxisinhaber:innen (GOT-Gutachten, Befragung 2020, rund 1.300 Praktiker:innen) und 50 Stunden im Median bei Vollzeit-Praktiker:innen (FU Berlin, 2016, 1.930 Befragte). Gegenläufig: Im GOT-Gutachten gaben nur rund 2 % der Angestellten 50 Stunden oder mehr an. Die Zahlen zu Überstunden und Pausen stammen aus einer freiwilligen Online-Befragung (Bund angestellter Tierärzte, Ende 2025, 1.184 Angestellte); wer belastet ist, antwortet eher.
-
-Quellen: AFC-Gutachten zur GOT für das Bundeslandwirtschaftsministerium; Jensen et al., Veterinary Sciences 2026; Kersebohm, Doherr et al., Berliner und Münchener Tierärztliche Wochenschrift.
-
-#Tiermedizin #Tierarzt #Arbeitszeit #Überstunden
+#Tiermedizin #Tierarzt #Überstunden
 
 ---
 
-**Erster Kommentar:**
-
-Der ganze Artikel mit allen 5 Bildern, Zahlen und Quellen: https://tiermedizin-in-zahlen.org/beitrag/ueberstunden-tierarztpraxis
+**Erster Kommentar:** keiner nötig, der Link steht im Post. Die lange Fassung des Textes steht in der Git-Historie (Commit vom 09.10.2026).
