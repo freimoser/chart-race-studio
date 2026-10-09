@@ -1,6 +1,6 @@
 # LinkedIn-Post: Überstunden in der Tierarztpraxis (Fr 09.10.2026, abends)
 
-**Format:** Textpost ohne Grafik (Test „Freitagabend“). Link nicht in den Post, sondern in den ersten Kommentar.
+**Format:** Textpost mit Bild `grafik-ueberstunden.png` (4:5, aus `grafik-ueberstunden.json` mit `node scripts/balkenbild.mjs`; nur Werte der BaT-Befragung, keine gerechneten). Link nicht in den Post, sondern in den ersten Kommentar.
 **Zahlen geprüft am 09.10.2026** an den Originalen:
 - AFC-Gutachten für das BMEL zur GOT, Befragung 2020, ca. 1.300 Praktiker:innen (laut Bericht repräsentativ): Inhaber 50,43 h/Woche (Mittel), Angestellte 35,10 h; Anteil Arbeitszeit am Tier inkl. Beratung: Inhaber im Mittel 56 %, Angestellte 69 %; nur ca. 2 % der Angestellten ≥ 50 h. https://www.bmleh.de/SharedDocs/Downloads/DE/_Tiere/Tiergesundheit/abschlussbericht-pruefung-tieraerztegebuehrenverordnung.pdf
 - Jensen et al., Veterinary Sciences 13 (2026) 494, BaT-Befragung Sep.–Dez. 2025, bis 1.184 angestellte Tierärzt:innen (6 %), Gelegenheitsstichprobe: 30,1 % ohne Überstunden, im Mittel 3 h/Woche, ein Viertel ≥ 5 h; 17,4 % Überstunden verfallen; 54,6 % Teilzeit (< 38 h); 75,2 % Notdienst; 22,1 % > 10 h mind. einmal pro Woche; 40 % ohne 30-Minuten-Pause mind. einmal pro Woche. https://www.mdpi.com/2306-7381/13/5/494
