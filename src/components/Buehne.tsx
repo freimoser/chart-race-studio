@@ -147,6 +147,9 @@ export function Buehne({ dataset, settings, brand, controller: preview, leer, on
                 fontSize: layout.watermark.size,
                 lineHeight: 1,
                 fontWeight: 600,
+                // Ohne Tabellenziffern wie im Export (Canvas) und in der Breitenmessung des Layouts; sonst stehen
+                // die Bindestriche in „tiermedizin-in-zahlen.org“ breit und der Text wird länger als berechnet.
+                fontFeatureSettings: 'normal',
                 opacity: settings.watermarkOpacity,
                 height: layout.watermark.logoSize,
               }}

@@ -32,6 +32,10 @@ Diese Regeln stammen aus Fehlern, die schon passiert sind. Vor jeder Auswertung,
 - Jeder Post-Text in `docs/linkedin/` endet vor den Quellen mit einem Block **„Gerechnet / Quellen“**: welche
   Werte berechnet sind (wie) und wo sich Quellen überschneiden.
 - Links in Post und Kommentar **ohne `.html`**.
+- **Jedes Bild und Video trägt die Marke.** Bildposts (ohne Zeitreihe) nur über `scripts/balkenbild.mjs` aus einer
+  JSON-Datei: 1080 × 1350 (4:5, LinkedIn und Instagram), genormtes Band unten mit Logo, „Tiermedizin in Zahlen“ und
+  `tiermedizin-in-zahlen.org`. Videos aus dem Studio mit dem Wasserzeichen `tiermedizin-in-zahlen.org` (Standard).
+  Kein Bild ohne Quelle im Bild.
 - Ablauf je Post: `docs/REDAKTION.md`. Datenstandard: `docs/DATENSTANDARD.md`. Datensätze: `docs/DATASETS.md`.
 
 ## Website

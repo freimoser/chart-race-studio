@@ -4,6 +4,12 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Marke in jedem Bild und Video (09.10.2026)
+
+- **Bildposts:** `scripts/balkenbild.mjs` setzt jeden Inhalt in einen genormten Rahmen: Band unten mit Logo, „Tiermedizin in Zahlen“ und `tiermedizin-in-zahlen.org`, Quelle und „Grafik: Thomas Freimoser“ darüber. Erstes Bild: Überstunden (`docs/linkedin/grafik-ueberstunden.png`).
+- **Videos:** Standard-Wasserzeichen im Studio jetzt `tiermedizin-in-zahlen.org` statt des Namens. Die Vorschau zeichnet es ohne Tabellenziffern wie der Export; vorher standen die Bindestriche breit und der Text war länger als vom Layout berechnet.
+- Regel in `CLAUDE.md` (Abschnitt Posts).
+
 ### Korrektur Teilzeit, Post „Überstunden“ (09.10.2026)
 
 - **Korrektur:** „Jede zweite Frau in Teilzeit, aber nur 13 Prozent der Männer“ stand als Angabe zur Tiermedizin in den Artikeln 4, 5, 28 und 29, in der Dateninfo von `inhaber-angestellte` und im Post-Text 5. Laut Tierärzte Atlas beschreibt sie die Gesamtbevölkerung. Ersetzt durch Branchendaten: 54,6 Prozent Teilzeit unter angestellten Tierärzt:innen (Jensen et al., Veterinary Sciences 2026, BaT-Befragung Ende 2025), 34–43 Prozent laut Stichproben im Tierärzte Atlas; Wochenstunden aus dem GOT-Gutachten (Inhaber 50,4, Angestellte 35,1). Korrekturvermerk mit Datum in jedem Artikel.

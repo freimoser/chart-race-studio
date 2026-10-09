@@ -116,7 +116,8 @@ export const DEFAULT_SETTINGS: ChartSettings = {
   suffix: '',
   compact: false,
   watermarkEnabled: true,
-  watermarkText: 'Thomas Freimoser',
+  // Jedes Video trägt die Adresse der Seite (Regel seit 09.10.2026, CLAUDE.md). Im Studio änderbar.
+  watermarkText: 'tiermedizin-in-zahlen.org',
   watermarkPosition: 'bottom-right',
   watermarkOpacity: 0.7,
   watermarkScale: 1,

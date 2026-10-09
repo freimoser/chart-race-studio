@@ -28,32 +28,42 @@ const FONT = pathToFileURL(path.resolve('node_modules/@fontsource-variable/inter
 const zahl = (v) => v.toLocaleString('de-DE')
 const max = S.max ?? Math.max(...S.balken.map((b) => b.wert))
 
-const html = `<!doctype html><html lang="de"><head><meta charset="utf-8"><style>
+// Genormter Rahmen (Regel seit 09.10.2026, CLAUDE.md): Jedes Bild trägt unten das Band mit Logo, Name und Adresse
+// der Seite. Weitere Bildarten setzen ihren Inhalt nur in rahmen() ein, das Band bleibt überall gleich.
+const LOGO = '<svg viewBox="0 0 28 28" width="52" height="52" aria-hidden="true"><rect width="28" height="28" rx="7" fill="#fff"/><rect x="6" y="7" width="16" height="3.2" rx="1.6" fill="#0f4c5c"/><rect x="6" y="12.4" width="11" height="3.2" rx="1.6" fill="#e36414"/><rect x="6" y="17.8" width="7" height="3.2" rx="1.6" fill="#0f4c5c" opacity=".75"/></svg>'
+const ADRESSE = 'tiermedizin-in-zahlen.org'
+const rahmen = (inhalt, quelleText) => `<!doctype html><html lang="de"><head><meta charset="utf-8"><style>
 @font-face { font-family: Inter; src: url('${FONT}') format('woff2'); font-weight: 100 900; }
 * { margin: 0; box-sizing: border-box; }
-body { width: 1080px; height: 1350px; font-family: Inter, sans-serif; background: #fff; color: #1d2329;
-  padding: 72px 64px 56px; display: flex; flex-direction: column; }
+body { width: 1080px; height: 1350px; font-family: Inter, sans-serif; background: #fff; color: #1d2329; display: flex; flex-direction: column; }
+.inhalt { flex: 1; padding: 72px 64px 32px; display: flex; flex-direction: column; }
 .kopf { display: flex; justify-content: space-between; gap: 32px; align-items: flex-start; }
 h1 { font-size: 58px; line-height: 1.1; font-weight: 750; letter-spacing: -0.02em; }
 .jahr { font-feature-settings: 'tnum' 1; font-size: 112px; line-height: 0.9; font-weight: 750; color: #3d4248; }
 .unter { margin-top: 24px; font-size: 30px; line-height: 1.35; color: #6e7681; max-width: 900px; }
-.balken { margin-top: 80px; display: flex; flex-direction: column; gap: 46px; }
+.balken { margin-top: 72px; display: flex; flex-direction: column; gap: 42px; }
 .name { font-size: 31px; font-weight: 600; line-height: 1.25; }
 .zeile { margin-top: 14px; display: flex; align-items: center; gap: 20px; }
 .spur { flex: 1; height: 44px; background: #eef1f3; border-radius: 4px; position: relative; }
 .fuell { position: absolute; inset: 0 auto 0 0; background: #0f4c5c; border-radius: 4px; }
 .wert { font-feature-settings: 'tnum' 1; width: 120px; text-align: right; font-size: 44px; font-weight: 750; }
-.fuss { margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; gap: 40px;
-  font-size: 22px; line-height: 1.4; color: #6e7681; }
-.autor { font-size: 28px; font-weight: 650; color: #5b6168; white-space: nowrap; }
+.quelle { margin-top: auto; font-size: 22px; line-height: 1.4; color: #6e7681; }
+.band { height: 112px; background: #0f4c5c; color: #fff; padding: 0 64px; display: flex; align-items: center; justify-content: space-between; border-top: 8px solid #e36414; }
+.marke { display: flex; align-items: center; gap: 18px; font-size: 32px; font-weight: 700; letter-spacing: -0.01em; }
+.adresse { font-size: 30px; font-weight: 600; color: #9adbcf; }
 </style></head><body>
-<div class="kopf"><h1>${esc(S.titel)}</h1><div class="jahr">${esc(S.jahr)}</div></div>
+<div class="inhalt">
+${inhalt}
+<p class="quelle">${esc(quelleText)}</p>
+</div>
+<div class="band"><div class="marke">${LOGO}${esc(L.siteName)}</div><div class="adresse">${ADRESSE}</div></div>
+</body></html>`
+
+const html = rahmen(`<div class="kopf"><h1>${esc(S.titel)}</h1><div class="jahr">${esc(S.jahr)}</div></div>
 <p class="unter">${esc(S.untertitel)}</p>
 <div class="balken">
 ${S.balken.map((b) => `  <div><div class="name">${esc(b.name)}</div><div class="zeile"><div class="spur"><div class="fuell" style="width:${(b.wert / max * 100).toFixed(2)}%"></div></div><div class="wert">${zahl(b.wert)}${esc(S.einheit ?? '')}</div></div></div>`).join('\n')}
-</div>
-<div class="fuss"><div>${esc(S.quelle)}</div><div class="autor">${esc(L.operator)}</div></div>
-</body></html>`
+</div>`, `${S.quelle} · Grafik: ${L.operator}`)
 
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'balken-'))
 const f = path.join(tmp, 'bild.html')
