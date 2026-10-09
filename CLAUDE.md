@@ -4,6 +4,10 @@ Seite: https://tiermedizin-in-zahlen.org (Repo heißt weiter chart-race-studio).
 Freimoser, **nicht** der Firma: kein Petleo, Herausgeber ist die Person. Antworten auf Deutsch und enden mit
 `🌐 https://tiermedizin-in-zahlen.org`.
 
+**Geht es in einer Antwort um einen Post** (erstellen, ändern, Text, Bilder, Video), steht als allerletzte Zeile der
+Link zum Artikel des Posts, live geprüft und ohne `.html`: `🌐 https://tiermedizin-in-zahlen.org/beitrag/<slug>`. Er
+ersetzt dann die Startseiten-Zeile. Der Nutzer will nichts von Hand suchen (Regel vom 09.10.2026).
+
 Diese Regeln stammen aus Fehlern, die schon passiert sind. Vor jeder Auswertung, Grafik und jedem Post lesen.
 
 ## Daten und Grafiken (verbindlich)
