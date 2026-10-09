@@ -9,18 +9,14 @@
 
 ---
 
-Freitagabend, und du bist noch auf LinkedIn? In vielen Tierarztpraxen brennt auch noch Licht. 🌙
+Freitagabend. Die Praxis ist zu, der Arbeitstag noch nicht.
 
-Die Zahlen in 5 Bildern 👉 und ausführlich hier:
+7 von 10 angestellten Tierärzt:innen machen Überstunden, bei 17 % verfallen sie einfach. Die Zahlen in 5 Bildern, alles Weitere hier:
 https://tiermedizin-in-zahlen.org/beitrag/ueberstunden-tierarztpraxis
 
-⏱️ 7 von 10 angestellten Tierärzt:innen machen Überstunden
-🚨 22 % arbeiten mindestens einmal pro Woche länger als 10 Stunden
-📝 Praxisinhaber:innen arbeiten 50 Stunden pro Woche, rund 22 davon nicht am Tier
+Wie lange sitzt ihr nach Feierabend noch an Berichten und Rückrufen?
 
-Wie viele Stunden gehen bei euch für Berichte, Befunde und Rückrufe drauf?
-
-Gerechnet / Quellen: 22 Std. = 50,4 Wochenstunden × 44 % nicht am Tier, „7 von 10“ = 100 % − 30,1 % ohne Überstunden. Befragungen, keine amtliche Statistik: Bund angestellter Tierärzte (Ende 2025, 1.184 Angestellte, Veterinary Sciences 2026) und GOT-Gutachten für das BMEL (2020, rund 1.300 Praktiker:innen). Die 50 Wochenstunden bestätigt eine Befragung der FU Berlin von 2016.
+Gerechnet: „7 von 10“ = 100 % minus 30,1 % ohne Überstunden, die Stunden in Bild 2 aus Mittelwerten. Quellen in jedem Bild.
 
 #Tiermedizin #Tierarzt #Überstunden
 
