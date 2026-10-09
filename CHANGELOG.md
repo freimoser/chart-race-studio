@@ -4,6 +4,11 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Korrektur Teilzeit, Post „Überstunden“ (09.10.2026)
+
+- **Korrektur:** „Jede zweite Frau in Teilzeit, aber nur 13 Prozent der Männer“ stand als Angabe zur Tiermedizin in den Artikeln 4, 5, 28 und 29, in der Dateninfo von `inhaber-angestellte` und im Post-Text 5. Laut Tierärzte Atlas beschreibt sie die Gesamtbevölkerung. Ersetzt durch Branchendaten: 54,6 Prozent Teilzeit unter angestellten Tierärzt:innen (Jensen et al., Veterinary Sciences 2026, BaT-Befragung Ende 2025), 34–43 Prozent laut Stichproben im Tierärzte Atlas; Wochenstunden aus dem GOT-Gutachten (Inhaber 50,4, Angestellte 35,1). Korrekturvermerk mit Datum in jedem Artikel.
+- **Neuer Post-Text** `docs/linkedin/post-ueberstunden.md`: Überstunden und Verwaltung in der Tierarztpraxis aus drei Befragungen (GOT-Gutachten 2020, BaT 2025, FU Berlin 2016), mit Block „Gerechnet / Quellen“ und gegenläufigem Beleg.
+
 ### Startseite zeigt den Post des Tages, Tierarztmangel seit 2000 (08.10.2026)
 
 - **Startseite:** Oben stand am Tag von Post 5 noch die Sonderauswertung von gestern (Tierarztkosten mit Praxisumsatz), weil ein Post ohne `publishedOn` nach seinem Entwurfsdatum sortiert wurde. Jetzt steht der Post auf `naechster` oben, ohne Datum bis zur Veröffentlichung.

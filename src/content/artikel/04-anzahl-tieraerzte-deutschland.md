@@ -5,7 +5,7 @@ titel: Wie viele Tierärzte gibt es in Deutschland? Zahlen 2025
 beschreibung: Ende 2025 waren 34.476 Tierärzte in Deutschland tätig, 46.089 in einer Kammer. Erstmals arbeiten mehr Angestellte als Inhaber in den Praxen.
 frage: Wie viele Tierärzte gibt es in Deutschland?
 suchbegriffe: wie viele tierärzte gibt es in deutschland, anzahl tierärzte deutschland, tierärzte in deutschland anzahl, statistik tierärzte deutschland, angestellte tierärzte
-stand: 2026-09-23
+stand: 2026-10-09
 bereit: ja
 ---
 Ende 2025 waren in Deutschland **34.476 Tierärztinnen und Tierärzte tätig**, 72 Prozent davon Frauen. Mitglied einer Tierärztekammer waren **46.089** – die Differenz sind Kammermitglieder, die nicht tierärztlich tätig sind, etwa im Ruhestand. In den Praxen arbeiteten **12.125 Angestellte** und **11.216 Inhaberinnen und Inhaber**; seit 2024 sind die Angestellten damit erstmals in der gesamtdeutschen Statistik die größere Gruppe.
@@ -36,7 +36,7 @@ Zwei Entwicklungen laufen hier gegeneinander. Die Zahl der Inhaber wuchs fast dr
 
 Der Beruf selbst schrumpft nicht. Insgesamt waren 2025 laut Bundestierärztekammer 34.476 Tierärztinnen und Tierärzte tätig, so viele wie nie. Nur der Weg in die eigene Praxis wird seltener gewählt.
 
-Die Statistik nennt keine Gründe, aber sie zeigt, wo sich die Gruppen unterscheiden. Laut Tierärzte Atlas Deutschland 2024 sind 82 Prozent der angestellten Tierärztinnen und Tierärzte Frauen, unter den Selbstständigen 58 Prozent. Und Ende 2023 arbeitete jede zweite Frau in Teilzeit, aber nur 13 Prozent der Männer. Eine Anstellung passt offenbar besser zu dem Arbeitsmodell, das viele im Beruf suchen.
+Die Statistik nennt keine Gründe, aber sie zeigt, wo sich die Gruppen unterscheiden. Laut Tierärzte Atlas Deutschland 2024 sind 82 Prozent der angestellten Tierärztinnen und Tierärzte Frauen, unter den Selbstständigen 58 Prozent. Und gut die Hälfte der Angestellten arbeitet in Teilzeit, zeigt eine [Befragung des Bundes angestellter Tierärzte](https://www.mdpi.com/2306-7381/13/5/494) Ende 2025; Praxisinhaber kommen laut Gutachten zur Gebührenordnung im Mittel auf 50 Wochenstunden. Eine Anstellung passt offenbar besser zu dem Arbeitsmodell, das viele im Beruf suchen.
 
 Offen bleibt, welche Rolle die Praxisgruppen spielen, die seit 2016 in Deutschland Praxen kaufen und gründen. Die Kammerstatistik erfasst Eigentum nicht, der Zusammenhang lässt sich aus ihr also nicht ablesen. Was über diesen Markt belegt ist, steht im Artikel [Wer betreibt die Tierarztpraxen in Deutschland?](../artikel/tierarztketten-deutschland.html), welchen Anteil an allen Praxen das ausmacht, im Artikel [Anteil der Tierarztketten](anteil-tierarztketten-deutschland.html).
 
@@ -71,3 +71,5 @@ Seit 2024. In diesem Jahr standen 11.990 Angestellte 11.264 Inhabern gegenüber.
 ## Quelle und Methode
 
 Statistik der Deutschen Tierärzteschaft der [Bundestierärztekammer](https://www.bundestieraerztekammer.de/btk/statistik/), veröffentlicht im Deutschen Tierärzteblatt, Stichtag jeweils 31. Dezember. Die Jahrgänge 1991 bis 1995 sind nur gedruckt erschienen und stammen aus einer Dissertation, die sie zitiert (Maure 1998). Die Zahl der Angestellten für 2002 (3.784) stammt aus Tab. 1 der Statistik 2002. Kammermitglieder und Frauenanteil 2025 aus der [Tierärztestatistik 2025](https://www.bundestieraerztekammer.de/btk/statistik/) der Bundestierärztekammer. Gegenprobe und Praxiszahlen: Tierärzte Atlas Deutschland 2024, Deutsches Tierärzteblatt 2/2025.
+
+*Korrigiert am 9. Oktober 2026: Die frühere Angabe „jede zweite Frau in Teilzeit, aber nur 13 Prozent der Männer“ beschreibt laut Tierärzte Atlas die Gesamtbevölkerung, nicht die Tiermedizin. Sie ist durch Befragungsdaten aus der Branche ersetzt: Jensen et al., Veterinary Sciences 13 (2026) 494, Befragung von 1.184 angestellten Tierärztinnen und Tierärzten September bis Dezember 2025, abgerufen am 9. Oktober 2026.*

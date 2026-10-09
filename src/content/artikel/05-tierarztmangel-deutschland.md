@@ -5,7 +5,7 @@ titel: Tierarztmangel in Deutschland: was die Zahlen zeigen
 beschreibung: Je Tierarzt in der Praxis kamen 2025 1.101 Hunde und Katzen, 11 Prozent weniger als 2000. Knapp werden Inhaber, Arbeitszeit, Nutztiermedizin.
 frage: Gibt es in Deutschland einen Tierarztmangel?
 suchbegriffe: tierarztmangel deutschland, tierärztemangel, werden tierärzte in deutschland gesucht, tiere pro tierarzt
-stand: 2026-10-08
+stand: 2026-10-09
 bereit: ja
 ---
 Gemessen an Köpfen zeigt die Statistik keinen Mangel: 2025 kamen in Deutschland rechnerisch **1.101 Hunde und Katzen auf eine Tierärztin oder einen Tierarzt in der Praxis**, weniger als im Jahr 2000 mit 1.244. Knapp geworden sind die **Praxisinhaber** – auf jeden kommen inzwischen 2.291 Hunde und Katzen statt 1.668 – und, was die Statistik nicht misst, die Arbeitszeit. Berechnet aus der Statistik der Bundestierärztekammer und den Heimtierzahlen von IVH und ZZF; die Heimtierzahlen vor 2012 sind an die heutige Zählung angeschlossen.
@@ -43,7 +43,7 @@ Die Kennzahl „je Praxisinhaber“ ist anschaulich, erzählt aber nur die halbe
 
 Rechnet man beide Gruppen zusammen, ergibt sich ein anderes Bild. Je Kopf in der Praxis sank die Zahl der Hunde und Katzen von 1.244 im Jahr 2000 auf 1.079 im Jahr 2012, stieg bis 2021 auf 1.221 und ist seitdem jedes Jahr gesunken, 2025 auf 1.101. Gemessen an Personen haben die Praxen also mit dem Wachstum der Tierzahlen mehr als Schritt gehalten – aber nur, weil die Angestellten die fehlenden Inhaber mehr als ersetzen.
 
-Ob das auch für die Arbeitszeit gilt, lässt sich aus der Statistik nicht ablesen. Sie zählt Personen, keine Vollzeitstellen, und unter den Angestellten arbeiten deutlich mehr Menschen in Teilzeit: Laut Tierärzte Atlas war 2023 jede zweite Tierärztin teilzeitbeschäftigt, aber nur 13 Prozent ihrer männlichen Kollegen.
+Ob das auch für die Arbeitszeit gilt, lässt sich aus der Statistik nicht ablesen. Sie zählt Personen, keine Vollzeitstellen, und unter den Angestellten arbeiten viele in Teilzeit: In einer [Befragung des Bundes angestellter Tierärzte](https://www.mdpi.com/2306-7381/13/5/494) Ende 2025 war es gut die Hälfte (54,6 Prozent, unter 38 Wochenstunden). Im Gutachten zur Gebührenordnung gaben Angestellte im Mittel 35 Wochenstunden an, Praxisinhaber 50.
 
 ## Warum die Jahre vor 2012 gerechnet sind
 
@@ -62,7 +62,7 @@ Wer von Tierarztmangel spricht, meint selten die Gesamtzahl. Der Bundesverband P
 Drei Dinge zeigt sie aber doch:
 
 - **Die Selbstständigkeit schrumpft.** Seit dem Höchststand 2019 gibt es 803 Praxisinhaber weniger. Wer eine Praxis führt, trägt Notdienst und Nachfolge; dass diese Gruppe kleiner wird, während die Tierzahl hoch bleibt, erklärt einen Teil des Drucks.
-- **Mehr Köpfe heißt nicht mehr Stunden.** Laut Tierärzte Atlas arbeitete 2023 jede zweite Tierärztin in Teilzeit, aber nur 13 Prozent der Männer. Unter den Angestellten sind 82 Prozent Frauen.
+- **Mehr Köpfe heißt nicht mehr Stunden.** Gut die Hälfte der angestellten Tierärztinnen und Tierärzte arbeitet in Teilzeit (Befragung des Bundes angestellter Tierärzte, Ende 2025). Unter den Angestellten sind 82 Prozent Frauen.
 - **In der Nutztiermedizin wird es tatsächlich dünner.** Die Zahl der Inhaber mit reiner Nutz- oder Großtierpraxis fiel von 1.859 im Jahr 1991 auf 971 im Jahr 2018, bevor die Kammer die Kategorien änderte.
 
 Für Tierhalter zeigt sich die Lage auch im Preis: Seit der neuen Gebührenordnung 2022 liegen die Tierarztpreise deutlich über der Inflation, mehr dazu im Artikel [Tierarztkosten im Vergleich zur Inflation](tierarztkosten-inflation.html).
@@ -88,3 +88,5 @@ Nicht an Köpfen: Ende 2025 waren 34.476 Tierärztinnen und Tierärzte tätig, s
 ## Quelle und Methode
 
 Tierärztinnen und Tierärzte: Statistik der Deutschen Tierärzteschaft der [Bundestierärztekammer](https://www.bundestieraerztekammer.de/btk/statistik/), Deutsches Tierärzteblatt, Stichtag jeweils 31. Dezember. Hunde und Katzen: IVH und ZZF, „Der Deutsche Heimtiermarkt“, bis 2011 Verbandsschätzung (mit dem Faktor 1,45 an die Erhebung ab 2012 angeschlossen), 2012 IMR-Erhebung, ab 2013 Skopos. Berechnet sind alle Quotienten und Veränderungsraten; die Heimtierzahlen in Millionen sind vor der Division in Stück umgerechnet. Mehr unter [Datenherkunft](../artikel/datenherkunft.html).
+
+*Korrigiert am 9. Oktober 2026: Die frühere Angabe „jede zweite Frau in Teilzeit, aber nur 13 Prozent der Männer“ beschreibt laut Tierärzte Atlas die Gesamtbevölkerung, nicht die Tiermedizin. Sie ist durch Befragungsdaten aus der Branche ersetzt: Jensen et al., Veterinary Sciences 13 (2026) 494, Befragung von 1.184 angestellten Tierärztinnen und Tierärzten September bis Dezember 2025, abgerufen am 9. Oktober 2026.*

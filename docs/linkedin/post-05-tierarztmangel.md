@@ -19,7 +19,7 @@ Je Kopf in der Praxis kommen heute 1.101 Hunde und Katzen. 2000 waren es 1.244. 
 
 Gemessen an Köpfen gibt es also keinen Mangel. Knapp wird etwas anderes:
 👉 Menschen, die eine Praxis führen und Notdienst und Nachfolge tragen
-👉 Arbeitszeit: Jede zweite Tierärztin arbeitet in Teilzeit, aber nur 13 % der Männer (Tierärzte Atlas 2023)
+👉 Arbeitszeit: Gut die Hälfte der angestellten Tierärzt:innen arbeitet in Teilzeit (Befragung des Bundes angestellter Tierärzte 2025)
 👉 die Nutztierpraxis auf dem Land
 
 Was spürt ihr in euren Praxen: fehlen Köpfe, Stunden oder Chefs?
@@ -30,6 +30,6 @@ Wo sich Quellen überschneiden: Für die Annahme sprechen der Anteil der Haushal
 Alle Zahlen, Tabelle und Methode:
 https://tiermedizin-in-zahlen.org/beitrag/tierarztmangel-deutschland
 
-Quellen: Bundestierärztekammer (Statistik 2000–2025), IVH/ZZF (Der Deutsche Heimtiermarkt), Tierärzte Atlas 2023.
+Quellen: Bundestierärztekammer (Statistik 2000–2025), IVH/ZZF (Der Deutsche Heimtiermarkt), Bund angestellter Tierärzte (Befragung 2025, Veterinary Sciences 2026).
 
 #Tiermedizin #Tierarzt #Tierarztmangel #Fachkräftemangel

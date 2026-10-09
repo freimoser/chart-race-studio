@@ -5,14 +5,14 @@ titel: Statistik Tierärzte Deutschland: Was die Zahlen nicht zeigen
 beschreibung: Von zwölf Datensätzen zu Tierärzten und Haustieren beruht nur einer auf amtlicher Statistik. Was gezählt, was geschätzt und was modelliert ist.
 frage: Wie verlässlich sind die Statistiken über Tierärzte und Haustiere in Deutschland?
 suchbegriffe: statistik tierärzte deutschland, anzahl tierarztpraxen deutschland, anzahl haustiere deutschland, tierärzte anzahl deutschland
-stand: 2026-09-23
+stand: 2026-10-09
 bereit: ja
 ---
 Von den **12 Datensätzen** auf dieser Seite beruht nur **einer** auf amtlicher Statistik: der Rinderbestand des Statistischen Bundesamts seit 1991. Sechs stammen aus der Kammerstatistik der Bundestierärztekammer, zwei aus Befragungen und Schätzungen der Heimtierverbände ZZF und IVH, einer aus dem Zuchtbuch des VDH, und **zwei sind Modellreihen**. Jede dieser Quellen misst etwas anderes, und jede hat Stellen, an denen ein Bruch wie eine Entwicklung aussieht.
 
 ## Das Wichtigste in Kürze
 
-- Die Bundestierärztekammer zählt Personen, keine Vollzeitstellen. 2023 arbeitete laut Tierärzte Atlas jede zweite Frau im Beruf in Teilzeit, aber nur 13 Prozent der Männer.
+- Die Bundestierärztekammer zählt Personen, keine Vollzeitstellen. Eine amtliche Arbeitszeitstatistik für die Tiermedizin gibt es nicht. In einer [Befragung des Bundes angestellter Tierärzte](https://www.mdpi.com/2306-7381/13/5/494) Ende 2025 arbeitete gut die Hälfte der Angestellten in Teilzeit; der Tierärzte Atlas nennt aus Stichproben 34 bis 43 Prozent für die Branche.
 - Praxisketten erhebt keine amtliche Stelle. Die einzige belastbare Gesamtzahl sind rund 450 Standorte von 16 Ketten im August 2024, genannt im Tierärzte Atlas.
 - Von 2019 bis 2023 beantworten nur 91 bis 96,5 Prozent der Niedergelassenen die Frage nach dem Praxisschwerpunkt, 2001 bis 2015 praktisch alle (berechnet).
 - Ein Heimtierregister gibt es nicht. Der Sprung bei Hunden und Katzen von 13,6 Millionen (2011) auf 19,7 Millionen (2012) ist ein Wechsel der Erhebungsmethode.
@@ -79,3 +79,5 @@ Eine amtliche Zahl gibt es nicht. Der Tierärzte Atlas Deutschland 2024 nennt ru
 ## Quelle und Methode
 
 Zusammenfassung der Datenkunde aller zwölf Beispieldatensätze dieser Seite. Quellen je Datensatz: Statistik der Deutschen Tierärzteschaft der [Bundestierärztekammer](https://www.bundestieraerztekammer.de/btk/statistik/); ZZF/IVH, „Der Deutsche Heimtiermarkt“; VDH-Welpenstatistik; Destatis, Viehbestandserhebung; Tierärzte Atlas Deutschland 2024; für die Weltkarte FEDIAF und nationale Erhebungen. Berechnet sind die Veränderung des Hunde- und Katzenbestands 2011 auf 2012 und der Rückgang beim Hundefutter 2023 auf 2024. Alle Einzelheiten, Prüfdaten und Lücken je Datensatz: [Datenherkunft](../artikel/datenherkunft.html).
+
+*Korrigiert am 9. Oktober 2026: Die frühere Angabe „jede zweite Frau in Teilzeit, aber nur 13 Prozent der Männer“ beschreibt laut Tierärzte Atlas die Gesamtbevölkerung, nicht die Tiermedizin. Sie ist durch Befragungsdaten aus der Branche ersetzt: Jensen et al., Veterinary Sciences 13 (2026) 494, Befragung von 1.184 angestellten Tierärztinnen und Tierärzten September bis Dezember 2025, abgerufen am 9. Oktober 2026.*

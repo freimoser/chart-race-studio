@@ -35,7 +35,7 @@
     "titel": "Wie viele Tierärzte gibt es in Deutschland? Zahlen 2025",
     "beschreibung": "Ende 2025 waren 34.476 Tierärzte in Deutschland tätig, 46.089 in einer Kammer. Erstmals arbeiten mehr Angestellte als Inhaber in den Praxen.",
     "frage": "Wie viele Tierärzte gibt es in Deutschland?",
-    "stand": "2026-09-23",
+    "stand": "2026-10-09",
     "bereit": true,
     "live": true
   },
@@ -45,7 +45,7 @@
     "titel": "Tierarztmangel in Deutschland: was die Zahlen zeigen",
     "beschreibung": "Je Tierarzt in der Praxis kamen 2025 1.101 Hunde und Katzen, 11 Prozent weniger als 2000. Knapp werden Inhaber, Arbeitszeit, Nutztiermedizin.",
     "frage": "Gibt es in Deutschland einen Tierarztmangel?",
-    "stand": "2026-10-08",
+    "stand": "2026-10-09",
     "bereit": true,
     "live": true
   },
@@ -275,7 +275,7 @@
     "titel": "Frauenanteil in der Tiermedizin: 72 Prozent 2025",
     "beschreibung": "2025 waren 72 Prozent der tätigen Tierärzte in Deutschland Frauen, 2002 noch 44 Prozent. Seit 2016 gibt es mehr Praxisinhaberinnen als Inhaber.",
     "frage": "Wie viel Prozent der Tierärzte sind weiblich?",
-    "stand": "2026-10-02",
+    "stand": "2026-10-09",
     "bereit": true,
     "live": true
   },
@@ -285,7 +285,7 @@
     "titel": "Statistik Tierärzte Deutschland: Was die Zahlen nicht zeigen",
     "beschreibung": "Von zwölf Datensätzen zu Tierärzten und Haustieren beruht nur einer auf amtlicher Statistik. Was gezählt, was geschätzt und was modelliert ist.",
     "frage": "Wie verlässlich sind die Statistiken über Tierärzte und Haustiere in Deutschland?",
-    "stand": "2026-09-23",
+    "stand": "2026-10-09",
     "bereit": true,
     "live": false
   },

@@ -81,7 +81,7 @@ export const SAMPLES: SampleDataset[] = [
     dataInfo: [
       "Zugespitzte Fassung des Datensatzes „Tierarztpraxen im Wandel“ mit genau den zwei Reihen, um die es geht. Im vollen Datensatz steht „Tierärztlich Tätige gesamt“ mit 34.476 daneben; die Y-Achse reicht dann bis 35.000 und der Wechsel bei 11.000 zu 12.000 ist im Video nicht mehr zu erkennen.",
       "Die Bundestierärztekammer zählt ausschließlich approbierte Kammermitglieder. „Angestellte Tierärzt:innen“ heißen in den älteren Jahrgängen „Praxisassistent:innen“ und sind angestellte Tierärztinnen und Tierärzte – nicht Tiermedizinische Fachangestellte, die in keiner Kammerstatistik auftauchen.",
-      "Gezählt werden Personen, keine Vollzeitstellen. Der Anstieg bei den Angestellten fällt real also etwas schwächer aus, weil unter ihnen deutlich mehr Menschen in Teilzeit arbeiten: Laut Tierärzte Atlas war 2023 jede zweite Frau teilzeitbeschäftigt, aber nur 13 Prozent der Männer.",
+      "Gezählt werden Personen, keine Vollzeitstellen. Der Anstieg bei den Angestellten fällt real also etwas schwächer aus, weil unter ihnen viele in Teilzeit arbeiten: In einer Befragung des Bundes angestellter Tierärzte (Ende 2025, 1.184 Angestellte) war es gut die Hälfte.",
       "1991 bis 1995 stammen die Inhaberzahlen aus einer Dissertation, die die damals nur gedruckten Jahrgänge zitiert; 1991 ist zusätzlich durch die Originalstatistik gedeckt. Die Inhaber sind lückenlos belegt. Bei den Angestellten fehlt nur 2002, das Jahr wird überbrückt.",
       "Gegenprobe: Der Tierärzte Atlas Deutschland 2024 schreibt für Ende 2023 „mit rd. 11.400 erstmals genauso viele angestellte wie selbstständige Tierärzt:innen“. Diese Reihe zeigt 11.437 zu 11.429 – die Aussage trifft zu.",
     ],

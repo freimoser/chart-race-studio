@@ -5,7 +5,7 @@ titel: Frauenanteil in der Tiermedizin: 72 Prozent 2025
 beschreibung: 2025 waren 72 Prozent der tätigen Tierärzte in Deutschland Frauen, 2002 noch 44 Prozent. Seit 2016 gibt es mehr Praxisinhaberinnen als Inhaber.
 frage: Wie viel Prozent der Tierärzte sind weiblich?
 suchbegriffe: frauenanteil tiermedizin, tierärztinnen deutschland anzahl, anteil frauen tiermedizin, tiermedizin weiblich
-stand: 2026-10-02
+stand: 2026-10-09
 bereit: ja
 ---
 2025 waren in Deutschland **72,0 Prozent der tierärztlich Tätigen Frauen**, 24.815 von 34.476, und 67,0 Prozent aller Mitglieder der Tierärztekammern. 2002 lag der Anteil unter den Tätigen bei 44,3 Prozent. Seit 2006 arbeiten mehr Tierärztinnen als Tierärzte, seit 2016 führen mehr Frauen als Männer eine eigene Praxis. Ausgelesen aus allen 24 Jahrgängen der Statistik der Bundestierärztekammer von 2002 bis 2025.
@@ -59,7 +59,7 @@ Der Wechsel von 2024, als die Angestellten die Inhaber erstmals überholten, ist
 
 Laut Tierärzte Atlas scheiden in den nächsten 15 Jahren fast zwei Drittel der noch tätigen Männer aus dem Beruf aus, besonders unter den Praxisinhabern. Ob Tierärztinnen diese Praxen übernehmen, ob sie in Gruppen aufgehen oder schließen, sagt keine Statistik voraus. Was über Praxisketten belegt ist, steht im Artikel [Wer betreibt die Tierarztpraxen in Deutschland?](../artikel/tierarztketten-deutschland.html).
 
-Ein Hinweis auf die Arbeitsmodelle: Laut Tierärzte Atlas arbeitete 2023 jede zweite Frau im Beruf in Teilzeit, aber nur 13 Prozent der Männer. Das passt eher zu einer Anstellung als zu einer eigenen Praxis; belegen lässt sich der Zusammenhang aus diesen Zahlen allein aber nicht.
+Ein Hinweis auf die Arbeitsmodelle: In einer [Befragung des Bundes angestellter Tierärzte](https://www.mdpi.com/2306-7381/13/5/494) Ende 2025 arbeitete gut die Hälfte der Angestellten in Teilzeit (54,6 Prozent, unter 38 Wochenstunden); der Tierärzte Atlas nennt aus früheren Stichproben 34 bis 43 Prozent für die ganze Branche. Teilzeit passt eher zu einer Anstellung als zu einer eigenen Praxis; belegen lässt sich der Zusammenhang aus diesen Zahlen allein aber nicht.
 
 ## Was die Zahl nicht sagt
 
@@ -86,3 +86,5 @@ Ende 2025 waren 34.476 Tierärztinnen und Tierärzte tätig. 11.216 führten ein
 ## Quelle und Methode
 
 [Statistik der Deutschen Tierärzteschaft](https://www.bundestieraerztekammer.de/btk/statistik/) der Bundestierärztekammer, Tab. 1 der Jahrgänge 2002 bis 2025, jeweils Stichtag 31. Dezember; für 2012, 2017 und 2025 die korrigierten Fassungen. Jeder Wert ist aus der Jahrgangsstatistik gelesen, keiner interpoliert. Berechnet sind die Zahl der Männer als Differenz, alle Anteile und Veränderungsraten. Tätig umfasst wie in Tab. 1 die Tierärztinnen und Tierärzte im Ausland. Aufschlüsselung nach Alter und Studium, Teilzeit und die Angabe zu den ausscheidenden Männern: [Tierärzte Atlas Deutschland 2024](https://www.bundestieraerztekammer.de/btk/dtbl/archiv/2025/artikel/DTBl_02_2025_Tieraerzte-Atlas.pdf), Deutsches Tierärzteblatt 2/2025. Der Datensatz steht im Studio als „Die Tiermedizin wird weiblich“.
+
+*Korrigiert am 9. Oktober 2026: Die frühere Angabe „jede zweite Frau in Teilzeit, aber nur 13 Prozent der Männer“ beschreibt laut Tierärzte Atlas die Gesamtbevölkerung, nicht die Tiermedizin. Sie ist durch Befragungsdaten aus der Branche ersetzt: Jensen et al., Veterinary Sciences 13 (2026) 494, Befragung von 1.184 angestellten Tierärztinnen und Tierärzten September bis Dezember 2025, abgerufen am 9. Oktober 2026.*
