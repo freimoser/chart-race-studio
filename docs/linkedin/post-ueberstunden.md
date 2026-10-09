@@ -1,5 +1,7 @@
 # LinkedIn-Post: Überstunden in der Tierarztpraxis (Fr 09.10.2026, abends)
 
+**Gepostet:** 09.10.2026, https://www.linkedin.com/posts/thomas-freimoser_tiermedizin-tierarzt-aesberstunden-ugcPost-7514380156464115712-ICdi/ (als Dokument, 5 Seiten)
+
 **Format:** Karussell aus 5 Bildern (`karussell-ueberstunden.json` → `node scripts/balkenbild.mjs`): LinkedIn als Dokument `karussell-ueberstunden.pdf` (Titel beim Hochladen: „Überstunden in der Tierarztpraxis“), Instagram die PNGs 1–5. Folie 1 = `grafik-ueberstunden.png`. Link nicht in den Post, sondern in den ersten Kommentar.
 **Zahlen geprüft am 09.10.2026** an den Originalen:
 - AFC-Gutachten für das BMEL zur GOT, Befragung 2020, ca. 1.300 Praktiker:innen (laut Bericht repräsentativ): Inhaber 50,43 h/Woche (Mittel), Angestellte 35,10 h; Anteil Arbeitszeit am Tier inkl. Beratung: Inhaber im Mittel 56 %, Angestellte 69 %; nur ca. 2 % der Angestellten ≥ 50 h. https://www.bmleh.de/SharedDocs/Downloads/DE/_Tiere/Tiergesundheit/abschlussbericht-pruefung-tieraerztegebuehrenverordnung.pdf
