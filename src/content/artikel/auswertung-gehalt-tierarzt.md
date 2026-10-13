@@ -6,6 +6,7 @@ beschreibung: Angestellte Tierärzte verdienen zum Einstieg 21,35 Euro pro Stund
 frage: Was verdient ein Tierarzt pro Stunde?
 suchbegriffe: gehalt tierarzt, tierarzt gehalt angestellt, tierarzt stundenlohn, was verdient ein tierarzt, gehalt tierärztin berufseinstieg, tierarzt gehalt vergleich arzt
 stand: 2026-10-14
+grafik: gehalt-preise line
 bereit: ja
 ---
 Angestellte Tierärztinnen und Tierärzte verdienen zum Berufseinstieg **21,35 Euro brutto pro Stunde**, nach 20 Jahren rund 34 Euro (Median laut Vertrag, Befragung Ende 2025). Ärztinnen und Ärzte in kommunalen Kliniken bekommen im ersten Jahr umgerechnet 32,36 Euro, die Tiermedizin liegt damit ein Drittel darunter. Rechnet man die Überstunden ein, sinkt der Stundenlohn zum Einstieg auf 19,89 Euro. Seit 2020 stieg er um 19 Prozent, die Verbraucherpreise um 22 Prozent.
@@ -15,7 +16,7 @@ Angestellte Tierärztinnen und Tierärzte verdienen zum Berufseinstieg **21,35 E
 - Bruttostundenlohn angestellter Tierärztinnen und Tierärzte laut Vertrag (Median): 21,35 Euro im ersten Jahr, 25,96 Euro nach fünf, 34,23 Euro nach 20 bis 24 Jahren.
 - Nach den tatsächlich geleisteten Stunden sind es zum Einstieg 19,89 statt 21,39 Euro (mit Bonus), nach 20 bis 24 Jahren 30,83 statt 34,62 Euro.
 - Ärztinnen und Ärzte im ersten Jahr an kommunalen Kliniken: 32,36 Euro pro Stunde (Tarif ab August 2025, gerechnet). Gesetzlicher Mindestlohn 2025: 12,82 Euro.
-- Seit 2020: Stundenlohn der Angestellten +19 Prozent, Löhne in Deutschland +23 Prozent, Verbraucherpreise +22 Prozent.
+- Seit 2020: Stundenlohn der Angestellten +19 Prozent, Löhne in Deutschland +23 Prozent, Verbraucherpreise +22 Prozent. Die Tierarztpreise stiegen um 39 Prozent, doppelt so stark wie der Stundenlohn.
 - Der bereinigte Gender Pay Gap liegt laut Studie bei rund 7 Prozent.
 
 ## Stundenlohn nach Berufsjahren
@@ -64,6 +65,8 @@ Der gesetzliche Mindestlohn lag 2025 bei 12,82 Euro und stieg zum 1. Januar 2026
 
 Gegenüber der Befragung von 2020 stieg der Stundenlohn laut Vertrag mit Bonus um 19 Prozent, bereinigt um die Berufsjahre. Die Nominallöhne aller Beschäftigten in Deutschland stiegen von 2020 bis 2025 um 23,1 Prozent, die Verbraucherpreise um 21,9 Prozent. Beide Werte sind aus den Jahresraten des Statistischen Bundesamts verkettet: Löhne 2021 bis 2025 um 3,1, 2,6, 6,0, 5,4 und 4,2 Prozent, Preise um 3,1, 6,9, 5,9, 2,2 und 2,2 Prozent. Real, also nach Abzug der Preissteigerung, liegt der Stundenlohn angestellter Tierärztinnen und Tierärzte damit rund 2 Prozent unter 2020.
 
+Die animierte Grafik oben stellt dem die Preise beim Tierarzt gegenüber: Sie stiegen von 2020 bis 2025 um 39 Prozent, fast vollständig 2023 mit der neuen Gebührenordnung. Den Stundenlohn hat die Befragung nur 2020 und 2025 erhoben; in der Grafik sind die Jahre dazwischen linear gerechnet, wie er tatsächlich verlief, ist nicht bekannt.
+
 ## Was die Gebührenordnung damit zu tun hat
 
 ![Bild 5 von 5: Mit der neuen Gebührenordnung stiegen die Tierarztpreise 2023 um rund ein Drittel, bei den Gehältern der Angestellten kam davon laut Studie nicht überdurchschnittlich viel an](gehalt/5.webp)
@@ -76,7 +79,7 @@ Mit der neuen Gebührenordnung für Tierärzte stiegen die Tierarztpreise 2023 l
 - **Nur Angestellte.** Einkommen von Praxisinhabern erfasst die Befragung nicht.
 - **Median, kein Durchschnitt.** Die Hälfte verdient mehr, die Hälfte weniger. Der Tarif der Ärzte ist ein fester Wert, kein Median.
 - **Zwei verschiedene Stichproben.** Die 19 Prozent vergleichen die Befragung von 2025 mit der von 2020, nicht dieselben Personen.
-- **Gerechnet** sind der Stundenlohn der Ärzte (Tarif durch Stunden), die Lohn- und Preisentwicklung 2020 bis 2025 (verkettete Jahresraten) und die Differenzen in Euro und Prozent.
+- **Gerechnet** sind der Stundenlohn der Ärzte (Tarif durch Stunden), die Lohn- und Preisentwicklung 2020 bis 2025 (verkettete Jahresraten, Tierarztpreise auf 2020 umbasiert), der Stundenlohn der Tierärzte 2021 bis 2024 in der Grafik (linear zwischen den Befragungen) und die Differenzen in Euro und Prozent.
 
 ## Häufige Fragen
 

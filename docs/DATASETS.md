@@ -230,3 +230,7 @@ Ersetzt eine extern zugelieferte Vorlage, in der 19 von 26 Jahren interpoliert o
 - 2016–2018 ohne Bayern, 2019 ohne Westfalen-Lippe, 2020 linear gerechnet (Tabelle fehlt im Bericht), 2018 eine Zelle aus der Summenzeile ergänzt. Nur Anteile zeigen, keine absoluten Zahlen über alle Jahre.
 - Zweitquelle: Tierärzte Atlas 2026, S. 42–43 (49 % der Niedergelassenen über 55 aus fünf Kammern; 3.000 bis 5.000 Praxen brauchen in zehn Jahren eine Nachfolge).
 - **`praxis-alter-wachstum`** (Kopfvideo zum Post): dieselben Altersgruppen als Veränderung seit 2016, hochgerechnet (Anteil × Inhaber plus Angestellte in Praxen): ab 60 +81 %, unter 40 +21 %, 40–59 −2 %. Die Anteile allein wirkten flach (14 → 22 %).
+
+## Tierarztpreise gegen Gehalt (`gehalt-preise`)
+
+- Anstieg seit 2020 in Prozent, 2020–2025: Tierarztpreise und Verbraucherpreise (Destatis, aus `tierarzt-inflation` umbasiert), Stundenlohn angestellter Tierärzt:innen (Jensen et al. 2026: +19 % gegenüber der Befragung 2020; 2021–2024 linear). Kopfgrafik des Artikels `gehalt-tierarzt` und Video zum Doppelpost.

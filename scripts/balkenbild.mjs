@@ -6,6 +6,7 @@
  *   node scripts/balkenbild.mjs docs/linkedin/karussell-ueberstunden.json  → karussell-ueberstunden-1.png … und .pdf
  *   node scripts/balkenbild.mjs docs/linkedin/karussell-ueberstunden.json --web public/beitrag/ueberstunden
  *                                                    → 1.png/1.webp … für den Artikel, ohne Zähler und „wischen“
+ *   node scripts/balkenbild.mjs docs/linkedin/karussell-gehalt.json --reel → karussell-gehalt-reel-1.png … (Zähler ohne „wischen“)
  *
  * Eine Datei beschreibt ein Bild oder mit `folien: [...]` ein Karussell. Das PDF ist für LinkedIn (Karussell als
  * Dokument), die PNGs für Instagram. Eine Folie mit `aus: "<datei>.json"` übernimmt ein vorhandenes Einzelbild, so
@@ -31,6 +32,8 @@ const CHROME = process.env.CHROME_BIN ?? [
 if (!CHROME) { console.error('Kein Chrome gefunden. Pfad über CHROME_BIN setzen.'); process.exit(1) }
 const quelle = process.argv[2]
 const webZiel = process.argv.includes('--web') ? process.argv[process.argv.indexOf('--web') + 1] : null
+// --reel: Bilder für ein Video (Reel) mit Leiste und Zähler, aber ohne „wischen“ und ohne PDF: <name>-reel-1.png …
+const reel = process.argv.includes('--reel')
 if (!quelle) { console.error('Aufruf: node scripts/balkenbild.mjs <spec.json>'); process.exit(1) }
 
 const L = JSON.parse(fs.readFileSync('src/content/legal.json', 'utf8'))
@@ -125,7 +128,7 @@ ${F.hinweis ? `<p class="hinweis">${esc(F.hinweis)}</p>` : ''}`,
 }
 
 // Reihe oben: Leiste mit einem Abschnitt je Folie und „Bild n von m“. Fehlt bei Einzelbildern und im Web-Modus.
-const reihe = (nr, gesamt) => `<div class="reihe"><div class="segmente">${Array.from({ length: gesamt }, (_, i) => `<i class="${i + 1 < nr ? 'war' : i + 1 === nr ? 'jetzt' : ''}"></i>`).join('')}</div><span class="zaehler">Bild ${nr} von ${gesamt}${nr === 1 ? ' · wischen →' : ''}</span></div>`
+const reihe = (nr, gesamt) => `<div class="reihe"><div class="segmente">${Array.from({ length: gesamt }, (_, i) => `<i class="${i + 1 < nr ? 'war' : i + 1 === nr ? 'jetzt' : ''}"></i>`).join('')}</div><span class="zaehler">Bild ${nr} von ${gesamt}${nr === 1 && !reel ? ' · wischen →' : ''}</span></div>`
 const seite = (F, nr = 0, gesamt = 0) => {
   const art = ARTEN[F.art ?? 'balken']
   if (!art) throw new Error(`Unbekannte Art „${F.art}“`)
@@ -160,11 +163,11 @@ if (webZiel) {
   })
 } else {
   folien.forEach((F, i) => {
-    const ziel = S.folien ? `${basis}-${i + 1}.png` : `${basis}.png`
+    const ziel = S.folien ? `${basis}${reel ? '-reel' : ''}-${i + 1}.png` : `${basis}.png`
     chrome(['--window-size=1080,1350', `--screenshot=${path.resolve(ziel)}`], dokument([seite(F, i + 1, n)]))
     ziele.push(ziel)
   })
-  if (S.folien) {
+  if (S.folien && !reel) {
     chrome([`--print-to-pdf=${path.resolve(basis + '.pdf')}`, '--no-pdf-header-footer'], dokument(folien.map((F, i) => seite(F, i + 1, n))))
     ziele.push(`${basis}.pdf`)
   }

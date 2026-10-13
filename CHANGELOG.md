@@ -7,6 +7,7 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 ### Gehalt angestellter Tierärzt:innen (14.10.2026)
 
 - **Karussell und Artikel** `/beitrag/gehalt-tierarzt`: Bruttostundenlohn nach Berufsjahren (Median, Jensen et al. 2026, Tabelle 3 vollständig im Artikel), Vertrag gegen tatsächliche Stunden, Vergleich mit dem Ärztetarif (TV-Ärzte/VKA ab 8/2025, mit der Formel der Studie umgerechnet: 32,36 €) und Mindestlohn, Lohn- und Preisentwicklung 2020–2025 aus Destatis-Jahresraten (Löhne +23,1 %, Preise +21,9 %, Tierärzt:innen +19 %). Post-Text `docs/linkedin/post-gehalt.md`, Abschnitt in der Datenherkunft, Querverweise aus drei Artikeln.
+- **Doppelpost:** Datensatz `gehalt-preise` (Tierarztpreise +39 %, Verbraucherpreise +22 %, Stundenlohn +19 % seit 2020; Stundenlohn 2021–2024 linear) als Kopfgrafik des Artikels und Video. Bilder-Reels aus den fünf Folien (4:5 und 9:16, ffmpeg); `balkenbild.mjs --reel` rendert dafür Folien ohne „wischen“.
 - **Bild-Renderer:** gepaarte Balken (`paare`), feste Nachkommastellen (`dezimalen`), Band kann nicht mehr gestaucht werden (vorher rutschte es bei langen Folien teils aus dem Bild).
 
 ### Nachfolge in der Tierarztpraxis (13.10.2026)

@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../lib/data/types.ts'
-import { TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
+import { TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -105,6 +105,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: PRAXIS_ALTER_WACHSTUM.headers,
     rows: PRAXIS_ALTER_WACHSTUM.rows,
     suggested: { chartType: 'line', topN: 3, decimals: 0, prefix: '+', suffix: ' %', primaryAxisLabel: 'Veränderung seit 2016', colors: { '60 und älter': '#e36414', '40 bis 59': '#0f4c5c', 'Unter 40': '#8a949e' } },
+  },
+  {
+    id: 'gehalt-preise',
+    erstellt: '2026-10-14', geprueft: '2026-10-14',
+    category: 'praxis',
+    title: 'Tierarztpreise steigen doppelt so stark',
+    subtitle: 'als der Stundenlohn angestellter Tierärzt:innen, Anstieg seit 2020 in Prozent',
+    source: 'Quellen: Destatis (Verbraucherpreisindex, Tierarztleistungen); Jensen et al. 2026 (Stundenlohn 2020 und 2025 erhoben, dazwischen gerechnet)',
+    sourceUrl: 'https://www.mdpi.com/2306-7381/13/5/494',
+    unit: 'Prozent',
+    description: 'Seit 2020 stiegen die Tierarztpreise um 39 Prozent, die Verbraucherpreise um 22 und der Stundenlohn angestellter Tierärztinnen und Tierärzte um 19 Prozent.',
+    dataInfo: [
+      'Tierarztpreise und Verbraucherpreise: Verbraucherpreisindex des Statistischen Bundesamts, aus dem Datensatz „Tierarzt gegen Inflation“ auf 2020 umbasiert. Der Sprung 2023 ist die neue Gebührenordnung für Tierärzte.',
+      'Stundenlohn angestellter Tierärzt:innen: Die Befragungen des Bundes angestellter Tierärzte gibt es für 2020 und Ende 2025; laut Jensen et al. (Veterinary Sciences 2026) stieg der Stundenlohn laut Vertrag mit Bonus, bereinigt um Berufsjahre, um 19 Prozent. Die Jahre 2021 bis 2024 sind linear dazwischen gerechnet, der tatsächliche Verlauf ist nicht erhoben.',
+      'Die Löhne aller Beschäftigten in Deutschland stiegen im selben Zeitraum um 23,1 Prozent (Destatis, Nominallohnindex, Jahresraten verkettet). Sie fehlen in der Grafik, weil sie fast deckungsgleich mit den Verbraucherpreisen laufen.',
+    ],
+    headers: GEHALT_PREISE.headers,
+    rows: GEHALT_PREISE.rows,
+    suggested: { chartType: 'line', topN: 3, decimals: 0, prefix: '+', suffix: ' %', primaryAxisLabel: 'Anstieg seit 2020', colors: { 'Tierarztpreise': '#e36414', 'Verbraucherpreise': '#8a949e', 'Stundenlohn Tierärzt:innen': '#0f4c5c' } },
   },
   {
     id: 'inhaber-angestellte',
