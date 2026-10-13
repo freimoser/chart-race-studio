@@ -67,6 +67,7 @@ function rahmenFuss(hoch: string, cookieWahl: boolean) {
           <a href="${hoch}">Startseite</a> · <a href="${hoch}beitrag/">Alle Artikel</a> · <a href="${hoch}artikel/tierarztketten-deutschland.html">Tierarztketten</a> ·
           <a href="${hoch}datenformat/">Datenformat</a> · <a href="${hoch}artikel/datenherkunft.html">Datenherkunft</a> · <a href="${hoch}studio/#redaktionsplan">Redaktionsplan</a> · <a href="${hoch}studio/">Studio</a>
         </p>
+        <p>Schwesterseite: <a href="https://tiermedizin-in-digital.org/">Tiermedizin in digital</a> – welche digitalen Lösungen es für Tierarztpraxen gibt, vom selben Herausgeber.</p>
         <p class="recht"><a href="${hoch}ueber-das-projekt.html">Über das Projekt</a> · <a href="${hoch}impressum.html">Impressum</a> · <a href="${hoch}datenschutz.html">Datenschutz</a>${cookieWahl ? ' · <button type="button" data-consent-reset>Cookie-Auswahl</button>' : ''}</p>
       </div>
     </footer>`
