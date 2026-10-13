@@ -50,5 +50,7 @@ export function formatValue(v: number, f: NumberFormatSettings): string {
     opts.maximumFractionDigits = Math.max(1, f.decimals)
   }
   const s = new Intl.NumberFormat(f.locale, opts).format(v)
-  return `${f.prefix}${s}${f.suffix}`
+  // Präfix „+“ markiert Veränderungen; ein negativer Wert trägt sein Minus selbst (sonst „+-2 %“).
+  const prefix = f.prefix === '+' && s.startsWith('-') ? '' : f.prefix
+  return `${prefix}${s}${f.suffix}`
 }

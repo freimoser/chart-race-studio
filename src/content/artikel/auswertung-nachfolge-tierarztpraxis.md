@@ -6,20 +6,27 @@ beschreibung: Jede fünfte Tierärztin oder jeder fünfte Tierarzt in der Praxis
 frage: Wer übernimmt die Tierarztpraxen in Deutschland?
 suchbegriffe: tierarztpraxis nachfolge, praxisnachfolge tierarzt, tierarztpraxis übernehmen, tierärzte alter, tierarztpraxis verkaufen, tierärzte über 60
 stand: 2026-10-13
-grafik: praxis-alter line
+grafik: praxis-alter-wachstum line
 bereit: ja
 ---
-Jede fünfte Tierärztin oder jeder fünfte Tierarzt in der Praxis ist **60 Jahre oder älter**: Ende 2025 waren es 21,8 Prozent, 2016 noch 14,1 Prozent. Laut Tierärzte Atlas 2026 müssen in den nächsten zehn Jahren **mindestens 3.000, eher 5.000 Praxen** eine Nachfolge finden. Übernommen werden heute rund 100 Praxen im Jahr. Die Altersanteile sind aus der Statistik der Bundestierärztekammer berechnet, die Nachfolgezahlen stammen aus dem Atlas.
+In den Tierarztpraxen arbeiten heute **81 Prozent mehr Tierärztinnen und Tierärzte ab 60** als 2016, rund 5.100 statt 2.800. Jede fünfte Tierärztin oder jeder fünfte Tierarzt in der Praxis ist damit 60 oder älter (21,8 Prozent), 2016 war es jede siebte (14,1 Prozent). Laut Tierärzte Atlas 2026 müssen in den nächsten zehn Jahren **mindestens 3.000, eher 5.000 Praxen** eine Nachfolge finden. Übernommen werden heute rund 100 Praxen im Jahr. Die Altersanteile sind aus der Statistik der Bundestierärztekammer berechnet, die Nachfolgezahlen stammen aus dem Atlas.
 
 ## Das Wichtigste in Kürze
 
-- Der Anteil der praktizierenden Tierärztinnen und Tierärzte ab 60 stieg von 14,1 Prozent (2016) auf 21,8 Prozent (2025).
+- Die Zahl der Tierärztinnen und Tierärzte ab 60 in den Praxen stieg seit 2016 um 81 Prozent, von rund 2.800 auf 5.100 (hochgerechnet). Unter 40 sind es 21 Prozent mehr, zwischen 40 und 59 sind es 2 Prozent weniger.
+- Ihr Anteil stieg von 14,1 Prozent (2016) auf 21,8 Prozent (2025).
 - Die Gruppe zwischen 40 und 59 schrumpfte von 54,1 auf 45,4 Prozent, der Anteil unter 40 blieb bei rund 31 bis 33 Prozent.
 - 2025 waren 1.024 praktizierende Tierärztinnen und Tierärzte 70 Jahre oder älter.
 - Nach einer Sonderauswertung von fünf Tierärztekammern sind 49 Prozent der Praxisinhaber älter als 55 Jahre (Tierärzte Atlas 2026).
 - Von den rund 200 Neuniederlassungen im Jahr ist etwa die Hälfte eine Übernahme. Gebraucht würden drei- bis fünfmal so viele.
 
 ## Wie sich das Alter in der Praxis verschiebt
+
+Die Grafik oben zeigt, wie stark jede Altersgruppe seit 2016 gewachsen ist. Dafür ist ihr Anteil aus der Altersstatistik der Kammer mit der Zahl aller Tierärztinnen und Tierärzte in Praxen multipliziert, die die Kammer vollständig zählt (Inhaber und Angestellte). Ab 60 waren es 2016 rund 2.800, 2025 rund 5.100. Unter 40 stieg die Zahl von 6.300 auf 7.600, zwischen 40 und 59 sank sie leicht von 10.800 auf 10.600. Die Gruppe, aus der Praxisinhaber traditionell kommen, wächst also nicht mit.
+
+Dieselben Daten als Anteile:
+
+::grafik praxis-alter line
 
 | Jahr | unter 40 | 40 bis 59 | 60 und älter | Praktiker mit Altersangabe | nicht enthalten |
 |---|---:|---:|---:|---:|---|
@@ -54,7 +61,7 @@ Für die Versorgung zählen dabei nicht nur Köpfe. Inhaber arbeiten im Mittel r
 ## Was die Zahl nicht sagt
 
 - **Praktiker sind nicht Inhaber.** Die Altersanteile gelten für alle Tierärztinnen und Tierärzte in Praxen, Inhaber, Angestellte und Praxisvertretungen zusammen.
-- **Wechselnde Abdeckung.** Bis 2018 fehlt Bayern, 2019 Westfalen-Lippe; 2020 ist gerechnet.
+- **Wechselnde Abdeckung.** Bis 2018 fehlt Bayern, 2019 Westfalen-Lippe; 2020 ist gerechnet. Die Hochrechnung auf alle Praktiker unterstellt für die fehlende Kammer dieselbe Altersverteilung wie im übrigen Land; der steile Abschnitt 2018/2019 fällt mit dem Wechsel der fehlenden Kammer zusammen.
 - **Die 49 Prozent stammen aus fünf Kammern**, nicht aus ganz Deutschland.
 - **3.000 bis 5.000 ist eine Ableitung** des Tierärzte Atlas, keine Zählung von Praxen, die einen Nachfolger suchen.
 - **Alter ist nicht Ruhestand.** Über 1.000 Tierärztinnen und Tierärzte über 70 arbeiten noch in der Praxis.
@@ -78,4 +85,4 @@ Der Tierärzte Atlas 2026 nennt rund 9.700 Tierarztpraxen. Etwa die Hälfte sind
 - Bundestierärztekammer: [Statistik der Tierärzteschaft](https://www.bundestieraerztekammer.de/btk/statistik/), Jahresberichte 2016 bis 2025, Tabelle „Altersstruktur nach Tätigkeit“, Zeile Praktiker, jeweils Stand 31. Dezember. Abgerufen am 13. Oktober 2026.
 - Dessauer Zukunftskreis: [Tierärzte Atlas Deutschland 2026](https://www.tieraerzteatlas.de/wp-content/uploads/2026/09/2026-ATLAS-24.09.2026-KL.pdf), Seiten 42 und 43. Abgerufen am 13. Oktober 2026.
 
-Berechnet sind alle Anteile (Altersgruppe geteilt durch alle Praktiker mit Altersangabe), das Jahr 2020 (linear zwischen 2019 und 2021) und die Zahl der Übernahmen pro Jahr (die Hälfte von rund 200 Neuniederlassungen). Die Tabellen sind aus den PDF-Berichten ausgelesen und Spalte für Spalte gegen die Summenzeile geprüft; 2018 ist eine leere Zelle aus Summe minus übrige Tätigkeiten ergänzt. Mehr unter [Datenherkunft](../artikel/datenherkunft.html#praxis-alter).
+Berechnet sind alle Anteile (Altersgruppe geteilt durch alle Praktiker mit Altersangabe), die hochgerechneten Zahlen (Anteil mal Inhaber plus Angestellte in Praxen laut Kammerstatistik) und ihre Veränderung seit 2016, das Jahr 2020 (linear zwischen 2019 und 2021) und die Zahl der Übernahmen pro Jahr (die Hälfte von rund 200 Neuniederlassungen). Die Tabellen sind aus den PDF-Berichten ausgelesen und Spalte für Spalte gegen die Summenzeile geprüft; 2018 ist eine leere Zelle aus Summe minus übrige Tätigkeiten ergänzt. Mehr unter [Datenherkunft](../artikel/datenherkunft.html#praxis-alter).

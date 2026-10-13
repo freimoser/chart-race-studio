@@ -48,6 +48,11 @@ describe('parseNumber', () => {
   it('formatiert', () => {
     expect(formatValue(1234567.891, { decimals: 1, thousands: true, prefix: '', suffix: ' €', locale: 'de-DE', compact: false })).toBe('1.234.567,9 €')
     expect(formatValue(1234567, { decimals: 0, thousands: false, prefix: '', suffix: '', locale: 'de-DE', compact: false })).toBe('1234567')
+    // Präfix „+“ für Veränderungen: positiv mit Plus, negativ nur mit Minus
+    const plus = { decimals: 0, thousands: true, prefix: '+', suffix: ' %', locale: 'de-DE', compact: false }
+    expect(formatValue(81, plus)).toBe('+81 %')
+    expect(formatValue(0, plus)).toBe('+0 %')
+    expect(formatValue(-1.6, plus)).toBe('-2 %')
   })
 })
 

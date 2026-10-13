@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../lib/data/types.ts'
-import { TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
+import { TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -86,6 +86,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: PRAXIS_ALTER.headers,
     rows: PRAXIS_ALTER.rows,
     suggested: { chartType: 'line', topN: 3, decimals: 1, suffix: ' %', primaryAxisLabel: 'Anteil in Prozent', colors: { '60 und älter': '#e36414', '40 bis 59': '#0f4c5c', 'Unter 40': '#8a949e' } },
+  },
+  {
+    id: 'praxis-alter-wachstum',
+    erstellt: '2026-10-13', geprueft: '2026-10-13',
+    category: 'praxis',
+    title: 'Ab 60 wächst am schnellsten',
+    subtitle: 'Tierärzt:innen in der Praxis nach Alter, Veränderung seit 2016 in Prozent',
+    source: 'Quelle: Bundestierärztekammer (Statistik); Altersanteile hochgerechnet, 2016–2018 ohne Bayern, 2019 ohne Westfalen-Lippe, 2020 gerechnet',
+    sourceUrl: 'https://www.bundestieraerztekammer.de/btk/statistik/',
+    unit: 'Prozent',
+    description: 'Seit 2016 arbeiten 81 Prozent mehr Tierärztinnen und Tierärzte ab 60 in Praxen, unter 40 sind es 21 Prozent mehr, zwischen 40 und 59 etwas weniger.',
+    dataInfo: [
+      'Gerechnet: Anteil jeder Altersgruppe an den Praktiker:innen mit Altersangabe (Kammerstatistik, Tabelle „Altersstruktur nach Tätigkeit“) mal alle Praktiker:innen der Kammerstatistik (Inhaber plus Angestellte in Praxen, in jedem Jahr vollständig). Gezeigt ist die Veränderung dieser Zahl gegenüber 2016: ab 60 von rund 2.800 auf 5.100, unter 40 von 6.300 auf 7.600, 40 bis 59 von 10.800 auf 10.600.',
+      'Die Anteile stammen aus Tabellen, in denen 2016 bis 2018 Bayern und 2019 Westfalen-Lippe fehlen; die Hochrechnung unterstellt dort dieselbe Altersverteilung wie im übrigen Land. Der Sprung 2018/2019 fällt mit dem Wechsel der fehlenden Kammer zusammen. 2020 fehlt die Tabelle im Bericht: Anteile linear zwischen 2019 und 2021.',
+      'Dieselben Daten als Anteile zeigt der Datensatz „Wie alt die Tierärzt:innen in der Praxis sind“. Die Statistik trennt das Alter nicht nach Inhaber:innen und Angestellten.',
+    ],
+    headers: PRAXIS_ALTER_WACHSTUM.headers,
+    rows: PRAXIS_ALTER_WACHSTUM.rows,
+    suggested: { chartType: 'line', topN: 3, decimals: 0, prefix: '+', suffix: ' %', primaryAxisLabel: 'Veränderung seit 2016', colors: { '60 und älter': '#e36414', '40 bis 59': '#0f4c5c', 'Unter 40': '#8a949e' } },
   },
   {
     id: 'inhaber-angestellte',
