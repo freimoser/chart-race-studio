@@ -14,6 +14,7 @@
  * Arten (`art`):
  *   balken     (Standard) titel, untertitel, jahr, quelle, einheit, max, balken [{ name, wert }]
  *   gestapelt  wie balken, dazu teile [Name je Abschnitt], balken [{ name, zusatz, werte [je Abschnitt] }]
+ *   paare      zwei Balken je Zeile zum Vergleich: teile [Name je Balken], balken [{ name, werte [a, b] }]
  *   text       titel, absaetze [...], hinweis, quelle
  * Eine Grafik, eine Aussage: Werte direkt am Balken, keine Achse; Quelle immer im Bild. Im Karussell zeigt jede
  * Folie oben, dass sie Teil einer Reihe ist (Leiste und „Bild 2 von 5“, auf Bild 1 „wischen →“).
@@ -37,7 +38,8 @@ const lies = (f) => JSON.parse(fs.readFileSync(f, 'utf8'))
 const S = lies(quelle)
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 const FONT = pathToFileURL(path.resolve('node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2')).href
-const zahl = (v) => v.toLocaleString('de-DE')
+// `dezimalen` je Folie: feste Nachkommastellen, etwa 2 für Euro-Beträge (21,30 statt 21,3).
+const zahl = (v, d) => v.toLocaleString('de-DE', d == null ? {} : { minimumFractionDigits: d, maximumFractionDigits: d })
 const FARBEN = ['#0f4c5c', '#e36414']
 
 // Genormter Rahmen (Regel seit 09.10.2026, CLAUDE.md): Jede Folie trägt unten das Band mit Logo, Name und Adresse
@@ -50,7 +52,7 @@ const CSS = `
 * { margin: 0; box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 body { font-family: Inter, sans-serif; background: #fff; color: #1d2329; }
 .seite { width: 1080px; height: 1350px; display: flex; flex-direction: column; overflow: hidden; break-after: page; }
-.inhalt { flex: 1; padding: 72px 64px 32px; display: flex; flex-direction: column; }
+.inhalt { flex: 1; min-height: 0; padding: 72px 64px 32px; display: flex; flex-direction: column; }
 .mit-reihe .inhalt { padding-top: 48px; }
 .mit-reihe .balken { margin-top: 56px; gap: 34px; }
 .reihe { display: flex; align-items: center; gap: 24px; margin-bottom: 40px; }
@@ -69,7 +71,11 @@ h1 { font-size: 58px; line-height: 1.1; font-weight: 750; letter-spacing: -0.02e
 .zeile { margin-top: 14px; display: flex; align-items: center; gap: 20px; }
 .spur { flex: 1; height: 44px; background: #eef1f3; border-radius: 4px; position: relative; }
 .fuell { position: absolute; inset: 0 auto 0 0; background: #0f4c5c; border-radius: 4px; }
-.wert { font-feature-settings: 'tnum' 1; width: 150px; text-align: right; font-size: 44px; font-weight: 750; white-space: nowrap; }
+.zeile.eng { margin-top: 6px; }
+.zeile.eng .spur { height: 30px; }
+.zeile.eng .wert { font-size: 34px; }
+.balken.paare { gap: 22px; margin-top: 32px; }
+.wert { font-feature-settings: 'tnum' 1; width: 180px; text-align: right; font-size: 44px; font-weight: 750; white-space: nowrap; }
 .legende { margin-top: 40px; display: flex; flex-direction: column; gap: 14px; font-size: 28px; font-weight: 600; }
 .legende span { display: inline-block; width: 28px; height: 28px; border-radius: 4px; margin-right: 16px; vertical-align: -4px; }
 .stapel { margin-top: 16px; height: 96px; display: flex; gap: 4px; }
@@ -78,7 +84,7 @@ h1 { font-size: 58px; line-height: 1.1; font-weight: 750; letter-spacing: -0.02e
 .absatz { margin-top: 40px; font-size: 40px; line-height: 1.38; color: #2b3138; }
 .hinweis { margin-top: 56px; padding: 32px 36px; background: #eef5f4; border-left: 10px solid #0f4c5c; border-radius: 4px; font-size: 36px; line-height: 1.35; font-weight: 600; }
 .quelle { margin-top: auto; padding-top: 24px; font-size: 22px; line-height: 1.4; color: #6e7681; }
-.band { height: 112px; background: #0f4c5c; color: #fff; padding: 0 64px; display: flex; align-items: center; justify-content: space-between; border-top: 8px solid #e36414; }
+.band { flex-shrink: 0; height: 112px; background: #0f4c5c; color: #fff; padding: 0 64px; display: flex; align-items: center; justify-content: space-between; border-top: 8px solid #e36414; }
 .marke { display: flex; align-items: center; gap: 18px; font-size: 32px; font-weight: 700; letter-spacing: -0.01em; }
 .adresse { font-size: 30px; font-weight: 600; color: #9adbcf; }`
 
@@ -90,7 +96,7 @@ const ARTEN = {
     const max = F.max ?? Math.max(...F.balken.map((b) => b.wert))
     return `${kopf(F)}
 <div class="balken">
-${F.balken.map((b) => `  <div><div class="name">${esc(b.name)}</div><div class="zeile"><div class="spur"><div class="fuell" style="width:${(b.wert / max * 100).toFixed(2)}%"></div></div><div class="wert">${zahl(b.wert)}${esc(F.einheit ?? '')}</div></div></div>`).join('\n')}
+${F.balken.map((b) => `  <div><div class="name">${esc(b.name)}</div><div class="zeile"><div class="spur"><div class="fuell" style="width:${(b.wert / max * 100).toFixed(2)}%"></div></div><div class="wert">${zahl(b.wert, F.dezimalen)}${esc(F.einheit ?? '')}</div></div></div>`).join('\n')}
 </div>`
   },
   gestapelt: (F) => {
@@ -101,8 +107,16 @@ ${F.balken.map((b) => `  <div><div class="name">${esc(b.name)}</div><div class="
 ${F.balken.map((b) => {
     const summe = b.werte.reduce((x, y) => x + y, 0)
     return `  <div><div class="name">${esc(b.name)}</div>${b.zusatz ? `<div class="zusatz">${esc(b.zusatz)}</div>` : ''}
-    <div class="stapel" style="width:${(summe / max * 100).toFixed(2)}%">${b.werte.map((w, i) => `<div class="teil" style="flex:${w};background:${FARBEN[i]}">${zahl(w)}${esc(F.einheit ?? '')}</div>`).join('')}</div></div>`
+    <div class="stapel" style="width:${(summe / max * 100).toFixed(2)}%">${b.werte.map((w, i) => `<div class="teil" style="flex:${w};background:${FARBEN[i]}">${zahl(w, F.dezimalen)}${esc(F.einheit ?? '')}</div>`).join('')}</div></div>`
   }).join('\n')}
+</div>`
+  },
+  paare: (F) => {
+    const max = F.max ?? Math.max(...F.balken.flatMap((b) => b.werte))
+    return `${kopf(F)}
+<div class="legende">${F.teile.map((t, i) => `<div><span style="background:${FARBEN[i]}"></span>${esc(t)}</div>`).join('')}</div>
+<div class="balken paare">
+${F.balken.map((b) => `  <div><div class="name">${esc(b.name)}</div>${b.werte.map((w, i) => `<div class="zeile eng"><div class="spur"><div class="fuell" style="width:${(w / max * 100).toFixed(2)}%;background:${FARBEN[i]}"></div></div><div class="wert">${zahl(w, F.dezimalen)}${esc(F.einheit ?? '')}</div></div>`).join('')}</div>`).join('\n')}
 </div>`
   },
   text: (F) => `<h2 class="gross">${esc(F.titel)}</h2>

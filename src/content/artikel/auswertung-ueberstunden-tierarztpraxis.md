@@ -42,7 +42,7 @@ Rechnet man beides zusammen, bleiben Inhabern rund 28 Stunden am Tier, gut 22 St
 
 Wie viele Überstunden anfallen, hängt am Fachgebiet. Im Median sind es in der Pferdepraxis 5 Stunden pro Woche, in der Nutztierpraxis 4, bei Kleintieren und außerhalb der kurativen Praxis 2. Dort ist auch der Notdienst fast die Regel: 93 Prozent der Angestellten mit Schwerpunkt Pferd und 89,5 Prozent mit Schwerpunkt Nutztier leisten ihn. Von allen, die Notdienst haben, kommen 27,2 Prozent auf fünf oder mehr Nachtdienste im Monat. Wie sich die Zahl der Nutztierpraxen entwickelt hat, steht im Artikel [Tierarztmangel in Deutschland](tierarztmangel-deutschland.html).
 
-Auch die Praxisform macht einen Unterschied. Wer bei einer Unternehmensgruppe angestellt ist, macht im Median 3 Überstunden pro Woche, in inhabergeführten Praxen sind es 2. Das vertragliche Gehalt war bei den Gruppen teils höher, der Vorteil verschwand aber, wenn die Studie die tatsächlich geleistete Arbeitszeit einrechnete. Wem die Gruppen gehören, zeigt der Artikel [Tierarztketten und Investoren](tierarztketten-investoren-eigentuemer.html).
+Auch die Praxisform macht einen Unterschied. Wer bei einer Unternehmensgruppe angestellt ist, macht im Median 3 Überstunden pro Woche, in inhabergeführten Praxen sind es 2. Das vertragliche Gehalt war bei den Gruppen teils höher, der Vorteil verschwand aber, wenn die Studie die tatsächlich geleistete Arbeitszeit einrechnete. Wem die Gruppen gehören, zeigt der Artikel [Tierarztketten und Investoren](tierarztketten-investoren-eigentuemer.html), was die Stunden wert sind, der Artikel [Gehalt Tierarzt](gehalt-tierarzt.html).
 
 ## Was aus den Überstunden wird
 

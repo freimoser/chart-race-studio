@@ -4,6 +4,11 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Gehalt angestellter Tierärzt:innen (14.10.2026)
+
+- **Karussell und Artikel** `/beitrag/gehalt-tierarzt`: Bruttostundenlohn nach Berufsjahren (Median, Jensen et al. 2026, Tabelle 3 vollständig im Artikel), Vertrag gegen tatsächliche Stunden, Vergleich mit dem Ärztetarif (TV-Ärzte/VKA ab 8/2025, mit der Formel der Studie umgerechnet: 32,36 €) und Mindestlohn, Lohn- und Preisentwicklung 2020–2025 aus Destatis-Jahresraten (Löhne +23,1 %, Preise +21,9 %, Tierärzt:innen +19 %). Post-Text `docs/linkedin/post-gehalt.md`, Abschnitt in der Datenherkunft, Querverweise aus drei Artikeln.
+- **Bild-Renderer:** gepaarte Balken (`paare`), feste Nachkommastellen (`dezimalen`), Band kann nicht mehr gestaucht werden (vorher rutschte es bei langen Folien teils aus dem Bild).
+
 ### Nachfolge in der Tierarztpraxis (13.10.2026)
 
 - **Neuer Datensatz `praxis-alter`:** Altersgruppen der praktizierenden Tierärzt:innen 2016–2025 als Anteile (unter 40, 40–59, ab 60), aus den Tabellen „Altersstruktur nach Tätigkeit“ der Kammerberichte. Mit Positionsangaben aus den PDF gelesen, jede Spalte gegen die Summenzeile geprüft; 2016–2018 ohne Bayern, 2019 ohne Westfalen-Lippe, 2020 linear, 2018 eine Zelle aus der Summe ergänzt (Rohdaten `ds20-alter-praktiker.json`).

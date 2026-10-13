@@ -311,6 +311,16 @@
   },
   {
     "art": "auswertung",
+    "slug": "gehalt-tierarzt",
+    "titel": "Gehalt Tierarzt: was eine Stunde in der Praxis wert ist",
+    "beschreibung": "Angestellte Tierärzte verdienen zum Einstieg 21,35 Euro pro Stunde, ein Drittel weniger als Ärzte. Seit 2020 stieg ihr Lohn langsamer als die Preise.",
+    "frage": "Was verdient ein Tierarzt pro Stunde?",
+    "stand": "2026-10-14",
+    "bereit": true,
+    "live": true
+  },
+  {
+    "art": "auswertung",
     "slug": "nachfolge-tierarztpraxis",
     "titel": "Nachfolge in der Tierarztpraxis: wer übernimmt?",
     "beschreibung": "Jede fünfte Tierärztin oder jeder fünfte Tierarzt in der Praxis ist 60 oder älter. 3.000 bis 5.000 Praxen brauchen in zehn Jahren eine Nachfolge.",

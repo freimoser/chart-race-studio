@@ -1,0 +1,141 @@
+{
+  "_herkunft": "Geprüft am 13./14.10.2026. Jensen et al., Veterinary Sciences 13 (2026) 494, Tabelle 3: Bruttostundenlohn (Median) angestellter Tierärzt:innen nach Berufsjahren, Formel 12 × Monatsbrutto ÷ (52 × vertragliche Wochenstunden). Ohne Bonus laut Vertrag: 0–1 J. 21,35; 5 J. 25,96; 10–11 J. 29,42; 20–24 J. 34,23; ≥ 30 J. 34,61 €. Mit Bonus laut Vertrag / mit Bonus tatsächliche Stunden: 0–1 J. 21,39 / 19,89; 5 J. 27,69 / 24,73; 10–11 J. 30,29 / 28,85; 20–24 J. 34,62 / 30,83 €. +19 % gegenüber der Befragung 2020 (Vertrag mit Bonus, bereinigt um Berufsjahre). Ärzt:innen: Marburger Bund, Entgelttabelle TV-Ärzte/VKA ab 1.8.2025, Ärzt:in 1. Jahr 5.609,85 €/Monat; mit derselben Formel bei 40 Wochenstunden: 12 × 5.609,85 ÷ (52 × 40) = 32,36 € (gerechnet). Mindestlohn 2025: 12,82 € (BMAS/DGB; 2026: 13,90 €). Destatis: Nominallöhne 2021 +3,1, 2022 +2,6, 2023 +6,0, 2024 +5,4, 2025 +4,2 % → 2020–2025 +23,1 % (gerechnet); Verbraucherpreise 2021 +3,1, 2022 +6,9, 2023 +5,9, 2024 +2,2, 2025 +2,2 % → +21,9 % (gerechnet).",
+  "folien": [
+    {
+      "titel": "Was eine Stunde in der Tierarztpraxis wert ist",
+      "untertitel": "Bruttostundenlohn angestellter Tierärzt:innen nach Berufsjahren, laut Vertrag ohne Bonus (Median)",
+      "jahr": "2025",
+      "einheit": " €",
+      "dezimalen": 2,
+      "max": 40,
+      "balken": [
+        {
+          "name": "Berufseinstieg (0–1 Jahre)",
+          "wert": 21.35
+        },
+        {
+          "name": "5 Berufsjahre",
+          "wert": 25.96
+        },
+        {
+          "name": "10–11 Berufsjahre",
+          "wert": 29.42
+        },
+        {
+          "name": "20–24 Berufsjahre",
+          "wert": 34.23
+        },
+        {
+          "name": "30 und mehr Berufsjahre",
+          "wert": 34.61
+        }
+      ],
+      "quelle": "Quelle: Jensen et al., Veterinary Sciences 2026, Tabelle 3 (Befragung des Bundes angestellter Tierärzte, Sep.–Dez. 2025, bis 1.184 Angestellte); freiwillige Online-Befragung"
+    },
+    {
+      "art": "paare",
+      "titel": "Überstunden drücken den Stundenlohn",
+      "untertitel": "Bruttostundenlohn mit Bonus (Median), einmal nach Vertrag, einmal nach tatsächlich geleisteten Stunden",
+      "jahr": "2025",
+      "einheit": " €",
+      "dezimalen": 2,
+      "max": 40,
+      "teile": [
+        "Laut Vertrag",
+        "Tatsächlich, mit Überstunden"
+      ],
+      "balken": [
+        {
+          "name": "Berufseinstieg (0–1 Jahre)",
+          "werte": [
+            21.39,
+            19.89
+          ]
+        },
+        {
+          "name": "5 Berufsjahre",
+          "werte": [
+            27.69,
+            24.73
+          ]
+        },
+        {
+          "name": "10–11 Berufsjahre",
+          "werte": [
+            30.29,
+            28.85
+          ]
+        },
+        {
+          "name": "20–24 Berufsjahre",
+          "werte": [
+            34.62,
+            30.83
+          ]
+        }
+      ],
+      "quelle": "Quelle: Jensen et al., Veterinary Sciences 2026, Tabelle 3 (Befragung des Bundes angestellter Tierärzte, Ende 2025)"
+    },
+    {
+      "titel": "Ein Drittel weniger als in der Humanmedizin",
+      "untertitel": "Bruttostundenlohn im ersten Berufsjahr",
+      "jahr": "2025",
+      "einheit": " €",
+      "dezimalen": 2,
+      "max": 40,
+      "balken": [
+        {
+          "name": "Ärzt:in, Tarif kommunale Kliniken",
+          "wert": 32.36
+        },
+        {
+          "name": "Tierärzt:in, angestellt (Median)",
+          "wert": 21.35
+        },
+        {
+          "name": "Gesetzlicher Mindestlohn",
+          "wert": 12.82
+        }
+      ],
+      "quelle": "Quellen: Marburger Bund, Entgelttabelle TV-Ärzte/VKA ab 1.8.2025 (5.609,85 € im Monat, gerechnet wie die Studie: 12 × Monat ÷ (52 × 40 Std.)); Jensen et al., Veterinary Sciences 2026; Mindestlohn 2025 laut BMAS"
+    },
+    {
+      "titel": "Seit 2020 weniger als die Inflation",
+      "untertitel": "Anstieg 2020 bis 2025 in Prozent",
+      "jahr": "2025",
+      "einheit": " %",
+      "max": 30,
+      "balken": [
+        {
+          "name": "Löhne in Deutschland",
+          "wert": 23
+        },
+        {
+          "name": "Verbraucherpreise",
+          "wert": 22
+        },
+        {
+          "name": "Stundenlohn angestellter Tierärzt:innen",
+          "wert": 19
+        }
+      ],
+      "quelle": "Quellen: Destatis, Nominallohnindex und Verbraucherpreisindex, Jahreswerte 2021–2025 verkettet (gerechnet); Jensen et al., Veterinary Sciences 2026 (Vergleich mit der Befragung 2020, Vertrag mit Bonus, bereinigt um Berufsjahre)"
+    },
+    {
+      "art": "text",
+      "titel": "Was müsste sich ändern?",
+      "absaetze": [
+        "Mit der neuen Gebührenordnung stiegen die Tierarztpreise 2023 um rund ein Drittel. Bei den Gehältern der Angestellten kam davon laut Studie nicht überdurchschnittlich viel an.",
+        "Alle Zahlen, Quellen und Methode im Artikel auf tiermedizin-in-zahlen.org."
+      ],
+      "hinweis": "Was müsste passieren, damit eine Stunde in der Praxis mehr wert ist? Schreibt es in die Kommentare.",
+      "quelle": "Quellen: Jensen et al., Veterinary Sciences 2026; Destatis, Verbraucherpreisindex (Tierarztleistungen 2023: +32 %)",
+      "web": {
+        "absaetze": [
+          "Mit der neuen Gebührenordnung stiegen die Tierarztpreise 2023 um rund ein Drittel. Bei den Gehältern der Angestellten kam davon laut Studie nicht überdurchschnittlich viel an."
+        ],
+        "hinweis": "Was müsste passieren, damit eine Stunde in der Praxis mehr wert ist? Schreibt es mir auf LinkedIn."
+      }
+    }
+  ]
+}

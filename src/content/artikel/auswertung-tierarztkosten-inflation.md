@@ -53,7 +53,7 @@ Tierarztpreise in Deutschland stehen in der **Gebührenordnung für Tierärzte**
 
 *Verbraucherpreisindex, Position „Veterinär- und andere Dienstleistungen für Haustiere“, Monatswerte (Destatis, Tabelle 61111-0004). Dass der Index die Gebührensätze abbildet und keine echten Rechnungen, schließen wir aus diesem Verlauf; eine Methodenangabe dazu haben wir bei Destatis nicht gefunden.*
 
-Die oft genannten „plus 40 Prozent“ für die GOT 2022 stimmen also als Durchschnitt der Sätze. Laut Verordnungsbegründung stiegen die einfachen Sätze bei rund 84 Prozent der Leistungen und sanken bei 16 Prozent. Die Mehrkosten für Tierhalter „können jedoch nicht beziffert werden“, schreibt die Bundesregierung dort.
+Die oft genannten „plus 40 Prozent“ für die GOT 2022 stimmen also als Durchschnitt der Sätze. Laut Verordnungsbegründung stiegen die einfachen Sätze bei rund 84 Prozent der Leistungen und sanken bei 16 Prozent. Die Mehrkosten für Tierhalter „können jedoch nicht beziffert werden“, schreibt die Bundesregierung dort. Was davon bei den angestellten Tierärztinnen und Tierärzten ankam, steht im Artikel [Gehalt Tierarzt](gehalt-tierarzt.html).
 
 ## Was wirklich gezahlt wurde
 

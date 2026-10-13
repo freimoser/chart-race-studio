@@ -56,7 +56,7 @@ Daraus leitet der Atlas ab, dass in den nächsten zehn Jahren mindestens 3.000, 
 
 Zugleich sinkt die Zahl der Praxisinhaber seit Jahren. Den Höchststand erreichte sie 2019 mit 12.019, Ende 2025 waren es 11.216, also 803 weniger. Seit 2024 arbeiten in den Praxen mehr angestellte Tierärztinnen und Tierärzte als Inhaber, wie der Artikel [Wie viele Tierärzte gibt es in Deutschland?](anzahl-tieraerzte-deutschland.html) zeigt. Einen Teil der Übernahmen leisten Praxisgruppen; wem sie gehören, steht im Artikel [Tierarztketten und Investoren](tierarztketten-investoren-eigentuemer.html). Wie viele Praxen ohne Nachfolge schließen, erfasst keine Statistik.
 
-Für die Versorgung zählen dabei nicht nur Köpfe. Inhaber arbeiten im Mittel rund 50 Stunden pro Woche, Angestellte deutlich weniger, wie der Artikel [Überstunden in der Tierarztpraxis](ueberstunden-tierarztpraxis.html) zeigt. Warum es trotz steigender Kopfzahlen einen gefühlten Mangel gibt, erklärt der Artikel [Tierarztmangel in Deutschland](tierarztmangel-deutschland.html).
+Für die Versorgung zählen dabei nicht nur Köpfe. Inhaber arbeiten im Mittel rund 50 Stunden pro Woche, Angestellte deutlich weniger, wie der Artikel [Überstunden in der Tierarztpraxis](ueberstunden-tierarztpraxis.html) zeigt. Was Angestellte dabei verdienen, steht im Artikel [Gehalt Tierarzt](gehalt-tierarzt.html). Warum es trotz steigender Kopfzahlen einen gefühlten Mangel gibt, erklärt der Artikel [Tierarztmangel in Deutschland](tierarztmangel-deutschland.html).
 
 ## Was die Zahl nicht sagt
 
