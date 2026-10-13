@@ -223,3 +223,9 @@ Ersetzt eine extern zugelieferte Vorlage, in der 19 von 26 Jahren interpoliert o
 
 - **`tierarztmangel`:** Hunde und Katzen je Praxisinhaber:in und je Tierärzt:in in der Praxis (Inhaber + Angestellte), 2012–2025. Quotienten aus BTK-Statistik und IVH/ZZF, kein Jahr geschätzt.
 - **`tierarztmangel-2000`** (08.10.2026, Grafik zu Post 5): dieselbe Rechnung ab 2000. Hunde und Katzen 2000–2011 (Verbandsschätzung) mit dem Faktor 19,7 / 13,6 = 1,45 an die Erhebung ab 2012 verkettet; ab 2012 identisch mit `tierarztmangel`. Annahme: Der Sprung 2011→2012 ist ganz Methode (Haushaltsanteile 2009/2012 gleich, Futterumsatz ohne Sprung). Vermerk in `data/raw/ds2b-heimtiere-1990-2013.json` (`verkettung_2012`). Grenze: Für 2000–2011 gibt es keine zweite unabhängige Zählung; der Verlauf hängt nicht am Faktor, nur die Höhe.
+
+## Wie alt die Tierärzt:innen in der Praxis sind (`praxis-alter`, Nachfolge)
+
+- Anteile unter 40, 40 bis 59 und ab 60 an allen Praktikern der Kammerstatistik mit Altersangabe, 2016–2025, aus den Jahresberichten (Tabelle „Altersstruktur nach Tätigkeit“). Rohdaten mit allen 16 Spalten je Jahr, Fundstelle und Prüfvermerken: `data/raw/ds20-alter-praktiker.json`.
+- 2016–2018 ohne Bayern, 2019 ohne Westfalen-Lippe, 2020 linear gerechnet (Tabelle fehlt im Bericht), 2018 eine Zelle aus der Summenzeile ergänzt. Nur Anteile zeigen, keine absoluten Zahlen über alle Jahre.
+- Zweitquelle: Tierärzte Atlas 2026, S. 42–43 (49 % der Niedergelassenen über 55 aus fünf Kammern; 3.000 bis 5.000 Praxen brauchen in zehn Jahren eine Nachfolge).

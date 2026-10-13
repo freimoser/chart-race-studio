@@ -54,7 +54,7 @@ Bei dieser Frage waren mehrere Antworten möglich. 40,9 Prozent können Überstu
 
 ![Bild 5 von 5: Berichte für die Klinik, Befunde zur Rücküberweisung, Rückrufe bei Haltern stecken in den Zahlen unter Verwaltung; wie viel davon nach Feierabend passiert, dazu gibt es für Deutschland keine Zahlen](ueberstunden/5.webp)
 
-Überweisungsberichte für die Klinik, Befunde zur Rücküberweisung, Rückrufe bei Halterinnen und Haltern, die Abrechnung: In den Befragungen steckt all das unter Verwaltung. Wie viel Zeit diese Schreibarbeit einzeln kostet und wie viel davon nach Feierabend erledigt wird, dazu haben wir für Deutschland keine Zahlen gefunden (Recherche am 9. Oktober 2026). Für Praxisinhaber zeigt das Gutachten nur die Summe: 44 Prozent ihrer Arbeitszeit sind nicht am Tier.
+Überweisungsberichte für die Klinik, Befunde zur Rücküberweisung, Rückrufe bei Halterinnen und Haltern, die Abrechnung: In den Befragungen steckt all das unter Verwaltung. Wie viel Zeit diese Schreibarbeit einzeln kostet und wie viel davon nach Feierabend erledigt wird, dazu haben wir für Deutschland keine Zahlen gefunden (Recherche am 9. Oktober 2026). Für Praxisinhaber zeigt das Gutachten nur die Summe: 44 Prozent ihrer Arbeitszeit sind nicht am Tier. Wie alt die Inhaber sind und wer ihre Praxen übernimmt, steht im Artikel [Nachfolge in der Tierarztpraxis](nachfolge-tierarztpraxis.html).
 
 ## Drei Befragungen im Vergleich
 

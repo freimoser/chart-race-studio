@@ -61,7 +61,7 @@ Wer von Tierarztmangel spricht, meint selten die Gesamtzahl. Der Bundesverband P
 
 Drei Dinge zeigt sie aber doch:
 
-- **Die Selbstständigkeit schrumpft.** Seit dem Höchststand 2019 gibt es 803 Praxisinhaber weniger. Wer eine Praxis führt, trägt Notdienst und Nachfolge; dass diese Gruppe kleiner wird, während die Tierzahl hoch bleibt, erklärt einen Teil des Drucks.
+- **Die Selbstständigkeit schrumpft.** Seit dem Höchststand 2019 gibt es 803 Praxisinhaber weniger. Wer eine Praxis führt, trägt Notdienst und Nachfolge; dass diese Gruppe kleiner wird, während die Tierzahl hoch bleibt, erklärt einen Teil des Drucks. Wie alt sie ist und wie viele Praxen eine Nachfolge brauchen, steht im Artikel [Nachfolge in der Tierarztpraxis](nachfolge-tierarztpraxis.html).
 - **Mehr Köpfe heißt nicht mehr Stunden.** Gut die Hälfte der angestellten Tierärztinnen und Tierärzte arbeitet in Teilzeit (Befragung des Bundes angestellter Tierärzte, Ende 2025). Unter den Angestellten sind 82 Prozent Frauen.
 - **In der Nutztiermedizin wird es tatsächlich dünner.** Die Zahl der Inhaber mit reiner Nutz- oder Großtierpraxis fiel von 1.859 im Jahr 1991 auf 971 im Jahr 2018, bevor die Kammer die Kategorien änderte.
 

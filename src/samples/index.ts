@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../lib/data/types.ts'
-import { TIERARZTMANGEL, TIERARZTMANGEL_2000, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
+import { TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -67,6 +67,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: TIERARZTMANGEL_2000.headers,
     rows: TIERARZTMANGEL_2000.rows,
     suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'Hunde und Katzen je Kopf', colors: { 'Je Praxisinhaber:in': '#0f4c5c', 'Je Tierärzt:in in der Praxis': '#e36414' } },
+  },
+  {
+    id: 'praxis-alter',
+    erstellt: '2026-10-13', geprueft: '2026-10-13',
+    category: 'praxis',
+    title: 'Wie alt die Tierärzt:innen in der Praxis sind',
+    subtitle: 'Anteil der Altersgruppen an allen praktizierenden Tierärzt:innen mit Altersangabe, in Prozent',
+    source: 'Quelle: Bundestierärztekammer (Statistik, Altersstruktur nach Tätigkeit); 2016–2018 ohne Bayern, 2019 ohne Westfalen-Lippe, 2020 gerechnet',
+    sourceUrl: 'https://www.bundestieraerztekammer.de/btk/statistik/',
+    unit: 'Prozent',
+    description: 'Jede fünfte Tierärztin oder jeder fünfte Tierarzt in der Praxis ist 60 oder älter, 2016 war es jede siebte. Die Mitte zwischen 40 und 59 schrumpft.',
+    dataInfo: [
+      'Anteile der Altersgruppen an allen Praktiker:innen der Kammerstatistik (Inhaber:innen, Angestellte und Praxisvertretungen zusammen). Nach Inhaber:innen und Angestellten trennt die Statistik das Alter nicht; das bestätigt auch der Tierärzte Atlas 2026.',
+      'Abdeckung: 2016 bis 2018 fehlt Bayern, 2019 Westfalen-Lippe, ab 2021 sind alle Kammern dabei. Deshalb nur Anteile, keine absoluten Zahlen; der Anstieg 2018/2019 fällt mit dem Wechsel der fehlenden Kammer zusammen. 2020 enthält der Bericht die Tabelle nicht: linear zwischen 2019 und 2021 gerechnet.',
+      'Ausgelesen aus den Jahresberichten (Tabelle „Altersstruktur nach Tätigkeit“) und spaltenweise gegen die Summenzeile geprüft. 2018 ist eine Zelle (Männer 50 bis 59) leer und aus Summe minus übrige Tätigkeiten gerechnet.',
+    ],
+    headers: PRAXIS_ALTER.headers,
+    rows: PRAXIS_ALTER.rows,
+    suggested: { chartType: 'line', topN: 3, decimals: 1, suffix: ' %', primaryAxisLabel: 'Anteil in Prozent', colors: { '60 und älter': '#e36414', '40 bis 59': '#0f4c5c', 'Unter 40': '#8a949e' } },
   },
   {
     id: 'inhaber-angestellte',

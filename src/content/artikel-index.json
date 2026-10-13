@@ -311,6 +311,16 @@
   },
   {
     "art": "auswertung",
+    "slug": "nachfolge-tierarztpraxis",
+    "titel": "Nachfolge in der Tierarztpraxis: wer übernimmt?",
+    "beschreibung": "Jede fünfte Tierärztin oder jeder fünfte Tierarzt in der Praxis ist 60 oder älter. 3.000 bis 5.000 Praxen brauchen in zehn Jahren eine Nachfolge.",
+    "frage": "Wer übernimmt die Tierarztpraxen in Deutschland?",
+    "stand": "2026-10-13",
+    "bereit": true,
+    "live": true
+  },
+  {
+    "art": "auswertung",
     "slug": "tierarztkosten-inflation",
     "titel": "Tierarztkosten im Vergleich zur Inflation",
     "beschreibung": "Seit 2010 stiegen Tierarztpreise um 54 Prozent, die Inflation um 42. Am meisten die Routine: Untersuchung und Impfung der Katze kosten fast das Dreifache.",

@@ -4,6 +4,11 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Nachfolge in der Tierarztpraxis (13.10.2026)
+
+- **Neuer Datensatz `praxis-alter`:** Altersgruppen der praktizierenden Tierärzt:innen 2016–2025 als Anteile (unter 40, 40–59, ab 60), aus den Tabellen „Altersstruktur nach Tätigkeit“ der Kammerberichte. Mit Positionsangaben aus den PDF gelesen, jede Spalte gegen die Summenzeile geprüft; 2016–2018 ohne Bayern, 2019 ohne Westfalen-Lippe, 2020 linear, 2018 eine Zelle aus der Summe ergänzt (Rohdaten `ds20-alter-praktiker.json`).
+- **Artikel** `/beitrag/nachfolge-tierarztpraxis` mit Video, Tabelle, Atlas 2026 als Zweitquelle (49 % der Niedergelassenen über 55 aus fünf Kammern; 3.000–5.000 Praxen mit Nachfolgebedarf), Rechnung zur Nachfolgelücke. Querverweise aus den Artikeln 4, 5 und Überstunden, Abschnitt in der Datenherkunft. Post-Text `docs/linkedin/post-nachfolge.md`.
+
 ### Artikel „Überstunden in der Tierarztpraxis“ mit Bildserie (09.10.2026)
 
 - **Neuer Artikel** `/beitrag/ueberstunden-tierarztpraxis` (Sonderauswertung) mit allen fünf Bildern, Werten im Text, Vergleichstabelle der drei Befragungen, häufigen Fragen und verlinkten Quellen mit Abrufdatum. Der LinkedIn-Post ist die Vorschau, der erste Kommentar verlinkt den Artikel. Querverweise aus den Artikeln 4, 5 und 28, Abschnitt in der Datenherkunft.

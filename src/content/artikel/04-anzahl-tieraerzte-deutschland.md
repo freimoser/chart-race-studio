@@ -15,7 +15,7 @@ Ende 2025 waren in Deutschland **34.476 Tierärztinnen und Tierärzte tätig**, 
 - Von den 34.476 Tätigen arbeiteten 23.341 in Praxen und 11.135 außerhalb, etwa in Veterinärämtern, Industrie und Forschung (Stand 31.12.2025).
 - 1991 kamen auf eine angestellte Tierärztin oder einen angestellten Tierarzt noch rund 4,5 Praxisinhaber (8.510 zu 1.880).
 - Die Zahl der Angestellten hat sich seither mehr als versechsfacht, von 1.880 auf 12.125.
-- Die Zahl der Inhaber erreichte 2019 ihren Höchststand mit 12.019 und sinkt seitdem jedes Jahr, bis 2025 um 803.
+- Die Zahl der Inhaber erreichte 2019 ihren Höchststand mit 12.019 und sinkt seitdem jedes Jahr, bis 2025 um 803. Mehr zur Altersstruktur im Artikel [Nachfolge in der Tierarztpraxis](nachfolge-tierarztpraxis.html).
 - 2023 lagen beide Gruppen fast gleichauf: 11.437 Inhaber, 11.429 Angestellte. 2024 kippte das Verhältnis.
 
 ## Wie sich das Verhältnis seit 1991 verschoben hat

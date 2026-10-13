@@ -22,6 +22,7 @@ const d16 = load('ds16-tierarztkosten.json')
 const d17 = load('ds17-tierarzt-umsatz.json')
 const d18 = load('ds18-pferde.json')
 const d19 = load('ds19-heimtiere-dach.json')
+const d20 = load('ds20-alter-praktiker.json')
 
 /** long rows -> wide table (Jahr × names). Bei Dubletten gewinnt die zuerst genannte Quelle. */
 function wide(rows, { names, from, to, rename = {} }) {
@@ -494,11 +495,25 @@ const w14b = {
   rows: Array.from({ length: 2026 - 2010 + 1 }, (_, k) => 2010 + k).map((j) => [String(j),
     ...['katze', 'hund', 'pferd'].map((t) => Math.round(korbJahr(t, j) * 100) / 100)]),
 }
+// 15 Nachfolge: Altersgruppen der praktizierenden Tierärzt:innen, Anteil in Prozent, 2016–2025 (Kammerstatistik,
+// Tabelle „Altersstruktur nach Tätigkeit“). Nur Anteile: 2016–2018 fehlt Bayern, 2019 Westfalen-Lippe, ab 2021 alle Kammern –
+// absolute Zahlen wären über die Jahre nicht vergleichbar. 2020 fehlt die Tabelle im Bericht: linear zwischen 2019 und 2021.
+// Spalten je Altersgruppe m, w: bis 29, 30–39, 40–49, 50–59, 60–69, 70–79, 80–89, über 89.
+const ALTER_GRUPPEN = { 'Unter 40': [0, 1, 2, 3], '40 bis 59': [4, 5, 6, 7], '60 und älter': [8, 9, 10, 11, 12, 13, 14, 15] }
+const anteilAlter = (werte, g) => ALTER_GRUPPEN[g].reduce((a, i) => a + werte[i], 0) / werte.reduce((a, b) => a + b, 0) * 100
+const w15 = {
+  headers: ['Jahr', ...Object.keys(ALTER_GRUPPEN)],
+  rows: Array.from({ length: 2025 - 2016 + 1 }, (_, k) => 2016 + k).map((j) => [String(j), ...Object.keys(ALTER_GRUPPEN).map((g) => {
+    const punkte = Object.fromEntries(Object.entries(d20.jahre ?? {}).map(([jahr, x]) => [jahr, anteilAlter(x.werte, g)]))
+    return Math.round(stuetze(punkte, j) * 10) / 10
+  })]),
+}
+
 // Kontrollausgabe für die Lupe im Artikel: Routinejahr (einfacher Satz, mit MwSt.)
 for (const t of ['katze', 'hund', 'pferd']) console.log('Routinejahr', t, [2010, 2021, 2024, 2026].map((j) => korbJahr(t, j).toFixed(2)).join(' / '))
 
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 const out = `// Automatisch erzeugt von scripts/build-samples.mjs aus data/raw/*.json – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('TIERAERZTE_BUNDESLAND', w1), emit('TIERAERZTESCHAFT_DEUTSCHLAND', w2), emit('INHABER_ANGESTELLTE', w2b), emit('TIERARZTMANGEL', w2c), emit('TIERARZTMANGEL_2000', w2d), emit('HEIMTIERE', w3), emit('HEIMTIERE_ALLE', w3b), emit('HEIMTIERE_DACH', w3c), emit('HUNDERASSEN', w4), emit('RINDER_BUNDESLAND', w5), emit('HEIMTIERMARKT', w6), emit('PRAXISSCHWERPUNKTE', w7), emit('FACHTIERAERZTE', w8), emit('KLEINTIERE_BUNDESLAND', w9), emit('KETTEN', w10), emit('KETTEN_EIGENTUEMER', w11), emit('GESCHLECHT_PRAXIS', w12), emit('OKTOBERFEST', w13), emit('OKTOBERFEST_PREIS', w13b), emit('TIERARZT_INFLATION', w14), emit('TIERARZT_ROUTINEJAHR', w14b), emit('HUND_KATZE_WELT', { headers: d13.headers ?? ['Jahr'], rows: d13.rows ?? [] })].join('\n')
+  [emit('TIERAERZTE_BUNDESLAND', w1), emit('TIERAERZTESCHAFT_DEUTSCHLAND', w2), emit('INHABER_ANGESTELLTE', w2b), emit('TIERARZTMANGEL', w2c), emit('TIERARZTMANGEL_2000', w2d), emit('HEIMTIERE', w3), emit('HEIMTIERE_ALLE', w3b), emit('HEIMTIERE_DACH', w3c), emit('HUNDERASSEN', w4), emit('RINDER_BUNDESLAND', w5), emit('HEIMTIERMARKT', w6), emit('PRAXISSCHWERPUNKTE', w7), emit('FACHTIERAERZTE', w8), emit('KLEINTIERE_BUNDESLAND', w9), emit('KETTEN', w10), emit('KETTEN_EIGENTUEMER', w11), emit('GESCHLECHT_PRAXIS', w12), emit('OKTOBERFEST', w13), emit('OKTOBERFEST_PREIS', w13b), emit('TIERARZT_INFLATION', w14), emit('TIERARZT_ROUTINEJAHR', w14b), emit('PRAXIS_ALTER', w15), emit('HUND_KATZE_WELT', { headers: d13.headers ?? ['Jahr'], rows: d13.rows ?? [] })].join('\n')
 fs.writeFileSync('src/samples/data.ts', out)
-for (const [n, w] of Object.entries({ w1, w2, w2b, w2c, w2d, w3, w3b, w3c, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w13b, w14, w14b })) console.log(n, w.headers.length - 1, 'Kategorien,', w.rows.length, 'Perioden', w.rows[0]?.[0], '–', w.rows.at(-1)?.[0])
+for (const [n, w] of Object.entries({ w1, w2, w2b, w2c, w2d, w3, w3b, w3c, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w13b, w14, w14b, w15 })) console.log(n, w.headers.length - 1, 'Kategorien,', w.rows.length, 'Perioden', w.rows[0]?.[0], '–', w.rows.at(-1)?.[0])

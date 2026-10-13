@@ -43,3 +43,6 @@ dist-ssr
 # Aus src/content/datenformat/*.md erzeugt (scripts/build-artikel.mjs)
 /datenformat/
 /public/datenformat/
+
+# Exportierte Post-Videos (groß, jederzeit aus dem Studio neu erzeugbar)
+docs/linkedin/*.mp4
