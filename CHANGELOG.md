@@ -4,6 +4,16 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### SEO- und GEO-Prüfung in vier Durchläufen (14.10.2026)
+
+- **`llms-full.txt` vollständig:** Der Erzeuger las nur nummerierte Artikeldateien; Gehalt, Nachfolge, Überstunden, Tierarztkosten, Oktoberfest und Weltkarte standen dort als leere Überschrift. Jetzt alle 15 Live-Artikel im Volltext (ohne `::grafik`-Zeilen); `check:launch` bricht ab, wenn ein Artikel darin ohne Text steht (Gegentest gemacht).
+- **`dateModified` nie vor `datePublished`:** Bei zwei Ketten-Artikeln lag der Stand vor dem Erscheinen. Schema, `article:modified_time`, Sitemap-`lastmod` und Feed nehmen jetzt das spätere der beiden Daten; sichtbar bleibt „Stand“ das Prüfdatum.
+- **Interne Links:** Frauenanteil, Katzen oder Hunde und Niedergelassene hatten nur zwei eingehende Links; vier Links im Text ergänzt, jetzt überall mindestens drei.
+- **Schema an sichtbaren Text angeglichen:** FAQ „Seit wann kaufen Investoren …“ und Überschrift der Ketten-Liste; Article-Bild auf Datenherkunft und Ketten-Liste.
+- **Quellen mit Abrufdatum** in fünf älteren Artikeln (IVH und BTK am 14.10. live gegen die zitierten Zahlen geprüft, BTK-Geschlechterstatistik laut Rohdaten 2.10.).
+- **Werkzeuge:** `check:launch` meldet fehlendes `og:image` nur noch mit `VITE_SITE_URL` (lokal waren es 30 Fehlalarme); Redaktionsplan Post 22 verweist auf Post 5; Keyword-Recherche auf Stand 14.10.; Lint ohne Warnungen.
+- **Geprüft ohne Befund:** 60 externe Links, Weiterleitungen (http, www, github.io, Schrägstrich), robots.txt, Canonical, noindex der Hilfsseiten, Bildmaße und Lazy Loading, `lang`, ein H1 je Seite, Ladegewicht.
+
 ### Gehalt angestellter Tierärzt:innen (14.10.2026)
 
 - **Karussell und Artikel** `/beitrag/gehalt-tierarzt`: Bruttostundenlohn nach Berufsjahren (Median, Jensen et al. 2026, Tabelle 3 vollständig im Artikel), Vertrag gegen tatsächliche Stunden, Vergleich mit dem Ärztetarif (TV-Ärzte/VKA ab 8/2025, mit der Formel der Studie umgerechnet: 32,36 €) und Mindestlohn, Lohn- und Preisentwicklung 2020–2025 aus Destatis-Jahresraten (Löhne +23,1 %, Preise +21,9 %, Tierärzt:innen +19 %). Post-Text `docs/linkedin/post-gehalt.md`, Abschnitt in der Datenherkunft, Querverweise aus drei Artikeln.
