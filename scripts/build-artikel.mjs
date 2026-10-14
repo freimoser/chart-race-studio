@@ -97,6 +97,8 @@ function markdown(text) {
   for (let i = 0; i < bloecke.length; i++) {
     const b = bloecke[i].trim()
     if (!b) continue
+    // Das Nullzeichen markiert Platzhalter für Code und Grafiken; im Markdown kommt es nicht vor.
+    // eslint-disable-next-line no-control-regex
     const code = b.match(/^\u0000CODE(\d+)\u0000$/)
     if (code) {
       const { sprache, code: inhalt } = codes[Number(code[1])]
@@ -211,6 +213,7 @@ function seite(a, { entwurf, alle }) {
   const entlinken = (h) => entwurf ? h : h.replace(/<a href="([a-z0-9-]+)\.html">(.*?)<\/a>/g, (m, slug, text) =>
     alle.some((x) => x.slug === slug && x.live) ? m : text)
   const rumpf = entlinken(restBloecke.join('\n\n').replace(/href="\.\.\//g, `href="${tiefe}`))
+    // eslint-disable-next-line no-control-regex
     .replace(/\u0000GRAFIK ([a-z0-9-]+) (\w*)\u0000/g, (_, id, art) => grafikFigur(grafikVon(`${id} ${art}`.trim(), undefined, { mussFrei: a.live }), { tiefe, csv: !entwurf && DATENSAETZE[id]?.daten ? `${tiefe}daten/${id}.csv` : '' }))
     .replace(/<img src="(?!https?:|\.\.\/)/g, entwurf ? '<img src="../' : '<img src="')
     .replace(/href="(vorlagen\/)/g, `href="${tiefe}$1`)

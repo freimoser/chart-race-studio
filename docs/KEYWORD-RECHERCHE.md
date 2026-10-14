@@ -162,15 +162,18 @@ Beides bedienen, aber nicht mit demselben Text.
 | 1 | wie viele haustiere hat deutschland · anzahl haustiere deutschland · haustiere deutschland statistik | online |
 | 2 | wie viele niedergelassene tierärzte gibt es in deutschland | online |
 | 4 | wie viele tierärzte gibt es in deutschland · anzahl tierärzte deutschland | online |
-| 5 | **tierarztmangel deutschland** – stark belegt. SERP: Verbandsmeldungen, Presse, Videos, keine einzige Datenantwort. Artikel umgebaut (24.09.): Antwort nach Köpfen, dazu was die Statistik nicht misst | Entwurf, umgebaut |
+| 5 | **tierarztmangel deutschland** – stark belegt. SERP: Verbandsmeldungen, Presse, Videos, keine einzige Datenantwort. Artikel umgebaut (24.09.): Antwort nach Köpfen, dazu was die Statistik nicht misst | online |
 | 11 | wie viele praktizierende tierärzte gibt es in deutschland | Entwurf |
-| 3 | gibt es mehr katzen oder hunde in deutschland · **… auf der welt / weltweit** (auch „Weitere Fragen“) | Entwurf, um Abschnitt und FAQ zur Welt ergänzt (24.09.) |
+| 3 | gibt es mehr katzen oder hunde in deutschland · **… auf der welt / weltweit** (auch „Weitere Fragen“) | online, mit Abschnitt und FAQ zur Welt |
 | 18 | beliebteste hunderassen deutschland (2025, 2026) · vdh beliebteste hunderassen · häufigste hunderassen deutschland | Entwurf |
 | 20 | wie viele tierärzte gibt es in bayern / berlin / hamburg | Entwurf; je Land eine FAQ-Frage |
 | 23 | rinderbestand deutschland · entwicklung rinderbestand deutschland · wieviel rinder hat deutschland | Entwurf |
 | 25 | ausgaben haustiere deutschland · der deutsche heimtiermarkt 2025 | Entwurf |
-| 28 | frauenanteil tiermedizin · „Wie viel Prozent der Tierärzte sind weiblich?“ (Weitere Fragen) | Entwurf |
+| 28 | frauenanteil tiermedizin · „Wie viel Prozent der Tierärzte sind weiblich?“ (Weitere Fragen) | online |
 | 29 | tierärztestatistik 2025 · bundestierärztekammer statistik | Entwurf |
+| – | tierarzt gehalt · was verdient ein tierarzt · tierarzt gehalt netto (Nachfrage am 23.09. belegt, siehe unten) | online seit 13.10., Monatswerte und Netto seit 14.10. |
+| – | warum sind tierärzte so teuer geworden (Weitere Fragen am 23.09.) · tierarztkosten gestiegen | online (Tierarztkosten im Vergleich zur Inflation) |
+| – | überstunden tierarzt · tierarzt arbeitszeit · tierarztpraxis nachfolge · tierärzte über 60 | online; Nachfrage nicht eigens geprüft, entstanden als LinkedIn-Posts |
 
 **Ohne Suchnachfrage – reines LinkedIn-Material:** Fachtierärzte (12–15; gesucht wird nur „fachtierarzt gehalt“), Ketten im Einzelnen (7–10; gesucht werden nur Firmennamen und „tierarztketten deutschland“, das der bestehende Ketten-Artikel bedient), Posts 16, 24 und 30 („bar chart race“ hat keine deutsche Nachfrage). Diese Artikel bleiben sinnvoll als Beleg für den Post, sollen aber nicht auf Suchanfragen optimiert werden.
 
@@ -184,7 +187,9 @@ Beides bedienen, aber nicht mit demselben Text.
 
 **Weitere Fragen aus der SERP, beantwortbar und jetzt als FAQ in Artikel 4:** Wie viele Tierarztpraxen gibt es in Deutschland? · Wo arbeiten die meisten Tierärzte? · Wie viel Prozent der Tierärzte sind weiblich?
 
-**Bewusst nicht bedient:** „Wie viel verdient ein Tierarzt …“ und „tierarzt gehalt“ – starke Nachfrage, aber keine eigenen Daten. „Warum sind Tierärzte so teuer geworden?“ – verlangt eine Einordnung der GOT, keine Zeitreihe.
+**Bewusst nicht bedient (Stand 23.09.):** „Wie viel verdient ein Tierarzt …“ und „tierarzt gehalt“ – starke Nachfrage, aber keine eigenen Daten. „Warum sind Tierärzte so teuer geworden?“ – verlangt eine Einordnung der GOT, keine Zeitreihe.
+
+**Nachtrag 14.10.2026:** Beide werden inzwischen bedient. Für das Gehalt gibt es seit 2026 belastbare Daten (Befragung des Bundes angestellter Tierärzte, Jensen u. a., Veterinary Sciences 2026) → Artikel `gehalt-tierarzt`. Die GOT-Frage beantwortet `tierarztkosten-inflation` mit der Einordnung der Gebührensätze.
 
 ### Nächste Schritte, nach Wirkung
 
