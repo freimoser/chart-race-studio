@@ -264,7 +264,7 @@ export const POSTS: RoadmapPost[] = [
     figures: ['Zu berechnen: Tierärzt:innen je 100.000 Einwohner je Bundesland', 'Erwartung: Stadtstaaten vorn, Flächenländer im Osten hinten', 'Bevölkerungszahlen von Destatis'],
     dataStatus: 'offen',
     dataNote: 'Braucht eine Bevölkerungsreihe je Bundesland 2002–2025 von Destatis. Danach ist es eine reine Division auf den vorhandenen Kammerdaten.',
-    refs: [20, 21],
+    refs: [20, 21, 5],
   },
   {
     nr: 23, arc: 'karte', status: 'geplant',
