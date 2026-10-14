@@ -19,9 +19,11 @@ const SVG = `${PUB}/favicon.svg`
 const quelle = fs.readFileSync(SVG, 'utf8')
 const viewBox = +(quelle.match(/viewBox="0 0 (\d+)/)?.[1] ?? 28)
 
-/** Rechtecke aus dem SVG lesen, damit Symbol und Icons dieselbe Quelle haben. */
+/** Rechtecke aus dem SVG lesen, damit Symbol und Icons dieselbe Quelle haben. Attributnamen nur als ganzes
+ *  Wort: `x=` traf vorher auch `rx=`, die Hintergrundkachel ohne eigenes x rückte um den Radius nach rechts
+ *  (alle PNG-Icons bis 15.10.2026 links abgeschnitten, nur das SVG war richtig). */
 const rects = [...quelle.matchAll(/<rect([^>]*)\/>/g)].map((m) => {
-  const a = (n, d = 0) => { const v = m[1].match(new RegExp(`${n}="([^"]*)"`)); return v ? parseFloat(v[1]) : d }
+  const a = (n, d = 0) => { const v = m[1].match(new RegExp(`(?:^|\\s)${n}="([^"]*)"`)); return v ? parseFloat(v[1]) : d }
   const fill = m[1].match(/fill="([^"]*)"/)?.[1] ?? '#000'
   const op = m[1].match(/opacity="([^"]*)"/)?.[1]
   return { x: a('x'), y: a('y'), w: a('width'), h: a('height'), r: a('rx'), fill, alpha: op ? parseFloat(op) : 1 }

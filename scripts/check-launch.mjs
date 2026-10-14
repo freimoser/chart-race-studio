@@ -10,6 +10,7 @@
  */
 import fs from 'node:fs'
 import path from 'node:path'
+import zlib from 'node:zlib'
 import { sitePfad, ladeSeitenModul } from './lib/site.mjs'
 
 const DIST = 'dist'
@@ -137,6 +138,21 @@ for (const [datei, warum] of [
   ['favicon.ico', 'Browser fragen /favicon.ico unaufgefordert ab; ohne die Datei erzeugt jeder Aufruf einen 404'],
 ]) {
   if (!fs.existsSync(path.join(DIST, datei))) hinweise.push(`${datei} fehlt (${warum}).`)
+}
+// Das gerasterte Icon muss dieselbe Form haben wie das SVG. Bis 15.10.2026 las scripts/gen-icons.mjs `rx=` als `x=`
+// und schob die Kachel nach rechts: links abgeschnitten, im Suchergebnis und auf dem Startbildschirm. Geprüft wird der
+// linke Rand auf halber Höhe – dort muss die Kachel decken – und die Ecke oben links, die frei bleiben muss.
+const ico = path.join(DIST, 'favicon-96.png')
+if (fs.existsSync(ico)) {
+  const png = fs.readFileSync(ico)
+  const breite = png.readUInt32BE(16)
+  const idat = []
+  for (let i = 8; i < png.length;) { const n = png.readUInt32BE(i), typ = png.toString('ascii', i + 4, i + 8); if (typ === 'IDAT') idat.push(png.subarray(i + 8, i + 8 + n)); i += 12 + n }
+  const roh = zlib.inflateSync(Buffer.concat(idat)), zeile = breite * 4 + 1
+  const alpha = (x, y) => roh[y * zeile] === 0 ? roh[y * zeile + 1 + x * 4 + 3] : undefined
+  const rand = alpha(2, breite >> 1), ecke = alpha(0, 0)
+  if (png[24] !== 8 || png[25] !== 6 || rand === undefined || ecke === undefined) hinweise.push('favicon-96.png: Form nicht prüfbar (erwartet RGBA ohne Zeilenfilter aus scripts/gen-icons.mjs).')
+  else if (rand < 200 || ecke > 50) blocker.push('favicon-96.png weicht vom SVG ab (linker Rand frei oder Ecke gefüllt) – erscheint so im Suchergebnis. `npm run icons` prüfen.')
 }
 
 // ---------- Messung und Integrationen ----------
