@@ -12,8 +12,8 @@ Gemessen an Köpfen zeigt die Statistik keinen Mangel: 2025 kamen in Deutschland
 
 ## Das Wichtigste in Kürze
 
-- Hunde und Katzen zusammen: 17,1 Millionen im Jahr 2000, 25,7 Millionen im Jahr 2025, ein Plus von 50,4 Prozent. Der Wert für 2000 ist berechnet: Die damalige Schätzung der Verbände ist an die heutige Erhebung angeschlossen.
-- Die Zahl der Praxisinhaber stieg im selben Zeitraum nur von 10.247 auf 11.216, plus 9,5 Prozent; seit dem Höchststand 2019 sinkt sie.
+- [Hunde und Katzen](mehr-katzen-oder-hunde.html) zusammen: 17,1 Millionen im Jahr 2000, 25,7 Millionen im Jahr 2025, ein Plus von 50,4 Prozent. Der Wert für 2000 ist berechnet: Die damalige Schätzung der Verbände ist an die heutige Erhebung angeschlossen.
+- Die Zahl der [Praxisinhaber](niedergelassene-tieraerzte-deutschland.html) stieg im selben Zeitraum nur von 10.247 auf 11.216, plus 9,5 Prozent; seit dem Höchststand 2019 sinkt sie.
 - Je Inhaber stieg die Zahl der Hunde und Katzen damit um 37,4 Prozent, von 1.668 auf 2.291. Bis 2012 blieb sie zwischen 1.600 und 1.750, der Anstieg kam danach.
 - Die angestellten Tierärztinnen und Tierärzte in Praxen haben sich mehr als verdreifacht, von 3.493 auf 12.125.
 - Je Tierärztin oder Tierarzt in der Praxis, Inhaber und Angestellte zusammen, sank der Wert um 11,5 Prozent, von 1.244 auf 1.101.
@@ -62,7 +62,7 @@ Wer von Tierarztmangel spricht, meint selten die Gesamtzahl. Der Bundesverband P
 Drei Dinge zeigt sie aber doch:
 
 - **Die Selbstständigkeit schrumpft.** Seit dem Höchststand 2019 gibt es 803 Praxisinhaber weniger. Wer eine Praxis führt, trägt Notdienst und Nachfolge; dass diese Gruppe kleiner wird, während die Tierzahl hoch bleibt, erklärt einen Teil des Drucks. Wie alt sie ist und wie viele Praxen eine Nachfolge brauchen, steht im Artikel [Nachfolge in der Tierarztpraxis](nachfolge-tierarztpraxis.html).
-- **Mehr Köpfe heißt nicht mehr Stunden.** Gut die Hälfte der angestellten Tierärztinnen und Tierärzte arbeitet in Teilzeit (Befragung des Bundes angestellter Tierärzte, Ende 2025). Unter den Angestellten sind 82 Prozent Frauen.
+- **Mehr Köpfe heißt nicht mehr Stunden.** Gut die Hälfte der angestellten Tierärztinnen und Tierärzte arbeitet in Teilzeit (Befragung des Bundes angestellter Tierärzte, Ende 2025). Unter den Angestellten sind [82 Prozent Frauen](frauenanteil-tiermedizin.html).
 - **In der Nutztiermedizin wird es tatsächlich dünner.** Die Zahl der Inhaber mit reiner Nutz- oder Großtierpraxis fiel von 1.859 im Jahr 1991 auf 971 im Jahr 2018, bevor die Kammer die Kategorien änderte.
 
 Für Tierhalter zeigt sich die Lage auch im Preis: Seit der neuen Gebührenordnung 2022 liegen die Tierarztpreise deutlich über der Inflation, mehr dazu im Artikel [Tierarztkosten im Vergleich zur Inflation](tierarztkosten-inflation.html).

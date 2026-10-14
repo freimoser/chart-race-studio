@@ -78,7 +78,9 @@ for (const p of inhaltsSeiten) {
     // 155 statt 160: Google kürzt je nach Zeichenbreite schon ab etwa 155; die SEO-Prüfung vom 08.10.2026 legt 155 fest.
     if ([...desc].length > 155 || [...desc].length < 50) blocker.push(`${route(p)}: Beschreibung mit ${[...desc].length} Zeichen außerhalb 50–155.`)
   }
-  if (!/property="og:image"/.test(html) && !/name="robots" content="noindex/.test(html)) hinweise.push(`${route(p)}: kein og:image – beim Teilen auf LinkedIn erscheint nur eine graue Kachel.`)
+  // og:image entsteht wie das Canonical erst mit VITE_SITE_URL; ohne sie meldet der Hinweis „VITE_SITE_URL nicht gesetzt“
+  // das einmal, statt dreißig Einzelhinweise die echten zu verdecken.
+  if (process.env.VITE_SITE_URL && !/property="og:image"/.test(html) && !/name="robots" content="noindex/.test(html)) hinweise.push(`${route(p)}: kein og:image – beim Teilen auf LinkedIn erscheint nur eine graue Kachel.`)
 }
 
 // ---------- Canonical ----------
