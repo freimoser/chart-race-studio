@@ -20,7 +20,7 @@ const base = process.env.BASE_PATH ?? '/'
  * Artikel zur Post-Reihe, die scripts/build-artikel.mjs vor dem Build erzeugt hat. Nur was dort
  * freigegeben ist, liegt als Datei in beitrag/ – Entwürfe in beitrag/entwurf/ werden nie gebaut.
  */
-interface Beitrag { post: number; slug: string; titel: string; beschreibung: string; frage: string; stand: string; live: boolean }
+interface Beitrag { post: number; slug: string; titel: string; beschreibung: string; frage: string; stand: string; geaendert?: string; live: boolean }
 const BEITRAEGE: Beitrag[] = (JSON.parse(readFileSync('src/content/artikel-index.json', 'utf8')) as Beitrag[])
   .filter((b) => b.live && existsSync(`beitrag/${b.slug}.html`))
 
@@ -182,11 +182,13 @@ Thomas Freimoser ist kein Tierarzt und keine statistische Behörde. Diese Seite 
       // llms-full.txt: der volle Text aller Live-Artikel in einer Datei, als Markdown. Antwortmaschinen
       // bekommen so jede Zahl mit Kontext und Quelle, ohne HTML parsen oder JavaScript ausführen zu müssen.
       if (BEITRAEGE.length) {
-        const texte = readdirSync('src/content/artikel').filter((f) => /^\d+-.*\.md$/.test(f)).map((f) => readFileSync(`src/content/artikel/${f}`, 'utf8'))
+        // Alle Artikeldateien, nicht nur die nummerierten: Auswertungen, Exkurse und Anleitungen heißen anders
+        // und fehlten sonst mit leerem Text (bis 14.10.2026 sechs der fünfzehn Live-Artikel).
+        const texte = readdirSync('src/content/artikel').filter((f) => f.endsWith('.md') && f !== 'README.md').map((f) => readFileSync(`src/content/artikel/${f}`, 'utf8'))
         const voll = BEITRAEGE.map((b) => {
           const roh = texte.find((t) => new RegExp(`^slug: ${b.slug}$`, 'm').test(t)) ?? ''
           // Links auf Artikel, die noch nicht online sind, werden zu Text – wie im Live-Build der Seiten.
-          const text = roh.replace(/^---[\s\S]*?\n---\n/, '').replace(/\[([^\]]+)\]\(([a-z0-9-]+)\.html\)/g, (m, t, slug) => BEITRAEGE.some((x) => x.slug === slug) ? m : t).replace(/\]\((?!https?:)(\.\.\/)?([^)]+)\)/g, (_m, hoch, ziel) => `](${url}/${hoch ? '' : 'beitrag/'}${ziel})`)
+          const text = roh.replace(/^---[\s\S]*?\n---\n/, '').replace(/^::grafik .*\n/gm, '').replace(/\[([^\]]+)\]\(([a-z0-9-]+)\.html\)/g, (m, t, slug) => BEITRAEGE.some((x) => x.slug === slug) ? m : t).replace(/\]\((?!https?:)(\.\.\/)?([^)]+)\)/g, (_m, hoch, ziel) => `](${url}/${hoch ? '' : 'beitrag/'}${ziel})`)
           return `# ${b.titel}\n\nQuelle: ${url}/beitrag/${b.slug}.html · Stand ${b.stand} · ${MARKE}, Thomas Freimoser\n\n${text.trim()}\n`
         })
         this.emitFile({ type: 'asset', fileName: 'llms-full.txt', source: `# ${MARKE}: alle Artikel im Volltext\n\n> Zahlen zu Tierärzten, Tierarztpraxen und Haustieren in Deutschland, jede mit Jahr und Quelle.\n\n${voll.join('\n---\n\n')}` })
@@ -194,7 +196,7 @@ Thomas Freimoser ist kein Tierarzt und keine statistische Behörde. Diese Seite 
       // Atom-Feed der Live-Artikel, neueste zuerst nach Stand.
       if (BEITRAEGE.length) {
         const escX = (t: string) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-        const sortiert = [...BEITRAEGE].sort((a, b) => b.stand.localeCompare(a.stand))
+        const sortiert = [...BEITRAEGE].sort((a, b) => (b.geaendert ?? b.stand).localeCompare(a.geaendert ?? a.stand))
         this.emitFile({ type: 'asset', fileName: 'feed.xml', source: `<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de">
   <title>${escX(MARKE)}</title>
@@ -202,13 +204,13 @@ Thomas Freimoser ist kein Tierarzt und keine statistische Behörde. Diese Seite 
   <link href="${url}/" />
   <link rel="self" href="${url}/feed.xml" />
   <id>${url}/</id>
-  <updated>${sortiert[0].stand}T00:00:00Z</updated>
+  <updated>${sortiert[0].geaendert ?? sortiert[0].stand}T00:00:00Z</updated>
   <author><name>Thomas Freimoser</name></author>
 ${sortiert.map((b) => `  <entry>
     <title>${escX(b.titel)}</title>
     <link href="${url}/beitrag/${b.slug}.html" />
     <id>${url}/beitrag/${b.slug}.html</id>
-    <updated>${b.stand}T00:00:00Z</updated>
+    <updated>${b.geaendert ?? b.stand}T00:00:00Z</updated>
     <summary>${escX(b.beschreibung)}</summary>
   </entry>`).join('\n')}
 </feed>
@@ -216,14 +218,14 @@ ${sortiert.map((b) => `  <entry>
       }
       // lastmod nur, wo es ein echtes Änderungsdatum gibt. Ein Build-Datum auf jeder Seite
       // bringt Google bei, dem Feld nicht zu trauen – dann zählt es auch dort nicht, wo es stimmt.
-      const neuester = BEITRAEGE.map((b) => b.stand).sort().at(-1)
+      const neuester = BEITRAEGE.map((b) => b.geaendert ?? b.stand).sort().at(-1)
       // Handgeschriebene Seiten tragen ihr Änderungsdatum selbst (<meta name="dcterms.modified">); ohne Meta kein lastmod.
       const geaendert = (datei: string) => (readFileSync(datei, 'utf8').match(/<meta name="dcterms\.modified" content="(\d{4}-\d{2}-\d{2})"/) ?? [])[1]
       const seiten: [string, string?][] = [
         ['', neuester], ['studio/', geaendert('studio/index.html')], ['ueber-das-projekt.html', geaendert('ueber-das-projekt.html')],
         ['artikel/tierarztketten-deutschland.html', geaendert('artikel/tierarztketten-deutschland.html')], ['artikel/datenherkunft.html', geaendert('artikel/datenherkunft.html')],
         ...(BEITRAEGE.length ? [['beitrag/', neuester] as [string, string?]] : []),
-        ...BEITRAEGE.map((b): [string, string?] => [`beitrag/${b.slug}.html`, b.stand]),
+        ...BEITRAEGE.map((b): [string, string?] => [`beitrag/${b.slug}.html`, b.geaendert ?? b.stand]),
         ...DATENFORMAT.map((d): [string, string?] => [d.pfad, d.stand]),
       ]
       this.emitFile({

@@ -83,6 +83,16 @@ for (const p of inhaltsSeiten) {
   if (process.env.VITE_SITE_URL && !/property="og:image"/.test(html) && !/name="robots" content="noindex/.test(html)) hinweise.push(`${route(p)}: kein og:image – beim Teilen auf LinkedIn erscheint nur eine graue Kachel.`)
 }
 
+// ---------- llms-full.txt: jeder Artikel mit Text ----------
+// Bis 14.10.2026 las der Erzeuger nur nummerierte Dateien; sechs Artikel standen dort als leere Überschrift.
+const llmsFull = path.join(DIST, 'llms-full.txt')
+if (fs.existsSync(llmsFull)) {
+  for (const teil of lies(llmsFull).split(/^# /m).slice(2)) {
+    const zeilen = teil.split('\n').filter((z) => z.trim() && !z.startsWith('Quelle: ') && z.trim() !== '---')
+    if (zeilen.length < 6) blocker.push(`llms-full.txt: „${zeilen[0]}“ steht ohne Text darin – Antwortmaschinen finden den Artikel nicht.`)
+  }
+}
+
 // ---------- Canonical ----------
 const start = path.join(DIST, 'index.html')
 const canonical = lies(start).match(/<link rel="canonical" href="([^"]+)"/)?.[1] ?? ''

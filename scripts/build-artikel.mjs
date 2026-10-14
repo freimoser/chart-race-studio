@@ -233,7 +233,7 @@ function seite(a, { entwurf, alle }) {
     headline: a.titel, description: a.beschreibung, inLanguage: 'de-DE',
     author: AUTOR,
     ...(a.veroeffentlicht ? { datePublished: a.veroeffentlicht } : {}),
-    dateModified: a.stand,
+    dateModified: a.geaendert,
     ...(ogBild ? { image: ogBild } : {}),
     ...(basis ? { mainEntityOfPage: `${basis}/${ZIEL}/${a.slug}.html` } : {}),
     about: a.frage,
@@ -251,7 +251,7 @@ function seite(a, { entwurf, alle }) {
       variableMeasured: ds.daten.headers.slice(1),
       ...(ds.quelleUrl ? { isBasedOn: ds.quelleUrl } : {}),
       ...(ds.quelle ? { citation: ds.quelle } : {}),
-      dateModified: a.stand,
+      dateModified: a.geaendert,
       ...(basis ? { url: `${basis}/${ZIEL}/${a.slug}.html`, distribution: { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: `${basis}/daten/${ds.id}.csv` } } : {}),
     })
   }
@@ -293,7 +293,7 @@ ${entwurf ? '    <meta name="robots" content="noindex, nofollow" />\n' : ''}    
     <meta property="og:description" content="${esc(a.beschreibung)}" />
     <meta property="og:locale" content="de_DE" />
     <meta property="og:site_name" content="${esc(L.siteName)}" />
-${ogBild ? `    <meta property="og:image" content="${ogBild}" />\n    <meta property="og:image:width" content="1200" />\n    <meta property="og:image:height" content="630" />\n    <meta name="twitter:card" content="summary_large_image" />\n` : ''}${a.veroeffentlicht ? `    <meta property="article:published_time" content="${a.veroeffentlicht}" />\n` : ''}    <meta property="article:modified_time" content="${a.stand}" />
+${ogBild ? `    <meta property="og:image" content="${ogBild}" />\n    <meta property="og:image:width" content="1200" />\n    <meta property="og:image:height" content="630" />\n    <meta name="twitter:card" content="summary_large_image" />\n` : ''}${a.veroeffentlicht ? `    <meta property="article:published_time" content="${a.veroeffentlicht}" />\n` : ''}    <meta property="article:modified_time" content="${a.geaendert}" />
     <script type="application/ld+json">${JSON.stringify(jsonld.length === 1 ? jsonld[0] : jsonld)}</script>
     <script type="module" src="/src/article.ts"></script>
   </head>
@@ -459,6 +459,9 @@ for (const a of artikel) {
   a.live = Boolean(FREIGABE.artikelLive && (a.anleitung || FREIGABEFAEHIG.has(post?.status) || post?.vorabOnline) && a.bereit)
   // Veröffentlichungsdatum des Artikels: das LinkedIn-Datum, sonst der Stand beim Freischalten.
   a.veroeffentlicht = post?.publishedOn ?? a.linkedin_datum ?? (a.live ? a.stand : undefined)
+  // Geändert kann eine Seite erst sein, nachdem sie erschienen ist: Liegt der Stand (Prüfdatum der Zahlen) vor dem
+  // Erscheinen, gilt für Schema, Meta und Sitemap das Erscheinungsdatum. Sichtbar bleibt „Stand“ das Prüfdatum.
+  a.geaendert = a.veroeffentlicht && a.veroeffentlicht > a.stand ? a.veroeffentlicht : a.stand
 }
 
 fs.rmSync(ZIEL, { recursive: true, force: true })
@@ -492,7 +495,7 @@ if (mitEntwuerfen) {
 
 // Übersicht für Oberfläche, Sitemap und llms.txt. Deterministisch sortiert, damit sie nur bei
 // echten Änderungen im Diff auftaucht.
-const index = artikel.map((a) => ({ post: a.post, ...(a.anleitung ? { art: a.art } : {}), slug: a.slug, titel: a.titel, beschreibung: a.beschreibung, frage: a.frage, stand: a.stand, bereit: a.bereit, live: a.live }))
+const index = artikel.map((a) => ({ post: a.post, ...(a.anleitung ? { art: a.art } : {}), slug: a.slug, titel: a.titel, beschreibung: a.beschreibung, frage: a.frage, stand: a.stand, geaendert: a.geaendert, bereit: a.bereit, live: a.live }))
 fs.writeFileSync('src/content/artikel-index.json', JSON.stringify(index, null, 2) + '\n')
 
 console.log(`Artikel: ${artikel.length} Entwürfe, ${artikel.filter((a) => a.bereit).length} bereit, ${live.length} online${FREIGABE.artikelLive ? '' : ' (Freigabe aus)'}${mitEntwuerfen ? `, Vorschau unter /${ENTWURF}/` : ''}`)
