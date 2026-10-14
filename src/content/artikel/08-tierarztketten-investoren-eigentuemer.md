@@ -6,6 +6,7 @@ beschreibung: Rund 62 Prozent der Standorte von 13 erfassten Tierarztgruppen ent
 frage: Gehören alle Tierarztketten in Deutschland Finanzinvestoren?
 suchbegriffe: wem gehören tierarztketten, wem gehören tierarztpraxen, tierarztpraxen investoren, private equity tierarzt, tierarztkette ohne investor
 stand: 2026-09-23
+kennzahl: markt/4 | 62 % | der erfassten Kettenstandorte gehören Gruppen mit Finanzinvestoren | 2026
 bereit: ja
 ---
 Nein. Von den **505 Standorten**, die der Datensatz dieser Seite für 13 einzeln erfasste Tierarztgruppen zählt (Stand September 2026), gehören **rund 62 Prozent** zu fünf Gruppen mit Beteiligungsgesellschaften als Eigentümern, rund 15 Prozent zu AniCura und damit zum Konzern Mars. Knapp 7 Prozent entfallen auf drei Gruppen, die ausdrücklich ohne Investmentfonds oder von Tierärztinnen und Tierärzten geführt arbeiten.

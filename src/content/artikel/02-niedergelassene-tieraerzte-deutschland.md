@@ -6,6 +6,7 @@ beschreibung: Ende 2025 gab es 11.216 niedergelassene Tierärzte in Deutschland,
 frage: Wie viele niedergelassene Tierärzte gibt es in Deutschland?
 suchbegriffe: wie viele niedergelassene tierärzte gibt es in deutschland, niedergelassene tierärzte deutschland, praxisinhaber tierarzt anzahl, kleintierpraxis anteil
 stand: 2026-09-23
+kennzahl: beruf/3 | 11.216 | niedergelassene Tierärztinnen und Tierärzte | 2025
 bereit: ja
 ---
 Ende 2025 gab es in Deutschland **11.216 niedergelassene Tierärztinnen und Tierärzte**, also Inhaberinnen und Inhaber einer eigenen Praxis. **5.930 von ihnen führten eine reine Kleintierpraxis** – 52,9 Prozent aller Niedergelassenen und 54,4 Prozent derer, die ihren Schwerpunkt angegeben haben (berechnet aus der Statistik der Bundestierärztekammer). 1991 war noch die gemischte Praxis für Nutz- und Kleintiere mit 4.086 Inhabern der Regelfall, reine Kleintierpraxen führten 2.298.

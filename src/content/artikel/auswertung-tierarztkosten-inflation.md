@@ -6,6 +6,7 @@ beschreibung: Seit 2010 stiegen Tierarztpreise um 54 Prozent, die Inflation um 4
 frage: Sind Tierarztkosten stärker gestiegen als die Inflation?
 suchbegriffe: tierarztkosten gestiegen, tierarzt kosten inflation, got 2022 erhöhung, tierarzt untersuchung kosten katze hund, gebührenordnung tierärzte entwicklung, impfung tierarzt kosten
 stand: 2026-10-07
+kennzahl: markt/5 | +54 % | Tierarztpreise seit 2010, alle Verbraucherpreise +42 % | 2010–2026
 grafik: tierarzt-inflation
 bereit: ja
 ---

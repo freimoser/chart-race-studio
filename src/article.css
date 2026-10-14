@@ -125,6 +125,43 @@ pre code { background: none; padding: 0; font-size: inherit; white-space: pre; }
 .selbst { margin: 2.75rem 0 0; padding: 0.25rem 1.25rem 0.5rem; background: var(--brand-surface-2); border-radius: var(--brand-radius); }
 .selbst h2 { margin-top: 1.25rem; }
 
+/* Kennzahlen am Rand (Übersicht und Startseite, scripts/build-artikel.mjs). Ab 75rem stehen links und rechts
+   der Textspalte je sechs Kennzahlen, jede ein Link auf ihren Artikel; vorher war dort nur Leerraum.
+   Schmaler sind die Leisten aus, die Übersicht zeigt dann ein waagerechtes Band unter dem Vorspann.
+   Die Zahl trägt die Textfarbe, nicht die Markenfarbe: Sie ist Inhalt, kein Knopf. */
+.leiste { display: none; }
+.leiste ul, .kz-band ul { list-style: none; margin: 0; padding: 0; }
+.leiste li, .kz-band li { margin: 0; }
+.leiste-titel { margin: 0 0 0.6rem; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--brand-ink-muted); }
+.kz { display: flex; flex-direction: column; gap: 0.1rem; padding: 0.65rem 0.85rem 0.7rem; border: 1px solid var(--brand-line); border-radius: var(--brand-radius); background: var(--brand-surface); color: var(--brand-ink); text-decoration: none; line-height: 1.35; transition: border-color 0.15s, box-shadow 0.15s; }
+.kz:hover { border-color: color-mix(in srgb, var(--brand-primary) 55%, var(--brand-line)); box-shadow: 0 6px 18px -12px rgba(15, 40, 45, 0.35); }
+.kz:focus-visible { outline: 2px solid var(--brand-primary); outline-offset: 2px; }
+.kz-wert { font-size: 1.45rem; font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; color: var(--brand-ink); }
+.kz-text { font-size: 0.8125rem; color: var(--brand-ink-muted); }
+.kz:hover .kz-text { color: var(--brand-ink); }
+.kz-jahr { font-size: 0.75rem; color: var(--brand-ink-muted); }
+.kz-band { margin: 1.25rem -1.25rem 0; }
+.kz-band ul { display: flex; gap: 0.6rem; overflow-x: auto; scroll-snap-type: x mandatory; padding: 0.25rem 1.25rem 0.75rem; scrollbar-width: thin; }
+.kz-band li { flex: 0 0 11.5rem; scroll-snap-align: start; }
+.kz-band .kz { height: 100%; }
+@media (max-width: 40rem) {
+  .kz-band { margin-left: -1rem; margin-right: -1rem; }
+  .kz-band ul { padding-left: 1rem; padding-right: 1rem; scroll-padding-left: 1rem; }
+}
+@media (min-width: 75rem) {
+  .mit-leisten { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 44rem) minmax(0, 1fr); grid-template-areas: 'links mitte rechts'; column-gap: 2rem; max-width: 92rem; margin: 0 auto; padding: 0 1.25rem; }
+  .mit-leisten > main { grid-area: mitte; width: 100%; }
+  .leiste { display: block; align-self: start; width: 100%; max-width: 15rem; margin-top: 3.4rem; }
+  .leiste-beruf { grid-area: links; justify-self: end; }
+  .leiste-markt { grid-area: rechts; justify-self: start; }
+  .leiste li + li { margin-top: 0.55rem; }
+  .kz-band { display: none; }
+}
+/* Mitlaufen nur, wenn die ganze Leiste unter die Kopfzeile passt – sonst wäre ihr Ende nie erreichbar. */
+@media (min-width: 75rem) and (min-height: 56rem) {
+  .leiste { position: sticky; top: 4.75rem; }
+}
+
 @media (max-width: 40rem) {
   body { font-size: 16.5px; }
   h1 { font-size: 1.65rem; margin-top: 1.25rem; }

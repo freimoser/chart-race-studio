@@ -6,6 +6,7 @@ beschreibung: Je Tierarzt in der Praxis kamen 2025 1.101 Hunde und Katzen, 11 Pr
 frage: Gibt es in Deutschland einen Tierarztmangel?
 suchbegriffe: tierarztmangel deutschland, tierärztemangel, werden tierärzte in deutschland gesucht, tiere pro tierarzt
 stand: 2026-10-09
+kennzahl: beruf/4 | 1.101 | Hunde und Katzen je Tierärztin oder Tierarzt in der Praxis | 2025
 bereit: ja
 ---
 Gemessen an Köpfen zeigt die Statistik keinen Mangel: 2025 kamen in Deutschland rechnerisch **1.101 Hunde und Katzen auf eine Tierärztin oder einen Tierarzt in der Praxis**, weniger als im Jahr 2000 mit 1.244. Knapp geworden sind die **Praxisinhaber** – auf jeden kommen inzwischen 2.291 Hunde und Katzen statt 1.668 – und, was die Statistik nicht misst, die Arbeitszeit. Berechnet aus der Statistik der Bundestierärztekammer und den Heimtierzahlen von IVH und ZZF; die Heimtierzahlen vor 2012 sind an die heutige Zählung angeschlossen.

@@ -6,6 +6,7 @@ beschreibung: Angestellte Tierärzte verdienen zum Einstieg 3.701 Euro brutto im
 frage: Was verdient ein Tierarzt?
 suchbegriffe: gehalt tierarzt, tierarzt gehalt angestellt, tierarzt gehalt netto, was verdient ein tierarzt, gehalt tierärztin berufseinstieg, tierarzt gehalt vergleich arzt
 stand: 2026-10-14
+kennzahl: markt/6 | 3.701 € | brutto im Monat zum Berufseinstieg, angestellt in Vollzeit | 2025
 grafik: gehalt-preise line
 bereit: ja
 ---

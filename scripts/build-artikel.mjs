@@ -322,6 +322,49 @@ ${csv ? `          <p><a href="${csv}" download>Daten als CSV herunterladen</a> 
 `
 }
 
+// ---------- Kennzahlen am Rand ----------
+// Breite Bildschirme hatten links und rechts der Textspalte nur Leerraum. Dort stehen jetzt je sechs Kennzahlen,
+// jede ein Link auf ihren Artikel. Die Zahl gehört zum Artikel und steht in seinem Kopf:
+//   kennzahl: beruf/1 | 34.476 | Tierärztinnen und Tierärzte tätig | 2025
+// Der Wert muss so im Artikel stehen (Mio. = Millionen, % = Prozent, € = Euro), sonst bricht der Lauf ab:
+// Eine Zahl am Rand, die der Artikel nicht mehr trägt, wäre eine zweite Wahrheit.
+const LEISTEN = [['beruf', 'Tierärzte und Praxen'], ['markt', 'Tiere, Markt und Geld']]
+function kennzahlVon(a) {
+  if (!a.kennzahl) return undefined
+  const [ort = '', wert, text, jahr] = a.kennzahl.split('|').map((x) => x.trim())
+  const [gruppe, rang] = ort.split('/')
+  if (!LEISTEN.some(([id]) => id === gruppe) || !Number(rang) || !wert || !text || !jahr) {
+    throw new Error(`${a.datei}: kennzahl als „gruppe/rang | Wert | Text | Jahr“, Gruppe ${LEISTEN.map(([id]) => id).join(' oder ')}`)
+  }
+  const ausgeschrieben = wert.replace(/^\+\s*/, '').replace(/\s*Mio\.$/, ' Millionen').replace(/\s*%$/, ' Prozent').replace(/\s*€$/, ' Euro')
+  if (!a.text.replace(/\*\*/g, '').includes(ausgeschrieben)) throw new Error(`${a.datei}: Kennzahl „${wert}“ steht so nicht im Artikel (gesucht „${ausgeschrieben}“)`)
+  return { gruppe, rang: Number(rang), wert, text, jahr, slug: a.slug }
+}
+const kachel = (k, pfad) => `<a class="kz" href="${pfad}${k.slug}.html"><span class="kz-wert">${esc(k.wert)}</span> <span class="kz-text">${esc(k.text)}</span> <span class="kz-jahr">${esc(k.jahr)}</span></a>`
+// Die Leisten stehen im Quelltext hinter dem Hauptteil (zuerst liest man den Artikel), das Raster setzt sie
+// links und rechts daneben. Unter 75rem sind sie ausgeblendet; dort zeigt die Übersicht ein Band (`kennzahlBand`).
+function kennzahlLeisten(live, pfad) {
+  const alle = live.map(kennzahlVon).filter(Boolean)
+  return LEISTEN.map(([id, titel]) => ({ id, titel, liste: alle.filter((k) => k.gruppe === id).sort((x, y) => x.rang - y.rang) }))
+    .filter((l) => l.liste.length)
+    .map((l) => `    <aside class="leiste leiste-${l.id}" aria-labelledby="leiste-${l.id}">
+      <p class="leiste-titel" id="leiste-${l.id}">${esc(l.titel)}</p>
+      <ul>
+${l.liste.map((k) => `        <li>${kachel(k, pfad)}</li>`).join('\n')}
+      </ul>
+    </aside>`).join('\n')
+}
+function kennzahlBand(live, pfad) {
+  const alle = live.map(kennzahlVon).filter(Boolean)
+  const reihe = LEISTEN.flatMap(([id]) => alle.filter((k) => k.gruppe === id).sort((x, y) => x.rang - y.rang))
+  return reihe.length ? `      <section class="kz-band" aria-label="Kennzahlen aus den Artikeln">
+        <ul>
+${reihe.map((k) => `          <li>${kachel(k, pfad)}</li>`).join('\n')}
+        </ul>
+      </section>
+` : ''
+}
+
 // ---------- Übersicht aller Live-Artikel ----------
 // Die Drehscheibe für interne Links: Jeder Artikel ist von hier aus einen Klick entfernt, und
 // Crawler ohne JavaScript finden die Reihe, ohne die Single-Page-Anwendung ausführen zu müssen.
@@ -357,17 +400,20 @@ function uebersicht(live) {
   </head>
   <body>
     <!--rahmen:kopf-->
+    <div class="mit-leisten">
     <main class="wrap">
       <p class="meta">Archiv</p>
       <h1>Alle Artikel nach Thema</h1>
       <p class="lead">Hier stehen alle ${live.length} Artikel, sortiert nach den Themen der Reihe: die Tiere, die Praxis, die Käufer der Praxen und mehr. Jeder beantwortet eine Frage mit Zahl, Jahr und Quelle und nennt, was die Zahl nicht sagt.</p>
-${nachKapitel.map((k) => `      <h2 id="${k.arc.id ?? 'mehr'}">${esc(k.arc.label)}</h2>
+${kennzahlBand(live, '')}${nachKapitel.map((k) => `      <h2 id="${k.arc.id ?? 'mehr'}">${esc(k.arc.label)}</h2>
       <p>${esc(k.arc.claim ?? 'Auswertungen über die Reihe hinaus, ein Blick über den Tellerrand und Anleitungen für eigene Grafiken.')}</p>
       <ul class="liste">
 ${k.liste.map((a) => `        <li><a href="${a.slug}.html">${esc(a.titel)}</a><br />${esc(a.beschreibung)}</li>`).join('\n')}${k.arc.id === 'ketten' ? `\n        <li><a href="../artikel/tierarztketten-deutschland.html">Liste der Tierarztketten in Deutschland</a><br />Alle Gruppen mit belegten Standortzahlen und Eigentümern, und warum Einkaufsgemeinschaften keine Ketten sind.</li>` : ''}
       </ul>`).join('\n')}
       <p class="meta">Dazu: <a href="../artikel/datenherkunft.html">Woher die Zahlen kommen</a> · <a href="../ueber-das-projekt.html">Über das Projekt</a> · <a href="../studio/#redaktionsplan">Redaktionsplan</a></p>
     </main>
+${kennzahlLeisten(live, '')}
+    </div>
     <!--rahmen:fuss-->
   </body>
 </html>
@@ -412,6 +458,7 @@ function startseite(live) {
   </head>
   <body>
     <!--rahmen:kopf-->
+    <div class="mit-leisten">
     <main class="wrap">
       <h1>Tierärzte, Praxen und Haustiere in Zahlen</h1>
       <p class="lead">Wie viele Tierärztinnen und Tierärzte, Praxen und Haustiere gibt es in Deutschland, und was hat sich seit 1991 verschoben? Jeder Artikel beantwortet eine Frage mit Zahl, Jahr und Quelle, zeigt die Entwicklung als animierte Grafik und sagt, was die Zahl nicht sagt.</p>
@@ -443,6 +490,8 @@ ${anleitungen.length ? `        <p class="meta">Anleitung: ${anleitungen.map((a)
         <p class="meta"><a href="ueber-das-projekt.html">Über das Projekt, mit Video in 60 Sekunden</a> · <a href="artikel/datenherkunft.html">Woher jede Zahl stammt</a></p>
       </section>
     </main>
+${kennzahlLeisten(live, 'beitrag/')}
+    </div>
     <!--rahmen:fuss-->
   </body>
 </html>
@@ -453,6 +502,7 @@ ${anleitungen.length ? `        <p class="meta">Anleitung: ${anleitungen.map((a)
 const dateien = fs.existsSync(QUELLE) ? fs.readdirSync(QUELLE).filter((f) => f.endsWith('.md') && f !== 'README.md').sort() : []
 const artikel = dateien.map(lesen)
 
+for (const a of artikel) kennzahlVon(a)
 const doppelt = (feld) => artikel.map((a) => a[feld]).filter((v, i, xs) => v !== undefined && xs.indexOf(v) !== i)
 if (doppelt('slug').length) throw new Error(`Doppelter slug: ${doppelt('slug').join(', ')}`)
 if (doppelt('post').length) throw new Error(`Zwei Entwürfe für Post ${doppelt('post').join(', ')}`)

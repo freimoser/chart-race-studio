@@ -6,6 +6,7 @@ beschreibung: Jede fünfte Tierärztin oder jeder fünfte Tierarzt in der Praxis
 frage: Wer übernimmt die Tierarztpraxen in Deutschland?
 suchbegriffe: tierarztpraxis nachfolge, praxisnachfolge tierarzt, tierarztpraxis übernehmen, tierärzte alter, tierarztpraxis verkaufen, tierärzte über 60
 stand: 2026-10-13
+kennzahl: beruf/5 | +81 % | Tierärztinnen und Tierärzte ab 60 in den Praxen, seit 2016 | 2025
 grafik: praxis-alter-wachstum line
 bereit: ja
 ---

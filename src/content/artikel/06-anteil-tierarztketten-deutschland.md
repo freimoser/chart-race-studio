@@ -6,6 +6,7 @@ beschreibung: Rund 450 von etwa 10.000 Tierarztpraxen gehörten im August 2024 z
 frage: Wie hoch ist der Anteil der Tierarztketten in Deutschland?
 suchbegriffe: anteil tierarztketten, marktanteil tierarztketten deutschland, wie viele tierarztpraxen gehören ketten, tierarztpraxen aufgekauft
 stand: 2026-09-23
+kennzahl: markt/3 | 4,5 % | der Praxen und Kliniken gehören zu einer Kette | 2024
 bereit: ja
 ---
 Im August 2024 gehörten in Deutschland **rund 450 Standorte zu 16 Praxisketten**, so der Tierärzte Atlas Deutschland 2024. Bei rund 10.000 Tierarztpraxen und Tierkliniken sind das **etwa 4,5 Prozent**. Rund 95 von 100 Praxen gehörten also zu keiner Kette. Eine amtliche Zählung gibt es nicht.

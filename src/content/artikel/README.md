@@ -32,6 +32,7 @@ bereit: ja
 - `frage`: eine **gemessene** Suchformulierung (Autocomplete oder „Weitere Fragen“ in der Google-Suche), keine ausgedachte. Sie wird Linktext auf der Übersichtsseite und in llms.txt. Stand der Messung: `docs/KEYWORD-RECHERCHE.md`, Abschnitt 9.
 - Vorschaubild für LinkedIn: nach Änderungen an Titel oder Beschreibung `node scripts/og-bilder.mjs` ausführen und die PNGs einchecken.
 - `bereit: nein`, solange Zahlen fehlen oder ungeprüft sind. Offene Stellen im Text als `**Offen:** …` markieren.
+- `kennzahl` (optional): die Kachel in den Leisten neben Übersicht und Startseite, `gruppe/rang | Wert | Text | Jahr`, z. B. `beruf/1 | 34.476 | Tierärztinnen und Tierärzte tätig | 2025`. Gruppen: `beruf` (links, „Tierärzte und Praxen“), `markt` (rechts, „Tiere, Markt und Geld“). Der Wert muss so im Artikel stehen (`Mio.` = Millionen, `%` = Prozent, `€` = Euro, ein `+` davor wird ignoriert), sonst bricht der Build ab. Ändert sich die Zahl im Artikel, die Kennzahl mitziehen.
 
 ## Aufbau
 

@@ -6,6 +6,7 @@ beschreibung: Weltweit leben mehr Hunde als Katzen, in Deutschland mehr Katzen. 
 frage: Gibt es mehr Katzen oder Hunde?
 suchbegriffe: gibt es mehr katzen oder hunde, gibt es mehr katzen oder hunde auf der welt, gibt es mehr katzen oder hunde in deutschland, wie viele hunde gibt es auf der welt, wie viele katzen gibt es in deutschland
 stand: 2026-09-24
+kennzahl: markt/2 | 15,7 Mio. | Katzen, dazu 10,0 Mio. Hunde | 2025
 bereit: ja
 ---
 **Weltweit gibt es mehr Hunde als Katzen**, für 2018 nennt Euromonitor 471 Millionen Hunde und 373 Millionen Katzen. **In Deutschland ist es umgekehrt:** 2025 lebten hier 15,7 Millionen Katzen und 10,0 Millionen Hunde. Die Richtung ist aber fast überall dieselbe – zwischen 2000 und 2026 verschiebt sich das Verhältnis in 84 von 197 Ländern, und fast immer zugunsten der Katze.

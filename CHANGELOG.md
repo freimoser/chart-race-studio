@@ -4,6 +4,11 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Kennzahlen am Rand (15.10.2026)
+
+- **Übersicht und Startseite** nutzen auf breiten Bildschirmen (ab 1200 px) den Leerraum neben der Textspalte: links sechs Kennzahlen „Tierärzte und Praxen“, rechts sechs „Tiere, Markt und Geld“, jede ein Link auf ihren Artikel, mitlaufend, wenn die Leiste ganz in den Bildschirm passt (Wunsch Nutzer). Schmaler zeigt die Übersicht dieselben Kacheln als wischbares Band unter dem Vorspann; die Startseite bleibt auf dem Telefon unverändert.
+- **Eine Wahrheit:** Die Kennzahl steht im Kopf ihres Artikels (`kennzahl:`), und der Build bricht ab, wenn der Artikel den Wert nicht (mehr) enthält (Gegentest gemacht).
+
 ### SEO- und GEO-Prüfung in vier Durchläufen (14.10.2026)
 
 - **`llms-full.txt` vollständig:** Der Erzeuger las nur nummerierte Artikeldateien; Gehalt, Nachfolge, Überstunden, Tierarztkosten, Oktoberfest und Weltkarte standen dort als leere Überschrift. Jetzt alle 15 Live-Artikel im Volltext (ohne `::grafik`-Zeilen); `check:launch` bricht ab, wenn ein Artikel darin ohne Text steht (Gegentest gemacht).

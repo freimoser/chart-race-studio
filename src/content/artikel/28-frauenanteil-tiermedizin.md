@@ -6,6 +6,7 @@ beschreibung: 2025 waren 72 Prozent der tätigen Tierärzte in Deutschland Fraue
 frage: Wie viel Prozent der Tierärzte sind weiblich?
 suchbegriffe: frauenanteil tiermedizin, tierärztinnen deutschland anzahl, anteil frauen tiermedizin, tiermedizin weiblich
 stand: 2026-10-09
+kennzahl: beruf/2 | 72 % | Frauenanteil unter den tätigen Tierärzten | 2025
 bereit: ja
 ---
 2025 waren in Deutschland **72,0 Prozent der tierärztlich Tätigen Frauen**, 24.815 von 34.476, und 67,0 Prozent aller Mitglieder der Tierärztekammern. 2002 lag der Anteil unter den Tätigen bei 44,3 Prozent. Seit 2006 arbeiten mehr Tierärztinnen als Tierärzte, seit 2016 führen mehr Frauen als Männer eine eigene Praxis. Ausgelesen aus allen 24 Jahrgängen der Statistik der Bundestierärztekammer von 2002 bis 2025.

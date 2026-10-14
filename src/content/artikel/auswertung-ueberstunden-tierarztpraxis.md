@@ -6,6 +6,7 @@ beschreibung: 7 von 10 angestellten Tierärzten machen Überstunden, Inhaber arb
 frage: Wie viele Überstunden machen Tierärztinnen und Tierärzte?
 suchbegriffe: überstunden tierarzt, tierarzt arbeitszeit, tierarzt arbeitszeitgesetz, angestellte tierärzte arbeitsbedingungen, tierarzt wochenarbeitszeit, notdienst tierarzt
 stand: 2026-10-09
+kennzahl: beruf/6 | 70 % | der angestellten Tierärztinnen und Tierärzte machen Überstunden | 2025
 linkedin_datum: 2026-10-09
 linkedin: https://www.linkedin.com/posts/thomas-freimoser_tiermedizin-tierarzt-aesberstunden-ugcPost-7514380156464115712-ICdi/
 bereit: ja
