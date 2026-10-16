@@ -2,7 +2,7 @@
  "title": "Fachtierärztinnen und Fachtierärzte in Deutschland nach Gebietsbezeichnung, 2001–2025 (Schwerpunkt Kleintiere)",
  "source": "Bundestierärztekammer / Zentrale Tierärztedatei, Statistik „Tierärzteschaft in der Bundesrepublik Deutschland“ (Deutsches Tierärzteblatt)",
  "sourceUrl": "https://www.bundestieraerztekammer.de/btk/statistik/",
- "notes": "Titelbezeichnung wechselt: 2001–2004 „Kleintiere, kleine Haustiere“; 2005–2014 „Klein- und Heimtiere“; ab 2018 „Kleintiere“ (Fußnote der BTK: inkl. Klein- und Heimtiere). Zählbasis wechselt: 2005 nur TÄ bis 65 Jahre; ab 2006 alle Titelträger inkl. Ruheständler; ab 2012 zusätzlich Spalte „aktiv“. LÜCKEN: 2015, 2016, 2017 (die BTK druckte in diesen Jahrgängen nur „Tab. 3: Fachtierarztabschlüsse“ = Neuanerkennungen, keine Bestandstabelle) und 2020 (die Seiten mit Tab. 5–7 sind im veröffentlichten PDF 2020.pdf leer). 2000 und früher nicht online. Mehrfachanerkennungen sind möglich: die Summe aller Gebietsbezeichnungen ist größer als die Zahl der Fachtierärzt:innen. QUELLENAUFFÄLLIGKEITEN: 2012 Pferde – Tab. 4 weist 116 unter „Pferde“ und 461 unter „Pferdechirurgie“ aus (Vorjahr Pferdechirurgie einstellig, 2013 10); die Kammer Bayern hat ihre Pferde-Fachtierärzt:innen offenbar in der falschen Zeile gemeldet (Bayern: Pferde 0, Pferdechirurgie 127). Der Wert ist nicht verwendbar und bleibt leer. 2013 Mikrobiologie – ges. 605 steht so in Tab. 4 (DTBl_06_2014_Statistik.pdf), bei 481 (2012) und 494 (2014); die Spalte „aktiv“ (307 / 321 / 305) zeigt keinen Sprung, der Ausreißer liegt also bei den Ruheständlern und ist vermutlich ein Meldefehler. Übernommen wie publiziert, aber markiert. 2025 – zehn von elf geführten Gebieten sinken gegenüber 2024 zusammen um 412 Bezeichnungen. Alle Werte entsprechen Tab. 6a in 2025_korr.pdf. Hauptursache ist die Kammer Berlin: Sie meldet 2025 in der Spalte „ges.“ nur noch aktive Fachtierärzt:innen (ges. = aktiv in allen Zeilen), die Ruheständler fehlen. Allein das erklärt rund 330 der 412, z. B. Kleintiere Berlin 130 → 53, Öffentliches Veterinärwesen 144 → 82, Pathologie 73 → 24. Die Spalte „aktiv“ bundesweit bleibt stabil (Kleintiere 1.244 → 1.233, Öff. Veterinärwesen 1.361 → 1.382).",
+ "notes": "Titelbezeichnung wechselt: 2001–2004 „Kleintiere, kleine Haustiere“; 2005–2014 „Klein- und Heimtiere“; ab 2018 „Kleintiere“ (Fußnote der BTK: inkl. Klein- und Heimtiere). Zählbasis wechselt: 2005 nur TÄ bis 65 Jahre; ab 2006 alle Titelträger inkl. Ruheständler; ab 2012 zusätzlich Spalte „aktiv“. LÜCKEN: 2015, 2016, 2017 (die BTK druckte in diesen Jahrgängen nur „Tab. 3: Fachtierarztabschlüsse“ = Neuanerkennungen, keine Bestandstabelle); 2020 ist vorhanden, aber nur als Grafik im PDF (bis 15.10.2026 hier fälschlich als „leer“ geführt, seit 16.10.2026 abgelesen und eingetragen). 2000 und früher nicht online. Mehrfachanerkennungen sind möglich: die Summe aller Gebietsbezeichnungen ist größer als die Zahl der Fachtierärzt:innen. QUELLENAUFFÄLLIGKEITEN: 2012 Pferde – Tab. 4 weist 116 unter „Pferde“ und 461 unter „Pferdechirurgie“ aus (Vorjahr Pferdechirurgie einstellig, 2013 10); die Kammer Bayern hat ihre Pferde-Fachtierärzt:innen offenbar in der falschen Zeile gemeldet (Bayern: Pferde 0, Pferdechirurgie 127). Der Wert ist nicht verwendbar und bleibt leer. 2013 Mikrobiologie – ges. 605 steht so in Tab. 4 (DTBl_06_2014_Statistik.pdf), bei 481 (2012) und 494 (2014); die Spalte „aktiv“ (307 / 321 / 305) zeigt keinen Sprung, der Ausreißer liegt also bei den Ruheständlern und ist vermutlich ein Meldefehler. Übernommen wie publiziert, aber markiert. 2025 – zehn von elf geführten Gebieten sinken gegenüber 2024 zusammen um 412 Bezeichnungen. Alle Werte entsprechen Tab. 6a in 2025_korr.pdf. Hauptursache ist die Kammer Berlin: Sie meldet 2025 in der Spalte „ges.“ nur noch aktive Fachtierärzt:innen (ges. = aktiv in allen Zeilen), die Ruheständler fehlen. Allein das erklärt rund 330 der 412, z. B. Kleintiere Berlin 130 → 53, Öffentliches Veterinärwesen 144 → 82, Pathologie 73 → 24. Die Spalte „aktiv“ bundesweit bleibt stabil (Kleintiere 1.244 → 1.233, Öff. Veterinärwesen 1.361 → 1.382). KORREKTUR 2021 (16.10.2026): Nordrhein hat in Tab. 6a 2021 die Zeilen 13–27 in der Reihenfolge von 2020 gemeldet; betroffene Bundeswerte aus den Nordrhein-Werten umgeordnet (z. B. Pferde 649 → 705, Öffentliches Veterinärwesen 1.740 → 1.850, Kleintiere 1.181 → 1.309), Einzelheiten je Zeile. BERLIN 2023/2024: Pferde ges. 50 und 52 bei nur 15 und 18 aktiven (2022: 19, 2025: 20) – Meldeartefakt der Ruheständler-Spalte, die Spalte „aktiv“ ist hier stabiler.",
  "rows": [
   {
    "date": "2001",
@@ -1678,51 +1678,51 @@
    "date": "2021",
    "metric": "Fachtierarzt-Gebietsbezeichnung",
    "name": "Fachtierarzt für Kleintiere",
-   "value": 1181,
+   "value": 1309,
    "unit": "Personen (ges., inkl. Ruheständler ab 2006)",
    "source": "BTK/ZTD, Tab. 6a, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2021.pdf",
-   "quality": "publiziert",
-   "notes": "Titel seit 2018 „Kleintiere“ (Fußnote: inkl. Klein- und Heimtiere)"
+   "quality": "korrigiert",
+   "notes": "Titel seit 2018 „Kleintiere“ (Fußnote: inkl. Klein- und Heimtiere) KORREKTUR 16.10.2026: In Tab. 6a 2021 steht die Spalte Nordrhein für die Zeilen 13–27 in der Reihenfolge von 2020 (13 Kleine Wiederkäuer, 14 Kleintiere, 15 Innere Medizin der Kleintiere, 16 Chirurgie der Kleintiere … 25 Pferde, 26 Pferdechirurgie, 27 Innere Medizin der Pferde), die Zeilenbeschriftung und die Bundessumme folgen der neuen Reihenfolge. Belege: In der Zeile „Innere Medizin der Pferde“ steht für Nordrhein 142 (der Kleintier-Wert), bei Pferde 4. Bundeswert = BTK-Summe 1181 − Nordrhein wie gedruckt 14 + Nordrhein an der Position nach Reihenfolge 2020 142 = 1309. Umgeordnet, nicht geschätzt."
   },
   {
    "date": "2021",
    "metric": "Fachtierarzt-Gebietsbezeichnung_aktiv",
    "name": "Fachtierarzt für Kleintiere",
-   "value": 1007,
+   "value": 1118,
    "unit": "Personen (aktiv tätig)",
    "source": "BTK/ZTD, Tab. 6a, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2021.pdf",
-   "quality": "publiziert",
-   "notes": ""
+   "quality": "korrigiert",
+   "notes": "KORREKTUR 16.10.2026: In Tab. 6a 2021 steht die Spalte Nordrhein für die Zeilen 13–27 in der Reihenfolge von 2020 (13 Kleine Wiederkäuer, 14 Kleintiere, 15 Innere Medizin der Kleintiere, 16 Chirurgie der Kleintiere … 25 Pferde, 26 Pferdechirurgie, 27 Innere Medizin der Pferde), die Zeilenbeschriftung und die Bundessumme folgen der neuen Reihenfolge. Belege: In der Zeile „Innere Medizin der Pferde“ steht für Nordrhein 142 (der Kleintier-Wert), bei Pferde 4. Bundeswert = BTK-Summe 1007 − Nordrhein wie gedruckt 14 + Nordrhein an der Position nach Reihenfolge 2020 125 = 1118. Umgeordnet, nicht geschätzt."
   },
   {
    "date": "2021",
    "metric": "Fachtierarzt-Gebietsbezeichnung_weiblich",
    "name": "Fachtierärztin für Kleintiere",
-   "value": 656,
+   "value": 732,
    "unit": "Personen (weiblich)",
    "source": "BTK/ZTD, Tab. 6a, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2021.pdf",
-   "quality": "publiziert",
-   "notes": ""
+   "quality": "korrigiert",
+   "notes": "KORREKTUR 16.10.2026: In Tab. 6a 2021 steht die Spalte Nordrhein für die Zeilen 13–27 in der Reihenfolge von 2020 (13 Kleine Wiederkäuer, 14 Kleintiere, 15 Innere Medizin der Kleintiere, 16 Chirurgie der Kleintiere … 25 Pferde, 26 Pferdechirurgie, 27 Innere Medizin der Pferde), die Zeilenbeschriftung und die Bundessumme folgen der neuen Reihenfolge. Belege: In der Zeile „Innere Medizin der Pferde“ steht für Nordrhein 142 (der Kleintier-Wert), bei Pferde 4. Bundeswert = BTK-Summe 656 − Nordrhein wie gedruckt 3 + Nordrhein an der Position nach Reihenfolge 2020 79 = 732. Umgeordnet, nicht geschätzt."
   },
   {
    "date": "2021",
    "metric": "Fachtierarzt-Gebietsbezeichnung_WBE",
    "name": "Fachtierarzt für Kleintiere",
-   "value": 409,
+   "value": 432,
    "unit": "mit Weiterbildungsermächtigung",
    "source": "BTK/ZTD, Tab. 6a, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2021.pdf",
-   "quality": "publiziert",
-   "notes": ""
+   "quality": "korrigiert",
+   "notes": "KORREKTUR 16.10.2026: In Tab. 6a 2021 steht die Spalte Nordrhein für die Zeilen 13–27 in der Reihenfolge von 2020 (13 Kleine Wiederkäuer, 14 Kleintiere, 15 Innere Medizin der Kleintiere, 16 Chirurgie der Kleintiere … 25 Pferde, 26 Pferdechirurgie, 27 Innere Medizin der Pferde), die Zeilenbeschriftung und die Bundessumme folgen der neuen Reihenfolge. Belege: In der Zeile „Innere Medizin der Pferde“ steht für Nordrhein 142 (der Kleintier-Wert), bei Pferde 4. Bundeswert = BTK-Summe 409 − Nordrhein wie gedruckt 6 + Nordrhein an der Position nach Reihenfolge 2020 29 = 432. Umgeordnet, nicht geschätzt."
   },
   {
    "date": "2021",
    "metric": "Fachtierarzt-Gebietsbezeichnung",
    "name": "Fachtierarzt für Pferde",
-   "value": 649,
+   "value": 705,
    "unit": "Personen (ges.)",
    "source": "BTK/ZTD, Tab. 6a, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2021.pdf",
-   "quality": "publiziert",
-   "notes": ""
+   "quality": "korrigiert",
+   "notes": "KORREKTUR 16.10.2026: In Tab. 6a 2021 steht die Spalte Nordrhein für die Zeilen 13–27 in der Reihenfolge von 2020 (13 Kleine Wiederkäuer, 14 Kleintiere, 15 Innere Medizin der Kleintiere, 16 Chirurgie der Kleintiere … 25 Pferde, 26 Pferdechirurgie, 27 Innere Medizin der Pferde), die Zeilenbeschriftung und die Bundessumme folgen der neuen Reihenfolge. Belege: In der Zeile „Innere Medizin der Pferde“ steht für Nordrhein 142 (der Kleintier-Wert), bei Pferde 4. Bundeswert = BTK-Summe 649 − Nordrhein wie gedruckt 4 + Nordrhein an der Position nach Reihenfolge 2020 60 = 705. Umgeordnet, nicht geschätzt."
   },
   {
    "date": "2021",
@@ -1758,61 +1758,61 @@
    "date": "2021",
    "metric": "Fachtierarzt-Gebietsbezeichnung",
    "name": "Fachtierarzt für Öffentliches Veterinärwesen",
-   "value": 1740,
+   "value": 1850,
    "unit": "Personen (ges.)",
    "source": "BTK/ZTD, Tab. 6a, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2021.pdf",
-   "quality": "publiziert",
-   "notes": ""
+   "quality": "korrigiert",
+   "notes": "KORREKTUR 16.10.2026: In Tab. 6a 2021 steht die Spalte Nordrhein für die Zeilen 13–27 in der Reihenfolge von 2020 (13 Kleine Wiederkäuer, 14 Kleintiere, 15 Innere Medizin der Kleintiere, 16 Chirurgie der Kleintiere … 25 Pferde, 26 Pferdechirurgie, 27 Innere Medizin der Pferde), die Zeilenbeschriftung und die Bundessumme folgen der neuen Reihenfolge. Belege: In der Zeile „Innere Medizin der Pferde“ steht für Nordrhein 142 (der Kleintier-Wert), bei Pferde 4. Bundeswert = BTK-Summe 1740 − Nordrhein wie gedruckt 15 + Nordrhein an der Position nach Reihenfolge 2020 125 = 1850. Umgeordnet, nicht geschätzt."
   },
   {
    "date": "2021",
    "metric": "Fachtierarzt-Gebietsbezeichnung",
    "name": "Fachtierarzt für Lebensmittel",
-   "value": 474,
+   "value": 483,
    "unit": "Personen (ges.)",
    "source": "BTK/ZTD, Tab. 6a, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2021.pdf",
-   "quality": "publiziert",
-   "notes": ""
+   "quality": "korrigiert",
+   "notes": "KORREKTUR 16.10.2026: In Tab. 6a 2021 steht die Spalte Nordrhein für die Zeilen 13–27 in der Reihenfolge von 2020 (13 Kleine Wiederkäuer, 14 Kleintiere, 15 Innere Medizin der Kleintiere, 16 Chirurgie der Kleintiere … 25 Pferde, 26 Pferdechirurgie, 27 Innere Medizin der Pferde), die Zeilenbeschriftung und die Bundessumme folgen der neuen Reihenfolge. Belege: In der Zeile „Innere Medizin der Pferde“ steht für Nordrhein 142 (der Kleintier-Wert), bei Pferde 4. Bundeswert = BTK-Summe 474 − Nordrhein wie gedruckt 13 + Nordrhein an der Position nach Reihenfolge 2020 22 = 483. Umgeordnet, nicht geschätzt."
   },
   {
    "date": "2021",
    "metric": "Fachtierarzt-Gebietsbezeichnung",
    "name": "Fachtierarzt für Mikrobiologie",
-   "value": 446,
+   "value": 455,
    "unit": "Personen (ges.)",
    "source": "BTK/ZTD, Tab. 6a, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2021.pdf",
-   "quality": "publiziert",
-   "notes": ""
+   "quality": "korrigiert",
+   "notes": "KORREKTUR 16.10.2026: In Tab. 6a 2021 steht die Spalte Nordrhein für die Zeilen 13–27 in der Reihenfolge von 2020 (13 Kleine Wiederkäuer, 14 Kleintiere, 15 Innere Medizin der Kleintiere, 16 Chirurgie der Kleintiere … 25 Pferde, 26 Pferdechirurgie, 27 Innere Medizin der Pferde), die Zeilenbeschriftung und die Bundessumme folgen der neuen Reihenfolge. Belege: In der Zeile „Innere Medizin der Pferde“ steht für Nordrhein 142 (der Kleintier-Wert), bei Pferde 4. Bundeswert = BTK-Summe 446 − Nordrhein wie gedruckt 4 + Nordrhein an der Position nach Reihenfolge 2020 13 = 455. Umgeordnet, nicht geschätzt."
   },
   {
    "date": "2021",
    "metric": "Fachtierarzt-Gebietsbezeichnung",
    "name": "Fachtierarzt für Pathologie",
-   "value": 338,
+   "value": 303,
    "unit": "Personen (ges.)",
    "source": "BTK/ZTD, Tab. 6a, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2021.pdf",
-   "quality": "publiziert",
-   "notes": ""
+   "quality": "korrigiert",
+   "notes": "KORREKTUR 16.10.2026: In Tab. 6a 2021 steht die Spalte Nordrhein für die Zeilen 13–27 in der Reihenfolge von 2020 (13 Kleine Wiederkäuer, 14 Kleintiere, 15 Innere Medizin der Kleintiere, 16 Chirurgie der Kleintiere … 25 Pferde, 26 Pferdechirurgie, 27 Innere Medizin der Pferde), die Zeilenbeschriftung und die Bundessumme folgen der neuen Reihenfolge. Belege: In der Zeile „Innere Medizin der Pferde“ steht für Nordrhein 142 (der Kleintier-Wert), bei Pferde 4. Bundeswert = BTK-Summe 338 − Nordrhein wie gedruckt 60 + Nordrhein an der Position nach Reihenfolge 2020 25 = 303. Umgeordnet, nicht geschätzt."
   },
   {
    "date": "2021",
    "metric": "Fachtierarzt-Gebietsbezeichnung",
    "name": "Fachtierarzt für Kleintierchirurgie",
-   "value": 117,
+   "value": 128,
    "unit": "Personen (ges.)",
    "source": "BTK/ZTD, Tab. 6a, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2021.pdf",
-   "quality": "publiziert",
-   "notes": ""
+   "quality": "korrigiert",
+   "notes": "KORREKTUR 16.10.2026: In Tab. 6a 2021 steht die Spalte Nordrhein für die Zeilen 13–27 in der Reihenfolge von 2020 (13 Kleine Wiederkäuer, 14 Kleintiere, 15 Innere Medizin der Kleintiere, 16 Chirurgie der Kleintiere … 25 Pferde, 26 Pferdechirurgie, 27 Innere Medizin der Pferde), die Zeilenbeschriftung und die Bundessumme folgen der neuen Reihenfolge. Belege: In der Zeile „Innere Medizin der Pferde“ steht für Nordrhein 142 (der Kleintier-Wert), bei Pferde 4. Bundeswert = BTK-Summe 117 − Nordrhein wie gedruckt 3 + Nordrhein an der Position nach Reihenfolge 2020 14 = 128. Umgeordnet, nicht geschätzt."
   },
   {
    "date": "2021",
    "metric": "Fachtierarzt-Gebietsbezeichnung",
    "name": "Fachtierarzt für Innere Medizin der Kleintiere",
-   "value": 96,
+   "value": 108,
    "unit": "Personen (ges.)",
    "source": "BTK/ZTD, Tab. 6a, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2021.pdf",
-   "quality": "publiziert",
-   "notes": ""
+   "quality": "korrigiert",
+   "notes": "KORREKTUR 16.10.2026: In Tab. 6a 2021 steht die Spalte Nordrhein für die Zeilen 13–27 in der Reihenfolge von 2020 (13 Kleine Wiederkäuer, 14 Kleintiere, 15 Innere Medizin der Kleintiere, 16 Chirurgie der Kleintiere … 25 Pferde, 26 Pferdechirurgie, 27 Innere Medizin der Pferde), die Zeilenbeschriftung und die Bundessumme folgen der neuen Reihenfolge. Belege: In der Zeile „Innere Medizin der Pferde“ steht für Nordrhein 142 (der Kleintier-Wert), bei Pferde 4. Bundeswert = BTK-Summe 96 − Nordrhein wie gedruckt 2 + Nordrhein an der Position nach Reihenfolge 2020 14 = 108. Umgeordnet, nicht geschätzt."
   },
   {
    "date": "2021",
@@ -2423,6 +2423,156 @@
    "source": "BTK/ZTD, Tab. 6a, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2025_korr.pdf",
    "quality": "publiziert",
    "notes": ""
+  },
+  {
+   "date": "2020",
+   "metric": "Fachtierarzt-Gebietsbezeichnung",
+   "name": "Fachtierarzt für Kleintiere",
+   "value": 1276,
+   "unit": "Personen (ges.)",
+   "source": "BTK/ZTD, Tab. 6a Gebietsbezeichnungen gemäß Muster-WBO, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2020.pdf",
+   "quality": "publiziert",
+   "notes": "Tab. 6a 2020 liegt im PDF nur als Grafik vor (pdftotext liefert nichts); Seite 562 bei 220 dpi gerendert und abgelesen am 16.10.2026."
+  },
+  {
+   "date": "2020",
+   "metric": "Fachtierarzt-Gebietsbezeichnung",
+   "name": "Fachtierarzt für Pferde",
+   "value": 688,
+   "unit": "Personen (ges.)",
+   "source": "BTK/ZTD, Tab. 6a Gebietsbezeichnungen gemäß Muster-WBO, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2020.pdf",
+   "quality": "publiziert",
+   "notes": "Tab. 6a 2020 liegt im PDF nur als Grafik vor (pdftotext liefert nichts); Seite 562 bei 220 dpi gerendert und abgelesen am 16.10.2026."
+  },
+  {
+   "date": "2020",
+   "metric": "Fachtierarzt-Gebietsbezeichnung",
+   "name": "Fachtierarzt für Rinder",
+   "value": 704,
+   "unit": "Personen (ges.)",
+   "source": "BTK/ZTD, Tab. 6a Gebietsbezeichnungen gemäß Muster-WBO, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2020.pdf",
+   "quality": "publiziert",
+   "notes": "Tab. 6a 2020 liegt im PDF nur als Grafik vor (pdftotext liefert nichts); Seite 562 bei 220 dpi gerendert und abgelesen am 16.10.2026."
+  },
+  {
+   "date": "2020",
+   "metric": "Fachtierarzt-Gebietsbezeichnung",
+   "name": "Fachtierarzt für Schweine",
+   "value": 601,
+   "unit": "Personen (ges.)",
+   "source": "BTK/ZTD, Tab. 6a Gebietsbezeichnungen gemäß Muster-WBO, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2020.pdf",
+   "quality": "publiziert",
+   "notes": "Tab. 6a 2020 liegt im PDF nur als Grafik vor (pdftotext liefert nichts); Seite 562 bei 220 dpi gerendert und abgelesen am 16.10.2026."
+  },
+  {
+   "date": "2020",
+   "metric": "Fachtierarzt-Gebietsbezeichnung",
+   "name": "Fachtierarzt für Geflügel",
+   "value": 291,
+   "unit": "Personen (ges.)",
+   "source": "BTK/ZTD, Tab. 6a Gebietsbezeichnungen gemäß Muster-WBO, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2020.pdf",
+   "quality": "publiziert",
+   "notes": "Tab. 6a 2020 liegt im PDF nur als Grafik vor (pdftotext liefert nichts); Seite 562 bei 220 dpi gerendert und abgelesen am 16.10.2026."
+  },
+  {
+   "date": "2020",
+   "metric": "Fachtierarzt-Gebietsbezeichnung",
+   "name": "Fachtierarzt für Öffentliches Veterinärwesen",
+   "value": 1811,
+   "unit": "Personen (ges.)",
+   "source": "BTK/ZTD, Tab. 6a Gebietsbezeichnungen gemäß Muster-WBO, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2020.pdf",
+   "quality": "publiziert",
+   "notes": "Tab. 6a 2020 liegt im PDF nur als Grafik vor (pdftotext liefert nichts); Seite 562 bei 220 dpi gerendert und abgelesen am 16.10.2026."
+  },
+  {
+   "date": "2020",
+   "metric": "Fachtierarzt-Gebietsbezeichnung",
+   "name": "Fachtierarzt für Lebensmittel",
+   "value": 492,
+   "unit": "Personen (ges.)",
+   "source": "BTK/ZTD, Tab. 6a Gebietsbezeichnungen gemäß Muster-WBO, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2020.pdf",
+   "quality": "publiziert",
+   "notes": "Tab. 6a 2020 liegt im PDF nur als Grafik vor (pdftotext liefert nichts); Seite 562 bei 220 dpi gerendert und abgelesen am 16.10.2026."
+  },
+  {
+   "date": "2020",
+   "metric": "Fachtierarzt-Gebietsbezeichnung",
+   "name": "Fachtierarzt für Mikrobiologie",
+   "value": 439,
+   "unit": "Personen (ges.)",
+   "source": "BTK/ZTD, Tab. 6a Gebietsbezeichnungen gemäß Muster-WBO, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2020.pdf",
+   "quality": "publiziert",
+   "notes": "Tab. 6a 2020 liegt im PDF nur als Grafik vor (pdftotext liefert nichts); Seite 562 bei 220 dpi gerendert und abgelesen am 16.10.2026."
+  },
+  {
+   "date": "2020",
+   "metric": "Fachtierarzt-Gebietsbezeichnung",
+   "name": "Fachtierarzt für Pathologie",
+   "value": 300,
+   "unit": "Personen (ges.)",
+   "source": "BTK/ZTD, Tab. 6a Gebietsbezeichnungen gemäß Muster-WBO, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2020.pdf",
+   "quality": "publiziert",
+   "notes": "Tab. 6a 2020 liegt im PDF nur als Grafik vor (pdftotext liefert nichts); Seite 562 bei 220 dpi gerendert und abgelesen am 16.10.2026."
+  },
+  {
+   "date": "2020",
+   "metric": "Fachtierarzt-Gebietsbezeichnung",
+   "name": "Fachtierarzt für Kleintierchirurgie",
+   "value": 124,
+   "unit": "Personen (ges.)",
+   "source": "BTK/ZTD, Tab. 6a Gebietsbezeichnungen gemäß Muster-WBO, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2020.pdf",
+   "quality": "publiziert",
+   "notes": "Tab. 6a 2020 liegt im PDF nur als Grafik vor (pdftotext liefert nichts); Seite 562 bei 220 dpi gerendert und abgelesen am 16.10.2026. Bezeichnung in der Tabelle: „Chirurgie der Kleintiere“."
+  },
+  {
+   "date": "2020",
+   "metric": "Fachtierarzt-Gebietsbezeichnung",
+   "name": "Fachtierarzt für Innere Medizin der Kleintiere",
+   "value": 102,
+   "unit": "Personen (ges.)",
+   "source": "BTK/ZTD, Tab. 6a Gebietsbezeichnungen gemäß Muster-WBO, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2020.pdf",
+   "quality": "publiziert",
+   "notes": "Tab. 6a 2020 liegt im PDF nur als Grafik vor (pdftotext liefert nichts); Seite 562 bei 220 dpi gerendert und abgelesen am 16.10.2026."
+  },
+  {
+   "date": "2020",
+   "metric": "Fachtierarzt-Gebietsbezeichnung",
+   "name": "Fachtierarzt für Heimtiere",
+   "value": 15,
+   "unit": "Personen (ges.)",
+   "source": "BTK/ZTD, Tab. 6a Gebietsbezeichnungen gemäß Muster-WBO, Spalte „gesamt/ges.“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2020.pdf",
+   "quality": "publiziert",
+   "notes": "Tab. 6a 2020 liegt im PDF nur als Grafik vor (pdftotext liefert nichts); Seite 562 bei 220 dpi gerendert und abgelesen am 16.10.2026."
+  },
+  {
+   "date": "2020",
+   "metric": "Fachtierarzt-Gebietsbezeichnung_aktiv",
+   "name": "Fachtierarzt für Kleintiere",
+   "value": 1079,
+   "unit": "Personen (aktiv tätig)",
+   "source": "BTK/ZTD, Tab. 6a, Zeile Kleintiere | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2020.pdf",
+   "quality": "publiziert",
+   "notes": "Tab. 6a 2020 liegt im PDF nur als Grafik vor (pdftotext liefert nichts); Seite 562 bei 220 dpi gerendert und abgelesen am 16.10.2026."
+  },
+  {
+   "date": "2020",
+   "metric": "Fachtierarzt-Gebietsbezeichnung_weiblich",
+   "name": "Fachtierärztin für Kleintiere",
+   "value": 712,
+   "unit": "Personen (weiblich)",
+   "source": "BTK/ZTD, Tab. 6a, Zeile Kleintiere | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2020.pdf",
+   "quality": "publiziert",
+   "notes": "Tab. 6a 2020 liegt im PDF nur als Grafik vor (pdftotext liefert nichts); Seite 562 bei 220 dpi gerendert und abgelesen am 16.10.2026."
+  },
+  {
+   "date": "2020",
+   "metric": "Fachtierarzt-Gebietsbezeichnung_WBE",
+   "name": "Fachtierarzt für Kleintiere",
+   "value": 464,
+   "unit": "mit Weiterbildungsermächtigung",
+   "source": "BTK/ZTD, Tab. 6a, Zeile Kleintiere | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2020.pdf",
+   "quality": "publiziert",
+   "notes": "Tab. 6a 2020 liegt im PDF nur als Grafik vor (pdftotext liefert nichts); Seite 562 bei 220 dpi gerendert und abgelesen am 16.10.2026."
   }
  ]
 }

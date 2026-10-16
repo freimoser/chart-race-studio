@@ -5,7 +5,7 @@ titel: Fachtierarzt Öffentliches Veterinärwesen: das größte Gebiet
 beschreibung: Ende 2025 gab es 1.950 Fachtierarzt-Titel für Öffentliches Veterinärwesen, mehr als für Kleintiere (1.410). Seit 2007 in jedem Jahr das größte Gebiet.
 frage: Wie viele Fachtierärzte für öffentliches Veterinärwesen gibt es in Deutschland?
 suchbegriffe: fachtierarzt öffentliches veterinärwesen, amtstierarzt, tierarzt veterinäramt, tierärzte außerhalb der praxis
-stand: 2026-09-23
+stand: 2026-10-16
 bereit: ja
 ---
 Ende 2025 führten in Deutschland **1.950 Tierärztinnen und Tierärzte den Fachtierarzt-Titel für Öffentliches Veterinärwesen**, mehr als in jedem anderen Gebiet und 540 mehr als für Kleintiere mit 1.410. 2007 waren es 1.398, so die Statistik der Bundestierärztekammer.
@@ -47,7 +47,8 @@ Für 1991 ist die dritte Gruppe genauer aufgeschlüsselt. Von damals 6.759 Tier�
 - **Ein Fachtitel ist kein Arbeitsplatz.** Wie viele der 1.950 Titelträgerinnen und Titelträger tatsächlich in einem Veterinäramt arbeiten, weist die Statistik nicht aus. Ebenso wenig, wie viele Tierärztinnen und Tierärzte im Amt arbeiten, ohne diesen Fachtitel zu führen.
 - **Titel, nicht Personen.** Wer zwei Gebietsbezeichnungen führt, zählt in beiden. Die 3.701 Personen von 1991 und die 1.950 Titel von 2025 sind deshalb nicht direkt vergleichbar.
 - **Zwei Zählungen, eine Richtung.** Der Vergleich mit der dritten Gruppe setzt Titel neben Personen. Er zeigt, dass beide ähnlich wachsen, aber nicht, dass es dieselben Menschen sind.
-- **Lücken.** 2015 bis 2017 und 2020 hat die Kammer die Tabellen zu den Gebietsbezeichnungen nicht oder unvollständig veröffentlicht. Diese Jahre sind im Diagramm interpoliert und hier nicht zitiert. Auffällig ist 2021: Mit 1.740 Titeln liegt das Gebiet unter 2019 (1.768), ebenso die Kleintiere. Einen Grund nennt die Quelle nicht.
+- **Lücken.** 2015 bis 2017 hat die Kammer keine Bestandstabelle veröffentlicht. Diese Jahre sind im Diagramm interpoliert und hier nicht zitiert. 2020 liegt die Tabelle im PDF der Kammer nur als Grafik vor und ist abgelesen (1.811 Titel).
+- **2021 korrigiert.** In der Tabelle der Kammer liegt das Gebiet 2021 mit 1.740 Titeln unter 2019. Das ist ein Zuordnungsfehler: Die Kammer Nordrhein hat mehrere Zeilen in der Reihenfolge des Vorjahres gemeldet, ihre 125 Titel im Öffentlichen Veterinärwesen stehen eine Zeile höher. Richtig zugeordnet sind es 1.850 (nachgerechnet am 16. Oktober 2026).
 
 ## Häufige Fragen
 

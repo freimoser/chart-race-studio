@@ -5,7 +5,7 @@ titel: Fachtierarzt Kleintierchirurgie und Innere Medizin
 beschreibung: Kleintierchirurgie: 4 Fachtierarzt-Titel 2007, 194 Ende 2025. Innere Medizin der Kleintiere: 54 (2018) auf 165. Die am schnellsten wachsenden Gebiete.
 frage: Wie viele Fachtierärzte für Kleintierchirurgie gibt es in Deutschland?
 suchbegriffe: fachtierarzt kleintierchirurgie, fachtierarzt innere medizin kleintiere, tierarzt spezialist chirurgie, fachtierarzt kleintiere
-stand: 2026-09-23
+stand: 2026-10-16
 bereit: ja
 ---
 Ende 2025 führten in Deutschland **194 Tierärztinnen und Tierärzte den Fachtierarzt-Titel für Kleintierchirurgie**, 2007 waren es 4. In der **Inneren Medizin der Kleintiere** stieg die Zahl von 54 im Jahr 2018, dem ersten Jahr, in dem die Bundestierärztekammer das Gebiet ausweist, auf **165**.
@@ -28,7 +28,8 @@ Ende 2025 führten in Deutschland **194 Tierärztinnen und Tierärzte den Fachti
 | 2014 | 44 | – | 327 |
 | 2018 | 102 | 54 | 265 |
 | 2019 | 107 | 75 | 296 |
-| 2021 | 117 | 96 | 268 |
+| 2020 | 124 | 102 | 291 |
+| 2021 | 128 | 108 | 268 |
 | 2022 | 144 | 116 | 281 |
 | 2023 | 195 | 132 | 288 |
 | 2024 | 205 | 139 | 288 |
@@ -36,7 +37,7 @@ Ende 2025 führten in Deutschland **194 Tierärztinnen und Tierärzte den Fachti
 
 Die Kleintierchirurgie beginnt fast bei null. Bis 2014 kommen rechnerisch rund vier Titel im Jahr hinzu, von 4 auf 44. Der nächste veröffentlichte Wert, 2018, liegt bereits bei 102. Ein Teil dieses Sprungs ist definitorisch: Seit 2018 zählt die Kammer laut Fußnote das Teilgebiet Kleintierchirurgie mit. Den größten Sprung zwischen zwei gemessenen Jahren macht das Gebiet von 2022 auf 2023 mit 51 zusätzlichen Titeln. 2025 sinkt es zum ersten Mal in der Reihe, von 205 auf 194.
 
-Die Innere Medizin der Kleintiere taucht 2018 mit 54 Titeln in der Reihe auf und wächst seitdem in jedem veröffentlichten Jahr: 75, 96, 116, 132, 139, 165. Innerhalb von sieben Jahren hat sich die Zahl rechnerisch verdreifacht.
+Die Innere Medizin der Kleintiere taucht 2018 mit 54 Titeln in der Reihe auf und wächst seitdem in jedem veröffentlichten Jahr: 75, 102, 108, 116, 132, 139, 165. Innerhalb von sieben Jahren hat sich die Zahl rechnerisch verdreifacht.
 
 ## Spezialisierung innerhalb der Kleintiermedizin
 
@@ -56,7 +57,7 @@ Ende 2025 gibt es damit mehr Fachtierarzt-Titel für Kleintierchirurgie und Inne
 
 - **Titel, nicht Personen.** Wer Kleintierchirurgie führt, kann zusätzlich den Fachtierarzt für Kleintiere haben und erscheint dann in beiden Reihen. Wie oft das vorkommt, weist die Kammer nicht aus. Die Rechnung „25 auf 100“ ist deshalb ein Verhältnis von Titeln, kein Anteil von Menschen.
 - **Große Faktoren aus kleinen Zahlen.** Das 48,5-Fache klingt dramatisch, es beginnt aber bei 4 Titeln. Ein Zuwachs von 51 Titeln in einem Jahr ist in absoluten Zahlen wenig.
-- **Lücken.** Für alle Gebiete fehlen 2015 bis 2017 und 2020. Diese Jahre sind im Diagramm interpoliert und hier nicht zitiert. Ob die Innere Medizin der Kleintiere schon vor 2018 existierte, sagt die Reihe nicht, sie ist erst ab dann ausgewiesen.
+- **Lücken.** Für alle Gebiete fehlen 2015 bis 2017. Diese Jahre sind im Diagramm interpoliert und hier nicht zitiert. 2020 liegt die Tabelle im PDF der Kammer nur als Grafik vor und ist abgelesen. 2021 hat die Kammer Nordrhein mehrere Zeilen in der Reihenfolge des Vorjahres gemeldet; diese Werte sind ihren richtigen Gebieten zugeordnet (nachgerechnet am 16. Oktober 2026). Ob die Innere Medizin der Kleintiere schon vor 2018 existierte, sagt die Reihe nicht, sie ist erst ab dann ausgewiesen.
 - **Kein Qualitätsmaß.** Die Zahl der Titel sagt nichts darüber, wie viele Fälle diese Tierärztinnen und Tierärzte behandeln oder wo sie arbeiten.
 
 ## Häufige Fragen

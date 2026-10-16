@@ -5,7 +5,7 @@ titel: Fachtierärzte für Rinder und Schweine: Rückgang seit 2007
 beschreibung: Fachtierarzt-Titel für Rinder fielen von 860 (2007) auf 596, für Lebensmittel von 634 auf 419, für Schweine von 667 auf 561. Zahlen der Tierärztekammer.
 frage: Wie viele Fachtierärzte für Rinder und Schweine gibt es in Deutschland?
 suchbegriffe: fachtierarzt rinder, fachtierarzt schweine, nutztierpraxis tierärzte, fachtierarzt lebensmittel
-stand: 2026-09-23
+stand: 2026-10-16
 bereit: ja
 ---
 Ende 2025 führten in Deutschland **596 Tierärztinnen und Tierärzte den Fachtierarzt-Titel für Rinder, 561 für Schweine und 419 für Lebensmittel(hygiene)**. 2007 waren es 860, 667 und 634, laut Statistik der Bundestierärztekammer. Zusammen haben die drei Gebiete in 18 Jahren 585 Titel verloren.
@@ -42,7 +42,7 @@ Die Statistik zeigt damit, dass der Rückgang über den Tierbestand hinausgeht. 
 
 ## Das Pferd zieht am Rind vorbei
 
-Unter den Tierart-Gebieten ist das Pferd das einzige außerhalb der Kleintiermedizin, das wächst: von 501 Titeln 2007 auf 773 Ende 2025. Zwischen den gemessenen Jahren 2021 und 2022 überholt es das Rind. 2021 stand es 649 zu 678, 2022 schon 726 zu 661. Ende 2025 liegt der Abstand bei 177 Titeln zugunsten des Pferdes.
+Unter den Tierart-Gebieten ist das Pferd das einzige außerhalb der Kleintiermedizin, das wächst: von 501 Titeln 2007 auf 773 Ende 2025. Zwischen 2020 und 2021 überholt es das Rind: 2020 stand es 688 zu 704, 2021 schon 705 zu 678. Ende 2025 liegt der Abstand bei 177 Titeln zugunsten des Pferdes.
 
 Lebensmittel ist das einzige der drei schrumpfenden Gebiete, das nicht an eine Tierart gebunden ist. Während es 215 Titel verliert, gewinnt das Öffentliche Veterinärwesen 552 hinzu. Ob Titelträger vom einen ins andere Gebiet wechseln, lässt sich aus der Reihe nicht ablesen. Mehr zum größten Gebiet steht in [Der größte Arbeitgeber heißt Amt](fachtierarzt-oeffentliches-veterinaerwesen.html), der Überblick über alle elf Gebiete in [Worauf sich Tierärztinnen und Tierärzte spezialisieren](fachtierarzt-gebiete-deutschland.html).
 
@@ -51,7 +51,7 @@ Lebensmittel ist das einzige der drei schrumpfenden Gebiete, das nicht an eine T
 - **Titel, nicht Tierärzte.** Die Reihe zählt Fachtierarzt-Bezeichnungen. Wie viele Tierärztinnen und Tierärzte Rinder oder Schweine behandeln, ohne einen Fachtitel zu führen, steht darin nicht. Ein Rückgang der Titel ist kein direkter Beleg für weniger Nutztierversorgung.
 - **Ein Titel sagt nichts über die heutige Arbeit.** Wer den Fachtierarzt für Rinder vor zwanzig Jahren erworben hat, kann heute ganz anderes tun.
 - **Die Rinderrechnung ist grob.** Sie nutzt die 13 Flächenländer ohne Stadtstaaten. 2007 wurde im November gezählt, seit 1999 überwiegend im Mai. Laut Datendokumentation liegen die saisonalen Unterschiede bei ein bis zwei Prozent, also weit unter dem Rückgang.
-- **Lücken.** 2015 bis 2017 und 2020 hat die Kammer diese Tabellen nicht oder unvollständig veröffentlicht. Im Diagramm sind die Jahre interpoliert, hier ist keiner dieser Werte zitiert.
+- **Lücken.** 2015 bis 2017 hat die Kammer keine Bestandstabelle veröffentlicht. Im Diagramm sind die Jahre interpoliert, hier ist keiner dieser Werte zitiert. 2020 liegt die Tabelle im PDF der Kammer nur als Grafik vor und ist abgelesen. 2021 hat die Kammer Nordrhein mehrere Zeilen in der Reihenfolge des Vorjahres gemeldet; diese Werte sind ihren richtigen Gebieten zugeordnet (nachgerechnet am 16. Oktober 2026).
 
 ## Häufige Fragen
 
