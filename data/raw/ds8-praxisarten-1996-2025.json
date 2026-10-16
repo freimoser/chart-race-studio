@@ -2,7 +2,7 @@
  "title": "Praktizierende/niedergelassene Tierärzt:innen in Deutschland nach Praxisart bzw. Tierartenschwerpunkt, 1990–2025",
  "source": "Bundestierärztekammer, Statistik „Tierärzteschaft in der Bundesrepublik Deutschland“ (Deutsches Tierärzteblatt); 1990–1995 nach Maure 1998; 2001–2004 Schöne & Ulrich / Schöne & Jöhrens",
  "sourceUrl": "https://www.bundestieraerztekammer.de/btk/statistik/",
- "notes": "VIER NICHT VERGLEICHBARE SEGMENTE: (I) 1990–1995 Groß-/Klein-/Gemischtpraxis (Maure 1998). (II) 2001–2004 „Praxis für überwiegend Großtiere / überwiegend Kleintiere / Groß- und Kleintiere“ – erschöpfend, Summe = Zahl der praktizierenden TÄ. (III) 2006–2018 „Nutztiere / Kleintiere / Nutztiere und Kleintiere“ (Pferde in „Nutztiere“ enthalten); 2006–2015 summieren sich die drei Kategorien exakt auf die Zahl der Niedergelassenen, ab 2016 bleibt die Summe darunter (fehlende Angaben). (IV) ab 2019 sieben Kategorien mit separat erhobenen Pferden; BTK selbst: „eine Vergleichbarkeit der Daten mit den Jahren vor 2019 ist ausgeschlossen“ (DTBl 8/2024, S. 990). LÜCKEN: 1996–2000 und 2005 (nicht publiziert bzw. in der jeweiligen Statistik nicht enthalten). 2005 enthält die BTK-Statistik keine Praxisart-Gliederung. Alle Werte = Personen, nicht Praxen.",
+ "notes": "VIER NICHT VERGLEICHBARE SEGMENTE: (I) 1990–1995 Groß-/Klein-/Gemischtpraxis (Maure 1998). (II) 2001–2004 „Praxis für überwiegend Großtiere / überwiegend Kleintiere / Groß- und Kleintiere“ – erschöpfend, Summe = Zahl der praktizierenden TÄ. (III) 2006–2018 „Nutztiere / Kleintiere / Nutztiere und Kleintiere“ (Pferde in „Nutztiere“ enthalten); 2006–2015 summieren sich die drei Kategorien exakt auf die Zahl der Niedergelassenen, ab 2016 bleibt die Summe darunter (fehlende Angaben). (IV) ab 2019 sieben Kategorien mit separat erhobenen Pferden; BTK selbst: „eine Vergleichbarkeit der Daten mit den Jahren vor 2019 ist ausgeschlossen“ (DTBl 8/2024, S. 990). LÜCKEN: 1996–2000 und 2005 (nicht publiziert bzw. in der jeweiligen Statistik nicht enthalten). 2005 enthält die BTK-Statistik keine Praxisart-Gliederung. Alle Werte = Personen, nicht Praxen. KORREKTUR 2024 (16.10.2026): BTK-Tab. 2 „Summe“ zählt Rheinland-Pfalz doppelt; die sieben Kategorien 2024 sind aus den Kammerspalten neu summiert (Summe 10.996 statt 11.529), siehe Zeilen-Notizen.",
  "rows": [
   {
    "date": "1990",
@@ -2258,91 +2258,91 @@
    "date": "2024",
    "metric": "Praxisart",
    "name": "Kleintiere",
-   "value": 6241,
+   "value": 5953,
    "unit": "Niedergelassene TÄ",
    "source": "BTK Statistik 2024, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2024.pdf",
-   "quality": "publiziert",
-   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen"
+   "quality": "korrigiert",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2024) zählt Rheinland-Pfalz doppelt (Summe aller Kategorien 11.529 bei 11.264 Niedergelassenen; Differenz 533 = Rheinland-Pfalz). Wert aus den Kammerspalten neu summiert: 6241 − 288 (RP) = 5953. 2023 und 2025 nachgeprüft: dort stimmt die Summe mit den Kammerspalten überein."
   },
   {
    "date": "2024",
    "metric": "Praxisart_weiblich",
    "name": "Kleintiere",
-   "value": 4354,
+   "value": 4142,
    "unit": "weibliche Niedergelassene",
    "source": "BTK Statistik 2024, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2024.pdf",
-   "quality": "publiziert",
-   "notes": ""
+   "quality": "korrigiert",
+   "notes": "KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2024) zählt Rheinland-Pfalz doppelt (Summe aller Kategorien 11.529 bei 11.264 Niedergelassenen; Differenz 533 = Rheinland-Pfalz). Wert aus den Kammerspalten neu summiert: 4354 − 212 (RP) = 4142. 2023 und 2025 nachgeprüft: dort stimmt die Summe mit den Kammerspalten überein."
   },
   {
    "date": "2024",
    "metric": "Praxisart",
    "name": "Pferde",
-   "value": 987,
+   "value": 947,
    "unit": "Niedergelassene TÄ",
    "source": "BTK Statistik 2024, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2024.pdf",
-   "quality": "publiziert",
-   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen"
+   "quality": "korrigiert",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2024) zählt Rheinland-Pfalz doppelt (Summe aller Kategorien 11.529 bei 11.264 Niedergelassenen; Differenz 533 = Rheinland-Pfalz). Wert aus den Kammerspalten neu summiert: 987 − 40 (RP) = 947. 2023 und 2025 nachgeprüft: dort stimmt die Summe mit den Kammerspalten überein."
   },
   {
    "date": "2024",
    "metric": "Praxisart_weiblich",
    "name": "Pferde",
-   "value": 619,
+   "value": 593,
    "unit": "weibliche Niedergelassene",
    "source": "BTK Statistik 2024, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2024.pdf",
-   "quality": "publiziert",
-   "notes": ""
+   "quality": "korrigiert",
+   "notes": "KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2024) zählt Rheinland-Pfalz doppelt (Summe aller Kategorien 11.529 bei 11.264 Niedergelassenen; Differenz 533 = Rheinland-Pfalz). Wert aus den Kammerspalten neu summiert: 619 − 26 (RP) = 593. 2023 und 2025 nachgeprüft: dort stimmt die Summe mit den Kammerspalten überein."
   },
   {
    "date": "2024",
    "metric": "Praxisart",
    "name": "Nutztiere",
-   "value": 741,
+   "value": 732,
    "unit": "Niedergelassene TÄ",
    "source": "BTK Statistik 2024, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2024.pdf",
-   "quality": "publiziert",
-   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen"
+   "quality": "korrigiert",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2024) zählt Rheinland-Pfalz doppelt (Summe aller Kategorien 11.529 bei 11.264 Niedergelassenen; Differenz 533 = Rheinland-Pfalz). Wert aus den Kammerspalten neu summiert: 741 − 9 (RP) = 732. 2023 und 2025 nachgeprüft: dort stimmt die Summe mit den Kammerspalten überein."
   },
   {
    "date": "2024",
    "metric": "Praxisart_weiblich",
    "name": "Nutztiere",
-   "value": 215,
+   "value": 211,
    "unit": "weibliche Niedergelassene",
    "source": "BTK Statistik 2024, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2024.pdf",
-   "quality": "publiziert",
-   "notes": ""
+   "quality": "korrigiert",
+   "notes": "KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2024) zählt Rheinland-Pfalz doppelt (Summe aller Kategorien 11.529 bei 11.264 Niedergelassenen; Differenz 533 = Rheinland-Pfalz). Wert aus den Kammerspalten neu summiert: 215 − 4 (RP) = 211. 2023 und 2025 nachgeprüft: dort stimmt die Summe mit den Kammerspalten überein."
   },
   {
    "date": "2024",
    "metric": "Praxisart",
    "name": "Kleintiere und Pferde",
-   "value": 798,
+   "value": 767,
    "unit": "Niedergelassene TÄ",
    "source": "BTK Statistik 2024, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2024.pdf",
-   "quality": "publiziert",
-   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen"
+   "quality": "korrigiert",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2024) zählt Rheinland-Pfalz doppelt (Summe aller Kategorien 11.529 bei 11.264 Niedergelassenen; Differenz 533 = Rheinland-Pfalz). Wert aus den Kammerspalten neu summiert: 798 − 31 (RP) = 767. 2023 und 2025 nachgeprüft: dort stimmt die Summe mit den Kammerspalten überein."
   },
   {
    "date": "2024",
    "metric": "Praxisart_weiblich",
    "name": "Kleintiere und Pferde",
-   "value": 559,
+   "value": 535,
    "unit": "weibliche Niedergelassene",
    "source": "BTK Statistik 2024, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2024.pdf",
-   "quality": "publiziert",
-   "notes": ""
+   "quality": "korrigiert",
+   "notes": "KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2024) zählt Rheinland-Pfalz doppelt (Summe aller Kategorien 11.529 bei 11.264 Niedergelassenen; Differenz 533 = Rheinland-Pfalz). Wert aus den Kammerspalten neu summiert: 559 − 24 (RP) = 535. 2023 und 2025 nachgeprüft: dort stimmt die Summe mit den Kammerspalten überein."
   },
   {
    "date": "2024",
    "metric": "Praxisart",
    "name": "Nutztiere und Pferde",
-   "value": 231,
+   "value": 227,
    "unit": "Niedergelassene TÄ",
    "source": "BTK Statistik 2024, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2024.pdf",
-   "quality": "publiziert",
-   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen"
+   "quality": "korrigiert",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2024) zählt Rheinland-Pfalz doppelt (Summe aller Kategorien 11.529 bei 11.264 Niedergelassenen; Differenz 533 = Rheinland-Pfalz). Wert aus den Kammerspalten neu summiert: 231 − 4 (RP) = 227. 2023 und 2025 nachgeprüft: dort stimmt die Summe mit den Kammerspalten überein."
   },
   {
    "date": "2024",
@@ -2351,28 +2351,28 @@
    "value": 82,
    "unit": "weibliche Niedergelassene",
    "source": "BTK Statistik 2024, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2024.pdf",
-   "quality": "publiziert",
-   "notes": ""
+   "quality": "korrigiert",
+   "notes": "KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2024) zählt Rheinland-Pfalz doppelt (Summe aller Kategorien 11.529 bei 11.264 Niedergelassenen; Differenz 533 = Rheinland-Pfalz). Wert aus den Kammerspalten neu summiert: 82 − 0 (RP) = 82. 2023 und 2025 nachgeprüft: dort stimmt die Summe mit den Kammerspalten überein."
   },
   {
    "date": "2024",
    "metric": "Praxisart",
    "name": "Nutztiere und Kleintiere",
-   "value": 2326,
+   "value": 2165,
    "unit": "Niedergelassene TÄ",
    "source": "BTK Statistik 2024, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2024.pdf",
-   "quality": "publiziert",
-   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen"
+   "quality": "korrigiert",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2024) zählt Rheinland-Pfalz doppelt (Summe aller Kategorien 11.529 bei 11.264 Niedergelassenen; Differenz 533 = Rheinland-Pfalz). Wert aus den Kammerspalten neu summiert: 2326 − 161 (RP) = 2165. 2023 und 2025 nachgeprüft: dort stimmt die Summe mit den Kammerspalten überein."
   },
   {
    "date": "2024",
    "metric": "Praxisart_weiblich",
    "name": "Nutztiere und Kleintiere",
-   "value": 831,
+   "value": 770,
    "unit": "weibliche Niedergelassene",
    "source": "BTK Statistik 2024, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2024.pdf",
-   "quality": "publiziert",
-   "notes": ""
+   "quality": "korrigiert",
+   "notes": "KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2024) zählt Rheinland-Pfalz doppelt (Summe aller Kategorien 11.529 bei 11.264 Niedergelassenen; Differenz 533 = Rheinland-Pfalz). Wert aus den Kammerspalten neu summiert: 831 − 61 (RP) = 770. 2023 und 2025 nachgeprüft: dort stimmt die Summe mit den Kammerspalten überein."
   },
   {
    "date": "2024",
@@ -2381,8 +2381,8 @@
    "value": 205,
    "unit": "Niedergelassene TÄ",
    "source": "BTK Statistik 2024, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2024.pdf",
-   "quality": "publiziert",
-   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen"
+   "quality": "korrigiert",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2024) zählt Rheinland-Pfalz doppelt (Summe aller Kategorien 11.529 bei 11.264 Niedergelassenen; Differenz 533 = Rheinland-Pfalz). Wert aus den Kammerspalten neu summiert: 205 − 0 (RP) = 205. 2023 und 2025 nachgeprüft: dort stimmt die Summe mit den Kammerspalten überein."
   },
   {
    "date": "2024",
@@ -2391,8 +2391,8 @@
    "value": 83,
    "unit": "weibliche Niedergelassene",
    "source": "BTK Statistik 2024, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2024.pdf",
-   "quality": "publiziert",
-   "notes": ""
+   "quality": "korrigiert",
+   "notes": "KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2024) zählt Rheinland-Pfalz doppelt (Summe aller Kategorien 11.529 bei 11.264 Niedergelassenen; Differenz 533 = Rheinland-Pfalz). Wert aus den Kammerspalten neu summiert: 83 − 0 (RP) = 83. 2023 und 2025 nachgeprüft: dort stimmt die Summe mit den Kammerspalten überein."
   },
   {
    "date": "2024",
