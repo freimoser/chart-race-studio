@@ -112,7 +112,8 @@ export const POSTS: RoadmapPost[] = [
     refs: [2],
   },
   {
-    nr: 5, arc: 'praxis', status: 'naechster', vorabOnline: true,
+    nr: 5, arc: 'praxis', status: 'veroeffentlicht', publishedOn: '2026-10-08', vorabOnline: true,
+    linkedInUrl: 'https://lnkd.in/p/gjr9BYkh',
     title: 'Tierarztmangel? Kommt darauf an, wen man zählt',
     hook: 'Hunde und Katzen gegen Praxisinhaber: bis 2012 im Gleichschritt, seitdem laufen die Kurven auseinander. Rechnet man die Angestellten dazu, kommen heute weniger Tiere auf einen Kopf als 2000.',
     figures: ['Hunde und Katzen: 17,1 Mio. (2000, berechnet) auf 25,7 Mio. (2025)', 'Je Praxisinhaber: 1.668 (2000) auf 2.291 (2025), plus 37 Prozent; bis 2012 gleichbleibend', 'Je Tierärztin oder Tierarzt in der Praxis: 1.244 auf 1.101, minus 11 Prozent', 'Seit 2019 803 Praxisinhaber weniger'],
