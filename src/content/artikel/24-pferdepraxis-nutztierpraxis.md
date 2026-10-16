@@ -46,7 +46,7 @@ Zur gleichen Zeit gingen die Rinder zurück. In den 13 Flächenländern zählte 
 
 Getrennt gezählt werden Pferde erst seit 2019, bis dahin steckten sie in den Nutztieren. Die reine Nutz- und Großtierpraxis, Pferde eingeschlossen, fiel von 1.859 Inhabern im Jahr 1991 auf 971 im Jahr 2018. Für die Grafik oben sind die Jahre 2010 bis 2018 in die heutigen Kategorien zurückgerechnet. Danach lagen die Nutztiere vorn, 2010 mit rund 1.391 zu 606. Für die Pferde ist das eine Spanne: Je nach Annahme lagen sie 2010 zwischen 572 und 911. In jeder Variante lagen die Nutztiere bis 2020 vorn.
 
-::grafik praxisschwerpunkte line
+::grafik pferde-nutztiere line
 
 ## Was die Zahl nicht sagt
 

@@ -738,6 +738,28 @@ export const PFERDE_NUTZTIERE = {
   ],
 }
 
+export const PRAXISARTEN_2010 = {
+  headers: ["Jahr","Nur Kleintiere","Nutztiere und Kleintiere","Nur Pferde","Nur Nutztiere","Kleintiere und Pferde","Nutztiere und Pferde","Summe: Niedergelassene"],
+  rows: [
+    ["2010", 5636, 3067, 606, 1391, 755, 224, 11757],
+    ["2011", 5751, 3080, 622, 1324, 759, 218, 11832],
+    ["2012", 5881, 3071, 647, 1260, 756, 214, 11906],
+    ["2013", 5949, 3071, 672, 1202, 756, 210, 11938],
+    ["2014", 5994, 3049, 695, 1160, 751, 208, 11933],
+    ["2015", 6010, 3051, 709, 1122, 751, 205, 11926],
+    ["2016", 6157, 2978, 715, 980, 733, 190, 11972],
+    ["2017", 6099, 2899, 726, 1052, 714, 199, 11976],
+    ["2018", 6142, 2909, 732, 910, 716, 184, 12010],
+    ["2019", 6135, 2863, 744, 887, 705, 183, 12019],
+    ["2020", 6217, 2659, 776, 848, 748, 201, 12001],
+    ["2021", 5899, 2325, 827, 768, 746, 192, 11889],
+    ["2022", 5802, 2183, 866, 728, 746, 205, 11743],
+    ["2023", 5629, 2071, 891, 705, 749, 213, 11437],
+    ["2024", 5953, 2165, 947, 732, 767, 227, 11264],
+    ["2025", 5930, 2014, 989, 718, 763, 225, 11216],
+  ],
+}
+
 export const HUND_KATZE_WELT = {
   headers: ["Jahr","Afghanistan","Albania","Algeria","Andorra","Angola","Antigua and Barbuda","Argentina","Armenia","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bhutan","Bolivia","Bosnia and Herzegovina","Botswana","Brazil","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Central African Republic","Chad","Chile","China","Colombia","Comoros","Costa Rica","Croatia","Cuba","Cyprus","Czechia","DR Congo","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Eswatini","Ethiopia","Fiji","Finland","France","Gabon","Gambia","Georgia","Germany","Ghana","Greece","Grenada","Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","Honduras","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Ivory Coast","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati","Kosovo","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Morocco","Mozambique","Myanmar","Namibia","Nauru","Nepal","Netherlands","New Zealand","Nicaragua","Niger","Nigeria","North Korea","North Macedonia","Norway","Oman","Pakistan","Palau","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Qatar","Republic of the Congo","Romania","Russian Federation","Rwanda","Saint Kitts and Nevis","Saint Lucia","Saint Vincent and the Grenadines","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Korea","South Sudan","Spain","Sri Lanka","Sudan","Suriname","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor-Leste","Togo","Tonga","Trinidad and Tobago","Tunisia","Turkey","Turkmenistan","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Yemen","Zambia","Zimbabwe","Summe: Hunde (Mio.)","Summe: Katzen (Mio.)"],
   rows: [

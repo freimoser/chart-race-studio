@@ -281,8 +281,8 @@ export const POSTS: RoadmapPost[] = [
     title: 'Die Großtierpraxis wird zur Pferdepraxis',
     hook: 'Seit 2021 gibt es mehr reine Pferde- als reine Nutztierpraxen. Wer Pferde behandelt, wird mehr, wer Nutztiere behandelt, weniger – am stärksten schrumpft die Gemischtpraxis.',
     figures: ['Nur Pferde: 744 (2019) auf 989 (2025), +32,9 Prozent', 'Nur Nutztiere: 887 auf 718, −19,1 Prozent; 2021 überholt (827 zu 768)', 'Gemischt Nutz- und Kleintiere: 2.863 auf 2.014, −29,7 Prozent', 'Alle mit Pferden 1.704 auf 2.231, alle mit Nutztieren 4.005 auf 3.211'],
-    sampleId: 'pferde-nutztiere', chart: 'line', dataStatus: 'belegt',
-    dataNote: 'Neu gefasst am 16.10.2026 (vorher: „Was aus der Nutztierpraxis geworden ist“, Datensatz praxisschwerpunkte). Ab 2019 erhoben, BTK-Summen 2019, 2020 (Pferde) und 2024 aus den Kammerspalten korrigiert. 2010–2018 zurückgerechnet (scripts/build-pferde-rueckrechnung.mjs, data/raw/ds21-pferde-nutztiere.json): im Post als gerechnet nennen, Spanne im Artikel.',
+    sampleId: 'praxisarten-2010', chart: 'line', dataStatus: 'belegt',
+    dataNote: 'Video: alle Praxisarten außer „alle drei“ mit Summe (Wunsch Nutzer); Ausschnitt nur Pferde/Nutztiere als zweite Grafik im Artikel (Datensatz pferde-nutztiere, in datensaetzeOhnePost). Neu gefasst am 16.10.2026 (vorher: „Was aus der Nutztierpraxis geworden ist“, Datensatz praxisschwerpunkte). Ab 2019 erhoben, BTK-Summen 2019, 2020 (Pferde) und 2024 aus den Kammerspalten korrigiert. 2010–2018 zurückgerechnet (scripts/build-pferde-rueckrechnung.mjs, data/raw/ds21-pferde-nutztiere.json): im Post als gerechnet nennen, Spanne im Artikel.',
     refs: [16, 23],
   },
   {

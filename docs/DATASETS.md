@@ -77,6 +77,7 @@ Alle mitgelieferten Datensätze (`src/samples/data.ts`, erzeugt mit `node script
 - **2010–2018 gerechnet.** Schritt 1, Brücke am Bruch 2018/2019: Kleintiere 1 : 1; alte Nutztiere ganz und 18,8 Prozent der alten Gemischten in die reine Großtiergruppe (so viel, dass deren Anteil an allen Angaben 2018 nahtlos an 2019 mit 15,7 Prozent anschließt); der Rest der Gemischten im Verhältnis von 2019 auf die drei gemischten Kategorien. Schritt 2: Pferde über die Fachtierarzt-Titel Pferde fortgeschrieben (2012 und 2015–2017 linear), bereinigt um die Antwortquote; „Nutztiere und Pferde“ 10,1 Prozent der Großtiergruppe wie 2019; Nutztiere = Rest.
 - **Spanne** aus zwei Gegenvarianten (Pferdeanteil an der Großtiergruppe eingefroren wie 2019 bzw. Trend 2019–2025 zurückgeschrieben), je Jahr in der Rohdatei: 2010 Pferde 572–911 (Rechnung 606), 2018 718–749 (732). In allen Varianten liegen die Nutztiere bis 2020 vorn; das Überholen 2021 (827 zu 768) ist gemessen.
 - **Nicht belastbar:** genaue Pferdezahl vor 2019, Wachstumsraten seit 2010.
+- **Zweiter Datensatz `praxisarten-2010`** (Video von Post 24): alle Praxisarten außer „Nutztiere, Pferde und Kleintiere“ aus derselben Rohdatei, dazu `Summe: Niedergelassene` aus `data/raw/ds1-tieraerzte.json`. Kleintiere und Summe sind in allen Jahren erhoben, die übrigen fünf Reihen 2010–2018 gerechnet. `pferde-nutztiere` ist der Ausschnitt mit zwei Linien (zweite Grafik im Artikel, freigegeben über `datensaetzeOhnePost`).
 
 ## 3d. Fachtierarzt-Gebiete (2007–2025)
 

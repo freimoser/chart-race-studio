@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../lib/data/types.ts'
-import { PFERDE_NUTZTIERE, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
+import { PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -178,7 +178,7 @@ export const SAMPLES: SampleDataset[] = [
     id: 'pferde-nutztiere',
     erstellt: '2026-10-16', geprueft: '2026-10-16',
     category: 'praxis',
-    title: 'Die Großtierpraxis wird zur Pferdepraxis',
+    title: 'Seit 2021 mehr Pferde- als Nutztierpraxen',
     subtitle: 'Praxisinhaber:innen nur für Pferde bzw. nur für Nutztiere · 2010–2018 gerechnet',
     source: 'Quelle: Bundestierärztekammer, Statistik Tierärzteschaft (Deutsches Tierärzteblatt); ab 2019 erhoben, 2010–2018 zurückgerechnet (Methode in der Dateninfo)',
     sourceUrl: 'https://www.bundestieraerztekammer.de/btk/statistik/',
@@ -195,6 +195,27 @@ export const SAMPLES: SampleDataset[] = [
     headers: PFERDE_NUTZTIERE.headers,
     rows: PFERDE_NUTZTIERE.rows,
     suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'Praxisinhaber:innen', colors: { 'Nur Pferde': '#e36414', 'Nur Nutztiere': '#0f4c5c' } },
+  },
+  {
+    id: 'praxisarten-2010',
+    erstellt: '2026-10-16', geprueft: '2026-10-16',
+    category: 'praxis',
+    title: 'Die Großtierpraxis wird zur Pferdepraxis',
+    subtitle: 'Praxisinhaber:innen nach Schwerpunkt · 2010–2018 gerechnet',
+    source: 'Quelle: Bundestierärztekammer, Statistik Tierärzteschaft (Deutsches Tierärzteblatt); ab 2019 erhoben, 2010–2018 außer Kleintieren zurückgerechnet (Methode in der Dateninfo)',
+    sourceUrl: 'https://www.bundestieraerztekammer.de/btk/statistik/',
+    unit: 'Praxisinhaber:innen',
+    description: 'Die Gemischtpraxis für Nutz- und Kleintiere schrumpft, die reine Pferdepraxis wächst und überholt 2021 die reine Nutztierpraxis.',
+    dataInfo: [
+      "Gezählt werden niedergelassene Tierärztinnen und Tierärzte (Praxisinhaber:innen, Personen, nicht Praxen) nach dem Schwerpunkt, den sie selbst angeben. Die Kategorie „Nutztiere, Pferde und Kleintiere“ ist bewusst nicht dargestellt (2025: 254).",
+      "Die Summe ist die Zahl aller Niedergelassenen laut Kammer. Die Kategorien ergeben sie nicht ganz: Nicht alle geben einen Schwerpunkt an (2021 bis 2023 fehlen 8 bis 9 Prozent), und „alle drei“ fehlt.",
+      "Ab 2019 erhoben. Die Summen der Kammer passen 2019, 2020 (Pferde) und 2024 nicht zu ihren eigenen Kammerspalten (2024 ist Rheinland-Pfalz doppelt gezählt); verwendet werden die neu summierten Werte.",
+      "Kleintiere sind auch 2010 bis 2018 erhoben, die Kategorie gab es schon. Alle anderen Reihen sind 2010 bis 2018 gerechnet: Bis 2018 kannte die Kammer nur Nutztiere (Pferde eingeschlossen) und „Nutztiere und Kleintiere“. Die alten Kategorien werden am Bruch 2018/2019 auf die neuen abgebildet, die Pferde über die Fachtierarzt-Titel für Pferde fortgeschrieben. Methode und Spanne wie im Datensatz „Die Großtierpraxis wird zur Pferdepraxis“; Rohdatei data/raw/ds21-pferde-nutztiere.json.",
+      "Belastbar ist die Richtung: Die Gemischtpraxis für Nutz- und Kleintiere schrumpft, die Pferde wachsen, und die reinen Nutztierpraxen liegen bis 2020 vor den reinen Pferdepraxen (in allen Rechenvarianten). Nicht belastbar sind die genauen Werte vor 2019.",
+    ],
+    headers: PRAXISARTEN_2010.headers,
+    rows: PRAXISARTEN_2010.rows,
+    suggested: { chartType: 'line', topN: 6, decimals: 0, primaryAxisLabel: 'Praxisinhaber:innen', colors: { 'Nur Kleintiere': '#5f0f40', 'Nutztiere und Kleintiere': '#8d99ae', 'Nur Pferde': '#e36414', 'Nur Nutztiere': '#0f4c5c', 'Kleintiere und Pferde': '#f4a259', 'Nutztiere und Pferde': '#5c9ead' } },
   },
   {
     id: 'fachtieraerzte',
