@@ -4,6 +4,12 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Pferde-Post und korrigierte BTK-Summen (16.10.2026)
+
+- **Post 24 neu gefasst: „Die Großtierpraxis wird zur Pferdepraxis“.** Neuer Datensatz `pferde-nutztiere` (reine Pferde- gegen reine Nutztierpraxen, 2010–2025), Artikel unter `/beitrag/pferdepraxis-nutztierpraxis` (ersetzt den Entwurf „Was aus der Nutztierpraxis geworden ist“, der nie online war), Post-Text `docs/linkedin/post-24-pferdepraxis.md`. Seit 2021 gibt es mehr reine Pferde- als reine Nutztierpraxen (827 zu 768).
+- **Rückrechnung 2010–2018** in die Kategorien ab 2019 (`scripts/build-pferde-rueckrechnung.mjs` → `data/raw/ds21-pferde-nutztiere.json`): Brücke am Bruch 2018/2019, Pferde über die Fachtierarzt-Titel fortgeschrieben, Spanne aus zwei Gegenvarianten; in allen Varianten liegen die Nutztiere bis 2020 vorn. Als gerechnet benannt in Rohdatei, Dateninfo, Artikel, DATASETS und Post.
+- **BTK-Summen korrigiert:** Die Summenspalte von Tab. 2 passt 2019 (alle sieben Praxisarten), 2020 (Pferde) und 2024 (alle sieben, Rheinland-Pfalz doppelt gezählt) nicht zu den 17 Kammerspalten. Neu summiert, z. B. Pferde 2019 744 statt 693, Kleintiere 2024 5.953 statt 6.241. Die frühere Deutung „Mehrfachantworten 2024“ war falsch. Artikel 02, 16, 24 und 29 sowie Dateninfo „Praxisschwerpunkte“ nachgezogen; 2021–2023 und 2025 nachgerechnet und stimmig.
+
 ### Kennzahlen am Rand (15.10.2026)
 
 - **Übersicht und Startseite** nutzen auf breiten Bildschirmen (ab 1200 px) den Leerraum neben der Textspalte: links sechs Kennzahlen „Tierärzte und Praxen“, rechts sechs „Tiere, Markt und Geld“, jede ein Link auf ihren Artikel, mitlaufend, wenn die Leiste ganz in den Bildschirm passt (Wunsch Nutzer). Schmaler zeigt die Übersicht dieselben Kacheln als wischbares Band unter dem Vorspann; die Startseite bleibt auf dem Telefon unverändert.

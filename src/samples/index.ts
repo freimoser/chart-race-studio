@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../lib/data/types.ts'
-import { TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
+import { PFERDE_NUTZTIERE, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -163,7 +163,8 @@ export const SAMPLES: SampleDataset[] = [
       "Ab 2019 fragt die Kammer Pferde getrennt ab. Bis dahin wurden Pferde laut Bundestierärztekammer „zu den Nutztieren gezählt und unter der Rubrik Großtiere erhoben“ (Deutsches Tierärzteblatt 8/2024, Seite 990). Deshalb werden die neuen Kategorien so zusammengefasst: Nur Nutz- und Großtiere umfasst Nutztiere, Pferde und beides zusammen; Gemischt umfasst Nutztiere und Kleintiere, Kleintiere und Pferde sowie alle drei.",
       "Der Versatz 2018 auf 2019 ist echt und eine Folge der neuen Abfrage, nicht der Praxislandschaft: Wer vorher nur „Nutztiere und Kleintiere“ ankreuzen konnte, antwortet heute differenzierter. Die Kammer zeigt aus diesem Grund selbst keinen Verlauf, sondern nur die aktuelle Verteilung.",
       "Gegenprobe an der einzigen Verteilung, die die Kammer nennt (2023: mehr als 50 Prozent Kleintierpraxen, gut ein Viertel Gemischtpraxen): Diese Zuordnung ergibt 53,9 Prozent Kleintiere und 28,8 Prozent gemischt und passt damit zur Quelle.",
-      "Antwortquote, berechnet als Summe der drei Reihen geteilt durch die Niedergelassenen: 1991 bis 1995 zwischen 96,9 und 99,0 Prozent, 2001 bis 2015 praktisch 100 Prozent (es fehlen höchstens zwei Personen), 2016 bis 2018 zwischen 97,1 und 98,8 Prozent, 2019 bis 2023 nur 91,2 bis 96,5 Prozent, 2025 wieder 97,1 Prozent. Die absoluten Werte sind 2019 bis 2023 deshalb leicht untererfasst. 2024 liegt die Summe mit 102,4 Prozent über der Gesamtzahl, dort waren Mehrfachantworten möglich.",
+      "Antwortquote, berechnet als Summe der drei Reihen geteilt durch die Niedergelassenen: 1991 bis 1995 zwischen 96,9 und 99,0 Prozent, 2001 bis 2015 praktisch 100 Prozent (es fehlen höchstens zwei Personen), 2016 bis 2018 zwischen 97,1 und 98,8 Prozent, 2019 und 2020 96,4 und 96,6 Prozent, 2021 bis 2023 nur 91,2 bis 92,0 Prozent, 2024 und 2025 97,6 und 97,1 Prozent. Die absoluten Werte sind 2021 bis 2023 deshalb leicht untererfasst.",
+      "Korrigiert (16.10.2026): Die Summenspalte der Kammer passt 2019 (alle Kategorien), 2020 (Pferde) und 2024 (alle Kategorien, Rheinland-Pfalz doppelt gezählt) nicht zu ihren eigenen Kammerspalten. Verwendet werden die aus den 17 Kammerspalten neu summierten Werte; 2021 bis 2023 und 2025 stimmen beide überein.",
       "Lücken: 1996 bis 2000 erschienen nur gedruckt, 2005 enthält eine gekürzte Tabelle, 2006 ist unbrauchbar, weil Baden-Württemberg null gemeldet hat. Diese Jahre werden interpoliert.",
       "Die vierte Reihe „Ketten (Standorte in Deutschland)“ ist bewusst ein Fremdkörper und zählt etwas anderes: physische Standorte von Praxisketten und Klinikgruppen, nicht Praxisinhaber. Es ist exakt dieselbe Reihe wie im Datensatz „Der Aufstieg der Tierarztketten“ und im Artikel – es gibt nur eine Kettenzahl, nicht mehrere.",
       "Sie beginnt 2015, weil der Markt vorher praktisch nicht existierte, und läuft von 35 Standorten auf 514 im Jahr 2025. Verankert ist sie am Tierärzte Atlas Deutschland 2024, der für August 2024 rund 450 Standorte von 16 Ketten nennt; die übrigen Jahre sind Modellwerte. Die Datenkunde dazu steht beim Ketten-Datensatz.",
@@ -172,6 +173,28 @@ export const SAMPLES: SampleDataset[] = [
     headers: PRAXISSCHWERPUNKTE.headers,
     rows: PRAXISSCHWERPUNKTE.rows,
     suggested: { chartType: 'line', topN: 4, decimals: 0, primaryAxisLabel: 'Praxisinhaber:innen' },
+  },
+  {
+    id: 'pferde-nutztiere',
+    erstellt: '2026-10-16', geprueft: '2026-10-16',
+    category: 'praxis',
+    title: 'Die Großtierpraxis wird zur Pferdepraxis',
+    subtitle: 'Praxisinhaber:innen nur für Pferde bzw. nur für Nutztiere · 2010–2018 gerechnet',
+    source: 'Quelle: Bundestierärztekammer, Statistik Tierärzteschaft (Deutsches Tierärzteblatt); ab 2019 erhoben, 2010–2018 zurückgerechnet (Methode in der Dateninfo)',
+    sourceUrl: 'https://www.bundestieraerztekammer.de/btk/statistik/',
+    unit: 'Praxisinhaber:innen',
+    description: '2021 überholen die reinen Pferdetierärzte die reinen Nutztierärzte: 2025 sind es 989 gegen 718.',
+    dataInfo: [
+      "Gezählt werden niedergelassene Tierärztinnen und Tierärzte (Praxisinhaber:innen, Personen, nicht Praxen), die als Schwerpunkt nur Pferde bzw. nur Nutztiere angeben. Gemischte Praxen (etwa Nutztiere und Pferde, Kleintiere und Pferde) sind nicht enthalten.",
+      "Erhoben ab 2019: Erst seitdem fragt die Kammer Pferde getrennt ab. Die Summen der Kammer passen 2019, 2020 (Pferde) und 2024 nicht zu ihren eigenen Kammerspalten (2024 ist Rheinland-Pfalz doppelt gezählt); verwendet werden die aus den Kammerspalten neu summierten Werte, zum Beispiel Pferde 2019: 744 statt 693.",
+      "2010 bis 2018 sind gerechnet, nicht erhoben. Bis 2018 steckten Pferde in „Nutztiere“, viele Pferdepraktiker kreuzten aber „Nutztiere und Kleintiere“ an. Schritt 1: Die alten Kategorien werden am Bruch 2018/2019 auf die neuen abgebildet; 18,8 Prozent der alten Gemischten gehen in die reine Großtiergruppe, genau so viel, dass deren Anteil 2018 nahtlos an 2019 anschließt.",
+      "Schritt 2: Die Pferde werden über die gemessene Zahl der Fachtierärztinnen und Fachtierärzte für Pferde fortgeschrieben (543 im Jahr 2010, 675 im Jahr 2018; 2012 und 2015 bis 2017 linear), bereinigt um die Antwortquote. Nutztiere sind der Rest der Großtiergruppe. Weil die Fachtierärzte 2019 bis 2025 langsamer wuchsen als die Pferdepraktiker, setzt die Rechnung die Pferde vor 2019 eher zu hoch an; sie übertreibt den Anstieg nicht.",
+      "Spanne für die Pferde aus zwei Gegenvarianten (Pferdeanteil an der Großtiergruppe wie 2019 eingefroren, bzw. sein Trend 2019 bis 2025 zurückgeschrieben): 2010 zwischen 572 und 911, 2018 zwischen 718 und 749. In allen Varianten liegen die Nutztiere bis 2020 vorn. Das Überholen 2021 ist gemessen.",
+      "Nicht belastbar sind die genaue Pferdezahl vor 2019 und Wachstumsraten seit 2010. Rechnung: scripts/build-pferde-rueckrechnung.mjs, Rohdatei data/raw/ds21-pferde-nutztiere.json.",
+    ],
+    headers: PFERDE_NUTZTIERE.headers,
+    rows: PFERDE_NUTZTIERE.rows,
+    suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'Praxisinhaber:innen', colors: { 'Nur Pferde': '#e36414', 'Nur Nutztiere': '#0f4c5c' } },
   },
   {
     id: 'fachtieraerzte',

@@ -50,7 +50,7 @@ Seit 2015 verlieren Brandenburg mit minus 27,7 Prozent und Sachsen-Anhalt mit mi
 
 Die Rinderpraxis hängt an Tieren und Betrieben, die weniger werden. Parallel dazu schrumpfen die tierärztlichen Reihen, die mit Nutztieren zu tun haben: Die Zahl der [Fachtierarzt-Bezeichnungen für Rinder](fachtierarzt-rinder-schweine-lebensmittel.html) sinkt von 860 (2007) auf 596 (2025), die Zahl der Inhaberinnen und Inhaber reiner Nutztierpraxen erreicht 2018 mit 971 ihren Tiefpunkt. Die Rinderzahl der Flächenländer fällt von 2007 bis 2025 um 18,0 Prozent (berechnet).
 
-Das sind parallele Bewegungen, kein nachgewiesener Zusammenhang. Die Daten zeigen nicht, wie viele tierärztliche Stellen ein Rinderbestand braucht oder ob Praxen wegen sinkender Bestände aufgeben. Wie sich die Nutztierpraxis entwickelt hat, beschreibt der Artikel [Was aus der Nutztierpraxis geworden ist](nutztierpraxis-deutschland.html); die Zahl der Tierärztinnen und Tierärzte je Land steht im Artikel [Tierärzte je Bundesland](tieraerzte-bundeslaender.html).
+Das sind parallele Bewegungen, kein nachgewiesener Zusammenhang. Die Daten zeigen nicht, wie viele tierärztliche Stellen ein Rinderbestand braucht oder ob Praxen wegen sinkender Bestände aufgeben. Wie sich die Nutztierpraxis entwickelt hat, beschreibt der Artikel [Die Großtierpraxis wird zur Pferdepraxis](pferdepraxis-nutztierpraxis.html); die Zahl der Tierärztinnen und Tierärzte je Land steht im Artikel [Tierärzte je Bundesland](tieraerzte-bundeslaender.html).
 
 ## Was die Zahl nicht sagt
 

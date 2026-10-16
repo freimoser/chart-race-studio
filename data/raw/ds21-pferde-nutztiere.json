@@ -1,0 +1,860 @@
+{
+ "title": "Niedergelassene Tierärzt:innen nach Praxisart in den Kategorien ab 2019, 2010–2025 (2010–2018 zurückgerechnet)",
+ "abgerufen": "2026-10-16",
+ "unit": "Personen (Praxisinhaber:innen), nicht Praxen",
+ "quelle": "Bundestierärztekammer, Statistik „Tierärzteschaft in der Bundesrepublik Deutschland“, Tab. 2 bzw. Praxisarten (data/raw/ds8-praxisarten-1996-2025.json); Fachtierärzt:innen Pferde (data/raw/ds9-fachtieraerzte.json); Niedergelassene gesamt (data/raw/ds1-tieraerzte.json)",
+ "quelleUrl": "https://www.bundestieraerztekammer.de/btk/statistik/",
+ "methode": [
+  "Ab 2019 erhebt die Kammer sieben Praxisarten, Pferde getrennt. Bis 2018 gab es drei; Pferde steckten in „Nutztiere“. Die BTK selbst schließt einen Vergleich mit den Jahren vor 2019 aus. Die Werte 2010–2018 sind deshalb gerechnet, nicht erhoben.",
+  "Schritt 1, Brücke: Kleintiere werden 1 : 1 übernommen. Die alten Nutztiere gehen ganz in die reine Großtiergruppe (Nutztiere, Pferde, Nutztiere und Pferde). Von den alten Gemischten geht 18.8 % dorthin: genau der Anteil, mit dem der Anteil der Großtiergruppe an allen Angaben 2018 nahtlos in den gemessenen Wert 2019 (15.7 %) übergeht. Der Rest der Gemischten verteilt sich auf die drei gemischten Kategorien im Verhältnis von 2019.",
+  "Schritt 2, Pferde: fortgeschrieben über die Fachtierärzt:innen für Pferde (gemessen; 2012 und 2015–2017 linear), Wert 2019 = 744, mit Ausgleich der Antwortquote (2010–2015 nahezu 100 %, 2019 96.4 %). „Nutztiere und Pferde“ behält 10.1 % der Großtiergruppe wie 2019, „Nutztiere“ ist der Rest.",
+  "Warum diese Variante: 2019–2025 wuchsen die Fachtierärzt:innen Pferde langsamer als die Pferdepraktiker. Rückwärts gerechnet setzt die Variante die Pferde vor 2019 eher zu hoch an und unterschätzt damit den Anstieg. Spanne aus zwei Gegenvarianten je Jahr im Feld „spanne“: A Pferdeanteil an der Großtiergruppe eingefroren wie 2019 (41.0 %), B dessen Trend 2019–2025 (+1.70 Punkte je Jahr) zurückgeschrieben.",
+  "Robust in allen Varianten: Nutztiere liegen 2010–2018 in jedem Jahr vor den Pferden. Das Überholen 2021 ist gemessen. Nicht belastbar sind die genaue Höhe der Pferdezahl vor 2019 und Wachstumsraten seit 2010.",
+  "Korrekturen der BTK-Summen aus den Kammerspalten: 2019 alle sieben Kategorien, 2020 Pferde, 2024 alle sieben (Rheinland-Pfalz doppelt gezählt); Einzelheiten in ds8."
+ ],
+ "parameter": {
+  "f": 0.1878,
+  "pool2019": 0.1565,
+  "anteilNP2019": 0.1009,
+  "pferdeImPool2019": 0.4101,
+  "trendJeJahr": 0.017,
+  "quote2019": 0.9642
+ },
+ "rows": [
+  {
+   "date": "2010",
+   "name": "Kleintiere",
+   "value": 5636,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2010, Kategorie „Kleintiere“ (1 : 1 übernommen)"
+  },
+  {
+   "date": "2010",
+   "name": "Pferde",
+   "value": 606,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "spanne": [
+    572,
+    911
+   ],
+   "notes": "744 × Fachtierärzt:innen Pferde 543 / 691 × Antwortquote 100.0 % / 96.4 %; Variante A 911, Variante B 572"
+  },
+  {
+   "date": "2010",
+   "name": "Nutztiere",
+   "value": 1391,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Großtiergruppe 2222 (= alte Nutztiere 1320 + 18.8 % der alten Gemischten 4801) − Pferde − Nutztiere und Pferde"
+  },
+  {
+   "date": "2010",
+   "name": "Nutztiere und Pferde",
+   "value": 224,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "10.1 % der Großtiergruppe wie 2019"
+  },
+  {
+   "date": "2010",
+   "name": "Nutztiere und Kleintiere",
+   "value": 3067,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3899) im Verhältnis von 2019"
+  },
+  {
+   "date": "2010",
+   "name": "Kleintiere und Pferde",
+   "value": 755,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3899) im Verhältnis von 2019"
+  },
+  {
+   "date": "2010",
+   "name": "Nutztiere, Pferde und Kleintiere",
+   "value": 77,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3899) im Verhältnis von 2019"
+  },
+  {
+   "date": "2011",
+   "name": "Kleintiere",
+   "value": 5751,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2011, Kategorie „Kleintiere“ (1 : 1 übernommen)"
+  },
+  {
+   "date": "2011",
+   "name": "Pferde",
+   "value": 622,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "spanne": [
+    594,
+    888
+   ],
+   "notes": "744 × Fachtierärzt:innen Pferde 557 / 691 × Antwortquote 100.0 % / 96.4 %; Variante A 888, Variante B 594"
+  },
+  {
+   "date": "2011",
+   "name": "Nutztiere",
+   "value": 1324,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Großtiergruppe 2165 (= alte Nutztiere 1259 + 18.8 % der alten Gemischten 4822) − Pferde − Nutztiere und Pferde"
+  },
+  {
+   "date": "2011",
+   "name": "Nutztiere und Pferde",
+   "value": 218,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "10.1 % der Großtiergruppe wie 2019"
+  },
+  {
+   "date": "2011",
+   "name": "Nutztiere und Kleintiere",
+   "value": 3080,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3916) im Verhältnis von 2019"
+  },
+  {
+   "date": "2011",
+   "name": "Kleintiere und Pferde",
+   "value": 759,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3916) im Verhältnis von 2019"
+  },
+  {
+   "date": "2011",
+   "name": "Nutztiere, Pferde und Kleintiere",
+   "value": 77,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3916) im Verhältnis von 2019"
+  },
+  {
+   "date": "2012",
+   "name": "Kleintiere",
+   "value": 5881,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2012, Kategorie „Kleintiere“ (1 : 1 übernommen)"
+  },
+  {
+   "date": "2012",
+   "name": "Pferde",
+   "value": 647,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "spanne": [
+    618,
+    870
+   ],
+   "notes": "744 × Fachtierärzt:innen Pferde 580 (linear 2011–2013) / 691 × Antwortquote 100.0 % / 96.4 %; Variante A 870, Variante B 618"
+  },
+  {
+   "date": "2012",
+   "name": "Nutztiere",
+   "value": 1260,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Großtiergruppe 2121 (= alte Nutztiere 1218 + 18.8 % der alten Gemischten 4807) − Pferde − Nutztiere und Pferde"
+  },
+  {
+   "date": "2012",
+   "name": "Nutztiere und Pferde",
+   "value": 214,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "10.1 % der Großtiergruppe wie 2019"
+  },
+  {
+   "date": "2012",
+   "name": "Nutztiere und Kleintiere",
+   "value": 3071,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3904) im Verhältnis von 2019"
+  },
+  {
+   "date": "2012",
+   "name": "Kleintiere und Pferde",
+   "value": 756,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3904) im Verhältnis von 2019"
+  },
+  {
+   "date": "2012",
+   "name": "Nutztiere, Pferde und Kleintiere",
+   "value": 77,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3904) im Verhältnis von 2019"
+  },
+  {
+   "date": "2013",
+   "name": "Kleintiere",
+   "value": 5949,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2013, Kategorie „Kleintiere“ (1 : 1 übernommen)"
+  },
+  {
+   "date": "2013",
+   "name": "Pferde",
+   "value": 672,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "spanne": [
+    643,
+    855
+   ],
+   "notes": "744 × Fachtierärzt:innen Pferde 602 / 691 × Antwortquote 100.0 % / 96.4 %; Variante A 855, Variante B 643"
+  },
+  {
+   "date": "2013",
+   "name": "Nutztiere",
+   "value": 1202,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Großtiergruppe 2085 (= alte Nutztiere 1182 + 18.8 % der alten Gemischten 4807) − Pferde − Nutztiere und Pferde"
+  },
+  {
+   "date": "2013",
+   "name": "Nutztiere und Pferde",
+   "value": 210,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "10.1 % der Großtiergruppe wie 2019"
+  },
+  {
+   "date": "2013",
+   "name": "Nutztiere und Kleintiere",
+   "value": 3071,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3904) im Verhältnis von 2019"
+  },
+  {
+   "date": "2013",
+   "name": "Kleintiere und Pferde",
+   "value": 756,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3904) im Verhältnis von 2019"
+  },
+  {
+   "date": "2013",
+   "name": "Nutztiere, Pferde und Kleintiere",
+   "value": 77,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3904) im Verhältnis von 2019"
+  },
+  {
+   "date": "2014",
+   "name": "Kleintiere",
+   "value": 5994,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2014, Kategorie „Kleintiere“ (1 : 1 übernommen)"
+  },
+  {
+   "date": "2014",
+   "name": "Pferde",
+   "value": 695,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "spanne": [
+    671,
+    846
+   ],
+   "notes": "744 × Fachtierärzt:innen Pferde 622 / 691 × Antwortquote 100.0 % / 96.4 %; Variante A 846, Variante B 671"
+  },
+  {
+   "date": "2014",
+   "name": "Nutztiere",
+   "value": 1160,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Großtiergruppe 2062 (= alte Nutztiere 1166 + 18.8 % der alten Gemischten 4773) − Pferde − Nutztiere und Pferde"
+  },
+  {
+   "date": "2014",
+   "name": "Nutztiere und Pferde",
+   "value": 208,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "10.1 % der Großtiergruppe wie 2019"
+  },
+  {
+   "date": "2014",
+   "name": "Nutztiere und Kleintiere",
+   "value": 3049,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3877) im Verhältnis von 2019"
+  },
+  {
+   "date": "2014",
+   "name": "Kleintiere und Pferde",
+   "value": 751,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3877) im Verhältnis von 2019"
+  },
+  {
+   "date": "2014",
+   "name": "Nutztiere, Pferde und Kleintiere",
+   "value": 77,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3877) im Verhältnis von 2019"
+  },
+  {
+   "date": "2015",
+   "name": "Kleintiere",
+   "value": 6010,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2015, Kategorie „Kleintiere“ (1 : 1 übernommen)"
+  },
+  {
+   "date": "2015",
+   "name": "Pferde",
+   "value": 709,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "spanne": [
+    697,
+    835
+   ],
+   "notes": "744 × Fachtierärzt:innen Pferde 635 (linear 2014–2018) / 691 × Antwortquote 100.0 % / 96.4 %; Variante A 835, Variante B 697"
+  },
+  {
+   "date": "2015",
+   "name": "Nutztiere",
+   "value": 1122,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Großtiergruppe 2037 (= alte Nutztiere 1140 + 18.8 % der alten Gemischten 4776) − Pferde − Nutztiere und Pferde"
+  },
+  {
+   "date": "2015",
+   "name": "Nutztiere und Pferde",
+   "value": 205,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "10.1 % der Großtiergruppe wie 2019"
+  },
+  {
+   "date": "2015",
+   "name": "Nutztiere und Kleintiere",
+   "value": 3051,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3879) im Verhältnis von 2019"
+  },
+  {
+   "date": "2015",
+   "name": "Kleintiere und Pferde",
+   "value": 751,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3879) im Verhältnis von 2019"
+  },
+  {
+   "date": "2015",
+   "name": "Nutztiere, Pferde und Kleintiere",
+   "value": 77,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3879) im Verhältnis von 2019"
+  },
+  {
+   "date": "2016",
+   "name": "Kleintiere",
+   "value": 6157,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2016, Kategorie „Kleintiere“ (1 : 1 übernommen)"
+  },
+  {
+   "date": "2016",
+   "name": "Pferde",
+   "value": 715,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "spanne": [
+    677,
+    773
+   ],
+   "notes": "744 × Fachtierärzt:innen Pferde 649 (linear 2014–2018) / 691 × Antwortquote 98.8 % / 96.4 %; Variante A 773, Variante B 677"
+  },
+  {
+   "date": "2016",
+   "name": "Nutztiere",
+   "value": 980,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Großtiergruppe 1885 (= alte Nutztiere 1010 + 18.8 % der alten Gemischten 4662) − Pferde − Nutztiere und Pferde"
+  },
+  {
+   "date": "2016",
+   "name": "Nutztiere und Pferde",
+   "value": 190,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "10.1 % der Großtiergruppe wie 2019"
+  },
+  {
+   "date": "2016",
+   "name": "Nutztiere und Kleintiere",
+   "value": 2978,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3787) im Verhältnis von 2019"
+  },
+  {
+   "date": "2016",
+   "name": "Kleintiere und Pferde",
+   "value": 733,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3787) im Verhältnis von 2019"
+  },
+  {
+   "date": "2016",
+   "name": "Nutztiere, Pferde und Kleintiere",
+   "value": 75,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3787) im Verhältnis von 2019"
+  },
+  {
+   "date": "2017",
+   "name": "Kleintiere",
+   "value": 6099,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2017, Kategorie „Kleintiere“ (1 : 1 übernommen)"
+  },
+  {
+   "date": "2017",
+   "name": "Pferde",
+   "value": 726,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "spanne": [
+    726,
+    811
+   ],
+   "notes": "744 × Fachtierärzt:innen Pferde 662 (linear 2014–2018) / 691 × Antwortquote 98.2 % / 96.4 %; Variante A 811, Variante B 744"
+  },
+  {
+   "date": "2017",
+   "name": "Nutztiere",
+   "value": 1052,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Großtiergruppe 1977 (= alte Nutztiere 1125 + 18.8 % der alten Gemischten 4538) − Pferde − Nutztiere und Pferde"
+  },
+  {
+   "date": "2017",
+   "name": "Nutztiere und Pferde",
+   "value": 199,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "10.1 % der Großtiergruppe wie 2019"
+  },
+  {
+   "date": "2017",
+   "name": "Nutztiere und Kleintiere",
+   "value": 2899,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3686) im Verhältnis von 2019"
+  },
+  {
+   "date": "2017",
+   "name": "Kleintiere und Pferde",
+   "value": 714,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3686) im Verhältnis von 2019"
+  },
+  {
+   "date": "2017",
+   "name": "Nutztiere, Pferde und Kleintiere",
+   "value": 73,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3686) im Verhältnis von 2019"
+  },
+  {
+   "date": "2018",
+   "name": "Kleintiere",
+   "value": 6142,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2018, Kategorie „Kleintiere“ (1 : 1 übernommen)"
+  },
+  {
+   "date": "2018",
+   "name": "Pferde",
+   "value": 732,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "spanne": [
+    718,
+    749
+   ],
+   "notes": "744 × Fachtierärzt:innen Pferde 675 / 691 × Antwortquote 97.1 % / 96.4 %; Variante A 749, Variante B 718"
+  },
+  {
+   "date": "2018",
+   "name": "Nutztiere",
+   "value": 910,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Großtiergruppe 1826 (= alte Nutztiere 971 + 18.8 % der alten Gemischten 4554) − Pferde − Nutztiere und Pferde"
+  },
+  {
+   "date": "2018",
+   "name": "Nutztiere und Pferde",
+   "value": 184,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "10.1 % der Großtiergruppe wie 2019"
+  },
+  {
+   "date": "2018",
+   "name": "Nutztiere und Kleintiere",
+   "value": 2909,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3699) im Verhältnis von 2019"
+  },
+  {
+   "date": "2018",
+   "name": "Kleintiere und Pferde",
+   "value": 716,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3699) im Verhältnis von 2019"
+  },
+  {
+   "date": "2018",
+   "name": "Nutztiere, Pferde und Kleintiere",
+   "value": 73,
+   "quality": "gerechnet (Rückrechnung, siehe methode)",
+   "notes": "Rest der alten Gemischten (3699) im Verhältnis von 2019"
+  },
+  {
+   "date": "2019",
+   "name": "Kleintiere",
+   "value": 6135,
+   "quality": "korrigiert",
+   "quelle": "BTK Statistik 2019, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2019.pdf",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2019) passt bei allen sieben Kategorien nicht zu den Kammerspalten (Summe der Kategorien 11.006, aus den Kammern 11.589; „Niedergelassene gesamt“ 12.019 und alle Frauen-Summen stimmen dagegen exakt). Wert aus den Kammerspalten neu summiert: 5912 → 6135."
+  },
+  {
+   "date": "2019",
+   "name": "Pferde",
+   "value": 744,
+   "quality": "korrigiert",
+   "quelle": "BTK Statistik 2019, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2019.pdf",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2019) passt bei allen sieben Kategorien nicht zu den Kammerspalten (Summe der Kategorien 11.006, aus den Kammern 11.589; „Niedergelassene gesamt“ 12.019 und alle Frauen-Summen stimmen dagegen exakt). Wert aus den Kammerspalten neu summiert: 693 → 744."
+  },
+  {
+   "date": "2019",
+   "name": "Nutztiere",
+   "value": 887,
+   "quality": "korrigiert",
+   "quelle": "BTK Statistik 2019, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2019.pdf",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2019) passt bei allen sieben Kategorien nicht zu den Kammerspalten (Summe der Kategorien 11.006, aus den Kammern 11.589; „Niedergelassene gesamt“ 12.019 und alle Frauen-Summen stimmen dagegen exakt). Wert aus den Kammerspalten neu summiert: 838 → 887."
+  },
+  {
+   "date": "2019",
+   "name": "Kleintiere und Pferde",
+   "value": 705,
+   "quality": "korrigiert",
+   "quelle": "BTK Statistik 2019, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2019.pdf",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2019) passt bei allen sieben Kategorien nicht zu den Kammerspalten (Summe der Kategorien 11.006, aus den Kammern 11.589; „Niedergelassene gesamt“ 12.019 und alle Frauen-Summen stimmen dagegen exakt). Wert aus den Kammerspalten neu summiert: 662 → 705."
+  },
+  {
+   "date": "2019",
+   "name": "Nutztiere und Pferde",
+   "value": 183,
+   "quality": "korrigiert",
+   "quelle": "BTK Statistik 2019, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2019.pdf",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2019) passt bei allen sieben Kategorien nicht zu den Kammerspalten (Summe der Kategorien 11.006, aus den Kammern 11.589; „Niedergelassene gesamt“ 12.019 und alle Frauen-Summen stimmen dagegen exakt). Wert aus den Kammerspalten neu summiert: 182 → 183."
+  },
+  {
+   "date": "2019",
+   "name": "Nutztiere und Kleintiere",
+   "value": 2863,
+   "quality": "korrigiert",
+   "quelle": "BTK Statistik 2019, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2019.pdf",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2019) passt bei allen sieben Kategorien nicht zu den Kammerspalten (Summe der Kategorien 11.006, aus den Kammern 11.589; „Niedergelassene gesamt“ 12.019 und alle Frauen-Summen stimmen dagegen exakt). Wert aus den Kammerspalten neu summiert: 2651 → 2863."
+  },
+  {
+   "date": "2019",
+   "name": "Nutztiere, Pferde und Kleintiere",
+   "value": 72,
+   "quality": "korrigiert",
+   "quelle": "BTK Statistik 2019, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2019.pdf",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2019) passt bei allen sieben Kategorien nicht zu den Kammerspalten (Summe der Kategorien 11.006, aus den Kammern 11.589; „Niedergelassene gesamt“ 12.019 und alle Frauen-Summen stimmen dagegen exakt). Wert aus den Kammerspalten neu summiert: 68 → 72."
+  },
+  {
+   "date": "2020",
+   "name": "Kleintiere",
+   "value": 6217,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2020, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2020.pdf"
+  },
+  {
+   "date": "2020",
+   "name": "Pferde",
+   "value": 776,
+   "quality": "korrigiert",
+   "quelle": "BTK Statistik 2020, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2020.pdf",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: BTK-Tab. 2 (2020) nennt 766; die Kammerspalten ergeben 776 (Seite 2 der Tabelle liegt nur als Grafik vor und wurde abgelesen). Die Frauen-Summe 459 stimmt mit den Kammern überein, alle anderen Kategorien 2020 ebenfalls. Wert aus den Kammerspalten neu summiert: 766 → 776."
+  },
+  {
+   "date": "2020",
+   "name": "Nutztiere",
+   "value": 848,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2020, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2020.pdf"
+  },
+  {
+   "date": "2020",
+   "name": "Kleintiere und Pferde",
+   "value": 748,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2020, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2020.pdf"
+  },
+  {
+   "date": "2020",
+   "name": "Nutztiere und Pferde",
+   "value": 201,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2020, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2020.pdf"
+  },
+  {
+   "date": "2020",
+   "name": "Nutztiere und Kleintiere",
+   "value": 2659,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2020, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2020.pdf"
+  },
+  {
+   "date": "2020",
+   "name": "Nutztiere, Pferde und Kleintiere",
+   "value": 140,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2020, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2020.pdf"
+  },
+  {
+   "date": "2021",
+   "name": "Kleintiere",
+   "value": 5899,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2021, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2021.pdf"
+  },
+  {
+   "date": "2021",
+   "name": "Pferde",
+   "value": 827,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2021, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2021.pdf"
+  },
+  {
+   "date": "2021",
+   "name": "Nutztiere",
+   "value": 768,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2021, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2021.pdf"
+  },
+  {
+   "date": "2021",
+   "name": "Kleintiere und Pferde",
+   "value": 746,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2021, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2021.pdf"
+  },
+  {
+   "date": "2021",
+   "name": "Nutztiere und Pferde",
+   "value": 192,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2021, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2021.pdf"
+  },
+  {
+   "date": "2021",
+   "name": "Nutztiere und Kleintiere",
+   "value": 2325,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2021, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2021.pdf"
+  },
+  {
+   "date": "2021",
+   "name": "Nutztiere, Pferde und Kleintiere",
+   "value": 178,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2021, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2021.pdf"
+  },
+  {
+   "date": "2022",
+   "name": "Kleintiere",
+   "value": 5802,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2022, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2022.pdf"
+  },
+  {
+   "date": "2022",
+   "name": "Pferde",
+   "value": 866,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2022, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2022.pdf"
+  },
+  {
+   "date": "2022",
+   "name": "Nutztiere",
+   "value": 728,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2022, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2022.pdf"
+  },
+  {
+   "date": "2022",
+   "name": "Kleintiere und Pferde",
+   "value": 746,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2022, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2022.pdf"
+  },
+  {
+   "date": "2022",
+   "name": "Nutztiere und Pferde",
+   "value": 205,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2022, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2022.pdf"
+  },
+  {
+   "date": "2022",
+   "name": "Nutztiere und Kleintiere",
+   "value": 2183,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2022, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2022.pdf"
+  },
+  {
+   "date": "2022",
+   "name": "Nutztiere, Pferde und Kleintiere",
+   "value": 179,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2022, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2022.pdf"
+  },
+  {
+   "date": "2023",
+   "name": "Kleintiere",
+   "value": 5629,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2023, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2023.pdf"
+  },
+  {
+   "date": "2023",
+   "name": "Pferde",
+   "value": 891,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2023, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2023.pdf"
+  },
+  {
+   "date": "2023",
+   "name": "Nutztiere",
+   "value": 705,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2023, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2023.pdf"
+  },
+  {
+   "date": "2023",
+   "name": "Kleintiere und Pferde",
+   "value": 749,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2023, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2023.pdf"
+  },
+  {
+   "date": "2023",
+   "name": "Nutztiere und Pferde",
+   "value": 213,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2023, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2023.pdf"
+  },
+  {
+   "date": "2023",
+   "name": "Nutztiere und Kleintiere",
+   "value": 2071,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2023, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2023.pdf"
+  },
+  {
+   "date": "2023",
+   "name": "Nutztiere, Pferde und Kleintiere",
+   "value": 183,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2023, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2023.pdf"
+  },
+  {
+   "date": "2024",
+   "name": "Kleintiere",
+   "value": 5953,
+   "quality": "korrigiert",
+   "quelle": "BTK Statistik 2024, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2024.pdf",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2024) zählt Rheinland-Pfalz doppelt (Summe aller Kategorien 11.529 bei 11.264 Niedergelassenen; Differenz 533 = Rheinland-Pfalz). Wert aus den Kammerspalten neu summiert: 6241 − 288 (RP) = 5953. 2023 und 2025 nachgeprüft: dort stimmt die Summe mit den Kammerspalten überein."
+  },
+  {
+   "date": "2024",
+   "name": "Pferde",
+   "value": 947,
+   "quality": "korrigiert",
+   "quelle": "BTK Statistik 2024, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2024.pdf",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2024) zählt Rheinland-Pfalz doppelt (Summe aller Kategorien 11.529 bei 11.264 Niedergelassenen; Differenz 533 = Rheinland-Pfalz). Wert aus den Kammerspalten neu summiert: 987 − 40 (RP) = 947. 2023 und 2025 nachgeprüft: dort stimmt die Summe mit den Kammerspalten überein."
+  },
+  {
+   "date": "2024",
+   "name": "Nutztiere",
+   "value": 732,
+   "quality": "korrigiert",
+   "quelle": "BTK Statistik 2024, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2024.pdf",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2024) zählt Rheinland-Pfalz doppelt (Summe aller Kategorien 11.529 bei 11.264 Niedergelassenen; Differenz 533 = Rheinland-Pfalz). Wert aus den Kammerspalten neu summiert: 741 − 9 (RP) = 732. 2023 und 2025 nachgeprüft: dort stimmt die Summe mit den Kammerspalten überein."
+  },
+  {
+   "date": "2024",
+   "name": "Kleintiere und Pferde",
+   "value": 767,
+   "quality": "korrigiert",
+   "quelle": "BTK Statistik 2024, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2024.pdf",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2024) zählt Rheinland-Pfalz doppelt (Summe aller Kategorien 11.529 bei 11.264 Niedergelassenen; Differenz 533 = Rheinland-Pfalz). Wert aus den Kammerspalten neu summiert: 798 − 31 (RP) = 767. 2023 und 2025 nachgeprüft: dort stimmt die Summe mit den Kammerspalten überein."
+  },
+  {
+   "date": "2024",
+   "name": "Nutztiere und Pferde",
+   "value": 227,
+   "quality": "korrigiert",
+   "quelle": "BTK Statistik 2024, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2024.pdf",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2024) zählt Rheinland-Pfalz doppelt (Summe aller Kategorien 11.529 bei 11.264 Niedergelassenen; Differenz 533 = Rheinland-Pfalz). Wert aus den Kammerspalten neu summiert: 231 − 4 (RP) = 227. 2023 und 2025 nachgeprüft: dort stimmt die Summe mit den Kammerspalten überein."
+  },
+  {
+   "date": "2024",
+   "name": "Nutztiere und Kleintiere",
+   "value": 2165,
+   "quality": "korrigiert",
+   "quelle": "BTK Statistik 2024, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2024.pdf",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2024) zählt Rheinland-Pfalz doppelt (Summe aller Kategorien 11.529 bei 11.264 Niedergelassenen; Differenz 533 = Rheinland-Pfalz). Wert aus den Kammerspalten neu summiert: 2326 − 161 (RP) = 2165. 2023 und 2025 nachgeprüft: dort stimmt die Summe mit den Kammerspalten überein."
+  },
+  {
+   "date": "2024",
+   "name": "Nutztiere, Pferde und Kleintiere",
+   "value": 205,
+   "quality": "korrigiert",
+   "quelle": "BTK Statistik 2024, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2024.pdf",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2024) zählt Rheinland-Pfalz doppelt (Summe aller Kategorien 11.529 bei 11.264 Niedergelassenen; Differenz 533 = Rheinland-Pfalz). Wert aus den Kammerspalten neu summiert: 205 − 0 (RP) = 205. 2023 und 2025 nachgeprüft: dort stimmt die Summe mit den Kammerspalten überein."
+  },
+  {
+   "date": "2025",
+   "name": "Kleintiere",
+   "value": 5930,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2025, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2025_korr.pdf"
+  },
+  {
+   "date": "2025",
+   "name": "Pferde",
+   "value": 989,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2025, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2025_korr.pdf"
+  },
+  {
+   "date": "2025",
+   "name": "Nutztiere",
+   "value": 718,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2025, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2025_korr.pdf"
+  },
+  {
+   "date": "2025",
+   "name": "Kleintiere und Pferde",
+   "value": 763,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2025, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2025_korr.pdf"
+  },
+  {
+   "date": "2025",
+   "name": "Nutztiere und Pferde",
+   "value": 225,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2025, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2025_korr.pdf"
+  },
+  {
+   "date": "2025",
+   "name": "Nutztiere und Kleintiere",
+   "value": 2014,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2025, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2025_korr.pdf"
+  },
+  {
+   "date": "2025",
+   "name": "Nutztiere, Pferde und Kleintiere",
+   "value": 254,
+   "quality": "belegt",
+   "quelle": "BTK Statistik 2025, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2025_korr.pdf"
+  }
+ ]
+}

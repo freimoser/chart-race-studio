@@ -23,6 +23,7 @@ const d17 = load('ds17-tierarzt-umsatz.json')
 const d18 = load('ds18-pferde.json')
 const d19 = load('ds19-heimtiere-dach.json')
 const d20 = load('ds20-alter-praktiker.json')
+const d21 = load('ds21-pferde-nutztiere.json')
 
 /** long rows -> wide table (Jahr × names). Bei Dubletten gewinnt die zuerst genannte Quelle. */
 function wide(rows, { names, from, to, rename = {} }) {
@@ -537,8 +538,13 @@ const w16 = {
 // Kontrollausgabe für die Lupe im Artikel: Routinejahr (einfacher Satz, mit MwSt.)
 for (const t of ['katze', 'hund', 'pferd']) console.log('Routinejahr', t, [2010, 2021, 2024, 2026].map((j) => korbJahr(t, j).toFixed(2)).join(' / '))
 
+// Pferde gegen Nutztiere: reine Pferde- und reine Nutztierpraktiker:innen 2010–2025. Ab 2019 gemessen (BTK, Summen
+// aus den Kammerspalten korrigiert), 2010–2018 zurückgerechnet mit scripts/build-pferde-rueckrechnung.mjs; Methode,
+// Spanne und Begründung stehen in data/raw/ds21-pferde-nutztiere.json.
+const w17 = wide(d21.rows, { names: ['Pferde', 'Nutztiere'], rename: { Pferde: 'Nur Pferde', Nutztiere: 'Nur Nutztiere' } })
+
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 const out = `// Automatisch erzeugt von scripts/build-samples.mjs aus data/raw/*.json – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('TIERAERZTE_BUNDESLAND', w1), emit('TIERAERZTESCHAFT_DEUTSCHLAND', w2), emit('INHABER_ANGESTELLTE', w2b), emit('TIERARZTMANGEL', w2c), emit('TIERARZTMANGEL_2000', w2d), emit('HEIMTIERE', w3), emit('HEIMTIERE_ALLE', w3b), emit('HEIMTIERE_DACH', w3c), emit('HUNDERASSEN', w4), emit('RINDER_BUNDESLAND', w5), emit('HEIMTIERMARKT', w6), emit('PRAXISSCHWERPUNKTE', w7), emit('FACHTIERAERZTE', w8), emit('KLEINTIERE_BUNDESLAND', w9), emit('KETTEN', w10), emit('KETTEN_EIGENTUEMER', w11), emit('GESCHLECHT_PRAXIS', w12), emit('OKTOBERFEST', w13), emit('OKTOBERFEST_PREIS', w13b), emit('TIERARZT_INFLATION', w14), emit('TIERARZT_ROUTINEJAHR', w14b), emit('PRAXIS_ALTER', w15), emit('PRAXIS_ALTER_WACHSTUM', w15b), emit('GEHALT_PREISE', w16), emit('HUND_KATZE_WELT', { headers: d13.headers ?? ['Jahr'], rows: d13.rows ?? [] })].join('\n')
+  [emit('TIERAERZTE_BUNDESLAND', w1), emit('TIERAERZTESCHAFT_DEUTSCHLAND', w2), emit('INHABER_ANGESTELLTE', w2b), emit('TIERARZTMANGEL', w2c), emit('TIERARZTMANGEL_2000', w2d), emit('HEIMTIERE', w3), emit('HEIMTIERE_ALLE', w3b), emit('HEIMTIERE_DACH', w3c), emit('HUNDERASSEN', w4), emit('RINDER_BUNDESLAND', w5), emit('HEIMTIERMARKT', w6), emit('PRAXISSCHWERPUNKTE', w7), emit('FACHTIERAERZTE', w8), emit('KLEINTIERE_BUNDESLAND', w9), emit('KETTEN', w10), emit('KETTEN_EIGENTUEMER', w11), emit('GESCHLECHT_PRAXIS', w12), emit('OKTOBERFEST', w13), emit('OKTOBERFEST_PREIS', w13b), emit('TIERARZT_INFLATION', w14), emit('TIERARZT_ROUTINEJAHR', w14b), emit('PRAXIS_ALTER', w15), emit('PRAXIS_ALTER_WACHSTUM', w15b), emit('GEHALT_PREISE', w16), emit('PFERDE_NUTZTIERE', w17), emit('HUND_KATZE_WELT', { headers: d13.headers ?? ['Jahr'], rows: d13.rows ?? [] })].join('\n')
 fs.writeFileSync('src/samples/data.ts', out)
-for (const [n, w] of Object.entries({ w1, w2, w2b, w2c, w2d, w3, w3b, w3c, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w13b, w14, w14b, w15, w15b, w16 })) console.log(n, w.headers.length - 1, 'Kategorien,', w.rows.length, 'Perioden', w.rows[0]?.[0], '–', w.rows.at(-1)?.[0])
+for (const [n, w] of Object.entries({ w1, w2, w2b, w2c, w2d, w3, w3b, w3c, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w13b, w14, w14b, w15, w15b, w16, w17 })) console.log(n, w.headers.length - 1, 'Kategorien,', w.rows.length, 'Perioden', w.rows[0]?.[0], '–', w.rows.at(-1)?.[0])

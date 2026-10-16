@@ -2,21 +2,21 @@
 post: 16
 slug: statistik-tieraerzte-bruch-2019
 titel: Statistik Tierärzte Deutschland: der Methodenbruch von 2019
-beschreibung: Seit 2019 fragt die Bundestierärztekammer Pferde getrennt ab. Die gemischten Praxen fallen dadurch von 4.554 auf 3.381 – ohne dass Praxen verschwinden.
+beschreibung: Seit 2019 fragt die Bundestierärztekammer Pferde getrennt ab. Die gemischten Praxen fallen dadurch von 4.554 auf 3.640, ohne dass Praxen verschwinden.
 frage: Warum lassen sich die Praxisschwerpunkte der Tierärzte vor und nach 2019 nicht vergleichen?
 suchbegriffe: statistik tierärzte deutschland, wie viele niedergelassene tierärzte gibt es in deutschland
-stand: 2026-09-23
+stand: 2026-10-16
 bereit: ja
 ---
-Von 2018 auf 2019 fiel in der Statistik der Bundestierärztekammer die Zahl der Inhaberinnen und Inhaber gemischter Praxen von **4.554 auf 3.381**, die der reinen Nutz- und Großtierpraxen stieg von **971 auf 1.713**. Keine der beiden Bewegungen beschreibt die Praxislandschaft. Seit 2019 fragt die Kammer Pferde als eigene Tierart ab; bis dahin wurden sie laut Kammer „zu den Nutztieren gezählt und unter der Rubrik Großtiere erhoben“.
+Von 2018 auf 2019 fiel in der Statistik der Bundestierärztekammer die Zahl der Inhaberinnen und Inhaber gemischter Praxen von **4.554 auf 3.640**, die der reinen Nutz- und Großtierpraxen stieg von **971 auf 1.814**. Keine der beiden Bewegungen beschreibt die Praxislandschaft. Seit 2019 fragt die Kammer Pferde als eigene Tierart ab; bis dahin wurden sie laut Kammer „zu den Nutztieren gezählt und unter der Rubrik Großtiere erhoben“.
 
 ## Das Wichtigste in Kürze
 
-- Von 2018 auf 2019: gemischt minus 1.173, reine Nutz- und Großtierpraxen plus 742, reine Kleintierpraxen minus 230.
-- Die Antwortquote auf die Schwerpunktfrage fiel im selben Jahr von 97,1 auf 91,6 Prozent (berechnet). 2019 fehlen damit 1.013 der 12.019 Inhaber in der Aufteilung.
-- Der Anteil der reinen Kleintierpraxen bewegt sich über den Bruch hinweg kaum: 52,6 Prozent 2018, 53,7 Prozent 2019.
+- Von 2018 auf 2019: gemischt minus 914, reine Nutz- und Großtierpraxen plus 843, reine Kleintierpraxen minus 7.
+- Die Antwortquote auf die Schwerpunktfrage fiel im selben Jahr nur leicht, von 97,1 auf 96,4 Prozent (berechnet). 2019 fehlen damit 430 der 12.019 Inhaber in der Aufteilung.
+- Der Anteil der reinen Kleintierpraxen bewegt sich über den Bruch hinweg kaum: 52,6 Prozent 2018, 52,9 Prozent 2019.
 - Gegenprobe 2023: Die hier verwendete Zuordnung ergibt 53,9 Prozent Kleintier- und 28,8 Prozent Gemischtpraxen, die Kammer nennt „mehr als 50 Prozent“ und „gut ein Viertel“.
-- 2024 waren Mehrfachantworten möglich: 11.529 Angaben bei 11.264 Inhabern.
+- Die Summenspalte der Kammer ist 2019, 2020 (Pferde) und 2024 fehlerhaft, 2024 zählt sie Rheinland-Pfalz doppelt (11.529 Angaben bei 11.264 Inhabern). Hier stehen die aus den 17 Kammerspalten neu summierten Werte.
 
 ## Was sich 2019 am Fragebogen geändert hat
 
@@ -34,7 +34,7 @@ Diese Abbildung ist eine Entscheidung dieser Seite, nicht der Kammer. Sie schät
 
 Auch mit sauberer Zuordnung passen die Reihen 2018 und 2019 nicht aneinander. Der Grund liegt nicht in der Rechnung, sondern im Antwortverhalten: Wer bis 2018 nur „Nutztiere und Kleintiere“ ankreuzen konnte, hat seit 2019 feinere Möglichkeiten und antwortet anders. Welche Kästchen genau anders angekreuzt werden, lässt sich aus den zusammengefassten Reihen nicht ablesen. Die Kammer zieht daraus selbst die Konsequenz und zeigt für die Schwerpunkte keinen Verlauf, sondern nur die aktuelle Verteilung.
 
-Dazu kommt ein zweiter Effekt, der den ersten überlagert: Es antworten weniger. Von 2001 bis 2015 entsprach die Summe der Schwerpunkte exakt der Zahl der Inhaber. 2016 bis 2018 lag die Quote zwischen 97,1 und 98,8 Prozent, von 2019 bis 2023 nur noch zwischen 91,2 und 96,5 Prozent, 2025 wieder bei 97,1 Prozent (alles berechnet). Ein Teil des Rückgangs 2019 ist also schlicht eine kleinere Zahl von Antworten.
+Dazu kommt ein zweiter Effekt, der den ersten überlagert: Es antworten weniger. Von 2001 bis 2015 entsprach die Summe der Schwerpunkte exakt der Zahl der Inhaber. 2016 bis 2018 lag die Quote zwischen 97,1 und 98,8 Prozent, 2019 und 2020 bei 96,4 und 96,6 Prozent, 2021 bis 2023 nur noch zwischen 91,2 und 92,0 Prozent, 2024 und 2025 wieder bei 97,6 und 97,1 Prozent (alles berechnet). Der Bruch 2019 ist also fast nur Umsortierung: Die Summe aller Angaben fällt von 11.667 auf 11.589, die Kleintiere bleiben mit 6.142 und 6.135 praktisch gleich.
 
 Geprüft wurde auch eine Alternative: die alten Reihen nach dem Trend fortzuschreiben, statt die neuen Kategorien zu summieren. Sie hätte für 2023 einen Gemischt-Anteil von 37,8 Prozent ergeben – deutlich mehr als das „gut ein Viertel“, das die Kammer selbst nennt. Diese Schätzung wurde deshalb verworfen.
 
@@ -42,10 +42,10 @@ Geprüft wurde auch eine Alternative: die alten Reihen nach dem Trend fortzuschr
 
 - **Innerhalb der Abschnitte vergleichen, nicht über 2019 hinweg.** Ein Vergleich 1991 mit 2025 bei den gemischten Praxen misst vor allem den Fragebogen.
 - **Anteile statt absoluter Zahlen.** Weil die Antwortquote schwankt, sind Anteile an allen Angaben robuster als Personenzahlen.
-- **Die Kleintierreihe ist am wenigsten betroffen.** Die Kategorie Kleintiere hat sich 2019 nicht verändert, ihr Anteil springt nur um 1,1 Prozentpunkte. Die großen Bewegungen finden zwischen gemischten und reinen Nutz- und Großtierpraxen statt.
-- **2024 nicht absolut lesen.** Wegen der Mehrfachantworten liegt die Summe in diesem Jahr über der Zahl der Inhaber; welche Reihe wie stark betroffen ist, lässt sich nicht trennen.
+- **Die Kleintierreihe ist am wenigsten betroffen.** Die Kategorie Kleintiere hat sich 2019 nicht verändert, ihr Anteil steigt nur um 0,3 Prozentpunkte. Die großen Bewegungen finden zwischen gemischten und reinen Nutz- und Großtierpraxen statt.
+- **Die Summen der Kammer nachrechnen.** 2024 liegt die Summe der Kammer über der Zahl der Inhaber, weil Rheinland-Pfalz doppelt gezählt ist; 2019 liegt sie zu niedrig. Aus den Werten der 17 Kammern neu summiert ist die Reihe ohne Sprung. Wie sich mit dieser Umsortierung die Jahre vor 2019 in die neuen Kategorien zurückrechnen lassen, zeigt der Artikel [Die Großtierpraxis wird zur Pferdepraxis](pferdepraxis-nutztierpraxis.html).
 
-Was der Bruch für die Kleintierpraxen bedeutet, zeigt der Artikel [Die Kleintierpraxis wird zum Normalfall](niedergelassene-tieraerzte-deutschland.html). Was er für die Nutztierpraxen bedeutet – deren Reihe ab 2019 scheinbar wieder steigt –, steht in [Was aus der Nutztierpraxis geworden ist](nutztierpraxis-deutschland.html).
+Was der Bruch für die Kleintierpraxen bedeutet, zeigt der Artikel [Die Kleintierpraxis wird zum Normalfall](niedergelassene-tieraerzte-deutschland.html). Was er für die Nutztierpraxen bedeutet – deren Reihe ab 2019 scheinbar wieder steigt –, steht in [Die Großtierpraxis wird zur Pferdepraxis](pferdepraxis-nutztierpraxis.html).
 
 ## Was die Zahl nicht sagt
 

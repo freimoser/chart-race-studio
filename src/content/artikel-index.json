@@ -16,8 +16,8 @@
     "titel": "Niedergelassene Tierärzte in Deutschland 2025: 11.216",
     "beschreibung": "Ende 2025 gab es 11.216 niedergelassene Tierärzte in Deutschland, 5.930 davon mit reiner Kleintierpraxis. 1991 war die gemischte Praxis die Regel.",
     "frage": "Wie viele niedergelassene Tierärzte gibt es in Deutschland?",
-    "stand": "2026-09-23",
-    "geaendert": "2026-09-23",
+    "stand": "2026-10-16",
+    "geaendert": "2026-10-16",
     "bereit": true,
     "live": true
   },
@@ -168,10 +168,10 @@
     "post": 16,
     "slug": "statistik-tieraerzte-bruch-2019",
     "titel": "Statistik Tierärzte Deutschland: der Methodenbruch von 2019",
-    "beschreibung": "Seit 2019 fragt die Bundestierärztekammer Pferde getrennt ab. Die gemischten Praxen fallen dadurch von 4.554 auf 3.381 – ohne dass Praxen verschwinden.",
+    "beschreibung": "Seit 2019 fragt die Bundestierärztekammer Pferde getrennt ab. Die gemischten Praxen fallen dadurch von 4.554 auf 3.640, ohne dass Praxen verschwinden.",
     "frage": "Warum lassen sich die Praxisschwerpunkte der Tierärzte vor und nach 2019 nicht vergleichen?",
-    "stand": "2026-09-23",
-    "geaendert": "2026-09-23",
+    "stand": "2026-10-16",
+    "geaendert": "2026-10-16",
     "bereit": true,
     "live": false
   },
@@ -254,14 +254,14 @@
   },
   {
     "post": 24,
-    "slug": "nutztierpraxis-deutschland",
-    "titel": "Nutztierpraxen in Deutschland: 718 im Jahr 2025",
-    "beschreibung": "2025 führten 718 Tierärzte eine reine Nutztierpraxis, 989 eine reine Pferdepraxis. 1991 waren es 1.859 Nutz- und Großtierpraxen zusammen.",
-    "frage": "Wie viele reine Nutztierpraxen gibt es in Deutschland?",
-    "stand": "2026-09-28",
-    "geaendert": "2026-09-28",
+    "slug": "pferdepraxis-nutztierpraxis",
+    "titel": "Pferdetierärzte: 989 Pferdepraxen, 718 Nutztierpraxen (2025)",
+    "beschreibung": "2025 führten 989 Tierärzte eine reine Pferdepraxis, 718 eine reine Nutztierpraxis. 2021 haben die Pferde die Nutztiere überholt.",
+    "frage": "Wie viele Pferdetierärzte gibt es in Deutschland?",
+    "stand": "2026-10-16",
+    "geaendert": "2026-10-16",
     "bereit": true,
-    "live": false
+    "live": true
   },
   {
     "post": 25,

@@ -5,7 +5,7 @@ titel: Niedergelassene Tierärzte in Deutschland 2025: 11.216
 beschreibung: Ende 2025 gab es 11.216 niedergelassene Tierärzte in Deutschland, 5.930 davon mit reiner Kleintierpraxis. 1991 war die gemischte Praxis die Regel.
 frage: Wie viele niedergelassene Tierärzte gibt es in Deutschland?
 suchbegriffe: wie viele niedergelassene tierärzte gibt es in deutschland, niedergelassene tierärzte deutschland, praxisinhaber tierarzt anzahl, kleintierpraxis anteil
-stand: 2026-09-23
+stand: 2026-10-16
 kennzahl: beruf/3 | 11.216 | niedergelassene Tierärztinnen und Tierärzte | 2025
 bereit: ja
 ---
@@ -17,7 +17,7 @@ Ende 2025 gab es in Deutschland **11.216 niedergelassene Tierärztinnen und Tier
 - 2002 standen Kleintier- und Gemischtpraxen gleichauf, auf die Person genau: 4.419 zu 4.419.
 - 2014 lag der Anteil der reinen Kleintierpraxen erstmals über der Hälfte, bei 50,2 Prozent.
 - Bis 2018 stieg ihre Zahl auf 6.142, rechnerisch das 2,7-Fache von 1991.
-- Seit 2019 bewegt sich der Anteil kaum noch: 53,7 Prozent im Jahr 2019, 54,4 Prozent im Jahr 2025.
+- Seit 2019 bewegt sich der Anteil kaum noch: 52,9 Prozent im Jahr 2019, 54,4 Prozent im Jahr 2025.
 
 ## Wie die gemischte Praxis ihren Vorrang verlor
 
@@ -28,7 +28,7 @@ Ende 2025 gab es in Deutschland **11.216 niedergelassene Tierärztinnen und Tier
 | 2007 | 5.337 | 4.667 | 1.438 | 46,6 % |
 | 2014 | 5.994 | 4.773 | 1.166 | 50,2 % |
 | 2018 | 6.142 | 4.554 | 971 | 52,6 % |
-| 2019 | 5.912 | 3.381 | 1.713 | 53,7 % |
+| 2019 | 6.135 | 3.640 | 1.814 | 52,9 % |
 | 2025 | 5.930 | 3.031 | 1.932 | 54,4 % |
 
 *Anteil an allen Inhaberinnen und Inhabern mit Schwerpunktangabe, berechnet. Zwischen 2018 und 2019 liegt ein Methodenbruch.*
@@ -39,20 +39,21 @@ Die Statistik verknüpft diese Entwicklung nicht mit den Tieren. Zeitlich läuft
 
 ## Auch Kleintierpraxen werden inzwischen weniger
 
-Seit ihrem Höchststand 2019 sinkt die Zahl der Praxisinhaber insgesamt (mehr dazu im Artikel [Angestellte überholen die Praxisinhaber](anzahl-tieraerzte-deutschland.html)). Davon sind auch die Kleintierpraxen betroffen, nur schwächer. Ob daraus ein Tierarztmangel folgt, prüft der Artikel [Tierarztmangel in Deutschland](tierarztmangel-deutschland.html). Vergleichen lassen sich dafür am besten 2020 und 2025, weil in beiden Jahren ein ähnlicher Anteil der Inhaber die Schwerpunktfrage beantwortet hat, 96,5 und 97,1 Prozent.
+Seit ihrem Höchststand 2019 sinkt die Zahl der Praxisinhaber insgesamt (mehr dazu im Artikel [Angestellte überholen die Praxisinhaber](anzahl-tieraerzte-deutschland.html)). Davon sind auch die Kleintierpraxen betroffen, nur schwächer. Ob daraus ein Tierarztmangel folgt, prüft der Artikel [Tierarztmangel in Deutschland](tierarztmangel-deutschland.html). Vergleichen lassen sich dafür am besten 2020 und 2025, weil in beiden Jahren ein ähnlicher Anteil der Inhaber die Schwerpunktfrage beantwortet hat, 96,6 und 97,1 Prozent.
 
 - Alle Praxisinhaber: 12.001 auf 11.216, minus 6,5 Prozent.
 - Reine Kleintierpraxen: 6.217 auf 5.930, minus 4,6 Prozent.
 - Gemischte Praxen: 3.547 auf 3.031, minus 14,5 Prozent.
-- Nutztier- und Pferdepraxen: 1.815 auf 1.932, plus 6,4 Prozent.
+- Nutztier- und Pferdepraxen: 1.825 auf 1.932, plus 5,9 Prozent.
 
-Alle Veränderungen sind berechnet. Die Kleintierpraxis gewinnt also weiter Anteile, aber nicht mehr, weil sie wächst, sondern weil sie langsamer schrumpft als die gemischte Praxis. Warum die Nutz- und Pferdepraxen seit 2019 zulegen und was davon echt ist, behandelt der Artikel [Was aus der Nutztierpraxis geworden ist](nutztierpraxis-deutschland.html).
+Alle Veränderungen sind berechnet. Die Kleintierpraxis gewinnt also weiter Anteile, aber nicht mehr, weil sie wächst, sondern weil sie langsamer schrumpft als die gemischte Praxis. Warum die Nutz- und Pferdepraxen seit 2019 zulegen und was davon echt ist, behandelt der Artikel [Die Großtierpraxis wird zur Pferdepraxis](pferdepraxis-nutztierpraxis.html).
 
 ## Was die Zahl nicht sagt
 
-- **Der Methodenbruch 2019 ist echt.** Seit 2019 fragt die Kammer Pferde getrennt ab, vorher zählten sie zu den Nutz- und Großtieren. Die gemischten Praxen fallen dadurch von 4.554 auf 3.381, ohne dass Praxen verschwinden. Wie dieser Bruch entsteht und wie man die Reihe trotzdem liest, erklärt [Warum das Pferd 2019 aus der Statistik fiel](statistik-tieraerzte-bruch-2019.html).
+- **Der Methodenbruch 2019 ist echt.** Seit 2019 fragt die Kammer Pferde getrennt ab, vorher zählten sie zu den Nutz- und Großtieren. Die gemischten Praxen fallen dadurch von 4.554 auf 3.640, ohne dass Praxen verschwinden. Wie dieser Bruch entsteht und wie man die Reihe trotzdem liest, erklärt [Warum das Pferd 2019 aus der Statistik fiel](statistik-tieraerzte-bruch-2019.html).
 - **Gezählt werden Inhaberinnen und Inhaber, keine Praxen** und keine angestellten Tierärztinnen und Tierärzte. Eine Gemeinschaftspraxis mit drei Inhabern zählt dreimal.
-- **Nicht alle antworten.** Seit 2019 geben 91,2 bis 97,1 Prozent der Niedergelassenen einen Schwerpunkt an. 2024 waren Mehrfachantworten möglich, die Summe liegt mit 11.529 über den 11.264 Inhabern. Anteile sind deshalb verlässlicher als absolute Zahlen.
+- **Nicht alle antworten.** Seit 2019 geben 91,2 bis 97,6 Prozent der Niedergelassenen einen Schwerpunkt an. Anteile sind deshalb verlässlicher als absolute Zahlen.
+- **Die Summen der Kammer sind nicht immer richtig.** 2019, 2020 (Pferde) und 2024 passen die Summenspalten nicht zu den Werten der 17 Kammern, 2024 ist Rheinland-Pfalz doppelt gezählt (11.529 Angaben bei 11.264 Inhabern). Hier stehen die aus den Kammerspalten neu summierten Werte, zum Beispiel 2019 Kleintiere 6.135 statt 5.912 (nachgerechnet am 16. Oktober 2026).
 - **Die Kategorien heißen nicht immer gleich.** 2001 bis 2004 fragte die Kammer nach Praxen für „überwiegend“ Kleintiere oder Großtiere, ab 2006 nach Kleintieren und Nutztieren.
 - **Lücken:** 1996 bis 2000 sind nur gedruckt erschienen, 2005 enthält eine gekürzte Tabelle, 2006 ist durch eine Fehlmeldung aus Baden-Württemberg unbrauchbar. Diese Jahre fehlen in der Tabelle und sind im Diagramm überbrückt.
 - **1990 bleibt draußen.** Die Zeile für 1990 umfasst nur die alten Bundesländer; ihre Summe ergibt 5.900 Inhaber, die von 1991 dagegen 8.243.

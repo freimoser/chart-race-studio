@@ -41,7 +41,7 @@ Die Unterscheidung ist wichtiger als jede einzelne Zahl. Eine gezählte Reihe ka
 
 Fünf Stellen in den Daten würden ohne Erklärung falsch gelesen:
 
-1. **Pferde, 2019.** Bis 2018 zählte die Kammer Pferde zu den Nutztieren, ab 2019 fragt sie sie getrennt ab. Die gemischten Praxen fallen dadurch von 4.554 auf 3.381, die Gruppe der reinen Nutz- und Großtierpraxen springt von 971 auf 1.713. Keine einzige Praxis hat sich dafür verändert.
+1. **Pferde, 2019.** Bis 2018 zählte die Kammer Pferde zu den Nutztieren, ab 2019 fragt sie sie getrennt ab. Die gemischten Praxen fallen dadurch von 4.554 auf 3.640, die Gruppe der reinen Nutz- und Großtierpraxen springt von 971 auf 1.814. Keine einzige Praxis hat sich dafür verändert.
 2. **Hunde und Katzen, 2012.** Die erste repräsentative Haushaltsbefragung ersetzt die Verbandsschätzung. Der Bestand steigt auf dem Papier in einem Jahr um 6,1 Millionen Tiere (berechnet).
 3. **Aquarien, 2002.** Die Kategorie wird in Aquarien, Gartenteiche und Terrarien aufgeteilt. Die Zahl der Aquarien sinkt von 3,0 auf 1,9 Millionen.
 4. **Wiedervereinigung, 1990.** Die Schwerpunkt-Zeile für 1990 umfasst nur die alten Bundesländer und summiert sich auf 5.900 Inhaber, 1991 sind es 8.243. Sie ist deshalb nicht im Datensatz.
