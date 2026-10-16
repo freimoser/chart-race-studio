@@ -2,7 +2,7 @@
  "title": "Praktizierende/niedergelassene Tierärzt:innen in Deutschland nach Praxisart bzw. Tierartenschwerpunkt, 1990–2025",
  "source": "Bundestierärztekammer, Statistik „Tierärzteschaft in der Bundesrepublik Deutschland“ (Deutsches Tierärzteblatt); 1990–1995 nach Maure 1998; 2001–2004 Schöne & Ulrich / Schöne & Jöhrens",
  "sourceUrl": "https://www.bundestieraerztekammer.de/btk/statistik/",
- "notes": "VIER NICHT VERGLEICHBARE SEGMENTE: (I) 1990–1995 Groß-/Klein-/Gemischtpraxis (Maure 1998). (II) 2001–2004 „Praxis für überwiegend Großtiere / überwiegend Kleintiere / Groß- und Kleintiere“ – erschöpfend, Summe = Zahl der praktizierenden TÄ. (III) 2006–2018 „Nutztiere / Kleintiere / Nutztiere und Kleintiere“ (Pferde in „Nutztiere“ enthalten); 2006–2015 summieren sich die drei Kategorien exakt auf die Zahl der Niedergelassenen, ab 2016 bleibt die Summe darunter (fehlende Angaben). (IV) ab 2019 sieben Kategorien mit separat erhobenen Pferden; BTK selbst: „eine Vergleichbarkeit der Daten mit den Jahren vor 2019 ist ausgeschlossen“ (DTBl 8/2024, S. 990). LÜCKEN: 1996–2000 und 2005 (nicht publiziert bzw. in der jeweiligen Statistik nicht enthalten). 2005 enthält die BTK-Statistik keine Praxisart-Gliederung. Alle Werte = Personen, nicht Praxen. KORREKTUR 2024 (16.10.2026): BTK-Tab. 2 „Summe“ zählt Rheinland-Pfalz doppelt; die sieben Kategorien 2024 sind aus den Kammerspalten neu summiert (Summe 10.996 statt 11.529), siehe Zeilen-Notizen.",
+ "notes": "VIER NICHT VERGLEICHBARE SEGMENTE: (I) 1990–1995 Groß-/Klein-/Gemischtpraxis (Maure 1998). (II) 2001–2004 „Praxis für überwiegend Großtiere / überwiegend Kleintiere / Groß- und Kleintiere“ – erschöpfend, Summe = Zahl der praktizierenden TÄ. (III) 2006–2018 „Nutztiere / Kleintiere / Nutztiere und Kleintiere“ (Pferde in „Nutztiere“ enthalten); 2006–2015 summieren sich die drei Kategorien exakt auf die Zahl der Niedergelassenen, ab 2016 bleibt die Summe darunter (fehlende Angaben). (IV) ab 2019 sieben Kategorien mit separat erhobenen Pferden; BTK selbst: „eine Vergleichbarkeit der Daten mit den Jahren vor 2019 ist ausgeschlossen“ (DTBl 8/2024, S. 990). LÜCKEN: 1996–2000 und 2005 (nicht publiziert bzw. in der jeweiligen Statistik nicht enthalten). 2005 enthält die BTK-Statistik keine Praxisart-Gliederung. Alle Werte = Personen, nicht Praxen. KORREKTUR 2024 (16.10.2026): BTK-Tab. 2 „Summe“ zählt Rheinland-Pfalz doppelt; die sieben Kategorien 2024 sind aus den Kammerspalten neu summiert (Summe 10.996 statt 11.529), siehe Zeilen-Notizen. KORREKTUR 2019/2020 (16.10.2026): 2019 alle sieben Kategorien und 2020 „Pferde“ aus den Kammerspalten neu summiert, weil die BTK-Summe nicht zu den Kammern passt; 2021–2023 und 2025 nachgerechnet und stimmig.",
  "rows": [
   {
    "date": "1990",
@@ -1208,11 +1208,11 @@
    "date": "2019",
    "metric": "Praxisart",
    "name": "Kleintiere",
-   "value": 5912,
+   "value": 6135,
    "unit": "Niedergelassene TÄ",
    "source": "BTK Statistik 2019, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2019.pdf",
-   "quality": "publiziert",
-   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen"
+   "quality": "korrigiert",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2019) passt bei allen sieben Kategorien nicht zu den Kammerspalten (Summe der Kategorien 11.006, aus den Kammern 11.589; „Niedergelassene gesamt“ 12.019 und alle Frauen-Summen stimmen dagegen exakt). Wert aus den Kammerspalten neu summiert: 5912 → 6135."
   },
   {
    "date": "2019",
@@ -1228,11 +1228,11 @@
    "date": "2019",
    "metric": "Praxisart",
    "name": "Pferde",
-   "value": 693,
+   "value": 744,
    "unit": "Niedergelassene TÄ",
    "source": "BTK Statistik 2019, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2019.pdf",
-   "quality": "publiziert",
-   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen"
+   "quality": "korrigiert",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2019) passt bei allen sieben Kategorien nicht zu den Kammerspalten (Summe der Kategorien 11.006, aus den Kammern 11.589; „Niedergelassene gesamt“ 12.019 und alle Frauen-Summen stimmen dagegen exakt). Wert aus den Kammerspalten neu summiert: 693 → 744."
   },
   {
    "date": "2019",
@@ -1248,11 +1248,11 @@
    "date": "2019",
    "metric": "Praxisart",
    "name": "Nutztiere",
-   "value": 838,
+   "value": 887,
    "unit": "Niedergelassene TÄ",
    "source": "BTK Statistik 2019, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2019.pdf",
-   "quality": "publiziert",
-   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen"
+   "quality": "korrigiert",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2019) passt bei allen sieben Kategorien nicht zu den Kammerspalten (Summe der Kategorien 11.006, aus den Kammern 11.589; „Niedergelassene gesamt“ 12.019 und alle Frauen-Summen stimmen dagegen exakt). Wert aus den Kammerspalten neu summiert: 838 → 887."
   },
   {
    "date": "2019",
@@ -1268,11 +1268,11 @@
    "date": "2019",
    "metric": "Praxisart",
    "name": "Kleintiere und Pferde",
-   "value": 662,
+   "value": 705,
    "unit": "Niedergelassene TÄ",
    "source": "BTK Statistik 2019, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2019.pdf",
-   "quality": "publiziert",
-   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen"
+   "quality": "korrigiert",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2019) passt bei allen sieben Kategorien nicht zu den Kammerspalten (Summe der Kategorien 11.006, aus den Kammern 11.589; „Niedergelassene gesamt“ 12.019 und alle Frauen-Summen stimmen dagegen exakt). Wert aus den Kammerspalten neu summiert: 662 → 705."
   },
   {
    "date": "2019",
@@ -1288,11 +1288,11 @@
    "date": "2019",
    "metric": "Praxisart",
    "name": "Nutztiere und Pferde",
-   "value": 182,
+   "value": 183,
    "unit": "Niedergelassene TÄ",
    "source": "BTK Statistik 2019, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2019.pdf",
-   "quality": "publiziert",
-   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen"
+   "quality": "korrigiert",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2019) passt bei allen sieben Kategorien nicht zu den Kammerspalten (Summe der Kategorien 11.006, aus den Kammern 11.589; „Niedergelassene gesamt“ 12.019 und alle Frauen-Summen stimmen dagegen exakt). Wert aus den Kammerspalten neu summiert: 182 → 183."
   },
   {
    "date": "2019",
@@ -1308,11 +1308,11 @@
    "date": "2019",
    "metric": "Praxisart",
    "name": "Nutztiere und Kleintiere",
-   "value": 2651,
+   "value": 2863,
    "unit": "Niedergelassene TÄ",
    "source": "BTK Statistik 2019, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2019.pdf",
-   "quality": "publiziert",
-   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen"
+   "quality": "korrigiert",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2019) passt bei allen sieben Kategorien nicht zu den Kammerspalten (Summe der Kategorien 11.006, aus den Kammern 11.589; „Niedergelassene gesamt“ 12.019 und alle Frauen-Summen stimmen dagegen exakt). Wert aus den Kammerspalten neu summiert: 2651 → 2863."
   },
   {
    "date": "2019",
@@ -1328,11 +1328,11 @@
    "date": "2019",
    "metric": "Praxisart",
    "name": "Nutztiere, Pferde und Kleintiere",
-   "value": 68,
+   "value": 72,
    "unit": "Niedergelassene TÄ",
    "source": "BTK Statistik 2019, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2019.pdf",
-   "quality": "publiziert",
-   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen"
+   "quality": "korrigiert",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: Die Spalte „Summe“ der BTK-Tab. 2 (2019) passt bei allen sieben Kategorien nicht zu den Kammerspalten (Summe der Kategorien 11.006, aus den Kammern 11.589; „Niedergelassene gesamt“ 12.019 und alle Frauen-Summen stimmen dagegen exakt). Wert aus den Kammerspalten neu summiert: 68 → 72."
   },
   {
    "date": "2019",
@@ -1438,11 +1438,11 @@
    "date": "2020",
    "metric": "Praxisart",
    "name": "Pferde",
-   "value": 766,
+   "value": 776,
    "unit": "Niedergelassene TÄ",
    "source": "BTK Statistik 2020, Tab. 2 Praktisch Tätige nach Tierarten, Spalte „Summe“ | https://www.bundestieraerztekammer.de/btk/statistik/downloads/2020.pdf",
-   "quality": "publiziert",
-   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen"
+   "quality": "korrigiert",
+   "notes": "Segment IV; ab 2019 Pferde separat erhoben – laut BTK (DTBl 8/2024) ist ein Vergleich mit den Jahren vor 2019 ausgeschlossen KORREKTUR 16.10.2026: BTK-Tab. 2 (2020) nennt 766; die Kammerspalten ergeben 776 (Seite 2 der Tabelle liegt nur als Grafik vor und wurde abgelesen). Die Frauen-Summe 459 stimmt mit den Kammern überein, alle anderen Kategorien 2020 ebenfalls. Wert aus den Kammerspalten neu summiert: 766 → 776."
   },
   {
    "date": "2020",
