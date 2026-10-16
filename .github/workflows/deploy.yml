@@ -54,7 +54,7 @@ jobs:
       # Keine Kopie von index.html als 404.html: Es gibt eine eigene 404-Seite mit noindex, und das Studio
       # nutzt Hash-Routen, braucht also keinen SPA-Fallback. Die Kopie überschrieb die Fehlerseite.
       - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: dist
 
