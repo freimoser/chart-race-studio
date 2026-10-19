@@ -46,3 +46,4 @@ dist-ssr
 
 # Exportierte Post-Videos (groß, jederzeit aus dem Studio neu erzeugbar)
 docs/linkedin/*.mp4
+intern/
