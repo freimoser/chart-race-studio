@@ -8,11 +8,12 @@ import { pathToFileURL } from 'node:url'
 import { freigegebeneDatensaetze } from './src/content/freigabe-regel.ts'
 import type { SeitenProfil } from './src/content/profil.ts'
 import type { SampleDataset } from './src/lib/data/types.ts'
-import type { RoadmapPost } from '@site/content/roadmap.ts'
+import type { RoadmapPost } from './src/content/redaktion.ts'
 
 // Welche Seite gebaut wird (docs/ARCHITEKTUR.md). Alles Seitenspezifische kommt aus sites/<SITE>/:
 // Profil (Texte, Domain, Navigation), Inhalte, Datensätze und der Ordner public/.
-const SITE = process.env.SITE || 'tiermedizin'
+// Ohne SITE gilt .seite im Arbeitsordner (nicht eingecheckt), sonst die Tiermedizin – wie in scripts/lib/site.mjs.
+const SITE = process.env.SITE || (existsSync('.seite') ? readFileSync('.seite', 'utf8').trim() : '') || 'tiermedizin'
 const SITE_DIR = resolve(import.meta.dirname, 'sites', SITE)
 const seite = (rel: string) => resolve(SITE_DIR, rel)
 const ladeSeite = (rel: string) => import(pathToFileURL(seite(rel)).href)

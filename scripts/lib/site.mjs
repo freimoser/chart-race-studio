@@ -10,7 +10,10 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { pathToFileURL } from 'node:url'
 
-export const SITE = process.env.SITE || 'tiermedizin'
+// Ohne SITE gilt die Standardseite dieses Arbeitsordners aus der Datei .seite (nicht eingecheckt): So baut der
+// Klon der Tiermedizin-Seite ohne Zusatz die Tiermedizin, der Klon der Humanmedizin die Humanmedizin.
+// Dieselbe Regel steht in vite.config.ts.
+export const SITE = process.env.SITE || (fs.existsSync('.seite') ? fs.readFileSync('.seite', 'utf8').trim() : '') || 'tiermedizin'
 export const SITE_DIR = path.join('sites', SITE)
 if (!fs.existsSync(path.join(SITE_DIR, 'profil.ts'))) {
   throw new Error(`SITE=${SITE}: sites/${SITE}/profil.ts fehlt. Vorhanden: ${fs.readdirSync('sites').filter((d) => fs.existsSync(path.join('sites', d, 'profil.ts'))).join(', ')}`)

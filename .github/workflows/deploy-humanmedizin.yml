@@ -1,0 +1,69 @@
+name: Build & Deploy Humanmedizin (Pages im Repo humanmedizin-in-zahlen)
+
+# Zwei Seiten in einem Repo (docs/ARCHITEKTUR.md). GitHub Pages liefert je Repo nur eine Seite aus. Deshalb baut
+# dieses Repo humanmedizin-in-zahlen.org und schiebt das fertige dist/ in den Zweig gh-pages des Repos
+# freimoser/humanmedizin-in-zahlen. Dort liegt nur der Build, kein Code; Pages liefert ihn unter der eigenen
+# Domain aus.
+#
+# Einrichtung (einmalig, siehe docs/ARCHITEKTUR.md, Abschnitt „Deploy“):
+#   1. Repo freimoser/humanmedizin-in-zahlen anlegen, Pages: „Deploy from a branch“, gh-pages, / (root).
+#   2. Deploy-Key mit Schreibrecht dort hinterlegen, den privaten Schlüssel hier als Secret HUMAN_DEPLOY_KEY.
+#   3. Repository-Variablen hier: HUMAN_SITE_URL (https://humanmedizin-in-zahlen.org), optional HUMAN_GA_ID,
+#      HUMAN_CF_BEACON, HUMAN_GSC_VERIFICATION.
+# Solange HUMAN_SITE_URL fehlt, läuft der Workflow nicht los.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-humanmedizin
+  cancel-in-progress: true
+
+env:
+  SITE: humanmedizin
+
+jobs:
+  deploy:
+    if: ${{ vars.HUMAN_SITE_URL != '' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: Build
+        env:
+          VITE_SITE_URL: ${{ vars.HUMAN_SITE_URL }}
+          VITE_GA_ID: ${{ vars.HUMAN_GA_ID }}
+          VITE_CF_BEACON: ${{ vars.HUMAN_CF_BEACON }}
+          VITE_GSC_VERIFICATION: ${{ vars.HUMAN_GSC_VERIFICATION }}
+        run: BASE_PATH="/" npm run build
+      - name: Livegang-Prüfung
+        env:
+          VITE_SITE_URL: ${{ vars.HUMAN_SITE_URL }}
+          VITE_GA_ID: ${{ vars.HUMAN_GA_ID }}
+          VITE_CF_BEACON: ${{ vars.HUMAN_CF_BEACON }}
+          VITE_GSC_VERIFICATION: ${{ vars.HUMAN_GSC_VERIFICATION }}
+        run: npm run check:launch
+      - name: Interne Verlinkung prüfen
+        run: npm run check:links
+      - name: In das Pages-Repo schieben
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          deploy_key: ${{ secrets.HUMAN_DEPLOY_KEY }}
+          external_repository: freimoser/humanmedizin-in-zahlen
+          publish_branch: gh-pages
+          publish_dir: ./dist
+          cname: humanmedizin-in-zahlen.org
+          force_orphan: true
+          user_name: github-actions[bot]
+          user_email: github-actions[bot]@users.noreply.github.com
+          commit_message: Build aus chart-race-studio

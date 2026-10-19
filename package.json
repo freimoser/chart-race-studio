@@ -18,7 +18,7 @@
     "check:links": "node scripts/pruefe-verlinkung.mjs",
     "check:mobil": "node scripts/pruefe-mobil.mjs",
     "check:grafiken": "node scripts/pruefe-grafiken.mjs",
-    "daten": "node scripts/site.mjs && node sites/${SITE:-tiermedizin}/scripts/build-samples.mjs",
+    "daten": "node scripts/site.mjs && node scripts/daten.mjs",
     "dev:human": "SITE=humanmedizin npm run dev",
     "build:human": "SITE=humanmedizin npm run build",
     "test:alle": "SITE=tiermedizin npm test && SITE=humanmedizin npm test"

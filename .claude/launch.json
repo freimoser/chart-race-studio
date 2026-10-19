@@ -39,6 +39,24 @@
         "--strictPort"
       ],
       "port": 4173
+    },
+    {
+      "name": "dev-human",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": [
+        "-c",
+        "SITE=humanmedizin npm run dev -- --port 5174 --strictPort"
+      ],
+      "port": 5174
+    },
+    {
+      "name": "preview-human",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": [
+        "-c",
+        "SITE=humanmedizin npm run preview -- --port 4174 --strictPort"
+      ],
+      "port": 4174
     }
   ]
 }

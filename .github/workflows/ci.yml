@@ -6,8 +6,14 @@ on:
     branches-ignore: [main]
 
 jobs:
+  # Der Kern ist gemeinsam: Jede Änderung muss beide Seiten bauen.
   check:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        site: [tiermedizin, humanmedizin]
+    env:
+      SITE: ${{ matrix.site }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

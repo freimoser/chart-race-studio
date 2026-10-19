@@ -4,6 +4,15 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Zwei Seiten in einem Repo: Humanmedizin in Zahlen (20.10.2026) – betrifft beide Seiten
+
+- **Aufbau:** Der Kern (`src/`, `scripts/`, `vite.config.ts`) ist gemeinsam, alles Seitenspezifische liegt unter `sites/<seite>/` (Profil, Inhalte, Datensätze, Rohdaten, `public/`, eigene Skripte). `SITE=…` bzw. die Datei `.seite` wählt die Seite. Erklärt in `docs/ARCHITEKTUR.md`, Regeln für beide Chats in `CLAUDE.md`, für andere KIs in `AGENTS.md`.
+- **Tiermedizin unverändert:** Inhalte nach `sites/tiermedizin/` verschoben, Texte der Rahmenseiten wortgleich ins Profil übernommen. Build gegen den Stand vorher verglichen: alle HTML-Seiten, Sitemap, llms.txt, Feed, CSV und Grafikdaten byte-gleich.
+- **Pfade, die sich geändert haben:** `src/content/artikel/` → `sites/tiermedizin/content/artikel/`, `src/content/roadmap.ts` → `sites/tiermedizin/content/roadmap.ts`, `src/samples/` → `sites/tiermedizin/samples/`, `data/raw/` → `sites/tiermedizin/data/raw/`, `public/` → `sites/tiermedizin/public/`, `docs/linkedin/`, `docs/DATASETS*.md`, `docs/REDAKTION.md`, `docs/KEYWORD-RECHERCHE.md` → `sites/tiermedizin/docs/`, Handgeschriebene Seiten → `sites/tiermedizin/seiten/`. `npm run daten` statt `node scripts/build-samples.mjs`. Helfer `stuetze`, `lueckenlos`, `kette` jetzt in `scripts/lib/reihen.mjs`.
+- **Neu: sites/humanmedizin/** – Profil (Farbrichtung „signal“), Rechtsangaben, Redaktionsplan Visite 1 (Praxissoftware, Hersteller, Schnittstellen, Praxen), Leitartikel „Praxisverwaltungssysteme in Deutschland“, Über-Seite mit offenem Interessenkonflikt (FleXChange Medical), Datenherkunft.
+- **Deploy:** `deploy-humanmedizin.yml` schiebt den Build in das Repo `humanmedizin-in-zahlen` (Pages), sobald `HUMAN_SITE_URL` gesetzt ist. CI baut beide Seiten.
+- **Verlinkung** zwischen Tiermedizin, Humanmedizin und FleXChange: `docs/VERLINKUNG.md`.
+
 ### Pferde-Post und korrigierte BTK-Summen (16.10.2026)
 
 - **Fachtierarzt-Daten 2020 und 2021:** 2020 war nicht „leer“, die Tabellen liegen im BTK-PDF nur als Grafik vor; abgelesen und eingetragen (z. B. Pferde 688, Kleintiere 1.276). 2021 hat die Kammer Nordrhein die Zeilen 13–27 in der Reihenfolge von 2020 gemeldet; Bundeswerte umgeordnet, nicht geschätzt (Pferde 649 → 705, Öffentliches Veterinärwesen 1.740 → 1.850, Kleintiere 1.181 → 1.309). Folge: Das Pferd überholt das Rind bei den Fachtiteln schon 2021, nicht erst 2022. Artikel 12–15, Dateninfo und DATASETS angeglichen.

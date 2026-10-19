@@ -64,6 +64,8 @@ export interface SeitenProfil {
   }
   /** Volltext von llms.txt. */
   llms: (x: { url: string; marke: string; datenformat: { frage: string; pfad: string; stand: string; beschreibung: string }[]; beitraege: { frage: string; slug: string; stand: string; beschreibung: string }[] }) => string
+  /** Standard-Vorschaubild (scripts/og-bilder.mjs): Titel, Unterzeile, Farben. */
+  og: { titel: string; text: string; farben: { grund: string; akzent: string; hell: string; text: string } }
   /** Glättungsprüfung (scripts/pruefe-glaette.mjs): Datensätze, die ohne Argument geprüft werden. */
   glaetteDatensaetze: string[]
 }

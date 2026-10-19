@@ -2,66 +2,20 @@
  * Redaktionsplan: Posts in Visiten zu je 30, die aufeinander aufbauen.
  *
  * Jeder Post nennt den Datensatz, aus dem das Video kommt, und die Zahlen, die im Text stehen sollen.
- * Alle Zahlen hier stammen aus den Datensätzen in src/samples/ bzw. aus den in docs/DATASETS.md
+ * Alle Zahlen hier stammen aus den Datensätzen in sites/tiermedizin/samples/ bzw. aus den in sites/tiermedizin/docs/DATASETS.md
  * belegten Quellen – nichts ist geschätzt. Wo die Datenlage dünn ist, sagt `dataStatus` das offen.
  *
  * `linkedInUrl` wird nach Veröffentlichung eingetragen; die Oberfläche verlinkt dann darauf.
  */
 
-export type PostStatus = 'veroeffentlicht' | 'naechster' | 'geplant'
-/** belegt = Datensatz liegt vor · teilweise = Einzelwerte belegt, Reihe fehlt · offen = muss recherchiert werden */
-export type DataStatus = 'belegt' | 'teilweise' | 'offen'
-
-/**
- * Eine Visite umfasst immer 30 Posts – wie ein Rundgang über die Station, Bett für Bett.
- * Die Nummern laufen über alle Visiten durch (Visite 2 beginnt mit Post 31), damit Verweise
- * wie „siehe Post 3“ eindeutig bleiben. Zu welcher Visite ein Post gehört, folgt aus der Nummer.
- */
-export const POSTS_JE_VISITE = 30
-
-export interface Visite {
-  nr: number
-  titel: string
-  /** Die eine Frage, die sich durch alle 30 Posts zieht. */
-  leitfrage: string
-  status: 'laeuft' | 'in-vorbereitung'
-}
+import type { RoadmapArc, RoadmapPost, Visite } from '../../../src/content/redaktion.ts'
+export type { DataStatus, PostStatus, RoadmapArc, RoadmapPost, Visite } from '../../../src/content/redaktion.ts'
+export { POSTS_JE_VISITE, visiteVon } from '../../../src/content/redaktion.ts'
 
 export const VISITEN: Visite[] = [
   { nr: 1, titel: 'Wie sich die Tiermedizin in Deutschland gedreht hat', leitfrage: 'Mehr Katzen, weniger Inhaber, neue Käufer: Was hat sich in 35 Jahren verschoben?', status: 'laeuft' },
   { nr: 2, titel: 'In Vorbereitung', leitfrage: 'Die Themen werden gerade gesammelt.', status: 'in-vorbereitung' },
 ]
-
-export const visiteVon = (postNr: number) => Math.ceil(postNr / POSTS_JE_VISITE)
-
-export interface RoadmapArc {
-  id: string
-  label: string
-  claim: string
-}
-
-export interface RoadmapPost {
-  nr: number
-  arc: string
-  title: string
-  /** Der Aufhänger, ein bis zwei Sätze. */
-  hook: string
-  /** Die Zahlen, die im Post stehen sollen. */
-  figures: string[]
-  /** Datensatz-ID aus src/samples/index.ts, falls das Video daraus kommt. */
-  sampleId?: string
-  chart?: 'line' | 'bar' | 'map'
-  dataStatus: DataStatus
-  /** Was noch fehlt oder worauf zu achten ist. */
-  dataNote?: string
-  /** Nummern anderer Posts, auf die dieser Bezug nimmt. */
-  refs?: number[]
-  status: PostStatus
-  publishedOn?: string
-  linkedInUrl?: string
-  /** Artikel schon vor dem Post online lassen – etwa weil er bereits veröffentlicht war oder für sich allein gesucht wird. */
-  vorabOnline?: boolean
-}
 
 export const ARCS: RoadmapArc[] = [
   { id: 'tiere', label: 'Die Tiere', claim: 'Was in den Wohnungen lebt, hat sich in einer Generation komplett gedreht.' },

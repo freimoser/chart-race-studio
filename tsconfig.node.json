@@ -17,8 +17,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true,
-    "paths": { "@site/*": ["./sites/aktiv/*"] }
+    "noFallthroughCasesInSwitch": true
   },
   "include": ["vite.config.ts"]
 }

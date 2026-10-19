@@ -1,4 +1,4 @@
-name: Build & Deploy (GitHub Pages)
+name: Build & Deploy Tiermedizin (GitHub Pages)
 
 on:
   push:
@@ -13,6 +13,11 @@ permissions:
 concurrency:
   group: pages
   cancel-in-progress: true
+
+# Zwei Seiten in einem Repo (docs/ARCHITEKTUR.md). Dieser Workflow baut tiermedizin-in-zahlen.org und liefert sie über
+# die Pages dieses Repos aus. Die Humanmedizin baut deploy-humanmedizin.yml und schiebt sie in ein eigenes Repo.
+env:
+  SITE: tiermedizin
 
 jobs:
   build:

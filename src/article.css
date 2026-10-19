@@ -3,6 +3,8 @@
    die Artikel-HTML nicht erfasst, und sie soll ohne JavaScript vollständig lesbar sein. */
 @import './brand/tokens.css';
 @import '@fontsource-variable/inter/index.css';
+/* Manrope für die Farbrichtung „signal“ (Humanmedizin in Zahlen); der Browser lädt die Datei nur, wo sie gebraucht wird. */
+@import '@fontsource-variable/manrope/index.css';
 
 * { box-sizing: border-box; }
 body {

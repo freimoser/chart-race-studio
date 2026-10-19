@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="de" data-brand="klar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datenherkunft: Quellen und Methode aller Datensätze</title>
+    <meta name="dcterms.modified" content="2026-10-20" />
+    <meta name="description" content="Für jeden Datensatz von Humanmedizin in Zahlen: Quelle, Zeitraum, Annahmen, was gerechnet ist und wann zuletzt gegen die Quelle geprüft." />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../favicon-96.png" sizes="96x96" type="image/png" />
+    <link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Datenherkunft: Quellen und Methode" />
+    <meta property="og:description" content="Quelle, Zeitraum, Annahmen und Stand für alle Datensätze zu Arztpraxen und Praxissoftware." />
+    <meta property="og:locale" content="de_DE" />
+    <script type="module" src="/src/article.ts"></script>
+  </head>
+  <body>
+    <!--rahmen:kopf-->
+
+    <main class="wrap">
+      <article>
+        <h1>Woher die Zahlen kommen</h1>
+        <p class="lead">
+          Diese Seite sagt für jeden Datensatz von Humanmedizin in Zahlen, aus welcher Quelle er stammt, was die Quelle
+          eigentlich zählt, wo eine Annahme getroffen werden musste, welche Werte gerechnet sind und wann zuletzt gegen
+          die Quelle geprüft wurde.
+        </p>
+        <p class="meta">Stand 20. Oktober 2026 · von <a href="../ueber-das-projekt.html">Thomas Freimoser</a></p>
+
+        <div class="note">
+          <strong>Warum das Datum wichtig ist:</strong> Die KBV veröffentlicht ihre Statistiken quartalsweise,
+          Herstellerangaben und Zulassungen ändern sich laufend. Jeder Datensatz trägt deshalb ein Recherche- und ein
+          Prüfdatum. Was älter als ein Jahr ist, wird vor der Wiederverwendung erneut gegen die Quelle gehalten – nicht
+          stillschweigend fortgeschrieben.
+        </div>
+
+        <h2 id="kbv-installationsstatistik">Installationsstatistik der KBV</h2>
+        <p>
+          <strong>Quelle:</strong> Kassenärztliche Bundesvereinigung,
+          <a href="https://www.kbv.de/infothek/zahlen-und-fakten/pvs-installationsstatistiken" rel="noopener">Installationsstatistiken der Praxisverwaltungssysteme</a>,
+          quartalsweise. Aktueller Datenstand: 31.12.2025 (Q4/2025),
+          <a href="https://update.kbv.de/ita-update/Service-Informationen/Installationsstatistiken/Gesamt_Systeme_Installationen.pdf" rel="noopener">Gesamtliste als PDF</a>.
+        </p>
+        <p>
+          <strong>Was gezählt wird:</strong> Installationen eines Systems, erkannt an seiner Prüfnummer in den
+          Abrechnungen, die Praxen an ihre Kassenärztliche Vereinigung schicken. Das ist keine Zahl der Praxen und keine
+          Zahl der Ärztinnen und Ärzte. Die KBV weist selbst darauf hin, dass die Statistik kein genaues Abbild des
+          tatsächlichen Marktes ist. Praxen ohne Kassenzulassung erscheinen nicht.
+        </p>
+        <p>
+          <strong>Was hier aufbereitet ist:</strong> Die Summe aller Installationen (116.954 zum 31.12.2025) steht nicht in
+          der Statistik, sie ist über alle 126 Zeilen gebildet. Jedes System ist einem Einsatzbereich zugeordnet:
+          ärztliche Praxis, Psychotherapie, gemischt oder Krankenhaus. Grundlage sind die Angaben der Hersteller; die
+          KBV selbst trennt nicht. Die Zuordnung zu Herstellern folgt dem Eigentümer am jeweiligen Stichtag.
+        </p>
+        <p>
+          <strong>Grenzen:</strong> Systeme, die in ärztlichen und psychotherapeutischen Praxen laufen (etwa Epikur und
+          SMARTY), lassen sich aus der Statistik nicht aufteilen und stehen als „gemischt“. Umbenennungen von Produkten
+          führen die KBV-Listen nicht immer nach; wo ein System den Namen gewechselt hat, ist das im Datensatz vermerkt.
+        </p>
+        <p><strong>Erstellt</strong> 20.10.2026 · <strong>geprüft</strong> 20.10.2026</p>
+
+        <h2 id="kbv-zulassungen">Zulassungsverzeichnisse der KBV</h2>
+        <p>
+          <strong>Quelle:</strong> Kassenärztliche Bundesvereinigung,
+          <a href="https://update.kbv.de/ita-update/Service-Informationen/Zulassungsverzeichnisse/" rel="noopener">Zulassungsverzeichnisse</a>
+          für Abrechnung (KVDT), Labordatenkommunikation (LDK, LDT 3), eArztbrief und 1-Click-KIM, Stand 19.10.2026.
+        </p>
+        <p>
+          <strong>Was gezählt wird:</strong> ob ein System für einen Anwendungsfall zertifiziert ist, mit Prüfnummer und
+          Gültigkeit. Eine Zulassung sagt nicht, wie viele Praxen die Funktion tatsächlich nutzen. Schnittstellen ohne
+          KBV-Zertifizierung, etwa GDT für Medizingeräte, HL7 oder herstellereigene Programmierschnittstellen, stehen
+          nicht in den Verzeichnissen. Sie sind im Artikel nur genannt, wo der Hersteller sie öffentlich dokumentiert.
+        </p>
+        <p><strong>Erstellt</strong> 20.10.2026 · <strong>geprüft</strong> 20.10.2026</p>
+
+        <h2>Was gerechnet ist</h2>
+        <ul>
+          <li>Summen über alle Zeilen, je Hersteller und je Einsatzbereich.</li>
+          <li>Anteile in Prozent, jeweils an allen Installationen des Stichtags.</li>
+          <li>Veränderungen zwischen zwei Stichtagen, absolut und in Prozent.</li>
+          <li>Fehlt für einen Stichtag eine Zahl, wird sie zwischen den beiden benachbarten Belegen linear gerechnet und
+            im Datensatz, im Artikel und im LinkedIn-Post als gerechnet markiert.</li>
+        </ul>
+
+        <h2>Korrekturen</h2>
+        <p>
+          Hier steht künftig jede Korrektur mit Datum. Bisher keine. Wer einen Fehler findet, erreicht Thomas Freimoser
+          über die Angaben unter <a href="../ueber-das-projekt.html">Über das Projekt</a>.
+        </p>
+        <p>
+          Zu den Artikeln: <a href="praxisverwaltungssysteme-deutschland.html">Praxisverwaltungssysteme in Deutschland</a> ·
+          <a href="../beitrag/">alle Artikel</a>. Die Datenherkunft der Schwesterseite steht unter
+          <a href="https://tiermedizin-in-zahlen.org/artikel/datenherkunft.html">Tiermedizin in Zahlen</a>.
+        </p>
+      </article>
+    </main>
+
+    <!--rahmen:fuss-->
+  </body>
+</html>

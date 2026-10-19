@@ -12,7 +12,7 @@
  * Der Link im Footer erfüllt das vollständig; Auffindbarkeit über Google ist nicht gefordert.
  */
 import fs from 'node:fs'
-import { SITE, sitePfad } from './lib/site.mjs'
+import { PROFIL, SITE, sitePfad } from './lib/site.mjs'
 
 const L = JSON.parse(fs.readFileSync(sitePfad('content/legal.json'), 'utf8'))
 const env = process.env
@@ -78,7 +78,7 @@ if (ga) messung.push('<p><strong>Google Analytics 4</strong> (Google Ireland Lim
 if (!messung.length) messung.push('<p>Es findet keine Reichweitenmessung statt. Es sind keine Analyse-Skripte eingebunden und es werden keine Cookies zu Statistikzwecken gesetzt.</p>')
 
 const datenschutz = nummerieren([
-  { titel: 'Das Wichtigste zuerst', inhalt: `<p>${esc(L.siteName)} läuft vollständig im Browser. Tabellen, die du hochlädst oder eingibst, die erzeugten Videos und deine Einstellungen verlassen dein Gerät nicht. Es gibt keinen Server, der sie entgegennimmt, und ich als Betreiber habe keinen Zugriff darauf. Die Tabelle liegt nur im Arbeitsspeicher des geöffneten Tabs und ist nach dem Neuladen weg. Was das für das Vorbereiten eigener Daten heißt, steht unter <a href="datenformat/">Datenformat</a>.</p>` },
+  { titel: 'Das Wichtigste zuerst', inhalt: `<p>${esc(L.siteName)} läuft vollständig im Browser. Tabellen, die du hochlädst oder eingibst, die erzeugten Videos und deine Einstellungen verlassen dein Gerät nicht. Es gibt keinen Server, der sie entgegennimmt, und ich als Betreiber habe keinen Zugriff darauf. Die Tabelle liegt nur im Arbeitsspeicher des geöffneten Tabs und ist nach dem Neuladen weg. Was das für das Vorbereiten eigener Daten heißt, steht unter <a href="${PROFIL.datenformatUrl('')}">Datenformat</a>.</p>` },
   { titel: 'Verantwortlicher', inhalt: `<p>${esc(L.operator)}${hatAnschrift ? `, ${esc(L.street)}, ${esc(L.zip)} ${esc(L.city)}` : ''}<br />E-Mail: <a href="mailto:${esc(L.email)}">${esc(L.email)}</a></p>` },
   { titel: 'Aufruf der Seite', inhalt: '<p>Die Seite wird über GitHub Pages ausgeliefert (GitHub, Inc., 88 Colin P Kelly Jr Street, San Francisco, CA 94107, USA). Beim Abruf verarbeitet der Hoster technisch notwendige Zugriffsdaten wie IP-Adresse, Zeitpunkt, abgerufene Datei und User-Agent. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Darauf habe ich keinen Einfluss und erhalte davon keine Kopie.</p>' },
   { titel: 'Speicherung im Browser', inhalt: '<p>Deine Einstellungen und, falls du sie triffst, deine Entscheidung zur Statistik werden im lokalen Speicher deines Browsers abgelegt. Dazu gehören auch Texte, die du im Studio eingibst, etwa Titel, Untertitel, Quellenangabe und der Text des Wasserzeichens. Tabellen, Bilder, Logos und Farben je Reihe werden nicht gespeichert. Nichts davon wird übertragen, und alles lässt sich jederzeit über die Browser-Einstellungen löschen.</p>' },

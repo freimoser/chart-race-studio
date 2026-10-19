@@ -51,6 +51,8 @@ intern/
 # Zwei Seiten in einem Repo (docs/ARCHITEKTUR.md): erzeugt von scripts/site.mjs bzw. build-artikel.mjs.
 # Die handgeschriebenen Seiten liegen in sites/<seite>/seiten/ – die Kopien in der Wurzel nie bearbeiten.
 /sites/aktiv
+# Standardseite dieses Arbeitsordners (tiermedizin oder humanmedizin), gilt, wenn SITE nicht gesetzt ist
+/.seite
 /.seite-aktiv.json
 /artikel/
 /ueber-das-projekt.html
