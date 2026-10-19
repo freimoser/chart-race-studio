@@ -1,6 +1,11 @@
-# Tiermedizin in Zahlen
+# Tiermedizin in Zahlen · Humanmedizin in Zahlen
 
-Zahlen zu Tierärzten, Praxen und Haustieren in Deutschland, mit Quelle je Wert – und das Studio dahinter (vormals „Chart Race Studio“).
+Zwei Datenseiten mit gemeinsamer Technik (Stand 20.10.2026):
+
+- **[Tiermedizin in Zahlen](https://tiermedizin-in-zahlen.org)** – Zahlen zu Tierärzten, Praxen und Haustieren in Deutschland, mit Quelle je Wert. Inhalte in `sites/tiermedizin/`.
+- **[Humanmedizin in Zahlen](https://humanmedizin-in-zahlen.org)** – Arztpraxen, Praxissoftware und Gesundheits-IT. Inhalte in `sites/humanmedizin/`.
+
+Alles außerhalb von `sites/` ist der gemeinsame Kern: das Studio (vormals „Chart Race Studio“), der Artikel-Generator und die Prüfungen. `SITE=humanmedizin npm run dev` wählt die Seite. Aufbau, Deploy und Regeln: [`docs/ARCHITEKTUR.md`](docs/ARCHITEKTUR.md), [`CLAUDE.md`](CLAUDE.md), [`AGENTS.md`](AGENTS.md). Pfadangaben weiter unten, die mit `src/content/`, `src/samples/`, `data/raw/` oder `public/` beginnen, liegen seit dem Umbau unter `sites/<seite>/`.
 
 Animierte **Bar Chart Races** und **Line Chart Races** aus eigenen Daten erstellen und direkt im Browser als **MP4** (außerdem GIF und PNG) für Social Media exportieren. Läuft komplett client-seitig auf GitHub Pages, ohne Login und ohne Backend. Hochgeladene Daten verlassen den Browser nicht. Reichweitenmessung ist vorbereitet und nur aktiv, wenn sie beim Build konfiguriert wird: Google Analytics 4 erst nach Einwilligung im Cookie-Banner, Cloudflare Web Analytics cookielos ohne Einwilligung, beides in der Datenschutzerklärung genannt (siehe `FEATURES` in [`src/content/site.ts`](src/content/site.ts)).
 
