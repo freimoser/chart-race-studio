@@ -38,12 +38,21 @@ dist-ssr
 /index.html
 
 # Aus den Datensätzen der Live-Artikel erzeugt (scripts/build-artikel.mjs)
-/public/daten/
+# (früher /public/daten/, jetzt je Seite unten)
 
 # Aus src/content/datenformat/*.md erzeugt (scripts/build-artikel.mjs)
 /datenformat/
-/public/datenformat/
+# (früher /public/datenformat/, jetzt je Seite unten)
 
 # Exportierte Post-Videos (groß, jederzeit aus dem Studio neu erzeugbar)
 docs/linkedin/*.mp4
 intern/
+
+# Zwei Seiten in einem Repo (docs/ARCHITEKTUR.md): erzeugt von scripts/site.mjs bzw. build-artikel.mjs.
+# Die handgeschriebenen Seiten liegen in sites/<seite>/seiten/ – die Kopien in der Wurzel nie bearbeiten.
+/sites/aktiv
+/.seite-aktiv.json
+/artikel/
+/ueber-das-projekt.html
+/sites/*/public/daten/
+/sites/*/public/datenformat/

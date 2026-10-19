@@ -9,7 +9,7 @@ import { ExportPanel } from '@/components/ExportPanel'
 import { Roadmap } from '@/components/Roadmap'
 import { Consent } from '@/components/Consent'
 import { AnsichtSchalter } from '@/components/AnsichtSchalter'
-import { FEATURES } from '@/content/site'
+import { FEATURES, PROFIL, SITE } from '@/content/site'
 import { SICHTBARE_SAMPLES } from '@/content/freigabe'
 import { Wordmark } from '@/components/ui'
 import type { BrandId } from '@/lib/fonts'
@@ -128,17 +128,17 @@ export default function App() {
               Line Race, in dem Linien über die Zeit wachsen, Säulen und Linie kombiniert oder eine animierte Welt- und
               Deutschlandkarte. Heraus kommt ein MP4 in 16:9, 1:1, 4:5 oder 9:16, etwa für LinkedIn oder Präsentationen.
               Tabellen aus Excel, CSV oder ODS; wie sie aussehen müssen, steht im{' '}
-              <a className="underline hover:text-ink" href={wurzel('datenformat/')}>Datenformat</a>. Alle Grafiken von{' '}
-              <a className="underline hover:text-ink" href={wurzel()}>Tiermedizin in Zahlen</a> sind hier entstanden, jedes Beispiel lässt sich öffnen und mit eigenen Zahlen nachbauen.
+              <a className="underline hover:text-ink" href={PROFIL.datenformatUrl(wurzel())}>Datenformat</a>. Alle Grafiken von{' '}
+              <a className="underline hover:text-ink" href={wurzel()}>{SITE.name}</a> sind hier entstanden, jedes Beispiel lässt sich öffnen und mit eigenen Zahlen nachbauen.
             </span>
             Läuft komplett im Browser, keine Daten verlassen das Gerät. Diagramm-Animation mit{' '}
             <a className="underline hover:text-ink" href="https://github.com/hatemhosny/racing-bars" target="_blank" rel="noreferrer">racing-bars</a> (MIT). Open Source unter MIT.
             <br />
             <a className="underline hover:text-ink" href={wurzel()}>Startseite</a>
             {' · '}
-            <a className="underline hover:text-ink" href={wurzel('artikel/tierarztketten-deutschland.html')}>Tierarztketten</a>
+            <a className="underline hover:text-ink" href={wurzel(PROFIL.leitartikel.pfad)}>{PROFIL.leitartikel.titel}</a>
             {' · '}
-            <a className="underline hover:text-ink" href={wurzel('datenformat/')}>Datenformat</a>
+            <a className="underline hover:text-ink" href={PROFIL.datenformatUrl(wurzel())}>Datenformat</a>
             {' · '}
             <a className="underline hover:text-ink" href={wurzel('artikel/datenherkunft.html')}>Datenherkunft</a>
             {' · '}

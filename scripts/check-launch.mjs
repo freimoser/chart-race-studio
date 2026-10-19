@@ -10,6 +10,7 @@
  */
 import fs from 'node:fs'
 import path from 'node:path'
+import { sitePfad, ladeSeitenModul } from './lib/site.mjs'
 
 const DIST = 'dist'
 const blocker = []
@@ -22,7 +23,7 @@ if (!fs.existsSync(DIST)) {
 }
 
 // ---------- Rechtsangaben ----------
-const L = JSON.parse(lies('src/content/legal.json'))
+const L = JSON.parse(lies(sitePfad('content/legal.json')))
 if (!L.street) blocker.push('Impressum: Straße und Hausnummer fehlen (§ 5 DDG verlangt eine ladungsfähige Anschrift; ein unvollständiges Impressum ist abmahnfähig).')
 if (!L.zip) blocker.push('Impressum: PLZ fehlt.')
 if (!L.email && !L.phone) blocker.push('Impressum: keine Kontaktmöglichkeit hinterlegt.')
@@ -167,9 +168,9 @@ for (const p of inhaltsSeiten) {
     if (!datenDateien.has(id)) blocker.push(`${route(p)}: eingebettete Grafik „${id}“ hat keine Datei grafik-daten/${id}.json.`)
   }
 }
-const { POSTS } = await import('../src/content/roadmap.ts')
+const { POSTS } = await ladeSeitenModul('content/roadmap.ts')
 const { freigegebeneDatensaetze } = await import('../src/content/freigabe-regel.ts')
-const FREIGABE = JSON.parse(lies('src/content/freigabe.json'))
+const FREIGABE = JSON.parse(lies(sitePfad('content/freigabe.json')))
 const frei = freigegebeneDatensaetze(POSTS, FREIGABE.datensaetzeOhnePost)
 for (const id of datenDateien) {
   if (FREIGABE.beispieleErstNachVeroeffentlichung && !frei.has(id)) blocker.push(`grafik-daten/${id}.json liegt im Build, der Datensatz ist live aber nicht freigegeben.`)

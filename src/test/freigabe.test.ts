@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { sichtbarkeiten } from '@/content/freigabe'
-import type { RoadmapPost } from '@/content/roadmap'
+import type { RoadmapPost } from '@site/content/roadmap'
 
 const post = (nr: number, status: RoadmapPost['status']): RoadmapPost =>
   ({ nr, status, arc: 'praxis', title: `Post ${nr}`, hook: '', figures: [], dataStatus: 'belegt' })

@@ -12,6 +12,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { starteChrome } from './lib/cdp.mjs'
+import { PROFIL, sitePfad } from './lib/site.mjs'
 
 const arg = (name, std) => { const i = process.argv.indexOf(name); return i > 0 ? process.argv[i + 1] : std }
 const BASIS = arg('--basis', 'http://localhost:5173/').replace(/\/?$/, '/')
@@ -19,19 +20,18 @@ const FOTOS = arg('--fotos', '')
 const BREITE = Number(arg('--breite', 360))
 
 // Alle statischen Seiten aus den Indizes, dazu Studio und Plan in ihren Zuständen.
-const artikel = JSON.parse(fs.readFileSync('src/content/artikel-index.json', 'utf8')).filter((a) => a.live)
-const datenformat = JSON.parse(fs.readFileSync('src/content/datenformat-index.json', 'utf8')).filter((d) => d.bereit)
+const artikel = JSON.parse(fs.readFileSync(sitePfad('content/artikel-index.json'), 'utf8')).filter((a) => a.live)
+const datenformat = (fs.existsSync(sitePfad('content/datenformat-index.json')) ? JSON.parse(fs.readFileSync(sitePfad('content/datenformat-index.json'), 'utf8')) : []).filter((d) => d.bereit)
 const SEITEN = [
   ['start', ''],
   ['artikel-uebersicht', 'beitrag/'],
   ...artikel.map((a) => [`artikel-${a.slug}`, `beitrag/${a.slug}.html`]),
-  ['tierarztketten', 'artikel/tierarztketten-deutschland.html'],
-  ['datenherkunft', 'artikel/datenherkunft.html'],
+  ...PROFIL.seiten.map((x) => [x.name, x.pfad]),
   ...datenformat.map((d) => [`datenformat-${d.slug}`, d.pfad]),
   ['impressum', 'impressum.html'],
   ['datenschutz', 'datenschutz.html'],
   ['studio-leer', 'studio/'],
-  ['studio-beispiel', 'studio/?beispiel=geschlecht-praxis'],
+  ['studio-beispiel', `studio/?beispiel=${PROFIL.glaetteDatensaetze[0] ?? ''}`],
   ['redaktionsplan', 'studio/#redaktionsplan'],
 ]
 

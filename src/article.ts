@@ -1,7 +1,7 @@
 // Lädt das Stylesheet der Artikelseiten. Der Inhalt steht statisch im HTML,
 // damit er ohne JavaScript und für Crawler im Quelltext steht.
 import './article.css'
-import { FEATURES } from '@/content/site'
+import { FEATURES } from '@/content/features'
 import { starteEinwilligung } from '@/lib/consent'
 
 // Einwilligung für Google Analytics: nur wenn eine Messkennung konfiguriert ist. Der Pfad zur

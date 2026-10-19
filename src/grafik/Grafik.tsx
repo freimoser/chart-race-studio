@@ -41,7 +41,7 @@ function useDatensatz(id: string): SampleDataset | null | undefined {
   useEffect(() => {
     let aktiv = true
     const laden: Promise<SampleDataset | null> = !datensatzFreigegeben(id) ? Promise.resolve(null)
-      : import.meta.env.DEV ? import('@/samples').then((m) => m.SAMPLES.find((x) => x.id === id) ?? null)
+      : import.meta.env.DEV ? import('@site/samples').then((m) => m.SAMPLES.find((x) => x.id === id) ?? null)
         : fetch(`${import.meta.env.BASE_URL}grafik-daten/${encodeURIComponent(id)}.json`).then((r) => (r.ok ? r.json() : null))
     laden.then((x) => { if (aktiv) setSample(x) }, () => { if (aktiv) setSample(null) })
     return () => { aktiv = false }

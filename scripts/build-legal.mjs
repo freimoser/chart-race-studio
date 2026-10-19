@@ -12,8 +12,9 @@
  * Der Link im Footer erfüllt das vollständig; Auffindbarkeit über Google ist nicht gefordert.
  */
 import fs from 'node:fs'
+import { SITE, sitePfad } from './lib/site.mjs'
 
-const L = JSON.parse(fs.readFileSync('src/content/legal.json', 'utf8'))
+const L = JSON.parse(fs.readFileSync(sitePfad('content/legal.json'), 'utf8'))
 const env = process.env
 const ga = env.VITE_GA_ID || ''
 const cf = env.VITE_CF_BEACON || ''
@@ -29,7 +30,7 @@ function nummerieren(abschnitte) {
 
 const anschrift = hatAnschrift
   ? `<p>${esc(L.operator)}<br />${L.companyName ? esc(L.companyName) + '<br />' : ''}${esc(L.street)}<br />${esc(L.zip)} ${esc(L.city)}<br />${esc(L.country)}</p>`
-  : `<p class="warnung">Anschrift fehlt. Vor dem öffentlichen Betrieb in <code>src/content/legal.json</code> eintragen – § 5 DDG verlangt eine ladungsfähige Anschrift. <code>npm run check:launch</code> meldet das als Blocker.</p>`
+  : `<p class="warnung">Anschrift fehlt. Vor dem öffentlichen Betrieb in <code>sites/${SITE}/content/legal.json</code> eintragen – § 5 DDG verlangt eine ladungsfähige Anschrift. <code>npm run check:launch</code> meldet das als Blocker.</p>`
 
 const seite = (titel, beschreibung, inhalt) => `<!doctype html>
 <html lang="de" data-brand="klar">

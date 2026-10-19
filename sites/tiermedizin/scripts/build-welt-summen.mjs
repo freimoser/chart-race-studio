@@ -2,9 +2,9 @@
  * Ergänzt den Weltdatensatz (data/raw/ds13-hund-katze-welt.json) um die Summenspalten
  * „Summe: Hunde (Mio.)“ und „Summe: Katzen (Mio.)“ – die Mini-Linie im Kartenpanel.
  *
- *   node scripts/build-welt-summen.mjs && node scripts/build-samples.mjs
+ *   node sites/tiermedizin/scripts/build-welt-summen.mjs && node sites/tiermedizin/scripts/build-samples.mjs
  *
- * Quelle der absoluten Zahlen: data/raw/ds13-weltsummen-quelle.csv (Auszug aus
+ * Quelle der absoluten Zahlen: sites/tiermedizin/data/raw/ds13-weltsummen-quelle.csv (Auszug aus
  * cats_vs_dogs_2000_2026_combined.csv: Jahr, Land, Hunde und Katzen in Mio.).
  *
  * China und Brasilien werden hier genauso korrigiert wie die Anteile im Datensatz, sonst
@@ -17,11 +17,11 @@
  */
 import fs from 'node:fs'
 
-const DS = 'data/raw/ds13-hund-katze-welt.json'
+const DS = 'sites/tiermedizin/data/raw/ds13-hund-katze-welt.json'
 const ds = JSON.parse(fs.readFileSync(DS, 'utf8'))
 // Ländernamen wie „Korea, Republic of“ stehen in Anführungszeichen – ein naives split(',') zerlegt sie.
 const felder = (z) => [...z.matchAll(/("([^"]*(?:""[^"]*)*)"|[^,]*)(,|$)/g)].slice(0, -1).map((m) => m[2] != null ? m[2].replace(/""/g, '"') : m[1])
-const [kopf, ...zeilen] = fs.readFileSync('data/raw/ds13-weltsummen-quelle.csv', 'utf8').trim().split(/\r?\n/).map(felder)
+const [kopf, ...zeilen] = fs.readFileSync('sites/tiermedizin/data/raw/ds13-weltsummen-quelle.csv', 'utf8').trim().split(/\r?\n/).map(felder)
 const I = Object.fromEntries(kopf.map((k, i) => [k, i]))
 const quelle = new Map() // "Jahr|Land" -> [hunde, katzen]
 for (const z of zeilen) quelle.set(`${z[I.year]}|${z[I.country]}`, [Number(z[I.dogs_m]), Number(z[I.cats_m])])

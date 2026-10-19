@@ -1,4 +1,4 @@
-// Automatisch erzeugt von scripts/build-samples.mjs aus data/raw/*.json – nicht von Hand editieren.
+// Automatisch erzeugt von sites/tiermedizin/scripts/build-samples.mjs aus sites/tiermedizin/data/raw/*.json – nicht von Hand editieren.
 /* eslint-disable */
 export const TIERAERZTE_BUNDESLAND = {
   headers: ["Jahr","Baden-Württemberg","Bayern","Berlin","Brandenburg","Bremen","Hamburg","Hessen","Mecklenburg-Vorpommern","Niedersachsen","Nordrhein-Westfalen","Rheinland-Pfalz","Saarland","Sachsen","Sachsen-Anhalt","Schleswig-Holstein","Thüringen"],

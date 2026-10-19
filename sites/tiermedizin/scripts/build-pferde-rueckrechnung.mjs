@@ -1,5 +1,5 @@
 // Rückrechnung der sieben Praxisarten der BTK auf 2010–2018 (Pferde getrennt erst ab 2019).
-// Aufruf: node scripts/build-pferde-rueckrechnung.mjs  → schreibt data/raw/ds21-pferde-nutztiere.json
+// Aufruf: node sites/tiermedizin/scripts/build-pferde-rueckrechnung.mjs  → schreibt sites/tiermedizin/data/raw/ds21-pferde-nutztiere.json
 //
 // Bis 2018 kennt die Statistik drei Praxisarten (Kleintiere; Nutztiere einschließlich Pferde; Nutztiere und
 // Kleintiere), ab 2019 sieben. Die Rechnung in zwei Schritten, Begründung in der Rohdatei (methode):
@@ -15,7 +15,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 
-const raw = (f) => JSON.parse(fs.readFileSync(path.join('data/raw', f), 'utf8'))
+const raw = (f) => JSON.parse(fs.readFileSync(path.join('sites/tiermedizin/data/raw', f), 'utf8'))
 const d8 = raw('ds8-praxisarten-1996-2025.json'), d9 = raw('ds9-fachtieraerzte.json'), d1 = raw('ds1-tieraerzte.json')
 
 const K = 'Kleintiere', P = 'Pferde', N = 'Nutztiere', KP = 'Kleintiere und Pferde', NP = 'Nutztiere und Pferde',
@@ -91,7 +91,7 @@ const out = {
   parameter: { f: +f.toFixed(4), pool2019: +pool19.toFixed(4), anteilNP2019: +anteilNP.toFixed(4), pferdeImPool2019: +pferdeImPool(2019).toFixed(4), trendJeJahr: +trend.toFixed(4), quote2019: +quote(2019).toFixed(4) },
   rows,
 }
-fs.writeFileSync('data/raw/ds21-pferde-nutztiere.json', JSON.stringify(out, null, 1) + '\n')
+fs.writeFileSync('sites/tiermedizin/data/raw/ds21-pferde-nutztiere.json', JSON.stringify(out, null, 1) + '\n')
 for (let y = 2010; y <= 2025; y++) {
   const z = (n) => rows.find((r) => r.date === String(y) && r.name === n)
   console.log(y, NEU.map((n) => `${n.slice(0, 6)} ${z(n).value}`).join(' | '), z(P).spanne ? `Spanne ${z(P).spanne.join('–')}` : '')

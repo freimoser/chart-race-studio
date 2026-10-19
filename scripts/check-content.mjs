@@ -8,13 +8,14 @@
  * ungeprüfte Textbausteine (Platzhalter, Dubletten).
  */
 import fs from 'node:fs'
+import { sitePfad } from './lib/site.mjs'
 
 const lies = (f) => fs.readFileSync(f, 'utf8')
 const befunde = []
 const melde = (schwere, bereich, text) => befunde.push({ schwere, bereich, text })
 
 // ---------- Redaktionsplan ----------
-const rm = lies('src/content/roadmap.ts')
+const rm = lies(sitePfad('content/roadmap.ts'))
 const bloecke = rm.split('  {\n    nr: ').slice(1)
 const posts = bloecke.map((b) => {
   const g = (re) => (b.match(re) ?? [])[1]
@@ -50,7 +51,7 @@ for (let i = 0; i < posts.length; i++) {
 }
 
 // ---------- Datensätze ----------
-const sm = lies('src/samples/index.ts')
+const sm = lies(sitePfad('samples/index.ts'))
 for (const b of sm.split('    id: ').slice(1)) {
   const id = (b.match(/^'(.*?)'/) ?? [])[1]
   // Einfache und doppelte Anführungszeichen: neuere Datensätze stehen in '…', ältere in "…"
@@ -79,8 +80,8 @@ for (const f of fs.existsSync('artikel') ? fs.readdirSync('artikel').filter((x) 
 
 // ---------- Artikelentwürfe zur Post-Reihe ----------
 // Nicht die gebauten Seiten, sondern die Quellen: Die meisten Entwürfe sind noch nicht online,
-// sollen aber schon jetzt die Regeln aus src/content/artikel/README.md einhalten.
-const AD = 'src/content/artikel'
+// sollen aber schon jetzt die Regeln aus sites/<seite>/content/artikel/README.md einhalten.
+const AD = sitePfad('content/artikel')
 const entwuerfe = fs.existsSync(AD) ? fs.readdirSync(AD).filter((x) => /^\d{2,}-.*\.md$/.test(x)) : []
 // Anleitungen: eigene Pflichtabschnitte, kein Post
 for (const f of fs.existsSync(AD) ? fs.readdirSync(AD).filter((x) => /^anleitung-.*\.md$/.test(x)) : []) {
@@ -93,7 +94,7 @@ for (const f of fs.existsSync(AD) ? fs.readdirSync(AD).filter((x) => /^anleitung
     if (!text.includes(pflicht)) melde('mangel', `Anleitung ${f}`, `Abschnitt „${pflicht.slice(3)}“ fehlt`)
   }
   for (const [, bild] of text.matchAll(/!\[[^\]]*\]\(([^)]+)\)/g)) {
-    if (!fs.existsSync(`public/beitrag/${bild}`)) melde('mangel', `Anleitung ${f}`, `Bild ${bild} fehlt – node scripts/screenshots-anleitung.mjs`)
+    if (!fs.existsSync(sitePfad(`public/beitrag/${bild}`))) melde('mangel', `Anleitung ${f}`, `Bild ${bild} fehlt – node scripts/screenshots-anleitung.mjs`)
   }
 }
 const mitArtikel = new Set()
@@ -122,7 +123,7 @@ for (const p of posts) {
 }
 
 // ---------- Platzhalter ----------
-for (const f of ['src/content/roadmap.ts', 'src/samples/index.ts', 'src/content/site.ts']) {
+for (const f of [sitePfad('content/roadmap.ts'), sitePfad('samples/index.ts'), sitePfad('profil.ts'), 'src/content/site.ts']) {
   for (const [i, z] of lies(f).split('\n').entries()) {
     if (/\b(TODO|TBD|FIXME|Lorem ipsum|Platzhalter)\b/.test(z)) melde('hinweis', `${f}:${i + 1}`, 'Platzhalter im Text')
   }

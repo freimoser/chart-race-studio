@@ -1,5 +1,5 @@
 /*
- * Erzeugt alle Favicon-Größen aus einer Quelle: public/favicon.svg.
+ * Erzeugt alle Favicon-Größen aus einer Quelle: sites/<seite>/public/favicon.svg (SITE=… wählt die Seite).
  * Aufruf: npm run icons
  *
  * Warum selbst rastern und keine Bibliothek: Das Symbol besteht aus vier abgerundeten
@@ -12,8 +12,10 @@
  */
 import fs from 'node:fs'
 import zlib from 'node:zlib'
+import { sitePfad } from './lib/site.mjs'
 
-const SVG = 'public/favicon.svg'
+const PUB = sitePfad('public')
+const SVG = `${PUB}/favicon.svg`
 const quelle = fs.readFileSync(SVG, 'utf8')
 const viewBox = +(quelle.match(/viewBox="0 0 (\d+)/)?.[1] ?? 28)
 
@@ -98,8 +100,8 @@ function ico(pngBuf, size) {
 
 const ziele = { 'favicon-32.png': 32, 'favicon-96.png': 96, 'apple-touch-icon.png': 180 }
 for (const [datei, size] of Object.entries(ziele)) {
-  fs.writeFileSync(`public/${datei}`, png(size))
-  console.log(`public/${datei} · ${size}×${size} · ${(fs.statSync(`public/${datei}`).size / 1024).toFixed(1)} kB`)
+  fs.writeFileSync(`${PUB}/${datei}`, png(size))
+  console.log(`${PUB}/${datei} · ${size}×${size} · ${(fs.statSync(`${PUB}/${datei}`).size / 1024).toFixed(1)} kB`)
 }
-fs.writeFileSync('public/favicon.ico', ico(png(32), 32))
-console.log(`public/favicon.ico · 32×32 · ${(fs.statSync('public/favicon.ico').size / 1024).toFixed(1)} kB`)
+fs.writeFileSync(`${PUB}/favicon.ico`, ico(png(32), 32))
+console.log(`${PUB}/favicon.ico · 32×32 · ${(fs.statSync(`${PUB}/favicon.ico`).size / 1024).toFixed(1)} kB`)

@@ -1,4 +1,4 @@
-import type { RoadmapPost } from './roadmap.ts'
+import type { RoadmapPost } from '@site/content/roadmap.ts'
 
 /**
  * Datensätze, die live angeboten werden: aus veröffentlichten Posts, dem aktuellen und aus Posts mit

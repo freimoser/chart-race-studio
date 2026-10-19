@@ -64,15 +64,8 @@ export interface Dataset {
   issues: DataIssue[]
 }
 
-/** Rubriken, nach denen die Beispiele in der Oberfläche gruppiert werden. */
-export const SAMPLE_CATEGORIES = [
-  { id: 'praxis', label: 'Tierarztpraxen & Beruf' },
-  { id: 'heimtiere', label: 'Heimtiere & Markt' },
-  { id: 'nutztiere', label: 'Nutztiere' },
-  { id: 'exkurs', label: 'Exkurs: über die Tiermedizin hinaus' },
-] as const
-
-export type SampleCategory = (typeof SAMPLE_CATEGORIES)[number]['id']
+/** Rubrik eines Beispiel-Datensatzes. Welche es gibt, legt das Profil der Seite fest (`rubriken`). */
+export type SampleCategory = string
 
 export interface SampleDataset {
   id: string

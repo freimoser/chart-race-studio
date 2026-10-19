@@ -1,10 +1,10 @@
 import { useMemo, useState } from 'react'
 import { ArrowUpRight, CheckCircle2, CircleDashed, Clock3, FileText, Link2, PlayCircle } from 'lucide-react'
-import { ARCS, POSTS, POSTS_JE_VISITE, VISITEN, visiteVon, type DataStatus, type RoadmapPost } from '@/content/roadmap'
+import { ARCS, POSTS, POSTS_JE_VISITE, VISITEN, visiteVon, type DataStatus, type RoadmapPost } from '@site/content/roadmap'
 import { ARTIKEL, LIVE_ANSICHT, datensatzFreigegeben, sichtbarkeitVon, type Sichtbarkeit } from '@/content/freigabe'
-import { SAMPLES } from '@/samples'
+import { SAMPLES } from '@site/samples'
 import { useApp } from '@/state/store'
-import { LEGAL, SITE } from '@/content/site'
+import { LEGAL, PROFIL, SITE } from '@/content/site'
 import { wurzel } from '@/lib/pfade'
 
 const DATA_LABEL: Record<DataStatus, string> = {
@@ -110,14 +110,11 @@ export function Roadmap({ onOpenStudio }: { onOpenStudio: () => void }) {
         <p className="mb-6 border-l-2 border-primary pl-4 text-sm italic text-ink-muted">{ARCS.find((a) => a.id === arc)?.claim}</p>
       )}
 
-      {visite === 1 && (arc === 'alle' || arc === 'ketten') && (
-        <a href={wurzel('artikel/tierarztketten-deutschland.html')} className="card mb-6 block p-4 transition-colors hover:border-primary">
+      {visite === 1 && (arc === 'alle' || arc === PROFIL.leitartikel.kapitel) && (
+        <a href={wurzel(PROFIL.leitartikel.pfad)} className="card mb-6 block p-4 transition-colors hover:border-primary">
           <span className="text-[11px] font-medium tracking-wide text-ink-faint uppercase">Artikel</span>
-          <span className="mt-1 block text-base font-semibold text-ink">Wer betreibt die Tierarztpraxen in Deutschland?</span>
-          <span className="mt-1 block text-[13px] leading-relaxed text-ink-muted">
-            Die Langfassung zu den Posts 6 bis 10: 13 Gruppen mit belegten Standortzahlen, die einzige verfügbare
-            Gesamtzahl aus dem Tierärzte Atlas und die Abgrenzung zu Einkaufsnetzwerken wie VetFamily.
-          </span>
+          <span className="mt-1 block text-base font-semibold text-ink">{PROFIL.leitartikel.frage}</span>
+          <span className="mt-1 block text-[13px] leading-relaxed text-ink-muted">{PROFIL.leitartikel.planText}</span>
         </a>
       )}
 
@@ -205,21 +202,21 @@ export function Roadmap({ onOpenStudio }: { onOpenStudio: () => void }) {
 
       <p className="mt-10 text-[12px] leading-relaxed text-ink-faint">
         Alle Zahlen stammen aus den Beispiel-Datensätzen dieser Seite und den dort genannten Quellen. Datenlage, Lücken und
-        Methodenbrüche stehen je Datensatz unter „Dateninfo“ im Studio und ausführlich in <code>docs/DATASETS.md</code>.
+        Methodenbrüche stehen je Datensatz unter „Dateninfo“ im Studio und ausführlich in <code>sites/{PROFIL.id}/docs/DATASETS.md</code>.
       </p>
 
       <section id="ueber" className="mt-12 border-t border-line pt-8">
         <h2 className="text-lg font-semibold text-ink">Über diese Seite</h2>
         <p className="mt-2 max-w-3xl text-sm leading-relaxed text-ink-muted">
-          {SITE.name} ist ein privates Projekt von {LEGAL.operator}: Zahlen zur deutschen Tiermedizin, jede mit Quelle, und das Studio,
+          {SITE.name} ist ein privates Projekt von {LEGAL.operator}: {PROFIL.thema}, jede mit Quelle, und das Studio,
           mit dem aus einer Tabelle ein fertiges Video für den Feed wird. Das Studio läuft vollständig im Browser, ist Open Source unter der MIT-Lizenz, und die Diagramm-Animation basiert auf{' '}
           <a className="underline hover:text-ink" href="https://github.com/hatemhosny/racing-bars" target="_blank" rel="noreferrer">racing-bars</a> (MIT).
         </p>
         <p className="mt-3 text-[13px] text-ink-muted">
-          <a className="underline hover:text-ink" href={wurzel('artikel/tierarztketten-deutschland.html')}>Artikel: Wer betreibt die Tierarztpraxen?</a>
+          <a className="underline hover:text-ink" href={wurzel(PROFIL.leitartikel.pfad)}>Artikel: {PROFIL.leitartikel.frage}</a>
           {' · '}
-          {ARTIKEL.some((x) => x.live) && (<><a className="underline hover:text-ink" href={wurzel('beitrag/')}>Tiermedizin in Zahlen: alle Artikel</a>{' · '}</>)}
-          <a className="underline hover:text-ink" href={wurzel('datenformat/')}>Datenformat</a>
+          {ARTIKEL.some((x) => x.live) && (<><a className="underline hover:text-ink" href={wurzel('beitrag/')}>{SITE.name}: alle Artikel</a>{' · '}</>)}
+          <a className="underline hover:text-ink" href={PROFIL.datenformatUrl(wurzel())}>Datenformat</a>
             {' · '}
             <a className="underline hover:text-ink" href={wurzel('artikel/datenherkunft.html')}>Datenherkunft</a>
           {' · '}

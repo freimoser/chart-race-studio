@@ -2,11 +2,11 @@
  * Statische Bilder für Posts ohne Zeitreihe (eine Erhebung, ein Jahr): 1080 × 1350 (4:5, LinkedIn und Instagram),
  * im Stil der Studio-Grafiken. Für Zeitreihen bleibt das Studio zuständig.
  *
- *   node scripts/balkenbild.mjs docs/linkedin/grafik-ueberstunden.json     → grafik-ueberstunden.png
- *   node scripts/balkenbild.mjs docs/linkedin/karussell-ueberstunden.json  → karussell-ueberstunden-1.png … und .pdf
- *   node scripts/balkenbild.mjs docs/linkedin/karussell-ueberstunden.json --web public/beitrag/ueberstunden
+ *   node sites/tiermedizin/scripts/balkenbild.mjs sites/tiermedizin/docs/linkedin/grafik-ueberstunden.json     → grafik-ueberstunden.png
+ *   node sites/tiermedizin/scripts/balkenbild.mjs sites/tiermedizin/docs/linkedin/karussell-ueberstunden.json  → karussell-ueberstunden-1.png … und .pdf
+ *   node sites/tiermedizin/scripts/balkenbild.mjs sites/tiermedizin/docs/linkedin/karussell-ueberstunden.json --web sites/tiermedizin/public/beitrag/ueberstunden
  *                                                    → 1.png/1.webp … für den Artikel, ohne Zähler und „wischen“
- *   node scripts/balkenbild.mjs docs/linkedin/karussell-gehalt.json --reel → karussell-gehalt-reel-1.png … (Zähler ohne „wischen“)
+ *   node sites/tiermedizin/scripts/balkenbild.mjs sites/tiermedizin/docs/linkedin/karussell-gehalt.json --reel → karussell-gehalt-reel-1.png … (Zähler ohne „wischen“)
  *
  * Eine Datei beschreibt ein Bild oder mit `folien: [...]` ein Karussell. Das PDF ist für LinkedIn (Karussell als
  * Dokument), die PNGs für Instagram. Eine Folie mit `aus: "<datei>.json"` übernimmt ein vorhandenes Einzelbild, so
@@ -34,9 +34,9 @@ const quelle = process.argv[2]
 const webZiel = process.argv.includes('--web') ? process.argv[process.argv.indexOf('--web') + 1] : null
 // --reel: Bilder für ein Video (Reel) mit Leiste und Zähler, aber ohne „wischen“ und ohne PDF: <name>-reel-1.png …
 const reel = process.argv.includes('--reel')
-if (!quelle) { console.error('Aufruf: node scripts/balkenbild.mjs <spec.json>'); process.exit(1) }
+if (!quelle) { console.error('Aufruf: node sites/tiermedizin/scripts/balkenbild.mjs <spec.json>'); process.exit(1) }
 
-const L = JSON.parse(fs.readFileSync('src/content/legal.json', 'utf8'))
+const L = JSON.parse(fs.readFileSync('sites/tiermedizin/content/legal.json', 'utf8'))
 const lies = (f) => JSON.parse(fs.readFileSync(f, 'utf8'))
 const S = lies(quelle)
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')

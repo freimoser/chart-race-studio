@@ -9,7 +9,8 @@
  * eine ladungsfähige Anschrift; ein unvollständiges Impressum ist in Deutschland
  * abmahnfähig. `npm run check:launch` meldet das als Blocker.
  */
-import legal from './legal.json'
+import legal from '@site/content/legal.json'
+import profil from '@site/profil.ts'
 
 /**
  * Angaben nach § 5 DDG. Einzige Quelle – Impressum, Datenschutz und Footer lesen hieraus,
@@ -35,26 +36,19 @@ import legal from './legal.json'
  */
 export const LEGAL = legal
 
+/** Profil der Seite, für die gebaut wird (sites/<SITE>/profil.ts, docs/ARCHITEKTUR.md). */
+export const PROFIL = profil
+
 export const SITE = {
   /** Markenname: einzige Quelle ist siteName in legal.json – dort ändern, nicht hier. */
   name: legal.siteName,
+  domain: profil.domain,
   tagline: 'Aus einer Tabelle wird ein Video für den Feed.',
   /** Wird für Sitemap, robots.txt und die kanonische URL gebraucht. Nach dem ersten Deploy eintragen. */
   url: import.meta.env.VITE_SITE_URL ?? '',
 } as const
 
-/**
- * Integrationen. Alles optional: Was nicht konfiguriert ist, erscheint nicht –
- * kein „wird gerade eingerichtet“, sondern schlicht nichts.
- * Gesetzt werden die Werte als Build-Variablen (.env.local lokal, Repository-Variablen in Actions).
- */
-export const FEATURES = {
-  /** Google Analytics 4, Messkennung „G-XXXXXXX“. Setzt Cookies → nur nach Einwilligung. */
-  gaId: import.meta.env.VITE_GA_ID ?? '',
-  /** Cloudflare Web Analytics, Token aus dem Dashboard. Cookielos → ohne Einwilligung, aber in der Datenschutzerklärung genannt. */
-  cloudflareToken: import.meta.env.VITE_CF_BEACON ?? '',
-  /** Inhalt des google-site-verification-Meta-Tags für die Search Console. */
-  searchConsole: import.meta.env.VITE_GSC_VERIFICATION ?? '',
-} as const
+/** Integrationen (GA4, Cloudflare, Search Console) – eigene Datei, damit Artikelseiten nicht das ganze Profil laden. */
+export { FEATURES } from './features'
 
 export const hatAnschrift = () => Boolean(LEGAL.street && LEGAL.zip)

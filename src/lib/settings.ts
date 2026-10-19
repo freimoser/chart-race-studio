@@ -1,5 +1,6 @@
 import type { FormatId } from './formats'
 import type { GapFill } from './data/types'
+import { PROFIL } from '@/content/site'
 
 export type ChartType = 'bar' | 'line' | 'map' | 'combo'
 export type Corner = 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right'
@@ -117,7 +118,7 @@ export const DEFAULT_SETTINGS: ChartSettings = {
   compact: false,
   watermarkEnabled: true,
   // Jedes Video trägt die Adresse der Seite (Regel seit 09.10.2026, CLAUDE.md). Im Studio änderbar.
-  watermarkText: 'tiermedizin-in-zahlen.org',
+  watermarkText: PROFIL.domain,
   watermarkPosition: 'bottom-right',
   watermarkOpacity: 0.7,
   watermarkScale: 1,

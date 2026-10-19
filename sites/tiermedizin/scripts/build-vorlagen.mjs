@@ -1,15 +1,15 @@
 /*
- * Erzeugt die Vorlagen zum Datenstandard (docs/DATENSTANDARD.md) in public/vorlagen/, je als
+ * Erzeugt die Vorlagen zum Datenstandard (docs/DATENSTANDARD.md) in sites/tiermedizin/public/vorlagen/, je als
  * Excel und CSV. Die Inhalte sind echte Auszüge unserer Datensätze, keine Fantasiewerte – wer eine
  * Vorlage lädt, sieht im Studio sofort ein funktionierendes Ergebnis.
  *
- *   node scripts/build-vorlagen.mjs
+ *   node sites/tiermedizin/scripts/build-vorlagen.mjs
  */
 import fs from 'node:fs'
 import * as XLSX from 'xlsx'
-import { HUND_KATZE_WELT, INHABER_ANGESTELLTE, TIERAERZTE_BUNDESLAND } from '../src/samples/data.ts'
+import { HUND_KATZE_WELT, INHABER_ANGESTELLTE, TIERAERZTE_BUNDESLAND } from '../samples/data.ts'
 
-const ZIEL = 'public/vorlagen'
+const ZIEL = 'sites/tiermedizin/public/vorlagen'
 fs.mkdirSync(ZIEL, { recursive: true })
 
 // Weltkarte: bewusst gemischte Schreibweisen, um zu zeigen, dass Deutsch, Englisch und ISO-Code gelten.

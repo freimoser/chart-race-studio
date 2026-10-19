@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { FEATURES } from '@/content/site'
+import { FEATURES } from '@/content/features'
 import { wurzel } from '@/lib/pfade'
 import { ladeAnalytics, liesEinwilligung, loescheEinwilligung, schreibEinwilligung } from '@/lib/consent'
 

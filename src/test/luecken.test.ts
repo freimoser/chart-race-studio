@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { SAMPLES } from '@/samples'
+import { SAMPLES } from '@site/samples'
 
 /**
  * Regel „Lückenlose Reihen“ (docs/DATENSTANDARD.md, Abschnitt 7; CLAUDE.md): Jede Reihe eines eigenen Datensatzes

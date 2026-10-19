@@ -4,13 +4,25 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { resolve } from 'node:path'
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
+import { pathToFileURL } from 'node:url'
+import { freigegebeneDatensaetze } from './src/content/freigabe-regel.ts'
+import type { SeitenProfil } from './src/content/profil.ts'
+import type { SampleDataset } from './src/lib/data/types.ts'
+import type { RoadmapPost } from '@site/content/roadmap.ts'
+
+// Welche Seite gebaut wird (docs/ARCHITEKTUR.md). Alles Seitenspezifische kommt aus sites/<SITE>/:
+// Profil (Texte, Domain, Navigation), Inhalte, Datensätze und der Ordner public/.
+const SITE = process.env.SITE || 'tiermedizin'
+const SITE_DIR = resolve(import.meta.dirname, 'sites', SITE)
+const seite = (rel: string) => resolve(SITE_DIR, rel)
+const ladeSeite = (rel: string) => import(pathToFileURL(seite(rel)).href)
+const PROFIL: SeitenProfil = (await ladeSeite('profil.ts')).default
+const { SAMPLES } = (await ladeSeite('samples/index.ts')) as { SAMPLES: SampleDataset[] }
+const { POSTS } = (await ladeSeite('content/roadmap.ts')) as { POSTS: RoadmapPost[] }
 
 // Markenname aus einer einzigen Quelle – die Rechtsseiten, Artikel, Oberfläche und diese Datei lesen alle legal.json.
-import { SAMPLES } from './src/samples/index.ts'
-import { POSTS } from './src/content/roadmap.ts'
-import { freigegebeneDatensaetze } from './src/content/freigabe-regel.ts'
-const MARKE: string = JSON.parse(readFileSync('src/content/legal.json', 'utf8')).siteName
-const FREIGABE: { beispieleErstNachVeroeffentlichung: boolean; datensaetzeOhnePost?: string[] } = JSON.parse(readFileSync('src/content/freigabe.json', 'utf8'))
+const MARKE: string = JSON.parse(readFileSync(seite('content/legal.json'), 'utf8')).siteName
+const FREIGABE: { beispieleErstNachVeroeffentlichung: boolean; datensaetzeOhnePost?: string[] } = JSON.parse(readFileSync(seite('content/freigabe.json'), 'utf8'))
 
 // BASE_PATH wird im GitHub-Actions-Workflow auf "/<repo-name>/" gesetzt.
 // Lokal bleibt es "/".
@@ -21,13 +33,13 @@ const base = process.env.BASE_PATH ?? '/'
  * freigegeben ist, liegt als Datei in beitrag/ – Entwürfe in beitrag/entwurf/ werden nie gebaut.
  */
 interface Beitrag { post: number; slug: string; titel: string; beschreibung: string; frage: string; stand: string; geaendert?: string; live: boolean }
-const BEITRAEGE: Beitrag[] = (JSON.parse(readFileSync('src/content/artikel-index.json', 'utf8')) as Beitrag[])
+const BEITRAEGE: Beitrag[] = (JSON.parse(readFileSync(seite('content/artikel-index.json'), 'utf8')) as Beitrag[])
   .filter((b) => b.live && existsSync(`beitrag/${b.slug}.html`))
 
 /** Bereich „Datenformat“: Hauptseite und Unterseiten je Diagrammart, ebenfalls von scripts/build-artikel.mjs erzeugt. */
 interface DatenformatSeite { slug: string; pfad: string; titel: string; menue: string; beschreibung: string; frage: string; stand: string; bereit: boolean }
-const DATENFORMAT: DatenformatSeite[] = existsSync('src/content/datenformat-index.json')
-  ? (JSON.parse(readFileSync('src/content/datenformat-index.json', 'utf8')) as DatenformatSeite[])
+const DATENFORMAT: DatenformatSeite[] = existsSync(seite('content/datenformat-index.json'))
+  ? (JSON.parse(readFileSync(seite('content/datenformat-index.json'), 'utf8')) as DatenformatSeite[])
     .filter((d) => d.bereit && existsSync(`datenformat/${d.slug === 'index' ? 'index' : d.slug}.html`))
   : []
 
@@ -50,11 +62,7 @@ function rahmenKopf(hoch: string, seitePfad = '') {
       <div class="wrap">
         <a class="marke" href="${hoch}">${ZEICHEN}<span>${MARKE}</span></a>
         <nav aria-label="Hauptnavigation">
-          <a href="${hoch}beitrag/"${aktiv('beitrag/')}>Artikel</a>
-          <a href="${hoch}datenformat/"${aktiv('datenformat/')}>Datenformat</a>
-          <a href="${hoch}artikel/datenherkunft.html"${aktiv('artikel/datenherkunft')}>Datenherkunft</a>
-          <a class="breit" href="${hoch}studio/#redaktionsplan">Redaktionsplan</a>
-          <a class="studio" href="${hoch}studio/">Studio</a>
+          ${PROFIL.navigation(hoch, aktiv)}
         </nav>
       </div>
     </header>`
@@ -62,12 +70,11 @@ function rahmenKopf(hoch: string, seitePfad = '') {
 function rahmenFuss(hoch: string, cookieWahl: boolean) {
   return `<footer class="seite">
       <div class="wrap">
-        <p><strong>${MARKE}</strong> · Zahlen zu Tierärzten, Praxen und Haustieren in Deutschland, jede mit Quelle. Ein privates Projekt von Thomas Freimoser.</p>
+        <p><strong>${MARKE}</strong> · ${PROFIL.fussText}</p>
         <p>
-          <a href="${hoch}">Startseite</a> · <a href="${hoch}beitrag/">Alle Artikel</a> · <a href="${hoch}artikel/tierarztketten-deutschland.html">Tierarztketten</a> ·
-          <a href="${hoch}datenformat/">Datenformat</a> · <a href="${hoch}artikel/datenherkunft.html">Datenherkunft</a> · <a href="${hoch}studio/#redaktionsplan">Redaktionsplan</a> · <a href="${hoch}studio/">Studio</a>
+          ${PROFIL.fussLinks(hoch)}
         </p>
-        <p>Schwesterseite: <a href="https://tiermedizin-in-digital.org/">Tiermedizin in digital</a> – welche digitalen Lösungen es für Tierarztpraxen gibt, vom selben Herausgeber.</p>
+        <p>${PROFIL.schwester}</p>
         <p class="recht"><a href="${hoch}ueber-das-projekt.html">Über das Projekt</a> · <a href="${hoch}impressum.html">Impressum</a> · <a href="${hoch}datenschutz.html">Datenschutz</a>${cookieWahl ? ' · <button type="button" data-consent-reset>Cookie-Auswahl</button>' : ''}</p>
       </div>
     </footer>`
@@ -78,7 +85,10 @@ function integrationen(env: Record<string, string>) {
     name: 'crs-integrationen',
     transformIndexHtml(html: string, ctx: { path?: string; filename?: string }) {
       html = html.replaceAll('%SITE_NAME%', MARKE)
+      html = html.replaceAll('%SITE_THEMA%', PROFIL.thema)
       html = html.replaceAll('%BASE%', base)
+      // Farbrichtung und Browserfarbe der Seite; die Vorlagen tragen die der Tiermedizin.
+      html = html.replace('data-brand="klar"', `data-brand="${PROFIL.marke}"`).replace('<meta name="theme-color" content="#0f3b3d" />', `<meta name="theme-color" content="${PROFIL.themeColor}" />`)
       // Kopf und Fuß aller statischen Seiten aus einer Quelle. Die Seiten tragen nur Platzhalter;
       // die Pfade richten sich nach der Ordnertiefe, die 404-Seite bekommt absolute Pfade, weil
       // GitHub Pages sie unter jeder beliebigen Adresse ausliefert.
@@ -94,7 +104,10 @@ function integrationen(env: Record<string, string>) {
       // Index. Seiten mit noindex bekommen keines, sie sollen gar nicht indexiert werden.
       const pfad = (ctx.path ?? '/').replace(/^\/+/, '').replace(/(^|\/)$/, '$1index.html')
       // Ohne Canonical: Rechtstexte und 404 (noindex) sowie die internen Rahmen für Grafik und Export.
-      const istRecht = /^(impressum|datenschutz|404|grafik|export)\.html$/.test(pfad)
+      // Das Studio wird nur auf einer Seite indexiert (PROFIL.studioIndexieren), sonst stünde dasselbe Werkzeug doppelt im Index.
+      const studioVerborgen = pfad === 'studio/index.html' && !PROFIL.studioIndexieren
+      const istRecht = /^(impressum|datenschutz|404|grafik|export)\.html$/.test(pfad) || studioVerborgen
+      if (studioVerborgen) tags.push('<meta name="robots" content="noindex, follow" />')
       if (env.VITE_SITE_URL && !istRecht) {
         const basis = env.VITE_SITE_URL.replace(/\/$/, '')
         // …/index.html kanonisch als Verzeichnis, damit /beitrag/ und /beitrag/index.html nicht
@@ -116,8 +129,8 @@ function integrationen(env: Record<string, string>) {
       // Startseite: WebSite-Auszeichnung. Herausgeber ist die Person, keine Organisation – die Seite wird privat betrieben.
       if (pfad === 'index.html' && env.VITE_SITE_URL) tags.push(`<script type="application/ld+json">${JSON.stringify({
         '@context': 'https://schema.org', '@type': 'WebSite', name: MARKE, url: env.VITE_SITE_URL.replace(/\/$/, '') + '/', inLanguage: 'de-DE',
-        description: 'Zahlen zu Tierärzten, Tierarztpraxen und Haustieren in Deutschland, jede mit Jahr und Quelle.',
-        publisher: { '@type': 'Person', name: 'Thomas Freimoser', url: env.VITE_SITE_URL.replace(/\/$/, '') + '/ueber-das-projekt.html', sameAs: ['https://www.linkedin.com/in/thomas-freimoser'] },
+        description: PROFIL.beschreibung,
+        publisher: { '@type': 'Person', name: PROFIL.autor.name, url: env.VITE_SITE_URL.replace(/\/$/, '') + '/ueber-das-projekt.html', sameAs: PROFIL.autor.sameAs, ...PROFIL.autor.extra },
       })}</script>`)
       // Studio: KI-Crawler wie GPTBot, ClaudeBot oder PerplexityBot führen kein JavaScript aus
       // und sähen sonst ein leeres <div id="root">. React ersetzt diesen Inhalt beim Start.
@@ -127,7 +140,7 @@ function integrationen(env: Record<string, string>) {
       <p>Aus einer Tabelle wird ein animiertes Diagramm als MP4: Bar Race, Line Race oder animierte Karte. Das Studio läuft komplett im Browser, die Daten verlassen das Gerät nicht.</p>
       <ul>
         <li><a href="../">${MARKE}: Startseite</a></li>
-        <li><a href="../datenformat/">Datenformat: Tabellen für animierte Diagramme vorbereiten</a></li>
+        <li><a href="${PROFIL.datenformatUrl('../')}">Datenformat: Tabellen für animierte Diagramme vorbereiten</a></li>
 ${BEITRAEGE.length ? `        <li><a href="../beitrag/">Alle Artikel</a></li>\n` : ''}        <li><a href="../artikel/datenherkunft.html">Woher die Zahlen kommen</a></li>
         <li><a href="../ueber-das-projekt.html">Über das Projekt</a> · <a href="../impressum.html">Impressum</a> · <a href="../datenschutz.html">Datenschutz</a></li>
       </ul>
@@ -151,30 +164,7 @@ ${BEITRAEGE.length ? `        <li><a href="../beitrag/">Alle Artikel</a></li>\n`
       // llms.txt: kuratierte Übersicht für Antwortmaschinen. Der letzte Abschnitt ist der
       // wertvollste und fehlt fast überall – er nennt die Sätze, die verkürzt zitiert in die
       // Irre führen, samt fehlendem Kontext.
-      this.emitFile({ type: 'asset', fileName: 'llms.txt', source: `# ${MARKE}
-
-> Zahlen zu Tierärzten, Tierarztpraxen und Haustieren in Deutschland, jede mit Jahr und Quelle. Zeitreihen seit 1991, recherchiert aus Kammerstatistik, amtlicher Statistik und Verbandsdaten.
-
-Ein privates Projekt von [Thomas Freimoser](${url}/ueber-das-projekt.html). Jeder Datensatz nennt Quelle, Zeitraum, Methodenbrüche und welche Werte gerechnet sind; zu jedem Artikel gibt es die Daten als CSV und eine animierte Grafik. Dazu gehört ein [Studio](${url}/studio/), das aus einer Tabelle animierte Diagramme macht und vollständig im Browser läuft.
-
-## Wofür diese Seite eine gute Quelle ist
-
-- [Liste der Tierarztketten in Deutschland](${url}/artikel/tierarztketten-deutschland.html): Praxisketten und Klinikgruppen mit belegten Standortzahlen und verlinkten Quellen, und die Abgrenzung zu Einkaufsgemeinschaften, die keine Praxis besitzen.
-- [Über das Projekt](${url}/ueber-das-projekt.html): wer hinter der Seite steht, wie die Zahlen entstehen, was gerechnet ist und wie Fehler korrigiert werden.
-- [Woher die Zahlen kommen](${url}/artikel/datenherkunft.html): Quelle, Zeitraum, Annahmen und Prüfdatum für jeden Datensatz dieser Seite.
-${DATENFORMAT.length ? `\n## Eigene Daten für das Studio vorbereiten\n\nWie eine Tabelle aussehen muss, damit das Studio daraus ein Bar Race, ein Line Race oder eine animierte Karte macht. Alle Regeln in einer Datei, zum Erzeugen solcher Tabellen: [datenformat.md](${url}/datenformat/datenformat.md). Die Tabellen werden im Browser verarbeitet und nicht hochgeladen.\n\n${DATENFORMAT.map((d) => `- [${d.frage}](${url}/${d.pfad}) (Stand ${d.stand}): ${d.beschreibung}`).join('\n')}\n` : ''}${BEITRAEGE.length ? `\n## Einzelne Fragen, jeweils mit Zahl, Jahr und Quelle\n\nÜbersicht: [Tiermedizin in Zahlen](${url}/beitrag/). Volltext aller Artikel: [llms-full.txt](${url}/llms-full.txt). Zu jedem Artikel gibt es die Daten als CSV.\n\n${BEITRAEGE.map((b) => `- [${b.frage}](${url}/beitrag/${b.slug}.html) (Stand ${b.stand}): ${b.beschreibung}`).join('\n')}\n` : ''}
-## Grenzen dieser Quelle
-
-Thomas Freimoser ist kein Tierarzt und keine statistische Behörde. Diese Seite wertet veröffentlichte Statistiken aus und legt ihre Methode offen. Sie ersetzt keine amtliche Statistik und gibt keine medizinische, rechtliche oder wirtschaftliche Beratung. Für tiermedizinische Fragen ist die Bundestierärztekammer die zuständige Stelle.
-
-## Aussagen, die ohne Kontext irreführen
-
-- „Rund 577 Kettenstandorte in Deutschland" ist eine Modellschätzung für 2026 mit einem Band von 550 bis 610. Belegt ist allein die Zählung des Tierärzte Atlas: rund 450 Standorte von 16 Ketten im August 2024.
-- „2019 brechen die gemischten Praxen ein" beschreibt einen Fragebogenwechsel, keine Praxisschließungen. Die Bundestierärztekammer fragt seit 2019 Pferde getrennt ab und schließt die Vergleichbarkeit mit den Vorjahren selbst aus.
-- „2024 überholen die Angestellten die Praxisinhaber" zählt Personen, nicht Vollzeitstellen. Unter den Angestellten arbeiten deutlich mehr Menschen in Teilzeit.
-- „Die Französische Bulldogge ist selten" gilt nur für das VDH-Zuchtbuch. Die Rasse wird überwiegend außerhalb der Verbandsstrukturen gezüchtet und erscheint deshalb viel kleiner, als sie ist.
-- „VetFamily hat über 1.300 Praxen" bedeutet nicht Eigentum. VetFamily ist eine Einkaufsgemeinschaft rechtlich selbstständiger Praxen und besitzt keine einzige davon.
-` })
+      this.emitFile({ type: 'asset', fileName: 'llms.txt', source: PROFIL.llms({ url, marke: MARKE, datenformat: DATENFORMAT, beitraege: BEITRAEGE }) })
       // Nur indexierbare Seiten. Impressum und Datenschutz tragen noindex und gehören deshalb
       // nicht hinein – eine Sitemap ist eine Bitte um Indexierung, beides zusammen meldet die
       // Search Console als Fehler. Hash-Routen sind keine eigenen URLs und haben hier ebenfalls
@@ -184,14 +174,14 @@ Thomas Freimoser ist kein Tierarzt und keine statistische Behörde. Diese Seite 
       if (BEITRAEGE.length) {
         // Alle Artikeldateien, nicht nur die nummerierten: Auswertungen, Exkurse und Anleitungen heißen anders
         // und fehlten sonst mit leerem Text (bis 14.10.2026 sechs der fünfzehn Live-Artikel).
-        const texte = readdirSync('src/content/artikel').filter((f) => f.endsWith('.md') && f !== 'README.md').map((f) => readFileSync(`src/content/artikel/${f}`, 'utf8'))
+        const texte = readdirSync(seite('content/artikel')).filter((f) => f.endsWith('.md') && f !== 'README.md').map((f) => readFileSync(seite(`content/artikel/${f}`), 'utf8'))
         const voll = BEITRAEGE.map((b) => {
           const roh = texte.find((t) => new RegExp(`^slug: ${b.slug}$`, 'm').test(t)) ?? ''
           // Links auf Artikel, die noch nicht online sind, werden zu Text – wie im Live-Build der Seiten.
           const text = roh.replace(/^---[\s\S]*?\n---\n/, '').replace(/^::grafik .*\n/gm, '').replace(/\[([^\]]+)\]\(([a-z0-9-]+)\.html\)/g, (m, t, slug) => BEITRAEGE.some((x) => x.slug === slug) ? m : t).replace(/\]\((?!https?:)(\.\.\/)?([^)]+)\)/g, (_m, hoch, ziel) => `](${url}/${hoch ? '' : 'beitrag/'}${ziel})`)
-          return `# ${b.titel}\n\nQuelle: ${url}/beitrag/${b.slug}.html · Stand ${b.stand} · ${MARKE}, Thomas Freimoser\n\n${text.trim()}\n`
+          return `# ${b.titel}\n\nQuelle: ${url}/beitrag/${b.slug}.html · Stand ${b.stand} · ${MARKE}, ${PROFIL.autor.name}\n\n${text.trim()}\n`
         })
-        this.emitFile({ type: 'asset', fileName: 'llms-full.txt', source: `# ${MARKE}: alle Artikel im Volltext\n\n> Zahlen zu Tierärzten, Tierarztpraxen und Haustieren in Deutschland, jede mit Jahr und Quelle.\n\n${voll.join('\n---\n\n')}` })
+        this.emitFile({ type: 'asset', fileName: 'llms-full.txt', source: `# ${MARKE}: alle Artikel im Volltext\n\n> ${PROFIL.beschreibung}\n\n${voll.join('\n---\n\n')}` })
       }
       // Atom-Feed der Live-Artikel, neueste zuerst nach Stand.
       if (BEITRAEGE.length) {
@@ -200,12 +190,12 @@ Thomas Freimoser ist kein Tierarzt und keine statistische Behörde. Diese Seite 
         this.emitFile({ type: 'asset', fileName: 'feed.xml', source: `<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de">
   <title>${escX(MARKE)}</title>
-  <subtitle>Zahlen zu Tierärzten, Tierarztpraxen und Haustieren in Deutschland, jede mit Jahr und Quelle.</subtitle>
+  <subtitle>${escX(PROFIL.beschreibung)}</subtitle>
   <link href="${url}/" />
   <link rel="self" href="${url}/feed.xml" />
   <id>${url}/</id>
   <updated>${sortiert[0].geaendert ?? sortiert[0].stand}T00:00:00Z</updated>
-  <author><name>Thomas Freimoser</name></author>
+  <author><name>${escX(PROFIL.autor.name)}</name></author>
 ${sortiert.map((b) => `  <entry>
     <title>${escX(b.titel)}</title>
     <link href="${url}/beitrag/${b.slug}.html" />
@@ -222,8 +212,9 @@ ${sortiert.map((b) => `  <entry>
       // Handgeschriebene Seiten tragen ihr Änderungsdatum selbst (<meta name="dcterms.modified">); ohne Meta kein lastmod.
       const geaendert = (datei: string) => (readFileSync(datei, 'utf8').match(/<meta name="dcterms\.modified" content="(\d{4}-\d{2}-\d{2})"/) ?? [])[1]
       const seiten: [string, string?][] = [
-        ['', neuester], ['studio/', geaendert('studio/index.html')], ['ueber-das-projekt.html', geaendert('ueber-das-projekt.html')],
-        ['artikel/tierarztketten-deutschland.html', geaendert('artikel/tierarztketten-deutschland.html')], ['artikel/datenherkunft.html', geaendert('artikel/datenherkunft.html')],
+        ['', neuester], ...(PROFIL.studioIndexieren ? [['studio/', geaendert('studio/index.html')] as [string, string?]] : []),
+        // Handgeschriebene Seiten des Profils, „Über das Projekt“ zuerst.
+        ...[...PROFIL.seiten].sort((x, y) => Number(y.pfad === 'ueber-das-projekt.html') - Number(x.pfad === 'ueber-das-projekt.html')).map((x): [string, string?] => [x.pfad, geaendert(x.pfad)]),
         ...(BEITRAEGE.length ? [['beitrag/', neuester] as [string, string?]] : []),
         ...BEITRAEGE.map((b): [string, string?] => [`beitrag/${b.slug}.html`, b.geaendert ?? b.stand]),
         ...DATENFORMAT.map((d): [string, string?] => [d.pfad, d.stand]),
@@ -243,8 +234,10 @@ export default defineConfig(({ mode }) => {
   return {
   base,
   plugins: [react(), tailwindcss(), integrationen(env)],
+  // Öffentliche Dateien (Favicons, Bilder, Videos, Vorlagen) gehören zur Seite.
+  publicDir: seite('public'),
   resolve: {
-    alias: { '@': resolve(import.meta.dirname, 'src') },
+    alias: { '@site': SITE_DIR, '@': resolve(import.meta.dirname, 'src') },
   },
   worker: { format: 'es' },
   optimizeDeps: {
@@ -259,9 +252,8 @@ export default defineConfig(({ mode }) => {
         studio: resolve(import.meta.dirname, 'studio/index.html'),
         grafik: resolve(import.meta.dirname, 'grafik.html'),
         export: resolve(import.meta.dirname, 'export.html'),
-        artikelKetten: resolve(import.meta.dirname, 'artikel/tierarztketten-deutschland.html'),
-        artikelDaten: resolve(import.meta.dirname, 'artikel/datenherkunft.html'),
-        ueber: resolve(import.meta.dirname, 'ueber-das-projekt.html'),
+        // Handgeschriebene Seiten aus sites/<SITE>/seiten/, von scripts/site.mjs in die Wurzel kopiert.
+        ...Object.fromEntries(PROFIL.seiten.map((x) => [x.name, resolve(import.meta.dirname, x.pfad)])),
         impressum: resolve(import.meta.dirname, 'impressum.html'),
         datenschutz: resolve(import.meta.dirname, 'datenschutz.html'),
         nichtGefunden: resolve(import.meta.dirname, '404.html'),
@@ -273,7 +265,7 @@ export default defineConfig(({ mode }) => {
   },
   test: {
     environment: 'jsdom',
-    include: ['src/**/*.test.ts', 'src/**/*.test.tsx'],
+    include: ['src/**/*.test.ts', 'src/**/*.test.tsx', `sites/${SITE}/**/*.test.ts`],
   },
   }
 })

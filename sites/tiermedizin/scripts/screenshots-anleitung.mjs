@@ -4,9 +4,9 @@
  * können und nie etwas zeigen, das es so nicht mehr gibt.
  *
  *   npm run dev            (in einem zweiten Terminal)
- *   node scripts/screenshots-anleitung.mjs
+ *   node sites/tiermedizin/scripts/screenshots-anleitung.mjs
  *
- * Ergebnis: public/beitrag/anleitung/*.png in doppelter Auflösung. Ausgeliefert wird WebP (halb so groß):
+ * Ergebnis: sites/tiermedizin/public/beitrag/anleitung/*.png in doppelter Auflösung. Ausgeliefert wird WebP (halb so groß):
  * danach je Bild eine .webp daneben erzeugen, z. B. mit Python/Pillow (quality 88). Die Maße liest
  * build-artikel.mjs weiter aus dem PNG.
  */
@@ -15,8 +15,8 @@ import path from 'node:path'
 import { starteChrome } from './lib/cdp.mjs'
 
 const BASIS = process.env.STUDIO_URL ?? 'http://localhost:5173/studio/'
-const ZIEL = 'public/beitrag/anleitung'
-const VORLAGE = path.resolve('public/vorlagen/vorlage-weltkarte.csv')
+const ZIEL = 'sites/tiermedizin/public/beitrag/anleitung'
+const VORLAGE = path.resolve('sites/tiermedizin/public/vorlagen/vorlage-weltkarte.csv')
 fs.mkdirSync(ZIEL, { recursive: true })
 
 const b = await starteChrome({ breite: 1440, hoehe: 1000, skala: 2 })

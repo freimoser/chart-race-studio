@@ -1,9 +1,9 @@
-// Erzeugt src/samples/data.ts aus den recherchierten Rohdaten in data/raw/.
-// Aufruf: node scripts/build-samples.mjs
+// Erzeugt sites/tiermedizin/samples/data.ts aus den recherchierten Rohdaten in sites/tiermedizin/data/raw/.
+// Aufruf: SITE=tiermedizin npm run daten  (oder node sites/tiermedizin/scripts/build-samples.mjs)
 import fs from 'node:fs'
 import path from 'node:path'
 
-const RAW = path.resolve('data/raw')
+const RAW = path.resolve('sites/tiermedizin/data/raw')
 const load = (f) => (fs.existsSync(path.join(RAW, f)) ? JSON.parse(fs.readFileSync(path.join(RAW, f), 'utf8')) : { rows: [] })
 const d1 = load('ds1-tieraerzte.json'), d1b = load('ds1b-tieraerzte-1990-2001.json'), d1c = load('ds1c-taetige-1992-2001.json')
 const d2 = load('ds2-heimtiere.json'), d2b = load('ds2b-heimtiere-1990-2013.json'), d2d = load('ds2d-hunde-katzen-1991-1998.json')
@@ -25,43 +25,7 @@ const d19 = load('ds19-heimtiere-dach.json')
 const d20 = load('ds20-alter-praktiker.json')
 const d21 = load('ds21-pferde-nutztiere.json')
 
-/** long rows -> wide table (Jahr × names). Bei Dubletten gewinnt die zuerst genannte Quelle. */
-function wide(rows, { names, from, to, rename = {} }) {
-  const dates = [...new Set(rows.map((r) => r.date))].filter((d) => (!from || d >= from) && (!to || d <= to)).sort()
-  const nm = names ?? [...new Set(rows.map((r) => r.name))]
-  const out = dates.map((d) => [d, ...nm.map((n) => { const r = rows.find((x) => x.date === d && x.name === n); return r ? r.value : null })])
-  // Zeilen ohne einen einzigen Wert verwerfen
-  return { headers: ['Jahr', ...nm.map((n) => rename[n] ?? n)], rows: out.filter((r) => r.slice(1).some((v) => v != null)) }
-}
-const byMetric = (d, m) => d.rows.filter((r) => r.metric === m)
-
-// Dubletten (Datum|Name) entfernen – die zuerst gelistete Quelle gewinnt.
-const dedupe = (rows) => { const s = new Set(); return rows.filter((r) => { const k = r.date + '|' + r.name; return s.has(k) ? false : (s.add(k), true) }) }
-
-// ---------- Lückenlose Reihen (Regel seit 07.10.2026, docs/DATENSTANDARD.md Abschnitt 7) ----------
-// Neue Datensätze haben in jedem Jahr einen Wert. Was keine Quelle hat, wird mit naheliegenden Daten gerechnet
-// und in Dateninfo und Post benannt: zwischen zwei Belegen linear, davor/danach der nächste Beleg gehalten –
-// oder, wo es eine verwandte Reihe gibt, über deren Verhältnis fortgeschrieben (siehe DACH).
-/** Wert aus Stützpunkten {Jahr: Wert}: belegt, sonst linear zwischen zwei Belegen, außen der nächste Beleg. */
-const stuetze = (punkte, jahr) => {
-  if (punkte[jahr] != null) return punkte[jahr]
-  const js = Object.keys(punkte).filter((k) => punkte[k] != null).map(Number).sort((x, y) => x - y)
-  const vor = js.filter((x) => x < jahr).at(-1), nach = js.find((x) => x > jahr)
-  if (vor == null) return nach == null ? null : punkte[nach]
-  if (nach == null) return punkte[vor]
-  return punkte[vor] + (punkte[nach] - punkte[vor]) * (jahr - vor) / (nach - vor)
-}
-const r3 = (v) => (v == null ? null : Math.round(v * 1000) / 1000)
-/** Breite Tabelle → jede Spalte über alle Jahre von–bis nach `stuetze` gefüllt; `ersatz` überschreibt Spalten. */
-function lueckenlos(w, { von, bis, ersatz = {} }) {
-  const spalte = (i) => Object.fromEntries(w.rows.filter((r) => r[i] != null).map((r) => [Number(r[0]), r[i]]))
-  const punkte = w.headers.slice(1).map((_, i) => spalte(i + 1))
-  return {
-    headers: w.headers,
-    rows: Array.from({ length: bis - von + 1 }, (_, k) => von + k).map((j) => [String(j),
-      ...w.headers.slice(1).map((n, i) => r3(ersatz[n] ? ersatz[n](j) : stuetze(punkte[i], j)))]),
-  }
-}
+import { wide, byMetric, dedupe, stuetze, lueckenlos, kette, lit } from '../../../scripts/lib/reihen.mjs'
 
 
 // 1 Tierärzt:innen gesamt nach Bundesland. 2006–2025 aus ds1, 2002–2005 aus den archivierten
@@ -199,7 +163,6 @@ const w3b = lueckenlos(w3bRoh, { von: 1991, bis: 2025, ersatz: { Pferde: (j) => 
 const DACH_TIERE = ['Katzen', 'Hunde', 'Kleintiere (Kleinsäuger)', 'Ziervögel']
 const deVoll = lueckenlos(w3, { von: 1991, bis: 2025 })
 const deWert = (name, jahr) => deVoll.rows.find((r) => r[0] === String(jahr))?.[deVoll.headers.indexOf(name)] ?? null
-const kette = (punkte, faktor) => Object.fromEntries(Object.entries(punkte).map(([j, v]) => [j, v * faktor]))
 const chPunkte = {
   Katzen: d19.ch.Katzen,
   Hunde: { ...kette({ 2010: d19.ch.vhn_hunde_umfrage['2010'], 2012: d19.ch.vhn_hunde_umfrage['2012'] }, d19.ch.Hunde['2016'] / d19.ch.vhn_hunde_umfrage['2016']), ...d19.ch.Hunde },
@@ -424,7 +387,6 @@ const w12 = {
     j.angestellte_gesamt - j.angestellte_frauen, Math.round((1000 * j.taetig_frauen) / j.taetig_gesamt) / 10]),
 }
 
-const lit = (v) => (v == null ? 'null' : typeof v === 'number' ? String(v) : JSON.stringify(v))
 // 13 Oktoberfest 1985–2026 (Exkurs, Beispiel für „Säulen + Linie“): Bier und Besucher als Säulen nebeneinander,
 // auf der rechten Achse der Maßpreis und der Preis, den die Maß hätte, wenn sie seit 1985 nur mit den
 // Verbraucherpreisen gestiegen wäre. 2020 und 2021 bleiben leer – keine Wiesn, kein Bier, kein Maßpreis;
@@ -552,7 +514,7 @@ const w17b = wide([...d21.rows, ...d1.rows.filter((r) => r.name === NIEDER && r.
 })
 
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
-const out = `// Automatisch erzeugt von scripts/build-samples.mjs aus data/raw/*.json – nicht von Hand editieren.\n/* eslint-disable */\n` +
+const out = `// Automatisch erzeugt von sites/tiermedizin/scripts/build-samples.mjs aus sites/tiermedizin/data/raw/*.json – nicht von Hand editieren.\n/* eslint-disable */\n` +
   [emit('TIERAERZTE_BUNDESLAND', w1), emit('TIERAERZTESCHAFT_DEUTSCHLAND', w2), emit('INHABER_ANGESTELLTE', w2b), emit('TIERARZTMANGEL', w2c), emit('TIERARZTMANGEL_2000', w2d), emit('HEIMTIERE', w3), emit('HEIMTIERE_ALLE', w3b), emit('HEIMTIERE_DACH', w3c), emit('HUNDERASSEN', w4), emit('RINDER_BUNDESLAND', w5), emit('HEIMTIERMARKT', w6), emit('PRAXISSCHWERPUNKTE', w7), emit('FACHTIERAERZTE', w8), emit('KLEINTIERE_BUNDESLAND', w9), emit('KETTEN', w10), emit('KETTEN_EIGENTUEMER', w11), emit('GESCHLECHT_PRAXIS', w12), emit('OKTOBERFEST', w13), emit('OKTOBERFEST_PREIS', w13b), emit('TIERARZT_INFLATION', w14), emit('TIERARZT_ROUTINEJAHR', w14b), emit('PRAXIS_ALTER', w15), emit('PRAXIS_ALTER_WACHSTUM', w15b), emit('GEHALT_PREISE', w16), emit('PFERDE_NUTZTIERE', w17), emit('PRAXISARTEN_2010', w17b), emit('HUND_KATZE_WELT', { headers: d13.headers ?? ['Jahr'], rows: d13.rows ?? [] })].join('\n')
-fs.writeFileSync('src/samples/data.ts', out)
+fs.writeFileSync('sites/tiermedizin/samples/data.ts', out)
 for (const [n, w] of Object.entries({ w1, w2, w2b, w2c, w2d, w3, w3b, w3c, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w13b, w14, w14b, w15, w15b, w16, w17, w17b })) console.log(n, w.headers.length - 1, 'Kategorien,', w.rows.length, 'Perioden', w.rows[0]?.[0], '–', w.rows.at(-1)?.[0])

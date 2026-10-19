@@ -5,7 +5,8 @@ import { parseFile, toCsv } from '@/lib/data/parse'
 import { SICHTBARE_SAMPLES as SAMPLES } from '@/content/freigabe'
 import { TableEditor } from './TableEditor'
 import { Field, Section, Segmented } from './ui'
-import { SAMPLE_CATEGORIES, type ColumnMapping } from '@/lib/data/types'
+import type { ColumnMapping } from '@/lib/data/types'
+import { PROFIL } from '@/content/site'
 import { ordneZu } from '@/lib/chart/geo'
 import { wurzel } from '@/lib/pfade'
 
@@ -41,7 +42,7 @@ export function DataPanel() {
   return (
     <div>
       <Section title="Beispiel-Datensätze" hint={`${SAMPLES.length} zum Laden`}>
-        {SAMPLE_CATEGORIES.map((cat) => {
+        {PROFIL.rubriken.map((cat) => {
           const list = SAMPLES.filter((s) => s.category === cat.id)
           if (list.length === 0) return null
           return (

@@ -20,8 +20,8 @@
 
 // Ohne Datensätze: Die eingebettete Grafik braucht nur die Freigabe-Regel, nicht alle Daten im Bündel.
 // freigabe.ts reicht alles weiter und ergänzt, was die Datensätze selbst braucht.
-import FREIGABE_JSON from './freigabe.json'
-import { POSTS, type RoadmapPost } from './roadmap'
+import FREIGABE_JSON from '@site/content/freigabe.json'
+import { POSTS, type RoadmapPost } from '@site/content/roadmap'
 import { freigegebeneDatensaetze } from './freigabe-regel'
 
 export const FREIGABE: { beispieleErstNachVeroeffentlichung: boolean; artikelLive: boolean; vorschauPosts: number; datensaetzeOhnePost?: string[] } = FREIGABE_JSON

@@ -1,5 +1,5 @@
 /*
- * Baut aus den Entwürfen in src/content/artikel/*.md die Artikelseiten zur Post-Reihe.
+ * Baut aus den Entwürfen in sites/<seite>/content/artikel/*.md die Artikelseiten zur Post-Reihe (SITE=… wählt die Seite).
  *
  *   node scripts/build-artikel.mjs              Live-Seiten nach beitrag/ (läuft im Build)
  *   node scripts/build-artikel.mjs --entwuerfe  zusätzlich ALLE Entwürfe nach beitrag/entwurf/,
@@ -12,32 +12,35 @@
  * Fehlt eine davon, entsteht keine Datei – nicht versteckt, sondern gar nicht gebaut.
  *
  * Beide Ausgabeordner sind erzeugt und stehen in .gitignore. Die Übersicht
- * src/content/artikel-index.json wird dagegen eingecheckt, weil Oberfläche und Vite-Konfiguration
+ * sites/<seite>/content/artikel-index.json wird dagegen eingecheckt, weil Oberfläche und Vite-Konfiguration
  * sie importieren.
  *
- * Format der Entwürfe: siehe src/content/artikel/README.md.
+ * Format der Entwürfe: siehe sites/tiermedizin/content/artikel/README.md.
  */
 import fs from 'node:fs'
 import path from 'node:path'
-import { ARCS, POSTS, visiteVon } from '../src/content/roadmap.ts'
-import * as DATEN from '../src/samples/data.ts'
+import { PROFIL, sitePfad, ladeSeitenModul } from './lib/site.mjs'
 
-const QUELLE = 'src/content/artikel'
+const { ARCS, POSTS, visiteVon } = await ladeSeitenModul('content/roadmap.ts')
+const DATEN = await ladeSeitenModul('samples/data.ts')
+
+const QUELLE = sitePfad('content/artikel')
 const ZIEL = 'beitrag'
 const ENTWURF = path.join(ZIEL, 'entwurf')
 const mitEntwuerfen = process.argv.includes('--entwuerfe')
 
-const FREIGABE = JSON.parse(fs.readFileSync('src/content/freigabe.json', 'utf8'))
-const L = JSON.parse(fs.readFileSync('src/content/legal.json', 'utf8'))
+const FREIGABE = JSON.parse(fs.readFileSync(sitePfad('content/freigabe.json'), 'utf8'))
+const L = JSON.parse(fs.readFileSync(sitePfad('content/legal.json'), 'utf8'))
 const BASIS = (process.env.VITE_SITE_URL ?? '').replace(/\/$/, '')
 // Autor: eine Person mit eigener Seite und Profil, damit Suchmaschinen sie zuordnen können (E-E-A-T).
-const AUTOR = { '@type': 'Person', name: L.operator, url: `${BASIS || ''}/ueber-das-projekt.html`, sameAs: ['https://www.linkedin.com/in/thomas-freimoser'] }
-const DATEN_ZIEL = 'public/daten'
+const AUTOR = { '@type': 'Person', name: L.operator, url: `${BASIS || ''}/ueber-das-projekt.html`, sameAs: PROFIL.autor.sameAs, ...PROFIL.autor.extra }
+const PUBLIC = sitePfad('public')
+const DATEN_ZIEL = path.join(PUBLIC, 'daten')
 
-// Metadaten der Beispiel-Datensätze. src/samples/index.ts ist über den Pfad-Alias @/ nicht direkt
+// Metadaten der Beispiel-Datensätze. sites/<seite>/samples/index.ts ist über den Pfad-Alias @/ nicht direkt
 // aus Node importierbar; die wenigen Felder, die hier gebraucht werden, stehen dort je Datensatz
 // in einer eigenen Zeile und lassen sich verlässlich auslesen.
-const DATENSAETZE = Object.fromEntries(fs.readFileSync('src/samples/index.ts', 'utf8').split('    id: ').slice(1).map((b) => {
+const DATENSAETZE = Object.fromEntries(fs.readFileSync(sitePfad('samples/index.ts'), 'utf8').split('    id: ').slice(1).map((b) => {
   const g = (re) => (b.match(re) ?? [])[1]
   const id = g(/^'(.*?)'/)
   const quelle = DATEN[g(/headers: (\w+)\.headers/)]
@@ -112,16 +115,16 @@ function markdown(text) {
     const zeilen = b.split('\n')
     const bild = b.match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/)
     if (bild) {
-      // Bilder liegen unter public/beitrag/…; Breite und Höhe aus dem PNG-Kopf, damit die Seite
+      // Bilder liegen unter sites/<seite>/public/beitrag/…; Breite und Höhe aus dem PNG-Kopf, damit die Seite
       // beim Laden nicht springt.
       const [, alt, src] = bild
       let masse = ''
       try {
         // WebP wird ausgeliefert (kleiner), die Maße stehen im PNG daneben, das der Screenshot-Lauf erzeugt.
-        const kopfBytes = fs.readFileSync(path.join('public', ZIEL, src.replace(/\.webp$/, '.png'))).subarray(16, 24)
-        if (!fs.existsSync(path.join('public', ZIEL, src))) throw new Error('fehlt')
+        const kopfBytes = fs.readFileSync(path.join(PUBLIC, ZIEL, src.replace(/\.webp$/, '.png'))).subarray(16, 24)
+        if (!fs.existsSync(path.join(PUBLIC, ZIEL, src))) throw new Error('fehlt')
         masse = ` width="${kopfBytes.readUInt32BE(0) / 2}" height="${kopfBytes.readUInt32BE(4) / 2}"`
-      } catch { throw new Error(`Bild ${src} fehlt unter public/${ZIEL}/`) }
+      } catch { throw new Error(`Bild ${src} fehlt unter ${PUBLIC}/${ZIEL}/`) }
       html.push(`<figure><img src="${src}" alt="${esc(alt)}"${masse} loading="lazy" /><figcaption>${inline(alt)}</figcaption></figure>`)
       continue
     }
@@ -180,7 +183,7 @@ function grafikVon(kopfwert, sampleId, { mussFrei = false } = {}) {
   if (kopfwert === 'keine') return null
   const [id, art] = (kopfwert || sampleId || '').split(/\s+/)
   if (!id) return null
-  if (!DATENSAETZE[id]) throw new Error(`grafik: Datensatz „${id}“ gibt es nicht in src/samples/index.ts`)
+  if (!DATENSAETZE[id]) throw new Error(`grafik: Datensatz „${id}“ gibt es nicht in ${sitePfad('samples/index.ts')}`)
   if (mussFrei && !freigegeben(id)) throw new Error(`grafik: Datensatz „${id}“ ist live noch nicht freigegeben`)
   if (art && !['bar', 'line', 'map'].includes(art)) throw new Error(`grafik: Diagrammart „${art}“ unbekannt (bar, line oder map)`)
   return { id, art }
@@ -226,7 +229,7 @@ function seite(a, { entwurf, alle }) {
   })
 
   const basis = BASIS
-  const ogBild = fs.existsSync(path.join('public', ZIEL, 'og', `${a.slug}.png`)) && basis ? `${basis}/${ZIEL}/og/${a.slug}.png` : ''
+  const ogBild = fs.existsSync(path.join(PUBLIC, ZIEL, 'og', `${a.slug}.png`)) && basis ? `${basis}/${ZIEL}/og/${a.slug}.png` : ''
   // Datensatz des Posts; bei Beiträgen ohne Post (Anleitung, Exkurs) der der Grafik.
   const dsId = post.sampleId ?? grafikVon(a.grafik)?.id
   const ds = dsId ? DATENSAETZE[dsId] : undefined
@@ -250,7 +253,7 @@ function seite(a, { entwurf, alle }) {
       name: ds.titel, description: `${ds.untertitel ?? ds.titel}. ${a.beschreibung}`,
       creator: AUTOR,
       ...(jahre.length ? { temporalCoverage: `${jahre[0]}/${jahre.at(-1)}` } : {}),
-      spatialCoverage: ds.id === 'hund-katze-welt' ? 'Welt' : ds.id === 'oktoberfest' ? 'München' : 'Deutschland',
+      spatialCoverage: PROFIL.raum(ds.id),
       variableMeasured: ds.daten.headers.slice(1),
       ...(ds.quelleUrl ? { isBasedOn: ds.quelleUrl } : {}),
       ...(ds.quelle ? { citation: ds.quelle } : {}),
@@ -277,7 +280,7 @@ function seite(a, { entwurf, alle }) {
 
   const g = grafikVon(a.grafik, post.sampleId, { mussFrei: a.live })
   const bild = g ? grafikFigur(g, { tiefe, csv })
-    : fs.existsSync(path.join('public', ZIEL, `${a.slug}.png`))
+    : fs.existsSync(path.join(PUBLIC, ZIEL, `${a.slug}.png`))
       ? `<figure><img src="${tiefe}${ZIEL}/${a.slug}.png" alt="${esc(post.title)}" loading="lazy" /></figure>` : ''
 
   return `<!doctype html>
@@ -328,7 +331,7 @@ ${csv ? `          <p><a href="${csv}" download>Daten als CSV herunterladen</a> 
 //   kennzahl: beruf/1 | 34.476 | Tierärztinnen und Tierärzte tätig | 2025
 // Der Wert muss so im Artikel stehen (Mio. = Millionen, % = Prozent, € = Euro), sonst bricht der Lauf ab:
 // Eine Zahl am Rand, die der Artikel nicht mehr trägt, wäre eine zweite Wahrheit.
-const LEISTEN = [['beruf', 'Tierärzte und Praxen'], ['markt', 'Tiere, Markt und Geld']]
+const LEISTEN = PROFIL.leisten
 function kennzahlVon(a) {
   if (!a.kennzahl) return undefined
   const [ort = '', wert, text, jahr] = a.kennzahl.split('|').map((x) => x.trim())
@@ -375,8 +378,8 @@ function uebersicht(live) {
   ].filter((k) => k.liste.length)
   const jsonld = {
     '@context': 'https://schema.org', '@type': 'CollectionPage',
-    name: 'Tiermedizin in Zahlen', inLanguage: 'de-DE',
-    description: 'Zahlen zu Tierärzten, Tierarztpraxen und Haustieren in Deutschland – jede mit Jahr und Quelle.',
+    name: L.siteName, inLanguage: 'de-DE',
+    description: PROFIL.uebersicht.collectionDescription,
     author: AUTOR,
     mainEntity: { '@type': 'ItemList', itemListElement: live.map((a, i) => ({ '@type': 'ListItem', position: i + 1, name: a.titel, ...(BASIS ? { url: `${BASIS}/${ZIEL}/${a.slug}.html` } : {}) })) },
   }
@@ -385,15 +388,15 @@ function uebersicht(live) {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alle Artikel nach Thema: Tierärzte, Praxen, Haustiere</title>
-    <meta name="description" content="Wie viele Tierärzte, Tierarztpraxen und Haustiere gibt es in Deutschland? Zeitreihen seit 1991, jede Zahl mit Jahr und Quelle." />
+    <title>${esc(PROFIL.uebersicht.title)}</title>
+    <meta name="description" content="${esc(PROFIL.uebersicht.description)}" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="../favicon-96.png" sizes="96x96" type="image/png" />
     <link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png" />
     <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Tiermedizin in Zahlen" />
-    <meta property="og:description" content="Tierärzte, Tierarztpraxen und Haustiere in Deutschland – Zeitreihen mit Quelle." />
+    <meta property="og:title" content="${esc(PROFIL.uebersicht.ogTitle)}" />
+    <meta property="og:description" content="${esc(PROFIL.uebersicht.ogDescription)}" />
     <meta property="og:locale" content="de_DE" />
     <script type="application/ld+json">${JSON.stringify(jsonld)}</script>
     <script type="module" src="/src/article.ts"></script>
@@ -404,11 +407,11 @@ function uebersicht(live) {
     <main class="wrap">
       <p class="meta">Archiv</p>
       <h1>Alle Artikel nach Thema</h1>
-      <p class="lead">Hier stehen alle ${live.length} Artikel, sortiert nach den Themen der Reihe: die Tiere, die Praxis, die Käufer der Praxen und mehr. Jeder beantwortet eine Frage mit Zahl, Jahr und Quelle und nennt, was die Zahl nicht sagt.</p>
+      <p class="lead">${PROFIL.uebersicht.lead(live.length)}</p>
 ${kennzahlBand(live, '')}${nachKapitel.map((k) => `      <h2 id="${k.arc.id ?? 'mehr'}">${esc(k.arc.label)}</h2>
-      <p>${esc(k.arc.claim ?? 'Auswertungen über die Reihe hinaus, ein Blick über den Tellerrand und Anleitungen für eigene Grafiken.')}</p>
+      <p>${esc(k.arc.claim ?? PROFIL.uebersicht.sonstigesClaim)}</p>
       <ul class="liste">
-${k.liste.map((a) => `        <li><a href="${a.slug}.html">${esc(a.titel)}</a><br />${esc(a.beschreibung)}</li>`).join('\n')}${k.arc.id === 'ketten' ? `\n        <li><a href="../artikel/tierarztketten-deutschland.html">Liste der Tierarztketten in Deutschland</a><br />Alle Gruppen mit belegten Standortzahlen und Eigentümern, und warum Einkaufsgemeinschaften keine Ketten sind.</li>` : ''}
+${k.liste.map((a) => `        <li><a href="${a.slug}.html">${esc(a.titel)}</a><br />${esc(a.beschreibung)}</li>`).join('\n')}${PROFIL.uebersicht.kapitelExtra[k.arc.id] ?? ''}
       </ul>`).join('\n')}
       <p class="meta">Dazu: <a href="../artikel/datenherkunft.html">Woher die Zahlen kommen</a> · <a href="../ueber-das-projekt.html">Über das Projekt</a> · <a href="../studio/#redaktionsplan">Redaktionsplan</a></p>
     </main>
@@ -442,16 +445,16 @@ function startseite(live) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script>(function () { var s = location.search, h = location.hash; if (/[?&]beispiel=/.test(s) || /^#(redaktionsplan|post-)/.test(h)) location.replace('studio/' + s + h) })()</script>
-    <title>Tiermedizin in Zahlen: Tierärzte, Praxen und Haustiere</title>
-    <meta name="description" content="Wie viele Tierärzte, Praxen und Haustiere gibt es in Deutschland? Zeitreihen seit 1991 als animierte Grafik, jede Zahl mit Jahr und Quelle." />
+    <title>${esc(PROFIL.start.title)}</title>
+    <meta name="description" content="${esc(PROFIL.start.description)}" />
     <meta name="theme-color" content="#0f3b3d" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="favicon-96.png" sizes="96x96" type="image/png" />
     <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Tiermedizin in Zahlen" />
-    <meta property="og:description" content="Tierärzte, Tierarztpraxen und Haustiere in Deutschland: Zeitreihen mit Quelle, als animierte Grafik." />
+    <meta property="og:title" content="${esc(PROFIL.start.ogTitle)}" />
+    <meta property="og:description" content="${esc(PROFIL.start.ogDescription)}" />
     <meta property="og:locale" content="de_DE" />
     <meta property="og:site_name" content="${esc(L.siteName)}" />
     <script type="module" src="/src/article.ts"></script>
@@ -460,8 +463,8 @@ function startseite(live) {
     <!--rahmen:kopf-->
     <div class="mit-leisten">
     <main class="wrap">
-      <h1>Tierärzte, Praxen und Haustiere in Zahlen</h1>
-      <p class="lead">Wie viele Tierärztinnen und Tierärzte, Praxen und Haustiere gibt es in Deutschland, und was hat sich seit 1991 verschoben? Jeder Artikel beantwortet eine Frage mit Zahl, Jahr und Quelle, zeigt die Entwicklung als animierte Grafik und sagt, was die Zahl nicht sagt.</p>
+      <h1>${esc(PROFIL.start.h1)}</h1>
+      <p class="lead">${PROFIL.start.lead}</p>
 ${neu ? `      <section class="neu" aria-labelledby="neu-titel">
         <p class="meta">Neu${neu.veroeffentlicht && !aktuell(neu) ? ` · ${datumDe(neu.veroeffentlicht)}` : ''}</p>
         <h2 id="neu-titel"><a href="beitrag/${neu.slug}.html">${esc(neu.titel)}</a></h2>
@@ -476,18 +479,15 @@ ${artikel.filter((a) => a !== neu).slice(0, 5).map((a) => `        <li><a href="
       <h2>Themen</h2>
       <ul class="liste themen">
 ${themen.map((t) => `        <li><a href="beitrag/#${t.arc.id}">${esc(t.arc.label)}</a> · ${t.n} Artikel<br />${esc(t.arc.claim)}</li>`).join('\n')}
-        <li><a href="artikel/tierarztketten-deutschland.html">Liste der Tierarztketten</a><br />Praxisketten und Klinikgruppen mit Standortzahlen, und warum Einkaufsgemeinschaften keine Ketten sind.</li>
-${live.some((a) => a.anleitung) ? `        <li><a href="beitrag/#mehr">Auswertungen, Exkurse und Anleitungen</a> · ${live.filter((a) => a.anleitung).length} Artikel<br />${esc(live.filter((a) => a.anleitung).map((a) => a.titel).join(' · '))}</li>\n` : ''}      </ul>
+${PROFIL.start.themenExtra}${live.some((a) => a.anleitung) ? `        <li><a href="beitrag/#mehr">Auswertungen, Exkurse und Anleitungen</a> · ${live.filter((a) => a.anleitung).length} Artikel<br />${esc(live.filter((a) => a.anleitung).map((a) => a.titel).join(' · '))}</li>\n` : ''}      </ul>
       <p class="meta"><a href="beitrag/">Alle ${live.length} Artikel nach Thema</a> · <a href="studio/#redaktionsplan">Was als Nächstes kommt</a></p>
 ` : ''}      <section class="selbst" aria-labelledby="selbst-titel">
         <h2 id="selbst-titel">Eigene Daten animieren</h2>
         <p>Jede Grafik dieser Seite entsteht im Studio: eine Tabelle hinein, ein MP4-Video heraus, als Bar Race, Line Race oder animierte Karte. Es läuft vollständig im Browser, die Daten verlassen das Gerät nicht. Am bequemsten am Rechner.</p>
-        <p class="knoepfe"><a class="knopf" href="studio/">Studio öffnen</a><a class="knopf zweit" href="datenformat/">So muss die Tabelle aussehen</a></p>
+        <p class="knoepfe"><a class="knopf" href="studio/">Studio öffnen</a><a class="knopf zweit" href="${PROFIL.datenformatUrl('')}">So muss die Tabelle aussehen</a></p>
 ${anleitungen.length ? `        <p class="meta">Anleitung: ${anleitungen.map((a) => `<a href="beitrag/${a.slug}.html">${esc(a.titel)}</a>`).join(' · ')}</p>\n` : ''}      </section>
       <section class="ueber" aria-labelledby="ueber-titel">
-        <h2 id="ueber-titel">Wer hier schreibt</h2>
-        <p>Ein privates Projekt von Thomas Freimoser, kein Tierarzt und keine Behörde: veröffentlichte Statistiken, nachgelesen an der Quelle, mit offener Methode. Was gerechnet ist, steht dabei.</p>
-        <p class="meta"><a href="ueber-das-projekt.html">Über das Projekt, mit Video in 60 Sekunden</a> · <a href="artikel/datenherkunft.html">Woher jede Zahl stammt</a></p>
+${PROFIL.start.ueber}
       </section>
     </main>
 ${kennzahlLeisten(live, 'beitrag/')}
@@ -549,7 +549,7 @@ if (mitEntwuerfen) {
 // Übersicht für Oberfläche, Sitemap und llms.txt. Deterministisch sortiert, damit sie nur bei
 // echten Änderungen im Diff auftaucht.
 const index = artikel.map((a) => ({ post: a.post, ...(a.anleitung ? { art: a.art } : {}), slug: a.slug, titel: a.titel, beschreibung: a.beschreibung, frage: a.frage, stand: a.stand, geaendert: a.geaendert, bereit: a.bereit, live: a.live }))
-fs.writeFileSync('src/content/artikel-index.json', JSON.stringify(index, null, 2) + '\n')
+fs.writeFileSync(sitePfad('content/artikel-index.json'), JSON.stringify(index, null, 2) + '\n')
 
 console.log(`Artikel: ${artikel.length} Entwürfe, ${artikel.filter((a) => a.bereit).length} bereit, ${live.length} online${FREIGABE.artikelLive ? '' : ' (Freigabe aus)'}${mitEntwuerfen ? `, Vorschau unter /${ENTWURF}/` : ''}`)
 
@@ -558,9 +558,9 @@ console.log(`Artikel: ${artikel.length} Entwürfe, ${artikel.filter((a) => a.ber
 // sie liest. Gehört zu keinem Post und ist immer online, sobald `bereit: ja`. Jede Seite gibt es
 // zusätzlich als Markdown unter /datenformat/<slug>.md, alle zusammen in /datenformat/datenformat.md –
 // für KI-Assistenten, die daraus Datensätze erzeugen sollen.
-const DF_QUELLE = 'src/content/datenformat'
+const DF_QUELLE = sitePfad('content/datenformat')
 const DF_ZIEL = 'datenformat'
-const DF_MD = 'public/datenformat'
+const DF_MD = path.join(PUBLIC, 'datenformat')
 
 function dfLesen(datei) {
   const roh = fs.readFileSync(path.join(DF_QUELLE, datei), 'utf8')
@@ -676,5 +676,5 @@ if (dfLive.length) {
   }
   fs.writeFileSync(path.join(DF_MD, 'datenformat.md'), `# Datenformat für das Studio von ${L.siteName} (Datenstandard 1.0)\n\n> Wie eine Tabelle aussehen muss, damit das Studio daraus ein Bar Race, ein Line Race oder eine animierte Karte macht. Alle Seiten des Bereichs in einer Datei, gedacht für KI-Assistenten, die solche Tabellen erzeugen.\n\n${dfLive.map(alsMd).join('\n---\n\n')}`)
 }
-fs.writeFileSync('src/content/datenformat-index.json', JSON.stringify(dfSeiten.map((x) => ({ slug: x.slug, pfad: dfPfad(x), titel: x.titel, menue: x.menue, beschreibung: x.beschreibung, frage: x.frage, stand: x.stand, bereit: x.bereit })), null, 2) + '\n')
+fs.writeFileSync(sitePfad('content/datenformat-index.json'), JSON.stringify(dfSeiten.map((x) => ({ slug: x.slug, pfad: dfPfad(x), titel: x.titel, menue: x.menue, beschreibung: x.beschreibung, frage: x.frage, stand: x.stand, bereit: x.bereit })), null, 2) + '\n')
 console.log(`Datenformat: ${dfSeiten.length} Seiten, ${dfLive.length} online`)
