@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Datenherkunft: Quellen und Methode aller Datensätze</title>
-    <meta name="dcterms.modified" content="2026-10-14" />
+    <meta name="dcterms.modified" content="2026-10-20" />
     <meta name="description" content="Für jeden Beispiel-Datensatz: Quelle, Zeitraum, Annahmen, was für die Grafik aufbereitet wurde und wann zuletzt geprüft." />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="../favicon-96.png" sizes="96x96" type="image/png" />
@@ -23,7 +23,7 @@
       <article>
         <h1>Woher die Zahlen kommen</h1>
         <p class="lead">
-          25 Datensätze, 23 zu Tierärzten, Praxen und Haustieren und zwei zum Exkurs Oktoberfest. Diese Seite sagt für jeden einzelnen, aus
+          27 Datensätze, 25 zu Tierärzten, Praxen und Haustieren und zwei zum Exkurs Oktoberfest. Diese Seite sagt für jeden einzelnen, aus
           welcher Quelle er stammt, wo eine Annahme getroffen werden musste, welche Werte gerechnet sind, was für die
           Darstellung aufbereitet wurde und wann zuletzt gegen die Quelle geprüft wurde.
         </p>
@@ -132,14 +132,51 @@
           durch, weil sich die neuen Kategorien definitorisch auf die alte Dreiteilung abbilden lassen – die Kammer
           schreibt selbst, dass Pferde vorher unter Großtiere liefen. Es wird nichts geschätzt, alle Werte sind Summen
           publizierter Kategorien. Die Zuordnung ist an der einzigen Verteilung geprüft, die die Kammer nennt.
-          1996 bis 2000 und 2005 fehlen in der Quelle, 2006 ist wegen einer Fehlmeldung unbrauchbar. 2019 bis 2023
-          beantworten nur 91 bis 96,5 Prozent der Niedergelassenen die Frage, davor praktisch alle.
+          1996 bis 2000 und 2005 fehlen in der Quelle, 2006 ist wegen einer Fehlmeldung unbrauchbar. 2021 bis 2023
+          beantworten nur 91 bis 92 Prozent der Niedergelassenen die Frage, davor und danach 96 bis 100 Prozent.
+        </p>
+        <p>
+          <strong>Korrigiert:</strong> Die Summenspalte der Kammer passt 2019 (alle Kategorien), 2020 (Pferde) und 2024
+          (alle Kategorien, Rheinland-Pfalz doppelt gezählt) nicht zu ihren eigenen 17 Kammerspalten. Verwendet werden die
+          aus den Kammerspalten neu summierten Werte, etwa 2019 Kleintiere 6.135 statt 5.912; 2021 bis 2023 und 2025
+          stimmen beide überein (nachgerechnet am 16.10.2026).
         </p>
         <p>
           <strong>Aufbereitet:</strong> Der Versatz 2019 bleibt sichtbar. Die 1990er-Zeile ist entfernt, weil sie nur
           die alten Bundesländer umfasst und der Sprung sonst als Entwicklung gelesen würde.
         </p>
-        <p class="meta">Recherchiert 15.09.2026 · zuletzt geprüft 17.09.2026</p>
+        <p class="meta">Recherchiert 15.09.2026 · zuletzt geprüft 16.10.2026</p>
+
+        <h2 id="pferde-nutztiere">Seit 2021 mehr Pferde- als Nutztierpraxen</h2>
+        <p>
+          <strong>Quelle:</strong> Bundestierärztekammer, Tab. 2 „Praktisch Tätige nach Tierarten“ (Niedergelassene),
+          Fachtierarzt-Titel Pferde. <strong>Zeitraum:</strong> 2010 bis 2025, erhoben ab 2019.
+        </p>
+        <p>
+          <strong>Gerechnet:</strong> 2010 bis 2018 gibt es Pferde nicht als eigene Kategorie. Die alten Kategorien sind
+          am Bruch 2018/2019 auf die neuen abgebildet (18,8 Prozent der alten Gemischten gehen in die reine
+          Großtiergruppe, so viel, dass deren Anteil nahtlos an 2019 anschließt), die Pferde darin über die
+          Fachtierarzt-Titel für Pferde fortgeschrieben, bereinigt um die Antwortquote. Spanne aus zwei Gegenvarianten:
+          Pferde 2010 zwischen 572 und 911. In allen Varianten liegen die Nutztiere bis 2020 vorn; das Überholen 2021
+          ist gemessen. Summen 2019, 2020 und 2024 wie oben korrigiert.
+        </p>
+        <p>
+          <strong>Aufbereitet:</strong> Zwei Linien, nur Pferde und nur Nutztiere. Methode und Spanne je Jahr in der
+          Rohdatei <code>data/raw/ds21-pferde-nutztiere.json</code>.
+        </p>
+        <p class="meta">Recherchiert 16.10.2026 · zuletzt geprüft 16.10.2026</p>
+
+        <h2 id="praxisarten-2010">Die Großtierpraxis wird zur Pferdepraxis</h2>
+        <p>
+          <strong>Quelle:</strong> wie darüber, dazu die Zahl der Niedergelassenen. <strong>Zeitraum:</strong> 2010 bis 2025.
+        </p>
+        <p>
+          <strong>Gerechnet:</strong> Kleintiere und die Gesamtzahl sind in allen Jahren erhoben; die übrigen fünf
+          Praxisarten sind 2010 bis 2018 nach derselben Methode zurückgerechnet. „Nutztiere, Pferde und Kleintiere“ ist
+          bewusst nicht dargestellt (2025: 254). Die Kategorien ergeben die Summe nicht ganz, weil nicht alle einen
+          Schwerpunkt angeben.
+        </p>
+        <p class="meta">Recherchiert 16.10.2026 · zuletzt geprüft 16.10.2026</p>
 
         <h2 id="ketten">Der Aufstieg der Tierarztketten</h2>
         <p>
@@ -184,9 +221,11 @@
         <p>
           <strong>Annahmen:</strong> Die Gebietsbezeichnung für Kleintiere heißt über die Jahre dreimal anders, meint
           aber dasselbe. Die Zählbasis wechselt: 2005 nur bis 65 Jahre, ab 2006 alle Titelträger einschließlich
-          Ruheständler. Beide Jahre bleiben deshalb draußen. 2015 bis 2017 und 2020 hat die Kammer keine Bestandstabelle
-          veröffentlicht. Pferde 2012 bleibt leer, weil die Quelle die Werte dort offensichtlich unter Pferdechirurgie
-          verbucht.
+          Ruheständler. Beide Jahre bleiben deshalb draußen. 2015 bis 2017 hat die Kammer keine Bestandstabelle
+          veröffentlicht. 2020 liegt die Tabelle nur als Grafik im PDF vor und ist abgelesen. 2021 hat die Kammer
+          Nordrhein die Zeilen 13 bis 27 in der Reihenfolge des Vorjahres gemeldet; die Werte sind ihren Gebieten
+          zugeordnet, nicht geschätzt (Pferde 705 statt 649, Öffentliches Veterinärwesen 1.850 statt 1.740). Pferde 2012
+          bleibt leer, weil die Quelle die Werte dort offensichtlich unter Pferdechirurgie verbucht.
         </p>
         <p>
           <strong>Auffällig, aber so publiziert:</strong> Mikrobiologie springt 2013 auf 605 und fällt danach auf 494
@@ -194,7 +233,7 @@
           davon gehen darauf zurück, dass die Kammer Berlin seitdem nur noch aktive Fachtierärzt:innen meldet.
         </p>
         <p><strong>Aufbereitet:</strong> Die fehlenden Jahre werden überbrückt, damit die Zeitachse linear bleibt.</p>
-        <p class="meta">Recherchiert 15.09.2026 · zuletzt geprüft 23.09.2026</p>
+        <p class="meta">Recherchiert 15.09.2026 · zuletzt geprüft 16.10.2026</p>
 
         <h2 id="kleintiere-bundesland">Wo die Kleintiermedizin wächst</h2>
         <p>
