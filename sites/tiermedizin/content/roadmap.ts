@@ -292,4 +292,13 @@ export const POSTS: RoadmapPost[] = [
     dataNote: 'Setzt voraus, dass die Seite bis dahin wirklich online ist.',
     refs: [1, 29],
   },
+  {
+    nr: 31, arc: 'tiere', status: 'geplant', vorabOnline: true,
+    title: 'Der Fohlen-Boom ist vorbei',
+    hook: 'So wenige Zuchtstuten wie nie in der FN-Statistik, die Fohlen fallen seit dem Corona-Hoch. Die Fruchtbarkeit bleibt gleich – es fehlen die Stuten.',
+    figures: ['Zuchtstuten: 103.418 (2010) auf 74.950 (2025), −28 Prozent, weniger als 1990', 'Fohlen: 42.320 (2022) auf 34.424 (2025), −19 Prozent', 'Fohlen je 100 Zuchtstuten: 45,9 (2010) und 45,9 (2025)'],
+    sampleId: 'pferdezucht', chart: 'line', dataStatus: 'belegt',
+    dataNote: 'Erster Post der Visite 2, Pferde-Doppel zu Post 24. FN Jahresbericht Zucht 2025, S. 4 (ds22-pferdezucht.json). vorabOnline, damit Artikel und Datensatz online sind, ohne Post 24 vom Platz „aktuell“ zu verdrängen.',
+    refs: [24],
+  },
 ]

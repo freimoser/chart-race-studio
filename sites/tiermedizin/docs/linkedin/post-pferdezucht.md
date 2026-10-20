@@ -1,8 +1,8 @@
-# LinkedIn-Post (Entwurf, noch ohne Postnummer): Der Fohlen-Boom ist vorbei
+# LinkedIn-Post 31: Der Fohlen-Boom ist vorbei
 
 **Video:** Studio → „Der Fohlen-Boom ist vorbei“ (`?beispiel=pferdezucht`), Line Race 2010–2025, Format 4:5, MP4.
-**Stand:** 20.10.2026, Datensatz nur lokal (nicht gepusht, kein Artikel). Vor dem Posten: Postnummer im Redaktionsplan,
-Artikel anlegen, Datensatz freigeben (über den Post oder `datensaetzeOhnePost`), dann den Artikel-Link unten eintragen.
+**Stand:** 20.10.2026. Post 31 im Redaktionsplan (`vorabOnline`), Artikel `31-pferdezucht-deutschland.md` live. Nach dem
+Posten: `status: 'veroeffentlicht'`, `publishedOn`, `linkedInUrl`.
 **Zahlen:** `sites/tiermedizin/data/raw/ds22-pferdezucht.json` (FN Jahresbericht Zucht 2025, S. 4; 2019–2025 gegen die
 Einzelberichte geprüft).
 
@@ -10,7 +10,7 @@ Einzelberichte geprüft).
 
 Der Fohlen-Boom ist vorbei. 🐴
 
-2025 standen in Deutschland 74.950 Zuchtstuten in den Stutbüchern. So wenige wie nie in der Statistik der Deutschen Reiterlichen Vereinigung, weniger als 1990.
+2025 standen in Deutschland 74.950 Zuchtstuten in den Stutbüchern, also Stuten, die ein Zuchtverband zur Zucht eingetragen hat. So wenige wie nie in der Statistik der Deutschen Reiterlichen Vereinigung, weniger als 1990.
 
 🐎 Zuchtstuten: 103.418 (2010) → 74.950 (2025), −28 %
 🍼 Fohlen: 42.320 im Corona-Hoch 2022 → 34.424 (2025), −19 % in drei Jahren
@@ -25,7 +25,7 @@ Was meint ihr: Wird Pferdezucht zu teuer, oder fehlen die Käufer?
 Gerechnet / Quellen: Alle Zahlen sind von der FN veröffentlicht (alle 25 Mitgliedszuchtverbände, alle Rassen). Berechnet sind nur die Veränderungen in Prozent und die Fohlen je 100 Zuchtstuten (Fohlen geteilt durch Stuten). Die Reihe im Video beginnt 2010, weil die FN davor nur Fünfjahresschritte zeigt; 1990 umfasst vermutlich noch nicht die ostdeutschen Verbände. Eine zweite bundesweite Zählung der Pferdezucht gibt es nicht; regional zeigt der Verband Brandenburg-Anhalt dieselbe Richtung (Fohlen 1.108 im Jahr 2023, 838 im Jahr 2025). Pferdepraxen: Bundestierärztekammer, Statistik 2025.
 
 Alle Zahlen und Methode:
-**Link folgt mit dem Artikel**
+https://tiermedizin-in-zahlen.org/beitrag/pferdezucht-deutschland
 
 Quelle: Deutsche Reiterliche Vereinigung (FN), Jahresbericht Zucht 2025; Bundestierärztekammer.
 

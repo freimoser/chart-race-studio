@@ -330,6 +330,17 @@
     "live": false
   },
   {
+    "post": 31,
+    "slug": "pferdezucht-deutschland",
+    "titel": "Pferdezucht 2025: 74.950 Zuchtstuten, so wenige wie nie",
+    "beschreibung": "2025 waren in Deutschland 74.950 Zuchtstuten eingetragen, so wenige wie nie in der FN-Statistik. Die Fohlen fielen seit 2022 um 19 Prozent.",
+    "frage": "Wie viele Fohlen bekommt eine Zuchtstute?",
+    "stand": "2026-10-20",
+    "geaendert": "2026-10-20",
+    "bereit": true,
+    "live": true
+  },
+  {
     "art": "anleitung",
     "slug": "weltkarte-laender-einfaerben-animieren",
     "titel": "Weltkarte nach Daten einfärben und animieren – kostenlos",
