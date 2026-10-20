@@ -278,9 +278,9 @@ export const POSTS: RoadmapPost[] = [
     nr: 29, arc: 'markt', status: 'geplant',
     title: 'Was die Statistik nicht sagt',
     hook: 'Der ehrliche Post zum Schluss der Reihe: Jede dieser Kurven hat Grenzen, und die gehören dazu.',
-    figures: ['Die BTK zählt Personen, keine Vollzeitstellen', 'Ketten erhebt sie gar nicht', '2019 bis 2023 antworten nur 91 bis 96,5 Prozent der Niedergelassenen auf die Schwerpunktfrage, 2001 bis 2015 praktisch alle'],
+    figures: ['Die BTK zählt Personen, keine Vollzeitstellen', 'Ketten erhebt sie gar nicht', '2021 bis 2023 antworten nur 91 bis 92 Prozent der Niedergelassenen auf die Schwerpunktfrage, 2001 bis 2015 praktisch alle'],
     dataStatus: 'belegt',
-    dataNote: 'Kein eigenes Video nötig, eher ein Karussell oder ein Textpost mit Standbildern aus der Reihe.',
+    dataNote: 'Kein eigenes Video nötig, eher ein Karussell oder ein Textpost mit Standbildern aus der Reihe. Vor dem Post Artikel 29 überarbeiten (Stand 20.10.2026): „12 Datensätze, nur einer amtlich“ ist überholt (27 Datensätze, mehrere mit Destatis-Teilen); neue Quellenfehler der BTK (Summen 2019/2020/2024, Fachtitel 2021 Nordrhein) als Beispiele aufnehmen.',
     refs: [16, 19, 6, 22, 27, 28],
   },
   {

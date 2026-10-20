@@ -5,7 +5,7 @@ titel: Statistik Tierärzte Deutschland: Was die Zahlen nicht zeigen
 beschreibung: Von zwölf Datensätzen zu Tierärzten und Haustieren beruht nur einer auf amtlicher Statistik. Was gezählt, was geschätzt und was modelliert ist.
 frage: Wie verlässlich sind die Statistiken über Tierärzte und Haustiere in Deutschland?
 suchbegriffe: statistik tierärzte deutschland, anzahl tierarztpraxen deutschland, anzahl haustiere deutschland, tierärzte anzahl deutschland
-stand: 2026-10-09
+stand: 2026-10-20
 bereit: ja
 ---
 Von den **12 Datensätzen** auf dieser Seite beruht nur **einer** auf amtlicher Statistik: der Rinderbestand des Statistischen Bundesamts seit 1991. Sechs stammen aus der Kammerstatistik der Bundestierärztekammer, zwei aus Befragungen und Schätzungen der Heimtierverbände ZZF und IVH, einer aus dem Zuchtbuch des VDH, und **zwei sind Modellreihen**. Jede dieser Quellen misst etwas anderes, und jede hat Stellen, an denen ein Bruch wie eine Entwicklung aussieht.
@@ -14,7 +14,7 @@ Von den **12 Datensätzen** auf dieser Seite beruht nur **einer** auf amtlicher 
 
 - Die Bundestierärztekammer zählt Personen, keine Vollzeitstellen. Eine amtliche Arbeitszeitstatistik für die Tiermedizin gibt es nicht. In einer [Befragung des Bundes angestellter Tierärzte](https://www.mdpi.com/2306-7381/13/5/494) Ende 2025 arbeitete gut die Hälfte der Angestellten in Teilzeit; der Tierärzte Atlas nennt aus Stichproben 34 bis 43 Prozent für die Branche.
 - Praxisketten erhebt keine amtliche Stelle. Die einzige belastbare Gesamtzahl sind rund 450 Standorte von 16 Ketten im August 2024, genannt im Tierärzte Atlas.
-- Von 2019 bis 2023 beantworten nur 91 bis 96,5 Prozent der Niedergelassenen die Frage nach dem Praxisschwerpunkt, 2001 bis 2015 praktisch alle (berechnet).
+- Von 2021 bis 2023 beantworten nur 91 bis 92 Prozent der Niedergelassenen die Frage nach dem Praxisschwerpunkt, 2001 bis 2015 praktisch alle (berechnet).
 - Ein Heimtierregister gibt es nicht. Der Sprung bei Hunden und Katzen von 13,6 Millionen (2011) auf 19,7 Millionen (2012) ist ein Wechsel der Erhebungsmethode.
 - Die Fachtierarzt-Statistik zählt Titel, nicht Personen, und für 2015 bis 2017 sowie 2020 fehlen die Tabellen.
 
@@ -63,7 +63,7 @@ Dazu kommen zwei Reihen, die es gibt, die hier aber noch nicht ausgelesen sind: 
 
 - **Eine Linie ist nicht immer eine Messung.** Wo Werte fehlen, verbindet das Diagramm die Nachbarjahre. In der Kettenreihe ist deshalb jeder Wert markiert: belegt, belegte Untergrenze oder geschätzt. Bei IVC Evidensia etwa sind die Jahre zwischen 2016 und 2022 nicht einzeln belegt; die Linie dort ist eine Annahme.
 - **Köpfe sind keine Arbeitszeit.** Das gilt für alle Reihen der Kammer. Der Wechsel von Inhabern zu Angestellten im Jahr 2024 ist nach Personen belegt, nach Arbeitsstunden nicht. Die Kurve steht im Beitrag [Mehr angestellte Tierärzte als Praxisinhaber](anzahl-tieraerzte-deutschland.html).
-- **Eine konsistente Quelle ist nicht automatisch vollständig.** Ab 2019 fehlen bei den Praxisschwerpunkten bis zu neun Prozent der Antworten, die absoluten Werte sind deshalb leicht untererfasst. 2024 waren zudem Mehrfachnennungen möglich, dort liegt die Summe über der Gesamtzahl.
+- **Eine konsistente Quelle ist nicht automatisch vollständig.** Ab 2019 fehlen bei den Praxisschwerpunkten bis zu neun Prozent der Antworten, die absoluten Werte sind deshalb leicht untererfasst. Und die Summen der Kammer selbst sind nicht immer richtig: 2019, 2020 und 2024 passen sie nicht zu den Werten der 17 Kammern, 2024 ist Rheinland-Pfalz doppelt gezählt. Hier sind diese Jahre aus den Kammerspalten neu summiert.
 - **Umsätze sind nicht preisbereinigt.** Die Werte des Heimtiermarkts stehen zu Endverbraucherpreisen des jeweiligen Jahres.
 
 ## Häufige Fragen
