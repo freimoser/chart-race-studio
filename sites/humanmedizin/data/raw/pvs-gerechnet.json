@@ -1,0 +1,660 @@
+{
+ "hinweis": "Von sites/humanmedizin/scripts/build-samples.mjs erzeugt. Jeder Wert der Datensätze pvs-installationen und pvs-hersteller, der nicht direkt aus einem KBV-Bericht stammt, mit Methode. Alles andere ist belegt (pvs-kbv-installationen.csv).",
+ "summe_2017_2020": "Gesamtzahl aller Installationen linear zwischen Q4/2016 (120379) und Q4/2021 (119405)",
+ "werte": [
+  {
+   "jahr": 2017,
+   "system": "CGM ALBIS",
+   "wert": 5709,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2018,
+   "system": "CGM ALBIS",
+   "wert": 5460,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2019,
+   "system": "CGM ALBIS",
+   "wert": 5212,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2020,
+   "system": "CGM ALBIS",
+   "wert": 4968,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2017,
+   "system": "CGM DATA VITAL",
+   "wert": 950,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2018,
+   "system": "CGM DATA VITAL",
+   "wert": 856,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2019,
+   "system": "CGM DATA VITAL",
+   "wert": 763,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2020,
+   "system": "CGM DATA VITAL",
+   "wert": 669,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2017,
+   "system": "CGM M1 PRO",
+   "wert": 3696,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2018,
+   "system": "CGM M1 PRO",
+   "wert": 3570,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2019,
+   "system": "CGM M1 PRO",
+   "wert": 3444,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2020,
+   "system": "CGM M1 PRO",
+   "wert": 3313,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2017,
+   "system": "CGM MEDISTAR",
+   "wert": 14052,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2018,
+   "system": "CGM MEDISTAR",
+   "wert": 13511,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2019,
+   "system": "CGM MEDISTAR",
+   "wert": 12969,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2020,
+   "system": "CGM MEDISTAR",
+   "wert": 12449,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2017,
+   "system": "CGM TURBOMED",
+   "wert": 12119,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2018,
+   "system": "CGM TURBOMED",
+   "wert": 11541,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2019,
+   "system": "CGM TURBOMED",
+   "wert": 10963,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2020,
+   "system": "CGM TURBOMED",
+   "wert": 10361,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2017,
+   "system": "Data-AL",
+   "wert": 1019,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2018,
+   "system": "Data-AL",
+   "wert": 1011,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2019,
+   "system": "Data-AL",
+   "wert": 1002,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2020,
+   "system": "Data-AL",
+   "wert": 994,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2017,
+   "system": "DURIA",
+   "wert": 1933,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2018,
+   "system": "DURIA",
+   "wert": 1970,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2019,
+   "system": "DURIA",
+   "wert": 2006,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2020,
+   "system": "DURIA",
+   "wert": 2019,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2017,
+   "system": "easymed",
+   "wert": 976,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2018,
+   "system": "easymed",
+   "wert": 869,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2019,
+   "system": "easymed",
+   "wert": 762,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2020,
+   "system": "easymed",
+   "wert": 655,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2017,
+   "system": "EL",
+   "wert": 1683,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2018,
+   "system": "EL",
+   "wert": 1680,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2019,
+   "system": "EL",
+   "wert": 1677,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2020,
+   "system": "EL",
+   "wert": 1676,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2013,
+   "system": "ETERNO Cloud",
+   "wert": 1,
+   "methode": "nächster Beleg gehalten bzw. linear zwischen zwei Belegen"
+  },
+  {
+   "jahr": 2017,
+   "system": "ETERNO Cloud",
+   "wert": 46,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2018,
+   "system": "ETERNO Cloud",
+   "wert": 77,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2019,
+   "system": "ETERNO Cloud",
+   "wert": 109,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2020,
+   "system": "ETERNO Cloud",
+   "wert": 140,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2017,
+   "system": "EVA",
+   "wert": 545,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2018,
+   "system": "EVA",
+   "wert": 536,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2019,
+   "system": "EVA",
+   "wert": 526,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2020,
+   "system": "EVA",
+   "wert": 517,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2017,
+   "system": "EVIDENT",
+   "wert": 696,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2018,
+   "system": "EVIDENT",
+   "wert": 705,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2019,
+   "system": "EVIDENT",
+   "wert": 713,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2020,
+   "system": "EVIDENT",
+   "wert": 722,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2017,
+   "system": "FIDUS",
+   "wert": 481,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2018,
+   "system": "FIDUS",
+   "wert": 490,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2019,
+   "system": "FIDUS",
+   "wert": 499,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2020,
+   "system": "FIDUS",
+   "wert": 508,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2017,
+   "system": "IFA-AUGENARZT",
+   "wert": 595,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2018,
+   "system": "IFA-AUGENARZT",
+   "wert": 567,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2019,
+   "system": "IFA-AUGENARZT",
+   "wert": 538,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2020,
+   "system": "IFA-AUGENARZT",
+   "wert": 510,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2017,
+   "system": "Med7",
+   "wert": 972,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2018,
+   "system": "Med7",
+   "wert": 905,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2019,
+   "system": "Med7",
+   "wert": 837,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2020,
+   "system": "Med7",
+   "wert": 770,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2017,
+   "system": "medatixx",
+   "wert": 480,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2018,
+   "system": "medatixx",
+   "wert": 958,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2019,
+   "system": "medatixx",
+   "wert": 1436,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2020,
+   "system": "medatixx",
+   "wert": 1929,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2017,
+   "system": "Medical Office",
+   "wert": 3134,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2018,
+   "system": "Medical Office",
+   "wert": 3648,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2019,
+   "system": "Medical Office",
+   "wert": 4161,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2020,
+   "system": "Medical Office",
+   "wert": 4616,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2017,
+   "system": "MEDYS",
+   "wert": 849,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2018,
+   "system": "MEDYS",
+   "wert": 822,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2019,
+   "system": "MEDYS",
+   "wert": 794,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2020,
+   "system": "MEDYS",
+   "wert": 767,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2017,
+   "system": "PegaMed",
+   "wert": 840,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2018,
+   "system": "PegaMed",
+   "wert": 862,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2019,
+   "system": "PegaMed",
+   "wert": 883,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2020,
+   "system": "PegaMed",
+   "wert": 905,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2017,
+   "system": "Praxis-Programm",
+   "wert": 722,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2018,
+   "system": "Praxis-Programm",
+   "wert": 718,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2019,
+   "system": "Praxis-Programm",
+   "wert": 714,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2020,
+   "system": "Praxis-Programm",
+   "wert": 710,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2017,
+   "system": "PROFIMED",
+   "wert": 750,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2018,
+   "system": "PROFIMED",
+   "wert": 710,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2019,
+   "system": "PROFIMED",
+   "wert": 670,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2020,
+   "system": "PROFIMED",
+   "wert": 630,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2017,
+   "system": "QUINCY WIN",
+   "wert": 3586,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2018,
+   "system": "QUINCY WIN",
+   "wert": 3500,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2019,
+   "system": "QUINCY WIN",
+   "wert": 3414,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2020,
+   "system": "QUINCY WIN",
+   "wert": 3321,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2017,
+   "system": "T2med",
+   "wert": 287,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2018,
+   "system": "T2med",
+   "wert": 531,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2019,
+   "system": "T2med",
+   "wert": 774,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2020,
+   "system": "T2med",
+   "wert": 1062,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2017,
+   "system": "tomedo",
+   "wert": 541,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2018,
+   "system": "tomedo",
+   "wert": 779,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2019,
+   "system": "tomedo",
+   "wert": 1018,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2020,
+   "system": "tomedo",
+   "wert": 1289,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2017,
+   "system": "x.comfort",
+   "wert": 4137,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2018,
+   "system": "x.comfort",
+   "wert": 3851,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2019,
+   "system": "x.comfort",
+   "wert": 3565,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2020,
+   "system": "x.comfort",
+   "wert": 3286,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2017,
+   "system": "x.concept",
+   "wert": 5719,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2018,
+   "system": "x.concept",
+   "wert": 5510,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2019,
+   "system": "x.concept",
+   "wert": 5301,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2020,
+   "system": "x.concept",
+   "wert": 5110,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2017,
+   "system": "x.isynet",
+   "wert": 8704,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2018,
+   "system": "x.isynet",
+   "wert": 8410,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2019,
+   "system": "x.isynet",
+   "wert": 8117,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2020,
+   "system": "x.isynet",
+   "wert": 7843,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  }
+ ]
+}

@@ -27,7 +27,7 @@ export const ARCS: RoadmapArc[] = [
 
 export const POSTS: RoadmapPost[] = [
   {
-    nr: 1, arc: 'software', status: 'geplant',
+    nr: 1, arc: 'software', status: 'naechster',
     title: 'Welche Praxissoftware Arztpraxen nutzen',
     hook: 'Über hundert Praxisverwaltungssysteme haben eine KBV-Zulassung. Wie sich die Installationen über die Jahre verschoben haben, zeigt die Installationsstatistik der KBV.',
     figures: ['Installationen je System laut KBV, ärztliche Praxen ohne Psychotherapie-Systeme', 'Gewinner und Verlierer der letzten Jahre', 'Summe aller Installationen Q4/2025: 116.954 (126 Zeilen, selbst summiert)'],

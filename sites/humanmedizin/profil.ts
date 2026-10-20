@@ -107,7 +107,7 @@ Thomas Freimoser ist kein Arzt und keine statistische Behörde. Diese Seite wert
     text: 'Zeitreihen mit Jahr und Quelle – als animierte Grafik.',
     farben: { grund: '#14213d', akzent: '#2a9d8f', hell: '#9fd8cf', text: '#dbe4f0' },
   },
-  glaetteDatensaetze: [],
+  glaetteDatensaetze: ['pvs-hersteller'],
 }
 
 export default profil
