@@ -1,0 +1,430 @@
+{
+ "title": "Zuchtpferdebestand in Deutschland (alle Mitgliedszuchtverbände der FN), 1990–2025",
+ "abgerufen": "2026-10-20",
+ "quelle": "Deutsche Reiterliche Vereinigung (FN), Jahresbericht Bereich Zucht 2025",
+ "quelleUrl": "https://www.pferdesport-deutschland.de/shop/downloadable/download/sample/sample_id/381/",
+ "unit": "Anzahl",
+ "notes": "Werte aus der Grafik S. 4 abgelesen (dort als Zahlen beschriftet, nicht geschätzt). 1990, 1995, 2000, 2005 nur in Fünfjahresschritten, ab 2010 jedes Jahr. 2019–2025 identisch mit den Tabellen „Zuchtpferdebestand in <Jahr>“ der Einzelberichte 2020–2025 (Zeile Zuchtpferdebestand gesamt, Spalten Jahr/Vorjahr), geprüft 16.10.2026. Definitionen (FN, S. 2): Stuten = eingetragen in Stutbuch I, II oder Vorbuch; Hengste deckberechtigt, Doppelzählung bei Eintrag in mehreren Verbänden möglich; Fohlen = registrierte Fohlen aller Rassen. 1990 vermutlich ohne die ostdeutschen Verbände (Sprung bis 1995), deshalb beginnt der Datensatz 2010. Gegenprobe der Richtung: Pferdezuchtverband Brandenburg-Anhalt (LELF Tierzuchtreport) Fohlen 1.108 (2023) → 838 (2025).",
+ "rows": [
+  {
+   "date": "1990",
+   "name": "Eingetragene Zuchtstuten",
+   "value": 85331,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "1990",
+   "name": "Registrierte Fohlen",
+   "value": 37671,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "1990",
+   "name": "Eingetragene Hengste",
+   "value": 4855,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "1995",
+   "name": "Eingetragene Zuchtstuten",
+   "value": 133206,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "1995",
+   "name": "Registrierte Fohlen",
+   "value": 59351,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "1995",
+   "name": "Eingetragene Hengste",
+   "value": 8674,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2000",
+   "name": "Eingetragene Zuchtstuten",
+   "value": 119544,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2000",
+   "name": "Registrierte Fohlen",
+   "value": 44715,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2000",
+   "name": "Eingetragene Hengste",
+   "value": 8948,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2005",
+   "name": "Eingetragene Zuchtstuten",
+   "value": 108746,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2005",
+   "name": "Registrierte Fohlen",
+   "value": 46094,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2005",
+   "name": "Eingetragene Hengste",
+   "value": 8879,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2010",
+   "name": "Eingetragene Zuchtstuten",
+   "value": 103418,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2010",
+   "name": "Registrierte Fohlen",
+   "value": 47425,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2010",
+   "name": "Eingetragene Hengste",
+   "value": 9543,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2011",
+   "name": "Eingetragene Zuchtstuten",
+   "value": 98826,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2011",
+   "name": "Registrierte Fohlen",
+   "value": 43480,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2011",
+   "name": "Eingetragene Hengste",
+   "value": 9118,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2012",
+   "name": "Eingetragene Zuchtstuten",
+   "value": 92015,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2012",
+   "name": "Registrierte Fohlen",
+   "value": 39172,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2012",
+   "name": "Eingetragene Hengste",
+   "value": 8684,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2013",
+   "name": "Eingetragene Zuchtstuten",
+   "value": 85981,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2013",
+   "name": "Registrierte Fohlen",
+   "value": 36229,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2013",
+   "name": "Eingetragene Hengste",
+   "value": 8520,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2014",
+   "name": "Eingetragene Zuchtstuten",
+   "value": 83275,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2014",
+   "name": "Registrierte Fohlen",
+   "value": 33788,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2014",
+   "name": "Eingetragene Hengste",
+   "value": 8115,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2015",
+   "name": "Eingetragene Zuchtstuten",
+   "value": 82196,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2015",
+   "name": "Registrierte Fohlen",
+   "value": 34946,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2015",
+   "name": "Eingetragene Hengste",
+   "value": 8121,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2016",
+   "name": "Eingetragene Zuchtstuten",
+   "value": 81075,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2016",
+   "name": "Registrierte Fohlen",
+   "value": 35718,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2016",
+   "name": "Eingetragene Hengste",
+   "value": 7816,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2017",
+   "name": "Eingetragene Zuchtstuten",
+   "value": 80416,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2017",
+   "name": "Registrierte Fohlen",
+   "value": 37080,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2017",
+   "name": "Eingetragene Hengste",
+   "value": 7610,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2018",
+   "name": "Eingetragene Zuchtstuten",
+   "value": 81140,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2018",
+   "name": "Registrierte Fohlen",
+   "value": 38298,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2018",
+   "name": "Eingetragene Hengste",
+   "value": 7544,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2019",
+   "name": "Eingetragene Zuchtstuten",
+   "value": 80873,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2019",
+   "name": "Registrierte Fohlen",
+   "value": 36936,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2019",
+   "name": "Eingetragene Hengste",
+   "value": 7244,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2020",
+   "name": "Eingetragene Zuchtstuten",
+   "value": 83927,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2020",
+   "name": "Registrierte Fohlen",
+   "value": 38224,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2020",
+   "name": "Eingetragene Hengste",
+   "value": 8129,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2021",
+   "name": "Eingetragene Zuchtstuten",
+   "value": 85849,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2021",
+   "name": "Registrierte Fohlen",
+   "value": 39877,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2021",
+   "name": "Eingetragene Hengste",
+   "value": 8339,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2022",
+   "name": "Eingetragene Zuchtstuten",
+   "value": 83855,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2022",
+   "name": "Registrierte Fohlen",
+   "value": 42320,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2022",
+   "name": "Eingetragene Hengste",
+   "value": 8219,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2023",
+   "name": "Eingetragene Zuchtstuten",
+   "value": 81457,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2023",
+   "name": "Registrierte Fohlen",
+   "value": 42082,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2023",
+   "name": "Eingetragene Hengste",
+   "value": 7830,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2024",
+   "name": "Eingetragene Zuchtstuten",
+   "value": 78784,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2024",
+   "name": "Registrierte Fohlen",
+   "value": 38044,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2024",
+   "name": "Eingetragene Hengste",
+   "value": 7627,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2025",
+   "name": "Eingetragene Zuchtstuten",
+   "value": 74950,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2025",
+   "name": "Registrierte Fohlen",
+   "value": 34424,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  },
+  {
+   "date": "2025",
+   "name": "Eingetragene Hengste",
+   "value": 7386,
+   "quality": "belegt",
+   "quelle": "FN Jahresbericht Bereich Zucht 2025, Grafik „Entwicklung des Zuchtpferdebestandes“, S. 4 (Stand 13.05.2026), Werte als Beschriftung abgelesen am 20.10.2026"
+  }
+ ]
+}

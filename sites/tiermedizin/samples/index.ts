@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
+import { PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -216,6 +216,27 @@ export const SAMPLES: SampleDataset[] = [
     headers: PRAXISARTEN_2010.headers,
     rows: PRAXISARTEN_2010.rows,
     suggested: { chartType: 'line', topN: 6, decimals: 0, primaryAxisLabel: 'Praxisinhaber:innen', colors: { 'Nur Kleintiere': '#5f0f40', 'Nutztiere und Kleintiere': '#8d99ae', 'Nur Pferde': '#e36414', 'Nur Nutztiere': '#0f4c5c', 'Kleintiere und Pferde': '#f4a259', 'Nutztiere und Pferde': '#5c9ead' } },
+  },
+  {
+    id: 'pferdezucht',
+    erstellt: '2026-10-20', geprueft: '2026-10-20',
+    category: 'nutztiere',
+    title: 'Der Fohlen-Boom ist vorbei',
+    subtitle: 'Zuchtstuten und registrierte Fohlen aller FN-Zuchtverbände, 2010–2025',
+    source: 'Quelle: Deutsche Reiterliche Vereinigung (FN), Jahresbericht Zucht 2025 (Entwicklung des Zuchtpferdebestandes)',
+    sourceUrl: 'https://www.pferdesport-deutschland.de/shop/downloadable/download/sample/sample_id/381/',
+    unit: 'Pferde',
+    description: '74.950 Zuchtstuten 2025, so wenige wie nie in der Reihe. Die Fohlen fielen vom Corona-Hoch 2022 um 19 Prozent.',
+    dataInfo: [
+      "Gezählt werden alle 25 Mitgliedszuchtverbände der Deutschen Reiterlichen Vereinigung, alle Rassen einschließlich Ponys und Kaltblüter. Zuchtstuten sind die in Stutbuch I, II oder Vorbuch eingetragenen Stuten; Fohlen die im Jahr registrierten Fohlen.",
+      "Alle Werte sind von der FN veröffentlicht, nichts ist gerechnet. Quelle ist die Grafik „Entwicklung des Zuchtpferdebestandes“ im Jahresbericht Zucht 2025, in der jeder Wert als Zahl beschriftet ist. 2019 bis 2025 stimmen mit den Tabellen der einzelnen Jahresberichte überein.",
+      "Die Reihe beginnt 2010, weil die FN davor nur Fünfjahresschritte zeigt (1990, 1995, 2000, 2005). 1995 waren es 133.206 Zuchtstuten und 59.351 Fohlen, 1990 vermutlich noch ohne die ostdeutschen Verbände.",
+      "Gegenprobe der Richtung: Beim Pferdezuchtverband Brandenburg-Anhalt fielen die Fohlen von 1.108 (2023) auf 838 (2025). Eine zweite bundesweite Zählung der Pferdezucht gibt es nicht.",
+      "Fohlen je 100 Zuchtstuten (berechnet): 45,9 im Jahr 2010 und 45,9 im Jahr 2025, dazwischen bis 51,7 (2023). Der Rückgang kommt von weniger Stuten, nicht von weniger Fohlen je Stute.",
+    ],
+    headers: PFERDEZUCHT.headers,
+    rows: PFERDEZUCHT.rows,
+    suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'Pferde', colors: { 'Zuchtstuten': '#0f4c5c', 'Fohlen': '#e36414' } },
   },
   {
     id: 'fachtieraerzte',
