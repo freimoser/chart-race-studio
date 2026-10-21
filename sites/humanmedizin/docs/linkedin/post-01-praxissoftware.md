@@ -22,8 +22,8 @@ Was die Zahl nicht sagt: Eine Installation ist keine Praxis und kein Arzt. Ein M
 Für alle, die Schnittstellen zu Praxissoftware bauen, heißt das: Wer nur MEDISTAR und TURBOMED anbindet, erreicht heute knapp ein Viertel der Installationen ärztlicher Systeme. 2013 war es mehr als ein Drittel.
 
 **Gerechnet / Quellen**
-- 2017 bis 2020 hat die KBV keine Installationszahlen veröffentlicht, nur Anteile in Prozent. Die Werte dieser Jahre sind aus den Anteilen (Q3/2017, Q3/2020) und einer linear gerechneten Gesamtzahl entstanden, für Systeme ohne Anteil linear zwischen 2016 und 2021. 109 von 351 Werten der Grafik.
-- Psychotherapie- und Krankenhaussysteme herausgenommen. Anteile beziehen sich auf die 27 ärztlichen Systeme mit mindestens einmal 500 Installationen.
+- 2017 bis 2020 hat die KBV keine Installationszahlen veröffentlicht, nur Anteile in Prozent. Die Werte dieser Jahre sind aus den Anteilen (Q3/2017, Q3/2020) und einer linear gerechneten Gesamtzahl entstanden, für Systeme ohne Anteil linear zwischen 2016 und 2021. 113 von 364 Werten der Grafik.
+- Psychotherapie- und Krankenhaussysteme herausgenommen. Anteile beziehen sich auf die 28 ärztlichen Systeme mit mindestens einmal 500 Installationen.
 - Quelle: Kassenärztliche Bundesvereinigung, Installationsstatistik Systeme, Jahresenden 2013–2016 und 2021–2025, ältere Berichte über das Webarchiv.
 
 Transparenz: Ich bin Geschäftsführer der FleXChange Medical GmbH, wir verbinden Praxissoftware mit E-Health-Anwendungen.
@@ -32,4 +32,4 @@ Transparenz: Ich bin Geschäftsführer der FleXChange Medical GmbH, wir verbinde
 
 ---
 
-**Erster Kommentar:** Alle Zahlen, die Methode und die Grafik zum Selbstabspielen: https://humanmedizin-in-zahlen.org/beitrag/praxissoftware-arztpraxen-marktanteile
+**Erster Kommentar:** Alle Zahlen, die Methode und die Grafik zum Selbstabspielen, dazu die lange Fassung ab 2007 und wie der Markt 1997 aussah: https://humanmedizin-in-zahlen.org/beitrag/praxissoftware-arztpraxen-marktanteile

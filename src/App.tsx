@@ -71,7 +71,7 @@ export default function App() {
           <a href={wurzel()} className="mr-auto" title="Zur Startseite"><Wordmark /></a>
           <nav aria-label="Hauptnavigation" className="order-3 -mx-4 flex w-[calc(100%+2rem)] gap-5 overflow-x-auto px-4 pb-0.5 [scrollbar-width:none] lg:order-none lg:mx-0 lg:w-auto lg:px-0 lg:pb-0">
             <a href={wurzel('beitrag/')} className={navLink}>Artikel</a>
-            <a href={wurzel('datenformat/')} className={navLink}>Datenformat</a>
+            <a href={PROFIL.datenformatUrl(wurzel())} className={navLink}>Datenformat</a>
             <a href={wurzel('artikel/datenherkunft.html')} className={`${navLink} hidden sm:inline`}>Datenherkunft</a>
             <a href="#redaktionsplan" onClick={(e) => { e.preventDefault(); zeige('roadmap') }} aria-current={view === 'roadmap' ? 'page' : undefined} className={navLink}>Redaktionsplan</a>
             <a href="#" onClick={(e) => { e.preventDefault(); zeige('studio') }} aria-current={view === 'studio' ? 'page' : undefined} className={navLink}>Studio</a>

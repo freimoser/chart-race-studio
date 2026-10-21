@@ -4,6 +4,13 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Humanmedizin: zweites PVS-Race ab 2007, Momentaufnahmen 1997–2005 (21.10.2026)
+
+- **Kern, betrifft beide Seiten:** Die Studio-Links „Datenformat“ (Kopf, Datenpanel, leere Bühne) nehmen jetzt `PROFIL.datenformatUrl` statt `datenformat/`; auf der Humanmedizin führen sie zur Schwesterseite statt ins Leere. Tiermedizin unverändert.
+- **Neuer Datensatz `pvs-installationen-2007`** (30 Arztsysteme 2007–2025, im Video 20 Zeilen). Vor 2007 fehlen Systemlisten für 2001–2004 und 2006, darum nicht ab 2000 (Entscheidung Nutzer). 2008–2012 zwischen Teilbelegen (2009, 2010, 2011) gerechnet, 8 Anbieterwerte 2011 als Annahme; 249 von 570 Werten gerechnet, sichtbar 46 %.
+- **Momentaufnahmen 1997, Mitte 2000 und 2005** als Tabelle im Artikel zu Post 1 (DOS- und Windows-Zeilen addiert und markiert).
+- **Fehler behoben:** Der CSV-Leser im Humanmedizin-Generator zerlegte Felder mit Komma in Anführungszeichen falsch; S3-Win fehlte deshalb im Datensatz `pvs-installationen`. Jetzt 28 statt 27 Systeme, 113 gerechnete Werte; Summen und Anteile in Artikel, Leitartikel, Datenherkunft und Post-Entwurf nachgezogen (CGM 50 → 32 Prozent statt 51 → 33).
+
 ### Zwei Seiten in einem Repo: Humanmedizin in Zahlen (20.10.2026) – betrifft beide Seiten
 
 - **Aufbau:** Der Kern (`src/`, `scripts/`, `vite.config.ts`) ist gemeinsam, alles Seitenspezifische liegt unter `sites/<seite>/` (Profil, Inhalte, Datensätze, Rohdaten, `public/`, eigene Skripte). `SITE=…` bzw. die Datei `.seite` wählt die Seite. Erklärt in `docs/ARCHITEKTUR.md`, Regeln für beide Chats in `CLAUDE.md`, für andere KIs in `AGENTS.md`.

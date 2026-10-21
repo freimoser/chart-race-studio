@@ -107,7 +107,7 @@ export function DataPanel() {
             <button type="button" className="btn-ghost" onClick={startEmpty}><Table2 size={16} /> Leere Tabelle</button>
           </div>
           <input ref={fileRef} type="file" accept=".csv,.tsv,.txt,.xlsx,.xls,.ods,.xlsm" className="hidden" onChange={(e) => onFiles(e.target.files)} />
-          <a href={wurzel('datenformat/')} className="group flex items-start gap-2.5 rounded-md border border-line bg-surface-2/60 px-3 py-2.5 transition-colors hover:border-primary">
+          <a href={PROFIL.datenformatUrl(wurzel())} className="group flex items-start gap-2.5 rounded-md border border-line bg-surface-2/60 px-3 py-2.5 transition-colors hover:border-primary">
             <BookOpen size={16} className="mt-0.5 shrink-0 text-primary" aria-hidden />
             <span className="text-[13px] leading-snug">
               <span className="block font-medium text-ink group-hover:text-primary">So muss die Tabelle aussehen</span>

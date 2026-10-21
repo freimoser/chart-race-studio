@@ -404,3 +404,161 @@ Basis, nicht übernommen).
 Das Produkt „medatixx“ steht 2015/2016 in der KBV-Liste als **„medatixx/easymedx“**: 35 Installationen am 31.12.2015,
 157 am 31.12.2016 (Bericht Stand 31.12.2016, Vorjahresspalte), 0,3 % am 30.09.2017. In
 `data/raw/pvs-kbv-installationen.csv` bzw. `pvs-kbv-anteile-2017-2020.csv` nachgetragen.
+
+## Nachtrag 2 (20.10.2026): Lücken 1998–2012 – was gefunden wurde
+
+Daten: `pvs-kbv-luecken-1998-2012.csv` (513 Zeilen, gleiches Format; Herstellerwerte als
+`system=__ANBIETER__:<Name wie in der Quelle>`, `klasse` dort leer). Nur belegte Werte, keine Schätzung. Systemnamen
+wie in `pvs-kbv-installationen.csv`, wenn es dasselbe System ist; sonst der veröffentlichte Name.
+
+### Neue Quellen je Stichtag
+
+| Stichtag in CSV | Inhalt | Quelle | Güte |
+|---|---|---|---|
+| 31.12.1997 | Rest der Top 60 Systeme (Ränge, die in der Haupt-CSV fehlten) + Top 60 Anbieter | KBV-HTML 1998 <https://web.archive.org/web/19980702054121/http://www.kbv.de:80/itarzt/statisti/02_top60.htm> | KBV primär |
+| 30.06.1998 | Top 30 Systeme + Top 30 Anbieter, „Stand 30.9.98/Abrechnungsquartal 2/98, Quelle: KBV“ | Dt. Ärzteblatt PraxisComputer 6/1998, S. 16, Tab. 1/2 <https://www.aerzteblatt.de/pdf/95/45/s16.pdf> | KBV-Tabelle im DÄ |
+| 31.03.1999 | **Top 60 Systeme + Top 60 Anbieter, Gesamt 73.465** („Abrechnungsquartal 1/99, Stand 30.06.1999“) | KBV-Website kbv-it.de <https://web.archive.org/web/19991103221122/http://www.kbv-it.de:80/sw-haus/statisti/02_to60s.html>, <https://web.archive.org/web/19991104001820/http://www.kbv-it.de:80/sw-haus/statisti/02_top60.html> | KBV primär |
+| 30.06.2000 | **Top 60 Systeme + Top 60 Anbieter, Gesamt 77.501** („Abrechnungsquartal 2/00, Stand 30.09.2000“) | <https://web.archive.org/web/20001209074700/http://www.kbv-it.de:80/sw-haus/statisti/02_to60s.html>, <https://web.archive.org/web/20010220024917/http://www.kbv-it.de:80/sw-haus/statisti/02_top60.html> | KBV primär |
+| 30.06.2001 (s. u.) | Top 30 Systeme („Stand 30.09.2001, Quelle: KBV“) + 6 Anbieter | DÄ PraxisComputer 2/2002 <https://www.aerzteblatt.de/archiv/kbv-statistiken-zum-einsatz-von-praxis-edv-1600e669-ac26-48bc-917a-e5572b834214> (Tabelle als Bild) | KBV-Tabelle im DÄ |
+| 31.03.2002 (s. u.) | nur Anbieter: Medistar 13.346; Albis + Compumed + Data Vital 13.674 („Stand 30. Juni 2002“) | DÄ PraxisComputer 2/2003 <https://www.aerzteblatt.de/archiv/36849/Compugroup-uebernimmt-Medistar> | Presse |
+| 31.12.2005 (s. u.) | Top 20 Systeme „2005“ | Dissertation M. Kersting, MHH, Tab. 2 <https://www.markus-kersting.de/wp-content/uploads/2011/03/Dissertation_Kersting_MHH_Final_Web.pdf> | Sekundär, zitiert KBV |
+| 31.12.2008 | nur Summe 114.772 | Ärzte Zeitung 02.09.2009 <https://www.aerztezeitung.de/Wirtschaft/MEDISTAR-bleibt-Spitzenreiter-in-den-Praxen-371138.html> | Presse |
+| 30.06.2009 (s. u.) | Top 20 Systeme „2009“ | Kersting, Tab. 2 | Sekundär |
+| 31.12.2009 | nur Summe 117.573 | Ärzte Zeitung 21.10.2011 (wie Abschnitt 10) | Presse |
+| 30.06.2011, 31.12.2011 | Top 20 Anbieter (KBV-Anbieterbericht, schon in Abschnitt 9) | Webarchiv DARIS (Abschnitt 3) | KBV primär |
+
+**Stichtag-Konvention (wichtig):** 1997–2000 nennt die KBV „Abrechnungsquartal x/yy“ und daneben „Stand“ = Datum
+der Auswertung, ein Quartal später (z. B. „Abrechnungsquartal 2/00, Stand 30.09.2000“). Die CSV nimmt immer das
+**Quartalsende des Abrechnungsquartals**. Für 2001 und 2002 nennen die Quellen nur „Stand 30.09.2001“ bzw. „Stand 30. Juni
+2002“; nach der Konvention von 1998–2000 ist das Abrechnungsquartal 2/2001 bzw. 1/2002 → in der CSV 30.06.2001 und
+31.03.2002. **Nicht belegt**, kann ein Quartal später sein. Ab den PDFs 2013 ist „Stand“ das Datenquartal selbst.
+Kersting nennt nur „2005“ und „2009“: Die KBV-Seite bot 2006 den Bericht „Systeme 31.12.2005“ an → 31.12.2005
+(plausibel, nicht belegt). Für „2009“ ergeben die Prozentangaben eine Basis von rund 117.050 – das passt weder zur Summe
+31.12.2008 (114.772) noch zu 31.12.2009 (117.573), am ehesten zu 30.06.2009 (KBV-Bericht „Systeme 30.06.2009“ ab 2010
+online) → in der CSV **30.06.2009, unsicher**.
+
+**Gesamtsummen:** 1997: 69.252 · 31.03.1999: 73.465 · 30.06.2000: 77.501 · 2001: nicht genannt (rechnerisch aus
+Medistar (Windows) 10.137 = 11,65 % rund 87.000, **nicht** in der CSV) · 2007: 114.244 · 31.12.2008: 114.772 ·
+31.12.2009: 117.573 · 2010/2011 siehe Hauptteil. Der Sprung 2000 → 2007 (+37.000) ist überwiegend Digitalisierung
+(Anteil EDV-Abrechner an den Ärzten 1999: 72,55 %, DÄ PraxisComputer 1/2000) und der Eintritt der Psychotherapeuten
+(seit 1999 in der vertragsärztlichen Versorgung, ebd.).
+
+**1999-12-31, nur Anbieter in Prozent** (DÄ PraxisComputer 1/2000, Grafik 3, <https://www.aerzteblatt.de/pdf/97/11/s6-7.pdf>;
+keine Installationszahlen, daher nicht in der CSV): DOCexpert 14,86 · MediStar 14,51 · Compugroup Holding 13,10 ·
+TurboMed 11,08 · MCS 10,79 · Frey ADV 5,03 · Data-Vital 3,93 · Promedico 2,19 · Duria eG 1,70 · Mediamed 1,40 %.
+
+### Nicht gefunden (trotz Suche)
+
+- **Q4 2000–2004, 2006, 2008 (je System), 2010 (außer Top 5), 2012**: KBV verlinkte 2002–2013 nur auf DARIS-Dokumente
+  (`daris.kbv.de/daris/link.asp?ID=1003737294`), die im Webarchiv bis auf Stand 31.12.2007 (System) und 2011 (Anbieter)
+  nicht gespeichert sind. KBV-Seiten belegen, welche Berichte existierten: 30.06.2002, 31.12.2005, 30.06.2006
+  („Neuberechnung … aufgrund unvollständiger Datenlieferung“), 31.12.2006, 31.12.2007, 31.12.2008, 30.06.2009,
+  31.12.2009, 30.06.2010, 31.12.2010, 30.06.2011 (<https://web.archive.org/web/2007/http://www.kbv.de/ita/4299.html> u. a.).
+- PraxisComputer/PRAXiS-Inhaltsverzeichnisse 1998–2013 durchsucht: Nach 2002 keine Statistik-Artikel mehr.
+- Ärzte Zeitung 2011 (Jan.) und 2013 („Die Top Ten der Arztsoftware-Systeme“): hinter Login, auch im Webarchiv.
+- CGM-Börsenprospekt 2007: nicht online gefunden (Pressemitteilung nennt nur „ca. 43 %“ der Ärzte als Nutzer).
+- Wege, die noch offen sind: KBV direkt anfragen (DARIS-Archiv); Ärzte-Zeitung-Login; DÄ-Archiv PraxisComputer 3/2001
+  und 1–6/2003 (Bilder ohne Text, nicht alle gesichtet); Fachgruppen-Top-20 2010 (teils archiviert, nicht ausgewertet).
+
+### Untergrenzen (für „nicht gelistet“)
+
+| Stichtag | Liste | letzter Platz = Untergrenze |
+|---|---|---|
+| 31.12.1997 | Top 60 Systeme / Anbieter | 104 (PRISMA) / 63 (BOSS) |
+| 30.06.1998 | Top 30 Systeme / Anbieter | 390 (Apris) / 246 (Co-Med) |
+| 31.03.1999 | Top 60 Systeme / Anbieter | 110 (GENOPRAX) / 68 |
+| 30.06.2000 | Top 60 Systeme / Anbieter | 149 (EVIDENT) / 71 (MEDOS) |
+| 30.06.2001 | Top 30 Systeme | 619 (Psychodat) |
+| 2005 / 2009 (Kersting) | Top 20 | 1.038 / 1.041 |
+
+### Anbieter mit nur einem gelisteten Produkt (Anbieterwert = Systemwert, geprüft an der Liste desselben Stichtags)
+
+Geprüft 31.03.1999 und 30.06.2000 (Summe der Systemzeilen = Anbieterzeile): promedico (easymed), DURIA eG (DURIA),
+Mediamed Praxiscomputer (S1), Medic Praxis Systeme (MEDIC-PC), Wiegand (Arztpraxis Wiegand), IFA (IFA-AUGENARZT), MEDYS,
+Medisoftware (Praxisprogramm), PEGA (PegaMed), Softland (E.L.), EGAD (FIDUS), Flohrschütz (PSYPRAX ON WINDOWS), ergosoft
+(PSYCHODAT PRO, 2000), Zimmer/Zimmer-AL (DATA bzw. DATA-AL). **Nicht** einproduktig: Pro Medisoft (PROFIMED 895 von 947),
+EVIDENT 2000 (EVIDENT 149 + DIALOG DENTAL 165 = 314), Frey (QUINCY PCNET + QUINCY WIN), MEDISTAR 2000 (Prolog 8.116 +
+Windows 3.113 = 11.229), TURBOMED 2000 (DOS 8.623 + Windows 209 = 8.832), ALBIS (DOS + Windows). Für 2001/2002/2011
+gilt das nur als **Annahme** (keine vollständige Systemliste zum Abgleich).
+
+**Versionswechsel DOS → Windows (1999–2001):** Die KBV führte alte und neue Version mit eigener Zulassungsnummer in
+eigenen Zeilen (DÄ 1/2000: „1999 wurden erstmals beide Versionen mit separater Zulassungsnummer“). In der Lücken-CSV
+deshalb getrennte Namen: `MEDISTAR (Prolog-Version)` / `MEDISTAR (Windows-Version)`, `TURBOMED (DOS-Version)` /
+`TURBOMED (Windows-Version)`, `ALBIS DOS (Altversion)` / `ALBIS` (= ALBIS ON WINDOWS, wie ab 2007). Für eine
+Produktlinien-Reihe 2000/2001 die **Anbieterwerte** MEDISTAR (11.229 / 12.801) und Turbomed (8.832 / 10.349) nehmen
+(einproduktige Anbieter, belegt) oder die Versionen addieren (gerechnet). DOCexpert: `DOC EXPERT` (DOS) und
+`DOC EXPERT COMFORT` (Windows-Ableger, DÄ 1/2000) → `x.comfort (ehem. DOCcomfort)`.
+
+### Zuordnung der 1997er Namen zu heutigen Systemen
+
+| 1997 (KBV-Name, Anbieter) | Nachfolger / heute | Beleg | Sicherheit |
+|---|---|---|---|
+| MEDISTAR (MEDISTAR) | CGM MEDISTAR (BLACK PRO); Prolog-Version bis 2002 abgelöst | DÄ 1/2000, 2/2002 (Frist bis Mitte 2002) | hoch |
+| TURBOMED | TURBOMED (CGM ab 12/2003) | DÄ 2/2002 (Windows-Version), Abschnitt 8 | hoch |
+| ALBIS (DOS) / ALBIS ON WINDOWS | ALBIS (CGM) | KBV 2000 „ALBIS DOS“ | hoch |
+| DOC EXPERT (DOS) | ging in DOCexpert Comfort → DOCcomfort → ixx.comfort → x.comfort auf | DÄ 1/2000 („Windows-Ableger Docexpert Comfort des DOS-Programms“); ÄZ 14.04.2011 | mittel (Migration, nicht Umbenennung) |
+| LEISYS, SISYMED, ADAMED, ADAMED PLUS, PAIDOS (DOC EXPERT) | Produkte der DOCexpert-Gruppe, ab 2005 nur noch ADAMED in den Top 20, 2007 keine mehr groß | DÄ 1/1998 (sieben DOCexpert-Produkte), DÄ 2/2002 | Herkunft hoch, Verbleib offen |
+| DOC CONCEPT | x.concept (ehem. DOCconcept) | ÄZ 14.04.2011 | hoch |
+| MCS-INA (MCS) | MCS-Altprodukt; MCS-ISYNET (ab 1999 gelistet) ist das Nachfolgeprodukt von MCS → x.isynet | DÄ 1/2000 (MCS „Produkt Isynet“); Nachfolge INA→ISYNET **nicht ausdrücklich belegt** | mittel |
+| S + N ARZTSYSTEM (S + N) | von MCS übernommen (ab 1999 unter MCS) | DÄ 1/2000 | hoch |
+| ARCOS, DORSYMED, SYSMED-KDV, ON-MED, V-DOC, M1 (COMPUMED) | Compugroup (ab 1999/2000); M1 → CompuMED-M1 → CGM M1 PRO; 2007 noch „CompuMED-M1-Arcos“ (593) | DÄ 1/2000, 2/2002 | hoch für Konzern, Produktnachfolge offen |
+| DAVID (DATA-VITAL) | CGM (Data Vital 1998 zu 50 % CompuGROUP), 2025 noch 44 | DÄ 95/12 1998 | hoch |
+| QUINCY PCNET (FREY) | FREY; 2007 noch 396 | KBV 2007 | hoch |
+| S1 (SYSMED SÜD-WEST 1997, ab 1998 Mediamed Praxiscomputer) | wahrscheinlich Vorläufer von S3-Win (Mediamed, ab 2005 gelistet) | gleicher Anbieter; Nachfolge **nicht belegt** | niedrig |
+| E.L. (SOFTLAND) | EL – Elaphe Longissima (medatixx ab 04/2022) | gleiche Kurzform | hoch |
+| DATA (ZIMMER) | Data-AL (Anbieter Zimmer → Zimmer-AL → Data-AL GmbH) | Anbieterkette in KBV-Listen 1999/2000/2007 | mittel |
+| INFORMED CLASSIC (INFORMED) | verlor 2014 die KBV-Zulassung (Q4/2013: 285 Installationen, Platz 36) | <https://www.aerzteblatt.de/archiv/161853/Praxissoftware-Informed-verliert-KBV-Zulassung> | hoch |
+| MEDIC-PC (MEDIC PRAXIS SYSTEME) | unbekannt; 2001 nicht mehr in den Top 30 | – | – |
+
+### Markteintritt (für „0“ vs. „unter Listengrenze“)
+
+| System | Erster Beleg | Davor | Folgerung für 2000 |
+|---|---|---|---|
+| Medical Office (INDAMED) | Anbieter INDAMED 95 am 30.06.2000 (KBV Top 60 Anbieter); 2007: 576 | INDAMED 1994 gegründet (Abschnitt 8); 1999 nicht in Top 60 Anbieter (< 68) | 2000 = 95 (Anbieterwert, Produktname nicht genannt) |
+| DURIA | 1997: 1.208 | – | belegt |
+| PegaMed | 1997: 516 | – | belegt |
+| Elefant (HASOMED) | 2005: 2.101 (Kersting) | HASOMED 2000 nicht in Top 60 Anbieter (< 71); Firma 1991 gegründet | 2000 „unter 71“, nicht 0 |
+| psyprax | Flohrschütz 1997: 88; 1999: 310; 2000: 1.222 | – | belegt |
+| PsychoDat | 2000: 288 (PSYCHODAT PRO) | ergosoft 1999 nicht in Top 60 (< 68) | belegt |
+| SMARTY, Epikur, Med7 (Bitron) | 2005 (SMARTY 1.077) bzw. 2007 (Epikur 615, Med7 587) | 2000 nicht in Top 60 Anbieter (< 71) | 2000 „unter 71“ |
+| EVIDENT | 2000: 149 | – | belegt |
+| ORBIS (GWI, ORBIS-AAPM) | 2000: 184 | – | belegt |
+| CGM MEDICO (MEDICO WIPS, Data-Plan) | 2000: 171 | – | belegt |
+| x.isynet (MCS-ISYNET) | 1999: 158 | 1997 nicht in Top 60 (< 104) | belegt ab 1999 |
+| x.concept (DOC CONCEPT) | 1999: 149 | 1997 nicht in Top 60 | belegt ab 1999 |
+| x.comfort (DOC EXPERT COMFORT) | 2000: 1.945 | 1999 nicht in Top 60 (< 110) | belegt ab 2000 |
+| tomedo / T2med / medatixx | 2013 / 2015 / 2014 | Gründung 2011 / 2012 / Produkt 2014 | 2000 = 0 (belegt über Gründung) |
+
+### Widersprüche
+
+1. **PSYPRAX 2010:** Ärzte Zeitung 27.02.2012 nennt für 30.06.2010 6.198 – Kersting „2009“ hat 8.219, KBV 2007 7.241,
+   KBV 30.06.2011 8.777. Der ÄZ-Wert ist sehr wahrscheinlich falsch; in `pvs-kbv-installationen.csv` (2010-06-30) als
+   Zweitquelle enthalten → **für die Grafik nicht verwenden** bzw. markieren.
+2. **Kersting „2009“:** Prozentbasis (~117.050) passt nicht zur Summe 31.12.2008 (114.772); Anbieter für E.L. dort
+   „Compugroup“ (KBV 2011: Softland) – Tabelle hat Übertragungsfehler.
+3. **Kersting „2005“:** keine DOCcomfort-Zeile, dafür „DOCexpert“ 7.485 (2001 hatten DOC EXPERT 2.240 + DOC EXPERT
+   COMFORT 4.710). Ob die KBV 2005 beide unter „DOCexpert“ führte, ist unbelegt → eigener Name
+   `DOCexpert (KBV-Zeile 2005)`.
+4. **DÄ 2/2002 (Stand 30.09.2001):** PsychoDat 619 = „0,12 %“ (müsste ~0,71 % sein) – Druckfehler im Prozentwert, Zahl
+   plausibel.
+5. **KBV 1997:** INFORMED CLASSIC 798 bei 0,72 % (passt zu ~500) – nicht übernommen.
+
+### Hinweise zur bestehenden CSV (`pvs-kbv-installationen.csv`)
+
+- **1997 ALBIS:** Dort ist „ALBIS“ (1.401) die **DOS-Version** und „ALBIS ON WINDOWS (eigene KBV-Zeile 1997)“ (955) die
+  Linie, die ab 2007 als `ALBIS` geführt wird. Empfehlung: 1997 umbenennen in `ALBIS DOS (Altversion)` bzw. `ALBIS`.
+- **„DOC EXPERT (Systemfamilie 1997)“** ist kein Familienwert, sondern das einzelne DOS-Produkt DOC EXPERT (5.532); die
+  Familie (Anbieter) hatte 10.630. Name irreführend; in der Lücken-CSV aus Kompatibilität beibehalten.
+
+### Empfehlung: Race ab 2000 oder ab 2007?
+
+Jahresend-Werte (Q4) je System belegt: 2005 (Top 20, Stichtag plausibel), 2007, 2010 (nur Top 5), 2013–2016,
+2021–2025. Quartalsnahe Ersatzwerte: Q2/2000 (Top 60), Q2/2001 (Top 30, Stichtag erschlossen), Q2/2009 (Top 20,
+unsicher). Ohne jeden Systemwert: 2002, 2003, 2004, 2006, 2008, 2012 (Summen nur 2008).
+Bei rund 20 Systemen und 26 Jahren (2000–2025) wären etwa **55 % der Werte gerechnet** (linear oder über Anteile), davon
+2002–2004 drei Jahre am Stück ohne Stütze, dazu der DOS/Windows-Bruch 2000/01 und die Digitalisierungs-Basis
+(77.500 → 114.000). Ab 2007 sind es etwa **40 %** (2008, 2011/2012, 2017–2020 voll; 2009/2010 teilweise).
+**Empfehlung:** Das zweite Race **ab 2007** (Jahresende, markierte Interpolation), die Jahre 1997–2005 nicht als
+lückenlose Animation, sondern als belegte Momentaufnahmen (1997, Q1/1999, Q2/2000, 2005) zeigen – z. B. als Vorspann
+„So sah der Markt 1997/2000 aus“. Ein Race ab 2000 wäre nur mit deutlichem Hinweis „über die Hälfte der Werte
+gerechnet“ vertretbar.

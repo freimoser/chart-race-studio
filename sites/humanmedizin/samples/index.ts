@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { PVS_ARZT, PVS_HERSTELLER } from './data.ts'
+import { PVS_ARZT, PVS_ARZT_2007, PVS_HERSTELLER } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -9,11 +9,12 @@ import { PVS_ARZT, PVS_HERSTELLER } from './data.ts'
 
 // Farben nach Hersteller: CGM in Blautönen, medatixx in Grüntönen, die Herausforderer warm, alle anderen grau.
 // So zeigt das Bar Race nebenbei, wem die Systeme gehören (Eigentümer 2025).
-const CGM = { 'CGM MEDISTAR': '#14213d', 'CGM TURBOMED': '#2b3f6b', 'CGM ALBIS': '#43598f', 'CGM M1 PRO': '#5f75a8', 'CGM DATA VITAL': '#8193bf' }
-const MEDATIXX = { 'x.isynet': '#1f7a6e', 'x.concept': '#2a9d8f', 'x.comfort': '#5cb8ab', medatixx: '#13584f', EL: '#8fd0c6', easymed: '#b5e0d9' }
+const CGM = { 'CGM MEDISTAR': '#14213d', 'CGM TURBOMED': '#2b3f6b', 'CGM ALBIS': '#43598f', 'CGM M1 PRO': '#5f75a8', 'CGM DATA VITAL': '#8193bf', 'CGM DAVID': '#a3b1d4' }
+const MEDATIXX = { 'x.isynet': '#1f7a6e', 'x.concept': '#2a9d8f', 'x.comfort': '#5cb8ab', medatixx: '#13584f', EL: '#8fd0c6', easymed: '#b5e0d9', 'PDE-TOP': '#cde9e4' }
 const NEUE = { 'Medical Office': '#e36414', tomedo: '#f08a3e', T2med: '#c2410c', 'ETERNO Cloud': '#f4a261' }
 const GRAU = '#9aa3b2'
-const farben = Object.fromEntries(PVS_ARZT.headers.slice(1).map((n) => [n, { ...CGM, ...MEDATIXX, ...NEUE }[n] ?? GRAU]))
+const farbenFuer = (headers: string[]) => Object.fromEntries(headers.slice(1).map((n) => [n, ({ ...CGM, ...MEDATIXX, ...NEUE } as Record<string, string>)[n] ?? GRAU]))
+const farben = farbenFuer(PVS_ARZT.headers)
 
 export const SAMPLES: SampleDataset[] = [
   {
@@ -29,13 +30,34 @@ export const SAMPLES: SampleDataset[] = [
     dataInfo: [
       'Gezählt werden Installationen: Abrechnungen eines Quartals mit der Prüfnummer eines Systems, praktisch abrechnende Praxen oder Betriebsstätten. Nicht Ärztinnen und Ärzte, nicht Lizenzen. Die KBV schreibt selbst, die Statistik sei kein genaues Abbild des tatsächlichen Marktes.',
       'Nur Systeme für ärztliche Praxen. Psychotherapie-Systeme (Elefant, psyprax, PsychoDat, Epikur, SMARTY, RED Medical; jeweils 84 bis 98 Prozent ihrer Installationen in der Arztgruppe Psychotherapeuten) und Krankenhaussysteme (ORBIS, SAP, CGM MEDICO, iMedOne) sind herausgenommen, sonst führten sie die Liste. Aufgenommen ist jedes ärztliche System mit mindestens einmal 500 Installationen seit 2013. Auch bei den ärztlichen Systemen liegt ein kleiner Teil der Installationen in der Psychotherapie, bei tomedo 12 und bei medatixx 11 Prozent.',
-      'Gerechnet: Für 2017 bis 2020 hat die KBV keine Installationszahlen veröffentlicht, nur Anteile mit einer Nachkommastelle (Q3/2017, Q3/2020). Installationen = Anteil × Gesamtzahl, die Gesamtzahl linear zwischen Ende 2016 und Ende 2021; die Jahresenden 2017 bis 2020 liegen linear zwischen diesen Stützpunkten. Systeme ohne veröffentlichten Anteil sind linear zwischen 2016 und 2021 gerechnet. Jeder gerechnete Wert steht mit Methode in data/raw/pvs-gerechnet.json, zusammen 109 Werte.',
+      'Gerechnet: Für 2017 bis 2020 hat die KBV keine Installationszahlen veröffentlicht, nur Anteile mit einer Nachkommastelle (Q3/2017, Q3/2020). Installationen = Anteil × Gesamtzahl, die Gesamtzahl linear zwischen Ende 2016 und Ende 2021; die Jahresenden 2017 bis 2020 liegen linear zwischen diesen Stützpunkten. Systeme ohne veröffentlichten Anteil sind linear zwischen 2016 und 2021 gerechnet. Jeder gerechnete Wert steht mit Methode in data/raw/pvs-gerechnet.json, zusammen 113 Werte.',
       'Medical Office springt laut KBV-Anteil von 1.832 Installationen Ende 2016 auf rund 3.000 im Herbst 2017. Ob das echt ist, ist offen: Für 2021 hat die KBV Medical Office nachweislich doppelt gezählt und später korrigiert. 0 vor dem Markteintritt ist belegt (medatixx seit 2014, T2med seit 2015), easymed steht ab 2023 nicht mehr in der Liste.',
       'Namen wie heute: CGM MEDISTAR hieß bis 2023 MEDISTAR, x.isynet früher MCS-ISYNET, ETERNO Cloud bis 2025 inSuite. Farben nach Hersteller: CGM blau, medatixx grün, Medical Office, tomedo, T2med und ETERNO orange, andere grau.',
     ],
     headers: PVS_ARZT.headers,
     rows: PVS_ARZT.rows,
     suggested: { chartType: 'bar', topN: 12, decimals: 0, colors: farben, labelsPosition: 'outside' },
+  },
+  {
+    id: 'pvs-installationen-2007',
+    erstellt: '2026-10-21', geprueft: '2026-10-21',
+    category: 'software',
+    title: 'Praxissoftware in Arztpraxen seit 2007',
+    subtitle: 'Installationen laut KBV, Jahresende, ohne Psychotherapie- und Klinik-Systeme; 2008–2012 und 2017–2020 gerechnet',
+    source: 'Quelle: KBV, Installationsstatistik Systeme (Q4/2007, Q4/2013–Q4/2016, Q4/2021–Q4/2025); Zwischenjahre aus Teilbelegen gerechnet',
+    sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/pvs-installationsstatistiken',
+    unit: 'Installationen',
+    description: 'Die lange Fassung ab 2007, mit 20 Zeilen: CGM MEDISTAR vorn, TURBOMED und ALBIS verlieren, alte Systeme verschwinden, neue kommen.',
+    dataInfo: [
+      'Dieselbe Abgrenzung wie im Datensatz „Praxissoftware in Arztpraxen“ (ab 2013): Installationen ärztlicher Systeme laut KBV, ohne Psychotherapie- und Krankenhaussysteme, jedes System mit mindestens einmal 500 Installationen seit 2007, 30 Systeme. 2007 ist das erste Jahr mit vollständiger KBV-Liste; für 2001 bis 2004 und 2006 ist keine Liste je System erhalten, darum beginnt die Reihe nicht früher.',
+      'Belegt sind die Jahresenden 2007, 2013 bis 2016 und 2021 bis 2025. Dazwischen gibt es Teilbelege: Mitte 2009 die 20 größten Systeme (Dissertation Kersting, MHH, die KBV-Zahlen zitiert; Stichtag nicht ganz sicher), Ende 2010 die fünf größten und Mitte 2011 die sieben größten (Ärzte Zeitung nach KBV), Ende 2011 die KBV-Werte je Anbieter. Für acht Anbieter, die damals nur ein nennenswertes System hatten (MEDISTAR, TurboMed, DURIA, S3-Win, Med7, EL, Data-AL, easymed), ist der Anbieterwert Ende 2011 als Systemwert übernommen – eine Annahme.',
+      'Gerechnet: Die Jahresenden 2008 bis 2012 liegen linear zwischen den Belegen davor und danach, 2017 bis 2020 wie im kurzen Datensatz aus den KBV-Anteilen. Zusammen 249 von 570 Werten gerechnet oder angenommen; von den 20 jeweils sichtbaren Balken sind es 176 von 380 (46 Prozent), fast alle in den Jahren ohne eigene KBV-Liste. Jeder Wert mit Methode in data/raw/pvs-gerechnet.json.',
+      'Ausscheiden und Eintritt: PDE-TOP (MCS Pie Data) steht ab 2013 nicht mehr in der vollständigen KBV-Liste, easymed ab 2023; beide haben dort 0. tomedo, medatixx und T2med haben vor ihrem belegten Markteintritt 0. Für DATA VITAL und ETERNO Cloud ist der erste Beleg (2013 bzw. 2014) nach vorn gehalten.',
+      'Wie es vor 2007 aussah, zeigen belegte Momentaufnahmen im Artikel (1997, Mitte 2000, 2005). Sie sind nicht animiert, weil dazwischen Jahre ohne jede Systemliste liegen und die KBV 1999 bis 2001 DOS- und Windows-Versionen getrennt zählte.',
+    ],
+    headers: PVS_ARZT_2007.headers,
+    rows: PVS_ARZT_2007.rows,
+    suggested: { chartType: 'bar', topN: 20, decimals: 0, colors: farbenFuer(PVS_ARZT_2007.headers), labelsPosition: 'outside', animationSec: 40 },
   },
   {
     id: 'pvs-hersteller',

@@ -3,6 +3,7 @@ import { preview } from '@/lib/preview/controller'
 import type { ChartHandle } from '@/lib/chart/types'
 import { Buehne } from '@/components/Buehne'
 import { wurzel } from '@/lib/pfade'
+import { PROFIL } from '@/content/site'
 
 /** Die Bühne des Studios: Daten und Einstellungen aus dem Store, Abspielen über den Studio-Controller. */
 export function Stage() {
@@ -31,7 +32,7 @@ function Leerzustand() {
         <span className="hidden lg:inline">Rechts</span><span className="lg:hidden">Unten</span> einen Beispiel-Datensatz wählen oder eine eigene Tabelle laden: erste Spalte die Zeit, eine Spalte je Reihe, in den Zellen nur Zahlen.
       </p>
       <div className="mt-4 flex flex-wrap justify-center gap-2">
-        <a href={wurzel('datenformat/')} className="btn-primary !min-h-10 !px-3 text-sm">So muss die Tabelle aussehen</a>
+        <a href={PROFIL.datenformatUrl(wurzel())} className="btn-primary !min-h-10 !px-3 text-sm">So muss die Tabelle aussehen</a>
         <a href={wurzel('vorlagen/vorlage-zeitreihe.xlsx')} download className="btn-ghost !min-h-10 !px-3 text-sm">Vorlage herunterladen</a>
       </div>
       <p className="mt-3 text-xs text-ink-faint">Die Tabelle wird nur in diesem Browser gelesen und nicht hochgeladen.</p>

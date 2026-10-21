@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Datenherkunft: Quellen und Methode aller Datensätze</title>
-    <meta name="dcterms.modified" content="2026-10-20" />
+    <meta name="dcterms.modified" content="2026-10-21" />
     <meta name="description" content="Für jeden Datensatz von Humanmedizin in Zahlen: Quelle, Zeitraum, Annahmen, was gerechnet ist und wann zuletzt gegen die Quelle geprüft." />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="../favicon-96.png" sizes="96x96" type="image/png" />
@@ -78,7 +78,7 @@
 
         <h2 id="pvs-installationen">Datensatz: Praxissoftware in Arztpraxen</h2>
         <p>
-          <strong>Inhalt:</strong> Installationen je Praxisverwaltungssystem zum Jahresende 2013 bis 2025, 27 Systeme für
+          <strong>Inhalt:</strong> Installationen je Praxisverwaltungssystem zum Jahresende 2013 bis 2025, 28 Systeme für
           ärztliche Praxen, jedes mit mindestens einmal 500 Installationen seit 2013. Psychotherapie-Systeme (Elefant,
           psyprax, PsychoDat, Epikur, SMARTY, RED Medical) und Krankenhaussysteme sind herausgenommen. Grundlage für die
           Einordnung ist der Anteil der Installationen eines Systems in der KBV-Arztgruppe Psychotherapeuten: bei den
@@ -94,7 +94,7 @@
           veröffentlicht (Q3/2017 und Q3/2020). Installationen = Anteil × Gesamtzahl aller Installationen; die Gesamtzahl
           liegt linear zwischen Ende 2016 (120.379) und Ende 2021 (119.405). Die Jahresenden 2017 bis 2020 liegen linear
           zwischen diesen Stützpunkten. Systeme ohne veröffentlichten Anteil sind linear zwischen 2016 und 2021 gerechnet.
-          Eine Nachkommastelle entspricht rund 60 Installationen Unschärfe. Zusammen 109 gerechnete Werte, jeder mit Methode
+          Eine Nachkommastelle entspricht rund 60 Installationen Unschärfe. Zusammen 113 gerechnete Werte, jeder mit Methode
           in der Rohdatei <code>pvs-gerechnet.json</code>.
         </p>
         <p>
@@ -105,6 +105,46 @@
         </p>
         <p><strong>Erstellt</strong> 20.10.2026 · <strong>geprüft</strong> 20.10.2026 · Artikel:
           <a href="../beitrag/praxissoftware-arztpraxen-marktanteile.html">Welche Praxissoftware Arztpraxen nutzen</a></p>
+
+        <h2 id="pvs-installationen-2007">Datensatz: Praxissoftware in Arztpraxen seit 2007</h2>
+        <p>
+          <strong>Inhalt:</strong> dieselbe Abgrenzung wie oben, Jahresende 2007 bis 2025, 30 Systeme (jedes mit
+          mindestens einmal 500 Installationen seit 2007), im Video 20 Zeilen. 2007 ist das erste Jahr mit vollständiger
+          KBV-Liste, die im Webarchiv erhalten ist (KBV-Archiv DARIS).
+        </p>
+        <p>
+          <strong>Belegt:</strong> die Jahresenden 2007, 2013 bis 2016 und 2021 bis 2025. Teilbelege dazwischen: Mitte 2009
+          die 20 größten Systeme (Dissertation M. Kersting, Medizinische Hochschule Hannover, nach KBV; der Stichtag ist aus
+          den Prozentangaben erschlossen und nicht ganz sicher), Ende 2010 die fünf größten (Ärzte Zeitung nach KBV), Mitte
+          2011 die sieben größten, Ende 2011 die KBV-Werte je Anbieter.
+        </p>
+        <p>
+          <strong>Angenommen:</strong> Für acht Anbieter, die laut Abgleich der KBV-Listen nur ein nennenswertes System
+          hatten (MEDISTAR, TurboMed, DURIA, S3-Win, Med7, EL, Data-AL, easymed), ist der Anbieterwert Ende 2011 als
+          Systemwert übernommen.
+        </p>
+        <p>
+          <strong>Gerechnet:</strong> die Jahresenden 2008 bis 2012 linear zwischen den Belegen davor und danach, 2017 bis
+          2020 wie oben. PDE-TOP (2007: 987) steht ab 2013 nicht mehr in der vollständigen Liste und hat dort 0. Für DATA
+          VITAL und ETERNO Cloud ist der erste Beleg nach vorn gehalten. Zusammen 249 von 570 Werten gerechnet oder
+          angenommen; von den jeweils 20 sichtbaren Balken 176 von 380. Nicht verwendet: PSYPRAX Mitte 2010 (6.198 laut
+          Ärzte Zeitung, gegen 8.219 im Jahr 2009 und 8.777 im Jahr 2011 sehr wahrscheinlich ein Übertragungsfehler).
+        </p>
+        <p><strong>Erstellt</strong> 21.10.2026 · <strong>geprüft</strong> 21.10.2026</p>
+
+        <h2 id="pvs-momentaufnahmen">Momentaufnahmen 1997, 2000 und 2005</h2>
+        <p>
+          Für die Zeit vor 2007 ist keine lückenlose Reihe möglich, für 2001 bis 2004 und 2006 ist keine Liste je System
+          erhalten. Der Artikel zeigt deshalb drei belegte Stände ohne Animation: Ende 1997 (KBV, Top 60 Systeme,
+          Gesamtzahl 69.252), Mitte 2000 (KBV, Abrechnungsquartal 2/2000, Top 60, Gesamtzahl 77.501) und 2005 (Dissertation
+          Kersting, Top 20). Bis 2000 nennt die KBV als „Stand“ das Datum der Auswertung; gemeint ist das Quartal davor.
+        </p>
+        <p>
+          <strong>Gerechnet:</strong> Von 1999 bis 2001 führte die KBV DOS- und Windows-Version eines Systems in getrennten
+          Zeilen. Für MEDISTAR, TURBOMED und ALBIS sind beide Zeilen addiert. Bei MEDISTAR deckt sich die Summe mit dem
+          KBV-Anbieterwert.
+        </p>
+        <p><strong>Erstellt</strong> 21.10.2026 · <strong>geprüft</strong> 21.10.2026</p>
 
         <h2 id="pvs-hersteller">Datensatz: CGM, medatixx und die Herausforderer</h2>
         <p>
