@@ -31,6 +31,24 @@ export function drawChrome(
     ctx.textAlign = layout.subtitle.align
     layout.subtitle.lines.forEach((line, i) => ctx.fillText(line, layout.subtitle!.x, layout.subtitle!.y + layout.subtitle!.size * 0.95 + i * layout.subtitle!.lineHeight))
   }
+  if (layout.legend) {
+    // Wie in der Vorschau (Buehne.tsx): Farbfeld mittig zur Zeile (Höhe 1,2 × Schriftgröße), Text daneben.
+    const { size, swatch } = layout.legend
+    ctx.font = `500 ${size}px ${family}`
+    ctx.textAlign = 'left'
+    ctx.textBaseline = 'middle'
+    for (const e of layout.legend.items) {
+      const mitte = e.y + size * 0.6
+      ctx.fillStyle = e.color
+      const r = swatch * 0.2
+      ctx.beginPath()
+      ctx.roundRect(e.x, mitte - swatch / 2, swatch, swatch, r)
+      ctx.fill()
+      ctx.fillStyle = colors.muted
+      ctx.fillText(e.label, e.x + swatch + size * 0.4, mitte)
+    }
+    ctx.textBaseline = 'alphabetic'
+  }
   if (layout.date && s.showDate) {
     ctx.fillStyle = colors.fg
     ctx.globalAlpha = 0.85

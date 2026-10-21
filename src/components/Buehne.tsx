@@ -126,6 +126,12 @@ export function Buehne({ dataset, settings, brand, controller: preview, leer, on
               {layout.subtitle.lines.join('\n')}
             </div>
           )}
+          {input && layout.legend && layout.legend.items.map((e) => (
+            <div key={e.label} className="absolute flex items-center" style={{ left: e.x, top: e.y, height: layout.legend!.size * 1.2, fontSize: layout.legend!.size, fontWeight: 500, color: colors.muted, whiteSpace: 'pre', gap: layout.legend!.size * 0.4 }}>
+              <span style={{ width: layout.legend!.swatch, height: layout.legend!.swatch, borderRadius: layout.legend!.swatch * 0.2, background: e.color, flex: 'none' }} />
+              {e.label}
+            </div>
+          ))}
           {layout.date && settings.showDate && (
             <div className="absolute tabular-nums" style={{ right: W - layout.date.x, top: layout.date.y - layout.date.size * 0.92, fontSize: layout.date.size, lineHeight: 1, fontWeight: 700, opacity: 0.85 }}>
               {dateLabel}

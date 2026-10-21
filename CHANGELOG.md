@@ -4,6 +4,11 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Farblegende im Bar Race, klare Herstellerfarben in den PVS-Races (21.10.2026)
+
+- **Kern, betrifft beide Seiten:** Neue Einstellung `legend` (aus `suggested.legende` eines Datensatzes): Farbfeld plus Text unter dem Untertitel, in Vorschau (`Buehne.tsx`), eingebetteter Grafik und Video-Export (`compose.ts`) gleich gezeichnet, umbrochen nach Breite. Ohne Legende ändert sich am Layout nichts; die Tiermedizin ist unverändert.
+- **Humanmedizin:** Statt vieler kaum unterscheidbarer Blau- und Grüntöne eine Farbe je Gruppe – CompuGroup Medical blau, medatixx grün, Medical Office/tomedo/T2med orange, übrige grau – mit Legende. Palette mit dem Validator geprüft (Farbsehschwächen, Kontrast hell und dunkel).
+
 ### Humanmedizin: zweites PVS-Race ab 2007, Momentaufnahmen 1997–2005 (21.10.2026)
 
 - **Kern, betrifft beide Seiten:** Die Studio-Links „Datenformat“ (Kopf, Datenpanel, leere Bühne) nehmen jetzt `PROFIL.datenformatUrl` statt `datenformat/`; auf der Humanmedizin führen sie zur Schwesterseite statt ins Leere. Tiermedizin unverändert.

@@ -9,6 +9,8 @@ export interface StageLayout {
   padding: number
   title: { x: number; y: number; size: number; lines: string[]; lineHeight: number; align: 'left' | 'center' } | null
   subtitle: { x: number; y: number; size: number; lines: string[]; lineHeight: number; align: 'left' | 'center' } | null
+  /** Farblegende unter dem Untertitel: je Eintrag Farbfeld und Text, Positionen absolut (Oberkante der Zeile). */
+  legend: { size: number; swatch: number; items: { x: number; y: number; label: string; color: string }[] } | null
   chart: Rect
   date: { x: number; y: number; size: number; anchor: 'end' } | null
   caption: { x: number; y: number; size: number; lines: string[]; lineHeight: number } | null
@@ -74,7 +76,31 @@ export function computeLayout(format: VideoFormat, s: ChartSettings, measure: Me
     subtitle = { x: s.titleAlign === 'center' ? W / 2 : pad, y, size: p.subtitleSize, lines, lineHeight: lh, align: s.titleAlign }
     y += lines.length * lh
   }
-  if (title || subtitle) y += pad * 0.5
+  // Farblegende: eine oder mehrere Zeilen mit Farbfeld und Text, umbrochen nach Breite. Text in der gedämpften
+  // Schriftfarbe, nie in der Reihenfarbe – das Farbfeld trägt die Zuordnung.
+  let legend: StageLayout['legend'] = null
+  if (s.legend?.length) {
+    const size = p.subtitleSize * 0.9
+    const font = fontString(size, 500, family)
+    const swatch = size * 0.85, abstandFeld = size * 0.4, abstandEintrag = size * 1.2, zeilenH = size * 1.45
+    const breiten = s.legend.map((e) => swatch + abstandFeld + measure(e.label, font))
+    const zeilen: number[][] = [[]]
+    let x = 0
+    breiten.forEach((b, i) => {
+      if (x > 0 && x + b > textW) { zeilen.push([]); x = 0 }
+      zeilen.at(-1)!.push(i); x += b + abstandEintrag
+    })
+    y += size * 0.35
+    const items: NonNullable<StageLayout['legend']>['items'] = []
+    zeilen.forEach((zeile, z) => {
+      const gesamt = zeile.reduce((a, i) => a + breiten[i], 0) + abstandEintrag * (zeile.length - 1)
+      let xi = s.titleAlign === 'center' ? (W - gesamt) / 2 : pad
+      for (const i of zeile) { items.push({ x: xi, y: y + z * zeilenH, label: s.legend![i].label, color: s.legend![i].color }); xi += breiten[i] + abstandEintrag }
+    })
+    legend = { size, swatch, items }
+    y += zeilen.length * zeilenH
+  }
+  if (title || subtitle || legend) y += pad * 0.5
 
   let date: StageLayout['date'] = null
   const headerH = y - pad
@@ -124,7 +150,7 @@ export function computeLayout(format: VideoFormat, s: ChartSettings, measure: Me
   }
 
   const chart: Rect = { x: pad, y, w: contentW, h: Math.max(200, bottom - y) }
-  return { width: W, height: H, padding: pad, title, subtitle, chart, date, caption, watermark, labelSize: p.labelSize }
+  return { width: W, height: H, padding: pad, title, subtitle, legend, chart, date, caption, watermark, labelSize: p.labelSize }
 }
 
 /**

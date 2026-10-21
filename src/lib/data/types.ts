@@ -109,6 +109,8 @@ export interface SampleDataset {
     divergingLabels?: [string, string]
     /** Feste Farben je Reihe, z. B. Rest- und Sammelgruppen grau */
     colors?: Record<string, string>
+    /** Farblegende unter dem Untertitel, wenn Farben Gruppen bedeuten (etwa Hersteller) */
+    legende?: { label: string; color: string }[]
     labelsPosition?: 'inside' | 'outside'
     dateFormat?: string
     /** Line Race: Kategorien auf der rechten Achse */

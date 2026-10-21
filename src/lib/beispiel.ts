@@ -21,6 +21,7 @@ export function beispielLaden(sample: SampleDataset, basis: ChartSettings): { ta
     settings: {
       ...basis,
       categories: Object.fromEntries(Object.entries(sug.colors ?? {}).map(([n, color]) => [n, { color }])),
+      legend: sug.legende ?? [],
       title: sample.title,
       subtitle: sample.subtitle,
       source: sample.source,

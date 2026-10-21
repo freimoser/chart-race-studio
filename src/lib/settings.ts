@@ -48,6 +48,8 @@ export interface ChartSettings {
   // Darstellung
   paletteId: string
   categories: Record<string, CategoryStyle>
+  /** Farblegende unter dem Untertitel, z. B. Farbe je Hersteller. Leer = keine Legende (Standard). */
+  legend?: { label: string; color: string }[]
   labelsPosition: 'inside' | 'outside'
   showImages: boolean
   imageScale: number // 0.5 .. 1.5
