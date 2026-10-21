@@ -84,10 +84,14 @@ export function computeLayout(format: VideoFormat, s: ChartSettings, measure: Me
     const font = fontString(size, 500, family)
     const swatch = size * 0.85, abstandFeld = size * 0.4, abstandEintrag = size * 1.2, zeilenH = size * 1.45
     const breiten = s.legend.map((e) => swatch + abstandFeld + measure(e.label, font))
+    // Die Jahreszahl oben rechts reicht nur über die ersten Kopfzeilen. Steht die Legende darunter, darf sie die
+    // volle Breite nutzen – sonst bricht sie unnötig um und nimmt den Balken eine Zeile Platz.
+    const unterDatum = !(s.showDate && p.dateTopRight) || y + size * 0.35 >= pad + p.dateSize * 1.05
+    const legendeW = unterDatum ? contentW : textW
     const zeilen: number[][] = [[]]
     let x = 0
     breiten.forEach((b, i) => {
-      if (x > 0 && x + b > textW) { zeilen.push([]); x = 0 }
+      if (x > 0 && x + b > legendeW) { zeilen.push([]); x = 0 }
       zeilen.at(-1)!.push(i); x += b + abstandEintrag
     })
     y += size * 0.35
