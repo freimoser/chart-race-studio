@@ -341,6 +341,17 @@
     "live": true
   },
   {
+    "post": 32,
+    "slug": "antibiotika-tierhaltung",
+    "titel": "Antibiotika in der Tierhaltung: 562 Tonnen, minus 67 Prozent",
+    "beschreibung": "2024 wurden 562,1 Tonnen Antibiotika an Tierärzte abgegeben, 67 Prozent weniger als 2011. Der größte Sprung kam 2015, seit 2023 steigt die Menge leicht.",
+    "frage": "Wie viel Antibiotika wird in der Tierhaltung eingesetzt?",
+    "stand": "2026-10-21",
+    "geaendert": "2026-10-21",
+    "bereit": true,
+    "live": true
+  },
+  {
     "art": "anleitung",
     "slug": "weltkarte-laender-einfaerben-animieren",
     "titel": "Weltkarte nach Daten einfärben und animieren – kostenlos",

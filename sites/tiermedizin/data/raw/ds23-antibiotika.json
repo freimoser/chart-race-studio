@@ -1,0 +1,1480 @@
+{
+ "title": "Antibiotika-Abgabemengen an Tierärztinnen und Tierärzte in Deutschland je Wirkstoffklasse, 2011–2024 (t Grundsubstanz)",
+ "abgerufen": "2026-10-21",
+ "quelle": "Bundesamt für Verbraucherschutz und Lebensmittelsicherheit (BVL), Abgabemengenerfassung nach § 47 Abs. 1c AMG bzw. TAMG; Veröffentlichung im Deutschen Tierärzteblatt 11/2025",
+ "quelleUrl": "https://www.bundestieraerztekammer.de/btk/dtbl/archiv/2025/artikel/DTBl_11-2025_AB-Abgaben-2024.pdf",
+ "unit": "Tonnen Grundsubstanz",
+ "notes": "Gemeldet von pharmazeutischen Unternehmen und Großhändlern: Abgabe an Tierärztinnen und Tierärzte, nicht der Einsatz am Tier. Seit 2023 zusätzlich Abgaben an Apotheken und weitere Empfänger meldepflichtig (TAMG) – 2023/2024 laut BVL nicht uneingeschränkt mit 2011–2022 vergleichbar. Fusidinsäure, Ionophore, Nitrofurane, Nitroimidazole aus Geheimhaltungsgründen nicht ausgewiesen. Rundungsdifferenzen laut Quelle möglich. Fenicole 2021 (5,88) und Folsäureantagonisten 2020 (8,96) so in der Quelle. Gegenprobe Verbrauch: BfR, Antibiotika-Verbrauchsmengen und Therapiehäufigkeit 2023 – 478 t bei Rind, Schwein, Huhn, Pute (Penicilline 214, Tetrazykline 93, Makrolide 47, Sulfonamide 35, Polypeptide 30, Aminoglykoside 29 t), https://www.bfr.bund.de/cm/343/antibiotika-verbrauchsmengen-und-therapiehaeufigkeit-2023.pdf",
+ "rows": [
+  {
+   "date": "2011",
+   "name": "Aminoglykoside",
+   "value": 47.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2012",
+   "name": "Aminoglykoside",
+   "value": 40.5,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2013",
+   "name": "Aminoglykoside",
+   "value": 39.4,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2014",
+   "name": "Aminoglykoside",
+   "value": 37.8,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2015",
+   "name": "Aminoglykoside",
+   "value": 24.7,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2016",
+   "name": "Aminoglykoside",
+   "value": 26.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2017",
+   "name": "Aminoglykoside",
+   "value": 29.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2018",
+   "name": "Aminoglykoside",
+   "value": 29.5,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2019",
+   "name": "Aminoglykoside",
+   "value": 34.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2020",
+   "name": "Aminoglykoside",
+   "value": 36.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2021",
+   "name": "Aminoglykoside",
+   "value": 30.2,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2022",
+   "name": "Aminoglykoside",
+   "value": 31.8,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2023",
+   "name": "Aminoglykoside",
+   "value": 35.9,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2024",
+   "name": "Aminoglykoside",
+   "value": 36.9,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2011",
+   "name": "Cephalosporine 1. Generation",
+   "value": 2.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2012",
+   "name": "Cephalosporine 1. Generation",
+   "value": 2.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2013",
+   "name": "Cephalosporine 1. Generation",
+   "value": 2.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2014",
+   "name": "Cephalosporine 1. Generation",
+   "value": 2.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2015",
+   "name": "Cephalosporine 1. Generation",
+   "value": 1.9,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2016",
+   "name": "Cephalosporine 1. Generation",
+   "value": 2.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2017",
+   "name": "Cephalosporine 1. Generation",
+   "value": 2.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2018",
+   "name": "Cephalosporine 1. Generation",
+   "value": 2.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2019",
+   "name": "Cephalosporine 1. Generation",
+   "value": 2.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2020",
+   "name": "Cephalosporine 1. Generation",
+   "value": 2.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2021",
+   "name": "Cephalosporine 1. Generation",
+   "value": 2.2,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2022",
+   "name": "Cephalosporine 1. Generation",
+   "value": 1.9,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2023",
+   "name": "Cephalosporine 1. Generation",
+   "value": 1.9,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2024",
+   "name": "Cephalosporine 1. Generation",
+   "value": 1.9,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2011",
+   "name": "Cephalosporine 3. Generation",
+   "value": 2.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2012",
+   "name": "Cephalosporine 3. Generation",
+   "value": 2.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2013",
+   "name": "Cephalosporine 3. Generation",
+   "value": 2.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2014",
+   "name": "Cephalosporine 3. Generation",
+   "value": 2.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2015",
+   "name": "Cephalosporine 3. Generation",
+   "value": 2.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2016",
+   "name": "Cephalosporine 3. Generation",
+   "value": 2.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2017",
+   "name": "Cephalosporine 3. Generation",
+   "value": 2.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2018",
+   "name": "Cephalosporine 3. Generation",
+   "value": 1.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2019",
+   "name": "Cephalosporine 3. Generation",
+   "value": 1.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2020",
+   "name": "Cephalosporine 3. Generation",
+   "value": 1.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2021",
+   "name": "Cephalosporine 3. Generation",
+   "value": 1.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2022",
+   "name": "Cephalosporine 3. Generation",
+   "value": 0.9,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2023",
+   "name": "Cephalosporine 3. Generation",
+   "value": 0.7,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2024",
+   "name": "Cephalosporine 3. Generation",
+   "value": 0.7,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2011",
+   "name": "Cephalosporine 4. Generation",
+   "value": 1.4,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2012",
+   "name": "Cephalosporine 4. Generation",
+   "value": 1.4,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2013",
+   "name": "Cephalosporine 4. Generation",
+   "value": 1.4,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2014",
+   "name": "Cephalosporine 4. Generation",
+   "value": 1.4,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2015",
+   "name": "Cephalosporine 4. Generation",
+   "value": 1.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2016",
+   "name": "Cephalosporine 4. Generation",
+   "value": 1.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2017",
+   "name": "Cephalosporine 4. Generation",
+   "value": 1.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2018",
+   "name": "Cephalosporine 4. Generation",
+   "value": 0.5,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2019",
+   "name": "Cephalosporine 4. Generation",
+   "value": 0.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2020",
+   "name": "Cephalosporine 4. Generation",
+   "value": 0.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2021",
+   "name": "Cephalosporine 4. Generation",
+   "value": 0.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2022",
+   "name": "Cephalosporine 4. Generation",
+   "value": 0.2,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2023",
+   "name": "Cephalosporine 4. Generation",
+   "value": 0.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2024",
+   "name": "Cephalosporine 4. Generation",
+   "value": 0.2,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2011",
+   "name": "Fenicole",
+   "value": 6.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2012",
+   "name": "Fenicole",
+   "value": 5.7,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2013",
+   "name": "Fenicole",
+   "value": 5.2,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2014",
+   "name": "Fenicole",
+   "value": 5.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2015",
+   "name": "Fenicole",
+   "value": 5.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2016",
+   "name": "Fenicole",
+   "value": 5.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2017",
+   "name": "Fenicole",
+   "value": 5.6,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2018",
+   "name": "Fenicole",
+   "value": 6.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2019",
+   "name": "Fenicole",
+   "value": 6.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2020",
+   "name": "Fenicole",
+   "value": 6.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2021",
+   "name": "Fenicole",
+   "value": 5.88,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2022",
+   "name": "Fenicole",
+   "value": 5.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2023",
+   "name": "Fenicole",
+   "value": 4.8,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2024",
+   "name": "Fenicole",
+   "value": 5.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2011",
+   "name": "Fluorchinolone",
+   "value": 8.2,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2012",
+   "name": "Fluorchinolone",
+   "value": 10.4,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2013",
+   "name": "Fluorchinolone",
+   "value": 12.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2014",
+   "name": "Fluorchinolone",
+   "value": 12.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2015",
+   "name": "Fluorchinolone",
+   "value": 10.6,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2016",
+   "name": "Fluorchinolone",
+   "value": 9.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2017",
+   "name": "Fluorchinolone",
+   "value": 9.9,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2018",
+   "name": "Fluorchinolone",
+   "value": 7.7,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2019",
+   "name": "Fluorchinolone",
+   "value": 6.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2020",
+   "name": "Fluorchinolone",
+   "value": 6.4,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2021",
+   "name": "Fluorchinolone",
+   "value": 5.6,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2022",
+   "name": "Fluorchinolone",
+   "value": 5.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2023",
+   "name": "Fluorchinolone",
+   "value": 5.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2024",
+   "name": "Fluorchinolone",
+   "value": 5.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2011",
+   "name": "Folsäureantagonisten",
+   "value": 29.9,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2012",
+   "name": "Folsäureantagonisten",
+   "value": 26.2,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2013",
+   "name": "Folsäureantagonisten",
+   "value": 24.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2014",
+   "name": "Folsäureantagonisten",
+   "value": 19.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2015",
+   "name": "Folsäureantagonisten",
+   "value": 10.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2016",
+   "name": "Folsäureantagonisten",
+   "value": 9.8,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2017",
+   "name": "Folsäureantagonisten",
+   "value": 7.8,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2018",
+   "name": "Folsäureantagonisten",
+   "value": 8.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2019",
+   "name": "Folsäureantagonisten",
+   "value": 8.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2020",
+   "name": "Folsäureantagonisten",
+   "value": 8.96,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2021",
+   "name": "Folsäureantagonisten",
+   "value": 9.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2022",
+   "name": "Folsäureantagonisten",
+   "value": 7.6,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2023",
+   "name": "Folsäureantagonisten",
+   "value": 7.8,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2024",
+   "name": "Folsäureantagonisten",
+   "value": 8.8,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2011",
+   "name": "Lincosamide",
+   "value": 16.8,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2012",
+   "name": "Lincosamide",
+   "value": 15.4,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2013",
+   "name": "Lincosamide",
+   "value": 16.9,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2014",
+   "name": "Lincosamide",
+   "value": 14.6,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2015",
+   "name": "Lincosamide",
+   "value": 10.8,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2016",
+   "name": "Lincosamide",
+   "value": 9.9,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2017",
+   "name": "Lincosamide",
+   "value": 10.9,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2018",
+   "name": "Lincosamide",
+   "value": 9.9,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2019",
+   "name": "Lincosamide",
+   "value": 13.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2020",
+   "name": "Lincosamide",
+   "value": 12.9,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2021",
+   "name": "Lincosamide",
+   "value": 12.7,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2022",
+   "name": "Lincosamide",
+   "value": 12.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2023",
+   "name": "Lincosamide",
+   "value": 11.7,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2024",
+   "name": "Lincosamide",
+   "value": 13.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2011",
+   "name": "Makrolide",
+   "value": 173.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2012",
+   "name": "Makrolide",
+   "value": 144.7,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2013",
+   "name": "Makrolide",
+   "value": 126.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2014",
+   "name": "Makrolide",
+   "value": 108.7,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2015",
+   "name": "Makrolide",
+   "value": 52.5,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2016",
+   "name": "Makrolide",
+   "value": 54.7,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2017",
+   "name": "Makrolide",
+   "value": 54.7,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2018",
+   "name": "Makrolide",
+   "value": 58.7,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2019",
+   "name": "Makrolide",
+   "value": 57.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2020",
+   "name": "Makrolide",
+   "value": 60.8,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2021",
+   "name": "Makrolide",
+   "value": 46.5,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2022",
+   "name": "Makrolide",
+   "value": 46.4,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2023",
+   "name": "Makrolide",
+   "value": 51.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2024",
+   "name": "Makrolide",
+   "value": 52.9,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2011",
+   "name": "Penicilline",
+   "value": 527.9,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2012",
+   "name": "Penicilline",
+   "value": 500.7,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2013",
+   "name": "Penicilline",
+   "value": 473.2,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2014",
+   "name": "Penicilline",
+   "value": 449.8,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2015",
+   "name": "Penicilline",
+   "value": 299.4,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2016",
+   "name": "Penicilline",
+   "value": 279.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2017",
+   "name": "Penicilline",
+   "value": 269.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2018",
+   "name": "Penicilline",
+   "value": 271.2,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2019",
+   "name": "Penicilline",
+   "value": 263.6,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2020",
+   "name": "Penicilline",
+   "value": 277.7,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2021",
+   "name": "Penicilline",
+   "value": 235.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2022",
+   "name": "Penicilline",
+   "value": 227.7,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2023",
+   "name": "Penicilline",
+   "value": 205.9,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2024",
+   "name": "Penicilline",
+   "value": 222.2,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2011",
+   "name": "Pleuromutiline",
+   "value": 14.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2012",
+   "name": "Pleuromutiline",
+   "value": 18.4,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2013",
+   "name": "Pleuromutiline",
+   "value": 15.5,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2014",
+   "name": "Pleuromutiline",
+   "value": 13.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2015",
+   "name": "Pleuromutiline",
+   "value": 11.2,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2016",
+   "name": "Pleuromutiline",
+   "value": 9.9,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2017",
+   "name": "Pleuromutiline",
+   "value": 13.4,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2018",
+   "name": "Pleuromutiline",
+   "value": 8.2,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2019",
+   "name": "Pleuromutiline",
+   "value": 7.7,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2020",
+   "name": "Pleuromutiline",
+   "value": 10.5,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2021",
+   "name": "Pleuromutiline",
+   "value": 8.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2022",
+   "name": "Pleuromutiline",
+   "value": 8.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2023",
+   "name": "Pleuromutiline",
+   "value": 8.7,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2024",
+   "name": "Pleuromutiline",
+   "value": 9.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2011",
+   "name": "Polypeptidantibiotika",
+   "value": 127.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2012",
+   "name": "Polypeptidantibiotika",
+   "value": 123.5,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2013",
+   "name": "Polypeptidantibiotika",
+   "value": 124.7,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2014",
+   "name": "Polypeptidantibiotika",
+   "value": 106.7,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2015",
+   "name": "Polypeptidantibiotika",
+   "value": 81.8,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2016",
+   "name": "Polypeptidantibiotika",
+   "value": 68.9,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2017",
+   "name": "Polypeptidantibiotika",
+   "value": 73.6,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2018",
+   "name": "Polypeptidantibiotika",
+   "value": 73.6,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2019",
+   "name": "Polypeptidantibiotika",
+   "value": 66.2,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2020",
+   "name": "Polypeptidantibiotika",
+   "value": 60.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2021",
+   "name": "Polypeptidantibiotika",
+   "value": 51.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2022",
+   "name": "Polypeptidantibiotika",
+   "value": 44.5,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2023",
+   "name": "Polypeptidantibiotika",
+   "value": 33.5,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2024",
+   "name": "Polypeptidantibiotika",
+   "value": 31.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2011",
+   "name": "Sulfonamide",
+   "value": 184.9,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2012",
+   "name": "Sulfonamide",
+   "value": 161.8,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2013",
+   "name": "Sulfonamide",
+   "value": 152.2,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2014",
+   "name": "Sulfonamide",
+   "value": 121.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2015",
+   "name": "Sulfonamide",
+   "value": 72.6,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2016",
+   "name": "Sulfonamide",
+   "value": 68.8,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2017",
+   "name": "Sulfonamide",
+   "value": 62.4,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2018",
+   "name": "Sulfonamide",
+   "value": 63.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2019",
+   "name": "Sulfonamide",
+   "value": 59.4,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2020",
+   "name": "Sulfonamide",
+   "value": 65.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2021",
+   "name": "Sulfonamide",
+   "value": 63.5,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2022",
+   "name": "Sulfonamide",
+   "value": 54.2,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2023",
+   "name": "Sulfonamide",
+   "value": 57.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2024",
+   "name": "Sulfonamide",
+   "value": 62.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2011",
+   "name": "Tetracycline",
+   "value": 564.4,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2012",
+   "name": "Tetracycline",
+   "value": 566.2,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2013",
+   "name": "Tetracycline",
+   "value": 454.4,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2014",
+   "name": "Tetracycline",
+   "value": 341.8,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2015",
+   "name": "Tetracycline",
+   "value": 220.5,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2016",
+   "name": "Tetracycline",
+   "value": 192.6,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2017",
+   "name": "Tetracycline",
+   "value": 187.8,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2018",
+   "name": "Tetracycline",
+   "value": 178.5,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2019",
+   "name": "Tetracycline",
+   "value": 140.5,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2020",
+   "name": "Tetracycline",
+   "value": 147.8,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2021",
+   "name": "Tetracycline",
+   "value": 125.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2022",
+   "name": "Tetracycline",
+   "value": 90.2,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2023",
+   "name": "Tetracycline",
+   "value": 104.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2024",
+   "name": "Tetracycline",
+   "value": 112.7,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2011",
+   "name": "Gesamtmenge",
+   "value": 1705.7,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2012",
+   "name": "Gesamtmenge",
+   "value": 1619.0,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2013",
+   "name": "Gesamtmenge",
+   "value": 1451.6,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2014",
+   "name": "Gesamtmenge",
+   "value": 1238.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2015",
+   "name": "Gesamtmenge",
+   "value": 805.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2016",
+   "name": "Gesamtmenge",
+   "value": 742.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2017",
+   "name": "Gesamtmenge",
+   "value": 733.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2018",
+   "name": "Gesamtmenge",
+   "value": 722.4,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2019",
+   "name": "Gesamtmenge",
+   "value": 670.3,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2020",
+   "name": "Gesamtmenge",
+   "value": 700.7,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2021",
+   "name": "Gesamtmenge",
+   "value": 600.6,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2022",
+   "name": "Gesamtmenge",
+   "value": 539.9,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2023",
+   "name": "Gesamtmenge",
+   "value": 528.5,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  },
+  {
+   "date": "2024",
+   "name": "Gesamtmenge",
+   "value": 562.1,
+   "quality": "belegt",
+   "quelle": "BVL-Abgabemengenerfassung, Tab. 2 „Vergleich der Antibiotikaabgabemengen je Wirkstoffklasse (Grundsubstanz in t) in Deutschland, 2011 bis 2024“, in: Deutsches Tierärzteblatt 2025; 73 (11): 1522 ff."
+  }
+ ]
+}

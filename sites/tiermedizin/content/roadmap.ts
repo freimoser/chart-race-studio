@@ -231,7 +231,8 @@ export const POSTS: RoadmapPost[] = [
     refs: [14, 24],
   },
   {
-    nr: 24, arc: 'praxis', status: 'naechster',
+    nr: 24, arc: 'praxis', status: 'veroeffentlicht', publishedOn: '2026-10-16',
+    linkedInUrl: 'https://lnkd.in/p/eQUBZQWF',
     title: 'Die Großtierpraxis wird zur Pferdepraxis',
     hook: 'Seit 2021 gibt es mehr reine Pferde- als reine Nutztierpraxen. Wer Pferde behandelt, wird mehr, wer Nutztiere behandelt, weniger – am stärksten schrumpft die Gemischtpraxis.',
     figures: ['Nur Pferde: 744 (2019) auf 989 (2025), +32,9 Prozent', 'Nur Nutztiere: 887 auf 718, −19,1 Prozent; 2021 überholt (827 zu 768)', 'Gemischt Nutz- und Kleintiere: 2.863 auf 2.014, −29,7 Prozent', 'Alle mit Pferden 1.704 auf 2.231, alle mit Nutztieren 4.005 auf 3.211'],
@@ -293,12 +294,22 @@ export const POSTS: RoadmapPost[] = [
     refs: [1, 29],
   },
   {
-    nr: 31, arc: 'tiere', status: 'geplant', vorabOnline: true,
+    nr: 31, arc: 'tiere', status: 'veroeffentlicht', publishedOn: '2026-10-20', vorabOnline: true,
+    linkedInUrl: 'https://lnkd.in/p/eZHhDc_H',
     title: 'Der Fohlen-Boom ist vorbei',
     hook: 'So wenige Zuchtstuten wie nie in der FN-Statistik, die Fohlen fallen seit dem Corona-Hoch. Die Fruchtbarkeit bleibt gleich – es fehlen die Stuten.',
     figures: ['Zuchtstuten: 103.418 (2010) auf 74.950 (2025), −28 Prozent, weniger als 1990', 'Fohlen: 42.320 (2022) auf 34.424 (2025), −19 Prozent', 'Fohlen je 100 Zuchtstuten: 45,9 (2010) und 45,9 (2025)'],
     sampleId: 'pferdezucht', chart: 'line', dataStatus: 'belegt',
     dataNote: 'Erster Post der Visite 2, Pferde-Doppel zu Post 24. FN Jahresbericht Zucht 2025, S. 4 (ds22-pferdezucht.json). vorabOnline, damit Artikel und Datensatz online sind, ohne Post 24 vom Platz „aktuell“ zu verdrängen.',
     refs: [24],
+  },
+  {
+    nr: 32, arc: 'tiere', status: 'naechster',
+    title: 'Zwei Drittel weniger Antibiotika',
+    hook: 'Von 1.705,7 auf 562,1 Tonnen: Die Abgabe von Antibiotika an Tierärzte ist seit 2011 um zwei Drittel gesunken – mit dem größten Sprung 2015 und einem leichten Anstieg seit 2023.',
+    figures: ['Gesamt: 1.705,7 t (2011) auf 562,1 t (2024), −67 Prozent', '2014 auf 2015: −35 Prozent in einem Jahr', 'Tetracycline −80 Prozent, Colistin −76 Prozent; 2013 überholen die Penicilline die Tetracycline', 'Gegenprobe BfR 2023: 478 t Verbrauch bei Rind, Schwein, Huhn, Pute'],
+    sampleId: 'antibiotika', chart: 'bar', dataStatus: 'belegt',
+    dataNote: 'BVL-Abgabemengen über DTBl 11/2025 Tab. 2 (ds23-antibiotika.json). 2023/2024 mit erweitertem Meldekreis (Apotheken) – im Post nennen. Gegenprobe Verbrauch: BfR-Bericht 2023.',
+    refs: [24, 31],
   },
 ]

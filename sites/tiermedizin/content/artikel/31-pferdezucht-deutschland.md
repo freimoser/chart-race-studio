@@ -38,7 +38,7 @@ Bis 2014 schrumpfte die Zucht deutlich, danach blieb die Zahl der Stuten lange s
 
 ## Was das für die Tiermedizin bedeutet
 
-Weniger Fohlen heißt weniger Trächtigkeitsuntersuchungen, Geburten und Fohlenmedizin. Gleichzeitig wächst die Pferdepraxis insgesamt: 2025 führten 989 Tierärztinnen und Tierärzte eine reine Pferdepraxis, so viele wie nie seit Beginn der Zählung 2019. Mehr dazu im Artikel [Die Großtierpraxis wird zur Pferdepraxis](pferdepraxis-nutztierpraxis.html). Die Arbeit am Pferd wächst also, nur nicht in der Zucht.
+Weniger Fohlen heißt weniger Trächtigkeitsuntersuchungen, Geburten und Fohlenmedizin. Gleichzeitig wächst die Pferdepraxis insgesamt: 2025 führten 989 Tierärztinnen und Tierärzte eine reine Pferdepraxis, so viele wie nie seit Beginn der Zählung 2019. Mehr dazu im Artikel [Die Großtierpraxis wird zur Pferdepraxis](pferdepraxis-nutztierpraxis.html). Die Arbeit am Pferd wächst also, nur nicht in der Zucht. Wie sich die Arbeit in der Nutztierpraxis verändert, zeigt auch der Rückgang der [Antibiotika in der Tierhaltung](antibiotika-tierhaltung.html) um zwei Drittel seit 2011.
 
 ## Was die Zahl nicht sagt
 

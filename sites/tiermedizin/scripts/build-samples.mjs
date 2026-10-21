@@ -25,6 +25,7 @@ const d19 = load('ds19-heimtiere-dach.json')
 const d20 = load('ds20-alter-praktiker.json')
 const d21 = load('ds21-pferde-nutztiere.json')
 const d22 = load('ds22-pferdezucht.json')
+const d23 = load('ds23-antibiotika.json')
 
 import { wide, byMetric, dedupe, stuetze, lueckenlos, kette, lit } from '../../../scripts/lib/reihen.mjs'
 
@@ -515,6 +516,11 @@ const w18 = wide(d22.rows.filter((r) => r.date >= '2010'), {
   names: ['Eingetragene Zuchtstuten', 'Registrierte Fohlen'],
   rename: { 'Eingetragene Zuchtstuten': 'Zuchtstuten', 'Registrierte Fohlen': 'Fohlen' },
 })
+// Antibiotika-Abgabemengen (BVL) 2011–2024, die sechs großen Wirkstoffklassen und die Gesamtmenge als Summenspalte.
+const w19 = wide(d23.rows, {
+  names: ['Penicilline', 'Tetracycline', 'Sulfonamide', 'Makrolide', 'Polypeptidantibiotika', 'Aminoglykoside', 'Gesamtmenge'],
+  rename: { Polypeptidantibiotika: 'Polypeptide (Colistin)', Gesamtmenge: 'Summe: Alle Antibiotika (t)' },
+})
 const w17b = wide([...d21.rows, ...d1.rows.filter((r) => r.name === NIEDER && r.date >= '2010')], {
   names: ['Kleintiere', 'Nutztiere und Kleintiere', 'Pferde', 'Nutztiere', 'Kleintiere und Pferde', 'Nutztiere und Pferde', NIEDER],
   rename: { Kleintiere: 'Nur Kleintiere', Pferde: 'Nur Pferde', Nutztiere: 'Nur Nutztiere', [NIEDER]: 'Summe: Niedergelassene' },
@@ -522,6 +528,6 @@ const w17b = wide([...d21.rows, ...d1.rows.filter((r) => r.name === NIEDER && r.
 
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 const out = `// Automatisch erzeugt von sites/tiermedizin/scripts/build-samples.mjs aus sites/tiermedizin/data/raw/*.json – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('TIERAERZTE_BUNDESLAND', w1), emit('TIERAERZTESCHAFT_DEUTSCHLAND', w2), emit('INHABER_ANGESTELLTE', w2b), emit('TIERARZTMANGEL', w2c), emit('TIERARZTMANGEL_2000', w2d), emit('HEIMTIERE', w3), emit('HEIMTIERE_ALLE', w3b), emit('HEIMTIERE_DACH', w3c), emit('HUNDERASSEN', w4), emit('RINDER_BUNDESLAND', w5), emit('HEIMTIERMARKT', w6), emit('PRAXISSCHWERPUNKTE', w7), emit('FACHTIERAERZTE', w8), emit('KLEINTIERE_BUNDESLAND', w9), emit('KETTEN', w10), emit('KETTEN_EIGENTUEMER', w11), emit('GESCHLECHT_PRAXIS', w12), emit('OKTOBERFEST', w13), emit('OKTOBERFEST_PREIS', w13b), emit('TIERARZT_INFLATION', w14), emit('TIERARZT_ROUTINEJAHR', w14b), emit('PRAXIS_ALTER', w15), emit('PRAXIS_ALTER_WACHSTUM', w15b), emit('GEHALT_PREISE', w16), emit('PFERDE_NUTZTIERE', w17), emit('PRAXISARTEN_2010', w17b), emit('PFERDEZUCHT', w18), emit('HUND_KATZE_WELT', { headers: d13.headers ?? ['Jahr'], rows: d13.rows ?? [] })].join('\n')
+  [emit('TIERAERZTE_BUNDESLAND', w1), emit('TIERAERZTESCHAFT_DEUTSCHLAND', w2), emit('INHABER_ANGESTELLTE', w2b), emit('TIERARZTMANGEL', w2c), emit('TIERARZTMANGEL_2000', w2d), emit('HEIMTIERE', w3), emit('HEIMTIERE_ALLE', w3b), emit('HEIMTIERE_DACH', w3c), emit('HUNDERASSEN', w4), emit('RINDER_BUNDESLAND', w5), emit('HEIMTIERMARKT', w6), emit('PRAXISSCHWERPUNKTE', w7), emit('FACHTIERAERZTE', w8), emit('KLEINTIERE_BUNDESLAND', w9), emit('KETTEN', w10), emit('KETTEN_EIGENTUEMER', w11), emit('GESCHLECHT_PRAXIS', w12), emit('OKTOBERFEST', w13), emit('OKTOBERFEST_PREIS', w13b), emit('TIERARZT_INFLATION', w14), emit('TIERARZT_ROUTINEJAHR', w14b), emit('PRAXIS_ALTER', w15), emit('PRAXIS_ALTER_WACHSTUM', w15b), emit('GEHALT_PREISE', w16), emit('PFERDE_NUTZTIERE', w17), emit('PRAXISARTEN_2010', w17b), emit('PFERDEZUCHT', w18), emit('ANTIBIOTIKA', w19), emit('HUND_KATZE_WELT', { headers: d13.headers ?? ['Jahr'], rows: d13.rows ?? [] })].join('\n')
 fs.writeFileSync('sites/tiermedizin/samples/data.ts', out)
-for (const [n, w] of Object.entries({ w1, w2, w2b, w2c, w2d, w3, w3b, w3c, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w13b, w14, w14b, w15, w15b, w16, w17, w17b, w18 })) console.log(n, w.headers.length - 1, 'Kategorien,', w.rows.length, 'Perioden', w.rows[0]?.[0], '–', w.rows.at(-1)?.[0])
+for (const [n, w] of Object.entries({ w1, w2, w2b, w2c, w2d, w3, w3b, w3c, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w13b, w14, w14b, w15, w15b, w16, w17, w17b, w18, w19 })) console.log(n, w.headers.length - 1, 'Kategorien,', w.rows.length, 'Perioden', w.rows[0]?.[0], '–', w.rows.at(-1)?.[0])

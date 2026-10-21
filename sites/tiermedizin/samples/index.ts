@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
+import { ANTIBIOTIKA, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -237,6 +237,26 @@ export const SAMPLES: SampleDataset[] = [
     headers: PFERDEZUCHT.headers,
     rows: PFERDEZUCHT.rows,
     suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'Pferde', colors: { 'Zuchtstuten': '#0f4c5c', 'Fohlen': '#e36414' } },
+  },
+  {
+    id: 'antibiotika',
+    erstellt: '2026-10-21', geprueft: '2026-10-21',
+    category: 'nutztiere',
+    title: 'Zwei Drittel weniger Antibiotika',
+    subtitle: 'Abgabe an Tierärzt:innen in Tonnen, die sechs größten Wirkstoffklassen, 2011–2024',
+    source: 'Quelle: BVL-Abgabemengenerfassung (Deutsches Tierärzteblatt 11/2025, Tab. 2); seit 2023 inkl. Abgaben an Apotheken',
+    sourceUrl: 'https://www.bundestieraerztekammer.de/btk/dtbl/archiv/2025/artikel/DTBl_11-2025_AB-Abgaben-2024.pdf',
+    unit: 't',
+    description: '1.705,7 t Antibiotika im Jahr 2011, 562,1 t im Jahr 2024. 2013 überholen die Penicilline die Tetracycline.',
+    dataInfo: [
+      "Gezählt wird, was pharmazeutische Unternehmen und Großhändler an Tierärztinnen und Tierärzte abgeben, in Tonnen Wirkstoff (Grundsubstanz). Das ist nicht der Einsatz am Tier und sagt nichts über Behandlungstage, weil Wirkstoffe unterschiedlich hoch dosiert werden.",
+      "Alle Werte sind vom BVL veröffentlicht, nichts ist gerechnet. Gezeigt werden die sechs größten Wirkstoffklassen; die Gesamtmenge enthält auch die kleinen Klassen sowie vier aus Geheimhaltungsgründen nicht einzeln ausgewiesene.",
+      "Seit 2023 sind auch Abgaben an Apotheken und weitere Empfänger meldepflichtig. Laut BVL sind 2023 und 2024 deshalb nicht uneingeschränkt mit den Jahren davor vergleichbar.",
+      "Gegenprobe aus einer zweiten Erhebung: Der Verbrauch, den Betriebe mit Rindern, Schweinen, Hühnern und Puten 2023 meldeten, lag laut BfR bei 478 Tonnen (Penicilline 214, Tetracycline 93, Makrolide 47, Sulfonamide 35, Polypeptide 30, Aminoglykoside 29). Die Rangfolge der Klassen stimmt mit der Abgabe überein, die Menge liegt plausibel darunter, weil Heimtiere, Pferde und weitere Nutzungsarten fehlen.",
+    ],
+    headers: ANTIBIOTIKA.headers,
+    rows: ANTIBIOTIKA.rows,
+    suggested: { chartType: 'bar', topN: 6, decimals: 1, primaryAxisLabel: 'Tonnen' },
   },
   {
     id: 'fachtieraerzte',
