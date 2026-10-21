@@ -803,6 +803,26 @@ export const ANTIBIOTIKA = {
   ],
 }
 
+export const ANTIBIOTIKA_GESAMT = {
+  headers: ["Jahr","Alle Antibiotika","Penicilline","Tetracycline"],
+  rows: [
+    ["2011", 1705.7, 527.9, 564.4],
+    ["2012", 1619, 500.7, 566.2],
+    ["2013", 1451.6, 473.2, 454.4],
+    ["2014", 1238.3, 449.8, 341.8],
+    ["2015", 805.3, 299.4, 220.5],
+    ["2016", 742.3, 279, 192.6],
+    ["2017", 733.1, 269.1, 187.8],
+    ["2018", 722.4, 271.2, 178.5],
+    ["2019", 670.3, 263.6, 140.5],
+    ["2020", 700.7, 277.7, 147.8],
+    ["2021", 600.6, 235, 125],
+    ["2022", 539.9, 227.7, 90.2],
+    ["2023", 528.5, 205.9, 104.3],
+    ["2024", 562.1, 222.2, 112.7],
+  ],
+}
+
 export const HUND_KATZE_WELT = {
   headers: ["Jahr","Afghanistan","Albania","Algeria","Andorra","Angola","Antigua and Barbuda","Argentina","Armenia","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bhutan","Bolivia","Bosnia and Herzegovina","Botswana","Brazil","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Central African Republic","Chad","Chile","China","Colombia","Comoros","Costa Rica","Croatia","Cuba","Cyprus","Czechia","DR Congo","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Eswatini","Ethiopia","Fiji","Finland","France","Gabon","Gambia","Georgia","Germany","Ghana","Greece","Grenada","Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","Honduras","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Ivory Coast","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati","Kosovo","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Morocco","Mozambique","Myanmar","Namibia","Nauru","Nepal","Netherlands","New Zealand","Nicaragua","Niger","Nigeria","North Korea","North Macedonia","Norway","Oman","Pakistan","Palau","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Qatar","Republic of the Congo","Romania","Russian Federation","Rwanda","Saint Kitts and Nevis","Saint Lucia","Saint Vincent and the Grenadines","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Korea","South Sudan","Spain","Sri Lanka","Sudan","Suriname","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor-Leste","Togo","Tonga","Trinidad and Tobago","Tunisia","Turkey","Turkmenistan","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Yemen","Zambia","Zimbabwe","Summe: Hunde (Mio.)","Summe: Katzen (Mio.)"],
   rows: [

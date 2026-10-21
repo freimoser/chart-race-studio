@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { ANTIBIOTIKA, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
+import { ANTIBIOTIKA, ANTIBIOTIKA_GESAMT, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -257,6 +257,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: ANTIBIOTIKA.headers,
     rows: ANTIBIOTIKA.rows,
     suggested: { chartType: 'bar', topN: 6, decimals: 1, primaryAxisLabel: 'Tonnen' },
+  },
+  {
+    id: 'antibiotika-gesamt',
+    erstellt: '2026-10-21', geprueft: '2026-10-21',
+    category: 'nutztiere',
+    title: 'Zwei Drittel weniger Antibiotika',
+    subtitle: 'An Tierärzt:innen abgegebene Antibiotika in Tonnen, 2011–2024',
+    source: 'Quelle: BVL-Abgabemengenerfassung (Deutsches Tierärzteblatt 11/2025, Tab. 2); seit 2023 inkl. Abgaben an Apotheken',
+    sourceUrl: 'https://www.bundestieraerztekammer.de/btk/dtbl/archiv/2025/artikel/DTBl_11-2025_AB-Abgaben-2024.pdf',
+    unit: 't',
+    description: 'Von 1.705,7 auf 562,1 Tonnen. Die Tetracycline fallen am stärksten, minus 80 Prozent.',
+    dataInfo: [
+      "Dieselben Werte wie im Datensatz „Zwei Drittel weniger Antibiotika“ (Wirkstoffklassen als Balken), hier als Linien: die Gesamtmenge und die beiden größten Klassen. Gezählt wird die Abgabe an Tierärztinnen und Tierärzte in Tonnen Wirkstoff, nicht der Einsatz am Tier.",
+      "Seit 2023 sind auch Abgaben an Apotheken und weitere Empfänger meldepflichtig; 2023 und 2024 sind laut BVL nicht uneingeschränkt mit den Jahren davor vergleichbar.",
+      "Gegenprobe: Betriebe mit Rindern, Schweinen, Hühnern und Puten meldeten 2023 einen Verbrauch von 478 Tonnen (BfR). Im selben Bericht: Die Resistenz von E. coli bei Mastschweinen gegen Tetracyclin, Sulfamethoxazol, Trimethoprim und Cefotaxim ist seit 2015 signifikant gesunken, gegen keinen Wirkstoff gestiegen.",
+    ],
+    headers: ANTIBIOTIKA_GESAMT.headers,
+    rows: ANTIBIOTIKA_GESAMT.rows,
+    suggested: { chartType: 'line', topN: 3, decimals: 1, primaryAxisLabel: 'Tonnen', colors: { 'Alle Antibiotika': '#0f4c5c', 'Penicilline': '#e36414', 'Tetracycline': '#8d99ae' } },
   },
   {
     id: 'fachtieraerzte',

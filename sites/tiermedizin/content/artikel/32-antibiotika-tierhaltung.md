@@ -17,6 +17,7 @@ bereit: ja
 - Tetracycline sanken um 80 Prozent, von 564,4 auf 112,7 Tonnen; 2013 lagen erstmals die Penicilline vorn.
 - Colistin und andere Polypeptide, wichtig als Reserve in der Humanmedizin: 127,3 auf 31,0 Tonnen, minus 76 Prozent.
 - Seit 2023 steigt die Menge wieder leicht: 528,5 auf 562,1 Tonnen, auch weil seit 2023 mehr Abgabewege gemeldet werden.
+- Es wirkt: Bei Mastschweinen sind die Resistenzen von E. coli gegen vier Wirkstoffe seit 2015 signifikant gesunken.
 
 ## Wie sich die Wirkstoffklassen entwickelt haben
 
@@ -33,6 +34,14 @@ bereit: ja
 *Tonnen Wirkstoff (Grundsubstanz), BVL-Abgabemengenerfassung. Die Gesamtmenge enthält auch kleinere und aus Geheimhaltungsgründen nicht einzeln ausgewiesene Klassen.*
 
 Der Einbruch 2015 fällt mit dem Antibiotika-Minimierungskonzept zusammen, das mit der 16. Novelle des Arzneimittelgesetzes 2014 in Kraft trat: Mastbetriebe melden seitdem, wie oft sie behandeln, und werden miteinander verglichen. Am stärksten sanken die Wirkstoffe, die vor allem über Futter und Wasser an ganze Bestände gehen, Tetracycline, Sulfonamide und Makrolide.
+
+## Warum weniger Antibiotika gut ist
+
+Jeder Einsatz von Antibiotika gibt Bakterien, die dagegen widerstandsfähig sind, einen Vorteil. Je mehr Antibiotika im Stall, desto mehr resistente Keime – und die bleiben nicht im Stall: Über Fleisch, über den Kontakt zu Tieren und über Gülle und Abwasser können sie zum Menschen gelangen. Wird ein Antibiotikum unwirksam, fehlt es bei Tier und Mensch. Deshalb gelten Tiermedizin und Humanmedizin hier als ein gemeinsames Problem („One Health“).
+
+Dass weniger Einsatz tatsächlich wirkt, zeigt das Resistenz-Monitoring an Schlachttieren: Bei E. coli aus Mastschweinen ist die Resistenz gegen Tetracyclin, Sulfamethoxazol, Trimethoprim und Cefotaxim seit 2015 signifikant gesunken, gegen keinen der untersuchten Wirkstoffe ist sie gestiegen (Bundesinstitut für Risikobewertung, Bericht 2023). Gegen Ampicillin, ein Penicillin, sank sie nicht – obwohl auch Penicilline weniger eingesetzt werden.
+
+Das Ziel ist noch nicht erreicht. Die EU will den Verkauf von Antibiotika für Nutztiere bis 2030 gegenüber 2018 halbieren, Deutschland hat dieses Ziel übernommen. Gemessen an den Tonnen des BVL liegt Deutschland 2024 bei minus 22 Prozent gegenüber 2018 (722,4 auf 562,1 Tonnen, berechnet; die EU misst in Milligramm je Kilogramm Tiergewicht, das Ergebnis kann davon abweichen).
 
 ## Die kritischen Wirkstoffe
 
@@ -59,10 +68,14 @@ Wie viel davon bei welchem Tier ankommt, zeigt der Verbrauch, den die Betriebe s
 
 Ja, um zwei Drittel seit 2011. Am stärksten von 2014 auf 2015. Seit 2023 steigt die gemeldete Menge wieder leicht, teils wegen der erweiterten Meldepflicht.
 
+### Warum soll in der Tierhaltung weniger Antibiotika eingesetzt werden?
+
+Weil jeder Einsatz resistente Bakterien fördert, die auch Menschen erreichen können. Bei Mastschweinen sind die Resistenzen von E. coli gegen mehrere Wirkstoffe seit 2015 signifikant gesunken, seit weniger Antibiotika eingesetzt werden.
+
 ### Welche Reserveantibiotika werden in der Tiermedizin eingesetzt?
 
 Vor allem Fluorchinolone (2024: 5,3 Tonnen), Cephalosporine der 3. und 4. Generation (0,7 und 0,2 Tonnen) und Colistin (Polypeptide, 31,0 Tonnen). Für Fluorchinolone und Cephalosporine der 3. und 4. Generation schreibt die Hausapothekenverordnung seit 2018 vor dem Einsatz ein Antibiogramm vor.
 
 ## Quelle und Methode
 
-Bundesamt für Verbraucherschutz und Lebensmittelsicherheit, Abgabemengenerfassung, veröffentlicht im [Deutschen Tierärzteblatt 11/2025, Tab. 2](https://www.bundestieraerztekammer.de/btk/dtbl/archiv/2025/artikel/DTBl_11-2025_AB-Abgaben-2024.pdf), abgerufen am 21. Oktober 2026, 2011 bis 2024. Verbrauch: Bundesinstitut für Risikobewertung, [Antibiotika-Verbrauchsmengen und Therapiehäufigkeit 2023](https://www.bfr.bund.de/cm/343/antibiotika-verbrauchsmengen-und-therapiehaeufigkeit-2023.pdf), abgerufen am 21. Oktober 2026. Humanmedizin: [Umweltbundesamt](https://www.umweltbundesamt.de/node/60335), abgerufen am 21. Oktober 2026. Berechnet sind die Veränderungen in Prozent. Mehr unter [Datenherkunft](../artikel/datenherkunft.html).
+Bundesamt für Verbraucherschutz und Lebensmittelsicherheit, Abgabemengenerfassung, veröffentlicht im [Deutschen Tierärzteblatt 11/2025, Tab. 2](https://www.bundestieraerztekammer.de/btk/dtbl/archiv/2025/artikel/DTBl_11-2025_AB-Abgaben-2024.pdf), abgerufen am 21. Oktober 2026, 2011 bis 2024. Verbrauch: Bundesinstitut für Risikobewertung, [Antibiotika-Verbrauchsmengen und Therapiehäufigkeit 2023](https://www.bfr.bund.de/cm/343/antibiotika-verbrauchsmengen-und-therapiehaeufigkeit-2023.pdf), abgerufen am 21. Oktober 2026. Humanmedizin: [Umweltbundesamt](https://www.umweltbundesamt.de/node/60335), abgerufen am 21. Oktober 2026. Ziel der EU: Farm-to-Fork-Strategie der Europäischen Kommission (2020), minus 50 Prozent bis 2030 gegenüber 2018. Berechnet sind die Veränderungen in Prozent. Mehr unter [Datenherkunft](../artikel/datenherkunft.html).
