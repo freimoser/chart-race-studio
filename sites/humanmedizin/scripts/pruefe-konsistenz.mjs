@@ -30,12 +30,13 @@ const NAMEN = {
   'CGM MEDISTAR (BLACK PRO)': 'CGM MEDISTAR', TURBOMED: 'CGM TURBOMED', ALBIS: 'CGM ALBIS', 'CGM M1 PRO (ehem. CompuMED M1)': 'CGM M1 PRO',
   'DATA VITAL': 'CGM DATA VITAL', 'x.isynet (ehem. MCS-ISYNET)': 'x.isynet', 'x.concept (ehem. DOCconcept)': 'x.concept',
   'x.comfort (ehem. DOCcomfort)': 'x.comfort', 'EL - Elaphe Longissima': 'EL', 'ETERNO Cloud (ehem. inSuite)': 'ETERNO Cloud',
+  'SAP Ambulatory Care Management': 'SAP', 'CGM MEDICO (ehem. MEDICO WIPS)': 'CGM MEDICO', IMedOne: 'iMedOne',
 }
 const kurz = (s) => NAMEN[s] ?? s
 
 // ---------- 1. Datensätze gegen Rohdaten ----------
-for (const [id, T] of [['pvs-installationen', D.PVS_ARZT], ['pvs-installationen-2007', D.PVS_ARZT_2007]]) {
-  for (const r of INST.filter((x) => x.stichtag.endsWith('-12-31') && x.klasse === 'arzt')) {
+for (const [id, T] of [['pvs-installationen', D.PVS_ARZT], ['pvs-installationen-2007', D.PVS_ARZT_2007], ['pvs-psychotherapie', D.PVS_PSYCHO], ['pvs-aufsteiger', D.PVS_AUFSTEIGER], ['pvs-kis', D.PVS_KIS]]) {
+  for (const r of INST.filter((x) => x.stichtag.endsWith('-12-31'))) {
     const j = Number(r.stichtag.slice(0, 4)), v = wert(T, j, kurz(r.system))
     if (v != null && v !== Number(r.installationen)) fehler.push(`${id} ${j} ${kurz(r.system)}: Datensatz ${v}, Rohdaten ${r.installationen}`)
   }
@@ -47,6 +48,13 @@ for (const n of D.PVS_ARZT.headers.slice(1)) {
   for (let j = 2013; j <= 2025; j++) {
     const a = wert(D.PVS_ARZT, j, n), b = wert(D.PVS_ARZT_2007, j, n)
     if (a !== b) fehler.push(`${n} ${j}: pvs-installationen ${a}, pvs-installationen-2007 ${b}`)
+  }
+}
+
+// Gleiche Systeme in mehreren Datensätzen haben dieselben Werte (auch die gerechneten).
+for (const [id, T] of [['pvs-psychotherapie', D.PVS_PSYCHO], ['pvs-aufsteiger', D.PVS_AUFSTEIGER]]) {
+  for (const n of T.headers.slice(1)) if (D.PVS_ARZT.headers.includes(n)) for (let j = 2013; j <= 2025; j++) {
+    if (wert(T, j, n) !== wert(D.PVS_ARZT, j, n)) fehler.push(`${id} ${n} ${j}: ${wert(T, j, n)}, pvs-installationen ${wert(D.PVS_ARZT, j, n)}`)
   }
 }
 

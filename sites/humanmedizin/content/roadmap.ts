@@ -57,8 +57,8 @@ export const POSTS: RoadmapPost[] = [
     title: 'Die Aufsteiger: Mac, Linux und Cloud',
     hook: 'tomedo und T2med gab es 2013 noch nicht. Ende 2025 haben sie zusammen 8.608 Installationen, und sie wachsen jedes Quartal, während die großen Windows-Systeme verlieren.',
     figures: ['tomedo: 7 (2013) → 4.530 (2025); 2025 Quartal für Quartal 3.628, 3.883, 4.219, 4.530', 'T2med: 0 (Markteintritt 2015) → 4.078', 'ETERNO Cloud (Browser): 1 (2014) → 778', 'Medical Office: 1.115 → 5.700, seit 2021 nur noch leicht steigend'],
-    chart: 'line', dataStatus: 'teilweise',
-    dataNote: 'Datensatz pvs-aufsteiger anlegen (Pflegeprotokoll A6), Quartalswerte 2021–2025 belegt.',
+    sampleId: 'pvs-aufsteiger', chart: 'line', dataStatus: 'belegt',
+    dataNote: 'Datensatz pvs-aufsteiger steht (22.10.2026), Jahresende 2013–2025, 17 Werte gerechnet. Quartalswerte 2021–2025 sind belegt und können eine feinere Fassung tragen. Medical-Office-Sprung 2017 offen nennen.',
     refs: [1, 2],
   },
   {
@@ -102,8 +102,8 @@ export const POSTS: RoadmapPost[] = [
     title: 'Krankenhaus-Software in der ambulanten Versorgung',
     hook: 'ORBIS, SAP, CGM MEDICO und iMedOne stehen in der KBV-Liste der Praxissysteme: 7.948 Installationen Ende 2025, 6,8 Prozent aller. So rechnen Klinikambulanzen und Klinik-MVZ ab.',
     figures: ['Krankenhaussysteme zusammen: 7.302 (2013) → 7.948 (2025), Anteil 6,2 → 6,8 Prozent', 'ORBIS 4.073, SAP 1.543, CGM MEDICO 1.363, iMedOne 969 (Ende 2025)', 'Anbieter von ORBIS: Agfa HealthCare bis 2016, Dedalus ab 2021'],
-    chart: 'line', dataStatus: 'teilweise',
-    dataNote: 'Datensatz pvs-kis anlegen (Pflegeprotokoll A7). Zweitquelle: Zahl der Klinik-MVZ aus der MVZ-Recherche (Post 8).',
+    sampleId: 'pvs-kis', chart: 'line', dataStatus: 'belegt',
+    dataNote: 'Datensatz pvs-kis steht (22.10.2026), die Linien sind fast flach – als Line Race schwach. Stärkere Aussage für den Post: Die Zahl der Krankenhaus-MVZ hat sich seit 2015 fast verdreifacht (910 → 2.659, KBV-MVZ-Statistik), die KIS-Installationen wachsen kaum (7.302 → 7.948 seit 2013). Klinik-MVZ rechnen also überwiegend nicht mit dem KIS ab – prüfen, bevor es behauptet wird (andere Einheit: MVZ gegen Installationen, nicht in einer Grafik mischen).',
     refs: [1, 8],
   },
   {

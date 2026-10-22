@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { EARZTBRIEF_MONAT, LABORDATEN_PB, PVS_ARZT, PVS_ARZT_2007, PVS_HERSTELLER, PVS_PSYCHO } from './data.ts'
+import { EARZTBRIEF_MONAT, LABORDATEN_PB, PVS_ARZT, PVS_ARZT_2007, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -130,6 +130,45 @@ export const SAMPLES: SampleDataset[] = [
     headers: LABORDATEN_PB.headers,
     rows: LABORDATEN_PB.rows,
     suggested: { chartType: 'line', topN: 2, decimals: 0, suffix: ' %', primaryAxisLabel: 'Prozent der Arztpraxen', colors: { 'Labordaten digital empfangen': BLAU, 'Labordaten digital gesendet': ORANGE } },
+  },
+  {
+    id: 'pvs-aufsteiger',
+    erstellt: '2026-10-22', geprueft: '2026-10-22',
+    category: 'software',
+    title: 'Die Aufsteiger unter den Praxissystemen',
+    subtitle: 'Installationen laut KBV, Jahresende: die vier Systeme außerhalb von CGM und medatixx, die seit 2013 am stärksten gewachsen sind',
+    source: 'Quelle: KBV, Installationsstatistik Systeme (Q4/2013–Q4/2016, Q4/2021–Q4/2025); 2017–2020 aus KBV-Anteilen gerechnet',
+    sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/pvs-installationsstatistiken',
+    unit: 'Installationen',
+    description: 'tomedo und T2med gab es 2013 noch nicht, Ende 2025 haben sie zusammen 8.608 Installationen; Medical Office wächst seit 2021 nur noch leicht.',
+    dataInfo: [
+      'Gezählt werden Installationen laut KBV-Installationsstatistik (Abrechnungen mit der Prüfnummer eines Systems), nicht Praxen. tomedo (Zollsoft) läuft auf dem Mac, T2med auf Windows, macOS und Linux, ETERNO Cloud (Doc Cirrus, bis 2025 inSuite) im Browser, Medical Office (INDAMED) unter Windows.',
+      'Markteintritt belegt: tomedo KBV-Zulassung Mitte 2013 (7 Installationen Ende 2013), T2med Markteinführung 2015 (0 davor). Für ETERNO Cloud ist der erste Beleg (1 Installation Ende 2014) für 2013 gehalten.',
+      'Gerechnet: 2017 bis 2020 aus KBV-Anteilen (Q3/2017, Q3/2020) bzw. linear; 17 von 52 Werten, mit Methode in data/raw/pvs-gerechnet.json. Auffällig: Medical Office springt laut KBV-Anteil von 1.832 Ende 2016 auf rund 3.000 im Herbst 2017; für 2021 hat die KBV Medical Office nachweislich doppelt gezählt und korrigiert, ob 2017 bis 2020 betroffen sind, ist offen.',
+    ],
+    headers: PVS_AUFSTEIGER.headers,
+    rows: PVS_AUFSTEIGER.rows,
+    // Validiert (alle Paare, hell). Bewusst kein CGM-Blau und kein medatixx-Grün in derselben Bedeutung: eigene Farbe je System.
+    suggested: { chartType: 'line', topN: 4, decimals: 0, primaryAxisLabel: 'Installationen', colors: { 'Medical Office': '#6250d6', tomedo: '#e87ba4', T2med: '#eda100', 'ETERNO Cloud': '#008300' } },
+  },
+  {
+    id: 'pvs-kis',
+    erstellt: '2026-10-22', geprueft: '2026-10-22',
+    category: 'versorgung',
+    title: 'Krankenhaus-Software in der ambulanten Abrechnung',
+    subtitle: 'Installationen von Krankenhausinformationssystemen in der KBV-Statistik, Jahresende',
+    source: 'Quelle: KBV, Installationsstatistik Systeme (Q4/2013–Q4/2016, Q4/2021–Q4/2025); 2017–2020 aus KBV-Anteilen bzw. linear gerechnet',
+    sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/pvs-installationsstatistiken',
+    unit: 'Installationen',
+    description: 'Klinikambulanzen und Klinik-MVZ rechnen ambulant mit dem Krankenhaussystem ab: zusammen 7.948 Installationen Ende 2025, knapp 9 Prozent mehr als 2013.',
+    dataInfo: [
+      'Gezählt werden Installationen von Krankenhausinformationssystemen in der KBV-Installationsstatistik: ambulante Abrechnungen von Ermächtigungs- und Hochschulambulanzen, Klinik-MVZ und Ähnlichem. Es sind keine Systeme für Arztpraxen.',
+      'Anbieter: ORBIS bis 2016 Agfa HealthCare, ab 2021 Dedalus HealthCare; SAP Ambulatory Care Management (SAP); CGM MEDICO (früher MEDICO WIPS: Siemens, dann Cerner, heute CGM Clinical); iMedOne (Deutsche Telekom Clinical Solutions).',
+      'Gerechnet: 2017 bis 2020; ORBIS aus KBV-Anteilen (Q3/2017, Q3/2020), die übrigen linear zwischen 2016 und 2021; 16 von 52 Werten, mit Methode in data/raw/pvs-gerechnet.json.',
+    ],
+    headers: PVS_KIS.headers,
+    rows: PVS_KIS.rows,
+    suggested: { chartType: 'line', topN: 4, decimals: 0, primaryAxisLabel: 'Installationen', colors: { 'CGM MEDICO': BLAU, ORBIS: '#e87ba4', SAP: '#eda100', iMedOne: '#008300' } },
   },
   {
     id: 'pvs-hersteller',

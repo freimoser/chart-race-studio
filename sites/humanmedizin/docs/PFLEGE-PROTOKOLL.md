@@ -17,11 +17,11 @@ untereinander korrekt. Plane die nächsten 10 Posts und sammle die Daten dazu. M
 | A3 | Recherche MVZ (Post 8): KBV-MVZ-Statistik, Träger, angestellte Ärzte | erledigt (zwischen D2 und D3): recherche/mvz.md, data/raw/mvz.csv; Datensätze noch anlegen |
 | A4 | Recherche Schnittstellen (Posts 6, 7): KBV-Zulassungen LDT/eArztbrief/KIM je System, gematik TI-Dashboard | erledigt (zwischen D3 und D4): recherche/schnittstellen.md, data/raw/pvs-zulassungen.csv, ti-nutzung.csv; Posts und Datensätze noch anlegen |
 | A5 | Datensatz Psychotherapie (Post 3) aus KBV-Arztgruppenberichten | erledigt (D3): `pvs-psychotherapie` |
-| A6 | Datensatz Aufsteiger (Post 4) | |
-| A7 | Datensatz KIS-Systeme (Post 8) | |
+| A6 | Datensatz Aufsteiger (Post 4) | erledigt (D5): `pvs-aufsteiger` |
+| A7 | Datensatz KIS-Systeme (Post 9) | erledigt (D5): `pvs-kis`, Aussage für den Post noch schärfen |
 | A8 | Datensatz Wechsel/Nettoveränderung je System (Post 9) | |
-| A9 | Recherche Tiermedizin-PVS (Post 10), Abgleich mit Schwesterseite | |
-| A10 | Recherche Labor (Post 11) | |
+| A9 | Recherche Tiermedizin-PVS (Post 10), Abgleich mit Schwesterseite | läuft (Agent, seit D5) |
+| A10 | Recherche Labor (Post 11) | läuft (Agent, seit D5) |
 | A11 | Artikelentwürfe zu den Posts mit belegten Daten | |
 
 ## Durchläufe
@@ -33,3 +33,4 @@ untereinander korrekt. Plane die nächsten 10 Posts und sammle die Daten dazu. M
 | 3 | 22.10.2026 | Datensatz `pvs-psychotherapie` (Post 3): CGM MEDISTAR gegen Elefant, psyprax, Epikur 2013–2025, 16 Werte 2017–2020 gerechnet. Kernaussage aus den Daten: Elefant überholt MEDISTAR Ende 2023 (11.026 zu 10.966), psyprax 2024. Farben validiert (alle Paare), Glätteprüfung 0 Sprünge (auch `pvs-hersteller`). Generator: `baue()` nimmt jetzt eine feste Systemliste. Dazwischen MVZ-Recherche eingearbeitet (Post 8). |
 | – | 22.10.2026 | Zwischen D3 und D4: **Datenfehler behoben** – DAVID (Id 721) gehört laut KBV zu Medat Computersysteme, nicht CGM (Rohdatei ab 2013, Name und Farbe im Race ab 2007, Dateninfo, Datenherkunft). Rohdatei wieder mit CRLF-Zeilenenden. Schnittstellen-Recherche übernommen. |
 | 4 | 22.10.2026 | Posts 6 und 7 auf den Schnittstellen-Daten aufgebaut, Kernzahlen selbst nachgerechnet: LDT-Befund-Import 95,8 % der Installationen (Basis: 28 Systeme ab 500; Recherche nannte 96,2 % über alle 51), eArztbrief-Zulassung 88,9 %, LDT-Auftrag 0 ärztliche Systeme. Rundungsfehler im Recherchebericht korrigiert (eArztbriefe 2025: 45,2 statt 45,3 Mio.). Neue Datensätze `earztbrief-monat` (55 Monate, Monatswerte aus kumuliertem gematik-Zähler gerechnet, Jahressummen identisch) und `labordaten-praxisbarometer` (2018–2025, Formulierungsbruch 2024 markiert). Neue Rubrik „Schnittstellen & Telematik“. Konsistenzprüfung um Zulassungsanteile und eArztbrief-Jahressummen erweitert. Leitartikel-Tabelle gegen Verzeichnis 21.10. geprüft: stimmt. |
+| 5 | 22.10.2026 | Datensätze `pvs-aufsteiger` (Medical Office, tomedo, T2med, ETERNO 2013–2025) und `pvs-kis` (ORBIS, SAP, CGM MEDICO, iMedOne). Eigener Formulierungsfehler korrigiert („fast so viele wie 2013“ → knapp 9 % mehr). Befund für Post 9: KIS-Installationen fast flach, Krankenhaus-MVZ fast verdreifacht – stärkere Aussage, noch zu prüfen. Konsistenzprüfung: alle PVS-Datensätze gegen Rohdaten, gleiche Systeme über Datensätze gleich. Glätteprüfung 0 Sprünge für alle 6 Line Races, jetzt Standardliste. Recherchen Tierarzt-PVS und Labor gestartet. |

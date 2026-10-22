@@ -61,6 +61,7 @@ const NAMEN = {
   'CGM MEDISTAR (BLACK PRO)': 'CGM MEDISTAR', TURBOMED: 'CGM TURBOMED', ALBIS: 'CGM ALBIS', 'CGM M1 PRO (ehem. CompuMED M1)': 'CGM M1 PRO',
   'DATA VITAL': 'CGM DATA VITAL', 'x.isynet (ehem. MCS-ISYNET)': 'x.isynet', 'x.concept (ehem. DOCconcept)': 'x.concept',
   'x.comfort (ehem. DOCcomfort)': 'x.comfort', 'EL - Elaphe Longissima': 'EL', 'ETERNO Cloud (ehem. inSuite)': 'ETERNO Cloud',
+  'SAP Ambulatory Care Management': 'SAP', 'CGM MEDICO (ehem. MEDICO WIPS)': 'CGM MEDICO', IMedOne: 'iMedOne',
 }
 const kurz = (s) => NAMEN[s] ?? s
 
@@ -155,6 +156,16 @@ const PVS_HERSTELLER = {
 const D4 = baue({ von: 2013, bis: 2025, systeme: ['CGM MEDISTAR (BLACK PRO)', 'Elefant', 'psyprax', 'Epikur'] })
 const PVS_PSYCHO = D4.tabelle
 
+// ---------- Datensatz 5: Aufsteiger (Post 4) ----------
+// Die vier Systeme außerhalb von CGM und medatixx, die seit 2013 am stärksten gewachsen sind.
+const D5 = baue({ von: 2013, bis: 2025, systeme: ['Medical Office', 'tomedo', 'T2med', 'ETERNO Cloud (ehem. inSuite)'] })
+const PVS_AUFSTEIGER = D5.tabelle
+
+// ---------- Datensatz 6: Krankenhaussysteme in der ambulanten Abrechnung (Post 9) ----------
+// Klasse „kis“ (recherche Abschnitt 7): Klinikambulanzen und Klinik-MVZ rechnen ambulant mit dem KIS ab.
+const D6 = baue({ von: 2013, bis: 2025, systeme: ['ORBIS', 'SAP Ambulatory Care Management', 'CGM MEDICO (ehem. MEDICO WIPS)', 'IMedOne'] })
+const PVS_KIS = D6.tabelle
+
 // ---------- TI-Nutzung und PraxisBarometer (Posts 6, 7) ----------
 // Quellen und Definitionen: recherche/schnittstellen.md. In der Rohdatei stehen nur belegte Werte.
 const TI = csv('ti-nutzung.csv')
@@ -183,7 +194,7 @@ const LABORDATEN_PB = {
 // ---------- Ausgabe ----------
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 fs.writeFileSync('sites/humanmedizin/samples/data.ts', `// Automatisch erzeugt von sites/humanmedizin/scripts/build-samples.mjs aus sites/humanmedizin/data/raw/ – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('LABORDATEN_PB', LABORDATEN_PB)].join('\n'))
+  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('LABORDATEN_PB', LABORDATEN_PB)].join('\n'))
 const sortiert = (l) => [...l].sort((a, b) => a.system.localeCompare(b.system) || a.jahr - b.jahr)
 fs.writeFileSync(path.join(RAW, 'pvs-gerechnet.json'), JSON.stringify({
   hinweis: 'Von sites/humanmedizin/scripts/build-samples.mjs erzeugt. Jeder Wert der Datensätze, der nicht direkt aus einem KBV-Bericht (Jahresende) stammt, mit Methode. pvs-hersteller ist die Summe von pvs-installationen und hat dieselben gerechneten Werte. Alles andere ist belegt (pvs-kbv-installationen.csv, pvs-kbv-luecken-1998-2012.csv).',
@@ -191,5 +202,7 @@ fs.writeFileSync(path.join(RAW, 'pvs-gerechnet.json'), JSON.stringify({
   'pvs-installationen': sortiert(D1.gerechnet),
   'pvs-installationen-2007': sortiert(D3.gerechnet),
   'pvs-psychotherapie': sortiert(D4.gerechnet),
+  'pvs-aufsteiger': sortiert(D5.gerechnet),
+  'pvs-kis': sortiert(D6.gerechnet),
 }, null, 1) + '\n')
 console.log('PVS_ARZT', PVS_ARZT.headers.length - 1, 'Systeme,', D1.gerechnet.length, 'gerechnet; PVS_ARZT_2007', PVS_ARZT_2007.headers.length - 1, 'Systeme,', PVS_ARZT_2007.rows.length, 'Jahre,', D3.gerechnet.length, 'von', (PVS_ARZT_2007.headers.length - 1) * PVS_ARZT_2007.rows.length, 'gerechnet bzw. angenommen')
