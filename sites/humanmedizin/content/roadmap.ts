@@ -90,11 +90,11 @@ export const POSTS: RoadmapPost[] = [
   },
   {
     nr: 8, arc: 'versorgung', status: 'geplant',
-    title: 'Das MVZ wächst, die Einzelpraxis schrumpft',
-    hook: 'Medizinische Versorgungszentren beschäftigen jedes Jahr mehr Ärztinnen und Ärzte. Für die Software heißt das: mehrere Standorte, eine Datenbank, angestellte statt selbstständige Nutzer.',
-    figures: ['Zahl der MVZ und dort tätige Ärzte (KBV)', 'MVZ nach Träger: Vertragsärzte, Krankenhäuser, sonstige', 'Angestellte Ärztinnen und Ärzte in der ambulanten Versorgung (Bundesarztregister)'],
-    dataStatus: 'offen',
-    dataNote: 'Recherche läuft (Pflegeprotokoll A3): data/raw/mvz.csv.',
+    title: 'Das MVZ wächst, die ärztliche Einzelpraxis schrumpft',
+    hook: '2004 gab es 70 Medizinische Versorgungszentren, 2025 sind es 5.305. Jedes zweite gehört einem Krankenhaus, und fast alle, die dort arbeiten, sind angestellt. Für die Software heißt das: mehrere Standorte, eine Datenbank, angestellte statt selbstständige Nutzer.',
+    figures: ['MVZ: 70 (2004) → 2.156 (2015) → 5.305 (2025), davon mit Krankenhaus als Träger 2.659 (50,1 Prozent)', 'In MVZ tätig Ende 2025: 32.062 angestellte Ärztinnen und Ärzte, 1.788 Vertragsärzte (94,7 Prozent angestellt)', 'Ärztinnen und Ärzte in MVZ und anderen Einrichtungen (ohne Psychotherapeuten, Bundesarztregister): 13.826 (2015) → 32.885 (2025), 10,2 → 22,4 Prozent', 'Ärztliche Einzelpraxen: 62.524 (2015) → 50.701 (2025, aus der Registerstatistik summiert), minus 18,9 Prozent'],
+    dataStatus: 'belegt',
+    dataNote: 'Recherche fertig: recherche/mvz.md, data/raw/mvz.csv (MVZ-Statistik 2004–2025 lückenlos, Bundesarztregister 2015/2016–2025). Falle: Mit psychotherapeutischen Einzelpraxen (plus 48 Prozent) schrumpfen die Einzelpraxen nur um 2,7 Prozent – im Titel „ärztliche Einzelpraxis“. MVZ-Statistik und Bundesarztregister weichen bis 2 Prozent ab, nicht in einer Grafik mischen. Träger nicht als Linien zeigen (Mehrfachträgerschaft). Datensätze: Ärzte nach Praxisform 2015–2025 (Leitgrafik), MVZ gesamt und Krankenhaus-MVZ 2004–2025.',
     refs: [5],
   },
   {

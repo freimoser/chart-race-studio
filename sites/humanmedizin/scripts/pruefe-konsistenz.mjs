@@ -122,6 +122,18 @@ merke(['ORBIS', 'SAP Ambulatory Care Management', 'CGM MEDICO (ehem. MEDICO WIPS
 merke(roh(LUE, '2000-06-30', 'ALBIS') + roh(LUE, '2000-06-30', 'ALBIS DOS (Altversion)')) // ALBIS Mitte 2000, beide Versionen
 merke(roh(INST, '1997-12-31', 'ALBIS') + roh(INST, '1997-12-31', 'ALBIS ON WINDOWS (eigene KBV-Zeile 1997)')) // ALBIS Ende 1997
 bekannt.add('9.508')
+// MVZ und Bundesarztregister (recherche/mvz.md): Rohwerte und die Ableitungen, die Texte zitieren.
+if (fs.existsSync(path.join(RAW, 'mvz.csv'))) {
+  const MV = leseCsv(path.join(RAW, 'mvz.csv'))
+  for (const r of MV) merke(Number(r.wert))
+  const m = (j, r) => Number(MV.find((x) => x.stichtag === `${j}-12-31` && x.reihe === r)?.wert ?? NaN)
+  for (let j = 2004; j <= 2025; j++) {
+    merke(m(j, 'praxen_ep_hausaerztlich') + m(j, 'praxen_ep_fachaerztlich')) // ärztliche Einzelpraxen
+    merke(m(j, 'bar_t5_aerztlich_ep_zulassung_mit_angestellten') + m(j, 'bar_t5_aerztlich_ep_zulassung_ohne_angestellte')) // dasselbe aus Tabelle 5
+    merke(m(j, 'bar_t5_aerztlich_einrichtung_anstellung') + m(j, 'bar_t5_aerztlich_einrichtung_zulassung')) // Ärzte in MVZ und Einrichtungen
+    merke(m(j, 'bar_personen_mvz_einrichtung') - m(j, 'bar_psych_psychotherapeuten_mvz_einrichtung'))
+  }
+}
 // Redaktionsplan: Summen über Gewinner/Verlierer 2021–2025 und Summe der größten drei Arztsysteme 2025.
 {
   const q = (j, n) => roh(INST, `${j}-12-31`, n)

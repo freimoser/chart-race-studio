@@ -14,7 +14,7 @@ untereinander korrekt. Plane die nächsten 10 Posts und sammle die Daten dazu. M
 |---|---|---|
 | A1 | Konsistenzprüfung als Skript: Datensätze untereinander, Herstellersummen, zitierte Zahlen in Texten | erledigt (D1): `npm run check:daten` |
 | A2 | Redaktionsplan Posts 2–11 schärfen (Aufhänger, Zahlen, Datenbedarf je Post) | erledigt (D2) |
-| A3 | Recherche MVZ (Post 7): KBV-MVZ-Statistik, Träger, angestellte Ärzte | läuft (Agent, seit D1) |
+| A3 | Recherche MVZ (Post 8): KBV-MVZ-Statistik, Träger, angestellte Ärzte | erledigt (zwischen D2 und D3): recherche/mvz.md, data/raw/mvz.csv; Datensätze noch anlegen |
 | A4 | Recherche Schnittstellen (Posts 5, 6): KBV-Zulassungen LDT/eArztbrief/KIM je System, gematik TI-Dashboard | läuft (Agent, seit D1) |
 | A5 | Datensatz Psychotherapie (Post 3) aus KBV-Arztgruppenberichten | offen, als nächstes |
 | A6 | Datensatz Aufsteiger (Post 4) | |

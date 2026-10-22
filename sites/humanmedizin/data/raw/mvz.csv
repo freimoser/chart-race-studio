@@ -1,0 +1,527 @@
+stichtag,reihe,wert,einheit,quelle_url
+2016-12-31,bar_personen_bag,53262,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=1,0,10&cr=1"
+2017-12-31,bar_personen_bag,54003,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=1,0,10&cr=1"
+2018-12-31,bar_personen_bag,54371,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=1,0,10&cr=1"
+2019-12-31,bar_personen_bag,54326,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=1,0,10&cr=1"
+2020-12-31,bar_personen_bag,54650,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=1,0,10&cr=1"
+2021-12-31,bar_personen_bag,54492,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=1,0,10&cr=1"
+2022-12-31,bar_personen_bag,53980,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=1,0,10&cr=1"
+2023-12-31,bar_personen_bag,53432,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=1,0,10&cr=1"
+2024-12-31,bar_personen_bag,53129,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=1,0,10&cr=1"
+2025-12-31,bar_personen_bag,52957,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=1,0,10&cr=1"
+2016-12-31,bar_personen_einzelpraxis,91064,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=3,0,10&cr=1"
+2017-12-31,bar_personen_einzelpraxis,91371,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=3,0,10&cr=1"
+2018-12-31,bar_personen_einzelpraxis,91893,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=3,0,10&cr=1"
+2019-12-31,bar_personen_einzelpraxis,92610,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=3,0,10&cr=1"
+2020-12-31,bar_personen_einzelpraxis,93240,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=3,0,10&cr=1"
+2021-12-31,bar_personen_einzelpraxis,94080,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=3,0,10&cr=1"
+2022-12-31,bar_personen_einzelpraxis,94300,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=3,0,10&cr=1"
+2023-12-31,bar_personen_einzelpraxis,94739,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=3,0,10&cr=1"
+2024-12-31,bar_personen_einzelpraxis,95293,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=3,0,10&cr=1"
+2025-12-31,bar_personen_einzelpraxis,95856,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=3,0,10&cr=1"
+2016-12-31,bar_personen_gesamt,160262,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=0,0,10&cr=1"
+2017-12-31,bar_personen_gesamt,163130,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=0,0,10&cr=1"
+2018-12-31,bar_personen_gesamt,165885,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=0,0,10&cr=1"
+2019-12-31,bar_personen_gesamt,168464,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=0,0,10&cr=1"
+2020-12-31,bar_personen_gesamt,171359,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=0,0,10&cr=1"
+2021-12-31,bar_personen_gesamt,174219,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=0,0,10&cr=1"
+2022-12-31,bar_personen_gesamt,176219,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=0,0,10&cr=1"
+2023-12-31,bar_personen_gesamt,178469,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=0,0,10&cr=1"
+2024-12-31,bar_personen_gesamt,180705,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=0,0,10&cr=1"
+2025-12-31,bar_personen_gesamt,183130,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=0,0,10&cr=1"
+2016-12-31,bar_personen_mvz_einrichtung,15936,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=2,0,10&cr=1"
+2017-12-31,bar_personen_mvz_einrichtung,17756,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=2,0,10&cr=1"
+2018-12-31,bar_personen_mvz_einrichtung,19621,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=2,0,10&cr=1"
+2019-12-31,bar_personen_mvz_einrichtung,21528,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=2,0,10&cr=1"
+2020-12-31,bar_personen_mvz_einrichtung,23469,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=2,0,10&cr=1"
+2021-12-31,bar_personen_mvz_einrichtung,25647,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=2,0,10&cr=1"
+2022-12-31,bar_personen_mvz_einrichtung,27939,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=2,0,10&cr=1"
+2023-12-31,bar_personen_mvz_einrichtung,30298,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=2,0,10&cr=1"
+2024-12-31,bar_personen_mvz_einrichtung,32283,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=2,0,10&cr=1"
+2025-12-31,bar_personen_mvz_einrichtung,34317,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=2,0,10&cr=1"
+2016-12-31,bar_psych_psychotherapeuten_bag,1431,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=1,15,10&cr=1"
+2017-12-31,bar_psych_psychotherapeuten_bag,1836,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=1,15,10&cr=1"
+2018-12-31,bar_psych_psychotherapeuten_bag,2164,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=1,15,10&cr=1"
+2019-12-31,bar_psych_psychotherapeuten_bag,2331,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=1,15,10&cr=1"
+2020-12-31,bar_psych_psychotherapeuten_bag,2566,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=1,15,10&cr=1"
+2021-12-31,bar_psych_psychotherapeuten_bag,2639,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=1,15,10&cr=1"
+2022-12-31,bar_psych_psychotherapeuten_bag,2726,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=1,15,10&cr=1"
+2023-12-31,bar_psych_psychotherapeuten_bag,2721,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=1,15,10&cr=1"
+2024-12-31,bar_psych_psychotherapeuten_bag,2738,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=1,15,10&cr=1"
+2025-12-31,bar_psych_psychotherapeuten_bag,2814,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=1,15,10&cr=1"
+2016-12-31,bar_psych_psychotherapeuten_einzelpraxis,21566,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=3,15,10&cr=1"
+2017-12-31,bar_psych_psychotherapeuten_einzelpraxis,22541,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=3,15,10&cr=1"
+2018-12-31,bar_psych_psychotherapeuten_einzelpraxis,23532,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=3,15,10&cr=1"
+2019-12-31,bar_psych_psychotherapeuten_einzelpraxis,24695,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=3,15,10&cr=1"
+2020-12-31,bar_psych_psychotherapeuten_einzelpraxis,26008,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=3,15,10&cr=1"
+2021-12-31,bar_psych_psychotherapeuten_einzelpraxis,27433,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=3,15,10&cr=1"
+2022-12-31,bar_psych_psychotherapeuten_einzelpraxis,28500,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=3,15,10&cr=1"
+2023-12-31,bar_psych_psychotherapeuten_einzelpraxis,29566,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=3,15,10&cr=1"
+2024-12-31,bar_psych_psychotherapeuten_einzelpraxis,30703,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=3,15,10&cr=1"
+2025-12-31,bar_psych_psychotherapeuten_einzelpraxis,31753,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=3,15,10&cr=1"
+2016-12-31,bar_psych_psychotherapeuten_gesamt,23571,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=0,15,10&cr=1"
+2017-12-31,bar_psych_psychotherapeuten_gesamt,25070,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=0,15,10&cr=1"
+2018-12-31,bar_psych_psychotherapeuten_gesamt,26492,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=0,15,10&cr=1"
+2019-12-31,bar_psych_psychotherapeuten_gesamt,27895,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=0,15,10&cr=1"
+2020-12-31,bar_psych_psychotherapeuten_gesamt,29536,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=0,15,10&cr=1"
+2021-12-31,bar_psych_psychotherapeuten_gesamt,31118,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=0,15,10&cr=1"
+2022-12-31,bar_psych_psychotherapeuten_gesamt,32363,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=0,15,10&cr=1"
+2023-12-31,bar_psych_psychotherapeuten_gesamt,33483,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=0,15,10&cr=1"
+2024-12-31,bar_psych_psychotherapeuten_gesamt,34711,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=0,15,10&cr=1"
+2025-12-31,bar_psych_psychotherapeuten_gesamt,35999,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=0,15,10&cr=1"
+2016-12-31,bar_psych_psychotherapeuten_mvz_einrichtung,574,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=2,15,10&cr=1"
+2017-12-31,bar_psych_psychotherapeuten_mvz_einrichtung,693,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=2,15,10&cr=1"
+2018-12-31,bar_psych_psychotherapeuten_mvz_einrichtung,796,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=2,15,10&cr=1"
+2019-12-31,bar_psych_psychotherapeuten_mvz_einrichtung,869,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=2,15,10&cr=1"
+2020-12-31,bar_psych_psychotherapeuten_mvz_einrichtung,962,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=2,15,10&cr=1"
+2021-12-31,bar_psych_psychotherapeuten_mvz_einrichtung,1046,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=2,15,10&cr=1"
+2022-12-31,bar_psych_psychotherapeuten_mvz_einrichtung,1137,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=2,15,10&cr=1"
+2023-12-31,bar_psych_psychotherapeuten_mvz_einrichtung,1196,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=2,15,10&cr=1"
+2024-12-31,bar_psych_psychotherapeuten_mvz_einrichtung,1270,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=2,15,10&cr=1"
+2025-12-31,bar_psych_psychotherapeuten_mvz_einrichtung,1432,Personen,"https://www.kbv.de/health-data/json/I.1.3.1?&far=2,15,10&cr=1"
+2015-12-31,bar_t5_aerztlich_bag_anstellung_mit_lb,1134,Personen,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_aerztlich_bag_anstellung_mit_lb,938,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2015-12-31,bar_t5_aerztlich_bag_anstellung_ohne_lb,5191,Personen,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_aerztlich_bag_anstellung_ohne_lb,9598,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2015-12-31,bar_t5_aerztlich_bag_jobsharing_partner,776,Personen,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_aerztlich_bag_jobsharing_partner,474,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2015-12-31,bar_t5_aerztlich_bag_zulassung,44578,Personen,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_aerztlich_bag_zulassung,39133,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2015-12-31,bar_t5_aerztlich_einrichtung_anstellung,12430,Personen,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_aerztlich_einrichtung_anstellung,31168,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2015-12-31,bar_t5_aerztlich_einrichtung_zulassung,1396,Personen,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_aerztlich_einrichtung_zulassung,1717,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2015-12-31,bar_t5_aerztlich_ep_anstellung_mit_lb,1485,Personen,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_aerztlich_ep_anstellung_mit_lb,1177,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2015-12-31,bar_t5_aerztlich_ep_anstellung_ohne_lb,5851,Personen,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_aerztlich_ep_anstellung_ohne_lb,12225,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2015-12-31,bar_t5_aerztlich_ep_zulassung_mit_angestellten,5632,Personen,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_aerztlich_ep_zulassung_mit_angestellten,9397,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2015-12-31,bar_t5_aerztlich_ep_zulassung_ohne_angestellte,56892,Personen,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_aerztlich_ep_zulassung_ohne_angestellte,41304,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2015-12-31,bar_t5_anzahl_bag,19663,Berufsausübungsgemeinschaften,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_anzahl_bag,17695,Berufsausübungsgemeinschaften,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2015-12-31,bar_t5_hausaerzte_ohne_kinder_ep_zulassung_mit_angestellten,2747,Personen,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_hausaerzte_ohne_kinder_ep_zulassung_mit_angestellten,4830,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2015-12-31,bar_t5_hausaerzte_ohne_kinder_ep_zulassung_ohne_angestellte,24735,Personen,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_hausaerzte_ohne_kinder_ep_zulassung_ohne_angestellte,16777,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2015-12-31,bar_t5_kinder_jugendmedizin_ep_zulassung_mit_angestellten,405,Personen,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_kinder_jugendmedizin_ep_zulassung_mit_angestellten,751,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2015-12-31,bar_t5_kinder_jugendmedizin_ep_zulassung_ohne_angestellte,2660,Personen,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_kinder_jugendmedizin_ep_zulassung_ohne_angestellte,1872,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2015-12-31,bar_t5_psychotherapeutisch_bag_anstellung_mit_lb,24,Personen,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_psychotherapeutisch_bag_anstellung_mit_lb,49,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2015-12-31,bar_t5_psychotherapeutisch_bag_anstellung_ohne_lb,90,Personen,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_psychotherapeutisch_bag_anstellung_ohne_lb,198,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2015-12-31,bar_t5_psychotherapeutisch_bag_jobsharing_partner,325,Personen,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_psychotherapeutisch_bag_jobsharing_partner,908,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2015-12-31,bar_t5_psychotherapeutisch_bag_zulassung,908,Personen,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_psychotherapeutisch_bag_zulassung,1659,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2015-12-31,bar_t5_psychotherapeutisch_einrichtung_anstellung,449,Personen,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_psychotherapeutisch_einrichtung_anstellung,1348,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2015-12-31,bar_t5_psychotherapeutisch_einrichtung_zulassung,18,Personen,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_psychotherapeutisch_einrichtung_zulassung,84,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2015-12-31,bar_t5_psychotherapeutisch_ep_anstellung_mit_lb,187,Personen,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_psychotherapeutisch_ep_anstellung_mit_lb,778,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2015-12-31,bar_t5_psychotherapeutisch_ep_anstellung_ohne_lb,333,Personen,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_psychotherapeutisch_ep_anstellung_ohne_lb,1398,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2015-12-31,bar_t5_psychotherapeutisch_ep_zulassung_mit_angestellten,335,Personen,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_psychotherapeutisch_ep_zulassung_mit_angestellten,1305,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2015-12-31,bar_t5_psychotherapeutisch_ep_zulassung_ohne_angestellte,19686,Personen,https://web.archive.org/web/20160705074734/http://www.kbv.de:80/media/sp/2015_12_31.pdf
+2025-12-31,bar_t5_psychotherapeutisch_ep_zulassung_ohne_angestellte,28272,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf
+2004-12-31,gegenprobe_mvz_aerzte_gesamt,251,Personen,https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2005-12-31,gegenprobe_mvz_aerzte_gesamt,1292,Personen,https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2006-12-31,gegenprobe_mvz_aerzte_gesamt,2624,Personen,https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2007-12-31,gegenprobe_mvz_aerzte_gesamt,4006,Personen,https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2008-12-31,gegenprobe_mvz_aerzte_gesamt,5536,Personen,https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2009-12-31,gegenprobe_mvz_aerzte_gesamt,7127,Personen,https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2011-12-31,gegenprobe_mvz_aerzte_gesamt,10020,Personen,https://web.archive.org/web/20131030015039/http://www.kbv.de/media/sp/mvz_aktuell.pdf
+2013-12-31,gegenprobe_mvz_aerzte_gesamt,12788,Personen,https://web.archive.org/web/20150516065554/http://www.kbv.de/media/sp/mvz_aktuell.pdf
+2014-12-31,gegenprobe_mvz_aerzte_gesamt,13465,Personen,https://web.archive.org/web/20160315005054/http://www.kbv.de/media/sp/mvz_aktuell.pdf
+2015-12-31,gegenprobe_mvz_aerzte_gesamt,14317,Personen,https://web.archive.org/web/20170809021346/http://www.kbv.de:80/media/sp/mvz_aktuell.pdf
+2016-12-31,gegenprobe_mvz_aerzte_gesamt,16009,Personen,https://web.archive.org/web/20170918053200/http://www.kbv.de:80/media/sp/mvz_aktuell.pdf
+2018-12-31,gegenprobe_mvz_aerzte_gesamt,19740,Personen,https://web.archive.org/web/20201028122503/https://www.kbv.de/media/sp/2020-02-27_KBV_Stellungnahme_Kapitalinteressen_final.pdf
+2019-12-31,gegenprobe_mvz_aerzte_gesamt,21887,Personen,https://web.archive.org/web/20201120205331/https://www.kbv.de/media/sp/mvz-aktuell.pdf
+2021-12-31,gegenprobe_mvz_aerzte_gesamt,25754,Personen,https://web.archive.org/web/20230329172909/https://www.kbv.de/media/sp/mvz-aktuell.pdf
+2022-12-31,gegenprobe_mvz_aerzte_gesamt,28140,Personen,https://web.archive.org/web/20240618135005/https://www.kbv.de/media/sp/mvz-aktuell.pdf
+2024-12-31,gegenprobe_mvz_aerzte_gesamt,31872,Personen,https://web.archive.org/web/20251122215102/https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz-aktuell.pdf
+2025-12-31,gegenprobe_mvz_aerzte_gesamt,33850,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz-aktuell.pdf
+2004-12-31,gegenprobe_mvz_anzahl,70,MVZ,https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2005-12-31,gegenprobe_mvz_anzahl,341,MVZ,https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2006-12-31,gegenprobe_mvz_anzahl,666,MVZ,https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2007-12-31,gegenprobe_mvz_anzahl,948,MVZ,https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2008-12-31,gegenprobe_mvz_anzahl,1206,MVZ,https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2009-12-31,gegenprobe_mvz_anzahl,1454,MVZ,https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2017-12-31,gegenprobe_mvz_anzahl,2827,MVZ,https://www.aerzteblatt.de/archiv/titel/dae/2021/5/umfrage-mehrheit-der-mvz-erwirtschaftet-gewinn-700e2071-6081-44c8-a989-b70670682a9b
+2018-12-31,gegenprobe_mvz_anzahl,3173,MVZ,https://web.archive.org/web/20201028122503/https://www.kbv.de/media/sp/2020-02-27_KBV_Stellungnahme_Kapitalinteressen_final.pdf
+2004-12-31,mvz_aerzte_angestellt,107,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2005-12-31,mvz_aerzte_angestellt,691,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2006-12-31,mvz_aerzte_angestellt,1696,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2007-12-31,mvz_aerzte_angestellt,2850,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2008-12-31,mvz_aerzte_angestellt,4270,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2009-12-31,mvz_aerzte_angestellt,5793,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2010-12-31,mvz_aerzte_angestellt,7278,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2011-12-31,mvz_aerzte_angestellt,8662,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2012-12-31,mvz_aerzte_angestellt,10476,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2013-12-31,mvz_aerzte_angestellt,11375,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2014-12-31,mvz_aerzte_angestellt,12119,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2015-12-31,mvz_aerzte_angestellt,12976,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2016-12-31,mvz_aerzte_angestellt,14560,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2017-12-31,mvz_aerzte_angestellt,16419,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2018-12-31,mvz_aerzte_angestellt,18101,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2019-12-31,mvz_aerzte_angestellt,20212,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2020-12-31,mvz_aerzte_angestellt,21976,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2021-12-31,mvz_aerzte_angestellt,24078,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2022-12-31,mvz_aerzte_angestellt,26434,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2023-12-31,mvz_aerzte_angestellt,28390,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2024-12-31,mvz_aerzte_angestellt,30133,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2025-12-31,mvz_aerzte_angestellt,32062,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2004-12-31,mvz_aerzte_je_mvz,3.6,Personen je MVZ (Durchschnitt),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2005-12-31,mvz_aerzte_je_mvz,3.8,Personen je MVZ (Durchschnitt),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2006-12-31,mvz_aerzte_je_mvz,3.9,Personen je MVZ (Durchschnitt),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2007-12-31,mvz_aerzte_je_mvz,4.2,Personen je MVZ (Durchschnitt),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2008-12-31,mvz_aerzte_je_mvz,4.6,Personen je MVZ (Durchschnitt),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2009-12-31,mvz_aerzte_je_mvz,4.9,Personen je MVZ (Durchschnitt),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2010-12-31,mvz_aerzte_je_mvz,5.2,Personen je MVZ (Durchschnitt),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2011-12-31,mvz_aerzte_je_mvz,5.5,Personen je MVZ (Durchschnitt),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2012-12-31,mvz_aerzte_je_mvz,6.1,Personen je MVZ (Durchschnitt),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2013-12-31,mvz_aerzte_je_mvz,6.4,Personen je MVZ (Durchschnitt),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2014-12-31,mvz_aerzte_je_mvz,6.5,Personen je MVZ (Durchschnitt),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2015-12-31,mvz_aerzte_je_mvz,6.6,Personen je MVZ (Durchschnitt),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2016-12-31,mvz_aerzte_je_mvz,6.4,Personen je MVZ (Durchschnitt),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2017-12-31,mvz_aerzte_je_mvz,6.4,Personen je MVZ (Durchschnitt),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2018-12-31,mvz_aerzte_je_mvz,6.2,Personen je MVZ (Durchschnitt),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2019-12-31,mvz_aerzte_je_mvz,6.2,Personen je MVZ (Durchschnitt),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2020-12-31,mvz_aerzte_je_mvz,6.1,Personen je MVZ (Durchschnitt),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2021-12-31,mvz_aerzte_je_mvz,6.2,Personen je MVZ (Durchschnitt),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2022-12-31,mvz_aerzte_je_mvz,6.2,Personen je MVZ (Durchschnitt),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2023-12-31,mvz_aerzte_je_mvz,6.1,Personen je MVZ (Durchschnitt),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2024-12-31,mvz_aerzte_je_mvz,6.3,Personen je MVZ (Durchschnitt),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2025-12-31,mvz_aerzte_je_mvz,6.4,Personen je MVZ (Durchschnitt),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2004-12-31,mvz_aerzte_vertragsaerzte,144,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2005-12-31,mvz_aerzte_vertragsaerzte,601,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2006-12-31,mvz_aerzte_vertragsaerzte,928,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2007-12-31,mvz_aerzte_vertragsaerzte,1156,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2008-12-31,mvz_aerzte_vertragsaerzte,1266,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2009-12-31,mvz_aerzte_vertragsaerzte,1334,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2010-12-31,mvz_aerzte_vertragsaerzte,1332,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2011-12-31,mvz_aerzte_vertragsaerzte,1358,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2012-12-31,mvz_aerzte_vertragsaerzte,1441,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2013-12-31,mvz_aerzte_vertragsaerzte,1413,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2014-12-31,mvz_aerzte_vertragsaerzte,1346,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2015-12-31,mvz_aerzte_vertragsaerzte,1341,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2016-12-31,mvz_aerzte_vertragsaerzte,1449,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2017-12-31,mvz_aerzte_vertragsaerzte,1586,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2018-12-31,mvz_aerzte_vertragsaerzte,1639,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2019-12-31,mvz_aerzte_vertragsaerzte,1675,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2020-12-31,mvz_aerzte_vertragsaerzte,1664,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2021-12-31,mvz_aerzte_vertragsaerzte,1676,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2022-12-31,mvz_aerzte_vertragsaerzte,1706,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2023-12-31,mvz_aerzte_vertragsaerzte,1722,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2024-12-31,mvz_aerzte_vertragsaerzte,1739,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2025-12-31,mvz_aerzte_vertragsaerzte,1788,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2004-12-31,mvz_anzahl,70,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2005-12-31,mvz_anzahl,341,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2006-12-31,mvz_anzahl,666,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2007-12-31,mvz_anzahl,948,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2008-12-31,mvz_anzahl,1206,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2009-12-31,mvz_anzahl,1454,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2010-12-31,mvz_anzahl,1654,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2011-12-31,mvz_anzahl,1814,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2012-12-31,mvz_anzahl,1938,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2013-12-31,mvz_anzahl,2006,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2014-12-31,mvz_anzahl,2073,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2015-12-31,mvz_anzahl,2156,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2016-12-31,mvz_anzahl,2490,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2017-12-31,mvz_anzahl,2821,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2018-12-31,mvz_anzahl,3173,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2019-12-31,mvz_anzahl,3539,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2020-12-31,mvz_anzahl,3846,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2021-12-31,mvz_anzahl,4179,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2022-12-31,mvz_anzahl,4574,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2023-12-31,mvz_anzahl,4897,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2024-12-31,mvz_anzahl,5085,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2025-12-31,mvz_anzahl,5305,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2004-12-31,mvz_kh_aerzte_angestellt,22,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2005-12-31,mvz_kh_aerzte_angestellt,244,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2006-12-31,mvz_kh_aerzte_angestellt,716,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2007-12-31,mvz_kh_aerzte_angestellt,1291,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2008-12-31,mvz_kh_aerzte_angestellt,2119,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2009-12-31,mvz_kh_aerzte_angestellt,2830,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2010-12-31,mvz_kh_aerzte_angestellt,3565,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2011-12-31,mvz_kh_aerzte_angestellt,4297,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2012-12-31,mvz_kh_aerzte_angestellt,5038,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2013-12-31,mvz_kh_aerzte_angestellt,5615,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2014-12-31,mvz_kh_aerzte_angestellt,6325,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2015-12-31,mvz_kh_aerzte_angestellt,6918,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2016-12-31,mvz_kh_aerzte_angestellt,7614,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2017-12-31,mvz_kh_aerzte_angestellt,8710,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2018-12-31,mvz_kh_aerzte_angestellt,10294,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2019-12-31,mvz_kh_aerzte_angestellt,11485,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2020-12-31,mvz_kh_aerzte_angestellt,12459,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2021-12-31,mvz_kh_aerzte_angestellt,13750,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2022-12-31,mvz_kh_aerzte_angestellt,15353,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2023-12-31,mvz_kh_aerzte_angestellt,16817,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2024-12-31,mvz_kh_aerzte_angestellt,18356,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2025-12-31,mvz_kh_aerzte_angestellt,19866,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2004-12-31,mvz_kh_aerzte_vertragsaerzte,14,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2005-12-31,mvz_kh_aerzte_vertragsaerzte,23,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2006-12-31,mvz_kh_aerzte_vertragsaerzte,38,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2007-12-31,mvz_kh_aerzte_vertragsaerzte,41,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2008-12-31,mvz_kh_aerzte_vertragsaerzte,43,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2009-12-31,mvz_kh_aerzte_vertragsaerzte,41,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2010-12-31,mvz_kh_aerzte_vertragsaerzte,50,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2011-12-31,mvz_kh_aerzte_vertragsaerzte,46,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2012-12-31,mvz_kh_aerzte_vertragsaerzte,42,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2013-12-31,mvz_kh_aerzte_vertragsaerzte,39,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2014-12-31,mvz_kh_aerzte_vertragsaerzte,38,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2015-12-31,mvz_kh_aerzte_vertragsaerzte,30,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2016-12-31,mvz_kh_aerzte_vertragsaerzte,22,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2017-12-31,mvz_kh_aerzte_vertragsaerzte,17,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2018-12-31,mvz_kh_aerzte_vertragsaerzte,23,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2019-12-31,mvz_kh_aerzte_vertragsaerzte,21,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2020-12-31,mvz_kh_aerzte_vertragsaerzte,32,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2021-12-31,mvz_kh_aerzte_vertragsaerzte,30,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2022-12-31,mvz_kh_aerzte_vertragsaerzte,25,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2023-12-31,mvz_kh_aerzte_vertragsaerzte,44,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2024-12-31,mvz_kh_aerzte_vertragsaerzte,42,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2025-12-31,mvz_kh_aerzte_vertragsaerzte,49,Personen,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2004-12-31,mvz_krankenhaus_mvz,10,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2005-12-31,mvz_krankenhaus_mvz,84,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2006-12-31,mvz_krankenhaus_mvz,210,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2007-12-31,mvz_krankenhaus_mvz,326,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2008-12-31,mvz_krankenhaus_mvz,451,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2009-12-31,mvz_krankenhaus_mvz,554,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2010-12-31,mvz_krankenhaus_mvz,647,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2011-12-31,mvz_krankenhaus_mvz,717,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2012-12-31,mvz_krankenhaus_mvz,763,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2013-12-31,mvz_krankenhaus_mvz,795,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2014-12-31,mvz_krankenhaus_mvz,843,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2015-12-31,mvz_krankenhaus_mvz,910,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2016-12-31,mvz_krankenhaus_mvz,1010,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2017-12-31,mvz_krankenhaus_mvz,1163,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2018-12-31,mvz_krankenhaus_mvz,1387,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2019-12-31,mvz_krankenhaus_mvz,1592,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2020-12-31,mvz_krankenhaus_mvz,1725,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2021-12-31,mvz_krankenhaus_mvz,1881,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2022-12-31,mvz_krankenhaus_mvz,2116,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2023-12-31,mvz_krankenhaus_mvz,2336,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2024-12-31,mvz_krankenhaus_mvz,2506,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2025-12-31,mvz_krankenhaus_mvz,2659,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2004-12-31,mvz_traeger_krankenhaus,10,MVZ (Mehrfachträgerschaft möglich),https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2005-12-31,mvz_traeger_krankenhaus,84,MVZ (Mehrfachträgerschaft möglich),https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2007-12-31,mvz_traeger_krankenhaus,326,MVZ (Mehrfachträgerschaft möglich),https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2008-12-31,mvz_traeger_krankenhaus,451,MVZ (Mehrfachträgerschaft möglich),https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2009-12-31,mvz_traeger_krankenhaus,554,MVZ (Mehrfachträgerschaft möglich),https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2011-12-31,mvz_traeger_krankenhaus,717,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20131030015039/http://www.kbv.de/media/sp/mvz_aktuell.pdf
+2013-12-31,mvz_traeger_krankenhaus,795,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20150516065554/http://www.kbv.de/media/sp/mvz_aktuell.pdf
+2014-12-31,mvz_traeger_krankenhaus,843,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20160315005054/http://www.kbv.de/media/sp/mvz_aktuell.pdf
+2015-12-31,mvz_traeger_krankenhaus,910,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20170809021346/http://www.kbv.de:80/media/sp/mvz_aktuell.pdf
+2016-12-31,mvz_traeger_krankenhaus,1010,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20170918053200/http://www.kbv.de:80/media/sp/mvz_aktuell.pdf
+2019-12-31,mvz_traeger_krankenhaus,1589,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20201120205331/https://www.kbv.de/media/sp/mvz-aktuell.pdf
+2020-12-31,mvz_traeger_krankenhaus,1725,MVZ (Mehrfachträgerschaft möglich),https://www.marburger-bund.de/sites/default/files/2022-06/MB_MVZ_Broschuere_LESEPROBE.pdf
+2021-12-31,mvz_traeger_krankenhaus,1881,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20230329172909/https://www.kbv.de/media/sp/mvz-aktuell.pdf
+2022-12-31,mvz_traeger_krankenhaus,2116,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20240618135005/https://www.kbv.de/media/sp/mvz-aktuell.pdf
+2023-12-31,mvz_traeger_krankenhaus,2336,MVZ (Mehrfachträgerschaft möglich),https://www.aerzteblatt.de/nachrichten/155383/KBV-Daten-Medizinische-Versorgungszentren-weiter-attraktiv
+2024-12-31,mvz_traeger_krankenhaus,2507,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20251122215102/https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz-aktuell.pdf
+2025-12-31,mvz_traeger_krankenhaus,2659,MVZ (Mehrfachträgerschaft möglich),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz-aktuell.pdf
+2004-12-31,mvz_traeger_sonstige,10,MVZ (Mehrfachträgerschaft möglich),https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2005-12-31,mvz_traeger_sonstige,34,MVZ (Mehrfachträgerschaft möglich),https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2006-12-31,mvz_traeger_sonstige,87,MVZ (Mehrfachträgerschaft möglich),https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2007-12-31,mvz_traeger_sonstige,141,MVZ (Mehrfachträgerschaft möglich),https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2008-12-31,mvz_traeger_sonstige,198,MVZ (Mehrfachträgerschaft möglich),https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2009-12-31,mvz_traeger_sonstige,278,MVZ (Mehrfachträgerschaft möglich),https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2011-12-31,mvz_traeger_sonstige,409,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20131030015039/http://www.kbv.de/media/sp/mvz_aktuell.pdf
+2013-12-31,mvz_traeger_sonstige,452,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20150516065554/http://www.kbv.de/media/sp/mvz_aktuell.pdf
+2014-12-31,mvz_traeger_sonstige,459,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20160315005054/http://www.kbv.de/media/sp/mvz_aktuell.pdf
+2015-12-31,mvz_traeger_sonstige,458,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20170809021346/http://www.kbv.de:80/media/sp/mvz_aktuell.pdf
+2016-12-31,mvz_traeger_sonstige,474,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20170918053200/http://www.kbv.de:80/media/sp/mvz_aktuell.pdf
+2019-12-31,mvz_traeger_sonstige,578,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20201120205331/https://www.kbv.de/media/sp/mvz-aktuell.pdf
+2021-12-31,mvz_traeger_sonstige,593,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20230329172909/https://www.kbv.de/media/sp/mvz-aktuell.pdf
+2022-12-31,mvz_traeger_sonstige,682,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20240618135005/https://www.kbv.de/media/sp/mvz-aktuell.pdf
+2024-12-31,mvz_traeger_sonstige,751,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20251122215102/https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz-aktuell.pdf
+2025-12-31,mvz_traeger_sonstige,675,MVZ (Mehrfachträgerschaft möglich),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz-aktuell.pdf
+2004-12-31,mvz_traeger_vertragsaerzte,54,MVZ (Mehrfachträgerschaft möglich),https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2005-12-31,mvz_traeger_vertragsaerzte,241,MVZ (Mehrfachträgerschaft möglich),https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2006-12-31,mvz_traeger_vertragsaerzte,428,MVZ (Mehrfachträgerschaft möglich),https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2007-12-31,mvz_traeger_vertragsaerzte,561,MVZ (Mehrfachträgerschaft möglich),https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2008-12-31,mvz_traeger_vertragsaerzte,652,MVZ (Mehrfachträgerschaft möglich),https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2009-12-31,mvz_traeger_vertragsaerzte,720,MVZ (Mehrfachträgerschaft möglich),https://dserver.bundestag.de/btd/17/031/1703131.pdf
+2011-12-31,mvz_traeger_vertragsaerzte,796,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20131030015039/http://www.kbv.de/media/sp/mvz_aktuell.pdf
+2013-12-31,mvz_traeger_vertragsaerzte,855,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20150516065554/http://www.kbv.de/media/sp/mvz_aktuell.pdf
+2014-12-31,mvz_traeger_vertragsaerzte,893,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20160315005054/http://www.kbv.de/media/sp/mvz_aktuell.pdf
+2015-12-31,mvz_traeger_vertragsaerzte,910,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20170809021346/http://www.kbv.de:80/media/sp/mvz_aktuell.pdf
+2016-12-31,mvz_traeger_vertragsaerzte,1120,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20170918053200/http://www.kbv.de:80/media/sp/mvz_aktuell.pdf
+2019-12-31,mvz_traeger_vertragsaerzte,1517,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20201120205331/https://www.kbv.de/media/sp/mvz-aktuell.pdf
+2020-12-31,mvz_traeger_vertragsaerzte,1707,MVZ (Mehrfachträgerschaft möglich),https://www.marburger-bund.de/sites/default/files/2022-06/MB_MVZ_Broschuere_LESEPROBE.pdf
+2021-12-31,mvz_traeger_vertragsaerzte,1974,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20230329172909/https://www.kbv.de/media/sp/mvz-aktuell.pdf
+2022-12-31,mvz_traeger_vertragsaerzte,2146,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20240618135005/https://www.kbv.de/media/sp/mvz-aktuell.pdf
+2023-12-31,mvz_traeger_vertragsaerzte,2294,MVZ (Mehrfachträgerschaft möglich),https://www.aerzteblatt.de/nachrichten/155383/KBV-Daten-Medizinische-Versorgungszentren-weiter-attraktiv
+2024-12-31,mvz_traeger_vertragsaerzte,2319,MVZ (Mehrfachträgerschaft möglich),https://web.archive.org/web/20251122215102/https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz-aktuell.pdf
+2025-12-31,mvz_traeger_vertragsaerzte,2491,MVZ (Mehrfachträgerschaft möglich),https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz-aktuell.pdf
+2004-12-31,mvz_typ_gemischt,27,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2005-12-31,mvz_typ_gemischt,145,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2006-12-31,mvz_typ_gemischt,267,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2007-12-31,mvz_typ_gemischt,347,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2008-12-31,mvz_typ_gemischt,396,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2009-12-31,mvz_typ_gemischt,440,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2010-12-31,mvz_typ_gemischt,459,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2011-12-31,mvz_typ_gemischt,465,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2012-12-31,mvz_typ_gemischt,486,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2013-12-31,mvz_typ_gemischt,484,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2014-12-31,mvz_typ_gemischt,475,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2015-12-31,mvz_typ_gemischt,471,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2016-12-31,mvz_typ_gemischt,533,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2017-12-31,mvz_typ_gemischt,562,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2018-12-31,mvz_typ_gemischt,579,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2019-12-31,mvz_typ_gemischt,597,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2020-12-31,mvz_typ_gemischt,628,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2021-12-31,mvz_typ_gemischt,654,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2022-12-31,mvz_typ_gemischt,666,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2023-12-31,mvz_typ_gemischt,721,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2024-12-31,mvz_typ_gemischt,756,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2025-12-31,mvz_typ_gemischt,803,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2004-12-31,mvz_typ_nur_angestellte,19,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2005-12-31,mvz_typ_nur_angestellte,92,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2006-12-31,mvz_typ_nur_angestellte,298,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2007-12-31,mvz_typ_nur_angestellte,491,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2008-12-31,mvz_typ_nur_angestellte,699,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2009-12-31,mvz_typ_nur_angestellte,903,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2010-12-31,mvz_typ_nur_angestellte,1093,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2011-12-31,mvz_typ_nur_angestellte,1243,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2012-12-31,mvz_typ_nur_angestellte,1351,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2013-12-31,mvz_typ_nur_angestellte,1419,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2014-12-31,mvz_typ_nur_angestellte,1510,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2015-12-31,mvz_typ_nur_angestellte,1602,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2016-12-31,mvz_typ_nur_angestellte,1855,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2017-12-31,mvz_typ_nur_angestellte,2155,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2018-12-31,mvz_typ_nur_angestellte,2480,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2019-12-31,mvz_typ_nur_angestellte,2820,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2020-12-31,mvz_typ_nur_angestellte,3104,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2021-12-31,mvz_typ_nur_angestellte,3414,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2022-12-31,mvz_typ_nur_angestellte,3786,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2023-12-31,mvz_typ_nur_angestellte,4059,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2024-12-31,mvz_typ_nur_angestellte,4212,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2025-12-31,mvz_typ_nur_angestellte,4385,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2004-12-31,mvz_typ_nur_vertragsaerzte,23,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2005-12-31,mvz_typ_nur_vertragsaerzte,60,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2006-12-31,mvz_typ_nur_vertragsaerzte,101,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2007-12-31,mvz_typ_nur_vertragsaerzte,110,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2008-12-31,mvz_typ_nur_vertragsaerzte,111,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2009-12-31,mvz_typ_nur_vertragsaerzte,111,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2010-12-31,mvz_typ_nur_vertragsaerzte,102,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2011-12-31,mvz_typ_nur_vertragsaerzte,98,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2012-12-31,mvz_typ_nur_vertragsaerzte,83,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2013-12-31,mvz_typ_nur_vertragsaerzte,80,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2014-12-31,mvz_typ_nur_vertragsaerzte,88,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2015-12-31,mvz_typ_nur_vertragsaerzte,83,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2016-12-31,mvz_typ_nur_vertragsaerzte,102,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2017-12-31,mvz_typ_nur_vertragsaerzte,104,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2018-12-31,mvz_typ_nur_vertragsaerzte,114,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2019-12-31,mvz_typ_nur_vertragsaerzte,122,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2020-12-31,mvz_typ_nur_vertragsaerzte,114,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2021-12-31,mvz_typ_nur_vertragsaerzte,111,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2022-12-31,mvz_typ_nur_vertragsaerzte,122,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2023-12-31,mvz_typ_nur_vertragsaerzte,117,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2024-12-31,mvz_typ_nur_vertragsaerzte,117,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2025-12-31,mvz_typ_nur_vertragsaerzte,117,MVZ,https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf
+2015-12-31,praxen_ep_fachaerztlich,31977,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=3,10&cr=1"
+2016-12-31,praxen_ep_fachaerztlich,31444,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=3,10&cr=1"
+2017-12-31,praxen_ep_fachaerztlich,31039,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=3,10&cr=1"
+2018-12-31,praxen_ep_fachaerztlich,30589,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=3,10&cr=1"
+2019-12-31,praxen_ep_fachaerztlich,30025,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=3,10&cr=1"
+2020-12-31,praxen_ep_fachaerztlich,29452,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=3,10&cr=1"
+2021-12-31,praxen_ep_fachaerztlich,28923,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=3,10&cr=1"
+2022-12-31,praxen_ep_fachaerztlich,28233,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=3,10&cr=1"
+2023-12-31,praxen_ep_fachaerztlich,27626,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=3,10&cr=1"
+2024-12-31,praxen_ep_fachaerztlich,27069,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=3,10&cr=1"
+2015-12-31,praxen_ep_hausaerztlich,30547,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=1,10&cr=1"
+2016-12-31,praxen_ep_hausaerztlich,30071,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=1,10&cr=1"
+2017-12-31,praxen_ep_hausaerztlich,29402,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=1,10&cr=1"
+2018-12-31,praxen_ep_hausaerztlich,28668,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=1,10&cr=1"
+2019-12-31,praxen_ep_hausaerztlich,28074,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=1,10&cr=1"
+2020-12-31,praxen_ep_hausaerztlich,27430,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=1,10&cr=1"
+2021-12-31,praxen_ep_hausaerztlich,26784,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=1,10&cr=1"
+2022-12-31,praxen_ep_hausaerztlich,26175,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=1,10&cr=1"
+2023-12-31,praxen_ep_hausaerztlich,25474,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=1,10&cr=1"
+2024-12-31,praxen_ep_hausaerztlich,24869,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=1,10&cr=1"
+2015-12-31,praxen_ep_psychotherapeutisch,20021,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=7,10&cr=1"
+2016-12-31,praxen_ep_psychotherapeutisch,20953,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=7,10&cr=1"
+2017-12-31,praxen_ep_psychotherapeutisch,21788,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=7,10&cr=1"
+2018-12-31,praxen_ep_psychotherapeutisch,22606,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=7,10&cr=1"
+2019-12-31,praxen_ep_psychotherapeutisch,23593,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=7,10&cr=1"
+2020-12-31,praxen_ep_psychotherapeutisch,24777,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=7,10&cr=1"
+2021-12-31,praxen_ep_psychotherapeutisch,25946,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=7,10&cr=1"
+2022-12-31,praxen_ep_psychotherapeutisch,26809,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=7,10&cr=1"
+2023-12-31,praxen_ep_psychotherapeutisch,27743,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=7,10&cr=1"
+2024-12-31,praxen_ep_psychotherapeutisch,28697,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=7,10&cr=1"
+2015-12-31,praxen_gesamt_ohne_mvz,102208,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=0,10&cr=1"
+2016-12-31,praxen_gesamt_ohne_mvz,101932,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=0,10&cr=1"
+2017-12-31,praxen_gesamt_ohne_mvz,101674,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=0,10&cr=1"
+2018-12-31,praxen_gesamt_ohne_mvz,101274,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=0,10&cr=1"
+2019-12-31,praxen_gesamt_ohne_mvz,100799,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=0,10&cr=1"
+2020-12-31,praxen_gesamt_ohne_mvz,100693,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=0,10&cr=1"
+2021-12-31,praxen_gesamt_ohne_mvz,100509,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=0,10&cr=1"
+2022-12-31,praxen_gesamt_ohne_mvz,99658,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=0,10&cr=1"
+2023-12-31,praxen_gesamt_ohne_mvz,98985,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=0,10&cr=1"
+2024-12-31,praxen_gesamt_ohne_mvz,98503,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=0,10&cr=1"
+2015-12-31,praxen_gp_aerztlich_psychotherapeutisch_gemischt,28,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=9,10&cr=1"
+2016-12-31,praxen_gp_aerztlich_psychotherapeutisch_gemischt,32,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=9,10&cr=1"
+2017-12-31,praxen_gp_aerztlich_psychotherapeutisch_gemischt,40,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=9,10&cr=1"
+2018-12-31,praxen_gp_aerztlich_psychotherapeutisch_gemischt,48,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=9,10&cr=1"
+2019-12-31,praxen_gp_aerztlich_psychotherapeutisch_gemischt,55,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=9,10&cr=1"
+2020-12-31,praxen_gp_aerztlich_psychotherapeutisch_gemischt,59,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=9,10&cr=1"
+2021-12-31,praxen_gp_aerztlich_psychotherapeutisch_gemischt,63,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=9,10&cr=1"
+2022-12-31,praxen_gp_aerztlich_psychotherapeutisch_gemischt,65,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=9,10&cr=1"
+2023-12-31,praxen_gp_aerztlich_psychotherapeutisch_gemischt,59,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=9,10&cr=1"
+2024-12-31,praxen_gp_aerztlich_psychotherapeutisch_gemischt,59,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=9,10&cr=1"
+2015-12-31,praxen_gp_fachaerztlich_fachgleich,8287,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=4,10&cr=1"
+2016-12-31,praxen_gp_fachaerztlich_fachgleich,8167,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=4,10&cr=1"
+2017-12-31,praxen_gp_fachaerztlich_fachgleich,8035,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=4,10&cr=1"
+2018-12-31,praxen_gp_fachaerztlich_fachgleich,7978,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=4,10&cr=1"
+2019-12-31,praxen_gp_fachaerztlich_fachgleich,8064,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=4,10&cr=1"
+2020-12-31,praxen_gp_fachaerztlich_fachgleich,7985,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=4,10&cr=1"
+2021-12-31,praxen_gp_fachaerztlich_fachgleich,7948,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=4,10&cr=1"
+2022-12-31,praxen_gp_fachaerztlich_fachgleich,7756,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=4,10&cr=1"
+2023-12-31,praxen_gp_fachaerztlich_fachgleich,7614,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=4,10&cr=1"
+2024-12-31,praxen_gp_fachaerztlich_fachgleich,7481,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=4,10&cr=1"
+2015-12-31,praxen_gp_fachaerztlich_fachuebergreifend,673,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=5,10&cr=1"
+2016-12-31,praxen_gp_fachaerztlich_fachuebergreifend,639,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=5,10&cr=1"
+2017-12-31,praxen_gp_fachaerztlich_fachuebergreifend,642,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=5,10&cr=1"
+2018-12-31,praxen_gp_fachaerztlich_fachuebergreifend,646,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=5,10&cr=1"
+2019-12-31,praxen_gp_fachaerztlich_fachuebergreifend,391,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=5,10&cr=1"
+2020-12-31,praxen_gp_fachaerztlich_fachuebergreifend,365,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=5,10&cr=1"
+2021-12-31,praxen_gp_fachaerztlich_fachuebergreifend,348,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=5,10&cr=1"
+2022-12-31,praxen_gp_fachaerztlich_fachuebergreifend,322,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=5,10&cr=1"
+2023-12-31,praxen_gp_fachaerztlich_fachuebergreifend,301,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=5,10&cr=1"
+2024-12-31,praxen_gp_fachaerztlich_fachuebergreifend,282,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=5,10&cr=1"
+2015-12-31,praxen_gp_hausaerztlich,9179,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=2,10&cr=1"
+2016-12-31,praxen_gp_hausaerztlich,9180,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=2,10&cr=1"
+2017-12-31,praxen_gp_hausaerztlich,9119,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=2,10&cr=1"
+2018-12-31,praxen_gp_hausaerztlich,9023,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=2,10&cr=1"
+2019-12-31,praxen_gp_hausaerztlich,8875,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=2,10&cr=1"
+2020-12-31,praxen_gp_hausaerztlich,8819,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=2,10&cr=1"
+2021-12-31,praxen_gp_hausaerztlich,8699,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=2,10&cr=1"
+2022-12-31,praxen_gp_hausaerztlich,8517,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=2,10&cr=1"
+2023-12-31,praxen_gp_hausaerztlich,8439,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=2,10&cr=1"
+2024-12-31,praxen_gp_hausaerztlich,8349,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=2,10&cr=1"
+2015-12-31,praxen_gp_psychotherapeutisch,592,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=8,10&cr=1"
+2016-12-31,praxen_gp_psychotherapeutisch,638,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=8,10&cr=1"
+2017-12-31,praxen_gp_psychotherapeutisch,837,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=8,10&cr=1"
+2018-12-31,praxen_gp_psychotherapeutisch,982,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=8,10&cr=1"
+2019-12-31,praxen_gp_psychotherapeutisch,1024,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=8,10&cr=1"
+2020-12-31,praxen_gp_psychotherapeutisch,1140,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=8,10&cr=1"
+2021-12-31,praxen_gp_psychotherapeutisch,1159,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=8,10&cr=1"
+2022-12-31,praxen_gp_psychotherapeutisch,1168,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=8,10&cr=1"
+2023-12-31,praxen_gp_psychotherapeutisch,1159,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=8,10&cr=1"
+2024-12-31,praxen_gp_psychotherapeutisch,1171,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=8,10&cr=1"
+2015-12-31,praxen_gp_versorgungsbereichsuebergreifend,904,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=6,10&cr=1"
+2016-12-31,praxen_gp_versorgungsbereichsuebergreifend,808,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=6,10&cr=1"
+2017-12-31,praxen_gp_versorgungsbereichsuebergreifend,772,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=6,10&cr=1"
+2018-12-31,praxen_gp_versorgungsbereichsuebergreifend,734,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=6,10&cr=1"
+2019-12-31,praxen_gp_versorgungsbereichsuebergreifend,698,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=6,10&cr=1"
+2020-12-31,praxen_gp_versorgungsbereichsuebergreifend,666,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=6,10&cr=1"
+2021-12-31,praxen_gp_versorgungsbereichsuebergreifend,639,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=6,10&cr=1"
+2022-12-31,praxen_gp_versorgungsbereichsuebergreifend,613,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=6,10&cr=1"
+2023-12-31,praxen_gp_versorgungsbereichsuebergreifend,570,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=6,10&cr=1"
+2024-12-31,praxen_gp_versorgungsbereichsuebergreifend,526,Praxen,"https://www.kbv.de/health-data/json/I.1.3.2?&far=6,10&cr=1"
