@@ -66,8 +66,8 @@ export const POSTS: RoadmapPost[] = [
     title: 'Wer seit 2021 Praxen gewinnt und wer verliert',
     hook: 'Zwischen Ende 2021 und Ende 2025 kamen bei den Gewinnern 13.667 Installationen dazu, bei den Verlierern gingen 15.139 verloren. Die Summe sinkt kaum – darunter wird kräftig gewechselt.',
     figures: ['Größte Zugewinne 2021–2025: medatixx +3.654, tomedo +2.872, T2med +2.595, Epikur +1.527', 'Größte Verluste: TURBOMED −3.385, MEDISTAR −2.375, x.isynet −1.541, x.concept −1.360, ALBIS −1.146', 'Gesamtzahl aller Installationen: 119.405 → 116.954', 'medatixx-intern: Gewinne des neuen medatixx entsprechen etwa den Verlusten von x.isynet, x.concept und x.comfort'],
-    dataStatus: 'belegt',
-    dataNote: 'Nettoveränderungen, keine Wechselströme: Die KBV sagt nicht, wer von wem zu wem wechselt. Im Post deutlich sagen. Datensatz pvs-saldo (Pflegeprotokoll A8). § 371 SGB V (Archivierungs- und Wechselschnittstelle) als Kontext.',
+    sampleId: 'pvs-saldo', chart: 'line', dataStatus: 'belegt',
+    dataNote: 'Datensatz pvs-saldo steht (22.10.2026). Nettoveränderungen, keine Wechselströme: Die KBV sagt nicht, wer von wem zu wem wechselt. Im Post deutlich sagen. Datensatz pvs-saldo (Pflegeprotokoll A8). § 371 SGB V (Archivierungs- und Wechselschnittstelle) als Kontext.',
     refs: [1, 4],
   },
   {

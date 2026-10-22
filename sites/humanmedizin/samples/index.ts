@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { EARZTBRIEF_MONAT, LABORDATEN_PB, PVS_ARZT, PVS_ARZT_2007, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO } from './data.ts'
+import { EARZTBRIEF_MONAT, LABORDATEN_PB, PVS_ARZT, PVS_ARZT_2007, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -169,6 +169,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: PVS_KIS.headers,
     rows: PVS_KIS.rows,
     suggested: { chartType: 'line', topN: 4, decimals: 0, primaryAxisLabel: 'Installationen', colors: { 'CGM MEDICO': BLAU, ORBIS: '#e87ba4', SAP: '#eda100', iMedOne: '#008300' } },
+  },
+  {
+    id: 'pvs-saldo',
+    erstellt: '2026-10-22', geprueft: '2026-10-22',
+    category: 'software',
+    title: 'Gewinner und Verlierer seit Ende 2021',
+    subtitle: 'Veränderung der Installationen seit Ende 2021 laut KBV, die zwei größten Gewinner und Verlierer',
+    source: 'Quelle: KBV, Installationsstatistik Systeme, Jahresende 2021–2025; Differenzen gerechnet',
+    sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/pvs-installationsstatistiken',
+    unit: 'Installationen (Veränderung)',
+    description: 'Seit Ende 2021 hat das neue medatixx 3.654 Installationen gewonnen und tomedo 2.872, TURBOMED verlor 3.385 und MEDISTAR 2.375.',
+    dataInfo: [
+      'Jeder Wert ist die Differenz zwischen dem Jahresendwert und dem Wert Ende 2021, beide aus der KBV-Installationsstatistik. Für 2021 bis 2025 sind alle Jahresendwerte belegt; außer der Differenz ist nichts gerechnet.',
+      'Es sind Salden, keine Wechselströme: Die KBV sagt nicht, welche Praxis von welchem System zu welchem wechselt. Beim neuen medatixx stammt der Zuwachs überwiegend aus dem Umstieg von x.isynet, x.concept und x.comfort desselben Herstellers (zusammen 3.994 weniger seit Ende 2021).',
+      'Ausgewählt sind die zwei größten Gewinner und Verlierer über alle Systeme der KBV-Liste; der Generator prüft die Auswahl bei jeder neuen KBV-Ausgabe. Über alle Systeme gewannen die Gewinner zusammen 13.667 Installationen, die Verlierer verloren 15.139.',
+    ],
+    headers: PVS_SALDO.headers,
+    rows: PVS_SALDO.rows,
+    suggested: { chartType: 'line', topN: 4, decimals: 0, primaryAxisLabel: 'Veränderung seit Ende 2021', colors: { 'CGM MEDISTAR': BLAU, 'CGM TURBOMED': '#e87ba4', medatixx: '#008300', tomedo: '#eda100' } },
   },
   {
     id: 'pvs-hersteller',

@@ -58,6 +58,13 @@ for (const [id, T] of [['pvs-psychotherapie', D.PVS_PSYCHO], ['pvs-aufsteiger', 
   }
 }
 
+// pvs-saldo: Differenz der belegten Jahresendwerte gegenüber Ende 2021.
+for (const r of D.PVS_SALDO.rows) for (const n of D.PVS_SALDO.headers.slice(1)) {
+  const lang = Object.keys(NAMEN).find((k) => NAMEN[k] === n) ?? n
+  const q = (j) => Number(INST.find((x) => x.system === lang && x.stichtag === `${j}-12-31`)?.installationen)
+  if (r[D.PVS_SALDO.headers.indexOf(n)] !== q(Number(r[0])) - q(2021)) fehler.push(`pvs-saldo ${r[0]} ${n}: stimmt nicht mit den Rohdaten`)
+}
+
 // ---------- 3. Herstellersummen ----------
 const herstellerAm = (system, j) => {
   for (let k = j; k >= 2013; k--) { const h = INST.find((r) => r.system === system && r.stichtag === `${k}-12-31`)?.hersteller; if (h) return h }
@@ -144,6 +151,7 @@ merke(['ORBIS', 'SAP Ambulatory Care Management', 'CGM MEDICO (ehem. MEDICO WIPS
 merke(roh(LUE, '2000-06-30', 'ALBIS') + roh(LUE, '2000-06-30', 'ALBIS DOS (Altversion)')) // ALBIS Mitte 2000, beide Versionen
 merke(roh(INST, '1997-12-31', 'ALBIS') + roh(INST, '1997-12-31', 'ALBIS ON WINDOWS (eigene KBV-Zeile 1997)')) // ALBIS Ende 1997
 bekannt.add('9.508')
+merke(['x.isynet (ehem. MCS-ISYNET)', 'x.concept (ehem. DOCconcept)', 'x.comfort (ehem. DOCcomfort)'].reduce((a, n) => a + roh(INST, '2021-12-31', n) - roh(INST, '2025-12-31', n), 0)) // Verlust der alten medatixx-Systeme 2021–2025
 bekannt.add('10.000') // rund 10.000 Tierarztpraxen: Tierärzte Atlas 2024, belegt auf der Schwesterseite (sites/tiermedizin/seiten/artikel/tierarztketten-deutschland.html)
 // MVZ und Bundesarztregister (recherche/mvz.md): Rohwerte und die Ableitungen, die Texte zitieren.
 for (const r of leseCsv(path.join(RAW, 'ti-nutzung.csv'))) merke(Number(r.wert))

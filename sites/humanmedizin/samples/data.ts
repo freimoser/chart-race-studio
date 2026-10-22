@@ -120,6 +120,17 @@ export const PVS_KIS = {
   ],
 }
 
+export const PVS_SALDO = {
+  headers: ["Jahr","medatixx","tomedo","CGM MEDISTAR","CGM TURBOMED"],
+  rows: [
+    ["2021", 0, 0, 0, 0],
+    ["2022", 790, 505, -440, -794],
+    ["2023", 1633, 1043, -1026, -1749],
+    ["2024", 2521, 1702, -1623, -2582],
+    ["2025", 3654, 2872, -2375, -3385],
+  ],
+}
+
 export const EARZTBRIEF_MONAT = {
   headers: ["Monat","eArztbriefe über KIM"],
   rows: [

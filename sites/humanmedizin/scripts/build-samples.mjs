@@ -166,6 +166,25 @@ const PVS_AUFSTEIGER = D5.tabelle
 const D6 = baue({ von: 2013, bis: 2025, systeme: ['ORBIS', 'SAP Ambulatory Care Management', 'CGM MEDICO (ehem. MEDICO WIPS)', 'IMedOne'] })
 const PVS_KIS = D6.tabelle
 
+// ---------- Datensatz 7: Gewinner und Verlierer seit Ende 2021 (Post 5) ----------
+// Veränderung der Installationen gegenüber Ende 2021, je Jahresende 2021–2025 – nur belegte Jahresendwerte, die
+// Differenz ist die einzige Rechnung. Je die zwei größten Gewinner und Verlierer 2021–2025 (über alle Systeme).
+// Es sind Salden, keine Wechselströme: Wer von wem zu wem wechselt, sagt die KBV nicht.
+const SALDO_SYSTEME = ['medatixx', 'tomedo', 'CGM MEDISTAR (BLACK PRO)', 'TURBOMED']
+const q4 = (s, j) => Number(INST.find((r) => r.system === s && r.stichtag === `${j}-12-31`)?.installationen)
+const PVS_SALDO = {
+  headers: ['Jahr', ...SALDO_SYSTEME.map(kurz)],
+  rows: [2021, 2022, 2023, 2024, 2025].map((j) => [String(j), ...SALDO_SYSTEME.map((s) => q4(s, j) - q4(s, 2021))]),
+}
+{
+  // Auswahl gegen die Daten prüfen: Es müssen wirklich die zwei größten Gewinner und Verlierer sein.
+  const alle = [...new Set(INST.filter((r) => r.stichtag === '2025-12-31' && r.system !== '__SUMME__').map((r) => r.system))]
+    .map((s) => [s, q4(s, 2025) - q4(s, 2021)]).filter(([, d]) => Number.isFinite(d)).sort((x, y) => y[1] - x[1])
+  const erwartet = [alle[0][0], alle[1][0], alle.at(-2)[0], alle.at(-1)[0]].sort().join('|')
+  if (erwartet !== [...SALDO_SYSTEME].sort().join('|')) throw new Error(`pvs-saldo: größte Gewinner/Verlierer sind jetzt ${erwartet}`)
+  for (const row of PVS_SALDO.rows) for (const v of row.slice(1)) if (!Number.isFinite(v)) throw new Error('pvs-saldo: fehlender Jahresendwert')
+}
+
 // ---------- TI-Nutzung und PraxisBarometer (Posts 6, 7) ----------
 // Quellen und Definitionen: recherche/schnittstellen.md. In der Rohdatei stehen nur belegte Werte.
 const TI = csv('ti-nutzung.csv')
@@ -194,7 +213,7 @@ const LABORDATEN_PB = {
 // ---------- Ausgabe ----------
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 fs.writeFileSync('sites/humanmedizin/samples/data.ts', `// Automatisch erzeugt von sites/humanmedizin/scripts/build-samples.mjs aus sites/humanmedizin/data/raw/ – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('LABORDATEN_PB', LABORDATEN_PB)].join('\n'))
+  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('LABORDATEN_PB', LABORDATEN_PB)].join('\n'))
 const sortiert = (l) => [...l].sort((a, b) => a.system.localeCompare(b.system) || a.jahr - b.jahr)
 fs.writeFileSync(path.join(RAW, 'pvs-gerechnet.json'), JSON.stringify({
   hinweis: 'Von sites/humanmedizin/scripts/build-samples.mjs erzeugt. Jeder Wert der Datensätze, der nicht direkt aus einem KBV-Bericht (Jahresende) stammt, mit Methode. pvs-hersteller ist die Summe von pvs-installationen und hat dieselben gerechneten Werte. Alles andere ist belegt (pvs-kbv-installationen.csv, pvs-kbv-luecken-1998-2012.csv).',
