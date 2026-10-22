@@ -183,7 +183,7 @@ export const SAMPLES: SampleDataset[] = [
     dataInfo: [
       'Jeder Wert ist die Differenz zwischen dem Jahresendwert und dem Wert Ende 2021, beide aus der KBV-Installationsstatistik. Für 2021 bis 2025 sind alle Jahresendwerte belegt; außer der Differenz ist nichts gerechnet.',
       'Es sind Salden, keine Wechselströme: Die KBV sagt nicht, welche Praxis von welchem System zu welchem wechselt. Beim neuen medatixx stammt der Zuwachs überwiegend aus dem Umstieg von x.isynet, x.concept und x.comfort desselben Herstellers (zusammen 3.994 weniger seit Ende 2021).',
-      'Ausgewählt sind die zwei größten Gewinner und Verlierer über alle Systeme der KBV-Liste; der Generator prüft die Auswahl bei jeder neuen KBV-Ausgabe. Über alle Systeme gewannen die Gewinner zusammen 13.667 Installationen, die Verlierer verloren 15.139.',
+      'Ausgewählt sind die zwei größten Gewinner und Verlierer über alle Systeme der KBV-Liste; der Generator prüft die Auswahl bei jeder neuen KBV-Ausgabe. Über alle 40 Systeme mit mindestens einmal 500 Installationen gewannen die Gewinner zusammen 13.667 Installationen, die Verlierer verloren 15.139; die Gesamtzahl aller Installationen sank um 2.451.',
     ],
     headers: PVS_SALDO.headers,
     rows: PVS_SALDO.rows,

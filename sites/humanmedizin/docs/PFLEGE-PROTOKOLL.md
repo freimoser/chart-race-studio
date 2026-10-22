@@ -22,7 +22,7 @@ untereinander korrekt. Plane die nächsten 10 Posts und sammle die Daten dazu. M
 | A8 | Datensatz Wechsel/Nettoveränderung je System (Post 5) | erledigt (D6): `pvs-saldo` |
 | A9 | Recherche Tiermedizin-PVS (Post 10), Abgleich mit Schwesterseite | erledigt: keine Marktanteile belegbar, Post 10 neu gefasst; Recherche-Notiz lokal (Entscheidung Nutzer offen: enthält Angaben zur Petleo-Beteiligung) |
 | A10 | Recherche Labor (Post 11) | erledigt: recherche/labor.md, data/raw/labor.csv; Datensatz `labor-aerzte` |
-| A11 | Artikelentwürfe zu den Posts mit belegten Daten | läuft: Post 2 (D8), 3 (D9), 4 (D10) |
+| A11 | Artikelentwürfe zu den Posts mit belegten Daten | läuft: Post 2 (D8), 3 (D9), 4 (D10), 5 (D11) |
 
 ## Durchläufe
 
@@ -40,3 +40,4 @@ untereinander korrekt. Plane die nächsten 10 Posts und sammle die Daten dazu. M
 | 8 | 22.10.2026 | Artikelentwurf Post 2 (`praxissoftware-hersteller-cgm-medatixx`, bereit, geht mit dem Post online). Befund beim Schreiben: Der medatixx-Anteil springt 2022 nur durch die Übernahme von EL (ohne EL 2025: 26,0 statt 28,1 %) – steht im Artikel. Herstellersummen 2015/2016 seit dem medatixx-Nachtrag korrekt niedriger (21.348/20.914); kein Text zitierte die alten Werte. Konsistenzprüfung prüft 14 Kennzahlen des Artikels. |
 | 9 | 22.10.2026 | Artikelentwurf Post 3 (`psychotherapie-software-elefant-psyprax`). Scheinbarer Widerspruch geklärt (psyprax 2013: 8.722 in der Arztgruppe vs. 9.301 gesamt – kein Fehler). Zwei zu weite Formulierungen durch Belege ersetzt („fast immer Einzelpraxis“ → 88 % laut Bundesarztregister; Umsatz-Spekulation gestrichen). Konsistenzprüfung: 12 Kennzahlen und die Überhol-Jahre (Elefant 2023, psyprax 2024) werden geprüft. |
 | 10 | 22.10.2026 | Artikelentwurf Post 4 (`praxissoftware-aufsteiger-tomedo-t2med`), mit Jahreswachstum 2025 aus den belegten Quartalswerten (tomedo +34,8 %, T2med +22,4 %, MEDISTAR −7,3 %, TURBOMED −11,3 %). Zwei eigene Ungenauigkeiten korrigiert (tomedo läuft nur auf dem Mac; Neugründungsanteil nicht belegt). Halbzeit: alle 10 Posts haben Daten, Artikel 1–4 stehen. |
+| 11 | 22.10.2026 | Artikelentwurf Post 5 (`praxissoftware-wechsel-gewinner-verlierer`). **Fehler in eigenem Plan und Dateninfo korrigiert:** Die Summen 13.667/15.139 gelten nur für die 40 Systeme mit mindestens einmal 500 Installationen, nicht „über alle Systeme“ (alle 126: −2.451, erfasste 40: −1.472). Unbelegte Jahresangabe zu § 371 SGB V gestrichen. Konsistenzprüfung prüft 9 Kennzahlen des Artikels. |
