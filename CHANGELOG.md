@@ -4,6 +4,11 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Konsistenzprüfung der Daten (22.10.2026)
+
+- **Kern, betrifft beide Seiten:** `npm run check:daten` führt `sites/<seite>/scripts/pruefe-konsistenz.mjs` aus, falls die Seite eine hat (Tiermedizin noch nicht). CSV-Leser mit Anführungszeichen als `scripts/lib/csv.mjs` für alle Datensatz-Skripte.
+- **Humanmedizin:** Prüfung Rohdaten ↔ Datensätze, kurze ↔ lange Fassung, Herstellersummen und aller zitierten Kennzahlen in Artikel, Post, Datenherkunft und Dateninfo. Stand: keine Fehler.
+
 ### Farblegende im Bar Race, klare Herstellerfarben in den PVS-Races (21.10.2026)
 
 - **Kern, betrifft beide Seiten:** Neue Einstellung `legend` (aus `suggested.legende` eines Datensatzes): Farbfeld plus Text unter dem Untertitel, in Vorschau (`Buehne.tsx`), eingebetteter Grafik und Video-Export (`compose.ts`) gleich gezeichnet, umbrochen nach Breite. Ohne Legende ändert sich am Layout nichts; die Tiermedizin ist unverändert.

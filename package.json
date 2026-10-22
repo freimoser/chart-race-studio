@@ -21,7 +21,8 @@
     "daten": "node scripts/site.mjs && node scripts/daten.mjs",
     "dev:human": "SITE=humanmedizin npm run dev",
     "build:human": "SITE=humanmedizin npm run build",
-    "test:alle": "SITE=tiermedizin npm test && SITE=humanmedizin npm test"
+    "test:alle": "SITE=tiermedizin npm test && SITE=humanmedizin npm test",
+    "check:daten": "node scripts/pruefe-daten.mjs"
   },
   "dependencies": {
     "@ffmpeg/ffmpeg": "^0.12.15",

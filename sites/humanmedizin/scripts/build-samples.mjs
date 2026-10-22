@@ -6,27 +6,10 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { stuetze, lit } from '../../../scripts/lib/reihen.mjs'
+import { leseCsv } from '../../../scripts/lib/csv.mjs'
 
 const RAW = path.resolve('sites/humanmedizin/data/raw')
-/** Eine CSV-Zeile in Felder zerlegen; Felder in Anführungszeichen dürfen Kommas enthalten („"S3 Praxiscomputer (FREY-Gruppe, …)"“). */
-const felder = (z) => {
-  const out = []; let f = '', q = false
-  for (let i = 0; i < z.length; i++) {
-    const c = z[i]
-    if (q) { if (c === '"' && z[i + 1] === '"') { f += '"'; i++ } else if (c === '"') q = false; else f += c }
-    else if (c === '"') q = true
-    else if (c === ',') { out.push(f); f = '' }
-    else f += c
-  }
-  out.push(f)
-  return out
-}
-const csv = (f) => {
-  const [kopf, ...zeilen] = fs.readFileSync(path.join(RAW, f), 'utf8').trim().split(/\r?\n/)
-  const k = felder(kopf)
-  // Die URL steht am Ende und kann (unzitiert) Kommas enthalten: Überzählige Felder gehören zu ihr.
-  return zeilen.map((z) => { const t = felder(z); return Object.fromEntries(k.map((n, i) => [n, i === k.length - 1 ? t.slice(i).join(',') : t[i]])) })
-}
+const csv = (f) => leseCsv(path.join(RAW, f))
 
 // ---------- KBV-Installationsstatistik ----------
 // Hauptdatei plus, falls vorhanden, die Nachrecherche zu 1998–2012 (gleiches Format). Anbieterzeilen
