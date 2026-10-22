@@ -189,6 +189,19 @@ K['Neue 2013'] = de(hs(2013, 3)); K['Neue 2025'] = de(hs(2025, 3))
   // Köpfe in Einzelpraxen = Zulassung mit/ohne Angestellte + Angestellte, muss dem Datensatz gleichen.
   for (const j of [2015, 2025]) if (solo(j) + m(j, 'bar_t5_aerztlich_ep_zulassung_mit_angestellten') + ang(j) !== z(j)[1]) fehler.push(`Post 8: Köpfe Einzelpraxis ${j} ≠ Tabelle 5`)
 }
+// Krankenhaussysteme (Post 9): Summen, Anteile, Obergrenze Krankenhaus-MVZ gegen KIS-Installationen 2015–2025.
+{
+  const KI = D.PVS_KIS, ks = (j) => summe(KI, j), tot = (j) => Number(INST.find((r) => r.stichtag === `${j}-12-31` && r.system === '__SUMME__')?.installationen)
+  K['KIS 2013'] = de(ks(2013)); K['KIS 2025'] = de(ks(2025))
+  K['KIS-Anteil 2013'] = prozent(ks(2013), tot(2013), 1); K['KIS-Anteil 2025'] = prozent(ks(2025), tot(2025), 1)
+  K['ORBIS-Anteil KIS'] = prozent(wert(KI, 2025, 'ORBIS'), ks(2025), 1)
+  K['SAP Wachstum'] = prozent(wert(KI, 2025, 'SAP') - wert(KI, 2013, 'SAP'), wert(KI, 2013, 'SAP'), 1)
+  K['KIS plus 2015–2025'] = de(ks(2025) - ks(2015))
+  K['Gerechnet KIS'] = `${GERECHNET['pvs-kis'].length} von ${(KI.headers.length - 1) * KI.rows.length}`
+  const MV = leseCsv(path.join(RAW, 'mvz.csv')), kh = (j) => Number(MV.find((x) => x.stichtag === `${j}-12-31` && x.reihe === 'mvz_krankenhaus_mvz')?.wert)
+  K['KH-MVZ plus 2015–2025'] = de(kh(2025) - kh(2015))
+  if (!((ks(2025) - ks(2015)) / (kh(2025) - kh(2015)) < 0.25)) fehler.push('Post 9: Obergrenze „knapp ein Viertel“ stimmt nicht mehr')
+}
 // Welche Kennzahl muss in welchem Text stehen.
 const ERWARTET = {
   [`${H}/content/artikel/01-praxissoftware-arztpraxen-marktanteile.md`]: ['MEDISTAR 2025', 'MEDISTAR 2013', 'TURBOMED 2025', 'TURBOMED 2013', 'medatixx 2025', 'x.isynet 2025', 'Medical Office 2013', 'Medical Office 2025', 'tomedo 2025', 'T2med 2025', 'Summe Arztsysteme 2013', 'Summe Arztsysteme 2025', 'Rückgang Arztsysteme', 'CGM-Anteil 2013', 'CGM-Anteil 2025', 'MEDISTAR-Anteil 2025', 'CGM 2013', 'CGM 2025', 'Gerechnet kurz', 'Sichtbar gerechnet lang'],
@@ -203,6 +216,7 @@ const ERWARTET = {
   [`${H}/content/artikel/02-praxissoftware-hersteller-cgm-medatixx.md`]: ['CGM 2013', 'CGM 2025', 'medatixx 2013 (Hersteller)', 'medatixx 2025 (Hersteller)', 'Anteil CGM 2013', 'Anteil CGM 2025', 'Anteil medatixx 2025', 'Anteil Neue 2013', 'Anteil Neue 2025', 'Neue 2013', 'Neue 2025', 'medatixx ohne EL 2025', 'Summe Arztsysteme 2025', 'Rückgang Arztsysteme'],
   [`${H}/content/artikel/07-earztbrief-kim-zahlen.md`]: ['eArztbrief-Anteil', 'eArztbriefe 2023', 'eArztbriefe 2024', 'eArztbriefe 2025', 'eArztbriefe 2026 bis Sep', 'KIM 2025', 'eAU 2025', 'eArztbrief am KIM 2025'],
   [`${H}/content/artikel/08-mvz-einzelpraxis-aerzte.md`]: ['Ärzte gesamt 2015', 'Ärzte gesamt 2025', 'MVZ-Anteil 2015', 'MVZ-Anteil 2025', 'Köpfe Einzelpraxis Rückgang', 'Arztsysteme 2015', 'Summe Arztsysteme 2025', 'Angestellte EP 2015', 'Angestellte EP 2025', 'Solo-EP Rückgang', 'KH-MVZ-Anteil', 'MVZ angestellt', 'ärztliche EP Rückgang'],
+  [`${H}/content/artikel/09-krankenhaus-software-ambulant-kis.md`]: ['KIS 2013', 'KIS 2025', 'KIS-Anteil 2013', 'KIS-Anteil 2025', 'ORBIS-Anteil KIS', 'SAP Wachstum', 'KIS plus 2015–2025', 'KH-MVZ plus 2015–2025', 'Gerechnet KIS'],
   [`${H}/content/roadmap.ts`]: ['LDT-Befund-Anteil', 'eArztbrief-Anteil', 'eArztbriefe 2023', 'eArztbriefe 2024', 'eArztbriefe 2025', 'eArztbriefe 2026 bis Sep'],
 }
 for (const [datei, liste] of Object.entries(ERWARTET)) {

@@ -103,7 +103,7 @@ export const POSTS: RoadmapPost[] = [
     hook: 'ORBIS, SAP, CGM MEDICO und iMedOne stehen in der KBV-Liste der Praxissysteme: 7.948 Installationen Ende 2025, 6,8 Prozent aller. So rechnen Klinikambulanzen und Klinik-MVZ ab.',
     figures: ['Krankenhaussysteme zusammen: 7.302 (2013) → 7.948 (2025), Anteil 6,2 → 6,8 Prozent', 'ORBIS 4.073, SAP 1.543, CGM MEDICO 1.363, iMedOne 969 (Ende 2025)', 'Anbieter von ORBIS: Agfa HealthCare bis 2016, Dedalus ab 2021'],
     sampleId: 'pvs-kis', chart: 'line', dataStatus: 'belegt',
-    dataNote: 'Datensatz pvs-kis steht (22.10.2026), die Linien sind fast flach – als Line Race schwach. Stärkere Aussage für den Post: Die Zahl der Krankenhaus-MVZ hat sich seit 2015 fast verdreifacht (910 → 2.659, KBV-MVZ-Statistik), die KIS-Installationen wachsen kaum (7.302 → 7.948 seit 2013). Klinik-MVZ rechnen also überwiegend nicht mit dem KIS ab – prüfen, bevor es behauptet wird (andere Einheit: MVZ gegen Installationen, nicht in einer Grafik mischen).',
+    dataNote: 'Datensatz pvs-kis steht (22.10.2026), die Linien sind fast flach – als Line Race schwach. Stärkere Aussage für den Post: Die Zahl der Krankenhaus-MVZ hat sich seit 2015 fast verdreifacht (910 → 2.659, KBV-MVZ-Statistik), die KIS-Installationen wachsen kaum (7.302 → 7.948 seit 2013). Geprüft 22.10.2026: nur als Obergrenze haltbar (406 von 1.749, unter der Annahme gleichbleibender übriger Klinikambulanzen), keine Zählung je MVZ vorhanden. Stärkerer belegter Aufhänger: SAP IS-H (dazu gehört SAP Ambulatory Care Management, 1.543 Installationen) endet spätestens 2030 – recherche/pvs-kbv-historie.md Abschnitt 7.',
     refs: [1, 8],
   },
   {

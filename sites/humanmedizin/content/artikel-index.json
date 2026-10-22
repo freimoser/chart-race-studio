@@ -86,5 +86,16 @@
     "geaendert": "2026-10-22",
     "bereit": true,
     "live": false
+  },
+  {
+    "post": 9,
+    "slug": "krankenhaus-software-ambulant-kis",
+    "titel": "Krankenhaus-Software in der ambulanten Abrechnung",
+    "beschreibung": "ORBIS, SAP, CGM MEDICO und iMedOne kommen Ende 2025 auf 7.948 Installationen in der KBV-Statistik. Für SAP endet die Wartung spätestens 2030.",
+    "frage": "Mit welcher Software rechnen Krankenhäuser ambulant ab?",
+    "stand": "2026-10-22",
+    "geaendert": "2026-10-22",
+    "bereit": true,
+    "live": false
   }
 ]

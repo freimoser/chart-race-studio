@@ -236,6 +236,26 @@ IS-H), MEDICO WIPS (Siemens → Cerner → seit 2020/21 CGM Clinical, heute „C
 SolutionCentre (iSOFT, nur 2007 groß) stehen für ambulante Abrechnungen aus Krankenhäusern. In der CSV `klasse=kis`.
 Zusammen 6–7 % aller Installationen. Für eine Praxis-Grafik herausnehmen oder als „Klinik-Ambulanzen“ zusammenfassen.
 
+**Nachtrag 22.10.2026 (Post 9):**
+
+- **SAP Ambulatory Care Management gehört zu SAP IS-H.** Paket N_OUTPATIENT der Komponente IS-H heißt „SAP Ambulatory
+  Care Management“ (<https://www.sapdatasheet.org/abap/func/ish_ws_insprov_getlist.html>, mit KV-Kostenträgerstamm aus
+  dem KV-Abrechnungssystem). SAP kündigte im Oktober 2022 an, IS-H nicht nach S/4HANA zu überführen
+  (<https://news.sap.com/germany/2022/11/sap-s4hana-erp-healtcare-krankenhaus-ish-kliniken/>); Wartung bis 31.12.2027,
+  erweiterte kostenpflichtige Wartung bis Ende 2030 (Telekom-Pressemitteilung
+  <https://www.telekom.com/de/medien/medieninformationen/detail/telekom-bietet-kliniken-patientenabrechnungsloesung-an-1029656>;
+  Taylor Wessing 05/2026 <https://www.taylorwessing.com/de/insights-and-events/insights/2026/05/is-h-abloesung>).
+  Nachfolger von Drittanbietern (S4.health von ATSP/RZV, GS-H von GITG, ORBIS IBIL von Dedalus als Ersatz beworben).
+  1.543 Installationen Ende 2025 brauchen also bis spätestens 2030 einen Nachfolger.
+- **Krankenhaus-MVZ gegen KIS-Installationen:** Die MVZ mit Krankenhaus als Träger stiegen 2015–2025 um 1.749 (910 →
+  2.659, MVZ-Statistik), die vier großen KIS-Zeilen um 406 (7.542 → 7.948). Rechnerisch können höchstens 23 % der
+  neuen Krankenhaus-MVZ mit einem dieser vier KIS abrechnen – **nur unter der Annahme**, dass die übrigen
+  KIS-Abrechnungen (Ermächtigungs-, Hochschul-, Notfallambulanzen) nicht abgenommen haben; die KBV weist das nicht aus.
+  Dass beide Wege vorkommen, zeigen Herstellerangaben: ORBIS erfasst ambulante Leistungen „im Krankenhaus und MVZ“
+  (Dedalus-Broschüre Medizincontrolling 10/2025), Medical Office wird für MVZ, Krankenhäuser und Ambulanzen beworben
+  (softguide.de). Eine Zählung, welches System Krankenhaus-MVZ nutzen, gibt es nicht. Im Artikel nur als Rechnung mit
+  dieser Einschränkung nennen.
+
 ## 8. Hersteller und Übernahmen
 
 Belege aus Ärzteblatt, Ärzte Zeitung, CGM-Abschlüssen und Herstellerseiten (Kurzzitate). „Unbelegt“ heißt: gesucht,
