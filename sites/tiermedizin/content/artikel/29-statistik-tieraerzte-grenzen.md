@@ -2,13 +2,13 @@
 post: 29
 slug: statistik-tieraerzte-grenzen
 titel: Statistik Tierärzte Deutschland: Was die Zahlen nicht zeigen
-beschreibung: Von zwölf Datensätzen zu Tierärzten und Haustieren beruht nur einer auf amtlicher Statistik. Was gezählt, was geschätzt und was modelliert ist.
+beschreibung: 30 Datensätze zu Tierärzten und Tieren: sieben amtlich, 13 aus der Kammerstatistik, drei modelliert. Was gezählt, geschätzt und gerechnet ist.
 frage: Wie verlässlich sind die Statistiken über Tierärzte und Haustiere in Deutschland?
 suchbegriffe: statistik tierärzte deutschland, anzahl tierarztpraxen deutschland, anzahl haustiere deutschland, tierärzte anzahl deutschland
-stand: 2026-10-20
+stand: 2026-10-22
 bereit: ja
 ---
-Von den **12 Datensätzen** auf dieser Seite beruht nur **einer** auf amtlicher Statistik: der Rinderbestand des Statistischen Bundesamts seit 1991. Sechs stammen aus der Kammerstatistik der Bundestierärztekammer, zwei aus Befragungen und Schätzungen der Heimtierverbände ZZF und IVH, einer aus dem Zuchtbuch des VDH, und **zwei sind Modellreihen**. Jede dieser Quellen misst etwas anderes, und jede hat Stellen, an denen ein Bruch wie eine Entwicklung aussieht.
+Von den **30 Datensätzen** auf dieser Seite stützen sich **sieben** auf amtliche Statistik: Rinderbestand und Tierarztpreise des Statistischen Bundesamts, die Antibiotika-Abgabemengen des Bundesamts für Verbraucherschutz und Lebensmittelsicherheit und die Oktoberfest-Zahlen des Statistischen Amts München. **13** stammen aus der Kammerstatistik der Bundestierärztekammer, sechs von Verbänden (Heimtierverbände ZZF und IVH, VDH, Deutsche Reiterliche Vereinigung), einer ist aus der Gebührenordnung berechnet, und **drei sind Modellreihen**. Jede dieser Quellen misst etwas anderes, und jede hat Stellen, an denen ein Bruch wie eine Entwicklung aussieht.
 
 ## Das Wichtigste in Kürze
 
@@ -16,7 +16,7 @@ Von den **12 Datensätzen** auf dieser Seite beruht nur **einer** auf amtlicher 
 - Praxisketten erhebt keine amtliche Stelle. Die einzige belastbare Gesamtzahl sind rund 450 Standorte von 16 Ketten im August 2024, genannt im Tierärzte Atlas.
 - Von 2021 bis 2023 beantworten nur 91 bis 92 Prozent der Niedergelassenen die Frage nach dem Praxisschwerpunkt, 2001 bis 2015 praktisch alle (berechnet).
 - Ein Heimtierregister gibt es nicht. Der Sprung bei Hunden und Katzen von 13,6 Millionen (2011) auf 19,7 Millionen (2012) ist ein Wechsel der Erhebungsmethode.
-- Die Fachtierarzt-Statistik zählt Titel, nicht Personen, und für 2015 bis 2017 sowie 2020 fehlen die Tabellen.
+- Die Fachtierarzt-Statistik zählt Titel, nicht Personen. Für 2015 bis 2017 fehlen die Tabellen, 2020 liegt nur als Grafik vor und wurde abgelesen.
 
 ## Gezählt, hochgerechnet oder modelliert
 
@@ -25,13 +25,18 @@ Von den **12 Datensätzen** auf dieser Seite beruht nur **einer** auf amtlicher 
 | Tierarztpraxen im Wandel | BTK | gezählt | Personen statt Vollzeitstellen; „außerhalb von Praxen“ ist berechnet |
 | Angestellte überholen die Praxisinhaber | BTK | gezählt | 1991 bis 1995 nur aus einer Dissertation, die die gedruckten Jahrgänge zitiert |
 | Praxisschwerpunkte | BTK | Selbstauskunft | Pferde ab 2019 getrennt abgefragt |
-| Fachtierarzt-Gebiete | BTK | gezählt | Titel statt Personen, vier Jahre interpoliert |
+| Fachtierarzt-Gebiete | BTK | gezählt | Titel statt Personen, drei Jahre interpoliert |
 | Kleintiermedizin je Bundesland | BTK | Selbstauskunft | endet 2018 wegen des Pferde-Bruchs und fehlender Kammermeldungen |
 | Tierärzte je Bundesland | BTK | gezählt | Kammermitglieder einschließlich Ruhestand |
 | Heimtiere | ZZF/IVH | hochgerechnet | Haushaltsbefragung, mehrere Methodenwechsel |
 | Heimtiermarkt | ZZF/IVH | geschätzt | Online-Handel ist eine eigene Größe |
 | Hunderassen | VDH | gezählt | nur Welpen aus VDH-Zuchtbüchern |
 | Rinder je Bundesland | Destatis | amtlich gezählt | Stichtag wechselt zwischen Mai, November und Dezember |
+| Praxisarten seit 2010 | BTK | Selbstauskunft | ab 2019 erhoben, 2010 bis 2018 zurückgerechnet |
+| Pferdezucht | FN | gezählt | nur Stuten und Fohlen der 25 Zuchtverbände |
+| Antibiotika | BVL | amtlich gemeldet | Abgabe an Tierärzte, nicht Einsatz am Tier; seit 2023 größerer Meldekreis |
+| Tierarztpreise | Destatis | amtlicher Preisindex | alle Tierarten zusammen, keine einzelne Leistung |
+| Routinejahr beim Tierarzt | GOT | berechnet | einfacher Satz, eigener Warenkorb |
 | Tierarztketten | eigene Modellreihe | modelliert | ein externer Anker, übrige Jahre geschätzt |
 | Hund oder Katze weltweit | FEDIAF und weitere | modelliert | als Beispieldaten markiert, 2026 Projektion |
 
@@ -63,7 +68,7 @@ Dazu kommen zwei Reihen, die es gibt, die hier aber noch nicht ausgelesen sind: 
 
 - **Eine Linie ist nicht immer eine Messung.** Wo Werte fehlen, verbindet das Diagramm die Nachbarjahre. In der Kettenreihe ist deshalb jeder Wert markiert: belegt, belegte Untergrenze oder geschätzt. Bei IVC Evidensia etwa sind die Jahre zwischen 2016 und 2022 nicht einzeln belegt; die Linie dort ist eine Annahme.
 - **Köpfe sind keine Arbeitszeit.** Das gilt für alle Reihen der Kammer. Der Wechsel von Inhabern zu Angestellten im Jahr 2024 ist nach Personen belegt, nach Arbeitsstunden nicht. Die Kurve steht im Beitrag [Mehr angestellte Tierärzte als Praxisinhaber](anzahl-tieraerzte-deutschland.html).
-- **Eine konsistente Quelle ist nicht automatisch vollständig.** Ab 2019 fehlen bei den Praxisschwerpunkten bis zu neun Prozent der Antworten, die absoluten Werte sind deshalb leicht untererfasst. Und die Summen der Kammer selbst sind nicht immer richtig: 2019, 2020 und 2024 passen sie nicht zu den Werten der 17 Kammern, 2024 ist Rheinland-Pfalz doppelt gezählt. Hier sind diese Jahre aus den Kammerspalten neu summiert.
+- **Eine konsistente Quelle ist nicht automatisch vollständig.** Ab 2019 fehlen bei den Praxisschwerpunkten bis zu neun Prozent der Antworten, die absoluten Werte sind deshalb leicht untererfasst. Und die Summen der Kammer selbst sind nicht immer richtig: 2019, 2020 und 2024 passen sie nicht zu den Werten der 17 Kammern, 2024 ist Rheinland-Pfalz doppelt gezählt. Hier sind diese Jahre aus den Kammerspalten neu summiert. In der Fachtierarzt-Tabelle 2021 stehen die Werte der Kammer Nordrhein in der Reihenfolge des Vorjahres; hier sind sie den richtigen Gebieten zugeordnet.
 - **Umsätze sind nicht preisbereinigt.** Die Werte des Heimtiermarkts stehen zu Endverbraucherpreisen des jeweiligen Jahres.
 
 ## Häufige Fragen
