@@ -155,10 +155,35 @@ const PVS_HERSTELLER = {
 const D4 = baue({ von: 2013, bis: 2025, systeme: ['CGM MEDISTAR (BLACK PRO)', 'Elefant', 'psyprax', 'Epikur'] })
 const PVS_PSYCHO = D4.tabelle
 
+// ---------- TI-Nutzung und PraxisBarometer (Posts 6, 7) ----------
+// Quellen und Definitionen: recherche/schnittstellen.md. In der Rohdatei stehen nur belegte Werte.
+const TI = csv('ti-nutzung.csv')
+const istMonatsende = (iso) => { const [j, m, t] = iso.split('-').map(Number); return t === new Date(Date.UTC(j, m, 0)).getUTCDate() }
+// eArztbriefe je Monat: Differenz zweier Monatsendstände des kumulierten Zählers der gematik (gerechnet). Die gematik
+// meldet den Stand um 0 Uhr UTC des Stichtags; ein „Monat“ reicht deshalb vom Vortag des Monatsletzten bis zum Vortag
+// des nächsten – ein Tag Versatz, für Monatssummen unerheblich, in der Dateninfo genannt.
+const kum = TI.filter((r) => r.reihe === 'kim_earztbriefe_kumuliert' && istMonatsende(r.stichtag)).sort((x, y) => x.stichtag.localeCompare(y.stichtag))
+const EARZTBRIEF_MONAT = {
+  headers: ['Monat', 'eArztbriefe über KIM'],
+  rows: kum.slice(1).map((r, i) => [r.stichtag.slice(0, 7), Number(r.wert) - Number(kum[i].wert)]),
+}
+for (let i = 1; i < kum.length; i++) {
+  const [vj, vm] = kum[i - 1].stichtag.split('-').map(Number), [j, m] = kum[i].stichtag.split('-').map(Number)
+  if ((j - vj) * 12 + m - vm !== 1) throw new Error(`ti-nutzung: Monatsende fehlt zwischen ${kum[i - 1].stichtag} und ${kum[i].stichtag}`)
+}
+// PraxisBarometer Digitalisierung (KBV/IGES): Anteil der Arztpraxen, die Labordaten digital empfangen bzw. senden.
+// Ab 2024 lautet die Antwort „Labordaten (inkl. Labordatenaufträgen und -ergebnissen)“ – Formulierungsbruch.
+const pb = (reihe) => Object.fromEntries(TI.filter((r) => r.reihe === reihe).map((r) => [r.stichtag.slice(0, 4), Number(r.wert)]))
+const empfang = pb('pb_labordaten_digital_empfang_arztpraxen'), versand = pb('pb_labordaten_digital_versand_arztpraxen')
+const LABORDATEN_PB = {
+  headers: ['Jahr', 'Labordaten digital empfangen', 'Labordaten digital gesendet'],
+  rows: Object.keys(empfang).sort().map((j) => [j, empfang[j], versand[j]]),
+}
+
 // ---------- Ausgabe ----------
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 fs.writeFileSync('sites/humanmedizin/samples/data.ts', `// Automatisch erzeugt von sites/humanmedizin/scripts/build-samples.mjs aus sites/humanmedizin/data/raw/ – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO)].join('\n'))
+  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('LABORDATEN_PB', LABORDATEN_PB)].join('\n'))
 const sortiert = (l) => [...l].sort((a, b) => a.system.localeCompare(b.system) || a.jahr - b.jahr)
 fs.writeFileSync(path.join(RAW, 'pvs-gerechnet.json'), JSON.stringify({
   hinweis: 'Von sites/humanmedizin/scripts/build-samples.mjs erzeugt. Jeder Wert der Datensätze, der nicht direkt aus einem KBV-Bericht (Jahresende) stammt, mit Methode. pvs-hersteller ist die Summe von pvs-installationen und hat dieselben gerechneten Werte. Alles andere ist belegt (pvs-kbv-installationen.csv, pvs-kbv-luecken-1998-2012.csv).',

@@ -51,6 +51,7 @@ const profil: SeitenProfil = {
   studioIndexieren: false,
   rubriken: [
     { id: 'software', label: 'Praxissoftware & Schnittstellen' },
+    { id: 'vernetzung', label: 'Schnittstellen & Telematik' },
     { id: 'versorgung', label: 'Praxen & Versorgung' },
   ],
   raum: () => 'Deutschland',

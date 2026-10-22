@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { PVS_ARZT, PVS_ARZT_2007, PVS_HERSTELLER, PVS_PSYCHO } from './data.ts'
+import { EARZTBRIEF_MONAT, LABORDATEN_PB, PVS_ARZT, PVS_ARZT_2007, PVS_HERSTELLER, PVS_PSYCHO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -92,6 +92,44 @@ export const SAMPLES: SampleDataset[] = [
       // Validiert (alle Paare, hell): CGM blau wie in allen PVS-Grafiken, die drei Psychotherapie-Systeme pink, gelb, grün.
       colors: { 'CGM MEDISTAR': BLAU, Elefant: '#e87ba4', psyprax: '#eda100', Epikur: '#008300' },
     },
+  },
+  {
+    id: 'earztbrief-monat',
+    erstellt: '2026-10-22', geprueft: '2026-10-22',
+    category: 'vernetzung',
+    title: 'eArztbriefe über KIM je Monat',
+    subtitle: 'Mit KIM gesendete elektronische Arztbriefe in Deutschland, je Monat, März 2022 bis September 2026',
+    source: 'Quelle: gematik, TI-Dashboard (kumulierter Zähler seit 01.08.2021); Monatswerte als Differenz gerechnet',
+    sourceUrl: 'https://ti-lage.prod.ccs.gematik.solutions/d/_v5YC1HVk/ti-dashboard-verlauf-kim',
+    unit: 'eArztbriefe',
+    description: 'Der eArztbrief ist Alltag geworden: von 150.000 im März 2022 auf gut 4 Millionen im Monat, 45,2 Millionen im Jahr 2025.',
+    dataInfo: [
+      'Gezählt werden eArztbriefe, die über KIM (Kommunikation im Medizinwesen) der Telematikinfrastruktur gesendet wurden, laut TI-Dashboard der gematik. Nicht enthalten sind Arztbriefe per Fax, Post oder anderen Diensten. Die Zahl sagt nichts darüber, wie viele Praxen senden.',
+      'Gerechnet: Die gematik veröffentlicht einen Zähler seit 01.08.2021 (Stand jeweils 0 Uhr UTC). Jeder Monatswert ist die Differenz zweier Monatsendstände; ein Monat reicht dadurch vom Vortag des Monatsletzten bis zum Vortag des nächsten Monatsletzten. Die Jahressummen (2023: 14,4 Mio., 2024: 32,3 Mio., 2025: 45,2 Mio.) sind identisch mit den Differenzen der Jahresendstände.',
+      'Zweitquelle: Laut PraxisBarometer Digitalisierung 2025 (KBV/IGES) nutzen 82 Prozent der Arztpraxen mit TI-Anschluss den eArztbrief über KIM, aber nur 22 Prozent der psychotherapeutischen Praxen. Die Zulassung dafür haben Systeme mit 88,9 Prozent der Installationen ärztlicher Systeme (KBV-Verzeichnis, Stand 21.10.2026).',
+    ],
+    headers: EARZTBRIEF_MONAT.headers,
+    rows: EARZTBRIEF_MONAT.rows,
+    suggested: { chartType: 'line', topN: 1, decimals: 0, primaryAxisLabel: 'eArztbriefe je Monat', dateFormat: 'MMM YYYY', colors: { 'eArztbriefe über KIM': BLAU } },
+  },
+  {
+    id: 'labordaten-praxisbarometer',
+    erstellt: '2026-10-22', geprueft: '2026-10-22',
+    category: 'vernetzung',
+    title: 'Labordaten: empfangen ja, senden kaum',
+    subtitle: 'Anteil der Arztpraxen, die Labordaten überwiegend digital empfangen bzw. senden, 2018 bis 2025',
+    source: 'Quelle: PraxisBarometer Digitalisierung (KBV/IGES), Befragung von Arztpraxen ohne Psychotherapie; ab 2024 geänderte Antwortformulierung',
+    sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/praxisbarometer-digitalisierung',
+    unit: 'Prozent der Arztpraxen',
+    description: 'Vier von fünf Arztpraxen empfangen Labordaten digital, aber nur zwei von fünf senden welche – Befunde kommen digital, Aufträge nicht.',
+    dataInfo: [
+      'Gezählt wird der Anteil befragter Arztpraxen (ohne psychotherapeutische Praxen), die angeben, Labordaten überwiegend digital zu empfangen bzw. zu senden. Es ist eine jährliche Befragung, keine Vollerhebung.',
+      'Methodenbruch: Ab 2024 lautet die Antwortmöglichkeit „Labordaten (inklusive Labordatenaufträgen und -ergebnissen)“. Der Anstieg beim Senden von 20 (2023) auf 30 und 39 Prozent ist deshalb teilweise ein Effekt der neuen Formulierung. Kein Wert ist gerechnet.',
+      'Gegenprobe Zulassungen (KBV-Verzeichnis, Stand 21.10.2026): Systeme mit Zulassung für den LDT-Befund-Import tragen 95,8 Prozent der Installationen ärztlicher Systeme; den LDT-Auftrag-Export hat kein ärztliches Praxissystem zertifiziert.',
+    ],
+    headers: LABORDATEN_PB.headers,
+    rows: LABORDATEN_PB.rows,
+    suggested: { chartType: 'line', topN: 2, decimals: 0, suffix: ' %', primaryAxisLabel: 'Prozent der Arztpraxen', colors: { 'Labordaten digital empfangen': BLAU, 'Labordaten digital gesendet': ORANGE } },
   },
   {
     id: 'pvs-hersteller',

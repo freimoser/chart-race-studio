@@ -95,6 +95,19 @@ const K = {
   'Systeme lang': `${D.PVS_ARZT_2007.headers.length - 1} `, 'Gerechnet lang': `${GERECHNET['pvs-installationen-2007'].length} von ${(D.PVS_ARZT_2007.headers.length - 1) * D.PVS_ARZT_2007.rows.length}`,
   'Sichtbar gerechnet lang': `${sichtbarGerechnet} von ${D.PVS_ARZT_2007.rows.length * 20}`,
 }
+// Schnittstellen (Posts 6, 7): Anteil der Installationen ärztlicher Systeme (Ende 2025, Systeme ab 500) mit Zulassung
+// laut KBV-Verzeichnis 21.10.2026, und eArztbriefe je Jahr aus den Monatswerten.
+{
+  const Z = leseCsv(path.join(RAW, 'pvs-zulassungen.csv')).filter((r) => r.stand === '2026-10-21')
+  const arzt = INST.filter((r) => r.stichtag === '2025-12-31' && r.klasse === 'arzt')
+  const ges = arzt.reduce((x, r) => x + Number(r.installationen), 0)
+  const anteil = (feld) => prozent(arzt.filter((r) => Z.find((z) => z.system === r.system)?.[feld] === 'ja').reduce((x, r) => x + Number(r.installationen), 0), ges, 1)
+  K['LDT-Befund-Anteil'] = anteil('ldt_befund'); K['eArztbrief-Anteil'] = anteil('earztbrief')
+  const E = D.EARZTBRIEF_MONAT, jahr = (j) => E.rows.filter((r) => r[0].startsWith(j)).reduce((x, r) => x + r[1], 0)
+  const mio = (n) => (n / 1e6).toFixed(1).replace('.', ',') + ' Mio'
+  for (const j of ['2023', '2024', '2025']) K[`eArztbriefe ${j}`] = mio(jahr(j))
+  K['eArztbriefe 2026 bis Sep'] = mio(jahr('2026'))
+}
 // Welche Kennzahl muss in welchem Text stehen.
 const ERWARTET = {
   [`${H}/content/artikel/01-praxissoftware-arztpraxen-marktanteile.md`]: ['MEDISTAR 2025', 'MEDISTAR 2013', 'TURBOMED 2025', 'TURBOMED 2013', 'medatixx 2025', 'x.isynet 2025', 'Medical Office 2013', 'Medical Office 2025', 'tomedo 2025', 'T2med 2025', 'Summe Arztsysteme 2013', 'Summe Arztsysteme 2025', 'Rückgang Arztsysteme', 'CGM-Anteil 2013', 'CGM-Anteil 2025', 'MEDISTAR-Anteil 2025', 'CGM 2013', 'CGM 2025', 'Gerechnet kurz', 'Sichtbar gerechnet lang'],
@@ -102,6 +115,7 @@ const ERWARTET = {
   [`${H}/seiten/artikel/datenherkunft.html`]: ['Gerechnet lang', 'Sichtbar gerechnet lang'],
   [`${H}/samples/index.ts`]: ['Gerechnet lang', 'Sichtbar gerechnet lang'],
   [`${H}/docs/DATASETS.md`]: ['Gerechnet lang'],
+  [`${H}/content/roadmap.ts`]: ['LDT-Befund-Anteil', 'eArztbrief-Anteil', 'eArztbriefe 2023', 'eArztbriefe 2024', 'eArztbriefe 2025', 'eArztbriefe 2026 bis Sep'],
 }
 for (const [datei, liste] of Object.entries(ERWARTET)) {
   const text = fs.readFileSync(datei, 'utf8')
@@ -123,6 +137,7 @@ merke(roh(LUE, '2000-06-30', 'ALBIS') + roh(LUE, '2000-06-30', 'ALBIS DOS (Altve
 merke(roh(INST, '1997-12-31', 'ALBIS') + roh(INST, '1997-12-31', 'ALBIS ON WINDOWS (eigene KBV-Zeile 1997)')) // ALBIS Ende 1997
 bekannt.add('9.508')
 // MVZ und Bundesarztregister (recherche/mvz.md): Rohwerte und die Ableitungen, die Texte zitieren.
+for (const r of leseCsv(path.join(RAW, 'ti-nutzung.csv'))) merke(Number(r.wert))
 if (fs.existsSync(path.join(RAW, 'mvz.csv'))) {
   const MV = leseCsv(path.join(RAW, 'mvz.csv'))
   for (const r of MV) merke(Number(r.wert))
