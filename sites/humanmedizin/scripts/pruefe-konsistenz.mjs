@@ -127,6 +127,18 @@ const K = {
 for (const [j, i, name] of [[2013, 1, 'CGM'], [2025, 1, 'CGM'], [2013, 2, 'medatixx'], [2025, 2, 'medatixx'], [2013, 3, 'Neue'], [2025, 3, 'Neue']]) K[`Anteil ${name} ${j}`] = prozent(hs(j, i), summe(A, j), 1)
 K['Neue 2013'] = de(hs(2013, 3)); K['Neue 2025'] = de(hs(2025, 3))
 { const el = (j) => wert(A, j, 'EL'); K['medatixx ohne EL 2025'] = prozent(hs(2025, 2) - el(2025), s25, 1) }
+// Psychotherapie (Post 3).
+{
+  const P = D.PVS_PSYCHO, p = (j, n) => wert(P, j, n)
+  for (const [n, j] of [['Elefant', 2025], ['psyprax', 2025], ['Elefant', 2023], ['psyprax', 2024]]) K[`${n} ${j}`] = de(p(j, n))
+  K['MEDISTAR 2023'] = de(p(2023, 'CGM MEDISTAR')); K['MEDISTAR 2024'] = de(p(2024, 'CGM MEDISTAR'))
+  const w = (n) => prozent(p(2025, n) - p(2013, n), p(2013, n), 1)
+  K['Wachstum Elefant'] = w('Elefant'); K['Wachstum Epikur'] = w('Epikur'); K['Wachstum psyprax'] = w('psyprax'); K['Rückgang MEDISTAR'] = prozent(p(2013, 'CGM MEDISTAR') - p(2025, 'CGM MEDISTAR'), p(2013, 'CGM MEDISTAR'), 1)
+  K['Gerechnet Psycho'] = `${GERECHNET['pvs-psychotherapie'].length} von ${(P.headers.length - 1) * P.rows.length}`
+  // Die Reihenfolge muss stimmen: Elefant vor MEDISTAR ab 2023, psyprax vor MEDISTAR ab 2024, nicht früher.
+  if (!(p(2023, 'Elefant') > p(2023, 'CGM MEDISTAR') && p(2022, 'Elefant') < p(2022, 'CGM MEDISTAR'))) fehler.push('Post 3: Elefant überholt MEDISTAR nicht 2023')
+  if (!(p(2024, 'psyprax') > p(2024, 'CGM MEDISTAR') && p(2023, 'psyprax') < p(2023, 'CGM MEDISTAR'))) fehler.push('Post 3: psyprax überholt MEDISTAR nicht 2024')
+}
 // Welche Kennzahl muss in welchem Text stehen.
 const ERWARTET = {
   [`${H}/content/artikel/01-praxissoftware-arztpraxen-marktanteile.md`]: ['MEDISTAR 2025', 'MEDISTAR 2013', 'TURBOMED 2025', 'TURBOMED 2013', 'medatixx 2025', 'x.isynet 2025', 'Medical Office 2013', 'Medical Office 2025', 'tomedo 2025', 'T2med 2025', 'Summe Arztsysteme 2013', 'Summe Arztsysteme 2025', 'Rückgang Arztsysteme', 'CGM-Anteil 2013', 'CGM-Anteil 2025', 'MEDISTAR-Anteil 2025', 'CGM 2013', 'CGM 2025', 'Gerechnet kurz', 'Sichtbar gerechnet lang'],
@@ -134,6 +146,7 @@ const ERWARTET = {
   [`${H}/seiten/artikel/datenherkunft.html`]: ['Gerechnet lang', 'Sichtbar gerechnet lang'],
   [`${H}/samples/index.ts`]: ['Gerechnet lang', 'Sichtbar gerechnet lang'],
   [`${H}/docs/DATASETS.md`]: ['Gerechnet lang'],
+  [`${H}/content/artikel/03-psychotherapie-software-elefant-psyprax.md`]: ['Elefant 2025', 'psyprax 2025', 'MEDISTAR 2025', 'Elefant 2023', 'MEDISTAR 2023', 'psyprax 2024', 'MEDISTAR 2024', 'Wachstum Elefant', 'Wachstum Epikur', 'Wachstum psyprax', 'Rückgang MEDISTAR', 'Gerechnet Psycho'],
   [`${H}/content/artikel/02-praxissoftware-hersteller-cgm-medatixx.md`]: ['CGM 2013', 'CGM 2025', 'medatixx 2013 (Hersteller)', 'medatixx 2025 (Hersteller)', 'Anteil CGM 2013', 'Anteil CGM 2025', 'Anteil medatixx 2025', 'Anteil Neue 2013', 'Anteil Neue 2025', 'Neue 2013', 'Neue 2025', 'medatixx ohne EL 2025', 'Summe Arztsysteme 2025', 'Rückgang Arztsysteme'],
   [`${H}/content/roadmap.ts`]: ['LDT-Befund-Anteil', 'eArztbrief-Anteil', 'eArztbriefe 2023', 'eArztbriefe 2024', 'eArztbriefe 2025', 'eArztbriefe 2026 bis Sep'],
 }
@@ -170,6 +183,7 @@ if (fs.existsSync(path.join(RAW, 'mvz.csv'))) {
   for (let j = 2004; j <= 2025; j++) {
     merke(m(j, 'praxen_ep_hausaerztlich') + m(j, 'praxen_ep_fachaerztlich')) // ärztliche Einzelpraxen
     merke(m(j, 'bar_t5_aerztlich_ep_zulassung_mit_angestellten') + m(j, 'bar_t5_aerztlich_ep_zulassung_ohne_angestellte')) // dasselbe aus Tabelle 5
+    merke(m(j, 'bar_t5_psychotherapeutisch_ep_zulassung_mit_angestellten') + m(j, 'bar_t5_psychotherapeutisch_ep_zulassung_ohne_angestellte')) // psychotherapeutische Einzelpraxen aus Tabelle 5
     merke(m(j, 'bar_t5_aerztlich_einrichtung_anstellung') + m(j, 'bar_t5_aerztlich_einrichtung_zulassung')) // Ärzte in MVZ und Einrichtungen
     merke(m(j, 'bar_personen_mvz_einrichtung') - m(j, 'bar_psych_psychotherapeuten_mvz_einrichtung'))
   }

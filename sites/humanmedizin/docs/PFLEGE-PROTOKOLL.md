@@ -22,7 +22,7 @@ untereinander korrekt. Plane die nächsten 10 Posts und sammle die Daten dazu. M
 | A8 | Datensatz Wechsel/Nettoveränderung je System (Post 5) | erledigt (D6): `pvs-saldo` |
 | A9 | Recherche Tiermedizin-PVS (Post 10), Abgleich mit Schwesterseite | erledigt: keine Marktanteile belegbar, Post 10 neu gefasst; Recherche-Notiz lokal (Entscheidung Nutzer offen: enthält Angaben zur Petleo-Beteiligung) |
 | A10 | Recherche Labor (Post 11) | erledigt: recherche/labor.md, data/raw/labor.csv; Datensatz `labor-aerzte` |
-| A11 | Artikelentwürfe zu den Posts mit belegten Daten | läuft: Post 2 (D8) |
+| A11 | Artikelentwürfe zu den Posts mit belegten Daten | läuft: Post 2 (D8), Post 3 (D9) |
 
 ## Durchläufe
 
@@ -38,3 +38,4 @@ untereinander korrekt. Plane die nächsten 10 Posts und sammle die Daten dazu. M
 | 7 | 22.10.2026 | Post 8: Datensätze `aerzte-praxisform` (Ärzte nach Praxisform 2015–2025 ohne Psychotherapeuten; alle 11 Jahre exakt wie die Recherche-Tabelle, Generator prüft 2015 fest und 2025 auf zwei Rechenwegen) und `mvz-anzahl` (MVZ gesamt und Krankenhaus-MVZ 2004–2025, alle belegt). Glätte 0 Sprünge. Konsistenzprüfung prüft jetzt auch die Zahlen in den Dateninfos; dabei eine Rundung (150.000 statt 150.450) durch den genauen Wert ersetzt. |
 | – | 22.10.2026 | Zwischen D7 und D8: Labor-Recherche übernommen, Kernzahlen an der Rohdatei geprüft (88,5 % angestellt, 2013: 68,0 %). Datensatz `labor-aerzte` (2013–2025, alle belegt), Post 11 neu gefasst: „Das Labor ist ein Angestelltenfach geworden“. Damit haben alle Posts 2–11 Daten. |
 | 8 | 22.10.2026 | Artikelentwurf Post 2 (`praxissoftware-hersteller-cgm-medatixx`, bereit, geht mit dem Post online). Befund beim Schreiben: Der medatixx-Anteil springt 2022 nur durch die Übernahme von EL (ohne EL 2025: 26,0 statt 28,1 %) – steht im Artikel. Herstellersummen 2015/2016 seit dem medatixx-Nachtrag korrekt niedriger (21.348/20.914); kein Text zitierte die alten Werte. Konsistenzprüfung prüft 14 Kennzahlen des Artikels. |
+| 9 | 22.10.2026 | Artikelentwurf Post 3 (`psychotherapie-software-elefant-psyprax`). Scheinbarer Widerspruch geklärt (psyprax 2013: 8.722 in der Arztgruppe vs. 9.301 gesamt – kein Fehler). Zwei zu weite Formulierungen durch Belege ersetzt („fast immer Einzelpraxis“ → 88 % laut Bundesarztregister; Umsatz-Spekulation gestrichen). Konsistenzprüfung: 12 Kennzahlen und die Überhol-Jahre (Elefant 2023, psyprax 2024) werden geprüft. |
