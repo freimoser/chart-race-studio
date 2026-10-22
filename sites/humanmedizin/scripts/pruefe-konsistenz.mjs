@@ -157,6 +157,7 @@ bekannt.add('10.000')
 for (const T of [D.AERZTE_PRAXISFORM, D.MVZ_ANZAHL]) for (let i = 1; i < T.headers.length; i++) merke(Math.abs(T.rows.at(-1)[i] - T.rows[0][i])) // rund 10.000 Tierarztpraxen: Tierärzte Atlas 2024, belegt auf der Schwesterseite (sites/tiermedizin/seiten/artikel/tierarztketten-deutschland.html)
 // MVZ und Bundesarztregister (recherche/mvz.md): Rohwerte und die Ableitungen, die Texte zitieren.
 for (const r of leseCsv(path.join(RAW, 'ti-nutzung.csv'))) merke(Number(r.wert))
+for (const r of leseCsv(path.join(RAW, 'labor.csv'))) merke(Number(r.wert))
 if (fs.existsSync(path.join(RAW, 'mvz.csv'))) {
   const MV = leseCsv(path.join(RAW, 'mvz.csv'))
   for (const r of MV) merke(Number(r.wert))

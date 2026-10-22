@@ -21,7 +21,7 @@ untereinander korrekt. Plane die nächsten 10 Posts und sammle die Daten dazu. M
 | A7 | Datensatz KIS-Systeme (Post 9) | erledigt (D5): `pvs-kis`, Aussage für den Post noch schärfen |
 | A8 | Datensatz Wechsel/Nettoveränderung je System (Post 5) | erledigt (D6): `pvs-saldo` |
 | A9 | Recherche Tiermedizin-PVS (Post 10), Abgleich mit Schwesterseite | erledigt: keine Marktanteile belegbar, Post 10 neu gefasst; Recherche-Notiz lokal (Entscheidung Nutzer offen: enthält Angaben zur Petleo-Beteiligung) |
-| A10 | Recherche Labor (Post 11) | läuft (Agent, seit D5) |
+| A10 | Recherche Labor (Post 11) | erledigt: recherche/labor.md, data/raw/labor.csv; Datensatz `labor-aerzte` |
 | A11 | Artikelentwürfe zu den Posts mit belegten Daten | |
 
 ## Durchläufe
@@ -36,3 +36,4 @@ untereinander korrekt. Plane die nächsten 10 Posts und sammle die Daten dazu. M
 | 5 | 22.10.2026 | Datensätze `pvs-aufsteiger` (Medical Office, tomedo, T2med, ETERNO 2013–2025) und `pvs-kis` (ORBIS, SAP, CGM MEDICO, iMedOne). Eigener Formulierungsfehler korrigiert („fast so viele wie 2013“ → knapp 9 % mehr). Befund für Post 9: KIS-Installationen fast flach, Krankenhaus-MVZ fast verdreifacht – stärkere Aussage, noch zu prüfen. Konsistenzprüfung: alle PVS-Datensätze gegen Rohdaten, gleiche Systeme über Datensätze gleich. Glätteprüfung 0 Sprünge für alle 6 Line Races, jetzt Standardliste. Recherchen Tierarzt-PVS und Labor gestartet. |
 | 6 | 22.10.2026 | Datensatz `pvs-saldo` (Post 5): Veränderung seit Ende 2021 für die zwei größten Gewinner (medatixx +3.654, tomedo +2.872) und Verlierer (TURBOMED −3.385, MEDISTAR −2.375), nur Differenzen belegter Werte; der Generator prüft bei jeder KBV-Ausgabe, ob die Auswahl noch stimmt. Line Race mit negativen Werten geprüft (Achse korrekt), Glätte 0 Sprünge, Untertitel gekürzt (war abgeschnitten). Konsistenzprüfung: Saldo gegen Rohdaten. |
 | 7 | 22.10.2026 | Post 8: Datensätze `aerzte-praxisform` (Ärzte nach Praxisform 2015–2025 ohne Psychotherapeuten; alle 11 Jahre exakt wie die Recherche-Tabelle, Generator prüft 2015 fest und 2025 auf zwei Rechenwegen) und `mvz-anzahl` (MVZ gesamt und Krankenhaus-MVZ 2004–2025, alle belegt). Glätte 0 Sprünge. Konsistenzprüfung prüft jetzt auch die Zahlen in den Dateninfos; dabei eine Rundung (150.000 statt 150.450) durch den genauen Wert ersetzt. |
+| – | 22.10.2026 | Zwischen D7 und D8: Labor-Recherche übernommen, Kernzahlen an der Rohdatei geprüft (88,5 % angestellt, 2013: 68,0 %). Datensatz `labor-aerzte` (2013–2025, alle belegt), Post 11 neu gefasst: „Das Labor ist ein Angestelltenfach geworden“. Damit haben alle Posts 2–11 Daten. |

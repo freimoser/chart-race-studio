@@ -117,11 +117,11 @@ export const POSTS: RoadmapPost[] = [
   },
   {
     nr: 11, arc: 'vernetzung', status: 'geplant',
-    title: 'Wer die Laborbefunde liefert',
-    hook: 'Jeder Laborbefund läuft über eine Schnittstelle zwischen Labor und Praxissystem. Wie konzentriert ist die Labormedizin, und wie viele Befunde gehen digital?',
-    figures: ['Zahl der Laborpraxen und Laborgruppen (Konzentration)', 'Laborleistungen in der vertragsärztlichen Versorgung (KBV, Volumen)', 'LDT-3-Zulassungen auf Laborseite'],
-    dataStatus: 'offen',
-    dataNote: 'Recherche Labor (Pflegeprotokoll A10). Zielgruppe Labore direkt ansprechen; FleXChange-Bezug (Labor-Order-Entry) nur als offener Hinweis.',
+    title: 'Das Labor ist ein Angestelltenfach geworden',
+    hook: 'Ende 2025 sind 88,5 Prozent der Laborärztinnen und -ärzte in der Kassenversorgung angestellt, 2013 waren es 68,0 Prozent. Mit eigener Zulassung arbeiten noch 99. Für alle, die Schnittstellen bauen: Die Gegenseite der Praxissoftware ist ein Labor-MVZ, keine Einzelpraxis.',
+    figures: ['Laborärzte im Bundesarztregister: 1.166 (2013) → 1.386 (2025), davon angestellt in MVZ und Einrichtungen 793 → 1.226', 'Mit eigener Zulassung: 288 → 99; Vertragsärzte in Einzelpraxen 92 → 35', 'Zweitquelle BÄK (FA Laboratoriumsmedizin): niedergelassen 337 → 113, angestellt 329 → 725 (Bruch 2021/2022 beachten)', 'Seit 2025 Pauschale für ein System zur digitalen Auftragserteilung (GOP 40092): im 1. Quartal 2025 bei 80,5 Prozent der Fälle mit Transportpauschale – misst Bereitstellung, nicht digitale Aufträge aus der Praxissoftware'],
+    sampleId: 'labor-aerzte', chart: 'line', dataStatus: 'belegt',
+    dataNote: 'Recherche fertig: recherche/labor.md, data/raw/labor.csv. Keine Quelle für die Zahl der Laborpraxen oder Labor-MVZ; Konzentration nur über Sonic (Umsatz DE 2011–2026) und SYNLAB 2022/2023, Limbach/amedes ohne Stichtag. FleXChange-Bezug (Labor-Order-Entry) nur als offener Hinweis.',
     refs: [6],
   },
 ]

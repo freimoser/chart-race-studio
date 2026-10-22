@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { AERZTE_PRAXISFORM, MVZ_ANZAHL, EARZTBRIEF_MONAT, LABORDATEN_PB, PVS_ARZT, PVS_ARZT_2007, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
+import { AERZTE_PRAXISFORM, LABOR_AERZTE, MVZ_ANZAHL, EARZTBRIEF_MONAT, LABORDATEN_PB, PVS_ARZT, PVS_ARZT_2007, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -227,6 +227,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: MVZ_ANZAHL.headers,
     rows: MVZ_ANZAHL.rows,
     suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'MVZ', colors: { 'MVZ gesamt': BLAU, 'davon Krankenhaus als Träger': ORANGE } },
+  },
+  {
+    id: 'labor-aerzte',
+    erstellt: '2026-10-22', geprueft: '2026-10-22',
+    category: 'versorgung',
+    title: 'Das Labor ist ein Angestelltenfach geworden',
+    subtitle: 'Laborärztinnen und -ärzte in der vertragsärztlichen Versorgung (Laboratoriumsmedizin und Mikrobiologie)',
+    source: 'Quelle: KBV, Bundesarztregister, Fachgruppe Laboratoriumsmedizin einschließlich Mikrobiologie, Jahresende 2013–2025',
+    sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/gesundheitsdaten',
+    unit: 'Personen',
+    description: '88,5 Prozent der Laborärztinnen und -ärzte in der Kassenversorgung sind angestellt (2013: 68,0); mit eigener Zulassung arbeiten nur noch 99.',
+    dataInfo: [
+      'Gezählt werden Personen der Fachgruppe Laboratoriumsmedizin einschließlich Mikrobiologie im Bundesarztregister der KBV, die an der vertragsärztlichen Versorgung teilnehmen. „Angestellt in MVZ und Einrichtungen“ und „mit eigener Zulassung“ sind zwei der Teilnahmeformen; Ermächtigte, Angestellte in freier Praxis und Jobsharing fehlen im Bild (2025 zusammen 61).',
+      'Alle Werte sind belegt, keiner ist gerechnet. 2025: 1.386 Laborärztinnen und -ärzte, davon 1.226 angestellt in Einrichtungen, 99 mit Zulassung; Vertragsärzte in Einzelpraxen 35 (2013: 92).',
+      'Zweitquelle: Die Ärztestatistik der Bundesärztekammer zeigt für Fachärztinnen und Fachärzte für Laboratoriumsmedizin dieselbe Richtung (niedergelassen 337 auf 113, angestellt 329 auf 725, 2013–2025), hat aber 2021/2022 einen Sprung (niedergelassen 220 auf 150), den das Bundesarztregister nicht zeigt. Deshalb zeigt die Grafik nur das Bundesarztregister.',
+    ],
+    headers: LABOR_AERZTE.headers,
+    rows: LABOR_AERZTE.rows,
+    suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'Personen', colors: { 'Angestellt in MVZ und Einrichtungen': ORANGE, 'Mit eigener Zulassung': BLAU } },
   },
   {
     id: 'pvs-hersteller',

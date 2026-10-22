@@ -237,6 +237,25 @@ export const MVZ_ANZAHL = {
   ],
 }
 
+export const LABOR_AERZTE = {
+  headers: ["Jahr","Angestellt in MVZ und Einrichtungen","Mit eigener Zulassung"],
+  rows: [
+    ["2013", 793, 288],
+    ["2014", 849, 237],
+    ["2015", 885, 220],
+    ["2016", 932, 195],
+    ["2017", 988, 177],
+    ["2018", 1009, 170],
+    ["2019", 1060, 164],
+    ["2020", 1090, 150],
+    ["2021", 1097, 148],
+    ["2022", 1147, 147],
+    ["2023", 1188, 120],
+    ["2024", 1202, 104],
+    ["2025", 1226, 99],
+  ],
+}
+
 export const LABORDATEN_PB = {
   headers: ["Jahr","Labordaten digital empfangen","Labordaten digital gesendet"],
   rows: [
