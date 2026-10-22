@@ -53,5 +53,16 @@
     "geaendert": "2026-10-22",
     "bereit": true,
     "live": false
+  },
+  {
+    "post": 6,
+    "slug": "labordaten-ldt-praxissoftware",
+    "titel": "Labordaten in der Arztpraxis: LDT-Befunde ja, Aufträge kaum",
+    "beschreibung": "95,8 Prozent der Installationen laufen auf Systemen mit LDT-Befund-Import. Labordaten digital senden aber nur 39 Prozent der Arztpraxen.",
+    "frage": "Welche Praxissoftware kann LDT 3?",
+    "stand": "2026-10-22",
+    "geaendert": "2026-10-22",
+    "bereit": true,
+    "live": false
   }
 ]
