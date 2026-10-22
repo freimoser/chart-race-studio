@@ -353,7 +353,7 @@ export const SAMPLES: SampleDataset[] = [
     dataInfo: [
       "Bestand in Millionen laut Haushaltsbefragung der Verbände. Ein nationales Heimtierregister gibt es nicht, alle Zahlen sind Hochrechnungen aus Umfragen.",
       "Lücken: 1992 überspringt die Verbandsreihe selbst. Aquarien fehlen 1999, weil die Quelle jenes Jahres Zierfische zählt (84,6 Millionen) statt Aquarien. Terrarien werden erst ab 2002 getrennt ausgewiesen.",
-      "Als Sprünge sichtbare Methodenwechsel: 1994 neue Berechnung der Ziervögel, 1999 Wechsel der Quelle, 2002 Aufteilung der Aquarien in Aquarien, Gartenteiche und Terrarien, 2012 erste repräsentative Erhebung, 2013 erneute Umstellung.",
+      "Als Sprünge sichtbare Methodenwechsel: 1994 neue Berechnung der Ziervögel, 1999 Wechsel der Quelle, 2002 Aufteilung der Aquarien in Aquarien, Gartenteiche und Terrarien, 2012 erste repräsentative Erhebung, 2013 erneute Umstellung. Gegenprobe Hunde: Die Hundesteuer der Gemeinden (Destatis 71211-0001) wuchs 2012 nur um 4,6 Prozent, die gezählten Hunde um 37 Prozent – der Sprung ist Methode, kein Hundeboom.",
       "Korrigiert gegenüber früheren Ständen: Die zunächst als 1999 geführten Werte stammten aus 1996, und Katzen 2003 sind 7,3 Millionen, nicht 7,5.",
     ],
     headers: HEIMTIERE.headers,
