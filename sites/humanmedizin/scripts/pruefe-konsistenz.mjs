@@ -139,6 +139,16 @@ K['Neue 2013'] = de(hs(2013, 3)); K['Neue 2025'] = de(hs(2025, 3))
   if (!(p(2023, 'Elefant') > p(2023, 'CGM MEDISTAR') && p(2022, 'Elefant') < p(2022, 'CGM MEDISTAR'))) fehler.push('Post 3: Elefant überholt MEDISTAR nicht 2023')
   if (!(p(2024, 'psyprax') > p(2024, 'CGM MEDISTAR') && p(2023, 'psyprax') < p(2023, 'CGM MEDISTAR'))) fehler.push('Post 3: psyprax überholt MEDISTAR nicht 2024')
 }
+// Aufsteiger (Post 4): Jahreswachstum 2025 aus den Quartalswerten (Q4/2024 → Q4/2025).
+{
+  const q = (st, n) => Number(INST.find((r) => r.stichtag === st && r.system === n)?.installationen ?? NaN)
+  for (const [n, k] of [['tomedo', 'tomedo'], ['T2med', 'T2med'], ['Medical Office', 'Medical Office'], ['CGM MEDISTAR (BLACK PRO)', 'MEDISTAR'], ['TURBOMED', 'TURBOMED'], ['ETERNO Cloud (ehem. inSuite)', 'ETERNO']]) {
+    const a = q('2024-12-31', n), b = q('2025-12-31', n)
+    K[`2025 Veränderung ${k}`] = prozent(Math.abs(b - a), a, 1); K[`2025 Differenz ${k}`] = de(Math.abs(b - a))
+  }
+  K['tomedo+T2med 2025'] = de(wert(A, 2025, 'tomedo') + wert(A, 2025, 'T2med'))
+  K['Mac-Linux-Browser 2025'] = de(wert(A, 2025, 'tomedo') + wert(A, 2025, 'T2med') + wert(A, 2025, 'ETERNO Cloud'))
+}
 // Welche Kennzahl muss in welchem Text stehen.
 const ERWARTET = {
   [`${H}/content/artikel/01-praxissoftware-arztpraxen-marktanteile.md`]: ['MEDISTAR 2025', 'MEDISTAR 2013', 'TURBOMED 2025', 'TURBOMED 2013', 'medatixx 2025', 'x.isynet 2025', 'Medical Office 2013', 'Medical Office 2025', 'tomedo 2025', 'T2med 2025', 'Summe Arztsysteme 2013', 'Summe Arztsysteme 2025', 'Rückgang Arztsysteme', 'CGM-Anteil 2013', 'CGM-Anteil 2025', 'MEDISTAR-Anteil 2025', 'CGM 2013', 'CGM 2025', 'Gerechnet kurz', 'Sichtbar gerechnet lang'],
@@ -146,6 +156,7 @@ const ERWARTET = {
   [`${H}/seiten/artikel/datenherkunft.html`]: ['Gerechnet lang', 'Sichtbar gerechnet lang'],
   [`${H}/samples/index.ts`]: ['Gerechnet lang', 'Sichtbar gerechnet lang'],
   [`${H}/docs/DATASETS.md`]: ['Gerechnet lang'],
+  [`${H}/content/artikel/04-praxissoftware-aufsteiger-tomedo-t2med.md`]: ['tomedo 2025', 'T2med 2025', 'Medical Office 2013', 'Medical Office 2025', '2025 Veränderung tomedo', '2025 Veränderung T2med', '2025 Veränderung MEDISTAR', '2025 Veränderung TURBOMED', '2025 Veränderung Medical Office', '2025 Differenz tomedo', '2025 Differenz T2med', 'tomedo+T2med 2025', 'Mac-Linux-Browser 2025'],
   [`${H}/content/artikel/03-psychotherapie-software-elefant-psyprax.md`]: ['Elefant 2025', 'psyprax 2025', 'MEDISTAR 2025', 'Elefant 2023', 'MEDISTAR 2023', 'psyprax 2024', 'MEDISTAR 2024', 'Wachstum Elefant', 'Wachstum Epikur', 'Wachstum psyprax', 'Rückgang MEDISTAR', 'Gerechnet Psycho'],
   [`${H}/content/artikel/02-praxissoftware-hersteller-cgm-medatixx.md`]: ['CGM 2013', 'CGM 2025', 'medatixx 2013 (Hersteller)', 'medatixx 2025 (Hersteller)', 'Anteil CGM 2013', 'Anteil CGM 2025', 'Anteil medatixx 2025', 'Anteil Neue 2013', 'Anteil Neue 2025', 'Neue 2013', 'Neue 2025', 'medatixx ohne EL 2025', 'Summe Arztsysteme 2025', 'Rückgang Arztsysteme'],
   [`${H}/content/roadmap.ts`]: ['LDT-Befund-Anteil', 'eArztbrief-Anteil', 'eArztbriefe 2023', 'eArztbriefe 2024', 'eArztbriefe 2025', 'eArztbriefe 2026 bis Sep'],
