@@ -240,7 +240,7 @@ export const SAMPLES: SampleDataset[] = [
     description: '88,5 Prozent der Laborärztinnen und -ärzte in der Kassenversorgung sind angestellt (2013: 68,0); mit eigener Zulassung arbeiten nur noch 99.',
     dataInfo: [
       'Gezählt werden Personen der Fachgruppe Laboratoriumsmedizin einschließlich Mikrobiologie im Bundesarztregister der KBV, die an der vertragsärztlichen Versorgung teilnehmen. „Angestellt in MVZ und Einrichtungen“ und „mit eigener Zulassung“ sind zwei der Teilnahmeformen; Ermächtigte, Angestellte in freier Praxis und Jobsharing fehlen im Bild (2025 zusammen 61).',
-      'Alle Werte sind belegt, keiner ist gerechnet. 2025: 1.386 Laborärztinnen und -ärzte, davon 1.226 angestellt in Einrichtungen, 99 mit Zulassung; Vertragsärzte in Einzelpraxen 35 (2013: 92).',
+      'Alle Werte sind belegt, keiner ist gerechnet. 2025: 1.386 Laborärztinnen und -ärzte, davon 1.226 angestellt in Einrichtungen, 99 mit Zulassung; Vertragsärzte in Einzelpraxen 35 (2013: 92, beide aus Tabelle 5 summiert, also gerechnet).',
       'Zweitquelle: Die Ärztestatistik der Bundesärztekammer zeigt für Fachärztinnen und Fachärzte für Laboratoriumsmedizin dieselbe Richtung (niedergelassen 337 auf 113, angestellt 329 auf 725, 2013–2025), hat aber 2021/2022 einen Sprung (niedergelassen 220 auf 150), den das Bundesarztregister nicht zeigt. Deshalb zeigt die Grafik nur das Bundesarztregister.',
     ],
     headers: LABOR_AERZTE.headers,

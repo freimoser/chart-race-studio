@@ -210,6 +210,21 @@ K['Neue 2013'] = de(hs(2013, 3)); K['Neue 2025'] = de(hs(2025, 3))
   K['CGM+medatixx 2025'] = prozent(hs(2025, 1) + hs(2025, 2), s, 1)
   K['Summe alle 2025'] = de(Number(INST.find((r) => r.stichtag === '2025-12-31' && r.system === '__SUMME__').installationen))
 }
+// Labor (Post 11): Anteil angestellt, Rückgang Zulassung, Vertragsärzte in Einzelpraxen aus Tabelle 5.
+{
+  const L = leseCsv(path.join(RAW, 'labor.csv')), l = (j, r) => Number(L.find((x) => x.stichtag === `${j}-12-31` && x.reihe === r)?.wert)
+  const reihen = [...new Set(L.map((x) => x.reihe))]
+  const ges = reihen.find((r) => /bar.*gesamt/.test(r)), ein = reihen.find((r) => /bar.*angestellt_einrichtung(en)?$/.test(r))
+  if (!ges || !ein) fehler.push(`Post 11: Reihen in labor.csv nicht gefunden (${reihen.filter((r) => r.startsWith('bar')).join(', ')})`)
+  else {
+    for (const j of [2013, 2025]) K[`Labor angestellt ${j}`] = prozent(l(j, ein), l(j, ges), 1)
+    const LA = D.LABOR_AERZTE, z = (j) => LA.rows.find((r) => r[0] === String(j))
+    K['Labor Zulassung Rückgang'] = prozent(z(2013)[2] - z(2025)[2], z(2013)[2], 1)
+    if (z(2025)[1] !== l(2025, ein)) fehler.push('Post 11: Datensatz labor-aerzte ≠ labor.csv (angestellt 2025)')
+    const ep = (j) => l(j, 'bar_labor_t5_ep_vertragsaerzte_mit_angestellten') + l(j, 'bar_labor_t5_ep_vertragsaerzte_ohne_angestellte')
+    K['Labor EP'] = `noch ${ep(2025)} Laborärztinnen und -ärzte mit Zulassung, 2013 waren es ${ep(2013)}`
+  }
+}
 // Welche Kennzahl muss in welchem Text stehen.
 const ERWARTET = {
   [`${H}/content/artikel/01-praxissoftware-arztpraxen-marktanteile.md`]: ['MEDISTAR 2025', 'MEDISTAR 2013', 'TURBOMED 2025', 'TURBOMED 2013', 'medatixx 2025', 'x.isynet 2025', 'Medical Office 2013', 'Medical Office 2025', 'tomedo 2025', 'T2med 2025', 'Summe Arztsysteme 2013', 'Summe Arztsysteme 2025', 'Rückgang Arztsysteme', 'CGM-Anteil 2013', 'CGM-Anteil 2025', 'MEDISTAR-Anteil 2025', 'CGM 2013', 'CGM 2025', 'Gerechnet kurz', 'Sichtbar gerechnet lang'],
@@ -226,6 +241,7 @@ const ERWARTET = {
   [`${H}/content/artikel/08-mvz-einzelpraxis-aerzte.md`]: ['Ärzte gesamt 2015', 'Ärzte gesamt 2025', 'MVZ-Anteil 2015', 'MVZ-Anteil 2025', 'Köpfe Einzelpraxis Rückgang', 'Arztsysteme 2015', 'Summe Arztsysteme 2025', 'Angestellte EP 2015', 'Angestellte EP 2025', 'Solo-EP Rückgang', 'KH-MVZ-Anteil', 'MVZ angestellt', 'ärztliche EP Rückgang'],
   [`${H}/content/artikel/09-krankenhaus-software-ambulant-kis.md`]: ['KIS 2013', 'KIS 2025', 'KIS-Anteil 2013', 'KIS-Anteil 2025', 'ORBIS-Anteil KIS', 'SAP Wachstum', 'KIS plus 2015–2025', 'KH-MVZ plus 2015–2025', 'Gerechnet KIS'],
   [`${H}/content/artikel/10-pvs-statistik-kbv-methode.md`]: ['Top 3 Anteil', 'Top 5 Anteil', 'Anteil CGM 2025', 'Anteil medatixx 2025', 'Anteil INDAMED 2025', 'Anteil Zollsoft 2025', 'Anteil T2med 2025', 'CGM+medatixx 2025', 'Summe alle 2025', 'medatixx 2025 (Hersteller)', 'KIS-Anteil 2025'],
+  [`${H}/content/artikel/11-labor-angestellte-laboraerzte.md`]: ['Labor angestellt 2013', 'Labor angestellt 2025', 'Labor Zulassung Rückgang', 'Labor EP'],
   [`${H}/content/roadmap.ts`]: ['LDT-Befund-Anteil', 'eArztbrief-Anteil', 'eArztbriefe 2023', 'eArztbriefe 2024', 'eArztbriefe 2025', 'eArztbriefe 2026 bis Sep'],
 }
 for (const [datei, liste] of Object.entries(ERWARTET)) {
