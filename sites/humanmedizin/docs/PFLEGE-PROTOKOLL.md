@@ -22,7 +22,7 @@ untereinander korrekt. Plane die nächsten 10 Posts und sammle die Daten dazu. M
 | A8 | Datensatz Wechsel/Nettoveränderung je System (Post 5) | erledigt (D6): `pvs-saldo` |
 | A9 | Recherche Tiermedizin-PVS (Post 10), Abgleich mit Schwesterseite | erledigt: keine Marktanteile belegbar, Post 10 neu gefasst; Recherche-Notiz lokal (Entscheidung Nutzer offen: enthält Angaben zur Petleo-Beteiligung) |
 | A10 | Recherche Labor (Post 11) | erledigt: recherche/labor.md, data/raw/labor.csv; Datensatz `labor-aerzte` |
-| A11 | Artikelentwürfe zu den Posts mit belegten Daten | läuft: Post 2 (D8), 3 (D9), 4 (D10), 5 (D11), 6 (D12) |
+| A11 | Artikelentwürfe zu den Posts mit belegten Daten | läuft: Post 2 (D8), 3 (D9), 4 (D10), 5 (D11), 6 (D12), 7 (D13) |
 
 ## Durchläufe
 
@@ -42,3 +42,4 @@ untereinander korrekt. Plane die nächsten 10 Posts und sammle die Daten dazu. M
 | 10 | 22.10.2026 | Artikelentwurf Post 4 (`praxissoftware-aufsteiger-tomedo-t2med`), mit Jahreswachstum 2025 aus den belegten Quartalswerten (tomedo +34,8 %, T2med +22,4 %, MEDISTAR −7,3 %, TURBOMED −11,3 %). Zwei eigene Ungenauigkeiten korrigiert (tomedo läuft nur auf dem Mac; Neugründungsanteil nicht belegt). Halbzeit: alle 10 Posts haben Daten, Artikel 1–4 stehen. |
 | 11 | 22.10.2026 | Artikelentwurf Post 5 (`praxissoftware-wechsel-gewinner-verlierer`). **Fehler in eigenem Plan und Dateninfo korrigiert:** Die Summen 13.667/15.139 gelten nur für die 40 Systeme mit mindestens einmal 500 Installationen, nicht „über alle Systeme“ (alle 126: −2.451, erfasste 40: −1.472). Unbelegte Jahresangabe zu § 371 SGB V gestrichen. Konsistenzprüfung prüft 9 Kennzahlen des Artikels. |
 | 12 | 22.10.2026 | Artikelentwurf Post 6 (`labordaten-ldt-praxissoftware`). LDT-Anteil an allen archivierten Ständen seit 01/2022 gleich (95,8 %); GOP-40092-Verhältnis nachgerechnet (80,5 %). Die Recherche-Angabe „digitales Muster 10: 15,1 %“ ist mit unseren Rohdaten nicht prüfbar und bleibt weg. Zwei Aussagen auf das Belegte zurückgenommen (Auftragssysteme der Labore). Alle im FAQ genannten Systeme gegen das Verzeichnis geprüft. |
+| 13 | 22.10.2026 | Artikelentwurf Post 7 (`earztbrief-kim-zahlen`). KIM-Verkehr 2025 aus den gematik-Zählern nachgerechnet: 256,7 Mio. Nachrichten, davon 114,0 Mio. eAU und 45,2 Mio. eArztbriefe (rund 18 Prozent). Konsistenzprüfung prüft jetzt, dass die Jahressumme der Monatswerte gleich der Differenz der Jahresendstände ist. Im FAQ genannte Systeme gegen das eArztbrief-Verzeichnis geprüft; Medical Office „derzeit nicht im Verzeichnis“. Ohne Kennzahl-Leiste (Rubrik Vernetzung hat keine). |

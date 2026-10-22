@@ -122,6 +122,12 @@ const K = {
   const mio = (n) => (n / 1e6).toFixed(1).replace('.', ',') + ' Mio'
   for (const j of ['2023', '2024', '2025']) K[`eArztbriefe ${j}`] = mio(jahr(j))
   K['eArztbriefe 2026 bis Sep'] = mio(jahr('2026'))
+  // KIM-Verkehr 2025 aus den kumulierten Zählern (Jahresendstände), eArztbrief-Anteil daran (Post 7).
+  const T = leseCsv(path.join(RAW, 'ti-nutzung.csv')), z = (r, st) => Number(T.find((x) => x.reihe === r && x.stichtag === st)?.wert)
+  const j25 = (r) => z(r, '2025-12-31') - z(r, '2024-12-31')
+  K['KIM 2025'] = mio(j25('kim_nachrichten_gesamt_kumuliert')).replace('Mio', 'Millionen'); K['eAU 2025'] = mio(j25('kim_eau_an_kassen_kumuliert')).replace('Mio', 'Millionen')
+  K['eArztbrief am KIM 2025'] = `${Math.round(j25('kim_earztbriefe_kumuliert') / j25('kim_nachrichten_gesamt_kumuliert') * 100)} Prozent`
+  if (Math.abs(j25('kim_earztbriefe_kumuliert') - jahr('2025')) > 0) fehler.push('Post 7: eArztbriefe 2025 aus Monaten ≠ Jahresendstände')
   const L = leseCsv(path.join(RAW, 'labor.csv')), g = (r) => Number(L.find((x) => x.reihe === r && x.stichtag === '2025-03-31')?.wert)
   K['GOP 40092 Anteil'] = prozent(g('gop_40092_alle'), g('gop_40094_alle'), 1)
 }
@@ -176,6 +182,7 @@ const ERWARTET = {
   [`${H}/content/artikel/04-praxissoftware-aufsteiger-tomedo-t2med.md`]: ['tomedo 2025', 'T2med 2025', 'Medical Office 2013', 'Medical Office 2025', '2025 Veränderung tomedo', '2025 Veränderung T2med', '2025 Veränderung MEDISTAR', '2025 Veränderung TURBOMED', '2025 Veränderung Medical Office', '2025 Differenz tomedo', '2025 Differenz T2med', 'tomedo+T2med 2025', 'Mac-Linux-Browser 2025'],
   [`${H}/content/artikel/03-psychotherapie-software-elefant-psyprax.md`]: ['Elefant 2025', 'psyprax 2025', 'MEDISTAR 2025', 'Elefant 2023', 'MEDISTAR 2023', 'psyprax 2024', 'MEDISTAR 2024', 'Wachstum Elefant', 'Wachstum Epikur', 'Wachstum psyprax', 'Rückgang MEDISTAR', 'Gerechnet Psycho'],
   [`${H}/content/artikel/02-praxissoftware-hersteller-cgm-medatixx.md`]: ['CGM 2013', 'CGM 2025', 'medatixx 2013 (Hersteller)', 'medatixx 2025 (Hersteller)', 'Anteil CGM 2013', 'Anteil CGM 2025', 'Anteil medatixx 2025', 'Anteil Neue 2013', 'Anteil Neue 2025', 'Neue 2013', 'Neue 2025', 'medatixx ohne EL 2025', 'Summe Arztsysteme 2025', 'Rückgang Arztsysteme'],
+  [`${H}/content/artikel/07-earztbrief-kim-zahlen.md`]: ['eArztbrief-Anteil', 'eArztbriefe 2023', 'eArztbriefe 2024', 'eArztbriefe 2025', 'eArztbriefe 2026 bis Sep', 'KIM 2025', 'eAU 2025', 'eArztbrief am KIM 2025'],
   [`${H}/content/roadmap.ts`]: ['LDT-Befund-Anteil', 'eArztbrief-Anteil', 'eArztbriefe 2023', 'eArztbriefe 2024', 'eArztbriefe 2025', 'eArztbriefe 2026 bis Sep'],
 }
 for (const [datei, liste] of Object.entries(ERWARTET)) {
