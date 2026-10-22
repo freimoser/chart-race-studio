@@ -20,7 +20,7 @@ Das meistinstallierte Praxisverwaltungssystem in der Statistik der Kassenärztli
 
 ## Warum eine Psychotherapie-Software vorn liegt
 
-Die KBV zählt Installationen, also Abrechnungen mit der Prüfnummer eines Systems. Psychologische Psychotherapeutinnen und -therapeuten arbeiten überwiegend in Einzelpraxen, Ende 2025 31.753 von 35.999 (88 Prozent), und jede Einzelpraxis zählt als eine Installation. Bei den Ärztinnen und Ärzten geht der Trend in die Gegenrichtung: in MVZ, wo viele Ärzte an einer Installation arbeiten. Mehr psychotherapeutische Praxen bedeuten deshalb mehr Installationen; über die Größe der Praxen sagt die Zahl nichts.
+Die KBV zählt Installationen, also Abrechnungen mit der Prüfnummer eines Systems. Psychologische Psychotherapeutinnen und -therapeuten arbeiten überwiegend in Einzelpraxen, Ende 2025 31.753 von 35.999 (88 Prozent), und jede Einzelpraxis zählt als eine Installation. Bei den Ärztinnen und Ärzten geht der Trend in die Gegenrichtung: in MVZ, wo viele Ärzte an einer Installation arbeiten. Mehr psychotherapeutische Praxen bedeuten deshalb mehr Installationen; über die Größe der Praxen sagt die Zahl nichts. Weitere Fallen der KBV-Statistik stehen in [Wer zählt die Praxissoftware?](pvs-statistik-kbv-methode.html)
 
 Der Markt der Psychotherapie ist eigenständig. Die drei größten Systeme dort gehören weder zu CompuGroup Medical noch zu medatixx: Elefant kommt von HASOMED aus Magdeburg, psyprax von der psyprax GmbH aus München, Epikur von Epikur Software aus Berlin. Dazu kommen SMARTY (4.982 Installationen) und PsychoDat (1.705).
 

@@ -27,7 +27,7 @@ Gemeinsam ist den drei Neuen, dass sie nicht aus einer der großen Gruppen komme
 ## Was die Zahl nicht sagt
 
 - **Installationen sind keine Praxen.** Die KBV zählt Abrechnungen mit der Prüfnummer eines Systems. Wie groß die Praxen hinter den Installationen sind, sagt die Zahl nicht.
-- **Wachstum ist nicht gleich Wechsel.** Die KBV zeigt nur, wie viele Installationen ein System hat, nicht, von welchem System eine Praxis kam. Neue Installationen können auch aus Neugründungen stammen; wie viele, ist nicht bekannt.
+- **Wachstum ist nicht gleich Wechsel.** Die KBV zeigt nur, wie viele Installationen ein System hat, nicht, von welchem System eine Praxis kam. Neue Installationen können auch aus Neugründungen stammen; wie viele, ist nicht bekannt. Salden je System seit 2021 zeigt [Gewinner und Verlierer](praxissoftware-wechsel-gewinner-verlierer.html).
 - **Medical Office 2017 ist unsicher.** Laut KBV-Anteil sprang Medical Office von 1.832 Installationen Ende 2016 auf rund 3.000 im Herbst 2017. Für 2021 hat die KBV Medical Office nachweislich doppelt gezählt und korrigiert; ob 2017 bis 2020 betroffen sind, ist offen.
 
 ## Gerechnet

@@ -22,7 +22,7 @@ In Medizinischen Versorgungszentren (MVZ) und anderen ärztlich geleiteten Einri
 
 Insgesamt arbeiten 2025 mehr Ärztinnen und Ärzte in der vertragsärztlichen Versorgung als 2015: 147.131 gegenüber 135.365. Die Installationen der 28 ärztlichen Praxissysteme in der KBV-Statistik sanken dagegen von 78.894 auf 68.191. Beides passt zusammen: Die KBV zählt Installationen, also Abrechnungen mit der Prüfnummer eines Systems, und ein MVZ mit sechs Ärztinnen und Ärzten zählt wie eine Einzelpraxis.
 
-Für Hersteller und Schnittstellenanbieter verschiebt sich damit der Kunde. Statt vieler Einzelpraxen mit einem Arzt kaufen weniger, größere Einheiten: mehrere Standorte, eine gemeinsame Datenbank, angestellte Nutzer mit Rollen und Rechten, bei jedem zweiten MVZ ein Krankenhaus als Träger.
+Für Hersteller und Schnittstellenanbieter verschiebt sich damit der Kunde. Statt vieler Einzelpraxen mit einem Arzt kaufen weniger, größere Einheiten: mehrere Standorte, eine gemeinsame Datenbank, angestellte Nutzer mit Rollen und Rechten, bei jedem zweiten MVZ ein Krankenhaus als Träger. Mit welcher Software Krankenhäuser ambulant abrechnen, zeigt [Krankenhaus-Software in der ambulanten Abrechnung](krankenhaus-software-ambulant-kis.html).
 
 ::grafik mvz-anzahl line
 

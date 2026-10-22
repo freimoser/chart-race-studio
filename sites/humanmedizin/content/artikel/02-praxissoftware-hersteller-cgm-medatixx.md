@@ -28,7 +28,7 @@ Die eigentliche Verschiebung findet außerhalb der beiden Gruppen statt. Medical
 
 ## Was die Zahl nicht sagt
 
-- **Installationen sind keine Praxen.** Die KBV zählt Abrechnungen mit der Prüfnummer eines Systems. Ein MVZ mit vielen Ärztinnen und Ärzten zählt wie eine Einzelpraxis; Hersteller mit Systemen für große Praxen erscheinen dadurch kleiner, als ihr Umsatz vermuten ließe.
+- **Installationen sind keine Praxen.** Die KBV zählt Abrechnungen mit der Prüfnummer eines Systems. Ein MVZ mit vielen Ärztinnen und Ärzten zählt wie eine Einzelpraxis; Hersteller mit Systemen für große Praxen erscheinen dadurch kleiner, als ihr Umsatz vermuten ließe. Was die Statistik genau misst, steht in [Wer zählt die Praxissoftware?](pvs-statistik-kbv-methode.html)
 - **Eigentümer am Stichtag.** Jedes System ist dem Hersteller zugeordnet, dem es am jeweiligen Jahresende gehörte. EL zählt deshalb erst ab 2022 zu medatixx.
 - **Ohne Psychotherapie und Klinik.** Elefant, psyprax und die Krankenhaussysteme sind nicht enthalten; die Anteile beziehen sich auf die 28 ärztlichen Systeme mit mindestens einmal 500 Installationen seit 2013.
 - **2017 bis 2020 sind gerechnet.** Die KBV hat für diese Jahre nur Anteile in Prozent veröffentlicht.
