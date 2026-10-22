@@ -202,6 +202,14 @@ K['Neue 2013'] = de(hs(2013, 3)); K['Neue 2025'] = de(hs(2025, 3))
   K['KH-MVZ plus 2015–2025'] = de(kh(2025) - kh(2015))
   if (!((ks(2025) - ks(2015)) / (kh(2025) - kh(2015)) < 0.25)) fehler.push('Post 9: Obergrenze „knapp ein Viertel“ stimmt nicht mehr')
 }
+// Konzentration (Post 10): größte drei und fünf Arztsysteme, Hersteller Ende 2025.
+{
+  const w = D.PVS_ARZT.headers.slice(1).map((n) => wert(D.PVS_ARZT, 2025, n)).sort((x, y) => y - x), s = summe(A, 2025)
+  K['Top 3 Anteil'] = prozent(w.slice(0, 3).reduce((a, b) => a + b, 0), s, 1); K['Top 5 Anteil'] = prozent(w.slice(0, 5).reduce((a, b) => a + b, 0), s, 1)
+  for (const [n, k] of [['Medical Office', 'INDAMED'], ['tomedo', 'Zollsoft'], ['T2med', 'T2med']]) K[`Anteil ${k} 2025`] = prozent(wert(A, 2025, n), s, 1)
+  K['CGM+medatixx 2025'] = prozent(hs(2025, 1) + hs(2025, 2), s, 1)
+  K['Summe alle 2025'] = de(Number(INST.find((r) => r.stichtag === '2025-12-31' && r.system === '__SUMME__').installationen))
+}
 // Welche Kennzahl muss in welchem Text stehen.
 const ERWARTET = {
   [`${H}/content/artikel/01-praxissoftware-arztpraxen-marktanteile.md`]: ['MEDISTAR 2025', 'MEDISTAR 2013', 'TURBOMED 2025', 'TURBOMED 2013', 'medatixx 2025', 'x.isynet 2025', 'Medical Office 2013', 'Medical Office 2025', 'tomedo 2025', 'T2med 2025', 'Summe Arztsysteme 2013', 'Summe Arztsysteme 2025', 'Rückgang Arztsysteme', 'CGM-Anteil 2013', 'CGM-Anteil 2025', 'MEDISTAR-Anteil 2025', 'CGM 2013', 'CGM 2025', 'Gerechnet kurz', 'Sichtbar gerechnet lang'],
@@ -217,6 +225,7 @@ const ERWARTET = {
   [`${H}/content/artikel/07-earztbrief-kim-zahlen.md`]: ['eArztbrief-Anteil', 'eArztbriefe 2023', 'eArztbriefe 2024', 'eArztbriefe 2025', 'eArztbriefe 2026 bis Sep', 'KIM 2025', 'eAU 2025', 'eArztbrief am KIM 2025'],
   [`${H}/content/artikel/08-mvz-einzelpraxis-aerzte.md`]: ['Ärzte gesamt 2015', 'Ärzte gesamt 2025', 'MVZ-Anteil 2015', 'MVZ-Anteil 2025', 'Köpfe Einzelpraxis Rückgang', 'Arztsysteme 2015', 'Summe Arztsysteme 2025', 'Angestellte EP 2015', 'Angestellte EP 2025', 'Solo-EP Rückgang', 'KH-MVZ-Anteil', 'MVZ angestellt', 'ärztliche EP Rückgang'],
   [`${H}/content/artikel/09-krankenhaus-software-ambulant-kis.md`]: ['KIS 2013', 'KIS 2025', 'KIS-Anteil 2013', 'KIS-Anteil 2025', 'ORBIS-Anteil KIS', 'SAP Wachstum', 'KIS plus 2015–2025', 'KH-MVZ plus 2015–2025', 'Gerechnet KIS'],
+  [`${H}/content/artikel/10-pvs-statistik-kbv-methode.md`]: ['Top 3 Anteil', 'Top 5 Anteil', 'Anteil CGM 2025', 'Anteil medatixx 2025', 'Anteil INDAMED 2025', 'Anteil Zollsoft 2025', 'Anteil T2med 2025', 'CGM+medatixx 2025', 'Summe alle 2025', 'medatixx 2025 (Hersteller)', 'KIS-Anteil 2025'],
   [`${H}/content/roadmap.ts`]: ['LDT-Befund-Anteil', 'eArztbrief-Anteil', 'eArztbriefe 2023', 'eArztbriefe 2024', 'eArztbriefe 2025', 'eArztbriefe 2026 bis Sep'],
 }
 for (const [datei, liste] of Object.entries(ERWARTET)) {
@@ -240,6 +249,8 @@ merke(roh(INST, '1997-12-31', 'ALBIS') + roh(INST, '1997-12-31', 'ALBIS ON WINDO
 bekannt.add('9.508')
 merke(['x.isynet (ehem. MCS-ISYNET)', 'x.concept (ehem. DOCconcept)', 'x.comfort (ehem. DOCcomfort)'].reduce((a, n) => a + roh(INST, '2021-12-31', n) - roh(INST, '2025-12-31', n), 0)) // Verlust der alten medatixx-Systeme 2021–2025
 bekannt.add('10.000')
+// Zweitquellen Post 10 (recherche/pvs-kbv-historie.md Abschnitt 10): rund 98.000 Praxen (AOK G+G 09/2026), „über 22.500 Praxen“ (medatixx.de 2026).
+bekannt.add('98.000'); bekannt.add('22.500')
 // Differenzen erstes/letztes Jahr je Reihe in den abgeleiteten Datensätzen (Texte nennen „5.757 weniger“ o. ä.).
 for (const T of [D.AERZTE_PRAXISFORM, D.MVZ_ANZAHL]) for (let i = 1; i < T.headers.length; i++) merke(Math.abs(T.rows.at(-1)[i] - T.rows[0][i])) // rund 10.000 Tierarztpraxen: Tierärzte Atlas 2024, belegt auf der Schwesterseite (sites/tiermedizin/seiten/artikel/tierarztketten-deutschland.html)
 // MVZ und Bundesarztregister (recherche/mvz.md): Rohwerte und die Ableitungen, die Texte zitieren.
