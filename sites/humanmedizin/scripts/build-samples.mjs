@@ -210,10 +210,41 @@ const LABORDATEN_PB = {
   rows: Object.keys(empfang).sort().map((j) => [j, empfang[j], versand[j]]),
 }
 
+// ---------- MVZ und Praxisformen (Post 8) ----------
+// Quellen und Definitionen: recherche/mvz.md. MVZ-Statistik (KBV) und Bundesarztregister weichen bei Personen bis
+// 2 Prozent ab – deshalb zwei getrennte Datensätze, nie in einer Grafik gemischt.
+const MV = csv('mvz.csv')
+const mv = (j, r) => { const x = MV.find((z) => z.stichtag === `${j}-12-31` && z.reihe === r); return x ? Number(x.wert) : null }
+// Ärztinnen und Ärzte nach Praxisform, ohne psychologische Psychotherapeutinnen und -therapeuten (Bundesarztregister).
+// 2016–2025: Personen der Praxisform minus Psychotherapeuten der Praxisform (KBV-Datenportal, gerechnet).
+// 2015: Summe der ärztlichen Spalten aus Tabelle 5 der Registerstatistik (gerechnet; Methode an 2025 geprüft).
+const t5 = (j, teil) => MV.filter((z) => z.stichtag === `${j}-12-31` && z.reihe.startsWith(`bar_t5_aerztlich_${teil}_`)).reduce((x, z) => x + Number(z.wert), 0)
+const PRAXISFORMEN = [['Einzelpraxis', 'einzelpraxis', 'ep'], ['Berufsausübungsgemeinschaft', 'bag', 'bag'], ['MVZ und andere Einrichtungen', 'mvz_einrichtung', 'einrichtung']]
+const AERZTE_PRAXISFORM = {
+  headers: ['Jahr', ...PRAXISFORMEN.map(([n]) => n)],
+  rows: Array.from({ length: 11 }, (_, i) => 2015 + i).map((j) => [String(j), ...PRAXISFORMEN.map(([, portal, tab]) => {
+    const p = mv(j, `bar_personen_${portal}`), q = mv(j, `bar_psych_psychotherapeuten_${portal}`)
+    return p != null && q != null ? p - q : t5(j, tab)
+  })]),
+}
+{
+  // Gegenprobe: Wo beide Wege möglich sind (2025), müssen sie übereinstimmen; Tabelle der Recherche 2015/2025.
+  const r25 = AERZTE_PRAXISFORM.rows.at(-1).slice(1), t25 = PRAXISFORMEN.map(([, , tab]) => t5(2025, tab))
+  if (r25.join() !== t25.join()) throw new Error(`aerzte-praxisform 2025: Portal ${r25} ≠ Tabelle 5 ${t25}`)
+  if (AERZTE_PRAXISFORM.rows[0].slice(1).join() !== '69860,51679,13826') throw new Error(`aerzte-praxisform 2015: ${AERZTE_PRAXISFORM.rows[0]}`)
+  for (const r of AERZTE_PRAXISFORM.rows) if (r.slice(1).some((v) => !(v > 0))) throw new Error(`aerzte-praxisform: Wert fehlt ${r}`)
+}
+// MVZ gesamt und mit Krankenhaus als Träger, 2004–2025 (KBV-MVZ-Statistik, alle Jahre belegt).
+const MVZ_ANZAHL = {
+  headers: ['Jahr', 'MVZ gesamt', 'davon Krankenhaus als Träger'],
+  rows: Array.from({ length: 22 }, (_, i) => 2004 + i).map((j) => [String(j), mv(j, 'mvz_anzahl'), mv(j, 'mvz_krankenhaus_mvz')]),
+}
+for (const r of MVZ_ANZAHL.rows) if (r.slice(1).some((v) => v == null)) throw new Error(`mvz-anzahl: Wert fehlt ${r}`)
+
 // ---------- Ausgabe ----------
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 fs.writeFileSync('sites/humanmedizin/samples/data.ts', `// Automatisch erzeugt von sites/humanmedizin/scripts/build-samples.mjs aus sites/humanmedizin/data/raw/ – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('LABORDATEN_PB', LABORDATEN_PB)].join('\n'))
+  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABORDATEN_PB', LABORDATEN_PB)].join('\n'))
 const sortiert = (l) => [...l].sort((a, b) => a.system.localeCompare(b.system) || a.jahr - b.jahr)
 fs.writeFileSync(path.join(RAW, 'pvs-gerechnet.json'), JSON.stringify({
   hinweis: 'Von sites/humanmedizin/scripts/build-samples.mjs erzeugt. Jeder Wert der Datensätze, der nicht direkt aus einem KBV-Bericht (Jahresende) stammt, mit Methode. pvs-hersteller ist die Summe von pvs-installationen und hat dieselben gerechneten Werte. Alles andere ist belegt (pvs-kbv-installationen.csv, pvs-kbv-luecken-1998-2012.csv).',

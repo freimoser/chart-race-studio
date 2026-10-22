@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { EARZTBRIEF_MONAT, LABORDATEN_PB, PVS_ARZT, PVS_ARZT_2007, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
+import { AERZTE_PRAXISFORM, MVZ_ANZAHL, EARZTBRIEF_MONAT, LABORDATEN_PB, PVS_ARZT, PVS_ARZT_2007, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -102,7 +102,7 @@ export const SAMPLES: SampleDataset[] = [
     source: 'Quelle: gematik, TI-Dashboard (kumulierter Zähler seit 01.08.2021); Monatswerte als Differenz gerechnet',
     sourceUrl: 'https://ti-lage.prod.ccs.gematik.solutions/d/_v5YC1HVk/ti-dashboard-verlauf-kim',
     unit: 'eArztbriefe',
-    description: 'Der eArztbrief ist Alltag geworden: von 150.000 im März 2022 auf gut 4 Millionen im Monat, 45,2 Millionen im Jahr 2025.',
+    description: 'Der eArztbrief ist Alltag geworden: von 150.450 im März 2022 auf gut 4 Millionen im Monat, 45,2 Millionen im Jahr 2025.',
     dataInfo: [
       'Gezählt werden eArztbriefe, die über KIM (Kommunikation im Medizinwesen) der Telematikinfrastruktur gesendet wurden, laut TI-Dashboard der gematik. Nicht enthalten sind Arztbriefe per Fax, Post oder anderen Diensten. Die Zahl sagt nichts darüber, wie viele Praxen senden.',
       'Gerechnet: Die gematik veröffentlicht einen Zähler seit 01.08.2021 (Stand jeweils 0 Uhr UTC). Jeder Monatswert ist die Differenz zweier Monatsendstände; ein Monat reicht dadurch vom Vortag des Monatsletzten bis zum Vortag des nächsten Monatsletzten. Die Jahressummen (2023: 14,4 Mio., 2024: 32,3 Mio., 2025: 45,2 Mio.) sind identisch mit den Differenzen der Jahresendstände.',
@@ -188,6 +188,45 @@ export const SAMPLES: SampleDataset[] = [
     headers: PVS_SALDO.headers,
     rows: PVS_SALDO.rows,
     suggested: { chartType: 'line', topN: 4, decimals: 0, primaryAxisLabel: 'Veränderung seit Ende 2021', colors: { 'CGM MEDISTAR': BLAU, 'CGM TURBOMED': '#e87ba4', medatixx: '#008300', tomedo: '#eda100' } },
+  },
+  {
+    id: 'aerzte-praxisform',
+    erstellt: '2026-10-22', geprueft: '2026-10-22',
+    category: 'versorgung',
+    title: 'Mehr Ärztinnen und Ärzte im MVZ, weniger in der Einzelpraxis',
+    subtitle: 'Ärztinnen und Ärzte in der vertragsärztlichen Versorgung nach Praxisform, ohne psychologische Psychotherapeuten',
+    source: 'Quelle: KBV, Bundesarztregister (Datenportal 2016–2025, Registerstatistik 2015); ohne Psychotherapeuten gerechnet',
+    sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/gesundheitsdaten',
+    unit: 'Personen',
+    description: 'In MVZ und anderen Einrichtungen arbeiten 2025 mehr als doppelt so viele Ärztinnen und Ärzte wie 2015, in Einzelpraxen 5.757 weniger.',
+    dataInfo: [
+      'Gezählt werden Personen im Bundesarztregister, die an der vertragsärztlichen Versorgung teilnehmen, nach der Praxisform, in der sie tätig sind: Einzelpraxis, Berufsausübungsgemeinschaft (Gemeinschaftspraxis) sowie MVZ und andere Einrichtungen. Es sind Köpfe, keine Vollzeitstellen und keine Praxen.',
+      'Gerechnet: Ohne psychologische Psychotherapeutinnen und -therapeuten, als Differenz der Personen je Praxisform und der Psychotherapeuten je Praxisform (2016–2025, KBV-Datenportal). 2015 als Summe der ärztlichen Spalten aus Tabelle 5 der Registerstatistik; dieselbe Rechnung ergibt für 2025 exakt die Werte des Datenportals.',
+      'Nicht verwechseln: Die Zahl der ärztlichen Einzelpraxen sank stärker (62.524 auf 50.701, minus 18,9 Prozent), weil heute mehr Ärzte als Angestellte in einer Einzelpraxis arbeiten. Mit psychotherapeutischen Einzelpraxen, die um 48 Prozent wuchsen, schrumpfen die Einzelpraxen insgesamt kaum.',
+      'MVZ-Statistik und Bundesarztregister zählen Personen in MVZ unterschiedlich (2025: 33.850 gegen 34.317 einschließlich Psychotherapeuten); deshalb stehen sie in getrennten Grafiken.',
+    ],
+    headers: AERZTE_PRAXISFORM.headers,
+    rows: AERZTE_PRAXISFORM.rows,
+    suggested: { chartType: 'line', topN: 3, decimals: 0, primaryAxisLabel: 'Ärztinnen und Ärzte', colors: { Einzelpraxis: BLAU, 'Berufsausübungsgemeinschaft': GRUEN, 'MVZ und andere Einrichtungen': ORANGE } },
+  },
+  {
+    id: 'mvz-anzahl',
+    erstellt: '2026-10-22', geprueft: '2026-10-22',
+    category: 'versorgung',
+    title: 'Medizinische Versorgungszentren seit 2004',
+    subtitle: 'Zugelassene MVZ in Deutschland zum Jahresende, davon mit einem Krankenhaus als Träger',
+    source: 'Quelle: KBV, Medizinische Versorgungszentren aktuell / MVZ-Statistik 2004–2025',
+    sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/mvz',
+    unit: 'MVZ',
+    description: 'Von 70 MVZ im Jahr 2004 auf 5.305 im Jahr 2025; jedes zweite hat heute ein Krankenhaus als Träger.',
+    dataInfo: [
+      'Gezählt werden zugelassene Medizinische Versorgungszentren zum Jahresende laut KBV, nicht Standorte. Alle Werte sind belegt, keiner gerechnet.',
+      'Methodenbrüche: Seit 2015 sind fachgleiche MVZ erlaubt, der jährliche Zuwachs springt von 83 (2015) auf 334 (2016). Baden-Württemberg zählt MVZ mit mehreren Betriebsstätten ab 2024 nur noch einmal (464 auf 445). Hamburg ist 2011 bis 2013 teils mit dem Stand Anfang 2011 enthalten.',
+      'Träger: Ein MVZ kann mehrere Träger haben; gezeigt ist die Zahl der MVZ mit einem Krankenhaus als Träger (2025: 2.659, 50,1 Prozent). In MVZ sind 94,7 Prozent der Ärztinnen und Ärzte angestellt (2025: 32.062 Angestellte, 1.788 Vertragsärzte).',
+    ],
+    headers: MVZ_ANZAHL.headers,
+    rows: MVZ_ANZAHL.rows,
+    suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'MVZ', colors: { 'MVZ gesamt': BLAU, 'davon Krankenhaus als Träger': ORANGE } },
   },
   {
     id: 'pvs-hersteller',

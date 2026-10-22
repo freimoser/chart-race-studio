@@ -152,7 +152,9 @@ merke(roh(LUE, '2000-06-30', 'ALBIS') + roh(LUE, '2000-06-30', 'ALBIS DOS (Altve
 merke(roh(INST, '1997-12-31', 'ALBIS') + roh(INST, '1997-12-31', 'ALBIS ON WINDOWS (eigene KBV-Zeile 1997)')) // ALBIS Ende 1997
 bekannt.add('9.508')
 merke(['x.isynet (ehem. MCS-ISYNET)', 'x.concept (ehem. DOCconcept)', 'x.comfort (ehem. DOCcomfort)'].reduce((a, n) => a + roh(INST, '2021-12-31', n) - roh(INST, '2025-12-31', n), 0)) // Verlust der alten medatixx-Systeme 2021–2025
-bekannt.add('10.000') // rund 10.000 Tierarztpraxen: Tierärzte Atlas 2024, belegt auf der Schwesterseite (sites/tiermedizin/seiten/artikel/tierarztketten-deutschland.html)
+bekannt.add('10.000')
+// Differenzen erstes/letztes Jahr je Reihe in den abgeleiteten Datensätzen (Texte nennen „5.757 weniger“ o. ä.).
+for (const T of [D.AERZTE_PRAXISFORM, D.MVZ_ANZAHL]) for (let i = 1; i < T.headers.length; i++) merke(Math.abs(T.rows.at(-1)[i] - T.rows[0][i])) // rund 10.000 Tierarztpraxen: Tierärzte Atlas 2024, belegt auf der Schwesterseite (sites/tiermedizin/seiten/artikel/tierarztketten-deutschland.html)
 // MVZ und Bundesarztregister (recherche/mvz.md): Rohwerte und die Ableitungen, die Texte zitieren.
 for (const r of leseCsv(path.join(RAW, 'ti-nutzung.csv'))) merke(Number(r.wert))
 if (fs.existsSync(path.join(RAW, 'mvz.csv'))) {
@@ -186,7 +188,7 @@ const texte = [
   ...fs.readdirSync(path.join(H, 'content/artikel')).filter((f) => f.endsWith('.md')).map((f) => path.join(H, 'content/artikel', f)),
   ...fs.readdirSync(path.join(H, 'docs/linkedin')).filter((f) => f.endsWith('.md')).map((f) => path.join(H, 'docs/linkedin', f)),
   path.join(H, 'seiten/artikel/praxisverwaltungssysteme-deutschland.html'), path.join(H, 'seiten/artikel/datenherkunft.html'),
-  path.join(H, 'content/roadmap.ts'),
+  path.join(H, 'content/roadmap.ts'), path.join(H, 'samples/index.ts'),
 ]
 const ERLAUBT = new Set(['1.997', '2.000', '2.005', '2.007', '2.013', '2.025']) // Jahreszahlen mit Punkt kommen nicht vor, nur zur Sicherheit
 for (const datei of texte) {
