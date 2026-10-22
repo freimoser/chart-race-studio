@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { PVS_ARZT, PVS_ARZT_2007, PVS_HERSTELLER } from './data.ts'
+import { PVS_ARZT, PVS_ARZT_2007, PVS_HERSTELLER, PVS_PSYCHO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -68,6 +68,30 @@ export const SAMPLES: SampleDataset[] = [
     headers: PVS_ARZT_2007.headers,
     rows: PVS_ARZT_2007.rows,
     suggested: { chartType: 'bar', topN: 20, decimals: 0, colors: farbenFuer(PVS_ARZT_2007.headers), legende: LEGENDE, labelsPosition: 'outside', animationSec: 40 },
+  },
+  {
+    id: 'pvs-psychotherapie',
+    erstellt: '2026-10-22', geprueft: '2026-10-22',
+    category: 'software',
+    title: 'Psychotherapie-Software überholt MEDISTAR',
+    subtitle: 'Installationen laut KBV, Jahresende: das größte Arztsystem gegen die drei größten Systeme der Psychotherapie',
+    source: 'Quelle: KBV, Installationsstatistik Systeme (Q4/2013–Q4/2016, Q4/2021–Q4/2025); 2017–2020 aus KBV-Anteilen gerechnet',
+    sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/pvs-installationsstatistiken',
+    unit: 'Installationen',
+    description: 'Seit Ende 2023 ist das meistinstallierte System der KBV-Statistik keine Arztsoftware: Elefant überholt CGM MEDISTAR, 2024 auch psyprax.',
+    dataInfo: [
+      'Gezählt werden Installationen laut KBV-Installationsstatistik, also Abrechnungen eines Quartals mit der Prüfnummer eines Systems, nicht Praxen oder Personen. Eine psychotherapeutische Einzelpraxis zählt wie ein großes MVZ; Systeme mit vielen Einzelpraxen erscheinen dadurch groß.',
+      'Elefant, psyprax und Epikur laufen zu 97, 96 und 94 Prozent in der KBV-Arztgruppe Psychotherapeuten (Ende 2025, KBV-Bericht je Arztgruppe). CGM MEDISTAR ist das größte System für ärztliche Praxen. Die Arztgruppe Psychotherapeuten wuchs von 10,6 Prozent aller Installationen (2007) auf rund 30 Prozent (2025).',
+      'Gerechnet: Für 2017 bis 2020 hat die KBV nur Anteile veröffentlicht (Q3/2017, Q3/2020). Installationen = Anteil × Gesamtzahl, die Gesamtzahl linear zwischen Ende 2016 und Ende 2021, die Jahresenden linear zwischen diesen Stützpunkten. 16 von 52 Werten gerechnet, jeder mit Methode in data/raw/pvs-gerechnet.json.',
+      'Nicht im Bild: SMARTY (4.982) und PsychoDat (1.705, Ende 2025), um bei vier Linien zu bleiben. Wer die Psychotherapie-Systeme herausnimmt, sieht den Markt der Arztpraxen im Datensatz „Praxissoftware in Arztpraxen“.',
+    ],
+    headers: PVS_PSYCHO.headers,
+    rows: PVS_PSYCHO.rows,
+    suggested: {
+      chartType: 'line', topN: 4, decimals: 0, primaryAxisLabel: 'Installationen',
+      // Validiert (alle Paare, hell): CGM blau wie in allen PVS-Grafiken, die drei Psychotherapie-Systeme pink, gelb, grün.
+      colors: { 'CGM MEDISTAR': BLAU, Elefant: '#e87ba4', psyprax: '#eda100', Epikur: '#008300' },
+    },
   },
   {
     id: 'pvs-hersteller',

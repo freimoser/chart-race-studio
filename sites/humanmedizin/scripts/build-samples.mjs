@@ -73,10 +73,11 @@ const kurz = (s) => NAMEN[s] ?? s
  * `unterjaehrigNutzen`: Belege aus Q1–Q3 als Stützpunkte (für Jahre ohne Jahresendwert). Für den ersten Datensatz aus,
  * damit seine veröffentlichten Werte gleich bleiben.
  */
-function baue({ von, bis, mindestens = 500, unterjaehrigNutzen = false }) {
+function baue({ von, bis, mindestens = 500, unterjaehrigNutzen = false, systeme: auswahl = null }) {
   const JAHRE = jahre(von, bis)
   const gerechnet = []
-  const systeme = [...new Set(INST.filter((r) => r.klasse === 'arzt').map((r) => r.system))]
+  // `auswahl`: feste Systemliste in dieser Reihenfolge, unabhängig von Klasse und Mindestgröße (z. B. Psychotherapie).
+  const systeme = auswahl ?? [...new Set(INST.filter((r) => r.klasse === 'arzt').map((r) => r.system))]
     .filter((s) => INST.some((r) => r.system === s && r.stichtag.endsWith('-12-31') && Number(r.stichtag.slice(0, 4)) >= von && Number(r.installationen) >= mindestens))
   const reihe = (system) => {
     const b = belegt(system)
@@ -147,15 +148,23 @@ const PVS_HERSTELLER = {
   rows: JAHRE.map((j, i) => [String(j), ...GRUPPEN.map(([, passt]) => ARZT.filter((s) => passt(herstellerJahr(s, j))).reduce((a, s) => a + reihenAlle[s][i], 0))]),
 }
 
+// ---------- Datensatz 4: Psychotherapie-Software gegen MEDISTAR (Post 3) ----------
+// Eine Aussage: Seit Ende 2023 ist das meistinstallierte System der KBV-Statistik keine Arztsoftware mehr. Vier Linien:
+// das größte Arztsystem und die drei größten Systeme, deren Installationen zu 94–97 Prozent in der Arztgruppe
+// Psychotherapeuten liegen (recherche Abschnitt 6). 2017–2020 wie in Datensatz 1 aus KBV-Anteilen gerechnet.
+const D4 = baue({ von: 2013, bis: 2025, systeme: ['CGM MEDISTAR (BLACK PRO)', 'Elefant', 'psyprax', 'Epikur'] })
+const PVS_PSYCHO = D4.tabelle
+
 // ---------- Ausgabe ----------
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 fs.writeFileSync('sites/humanmedizin/samples/data.ts', `// Automatisch erzeugt von sites/humanmedizin/scripts/build-samples.mjs aus sites/humanmedizin/data/raw/ – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007)].join('\n'))
+  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO)].join('\n'))
 const sortiert = (l) => [...l].sort((a, b) => a.system.localeCompare(b.system) || a.jahr - b.jahr)
 fs.writeFileSync(path.join(RAW, 'pvs-gerechnet.json'), JSON.stringify({
   hinweis: 'Von sites/humanmedizin/scripts/build-samples.mjs erzeugt. Jeder Wert der Datensätze, der nicht direkt aus einem KBV-Bericht (Jahresende) stammt, mit Methode. pvs-hersteller ist die Summe von pvs-installationen und hat dieselben gerechneten Werte. Alles andere ist belegt (pvs-kbv-installationen.csv, pvs-kbv-luecken-1998-2012.csv).',
   summe_2017_2020: 'Gesamtzahl aller Installationen linear zwischen Q4/2016 (' + SUMME[2016] + ') und Q4/2021 (' + SUMME[2021] + ')',
   'pvs-installationen': sortiert(D1.gerechnet),
   'pvs-installationen-2007': sortiert(D3.gerechnet),
+  'pvs-psychotherapie': sortiert(D4.gerechnet),
 }, null, 1) + '\n')
 console.log('PVS_ARZT', PVS_ARZT.headers.length - 1, 'Systeme,', D1.gerechnet.length, 'gerechnet; PVS_ARZT_2007', PVS_ARZT_2007.headers.length - 1, 'Systeme,', PVS_ARZT_2007.rows.length, 'Jahre,', D3.gerechnet.length, 'von', (PVS_ARZT_2007.headers.length - 1) * PVS_ARZT_2007.rows.length, 'gerechnet bzw. angenommen')

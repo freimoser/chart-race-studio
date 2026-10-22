@@ -48,8 +48,8 @@ export const POSTS: RoadmapPost[] = [
     title: 'Psychotherapie hat ihre eigene Software',
     hook: 'Das meistinstallierte System der KBV-Statistik ist seit Ende 2023 keine Arztsoftware: Elefant überholt MEDISTAR (11.026 zu 10.966). Der Grund ist eine Arztgruppe, die sich seit 2007 fast verdreifacht hat.',
     figures: ['Arztgruppe Psychotherapeuten: 10,6 Prozent aller Installationen (2007), rund 30 Prozent (2025)', 'Elefant 10.967, psyprax 10.519, Epikur 6.008, SMARTY 4.982, PsychoDat 1.705 (Ende 2025)', 'Elefant, psyprax, PsychoDat, Epikur, SMARTY: 84 bis 98 Prozent ihrer Installationen in dieser Arztgruppe', 'Ärztliche Abrechnungsstellen seit 2014 rund 13.000 weniger, psychotherapeutische rund 11.000 mehr'],
-    chart: 'line', dataStatus: 'teilweise',
-    dataNote: 'Datensatz pvs-psychotherapie anlegen (Pflegeprotokoll A5): Systeme der Psychotherapie 2013–2025 aus pvs-kbv-installationen.csv, Größe der Arztgruppe aus recherche/pvs-kbv-historie.md Abschnitt 6 (2007, 2013–2016, 2021–2025 belegt, teils als Mindestwert aus den Top 20).',
+    sampleId: 'pvs-psychotherapie', chart: 'line', dataStatus: 'belegt',
+    dataNote: 'Datensatz pvs-psychotherapie steht (22.10.2026): MEDISTAR gegen Elefant, psyprax, Epikur 2013–2025, 16 Werte 2017–2020 gerechnet. Größe der Arztgruppe Psychotherapeuten nur als Text (2007 und 2013–2016 belegt, 2021–2025 als Mindestwert aus den Top 20).',
     refs: [1],
   },
   {

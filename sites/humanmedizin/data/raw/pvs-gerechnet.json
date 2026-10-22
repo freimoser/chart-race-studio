@@ -2176,5 +2176,103 @@
    "wert": 7843,
    "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
   }
+ ],
+ "pvs-psychotherapie": [
+  {
+   "jahr": 2017,
+   "system": "CGM MEDISTAR",
+   "wert": 14052,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2018,
+   "system": "CGM MEDISTAR",
+   "wert": 13511,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2019,
+   "system": "CGM MEDISTAR",
+   "wert": 12969,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2020,
+   "system": "CGM MEDISTAR",
+   "wert": 12449,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2017,
+   "system": "Elefant",
+   "wert": 9234,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2018,
+   "system": "Elefant",
+   "wert": 9618,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2019,
+   "system": "Elefant",
+   "wert": 10002,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2020,
+   "system": "Elefant",
+   "wert": 10400,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2017,
+   "system": "Epikur",
+   "wert": 2634,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2018,
+   "system": "Epikur",
+   "wert": 3068,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2019,
+   "system": "Epikur",
+   "wert": 3503,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2020,
+   "system": "Epikur",
+   "wert": 3959,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2017,
+   "system": "psyprax",
+   "wert": 10496,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2018,
+   "system": "psyprax",
+   "wert": 10638,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2019,
+   "system": "psyprax",
+   "wert": 10781,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  },
+  {
+   "jahr": 2020,
+   "system": "psyprax",
+   "wert": 10924,
+   "methode": "linear zwischen Q4/2016, Q3/2017 (KBV-Anteil × Summe), Q3/2020 (KBV-Anteil × Summe) und Q4/2021"
+  }
  ]
 }

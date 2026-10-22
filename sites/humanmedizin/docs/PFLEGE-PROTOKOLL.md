@@ -16,7 +16,7 @@ untereinander korrekt. Plane die nächsten 10 Posts und sammle die Daten dazu. M
 | A2 | Redaktionsplan Posts 2–11 schärfen (Aufhänger, Zahlen, Datenbedarf je Post) | erledigt (D2) |
 | A3 | Recherche MVZ (Post 8): KBV-MVZ-Statistik, Träger, angestellte Ärzte | erledigt (zwischen D2 und D3): recherche/mvz.md, data/raw/mvz.csv; Datensätze noch anlegen |
 | A4 | Recherche Schnittstellen (Posts 5, 6): KBV-Zulassungen LDT/eArztbrief/KIM je System, gematik TI-Dashboard | läuft (Agent, seit D1) |
-| A5 | Datensatz Psychotherapie (Post 3) aus KBV-Arztgruppenberichten | offen, als nächstes |
+| A5 | Datensatz Psychotherapie (Post 3) aus KBV-Arztgruppenberichten | erledigt (D3): `pvs-psychotherapie` |
 | A6 | Datensatz Aufsteiger (Post 4) | |
 | A7 | Datensatz KIS-Systeme (Post 8) | |
 | A8 | Datensatz Wechsel/Nettoveränderung je System (Post 9) | |
@@ -30,3 +30,4 @@ untereinander korrekt. Plane die nächsten 10 Posts und sammle die Daten dazu. M
 |---|---|---|
 | 1 | 22.10.2026 | Protokoll angelegt. Konsistenzprüfung `sites/humanmedizin/scripts/pruefe-konsistenz.mjs` (`npm run check:daten`): Rohdaten ↔ Datensätze, kurze ↔ lange Fassung, Herstellersummen, 24 Kennzahlen in 5 Texten, unbekannte Zahlen. Ergebnis: keine Fehler. CSV-Leser nach `scripts/lib/csv.mjs` ausgelagert (Daten bitgleich). Recherchen MVZ und Schnittstellen gestartet. |
 | 2 | 22.10.2026 | Redaktionsplan Posts 2–11 neu: Reihenfolge nach Datenlage (2 Hersteller, 3 Psychotherapie, 4 Aufsteiger, 5 Gewinner/Verlierer 2021–2025, 6 LDT 3, 7 KIM/eArztbrief, 8 MVZ, 9 Klinik-Software, 10 Arzt vs. Tierarzt, 11 Labor), alle Zahlen aus den Daten gerechnet. Dabei zwei eigene Fehler gefunden und korrigiert (Top-3-Anteil 32 statt 37 %, „Praxen“ statt „Installationen“). Nachgeprüft am Original-PDF: Summe Ende 2021 = 119.405 (Zufallsgleichheit mit 2014). Redaktionsplan jetzt Teil der Konsistenzprüfung. |
+| 3 | 22.10.2026 | Datensatz `pvs-psychotherapie` (Post 3): CGM MEDISTAR gegen Elefant, psyprax, Epikur 2013–2025, 16 Werte 2017–2020 gerechnet. Kernaussage aus den Daten: Elefant überholt MEDISTAR Ende 2023 (11.026 zu 10.966), psyprax 2024. Farben validiert (alle Paare), Glätteprüfung 0 Sprünge (auch `pvs-hersteller`). Generator: `baue()` nimmt jetzt eine feste Systemliste. Dazwischen MVZ-Recherche eingearbeitet (Post 8). |
