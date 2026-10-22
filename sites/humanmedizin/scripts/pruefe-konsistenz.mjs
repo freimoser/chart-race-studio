@@ -244,6 +244,16 @@ const ERWARTET = {
   [`${H}/content/artikel/11-labor-angestellte-laboraerzte.md`]: ['Labor angestellt 2013', 'Labor angestellt 2025', 'Labor Zulassung Rückgang', 'Labor EP'],
   [`${H}/content/roadmap.ts`]: ['LDT-Befund-Anteil', 'eArztbrief-Anteil', 'eArztbriefe 2023', 'eArztbriefe 2024', 'eArztbriefe 2025', 'eArztbriefe 2026 bis Sep'],
 }
+// Datenherkunft: jeder Datensatz hat einen Abschnitt mit seiner id, und die Zahl gerechneter Werte stimmt.
+{
+  const dh = fs.readFileSync(`${H}/seiten/artikel/datenherkunft.html`, 'utf8')
+  const ids = [...fs.readFileSync(`${H}/samples/index.ts`, 'utf8').matchAll(/^    id: '([a-z0-9-]+)'/gm)].map((m) => m[1])
+  for (const id of ids) if (!dh.includes(`id="${id}"`)) fehler.push(`Datenherkunft: Abschnitt für Datensatz „${id}“ fehlt`)
+  for (const [id, T] of [['pvs-psychotherapie', D.PVS_PSYCHO], ['pvs-aufsteiger', D.PVS_AUFSTEIGER], ['pvs-kis', D.PVS_KIS]]) {
+    const t = `${GERECHNET[id].length} von ${(T.headers.length - 1) * T.rows.length} Werten`
+    if (!dh.includes(t)) fehler.push(`Datenherkunft: „${t}“ (${id}) steht nicht im Text`)
+  }
+}
 for (const [datei, liste] of Object.entries(ERWARTET)) {
   const text = fs.readFileSync(datei, 'utf8')
   for (const k of liste) if (!text.includes(K[k])) fehler.push(`${datei}: Kennzahl „${k}“ = „${K[k].trim()}“ steht nicht im Text`)

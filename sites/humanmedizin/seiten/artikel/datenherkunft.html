@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Datenherkunft: Quellen und Methode aller Datensätze</title>
-    <meta name="dcterms.modified" content="2026-10-21" />
+    <meta name="dcterms.modified" content="2026-10-22" />
     <meta name="description" content="Für jeden Datensatz von Humanmedizin in Zahlen: Quelle, Zeitraum, Annahmen, was gerechnet ist und wann zuletzt gegen die Quelle geprüft." />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="../favicon-96.png" sizes="96x96" type="image/png" />
@@ -158,6 +158,119 @@
           dieselben Jahre wie oben.
         </p>
         <p><strong>Erstellt</strong> 20.10.2026 · <strong>geprüft</strong> 20.10.2026</p>
+
+        <h2 id="pvs-psychotherapie">Datensatz: Psychotherapie-Software und MEDISTAR</h2>
+        <p>
+          <strong>Inhalt:</strong> Installationen von Elefant, psyprax und Epikur sowie CGM MEDISTAR, Jahresende 2013 bis 2025,
+          aus der Installationsstatistik der KBV. Elefant, psyprax und Epikur laufen zu 97, 96 und 94 Prozent in der
+          Arztgruppe Psychotherapeuten (KBV-Bericht je Arztgruppe, Ende 2025).
+        </p>
+        <p>
+          <strong>Gerechnet:</strong> 16 von 52 Werten, alle 2017 bis 2020, nach derselben Methode wie oben (Anteile Q3/2017 und
+          Q3/2020, Gesamtzahl linear). SMARTY und PsychoDat sind belegt, aber nicht im Bild, um bei vier Linien zu bleiben.
+        </p>
+        <p><strong>Erstellt</strong> 22.10.2026 · <strong>geprüft</strong> 22.10.2026</p>
+
+        <h2 id="pvs-aufsteiger">Datensatz: Die Aufsteiger</h2>
+        <p>
+          <strong>Inhalt:</strong> Installationen von Medical Office, tomedo, T2med und ETERNO Cloud, Jahresende 2013 bis 2025,
+          aus der Installationsstatistik der KBV. Markteintritt belegt: tomedo Mitte 2013, T2med 2015.
+        </p>
+        <p>
+          <strong>Gerechnet:</strong> 17 von 52 Werten: 2017 bis 2020 wie oben, dazu ETERNO Cloud 2013 (erster Beleg Ende 2014
+          gehalten). Medical Office springt laut KBV-Anteil 2017 stark; für 2021 hat die KBV Medical Office nachweislich doppelt
+          gezählt und korrigiert, ob 2017 bis 2020 betroffen sind, ist offen.
+        </p>
+        <p><strong>Erstellt</strong> 22.10.2026 · <strong>geprüft</strong> 22.10.2026</p>
+
+        <h2 id="pvs-saldo">Datensatz: Gewinner und Verlierer seit Ende 2021</h2>
+        <p>
+          <strong>Inhalt:</strong> Veränderung der Installationen gegenüber Ende 2021 für die zwei größten Gewinner (medatixx,
+          tomedo) und Verlierer (CGM TURBOMED, CGM MEDISTAR). Alle Jahresendwerte 2021 bis 2025 sind belegt; gerechnet ist nur
+          die Differenz. Der Generator prüft die Auswahl bei jeder neuen KBV-Ausgabe.
+        </p>
+        <p>
+          <strong>Grenzen:</strong> Salden, keine Wechselströme. Die Summen über Gewinner und Verlierer beziehen sich auf die 40
+          Systeme mit mindestens einmal 500 Installationen.
+        </p>
+        <p><strong>Erstellt</strong> 22.10.2026 · <strong>geprüft</strong> 22.10.2026</p>
+
+        <h2 id="pvs-kis">Datensatz: Krankenhaus-Software in der ambulanten Abrechnung</h2>
+        <p>
+          <strong>Inhalt:</strong> Installationen von ORBIS, SAP Ambulatory Care Management, CGM MEDICO und iMedOne, Jahresende
+          2013 bis 2025, aus der Installationsstatistik der KBV. Mit ihnen rechnen Krankenhäuser ambulante Leistungen ab.
+        </p>
+        <p>
+          <strong>Gerechnet:</strong> 16 von 52 Werten, alle 2017 bis 2020: ORBIS aus den KBV-Anteilen, die übrigen linear zwischen
+          2016 und 2021. Die Gegenüberstellung mit den Krankenhaus-MVZ im Artikel ist eine Obergrenze unter einer Annahme, keine
+          Messung, und steht deshalb nicht in der Grafik.
+        </p>
+        <p><strong>Erstellt</strong> 22.10.2026 · <strong>geprüft</strong> 22.10.2026</p>
+
+        <h2 id="earztbrief-monat">Datensatz: eArztbriefe über KIM je Monat</h2>
+        <p>
+          <strong>Inhalt:</strong> Mit KIM gesendete elektronische Arztbriefe je Monat, März 2022 bis September 2026, aus dem
+          <a href="https://ti-lage.prod.ccs.gematik.solutions/d/_v5YC1HVk/ti-dashboard-verlauf-kim">TI-Dashboard der gematik</a>.
+        </p>
+        <p>
+          <strong>Gerechnet:</strong> alle Monatswerte. Die gematik veröffentlicht einen Zähler seit 01.08.2021 (Stand 0 Uhr UTC);
+          jeder Monatswert ist die Differenz zweier Monatsendstände. Die Jahressummen sind gleich den Differenzen der
+          Jahresendstände, das prüft die Konsistenzprüfung.
+        </p>
+        <p><strong>Erstellt</strong> 22.10.2026 · <strong>geprüft</strong> 22.10.2026</p>
+
+        <h2 id="labordaten-praxisbarometer">Datensatz: Labordaten empfangen und senden</h2>
+        <p>
+          <strong>Inhalt:</strong> Anteil der Arztpraxen, die Labordaten überwiegend digital empfangen bzw. senden, 2018 bis 2025,
+          aus dem <a href="https://www.kbv.de/infothek/zahlen-und-fakten/praxisbarometer-digitalisierung">PraxisBarometer
+          Digitalisierung</a> von KBV und IGES. Eine jährliche Befragung, keine Vollerhebung. Kein Wert ist gerechnet.
+        </p>
+        <p>
+          <strong>Methodenbruch:</strong> Ab 2024 schließt die Antwort Laboraufträge ausdrücklich ein; der Anstieg beim Senden ist
+          teilweise ein Effekt der neuen Formulierung.
+        </p>
+        <p><strong>Erstellt</strong> 22.10.2026 · <strong>geprüft</strong> 22.10.2026</p>
+
+        <h2 id="aerzte-praxisform">Datensatz: Ärztinnen und Ärzte nach Praxisform</h2>
+        <p>
+          <strong>Inhalt:</strong> Personen in der vertragsärztlichen Versorgung nach Praxisform (Einzelpraxis,
+          Berufsausübungsgemeinschaft, MVZ und andere Einrichtungen), 2015 bis 2025, aus dem
+          <a href="https://www.kbv.de/infothek/zahlen-und-fakten/gesundheitsdaten/praxen-und-aerzte-nach-praxisform">Bundesarztregister
+          der KBV</a>. Köpfe, keine Vollzeitstellen und keine Praxen.
+        </p>
+        <p>
+          <strong>Gerechnet:</strong> alle Werte, weil psychologische Psychotherapeutinnen und -therapeuten herausgerechnet sind:
+          2016 bis 2025 als Differenz zweier Reihen des Datenportals, 2015 als Summe der ärztlichen Spalten aus Tabelle 5 der
+          Registerstatistik. Dieselbe Rechnung über Tabelle 5 ergibt für 2025 exakt die Werte des Datenportals. MVZ-Statistik und
+          Bundesarztregister zählen Personen in MVZ leicht unterschiedlich und stehen deshalb in getrennten Grafiken.
+        </p>
+        <p><strong>Erstellt</strong> 22.10.2026 · <strong>geprüft</strong> 22.10.2026</p>
+
+        <h2 id="mvz-anzahl">Datensatz: Medizinische Versorgungszentren seit 2004</h2>
+        <p>
+          <strong>Inhalt:</strong> Zahl der MVZ und der MVZ mit einem Krankenhaus als Träger, Jahresende 2004 bis 2025, aus der
+          <a href="https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf">MVZ-Statistik der KBV</a>.
+          Alle Werte sind belegt.
+        </p>
+        <p>
+          <strong>Methodenbrüche:</strong> Seit 2015 sind fachgleiche MVZ erlaubt. Baden-Württemberg zählt MVZ mit mehreren
+          Betriebsstätten ab 2024 nur noch einmal. Hamburg ist 2011 bis 2013 teils mit einem älteren Stand enthalten. Ein MVZ kann
+          mehrere Träger haben; Träger sind deshalb nicht als getrennte Linien gezeigt.
+        </p>
+        <p><strong>Erstellt</strong> 22.10.2026 · <strong>geprüft</strong> 22.10.2026</p>
+
+        <h2 id="labor-aerzte">Datensatz: Laborärztinnen und -ärzte</h2>
+        <p>
+          <strong>Inhalt:</strong> Personen der Fachgruppe Laboratoriumsmedizin einschließlich Mikrobiologie im Bundesarztregister,
+          angestellt in MVZ und Einrichtungen sowie mit eigener Zulassung, Jahresende 2013 bis 2025. Alle Werte der Grafik sind
+          belegt.
+        </p>
+        <p>
+          <strong>Zweitquelle:</strong> Die Ärztestatistik der Bundesärztekammer zeigt für Fachärztinnen und Fachärzte für
+          Laboratoriumsmedizin dieselbe Richtung, hat aber 2021/2022 einen Sprung bei den Niedergelassenen, den das
+          Bundesarztregister nicht zeigt. Gerechnet sind nur Anteile und die Summen aus Tabelle 5 im Artikel.
+        </p>
+        <p><strong>Erstellt</strong> 22.10.2026 · <strong>geprüft</strong> 22.10.2026</p>
 
         <h2>Was gerechnet ist</h2>
         <ul>
