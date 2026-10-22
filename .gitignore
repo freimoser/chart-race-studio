@@ -58,3 +58,6 @@ intern/
 /ueber-das-projekt.html
 /sites/*/public/daten/
 /sites/*/public/datenformat/
+
+# Recherche-Notiz mit persönlichen Angaben, bleibt lokal bis zur Entscheidung des Nutzers (22.10.2026)
+/sites/humanmedizin/recherche/tiermedizin-pvs.md

@@ -108,11 +108,11 @@ export const POSTS: RoadmapPost[] = [
   },
   {
     nr: 10, arc: 'versorgung', status: 'geplant',
-    title: 'Praxissoftware beim Arzt und beim Tierarzt',
-    hook: 'Zwei Märkte, dieselbe Frage: Wie viele Anbieter teilen sich die Praxen? Für die Humanmedizin zählt die KBV, für die Tiermedizin gibt es keine amtliche Statistik.',
-    figures: ['Humanmedizin Ende 2025: 126 Zeilen in der KBV-Statistik, die größten drei ärztlichen Systeme 32 Prozent der ärztlichen Installationen (22.043 von 68.191)', 'Tiermedizin: Quelle offen (Umfragen, Herstellerangaben)', 'Gemeinsamer Artikel mit tiermedizin-in-zahlen.org'],
-    dataStatus: 'offen',
-    dataNote: 'Recherche Tiermedizin-PVS (Pflegeprotokoll A9); Ordner „Website Tierarzt Solution Map“ (vetkompass) prüfen. Verlinkung nach docs/VERLINKUNG.md, erst wenn die Humanmedizin live ist.',
+    title: 'Wer zählt die Praxissoftware?',
+    hook: 'Für Arztpraxen zählt die KBV jedes Praxissystem, weil jedes eine Prüfnummer braucht: Zwei Hersteller halten 60,5 Prozent der Installationen ärztlicher Systeme. Für die rund 10.000 Tierarztpraxen gibt es keine Statistik, nur Werbeangaben der Hersteller.',
+    figures: ['Humanmedizin Ende 2025 (KBV): größte drei Systeme 32,3 Prozent, größte fünf 49,6 Prozent der Installationen ärztlicher Systeme', 'Nach Herstellern: CGM 32,4, medatixx 28,1, INDAMED 8,4, Zollsoft 6,6, T2med 6,0 Prozent', 'Tiermedizin: nur Herstellerangaben in verschiedenen Einheiten, Gebieten und Jahren (z. B. Praxen in Europa oder DACH) – keine Anteile rechenbar'],
+    dataStatus: 'teilweise',
+    dataNote: 'Recherche 22.10.2026: Post als Vergleich der Konzentration nicht tragfähig, darum gedreht zu „Wer zählt?“. Bildpost mit KBV-Herstelleranteilen; Tiermedizin ausdrücklich ohne Balken, nur ein Kasten „keine Statistik“. Vor Veröffentlichung Interessenkonflikte prüfen (Recherche-Notiz liegt lokal, nicht im öffentlichen Repo). Gemeinsamer Bezug zur Schwesterseite nach docs/VERLINKUNG.md.',
     refs: [1, 2],
   },
   {

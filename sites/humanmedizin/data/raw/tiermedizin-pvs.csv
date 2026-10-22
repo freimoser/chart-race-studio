@@ -1,0 +1,20 @@
+stand,anbieter,produkt,kennzahl,wert,einheit,art,quelle_url
+2021-11-02,"VetZ GmbH (ab 03.01.2022 Heska, ab 13.06.2023 Mars)",easyVET,Kunden Europa,3300,Tierarztpraxen (mehr als),"Herstellerangabe (Übernahmemeldung Heska, PRNewswire; Wiedergabe StockTitan)",https://www.stocktitan.net/news/HSKA/heska-corporation-to-acquire-vet-z-gmb-h-european-leader-in-practice-4d5ze89cteaq.html
+2021-11-02,"VetZ GmbH (ab 03.01.2022 Heska, ab 13.06.2023 Mars)",easyVET,Mitarbeiter,70,Personen (mehr als),Herstellerangabe (Übernahmemeldung Heska),https://www.stocktitan.net/news/HSKA/heska-corporation-to-acquire-vet-z-gmb-h-european-leader-in-practice-4d5ze89cteaq.html
+2022-03-31,VetZ GmbH (Heska),easyVET u. a.,Umsatz 03.01.–31.03.2022,3.3,Mio. USD,Pflichtveröffentlichung (SEC 10-Q Heska Q1/2022),https://www.sec.gov/Archives/edgar/data/1038133/000103813322000024/hska-20220331.htm
+2026-10-22,VetZ GmbH (Mars),easyVET,Anwender weltweit,114058,Anwender:innen (mehr als),"Herstellerangabe (Website, undatiert; stand = Abrufdatum)",https://www.vetz.de/easyvet-praxismanagementsoftware-tiermedizin/
+2026-10-22,VetZ GmbH (Mars),easyVET,Anwender europaweit,152000,Anwender:innen (über; widerspricht der Weltzahl auf derselben Seite),"Herstellerangabe (Website, undatiert; stand = Abrufdatum)",https://www.vetz.de/easyvet-praxismanagementsoftware-tiermedizin/
+2022-03-10,Vetera GmbH (ab 01.06.2022 Nordhealth),Vetera,Kunden DACH,2000,"Tierarztpraxen, Kliniken und Partner (mehr als)",Herstellerangabe (Übernahmemeldung Nordhealth),https://nordhealth.com/news/nordhealth-acquires-vetera/
+2021-12-31,Vetera GmbH,Vetera,Umsatz 2021,2.702,Mio. EUR,Herstellerangabe (Übernahmemeldung Nordhealth),https://nordhealth.com/news/nordhealth-acquires-vetera/
+2026-10-22,Vetera GmbH (Nordhealth),Vetera,Kunden,2000,Tierarztpraxen und Tierkliniken (über),"Herstellerangabe (Website, undatiert; stand = Abrufdatum)",https://www.vetera.net/
+2026-10-22,Vetera GmbH (Nordhealth),Vetera,Anwender,18000,Tierärzt:innen bzw. Anwender:innen (rund / mehr als),"Herstellerangabe (Website, undatiert; stand = Abrufdatum)",https://www.vetera.net/
+2024-12-31,"Nordhealth (Vetera, Provet)",Vetera / Provet,Umsatz DACH 2024,3.843,Mio. EUR,Geschäftsbericht Nordhealth 2025 (Vorjahresspalte),https://nordhealth.com/assets/attachments/nhg-annual-report-2025-and-auditors-report.pdf
+2025-12-31,"Nordhealth (Vetera, Provet)",Vetera / Provet,Umsatz DACH 2025,4.033,Mio. EUR,Geschäftsbericht Nordhealth 2025,https://nordhealth.com/assets/attachments/nhg-annual-report-2025-and-auditors-report.pdf
+2026-10-22,Nordhealth,Provet,Kunden weltweit,3000,Praxen/Kliniken (3.000+; keine Länderaufteilung),"Herstellerangabe (Website, undatiert; stand = Abrufdatum)",https://provet.com/customers
+2026-10-22,IDEXX,ezyVet,Kunden weltweit,7000,Praxen (7.000+; keine Länderaufteilung),"Herstellerangabe (Website, undatiert; stand = Abrufdatum)",https://www.ezyvet.com/
+2026-10-22,inBehandlung,inBehandlung,Kunden,400,Praxen (über),"Herstellerangabe (Website, undatiert; stand = Abrufdatum)",https://www.inbehandlung.de/
+2026-10-22,Debevet UG,debevet,Kunden,350,Praxen (350+; Anbieter bedient auch Tiertherapie und Tierheilpraktiker),"Herstellerangabe (Website, undatiert; stand = Abrufdatum)",https://www.debevet.de/
+2026-10-22,VET7.well,VET7.well,Kunden AT/DE/CH,300,Kunden (über),"Herstellerangabe (Website, undatiert; stand = Abrufdatum)",https://www.vet7.net/
+2026-10-22,0x0 Marketing GmbH,Petflare,Kunden,150,Praxen und Tierheilpraktiker (150+),"Herstellerangabe (Website, undatiert; stand = Abrufdatum)",https://petflare.io/branchen/tieraerzte
+2024,Gesamtmarkt Deutschland,–,Tierarztpraxen und Tierkliniken,10000,Betriebe (rund),"Branchenstudie (Tierärzte Atlas Deutschland 2024, DTBl 2/2025)",https://www.bundestieraerztekammer.de/btk/dtbl/archiv/2025/artikel/DTBl_02_2025_Tieraerzte-Atlas.pdf
+2025-12-31,Gesamtmarkt Deutschland,–,niedergelassene Tierärztinnen und Tierärzte,11216,Personen (keine Praxen),Kammerstatistik (BTK),https://www.bundestieraerztekammer.de/btk/statistik/
