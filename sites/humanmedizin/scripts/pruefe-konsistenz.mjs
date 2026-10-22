@@ -170,6 +170,25 @@ K['Neue 2013'] = de(hs(2013, 3)); K['Neue 2025'] = de(hs(2025, 3))
   K['CGM 2021–2025'] = de(-['CGM MEDISTAR (BLACK PRO)', 'TURBOMED', 'ALBIS', 'CGM M1 PRO (ehem. CompuMED M1)', 'DATA VITAL'].reduce((a, n) => a + q(2025, n) - q(2021, n), 0))
   K['Neue 2021–2025'] = de(['tomedo', 'T2med', 'Medical Office'].reduce((a, n) => a + q(2025, n) - q(2021, n), 0))
 }
+// MVZ und Praxisform (Post 8): Anteile und Summen aus dem Datensatz aerzte-praxisform und Tabelle 5 des Bundesarztregisters.
+{
+  const P = D.AERZTE_PRAXISFORM, z = (j) => P.rows.find((r) => r[0] === String(j)), ges = (j) => z(j).slice(1).reduce((a, b) => a + b, 0)
+  K['Ärzte gesamt 2015'] = de(ges(2015)); K['Ärzte gesamt 2025'] = de(ges(2025))
+  K['MVZ-Anteil 2015'] = prozent(z(2015)[3], ges(2015), 1); K['MVZ-Anteil 2025'] = prozent(z(2025)[3], ges(2025), 1)
+  K['Köpfe Einzelpraxis Rückgang'] = prozent(z(2015)[1] - z(2025)[1], z(2015)[1], 1)
+  K['Arztsysteme 2015'] = de(summe(A, 2015))
+  const MV = leseCsv(path.join(RAW, 'mvz.csv')), m = (j, r) => Number(MV.find((x) => x.stichtag === `${j}-12-31` && x.reihe === r)?.wert)
+  const ang = (j) => m(j, 'bar_t5_aerztlich_ep_anstellung_mit_lb') + m(j, 'bar_t5_aerztlich_ep_anstellung_ohne_lb')
+  K['Angestellte EP 2015'] = de(ang(2015)); K['Angestellte EP 2025'] = de(ang(2025))
+  const solo = (j) => m(j, 'bar_t5_aerztlich_ep_zulassung_ohne_angestellte')
+  K['Solo-EP Rückgang'] = prozent(solo(2015) - solo(2025), solo(2015), 1)
+  K['KH-MVZ-Anteil'] = prozent(m(2025, 'mvz_krankenhaus_mvz'), m(2025, 'mvz_anzahl'), 1)
+  K['MVZ angestellt'] = prozent(m(2025, 'mvz_aerzte_angestellt'), m(2025, 'mvz_aerzte_angestellt') + m(2025, 'mvz_aerzte_vertragsaerzte'), 1)
+  const ep = (j) => solo(j) + m(j, 'bar_t5_aerztlich_ep_zulassung_mit_angestellten') // ärztliche Einzelpraxen = Inhaber mit Zulassung
+  K['ärztliche EP Rückgang'] = prozent(ep(2015) - ep(2025), ep(2015), 1)
+  // Köpfe in Einzelpraxen = Zulassung mit/ohne Angestellte + Angestellte, muss dem Datensatz gleichen.
+  for (const j of [2015, 2025]) if (solo(j) + m(j, 'bar_t5_aerztlich_ep_zulassung_mit_angestellten') + ang(j) !== z(j)[1]) fehler.push(`Post 8: Köpfe Einzelpraxis ${j} ≠ Tabelle 5`)
+}
 // Welche Kennzahl muss in welchem Text stehen.
 const ERWARTET = {
   [`${H}/content/artikel/01-praxissoftware-arztpraxen-marktanteile.md`]: ['MEDISTAR 2025', 'MEDISTAR 2013', 'TURBOMED 2025', 'TURBOMED 2013', 'medatixx 2025', 'x.isynet 2025', 'Medical Office 2013', 'Medical Office 2025', 'tomedo 2025', 'T2med 2025', 'Summe Arztsysteme 2013', 'Summe Arztsysteme 2025', 'Rückgang Arztsysteme', 'CGM-Anteil 2013', 'CGM-Anteil 2025', 'MEDISTAR-Anteil 2025', 'CGM 2013', 'CGM 2025', 'Gerechnet kurz', 'Sichtbar gerechnet lang'],
@@ -183,6 +202,7 @@ const ERWARTET = {
   [`${H}/content/artikel/03-psychotherapie-software-elefant-psyprax.md`]: ['Elefant 2025', 'psyprax 2025', 'MEDISTAR 2025', 'Elefant 2023', 'MEDISTAR 2023', 'psyprax 2024', 'MEDISTAR 2024', 'Wachstum Elefant', 'Wachstum Epikur', 'Wachstum psyprax', 'Rückgang MEDISTAR', 'Gerechnet Psycho'],
   [`${H}/content/artikel/02-praxissoftware-hersteller-cgm-medatixx.md`]: ['CGM 2013', 'CGM 2025', 'medatixx 2013 (Hersteller)', 'medatixx 2025 (Hersteller)', 'Anteil CGM 2013', 'Anteil CGM 2025', 'Anteil medatixx 2025', 'Anteil Neue 2013', 'Anteil Neue 2025', 'Neue 2013', 'Neue 2025', 'medatixx ohne EL 2025', 'Summe Arztsysteme 2025', 'Rückgang Arztsysteme'],
   [`${H}/content/artikel/07-earztbrief-kim-zahlen.md`]: ['eArztbrief-Anteil', 'eArztbriefe 2023', 'eArztbriefe 2024', 'eArztbriefe 2025', 'eArztbriefe 2026 bis Sep', 'KIM 2025', 'eAU 2025', 'eArztbrief am KIM 2025'],
+  [`${H}/content/artikel/08-mvz-einzelpraxis-aerzte.md`]: ['Ärzte gesamt 2015', 'Ärzte gesamt 2025', 'MVZ-Anteil 2015', 'MVZ-Anteil 2025', 'Köpfe Einzelpraxis Rückgang', 'Arztsysteme 2015', 'Summe Arztsysteme 2025', 'Angestellte EP 2015', 'Angestellte EP 2025', 'Solo-EP Rückgang', 'KH-MVZ-Anteil', 'MVZ angestellt', 'ärztliche EP Rückgang'],
   [`${H}/content/roadmap.ts`]: ['LDT-Befund-Anteil', 'eArztbrief-Anteil', 'eArztbriefe 2023', 'eArztbriefe 2024', 'eArztbriefe 2025', 'eArztbriefe 2026 bis Sep'],
 }
 for (const [datei, liste] of Object.entries(ERWARTET)) {

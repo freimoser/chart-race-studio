@@ -75,5 +75,16 @@
     "geaendert": "2026-10-22",
     "bereit": true,
     "live": false
+  },
+  {
+    "post": 8,
+    "slug": "mvz-einzelpraxis-aerzte",
+    "titel": "MVZ wachsen, ärztliche Einzelpraxen schrumpfen",
+    "beschreibung": "2025 arbeiten 32.885 Ärztinnen und Ärzte in MVZ und Einrichtungen, 2015 waren es 13.826. Die Zahl der ärztlichen Einzelpraxen sank um 18,9 Prozent.",
+    "frage": "Wie viele Ärzte arbeiten im MVZ?",
+    "stand": "2026-10-22",
+    "geaendert": "2026-10-22",
+    "bereit": true,
+    "live": false
   }
 ]
