@@ -792,60 +792,6 @@
   },
   {
    "jahr": 2008,
-   "system": "CGM DAVID",
-   "wert": 1936,
-   "methode": "linear zwischen den Belegen 2007 und 2008.5"
-  },
-  {
-   "jahr": 2009,
-   "system": "CGM DAVID",
-   "wert": 1657,
-   "methode": "linear zwischen den Belegen 2008.5 und 2013"
-  },
-  {
-   "jahr": 2010,
-   "system": "CGM DAVID",
-   "wert": 1252,
-   "methode": "linear zwischen den Belegen 2008.5 und 2013"
-  },
-  {
-   "jahr": 2011,
-   "system": "CGM DAVID",
-   "wert": 847,
-   "methode": "linear zwischen den Belegen 2008.5 und 2013"
-  },
-  {
-   "jahr": 2012,
-   "system": "CGM DAVID",
-   "wert": 443,
-   "methode": "linear zwischen den Belegen 2008.5 und 2013"
-  },
-  {
-   "jahr": 2017,
-   "system": "CGM DAVID",
-   "wert": 42,
-   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
-  },
-  {
-   "jahr": 2018,
-   "system": "CGM DAVID",
-   "wert": 43,
-   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
-  },
-  {
-   "jahr": 2019,
-   "system": "CGM DAVID",
-   "wert": 43,
-   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
-  },
-  {
-   "jahr": 2020,
-   "system": "CGM DAVID",
-   "wert": 44,
-   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
-  },
-  {
-   "jahr": 2008,
    "system": "CGM M1 PRO",
    "wert": 4736,
    "methode": "linear zwischen den Belegen 2007 und 2008.5"
@@ -1046,6 +992,60 @@
    "jahr": 2020,
    "system": "Data-AL",
    "wert": 994,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2008,
+   "system": "DAVID",
+   "wert": 1936,
+   "methode": "linear zwischen den Belegen 2007 und 2008.5"
+  },
+  {
+   "jahr": 2009,
+   "system": "DAVID",
+   "wert": 1657,
+   "methode": "linear zwischen den Belegen 2008.5 und 2013"
+  },
+  {
+   "jahr": 2010,
+   "system": "DAVID",
+   "wert": 1252,
+   "methode": "linear zwischen den Belegen 2008.5 und 2013"
+  },
+  {
+   "jahr": 2011,
+   "system": "DAVID",
+   "wert": 847,
+   "methode": "linear zwischen den Belegen 2008.5 und 2013"
+  },
+  {
+   "jahr": 2012,
+   "system": "DAVID",
+   "wert": 443,
+   "methode": "linear zwischen den Belegen 2008.5 und 2013"
+  },
+  {
+   "jahr": 2017,
+   "system": "DAVID",
+   "wert": 42,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2018,
+   "system": "DAVID",
+   "wert": 43,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2019,
+   "system": "DAVID",
+   "wert": 43,
+   "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
+  },
+  {
+   "jahr": 2020,
+   "system": "DAVID",
+   "wert": 44,
    "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
   },
   {

@@ -60,7 +60,7 @@ const NULL_AB = { easymed: 2023, 'PDE-TOP': 2013 }
 const NAMEN = {
   'CGM MEDISTAR (BLACK PRO)': 'CGM MEDISTAR', TURBOMED: 'CGM TURBOMED', ALBIS: 'CGM ALBIS', 'CGM M1 PRO (ehem. CompuMED M1)': 'CGM M1 PRO',
   'DATA VITAL': 'CGM DATA VITAL', 'x.isynet (ehem. MCS-ISYNET)': 'x.isynet', 'x.concept (ehem. DOCconcept)': 'x.concept',
-  'x.comfort (ehem. DOCcomfort)': 'x.comfort', 'EL - Elaphe Longissima': 'EL', 'ETERNO Cloud (ehem. inSuite)': 'ETERNO Cloud', DAVID: 'CGM DAVID',
+  'x.comfort (ehem. DOCcomfort)': 'x.comfort', 'EL - Elaphe Longissima': 'EL', 'ETERNO Cloud (ehem. inSuite)': 'ETERNO Cloud',
 }
 const kurz = (s) => NAMEN[s] ?? s
 
@@ -132,7 +132,7 @@ const PVS_ARZT_2007 = D3.tabelle
 // ---------- Datensatz 2: Hersteller ----------
 // Eigentümer am Stichtag (Spalte hersteller der Rohdatei). Drei Linien: CGM, medatixx und die drei Herausforderer, die
 // seit 2013 am stärksten gewachsen sind. Gezählt werden die Systeme aus Datensatz 1 (Klasse „arzt“, ab 2013 mindestens
-// einmal 500 Installationen); Kleinstsysteme fehlen (bei CGM etwa DAVID mit 44 Installationen 2025).
+// einmal 500 Installationen); Kleinstsysteme unter 500 Installationen fehlen.
 const herstellerAm = (system, j) => INST.find((r) => r.system === system && r.stichtag === `${j}-12-31`)?.hersteller ?? ''
 const GRUPPEN = [
   ['CompuGroup Medical (alle Arztsysteme)', (h) => /^CompuGroup Medical$/.test(h)],

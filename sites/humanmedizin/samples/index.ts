@@ -13,7 +13,7 @@ import { PVS_ARZT, PVS_ARZT_2007, PVS_HERSTELLER, PVS_PSYCHO } from './data.ts'
 // sichtbare Beschriftung, die Balken tragen Name und Wert). Die Legende steht im Video unter dem Untertitel.
 const BLAU = '#2a78d6', GRUEN = '#1baf7a', ORANGE = '#eb6834', GRAU = '#a7adb8'
 const GRUPPE: Record<string, string> = {
-  'CGM MEDISTAR': BLAU, 'CGM TURBOMED': BLAU, 'CGM ALBIS': BLAU, 'CGM M1 PRO': BLAU, 'CGM DATA VITAL': BLAU, 'CGM DAVID': BLAU,
+  'CGM MEDISTAR': BLAU, 'CGM TURBOMED': BLAU, 'CGM ALBIS': BLAU, 'CGM M1 PRO': BLAU, 'CGM DATA VITAL': BLAU,
   'x.isynet': GRUEN, 'x.concept': GRUEN, 'x.comfort': GRUEN, medatixx: GRUEN, EL: GRUEN, easymed: GRUEN, 'PDE-TOP': GRUEN,
   'Medical Office': ORANGE, tomedo: ORANGE, T2med: ORANGE,
 }
@@ -105,7 +105,7 @@ export const SAMPLES: SampleDataset[] = [
     description: 'CGM verliert seit 2013 fast die Hälfte seiner Installationen, medatixx ein Achtel, Medical Office, tomedo und T2med wachsen auf das Zwölffache.',
     dataInfo: [
       'Summen der Systeme aus dem Datensatz „Praxissoftware in Arztpraxen“, je Hersteller nach dem Eigentümer am Stichtag. CompuGroup Medical: MEDISTAR, TURBOMED, ALBIS, M1 PRO, DATA VITAL. medatixx: x.isynet, x.concept, x.comfort, medatixx, easymed und ab 2022 EL (Softland im April 2022 übernommen, daher der Sprung). Herausforderer: Medical Office (INDAMED), tomedo (Zollsoft), T2med.',
-      'Gezählt werden Installationen, nicht Praxen oder Ärzte (siehe Dateninfo des Systemdatensatzes). Kleinstsysteme unter 500 Installationen fehlen, bei CGM etwa DAVID mit 44 Installationen 2025.',
+      'Gezählt werden Installationen, nicht Praxen oder Ärzte (siehe Dateninfo des Systemdatensatzes). Kleinstsysteme unter 500 Installationen fehlen.',
       'Gerechnet: 2017 bis 2020 aus KBV-Anteilen bzw. linear (wie im Systemdatensatz). Wechsel zwischen Produkten desselben Herstellers, etwa von x.isynet zu medatixx, verschieben nichts zwischen den Linien; sie sind Migration, kein Wettbewerb.',
     ],
     headers: PVS_HERSTELLER.headers,

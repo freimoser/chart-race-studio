@@ -569,3 +569,12 @@ Die Gesamtsumme Ende 2021 (119.405) ist zufällig identisch mit Ende 2014. Nachg
 „Datenstand 31.03.2022“ (Webarchiv 20230204211945), Spalte „4. Quartal 2021“ über alle 126 Zeilen = **119.405**,
 Spalte „1. Quartal 2022“ = **119.104**. Beides deckt sich mit `data/raw/pvs-kbv-installationen.csv`. Der Rest
 (Summe minus erfasste Systeme ≥ 500) verläuft 2021/2022 glatt (5.659 → 5.611 → 5.555).
+
+## Korrektur 22.10.2026: DAVID gehört nicht zu CGM
+
+Laut KBV-Installationsstatistik (Stand 31.12.2014 und 31.12.2025, Id 721) ist der Anbieter von **David**
+**Medat Computersysteme GmbH**, nicht CompuGroup Medical (Hinweis aus der Schnittstellen-Recherche, am PDF geprüft).
+`data/raw/pvs-kbv-installationen.csv` ab 2013 korrigiert. Für 1997 (DATA-VITAL) und 2007 (CSV: CompuGroup Medical) ist
+der Anbieter nicht nachgeprüft; ob DAVID damals zu Data Vital/CGM gehörte und wann es zu Medat kam, ist offen. Im Race
+ab 2007 heißt es deshalb nur „DAVID“ und ist grau (Eigentümer 2025). In `pvs-hersteller` war DAVID nie enthalten
+(unter 500 Installationen seit 2013).

@@ -39,7 +39,7 @@ export const PVS_HERSTELLER = {
 }
 
 export const PVS_ARZT_2007 = {
-  headers: ["Jahr","CGM MEDISTAR","CGM TURBOMED","CGM DAVID","CGM ALBIS","easymed","DURIA","PROFIMED","IFA-AUGENARZT","MEDYS","Praxis-Programm","PegaMed","EVA","FIDUS","EL","PDE-TOP","QUINCY WIN","x.isynet","x.comfort","x.concept","CGM M1 PRO","S3-Win","Data-AL","EVIDENT","Med7","Medical Office","CGM DATA VITAL","tomedo","medatixx","ETERNO Cloud","T2med"],
+  headers: ["Jahr","CGM MEDISTAR","CGM TURBOMED","DAVID","CGM ALBIS","easymed","DURIA","PROFIMED","IFA-AUGENARZT","MEDYS","Praxis-Programm","PegaMed","EVA","FIDUS","EL","PDE-TOP","QUINCY WIN","x.isynet","x.comfort","x.concept","CGM M1 PRO","S3-Win","Data-AL","EVIDENT","Med7","Medical Office","CGM DATA VITAL","tomedo","medatixx","ETERNO Cloud","T2med"],
   rows: [
     ["2007", 14838, 12747, 2091, 7470, 2095, 1708, 825, 792, 940, 800, 618, 383, 401, 920, 987, 4268, 8760, 6976, 5275, 4798, 1853, 985, 591, 587, 576, 1324, 0, 0, 1, 0],
     ["2008", 14544, 13080, 1936, 7385, 1986, 1735, 824, 772, 934, 791, 636, 413, 405, 1001, 823, 4257, 8876, 6654, 5662, 4736, 1912, 1002, 604, 897, 666, 1324, 0, 0, 1, 0],
