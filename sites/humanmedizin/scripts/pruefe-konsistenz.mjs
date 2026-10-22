@@ -121,7 +121,20 @@ merke(['Elefant', 'psyprax', 'PsychoDat'].reduce((a, n) => a + roh(INST, '2025-1
 merke(['ORBIS', 'SAP Ambulatory Care Management', 'CGM MEDICO (ehem. MEDICO WIPS)', 'IMedOne'].reduce((a, n) => a + roh(INST, '2025-12-31', n), 0)) // Krankenhaussysteme Ende 2025
 merke(roh(LUE, '2000-06-30', 'ALBIS') + roh(LUE, '2000-06-30', 'ALBIS DOS (Altversion)')) // ALBIS Mitte 2000, beide Versionen
 merke(roh(INST, '1997-12-31', 'ALBIS') + roh(INST, '1997-12-31', 'ALBIS ON WINDOWS (eigene KBV-Zeile 1997)')) // ALBIS Ende 1997
-bekannt.add('9.508') // Medical Office Q2/2021 im KBV-Bericht Q2/2021 (doppelt gezählt), zitiert aus recherche/pvs-kbv-historie.md Abschnitt 2
+bekannt.add('9.508')
+// Redaktionsplan: Summen über Gewinner/Verlierer 2021–2025 und Summe der größten drei Arztsysteme 2025.
+{
+  const q = (j, n) => roh(INST, `${j}-12-31`, n)
+  const netto = [...new Set(INST.filter((r) => r.stichtag === '2025-12-31' && r.system !== '__SUMME__').map((r) => r.system))].map((n) => q(2025, n) - q(2021, n)).filter(Number.isFinite)
+  merke(netto.filter((x) => x > 0).reduce((a, x) => a + x, 0)); merke(-netto.filter((x) => x < 0).reduce((a, x) => a + x, 0))
+  const top3 = D.PVS_ARZT.headers.slice(1).map((n) => wert(D.PVS_ARZT, 2025, n)).sort((x, y) => y - x).slice(0, 3)
+  merke(top3.reduce((a, x) => a + x, 0))
+  merke(wert(D.PVS_ARZT, 2025, 'tomedo') + wert(D.PVS_ARZT, 2025, 'T2med'))
+  // Arztgruppe Psychotherapeuten 2014 → 2025 (recherche Abschnitt 6, 2025 als Mindestwert aus den Top 20), auf Tausend gerundet.
+  const psy14 = 24451, psy25 = 35271, rest14 = q(2014, '__SUMME__') - psy14, rest25 = q(2025, '__SUMME__') - psy25
+  merke(Math.round((rest14 - rest25) / 1000) * 1000); merke(Math.round((psy25 - psy14) / 1000) * 1000)
+  for (const j of [2013, 2025]) merke(['ORBIS', 'SAP Ambulatory Care Management', 'CGM MEDICO (ehem. MEDICO WIPS)', 'IMedOne'].reduce((a, n) => a + q(j, n), 0))
+} // Medical Office Q2/2021 im KBV-Bericht Q2/2021 (doppelt gezählt), zitiert aus recherche/pvs-kbv-historie.md Abschnitt 2
 for (const T of [D.PVS_ARZT, D.PVS_ARZT_2007, D.PVS_HERSTELLER]) for (const r of T.rows) merke(r.slice(1).reduce((a, b) => a + b, 0))
 // Differenzen zwischen zwei Jahren je System (Texte nennen „plus 311“ o. ä.), Summen von Versionszeilen (Momentaufnahmen).
 for (const r of INST) for (const r2 of INST) if (r.system === r2.system && r.stichtag < r2.stichtag) merke(Math.abs(Number(r2.installationen) - Number(r.installationen)))
@@ -129,6 +142,7 @@ const texte = [
   ...fs.readdirSync(path.join(H, 'content/artikel')).filter((f) => f.endsWith('.md')).map((f) => path.join(H, 'content/artikel', f)),
   ...fs.readdirSync(path.join(H, 'docs/linkedin')).filter((f) => f.endsWith('.md')).map((f) => path.join(H, 'docs/linkedin', f)),
   path.join(H, 'seiten/artikel/praxisverwaltungssysteme-deutschland.html'), path.join(H, 'seiten/artikel/datenherkunft.html'),
+  path.join(H, 'content/roadmap.ts'),
 ]
 const ERLAUBT = new Set(['1.997', '2.000', '2.005', '2.007', '2.013', '2.025']) // Jahreszahlen mit Punkt kommen nicht vor, nur zur Sicherheit
 for (const datei of texte) {

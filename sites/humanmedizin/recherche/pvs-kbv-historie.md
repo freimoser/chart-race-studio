@@ -562,3 +562,10 @@ Bei rund 20 Systemen und 26 Jahren (2000–2025) wären etwa **55 % der Werte ge
 lückenlose Animation, sondern als belegte Momentaufnahmen (1997, Q1/1999, Q2/2000, 2005) zeigen – z. B. als Vorspann
 „So sah der Markt 1997/2000 aus“. Ein Race ab 2000 wäre nur mit deutlichem Hinweis „über die Hälfte der Werte
 gerechnet“ vertretbar.
+
+## Nachprüfung 22.10.2026 (Pflegedurchlauf 2)
+
+Die Gesamtsumme Ende 2021 (119.405) ist zufällig identisch mit Ende 2014. Nachgerechnet am Original: KBV-Bericht
+„Datenstand 31.03.2022“ (Webarchiv 20230204211945), Spalte „4. Quartal 2021“ über alle 126 Zeilen = **119.405**,
+Spalte „1. Quartal 2022“ = **119.104**. Beides deckt sich mit `data/raw/pvs-kbv-installationen.csv`. Der Rest
+(Summe minus erfasste Systeme ≥ 500) verläuft 2021/2022 glatt (5.659 → 5.611 → 5.555).
