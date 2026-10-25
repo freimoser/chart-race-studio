@@ -439,6 +439,9 @@ function startseite(live) {
   const csvNeu = gNeu && DATENSAETZE[gNeu.id]?.daten ? `daten/${gNeu.id}.csv` : ''
   const anleitungen = live.filter((a) => a.anleitung && a.art === 'anleitung')
   const themen = ARCS.map((arc) => ({ arc, n: live.filter((a) => POSTS.find((p) => p.nr === a.post)?.arc === arc.id).length })).filter((t) => t.n)
+  // Häufige Fragen nur zu Artikeln, die live sind: Die Antwort verweist auf den Artikel, der die Zahl belegt.
+  const faq = (PROFIL.start.faq ?? []).filter((f) => live.some((a) => a.slug === f.slug))
+  const faqLd = faq.length ? `\n    <script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.frage, acceptedAnswer: { '@type': 'Answer', text: f.antwort } })) }).replace(/</g, '\\u003c')}</script>` : ''
   return `<!doctype html>
 <html lang="de" data-brand="klar">
   <head>
@@ -457,7 +460,7 @@ function startseite(live) {
     <meta property="og:description" content="${esc(PROFIL.start.ogDescription)}" />
     <meta property="og:locale" content="de_DE" />
     <meta property="og:site_name" content="${esc(L.siteName)}" />
-    <script type="module" src="/src/article.ts"></script>
+    <script type="module" src="/src/article.ts"></script>${faqLd}
   </head>
   <body>
     <!--rahmen:kopf-->
@@ -486,7 +489,11 @@ ${PROFIL.start.themenExtra}${live.some((a) => a.anleitung) ? `        <li><a hre
         <p>Jede Grafik dieser Seite entsteht im Studio: eine Tabelle hinein, ein MP4-Video heraus, als Bar Race, Line Race oder animierte Karte. Es läuft vollständig im Browser, die Daten verlassen das Gerät nicht. Am bequemsten am Rechner.</p>
         <p class="knoepfe"><a class="knopf" href="studio/">Studio öffnen</a><a class="knopf zweit" href="${PROFIL.datenformatUrl('')}">So muss die Tabelle aussehen</a></p>
 ${anleitungen.length ? `        <p class="meta">Anleitung: ${anleitungen.map((a) => `<a href="beitrag/${a.slug}.html">${esc(a.titel)}</a>`).join(' · ')}</p>\n` : ''}      </section>
-      <section class="ueber" aria-labelledby="ueber-titel">
+${faq.length ? `      <section class="faq" aria-labelledby="faq-titel">
+        <h2 id="faq-titel">Häufige Fragen</h2>
+${faq.map((f) => `        <h3>${esc(f.frage)}</h3>\n        <p>${esc(f.antwort)} Mehr im Artikel <a href="beitrag/${f.slug}.html">${esc(live.find((a) => a.slug === f.slug).titel)}</a>.</p>`).join('\n')}
+      </section>
+` : ''}      <section class="ueber" aria-labelledby="ueber-titel">
 ${PROFIL.start.ueber}
       </section>
     </main>

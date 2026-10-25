@@ -67,6 +67,7 @@ const profil: SeitenProfil = {
     ueber: `        <h2 id="ueber-titel">Wer hier schreibt</h2>
         <p>Thomas Freimoser, Geschäftsführer der <a href="${FLEXCHANGE}">FleXChange Medical GmbH</a>. FleXChange verbindet Praxisverwaltungssysteme mit E-Health-Anwendungen, ist also selbst Teil des Marktes, über den diese Seite schreibt. Deshalb gilt hier dieselbe Regel wie auf der Schwesterseite: veröffentlichte Statistiken, nachgelesen an der Quelle, mit offener Methode. Was gerechnet ist, steht dabei.</p>
         <p class="meta"><a href="ueber-das-projekt.html">Über das Projekt und den Interessenkonflikt</a> · <a href="artikel/datenherkunft.html">Woher jede Zahl stammt</a> · <a href="${TIER}/">Tiermedizin in Zahlen</a></p>`,
+    faq: [],
   },
   uebersicht: {
     title: 'Alle Artikel nach Thema: Praxen, Praxissoftware, IT',

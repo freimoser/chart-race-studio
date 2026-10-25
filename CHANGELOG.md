@@ -7,6 +7,8 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 ### SEO/GEO-Runde (26.10.2026)
 
 - **Kern, betrifft beide Seiten:** Startseite trägt `dateModified` im WebSite-Schema (jüngstes Artikeldatum, dieselbe Quelle wie das lastmod der Sitemap, jetzt als `NEUESTER` in `vite.config.ts`).
+- **Kern, betrifft beide Seiten:** Neues Profilfeld `start.faq` (Frage, Antwort, Slug): Abschnitt „Häufige Fragen“ auf der Startseite plus FAQPage-Schema, nur für live Artikel, Linktext = Artikeltitel. Humanmedizin: `faq: []`, Startseite unverändert.
+- **Tiermedizin:** acht Fragen (Tierärzte, Praxen, Haustiere, Frauenanteil, Kosten, Ketten, Mangel, Gehalt), Zahlen wörtlich aus den Artikeln.
 
 ### Konsistenzprüfung der Daten (22.10.2026)
 

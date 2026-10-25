@@ -58,6 +58,16 @@ const profil: SeitenProfil = {
     ueber: `        <h2 id="ueber-titel">Wer hier schreibt</h2>
         <p>Ein privates Projekt von Thomas Freimoser, kein Tierarzt und keine Behörde: veröffentlichte Statistiken, nachgelesen an der Quelle, mit offener Methode. Was gerechnet ist, steht dabei.</p>
         <p class="meta"><a href="ueber-das-projekt.html">Über das Projekt, mit Video in 60 Sekunden</a> · <a href="artikel/datenherkunft.html">Woher jede Zahl stammt</a></p>`,
+    faq: [
+      { frage: 'Wie viele Tierärzte gibt es in Deutschland?', antwort: 'Ende 2025 waren in Deutschland 34.476 Tierärztinnen und Tierärzte tätig. Mitglied einer Tierärztekammer waren 46.089, darunter auch Ruheständler (Statistik der Bundestierärztekammer).', slug: 'anzahl-tieraerzte-deutschland' },
+      { frage: 'Wie viele Tierarztpraxen gibt es in Deutschland?', antwort: 'Eine amtliche Zahl gibt es nicht. Der Tierärzte Atlas Deutschland 2024 nennt rund 10.000 Praxen und Kliniken. Ende 2025 führten 11.216 Tierärztinnen und Tierärzte eine eigene Praxis; in Gemeinschaftspraxen teilen sich mehrere Inhaber einen Betrieb.', slug: 'niedergelassene-tieraerzte-deutschland' },
+      { frage: 'Wie viele Haustiere gibt es in Deutschland?', antwort: '2025 lebten rechnerisch 33,4 Millionen Katzen, Hunde, Kleintiere und Ziervögel in deutschen Haushalten, darunter 15,7 Millionen Katzen und 10,0 Millionen Hunde. Die Zahlen sind eine Hochrechnung aus einer Haushaltsbefragung von IVH und ZZF.', slug: 'anzahl-haustiere-deutschland' },
+      { frage: 'Wie viel Prozent der Tierärzte sind Frauen?', antwort: '2025 waren 72,0 Prozent der tierärztlich Tätigen in Deutschland Frauen, 2002 waren es 44,3 Prozent. Seit 2006 arbeiten mehr Tierärztinnen als Tierärzte (Bundestierärztekammer).', slug: 'frauenanteil-tiermedizin' },
+      { frage: 'Sind Tierarztkosten stärker gestiegen als die Inflation?', antwort: 'Ja. Von 2010 bis 2026 stiegen die Tierarztpreise in Deutschland um 54 Prozent, die Verbraucherpreise insgesamt um 42 Prozent (Statistisches Bundesamt). Mit der neuen Gebührenordnung sprang der Preisindex im Dezember 2022 um 37,5 Prozent.', slug: 'tierarztkosten-inflation' },
+      { frage: 'Wie hoch ist der Anteil der Tierarztketten?', antwort: 'Im August 2024 gehörten rund 450 Standorte zu 16 Praxisketten, etwa 4,5 Prozent von rund 10.000 Praxen und Kliniken (Tierärzte Atlas Deutschland 2024). Eine amtliche Zählung gibt es nicht.', slug: 'anteil-tierarztketten-deutschland' },
+      { frage: 'Gibt es in Deutschland einen Tierarztmangel?', antwort: 'Gemessen an Köpfen nicht: 2025 kamen rechnerisch 1.101 Hunde und Katzen auf eine Tierärztin oder einen Tierarzt in der Praxis, im Jahr 2000 waren es 1.244. Knapp werden die Praxisinhaber, auf jeden kommen 2.291 Hunde und Katzen statt 1.668 (berechnet).', slug: 'tierarztmangel-deutschland' },
+      { frage: 'Was verdient ein Tierarzt?', antwort: 'Angestellte Tierärztinnen und Tierärzte verdienen zum Berufseinstieg im Median 3.701 Euro brutto im Monat bei Vollzeit, nach 20 Jahren rund 5.900 Euro (Befragung Ende 2025, auf 40 Wochenstunden hochgerechnet).', slug: 'gehalt-tierarzt' },
+    ],
   },
   uebersicht: {
     title: 'Alle Artikel nach Thema: Tierärzte, Praxen, Haustiere',

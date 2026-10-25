@@ -52,6 +52,9 @@ export interface SeitenProfil {
     themenExtra: string
     /** Abschnitt „Wer hier schreibt“ (HTML, ohne section). */
     ueber: string
+    /** Häufige Fragen auf der Startseite (sichtbar und als FAQPage). Antwort als Text, Zahlen aus dem verlinkten Artikel;
+     *  erscheint nur, wenn der Artikel `slug` live ist. Leer: kein Abschnitt. */
+    faq: { frage: string; antwort: string; slug: string }[]
   }
   uebersicht: {
     title: string; description: string; ogTitle: string; ogDescription: string
