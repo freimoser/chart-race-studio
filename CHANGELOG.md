@@ -19,6 +19,10 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 - **Tiermedizin:** Artikel 32, Einstieg korrigiert: 2011 war es rund dreimal so viel (nicht „67 Prozent mehr“).
 - **Tiermedizin:** acht Fragen (Tierärzte, Praxen, Haustiere, Frauenanteil, Kosten, Ketten, Mangel, Gehalt), Zahlen wörtlich aus den Artikeln.
 
+### Datenschutzerklärung ergänzt (26.10.2026)
+
+- **Kern, betrifft beide Seiten:** `scripts/build-legal.mjs` nennt jetzt die Grundlage der Übermittlung in die USA (EU-US Data Privacy Framework für GitHub, Google, Cloudflare), alle Einträge im Browser-Speicher als Tabelle mit Zweck, Dauer und § 25 Abs. 2 Nr. 2 TDDDG, die GA-Cookies mit Laufzeit, einen Abschnitt „Kontakt per E-Mail“, das Widerspruchsrecht nach Art. 21 DSGVO gesondert, die Aufsichtsbehörde mit Anschrift, Pflicht zur Bereitstellung und automatisierte Entscheidungen sowie den Stand. `check:launch` meldet als Blocker, wenn eine dieser Angaben fehlt oder ein im Code genutzter Speicher-Schlüssel nicht im Text steht.
+
 ### Konsistenzprüfung der Daten (22.10.2026)
 
 - **Kern, betrifft beide Seiten:** `npm run check:daten` führt `sites/<seite>/scripts/pruefe-konsistenz.mjs` aus, falls die Seite eine hat (Tiermedizin noch nicht). CSV-Leser mit Anführungszeichen als `scripts/lib/csv.mjs` für alle Datensatz-Skripte.

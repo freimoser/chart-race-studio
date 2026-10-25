@@ -155,6 +155,23 @@ const skripte = fs.existsSync(path.join(DIST, 'assets')) ? fs.readdirSync(path.j
 const gaImBuild = seiten.some((p) => /googletagmanager/.test(lies(p))) || skripte.some((p) => /["'`]G-[A-Z0-9]{6,}["'`]/.test(lies(p)))
 const gaImText = /Google Analytics/.test(ds)
 if (gaImBuild !== gaImText) blocker.push(`Datenschutzerklärung und Einbindung passen nicht zusammen: Google Analytics ${gaImBuild ? 'ist eingebunden, steht aber nicht im Text' : 'steht im Text, ist aber nicht eingebunden'}.`)
+// Pflichtangaben nach Art. 13 DSGVO, die schon einmal fehlten: Widerspruchsrecht gesondert, Drittlandgrundlage für
+// den US-Hoster, Kontakt per E-Mail, Stand. Und jeder Eintrag, den die Seite im Browser-Speicher ablegt, steht im Text.
+if (ds) {
+  for (const [muster, was] of [[/Art\. 21 DSGVO/, 'Widerspruchsrecht nach Art. 21 DSGVO'], [/Data Privacy Framework|Standardvertragsklauseln/, 'Grundlage der Übermittlung in die USA (Hoster)'], [/Kontakt per E-Mail/, 'Abschnitt zur Kontaktaufnahme per E-Mail'], [/Stand: \d/, 'Stand der Erklärung']]) {
+    if (!muster.test(ds)) blocker.push(`Datenschutzerklärung: ${was} fehlt.`)
+  }
+  const quellen = []
+  const lauf = (d) => { for (const f of fs.readdirSync(d, { withFileTypes: true })) { const p = path.join(d, f.name); if (f.isDirectory()) { if (f.name !== 'test') lauf(p) } else if (/\.tsx?$/.test(f.name)) quellen.push(lies(p)) } }
+  lauf('src')
+  const schluessel = new Set()
+  for (const q of quellen) {
+    for (const [, k] of q.matchAll(/(?:get|set|remove)Item\(\s*'([^']+)'/g)) schluessel.add(k)
+    for (const [, k] of q.matchAll(/_KEY = '([^']+)'/g)) schluessel.add(k)
+    if (/from 'zustand\/middleware'/.test(q)) for (const [, k] of q.matchAll(/^\s*name: '([^']+)'/gm)) schluessel.add(k)
+  }
+  for (const k of schluessel) if (!ds.includes(k)) blocker.push(`Datenschutzerklärung: Browser-Speicher „${k}“ wird genutzt, steht aber nicht im Text.`)
+}
 if (!L.companyName && /Petleo|GmbH|UG /.test(ds + lies(path.join(DIST, 'impressum.html')))) {
   hinweise.push('Ein Geschäftsname taucht im Text auf, ist aber nicht als companyName gepflegt. Nach § 5 DDG gehört zur Firma die Rechtsform.')
 }
