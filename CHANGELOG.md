@@ -8,6 +8,7 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 - **Kern, betrifft beide Seiten:** Startseite trägt `dateModified` im WebSite-Schema (jüngstes Artikeldatum, dieselbe Quelle wie das lastmod der Sitemap, jetzt als `NEUESTER` in `vite.config.ts`).
 - **Kern, betrifft beide Seiten:** Neues Profilfeld `start.faq` (Frage, Antwort, Slug): Abschnitt „Häufige Fragen“ auf der Startseite plus FAQPage-Schema, nur für live Artikel, Linktext = Artikeltitel. Humanmedizin: `faq: []`, Startseite unverändert.
+- **Kern, betrifft beide Seiten:** Person-Schema von Autor (Artikel) und Herausgeber (Startseite) trägt `@id` = `/ueber-das-projekt.html#<name>`, wie die AboutPage beider Seiten – eine Entität statt drei.
 - **Tiermedizin:** acht Fragen (Tierärzte, Praxen, Haustiere, Frauenanteil, Kosten, Ketten, Mangel, Gehalt), Zahlen wörtlich aus den Artikeln.
 
 ### Konsistenzprüfung der Daten (22.10.2026)

@@ -135,7 +135,7 @@ function integrationen(env: Record<string, string>) {
         description: PROFIL.beschreibung,
         // Ohne dateModified wirkt die Startseite für Antwortmaschinen undatiert; das Datum ist das des jüngsten Artikels.
         ...(NEUESTER ? { dateModified: NEUESTER } : {}),
-        publisher: { '@type': 'Person', name: PROFIL.autor.name, url: env.VITE_SITE_URL.replace(/\/$/, '') + '/ueber-das-projekt.html', sameAs: PROFIL.autor.sameAs, ...PROFIL.autor.extra },
+        publisher: { '@type': 'Person', '@id': env.VITE_SITE_URL.replace(/\/$/, '') + '/ueber-das-projekt.html#' + PROFIL.autor.name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ß/g, 'ss').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''), name: PROFIL.autor.name, url: env.VITE_SITE_URL.replace(/\/$/, '') + '/ueber-das-projekt.html', sameAs: PROFIL.autor.sameAs, ...PROFIL.autor.extra },
       })}</script>`)
       // Studio: KI-Crawler wie GPTBot, ClaudeBot oder PerplexityBot führen kein JavaScript aus
       // und sähen sonst ein leeres <div id="root">. React ersetzt diesen Inhalt beim Start.
