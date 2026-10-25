@@ -4,6 +4,10 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### SEO/GEO-Runde (26.10.2026)
+
+- **Kern, betrifft beide Seiten:** Startseite trägt `dateModified` im WebSite-Schema (jüngstes Artikeldatum, dieselbe Quelle wie das lastmod der Sitemap, jetzt als `NEUESTER` in `vite.config.ts`).
+
 ### Konsistenzprüfung der Daten (22.10.2026)
 
 - **Kern, betrifft beide Seiten:** `npm run check:daten` führt `sites/<seite>/scripts/pruefe-konsistenz.mjs` aus, falls die Seite eine hat (Tiermedizin noch nicht). CSV-Leser mit Anführungszeichen als `scripts/lib/csv.mjs` für alle Datensatz-Skripte.

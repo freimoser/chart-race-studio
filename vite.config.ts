@@ -36,6 +36,8 @@ const base = process.env.BASE_PATH ?? '/'
 interface Beitrag { post: number; slug: string; titel: string; beschreibung: string; frage: string; stand: string; geaendert?: string; live: boolean }
 const BEITRAEGE: Beitrag[] = (JSON.parse(readFileSync(seite('content/artikel-index.json'), 'utf8')) as Beitrag[])
   .filter((b) => b.live && existsSync(`beitrag/${b.slug}.html`))
+/** Jüngstes echtes Änderungsdatum eines Artikels: lastmod der Startseite in der Sitemap und dateModified im Schema der Startseite. */
+const NEUESTER = BEITRAEGE.map((b) => b.geaendert ?? b.stand).sort().at(-1)
 
 /** Bereich „Datenformat“: Hauptseite und Unterseiten je Diagrammart, ebenfalls von scripts/build-artikel.mjs erzeugt. */
 interface DatenformatSeite { slug: string; pfad: string; titel: string; menue: string; beschreibung: string; frage: string; stand: string; bereit: boolean }
@@ -131,6 +133,8 @@ function integrationen(env: Record<string, string>) {
       if (pfad === 'index.html' && env.VITE_SITE_URL) tags.push(`<script type="application/ld+json">${JSON.stringify({
         '@context': 'https://schema.org', '@type': 'WebSite', name: MARKE, url: env.VITE_SITE_URL.replace(/\/$/, '') + '/', inLanguage: 'de-DE',
         description: PROFIL.beschreibung,
+        // Ohne dateModified wirkt die Startseite für Antwortmaschinen undatiert; das Datum ist das des jüngsten Artikels.
+        ...(NEUESTER ? { dateModified: NEUESTER } : {}),
         publisher: { '@type': 'Person', name: PROFIL.autor.name, url: env.VITE_SITE_URL.replace(/\/$/, '') + '/ueber-das-projekt.html', sameAs: PROFIL.autor.sameAs, ...PROFIL.autor.extra },
       })}</script>`)
       // Studio: KI-Crawler wie GPTBot, ClaudeBot oder PerplexityBot führen kein JavaScript aus
@@ -209,7 +213,7 @@ ${sortiert.map((b) => `  <entry>
       }
       // lastmod nur, wo es ein echtes Änderungsdatum gibt. Ein Build-Datum auf jeder Seite
       // bringt Google bei, dem Feld nicht zu trauen – dann zählt es auch dort nicht, wo es stimmt.
-      const neuester = BEITRAEGE.map((b) => b.geaendert ?? b.stand).sort().at(-1)
+      const neuester = NEUESTER
       // Handgeschriebene Seiten tragen ihr Änderungsdatum selbst (<meta name="dcterms.modified">); ohne Meta kein lastmod.
       const geaendert = (datei: string) => (readFileSync(datei, 'utf8').match(/<meta name="dcterms\.modified" content="(\d{4}-\d{2}-\d{2})"/) ?? [])[1]
       const seiten: [string, string?][] = [
