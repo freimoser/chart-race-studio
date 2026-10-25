@@ -1,0 +1,43 @@
+# SEO- und GEO-Protokoll – Humanmedizin in Zahlen
+
+Loop ab 26.10.2026: „Verbessere die Website. Sei kreativ und fokussiere dich auf Wins im Bereich SEO und GEO. Stelle
+sicher, wir halten alle gängigen SEO-Tipps ein. Mindestens 15 Wiederholungen.“ Je Runde ein Hebel, geprüft gegen den
+Build (`SITE=humanmedizin VITE_SITE_URL=https://humanmedizin-in-zahlen.org npm run build`), nicht gegen den Quelltext.
+
+Grenzen: Kernänderungen (außerhalb `sites/`) tragen beide Seiten und stehen im CHANGELOG; der Tiermedizin-Chat arbeitet
+parallel an SEO/GEO im Kern, deshalb Kernänderungen klein halten und vorher `git pull --rebase`. Kein Push ohne Freigabe.
+Die Seite ist noch nicht live (Domain, Repo, Deploy-Key fehlen) – Live-Prüfungen (Search Console, Rich-Results-Test,
+Trailing Slash, Header) erst danach.
+
+## Ausgangslage (Runde 1)
+
+| Prüfpunkt | Stand |
+|---|---|
+| Titel ≤ 60, Description ≤ 155 | alle indexierbaren Seiten eingehalten |
+| Canonical, og:*, twitter:card | auf allen indexierbaren Seiten |
+| `noindex, follow` | Impressum, Datenschutz, 404, Studio; nicht in der Sitemap |
+| Strukturierte Daten | WebSite + Person/Organization (Start), Article + Dataset + FAQPage (Artikel), Article + FAQPage (Säulenseite), CollectionPage, AboutPage |
+| `llms.txt`, `llms-full.txt` | vorhanden, mit „Aussagen, die ohne Kontext irreführen“ |
+| robots.txt, sitemap.xml | vorhanden, Sitemap nur indexierbare Seiten |
+| Eine `h1` je Seite, Bilder mit `alt` | eingehalten |
+
+## Runden
+
+| Runde | Datum | Hebel | Ergebnis |
+|---|---|---|---|
+| 1 | 26.10.2026 | Eigene Vorschaubilder (1200 × 630) je Artikel | 11 Karten mit Titel und Kernzahl in `public/beitrag/og/`; vorher zeigte jeder geteilte Link die Standardkarte. Das Bild steht auch als `image` im Article-Schema (für Artikel-Rich-Results erforderlich). |
+
+## Ideenliste (nach erwartetem Nutzen)
+
+- **Datenlizenz festlegen** (Entscheidung Thomas): Ohne `license` im Dataset-Schema meldet Google Dataset Search eine
+  Warnung; eine offene Lizenz für die eigenen Zusammenstellungen (z. B. CC BY 4.0) macht die Daten zitierfähig.
+- Datenherkunft ohne strukturierte Daten: Article/`about` oder DataCatalog für freigegebene Datensätze.
+- Säulenseite Praxisverwaltungssysteme: Dataset-Schema für die KBV-Tabelle Q4/2025, CSV-Download, Sprungmarken.
+- Dataset-Schema ergänzen: `keywords`, `isAccessibleForFree`, `measurementTechnique`, `includedInDataCatalog`.
+- Glossar/Begriffsseite (`DefinedTermSet`): PVS, KBV-Prüfnummer, LDT, KIM, eArztbrief, MVZ, KVDT – Antworten für
+  „Was ist …“-Fragen, verlinkt aus allen Artikeln.
+- Keyword-Recherche Humanmedizin (Autocomplete, PAA) als `docs/KEYWORD-RECHERCHE.md` wie bei der Tiermedizin.
+- Startseite: Kernzahlen als Text (nicht nur Grafik), `ItemList` der Artikel.
+- Interne Verlinkung Säulenseite ↔ alle Artikel prüfen, Ankertexte mit Suchbegriff.
+- `llms.txt`: Kernzahlen je Thema als Faktenliste, sobald weitere Artikel freigegeben sind.
+- Autorenseite: E-E-A-T (Rolle, Erfahrung mit PVS-Schnittstellen, offen genannter Interessenkonflikt) prüfen.
