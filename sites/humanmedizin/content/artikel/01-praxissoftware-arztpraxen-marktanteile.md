@@ -57,7 +57,7 @@ Drei Dinge fallen auf. MEDISTAR ist in jeder belegten Liste seit 1997 das größ
 
 ## Was die Zahl nicht sagt
 
-- **Installationen sind keine Praxen und keine Ärzte.** Die KBV zählt Abrechnungen mit der Prüfnummer eines Systems. Ein MVZ mit 20 Ärztinnen und Ärzten zählt wie eine Einzelpraxis. Die KBV schreibt selbst, die Statistik sei kein genaues Abbild des tatsächlichen Marktes.
+- **Installationen sind keine Praxen und keine Ärzte.** Die KBV zählt Abrechnungen mit der Prüfnummer eines Systems. Ein MVZ mit 20 Ärztinnen und Ärzten zählt wie eine Einzelpraxis. Die KBV schreibt selbst, die Statistik sei kein genaues Abbild des tatsächlichen Marktes. Was Prüfnummer, KVDT und Installationsstatistik genau bedeuten, steht in den [Begriffen der Praxis-IT](../artikel/begriffe-praxis-it.html).
 - **Psychotherapie ist herausgenommen.** In der Gesamtliste führt Elefant, eine Software für psychotherapeutische Praxen, mit 10.967 Installationen. Diese Grafik zeigt nur Systeme für ärztliche Praxen; die Psychotherapie bekommt einen eigenen Beitrag.
 - **2017 bis 2020 sind gerechnet.** In diesen Jahren hat die KBV nur Anteile in Prozent veröffentlicht, ohne Installationszahlen. Die Werte sind aus diesen Anteilen und einer gerechneten Gesamtzahl entstanden, für Systeme ohne veröffentlichten Anteil linear zwischen 2016 und 2021.
 - **Keine Aussage über Qualität.** Wie zufrieden Praxen mit ihrem System sind, misst die KBV-Statistik nicht.

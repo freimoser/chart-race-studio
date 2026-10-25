@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="de" data-brand="klar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Begriffe der Praxis-IT: PVS, KIM, LDT und MVZ erklärt</title>
+    <meta name="dcterms.modified" content="2026-10-26" />
+    <meta name="description" content="Was ist ein Praxisverwaltungssystem, was zählt die KBV-Prüfnummer, was sind KIM, LDT, eArztbrief und MVZ? Kurz erklärt, mit Quelle und Zahl." />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../favicon-96.png" sizes="96x96" type="image/png" />
+    <link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Begriffe der Praxis-IT kurz erklärt" />
+    <meta property="og:description" content="PVS, KBV-Prüfnummer, KVDT, LDT, KIM, eArztbrief, Telematikinfrastruktur, MVZ: was die Begriffe bedeuten und welche Zahl dazu gehört." />
+    <meta property="og:locale" content="de_DE" />
+    <script type="module" src="/src/article.ts"></script>
+  </head>
+  <body>
+    <!--rahmen:kopf-->
+
+    <main class="wrap">
+      <article>
+        <h1>Begriffe der Praxis-IT, kurz erklärt</h1>
+        <p class="lead">
+          Wer Daten zur ambulanten Versorgung liest, stößt auf Abkürzungen: PVS, KVDT, LDT, KIM, MVZ. Hier steht, was sie
+          bedeuten, wer sie festlegt und welche Zahl dieser Seite dazu gehört.
+        </p>
+        <p class="meta">Stand 26. Oktober 2026 · von <a href="../ueber-das-projekt.html">Thomas Freimoser</a></p>
+
+        <h2>Software und Abrechnung</h2>
+        <dl class="faq">
+          <dt id="praxisverwaltungssystem">Praxisverwaltungssystem (PVS)</dt>
+          <dd>
+            Die Software, mit der eine Arzt- oder Psychotherapiepraxis Patientendaten, Termine, Dokumentation und
+            Abrechnung führt. Wer mit der Kassenärztlichen Vereinigung abrechnet, braucht ein von der Kassenärztlichen
+            Bundesvereinigung (KBV) zertifiziertes System. Ende 2025 führt die KBV 116.954 Installationen in 126 Zeilen,
+            Systeme und Varianten desselben Systems; welche das sind, steht in
+            <a href="praxisverwaltungssysteme-deutschland.html">Praxisverwaltungssysteme in Deutschland</a>.
+          </dd>
+
+          <dt id="kbv-pruefnummer">KBV-Prüfnummer</dt>
+          <dd>
+            Die Kennung, die ein System bei der Zertifizierung durch die KBV erhält. Sie wird mit jeder Abrechnung an die
+            Kassenärztliche Vereinigung übermittelt. Darauf beruht die Installationsstatistik: Gezählt werden Abrechnungen
+            mit der Prüfnummer eines Systems, nicht Praxen oder Ärzte.
+          </dd>
+
+          <dt id="installationsstatistik">Installationsstatistik der KBV</dt>
+          <dd>
+            Die quartalsweise Zählung der Praxissysteme nach Prüfnummer. Sie ist die einzige vollständige Quelle dafür,
+            welche Software Praxen nutzen. Die KBV schreibt selbst, sie gebe kein genaues Abbild des Marktes wieder: Ein
+            MVZ zählt wie eine Einzelpraxis, und die Psychotherapie stellt rund 30 Prozent der Installationen. Was das für
+            Marktanteile bedeutet, zeigt
+            <a href="../beitrag/praxissoftware-arztpraxen-marktanteile.html">Praxissoftware in Arztpraxen</a>.
+          </dd>
+
+          <dt id="kvdt">KVDT</dt>
+          <dd>
+            Die Datensatzbeschreibung der KBV für die Abrechnung mit den Kassenärztlichen Vereinigungen. Jedes
+            abrechnende Praxissystem braucht die KVDT-Zulassung.
+          </dd>
+
+          <dt id="1-click-abrechnung">1-Click-Abrechnung</dt>
+          <dd>
+            Die Übermittlung der Quartalsabrechnung aus dem Praxissystem an die Kassenärztliche Vereinigung über KIM.
+            Seit der Abschaltung von KV-Connect am 20. Oktober 2025 ist sie der Weg für alle; die Zulassung dafür haben
+            alle abrechnenden Systeme.
+          </dd>
+
+          <dt id="archiv-und-wechselschnittstelle">Archiv- und Wechselschnittstelle</dt>
+          <dd>
+            Eine Schnittstelle nach § 371 SGB V, über die eine Praxis ihre Daten beim Wechsel der Software mitnehmen kann.
+            Die Hersteller sind verpflichtet, sie anzubieten.
+          </dd>
+
+          <dt id="krankenhausinformationssystem">Krankenhausinformationssystem (KIS)</dt>
+          <dd>
+            Die Software eines Krankenhauses. ORBIS, SAP, CGM MEDICO und iMedOne stehen auch in der KBV-Statistik der
+            Praxissysteme, weil Krankenhäuser ambulante Leistungen über sie abrechnen; zusammen 7.948 Installationen Ende
+            2025. Sie sind keine Software für Arztpraxen.
+          </dd>
+        </dl>
+
+        <h2>Vernetzung und Telematikinfrastruktur</h2>
+        <dl class="faq">
+          <dt id="telematikinfrastruktur">Telematikinfrastruktur (TI)</dt>
+          <dd>
+            Das geschützte Netz des deutschen Gesundheitswesens, das Praxen, Krankenhäuser, Apotheken und Krankenkassen
+            verbindet. Verantwortlich ist die gematik. Über die TI laufen unter anderem KIM, das E-Rezept und die
+            elektronische Patientenakte.
+          </dd>
+
+          <dt id="kim">KIM (Kommunikation im Medizinwesen)</dt>
+          <dd>
+            Der E-Mail-Dienst der Telematikinfrastruktur: verschlüsselte Nachrichten zwischen Praxen, Krankenhäusern,
+            Kassenärztlichen Vereinigungen und Krankenkassen. 2025 gingen laut gematik 256,7 Millionen KIM-Nachrichten,
+            darunter 114,0 Millionen Arbeitsunfähigkeitsbescheinigungen und 45,2 Millionen eArztbriefe.
+          </dd>
+
+          <dt id="earztbrief">eArztbrief</dt>
+          <dd>
+            Der elektronische Arztbrief, den eine Praxis über KIM an eine andere Praxis oder ein Krankenhaus schickt,
+            qualifiziert elektronisch signiert mit dem elektronischen Heilberufsausweis. Die KBV-Zulassung dafür haben
+            Systeme mit 88,9 Prozent der Installationen ärztlicher Praxissysteme (Stand 21.10.2026).
+          </dd>
+
+          <dt id="eau">eAU</dt>
+          <dd>
+            Die elektronische Arbeitsunfähigkeitsbescheinigung. Praxen übermitteln sie über KIM an die Krankenkasse; sie
+            ist der größte Einzelposten im KIM-Verkehr.
+          </dd>
+
+          <dt id="ldt">LDT (Labordatenträger)</dt>
+          <dd>
+            Der Standard der KBV für den Austausch von Laboraufträgen und Laborbefunden zwischen Praxis und Labor,
+            aktuell in Version 3. Den Import von Befunden nach LDT 3 haben Systeme mit 95,8 Prozent der Installationen
+            ärztlicher Praxissysteme zertifiziert, den Export eines Laborauftrags kein ärztliches Praxissystem (Stand
+            21.10.2026).
+          </dd>
+
+          <dt id="gop-40092">GOP 40092</dt>
+          <dd>
+            Eine Gebührenordnungsposition im Einheitlichen Bewertungsmaßstab, seit 2025: Labore erhalten sie, wenn sie
+            der Praxis ein System zur digitalen Auftragserteilung bereitstellen. Sie misst die Bereitstellung, nicht wie
+            viele Aufträge tatsächlich digital kommen.
+          </dd>
+        </dl>
+
+        <h2>Praxisformen</h2>
+        <dl class="faq">
+          <dt id="mvz">Medizinisches Versorgungszentrum (MVZ)</dt>
+          <dd>
+            Eine ärztlich geleitete Einrichtung, in der Ärztinnen und Ärzte als Angestellte oder mit eigener Zulassung
+            arbeiten, möglich seit 2004. Ende 2025 gab es laut KBV 5.305 MVZ, 2.659 davon mit einem Krankenhaus als
+            Träger; 94,7 Prozent der dort Tätigen sind angestellt.
+          </dd>
+
+          <dt id="berufsausuebungsgemeinschaft">Berufsausübungsgemeinschaft (BAG)</dt>
+          <dd>
+            Der Rechtsbegriff für die Gemeinschaftspraxis: mehrere Ärztinnen und Ärzte, die gemeinsam eine Praxis führen
+            und gemeinsam abrechnen.
+          </dd>
+
+          <dt id="einzelpraxis">Einzelpraxis</dt>
+          <dd>
+            Eine Praxis mit einer Inhaberin oder einem Inhaber mit Zulassung, auch mit angestellten Ärztinnen und Ärzten.
+            Die Zahl der ärztlichen Einzelpraxen sank von 62.524 (2015) auf 50.701 (2025), die der psychotherapeutischen
+            stieg.
+          </dd>
+
+          <dt id="bundesarztregister">Bundesarztregister</dt>
+          <dd>
+            Das Register der KBV über alle Ärztinnen, Ärzte und Psychotherapeuten, die an der vertragsärztlichen
+            Versorgung teilnehmen: mit Fachgruppe, Praxisform und ob angestellt oder zugelassen. Es zählt Köpfe, keine
+            Vollzeitstellen.
+          </dd>
+        </dl>
+
+        <h2>Quellen</h2>
+        <p class="meta">
+          Kassenärztliche Bundesvereinigung: <a href="https://www.kbv.de/infothek/zahlen-und-fakten/pvs-installationsstatistiken" rel="noopener">Installationsstatistiken</a>,
+          <a href="https://update.kbv.de/ita-update/Service-Informationen/Zulassungsverzeichnisse/" rel="noopener">Zulassungsverzeichnisse</a>,
+          <a href="https://www.kbv.de/infothek/zahlen-und-fakten/mvz" rel="noopener">MVZ-Statistik</a> und
+          <a href="https://www.kbv.de/infothek/zahlen-und-fakten/gesundheitsdaten" rel="noopener">Bundesarztregister</a>;
+          gematik, <a href="https://ti-lage.prod.ccs.gematik.solutions/d/_v5YC1HVk/ti-dashboard-verlauf-kim" rel="noopener">TI-Dashboard KIM</a>.
+          Abgerufen am 20. bis 26. Oktober 2026. Wie jede Zahl entstanden ist, steht in der
+          <a href="datenherkunft.html">Datenherkunft</a>.
+        </p>
+      </article>
+    </main>
+
+    <!--rahmen:fuss-->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "DefinedTermSet",
+        "@id": "https://humanmedizin-in-zahlen.org/artikel/begriffe-praxis-it.html#begriffe",
+        "name": "Begriffe der Praxis-IT",
+        "description": "Begriffe zu Praxissoftware, Abrechnung, Telematikinfrastruktur und Praxisformen in der ambulanten Versorgung in Deutschland.",
+        "inLanguage": "de-DE",
+        "url": "https://humanmedizin-in-zahlen.org/artikel/begriffe-praxis-it.html",
+        "dateModified": "2026-10-26",
+        "author": { "@type": "Person", "@id": "https://humanmedizin-in-zahlen.org/ueber-das-projekt.html#thomas-freimoser", "name": "Thomas Freimoser", "url": "https://humanmedizin-in-zahlen.org/ueber-das-projekt.html" },
+        "hasDefinedTerm": [
+          { "@type": "DefinedTerm", "name": "Praxisverwaltungssystem", "alternateName": "PVS", "url": "https://humanmedizin-in-zahlen.org/artikel/begriffe-praxis-it.html#praxisverwaltungssystem", "description": "Software, mit der eine Arzt- oder Psychotherapiepraxis Patientendaten, Termine, Dokumentation und Abrechnung führt; für die Abrechnung mit der Kassenärztlichen Vereinigung von der KBV zertifiziert." },
+          { "@type": "DefinedTerm", "name": "KBV-Prüfnummer", "url": "https://humanmedizin-in-zahlen.org/artikel/begriffe-praxis-it.html#kbv-pruefnummer", "description": "Kennung eines von der KBV zertifizierten Systems, die mit jeder Abrechnung übermittelt wird; Grundlage der Installationsstatistik." },
+          { "@type": "DefinedTerm", "name": "Installationsstatistik der KBV", "url": "https://humanmedizin-in-zahlen.org/artikel/begriffe-praxis-it.html#installationsstatistik", "description": "Quartalsweise Zählung der Praxissysteme nach Prüfnummer in den Abrechnungen; zählt Abrechnungen, nicht Praxen oder Ärzte." },
+          { "@type": "DefinedTerm", "name": "KVDT", "url": "https://humanmedizin-in-zahlen.org/artikel/begriffe-praxis-it.html#kvdt", "description": "Datensatzbeschreibung der KBV für die Abrechnung mit den Kassenärztlichen Vereinigungen." },
+          { "@type": "DefinedTerm", "name": "1-Click-Abrechnung", "url": "https://humanmedizin-in-zahlen.org/artikel/begriffe-praxis-it.html#1-click-abrechnung", "description": "Übermittlung der Quartalsabrechnung an die Kassenärztliche Vereinigung über KIM; seit der Abschaltung von KV-Connect am 20.10.2025 der Weg für alle." },
+          { "@type": "DefinedTerm", "name": "Archiv- und Wechselschnittstelle", "url": "https://humanmedizin-in-zahlen.org/artikel/begriffe-praxis-it.html#archiv-und-wechselschnittstelle", "description": "Schnittstelle nach § 371 SGB V, über die eine Praxis ihre Daten beim Wechsel der Software mitnehmen kann." },
+          { "@type": "DefinedTerm", "name": "Krankenhausinformationssystem", "alternateName": "KIS", "url": "https://humanmedizin-in-zahlen.org/artikel/begriffe-praxis-it.html#krankenhausinformationssystem", "description": "Software eines Krankenhauses; ORBIS, SAP, CGM MEDICO und iMedOne rechnen auch ambulante Leistungen ab und stehen deshalb in der KBV-Statistik." },
+          { "@type": "DefinedTerm", "name": "Telematikinfrastruktur", "alternateName": "TI", "url": "https://humanmedizin-in-zahlen.org/artikel/begriffe-praxis-it.html#telematikinfrastruktur", "description": "Geschütztes Netz des deutschen Gesundheitswesens, verantwortet von der gematik." },
+          { "@type": "DefinedTerm", "name": "KIM", "alternateName": "Kommunikation im Medizinwesen", "url": "https://humanmedizin-in-zahlen.org/artikel/begriffe-praxis-it.html#kim", "description": "E-Mail-Dienst der Telematikinfrastruktur für verschlüsselte Nachrichten im Gesundheitswesen." },
+          { "@type": "DefinedTerm", "name": "eArztbrief", "url": "https://humanmedizin-in-zahlen.org/artikel/begriffe-praxis-it.html#earztbrief", "description": "Elektronischer Arztbrief, über KIM versendet und qualifiziert elektronisch signiert." },
+          { "@type": "DefinedTerm", "name": "eAU", "alternateName": "elektronische Arbeitsunfähigkeitsbescheinigung", "url": "https://humanmedizin-in-zahlen.org/artikel/begriffe-praxis-it.html#eau", "description": "Arbeitsunfähigkeitsbescheinigung, die die Praxis über KIM an die Krankenkasse übermittelt." },
+          { "@type": "DefinedTerm", "name": "LDT", "alternateName": "Labordatenträger", "url": "https://humanmedizin-in-zahlen.org/artikel/begriffe-praxis-it.html#ldt", "description": "Standard der KBV für den Austausch von Laboraufträgen und Laborbefunden zwischen Praxis und Labor, aktuell Version 3." },
+          { "@type": "DefinedTerm", "name": "GOP 40092", "url": "https://humanmedizin-in-zahlen.org/artikel/begriffe-praxis-it.html#gop-40092", "description": "Gebührenordnungsposition seit 2025 für Labore, die der Praxis ein System zur digitalen Auftragserteilung bereitstellen." },
+          { "@type": "DefinedTerm", "name": "Medizinisches Versorgungszentrum", "alternateName": "MVZ", "url": "https://humanmedizin-in-zahlen.org/artikel/begriffe-praxis-it.html#mvz", "description": "Ärztlich geleitete Einrichtung mit angestellten oder zugelassenen Ärztinnen und Ärzten, möglich seit 2004." },
+          { "@type": "DefinedTerm", "name": "Berufsausübungsgemeinschaft", "alternateName": "BAG", "url": "https://humanmedizin-in-zahlen.org/artikel/begriffe-praxis-it.html#berufsausuebungsgemeinschaft", "description": "Rechtsbegriff für die Gemeinschaftspraxis mehrerer Ärztinnen und Ärzte." },
+          { "@type": "DefinedTerm", "name": "Einzelpraxis", "url": "https://humanmedizin-in-zahlen.org/artikel/begriffe-praxis-it.html#einzelpraxis", "description": "Praxis mit einer Inhaberin oder einem Inhaber mit Zulassung, auch mit angestellten Ärztinnen und Ärzten." },
+          { "@type": "DefinedTerm", "name": "Bundesarztregister", "url": "https://humanmedizin-in-zahlen.org/artikel/begriffe-praxis-it.html#bundesarztregister", "description": "Register der KBV über alle an der vertragsärztlichen Versorgung Teilnehmenden, mit Fachgruppe und Praxisform." }
+        ]
+      }
+    </script>
+  </body>
+</html>

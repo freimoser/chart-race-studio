@@ -18,6 +18,7 @@ const arg = (name, std) => { const i = process.argv.indexOf(name); return i > 0 
 const BASIS = arg('--basis', 'http://localhost:5173/').replace(/\/?$/, '/')
 const FOTOS = arg('--fotos', '')
 const BREITE = Number(arg('--breite', 360))
+const MARKE = JSON.parse(fs.readFileSync(sitePfad('content/legal.json'), 'utf8')).siteName
 
 // Alle statischen Seiten aus den Indizes, dazu Studio und Plan in ihren Zuständen.
 const artikel = JSON.parse(fs.readFileSync(sitePfad('content/artikel-index.json'), 'utf8')).filter((a) => a.live)
@@ -70,6 +71,13 @@ let fehler = 0
 try {
   for (const [name, pfad] of SEITEN) {
     await b.oeffne(BASIS + pfad, { warteMs: pfad.startsWith('studio') ? 2500 : 900 })
+    // Unter der Basisadresse kann ein ganz anderes Projekt laufen (etwa ein fremder Entwicklungsserver auf :5173).
+    // Dann misst die Prüfung fremde Seiten und meldet deren Fehler als unsere. Deshalb zuerst die Marke prüfen.
+    if (name === 'start' && !(await b.js(`document.body.innerText.includes(${JSON.stringify(MARKE)})`))) {
+      console.error(`Unter ${BASIS} läuft nicht „${MARKE}“. Passenden Server starten oder --basis setzen (etwa http://localhost:4174/).`)
+      process.exitCode = 2
+      break
+    }
     const m = await b.js(MESSUNG)
     const kaputt = m.scrollt || m.ueberstand.length
     if (kaputt) fehler++
@@ -88,5 +96,5 @@ try {
   const js = b.fehler()
   if (js.length) console.log(`\nJavaScript-Fehler: ${js.length}`)
 } finally { await b.ende() }
-console.log(fehler ? `\n${fehler} Seiten mit Problemen auf ${BREITE}px.` : `\nAlle Seiten auf ${BREITE}px ohne Überlauf.`)
-process.exit(fehler ? 1 : 0)
+if (!process.exitCode) console.log(fehler ? `\n${fehler} Seiten mit Problemen auf ${BREITE}px.` : `\nAlle Seiten auf ${BREITE}px ohne Überlauf.`)
+process.exit(process.exitCode || (fehler ? 1 : 0))

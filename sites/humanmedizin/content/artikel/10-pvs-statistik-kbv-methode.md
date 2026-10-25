@@ -2,13 +2,13 @@
 post: 10
 slug: pvs-statistik-kbv-methode
 titel: Wer zählt die Praxissoftware? Die KBV-Statistik erklärt
-beschreibung: Die KBV zählt 116.954 Installationen in 126 Systemen, aber nur rund 98.000 Praxen. Was die Statistik misst und warum Herstellerangaben abweichen.
+beschreibung: Die KBV zählt 116.954 Installationen in 126 Zeilen, aber nur rund 98.000 Praxen. Was die Statistik misst und warum Herstellerangaben abweichen.
 frage: Wie wird der Marktanteil von Praxissoftware gemessen?
 suchbegriffe: kbv installationsstatistik, pvs marktanteil quelle, praxissoftware statistik, prüfnummer kbv, praxisverwaltungssystem marktanteil berechnen
 stand: 2026-10-22
 bereit: ja
 ---
-Die einzige vollständige Zählung der Praxissoftware in Deutschland ist die Installationsstatistik der Kassenärztlichen Bundesvereinigung (KBV). Sie zählt Ende 2025 116.954 Installationen in 126 Systemen. Gezählt wird nicht, wie viele Praxen oder Ärzte ein System nutzen, sondern wie viele Abrechnungen bei den Kassenärztlichen Vereinigungen mit der Prüfnummer eines Systems eingehen. Nach diesem Maß halten zwei Hersteller, CompuGroup Medical und medatixx, 60,5 Prozent der Installationen ärztlicher Systeme.
+Die einzige vollständige Zählung der Praxissoftware in Deutschland ist die Installationsstatistik der Kassenärztlichen Bundesvereinigung (KBV). Sie zählt Ende 2025 116.954 Installationen in 126 Zeilen, Systeme und Varianten desselben Systems. Gezählt wird nicht, wie viele Praxen oder Ärzte ein System nutzen, sondern wie viele Abrechnungen bei den Kassenärztlichen Vereinigungen mit der Prüfnummer eines Systems eingehen. Nach diesem Maß halten zwei Hersteller, CompuGroup Medical und medatixx, 60,5 Prozent der Installationen ärztlicher Systeme.
 
 ## Das Wichtigste in Kürze
 
@@ -57,4 +57,4 @@ Hersteller zählen Praxen oder Ärzte und grenzen den Markt selbst ab. Die KBV z
 
 ### Wie viele Praxisverwaltungssysteme gibt es?
 
-Die KBV führt Ende 2025 126 Systeme. Die meisten sind klein: Mitte 2023 hatten 76 von 130 Systemen weniger als 100 Installationen.
+Die KBV führt Ende 2025 126 Zeilen, darunter Varianten desselben Systems und Krankenhaussysteme; die Zahl eigenständiger Praxisprogramme ist kleiner. Die meisten sind klein: Mitte 2023 hatten 76 von 130 Zeilen weniger als 100 Installationen.

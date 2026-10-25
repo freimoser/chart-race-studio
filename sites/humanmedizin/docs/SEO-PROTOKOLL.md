@@ -26,6 +26,7 @@ Trailing Slash, Header) erst danach.
 | Runde | Datum | Hebel | Ergebnis |
 |---|---|---|---|
 | 1 | 26.10.2026 | Eigene Vorschaubilder (1200 × 630) je Artikel | 11 Karten mit Titel und Kernzahl in `public/beitrag/og/`; vorher zeigte jeder geteilte Link die Standardkarte. Das Bild steht auch als `image` im Article-Schema (für Artikel-Rich-Results erforderlich). |
+| 2 | 26.10.2026 | Glossar `artikel/begriffe-praxis-it.html` mit `DefinedTermSet` (17 Begriffe: PVS, KBV-Prüfnummer, KVDT, LDT, KIM, eArztbrief, eAU, TI, MVZ, BAG …), je Begriff Anker, Quelle und Zahl der Seite | Für „Was ist …“-Fragen zitierfähig; verlinkt aus Fuß, Säulenseite, Datenherkunft, Über das Projekt, Post 1 und `llms.txt`; in Sitemap und Zahlenprüfung. Nebenbei: „126 Systeme“ in Post 10 auf „126 Zeilen“ korrigiert (wie Säulenseite, Varianten zählen mit). `check:mobil` maß fremden Server auf :5173 – bricht jetzt ab, wenn dort nicht unsere Seite läuft. |
 
 ## Ideenliste (nach erwartetem Nutzen)
 
@@ -34,8 +35,6 @@ Trailing Slash, Header) erst danach.
 - Datenherkunft ohne strukturierte Daten: Article/`about` oder DataCatalog für freigegebene Datensätze.
 - Säulenseite Praxisverwaltungssysteme: Dataset-Schema für die KBV-Tabelle Q4/2025, CSV-Download, Sprungmarken.
 - Dataset-Schema ergänzen: `keywords`, `isAccessibleForFree`, `measurementTechnique`, `includedInDataCatalog`.
-- Glossar/Begriffsseite (`DefinedTermSet`): PVS, KBV-Prüfnummer, LDT, KIM, eArztbrief, MVZ, KVDT – Antworten für
-  „Was ist …“-Fragen, verlinkt aus allen Artikeln.
 - Keyword-Recherche Humanmedizin (Autocomplete, PAA) als `docs/KEYWORD-RECHERCHE.md` wie bei der Tiermedizin.
 - Startseite: Kernzahlen als Text (nicht nur Grafik), `ItemList` der Artikel.
 - Interne Verlinkung Säulenseite ↔ alle Artikel prüfen, Ankertexte mit Suchbegriff.

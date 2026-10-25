@@ -4,6 +4,10 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Mobilprüfung prüft den Server (26.10.2026)
+
+- **Kern, betrifft beide Seiten:** `scripts/pruefe-mobil.mjs` bricht mit Exit 2 ab, wenn unter `--basis` nicht die Marke der Seite steht. Vorher maß sie still einen fremden Entwicklungsserver auf :5173 und meldete dessen Überläufe.
+
 ### SEO/GEO-Runde (26.10.2026)
 
 - **Kern, betrifft beide Seiten:** Startseite trägt `dateModified` im WebSite-Schema (jüngstes Artikeldatum, dieselbe Quelle wie das lastmod der Sitemap, jetzt als `NEUESTER` in `vite.config.ts`).

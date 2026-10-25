@@ -21,7 +21,7 @@ const profil: SeitenProfil = {
   beschreibung: 'Zahlen zu Arztpraxen, Praxisverwaltungssystemen und Gesundheits-IT in Deutschland, jede mit Jahr und Quelle.',
   fussText: `Zahlen zu Arztpraxen, Praxissoftware und Gesundheits-IT in Deutschland, jede mit Quelle. Ein Projekt von Thomas Freimoser, Geschäftsführer der <a href="${FLEXCHANGE}">FleXChange Medical GmbH</a>.`,
   fussLinks: (hoch) => `<a href="${hoch}">Startseite</a> · <a href="${hoch}beitrag/">Alle Artikel</a> · <a href="${hoch}artikel/praxisverwaltungssysteme-deutschland.html">Praxisverwaltungssysteme</a> ·
-          <a href="${hoch}artikel/datenherkunft.html">Datenherkunft</a> · <a href="${hoch}studio/#redaktionsplan">Redaktionsplan</a>`,
+          <a href="${hoch}artikel/datenherkunft.html">Datenherkunft</a> · <a href="${hoch}artikel/begriffe-praxis-it.html">Begriffe</a> · <a href="${hoch}studio/#redaktionsplan">Redaktionsplan</a>`,
   schwester: `Schwesterseite: <a href="${TIER}/">Tiermedizin in Zahlen</a> – dieselbe Methode für Tierärzte, Tierarztpraxen und Haustiere, vom selben Herausgeber.`,
   navigation: (hoch, aktiv) => `<a href="${hoch}beitrag/"${aktiv('beitrag/')}>Artikel</a>
           <a href="${hoch}artikel/praxisverwaltungssysteme-deutschland.html"${aktiv('artikel/praxisverwaltungssysteme')}>Praxissoftware</a>
@@ -35,6 +35,7 @@ const profil: SeitenProfil = {
   seiten: [
     { name: 'artikelPvs', pfad: 'artikel/praxisverwaltungssysteme-deutschland.html' },
     { name: 'artikelDaten', pfad: 'artikel/datenherkunft.html' },
+    { name: 'artikelBegriffe', pfad: 'artikel/begriffe-praxis-it.html' },
     { name: 'ueber', pfad: 'ueber-das-projekt.html' },
   ],
   leitartikel: {
@@ -92,6 +93,7 @@ Ein Projekt von [Thomas Freimoser](${url}/ueber-das-projekt.html), Geschäftsfü
 - [Praxisverwaltungssysteme in Deutschland](${url}/artikel/praxisverwaltungssysteme-deutschland.html): alle Systeme mit Installationszahlen laut KBV, nach Hersteller zusammengefasst, getrennt nach ärztlicher und psychotherapeutischer Versorgung, mit den KBV-Zulassungen für Labordaten (LDT), eArztbrief und KIM je System.
 - [Über das Projekt](${url}/ueber-das-projekt.html): wer hinter der Seite steht, welcher Interessenkonflikt besteht, wie die Zahlen entstehen und wie Fehler korrigiert werden.
 - [Woher die Zahlen kommen](${url}/artikel/datenherkunft.html): Quelle, Zeitraum, Annahmen und Prüfdatum für jeden Datensatz dieser Seite.
+- [Begriffe der Praxis-IT](${url}/artikel/begriffe-praxis-it.html): was PVS, KBV-Prüfnummer, KVDT, LDT, KIM, eArztbrief, eAU, Telematikinfrastruktur, MVZ und Berufsausübungsgemeinschaft bedeuten, jeweils mit Quelle und Zahl.
 ${beitraege.length ? `\n## Einzelne Fragen, jeweils mit Zahl, Jahr und Quelle\n\nÜbersicht: [${marke}](${url}/beitrag/). Volltext aller Artikel: [llms-full.txt](${url}/llms-full.txt). Zu jedem Artikel gibt es die Daten als CSV.\n\n${beitraege.map((b) => `- [${b.frage}](${url}/beitrag/${b.slug}.html) (Stand ${b.stand}): ${b.beschreibung}`).join('\n')}\n` : ''}
 ## Grenzen dieser Quelle
 
