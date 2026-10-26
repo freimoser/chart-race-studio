@@ -119,7 +119,7 @@ export const SAMPLES: SampleDataset[] = [
     title: 'Labordaten: empfangen ja, senden kaum',
     subtitle: 'Anteil der Arztpraxen, die Labordaten überwiegend digital empfangen bzw. senden, 2018 bis 2025',
     source: 'Quelle: PraxisBarometer Digitalisierung (KBV/IGES), Befragung von Arztpraxen ohne Psychotherapie; ab 2024 geänderte Antwortformulierung',
-    sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/praxisbarometer-digitalisierung',
+    sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/studien-und-berichte/praxisbarometer-digitalisierung',
     unit: 'Prozent der Arztpraxen',
     description: 'Vier von fünf Arztpraxen empfangen Labordaten digital, aber nur zwei von fünf senden welche – Befunde kommen digital, Aufträge nicht.',
     dataInfo: [
@@ -237,7 +237,7 @@ export const SAMPLES: SampleDataset[] = [
     title: 'Medizinische Versorgungszentren seit 2004',
     subtitle: 'Zugelassene MVZ in Deutschland zum Jahresende, davon mit einem Krankenhaus als Träger',
     source: 'Quelle: KBV, Medizinische Versorgungszentren aktuell / MVZ-Statistik 2004–2025',
-    sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/mvz',
+    sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/gesundheitsdaten/statistik-mvz',
     unit: 'MVZ',
     description: 'Von 70 MVZ im Jahr 2004 auf 5.305 im Jahr 2025; jedes zweite hat heute ein Krankenhaus als Träger.',
     dataInfo: [

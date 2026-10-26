@@ -39,6 +39,7 @@ Trailing Slash, Header) erst danach.
 | 12 | 26.10.2026 | Interne Verlinkung auf Begriffsebene: in acht Artikeln das erste Vorkommen eines Fachbegriffs mit seinem Glossar-Anker verknüpft (Archivierungs- und Wechselschnittstelle, LDT, GOP 40092, KIM, 1-Click-Abrechnung, Berufsausübungsgemeinschaft, Bundesarztregister, Prüfnummer, Arztgruppe); Glossar um „Arztgruppe“ ergänzt (18 Begriffe), mit Link auf die Fachgruppen-Tabelle | Stärkt das Glossar als Ziel für „Was ist …“-Fragen und gibt Lesern Kontext an der Stelle, wo der Begriff fällt. Links nicht in Überschriften oder Einleitungen. Neue Prüfung: jeder Link auf einen Glossar-Anker zeigt auf einen vorhandenen Begriff. |
 | 13 | 26.10.2026 | Dataset-Schema für die Google-Datensatzsuche vervollständigt (Kern, beide Seiten): `inLanguage`, `isAccessibleForFree`, `keywords` aus den Suchbegriffen, `includedInDataCatalog` → Datenherkunft; Säulenseite ebenso. Profilfeld `datenLizenz` vorbereitet (leer) | Fehlt nur noch `license` – eine Entscheidung von Thomas, nicht des Codes; danach genügt ein Eintrag im Profil. Tests und Prüfungen beider Seiten grün. |
 | 14 | 26.10.2026 | Abgleich gängiger SEO-Punkte: Brotkrumen, 404 mit Links, Feed-Hinweis, `lang`, Canonical – nur Brotkrumen fehlten auf den handgeschriebenen Seiten. Übersicht, Glossar und Datenherkunft tragen sie jetzt sichtbar (Stil wie Artikel) und als `BreadcrumbList` | Google zeigt den Pfad statt der URL im Suchergebnis; im Browser geprüft, 360 px ohne Überlauf. |
+| 15 | 26.10.2026 | Gesamtprüfung über den Build: alle JSON-LD gültig, Titel ≤ 60, Descriptions ≤ 155, je Seite eine `h1`, Canonical überall, Sitemap mit lastmod. Externe Quellenlinks geprüft: **zwei KBV-Links waren tot (404)** – MVZ-Statistik → `/gesundheitsdaten/statistik-mvz`, PraxisBarometer → `/studien-und-berichte/praxisbarometer-digitalisierung`, in fünf Dateien ersetzt. LinkedIn antwortet Prüfprogrammen mit 999 (Bot-Sperre, kein Fehler) | Abschluss: Tests beider Seiten, beide Builds, `check:launch`, `check:content`, `check:links`, `check:daten`, `check:mobil` grün; Glätteprüfung 10 Datensätze, 0 Sprünge. |
 
 ## Ideenliste (nach erwartetem Nutzen)
 
@@ -53,3 +54,12 @@ Trailing Slash, Header) erst danach.
 - Interne Verlinkung Säulenseite ↔ alle Artikel prüfen, Ankertexte mit Suchbegriff.
 - `llms.txt`: Kernzahlen je Thema als Faktenliste, sobald weitere Artikel freigegeben sind.
 - Autorenseite: E-E-A-T (Rolle, Erfahrung mit PVS-Schnittstellen, offen genannter Interessenkonflikt) prüfen.
+
+
+## Ergebnis nach 15 Runden (26.10.2026)
+
+- **Neue Inhalte:** Glossar mit 18 Begriffen (`DefinedTermSet`), Fachgruppen-Tabelle auf der Säulenseite, Post 12 (Allgemeinmediziner) mit Datensatz aus archivierten KBV-Berichten, Startseiten-FAQ für 11 Artikel, Keyword-Recherche.
+- **Technik und Schema:** Vorschaubilder für alle Artikel und Profilseiten, Dataset-Schema mit Sprache, Zugang, Suchbegriffen und Datenkatalog, Brotkrumen auf allen Seiten, CSV der Säulenseite, `llms-full.txt` mit Säulenseite und Glossar.
+- **Datenfehler gefunden und behoben:** Zulassungsstand 19.10. statt 21.10.; „126 Systeme“ statt „126 Zeilen“; zwei tote KBV-Links.
+- **Neue Prüfungen:** Säulenseiten-Tabellen und Fachgruppen gegen Rohdaten, Startseiten-FAQ gegen Artikel, Glossar-Anker, Datenschutz-Pflichtangaben, Mobilprüfung gegen fremde Server.
+- **Offen (Entscheidung Thomas):** Push, Datenlizenz (`datenLizenz` im Profil), Artikel vor dem LinkedIn-Post online stellen, Livegang (Domain, Repo, Deploy-Key) – erst danach Search Console und Live-Prüfungen.
