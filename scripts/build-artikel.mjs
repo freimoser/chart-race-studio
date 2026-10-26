@@ -462,6 +462,23 @@ function startseite(live) {
   // Häufige Fragen nur zu Artikeln, die live sind: Die Antwort verweist auf den Artikel, der die Zahl belegt.
   const faq = (PROFIL.start.faq ?? []).filter((f) => live.some((a) => a.slug === f.slug))
   const faqLd = faq.length ? `\n    <script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.frage, acceptedAnswer: { '@type': 'Answer', text: f.antwort } })) }).replace(/</g, '\\u003c')}</script>` : ''
+  // Datenkatalog: alle Datensätze der live Artikel, je mit Artikel und CSV. Für die Google-Datensatzsuche und für
+  // Antwortmaschinen, die eine Übersicht der verfügbaren Zeitreihen suchen.
+  const katalog = []
+  for (const a of live) {
+    const dsId = POSTS.find((p) => p.nr === a.post)?.sampleId ?? (a.grafik && a.grafik !== 'keine' ? a.grafik.split(/\s+/)[0] : undefined)
+    const ds = dsId && DATENSAETZE[dsId]
+    if (!ds?.daten || !freigegeben(ds.id) || katalog.some((k) => k.id === ds.id)) continue
+    const jahre = ds.daten.rows.map((r) => String(r[0])).filter((j) => /^\d{4}$/.test(j))
+    katalog.push({ id: ds.id, ld: {
+      '@type': 'Dataset', name: ds.titel, description: `${ds.untertitel ?? ds.titel}. ${a.beschreibung}`,
+      ...(jahre.length ? { temporalCoverage: `${jahre[0]}/${jahre.at(-1)}` } : {}),
+      spatialCoverage: PROFIL.raum(ds.id), creator: AUTOR,
+      ...(ds.quelle ? { citation: ds.quelle } : {}),
+      ...(BASIS ? { url: `${BASIS}/${ZIEL}/${a.slug}.html`, distribution: { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: `${BASIS}/daten/${ds.id}.csv` } } : {}),
+    } })
+  }
+  const katalogLd = katalog.length && BASIS ? `\n    <script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'DataCatalog', name: `${L.siteName}: Datensätze`, inLanguage: 'de-DE', url: `${BASIS}/`, creator: AUTOR, dataset: katalog.map((k) => k.ld) }).replace(/</g, '\\u003c')}</script>` : ''
   return `<!doctype html>
 <html lang="de" data-brand="klar">
   <head>
@@ -480,7 +497,7 @@ function startseite(live) {
     <meta property="og:description" content="${esc(PROFIL.start.ogDescription)}" />
     <meta property="og:locale" content="de_DE" />
     <meta property="og:site_name" content="${esc(L.siteName)}" />
-    <script type="module" src="/src/article.ts"></script>${faqLd}
+    <script type="module" src="/src/article.ts"></script>${faqLd}${katalogLd}
   </head>
   <body>
     <!--rahmen:kopf-->

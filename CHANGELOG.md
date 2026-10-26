@@ -14,6 +14,7 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 - **Kern, betrifft beide Seiten:** Zitiervorschlag im Kasten unter jedem Artikel (Autor, Jahr, Titel, Seite, Stand, Adresse ohne .html), nur mit bekannter Seitenadresse.
 - **Kern, betrifft beide Seiten:** Artikelübersicht: CollectionPage mit `dateModified` (jüngster Artikel) und `url`.
 - **Kern, betrifft beide Seiten:** `og:image:alt` für Artikelbilder (Titel – Seitenname) und für das Standardbild (Marke: Unterzeile aus `PROFIL.og.text`).
+- **Kern, betrifft beide Seiten:** Startseite mit `DataCatalog`-Schema: alle freigegebenen Datensätze der live Artikel, je mit Zeitraum, Quelle, Artikel-URL und CSV.
 - **Tiermedizin:** Artikel 32, Einstieg korrigiert: 2011 war es rund dreimal so viel (nicht „67 Prozent mehr“).
 - **Tiermedizin:** acht Fragen (Tierärzte, Praxen, Haustiere, Frauenanteil, Kosten, Ketten, Mangel, Gehalt), Zahlen wörtlich aus den Artikeln.
 
