@@ -1,7 +1,7 @@
 ---
 art: auswertung
 slug: tierarztkosten-inflation
-titel: Tierarztkosten im Vergleich zur Inflation
+titel: Tierarztkosten vs. Inflation: plus 54 Prozent seit 2010
 beschreibung: Seit 2010 stiegen Tierarztpreise um 54 Prozent, die Inflation um 42. Am meisten die Routine: Untersuchung und Impfung der Katze kosten fast das Dreifache.
 frage: Sind Tierarztkosten stärker gestiegen als die Inflation?
 suchbegriffe: tierarztkosten gestiegen, tierarzt kosten inflation, got 2022 erhöhung, tierarzt untersuchung kosten katze hund, gebührenordnung tierärzte entwicklung, impfung tierarzt kosten
