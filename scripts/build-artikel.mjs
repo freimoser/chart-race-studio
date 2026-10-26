@@ -244,6 +244,9 @@ function seite(a, { entwurf, alle }) {
     dateModified: a.geaendert,
     ...(ogBild ? { image: ogBild } : {}),
     ...(basis ? { mainEntityOfPage: `${basis}/${ZIEL}/${a.slug}.html` } : {}),
+    // Zugehörigkeit zur Seite und Herausgeber: dieselbe Person wie der Autor (privat betrieben, keine Organisation).
+    ...(basis ? { isPartOf: { '@type': 'WebSite', name: L.siteName, url: `${basis}/` } } : {}),
+    publisher: AUTOR,
     about: a.frage,
   }]
   // Der Datensatz als eigenes Objekt: macht ihn für die Google-Datensatzsuche auffindbar und
