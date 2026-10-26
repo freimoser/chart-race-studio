@@ -120,7 +120,7 @@ function integrationen(env: Record<string, string>) {
         // Ohne og:image zeigt LinkedIn beim Teilen eines Links nur eine graue Kachel. Seiten ohne
         // eigenes Bild bekommen die Standardkarte.
         if (!/property="og:image"/.test(html)) {
-          tags.push(`<meta property="og:image" content="${basis}/og-standard.png" />`, `<meta property="og:image:width" content="1200" />`, `<meta property="og:image:height" content="630" />`)
+          tags.push(`<meta property="og:image" content="${basis}/og-standard.png" />`, `<meta property="og:image:width" content="1200" />`, `<meta property="og:image:height" content="630" />`, `<meta property="og:image:alt" content="${MARKE}: ${PROFIL.og.text.replace(/"/g, '&quot;')}" />`)
           if (!/twitter:card/.test(html)) tags.push(`<meta name="twitter:card" content="summary_large_image" />`)
         }
       }

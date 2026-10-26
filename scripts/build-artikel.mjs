@@ -315,7 +315,7 @@ ${entwurf ? '    <meta name="robots" content="noindex, nofollow" />\n' : ''}    
     <meta property="og:description" content="${esc(a.beschreibung)}" />
     <meta property="og:locale" content="de_DE" />
     <meta property="og:site_name" content="${esc(L.siteName)}" />
-${ogBild ? `    <meta property="og:image" content="${ogBild}" />\n    <meta property="og:image:width" content="1200" />\n    <meta property="og:image:height" content="630" />\n    <meta name="twitter:card" content="summary_large_image" />\n` : ''}${a.veroeffentlicht ? `    <meta property="article:published_time" content="${a.veroeffentlicht}" />\n` : ''}    <meta property="article:modified_time" content="${a.geaendert}" />
+${ogBild ? `    <meta property="og:image" content="${ogBild}" />\n    <meta property="og:image:width" content="1200" />\n    <meta property="og:image:height" content="630" />\n    <meta property="og:image:alt" content="${esc(`${a.titel} – ${L.siteName}`)}" />\n    <meta name="twitter:card" content="summary_large_image" />\n` : ''}${a.veroeffentlicht ? `    <meta property="article:published_time" content="${a.veroeffentlicht}" />\n` : ''}    <meta property="article:modified_time" content="${a.geaendert}" />
     <script type="application/ld+json">${JSON.stringify(jsonld.length === 1 ? jsonld[0] : jsonld)}</script>
     <script type="module" src="/src/article.ts"></script>
   </head>
