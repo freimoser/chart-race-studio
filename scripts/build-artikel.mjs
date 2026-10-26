@@ -398,6 +398,9 @@ function uebersicht(live) {
     name: L.siteName, inLanguage: 'de-DE',
     description: PROFIL.uebersicht.collectionDescription,
     author: AUTOR,
+    // Datum des jüngsten Artikels, wie lastmod der Übersicht in der Sitemap.
+    dateModified: live.map((a) => a.geaendert).sort().at(-1),
+    ...(BASIS ? { url: `${BASIS}/${ZIEL}/` } : {}),
     mainEntity: { '@type': 'ItemList', itemListElement: live.map((a, i) => ({ '@type': 'ListItem', position: i + 1, name: a.titel, ...(BASIS ? { url: `${BASIS}/${ZIEL}/${a.slug}.html` } : {}) })) },
   }
   return `<!doctype html>
