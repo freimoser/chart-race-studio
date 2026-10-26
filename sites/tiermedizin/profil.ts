@@ -104,6 +104,9 @@ Thomas Freimoser ist kein Tierarzt und keine statistische Behörde. Diese Seite 
 - „2024 überholen die Angestellten die Praxisinhaber" zählt Personen, nicht Vollzeitstellen. Unter den Angestellten arbeiten deutlich mehr Menschen in Teilzeit.
 - „Die Französische Bulldogge ist selten" gilt nur für das VDH-Zuchtbuch. Die Rasse wird überwiegend außerhalb der Verbandsstrukturen gezüchtet und erscheint deshalb viel kleiner, als sie ist.
 - „VetFamily hat über 1.300 Praxen" bedeutet nicht Eigentum. VetFamily ist eine Einkaufsgemeinschaft rechtlich selbstständiger Praxen und besitzt keine einzige davon.
+- „2012 gab es plötzlich zwei Millionen Hunde mehr" ist ein Wechsel der Erhebungsmethode bei IVH und ZZF, kein Hundeboom. Die Hundesteuer der Gemeinden (Destatis) wuchs im selben Jahr nur um 4,6 Prozent.
+- „Seit 2023 steigt der Antibiotikaeinsatz wieder" ist nur eingeschränkt belegt. Seit 2023 melden Hersteller und Großhändler auch Abgaben an Apotheken, ein Teil des Anstiegs von 528,5 auf 562,1 Tonnen kann aus der Erfassung kommen. Gezählt wird die Abgabe an Tierärzte, nicht der Einsatz am Tier.
+- „Die Tierarztkosten sind um 54 Prozent gestiegen" meint den Preisindex des Statistischen Bundesamts für Tierarztleistungen aller Tierarten (2010 bis 2026). Was eine einzelne Rechnung kostet, hängt zusätzlich vom Gebührensatz ab, den die Praxis berechnet: das Einfache bis Dreifache der Gebührenordnung.
 `,
   og: {
     titel: 'Tierärzte, Praxen und Haustiere in Deutschland',

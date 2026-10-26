@@ -5,7 +5,7 @@ titel: Anzahl Haustiere in Deutschland 2025 – Entwicklung seit 1991
 beschreibung: 2025 lebten in Deutschland 33,4 Mio. Hunde, Katzen, Kleintiere und Ziervögel, davon 15,7 Mio. Katzen. Die Zeitreihe seit 1991 mit Quelle.
 frage: Wie viele Haustiere gibt es in Deutschland?
 suchbegriffe: anzahl haustiere deutschland, wie viele haustiere hat deutschland, haustiere deutschland statistik, anzahl haustiere deutschland entwicklung, häufigste haustiere deutschland, anzahl hunde deutschland 2000
-stand: 2026-09-23
+stand: 2026-10-26
 kennzahl: markt/1 | 33,4 Mio. | Hunde, Katzen, Kleintiere und Ziervögel | 2025
 bereit: ja
 ---
@@ -40,7 +40,7 @@ Wenig bekannt ist die Phase dazwischen. Von 2001 bis 2009 zählten die Verbände
 
 ## Wie viel vom Wachstum echt ist
 
-Wer 1991 mit 2025 vergleicht, vergleicht zwei Erhebungsverfahren. Bis 2011 beruhen die Zahlen auf Verbandsschätzungen, 2012 folgte die erste repräsentative Haushaltsbefragung, 2013 eine weitere Umstellung. Katzen, Hunde, Kleintiere und Ziervögel zusammen ergeben 2011 rechnerisch 22,0 Millionen, 2012 dann 31,0 und 2013 wieder 27,9 Millionen. Ein Sprung dieser Größe in einem Jahr ist keine Entwicklung, sondern ein neues Messverfahren.
+Wer 1991 mit 2025 vergleicht, vergleicht zwei Erhebungsverfahren. Bis 2011 beruhen die Zahlen auf Verbandsschätzungen, 2012 folgte die erste repräsentative Haushaltsbefragung, 2013 eine weitere Umstellung. Katzen, Hunde, Kleintiere und Ziervögel zusammen ergeben 2011 rechnerisch 22,0 Millionen, 2012 dann 31,0 und 2013 wieder 27,9 Millionen. Ein Sprung dieser Größe in einem Jahr ist keine Entwicklung, sondern ein neues Messverfahren. Eine unabhängige Gegenprobe gibt es für Hunde: Die Hundesteuer der Gemeinden wuchs von 2011 auf 2012 nur um 4,6 Prozent, von 275,2 auf 287,8 Millionen Euro, während die gezählten Hunde von 5,4 auf 7,4 Millionen sprangen (Statistisches Bundesamt, Tabelle 71211-0001).
 
 Vergleichbar ist deshalb vor allem der Zeitraum ab 2013. Dort wachsen Katzen von 11,5 auf 15,7 Millionen und Hunde von 6,9 auf 10,0 Millionen. Die Kleintiere gehen von 6,1 auf 4,4 Millionen zurück, die Ziervögel bleiben mit 3,4 und 3,3 Millionen fast gleich. Den Höchststand erreichten die Katzen 2021 mit 16,7 Millionen, die Hunde 2020 mit 10,7 Millionen. Seither stagnieren beide Arten oder gehen leicht zurück.
 
@@ -76,4 +76,4 @@ Im Jahr 2000 zählten die Verbände 6,8 Millionen Katzen und 5,0 Millionen Hunde
 
 ## Quelle und Methode
 
-Industrieverband Heimtierbedarf (IVH) und Zentralverband Zoologischer Fachbetriebe (ZZF), „Der Deutsche Heimtiermarkt“, [Anzahl der Heimtiere in Deutschland](https://www.ivh-online.de/der-verband/daten-fakten/der-deutsche-heimtiermarkt.html) (abgerufen am 14. Oktober 2026), Zeitraum 1991 bis 2025. 1991 bis 2003 aus den im Internet Archive erhaltenen ZZF-Jahresberichten, 2004 bis 2009 aus archivierten IVH-Datenblättern, ab 2010 aus den laufenden Veröffentlichungen. Korrigiert gegenüber älteren Ständen: Katzen 2003 sind 7,3 Millionen, nicht 7,5. Berechnet sind die Faktoren, die Prozentänderungen und die Summen der vier Tierarten. Mehr zur Herkunft der Zahlen unter [Datenherkunft](../artikel/datenherkunft.html).
+Industrieverband Heimtierbedarf (IVH) und Zentralverband Zoologischer Fachbetriebe (ZZF), „Der Deutsche Heimtiermarkt“, [Anzahl der Heimtiere in Deutschland](https://www.ivh-online.de/der-verband/daten-fakten/der-deutsche-heimtiermarkt.html) (abgerufen am 14. Oktober 2026), Zeitraum 1991 bis 2025. 1991 bis 2003 aus den im Internet Archive erhaltenen ZZF-Jahresberichten, 2004 bis 2009 aus archivierten IVH-Datenblättern, ab 2010 aus den laufenden Veröffentlichungen. Korrigiert gegenüber älteren Ständen: Katzen 2003 sind 7,3 Millionen, nicht 7,5. Gegenprobe Hunde: Statistisches Bundesamt, [GENESIS 71211-0001](https://www-genesis.destatis.de/datenbank/online/statistic/71211/table/71211-0001), kassenmäßige Einnahmen aus der Hundesteuer (abgerufen am 22. Oktober 2026). Berechnet sind die Faktoren, die Prozentänderungen und die Summen der vier Tierarten. Mehr zur Herkunft der Zahlen unter [Datenherkunft](../artikel/datenherkunft.html).
