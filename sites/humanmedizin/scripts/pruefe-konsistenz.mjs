@@ -281,6 +281,18 @@ const ERWARTET = {
   }
   if (t1.length < 20 || t2.length < 10) fehler.push(`Säulenseite: Tabellen nicht gefunden (${t1.length}, ${t2.length} Zeilen)`)
 }
+// Berichte je Arztgruppe (Post 12): je System nie mehr als in der Gesamtliste, Psychotherapeuten-Summe wie im Einzelbericht.
+if (fs.existsSync(path.join(RAW, 'pvs-kbv-arztgruppen.csv'))) {
+  const AG = leseCsv(path.join(RAW, 'pvs-kbv-arztgruppen.csv'))
+  const norm = (n) => n.replace(/\s*\(ehem\.[^)]*\)/, '').replace(/[()]/g, '').trim().toLowerCase()
+  const gesamt = new Map(INST.filter((r) => r.stichtag === '2025-12-31').map((r) => [norm(r.system), Number(r.installationen)]))
+  const jeSystem = new Map()
+  for (const r of AG) jeSystem.set(norm(r.system), (jeSystem.get(norm(r.system)) ?? 0) + Number(r.installationen))
+  for (const [n, v] of jeSystem) if (gesamt.has(n) && v > gesamt.get(n)) fehler.push(`Arztgruppen: ${n} hat in den Gruppen ${v}, in der Gesamtliste nur ${gesamt.get(n)}`)
+  const gruppe = (g) => AG.filter((r) => r.fachgruppe === g).reduce((a, r) => a + Number(r.installationen), 0)
+  if (gruppe('Psychotherapeuten') !== 35271) fehler.push(`Arztgruppen: Psychotherapeuten ${gruppe('Psychotherapeuten')} ≠ 35.271 aus dem Einzelbericht`)
+  if (new Set(AG.map((r) => r.fachgruppe)).size !== 23) fehler.push('Arztgruppen: nicht 23 Fachgruppen')
+}
 // Häufige Fragen der Startseite (Profil): jede Zahl der Antwort muss im verlinkten Artikel stehen.
 {
   const PROFIL = (await import(pathToFileURL(path.resolve(H, 'profil.ts')).href)).default
@@ -315,6 +327,12 @@ merke(roh(INST, '1997-12-31', 'ALBIS') + roh(INST, '1997-12-31', 'ALBIS ON WINDO
 bekannt.add('9.508')
 merke(['x.isynet (ehem. MCS-ISYNET)', 'x.concept (ehem. DOCconcept)', 'x.comfort (ehem. DOCcomfort)'].reduce((a, n) => a + roh(INST, '2021-12-31', n) - roh(INST, '2025-12-31', n), 0)) // Verlust der alten medatixx-Systeme 2021–2025
 bekannt.add('10.000')
+// Berichte je Arztgruppe: Rohwerte und Summen der Top 20 je Gruppe (Mindestwert der Gruppe).
+if (fs.existsSync(path.join(RAW, 'pvs-kbv-arztgruppen.csv'))) {
+  const AG = leseCsv(path.join(RAW, 'pvs-kbv-arztgruppen.csv'))
+  for (const r of AG) { merke(Number(r.installationen)); merke(Number(r.installationen_vorquartal)) }
+  for (const g of new Set(AG.map((r) => r.fachgruppe))) merke(AG.filter((r) => r.fachgruppe === g).reduce((a, r) => a + Number(r.installationen), 0))
+}
 // Zweitquellen Post 10 (recherche/pvs-kbv-historie.md Abschnitt 10): rund 98.000 Praxen (AOK G+G 09/2026), „über 22.500 Praxen“ (medatixx.de 2026).
 bekannt.add('98.000'); bekannt.add('22.500')
 // Differenzen erstes/letztes Jahr je Reihe in den abgeleiteten Datensätzen (Texte nennen „5.757 weniger“ o. ä.).

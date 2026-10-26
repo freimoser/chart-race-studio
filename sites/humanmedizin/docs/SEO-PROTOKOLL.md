@@ -30,6 +30,7 @@ Trailing Slash, Header) erst danach.
 | 3 | 26.10.2026 | „Häufige Fragen“ auf der Startseite (sichtbar + FAQPage), je Artikel eine Frage mit Zahl | 11 Fragen im Profil; jede erscheint erst, wenn ihr Artikel live ist (jetzt 1). Die Konsistenzprüfung verlangt, dass jede Zahl der Antwort im verlinkten Artikel steht (Gegenprobe mit falscher Zahl schlägt an). |
 | 4 | 26.10.2026 | Säulenseite „Praxisverwaltungssysteme in Deutschland“: Sprungmarken (`id` an allen `h2`, Inhaltsleiste), CSV aller 41 erfassten Systeme mit Q4/Q3 2025 und Zulassungen (`tabellen/pvs-systeme-2025.csv`, erzeugt von `npm run daten`), `Dataset`-Schema mit Download, Link in `llms.txt` | **Datenfehler behoben:** Säulenseite und Datenherkunft nannten für die Zulassungen „Stand 19.10.2026“, Rohdaten und Artikel 21.10.2026; Werte stimmten. Neue Prüfung: beide Tabellen der Säulenseite gegen die Rohdaten (Werte, Sortierung, Zulassungen, Datum), Gegenprobe schlägt an. |
 | 5 | 26.10.2026 | Keyword-Recherche (Google-Autovervollständigung) als `docs/KEYWORD-RECHERCHE.md`, Inhalte danach ausgerichtet | Säulenseite heißt jetzt „Übersicht 2025“ (Suche „praxisverwaltungssysteme übersicht“, keine Konkurrenz mit Post 1 „Marktanteile“); Post 3 mit Frage zu Psychotherapie-Software auf dem Mac; Post 7 und Glossar mit eArztbrief-Vergütung GOP 86900/86901 und Empfangspflicht seit 30.06.2024 (KBV-Seite, live geprüft); Glossar mit KIM-Adresse. Neue Artikelidee mit Nachfrage: Praxissoftware nach Fachrichtung (KBV-Berichte je Arztgruppe). |
+| 6 | 26.10.2026 | Daten für die Suchlücke „Praxissoftware nach Fachrichtung“: KBV-Bericht „TOP 20 je Fachgruppe“ Q4/2025 für alle 23 Gruppen als `data/raw/pvs-kbv-arztgruppen.csv`, Recherche `recherche/pvs-arztgruppen.md`, Post 12 im Redaktionsplan | Befund: Bei Allgemeinmedizinern führt medatixx (1.892) vor MEDISTAR (1.857) und TURBOMED (1.850), T2med auf Platz 4. Gegenproben: Psychotherapeuten-Summe = 35.271 wie im Einzelbericht, kein System in den Gruppen über seinem Gesamtwert – beides jetzt in der Konsistenzprüfung. |
 
 ## Ideenliste (nach erwartetem Nutzen)
 
@@ -41,7 +42,7 @@ Trailing Slash, Header) erst danach.
   Warnung; eine offene Lizenz für die eigenen Zusammenstellungen (z. B. CC BY 4.0) macht die Daten zitierfähig.
 - Datenherkunft ohne strukturierte Daten: Article/`about` oder DataCatalog für freigegebene Datensätze.
 - Dataset-Schema ergänzen: `keywords`, `isAccessibleForFree`, `measurementTechnique`, `includedInDataCatalog`.
-- **Praxissoftware nach Fachrichtung** (Hausärzte, Fachärzte): KBV-Berichte je Arztgruppe Q4/2025 erheben, Nachfrage belegt.
+- **Post 12 schreiben** (Praxissoftware der Allgemeinmediziner) und für eine Zeitreihe die archivierten Berichte je Arztgruppe Q4/2021–Q4/2024 erheben.
 - Startseite: Kernzahlen als Text (nicht nur Grafik), `ItemList` der Artikel.
 - Interne Verlinkung Säulenseite ↔ alle Artikel prüfen, Ankertexte mit Suchbegriff.
 - `llms.txt`: Kernzahlen je Thema als Faktenliste, sobald weitere Artikel freigegeben sind.

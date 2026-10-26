@@ -124,4 +124,13 @@ export const POSTS: RoadmapPost[] = [
     dataNote: 'Recherche fertig: recherche/labor.md, data/raw/labor.csv. Keine Quelle für die Zahl der Laborpraxen oder Labor-MVZ; Konzentration nur über Sonic (Umsatz DE 2011–2026) und SYNLAB 2022/2023, Limbach/amedes ohne Stichtag. FleXChange-Bezug (Labor-Order-Entry) nur als offener Hinweis.',
     refs: [6],
   },
+  {
+    nr: 12, arc: 'software', status: 'geplant',
+    title: 'Welche Praxissoftware Allgemeinmediziner nutzen',
+    hook: 'Bei den Allgemeinmedizinern führt nicht CGM MEDISTAR, sondern medatixx: 1.892 Installationen Ende 2025, knapp vor MEDISTAR (1.857) und TURBOMED (1.850). T2med steht hier auf Platz 4 (1.737). In jeder Fachgruppe sieht die Spitze anders aus – bei Augenärzten führt FIDUS, bei Radiologen medavis RIS.',
+    figures: ['Allgemeinmediziner Q4/2025 (KBV, Top 20 je Fachgruppe): medatixx 1.892, CGM MEDISTAR 1.857, TURBOMED 1.850, T2med 1.737, Medical Office 1.548', 'Top 20 der Fachgruppe zusammen 18.909 Installationen (Mindestwert der Gruppe)', 'Spitzenreiter je Fachgruppe: Frauenärzte und Orthopäden MEDISTAR, Augenärzte FIDUS, Chirurgen ORBIS, Radiologen medavis RIS, Psychotherapeuten Elefant'],
+    dataStatus: 'teilweise',
+    dataNote: 'Rohdaten data/raw/pvs-kbv-arztgruppen.csv (Q4 und Q3/2025, alle 23 Fachgruppen, je Top 20), Recherche recherche/pvs-arztgruppen.md, Suchnachfrage docs/KEYWORD-RECHERCHE.md („praxissoftware hausarzt vergleich“). Falle: „Allgemeinmediziner“ ist die KBV-Arztgruppe, nicht „Hausärzte“ – hausärztliche Internisten stehen bei den Internisten, Praktiker getrennt; im Titel die Arztgruppe nennen. Nur Top 20 je Gruppe, Summe ist Mindestwert. Für eine Zeitreihe die archivierten Berichte je Arztgruppe (Q4/2021–Q4/2024) erheben; bis dahin Balken für einen Stichtag. Keine Bewertung, keine Kaufempfehlung.',
+    refs: [1, 2, 4],
+  },
 ]
