@@ -125,6 +125,8 @@ Thomas Freimoser ist kein Arzt und keine statistische Behörde. Diese Seite wert
     farben: { grund: '#14213d', akzent: '#2a9d8f', hell: '#9fd8cf', text: '#dbe4f0' },
   },
   llmsVollSeiten: ['artikel/praxisverwaltungssysteme-deutschland.html', 'artikel/begriffe-praxis-it.html'],
+  // Offen: Thomas entscheidet die Lizenz (siehe docs/SEO-PROTOKOLL.md).
+  datenLizenz: '',
   glaetteDatensaetze: ['pvs-hersteller', 'pvs-psychotherapie', 'pvs-aufsteiger', 'pvs-kis', 'earztbrief-monat', 'labordaten-praxisbarometer', 'pvs-saldo', 'aerzte-praxisform', 'mvz-anzahl', 'labor-aerzte'],
 }
 

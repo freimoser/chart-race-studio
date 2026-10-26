@@ -114,6 +114,7 @@ Thomas Freimoser ist kein Tierarzt und keine statistische Behörde. Diese Seite 
     farben: { grund: '#0f4c5c', akzent: '#e36414', hell: '#9adbcf', text: '#d7ebe8' },
   },
   llmsVollSeiten: [],
+  datenLizenz: '',
   glaetteDatensaetze: ['ketten', 'ketten-eigentuemer', 'geschlecht-praxis', 'inhaber-angestellte', 'heimtiere', 'tieraerzteschaft-deutschland', 'praxisschwerpunkte', 'heimtiermarkt', 'fachtieraerzte', 'oktoberfest', 'oktoberfest-preis', 'tierarzt-inflation', 'tierarzt-routinejahr', 'heimtiere-alle', 'heimtiere-dach', 'tierarztmangel', 'tierarztmangel-2000', 'praxis-alter', 'praxis-alter-wachstum', 'gehalt-preise', 'pferde-nutztiere', 'praxisarten-2010'],
 }
 

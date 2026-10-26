@@ -74,4 +74,7 @@ export interface SeitenProfil {
   /** Handgeschriebene Seiten (Pfade wie in `seiten`), deren Text zusätzlich in llms-full.txt steht – etwa eine
    *  Säulenseite oder ein Glossar. Leer: nur die Live-Artikel. */
   llmsVollSeiten: string[]
+  /** Lizenz der eigenen Datenzusammenstellungen als URL (etwa https://creativecommons.org/licenses/by/4.0/), steht dann
+   *  im Dataset-Schema. Leer: keine Lizenzangabe – eine Entscheidung des Herausgebers, nicht des Codes. */
+  datenLizenz: string
 }

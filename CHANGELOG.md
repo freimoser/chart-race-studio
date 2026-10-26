@@ -4,6 +4,10 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Dataset-Schema erweitert (26.10.2026)
+
+- **Kern, betrifft beide Seiten:** Das Dataset-Schema jedes Artikels trägt jetzt `inLanguage`, `isAccessibleForFree`, `keywords` (aus `suchbegriffe`) und `includedInDataCatalog` (die Datenherkunft der Seite). Neues Profilfeld `datenLizenz` (URL der Lizenz, beide Seiten noch leer): Erst wenn der Herausgeber eine Lizenz festlegt, steht `license` im Schema – die Google-Datensatzsuche warnt ohne.
+
 ### Vorschaubilder für handgeschriebene Seiten (26.10.2026)
 
 - **Kern, betrifft beide Seiten:** `scripts/og-bilder.mjs` erzeugt beim Lauf ohne Slugs auch Karten für die Seiten aus `PROFIL.seiten` (`public/og/<pfad>.png`, Titel und Unterzeile aus og:title/og:description). Der Build nimmt sie, wenn die Seite kein eigenes og:image hat, mit dem Seitentitel als Bildtext; sonst wie bisher die Standardkarte. Tiermedizin: Build byte-gleich, bis dort `og-bilder.mjs` läuft.

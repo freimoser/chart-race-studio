@@ -256,13 +256,17 @@ function seite(a, { entwurf, alle }) {
     jsonld.push({
       '@context': 'https://schema.org', '@type': 'Dataset',
       name: ds.titel, description: `${ds.untertitel ?? ds.titel}. ${a.beschreibung}`,
-      creator: AUTOR,
+      creator: AUTOR, inLanguage: 'de-DE', isAccessibleForFree: true,
+      ...(a.suchbegriffe ? { keywords: a.suchbegriffe.split(',').map((k) => k.trim()).filter(Boolean) } : {}),
+      // Lizenz nur, wenn der Herausgeber eine festgelegt hat (Profil); ohne Angabe meldet die Datensatzsuche eine Warnung.
+      ...(PROFIL.datenLizenz ? { license: PROFIL.datenLizenz } : {}),
       ...(jahre.length ? { temporalCoverage: `${jahre[0]}/${jahre.at(-1)}` } : {}),
       spatialCoverage: PROFIL.raum(ds.id),
       variableMeasured: ds.daten.headers.slice(1),
       ...(ds.quelleUrl ? { isBasedOn: ds.quelleUrl } : {}),
       ...(ds.quelle ? { citation: ds.quelle } : {}),
       dateModified: a.geaendert,
+      ...(basis && PROFIL.seiten.some((s) => s.pfad === 'artikel/datenherkunft.html') ? { includedInDataCatalog: { '@type': 'DataCatalog', name: `${L.siteName}: Datenherkunft`, url: `${basis}/artikel/datenherkunft.html` } } : {}),
       ...(basis ? { url: `${basis}/${ZIEL}/${a.slug}.html`, distribution: { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: `${basis}/daten/${ds.id}.csv` } } : {}),
     })
   }
