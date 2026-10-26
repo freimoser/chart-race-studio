@@ -5,10 +5,10 @@ titel: Antibiotika in der Tierhaltung: 562 Tonnen, minus 67 Prozent
 beschreibung: 2024 wurden 562,1 Tonnen Antibiotika an Tierärzte abgegeben, 67 Prozent weniger als 2011. Der größte Sprung kam 2015, seit 2023 steigt die Menge leicht.
 frage: Wie viel Antibiotika wird in der Tierhaltung eingesetzt?
 suchbegriffe: antibiotika tierhaltung, antibiotika tierhaltung statistik, antibiotika tiermedizin, reserve antibiotika tiermedizin, antibiotika tierhaltung deutschland
-stand: 2026-10-21
+stand: 2026-10-26
 bereit: ja
 ---
-2024 gaben Pharmaunternehmen und Großhändler in Deutschland **562,1 Tonnen Antibiotika an Tierärztinnen und Tierärzte** ab, laut Bundesamt für Verbraucherschutz und Lebensmittelsicherheit (BVL). 2011, im ersten Jahr der Erfassung, waren es 1.705,7 Tonnen, **67 Prozent mehr**. Den Verbrauch auf den Höfen erhebt eine zweite Stelle: 2023 meldeten Betriebe mit Rindern, Schweinen, Hühnern und Puten 478 Tonnen (Bundesinstitut für Risikobewertung).
+2024 gaben Pharmaunternehmen und Großhändler in Deutschland **562,1 Tonnen Antibiotika an Tierärztinnen und Tierärzte** ab, laut Bundesamt für Verbraucherschutz und Lebensmittelsicherheit (BVL). 2011, im ersten Jahr der Erfassung, waren es 1.705,7 Tonnen, rund dreimal so viel: **ein Rückgang um 67 Prozent**. Den Verbrauch auf den Höfen erhebt eine zweite Stelle: 2023 meldeten Betriebe mit Rindern, Schweinen, Hühnern und Puten 478 Tonnen (Bundesinstitut für Risikobewertung).
 
 ## Das Wichtigste in Kürze
 

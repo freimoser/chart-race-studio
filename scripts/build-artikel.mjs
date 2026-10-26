@@ -279,6 +279,20 @@ function seite(a, { entwurf, alle }) {
       mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.frage, acceptedAnswer: { '@type': 'Answer', text: f.antwort } })),
     })
   }
+  // Brotkrumen Start › Alle Artikel › Thema › Artikel, sichtbar und als BreadcrumbList. Das Thema ist das
+  // Kapitel der Übersicht (Anker beitrag/#arc), Artikel ohne Post landen unter „Mehr“.
+  const arc = ARCS.find((x) => x.id === post.arc)
+  const kapitel = a.anleitung || !arc ? { label: 'Auswertungen, Exkurse und Anleitungen', anker: 'mehr' } : { label: arc.label, anker: arc.id }
+  const krumen = [
+    { name: L.siteName, href: tiefe || './', item: basis ? `${basis}/` : '' },
+    { name: 'Alle Artikel', href: entwurf ? '../' : './', item: basis ? `${basis}/${ZIEL}/` : '' },
+    { name: kapitel.label, href: `${entwurf ? '../' : './'}#${kapitel.anker}`, item: basis ? `${basis}/${ZIEL}/#${kapitel.anker}` : '' },
+  ]
+  jsonld.push({
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [...krumen, { name: a.titel, item: basis ? `${basis}/${ZIEL}/${a.slug}.html` : '' }]
+      .map((k, i) => ({ '@type': 'ListItem', position: i + 1, name: k.name, ...(k.item ? { item: k.item } : {}) })),
+  })
 
   const g = grafikVon(a.grafik, post.sampleId, { mussFrei: a.live })
   const bild = g ? grafikFigur(g, { tiefe, csv })
@@ -310,6 +324,7 @@ ${entwurf ? `    <p class="entwurf">Entwurf · ${a.bereit ? 'bereit zur Freigabe
 
     <main class="wrap">
       <article>
+        <nav class="brotkrumen" aria-label="Brotkrumen"><ol>${krumen.map((k) => `<li><a href="${k.href}">${esc(k.name)}</a></li>`).join('')}</ol></nav>
         <p class="meta">${a.art === 'exkurs' ? 'Exkurs · Neu im Studio' : a.art === 'auswertung' ? 'Sonderauswertung' : a.anleitung ? 'Anleitung' : `Visite ${visiteVon(post.nr)} · Post ${post.nr}: ${esc(post.title)}`}</p>
         <h1>${esc(a.titel)}</h1>
         ${lead}

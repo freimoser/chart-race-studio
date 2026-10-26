@@ -62,6 +62,10 @@ li { margin: 0.3rem 0; }
 p { margin: 0.75rem 0; }
 .lead { font-size: 1.1rem; color: var(--brand-ink); }
 .meta { font-size: 0.8125rem; color: var(--brand-ink-muted); margin-top: 0.5rem; }
+/* Brotkrumen über dem Artikel: klein, eine Zeile, umbricht auf dem Handy. */
+.brotkrumen ol { list-style: none; margin: 0 0 0.25rem; padding: 0; display: flex; flex-wrap: wrap; gap: 0 0.4rem; font-size: 0.8125rem; color: var(--brand-ink-muted); }
+.brotkrumen li + li::before { content: "›"; margin-right: 0.4rem; }
+.brotkrumen a { color: inherit; }
 a { color: var(--brand-primary); }
 strong { color: var(--brand-ink); }
 table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: 0.9375rem; }
