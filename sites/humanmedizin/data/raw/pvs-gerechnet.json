@@ -2476,5 +2476,127 @@
    "wert": 1431,
    "methode": "linear zwischen Q4/2016 und Q4/2021 (KBV hat keinen Anteil veröffentlicht)"
   }
+ ],
+ "pvs-allgemeinmediziner": [
+  {
+   "jahr": 2022,
+   "system": "CGM ALBIS",
+   "wert": 1342,
+   "methode": "linear zwischen 2022-03-31 (1407) und 2023-03-31 (1321), KBV-Bericht Arztgruppe Allgemeinmediziner"
+  },
+  {
+   "jahr": 2023,
+   "system": "CGM ALBIS",
+   "wert": 1245,
+   "methode": "linear zwischen 2023-09-30 (1268) und 2024-12-31 (1153), KBV-Bericht Arztgruppe Allgemeinmediziner"
+  },
+  {
+   "jahr": 2022,
+   "system": "CGM MEDISTAR",
+   "wert": 2291,
+   "methode": "linear zwischen 2022-03-31 (2428) und 2023-03-31 (2246), KBV-Bericht Arztgruppe Allgemeinmediziner"
+  },
+  {
+   "jahr": 2023,
+   "system": "CGM MEDISTAR",
+   "wert": 2123,
+   "methode": "linear zwischen 2023-09-30 (2149) und 2024-12-31 (2020), KBV-Bericht Arztgruppe Allgemeinmediziner"
+  },
+  {
+   "jahr": 2022,
+   "system": "CGM TURBOMED",
+   "wert": 2757,
+   "methode": "linear zwischen 2022-03-31 (2997) und 2023-03-31 (2679), KBV-Bericht Arztgruppe Allgemeinmediziner"
+  },
+  {
+   "jahr": 2023,
+   "system": "CGM TURBOMED",
+   "wert": 2412,
+   "methode": "linear zwischen 2023-09-30 (2483) und 2024-12-31 (2129), KBV-Bericht Arztgruppe Allgemeinmediziner"
+  },
+  {
+   "jahr": 2022,
+   "system": "medatixx",
+   "wert": 1077,
+   "methode": "linear zwischen 2022-03-31 (840) und 2023-03-31 (1154), KBV-Bericht Arztgruppe Allgemeinmediziner"
+  },
+  {
+   "jahr": 2023,
+   "system": "medatixx",
+   "wert": 1314,
+   "methode": "linear zwischen 2023-09-30 (1256) und 2024-12-31 (1544), KBV-Bericht Arztgruppe Allgemeinmediziner"
+  },
+  {
+   "jahr": 2022,
+   "system": "Medical Office",
+   "wert": 1298,
+   "methode": "linear zwischen 2022-03-31 (1272) und 2023-03-31 (1307), KBV-Bericht Arztgruppe Allgemeinmediziner"
+  },
+  {
+   "jahr": 2023,
+   "system": "Medical Office",
+   "wert": 1497,
+   "methode": "linear zwischen 2023-09-30 (1495) und 2024-12-31 (1504), KBV-Bericht Arztgruppe Allgemeinmediziner"
+  },
+  {
+   "jahr": 2022,
+   "system": "QUINCY WIN",
+   "wert": 1192,
+   "methode": "linear zwischen 2022-03-31 (1219) und 2023-03-31 (1183), KBV-Bericht Arztgruppe Allgemeinmediziner"
+  },
+  {
+   "jahr": 2023,
+   "system": "QUINCY WIN",
+   "wert": 1133,
+   "methode": "linear zwischen 2023-09-30 (1146) und 2024-12-31 (1083), KBV-Bericht Arztgruppe Allgemeinmediziner"
+  },
+  {
+   "jahr": 2022,
+   "system": "T2med",
+   "wert": 880,
+   "methode": "linear zwischen 2022-03-31 (691) und 2023-03-31 (942), KBV-Bericht Arztgruppe Allgemeinmediziner"
+  },
+  {
+   "jahr": 2023,
+   "system": "T2med",
+   "wert": 1147,
+   "methode": "linear zwischen 2023-09-30 (1081) und 2024-12-31 (1411), KBV-Bericht Arztgruppe Allgemeinmediziner"
+  },
+  {
+   "jahr": 2022,
+   "system": "tomedo",
+   "wert": 464,
+   "methode": "linear zwischen 2022-03-31 (380) und 2023-03-31 (492), KBV-Bericht Arztgruppe Allgemeinmediziner"
+  },
+  {
+   "jahr": 2023,
+   "system": "tomedo",
+   "wert": 570,
+   "methode": "linear zwischen 2023-09-30 (535) und 2024-12-31 (709), KBV-Bericht Arztgruppe Allgemeinmediziner"
+  },
+  {
+   "jahr": 2022,
+   "system": "x.concept",
+   "wert": 1552,
+   "methode": "linear zwischen 2022-03-31 (1609) und 2023-03-31 (1533), KBV-Bericht Arztgruppe Allgemeinmediziner"
+  },
+  {
+   "jahr": 2023,
+   "system": "x.concept",
+   "wert": 1430,
+   "methode": "linear zwischen 2023-09-30 (1463) und 2024-12-31 (1298), KBV-Bericht Arztgruppe Allgemeinmediziner"
+  },
+  {
+   "jahr": 2022,
+   "system": "x.isynet",
+   "wert": 1854,
+   "methode": "linear zwischen 2022-03-31 (1924) und 2023-03-31 (1831), KBV-Bericht Arztgruppe Allgemeinmediziner"
+  },
+  {
+   "jahr": 2023,
+   "system": "x.isynet",
+   "wert": 1757,
+   "methode": "linear zwischen 2023-09-30 (1789) und 2024-12-31 (1630), KBV-Bericht Arztgruppe Allgemeinmediziner"
+  }
  ]
 }

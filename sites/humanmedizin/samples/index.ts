@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { AERZTE_PRAXISFORM, LABOR_AERZTE, MVZ_ANZAHL, EARZTBRIEF_MONAT, LABORDATEN_PB, PVS_ARZT, PVS_ARZT_2007, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
+import { AERZTE_PRAXISFORM, LABOR_AERZTE, MVZ_ANZAHL, EARZTBRIEF_MONAT, LABORDATEN_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -169,6 +169,27 @@ export const SAMPLES: SampleDataset[] = [
     headers: PVS_KIS.headers,
     rows: PVS_KIS.rows,
     suggested: { chartType: 'line', topN: 4, decimals: 0, primaryAxisLabel: 'Installationen', colors: { 'CGM MEDICO': BLAU, ORBIS: '#e87ba4', SAP: '#eda100', iMedOne: '#008300' } },
+  },
+  {
+    id: 'pvs-allgemeinmediziner',
+    erstellt: '2026-10-26', geprueft: '2026-10-26',
+    category: 'software',
+    title: 'Praxissoftware der Allgemeinmediziner',
+    subtitle: 'Installationen in der KBV-Arztgruppe Allgemeinmediziner, Jahresende, die zehn größten Systeme Ende 2025',
+    source: 'Quelle: KBV, Installationsstatistik je Arztgruppe (Allgemeinmediziner), Q4/2020–Q4/2025; 2022 und 2023 gerechnet',
+    sourceUrl: 'https://update.kbv.de/ita-update/Service-Informationen/Installationsstatistiken/',
+    unit: 'Installationen',
+    description: 'Bei den Allgemeinmedizinern hat medatixx Ende 2025 CGM MEDISTAR und CGM TURBOMED überholt; T2med folgt knapp dahinter.',
+    dataInfo: [
+      'Gezählt werden Installationen in der KBV-Arztgruppe Allgemeinmediziner, also Abrechnungen mit der Prüfnummer eines Systems, nicht Praxen oder Ärzte. Allgemeinmediziner sind nicht alle Hausärzte: Hausärztlich tätige Internisten stehen in der Arztgruppe Internisten, Praktiker in einer eigenen Gruppe.',
+      'Gerechnet: Für Ende 2022 und Ende 2023 ist kein Bericht archiviert. Die Werte sind linear zwischen den nächsten belegten Quartalen gerechnet (31.03.2022 und 31.03.2023 bzw. 30.09.2023 und 31.12.2024); 20 von 60 Werten, mit Methode in data/raw/pvs-gerechnet.json. Alle übrigen Jahresenden sind belegt (archivierte KBV-Berichte, Fundstelle je Wert in data/raw/pvs-kbv-allgemeinmediziner.csv).',
+      'Die KBV veröffentlicht je Arztgruppe nur die 20 größten Systeme; Anteile innerhalb der Gruppe beziehen sich deshalb auf diese 20.',
+    ],
+    headers: PVS_ALLGEMEIN.headers,
+    rows: PVS_ALLGEMEIN.rows,
+    // Bar Race statt Linien: medatixx überholt erst in den letzten Bildern; Balken tauschen dabei gleitend die Plätze,
+    // Linien-Beschriftungen sprängen (Glätteprüfung). Herstellerfarben und Legende wie pvs-installationen.
+    suggested: { chartType: 'bar', topN: 10, decimals: 0, colors: farbenFuer(PVS_ALLGEMEIN.headers), legende: LEGENDE, labelsPosition: 'outside' },
   },
   {
     id: 'pvs-saldo',

@@ -249,7 +249,7 @@ const ERWARTET = {
   const dh = fs.readFileSync(`${H}/seiten/artikel/datenherkunft.html`, 'utf8')
   const ids = [...fs.readFileSync(`${H}/samples/index.ts`, 'utf8').matchAll(/^    id: '([a-z0-9-]+)'/gm)].map((m) => m[1])
   for (const id of ids) if (!dh.includes(`id="${id}"`)) fehler.push(`Datenherkunft: Abschnitt für Datensatz „${id}“ fehlt`)
-  for (const [id, T] of [['pvs-psychotherapie', D.PVS_PSYCHO], ['pvs-aufsteiger', D.PVS_AUFSTEIGER], ['pvs-kis', D.PVS_KIS]]) {
+  for (const [id, T] of [['pvs-psychotherapie', D.PVS_PSYCHO], ['pvs-aufsteiger', D.PVS_AUFSTEIGER], ['pvs-kis', D.PVS_KIS], ['pvs-allgemeinmediziner', D.PVS_ALLGEMEIN]]) {
     const t = `${GERECHNET[id].length} von ${(T.headers.length - 1) * T.rows.length} Werten`
     if (!dh.includes(t)) fehler.push(`Datenherkunft: „${t}“ (${id}) steht nicht im Text`)
   }
@@ -292,6 +292,20 @@ if (fs.existsSync(path.join(RAW, 'pvs-kbv-arztgruppen.csv'))) {
   const gruppe = (g) => AG.filter((r) => r.fachgruppe === g).reduce((a, r) => a + Number(r.installationen), 0)
   if (gruppe('Psychotherapeuten') !== 35271) fehler.push(`Arztgruppen: Psychotherapeuten ${gruppe('Psychotherapeuten')} ≠ 35.271 aus dem Einzelbericht`)
   if (new Set(AG.map((r) => r.fachgruppe)).size !== 23) fehler.push('Arztgruppen: nicht 23 Fachgruppen')
+  // Zeitreihe Allgemeinmediziner (archivierte Einzelberichte) gegen den Gesamtbericht Q4/Q3 2025 und gegen den Datensatz.
+  const AM = leseCsv(path.join(RAW, 'pvs-kbv-allgemeinmediziner.csv'))
+  for (const r of AG.filter((x) => x.fachgruppe === 'Allgemeinmediziner')) {
+    for (const [st, feld] of [['2025-12-31', 'installationen'], ['2025-09-30', 'installationen_vorquartal']]) {
+      const a = AM.find((x) => x.stichtag === st && x.kbv_id === r.kbv_id)
+      if (!a || Number(a.installationen) !== Number(r[feld])) fehler.push(`Allgemeinmediziner: ${r.system} ${st} Einzelbericht ${a?.installationen} ≠ Gesamtbericht ${r[feld]}`)
+    }
+  }
+  const PA = D.PVS_ALLGEMEIN, ids = { medatixx: '462', 'CGM MEDISTAR': '280', 'CGM TURBOMED': '112', T2med: '498', 'Medical Office': '210', 'x.isynet': '216', 'x.concept': '243', 'CGM ALBIS': '203', 'QUINCY WIN': '244', tomedo: '457' }
+  for (const r of PA.rows) PA.headers.slice(1).forEach((n, i) => {
+    const a = AM.find((x) => x.stichtag === `${r[0]}-12-31` && x.kbv_id === ids[n])
+    if (!ids[n]) fehler.push(`pvs-allgemeinmediziner: KBV-Id für ${n} fehlt in der Prüfung`)
+    if (a && Number(a.installationen) !== r[i + 1]) fehler.push(`pvs-allgemeinmediziner: ${n} ${r[0]} ${r[i + 1]} ≠ Rohdaten ${a.installationen}`)
+  })
 }
 // Häufige Fragen der Startseite (Profil): jede Zahl der Antwort muss im verlinkten Artikel stehen.
 {
