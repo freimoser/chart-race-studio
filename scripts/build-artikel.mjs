@@ -333,7 +333,7 @@ ${entwurf ? `    <p class="entwurf">Entwurf · ${a.bereit ? 'bereit zur Freigabe
 ${einruecken(rumpf)}
         <aside class="kasten">
 ${csv ? `          <p><a href="${csv}" download>Daten als CSV herunterladen</a> · ${esc(ds.titel)}</p>\n` : ''}${post.sampleId ? `          <p><a href="${tiefe}studio/?beispiel=${post.sampleId}">Datensatz im Studio öffnen und selbst animieren</a></p>\n` : ''}${post.linkedInUrl ? `          <p><a href="${post.linkedInUrl}" rel="noopener">Zum Beitrag auf LinkedIn</a></p>\n` : ''}${verweise.length ? `          <p>Baut auf: ${verweise.join(' · ')}</p>\n` : ''}          <p><a href="${tiefe}artikel/datenherkunft.html">Woher die Zahlen kommen</a> · <a href="${entwurf ? '../' : './'}">Alle Artikel von ${esc(L.siteName)}</a></p>
-        </aside>
+${basis ? `          <p class="zitieren">So zitieren: ${esc(L.operator)} (${a.geaendert.slice(0, 4)}): ${esc(a.titel)}. ${esc(L.siteName)}, Stand ${datumDe(a.geaendert)}. <span class="url">${basis}/${ZIEL}/${a.slug}</span></p>\n` : ''}        </aside>
       </article>
     </main>
     <!--rahmen:fuss-->

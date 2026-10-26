@@ -212,3 +212,6 @@ figure.video video { display: block; width: 100%; height: auto; border-radius: 1
   .einwilligung p strong { font-size: 0.8125rem; }
   .einwilligung .wahl .knopf { min-height: 2.25rem; padding: 0.35rem 0.8rem; }
 }
+/* Zitiervorschlag im Kasten unter dem Artikel; die Adresse darf auf dem Handy umbrechen. */
+.zitieren { font-size: 0.8125rem; color: var(--brand-ink-muted); }
+.zitieren .url { overflow-wrap: anywhere; }
