@@ -12,7 +12,7 @@ Die einzige vollständige Zählung der Praxissoftware in Deutschland ist die Ins
 
 ## Das Wichtigste in Kürze
 
-- **Was gezählt wird:** Jede Praxis, die quartalsweise mit den Kassen abrechnet, braucht ein zugelassenes System; seine Prüfnummer reist mit der Abrechnung. Die KBV zählt diese Abrechnungen, sie schreibt selbst, die Statistik gebe „kein genaues Abbild des tatsächlichen Marktes“ wieder.
+- **Was gezählt wird:** Jede Praxis, die quartalsweise mit den Kassen abrechnet, braucht ein zugelassenes System; seine [Prüfnummer](../artikel/begriffe-praxis-it.html#kbv-pruefnummer) reist mit der Abrechnung. Die KBV zählt diese Abrechnungen, sie schreibt selbst, die Statistik gebe „kein genaues Abbild des tatsächlichen Marktes“ wieder.
 - **Installationen sind mehr als Praxen:** 116.954 Installationen stehen rund 98.000 Praxen gegenüber (AOK-Magazin G+G, 09/2026). Nebenbetriebsstätten, Klinikambulanzen und Wechselquartale zählen mit.
 - **Konzentration bei den Arztsystemen** (Ende 2025): Die größten drei Systeme haben 32,3 Prozent, die größten fünf 49,6 Prozent. Nach Herstellern: CGM 32,4, medatixx 28,1, INDAMED 8,4, Zollsoft 6,6, T2med 6,0 Prozent.
 - **Verzug:** Der Datenstand 31.12.2025 erschien am 05.10.2026. Von Herbst 2017 bis Herbst 2020 hat die KBV nur Prozentanteile veröffentlicht.

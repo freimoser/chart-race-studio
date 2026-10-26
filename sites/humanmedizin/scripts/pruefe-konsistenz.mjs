@@ -334,6 +334,13 @@ if (fs.existsSync(path.join(RAW, 'pvs-kbv-arztgruppen.csv'))) {
     if (a && Number(a.installationen) !== r[i + 1]) fehler.push(`pvs-allgemeinmediziner: ${n} ${r[0]} ${r[i + 1]} ≠ Rohdaten ${a.installationen}`)
   })
 }
+// Links auf Glossar-Anker (begriffe-praxis-it.html#…) müssen auf einen vorhandenen Begriff zeigen.
+{
+  const glossar = fs.readFileSync(path.join(H, 'seiten/artikel/begriffe-praxis-it.html'), 'utf8')
+  const anker = new Set([...glossar.matchAll(/<dt id="([^"]+)"/g)].map((m) => m[1]))
+  const quellen = [...fs.readdirSync(path.join(H, 'content/artikel')).filter((f) => f.endsWith('.md')).map((f) => path.join(H, 'content/artikel', f)), ...fs.readdirSync(path.join(H, 'seiten/artikel')).map((f) => path.join(H, 'seiten/artikel', f))]
+  for (const f of quellen) for (const [, a] of fs.readFileSync(f, 'utf8').matchAll(/begriffe-praxis-it\.html#([a-z0-9-]+)/g)) if (!anker.has(a) && a !== 'begriffe') fehler.push(`${f}: Glossar-Anker #${a} gibt es nicht`)
+}
 // Häufige Fragen der Startseite (Profil): jede Zahl der Antwort muss im verlinkten Artikel stehen.
 {
   const PROFIL = (await import(pathToFileURL(path.resolve(H, 'profil.ts')).href)).default

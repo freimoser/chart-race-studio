@@ -27,7 +27,7 @@ Das passt dazu, dass der digitale Auftrag selten aus der Praxissoftware kommt: D
 ## Was die Zahl nicht sagt
 
 - **Personen, keine Labore.** Wie viele Laborpraxen und Labor-MVZ es gibt, veröffentlicht keine Statistik. Auch Marktanteile der Laborgruppen lassen sich nicht ehrlich rechnen: Die Umsätze enthalten Privat- und Krankenhausleistungen, sind in verschiedenen Währungen und Geschäftsjahren angegeben, und für die meisten Gruppen fehlen sie.
-- **Fachgruppe einschließlich Mikrobiologie.** Das Bundesarztregister fasst Laboratoriumsmedizin und Mikrobiologie zusammen. Die Bundesärztekammer zählt den Facharzt für Laboratoriumsmedizin allein.
+- **Fachgruppe einschließlich Mikrobiologie.** Das [Bundesarztregister](../artikel/begriffe-praxis-it.html#bundesarztregister) fasst Laboratoriumsmedizin und Mikrobiologie zusammen. Die Bundesärztekammer zählt den Facharzt für Laboratoriumsmedizin allein.
 - **Die Zweitquelle hat einen Sprung.** In der Ärztestatistik sinkt die Zahl der niedergelassenen Laborärzte von 2021 auf 2022 von 220 auf 150; im Bundesarztregister gibt es diesen Sprung nicht. Deshalb zeigt die Grafik nur das Bundesarztregister.
 - **Nicht im Bild:** Ermächtigte, Angestellte in Praxen und Jobsharing, 2025 zusammen 61 Personen.
 

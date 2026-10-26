@@ -21,7 +21,7 @@ In der Arztgruppe Allgemeinmediziner der Kassenärztlichen Bundesvereinigung (KB
 
 In der Gesamtliste der ärztlichen Systeme hat CompuGroup Medical 32,4 Prozent und liegt vor medatixx. Bei den Allgemeinmedizinern ist es umgekehrt. T2med hat hier 9,2 Prozent der Installationen der 20 größten Systeme, unter allen ärztlichen Systemen 6,0 Prozent.
 
-Die KBV ordnet jede Installation der Arztgruppe zu, in der abgerechnet wird; jede Gruppe hat deshalb ihren eigenen Markt. Warum Allgemeinmediziner anders wählen als andere Fachgruppen und warum eine Praxis wechselt, sagt die Statistik nicht.
+Die KBV ordnet jede Installation der [Arztgruppe](../artikel/begriffe-praxis-it.html#arztgruppe) zu, in der abgerechnet wird; jede Gruppe hat deshalb ihren eigenen Markt. Warum Allgemeinmediziner anders wählen als andere Fachgruppen und warum eine Praxis wechselt, sagt die Statistik nicht.
 
 Für Anbieter von Schnittstellen heißt das: In der Allgemeinmedizin teilen sich vier Systeme die Spitze fast gleichauf, jedes hat für sich höchstens rund ein Zehntel der Installationen der 20 größten Systeme.
 

@@ -23,7 +23,7 @@ Hinter den Zahlen stecken zwei verschiedene Bewegungen. Die erste ist ein Umzug 
 
 Die zweite ist der Wechsel zwischen Herstellern. Die CGM-Systeme verlieren deutlich mehr, als ein Umzug innerhalb der Gruppe erklären könnte, denn kein CGM-System wächst. tomedo, T2med und Medical Office gewinnen gleichzeitig zusammen 6.276 Installationen. Ob genau diese Praxen von CGM kommen, sagt die Statistik nicht.
 
-§ 371 SGB V verpflichtet die Hersteller, eine Archivierungs- und Wechselschnittstelle anzubieten, über die Praxen ihre Daten mitnehmen können. Ein öffentliches Verzeichnis, welches System sie zertifiziert hat, führt die KBV seit Ende 2025 nicht mehr.
+§ 371 SGB V verpflichtet die Hersteller, eine [Archivierungs- und Wechselschnittstelle](../artikel/begriffe-praxis-it.html#archiv-und-wechselschnittstelle) anzubieten, über die Praxen ihre Daten mitnehmen können. Ein öffentliches Verzeichnis, welches System sie zertifiziert hat, führt die KBV seit Ende 2025 nicht mehr.
 
 ## Was die Zahl nicht sagt
 

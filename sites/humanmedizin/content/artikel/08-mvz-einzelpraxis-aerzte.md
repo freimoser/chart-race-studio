@@ -15,7 +15,7 @@ In Medizinischen Versorgungszentren (MVZ) und anderen ärztlich geleiteten Einri
 
 - **MVZ:** 70 (2004), 2.156 (2015), 5.305 (2025). 2.659 davon haben ein Krankenhaus als Träger, 50,1 Prozent.
 - **Angestellt:** In MVZ arbeiten Ende 2025 32.062 angestellte Ärztinnen, Ärzte und Psychotherapeuten und 1.788 mit eigener Zulassung, 94,7 Prozent sind angestellt. Im Schnitt sind es 6,4 je MVZ.
-- **Köpfe nach Praxisform** (ohne psychologische Psychotherapeuten): Einzelpraxis 69.860 → 64.103, Berufsausübungsgemeinschaft 51.679 → 50.143, MVZ und Einrichtungen 13.826 → 32.885.
+- **Köpfe nach Praxisform** (ohne psychologische Psychotherapeuten): Einzelpraxis 69.860 → 64.103, [Berufsausübungsgemeinschaft](../artikel/begriffe-praxis-it.html#berufsausuebungsgemeinschaft) 51.679 → 50.143, MVZ und Einrichtungen 13.826 → 32.885.
 - **Die klassische Einzelpraxis** – ein Arzt mit Zulassung, ohne angestellte Ärzte – ging von 56.892 auf 41.304 zurück, minus 27,4 Prozent.
 
 ## Mehr Ärzte, weniger Installationen
@@ -28,7 +28,7 @@ Für Hersteller und Schnittstellenanbieter verschiebt sich damit der Kunde. Stat
 
 ## Was die Zahl nicht sagt
 
-- **Köpfe, keine Stellen.** Das Bundesarztregister zählt Personen, nicht Vollzeitstellen; wie viel jemand arbeitet, steht nicht darin.
+- **Köpfe, keine Stellen.** Das [Bundesarztregister](../artikel/begriffe-praxis-it.html#bundesarztregister) zählt Personen, nicht Vollzeitstellen; wie viel jemand arbeitet, steht nicht darin.
 - **Einzelpraxis ist nicht gleich Einzelpraxis.** Auch in Einzelpraxen arbeiten mehr Angestellte: 7.336 Ärztinnen und Ärzte 2015, 13.402 im Jahr 2025. Deshalb sinkt die Zahl der Köpfe in Einzelpraxen (minus 8,2 Prozent) weniger als die Zahl der ärztlichen Einzelpraxen.
 - **Nur ärztlich.** Mit den psychotherapeutischen Einzelpraxen, die von 20.021 auf 29.577 wuchsen, schrumpfen die Einzelpraxen insgesamt kaum. Die Aussage gilt nur für ärztliche Praxen.
 - **Zwei Statistiken.** MVZ-Statistik und Bundesarztregister zählen die Personen in MVZ leicht unterschiedlich (2025: 33.850 gegen 34.317, jeweils mit Psychotherapeuten). Sie stehen deshalb in getrennten Grafiken.

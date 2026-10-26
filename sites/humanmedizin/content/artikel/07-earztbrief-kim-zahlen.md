@@ -14,8 +14,8 @@ bereit: ja
 
 - **Menge:** 14,4 Mio. eArztbriefe (2023), 32,3 Mio. (2024), 45,2 Mio. (2025), 41,4 Mio. Januar bis September 2026. Der bisher stärkste Monat war der März 2026 mit 5,2 Millionen.
 - **Wachstum flacht ab:** Seit Frühjahr 2026 liegen die Monate zwischen 4,3 und 5,0 Millionen; die Kurve steigt nicht mehr steil.
-- **Nutzung:** Laut PraxisBarometer Digitalisierung 2025 nutzen 82 Prozent der Arztpraxen mit TI-Anschluss den eArztbrief über KIM, in psychotherapeutischen Praxen 22 Prozent.
-- **Software:** Systeme mit 88,9 Prozent der Installationen ärztlicher Systeme haben die KBV-Zulassung für den eArztbrief. 1-Click-Abrechnung über KIM können alle, seit KV-Connect am 20.10.2025 abgeschaltet wurde.
+- **Nutzung:** Laut PraxisBarometer Digitalisierung 2025 nutzen 82 Prozent der Arztpraxen mit TI-Anschluss den eArztbrief über [KIM](../artikel/begriffe-praxis-it.html#kim), in psychotherapeutischen Praxen 22 Prozent.
+- **Software:** Systeme mit 88,9 Prozent der Installationen ärztlicher Systeme haben die KBV-Zulassung für den eArztbrief. [1-Click-Abrechnung](../artikel/begriffe-praxis-it.html#1-click-abrechnung) über KIM können alle, seit KV-Connect am 20.10.2025 abgeschaltet wurde.
 
 ## Ein Teil des KIM-Verkehrs, nicht der größte
 

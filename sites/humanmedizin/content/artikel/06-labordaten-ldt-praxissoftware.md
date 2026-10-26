@@ -16,11 +16,11 @@ Praxissysteme mit KBV-Zulassung für den Import von Laborbefunden nach LDT 3 tra
 - **LDT-Befund-Import:** 22 von 28 ärztlichen Systemen sind zugelassen, zusammen 95,8 Prozent der Installationen. Der Wert ist an allen archivierten Ständen seit Januar 2022 gleich.
 - **LDT-Auftrag-Export:** kein ärztliches Praxissystem; zertifiziert sind nur Epikur und Laborsysteme.
 - **PraxisBarometer:** Labordaten digital empfangen 69 Prozent der Arztpraxen (2018) und 80 Prozent (2025); digital senden 15 und 39 Prozent.
-- **Seit 2025** bekommen Labore eine Pauschale, wenn sie ein System zur digitalen Auftragserteilung bereitstellen (GOP 40092). Im 1. Quartal 2025 wurde sie bei 80,5 Prozent der Fälle mit Transportpauschale abgerechnet.
+- **Seit 2025** bekommen Labore eine Pauschale, wenn sie ein System zur digitalen Auftragserteilung bereitstellen ([GOP 40092](../artikel/begriffe-praxis-it.html#gop-40092)). Im 1. Quartal 2025 wurde sie bei 80,5 Prozent der Fälle mit Transportpauschale abgerechnet.
 
 ## Wo der digitale Auftrag tatsächlich entsteht
 
-Für den Befund ist der Weg einfach: Das Labor schickt eine LDT-Datei, die Praxissoftware liest sie ein. Fast alle Systeme können das zertifiziert.
+Für den Befund ist der Weg einfach: Das Labor schickt eine [LDT-Datei](../artikel/begriffe-praxis-it.html#ldt), die Praxissoftware liest sie ein. Fast alle Systeme können das zertifiziert.
 
 Beim Auftrag ist es umgekehrt. Weil kein ärztliches Praxissystem einen zertifizierten LDT-Auftrag erzeugt, entsteht ein digitaler Laborauftrag, wo es ihn gibt, im Auftragssystem des Labors: Die Praxis bestellt in der Software, die das Labor bereitstellt. Die neue Pauschale GOP 40092 bezahlt genau diese Bereitstellung durch das Labor. Sie zeigt, wie verbreitet solche Systeme sind, aber nicht, wie viele Aufträge tatsächlich digital kommen.
 
