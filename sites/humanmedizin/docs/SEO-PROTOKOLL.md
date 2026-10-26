@@ -27,8 +27,13 @@ Trailing Slash, Header) erst danach.
 |---|---|---|---|
 | 1 | 26.10.2026 | Eigene Vorschaubilder (1200 × 630) je Artikel | 11 Karten mit Titel und Kernzahl in `public/beitrag/og/`; vorher zeigte jeder geteilte Link die Standardkarte. Das Bild steht auch als `image` im Article-Schema (für Artikel-Rich-Results erforderlich). |
 | 2 | 26.10.2026 | Glossar `artikel/begriffe-praxis-it.html` mit `DefinedTermSet` (17 Begriffe: PVS, KBV-Prüfnummer, KVDT, LDT, KIM, eArztbrief, eAU, TI, MVZ, BAG …), je Begriff Anker, Quelle und Zahl der Seite | Für „Was ist …“-Fragen zitierfähig; verlinkt aus Fuß, Säulenseite, Datenherkunft, Über das Projekt, Post 1 und `llms.txt`; in Sitemap und Zahlenprüfung. Nebenbei: „126 Systeme“ in Post 10 auf „126 Zeilen“ korrigiert (wie Säulenseite, Varianten zählen mit). `check:mobil` maß fremden Server auf :5173 – bricht jetzt ab, wenn dort nicht unsere Seite läuft. |
+| 3 | 26.10.2026 | „Häufige Fragen“ auf der Startseite (sichtbar + FAQPage), je Artikel eine Frage mit Zahl | 11 Fragen im Profil; jede erscheint erst, wenn ihr Artikel live ist (jetzt 1). Die Konsistenzprüfung verlangt, dass jede Zahl der Antwort im verlinkten Artikel steht (Gegenprobe mit falscher Zahl schlägt an). |
 
 ## Ideenliste (nach erwartetem Nutzen)
+
+- **Mehr Artikel live** (Entscheidung Thomas): Die Startseite trägt mit einem Artikel wenig Text, zehn fertige Entwürfe
+  warten auf ihren LinkedIn-Termin. Der Redaktionsplan erlaubt, einen Artikel vor dem Post online zu stellen; das wäre der
+  größte einzelne SEO-Hebel.
 
 - **Datenlizenz festlegen** (Entscheidung Thomas): Ohne `license` im Dataset-Schema meldet Google Dataset Search eine
   Warnung; eine offene Lizenz für die eigenen Zusammenstellungen (z. B. CC BY 4.0) macht die Daten zitierfähig.
