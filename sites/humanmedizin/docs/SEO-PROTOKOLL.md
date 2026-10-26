@@ -32,6 +32,7 @@ Trailing Slash, Header) erst danach.
 | 5 | 26.10.2026 | Keyword-Recherche (Google-Autovervollständigung) als `docs/KEYWORD-RECHERCHE.md`, Inhalte danach ausgerichtet | Säulenseite heißt jetzt „Übersicht 2025“ (Suche „praxisverwaltungssysteme übersicht“, keine Konkurrenz mit Post 1 „Marktanteile“); Post 3 mit Frage zu Psychotherapie-Software auf dem Mac; Post 7 und Glossar mit eArztbrief-Vergütung GOP 86900/86901 und Empfangspflicht seit 30.06.2024 (KBV-Seite, live geprüft); Glossar mit KIM-Adresse. Neue Artikelidee mit Nachfrage: Praxissoftware nach Fachrichtung (KBV-Berichte je Arztgruppe). |
 | 6 | 26.10.2026 | Daten für die Suchlücke „Praxissoftware nach Fachrichtung“: KBV-Bericht „TOP 20 je Fachgruppe“ Q4/2025 für alle 23 Gruppen als `data/raw/pvs-kbv-arztgruppen.csv`, Recherche `recherche/pvs-arztgruppen.md`, Post 12 im Redaktionsplan | Befund: Bei Allgemeinmedizinern führt medatixx (1.892) vor MEDISTAR (1.857) und TURBOMED (1.850), T2med auf Platz 4. Gegenproben: Psychotherapeuten-Summe = 35.271 wie im Einzelbericht, kein System in den Gruppen über seinem Gesamtwert – beides jetzt in der Konsistenzprüfung. |
 | 7 | 26.10.2026 | Zeitreihe für Post 12 aus archivierten KBV-Berichten (Webarchiv): Arztgruppe Allgemeinmediziner Q3/2020–Q4/2025, 12 Quartale, `data/raw/pvs-kbv-allgemeinmediziner.csv`; Datensatz `pvs-allgemeinmediziner` (Bar Race, zehn Systeme, Jahresende 2020–2025) mit Abschnitt in der Datenherkunft | Q4/2022 und Q4/2023 fehlen im Archiv: linear zwischen den nächsten belegten Quartalen, 20 von 60 Werten markiert. Gegenproben: KBV-Differenzspalte in allen Berichten stimmig, doppelt belegte Quartale gleich, Einzel- gegen Gesamtbericht Q4/Q3 2025 gleich, Datensatz gegen Rohdaten (alle zehn Systeme). Erst als Line Race geplant: Die Glätteprüfung fand 2 Sprünge, weil medatixx erst in den letzten Bildern überholt – deshalb Bar Race, kein Eingriff in den gemeinsamen Diagramm-Code. |
+| 8 | 26.10.2026 | Artikelentwurf Post 12 `praxissoftware-allgemeinmediziner` (Suchnachfrage „praxissoftware hausarzt (vergleich)“, „allgemeinmedizin“), mit FAQ „Welche Praxissoftware nutzen Hausärzte?“ und ehrlicher Abgrenzung Allgemeinmediziner ≠ Hausärzte; Vorschaubild; verlinkt aus Post 2 und 4. Datenherkunft mit Article-Schema (neue Inhaltsprüfung aus dem Kern meldete das Fehlen) | Konsistenzprüfung prüft 10 Kennzahlen des Artikels und die Rangfolge (medatixx Platz 1 erst Q4/2025, Platz 3 im Vorquartal). Eine unbelegte Begründung und eine knapp falsche Formulierung („keines erreicht ein Zehntel“ – medatixx hat 10,006 %) vor dem Commit korrigiert. |
 
 ## Ideenliste (nach erwartetem Nutzen)
 
@@ -41,9 +42,7 @@ Trailing Slash, Header) erst danach.
 
 - **Datenlizenz festlegen** (Entscheidung Thomas): Ohne `license` im Dataset-Schema meldet Google Dataset Search eine
   Warnung; eine offene Lizenz für die eigenen Zusammenstellungen (z. B. CC BY 4.0) macht die Daten zitierfähig.
-- Datenherkunft ohne strukturierte Daten: Article/`about` oder DataCatalog für freigegebene Datensätze.
 - Dataset-Schema ergänzen: `keywords`, `isAccessibleForFree`, `measurementTechnique`, `includedInDataCatalog`.
-- **Post 12 schreiben** (Praxissoftware der Allgemeinmediziner), Datensatz steht.
 - Startseite: Kernzahlen als Text (nicht nur Grafik), `ItemList` der Artikel.
 - Interne Verlinkung Säulenseite ↔ alle Artikel prüfen, Ankertexte mit Suchbegriff.
 - `llms.txt`: Kernzahlen je Thema als Faktenliste, sobald weitere Artikel freigegeben sind.

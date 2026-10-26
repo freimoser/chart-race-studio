@@ -24,7 +24,7 @@ Wer nur die einzelnen Systeme betrachtet, sieht CGM MEDISTAR seit Jahren auf Pla
 
 medatixx entstand 2007 aus DOCexpert und MCS und führt die Systeme x.isynet, x.concept und x.comfort weiter. Seit 2014 baut der Hersteller ein neues Hauptprodukt gleichen Namens auf, auf das er seine Praxen nach und nach umzieht. Deshalb wächst das Produkt medatixx stark, während die älteren Systeme schrumpfen – für den Hersteller ist das ein Umzug, kein Gewinn.
 
-Die eigentliche Verschiebung findet außerhalb der beiden Gruppen statt. Medical Office von INDAMED, tomedo von Zollsoft und T2med haben zusammen inzwischen mehr als jede fünfte Installation ärztlicher Systeme.
+Die eigentliche Verschiebung findet außerhalb der beiden Gruppen statt. Medical Office von INDAMED, tomedo von Zollsoft und T2med haben zusammen inzwischen mehr als jede fünfte Installation ärztlicher Systeme. In einzelnen Fachgruppen sieht es anders aus: Bei den Allgemeinmedizinern liegt medatixx vor CGM, siehe [Praxissoftware der Allgemeinmediziner](praxissoftware-allgemeinmediziner.html).
 
 ## Was die Zahl nicht sagt
 

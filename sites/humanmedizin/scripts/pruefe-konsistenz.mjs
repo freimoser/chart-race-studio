@@ -225,6 +225,20 @@ K['Neue 2013'] = de(hs(2013, 3)); K['Neue 2025'] = de(hs(2025, 3))
     K['Labor EP'] = `noch ${ep(2025)} Laborärztinnen und -ärzte mit Zulassung, 2013 waren es ${ep(2013)}`
   }
 }
+// Allgemeinmediziner (Post 12): Rohdaten der Einzelberichte, Q4/2020 gegen Q4/2025, Anteile an den Top 20 Ende 2025.
+{
+  const AM = leseCsv(path.join(RAW, 'pvs-kbv-allgemeinmediziner.csv')), v = (st, id) => Number(AM.find((x) => x.stichtag === st && x.kbv_id === id)?.installationen)
+  const q4 = AM.filter((x) => x.stichtag === '2025-12-31'), summe25 = q4.reduce((a, x) => a + Number(x.installationen), 0)
+  K['AM Summe 2025'] = de(summe25)
+  for (const [n, id] of [['TURBOMED', '112'], ['MEDISTAR', '280']]) K[`AM Rückgang ${n}`] = prozent(v('2020-12-31', id) - v('2025-12-31', id), v('2020-12-31', id), 1)
+  const anteil = (ids) => prozent(ids.reduce((a, id) => a + v('2025-12-31', id), 0), summe25, 1)
+  K['AM medatixx-Gruppe'] = anteil(['462', '216', '243', '266', '135']); K['AM CGM'] = anteil(['280', '112', '203', '252']); K['AM Neue'] = anteil(['210', '498', '457'])
+  K['AM T2med-Anteil'] = anteil(['498'])
+  K['AM Abstand 1–4'] = de(v('2025-12-31', '462') - v('2025-12-31', '498'))
+  // Reihenfolge: medatixx vorn erst Ende 2025, im Quartal davor Platz 3.
+  const rang = (st) => AM.filter((x) => x.stichtag === st).sort((a, b) => b.installationen - a.installationen).map((x) => x.kbv_id)
+  if (rang('2025-12-31')[0] !== '462' || rang('2025-09-30')[2] !== '462') fehler.push('Post 12: medatixx nicht Platz 1 Ende 2025 bzw. nicht Platz 3 im Vorquartal')
+}
 // Welche Kennzahl muss in welchem Text stehen.
 const ERWARTET = {
   [`${H}/content/artikel/01-praxissoftware-arztpraxen-marktanteile.md`]: ['MEDISTAR 2025', 'MEDISTAR 2013', 'TURBOMED 2025', 'TURBOMED 2013', 'medatixx 2025', 'x.isynet 2025', 'Medical Office 2013', 'Medical Office 2025', 'tomedo 2025', 'T2med 2025', 'Summe Arztsysteme 2013', 'Summe Arztsysteme 2025', 'Rückgang Arztsysteme', 'CGM-Anteil 2013', 'CGM-Anteil 2025', 'MEDISTAR-Anteil 2025', 'CGM 2013', 'CGM 2025', 'Gerechnet kurz', 'Sichtbar gerechnet lang'],
@@ -242,6 +256,7 @@ const ERWARTET = {
   [`${H}/content/artikel/09-krankenhaus-software-ambulant-kis.md`]: ['KIS 2013', 'KIS 2025', 'KIS-Anteil 2013', 'KIS-Anteil 2025', 'ORBIS-Anteil KIS', 'SAP Wachstum', 'KIS plus 2015–2025', 'KH-MVZ plus 2015–2025', 'Gerechnet KIS'],
   [`${H}/content/artikel/10-pvs-statistik-kbv-methode.md`]: ['Top 3 Anteil', 'Top 5 Anteil', 'Anteil CGM 2025', 'Anteil medatixx 2025', 'Anteil INDAMED 2025', 'Anteil Zollsoft 2025', 'Anteil T2med 2025', 'CGM+medatixx 2025', 'Summe alle 2025', 'medatixx 2025 (Hersteller)', 'KIS-Anteil 2025'],
   [`${H}/content/artikel/11-labor-angestellte-laboraerzte.md`]: ['Labor angestellt 2013', 'Labor angestellt 2025', 'Labor Zulassung Rückgang', 'Labor EP'],
+  [`${H}/content/artikel/12-praxissoftware-allgemeinmediziner.md`]: ['AM Summe 2025', 'AM Rückgang TURBOMED', 'AM Rückgang MEDISTAR', 'AM medatixx-Gruppe', 'AM CGM', 'AM Neue', 'AM T2med-Anteil', 'AM Abstand 1–4', 'Anteil CGM 2025', 'Anteil T2med 2025'],
   [`${H}/content/roadmap.ts`]: ['LDT-Befund-Anteil', 'eArztbrief-Anteil', 'eArztbriefe 2023', 'eArztbriefe 2024', 'eArztbriefe 2025', 'eArztbriefe 2026 bis Sep'],
 }
 // Datenherkunft: jeder Datensatz hat einen Abschnitt mit seiner id, und die Zahl gerechneter Werte stimmt.

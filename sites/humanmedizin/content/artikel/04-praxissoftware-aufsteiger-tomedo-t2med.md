@@ -22,7 +22,7 @@ Am stärksten wachsen Praxissysteme, die nicht nur unter Windows laufen: tomedo 
 
 tomedo stammt von Zollsoft aus Jena, das 2011 gegründet wurde und Mitte 2013 die KBV-Zulassung erhielt. Das System läuft nativ auf dem Mac, der Praxisserver ist ebenfalls ein Mac. T2med wurde 2012 gegründet, von einem früheren Geschäftsführer von TurboMed, und ist seit 2015 auf dem Markt; es läuft unter Windows, macOS und Linux und bietet eine dokumentierte FHIR-Schnittstelle mit Partnerprogramm. ETERNO Cloud (Doc Cirrus) läuft im Browser.
 
-Gemeinsam ist den drei Neuen, dass sie nicht aus einer der großen Gruppen kommen und von Anfang an nicht allein auf Windows gesetzt haben: auf den Mac, auf mehrere Betriebssysteme oder auf den Browser. Medical Office ist älter (INDAMED wurde 1994 gegründet) und läuft unter Windows; es wuchs vor allem bis 2021.
+Gemeinsam ist den drei Neuen, dass sie nicht aus einer der großen Gruppen kommen und von Anfang an nicht allein auf Windows gesetzt haben: auf den Mac, auf mehrere Betriebssysteme oder auf den Browser. Medical Office ist älter (INDAMED wurde 1994 gegründet) und läuft unter Windows; es wuchs vor allem bis 2021. Am stärksten sind die Aufsteiger bei den Allgemeinmedizinern: Dort steht T2med auf Platz 4, siehe [Praxissoftware der Allgemeinmediziner](praxissoftware-allgemeinmediziner.html).
 
 ## Was die Zahl nicht sagt
 
