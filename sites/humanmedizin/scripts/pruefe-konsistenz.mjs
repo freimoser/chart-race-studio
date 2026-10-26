@@ -272,7 +272,8 @@ const ERWARTET = {
 // Säulenseite: beide Tabellen gegen die Rohdaten (Installationen Q4/Q3 2025, Zulassungen am jüngsten Stand des Verzeichnisses).
 {
   const seite = fs.readFileSync(path.join(H, 'seiten/artikel/praxisverwaltungssysteme-deutschland.html'), 'utf8')
-  const [t1, t2] = [...seite.matchAll(/<tbody>([\s\S]*?)<\/tbody>/g)].map((m) => [...m[1].matchAll(/<tr>([\s\S]*?)<\/tr>/g)].map((r) => [...r[1].matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map((c) => c[1].trim())))
+  // Reihenfolge auf der Seite: Systeme, Fachgruppen, Schnittstellen.
+  const [t1, t3, t2] = [...seite.matchAll(/<tbody>([\s\S]*?)<\/tbody>/g)].map((m) => [...m[1].matchAll(/<tr>([\s\S]*?)<\/tr>/g)].map((r) => [...r[1].matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map((c) => c[1].trim())))
   const norm = (n) => n.replace(/\s*\(ehem\.[^)]*\)/, '').replace(/[()]/g, '').trim()
   const roh = (st, name) => INST.find((r) => r.stichtag === st && norm(r.system) === name)
   const zahl = (z) => Number(z.replace(/\./g, ''))
@@ -295,6 +296,17 @@ const ERWARTET = {
     if (!soll('ldt_befund', ldt) || (/Auftrag-Export/.test(ldt) && z.ldt_auftrag !== 'ja') || !soll('earztbrief', brief) || !soll('kim_1click', kim)) fehler.push(`Säulenseite: Zulassungen ${name} (${ldt} / ${brief} / ${kim}) ≠ Verzeichnis ${stand}`)
   }
   if (t1.length < 20 || t2.length < 10) fehler.push(`Säulenseite: Tabellen nicht gefunden (${t1.length}, ${t2.length} Zeilen)`)
+  // Dritte Tabelle: Spitzenreiter je Arztgruppe (Gruppen mit mindestens 1.000 Installationen in den Top 20).
+  const AG = leseCsv(path.join(RAW, 'pvs-kbv-arztgruppen.csv'))
+  const gruppen = [...new Set(AG.map((r) => r.fachgruppe))].map((g) => { const z = AG.filter((r) => r.fachgruppe === g).sort((a, b) => b.installationen - a.installationen); return { g, s: z.reduce((a, r) => a + Number(r.installationen), 0), z } }).filter((x) => x.s >= 1000).sort((a, b) => b.s - a.s)
+  if (t3.length !== gruppen.length) fehler.push(`Säulenseite: Fachgruppen-Tabelle hat ${t3.length} Zeilen, Rohdaten ${gruppen.length} Gruppen ab 1.000`)
+  gruppen.forEach((x, i) => {
+    const r = t3[i] ?? []
+    if (r[0] !== x.g || zahl(r[1] ?? '') !== x.s || r[2] !== x.z[0].system || zahl(r[3] ?? '') !== Number(x.z[0].installationen) || r[4] !== x.z[1].system || zahl(r[5] ?? '') !== Number(x.z[1].installationen)) fehler.push(`Säulenseite: Fachgruppe ${x.g} weicht von den Rohdaten ab`)
+  })
+  const zahlwort = ['null', 'eins', 'zwei', 'drei', 'vier', 'fünf', 'sechs', 'sieben', 'acht', 'neun', 'zehn']
+  const medistarVorn = gruppen.filter((x) => x.z[0].system === 'CGM MEDISTAR BLACK PRO').length
+  if (!seite.includes(`führt in ${zahlwort[medistarVorn]} der ${gruppen.length} Gruppen`)) fehler.push(`Säulenseite: „führt in ${zahlwort[medistarVorn]} der ${gruppen.length} Gruppen“ steht nicht im Text`)
 }
 // Berichte je Arztgruppe (Post 12): je System nie mehr als in der Gesamtliste, Psychotherapeuten-Summe wie im Einzelbericht.
 if (fs.existsSync(path.join(RAW, 'pvs-kbv-arztgruppen.csv'))) {
