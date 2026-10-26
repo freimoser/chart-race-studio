@@ -143,6 +143,15 @@ function integrationen(env: Record<string, string>) {
         html = html.replace('<div id="root"></div>', `<div id="root"><main style="max-width:44rem;margin:0 auto;padding:2rem 1.25rem;font-family:system-ui,sans-serif">
       <h1>Studio für animierte Diagramme</h1>
       <p>Aus einer Tabelle wird ein animiertes Diagramm als MP4: Bar Race, Line Race oder animierte Karte. Das Studio läuft komplett im Browser, die Daten verlassen das Gerät nicht.</p>
+      <h2>Was das Studio kann</h2>
+      <ul>
+        <li>Vier Diagrammarten: Bar Race (Balken überholen sich über die Jahre), Line Race (Linien wachsen über die Zeit), Säulen und Linie kombiniert, animierte Karte.</li>
+        <li>Tabellen als CSV, TSV, Excel (XLSX, XLS) oder OpenDocument (ODS) laden oder direkt einfügen.</li>
+        <li>Export als MP4-Video in 16:9, 1:1, 4:5 und 9:16, passend für LinkedIn, Instagram, YouTube und Präsentationen.</li>
+        <li>Titel, Untertitel, Quelle, Farben, Logo und Wasserzeichen frei einstellbar.</li>
+        <li>Kostenlos und ohne Anmeldung; nichts wird hochgeladen.</li>
+      </ul>
+      <h2>Weiter</h2>
       <ul>
         <li><a href="../">${MARKE}: Startseite</a></li>
         <li><a href="${PROFIL.datenformatUrl('../')}">Datenformat: Tabellen für animierte Diagramme vorbereiten</a></li>
