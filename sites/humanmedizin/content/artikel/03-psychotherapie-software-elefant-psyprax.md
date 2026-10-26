@@ -4,7 +4,7 @@ slug: psychotherapie-software-elefant-psyprax
 titel: Psychotherapie-Software: Elefant vor MEDISTAR
 beschreibung: Seit Ende 2023 ist Elefant das meistinstallierte Praxissystem der KBV-Statistik, eine Software für Psychotherapie. 2024 überholt auch psyprax MEDISTAR.
 frage: Welche Praxissoftware nutzen Psychotherapeuten?
-suchbegriffe: praxissoftware psychotherapie, elefant psyprax vergleich, psychotherapie software marktanteil, epikur smarty
+suchbegriffe: praxissoftware psychotherapie, praxissoftware psychotherapie vergleich, praxissoftware psychotherapie mac, elefant psyprax vergleich, psychotherapie software marktanteil, epikur smarty
 stand: 2026-10-22
 kennzahl: software/3 | 10.967 | Installationen von Elefant, meistinstalliertes System | 2025
 bereit: ja
@@ -52,3 +52,7 @@ Nach Installationen in der KBV-Statistik ja, seit Ende 2023. Unter den Systemen 
 ### Warum zählen Psychotherapie-Praxen so stark?
 
 Weil die KBV Installationen zählt und psychologische Psychotherapeutinnen und -therapeuten überwiegend in Einzelpraxen arbeiten (2025: 88 Prozent). Die Zahl der psychotherapeutischen Einzelpraxen wuchs zwischen 2015 und 2025 um rund die Hälfte.
+
+### Gibt es Praxissoftware für Psychotherapie auf dem Mac?
+
+Laut KBV-Zulassungsverzeichnis läuft Epikur unter Windows, macOS und Linux; Elefant, psyprax und SMARTY sind nur für Windows zugelassen. Welche Betriebssysteme die übrigen Systeme haben, steht in [Praxisverwaltungssysteme in Deutschland](../artikel/praxisverwaltungssysteme-deutschland.html).

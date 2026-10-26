@@ -4,7 +4,7 @@ slug: earztbrief-kim-zahlen
 titel: eArztbrief über KIM: 45,2 Millionen im Jahr 2025
 beschreibung: Im März 2022 gingen 150.450 eArztbriefe über KIM, 2025 waren es 45,2 Millionen. 82 Prozent der Arztpraxen mit TI nutzen ihn, 22 Prozent der Psychotherapie.
 frage: Wie viele eArztbriefe werden in Deutschland verschickt?
-suchbegriffe: earztbrief zahlen, kim nachrichten anzahl, elektronischer arztbrief kim, earztbrief praxissoftware, kv-connect abschaltung
+suchbegriffe: earztbrief zahlen, earztbrief ebm ziffer, earztbrief kim, kim nachrichten anzahl, elektronischer arztbrief, earztbrief praxissoftware, kv-connect abschaltung
 stand: 2026-10-22
 bereit: ja
 ---
@@ -38,7 +38,7 @@ Die gematik veröffentlicht einen Zähler seit 01.08.2021, jeweils um 0 Uhr UTC.
 
 ## Quelle und Methode
 
-gematik, [TI-Dashboard, Verlauf KIM](https://ti-lage.prod.ccs.gematik.solutions/d/_v5YC1HVk/ti-dashboard-verlauf-kim); KBV/IGES, [PraxisBarometer Digitalisierung](https://www.kbv.de/infothek/zahlen-und-fakten/praxisbarometer-digitalisierung) 2018–2025; Kassenärztliche Bundesvereinigung, [Zulassungsverzeichnisse](https://update.kbv.de/ita-update/Service-Informationen/Zulassungsverzeichnisse/) (eArztbrief, Stand 21.10.2026) und [Installationsstatistiken](https://www.kbv.de/infothek/zahlen-und-fakten/pvs-installationsstatistiken); Abschaltung von KV-Connect laut [KV Bayerns](https://www.kvb.de/fileadmin/kvb/Mitglieder/Service/Serviceschreiben/2025-DS/KVB-RS-250821-Abschaltung-KV-Connect-ab-201025.pdf). Abgerufen am 22. Oktober 2026. Welche Systeme welche Zulassung haben, steht in [Praxisverwaltungssysteme in Deutschland](../artikel/praxisverwaltungssysteme-deutschland.html); wie es bei den Labordaten aussieht, in [LDT-Befunde ja, Aufträge kaum](labordaten-ldt-praxissoftware.html).
+gematik, [TI-Dashboard, Verlauf KIM](https://ti-lage.prod.ccs.gematik.solutions/d/_v5YC1HVk/ti-dashboard-verlauf-kim); KBV/IGES, [PraxisBarometer Digitalisierung](https://www.kbv.de/infothek/zahlen-und-fakten/praxisbarometer-digitalisierung) 2018–2025; Kassenärztliche Bundesvereinigung, [Zulassungsverzeichnisse](https://update.kbv.de/ita-update/Service-Informationen/Zulassungsverzeichnisse/) (eArztbrief, Stand 21.10.2026) und [Installationsstatistiken](https://www.kbv.de/infothek/zahlen-und-fakten/pvs-installationsstatistiken); Vergütung und Empfangspflicht laut [KBV, eArztbrief](https://www.kbv.de/praxis/digitalisierung/anwendungen/earztbrief); Abschaltung von KV-Connect laut [KV Bayerns](https://www.kvb.de/fileadmin/kvb/Mitglieder/Service/Serviceschreiben/2025-DS/KVB-RS-250821-Abschaltung-KV-Connect-ab-201025.pdf). Abgerufen am 22. Oktober 2026. Welche Systeme welche Zulassung haben, steht in [Praxisverwaltungssysteme in Deutschland](../artikel/praxisverwaltungssysteme-deutschland.html); wie es bei den Labordaten aussieht, in [LDT-Befunde ja, Aufträge kaum](labordaten-ldt-praxissoftware.html).
 
 ## Häufige Fragen
 
@@ -53,3 +53,7 @@ Laut KBV-Zulassungsverzeichnis Systeme mit 88,9 Prozent der Installationen ärzt
 ### Nutzen Psychotherapeuten den eArztbrief?
 
 Seltener: Laut PraxisBarometer 2025 nutzen 22 Prozent der psychotherapeutischen Praxen den eArztbrief über KIM, gegenüber 82 Prozent der Arztpraxen mit TI-Anschluss.
+
+### Was bekommt eine Praxis für einen eArztbrief?
+
+Laut KBV 28 Cent für den Versand (GOP 86900) und 27 Cent für den Empfang (GOP 86901), zusammen höchstens 23,40 Euro je Quartal und Arzt. Seit 30. Juni 2024 müssen Praxen eArztbriefe mindestens empfangen können.
