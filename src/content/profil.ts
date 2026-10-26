@@ -71,4 +71,7 @@ export interface SeitenProfil {
   og: { titel: string; text: string; farben: { grund: string; akzent: string; hell: string; text: string } }
   /** Glättungsprüfung (scripts/pruefe-glaette.mjs): Datensätze, die ohne Argument geprüft werden. */
   glaetteDatensaetze: string[]
+  /** Handgeschriebene Seiten (Pfade wie in `seiten`), deren Text zusätzlich in llms-full.txt steht – etwa eine
+   *  Säulenseite oder ein Glossar. Leer: nur die Live-Artikel. */
+  llmsVollSeiten: string[]
 }

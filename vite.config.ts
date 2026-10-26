@@ -185,7 +185,7 @@ ${BEITRAEGE.length ? `        <li><a href="../beitrag/">Alle Artikel</a></li>\n`
       // nichts verloren.
       // llms-full.txt: der volle Text aller Live-Artikel in einer Datei, als Markdown. Antwortmaschinen
       // bekommen so jede Zahl mit Kontext und Quelle, ohne HTML parsen oder JavaScript ausführen zu müssen.
-      if (BEITRAEGE.length) {
+      if (BEITRAEGE.length || PROFIL.llmsVollSeiten.length) {
         // Alle Artikeldateien, nicht nur die nummerierten: Auswertungen, Exkurse und Anleitungen heißen anders
         // und fehlten sonst mit leerem Text (bis 14.10.2026 sechs der fünfzehn Live-Artikel).
         const texte = readdirSync(seite('content/artikel')).filter((f) => f.endsWith('.md') && f !== 'README.md').map((f) => readFileSync(seite(`content/artikel/${f}`), 'utf8'))
@@ -195,7 +195,17 @@ ${BEITRAEGE.length ? `        <li><a href="../beitrag/">Alle Artikel</a></li>\n`
           const text = roh.replace(/^---[\s\S]*?\n---\n/, '').replace(/^::grafik .*\n/gm, '').replace(/\[([^\]]+)\]\(([a-z0-9-]+)\.html\)/g, (m, t, slug) => BEITRAEGE.some((x) => x.slug === slug) ? m : t).replace(/\]\((?!https?:)(\.\.\/)?([^)]+)\)/g, (_m, hoch, ziel) => `](${url}/${hoch ? '' : 'beitrag/'}${ziel})`)
           return `# ${b.titel}\n\nQuelle: ${url}/beitrag/${b.slug}.html · Stand ${b.stand} · ${MARKE}, ${PROFIL.autor.name}\n\n${text.trim()}\n`
         })
-        this.emitFile({ type: 'asset', fileName: 'llms-full.txt', source: `# ${MARKE}: alle Artikel im Volltext\n\n> ${PROFIL.beschreibung}\n\n${voll.join('\n---\n\n')}` })
+        // Handgeschriebene Seiten aus dem Profil (Säulenseite, Glossar) als schlichtes Markdown: Überschriften, Absätze,
+        // Listen, Tabellenzeilen, Links mit voller Adresse. Grafiken, Navigation und Skripte fallen weg.
+        const alsText = (html: string) => html.replace(/[\s\S]*?<article>|<\/article>[\s\S]*/g, '')
+          .replace(/<(script|figure|nav)[\s\S]*?<\/\1>/g, '')
+          .replace(/<a [^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g, (_m, href: string, t: string) => href.startsWith('#') ? t : `[${t}](${/^https?:/.test(href) ? href : `${url}/${href.replace(/^\.\.\//, '').replace(/^(?!artikel\/|beitrag\/|tabellen\/|daten\/|ueber)/, 'artikel/')}`})`)
+          .replace(/<h1[^>]*>([\s\S]*?)<\/h1>/g, '\n# $1\n').replace(/<h2[^>]*>([\s\S]*?)<\/h2>/g, '\n## $1\n').replace(/<h3[^>]*>([\s\S]*?)<\/h3>/g, '\n### $1\n')
+          .replace(/<dt[^>]*>([\s\S]*?)<\/dt>/g, '\n**$1**\n').replace(/<li[^>]*>/g, '\n- ').replace(/<\/t[dh]>\s*<t[dh][^>]*>/g, ' | ').replace(/<tr[^>]*>/g, '\n')
+          .replace(/<\/(p|dd|div|ul|table)>/g, '\n').replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+          .split('\n').map((z) => z.replace(/\s+/g, ' ').trim()).join('\n').replace(/\n{3,}/g, '\n\n').trim()
+        const seitenVoll = PROFIL.llmsVollSeiten.map((p) => `Quelle: ${url}/${p} · ${MARKE}, ${PROFIL.autor.name}\n\n${alsText(readFileSync(seite(`seiten/${p}`), 'utf8'))}\n`)
+        this.emitFile({ type: 'asset', fileName: 'llms-full.txt', source: `# ${MARKE}: alle Artikel im Volltext\n\n> ${PROFIL.beschreibung}\n\n${[...seitenVoll, ...voll].join('\n---\n\n')}` })
       }
       // Atom-Feed der Live-Artikel, neueste zuerst nach Stand.
       if (BEITRAEGE.length) {

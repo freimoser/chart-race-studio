@@ -4,6 +4,10 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### llms-full.txt mit Säulenseiten (26.10.2026)
+
+- **Kern, betrifft beide Seiten:** Neues Profilfeld `llmsVollSeiten`: handgeschriebene Seiten, deren Text (als schlichtes Markdown mit vollen Links) vor den Artikeln in `llms-full.txt` steht. Tiermedizin `[]` – Ausgabe byte-gleich; Humanmedizin: Säulenseite Praxisverwaltungssysteme und Glossar.
+
 ### Mobilprüfung prüft den Server (26.10.2026)
 
 - **Kern, betrifft beide Seiten:** `scripts/pruefe-mobil.mjs` bricht mit Exit 2 ab, wenn unter `--basis` nicht die Marke der Seite steht. Vorher maß sie still einen fremden Entwicklungsserver auf :5173 und meldete dessen Überläufe.
