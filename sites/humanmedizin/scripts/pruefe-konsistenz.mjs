@@ -254,6 +254,33 @@ const ERWARTET = {
     if (!dh.includes(t)) fehler.push(`Datenherkunft: „${t}“ (${id}) steht nicht im Text`)
   }
 }
+// Säulenseite: beide Tabellen gegen die Rohdaten (Installationen Q4/Q3 2025, Zulassungen am jüngsten Stand des Verzeichnisses).
+{
+  const seite = fs.readFileSync(path.join(H, 'seiten/artikel/praxisverwaltungssysteme-deutschland.html'), 'utf8')
+  const [t1, t2] = [...seite.matchAll(/<tbody>([\s\S]*?)<\/tbody>/g)].map((m) => [...m[1].matchAll(/<tr>([\s\S]*?)<\/tr>/g)].map((r) => [...r[1].matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map((c) => c[1].trim())))
+  const norm = (n) => n.replace(/\s*\(ehem\.[^)]*\)/, '').replace(/[()]/g, '').trim()
+  const roh = (st, name) => INST.find((r) => r.stichtag === st && norm(r.system) === name)
+  const zahl = (z) => Number(z.replace(/\./g, ''))
+  let vorher = Infinity
+  for (const [name, , , q4, q3] of t1) {
+    const a = roh('2025-12-31', name), b = roh('2025-09-30', name)
+    if (!a || !b) { fehler.push(`Säulenseite: System „${name}“ nicht in den Rohdaten`); continue }
+    if (zahl(q4) !== Number(a.installationen) || zahl(q3) !== Number(b.installationen)) fehler.push(`Säulenseite: ${name} ${q4}/${q3} ≠ Rohdaten ${a.installationen}/${b.installationen}`)
+    if (zahl(q4) > vorher) fehler.push(`Säulenseite: Tabelle nicht absteigend bei ${name}`)
+    vorher = zahl(q4)
+  }
+  const Z = leseCsv(path.join(RAW, 'pvs-zulassungen.csv')), stand = Z.map((z) => z.stand).sort().at(-1)
+  const [j, m, d] = stand.split('-')
+  if (!seite.includes(`Stand ${d}.${m}.${j}`)) fehler.push(`Säulenseite: Zulassungen nicht mit dem jüngsten Stand ${d}.${m}.${j} datiert`)
+  const kurz = { 'ETERNO Cloud': 'ETERNO Cloud (ehem. inSuite)' }
+  for (const [name, , ldt, brief, kim] of t2) {
+    const z = Z.find((x) => x.stand === stand && (x.system === (kurz[name] ?? name) || norm(x.system) === name))
+    if (!z) { fehler.push(`Säulenseite: Zulassungen für „${name}“ nicht in den Rohdaten`); continue }
+    const soll = (feld, text) => (z[feld] === 'ja') === !/nicht gelistet/.test(text)
+    if (!soll('ldt_befund', ldt) || (/Auftrag-Export/.test(ldt) && z.ldt_auftrag !== 'ja') || !soll('earztbrief', brief) || !soll('kim_1click', kim)) fehler.push(`Säulenseite: Zulassungen ${name} (${ldt} / ${brief} / ${kim}) ≠ Verzeichnis ${stand}`)
+  }
+  if (t1.length < 20 || t2.length < 10) fehler.push(`Säulenseite: Tabellen nicht gefunden (${t1.length}, ${t2.length} Zeilen)`)
+}
 // Häufige Fragen der Startseite (Profil): jede Zahl der Antwort muss im verlinkten Artikel stehen.
 {
   const PROFIL = (await import(pathToFileURL(path.resolve(H, 'profil.ts')).href)).default

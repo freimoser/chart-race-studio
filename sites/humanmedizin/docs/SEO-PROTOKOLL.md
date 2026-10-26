@@ -28,6 +28,7 @@ Trailing Slash, Header) erst danach.
 | 1 | 26.10.2026 | Eigene Vorschaubilder (1200 × 630) je Artikel | 11 Karten mit Titel und Kernzahl in `public/beitrag/og/`; vorher zeigte jeder geteilte Link die Standardkarte. Das Bild steht auch als `image` im Article-Schema (für Artikel-Rich-Results erforderlich). |
 | 2 | 26.10.2026 | Glossar `artikel/begriffe-praxis-it.html` mit `DefinedTermSet` (17 Begriffe: PVS, KBV-Prüfnummer, KVDT, LDT, KIM, eArztbrief, eAU, TI, MVZ, BAG …), je Begriff Anker, Quelle und Zahl der Seite | Für „Was ist …“-Fragen zitierfähig; verlinkt aus Fuß, Säulenseite, Datenherkunft, Über das Projekt, Post 1 und `llms.txt`; in Sitemap und Zahlenprüfung. Nebenbei: „126 Systeme“ in Post 10 auf „126 Zeilen“ korrigiert (wie Säulenseite, Varianten zählen mit). `check:mobil` maß fremden Server auf :5173 – bricht jetzt ab, wenn dort nicht unsere Seite läuft. |
 | 3 | 26.10.2026 | „Häufige Fragen“ auf der Startseite (sichtbar + FAQPage), je Artikel eine Frage mit Zahl | 11 Fragen im Profil; jede erscheint erst, wenn ihr Artikel live ist (jetzt 1). Die Konsistenzprüfung verlangt, dass jede Zahl der Antwort im verlinkten Artikel steht (Gegenprobe mit falscher Zahl schlägt an). |
+| 4 | 26.10.2026 | Säulenseite „Praxisverwaltungssysteme in Deutschland“: Sprungmarken (`id` an allen `h2`, Inhaltsleiste), CSV aller 41 erfassten Systeme mit Q4/Q3 2025 und Zulassungen (`tabellen/pvs-systeme-2025.csv`, erzeugt von `npm run daten`), `Dataset`-Schema mit Download, Link in `llms.txt` | **Datenfehler behoben:** Säulenseite und Datenherkunft nannten für die Zulassungen „Stand 19.10.2026“, Rohdaten und Artikel 21.10.2026; Werte stimmten. Neue Prüfung: beide Tabellen der Säulenseite gegen die Rohdaten (Werte, Sortierung, Zulassungen, Datum), Gegenprobe schlägt an. |
 
 ## Ideenliste (nach erwartetem Nutzen)
 
@@ -38,7 +39,6 @@ Trailing Slash, Header) erst danach.
 - **Datenlizenz festlegen** (Entscheidung Thomas): Ohne `license` im Dataset-Schema meldet Google Dataset Search eine
   Warnung; eine offene Lizenz für die eigenen Zusammenstellungen (z. B. CC BY 4.0) macht die Daten zitierfähig.
 - Datenherkunft ohne strukturierte Daten: Article/`about` oder DataCatalog für freigegebene Datensätze.
-- Säulenseite Praxisverwaltungssysteme: Dataset-Schema für die KBV-Tabelle Q4/2025, CSV-Download, Sprungmarken.
 - Dataset-Schema ergänzen: `keywords`, `isAccessibleForFree`, `measurementTechnique`, `includedInDataCatalog`.
 - Keyword-Recherche Humanmedizin (Autocomplete, PAA) als `docs/KEYWORD-RECHERCHE.md` wie bei der Tiermedizin.
 - Startseite: Kernzahlen als Text (nicht nur Grafik), `ItemList` der Artikel.

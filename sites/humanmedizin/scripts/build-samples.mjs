@@ -252,6 +252,27 @@ const LABOR_AERZTE = {
 }
 for (const r of LABOR_AERZTE.rows) if (r.slice(1).some((v) => v == null)) throw new Error(`labor-aerzte: Wert fehlt ${r}`)
 
+// ---------- Download zur Säulenseite (Praxisverwaltungssysteme in Deutschland) ----------
+// Liegt in public/tabellen/, nicht in public/daten/: Das leert build-artikel.mjs bei jedem Build.
+// Alle erfassten Systeme mit Installationen Q4/2025 und Q3/2025 und den KBV-Zulassungen (Stand des Verzeichnisses).
+// Belegte Werte, nichts gerechnet. Epikur und SMARTY wie auf der Seite als „gemischt“.
+{
+  const EINSATZ = { arzt: 'Arztpraxis', psychotherapie: 'Psychotherapie', kis: 'Krankenhaus', unklar: 'Sonstige' }
+  const ZUL = csv('pvs-zulassungen.csv'), zStand = ZUL.map((z) => z.stand).sort().at(-1)
+  const q = (st, n) => INST.find((r) => r.stichtag === st && r.system === n)
+  const zeilen = INST.filter((r) => r.stichtag === '2025-12-31' && r.system !== '__SUMME__')
+    .sort((x, y) => Number(y.installationen) - Number(x.installationen))
+    .map((r) => {
+      const z = ZUL.find((x) => x.stand === zStand && x.system === r.system) ?? {}
+      const einsatz = ['Epikur', 'SMARTY'].includes(r.system) ? 'gemischt' : EINSATZ[r.klasse] ?? r.klasse
+      return [r.system, r.hersteller.replace(/\s*\(.*\)$/, ''), einsatz, r.installationen, q('2025-09-30', r.system)?.installationen ?? '', z.ldt_befund ?? '', z.earztbrief ?? '', z.kim_1click ?? '']
+    })
+  const feld = (v) => /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v)
+  fs.mkdirSync('sites/humanmedizin/public/tabellen', { recursive: true })
+  fs.writeFileSync('sites/humanmedizin/public/tabellen/pvs-systeme-2025.csv',
+    [['system', 'hersteller', 'einsatz', 'installationen_2025_12_31', 'installationen_2025_09_30', `zulassung_ldt_befund_import_${zStand}`, `zulassung_earztbrief_${zStand}`, `zulassung_1click_kim_${zStand}`], ...zeilen].map((r) => r.map(feld).join(',')).join('\n') + '\n')
+}
+
 // ---------- Ausgabe ----------
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 fs.writeFileSync('sites/humanmedizin/samples/data.ts', `// Automatisch erzeugt von sites/humanmedizin/scripts/build-samples.mjs aus sites/humanmedizin/data/raw/ – nicht von Hand editieren.\n/* eslint-disable */\n` +

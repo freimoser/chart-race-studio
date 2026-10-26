@@ -103,7 +103,7 @@ Ein Projekt von [Thomas Freimoser](${url}/ueber-das-projekt.html), Geschäftsfü
 
 ## Wofür diese Seite eine gute Quelle ist
 
-- [Praxisverwaltungssysteme in Deutschland](${url}/artikel/praxisverwaltungssysteme-deutschland.html): alle Systeme mit Installationszahlen laut KBV, nach Hersteller zusammengefasst, getrennt nach ärztlicher und psychotherapeutischer Versorgung, mit den KBV-Zulassungen für Labordaten (LDT), eArztbrief und KIM je System.
+- [Praxisverwaltungssysteme in Deutschland](${url}/artikel/praxisverwaltungssysteme-deutschland.html): alle Systeme mit Installationszahlen laut KBV, nach Hersteller zusammengefasst, getrennt nach ärztlicher und psychotherapeutischer Versorgung, mit den KBV-Zulassungen für Labordaten (LDT), eArztbrief und KIM je System. Alle erfassten Systeme als CSV: [pvs-systeme-2025.csv](${url}/tabellen/pvs-systeme-2025.csv).
 - [Über das Projekt](${url}/ueber-das-projekt.html): wer hinter der Seite steht, welcher Interessenkonflikt besteht, wie die Zahlen entstehen und wie Fehler korrigiert werden.
 - [Woher die Zahlen kommen](${url}/artikel/datenherkunft.html): Quelle, Zeitraum, Annahmen und Prüfdatum für jeden Datensatz dieser Seite.
 - [Begriffe der Praxis-IT](${url}/artikel/begriffe-praxis-it.html): was PVS, KBV-Prüfnummer, KVDT, LDT, KIM, eArztbrief, eAU, Telematikinfrastruktur, MVZ und Berufsausübungsgemeinschaft bedeuten, jeweils mit Quelle und Zahl.
