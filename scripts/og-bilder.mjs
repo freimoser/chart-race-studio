@@ -8,6 +8,8 @@
  * im Build, sondern von Hand – die Bilder werden eingecheckt:
  *   sites/<seite>/public/og-standard.png           für alle Seiten ohne eigenes Bild
  *   sites/<seite>/public/beitrag/og/<slug>.png     je Artikel mit `bereit: ja`
+ *   sites/<seite>/public/og/<pfad>.png             je handgeschriebener Seite aus dem Profil (`seiten`), Titel und
+ *                                                  Unterzeile aus og:title und og:description der Seite
  * Farben und Text der Standardkarte stehen im Profil der Seite (`og`).
  *
  * Das Bild zeigt die Antwort, nicht nur die Frage: Titel und Kernzahl aus dem ersten Satz der
@@ -67,6 +69,16 @@ let n = NUR.length ? 0 : 1
 for (const a of INDEX.filter((x) => x.bereit && (!NUR.length || NUR.includes(x.slug)))) {
   const ersterSatz = a.beschreibung.match(/^.*?[.!?](\s|$)/)?.[0].trim() ?? a.beschreibung
   render(karte({ oben: L.siteName, titel: a.titel, text: ersterSatz }), sitePfad(`public/beitrag/og/${a.slug}.png`))
+  n++
+}
+// Handgeschriebene Seiten (Säulenseiten, Glossar, Über das Projekt) nur beim Lauf ohne Slugs. Der Build nimmt das Bild,
+// wenn die Seite kein eigenes og:image trägt (vite.config.ts), sonst die Standardkarte.
+if (!NUR.length) for (const s of PROFIL.seiten) {
+  const html = fs.readFileSync(sitePfad(`seiten/${s.pfad}`), 'utf8')
+  const meta = (p) => html.match(new RegExp(`<meta property="og:${p}" content="([^"]*)"`))?.[1]?.replace(/&amp;/g, '&').replace(/&quot;/g, '"')
+  if (!meta('title') || /property="og:image"/.test(html)) continue
+  const text = meta('description') ?? ''
+  render(karte({ oben: L.siteName, titel: meta('title'), text: text.match(/^.*?[.!?](\s|$)/)?.[0].trim() ?? text }), sitePfad(`public/og/${s.pfad.replace(/\.html$/, '').replace(/\//g, '-')}.png`))
   n++
 }
 fs.rmSync(tmp, { recursive: true, force: true })

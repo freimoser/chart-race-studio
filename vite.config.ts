@@ -118,9 +118,12 @@ function integrationen(env: Record<string, string>) {
         const voll = `${basis}/${pfad.replace(/(^|\/)index\.html$/, '$1')}`
         tags.push(`<link rel="canonical" href="${voll}" />`, `<meta property="og:url" content="${voll}" />`)
         // Ohne og:image zeigt LinkedIn beim Teilen eines Links nur eine graue Kachel. Seiten ohne
-        // eigenes Bild bekommen die Standardkarte.
+        // eigenes Bild bekommen ihre Karte aus scripts/og-bilder.mjs (public/og/<pfad>.png), sonst die Standardkarte.
         if (!/property="og:image"/.test(html)) {
-          tags.push(`<meta property="og:image" content="${basis}/og-standard.png" />`, `<meta property="og:image:width" content="1200" />`, `<meta property="og:image:height" content="630" />`, `<meta property="og:image:alt" content="${MARKE}: ${PROFIL.og.text.replace(/"/g, '&quot;')}" />`)
+          const eigene = `og/${pfad.replace(/\.html$/, '').replace(/\//g, '-')}.png`
+          const hatEigene = existsSync(seite(`public/${eigene}`))
+          const alt = hatEigene ? (html.match(/<meta property="og:title" content="([^"]*)"/)?.[1] ?? PROFIL.og.text) : PROFIL.og.text.replace(/"/g, '&quot;')
+          tags.push(`<meta property="og:image" content="${basis}/${hatEigene ? eigene : 'og-standard.png'}" />`, `<meta property="og:image:width" content="1200" />`, `<meta property="og:image:height" content="630" />`, `<meta property="og:image:alt" content="${MARKE}: ${alt}" />`)
           if (!/twitter:card/.test(html)) tags.push(`<meta name="twitter:card" content="summary_large_image" />`)
         }
       }

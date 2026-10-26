@@ -4,6 +4,10 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Vorschaubilder für handgeschriebene Seiten (26.10.2026)
+
+- **Kern, betrifft beide Seiten:** `scripts/og-bilder.mjs` erzeugt beim Lauf ohne Slugs auch Karten für die Seiten aus `PROFIL.seiten` (`public/og/<pfad>.png`, Titel und Unterzeile aus og:title/og:description). Der Build nimmt sie, wenn die Seite kein eigenes og:image hat, mit dem Seitentitel als Bildtext; sonst wie bisher die Standardkarte. Tiermedizin: Build byte-gleich, bis dort `og-bilder.mjs` läuft.
+
 ### llms-full.txt mit Säulenseiten (26.10.2026)
 
 - **Kern, betrifft beide Seiten:** Neues Profilfeld `llmsVollSeiten`: handgeschriebene Seiten, deren Text (als schlichtes Markdown mit vollen Links) vor den Artikeln in `llms-full.txt` steht. Tiermedizin `[]` – Ausgabe byte-gleich; Humanmedizin: Säulenseite Praxisverwaltungssysteme und Glossar.
