@@ -254,6 +254,19 @@ const ERWARTET = {
     if (!dh.includes(t)) fehler.push(`Datenherkunft: „${t}“ (${id}) steht nicht im Text`)
   }
 }
+// Häufige Fragen der Startseite (Profil): jede Zahl der Antwort muss im verlinkten Artikel stehen.
+{
+  const PROFIL = (await import(pathToFileURL(path.resolve(H, 'profil.ts')).href)).default
+  const artikelText = (slug) => {
+    const f = fs.readdirSync(path.join(H, 'content/artikel')).find((x) => fs.readFileSync(path.join(H, 'content/artikel', x), 'utf8').includes(`slug: ${slug}\n`))
+    return f ? fs.readFileSync(path.join(H, 'content/artikel', f), 'utf8') : null
+  }
+  for (const f of PROFIL.start.faq) {
+    const t = artikelText(f.slug)
+    if (!t) { fehler.push(`Startseiten-FAQ: Artikel „${f.slug}“ gibt es nicht`); continue }
+    for (const [z] of f.antwort.matchAll(/\d{1,3}(?:\.\d{3})+|\d+,\d+/g)) if (!t.includes(z)) fehler.push(`Startseiten-FAQ „${f.frage}“: Zahl ${z} steht nicht im Artikel ${f.slug}`)
+  }
+}
 for (const [datei, liste] of Object.entries(ERWARTET)) {
   const text = fs.readFileSync(datei, 'utf8')
   for (const k of liste) if (!text.includes(K[k])) fehler.push(`${datei}: Kennzahl „${k}“ = „${K[k].trim()}“ steht nicht im Text`)

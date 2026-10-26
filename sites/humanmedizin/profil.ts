@@ -68,7 +68,20 @@ const profil: SeitenProfil = {
     ueber: `        <h2 id="ueber-titel">Wer hier schreibt</h2>
         <p>Thomas Freimoser, Geschäftsführer der <a href="${FLEXCHANGE}">FleXChange Medical GmbH</a>. FleXChange verbindet Praxisverwaltungssysteme mit E-Health-Anwendungen, ist also selbst Teil des Marktes, über den diese Seite schreibt. Deshalb gilt hier dieselbe Regel wie auf der Schwesterseite: veröffentlichte Statistiken, nachgelesen an der Quelle, mit offener Methode. Was gerechnet ist, steht dabei.</p>
         <p class="meta"><a href="ueber-das-projekt.html">Über das Projekt und den Interessenkonflikt</a> · <a href="artikel/datenherkunft.html">Woher jede Zahl stammt</a> · <a href="${TIER}/">Tiermedizin in Zahlen</a></p>`,
-    faq: [],
+    // Je Artikel eine Frage; sichtbar und als FAQPage erst, wenn der Artikel live ist. Zahlen prüft pruefe-konsistenz.mjs gegen den Artikel.
+    faq: [
+      { frage: 'Welche Praxissoftware nutzen Arztpraxen am häufigsten?', antwort: 'Unter den Systemen für ärztliche Praxen führt CGM MEDISTAR mit 9.617 Installationen Ende 2025, vor CGM TURBOMED mit 6.305 und medatixx mit 6.121. Gezählt sind Installationen in der Statistik der Kassenärztlichen Bundesvereinigung, nicht Praxen.', slug: 'praxissoftware-arztpraxen-marktanteile' },
+      { frage: 'Welcher Hersteller hat den größten Marktanteil bei Praxissoftware?', antwort: 'CompuGroup Medical mit 22.070 Installationen in fünf Systemen, 32,4 Prozent der Installationen ärztlicher Systeme Ende 2025; 2013 waren es 50,2 Prozent. Dahinter liegt medatixx mit 28,1 Prozent.', slug: 'praxissoftware-hersteller-cgm-medatixx' },
+      { frage: 'Welche Praxissoftware nutzen Psychotherapeuten?', antwort: 'Am häufigsten Elefant mit 10.967 und psyprax mit 10.519 Installationen Ende 2025, danach Epikur, SMARTY und PsychoDat. Elefant ist seit Ende 2023 das meistinstallierte System der KBV-Statistik.', slug: 'psychotherapie-software-elefant-psyprax' },
+      { frage: 'Welche Praxissoftware wächst am stärksten?', antwort: 'tomedo und T2med: 2025 plus 34,8 und 22,4 Prozent, Ende 2025 mit 4.530 und 4.078 Installationen. tomedo hatte Ende 2013 sieben Installationen, T2med kam 2015 auf den Markt.', slug: 'praxissoftware-aufsteiger-tomedo-t2med' },
+      { frage: 'Welche Praxissoftware verliert Kunden?', antwort: 'Zwischen Ende 2021 und Ende 2025 verloren CGM TURBOMED 3.385 und CGM MEDISTAR 2.375 Installationen. Am meisten gewannen das neue medatixx mit 3.654 und tomedo mit 2.872.', slug: 'praxissoftware-wechsel-gewinner-verlierer' },
+      { frage: 'Welche Praxissoftware kann LDT 3?', antwort: 'Für den Import von Laborbefunden nach LDT 3 sind Systeme mit 95,8 Prozent der Installationen ärztlicher Systeme zugelassen. Einen zertifizierten Export des Laborauftrags hat kein ärztliches Praxissystem.', slug: 'labordaten-ldt-praxissoftware' },
+      { frage: 'Wie viele eArztbriefe werden in Deutschland verschickt?', antwort: 'Über KIM 45,2 Millionen im Jahr 2025 und 41,4 Millionen von Januar bis September 2026, laut TI-Dashboard der gematik. Briefe per Fax oder Post sind darin nicht enthalten.', slug: 'earztbrief-kim-zahlen' },
+      { frage: 'Wie viele MVZ gibt es in Deutschland?', antwort: '5.305 Ende 2025, 2004 waren es 70. 2.659 davon haben ein Krankenhaus als Träger, und 94,7 Prozent der dort Tätigen sind angestellt.', slug: 'mvz-einzelpraxis-aerzte' },
+      { frage: 'Mit welcher Software rechnen Krankenhäuser ambulant ab?', antwort: 'Vor allem mit ORBIS, SAP, CGM MEDICO und iMedOne, zusammen 7.948 Installationen Ende 2025. Für das SAP-Modul endet die Wartung spätestens Ende 2030.', slug: 'krankenhaus-software-ambulant-kis' },
+      { frage: 'Zeigt die KBV-Statistik Marktanteile von Praxissoftware?', antwort: 'Nur näherungsweise: Sie zählt Abrechnungen mit der Prüfnummer eines Systems, Ende 2025 116.954, bei rund 98.000 Praxen. Ein MVZ zählt wie eine Einzelpraxis.', slug: 'pvs-statistik-kbv-methode' },
+      { frage: 'Sind Laborärzte angestellt oder selbstständig?', antwort: 'Ende 2025 waren 88,5 Prozent der Laborärztinnen und -ärzte in der Kassenversorgung angestellt, fast alle im MVZ; 2013 waren es 68,0 Prozent.', slug: 'labor-angestellte-laboraerzte' },
+    ],
   },
   uebersicht: {
     title: 'Alle Artikel nach Thema: Praxen, Praxissoftware, IT',
