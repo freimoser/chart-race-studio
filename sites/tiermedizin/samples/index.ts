@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { ANTIBIOTIKA, ANTIBIOTIKA_GESAMT, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
+import { ANTIBIOTIKA, ANTIBIOTIKA_GESAMT, GOT_PFERD, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -580,6 +580,30 @@ export const SAMPLES: SampleDataset[] = [
     suggested: {
       chartType: 'line', topN: 3, decimals: 2, suffix: ' €', gapFill: 'none', primaryAxisLabel: 'Routinejahr in Euro',
       colors: { 'Katze': '#e36414', 'Hund': '#e0a800', 'Pferd': '#8a5a3c' },
+    },
+  },
+  {
+    id: 'got-pferd',
+    erstellt: '2026-10-27', geprueft: '2026-10-27',
+    category: 'praxis',
+    title: 'Was das Pferd beim Tierarzt kostet',
+    subtitle: 'Gebühren für Pferde nach der GOT (einfacher Satz), Index 1999 = 100, gegen die Verbraucherpreise',
+    source: 'Quelle: Gebührenordnung für Tierärzte 1999, 2008, 2017, 2022 (BGBl.); Verbraucherpreise: Destatis. Index berechnet, 1999–2007 zurückgerechnet',
+    sourceUrl: 'https://www.gesetze-im-internet.de/got_2022/anlage.html',
+    unit: 'Index',
+    description: 'Bis 2021 blieben die Gebühren hinter den Preisen zurück, 2022 kam der Sprung: Hengstkastration fast vierfach, Kolik-OP 2,6-fach, Endoskopie wie 1999.',
+    dataInfo: [
+      "Einfacher Gebührensatz der Gebührenordnung für Tierärzte (GOT) ohne Umsatzsteuer, Stand jeweils 31. Dezember. Die Sätze ändern sich nur mit einer neuen Verordnung: August 1999, Juli 2008 (+12 Prozent), Juli 2017 (+12 Prozent), November 2022 (neue GOT). Dazwischen gilt der alte Satz – die gehaltenen Jahre sind Rechtsstand, keine Schätzung.",
+      "Gerechnet: Die Werte 1999 bis 2007 sind aus der Fassung von 2017 zurückgerechnet (zweimal durch 1,12). Probe: Für alle acht Leistungen ergeben sich die runden D-Mark-Beträge der GOT 1999, etwa 30 DM für die Untersuchung und 1.000 DM für die Kolik-OP. Index 1999 = 100 berechnet.",
+      "Zweite Quelle: Laut Landtag Schleswig-Holstein (Umdruck 20/2275) stieg der Gebührensatz der Hengstkastration je nach Alter um 150 bzw. 200 Prozent – wie hier (Jährling plus 149, Hengst plus 199 Prozent). Verbraucherpreise als Jahresdurchschnitt (Destatis).",
+      "Kolik-OP ist die Darmresektion beim Pferd. Die Bauchöffnung ist 2017 wie 2022 enthalten (§ 5 GOT 2017, Verbot von Doppelbewertungen; GOT 2022 Nr. 481 „einschließlich Laparotomie“). Endoskopie: 2022 um Magen- und Darmspiegelung erweitert, vergleichbar, nicht wortgleich.",
+      "Die Gebühr ist der Mindestsatz für die Leistung selbst. Narkose, Klinik, Medikamente, Labor und ein Faktor bis zum Dreifachen kommen hinzu. Was eine Rechnung tatsächlich kostet, erhebt keine amtliche Stelle.",
+    ],
+    headers: GOT_PFERD.headers,
+    rows: GOT_PFERD.rows,
+    suggested: {
+      chartType: 'bar', topN: 9, decimals: 0, labelsPosition: 'outside',
+      colors: { 'Verbraucherpreise': '#8d99ae', 'Kastration Hengst': '#8a5a3c', 'Kastration Jährling': '#b07d56', 'Kolik-OP': '#e36414', 'Endoskopie': '#0f4c5c' },
     },
   },
   {

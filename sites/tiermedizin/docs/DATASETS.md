@@ -246,3 +246,7 @@ Ersetzt eine extern zugelieferte Vorlage, in der 19 von 26 Jahren interpoliert o
 ## Tierarztpreise gegen Gehalt (`gehalt-preise`)
 
 - Anstieg seit 2020 in Prozent, 2020–2025: Tierarztpreise und Verbraucherpreise (Destatis, aus `tierarzt-inflation` umbasiert), Stundenlohn angestellter Tierärzt:innen (Jensen et al. 2026: +19 % gegenüber der Befragung 2020; 2021–2024 linear). Kopfgrafik des Artikels `gehalt-tierarzt` und Video zum Doppelpost.
+
+## Was das Pferd beim Tierarzt kostet (`got-pferd`, Post 33)
+
+Rohdaten `data/raw/ds24-got-pferd.json`: einfacher Satz der GOT für acht Pferde-Leistungen, Stand 31.12., 1999–2025, plus Verbraucherpreise (ds16). 1999–2007 aus der Fassung 2017 zurückgerechnet (÷ 1,12²) – Probe: runde DM-Beträge (24, 30, 50, 80, 100, 300, 700, 1.000 DM). Gezeigt als Index 1999 = 100 im Bar Race (Linien lägen bis 2021 übereinander). Zweitquelle Hengstkastration: Landtag SH Umdruck 20/2275. Ist-Rechnungen erhebt niemand.

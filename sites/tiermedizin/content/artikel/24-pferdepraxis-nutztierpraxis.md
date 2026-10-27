@@ -5,7 +5,7 @@ titel: Pferdetierärzte: 989 Pferdepraxen, 718 Nutztierpraxen (2025)
 beschreibung: 2025 führten 989 Tierärzte eine reine Pferdepraxis, 718 eine reine Nutztierpraxis. 2021 haben die Pferde die Nutztiere überholt.
 frage: Wie viele Pferdetierärzte gibt es in Deutschland?
 suchbegriffe: pferdetierarzt deutschland, pferdetierärzte, pferdepraxis, nutztierpraxis, großtierpraxis, nutztierärzte
-stand: 2026-10-16
+stand: 2026-10-27
 bereit: ja
 ---
 Ende 2025 führten in Deutschland **989 Tierärztinnen und Tierärzte eine reine Pferdepraxis** und **718 eine reine Nutztierpraxis** (Statistik der Bundestierärztekammer, Praxisinhaberinnen und Praxisinhaber). 2019 war es noch umgekehrt, 744 gegen 887. Seit 2021 gibt es mehr reine Pferde- als reine Nutztierpraxen. Dazu kommen 2.231 Inhaberinnen und Inhaber, die neben anderen Tieren auch Pferde behandeln, die reinen Pferdepraxen eingerechnet.
@@ -41,6 +41,8 @@ Der Anstieg ist kein Zählfehler. Die Zahl aller Niedergelassenen sank von 12.01
 Auch die Fachtierarzt-Titel laufen auseinander. Von 2007 bis 2025 sank die Zahl der Titel für Rinder von 860 auf 596 und für Schweine von 667 auf 561, die für Pferde stieg von 501 auf 773. Seit 2019 wuchsen sie von 691 auf 773, langsamer als die Pferdepraxen. Das Pferd hat das Rind bei den Titeln 2021 überholt, 705 zu 678, im selben Jahr wie bei den Praxen. Getragen wird der Zuwachs vor allem von Frauen: Reine Pferdepraxen führten 2019 439 Frauen, 2025 616.
 
 Zur gleichen Zeit gingen die Rinder zurück. In den 13 Flächenländern zählte die Viehbestandserhebung 1991 rechnerisch 17,1 Millionen Rinder, 2025 noch 10,4 Millionen. Einen Zusammenhang mit den Praxen belegt die Kammerstatistik nicht, die Richtung passt aber zusammen. Auch die Antibiotika in der Tierhaltung sind seit 2011 um zwei Drittel gesunken, siehe [Antibiotika in der Tierhaltung](antibiotika-tierhaltung.html). Für die Pferde gibt es keine jährliche Zählung: Die Deutsche Reiterliche Vereinigung nennt seit Jahren unverändert rund 1,3 Millionen. Mehr Pferde als Ursache lassen sich damit weder belegen noch ausschließen. Die Zucht schrumpft sogar: 2025 waren so wenige Zuchtstuten eingetragen wie nie, mehr dazu im Artikel [Pferdezucht in Deutschland](pferdezucht-deutschland.html).
+
+Mit der Gebührenordnung 2022 wurde die Arbeit am Pferd auch neu bewertet: Grundleistungen plus 60 Prozent, die Kolik-OP plus 110 Prozent, die Hengstkastration plus 199 Prozent, siehe [Tierarztkosten Pferd](tierarztkosten-pferd.html).
 
 ## Und vor 2019?
 

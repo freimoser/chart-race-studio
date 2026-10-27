@@ -258,8 +258,8 @@
     "titel": "Pferdetierärzte: 989 Pferdepraxen, 718 Nutztierpraxen (2025)",
     "beschreibung": "2025 führten 989 Tierärzte eine reine Pferdepraxis, 718 eine reine Nutztierpraxis. 2021 haben die Pferde die Nutztiere überholt.",
     "frage": "Wie viele Pferdetierärzte gibt es in Deutschland?",
-    "stand": "2026-10-16",
-    "geaendert": "2026-10-16",
+    "stand": "2026-10-27",
+    "geaendert": "2026-10-27",
     "bereit": true,
     "live": true
   },
@@ -335,8 +335,8 @@
     "titel": "Pferdezucht 2025: 74.950 Zuchtstuten, so wenige wie nie",
     "beschreibung": "2025 waren in Deutschland 74.950 Zuchtstuten eingetragen, so wenige wie nie in der FN-Statistik. Die Fohlen fielen seit 2022 um 19 Prozent.",
     "frage": "Wie viele Fohlen bekommt eine Zuchtstute?",
-    "stand": "2026-10-20",
-    "geaendert": "2026-10-20",
+    "stand": "2026-10-27",
+    "geaendert": "2026-10-27",
     "bereit": true,
     "live": true
   },
@@ -348,6 +348,17 @@
     "frage": "Wie viel Antibiotika wird in der Tierhaltung eingesetzt?",
     "stand": "2026-10-26",
     "geaendert": "2026-10-26",
+    "bereit": true,
+    "live": true
+  },
+  {
+    "post": 33,
+    "slug": "tierarztkosten-pferd",
+    "titel": "Tierarztkosten Pferd: Kolik-OP ab 1.350 Euro Gebühr",
+    "beschreibung": "Seit der GOT 2022 kostet die Kolik-OP beim Pferd mindestens 1.350 Euro, 2,6-mal so viel wie 1999. Die Hengstkastration kostet fast das Vierfache.",
+    "frage": "Was kostet eine Kolik-OP beim Pferd?",
+    "stand": "2026-10-27",
+    "geaendert": "2026-10-27",
     "bereit": true,
     "live": true
   },

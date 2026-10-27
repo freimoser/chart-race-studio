@@ -1,0 +1,2792 @@
+{
+ "title": "Gebühren für Pferde nach der Gebührenordnung für Tierärzte (GOT), 1999–2025",
+ "abgerufen": "2026-10-27",
+ "quelle": "GOT 1999 (BGBl. 1999 I S. 1691), 2. ÄndVO 2008 (BGBl. 2008 I S. 1110, alle Gebühren +12 %), 3. ÄndVO 2017 (BGBl. 2017 I S. 2696, einfache Sätze +12 %), GOT 2022 (BGBl. 2022 I S. 1401); Verbraucherpreisindex Destatis 61111-0001 (aus ds16)",
+ "quelleUrl": "https://www.gesetze-im-internet.de/got_2022/anlage.html",
+ "fundstellen": {
+  "Untersuchung": "1999/2017 Nr. 20 a; 2022 Nr. 4",
+  "Folgeuntersuchung": "1999/2017 Nr. 21 a; 2022 Nr. 22",
+  "Lahmheitsuntersuchung": "1999/2017 B 5.2 b; 2022 Nr. 837",
+  "Kastration Hengst": "1999/2017 G 5.1 b; 2022 Nr. 368",
+  "Kastration Jährling": "1999/2017 G 5.1 a „Jährlingsfohlen“; 2022 Nr. 367 „Jährlingshengst“",
+  "Kolik-OP": "1999/2017 V 1.1.5 Darmresektion Pferd (auch Kolik); 2022 Nr. 481 Darmresektion einschließlich Laparotomie, Pferd (auch Kolik)",
+  "Darmverschlingung": "1999/2017 V 1.1.19 a Torsionsoperation Pferd; 2022 Nr. 483 Torsionsoperation Darm, Pferd",
+  "Endoskopie": "1999/2017 Nr. 402 Rekto-, Broncho-, Laparoskopie beim Pferd; 2022 Nr. 162 Gastro-, Ileo-, Kolo-, Rekto-, Broncho-, Laparoskopie, Pferd"
+ },
+ "quellen_2017": "GOT in der Fassung der 3. ÄndVO, kommentierte Ausgabe der Bundestierärztekammer (https://www.agila.de/images/pdf/GOT2017-07.pdf), abgerufen 22.10.2026",
+ "notes": [
+  "Einfacher Gebührensatz ohne Umsatzsteuer, Westdeutschland; gültig am 31. Dezember des Jahres (GOT 1999 ab 01.08.1999, 2. ÄndVO ab 08.07.2008, 3. ÄndVO ab 27.07.2017, GOT 2022 ab 22.11.2022). Zwischen den Verordnungen ändern sich die Sätze nicht – gehaltene Werte sind Rechtsstand, keine Schätzung.",
+  "GERECHNET: 1999–2007 aus 2017 zurückgerechnet (÷ 1,12 ÷ 1,12, je eine Erhöhung um 12 % in 2008 und 2017). Probe: Für alle acht Leistungen ergeben sich runde DM-Beträge der GOT 1999 (24, 30, 50, 80, 100, 300, 700, 1.000 DM; ÷ 1,95583). Untersuchung 2008 und 2017 zusätzlich direkt im BGBl. belegt (ds16).",
+  "Kolik: Nach § 5 GOT 2017 (Verbot von Doppelbewertungen) sind Eröffnung und Verschluss der Bauchhöhle in der Operation enthalten (BTK-Anmerkung); die GOT 2022 nennt die Laparotomie ausdrücklich. Die Positionen sind vergleichbar.",
+  "Zweitquelle Kastration: Landtag Schleswig-Holstein, Umdruck 20/2275: Gebührensatz Hengstkastration je nach Alter +150 % bzw. +200 % gegenüber der alten GOT – deckt sich (Jährling 51,31 → 128,00 = +149 %, Hengst 64,14 → 192,00 = +199 %).",
+  "Index 1999 = 100 berechnet; Verbraucherpreise als Jahresdurchschnitt (Destatis), die GOT-Sätze als Stand Jahresende.",
+  "Die Gebühr ist der Mindestsatz für die Leistung selbst. Narkose, Klinikaufenthalt, Medikamente, Laboruntersuchungen und der Faktor (bis zum Dreifachen, im Notdienst mehr) kommen hinzu. Den tatsächlichen Rechnungsbetrag erhebt keine amtliche Stelle.",
+  "Endoskopie: 2017 „Rekto-, Broncho-, Laparoskopie beim Pferd“, 2022 um Gastro-, Ileo- und Koloskopie erweitert – vergleichbar, aber nicht wortgleich. Jährling: 2017 „Jährlingsfohlen“, 2022 „Jährlingshengst, Kameliden“."
+ ],
+ "rows": [
+  {
+   "date": "1999",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 15.34
+  },
+  {
+   "date": "1999",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2000",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 15.34
+  },
+  {
+   "date": "2000",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2001",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 15.34
+  },
+  {
+   "date": "2001",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2002",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 15.34
+  },
+  {
+   "date": "2002",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2003",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 15.34
+  },
+  {
+   "date": "2003",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2004",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 15.34
+  },
+  {
+   "date": "2004",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2005",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 15.34
+  },
+  {
+   "date": "2005",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2006",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 15.34
+  },
+  {
+   "date": "2006",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2007",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 15.34
+  },
+  {
+   "date": "2007",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2008",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 17.18
+  },
+  {
+   "date": "2008",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2009",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 17.18
+  },
+  {
+   "date": "2009",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2010",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 17.18
+  },
+  {
+   "date": "2010",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2011",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 17.18
+  },
+  {
+   "date": "2011",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2012",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 17.18
+  },
+  {
+   "date": "2012",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2013",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 17.18
+  },
+  {
+   "date": "2013",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2014",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 17.18
+  },
+  {
+   "date": "2014",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2015",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 17.18
+  },
+  {
+   "date": "2015",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2016",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 17.18
+  },
+  {
+   "date": "2016",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2017",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 19.24
+  },
+  {
+   "date": "2017",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 125.4
+  },
+  {
+   "date": "2018",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 19.24
+  },
+  {
+   "date": "2018",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 125.4
+  },
+  {
+   "date": "2019",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 19.24
+  },
+  {
+   "date": "2019",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 125.4
+  },
+  {
+   "date": "2020",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 19.24
+  },
+  {
+   "date": "2020",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 125.4
+  },
+  {
+   "date": "2021",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 19.24
+  },
+  {
+   "date": "2021",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 125.4
+  },
+  {
+   "date": "2022",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 30.78
+  },
+  {
+   "date": "2022",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 200.7
+  },
+  {
+   "date": "2023",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 30.78
+  },
+  {
+   "date": "2023",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 200.7
+  },
+  {
+   "date": "2024",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 30.78
+  },
+  {
+   "date": "2024",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 200.7
+  },
+  {
+   "date": "2025",
+   "metric": "Euro",
+   "name": "Untersuchung",
+   "value": 30.78
+  },
+  {
+   "date": "2025",
+   "metric": "Index 1999 = 100",
+   "name": "Untersuchung",
+   "value": 200.7
+  },
+  {
+   "date": "1999",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 12.27
+  },
+  {
+   "date": "1999",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2000",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 12.27
+  },
+  {
+   "date": "2000",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2001",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 12.27
+  },
+  {
+   "date": "2001",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2002",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 12.27
+  },
+  {
+   "date": "2002",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2003",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 12.27
+  },
+  {
+   "date": "2003",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2004",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 12.27
+  },
+  {
+   "date": "2004",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2005",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 12.27
+  },
+  {
+   "date": "2005",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2006",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 12.27
+  },
+  {
+   "date": "2006",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2007",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 12.27
+  },
+  {
+   "date": "2007",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2008",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 13.74
+  },
+  {
+   "date": "2008",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2009",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 13.74
+  },
+  {
+   "date": "2009",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2010",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 13.74
+  },
+  {
+   "date": "2010",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2011",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 13.74
+  },
+  {
+   "date": "2011",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2012",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 13.74
+  },
+  {
+   "date": "2012",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2013",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 13.74
+  },
+  {
+   "date": "2013",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2014",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 13.74
+  },
+  {
+   "date": "2014",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2015",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 13.74
+  },
+  {
+   "date": "2015",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2016",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 13.74
+  },
+  {
+   "date": "2016",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2017",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 15.39
+  },
+  {
+   "date": "2017",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 125.4
+  },
+  {
+   "date": "2018",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 15.39
+  },
+  {
+   "date": "2018",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 125.4
+  },
+  {
+   "date": "2019",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 15.39
+  },
+  {
+   "date": "2019",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 125.4
+  },
+  {
+   "date": "2020",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 15.39
+  },
+  {
+   "date": "2020",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 125.4
+  },
+  {
+   "date": "2021",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 15.39
+  },
+  {
+   "date": "2021",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 125.4
+  },
+  {
+   "date": "2022",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 24.62
+  },
+  {
+   "date": "2022",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 200.6
+  },
+  {
+   "date": "2023",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 24.62
+  },
+  {
+   "date": "2023",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 200.6
+  },
+  {
+   "date": "2024",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 24.62
+  },
+  {
+   "date": "2024",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 200.6
+  },
+  {
+   "date": "2025",
+   "metric": "Euro",
+   "name": "Folgeuntersuchung",
+   "value": 24.62
+  },
+  {
+   "date": "2025",
+   "metric": "Index 1999 = 100",
+   "name": "Folgeuntersuchung",
+   "value": 200.6
+  },
+  {
+   "date": "1999",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 25.56
+  },
+  {
+   "date": "1999",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2000",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 25.56
+  },
+  {
+   "date": "2000",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2001",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 25.56
+  },
+  {
+   "date": "2001",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2002",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 25.56
+  },
+  {
+   "date": "2002",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2003",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 25.56
+  },
+  {
+   "date": "2003",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2004",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 25.56
+  },
+  {
+   "date": "2004",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2005",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 25.56
+  },
+  {
+   "date": "2005",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2006",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 25.56
+  },
+  {
+   "date": "2006",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2007",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 25.56
+  },
+  {
+   "date": "2007",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 100.0
+  },
+  {
+   "date": "2008",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 28.63
+  },
+  {
+   "date": "2008",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2009",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 28.63
+  },
+  {
+   "date": "2009",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2010",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 28.63
+  },
+  {
+   "date": "2010",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2011",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 28.63
+  },
+  {
+   "date": "2011",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2012",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 28.63
+  },
+  {
+   "date": "2012",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2013",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 28.63
+  },
+  {
+   "date": "2013",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2014",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 28.63
+  },
+  {
+   "date": "2014",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2015",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 28.63
+  },
+  {
+   "date": "2015",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2016",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 28.63
+  },
+  {
+   "date": "2016",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 112.0
+  },
+  {
+   "date": "2017",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 32.07
+  },
+  {
+   "date": "2017",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 125.4
+  },
+  {
+   "date": "2018",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 32.07
+  },
+  {
+   "date": "2018",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 125.4
+  },
+  {
+   "date": "2019",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 32.07
+  },
+  {
+   "date": "2019",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 125.4
+  },
+  {
+   "date": "2020",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 32.07
+  },
+  {
+   "date": "2020",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 125.4
+  },
+  {
+   "date": "2021",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 32.07
+  },
+  {
+   "date": "2021",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 125.4
+  },
+  {
+   "date": "2022",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 51.31
+  },
+  {
+   "date": "2022",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 200.7
+  },
+  {
+   "date": "2023",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 51.31
+  },
+  {
+   "date": "2023",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 200.7
+  },
+  {
+   "date": "2024",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 51.31
+  },
+  {
+   "date": "2024",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 200.7
+  },
+  {
+   "date": "2025",
+   "metric": "Euro",
+   "name": "Lahmheitsuntersuchung",
+   "value": 51.31
+  },
+  {
+   "date": "2025",
+   "metric": "Index 1999 = 100",
+   "name": "Lahmheitsuntersuchung",
+   "value": 200.7
+  },
+  {
+   "date": "1999",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 51.13
+  },
+  {
+   "date": "1999",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 100.0
+  },
+  {
+   "date": "2000",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 51.13
+  },
+  {
+   "date": "2000",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 100.0
+  },
+  {
+   "date": "2001",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 51.13
+  },
+  {
+   "date": "2001",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 100.0
+  },
+  {
+   "date": "2002",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 51.13
+  },
+  {
+   "date": "2002",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 100.0
+  },
+  {
+   "date": "2003",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 51.13
+  },
+  {
+   "date": "2003",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 100.0
+  },
+  {
+   "date": "2004",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 51.13
+  },
+  {
+   "date": "2004",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 100.0
+  },
+  {
+   "date": "2005",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 51.13
+  },
+  {
+   "date": "2005",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 100.0
+  },
+  {
+   "date": "2006",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 51.13
+  },
+  {
+   "date": "2006",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 100.0
+  },
+  {
+   "date": "2007",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 51.13
+  },
+  {
+   "date": "2007",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 100.0
+  },
+  {
+   "date": "2008",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 57.27
+  },
+  {
+   "date": "2008",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 112.0
+  },
+  {
+   "date": "2009",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 57.27
+  },
+  {
+   "date": "2009",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 112.0
+  },
+  {
+   "date": "2010",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 57.27
+  },
+  {
+   "date": "2010",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 112.0
+  },
+  {
+   "date": "2011",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 57.27
+  },
+  {
+   "date": "2011",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 112.0
+  },
+  {
+   "date": "2012",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 57.27
+  },
+  {
+   "date": "2012",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 112.0
+  },
+  {
+   "date": "2013",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 57.27
+  },
+  {
+   "date": "2013",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 112.0
+  },
+  {
+   "date": "2014",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 57.27
+  },
+  {
+   "date": "2014",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 112.0
+  },
+  {
+   "date": "2015",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 57.27
+  },
+  {
+   "date": "2015",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 112.0
+  },
+  {
+   "date": "2016",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 57.27
+  },
+  {
+   "date": "2016",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 112.0
+  },
+  {
+   "date": "2017",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 64.14
+  },
+  {
+   "date": "2017",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 125.4
+  },
+  {
+   "date": "2018",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 64.14
+  },
+  {
+   "date": "2018",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 125.4
+  },
+  {
+   "date": "2019",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 64.14
+  },
+  {
+   "date": "2019",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 125.4
+  },
+  {
+   "date": "2020",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 64.14
+  },
+  {
+   "date": "2020",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 125.4
+  },
+  {
+   "date": "2021",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 64.14
+  },
+  {
+   "date": "2021",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 125.4
+  },
+  {
+   "date": "2022",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 192.0
+  },
+  {
+   "date": "2022",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 375.5
+  },
+  {
+   "date": "2023",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 192.0
+  },
+  {
+   "date": "2023",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 375.5
+  },
+  {
+   "date": "2024",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 192.0
+  },
+  {
+   "date": "2024",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 375.5
+  },
+  {
+   "date": "2025",
+   "metric": "Euro",
+   "name": "Kastration Hengst",
+   "value": 192.0
+  },
+  {
+   "date": "2025",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Hengst",
+   "value": 375.5
+  },
+  {
+   "date": "1999",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 40.9
+  },
+  {
+   "date": "1999",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 100.0
+  },
+  {
+   "date": "2000",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 40.9
+  },
+  {
+   "date": "2000",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 100.0
+  },
+  {
+   "date": "2001",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 40.9
+  },
+  {
+   "date": "2001",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 100.0
+  },
+  {
+   "date": "2002",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 40.9
+  },
+  {
+   "date": "2002",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 100.0
+  },
+  {
+   "date": "2003",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 40.9
+  },
+  {
+   "date": "2003",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 100.0
+  },
+  {
+   "date": "2004",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 40.9
+  },
+  {
+   "date": "2004",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 100.0
+  },
+  {
+   "date": "2005",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 40.9
+  },
+  {
+   "date": "2005",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 100.0
+  },
+  {
+   "date": "2006",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 40.9
+  },
+  {
+   "date": "2006",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 100.0
+  },
+  {
+   "date": "2007",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 40.9
+  },
+  {
+   "date": "2007",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 100.0
+  },
+  {
+   "date": "2008",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 45.81
+  },
+  {
+   "date": "2008",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 112.0
+  },
+  {
+   "date": "2009",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 45.81
+  },
+  {
+   "date": "2009",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 112.0
+  },
+  {
+   "date": "2010",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 45.81
+  },
+  {
+   "date": "2010",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 112.0
+  },
+  {
+   "date": "2011",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 45.81
+  },
+  {
+   "date": "2011",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 112.0
+  },
+  {
+   "date": "2012",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 45.81
+  },
+  {
+   "date": "2012",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 112.0
+  },
+  {
+   "date": "2013",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 45.81
+  },
+  {
+   "date": "2013",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 112.0
+  },
+  {
+   "date": "2014",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 45.81
+  },
+  {
+   "date": "2014",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 112.0
+  },
+  {
+   "date": "2015",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 45.81
+  },
+  {
+   "date": "2015",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 112.0
+  },
+  {
+   "date": "2016",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 45.81
+  },
+  {
+   "date": "2016",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 112.0
+  },
+  {
+   "date": "2017",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 51.31
+  },
+  {
+   "date": "2017",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 125.4
+  },
+  {
+   "date": "2018",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 51.31
+  },
+  {
+   "date": "2018",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 125.4
+  },
+  {
+   "date": "2019",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 51.31
+  },
+  {
+   "date": "2019",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 125.4
+  },
+  {
+   "date": "2020",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 51.31
+  },
+  {
+   "date": "2020",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 125.4
+  },
+  {
+   "date": "2021",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 51.31
+  },
+  {
+   "date": "2021",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 125.4
+  },
+  {
+   "date": "2022",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 128.0
+  },
+  {
+   "date": "2022",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 312.9
+  },
+  {
+   "date": "2023",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 128.0
+  },
+  {
+   "date": "2023",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 312.9
+  },
+  {
+   "date": "2024",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 128.0
+  },
+  {
+   "date": "2024",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 312.9
+  },
+  {
+   "date": "2025",
+   "metric": "Euro",
+   "name": "Kastration Jährling",
+   "value": 128.0
+  },
+  {
+   "date": "2025",
+   "metric": "Index 1999 = 100",
+   "name": "Kastration Jährling",
+   "value": 312.9
+  },
+  {
+   "date": "1999",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 511.29
+  },
+  {
+   "date": "1999",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 100.0
+  },
+  {
+   "date": "2000",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 511.29
+  },
+  {
+   "date": "2000",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 100.0
+  },
+  {
+   "date": "2001",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 511.29
+  },
+  {
+   "date": "2001",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 100.0
+  },
+  {
+   "date": "2002",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 511.29
+  },
+  {
+   "date": "2002",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 100.0
+  },
+  {
+   "date": "2003",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 511.29
+  },
+  {
+   "date": "2003",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 100.0
+  },
+  {
+   "date": "2004",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 511.29
+  },
+  {
+   "date": "2004",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 100.0
+  },
+  {
+   "date": "2005",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 511.29
+  },
+  {
+   "date": "2005",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 100.0
+  },
+  {
+   "date": "2006",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 511.29
+  },
+  {
+   "date": "2006",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 100.0
+  },
+  {
+   "date": "2007",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 511.29
+  },
+  {
+   "date": "2007",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 100.0
+  },
+  {
+   "date": "2008",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 572.64
+  },
+  {
+   "date": "2008",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 112.0
+  },
+  {
+   "date": "2009",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 572.64
+  },
+  {
+   "date": "2009",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 112.0
+  },
+  {
+   "date": "2010",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 572.64
+  },
+  {
+   "date": "2010",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 112.0
+  },
+  {
+   "date": "2011",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 572.64
+  },
+  {
+   "date": "2011",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 112.0
+  },
+  {
+   "date": "2012",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 572.64
+  },
+  {
+   "date": "2012",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 112.0
+  },
+  {
+   "date": "2013",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 572.64
+  },
+  {
+   "date": "2013",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 112.0
+  },
+  {
+   "date": "2014",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 572.64
+  },
+  {
+   "date": "2014",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 112.0
+  },
+  {
+   "date": "2015",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 572.64
+  },
+  {
+   "date": "2015",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 112.0
+  },
+  {
+   "date": "2016",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 572.64
+  },
+  {
+   "date": "2016",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 112.0
+  },
+  {
+   "date": "2017",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 641.36
+  },
+  {
+   "date": "2017",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 125.4
+  },
+  {
+   "date": "2018",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 641.36
+  },
+  {
+   "date": "2018",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 125.4
+  },
+  {
+   "date": "2019",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 641.36
+  },
+  {
+   "date": "2019",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 125.4
+  },
+  {
+   "date": "2020",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 641.36
+  },
+  {
+   "date": "2020",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 125.4
+  },
+  {
+   "date": "2021",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 641.36
+  },
+  {
+   "date": "2021",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 125.4
+  },
+  {
+   "date": "2022",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 1350.0
+  },
+  {
+   "date": "2022",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 264.0
+  },
+  {
+   "date": "2023",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 1350.0
+  },
+  {
+   "date": "2023",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 264.0
+  },
+  {
+   "date": "2024",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 1350.0
+  },
+  {
+   "date": "2024",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 264.0
+  },
+  {
+   "date": "2025",
+   "metric": "Euro",
+   "name": "Kolik-OP",
+   "value": 1350.0
+  },
+  {
+   "date": "2025",
+   "metric": "Index 1999 = 100",
+   "name": "Kolik-OP",
+   "value": 264.0
+  },
+  {
+   "date": "1999",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 357.9
+  },
+  {
+   "date": "1999",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 100.0
+  },
+  {
+   "date": "2000",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 357.9
+  },
+  {
+   "date": "2000",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 100.0
+  },
+  {
+   "date": "2001",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 357.9
+  },
+  {
+   "date": "2001",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 100.0
+  },
+  {
+   "date": "2002",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 357.9
+  },
+  {
+   "date": "2002",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 100.0
+  },
+  {
+   "date": "2003",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 357.9
+  },
+  {
+   "date": "2003",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 100.0
+  },
+  {
+   "date": "2004",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 357.9
+  },
+  {
+   "date": "2004",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 100.0
+  },
+  {
+   "date": "2005",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 357.9
+  },
+  {
+   "date": "2005",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 100.0
+  },
+  {
+   "date": "2006",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 357.9
+  },
+  {
+   "date": "2006",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 100.0
+  },
+  {
+   "date": "2007",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 357.9
+  },
+  {
+   "date": "2007",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 100.0
+  },
+  {
+   "date": "2008",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 400.85
+  },
+  {
+   "date": "2008",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 112.0
+  },
+  {
+   "date": "2009",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 400.85
+  },
+  {
+   "date": "2009",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 112.0
+  },
+  {
+   "date": "2010",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 400.85
+  },
+  {
+   "date": "2010",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 112.0
+  },
+  {
+   "date": "2011",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 400.85
+  },
+  {
+   "date": "2011",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 112.0
+  },
+  {
+   "date": "2012",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 400.85
+  },
+  {
+   "date": "2012",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 112.0
+  },
+  {
+   "date": "2013",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 400.85
+  },
+  {
+   "date": "2013",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 112.0
+  },
+  {
+   "date": "2014",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 400.85
+  },
+  {
+   "date": "2014",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 112.0
+  },
+  {
+   "date": "2015",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 400.85
+  },
+  {
+   "date": "2015",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 112.0
+  },
+  {
+   "date": "2016",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 400.85
+  },
+  {
+   "date": "2016",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 112.0
+  },
+  {
+   "date": "2017",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 448.95
+  },
+  {
+   "date": "2017",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 125.4
+  },
+  {
+   "date": "2018",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 448.95
+  },
+  {
+   "date": "2018",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 125.4
+  },
+  {
+   "date": "2019",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 448.95
+  },
+  {
+   "date": "2019",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 125.4
+  },
+  {
+   "date": "2020",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 448.95
+  },
+  {
+   "date": "2020",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 125.4
+  },
+  {
+   "date": "2021",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 448.95
+  },
+  {
+   "date": "2021",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 125.4
+  },
+  {
+   "date": "2022",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 534.25
+  },
+  {
+   "date": "2022",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 149.3
+  },
+  {
+   "date": "2023",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 534.25
+  },
+  {
+   "date": "2023",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 149.3
+  },
+  {
+   "date": "2024",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 534.25
+  },
+  {
+   "date": "2024",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 149.3
+  },
+  {
+   "date": "2025",
+   "metric": "Euro",
+   "name": "Darmverschlingung",
+   "value": 534.25
+  },
+  {
+   "date": "2025",
+   "metric": "Index 1999 = 100",
+   "name": "Darmverschlingung",
+   "value": 149.3
+  },
+  {
+   "date": "1999",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 153.39
+  },
+  {
+   "date": "1999",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 100.0
+  },
+  {
+   "date": "2000",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 153.39
+  },
+  {
+   "date": "2000",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 100.0
+  },
+  {
+   "date": "2001",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 153.39
+  },
+  {
+   "date": "2001",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 100.0
+  },
+  {
+   "date": "2002",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 153.39
+  },
+  {
+   "date": "2002",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 100.0
+  },
+  {
+   "date": "2003",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 153.39
+  },
+  {
+   "date": "2003",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 100.0
+  },
+  {
+   "date": "2004",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 153.39
+  },
+  {
+   "date": "2004",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 100.0
+  },
+  {
+   "date": "2005",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 153.39
+  },
+  {
+   "date": "2005",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 100.0
+  },
+  {
+   "date": "2006",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 153.39
+  },
+  {
+   "date": "2006",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 100.0
+  },
+  {
+   "date": "2007",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 153.39
+  },
+  {
+   "date": "2007",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 100.0
+  },
+  {
+   "date": "2008",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 171.8
+  },
+  {
+   "date": "2008",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 112.0
+  },
+  {
+   "date": "2009",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 171.8
+  },
+  {
+   "date": "2009",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 112.0
+  },
+  {
+   "date": "2010",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 171.8
+  },
+  {
+   "date": "2010",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 112.0
+  },
+  {
+   "date": "2011",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 171.8
+  },
+  {
+   "date": "2011",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 112.0
+  },
+  {
+   "date": "2012",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 171.8
+  },
+  {
+   "date": "2012",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 112.0
+  },
+  {
+   "date": "2013",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 171.8
+  },
+  {
+   "date": "2013",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 112.0
+  },
+  {
+   "date": "2014",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 171.8
+  },
+  {
+   "date": "2014",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 112.0
+  },
+  {
+   "date": "2015",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 171.8
+  },
+  {
+   "date": "2015",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 112.0
+  },
+  {
+   "date": "2016",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 171.8
+  },
+  {
+   "date": "2016",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 112.0
+  },
+  {
+   "date": "2017",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 192.42
+  },
+  {
+   "date": "2017",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 125.4
+  },
+  {
+   "date": "2018",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 192.42
+  },
+  {
+   "date": "2018",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 125.4
+  },
+  {
+   "date": "2019",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 192.42
+  },
+  {
+   "date": "2019",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 125.4
+  },
+  {
+   "date": "2020",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 192.42
+  },
+  {
+   "date": "2020",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 125.4
+  },
+  {
+   "date": "2021",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 192.42
+  },
+  {
+   "date": "2021",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 125.4
+  },
+  {
+   "date": "2022",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 153.94
+  },
+  {
+   "date": "2022",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 100.4
+  },
+  {
+   "date": "2023",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 153.94
+  },
+  {
+   "date": "2023",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 100.4
+  },
+  {
+   "date": "2024",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 153.94
+  },
+  {
+   "date": "2024",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 100.4
+  },
+  {
+   "date": "2025",
+   "metric": "Euro",
+   "name": "Endoskopie",
+   "value": 153.94
+  },
+  {
+   "date": "2025",
+   "metric": "Index 1999 = 100",
+   "name": "Endoskopie",
+   "value": 100.4
+  },
+  {
+   "date": "1999",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 100.0
+  },
+  {
+   "date": "2000",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 101.3
+  },
+  {
+   "date": "2001",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 103.4
+  },
+  {
+   "date": "2002",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 104.8
+  },
+  {
+   "date": "2003",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 105.9
+  },
+  {
+   "date": "2004",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 107.7
+  },
+  {
+   "date": "2005",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 109.4
+  },
+  {
+   "date": "2006",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 111.1
+  },
+  {
+   "date": "2007",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 113.7
+  },
+  {
+   "date": "2008",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 116.6
+  },
+  {
+   "date": "2009",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 117.0
+  },
+  {
+   "date": "2010",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 118.3
+  },
+  {
+   "date": "2011",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 120.8
+  },
+  {
+   "date": "2012",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 123.1
+  },
+  {
+   "date": "2013",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 125.0
+  },
+  {
+   "date": "2014",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 126.2
+  },
+  {
+   "date": "2015",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 126.8
+  },
+  {
+   "date": "2016",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 127.5
+  },
+  {
+   "date": "2017",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 129.4
+  },
+  {
+   "date": "2018",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 131.7
+  },
+  {
+   "date": "2019",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 133.6
+  },
+  {
+   "date": "2020",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 134.2
+  },
+  {
+   "date": "2021",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 138.4
+  },
+  {
+   "date": "2022",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 147.9
+  },
+  {
+   "date": "2023",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 156.6
+  },
+  {
+   "date": "2024",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 160.1
+  },
+  {
+   "date": "2025",
+   "metric": "Index 1999 = 100",
+   "name": "Verbraucherpreise",
+   "value": 163.6
+  }
+ ],
+ "dm_1999": {
+  "Untersuchung": 30,
+  "Folgeuntersuchung": 24,
+  "Lahmheitsuntersuchung": 50,
+  "Kastration Hengst": 100,
+  "Kastration Jährling": 80,
+  "Kolik-OP": 1000,
+  "Darmverschlingung": 700,
+  "Endoskopie": 300
+ }
+}

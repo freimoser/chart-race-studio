@@ -4,6 +4,10 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Post 33: Was das Pferd beim Tierarzt kostet (27.10.2026)
+
+- **Tiermedizin:** Datensatz `got-pferd` (GOT-Sätze für acht Pferde-Leistungen 1999–2025 als Index gegen die Verbraucherpreise, Bar Race), Artikel `/beitrag/tierarztkosten-pferd`, Post-Text, Datenherkunft; Links aus Artikel 24, 31 und Tierarztkosten.
+
 ### Dataset-Schema erweitert (26.10.2026)
 
 - **Kern, betrifft beide Seiten:** Das Dataset-Schema jedes Artikels trägt jetzt `inLanguage`, `isAccessibleForFree`, `keywords` (aus `suchbegriffe`) und `includedInDataCatalog` (die Datenherkunft der Seite). Neues Profilfeld `datenLizenz` (URL der Lizenz, beide Seiten noch leer): Erst wenn der Herausgeber eine Lizenz festlegt, steht `license` im Schema – die Google-Datensatzsuche warnt ohne.

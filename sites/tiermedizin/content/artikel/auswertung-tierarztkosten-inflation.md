@@ -87,7 +87,7 @@ Je nachdem, welchen Faktor eine Praxis vorher und nachher berechnet, wurde ein R
 
 ## Nicht alles wurde teurer
 
-Bei Operationen sieht die Reform ganz anders aus. Die Kastration einer Hündin kostet heute 128,27 Euro, wenn nur die Eierstöcke entfernt werden, und 192,00 Euro mit Gebärmutter. 2021 stand für beides 160,34 Euro in der GOT. Beim Hengst dagegen hat sich die Gebühr verdreifacht.
+Bei Operationen sieht die Reform ganz anders aus. Die Kastration einer Hündin kostet heute 128,27 Euro, wenn nur die Eierstöcke entfernt werden, und 192,00 Euro mit Gebärmutter. 2021 stand für beides 160,34 Euro in der GOT. Beim Hengst dagegen hat sich die Gebühr verdreifacht, mehr zum Pferd im Artikel [Tierarztkosten Pferd](tierarztkosten-pferd.html).
 
 | Kastration | 2021 | 2026 | Änderung |
 |---|---:|---:|---:|

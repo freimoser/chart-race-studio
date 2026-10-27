@@ -823,6 +823,39 @@ export const ANTIBIOTIKA_GESAMT = {
   ],
 }
 
+export const GOT_PFERD = {
+  headers: ["Jahr","Kastration Hengst","Kastration Jährling","Kolik-OP","Untersuchung","Lahmheitsuntersuchung","Folgeuntersuchung","Darmverschlingung","Endoskopie","Verbraucherpreise"],
+  rows: [
+    ["1999", 100, 100, 100, 100, 100, 100, 100, 100, 100],
+    ["2000", 100, 100, 100, 100, 100, 100, 100, 100, 101.3],
+    ["2001", 100, 100, 100, 100, 100, 100, 100, 100, 103.4],
+    ["2002", 100, 100, 100, 100, 100, 100, 100, 100, 104.8],
+    ["2003", 100, 100, 100, 100, 100, 100, 100, 100, 105.9],
+    ["2004", 100, 100, 100, 100, 100, 100, 100, 100, 107.7],
+    ["2005", 100, 100, 100, 100, 100, 100, 100, 100, 109.4],
+    ["2006", 100, 100, 100, 100, 100, 100, 100, 100, 111.1],
+    ["2007", 100, 100, 100, 100, 100, 100, 100, 100, 113.7],
+    ["2008", 112, 112, 112, 112, 112, 112, 112, 112, 116.6],
+    ["2009", 112, 112, 112, 112, 112, 112, 112, 112, 117],
+    ["2010", 112, 112, 112, 112, 112, 112, 112, 112, 118.3],
+    ["2011", 112, 112, 112, 112, 112, 112, 112, 112, 120.8],
+    ["2012", 112, 112, 112, 112, 112, 112, 112, 112, 123.1],
+    ["2013", 112, 112, 112, 112, 112, 112, 112, 112, 125],
+    ["2014", 112, 112, 112, 112, 112, 112, 112, 112, 126.2],
+    ["2015", 112, 112, 112, 112, 112, 112, 112, 112, 126.8],
+    ["2016", 112, 112, 112, 112, 112, 112, 112, 112, 127.5],
+    ["2017", 125.4, 125.4, 125.4, 125.4, 125.4, 125.4, 125.4, 125.4, 129.4],
+    ["2018", 125.4, 125.4, 125.4, 125.4, 125.4, 125.4, 125.4, 125.4, 131.7],
+    ["2019", 125.4, 125.4, 125.4, 125.4, 125.4, 125.4, 125.4, 125.4, 133.6],
+    ["2020", 125.4, 125.4, 125.4, 125.4, 125.4, 125.4, 125.4, 125.4, 134.2],
+    ["2021", 125.4, 125.4, 125.4, 125.4, 125.4, 125.4, 125.4, 125.4, 138.4],
+    ["2022", 375.5, 312.9, 264, 200.7, 200.7, 200.6, 149.3, 100.4, 147.9],
+    ["2023", 375.5, 312.9, 264, 200.7, 200.7, 200.6, 149.3, 100.4, 156.6],
+    ["2024", 375.5, 312.9, 264, 200.7, 200.7, 200.6, 149.3, 100.4, 160.1],
+    ["2025", 375.5, 312.9, 264, 200.7, 200.7, 200.6, 149.3, 100.4, 163.6],
+  ],
+}
+
 export const HUND_KATZE_WELT = {
   headers: ["Jahr","Afghanistan","Albania","Algeria","Andorra","Angola","Antigua and Barbuda","Argentina","Armenia","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bhutan","Bolivia","Bosnia and Herzegovina","Botswana","Brazil","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Central African Republic","Chad","Chile","China","Colombia","Comoros","Costa Rica","Croatia","Cuba","Cyprus","Czechia","DR Congo","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Eswatini","Ethiopia","Fiji","Finland","France","Gabon","Gambia","Georgia","Germany","Ghana","Greece","Grenada","Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","Honduras","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Ivory Coast","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati","Kosovo","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Morocco","Mozambique","Myanmar","Namibia","Nauru","Nepal","Netherlands","New Zealand","Nicaragua","Niger","Nigeria","North Korea","North Macedonia","Norway","Oman","Pakistan","Palau","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Qatar","Republic of the Congo","Romania","Russian Federation","Rwanda","Saint Kitts and Nevis","Saint Lucia","Saint Vincent and the Grenadines","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Korea","South Sudan","Spain","Sri Lanka","Sudan","Suriname","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor-Leste","Togo","Tonga","Trinidad and Tobago","Tunisia","Turkey","Turkmenistan","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Yemen","Zambia","Zimbabwe","Summe: Hunde (Mio.)","Summe: Katzen (Mio.)"],
   rows: [

@@ -5,7 +5,7 @@ titel: Pferdezucht 2025: 74.950 Zuchtstuten, so wenige wie nie
 beschreibung: 2025 waren in Deutschland 74.950 Zuchtstuten eingetragen, so wenige wie nie in der FN-Statistik. Die Fohlen fielen seit 2022 um 19 Prozent.
 frage: Wie viele Fohlen bekommt eine Zuchtstute?
 suchbegriffe: pferdezucht deutschland, zuchtstuten, fohlen deutschland, wie viele fohlen bekommt eine zuchtstute, fohlen anzahl
-stand: 2026-10-20
+stand: 2026-10-27
 bereit: ja
 ---
 Im Schnitt kommen in Deutschland auf 100 eingetragene Zuchtstuten rund 46 Fohlen im Jahr: 2025 waren es **74.950 Zuchtstuten und 34.424 registrierte Fohlen** (Deutsche Reiterliche Vereinigung, alle 25 Zuchtverbände). So wenige Zuchtstuten gab es in der Statistik noch nie, weniger als 1990. Die Zahl der Fohlen fiel seit dem Hoch 2022 um 19 Prozent, die Fohlen je Stute blieben dagegen gleich.
@@ -38,7 +38,7 @@ Bis 2014 schrumpfte die Zucht deutlich, danach blieb die Zahl der Stuten lange s
 
 ## Was das für die Tiermedizin bedeutet
 
-Weniger Fohlen heißt weniger Trächtigkeitsuntersuchungen, Geburten und Fohlenmedizin. Gleichzeitig wächst die Pferdepraxis insgesamt: 2025 führten 989 Tierärztinnen und Tierärzte eine reine Pferdepraxis, so viele wie nie seit Beginn der Zählung 2019. Mehr dazu im Artikel [Die Großtierpraxis wird zur Pferdepraxis](pferdepraxis-nutztierpraxis.html). Die Arbeit am Pferd wächst also, nur nicht in der Zucht. Wie sich die Arbeit in der Nutztierpraxis verändert, zeigt auch der Rückgang der [Antibiotika in der Tierhaltung](antibiotika-tierhaltung.html) um zwei Drittel seit 2011.
+Weniger Fohlen heißt weniger Trächtigkeitsuntersuchungen, Geburten und Fohlenmedizin. Gleichzeitig wächst die Pferdepraxis insgesamt: 2025 führten 989 Tierärztinnen und Tierärzte eine reine Pferdepraxis, so viele wie nie seit Beginn der Zählung 2019. Mehr dazu im Artikel [Die Großtierpraxis wird zur Pferdepraxis](pferdepraxis-nutztierpraxis.html). Die Arbeit am Pferd wächst also, nur nicht in der Zucht. Teurer geworden ist sie auch: Was eine Kolik-OP oder eine Kastration seit der Gebührenordnung 2022 kostet, steht im Artikel [Tierarztkosten Pferd](tierarztkosten-pferd.html). Wie sich die Arbeit in der Nutztierpraxis verändert, zeigt auch der Rückgang der [Antibiotika in der Tierhaltung](antibiotika-tierhaltung.html) um zwei Drittel seit 2011.
 
 ## Was die Zahl nicht sagt
 
