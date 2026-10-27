@@ -1,8 +1,7 @@
 # LinkedIn-Post 32: Zwei Drittel weniger Antibiotika
 
 **Video:** Studio → „Zwei Drittel weniger Antibiotika“ (`?beispiel=antibiotika-gesamt`), Line Race 2011–2024 (Gesamt, Penicilline, Tetracycline), Format 4:5, MP4. Das Bar Race der Wirkstoffklassen (`?beispiel=antibiotika`) zeigt den Rückgang kaum, weil die Achse mitskaliert – nur im Artikel.
-**Stand:** 21.10.2026. Post 32 auf `naechster`, Artikel `32-antibiotika-tierhaltung.md` live. Nach dem Posten:
-`status: 'veroeffentlicht'`, `publishedOn`, `linkedInUrl`.
+**Stand:** 27.10.2026. Veröffentlicht am 22.10.2026: https://lnkd.in/p/e-CTJW4h · Artikel `32-antibiotika-tierhaltung.md` live.
 **Zahlen:** `sites/tiermedizin/data/raw/ds23-antibiotika.json` (BVL über DTBl 11/2025, Tab. 2; Gegenprobe BfR 2023).
 
 ---

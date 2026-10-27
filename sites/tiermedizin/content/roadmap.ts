@@ -304,7 +304,7 @@ export const POSTS: RoadmapPost[] = [
     refs: [24],
   },
   {
-    nr: 32, arc: 'tiere', status: 'naechster',
+    nr: 32, arc: 'tiere', status: 'veroeffentlicht', publishedOn: '2026-10-22', linkedInUrl: 'https://lnkd.in/p/e-CTJW4h',
     title: 'Zwei Drittel weniger Antibiotika',
     hook: 'Von 1.705,7 auf 562,1 Tonnen: Die Abgabe von Antibiotika an Tierärzte ist seit 2011 um zwei Drittel gesunken – mit dem größten Sprung 2015 und einem leichten Anstieg seit 2023.',
     figures: ['Gesamt: 1.705,7 t (2011) auf 562,1 t (2024), −67 Prozent', '2014 auf 2015: −35 Prozent in einem Jahr', 'Tetracycline −80 Prozent, Colistin −76 Prozent; 2013 überholen die Penicilline die Tetracycline', 'Gegenprobe BfR 2023: 478 t Verbrauch bei Rind, Schwein, Huhn, Pute'],
