@@ -1,0 +1,31 @@
+{
+  "_herkunft": "GOT 2017 (3. ÄndVO, BTK-Ausgabe agila.de) und GOT 2022 Anlage (gesetze-im-internet.de), einfacher Satz netto; Wert = Gebühr 2022 ÷ Gebühr 2017 × 100, gerundet. Verbraucherpreise Destatis 2017 96,4 → 2022 110,2 (2020 = 100) = 114. Rohdaten sites/tiermedizin/data/raw/ds24-got-pferd.json.",
+  "titel": "GOT 2022 beim Pferd: neu bewertet",
+  "untertitel": "Gebühr 2022, wenn 2017 = 100 (einfacher Satz, netto)",
+  "jahr": "2022",
+  "einheit": "",
+  "max": 300,
+  "quelle": "Quelle: Gebührenordnung für Tierärzte 2017 und 2022 (einfacher Satz); Verbraucherpreise: Statistisches Bundesamt. Vergleich 2017 = 100 berechnet",
+  "balken": [
+    {
+      "name": "Kastration Hengst (64 → 192 €)",
+      "wert": 299
+    },
+    {
+      "name": "Kolik-OP (641 → 1.350 €)",
+      "wert": 210
+    },
+    {
+      "name": "Untersuchung (19 → 31 €)",
+      "wert": 160
+    },
+    {
+      "name": "Zum Vergleich: Verbraucherpreise 2017 → 2022",
+      "wert": 114
+    },
+    {
+      "name": "Endoskopie (192 → 154 €)",
+      "wert": 80
+    }
+  ]
+}

@@ -318,7 +318,7 @@ export const POSTS: RoadmapPost[] = [
     hook: '23 Jahre lang stiegen die Gebühren für Pferde langsamer als die Preise. Dann kam die GOT 2022: Hengstkastration fast vierfach so teuer wie 1999, Kolik-OP 2,6-fach, Untersuchung doppelt – und die Endoskopie kostet so viel wie 1999.',
     figures: ['Kolik-OP (Darmresektion): 511,29 € (1999) → 641,36 € (2017) → 1.350,00 € (2022), plus 110 Prozent', 'Kastration Hengst: 64,14 € → 192,00 €, plus 199 Prozent (Landtag SH: plus 200 Prozent)', 'Untersuchung, Folge- und Lahmheitsuntersuchung: je plus 60 Prozent', 'Endoskopie: 192,42 € → 153,94 €, minus 20 Prozent', 'Verbraucherpreise 1999–2025: plus 64 Prozent; GOT bis 2021: plus 25 Prozent'],
     sampleId: 'got-pferd', chart: 'bar', dataStatus: 'belegt',
-    dataNote: 'GOT 1999/2008/2017/2022 (ds24-got-pferd.json), 1999–2007 aus 2017 zurückgerechnet (runde DM-Beträge als Probe). Einfacher Satz netto, Stand 31.12. Zweitquelle Landtag SH Umdruck 20/2275. Ist-Rechnungen erhebt niemand – im Post sagen.',
+    dataNote: 'GOT 1999/2008/2017/2022 (ds24-got-pferd.json), 1999–2007 aus 2017 zurückgerechnet (runde DM-Beträge als Probe). Einfacher Satz netto, Stand 31.12. Zweitquelle Landtag SH Umdruck 20/2275. Ist-Rechnungen erhebt niemand – im Post sagen. Post als Bildpost (docs/linkedin/grafik-got-pferd.png, Vergleich 2017 = 100), weil das Bar Race 1999–2021 nur gleich lange Balken zeigt (Nutzer 27.10.2026); Datensatz got-pferd bleibt für Studio und CSV.',
     refs: [24, 31],
   },
 ]

@@ -6,6 +6,7 @@ beschreibung: Seit der GOT 2022 kostet die Kolik-OP beim Pferd mindestens 1.350 
 frage: Was kostet eine Kolik-OP beim Pferd?
 suchbegriffe: tierarztkosten pferd, kolik op pferd kosten, kastration hengst kosten, got pferd, pferd tierarzt kosten, gebührenordnung tierärzte pferd
 stand: 2026-10-27
+grafik: keine
 bereit: ja
 ---
 Die Operation einer Kolik mit Darmresektion kostet beim Pferd nach der Gebührenordnung für Tierärzte (GOT) seit November 2022 **mindestens 1.350 Euro**, ohne Umsatzsteuer, ohne Narkose und ohne Klinikaufenthalt. 2017 standen dafür 641,36 Euro in der GOT, 1999 waren es 1.000 D-Mark, umgerechnet 511,29 Euro. Die Kastration eines Hengstes kostet heute mit **192 Euro** fast das Vierfache von 1999, die allgemeine Untersuchung mit 30,78 Euro das Doppelte.
@@ -18,13 +19,11 @@ Die Operation einer Kolik mit Darmresektion kostet beim Pferd nach der Gebühren
 - Die Endoskopie wurde billiger: 192,42 auf 153,94 Euro, minus 20 Prozent.
 - Von 1999 bis 2021 stiegen die Gebühren um 25 Prozent, die Verbraucherpreise um 38 Prozent (berechnet).
 
-::grafik got-pferd bar
-
 ## 23 Jahre Gleichschritt, dann der Sprung
 
 Die GOT legt für jede Leistung einen einfachen Satz fest. Tierärztinnen und Tierärzte dürfen bis zum Dreifachen berechnen, im Notdienst mehr, aber nie weniger. Zwischen 1999 und 2022 wurde die Verordnung nur zweimal angepasst, 2008 und 2017, beide Male um 12 Prozent für alle Leistungen gleich. Für das Pferd hieß das: Jede Gebühr lag 2021 genau 25,4 Prozent über 1999, während die Verbraucherpreise um 38,4 Prozent gestiegen waren.
 
-Die GOT 2022 hat die Sätze nicht nur erhöht, sondern jede Leistung neu bewertet. Darum gehen die Balken in der Grafik ab 2022 auseinander:
+Die GOT 2022 hat die Sätze nicht nur erhöht, sondern jede Leistung neu bewertet. Darum unterscheiden sich die Änderungen je Leistung so stark, wie die Grafik oben zeigt:
 
 | Leistung beim Pferd | 1999 | 2017 | 2022 | Änderung 2017 → 2022 |
 |---|---:|---:|---:|---:|
