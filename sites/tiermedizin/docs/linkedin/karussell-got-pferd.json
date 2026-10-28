@@ -1,0 +1,106 @@
+{
+  "_herkunft": "Geprüft am 28.10.2026. Folie 1 aus grafik-got-pferd.json. Folie 2: Darmresektion Pferd (auch Kolik), GOT 1999 1.000 DM ÷ 1,95583 = 511,29 €, 2008 × 1,12 = 572,64 €, 2017 × 1,12 = 641,36 € (BTK-Ausgabe, V 1.1.5), 2022 Nr. 481 1.350,00 €. Folie 3: GOT 2017 vs. 2022 (ds24-got-pferd.json). Folie 4: Index 1999 = 100, GOT 2021 = 1,12 × 1,12 = 125,4; Verbraucherpreise 2021 103,1 ÷ 74,5 = 138,4 (Destatis, 2020 = 100). Gerundet.",
+  "folien": [
+    {
+      "aus": "grafik-got-pferd.json"
+    },
+    {
+      "titel": "Die Kolik-OP in jeder Fassung der GOT",
+      "untertitel": "Darmresektion beim Pferd, einfacher Satz ohne Umsatzsteuer, in Euro",
+      "jahr": "2022",
+      "einheit": " €",
+      "max": 1400,
+      "balken": [
+        {
+          "name": "GOT 1999 (1.000 DM)",
+          "wert": 511
+        },
+        {
+          "name": "GOT 2008 (+12 %)",
+          "wert": 573
+        },
+        {
+          "name": "GOT 2017 (+12 %)",
+          "wert": 641
+        },
+        {
+          "name": "GOT 2022 (neu bewertet)",
+          "wert": 1350
+        }
+      ],
+      "quelle": "Quelle: Gebührenordnung für Tierärzte 1999, 2008, 2017, 2022 (BGBl.); 1999 aus D-Mark umgerechnet, 2008 aus 2017 zurückgerechnet"
+    },
+    {
+      "art": "paare",
+      "titel": "Was beim Pferd in der GOT steht",
+      "untertitel": "Einfacher Satz ohne Umsatzsteuer in Euro, 2017 und 2022",
+      "jahr": "2022",
+      "einheit": " €",
+      "max": 200,
+      "teile": [
+        "GOT 2017",
+        "GOT 2022"
+      ],
+      "balken": [
+        {
+          "name": "Kastration Hengst",
+          "werte": [
+            64,
+            192
+          ]
+        },
+        {
+          "name": "Lahmheitsuntersuchung",
+          "werte": [
+            32,
+            51
+          ]
+        },
+        {
+          "name": "Untersuchung",
+          "werte": [
+            19,
+            31
+          ]
+        },
+        {
+          "name": "Endoskopie",
+          "werte": [
+            192,
+            154
+          ]
+        }
+      ],
+      "quelle": "Quelle: Gebührenordnung für Tierärzte 2017 (Ausgabe der Bundestierärztekammer) und 2022 (Anlage); gerundet"
+    },
+    {
+      "titel": "Vorher: 23 Jahre langsamer als die Preise",
+      "untertitel": "Anstieg von 1999 bis 2021, 1999 = 100",
+      "jahr": "2021",
+      "einheit": "",
+      "max": 150,
+      "balken": [
+        {
+          "name": "Verbraucherpreise",
+          "wert": 138
+        },
+        {
+          "name": "Gebühren für Pferde (alle Leistungen der GOT)",
+          "wert": 125
+        }
+      ],
+      "quelle": "Quelle: Gebührenordnung für Tierärzte (Erhöhungen 2008 und 2017 je 12 %); Verbraucherpreise: Statistisches Bundesamt. Index berechnet"
+    },
+    {
+      "art": "text",
+      "titel": "Gebühr ist nicht Rechnung",
+      "absaetze": [
+        "Die GOT nennt den Mindestsatz für die Leistung selbst. Narkose, Klinikaufenthalt, Medikamente und Labor kommen hinzu, dazu ein Faktor bis zum Dreifachen.",
+        "Neu seit 2022: 34,50 Euro für den Hausbesuch, also für fast jeden Termin im Stall.",
+        "Was eine Kolik-OP am Ende wirklich kostet, erhebt keine amtliche Stelle. Alle Zahlen und Quellen im Artikel auf tiermedizin-in-zahlen.org."
+      ],
+      "hinweis": "Was hat eure letzte Kolik-OP gekostet? Schreibt es in die Kommentare.",
+      "quelle": "Quellen der Bilder: Gebührenordnung für Tierärzte 1999 bis 2022; Statistisches Bundesamt"
+    }
+  ]
+}

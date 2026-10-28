@@ -1,10 +1,10 @@
 ---
 post: 33
-slug: tierarztkosten-pferd
-titel: Tierarztkosten Pferd: Kolik-OP ab 1.350 Euro Gebühr
+slug: got-gebuehren-pferd
+titel: GOT-Gebühren Pferd: Kolik-OP ab 1.350 Euro seit 2022
 beschreibung: Seit der GOT 2022 kostet die Kolik-OP beim Pferd mindestens 1.350 Euro, 2,6-mal so viel wie 1999. Die Hengstkastration kostet fast das Vierfache.
 frage: Was kostet eine Kolik-OP beim Pferd?
-suchbegriffe: tierarztkosten pferd, kolik op pferd kosten, kastration hengst kosten, got pferd, pferd tierarzt kosten, gebührenordnung tierärzte pferd
+suchbegriffe: kolik op pferd kosten, got pferd, got gebühren pferd, kastration hengst kosten, tierarztkosten pferd, gebührenordnung tierärzte pferd
 stand: 2026-10-27
 grafik: keine
 bereit: ja

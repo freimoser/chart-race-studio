@@ -42,7 +42,7 @@ Auch die Fachtierarzt-Titel laufen auseinander. Von 2007 bis 2025 sank die Zahl 
 
 Zur gleichen Zeit gingen die Rinder zurück. In den 13 Flächenländern zählte die Viehbestandserhebung 1991 rechnerisch 17,1 Millionen Rinder, 2025 noch 10,4 Millionen. Einen Zusammenhang mit den Praxen belegt die Kammerstatistik nicht, die Richtung passt aber zusammen. Auch die Antibiotika in der Tierhaltung sind seit 2011 um zwei Drittel gesunken, siehe [Antibiotika in der Tierhaltung](antibiotika-tierhaltung.html). Für die Pferde gibt es keine jährliche Zählung: Die Deutsche Reiterliche Vereinigung nennt seit Jahren unverändert rund 1,3 Millionen. Mehr Pferde als Ursache lassen sich damit weder belegen noch ausschließen. Die Zucht schrumpft sogar: 2025 waren so wenige Zuchtstuten eingetragen wie nie, mehr dazu im Artikel [Pferdezucht in Deutschland](pferdezucht-deutschland.html).
 
-Mit der Gebührenordnung 2022 wurde die Arbeit am Pferd auch neu bewertet: Grundleistungen plus 60 Prozent, die Kolik-OP plus 110 Prozent, die Hengstkastration plus 199 Prozent, siehe [Tierarztkosten Pferd](tierarztkosten-pferd.html).
+Mit der Gebührenordnung 2022 wurde die Arbeit am Pferd auch neu bewertet: Grundleistungen plus 60 Prozent, die Kolik-OP plus 110 Prozent, die Hengstkastration plus 199 Prozent, siehe [GOT-Gebühren beim Pferd](got-gebuehren-pferd.html).
 
 ## Und vor 2019?
 
