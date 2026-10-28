@@ -251,6 +251,6 @@ Ersetzt eine extern zugelieferte Vorlage, in der 19 von 26 Jahren interpoliert o
 
 Rohdaten `data/raw/ds24-got-pferd.json`: einfacher Satz der GOT für acht Pferde-Leistungen, Stand 31.12., 1999–2025, plus Verbraucherpreise (ds16). 1999–2007 aus der Fassung 2017 zurückgerechnet (÷ 1,12²) – Probe: runde DM-Beträge (24, 30, 50, 80, 100, 300, 700, 1.000 DM). Gezeigt als Index 1999 = 100 im Bar Race (Linien lägen bis 2021 übereinander). Zweitquelle Hengstkastration: Landtag SH Umdruck 20/2275. Ist-Rechnungen erhebt niemand.
 
-## Der Online-Handel überholt den Laden (`online-handel`, Post 26)
+## Online überholt das Zubehör, das Futter noch nicht (`online-handel`, Post 26)
 
-Aus `heimtiermarkt` (ZZF/IVH) nur Online-Handel und Bedarfsartikel im Laden, 2013–2025, als zwei Linien – `heimtiermarkt` als Linien hätte Reihen, die erst 2013 bzw. 2018 einsetzen. Gegenprobe der Richtung: NielsenIQ (LZ 11.04.2025).
+Aus `heimtiermarkt` (ZZF/IVH) Online-Handel, Katzenfutter, Hundefutter und Bedarfsartikel im Laden, 2013–2025, als vier Linien (vor 2013 keine Online-Daten) – `heimtiermarkt` als Linien hätte Reihen, die erst 2013 bzw. 2018 einsetzen. Gegenprobe der Richtung: NielsenIQ (LZ 11.04.2025).

@@ -43,7 +43,7 @@ Der Satz „Online überholt den Laden“ ist griffig, aber er vergleicht einen 
 
 Aussagekräftiger ist der Vergleich mit dem ganzen stationären Handel. Für die Jahre ab 2018 weist die Quelle alle sechs Segmente getrennt aus. Zusammen kamen sie 2018 auf rechnerisch 4.223 Mio. Euro, der Online-Handel auf 625 Mio. 2025 standen 5.335 Mio. Euro im Laden 1.521 Mio. online gegenüber. Das Verhältnis hat sich in sieben Jahren fast verdoppelt, von 14,8 auf 28,5 Euro online je 100 Euro im Laden.
 
-Gegen den größten Laden-Posten, Katzenfutter mit 2.315 Mio. Euro, liegt der Online-Handel 2025 dagegen noch deutlich zurück.
+Gegen das Futter im Laden liegt der Online-Handel 2025 dagegen noch zurück: Katzenfutter kam auf 2.315 Mio. Euro, Hundefutter auf 1.753 Mio. Euro. Die Grafik zeigt alle vier Reihen ab 2013. Den Rückgang beim Hundefutter 2024 (von 1.972 auf 1.759 Mio. Euro) belegt die Quelle nicht sicher, weil sie für dieses Jahr eine veränderte Datenbasis ausweist.
 
 ## Wächst der Online-Handel weiter?
 

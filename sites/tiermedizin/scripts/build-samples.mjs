@@ -241,12 +241,12 @@ const w6 = wide(byMetric(d2, 'Umsatz Heimtiermarkt').filter((r) => marktNamen.in
   rename: { 'Bedarfsartikel und Zubehör (stationär)': 'Bedarfsartikel und Zubehör', 'Online-Handel (Schätzung)': 'Online-Handel (alle Segmente)' },
 })
 
-// Post 26: nur Online-Handel gegen Zubehör im Laden, ab 2013 (erstes Jahr mit Online-Wert). Der Datensatz heimtiermarkt
-// als Linien hätte Reihen, die erst 2013 bzw. 2018 einsetzen (Regel: keine leeren Jahre).
-const w21 = wide(byMetric(d2, 'Umsatz Heimtiermarkt').filter((r) => ['Online-Handel (Schätzung)', 'Bedarfsartikel und Zubehör (stationär)'].includes(r.name)), {
-  names: ['Online-Handel (Schätzung)', 'Bedarfsartikel und Zubehör (stationär)'],
+// Post 26: Online-Handel gegen die drei großen Segmente im Laden, ab 2013 (erstes Jahr mit Online-Wert; laut Bericht 2013
+// gab es vorher keine Online-Daten). heimtiermarkt als Linien hätte Reihen, die erst 2013 bzw. 2018 einsetzen.
+const w21 = wide(byMetric(d2, 'Umsatz Heimtiermarkt').filter((r) => ['Online-Handel (Schätzung)', 'Katzenfutter', 'Hundefutter', 'Bedarfsartikel und Zubehör (stationär)'].includes(r.name)), {
+  names: ['Online-Handel (Schätzung)', 'Katzenfutter', 'Hundefutter', 'Bedarfsartikel und Zubehör (stationär)'],
   from: '2013',
-  rename: { 'Online-Handel (Schätzung)': 'Online-Handel', 'Bedarfsartikel und Zubehör (stationär)': 'Zubehör im Laden' },
+  rename: { 'Online-Handel (Schätzung)': 'Online-Handel', Katzenfutter: 'Katzenfutter im Laden', Hundefutter: 'Hundefutter im Laden', 'Bedarfsartikel und Zubehör (stationär)': 'Zubehör im Laden' },
 })
 // 7 Praxisschwerpunkte 1990–2018. Die Kategorien heißen über die Jahre unterschiedlich, meinen aber
 // dasselbe Dreieck aus reiner Kleintierpraxis, gemischter Praxis und reiner Nutz-/Großtierpraxis.
