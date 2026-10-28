@@ -5,7 +5,7 @@ titel: Haustierbedarf online: Umsatz 2013 bis 2025
 beschreibung: Der Online-Handel mit Haustierbedarf wuchs von 400 Mio. Euro (2013) auf 1.521 Mio. (2025) und überholte 2022 das Zubehör im Laden.
 frage: Wie viel Umsatz macht der Online-Handel mit Haustierbedarf?
 suchbegriffe: ausgaben haustiere deutschland, haustierbedarf online, heimtierbedarf online-handel umsatz
-stand: 2026-09-23
+stand: 2026-10-28
 bereit: ja
 ---
 Der Online-Handel mit Heimtierbedarf setzte 2025 in Deutschland **1.521 Mio. Euro** um, 2013 waren es 400 Mio. Euro. **2022** lag er mit 1.203 Mio. Euro erstmals über dem Umsatz mit Bedarfsartikeln und Zubehör im stationären Handel (1.091 Mio. Euro). So steht es in „Der Deutsche Heimtiermarkt“ von ZZF und IVH.
@@ -47,7 +47,7 @@ Gegen den größten Laden-Posten, Katzenfutter mit 2.315 Mio. Euro, liegt der On
 
 ## Wächst der Online-Handel weiter?
 
-Die letzten beiden Jahre geben kein klares Bild. 2024 kam ein Plus von 196 Mio. Euro, 2025 nur noch eines von 9 Mio. Für 2024 weist die Quelle allerdings eine veränderte Datenbasis aus, der Vergleich mit 2023 ist laut Verband nur bedingt möglich. Ob 2025 ein Plateau beginnt oder nur ein schwaches Jahr ist, lässt sich an einem einzigen Wert nicht ablesen. Die Einordnung der übrigen Segmente steht im [Artikel zu den Ausgaben für Haustiere](ausgaben-haustiere-deutschland.html).
+Die letzten beiden Jahre geben kein klares Bild. 2024 kam ein Plus von 196 Mio. Euro, 2025 nur noch eines von 9 Mio. Für 2024 weist die Quelle allerdings eine veränderte Datenbasis aus, der Vergleich mit 2023 ist laut Verband nur bedingt möglich. Ob 2025 ein Plateau beginnt oder nur ein schwaches Jahr ist, lässt sich an einem einzigen Wert nicht ablesen. Deutlicher ist der Laden: Das Zubehör im stationären Handel schrumpft seit 2023, von 1.121 auf 1.063 Mio. Euro. Eine zweite Quelle bestätigt die Richtung: Laut dem Marktforscher NielsenIQ verlor der Heimtierfachhandel 2024 erstmals Umsatz, Online-Handel und Lebensmittelhandel gewannen ([Lebensmittel Zeitung, 11. April 2025](https://www.lebensmittelzeitung.net/handel/nachrichten/heimtierbedarf-tierfachhandel-verzeichnet-erstmals-ruecklaeufige-umsaetze-183691)). Die Einordnung der übrigen Segmente steht im [Artikel zu den Ausgaben für Haustiere](ausgaben-haustiere-deutschland.html).
 
 ## Was die Zahl nicht sagt
 
@@ -69,4 +69,4 @@ Seit 2022. In diesem Jahr stand ein Online-Umsatz von 1.203 Mio. Euro einem Umsa
 
 ## Quelle und Methode
 
-Zentralverband Zoologischer Fachbetriebe (ZZF) und Industrieverband Heimtierbedarf (IVH), [„Der Deutsche Heimtiermarkt“](https://www.ivh-online.de/der-verband/daten-fakten/der-deutsche-heimtiermarkt.html). Online-Handel 2013 bis 2025, Bedarfsartikel und Futter im stationären Handel 2011 bis 2025, kleinere Futtersegmente ab 2018. Berechnet sind die Differenzen, die Veränderungsraten, die durchschnittliche jährliche Wachstumsrate 2013 bis 2025, die Summe der sechs stationären Segmente und das Verhältnis von Online- zu Ladenumsatz. Mehr zur Herkunft: [Datenherkunft, Heimtiermarkt](../artikel/datenherkunft.html#heimtiermarkt).
+Zentralverband Zoologischer Fachbetriebe (ZZF) und Industrieverband Heimtierbedarf (IVH), [„Der Deutsche Heimtiermarkt“](https://www.ivh-online.de/der-verband/daten-fakten/der-deutsche-heimtiermarkt.html). Online-Handel 2013 bis 2025, Bedarfsartikel und Futter im stationären Handel 2011 bis 2025, kleinere Futtersegmente ab 2018. Berechnet sind die Differenzen, die Veränderungsraten, die durchschnittliche jährliche Wachstumsrate 2013 bis 2025, die Summe der sechs stationären Segmente und das Verhältnis von Online- zu Ladenumsatz. Gegenprobe der Richtung: NielsenIQ, berichtet in der Lebensmittel Zeitung vom 11. April 2025, abgerufen am 28. Oktober 2026. Mehr zur Herkunft: [Datenherkunft, Heimtiermarkt](../artikel/datenherkunft.html#heimtiermarkt).

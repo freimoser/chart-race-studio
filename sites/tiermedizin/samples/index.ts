@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { ANTIBIOTIKA, ANTIBIOTIKA_GESAMT, GOT_PFERD, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
+import { ANTIBIOTIKA, ANTIBIOTIKA_GESAMT, GOT_PFERD, ONLINE_HANDEL, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -581,6 +581,26 @@ export const SAMPLES: SampleDataset[] = [
       chartType: 'line', topN: 3, decimals: 2, suffix: ' €', gapFill: 'none', primaryAxisLabel: 'Routinejahr in Euro',
       colors: { 'Katze': '#e36414', 'Hund': '#e0a800', 'Pferd': '#8a5a3c' },
     },
+  },
+  {
+    id: 'online-handel',
+    erstellt: '2026-10-28', geprueft: '2026-10-28',
+    category: 'heimtiere',
+    title: 'Der Online-Handel überholt den Laden',
+    subtitle: 'Umsatz in Mio. Euro: online (alle Segmente) gegen Zubehör im Laden',
+    source: 'Quelle: ZZF/IVH, „Der Deutsche Heimtiermarkt“ 2013–2025 (Online-Handel: Schätzung der Verbände)',
+    sourceUrl: 'https://www.ivh-online.de/der-verband/daten-fakten/der-deutsche-heimtiermarkt.html',
+    unit: 'Mio. €',
+    description: 'Von 400 auf 1.521 Mio. Euro: 2022 überholt der Online-Handel das Zubehör im Laden, seit 2024 schrumpft der Laden.',
+    dataInfo: [
+      "Dieselben Werte wie im Datensatz „Wofür Herrchen und Frauchen ihr Geld ausgeben“, hier nur die zwei Reihen ab 2013, dem ersten Jahr mit einem Online-Wert. Keine Lücken, nichts gerechnet.",
+      "Der Vergleich hinkt bewusst: Online umfasst alle Segmente, also auch Futter; der Ladenwert nur Bedarfsartikel und Zubehör. Er zeigt, dass das ganze Netzgeschäft größer ist als eine der drei großen Warengruppen im Laden. 2025 kamen auf 100 Euro im Laden (sechs Segmente) 28,5 Euro online, 2018 waren es 14,8 Euro (berechnet).",
+      "Der Online-Wert ist eine Schätzung der Verbände (glatte Werte 400, 420, 450 in den ersten Jahren). Für 2024 weist die Quelle eine veränderte Datenbasis aus. Umsätze zu Endverbraucherpreisen, nicht preisbereinigt.",
+      "Gegenprobe der Richtung: Laut NielsenIQ (ZZF-Forum, Lebensmittel Zeitung 11.04.2025) verlor der Heimtierfachhandel 2024 erstmals Umsatz, Online-Handel und Lebensmittelhandel gewannen. Eine unabhängige Zahl für den Online-Umsatz gibt es nicht.",
+    ],
+    headers: ONLINE_HANDEL.headers,
+    rows: ONLINE_HANDEL.rows,
+    suggested: { chartType: 'line', topN: 2, decimals: 0, suffix: ' Mio. €', primaryAxisLabel: 'Mio. Euro', colors: { 'Online-Handel': '#e36414', 'Zubehör im Laden': '#0f4c5c' } },
   },
   {
     id: 'got-pferd',

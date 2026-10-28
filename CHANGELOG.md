@@ -4,6 +4,10 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Post 26: Der Online-Handel überholt den Laden (28.10.2026)
+
+- **Tiermedizin:** Datensatz `online-handel` (2 Linien 2013–2025), Artikel 26 vorab online (Gegenprobe NielsenIQ), Links aus Artikel 01 und 03, Post-Text, Datenherkunft.
+
 ### Post 33: Was das Pferd beim Tierarzt kostet (27.10.2026)
 
 - **Tiermedizin:** Datensatz `got-pferd` (GOT-Sätze für acht Pferde-Leistungen 1999–2025 als Index gegen die Verbraucherpreise, Bar Race), Artikel `/beitrag/got-gebuehren-pferd`, Post-Text, Datenherkunft; Links aus Artikel 24, 31 und Tierarztkosten.

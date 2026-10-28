@@ -5,7 +5,7 @@ titel: Anzahl Haustiere in Deutschland 2025 – Entwicklung seit 1991
 beschreibung: 2025 lebten in Deutschland 33,4 Mio. Hunde, Katzen, Kleintiere und Ziervögel, davon 15,7 Mio. Katzen. Die Zeitreihe seit 1991 mit Quelle.
 frage: Wie viele Haustiere gibt es in Deutschland?
 suchbegriffe: anzahl haustiere deutschland, wie viele haustiere hat deutschland, haustiere deutschland statistik, anzahl haustiere deutschland entwicklung, häufigste haustiere deutschland, anzahl hunde deutschland 2000
-stand: 2026-10-26
+stand: 2026-10-28
 kennzahl: markt/1 | 33,4 Mio. | Hunde, Katzen, Kleintiere und Ziervögel | 2025
 bereit: ja
 ---
@@ -50,7 +50,7 @@ Wie sich die Tierarztpraxen im selben Zeitraum verändert haben, zeigt der Folge
 
 Der Tierärzte Atlas Deutschland beziffert den Zuwachs über 20 Jahre auf plus 50 Prozent, auf über 34 Millionen Heimtiere. Die Rechnung lässt sich mit dieser Reihe nachvollziehen: Katzen, Hunde, Kleintiere und Ziervögel zusammen ergeben 2003 rechnerisch 22,8 Millionen und 2023 34,3 Millionen, ein Plus von 50,4 Prozent. Welche Arten der Atlas genau addiert, geht aus der hier genutzten Quelle nicht hervor; die Zahlen passen aber zusammen.
 
-Zwei Einschränkungen gehören dazu. Die 20 Jahre überspannen den Methodenwechsel von 2012, das Plus ist also kein reines Wachstum. Und 2025 liegt dieselbe Summe mit 33,4 Millionen wieder unter 34 Millionen.
+Zwei Einschränkungen gehören dazu. Die 20 Jahre überspannen den Methodenwechsel von 2012, das Plus ist also kein reines Wachstum. Und 2025 liegt dieselbe Summe mit 33,4 Millionen wieder unter 34 Millionen. Mit den Tieren wuchs der Handel: Der Online-Umsatz mit Heimtierbedarf stieg von 400 Mio. Euro (2013) auf 1.521 Mio. (2025), mehr im Artikel [Haustierbedarf online](heimtierbedarf-online-handel.html).
 
 ## Was die Zahl nicht sagt
 

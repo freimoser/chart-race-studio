@@ -249,11 +249,12 @@ export const POSTS: RoadmapPost[] = [
     refs: [1, 3],
   },
   {
-    nr: 26, arc: 'markt', status: 'geplant',
+    nr: 26, arc: 'markt', status: 'geplant', vorabOnline: true,
     title: 'Der Online-Handel überholt den Laden',
-    hook: 'Die Zuspitzung von Post 25, mit einem klaren Jahr als Wendepunkt.',
-    figures: ['Online-Handel: rund 400 Mio. Euro (2013) auf 1.521 Mio. (2025)', '2022 überholt er die Bedarfsartikel im stationären Handel', 'Bedarfsartikel wachsen im selben Zeitraum kaum'],
-    sampleId: 'heimtiermarkt', chart: 'line', dataStatus: 'belegt',
+    hook: 'Online-Handel mit Heimtierbedarf: 400 Mio. Euro 2013, 1.521 Mio. 2025. 2022 zieht er am Zubehör im Laden vorbei, seit 2024 schrumpft der Laden.',
+    figures: ['Online-Handel: 400 Mio. Euro (2013) auf 1.521 Mio. (2025)', '2022 überholt er die Bedarfsartikel im stationären Handel (1.203 zu 1.091 Mio.)', 'Zubehör im Laden: 935 Mio. (2013), Hoch 1.121 Mio. (2023), 1.063 Mio. (2025)'],
+    sampleId: 'online-handel', chart: 'line', dataStatus: 'belegt',
+    dataNote: 'Eigener Datensatz online-handel (2 Linien ab 2013), weil heimtiermarkt als Linien leere Jahre hätte. vorabOnline am 28.10.2026, damit Post 33 der aktuelle bleibt. Gegenprobe Richtung: NielsenIQ (LZ 11.04.2025), Fachhandel 2024 erstmals mit Umsatzverlust.',
     refs: [25],
   },
   {

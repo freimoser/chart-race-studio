@@ -5,7 +5,7 @@ titel: Mehr Katzen oder Hunde? Welt und Deutschland im Vergleich
 beschreibung: Weltweit leben mehr Hunde als Katzen, in Deutschland mehr Katzen. In 84 von 197 Ländern verschiebt sich das Verhältnis seit 2000, fast immer zur Katze.
 frage: Gibt es mehr Katzen oder Hunde?
 suchbegriffe: gibt es mehr katzen oder hunde, gibt es mehr katzen oder hunde auf der welt, gibt es mehr katzen oder hunde in deutschland, wie viele hunde gibt es auf der welt, wie viele katzen gibt es in deutschland
-stand: 2026-09-24
+stand: 2026-10-28
 kennzahl: markt/2 | 15,7 Mio. | Katzen, dazu 10,0 Mio. Hunde | 2025
 bereit: ja
 ---
@@ -50,7 +50,7 @@ In Deutschland liegt die Katze seit Beginn der Reihe vorn, und der Abstand wuchs
 | 2021 | 16,7 | 10,3 | 1,62 |
 | 2025 | 15,7 | 10,0 | 1,57 |
 
-Die gesamte Entwicklung aller Haustierarten seit 1991, vom Ziervogel bis zum Terrarium, steht im Artikel [Anzahl Haustiere in Deutschland](anzahl-haustiere-deutschland.html).
+Die gesamte Entwicklung aller Haustierarten seit 1991, vom Ziervogel bis zum Terrarium, steht im Artikel [Anzahl Haustiere in Deutschland](anzahl-haustiere-deutschland.html). Auch im Laden führt die Katze: Katzenfutter war 2025 mit 2.315 Mio. Euro das umsatzstärkste Segment im stationären Handel. Wie viel davon inzwischen online gekauft wird, zeigt der Artikel [Haustierbedarf online](heimtierbedarf-online-handel.html).
 
 ## Was die Zahl nicht sagt
 

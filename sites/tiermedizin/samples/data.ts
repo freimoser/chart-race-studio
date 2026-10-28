@@ -388,6 +388,25 @@ export const HEIMTIERMARKT = {
   ],
 }
 
+export const ONLINE_HANDEL = {
+  headers: ["Jahr","Online-Handel","Zubehör im Laden"],
+  rows: [
+    ["2013", 400, 935],
+    ["2014", 420, 956],
+    ["2015", 450, 953],
+    ["2016", 510, 977],
+    ["2017", 580, 987],
+    ["2018", 625, 997],
+    ["2019", 705, 1017],
+    ["2020", 822, 1053],
+    ["2021", 1055, 1101],
+    ["2022", 1203, 1091],
+    ["2023", 1316, 1121],
+    ["2024", 1512, 1114],
+    ["2025", 1521, 1063],
+  ],
+}
+
 export const PRAXISSCHWERPUNKTE = {
   headers: ["Jahr","Nur Kleintiere","Gemischt (Nutz- und Kleintiere)","Nur Nutz- und Großtiere","Ketten (Standorte in Deutschland)"],
   rows: [
