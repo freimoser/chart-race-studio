@@ -7,6 +7,7 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 ### Post 26: Online überholt das Zubehör, das Futter noch nicht (28.10.2026)
 
 - **Tiermedizin:** Datensatz `online-handel` (4 Linien 2013–2025: Online, Katzen-, Hundefutter, Zubehör im Laden), Artikel 26 vorab online (Gegenprobe NielsenIQ), Links aus Artikel 01 und 03, Post-Text, Datenherkunft.
+- **Tiermedizin:** Show-Version `online-handel-2005` (2005–2025) als zweite Grafik im Artikel 26: Laden 2005–2010 aus IVH-Zahlen und Veränderungsraten, Online 2005–2012 gerechnet und geglättet (bvh/TNS 2010 verkettet, zooplus Deutschland, Andocken an 400 Mio. 2013), Rohdatei `ds25`, in `datensaetzeOhnePost`. Post-Text mit Ausblick 2026.
 
 ### Post 33: Was das Pferd beim Tierarzt kostet (27.10.2026)
 

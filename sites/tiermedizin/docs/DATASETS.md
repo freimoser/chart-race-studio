@@ -254,3 +254,7 @@ Rohdaten `data/raw/ds24-got-pferd.json`: einfacher Satz der GOT für acht Pferde
 ## Online überholt das Zubehör, das Futter noch nicht (`online-handel`, Post 26)
 
 Aus `heimtiermarkt` (ZZF/IVH) Online-Handel, Katzenfutter, Hundefutter und Bedarfsartikel im Laden, 2013–2025, als vier Linien (vor 2013 keine Online-Daten) – `heimtiermarkt` als Linien hätte Reihen, die erst 2013 bzw. 2018 einsetzen. Gegenprobe der Richtung: NielsenIQ (LZ 11.04.2025).
+
+## Online holt auf, seit 2005 (`online-handel-2005`, Show-Version zu Post 26)
+
+Rohdaten `data/raw/ds25-online-handel-2005-2012.json` (jede Zeile mit `art`: Beleg, aus Veränderungsrate, gerechnet) plus `ds2` ab 2011. Laden 2005–2010 IVH (2006/2008/2010 belegt, Vorjahre aus Raten). Online 2005–2012 gerechnet: bvh/TNS 2010 über 2011 verkettet (241), 2005 über zooplus Deutschland (62), geometrisch geglättet bis 2010, linear bis 400 (2013). Im Artikel als zweite Grafik, in `datensaetzeOhnePost`.

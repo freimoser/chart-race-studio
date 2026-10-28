@@ -45,6 +45,29 @@ Aussagekräftiger ist der Vergleich mit dem ganzen stationären Handel. Für die
 
 Gegen das Futter im Laden liegt der Online-Handel 2025 dagegen noch zurück: Katzenfutter kam auf 2.315 Mio. Euro, Hundefutter auf 1.753 Mio. Euro. Die Grafik zeigt alle vier Reihen ab 2013. Den Rückgang beim Hundefutter 2024 (von 1.972 auf 1.759 Mio. Euro) belegt die Quelle nicht sicher, weil sie für dieses Jahr eine veränderte Datenbasis ausweist.
 
+## Die lange Fassung ab 2005, bis 2012 gerechnet
+
+Die Verbände schätzen den Online-Handel erst seit 2013. Damit die Entwicklung davor sichtbar wird, zeigt die zweite Grafik eine von uns gerechnete Fassung ab 2005. Bis 2012 ist die Online-Linie keine Messung, sondern eine geglättete Rechnung, die ohne Sprung an den ersten Verbandswert andockt.
+
+::grafik online-handel-2005 line
+
+*Laden 2005 bis 2010: IVH-Zahlen, 2005, 2007 und 2009 aus den Veränderungsraten zurückgerechnet. Online 2005 bis 2012: gerechnet und geglättet, ab 2013 ZZF/IVH.*
+
+So ist gerechnet:
+
+| Schritt | Was | Ergebnis |
+|---|---|---|
+| Anker 2010 | Studie von bvh und TNS: 190 Mio. Euro für 2010, über 2011 auf die Folgeausgabe verkettet (× 330/260) | 241 Mio. Euro |
+| Rückschreibung 2005 | Deutschland-Umsatz von zooplus 2005 gegen 2010 (26,9 zu 104,5 Mio. Euro), Annahme: gleicher Anteil am Online-Markt | 62 Mio. Euro |
+| Glättung 2005–2010 | gleichmäßiges Wachstum zwischen beiden Werten | +31 % im Jahr |
+| Andocken 2011–2012 | linear von 241 bis zum Verbandswert 400 (2013) | 294 und 347 Mio. Euro |
+
+*zooplus: Gesamtleistung mal Umsatzanteil Deutschland laut [Geschäftsbericht 2009](https://corporate.zooplus.com/wp-content/uploads/2020/02/zooplus_Geschaeftsbericht_2009.pdf) und [2010](https://corporate.zooplus.com/wp-content/uploads/2020/02/zooplus_Geschaeftsbericht_2010.pdf). bvh/TNS nach [Universität Duisburg-Essen, Essener Auftakt 2014/1](https://www.marketing.wiwi.uni-due.de/fileadmin/fileupload/BWL-MARKETING/Essener_Publikationslinien/Essener_Auftakt_2014_1_-Tiernahrung_vor_Ort__Tiernahrung_in_Online-Shops.pdf). Alle abgerufen am 28. Oktober 2026.*
+
+Die Ladenwerte sind belegt: Das [IVH-Datenblatt 2008](https://www.ivh-online.de/fileadmin/ivh/user_upload/Daten_und_Fakten/Heimtiermarkt_08_A4.pdf) nennt 1.037 Mio. Euro für Hundefutter, 1.311 für Katzenfutter und 906 für Bedarfsartikel, jeweils mit der Veränderung zum Vorjahr. Für 2006 und 2010 geben [petcom](https://petcom.at/deutschland/marktdaten/Tiernahrungs-Markt-Deutschland/Heimtiermarkt-2006.html) und [Lebensmittel Praxis](https://lebensmittelpraxis.de/sortiment-aktuell/2183-leichter-zuwachs.html) die IVH-Zahlen wieder.
+
+Die Rechnung ist eine von mehreren möglichen. Die Studie von TNS nennt für 2011 und 2012 330 und 350 Mio. Euro, die Rechnung kommt auf 294 und 347. Die GIM-Studie, die TNS nachfolgte, schätzt den Online-Handel 2013 auf 778 Mio. Euro, die Verbände auf 400. Wie groß der Online-Markt ist, hängt stark davon ab, was mitgezählt wird. Die lange Fassung zeigt deshalb die Richtung: 2005 war der Online-Handel gemessen am Laden fast bedeutungslos, rund 60 zu gut 2.800 Mio. Euro in den drei großen Segmenten.
+
 ## Wächst der Online-Handel weiter?
 
 Die letzten beiden Jahre geben kein klares Bild. 2024 kam ein Plus von 196 Mio. Euro, 2025 nur noch eines von 9 Mio. Für 2024 weist die Quelle allerdings eine veränderte Datenbasis aus, der Vergleich mit 2023 ist laut Verband nur bedingt möglich. Ob 2025 ein Plateau beginnt oder nur ein schwaches Jahr ist, lässt sich an einem einzigen Wert nicht ablesen. Deutlicher ist der Laden: Das Zubehör im stationären Handel schrumpft seit 2023, von 1.121 auf 1.063 Mio. Euro. Eine zweite Quelle bestätigt die Richtung: Laut dem Marktforscher NielsenIQ verlor der Heimtierfachhandel 2024 erstmals Umsatz, Online-Handel und Lebensmittelhandel gewannen ([Lebensmittel Zeitung, 11. April 2025](https://www.lebensmittelzeitung.net/handel/nachrichten/heimtierbedarf-tierfachhandel-verzeichnet-erstmals-ruecklaeufige-umsaetze-183691)). Die Einordnung der übrigen Segmente steht im [Artikel zu den Ausgaben für Haustiere](ausgaben-haustiere-deutschland.html).
@@ -69,4 +92,4 @@ Seit 2022. In diesem Jahr stand ein Online-Umsatz von 1.203 Mio. Euro einem Umsa
 
 ## Quelle und Methode
 
-Zentralverband Zoologischer Fachbetriebe (ZZF) und Industrieverband Heimtierbedarf (IVH), [„Der Deutsche Heimtiermarkt“](https://www.ivh-online.de/der-verband/daten-fakten/der-deutsche-heimtiermarkt.html). Online-Handel 2013 bis 2025, Bedarfsartikel und Futter im stationären Handel 2011 bis 2025, kleinere Futtersegmente ab 2018. Berechnet sind die Differenzen, die Veränderungsraten, die durchschnittliche jährliche Wachstumsrate 2013 bis 2025, die Summe der sechs stationären Segmente und das Verhältnis von Online- zu Ladenumsatz. Gegenprobe der Richtung: NielsenIQ, berichtet in der Lebensmittel Zeitung vom 11. April 2025, abgerufen am 28. Oktober 2026. Mehr zur Herkunft: [Datenherkunft, Heimtiermarkt](../artikel/datenherkunft.html#heimtiermarkt).
+Zentralverband Zoologischer Fachbetriebe (ZZF) und Industrieverband Heimtierbedarf (IVH), [„Der Deutsche Heimtiermarkt“](https://www.ivh-online.de/der-verband/daten-fakten/der-deutsche-heimtiermarkt.html). Online-Handel 2013 bis 2025, Bedarfsartikel und Futter im stationären Handel 2011 bis 2025, kleinere Futtersegmente ab 2018. Berechnet sind die Differenzen, die Veränderungsraten, die durchschnittliche jährliche Wachstumsrate 2013 bis 2025, die Summe der sechs stationären Segmente und das Verhältnis von Online- zu Ladenumsatz. Gegenprobe der Richtung: NielsenIQ, berichtet in der Lebensmittel Zeitung vom 11. April 2025, abgerufen am 28. Oktober 2026. Lange Fassung ab 2005: Ladenwerte aus IVH-Zahlen und deren Veränderungsraten, Online-Handel 2005 bis 2012 gerechnet und geglättet aus der bvh/TNS-Studie und den Geschäftsberichten von zooplus (Rechenweg oben). Mehr zur Herkunft: [Datenherkunft, Heimtiermarkt](../artikel/datenherkunft.html#heimtiermarkt).

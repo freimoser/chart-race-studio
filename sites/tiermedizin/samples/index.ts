@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { ANTIBIOTIKA, ANTIBIOTIKA_GESAMT, GOT_PFERD, ONLINE_HANDEL, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
+import { ANTIBIOTIKA, ANTIBIOTIKA_GESAMT, GOT_PFERD, ONLINE_HANDEL, ONLINE_HANDEL_2005, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -600,6 +600,27 @@ export const SAMPLES: SampleDataset[] = [
     ],
     headers: ONLINE_HANDEL.headers,
     rows: ONLINE_HANDEL.rows,
+    suggested: { chartType: 'line', topN: 4, decimals: 0, suffix: ' Mio. €', primaryAxisLabel: 'Mio. Euro', colors: { 'Online-Handel': '#e36414', 'Katzenfutter im Laden': '#0f4c5c', 'Hundefutter im Laden': '#5b8e9e', 'Zubehör im Laden': '#8d99ae' } },
+  },
+  {
+    id: 'online-handel-2005',
+    erstellt: '2026-10-28', geprueft: '2026-10-28',
+    category: 'heimtiere',
+    title: 'Online holt auf, seit 2005 (bis 2012 gerechnet)',
+    subtitle: 'Umsatz in Mio. Euro. Online bis 2012 von uns gerechnet und geglättet, ab 2013 Verbandswerte',
+    source: 'Quelle: ZZF/IVH „Der Deutsche Heimtiermarkt“; Online 2005–2012 gerechnet aus bvh/TNS und zooplus-Geschäftsberichten',
+    sourceUrl: 'https://www.ivh-online.de/der-verband/daten-fakten/der-deutsche-heimtiermarkt.html',
+    unit: 'Mio. €',
+    description: 'Die lange Fassung zu „Online überholt das Zubehör“: Online wächst von rund 60 Mio. Euro (2005, gerechnet) auf 1.521 Mio. (2025). Bis 2012 eine geglättete Rechnung, ab 2013 Verbandszahlen.',
+    dataInfo: [
+      "Show-Version von „Online überholt das Zubehör, das Futter noch nicht“. Ab 2013 (Online) bzw. 2011 (Laden) dieselben Werte von ZZF und IVH. Davor ist die Online-Linie keine Messung, sondern unsere Rechnung, geglättet, damit sie ohne Sprung an den ersten Verbandswert 2013 andockt.",
+      "Laden 2005–2010: IVH-Zahlen für 2006, 2008 und 2010 (Datenblatt 2008; petcom und Lebensmittel Praxis geben die Jahre 2006 und 2010 wieder). 2005, 2007 und 2009 sind aus den dort genannten Veränderungen gegenüber dem Vorjahr zurückgerechnet. Hundefutter 2009: Die Quelle nennt 2010 „auf Vorjahresniveau“, der Wert ist gehalten.",
+      "Online gerechnet: Anker 2010 ist die bvh/TNS-Studie (190 Mio. Euro), über das Überlappungsjahr 2011 auf deren Folgeausgabe verkettet (× 330/260 = 241 Mio.). 2005 über den Deutschland-Umsatz von zooplus fortgeschrieben (Gesamtleistung × Deutschland-Anteil laut Geschäftsberichten, Annahme: zooplus-Anteil am Online-Markt wie 2010): 62 Mio. Euro. Dazwischen geglättet: gleichmäßig +31 Prozent im Jahr bis 2010, dann linear bis 400 Mio. 2013.",
+      "Gegenprobe und Widerspruch: TNS nennt für 2011 und 2012 330 und 350 Mio. Euro, die Rechnung 294 und 347. Die GIM-Studie, Nachfolgerin von TNS, nennt für 2013 778 Mio. Euro statt der 400 der Verbände. Online-Schätzungen hängen stark davon ab, was mitgezählt wird. Die Linie vor 2013 zeigt den Trend, keine belegten Einzeljahre.",
+      "Für 2024 weist die Quelle eine veränderte Datenbasis aus; der Rückgang beim Hundefutter 2024 ist kein belegter Einbruch. Umsätze zu Endverbraucherpreisen, nicht preisbereinigt.",
+    ],
+    headers: ONLINE_HANDEL_2005.headers,
+    rows: ONLINE_HANDEL_2005.rows,
     suggested: { chartType: 'line', topN: 4, decimals: 0, suffix: ' Mio. €', primaryAxisLabel: 'Mio. Euro', colors: { 'Online-Handel': '#e36414', 'Katzenfutter im Laden': '#0f4c5c', 'Hundefutter im Laden': '#5b8e9e', 'Zubehör im Laden': '#8d99ae' } },
   },
   {
