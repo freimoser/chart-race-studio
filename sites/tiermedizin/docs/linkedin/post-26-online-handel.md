@@ -1,6 +1,6 @@
 # LinkedIn-Post 26: Online überholt das Zubehör, das Futter noch nicht
 
-**Video (Show-Version, empfohlen):** Studio → „Online holt auf, seit 2005 (bis 2012 gerechnet)“ (`?beispiel=online-handel-2005`), Line Race 2005–2025, Online bis 2012 gerechnet und geglättet. **Alternative nur mit Verbandszahlen:** `?beispiel=online-handel`, Line Race 2013–2025 mit vier Linien (Online, Katzenfutter, Hundefutter, Zubehör im Laden), Format 4:5, MP4. Früher als 2013 geht nicht: Laut Bericht 2013 gab es vorher keine Online-Daten; bvh/TNS 2010–2012 sind anders erhoben (Prüfung 28.10.2026). 2026 nur als Rechnung im Text, nicht im Video.
+**Video (Show-Version, empfohlen):** Studio → „Heimtierbedarf: Online holt auf“ (Hinweis „gerechnet“ steht in der Quellenzeile im Bild und im ersten Kommentar, nicht im Titel) (`?beispiel=online-handel-2005`), Line Race 2005–2025, Online bis 2012 gerechnet und geglättet. **Alternative nur mit Verbandszahlen:** `?beispiel=online-handel`, Line Race 2013–2025 mit vier Linien (Online, Katzenfutter, Hundefutter, Zubehör im Laden), Format 4:5, MP4. Früher als 2013 geht nicht: Laut Bericht 2013 gab es vorher keine Online-Daten; bvh/TNS 2010–2012 sind anders erhoben (Prüfung 28.10.2026). 2026 nur als Rechnung im Text, nicht im Video.
 **Stand:** 28.10.2026. Post 26 `vorabOnline` (Post 33 bleibt „aktuell“), Artikel `26-heimtierbedarf-online-handel.md` live. Nach dem
 Posten: `status: 'veroeffentlicht'`, `publishedOn`, `linkedInUrl`.
 **Zahlen:** ZZF/IVH „Der Deutsche Heimtiermarkt“ (Datensatz `online-handel`, aus `heimtiermarkt`).
@@ -34,3 +34,12 @@ https://tiermedizin-in-zahlen.org/beitrag/heimtierbedarf-online-handel
 Quellen: ZZF/IVH, Der Deutsche Heimtiermarkt 2005–2025; zooplus, Geschäftsberichte 2009 und 2010; NielsenIQ über Lebensmittel Zeitung; Universität Duisburg-Essen, Essener Auftakt 2014/1 (bvh/TNS, GIM).
 
 #Heimtiermarkt #Tiermedizin #Onlinehandel #Haustiere #Tierarztpraxis
+
+## Erster Kommentar
+
+Kurz zur Methode, weil das Video schon 2005 beginnt: Die Verbände schätzen den Online-Handel erst seit 2013. Die orange Linie davor ist unsere Rechnung, geglättet, damit sie ohne Sprung an den ersten Verbandswert (400 Mio. Euro) andockt.
+
+So ist gerechnet: 2010 aus der Studie von bvh und TNS (241 Mio. Euro), 2005 über den Deutschland-Umsatz von zooplus zurückgeschrieben (rund 60 Mio.), dazwischen gleichmäßiges Wachstum. Die Ladenwerte ab 2005 sind IVH-Zahlen.
+
+Wie groß der Online-Markt damals war, ist umstritten: Eine andere Studie (GIM) kam für 2013 auf 778 statt 400 Mio. Euro. Die Linie zeigt die Richtung, keine genauen Einzeljahre. Beide Fassungen und den Rechenweg gibt es im Artikel:
+https://tiermedizin-in-zahlen.org/beitrag/heimtierbedarf-online-handel
