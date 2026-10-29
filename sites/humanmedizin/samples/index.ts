@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, EINZELPRAXEN, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, EAU_MONAT, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
+import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, EINZELPRAXEN, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, EAU_MONAT, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -266,6 +266,25 @@ export const SAMPLES: SampleDataset[] = [
     // Bar Race statt Linien: medatixx überholt erst in den letzten Bildern; Balken tauschen dabei gleitend die Plätze,
     // Linien-Beschriftungen sprängen (Glätteprüfung). Herstellerfarben und Legende wie pvs-installationen.
     suggested: { chartType: 'bar', topN: 10, decimals: 0, colors: farbenFuer(PVS_ALLGEMEIN.headers), legende: LEGENDE, labelsPosition: 'outside' },
+  },
+  {
+    id: 'pvs-internisten',
+    erstellt: '2026-10-29', geprueft: '2026-10-29',
+    category: 'software',
+    title: 'Praxissoftware der Internisten',
+    subtitle: 'Installationen in der KBV-Arztgruppe Internisten, Jahresende 2020 bis 2025',
+    source: 'Quelle: KBV, Installationsstatistik je Arztgruppe (Internisten), Q4/2020–Q4/2025; 2022 und 2023 gerechnet',
+    sourceUrl: 'https://update.kbv.de/ita-update/Service-Informationen/Installationsstatistiken/',
+    unit: 'Installationen',
+    description: 'Bei den Internisten führt weiter CGM MEDISTAR, doch medatixx und T2med haben sich seit 2020 verdreifacht bzw. mehr als vervierfacht.',
+    dataInfo: [
+      'Gezählt werden Installationen in der KBV-Arztgruppe Internisten, hausärztlich und fachärztlich tätige zusammen, also Abrechnungen mit der Prüfnummer eines Systems. Gezeigt sind die acht größten Systeme Ende 2025 ohne tomedo, das Ende 2020 nicht unter den 20 größten der Gruppe stand (Ende 2025: 637).',
+      'Gerechnet: Für Ende 2022 und Ende 2023 ist kein Bericht archiviert. Die Werte sind linear zwischen den nächsten belegten Quartalen gerechnet (31.03.2022 und 31.03.2023 bzw. 30.06.2023 und 31.12.2024); 16 von 48 Werten, mit Methode in data/raw/pvs-gerechnet.json.',
+      'Zweitquelle: Der aktuelle KBV-Bericht „TOP 20 Systeme je Fachgruppe“ nennt für Ende 2025 dieselben Werte wie der Einzelbericht der Arztgruppe; die Prüfung vergleicht beide.',
+    ],
+    headers: PVS_INTERNISTEN.headers,
+    rows: PVS_INTERNISTEN.rows,
+    suggested: { chartType: 'bar', topN: 8, decimals: 0, colors: farbenFuer(PVS_INTERNISTEN.headers), legende: LEGENDE, labelsPosition: 'outside' },
   },
   {
     id: 'pvs-saldo',

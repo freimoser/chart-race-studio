@@ -2598,5 +2598,103 @@
    "wert": 1757,
    "methode": "linear zwischen 2023-09-30 (1789) und 2024-12-31 (1630), KBV-Bericht Arztgruppe Allgemeinmediziner"
   }
+ ],
+ "pvs-internisten": [
+  {
+   "jahr": 2022,
+   "system": "CGM ALBIS",
+   "wert": 1062,
+   "methode": "linear zwischen 2022-03-31 (1095) und 2023-03-31 (1051), KBV-Bericht Arztgruppe Internisten"
+  },
+  {
+   "jahr": 2023,
+   "system": "CGM ALBIS",
+   "wert": 1017,
+   "methode": "linear zwischen 2023-06-30 (1041) und 2024-12-31 (970), KBV-Bericht Arztgruppe Internisten"
+  },
+  {
+   "jahr": 2022,
+   "system": "CGM MEDISTAR",
+   "wert": 1790,
+   "methode": "linear zwischen 2022-03-31 (1837) und 2023-03-31 (1774), KBV-Bericht Arztgruppe Internisten"
+  },
+  {
+   "jahr": 2023,
+   "system": "CGM MEDISTAR",
+   "wert": 1708,
+   "methode": "linear zwischen 2023-06-30 (1752) und 2024-12-31 (1621), KBV-Bericht Arztgruppe Internisten"
+  },
+  {
+   "jahr": 2022,
+   "system": "CGM TURBOMED",
+   "wert": 1748,
+   "methode": "linear zwischen 2022-03-31 (1851) und 2023-03-31 (1714), KBV-Bericht Arztgruppe Internisten"
+  },
+  {
+   "jahr": 2023,
+   "system": "CGM TURBOMED",
+   "wert": 1588,
+   "methode": "linear zwischen 2023-06-30 (1670) und 2024-12-31 (1426), KBV-Bericht Arztgruppe Internisten"
+  },
+  {
+   "jahr": 2022,
+   "system": "medatixx",
+   "wert": 657,
+   "methode": "linear zwischen 2022-03-31 (532) und 2023-03-31 (698), KBV-Bericht Arztgruppe Internisten"
+  },
+  {
+   "jahr": 2023,
+   "system": "medatixx",
+   "wert": 809,
+   "methode": "linear zwischen 2023-06-30 (736) und 2024-12-31 (955), KBV-Bericht Arztgruppe Internisten"
+  },
+  {
+   "jahr": 2022,
+   "system": "Medical Office",
+   "wert": 826,
+   "methode": "linear zwischen 2022-03-31 (790) und 2023-03-31 (838), KBV-Bericht Arztgruppe Internisten"
+  },
+  {
+   "jahr": 2023,
+   "system": "Medical Office",
+   "wert": 914,
+   "methode": "linear zwischen 2023-06-30 (871) und 2024-12-31 (999), KBV-Bericht Arztgruppe Internisten"
+  },
+  {
+   "jahr": 2022,
+   "system": "T2med",
+   "wert": 416,
+   "methode": "linear zwischen 2022-03-31 (315) und 2023-03-31 (449), KBV-Bericht Arztgruppe Internisten"
+  },
+  {
+   "jahr": 2023,
+   "system": "T2med",
+   "wert": 571,
+   "methode": "linear zwischen 2023-06-30 (489) und 2024-12-31 (733), KBV-Bericht Arztgruppe Internisten"
+  },
+  {
+   "jahr": 2022,
+   "system": "x.concept",
+   "wert": 1035,
+   "methode": "linear zwischen 2022-03-31 (1070) und 2023-03-31 (1024), KBV-Bericht Arztgruppe Internisten"
+  },
+  {
+   "jahr": 2023,
+   "system": "x.concept",
+   "wert": 981,
+   "methode": "linear zwischen 2023-06-30 (1023) und 2024-12-31 (898), KBV-Bericht Arztgruppe Internisten"
+  },
+  {
+   "jahr": 2022,
+   "system": "x.isynet",
+   "wert": 1563,
+   "methode": "linear zwischen 2022-03-31 (1597) und 2023-03-31 (1552), KBV-Bericht Arztgruppe Internisten"
+  },
+  {
+   "jahr": 2023,
+   "system": "x.isynet",
+   "wert": 1504,
+   "methode": "linear zwischen 2023-06-30 (1536) und 2024-12-31 (1440), KBV-Bericht Arztgruppe Internisten"
+  }
  ]
 }

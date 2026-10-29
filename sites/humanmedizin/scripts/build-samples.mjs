@@ -330,26 +330,37 @@ for (let i = 1; i < hbQ.length; i++) {
 // KBV-Berichte je Arztgruppe, Fachgruppe Allgemeinmediziner (Top 20), Quartale aus archivierten Berichten
 // (recherche/pvs-arztgruppen.md). Jahresenden 2020, 2021, 2024, 2025 belegt; Q4/2022 und Q4/2023 fehlen und werden linear
 // zwischen den nächsten belegten Quartalen gerechnet (Q1/2022–Q1/2023 bzw. Q3/2023–Q4/2024), markiert in pvs-gerechnet.json.
-const AM = csv('pvs-kbv-allgemeinmediziner.csv')
-// Die neun größten Systeme Ende 2025 außer kleinen Regionalsystemen; Namen wie in pvs-installationen (Herstellerfarben).
-const AM_SYSTEME = [['462', 'medatixx'], ['280', 'CGM MEDISTAR'], ['112', 'CGM TURBOMED'], ['498', 'T2med'], ['210', 'Medical Office'], ['216', 'x.isynet'], ['243', 'x.concept'], ['203', 'CGM ALBIS'], ['244', 'QUINCY WIN'], ['457', 'tomedo']]
-const amGerechnet = []
+// Zeitreihe einer Arztgruppe aus archivierten KBV-Berichten je Arztgruppe (Rohdatei mit stichtag, kbv_id, installationen).
+// Jahresenden belegt, wo ein Bericht sie nennt; sonst linear zwischen den nächsten belegten Quartalen, mit Methode.
 const tag = (st) => Date.parse(st) / 864e5
-const amWert = (id, st) => { const r = AM.find((x) => x.kbv_id === id && x.stichtag === st); return r ? Number(r.installationen) : null }
-const amJahr = (id, name, j) => {
-  const st = `${j}-12-31`, belegt = amWert(id, st)
-  if (belegt != null) return belegt
-  const stuetzen = AM.filter((x) => x.kbv_id === id).map((x) => x.stichtag).sort()
-  const vor = stuetzen.filter((s) => s < st).at(-1), nach = stuetzen.find((s) => s > st)
-  if (!vor || !nach) throw new Error(`pvs-allgemeinmediziner: ${name} ${j} ohne Stützstellen`)
-  const v = Math.round(amWert(id, vor) + (amWert(id, nach) - amWert(id, vor)) * (tag(st) - tag(vor)) / (tag(nach) - tag(vor)))
-  amGerechnet.push({ jahr: j, system: name, wert: v, methode: `linear zwischen ${vor} (${amWert(id, vor)}) und ${nach} (${amWert(id, nach)}), KBV-Bericht Arztgruppe Allgemeinmediziner` })
-  return v
+function arztgruppenReihe(datei, gruppe, id, systeme, von, bis) {
+  const R = csv(datei), gerechnet = []
+  const wert = (k, st) => { const r = R.find((x) => x.kbv_id === k && x.stichtag === st); return r ? Number(r.installationen) : null }
+  const jahr = (k, name, j) => {
+    const st = `${j}-12-31`, belegt = wert(k, st)
+    if (belegt != null) return belegt
+    const stuetzen = R.filter((x) => x.kbv_id === k).map((x) => x.stichtag).sort()
+    const vor = stuetzen.filter((x) => x < st).at(-1), nach = stuetzen.find((x) => x > st)
+    if (!vor || !nach) throw new Error(`${id}: ${name} ${j} ohne Stützstellen`)
+    const v = Math.round(wert(k, vor) + (wert(k, nach) - wert(k, vor)) * (tag(st) - tag(vor)) / (tag(nach) - tag(vor)))
+    gerechnet.push({ jahr: j, system: name, wert: v, methode: `linear zwischen ${vor} (${wert(k, vor)}) und ${nach} (${wert(k, nach)}), KBV-Bericht Arztgruppe ${gruppe}` })
+    return v
+  }
+  const tabelle = {
+    headers: ['Jahr', ...systeme.map(([, n]) => n)],
+    rows: Array.from({ length: bis - von + 1 }, (_, i) => von + i).map((j) => [String(j), ...systeme.map(([k, n]) => jahr(k, n, j))]),
+  }
+  return { tabelle, gerechnet }
 }
-const PVS_ALLGEMEIN = {
-  headers: ['Jahr', ...AM_SYSTEME.map(([, n]) => n)],
-  rows: Array.from({ length: 6 }, (_, i) => 2020 + i).map((j) => [String(j), ...AM_SYSTEME.map(([id, n]) => amJahr(id, n, j))]),
-}
+// Die zehn größten Systeme Ende 2025 außer kleinen Regionalsystemen; Namen wie in pvs-installationen (Herstellerfarben).
+const AM_REIHE = arztgruppenReihe('pvs-kbv-allgemeinmediziner.csv', 'Allgemeinmediziner', 'pvs-allgemeinmediziner',
+  [['462', 'medatixx'], ['280', 'CGM MEDISTAR'], ['112', 'CGM TURBOMED'], ['498', 'T2med'], ['210', 'Medical Office'], ['216', 'x.isynet'], ['243', 'x.concept'], ['203', 'CGM ALBIS'], ['244', 'QUINCY WIN'], ['457', 'tomedo']], 2020, 2025)
+const PVS_ALLGEMEIN = AM_REIHE.tabelle, amGerechnet = AM_REIHE.gerechnet
+// Internisten (hausärztlich und fachärztlich tätig): die acht größten Systeme Ende 2025 ohne tomedo, das Ende 2020 nicht
+// unter den Top 20 der Gruppe stand (sonst ein leeres Jahr).
+const INT_REIHE = arztgruppenReihe('pvs-kbv-internisten.csv', 'Internisten', 'pvs-internisten',
+  [['280', 'CGM MEDISTAR'], ['216', 'x.isynet'], ['112', 'CGM TURBOMED'], ['462', 'medatixx'], ['210', 'Medical Office'], ['498', 'T2med'], ['203', 'CGM ALBIS'], ['243', 'x.concept']], 2020, 2025)
+const PVS_INTERNISTEN = INT_REIHE.tabelle
 
 // ---------- Download zur Säulenseite (Praxisverwaltungssysteme in Deutschland) ----------
 // Liegt in public/tabellen/, nicht in public/daten/: Das leert build-artikel.mjs bei jedem Build.
@@ -375,7 +386,7 @@ const PVS_ALLGEMEIN = {
 // ---------- Ausgabe ----------
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 fs.writeFileSync('sites/humanmedizin/samples/data.ts', `// Automatisch erzeugt von sites/humanmedizin/scripts/build-samples.mjs aus sites/humanmedizin/data/raw/ – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABOR_AERZTE', LABOR_AERZTE), emit('LABORDATEN_PB', LABORDATEN_PB), emit('PVS_ALLGEMEIN', PVS_ALLGEMEIN), emit('EREZEPT_MONAT', EREZEPT_MONAT), emit('KIM_NUTZUNG', KIM_NUTZUNG), emit('MVZ_STATUS', MVZ_STATUS), emit('LABOR_HONORAR', LABOR_HONORAR), emit('EINZELPRAXEN', EINZELPRAXEN), emit('ARZTBRIEF_PB', ARZTBRIEF_PB), emit('EAU_MONAT', EAU_MONAT)].join('\n'))
+  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABOR_AERZTE', LABOR_AERZTE), emit('LABORDATEN_PB', LABORDATEN_PB), emit('PVS_ALLGEMEIN', PVS_ALLGEMEIN), emit('EREZEPT_MONAT', EREZEPT_MONAT), emit('KIM_NUTZUNG', KIM_NUTZUNG), emit('MVZ_STATUS', MVZ_STATUS), emit('LABOR_HONORAR', LABOR_HONORAR), emit('EINZELPRAXEN', EINZELPRAXEN), emit('ARZTBRIEF_PB', ARZTBRIEF_PB), emit('EAU_MONAT', EAU_MONAT), emit('PVS_INTERNISTEN', PVS_INTERNISTEN)].join('\n'))
 const sortiert = (l) => [...l].sort((a, b) => a.system.localeCompare(b.system) || a.jahr - b.jahr)
 fs.writeFileSync(path.join(RAW, 'pvs-gerechnet.json'), JSON.stringify({
   hinweis: 'Von sites/humanmedizin/scripts/build-samples.mjs erzeugt. Jeder Wert der Datensätze, der nicht direkt aus einem KBV-Bericht (Jahresende) stammt, mit Methode. pvs-hersteller ist die Summe von pvs-installationen und hat dieselben gerechneten Werte. Alles andere ist belegt (pvs-kbv-installationen.csv, pvs-kbv-luecken-1998-2012.csv).',
@@ -386,5 +397,6 @@ fs.writeFileSync(path.join(RAW, 'pvs-gerechnet.json'), JSON.stringify({
   'pvs-aufsteiger': sortiert(D5.gerechnet),
   'pvs-kis': sortiert(D6.gerechnet),
   'pvs-allgemeinmediziner': sortiert(amGerechnet),
+  'pvs-internisten': sortiert(INT_REIHE.gerechnet),
 }, null, 1) + '\n')
 console.log('PVS_ARZT', PVS_ARZT.headers.length - 1, 'Systeme,', D1.gerechnet.length, 'gerechnet; PVS_ARZT_2007', PVS_ARZT_2007.headers.length - 1, 'Systeme,', PVS_ARZT_2007.rows.length, 'Jahre,', D3.gerechnet.length, 'von', (PVS_ARZT_2007.headers.length - 1) * PVS_ARZT_2007.rows.length, 'gerechnet bzw. angenommen')
