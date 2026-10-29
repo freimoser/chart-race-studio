@@ -403,6 +403,7 @@ merke(roh(INST, '1997-12-31', 'ALBIS') + roh(INST, '1997-12-31', 'ALBIS ON WINDO
 bekannt.add('9.508')
 merke(['x.isynet (ehem. MCS-ISYNET)', 'x.concept (ehem. DOCconcept)', 'x.comfort (ehem. DOCcomfort)'].reduce((a, n) => a + roh(INST, '2021-12-31', n) - roh(INST, '2025-12-31', n), 0)) // Verlust der alten medatixx-Systeme 2021–2025
 bekannt.add('10.000')
+for (const r of leseCsv(path.join(RAW, 'aerzteschaft-geschlecht.csv'))) merke(Number(r.wert))
 // Berichte je Arztgruppe: Rohwerte und Summen der Top 20 je Gruppe (Mindestwert der Gruppe).
 if (fs.existsSync(path.join(RAW, 'pvs-kbv-arztgruppen.csv'))) {
   const AG = leseCsv(path.join(RAW, 'pvs-kbv-arztgruppen.csv'))

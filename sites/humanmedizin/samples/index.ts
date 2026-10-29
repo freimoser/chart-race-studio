@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, EAU_MONAT, EPA_NUTZUNG, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
+import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, FRAUENANTEIL, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, EAU_MONAT, EPA_NUTZUNG, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -362,6 +362,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: MVZ_ANZAHL.headers,
     rows: MVZ_ANZAHL.rows,
     suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'MVZ', colors: { 'MVZ gesamt': BLAU, 'davon Krankenhaus als Träger': ORANGE } },
+  },
+  {
+    id: 'frauenanteil',
+    erstellt: '2026-10-29', geprueft: '2026-10-29',
+    category: 'versorgung',
+    title: 'Die Praxis wird weiblich, nicht überall',
+    subtitle: 'Frauenanteil unter Vertragsärzten und -psychotherapeuten nach Fachgruppe, in Prozent, 2016 bis 2025',
+    source: 'Quelle: KBV, Gesundheitsdaten „Alter und Geschlecht“ (Bundesarztregister)',
+    sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/gesundheitsdaten/alter-und-geschlecht',
+    unit: 'Prozent weiblich',
+    description: 'Seit 2023 sind die meisten Hausärzte Frauen; in Chirurgie und Orthopädie liegt der Frauenanteil 2025 bei 17,5 Prozent.',
+    dataInfo: [
+      'Gezählt wird der Anteil der Frauen an allen Ärztinnen, Ärzten und Psychotherapeuten einer Fachgruppe, die an der vertragsärztlichen Versorgung teilnehmen, laut Bundesarztregister der KBV. „Psychotherapeuten“ meint psychologische Psychotherapeuten, „Chirurgie, Orthopädie“ die KBV-Gruppe Chirurgen und Orthopäden. Alle Werte sind belegt und auf 0,1 Prozent gerundet.',
+      'Über alle Gruppen stieg der Frauenanteil von 45 Prozent (2016, von der KBV ganzzahlig gemeldet) auf 53,2 Prozent (2025). Zweitquelle: Laut Ärztestatistik der Bundesärztekammer waren Ende 2025 225.397 von 446.120 berufstätigen Ärztinnen und Ärzten Frauen, 50,5 Prozent – einschließlich Kliniken, ohne Psychotherapeuten, deshalb etwas niedriger.',
+      'Nicht im Bild, um bei vier Linien zu bleiben: Kinderärzte (62,5 Prozent Frauen 2025) und Urologen (19,3 Prozent).',
+    ],
+    headers: FRAUENANTEIL.headers,
+    rows: FRAUENANTEIL.rows,
+    suggested: { chartType: 'line', topN: 4, decimals: 1, primaryAxisLabel: 'Prozent weiblich', colors: { Psychotherapeuten: '#e87ba4', 'Frauenärzte': '#6250d6', 'Hausärzte': BLAU, 'Chirurgie, Orthopädie': '#eda100' } },
   },
   {
     id: 'einzelpraxen',

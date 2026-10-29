@@ -5,7 +5,7 @@ titel: Psychotherapie-Software: Elefant vor MEDISTAR
 beschreibung: Seit Ende 2023 ist Elefant das meistinstallierte Praxissystem der KBV-Statistik, eine Software für Psychotherapie. 2024 überholt auch psyprax MEDISTAR.
 frage: Welche Praxissoftware nutzen Psychotherapeuten?
 suchbegriffe: praxissoftware psychotherapie, praxissoftware psychotherapie vergleich, praxissoftware psychotherapie mac, elefant psyprax vergleich, psychotherapie software marktanteil, epikur smarty
-stand: 2026-10-22
+stand: 2026-10-29
 kennzahl: software/3 | 10.967 | Installationen von Elefant, meistinstalliertes System | 2025
 bereit: ja
 ---
@@ -20,7 +20,7 @@ Das meistinstallierte Praxisverwaltungssystem in der Statistik der Kassenärztli
 
 ## Warum eine Psychotherapie-Software vorn liegt
 
-Die KBV zählt Installationen, also Abrechnungen mit der Prüfnummer eines Systems. Psychologische Psychotherapeutinnen und -therapeuten arbeiten überwiegend in Einzelpraxen, Ende 2025 31.753 von 35.999 (88 Prozent), und jede Einzelpraxis zählt als eine Installation. Bei den Ärztinnen und Ärzten geht der Trend in die Gegenrichtung: in MVZ, wo viele Ärzte an einer Installation arbeiten. Mehr psychotherapeutische Praxen bedeuten deshalb mehr Installationen; über die Größe der Praxen sagt die Zahl nichts. Weitere Fallen der KBV-Statistik stehen in [Wer zählt die Praxissoftware?](pvs-statistik-kbv-methode.html)
+Die KBV zählt Installationen, also Abrechnungen mit der Prüfnummer eines Systems. Psychologische Psychotherapeutinnen und -therapeuten arbeiten überwiegend in Einzelpraxen, Ende 2025 31.753 von 35.999 (88 Prozent), und jede Einzelpraxis zählt als eine Installation. Bei den Ärztinnen und Ärzten geht der Trend in die Gegenrichtung: in MVZ, wo viele Ärzte an einer Installation arbeiten. Mehr psychotherapeutische Praxen bedeuten deshalb mehr Installationen; über die Größe der Praxen sagt die Zahl nichts. Seit 2022 gibt es mehr psychotherapeutische als hausärztliche Einzelpraxen, seit 2023 auch mehr als fachärztliche (Bundesarztregister). Weitere Fallen der KBV-Statistik stehen in [Wer zählt die Praxissoftware?](pvs-statistik-kbv-methode.html)
 
 Der Markt der Psychotherapie ist eigenständig. Die drei größten Systeme dort gehören weder zu CompuGroup Medical noch zu medatixx: Elefant kommt von HASOMED aus Magdeburg, psyprax von der psyprax GmbH aus München, Epikur von Epikur Software aus Berlin. Dazu kommen SMARTY (4.982 Installationen) und PsychoDat (1.705).
 

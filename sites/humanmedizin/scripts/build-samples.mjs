@@ -376,6 +376,16 @@ const INT_REIHE = arztgruppenReihe('pvs-kbv-internisten.csv', 'Internisten', 'pv
   [['280', 'CGM MEDISTAR'], ['216', 'x.isynet'], ['112', 'CGM TURBOMED'], ['462', 'medatixx'], ['210', 'Medical Office'], ['498', 'T2med'], ['203', 'CGM ALBIS'], ['243', 'x.concept']], 2020, 2025)
 const PVS_INTERNISTEN = INT_REIHE.tabelle
 
+// ---------- Frauenanteil nach Fachgruppe (KBV-Gesundheitsdaten, Bundesarztregister), 2016–2025 ----------
+// Alle Werte belegt, auf 0,1 Prozent gerundet (die KBV liefert für 2025 drei Nachkommastellen).
+const GE = csv('aerzteschaft-geschlecht.csv')
+const fa = (j, n) => { const x = GE.find((z) => z.stichtag === `${j}-12-31` && z.reihe === `frauenanteil_${n}`); return x ? Math.round(Number(x.wert) * 10) / 10 : null }
+const FRAUENANTEIL = {
+  headers: ['Jahr', 'Psychotherapeuten', 'Frauenärzte', 'Hausärzte', 'Chirurgie, Orthopädie'],
+  rows: Array.from({ length: 10 }, (_, i) => 2016 + i).map((j) => [String(j), fa(j, 'psychologische_psychotherapeuten'), fa(j, 'frauenaerzte'), fa(j, 'hausaerzte'), fa(j, 'chirurgen_orthopaeden')]),
+}
+for (const r of FRAUENANTEIL.rows) if (r.slice(1).some((v) => v == null)) throw new Error(`frauenanteil: Wert fehlt ${r}`)
+
 // ---------- Download zur Säulenseite (Praxisverwaltungssysteme in Deutschland) ----------
 // Liegt in public/tabellen/, nicht in public/daten/: Das leert build-artikel.mjs bei jedem Build.
 // Alle erfassten Systeme mit Installationen Q4/2025 und Q3/2025 und den KBV-Zulassungen (Stand des Verzeichnisses).
@@ -400,7 +410,7 @@ const PVS_INTERNISTEN = INT_REIHE.tabelle
 // ---------- Ausgabe ----------
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 fs.writeFileSync('sites/humanmedizin/samples/data.ts', `// Automatisch erzeugt von sites/humanmedizin/scripts/build-samples.mjs aus sites/humanmedizin/data/raw/ – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABOR_AERZTE', LABOR_AERZTE), emit('LABORDATEN_PB', LABORDATEN_PB), emit('PVS_ALLGEMEIN', PVS_ALLGEMEIN), emit('EREZEPT_MONAT', EREZEPT_MONAT), emit('KIM_NUTZUNG', KIM_NUTZUNG), emit('MVZ_STATUS', MVZ_STATUS), emit('LABOR_HONORAR', LABOR_HONORAR), emit('EINZELPRAXEN', EINZELPRAXEN), emit('ARZTBRIEF_PB', ARZTBRIEF_PB), emit('EAU_MONAT', EAU_MONAT), emit('PVS_INTERNISTEN', PVS_INTERNISTEN), emit('MVZ_TYPEN', MVZ_TYPEN), emit('EPA_NUTZUNG', EPA_NUTZUNG)].join('\n'))
+  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABOR_AERZTE', LABOR_AERZTE), emit('LABORDATEN_PB', LABORDATEN_PB), emit('PVS_ALLGEMEIN', PVS_ALLGEMEIN), emit('EREZEPT_MONAT', EREZEPT_MONAT), emit('KIM_NUTZUNG', KIM_NUTZUNG), emit('MVZ_STATUS', MVZ_STATUS), emit('LABOR_HONORAR', LABOR_HONORAR), emit('EINZELPRAXEN', EINZELPRAXEN), emit('ARZTBRIEF_PB', ARZTBRIEF_PB), emit('EAU_MONAT', EAU_MONAT), emit('PVS_INTERNISTEN', PVS_INTERNISTEN), emit('MVZ_TYPEN', MVZ_TYPEN), emit('EPA_NUTZUNG', EPA_NUTZUNG), emit('FRAUENANTEIL', FRAUENANTEIL)].join('\n'))
 const sortiert = (l) => [...l].sort((a, b) => a.system.localeCompare(b.system) || a.jahr - b.jahr)
 fs.writeFileSync(path.join(RAW, 'pvs-gerechnet.json'), JSON.stringify({
   hinweis: 'Von sites/humanmedizin/scripts/build-samples.mjs erzeugt. Jeder Wert der Datensätze, der nicht direkt aus einem KBV-Bericht (Jahresende) stammt, mit Methode. pvs-hersteller ist die Summe von pvs-installationen und hat dieselben gerechneten Werte. Alles andere ist belegt (pvs-kbv-installationen.csv, pvs-kbv-luecken-1998-2012.csv).',
