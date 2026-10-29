@@ -175,6 +175,11 @@ K['Neue 2013'] = de(hs(2013, 3)); K['Neue 2025'] = de(hs(2025, 3))
   K['Veränderung erfasst'] = de(Math.abs(d.reduce((a, [, x]) => a + x, 0)))
   K['CGM 2021–2025'] = de(-['CGM MEDISTAR (BLACK PRO)', 'TURBOMED', 'ALBIS', 'CGM M1 PRO (ehem. CompuMED M1)', 'DATA VITAL'].reduce((a, n) => a + q(2025, n) - q(2021, n), 0))
   K['Neue 2021–2025'] = de(['tomedo', 'T2med', 'Medical Office'].reduce((a, n) => a + q(2025, n) - q(2021, n), 0))
+  // Letztes Quartal 2025 (Post 5): Veränderung Q3 → Q4 je System.
+  const qq = (n) => Number(INST.find((r) => r.stichtag === '2025-12-31' && r.system === n)?.installationen) - Number(INST.find((r) => r.stichtag === '2025-09-30' && r.system === n)?.installationen)
+  K['Q4/25 Gewinner'] = `Das neue medatixx gewann ${qq('medatixx')} Installationen, tomedo ${qq('tomedo')}, T2med ${qq('T2med')} und Medical Office ${qq('Medical Office')}`
+  K['Q4/25 Verlierer'] = `CGM MEDISTAR verlor ${-qq('CGM MEDISTAR (BLACK PRO)')}, CGM TURBOMED ${-qq('TURBOMED')}, x.concept ${-qq('x.concept (ehem. DOCconcept)')}, x.isynet ${-qq('x.isynet (ehem. MCS-ISYNET)')} und CGM ALBIS ${-qq('ALBIS')}`
+  K['Q4/25 Summe'] = `um ${qq('__SUMME__')}.`
 }
 // MVZ und Praxisform (Post 8): Anteile und Summen aus dem Datensatz aerzte-praxisform und Tabelle 5 des Bundesarztregisters.
 {
@@ -253,7 +258,7 @@ const ERWARTET = {
   [`${H}/samples/index.ts`]: ['Gerechnet lang', 'Sichtbar gerechnet lang', 'E-Rezepte 2025'],
   [`${H}/docs/DATASETS.md`]: ['Gerechnet lang'],
   [`${H}/content/artikel/06-labordaten-ldt-praxissoftware.md`]: ['LDT-Befund-Anteil', 'GOP 40092 Anteil'],
-  [`${H}/content/artikel/05-praxissoftware-wechsel-gewinner-verlierer.md`]: ['Gewinner Zahl', 'Verlierer Zahl', 'Gewinner Summe', 'Verlierer Summe', 'Systeme mit 500', 'Summe Veränderung', 'Veränderung erfasst', 'CGM 2021–2025', 'Neue 2021–2025'],
+  [`${H}/content/artikel/05-praxissoftware-wechsel-gewinner-verlierer.md`]: ['Gewinner Zahl', 'Verlierer Zahl', 'Gewinner Summe', 'Verlierer Summe', 'Systeme mit 500', 'Summe Veränderung', 'Veränderung erfasst', 'CGM 2021–2025', 'Neue 2021–2025', 'Q4/25 Gewinner', 'Q4/25 Verlierer', 'Q4/25 Summe'],
   [`${H}/content/artikel/04-praxissoftware-aufsteiger-tomedo-t2med.md`]: ['tomedo 2025', 'T2med 2025', 'Medical Office 2013', 'Medical Office 2025', '2025 Veränderung tomedo', '2025 Veränderung T2med', '2025 Veränderung MEDISTAR', '2025 Veränderung TURBOMED', '2025 Veränderung Medical Office', '2025 Differenz tomedo', '2025 Differenz T2med', 'tomedo+T2med 2025', 'Mac-Linux-Browser 2025'],
   [`${H}/content/artikel/03-psychotherapie-software-elefant-psyprax.md`]: ['Elefant 2025', 'psyprax 2025', 'MEDISTAR 2025', 'Elefant 2023', 'MEDISTAR 2023', 'psyprax 2024', 'MEDISTAR 2024', 'Wachstum Elefant', 'Wachstum Epikur', 'Wachstum psyprax', 'Rückgang MEDISTAR', 'Gerechnet Psycho'],
   [`${H}/content/artikel/02-praxissoftware-hersteller-cgm-medatixx.md`]: ['CGM 2013', 'CGM 2025', 'medatixx 2013 (Hersteller)', 'medatixx 2025 (Hersteller)', 'Anteil CGM 2013', 'Anteil CGM 2025', 'Anteil medatixx 2025', 'Anteil Neue 2013', 'Anteil Neue 2025', 'Neue 2013', 'Neue 2025', 'medatixx ohne EL 2025', 'Summe Arztsysteme 2025', 'Rückgang Arztsysteme'],

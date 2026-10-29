@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { AERZTE_PRAXISFORM, LABOR_AERZTE, MVZ_ANZAHL, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, LABORDATEN_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
+import { AERZTE_PRAXISFORM, LABOR_AERZTE, MVZ_ANZAHL, MVZ_STATUS, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, LABORDATEN_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -286,6 +286,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: MVZ_ANZAHL.headers,
     rows: MVZ_ANZAHL.rows,
     suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'MVZ', colors: { 'MVZ gesamt': BLAU, 'davon Krankenhaus als Träger': ORANGE } },
+  },
+  {
+    id: 'mvz-angestellte',
+    erstellt: '2026-10-29', geprueft: '2026-10-29',
+    category: 'versorgung',
+    title: 'Im MVZ arbeiten fast nur Angestellte',
+    subtitle: 'Ärztinnen, Ärzte und Psychotherapeuten in Medizinischen Versorgungszentren nach Status, Jahresende 2004 bis 2025',
+    source: 'Quelle: KBV, Entwicklungen der Medizinischen Versorgungszentren (MVZ-Statistik 2004–2025)',
+    sourceUrl: 'https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf',
+    unit: 'Personen',
+    description: 'In MVZ arbeiten Ende 2025 32.062 Angestellte und 1.788 Vertragsärzte; 2004 waren es 107 und 144.',
+    dataInfo: [
+      'Gezählt werden Ärztinnen, Ärzte und Psychotherapeuten, die in einem MVZ tätig sind, laut MVZ-Statistik der KBV, getrennt nach Anstellung und eigener Zulassung (Vertragsärzte). Es sind Köpfe, keine Vollzeitstellen.',
+      'Alle Werte sind belegt, keiner ist gerechnet. Die Zahl der Vertragsärzte in MVZ liegt seit 2009 bei 1.300 bis 1.800, die der Angestellten hat sich seit 2015 mehr als verdoppelt.',
+      'Zweitquelle: Das Bundesarztregister zählt für Ende 2025 31.168 angestellte Ärztinnen und Ärzte in MVZ und anderen Einrichtungen und 1.717 mit Zulassung, ohne Psychotherapeuten – dieselbe Größenordnung. Beide Statistiken stehen deshalb nicht in einer Grafik.',
+    ],
+    headers: MVZ_STATUS.headers,
+    rows: MVZ_STATUS.rows,
+    suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'Personen', colors: { Angestellt: ORANGE, 'Mit eigener Zulassung': BLAU } },
   },
   {
     id: 'labor-aerzte',

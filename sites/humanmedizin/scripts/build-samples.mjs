@@ -260,6 +260,12 @@ const MVZ_ANZAHL = {
   rows: Array.from({ length: 22 }, (_, i) => 2004 + i).map((j) => [String(j), mv(j, 'mvz_anzahl'), mv(j, 'mvz_krankenhaus_mvz')]),
 }
 for (const r of MVZ_ANZAHL.rows) if (r.slice(1).some((v) => v == null)) throw new Error(`mvz-anzahl: Wert fehlt ${r}`)
+// Ärztinnen, Ärzte und Psychotherapeuten in MVZ nach Status, 2004–2025 (MVZ-Statistik, alle Jahre belegt).
+const MVZ_STATUS = {
+  headers: ['Jahr', 'Angestellt', 'Mit eigener Zulassung'],
+  rows: Array.from({ length: 22 }, (_, i) => 2004 + i).map((j) => [String(j), mv(j, 'mvz_aerzte_angestellt'), mv(j, 'mvz_aerzte_vertragsaerzte')]),
+}
+for (const r of MVZ_STATUS.rows) if (r.slice(1).some((v) => v == null)) throw new Error(`mvz-status: Wert fehlt ${r}`)
 
 // ---------- Labormedizin (Post 11) ----------
 // Bundesarztregister, Fachgruppe Laboratoriumsmedizin einschließlich Mikrobiologie, 2013–2025 (recherche/labor.md).
@@ -321,7 +327,7 @@ const PVS_ALLGEMEIN = {
 // ---------- Ausgabe ----------
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 fs.writeFileSync('sites/humanmedizin/samples/data.ts', `// Automatisch erzeugt von sites/humanmedizin/scripts/build-samples.mjs aus sites/humanmedizin/data/raw/ – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABOR_AERZTE', LABOR_AERZTE), emit('LABORDATEN_PB', LABORDATEN_PB), emit('PVS_ALLGEMEIN', PVS_ALLGEMEIN), emit('EREZEPT_MONAT', EREZEPT_MONAT), emit('KIM_NUTZUNG', KIM_NUTZUNG)].join('\n'))
+  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABOR_AERZTE', LABOR_AERZTE), emit('LABORDATEN_PB', LABORDATEN_PB), emit('PVS_ALLGEMEIN', PVS_ALLGEMEIN), emit('EREZEPT_MONAT', EREZEPT_MONAT), emit('KIM_NUTZUNG', KIM_NUTZUNG), emit('MVZ_STATUS', MVZ_STATUS)].join('\n'))
 const sortiert = (l) => [...l].sort((a, b) => a.system.localeCompare(b.system) || a.jahr - b.jahr)
 fs.writeFileSync(path.join(RAW, 'pvs-gerechnet.json'), JSON.stringify({
   hinweis: 'Von sites/humanmedizin/scripts/build-samples.mjs erzeugt. Jeder Wert der Datensätze, der nicht direkt aus einem KBV-Bericht (Jahresende) stammt, mit Methode. pvs-hersteller ist die Summe von pvs-installationen und hat dieselben gerechneten Werte. Alles andere ist belegt (pvs-kbv-installationen.csv, pvs-kbv-luecken-1998-2012.csv).',
