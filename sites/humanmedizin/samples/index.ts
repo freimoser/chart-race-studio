@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, FRAUENANTEIL, ANERKENNUNGEN, MEDIZINSTUDIUM, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, EAU_MONAT, EPA_NUTZUNG, DIGITALE_ANGEBOTE, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
+import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, FRAUENANTEIL, ANERKENNUNGEN, MEDIZINSTUDIUM, PRAXISNETZE, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, EAU_MONAT, EPA_NUTZUNG, DIGITALE_ANGEBOTE, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -476,6 +476,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: MVZ_TYPEN.headers,
     rows: MVZ_TYPEN.rows,
     suggested: { chartType: 'line', topN: 3, decimals: 0, primaryAxisLabel: 'MVZ', colors: { 'Nur Angestellte': ORANGE, Gemischt: GRUEN, 'Nur Vertragsärzte': BLAU } },
+  },
+  {
+    id: 'praxisnetze',
+    erstellt: '2026-10-29', geprueft: '2026-10-29',
+    category: 'versorgung',
+    title: 'Praxisnetze steigen auf',
+    subtitle: 'Von den Kassenärztlichen Vereinigungen anerkannte Praxisnetze nach Anerkennungsstufe, 2015 bis 2024',
+    source: 'Quelle: KBV, Monitoring nach der Rahmenvorgabe für die Anerkennung von Praxisnetzen (§ 87b SGB V)',
+    sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/gesundheitsdaten/statistik-praxisnetze',
+    unit: 'Praxisnetze',
+    description: 'Die Zahl anerkannter Praxisnetze stieg von 31 (2015) auf 89 (2024); in Stufe 1 sind es inzwischen 36 statt einem.',
+    dataInfo: [
+      'Gezählt werden Praxisnetze, die eine Kassenärztliche Vereinigung nach § 87b SGB V anerkannt hat, getrennt nach den drei Stufen der KBV-Rahmenvorgabe (Basisstufe, Stufe 1, Stufe 2; höhere Stufen verlangen mehr Struktur- und Qualitätsanforderungen). Alle Werte sind belegt; die Stufen ergeben in jedem Jahr die Gesamtzahl.',
+      'Zweitquelle zur Einordnung: Die Agentur deutscher Arztnetze vertrat 2018 nach eigener Angabe rund 400 Arztnetze und Gesundheitsverbünde – anerkannt waren damals 72. Die meisten Netze arbeiten also ohne Anerkennung.',
+      'Für Praxissoftware heißt ein Netz: mehrere Praxen, oft verschiedene Systeme, die Daten austauschen sollen.',
+    ],
+    headers: PRAXISNETZE.headers,
+    rows: PRAXISNETZE.rows,
+    suggested: { chartType: 'line', topN: 3, decimals: 0, primaryAxisLabel: 'Praxisnetze', colors: { Basisstufe: BLAU, 'Stufe 1': GRUEN, 'Stufe 2': ORANGE } },
   },
   {
     id: 'mvz-angestellte',
