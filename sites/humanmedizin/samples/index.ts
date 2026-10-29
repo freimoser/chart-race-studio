@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, EAU_MONAT, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
+import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, EAU_MONAT, EPA_NUTZUNG, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -149,6 +149,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: EAU_MONAT.headers,
     rows: EAU_MONAT.rows,
     suggested: { chartType: 'line', topN: 1, decimals: 0, primaryAxisLabel: 'eAU je Monat', dateFormat: 'MMM YYYY', colors: { eAU: BLAU } },
+  },
+  {
+    id: 'epa-nutzung',
+    erstellt: '2026-10-29', geprueft: '2026-10-29',
+    category: 'vernetzung',
+    title: 'Die ePA kommt in den Praxen an',
+    subtitle: 'Praxen, die die ePA mindestens einmal genutzt haben, in Prozent, TI-Atlas 2021 bis 2026',
+    source: 'Quelle: gematik, TI-Atlas (gewichtete Befragung von Arzt- und Psychotherapiepraxen)',
+    sourceUrl: 'https://ti-lage.prod.ccs.gematik.solutions/d/hS_STZ744/nutzung-le',
+    unit: 'Prozent der Praxen',
+    description: 'Bis 2024 nutzten kaum Praxen die ePA; mit der ePA für alle stieg der Anteil 2026 auf 88 Prozent der Arztpraxen und 49 Prozent der psychotherapeutischen Praxen.',
+    dataInfo: [
+      'Gezählt wird der Anteil befragter Praxen, die die elektronische Patientenakte mindestens einmal genutzt haben (TI-Atlas der gematik, gewichtete Online-Befragung, je Jahr eine Welle). Alle Werte sind belegt, keiner ist gerechnet.',
+      'Die ePA für alle startete bundesweit im April 2025; seit Oktober 2025 müssen Praxen sie befüllen. Der Sprung 2025/2026 fällt in diese Zeit.',
+      'Gegenläufiger Beleg: Laut PraxisBarometer Digitalisierung 2025 (KBV/IGES, 324 befragte Praxen) hatten 90,8 Prozent der Praxen auf eine ePA zugegriffen, der TI-Atlas nennt für 2025 59 Prozent der Arztpraxen. Der Unterschied dürfte am Zeitpunkt der Befragung rund um den Start liegen; der TI-Atlas 2026 kommt mit 88 Prozent in die Nähe.',
+    ],
+    headers: EPA_NUTZUNG.headers,
+    rows: EPA_NUTZUNG.rows,
+    suggested: { chartType: 'line', topN: 2, decimals: 1, primaryAxisLabel: 'Prozent der Praxen', colors: { Arztpraxen: BLAU, 'Psychotherapeutische Praxen': '#e87ba4' } },
   },
   {
     id: 'kim-nutzung',

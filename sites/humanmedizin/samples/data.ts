@@ -565,3 +565,15 @@ export const MVZ_TYPEN = {
     ["2025", 4385, 803, 117],
   ],
 }
+
+export const EPA_NUTZUNG = {
+  headers: ["Jahr","Arztpraxen","Psychotherapeutische Praxen"],
+  rows: [
+    ["2021", 2.7, 1.4],
+    ["2022", 3.3, 1.4],
+    ["2023", 5.8, 1.5],
+    ["2024", 12.8, 3.8],
+    ["2025", 59, 18],
+    ["2026", 88, 49],
+  ],
+}
