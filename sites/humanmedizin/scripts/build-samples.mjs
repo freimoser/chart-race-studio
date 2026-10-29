@@ -136,9 +136,9 @@ const PVS_ARZT_2007 = D3.tabelle
 // einmal 500 Installationen); Kleinstsysteme unter 500 Installationen fehlen.
 const herstellerAm = (system, j) => INST.find((r) => r.system === system && r.stichtag === `${j}-12-31`)?.hersteller ?? ''
 const GRUPPEN = [
-  ['CompuGroup Medical (alle Arztsysteme)', (h) => /^CompuGroup Medical$/.test(h)],
-  ['medatixx (alle Systeme)', (h) => /^medatixx$/.test(h)],
-  ['Medical Office, tomedo und T2med', (h) => /^(INDAMED|Zollsoft|T2med)$/.test(h)],
+  ['CompuGroup Medical', (h) => /^CompuGroup Medical$/.test(h)],
+  ['medatixx (Hersteller)', (h) => /^medatixx$/.test(h)],
+  ['Herausforderer', (h) => /^(INDAMED|Zollsoft|T2med)$/.test(h)],
 ]
 // Dieselben Systeme wie im Datensatz 1, damit die Summen zu den Balken passen.
 const reihenAlle = Object.fromEntries(spalten.map(([, w], i) => [ARZT[i], w]))
@@ -226,9 +226,16 @@ for (const r of KIM_NUTZUNG.rows) if (r.slice(1).some((v) => !Number.isFinite(v)
 const pb = (reihe) => Object.fromEntries(TI.filter((r) => r.reihe === reihe).map((r) => [r.stichtag.slice(0, 4), Number(r.wert)]))
 const empfang = pb('pb_labordaten_digital_empfang_arztpraxen'), versand = pb('pb_labordaten_digital_versand_arztpraxen')
 const LABORDATEN_PB = {
-  headers: ['Jahr', 'Labordaten digital empfangen', 'Labordaten digital gesendet'],
+  headers: ['Jahr', 'Digital empfangen', 'Digital gesendet'],
   rows: Object.keys(empfang).sort().map((j) => [j, empfang[j], versand[j]]),
 }
+// Arztbriefe digital empfangen bzw. versendet (PraxisBarometer, Arztpraxen ohne PT, jeder digitale Kanal ohne Fax), 2018–2025.
+const briefE = pb('pb_arztbrief_digital_empfang_arztpraxen'), briefV = pb('pb_arztbrief_digital_versand_arztpraxen')
+const ARZTBRIEF_PB = {
+  headers: ['Jahr', 'Arztbriefe digital empfangen', 'Arztbriefe digital versendet'],
+  rows: Object.keys(briefE).sort().map((j) => [j, briefE[j], briefV[j]]),
+}
+if (ARZTBRIEF_PB.rows.map((r) => r[0]).join() !== '2018,2019,2020,2021,2022,2023,2024,2025' || ARZTBRIEF_PB.rows.some((r) => !Number.isFinite(r[2]))) throw new Error('arztbrief-praxisbarometer: Jahre fehlen')
 
 // ---------- MVZ und Praxisformen (Post 8) ----------
 // Quellen und Definitionen: recherche/mvz.md. MVZ-Statistik (KBV) und Bundesarztregister weichen bei Personen bis
@@ -239,7 +246,7 @@ const mv = (j, r) => { const x = MV.find((z) => z.stichtag === `${j}-12-31` && z
 // 2016–2025: Personen der Praxisform minus Psychotherapeuten der Praxisform (KBV-Datenportal, gerechnet).
 // 2015: Summe der ärztlichen Spalten aus Tabelle 5 der Registerstatistik (gerechnet; Methode an 2025 geprüft).
 const t5 = (j, teil) => MV.filter((z) => z.stichtag === `${j}-12-31` && z.reihe.startsWith(`bar_t5_aerztlich_${teil}_`)).reduce((x, z) => x + Number(z.wert), 0)
-const PRAXISFORMEN = [['Einzelpraxis', 'einzelpraxis', 'ep'], ['Berufsausübungsgemeinschaft', 'bag', 'bag'], ['MVZ und andere Einrichtungen', 'mvz_einrichtung', 'einrichtung']]
+const PRAXISFORMEN = [['Einzelpraxis', 'einzelpraxis', 'ep'], ['Gemeinschaftspraxis', 'bag', 'bag'], ['MVZ und Einrichtungen', 'mvz_einrichtung', 'einrichtung']]
 const AERZTE_PRAXISFORM = {
   headers: ['Jahr', ...PRAXISFORMEN.map(([n]) => n)],
   rows: Array.from({ length: 11 }, (_, i) => 2015 + i).map((j) => [String(j), ...PRAXISFORMEN.map(([, portal, tab]) => {
@@ -292,7 +299,7 @@ for (const r of EINZELPRAXEN.rows) if (r.slice(1).some((v) => !(v > 0))) throw n
 const LAB = csv('labor.csv')
 const lab = (j, r) => { const x = LAB.find((z) => z.stichtag === `${j}-12-31` && z.reihe === r); return x ? Number(x.wert) : null }
 const LABOR_AERZTE = {
-  headers: ['Jahr', 'Angestellt in MVZ und Einrichtungen', 'Mit eigener Zulassung'],
+  headers: ['Jahr', 'Angestellt', 'Mit Zulassung'],
   rows: Array.from({ length: 13 }, (_, i) => 2013 + i).map((j) => [String(j), lab(j, 'bar_labor_angestellt_einrichtungen'), lab(j, 'bar_labor_zulassung')]),
 }
 for (const r of LABOR_AERZTE.rows) if (r.slice(1).some((v) => v == null)) throw new Error(`labor-aerzte: Wert fehlt ${r}`)
@@ -300,7 +307,7 @@ for (const r of LABOR_AERZTE.rows) if (r.slice(1).some((v) => v == null)) throw 
 // Alle Quartale belegt; 4/2024 fehlt in der Quelle, deshalb endet die Reihe mit 3/2024.
 const hbQ = LAB.filter((x) => x.reihe === 'hb_labor_honorarumsatz').sort((a, b) => a.stichtag.localeCompare(b.stichtag))
 const LABOR_HONORAR = {
-  headers: ['Quartal', 'Honorarumsatz Laboratoriumsmedizin'],
+  headers: ['Quartal', 'Laborhonorar'],
   rows: hbQ.map((x) => { const [j, m] = x.stichtag.split('-').map(Number); return [`${j}-Q${Math.ceil(m / 3)}`, Math.round(Number(x.wert) / 1e5) / 10] }),
 }
 for (let i = 1; i < hbQ.length; i++) {
@@ -357,7 +364,7 @@ const PVS_ALLGEMEIN = {
 // ---------- Ausgabe ----------
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 fs.writeFileSync('sites/humanmedizin/samples/data.ts', `// Automatisch erzeugt von sites/humanmedizin/scripts/build-samples.mjs aus sites/humanmedizin/data/raw/ – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABOR_AERZTE', LABOR_AERZTE), emit('LABORDATEN_PB', LABORDATEN_PB), emit('PVS_ALLGEMEIN', PVS_ALLGEMEIN), emit('EREZEPT_MONAT', EREZEPT_MONAT), emit('KIM_NUTZUNG', KIM_NUTZUNG), emit('MVZ_STATUS', MVZ_STATUS), emit('LABOR_HONORAR', LABOR_HONORAR), emit('EINZELPRAXEN', EINZELPRAXEN)].join('\n'))
+  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABOR_AERZTE', LABOR_AERZTE), emit('LABORDATEN_PB', LABORDATEN_PB), emit('PVS_ALLGEMEIN', PVS_ALLGEMEIN), emit('EREZEPT_MONAT', EREZEPT_MONAT), emit('KIM_NUTZUNG', KIM_NUTZUNG), emit('MVZ_STATUS', MVZ_STATUS), emit('LABOR_HONORAR', LABOR_HONORAR), emit('EINZELPRAXEN', EINZELPRAXEN), emit('ARZTBRIEF_PB', ARZTBRIEF_PB)].join('\n'))
 const sortiert = (l) => [...l].sort((a, b) => a.system.localeCompare(b.system) || a.jahr - b.jahr)
 fs.writeFileSync(path.join(RAW, 'pvs-gerechnet.json'), JSON.stringify({
   hinweis: 'Von sites/humanmedizin/scripts/build-samples.mjs erzeugt. Jeder Wert der Datensätze, der nicht direkt aus einem KBV-Bericht (Jahresende) stammt, mit Methode. pvs-hersteller ist die Summe von pvs-installationen und hat dieselben gerechneten Werte. Alles andere ist belegt (pvs-kbv-installationen.csv, pvs-kbv-luecken-1998-2012.csv).',

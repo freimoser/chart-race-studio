@@ -20,7 +20,7 @@ export const PVS_ARZT = {
 }
 
 export const PVS_HERSTELLER = {
-  headers: ["Jahr","CompuGroup Medical (alle Arztsysteme)","medatixx (alle Systeme)","Medical Office, tomedo und T2med"],
+  headers: ["Jahr","CompuGroup Medical","medatixx (Hersteller)","Herausforderer"],
   rows: [
     ["2013", 40206, 21896, 1122],
     ["2014", 39672, 21559, 1573],
@@ -193,7 +193,7 @@ export const EARZTBRIEF_MONAT = {
 }
 
 export const AERZTE_PRAXISFORM = {
-  headers: ["Jahr","Einzelpraxis","Berufsausübungsgemeinschaft","MVZ und andere Einrichtungen"],
+  headers: ["Jahr","Einzelpraxis","Gemeinschaftspraxis","MVZ und Einrichtungen"],
   rows: [
     ["2015", 69860, 51679, 13826],
     ["2016", 69498, 51831, 15362],
@@ -238,7 +238,7 @@ export const MVZ_ANZAHL = {
 }
 
 export const LABOR_AERZTE = {
-  headers: ["Jahr","Angestellt in MVZ und Einrichtungen","Mit eigener Zulassung"],
+  headers: ["Jahr","Angestellt","Mit Zulassung"],
   rows: [
     ["2013", 793, 288],
     ["2014", 849, 237],
@@ -257,7 +257,7 @@ export const LABOR_AERZTE = {
 }
 
 export const LABORDATEN_PB = {
-  headers: ["Jahr","Labordaten digital empfangen","Labordaten digital gesendet"],
+  headers: ["Jahr","Digital empfangen","Digital gesendet"],
   rows: [
     ["2018", 69, 15],
     ["2019", 67, 13],
@@ -384,7 +384,7 @@ export const MVZ_STATUS = {
 }
 
 export const LABOR_HONORAR = {
-  headers: ["Quartal","Honorarumsatz Laboratoriumsmedizin"],
+  headers: ["Quartal","Laborhonorar"],
   rows: [
     ["2013-Q1", 314.5],
     ["2013-Q2", 313.4],
@@ -450,5 +450,19 @@ export const EINZELPRAXEN = {
     ["2023", 25474, 27626, 27743],
     ["2024", 24869, 27069, 28697],
     ["2025", 24230, 26471, 29577],
+  ],
+}
+
+export const ARZTBRIEF_PB = {
+  headers: ["Jahr","Arztbriefe digital empfangen","Arztbriefe digital versendet"],
+  rows: [
+    ["2018", 13, 13],
+    ["2019", 15, 12],
+    ["2020", 14, 12],
+    ["2021", 14, 14],
+    ["2022", 35, 23],
+    ["2023", 63, 41],
+    ["2024", 77, 53],
+    ["2025", 87, 65],
   ],
 }

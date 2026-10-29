@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, EINZELPRAXEN, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, LABORDATEN_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
+import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, EINZELPRAXEN, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -151,6 +151,25 @@ export const SAMPLES: SampleDataset[] = [
     suggested: { chartType: 'line', topN: 2, decimals: 1, primaryAxisLabel: 'Prozent der Praxen', colors: { Arztpraxen: BLAU, 'Psychotherapeutische Praxen': '#e87ba4' } },
   },
   {
+    id: 'arztbrief-praxisbarometer',
+    erstellt: '2026-10-29', geprueft: '2026-10-29',
+    category: 'vernetzung',
+    title: 'Arztbriefe: empfangen ja, senden zögerlich',
+    subtitle: 'Arztpraxen, die Arztbriefe digital empfangen bzw. versenden, in Prozent, 2018 bis 2025',
+    source: 'Quelle: PraxisBarometer Digitalisierung (KBV/IGES), Befragung von Arztpraxen ohne Psychotherapie',
+    sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/studien-und-berichte/praxisbarometer-digitalisierung',
+    unit: 'Prozent der Arztpraxen',
+    description: 'Bis 2021 lagen beide Werte unter 15 Prozent; 2025 empfangen 87 Prozent der Arztpraxen Arztbriefe digital, 65 Prozent versenden sie so.',
+    dataInfo: [
+      'Gezählt wird der Anteil befragter Arztpraxen (ohne psychotherapeutische Praxen), die Arztbriefe von bzw. an andere ambulante Einrichtungen überwiegend digital austauschen, über jeden digitalen Weg außer Fax. Es ist eine jährliche Befragung, keine Vollerhebung. Kein Wert ist gerechnet.',
+      'Der Sprung ab 2022 fällt mit dem Start des eArztbriefs über KIM zusammen. Zweitquelle: Die gematik zählt 14,4 Millionen eArztbriefe über KIM im Jahr 2023 und 45,2 Millionen im Jahr 2025.',
+      'Nicht verwechseln: Den eArztbrief im engen Sinn (über KIM) nutzten 2025 laut PraxisBarometer 82 Prozent der Arztpraxen mit TI-Anschluss; die 87 Prozent hier zählen jeden digitalen Empfang.',
+    ],
+    headers: ARZTBRIEF_PB.headers,
+    rows: ARZTBRIEF_PB.rows,
+    suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'Prozent der Arztpraxen', colors: { 'Arztbriefe digital empfangen': BLAU, 'Arztbriefe digital versendet': ORANGE } },
+  },
+  {
     id: 'labordaten-praxisbarometer',
     erstellt: '2026-10-22', geprueft: '2026-10-22',
     category: 'vernetzung',
@@ -167,14 +186,14 @@ export const SAMPLES: SampleDataset[] = [
     ],
     headers: LABORDATEN_PB.headers,
     rows: LABORDATEN_PB.rows,
-    suggested: { chartType: 'line', topN: 2, decimals: 0, suffix: ' %', primaryAxisLabel: 'Prozent der Arztpraxen', colors: { 'Labordaten digital empfangen': BLAU, 'Labordaten digital gesendet': ORANGE } },
+    suggested: { chartType: 'line', topN: 2, decimals: 0, suffix: ' %', primaryAxisLabel: 'Prozent der Arztpraxen', colors: { 'Digital empfangen': BLAU, 'Digital gesendet': ORANGE } },
   },
   {
     id: 'pvs-aufsteiger',
     erstellt: '2026-10-22', geprueft: '2026-10-22',
     category: 'software',
     title: 'Die Aufsteiger unter den Praxissystemen',
-    subtitle: 'Installationen laut KBV, Jahresende: die vier Systeme außerhalb von CGM und medatixx, die seit 2013 am stärksten gewachsen sind',
+    subtitle: 'Die vier am stärksten wachsenden Systeme außerhalb von CGM und medatixx, Installationen laut KBV, Jahresende',
     source: 'Quelle: KBV, Installationsstatistik Systeme (Q4/2013–Q4/2016, Q4/2021–Q4/2025); 2017–2020 aus KBV-Anteilen gerechnet',
     sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/pvs-installationsstatistiken',
     unit: 'Installationen',
@@ -252,7 +271,7 @@ export const SAMPLES: SampleDataset[] = [
     id: 'aerzte-praxisform',
     erstellt: '2026-10-22', geprueft: '2026-10-22',
     category: 'versorgung',
-    title: 'Mehr Ärztinnen und Ärzte im MVZ, weniger in der Einzelpraxis',
+    title: 'Mehr Ärzte im MVZ, weniger in der Einzelpraxis',
     subtitle: 'Ärztinnen und Ärzte in der vertragsärztlichen Versorgung nach Praxisform, ohne psychologische Psychotherapeuten',
     source: 'Quelle: KBV, Bundesarztregister (Datenportal 2016–2025, Registerstatistik 2015); ohne Psychotherapeuten gerechnet',
     sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/gesundheitsdaten',
@@ -266,7 +285,7 @@ export const SAMPLES: SampleDataset[] = [
     ],
     headers: AERZTE_PRAXISFORM.headers,
     rows: AERZTE_PRAXISFORM.rows,
-    suggested: { chartType: 'line', topN: 3, decimals: 0, primaryAxisLabel: 'Ärztinnen und Ärzte', colors: { Einzelpraxis: BLAU, 'Berufsausübungsgemeinschaft': GRUEN, 'MVZ und andere Einrichtungen': ORANGE } },
+    suggested: { chartType: 'line', topN: 3, decimals: 0, primaryAxisLabel: 'Ärztinnen und Ärzte', colors: { Einzelpraxis: BLAU, Gemeinschaftspraxis: GRUEN, 'MVZ und Einrichtungen': ORANGE } },
   },
   {
     id: 'mvz-anzahl',
@@ -311,7 +330,7 @@ export const SAMPLES: SampleDataset[] = [
     erstellt: '2026-10-29', geprueft: '2026-10-29',
     category: 'versorgung',
     title: 'Im MVZ arbeiten fast nur Angestellte',
-    subtitle: 'Ärztinnen, Ärzte und Psychotherapeuten in Medizinischen Versorgungszentren nach Status, Jahresende 2004 bis 2025',
+    subtitle: 'Ärztinnen, Ärzte und Psychotherapeuten in MVZ nach Status, Jahresende 2004 bis 2025',
     source: 'Quelle: KBV, Entwicklungen der Medizinischen Versorgungszentren (MVZ-Statistik 2004–2025)',
     sourceUrl: 'https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf',
     unit: 'Personen',
@@ -342,14 +361,14 @@ export const SAMPLES: SampleDataset[] = [
     ],
     headers: LABOR_AERZTE.headers,
     rows: LABOR_AERZTE.rows,
-    suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'Personen', colors: { 'Angestellt in MVZ und Einrichtungen': ORANGE, 'Mit eigener Zulassung': BLAU } },
+    suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'Personen', colors: { Angestellt: ORANGE, 'Mit Zulassung': BLAU } },
   },
   {
     id: 'labor-honorar',
     erstellt: '2026-10-29', geprueft: '2026-10-29',
     category: 'versorgung',
     title: 'Laborhonorar: der Corona-Berg',
-    subtitle: 'GKV-Honorarumsatz der Abrechnungsgruppe Laboratoriumsmedizin je Quartal, in Mio. Euro, 2013 bis 3. Quartal 2024',
+    subtitle: 'GKV-Honorar der Laboratoriumsmedizin je Quartal, Mio. Euro, Q1 2013 bis Q3 2024',
     source: 'Quelle: KBV, Honorarbericht (Tabellen, Bund); auf 0,1 Mio. Euro gerundet',
     sourceUrl: 'https://www.kbv.de/documents/infothek/zahlen-und-fakten/honorarbericht/honorarbericht-tabellen.xlsx',
     unit: 'Mio. Euro',
@@ -361,7 +380,7 @@ export const SAMPLES: SampleDataset[] = [
     ],
     headers: LABOR_HONORAR.headers,
     rows: LABOR_HONORAR.rows,
-    suggested: { chartType: 'line', topN: 1, decimals: 1, primaryAxisLabel: 'Mio. Euro je Quartal', dateFormat: 'Q YYYY', colors: { 'Honorarumsatz Laboratoriumsmedizin': ORANGE } },
+    suggested: { chartType: 'line', topN: 1, decimals: 1, primaryAxisLabel: 'Mio. Euro je Quartal', dateFormat: 'Q YYYY', colors: { Laborhonorar: ORANGE } },
   },
   {
     id: 'pvs-hersteller',
@@ -382,7 +401,7 @@ export const SAMPLES: SampleDataset[] = [
     rows: PVS_HERSTELLER.rows,
     suggested: {
       chartType: 'line', topN: 3, decimals: 0, primaryAxisLabel: 'Installationen',
-      colors: { 'CompuGroup Medical (alle Arztsysteme)': BLAU, 'medatixx (alle Systeme)': GRUEN, 'Medical Office, tomedo und T2med': ORANGE },
+      colors: { 'CompuGroup Medical': BLAU, 'medatixx (Hersteller)': GRUEN, Herausforderer: ORANGE },
     },
   },
 ]

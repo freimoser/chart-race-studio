@@ -71,7 +71,7 @@ const herstellerAm = (system, j) => {
   return ''
 }
 const LANG = Object.fromEntries(INST.map((r) => [kurz(r.system), r.system]))
-const GRUPPEN = { 'CompuGroup Medical (alle Arztsysteme)': /^CompuGroup Medical$/, 'medatixx (alle Systeme)': /^medatixx$/, 'Medical Office, tomedo und T2med': /^(INDAMED|Zollsoft|T2med)$/ }
+const GRUPPEN = { 'CompuGroup Medical': /^CompuGroup Medical$/, 'medatixx (Hersteller)': /^medatixx$/, 'Herausforderer': /^(INDAMED|Zollsoft|T2med)$/ }
 for (const r of D.PVS_HERSTELLER.rows) {
   const j = Number(r[0])
   for (const [g, re] of Object.entries(GRUPPEN)) {
