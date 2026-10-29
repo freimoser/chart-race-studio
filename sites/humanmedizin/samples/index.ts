@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, LABORDATEN_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
+import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, EINZELPRAXEN, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, LABORDATEN_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -286,6 +286,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: MVZ_ANZAHL.headers,
     rows: MVZ_ANZAHL.rows,
     suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'MVZ', colors: { 'MVZ gesamt': BLAU, 'davon Krankenhaus als Träger': ORANGE } },
+  },
+  {
+    id: 'einzelpraxen',
+    erstellt: '2026-10-29', geprueft: '2026-10-29',
+    category: 'versorgung',
+    title: 'Die Einzelpraxis wird psychotherapeutisch',
+    subtitle: 'Einzelpraxen in der vertragsärztlichen Versorgung nach Versorgungsbereich, Jahresende 2015 bis 2025',
+    source: 'Quelle: KBV, Bundesarztregister (Datenportal 2015–2024, Registerstatistik Tabelle 5 für 2025, gerechnet)',
+    sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/gesundheitsdaten/praxen-und-aerzte-nach-praxisform',
+    unit: 'Einzelpraxen',
+    description: 'Seit 2022 gibt es mehr psychotherapeutische als hausärztliche Einzelpraxen, seit 2023 auch mehr als fachärztliche.',
+    dataInfo: [
+      'Gezählt werden Einzelpraxen im Bundesarztregister der KBV: Praxen mit einer Inhaberin oder einem Inhaber mit Zulassung, auch mit angestellten Ärztinnen und Ärzten. Gemeinschaftspraxen und MVZ sind nicht enthalten.',
+      'Gerechnet: 2025 steht noch nicht im Datenportal. Die Werte sind aus Tabelle 5 der Registerstatistik summiert (Inhaber mit und ohne angestellte Ärzte; hausärztlich = Hausärzte und Kinder- und Jugendmedizin, fachärztlich = alle ärztlichen Einzelpraxen minus hausärztliche). Für 2015 ergeben Tabelle 5 und Datenportal dieselben Zahlen; der Generator prüft das.',
+      'Hinter dem Wechsel an der Spitze stehen zwei Bewegungen: Ärztliche Einzelpraxen werden weniger (62.524 auf 50.701), psychotherapeutische mehr (20.021 auf 29.577). Für Praxissoftware heißt das: mehr Kunden mit einer Installation je Praxis – siehe den Datensatz zur Psychotherapie-Software.',
+    ],
+    headers: EINZELPRAXEN.headers,
+    rows: EINZELPRAXEN.rows,
+    suggested: { chartType: 'line', topN: 3, decimals: 0, primaryAxisLabel: 'Einzelpraxen', colors: { 'Hausärztlich': BLAU, 'Fachärztlich': GRUEN, 'Psychotherapeutisch': '#e87ba4' } },
   },
   {
     id: 'mvz-angestellte',

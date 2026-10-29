@@ -118,6 +118,8 @@ Thomas Freimoser ist kein Arzt und keine statistische Behörde. Diese Seite wert
 - „Die KBV-Statistik zeigt Marktanteile" stimmt nur näherungsweise. Die KBV zählt Installationen nach Prüfnummer in den Abrechnungen und schreibt selbst, das sei kein genaues Abbild des tatsächlichen Marktes. Eine Praxis, die mehrere Systeme abrechnet, oder ein MVZ mit mehreren Betriebsstätten kann mehrfach zählen.
 - „CompuGroup Medical ist Marktführer" hängt davon ab, ob man Produkte oder Hersteller zählt. CGM verteilt sich auf mehrere Systeme (MEDISTAR, TURBOMED, ALBIS, M1 PRO, DATA VITAL), medatixx ebenso (medatixx, x.isynet, x.concept, x.comfort, EL). Ein Vergleich einzelner Produkte unterschätzt beide Hersteller.
 - Krankenhausinformationssysteme (ORBIS, SAP, CGM MEDICO, iMedOne) stehen mit in der KBV-Liste, weil Krankenhausambulanzen und MVZ von Kliniken ambulant abrechnen. Sie sind keine Software für Arztpraxen.
+- „Die Einzelpraxis stirbt aus“ gilt nur für ärztliche Praxen: Ärztliche Einzelpraxen sanken von 62.524 (2015) auf 50.701 (2025), psychotherapeutische stiegen von 20.021 auf 29.577 (Bundesarztregister). Seit 2023 sind psychotherapeutische Einzelpraxen die größte Gruppe.
+- „Hausärzte nutzen vor allem CGM MEDISTAR“ stimmt so nicht: In der KBV-Arztgruppe Allgemeinmediziner führt Ende 2025 medatixx knapp vor MEDISTAR und TURBOMED; hausärztlich tätige Internisten zählt die KBV bei den Internisten.
 `,
   og: {
     titel: 'Arztpraxen, Praxissoftware und Gesundheits-IT in Deutschland',
@@ -127,7 +129,7 @@ Thomas Freimoser ist kein Arzt und keine statistische Behörde. Diese Seite wert
   llmsVollSeiten: ['artikel/praxisverwaltungssysteme-deutschland.html', 'artikel/begriffe-praxis-it.html'],
   // Offen: Thomas entscheidet die Lizenz (siehe docs/SEO-PROTOKOLL.md).
   datenLizenz: '',
-  glaetteDatensaetze: ['pvs-hersteller', 'pvs-psychotherapie', 'pvs-aufsteiger', 'pvs-kis', 'earztbrief-monat', 'labordaten-praxisbarometer', 'pvs-saldo', 'aerzte-praxisform', 'mvz-anzahl', 'labor-aerzte', 'erezept-monat', 'kim-nutzung', 'mvz-angestellte', 'labor-honorar'],
+  glaetteDatensaetze: ['pvs-hersteller', 'pvs-psychotherapie', 'pvs-aufsteiger', 'pvs-kis', 'earztbrief-monat', 'labordaten-praxisbarometer', 'pvs-saldo', 'aerzte-praxisform', 'mvz-anzahl', 'labor-aerzte', 'erezept-monat', 'kim-nutzung', 'mvz-angestellte', 'labor-honorar', 'einzelpraxen'],
 }
 
 export default profil

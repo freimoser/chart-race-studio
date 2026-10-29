@@ -266,6 +266,25 @@ const MVZ_STATUS = {
   rows: Array.from({ length: 22 }, (_, i) => 2004 + i).map((j) => [String(j), mv(j, 'mvz_aerzte_angestellt'), mv(j, 'mvz_aerzte_vertragsaerzte')]),
 }
 for (const r of MVZ_STATUS.rows) if (r.slice(1).some((v) => v == null)) throw new Error(`mvz-status: Wert fehlt ${r}`)
+// Einzelpraxen nach Versorgungsbereich, 2015–2025 (Bundesarztregister). 2015–2024 aus dem KBV-Datenportal; 2025 dort noch
+// nicht, deshalb aus Tabelle 5 der Registerstatistik summiert (Inhaber mit und ohne angestellte Ärzte; hausärztlich =
+// Hausärzte ohne Kinderärzte plus Kinder- und Jugendmedizin, fachärztlich = ärztlich minus hausärztlich) – gerechnet.
+const t5ep = (j, a, b) => mv(j, a) + mv(j, b)
+const ep25 = {
+  haus: t5ep(2025, 'bar_t5_hausaerzte_ohne_kinder_ep_zulassung_mit_angestellten', 'bar_t5_hausaerzte_ohne_kinder_ep_zulassung_ohne_angestellte') + t5ep(2025, 'bar_t5_kinder_jugendmedizin_ep_zulassung_mit_angestellten', 'bar_t5_kinder_jugendmedizin_ep_zulassung_ohne_angestellte'),
+  aerztlich: t5ep(2025, 'bar_t5_aerztlich_ep_zulassung_mit_angestellten', 'bar_t5_aerztlich_ep_zulassung_ohne_angestellte'),
+  psych: t5ep(2025, 'bar_t5_psychotherapeutisch_ep_zulassung_mit_angestellten', 'bar_t5_psychotherapeutisch_ep_zulassung_ohne_angestellte'),
+}
+// Gegenprobe 2015: Tabelle 5 und Datenportal müssen gleich sein.
+if (t5ep(2015, 'bar_t5_aerztlich_ep_zulassung_mit_angestellten', 'bar_t5_aerztlich_ep_zulassung_ohne_angestellte') !== mv(2015, 'praxen_ep_hausaerztlich') + mv(2015, 'praxen_ep_fachaerztlich')) throw new Error('einzelpraxen: Tabelle 5 und Datenportal 2015 weichen ab (ärztlich)')
+if (t5ep(2015, 'bar_t5_psychotherapeutisch_ep_zulassung_mit_angestellten', 'bar_t5_psychotherapeutisch_ep_zulassung_ohne_angestellte') !== mv(2015, 'praxen_ep_psychotherapeutisch')) throw new Error('einzelpraxen: Tabelle 5 und Datenportal 2015 weichen ab (psychotherapeutisch)')
+const EINZELPRAXEN = {
+  headers: ['Jahr', 'Hausärztlich', 'Fachärztlich', 'Psychotherapeutisch'],
+  rows: Array.from({ length: 11 }, (_, i) => 2015 + i).map((j) => j < 2025
+    ? [String(j), mv(j, 'praxen_ep_hausaerztlich'), mv(j, 'praxen_ep_fachaerztlich'), mv(j, 'praxen_ep_psychotherapeutisch')]
+    : [String(j), ep25.haus, ep25.aerztlich - ep25.haus, ep25.psych]),
+}
+for (const r of EINZELPRAXEN.rows) if (r.slice(1).some((v) => !(v > 0))) throw new Error(`einzelpraxen: Wert fehlt ${r}`)
 
 // ---------- Labormedizin (Post 11) ----------
 // Bundesarztregister, Fachgruppe Laboratoriumsmedizin einschließlich Mikrobiologie, 2013–2025 (recherche/labor.md).
@@ -338,7 +357,7 @@ const PVS_ALLGEMEIN = {
 // ---------- Ausgabe ----------
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 fs.writeFileSync('sites/humanmedizin/samples/data.ts', `// Automatisch erzeugt von sites/humanmedizin/scripts/build-samples.mjs aus sites/humanmedizin/data/raw/ – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABOR_AERZTE', LABOR_AERZTE), emit('LABORDATEN_PB', LABORDATEN_PB), emit('PVS_ALLGEMEIN', PVS_ALLGEMEIN), emit('EREZEPT_MONAT', EREZEPT_MONAT), emit('KIM_NUTZUNG', KIM_NUTZUNG), emit('MVZ_STATUS', MVZ_STATUS), emit('LABOR_HONORAR', LABOR_HONORAR)].join('\n'))
+  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABOR_AERZTE', LABOR_AERZTE), emit('LABORDATEN_PB', LABORDATEN_PB), emit('PVS_ALLGEMEIN', PVS_ALLGEMEIN), emit('EREZEPT_MONAT', EREZEPT_MONAT), emit('KIM_NUTZUNG', KIM_NUTZUNG), emit('MVZ_STATUS', MVZ_STATUS), emit('LABOR_HONORAR', LABOR_HONORAR), emit('EINZELPRAXEN', EINZELPRAXEN)].join('\n'))
 const sortiert = (l) => [...l].sort((a, b) => a.system.localeCompare(b.system) || a.jahr - b.jahr)
 fs.writeFileSync(path.join(RAW, 'pvs-gerechnet.json'), JSON.stringify({
   hinweis: 'Von sites/humanmedizin/scripts/build-samples.mjs erzeugt. Jeder Wert der Datensätze, der nicht direkt aus einem KBV-Bericht (Jahresende) stammt, mit Methode. pvs-hersteller ist die Summe von pvs-installationen und hat dieselben gerechneten Werte. Alles andere ist belegt (pvs-kbv-installationen.csv, pvs-kbv-luecken-1998-2012.csv).',

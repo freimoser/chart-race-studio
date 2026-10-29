@@ -431,7 +431,7 @@ const texte = [
   ...fs.readdirSync(path.join(H, 'content/artikel')).filter((f) => f.endsWith('.md')).map((f) => path.join(H, 'content/artikel', f)),
   ...fs.readdirSync(path.join(H, 'docs/linkedin')).filter((f) => f.endsWith('.md')).map((f) => path.join(H, 'docs/linkedin', f)),
   path.join(H, 'seiten/artikel/praxisverwaltungssysteme-deutschland.html'), path.join(H, 'seiten/artikel/datenherkunft.html'), path.join(H, 'seiten/artikel/begriffe-praxis-it.html'),
-  path.join(H, 'content/roadmap.ts'), path.join(H, 'samples/index.ts'),
+  path.join(H, 'content/roadmap.ts'), path.join(H, 'samples/index.ts'), path.join(H, 'profil.ts'),
 ]
 const ERLAUBT = new Set(['1.997', '2.000', '2.005', '2.007', '2.013', '2.025']) // Jahreszahlen mit Punkt kommen nicht vor, nur zur Sicherheit
 for (const datei of texte) {
