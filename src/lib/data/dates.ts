@@ -171,17 +171,13 @@ export function formatPeriod(p: Period, template: string, locale = 'de-DE'): str
   const monthLong = date.toLocaleDateString(locale, { month: 'long', timeZone: 'UTC' })
   const monthShort = date.toLocaleDateString(locale, { month: 'short', timeZone: 'UTC' }).replace('.', '')
   const q = Math.floor((m - 1) / 3) + 1
-  return template
-    .replace(/LABEL/g, p.label)
-    .replace(/YYYY/g, pad(y, 4))
-    .replace(/YY/g, pad(y % 100))
-    .replace(/MMMM/g, monthLong)
-    .replace(/MMM/g, monthShort)
-    .replace(/MM/g, pad(m))
-    .replace(/\bM\b/g, String(m))
-    .replace(/DD/g, pad(d))
-    .replace(/\bD\b/g, String(d))
-    .replace(/\bQ\b/g, `Q${q}`)
+  // In einem einzigen Durchgang ersetzen: Nacheinander ersetzt, traf `\bM\b` das „M“ im schon eingesetzten
+  // „Mär“/„März“ (das „ä“ zählt für \b nicht als Buchstabe) und machte daraus „3är 2022“.
+  const ersatz: Record<string, string> = {
+    LABEL: p.label, YYYY: pad(y, 4), YY: pad(y % 100), MMMM: monthLong, MMM: monthShort, MM: pad(m), M: String(m),
+    DD: pad(d), D: String(d), Q: `Q${q}`,
+  }
+  return template.replace(/LABEL|YYYY|YY|MMMM|MMM|MM|DD|\bM\b|\bD\b|\bQ\b/g, (t) => ersatz[t])
 }
 
 export const DATE_TEMPLATES: { id: string; label: string; forKinds: Period['kind'][] }[] = [

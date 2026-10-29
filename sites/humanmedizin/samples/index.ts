@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { AERZTE_PRAXISFORM, LABOR_AERZTE, MVZ_ANZAHL, EARZTBRIEF_MONAT, LABORDATEN_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
+import { AERZTE_PRAXISFORM, LABOR_AERZTE, MVZ_ANZAHL, EARZTBRIEF_MONAT, EREZEPT_MONAT, LABORDATEN_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -111,6 +111,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: EARZTBRIEF_MONAT.headers,
     rows: EARZTBRIEF_MONAT.rows,
     suggested: { chartType: 'line', topN: 1, decimals: 0, primaryAxisLabel: 'eArztbriefe je Monat', dateFormat: 'MMM YYYY', colors: { 'eArztbriefe über KIM': BLAU } },
+  },
+  {
+    id: 'erezept-monat',
+    erstellt: '2026-10-29', geprueft: '2026-10-29',
+    category: 'vernetzung',
+    title: 'E-Rezepte je Monat',
+    subtitle: 'In Apotheken eingelöste E-Rezepte in Deutschland, je Monat, März 2022 bis September 2026',
+    source: 'Quelle: gematik, TI-Dashboard (kumulierter Zähler); Monatswerte als Differenz gerechnet',
+    sourceUrl: 'https://ti-lage.prod.ccs.gematik.solutions/d/W19ANiYnk/ti-dashboard-verlauf-erp',
+    unit: 'E-Rezepte',
+    description: 'Mit der Pflicht ab Januar 2024 sprang das E-Rezept von 8,9 auf 35,9 Millionen im Monat; 2025 wurden 582 Millionen eingelöst.',
+    dataInfo: [
+      'Gezählt werden E-Rezepte, die über den Fachdienst der Telematikinfrastruktur von einer Apotheke eingelöst wurden, laut TI-Dashboard der gematik. Ausgestellte, aber nicht eingelöste Rezepte zählen nicht.',
+      'Gerechnet: Die gematik veröffentlicht einen kumulierten Zähler (Stand jeweils 0 Uhr UTC). Jeder Monatswert ist die Differenz zweier Monatsendstände; ein Monat reicht dadurch vom Vortag des Monatsletzten bis zum Vortag des nächsten. Alle 55 Werte sind so gerechnet, Lücken gibt es keine.',
+      'Zweitquelle: Die ABDA nennt für 2025 582 Millionen eingelöste E-Rezepte (Zahlen Daten Fakten 2026), dieselbe Größenordnung wie die Summe der Monatswerte. Seit 1. Januar 2024 ist das E-Rezept für verschreibungspflichtige Arzneimittel Pflicht; laut PraxisBarometer 2024 nutzten 93,3 Prozent der Arztpraxen es.',
+    ],
+    headers: EREZEPT_MONAT.headers,
+    rows: EREZEPT_MONAT.rows,
+    suggested: { chartType: 'line', topN: 1, decimals: 0, primaryAxisLabel: 'E-Rezepte je Monat', dateFormat: 'MMM YYYY', colors: { 'E-Rezepte eingelöst': GRUEN } },
   },
   {
     id: 'labordaten-praxisbarometer',

@@ -24,6 +24,15 @@ describe('parsePeriod', () => {
     expect(periods.map((p) => p.label)).toEqual(['Runde 1', 'Runde 2', 'Runde 3'])
     expect(formatPeriod(periods[1], 'YYYY')).toBe('Runde 2')
   })
+  it('formatiert Monate mit Umlaut, ohne Platzhalter im Ergebnis erneut zu ersetzen', () => {
+    // Fehler bis 29.10.2026: „MMM YYYY“ ergab für März „3är 2022“, weil \bM\b das M in „Mär“ traf.
+    const maerz = parsePeriod('2022-03')!
+    expect(formatPeriod(maerz, 'MMM YYYY')).toBe('Mär 2022')
+    expect(formatPeriod(maerz, 'MMMM YYYY')).toBe('März 2022')
+    expect(formatPeriod(parsePeriod('2024-12')!, 'MMM YYYY')).toBe('Dez 2024')
+    expect(formatPeriod(parsePeriod('2024-07-05')!, 'D. MMMM YYYY')).toBe('5. Juli 2024')
+    expect(formatPeriod(parsePeriod('2024-07')!, 'Q YYYY')).toBe('Q3 2024')
+  })
   it('erzeugt Zwischenschritte', () => {
     const { periods } = parsePeriods(['2019', '2020'])
     const out = withSubSteps(periods, 4)

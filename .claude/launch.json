@@ -57,6 +57,15 @@
         "SITE=humanmedizin npm run preview -- --port 4174 --strictPort"
       ],
       "port": 4174
+    },
+    {
+      "name": "dev-tier-5189",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": [
+        "-c",
+        "SITE=tiermedizin npx vite --port 5189 --strictPort"
+      ],
+      "port": 5189
     }
   ]
 }

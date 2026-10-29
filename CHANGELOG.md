@@ -4,6 +4,10 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Datumsformat: „Mär“ statt „3är“ (29.10.2026)
+
+- **Kern, betrifft beide Seiten (Fehler):** `formatPeriod` ersetzte die Platzhalter nacheinander; `\bM\b` traf dann das M im schon eingesetzten „Mär“/„März“ und machte „3är 2022“ (in Grafik und Video bei jedem März mit den Formaten „MMM YYYY“ und „MMMM YYYY“). Jetzt ein einziger Durchgang, mit Test. Glätteprüfung beider Seiten: 0 Sprünge. Neue Startkonfiguration `dev-tier-5189` (Tiermedizin-Studio ohne `site.mjs`, stört einen laufenden Humanmedizin-Server nicht).
+
 ### Post 27: Arzneimittel – Heimtiere und Pferde überholen die Nutztiere (29.10.2026)
 
 - **Tiermedizin:** Datensatz `tierarzneimittel` (BfT 2005–2025, zwei Linien, Euro je Tierart berechnet, Rohdatei `ds27`), Artikel 27 überarbeitet (Zeitreihe statt Einzelwert; „Kleintier“ = Heimtiere und Pferde) und vorab online, Post-Text, Datenherkunft.
