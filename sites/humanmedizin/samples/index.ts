@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, EINZELPRAXEN, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
+import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, EINZELPRAXEN, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, EAU_MONAT, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -130,6 +130,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: EREZEPT_MONAT.headers,
     rows: EREZEPT_MONAT.rows,
     suggested: { chartType: 'line', topN: 1, decimals: 0, primaryAxisLabel: 'E-Rezepte je Monat', dateFormat: 'MMM YYYY', colors: { 'E-Rezepte eingelöst': GRUEN } },
+  },
+  {
+    id: 'eau-monat',
+    erstellt: '2026-10-29', geprueft: '2026-10-29',
+    category: 'vernetzung',
+    title: 'Krankschreibungen digital: die Wellen',
+    subtitle: 'An die Krankenkassen per KIM gesendete eAU je Monat, März 2022 bis September 2026',
+    source: 'Quelle: gematik, TI-Dashboard (kumulierter Zähler); Monatswerte als Differenz gerechnet',
+    sourceUrl: 'https://ti-lage.prod.ccs.gematik.solutions/d/_v5YC1HVk/ti-dashboard-verlauf-kim',
+    unit: 'eAU',
+    description: 'Die elektronische Krankschreibung folgt den Erkältungswellen: Spitze im März 2023 mit 12,9 Millionen, 2025 zusammen 114,0 Millionen.',
+    dataInfo: [
+      'Gezählt werden elektronische Arbeitsunfähigkeitsbescheinigungen (eAU), die Praxen über KIM an die Krankenkassen senden, laut TI-Dashboard der gematik. Eine eAU ist eine Bescheinigung, nicht ein Krankheitsfall: Folgebescheinigungen zählen einzeln.',
+      'Gerechnet: Jeder Monatswert ist die Differenz zweier Monatsendstände des kumulierten Zählers (Stand 0 Uhr UTC); alle 55 Monate, keine Lücke.',
+      'Zweitquelle: Laut PraxisBarometer Digitalisierung nutzten 81,1 Prozent der Arztpraxen die eAU im Jahr 2022 und 93,9 Prozent im Jahr 2025. Die Monatswerte schwanken deshalb vor allem mit dem Krankenstand, nicht mit der Verbreitung.',
+    ],
+    headers: EAU_MONAT.headers,
+    rows: EAU_MONAT.rows,
+    suggested: { chartType: 'line', topN: 1, decimals: 0, primaryAxisLabel: 'eAU je Monat', dateFormat: 'MMM YYYY', colors: { eAU: BLAU } },
   },
   {
     id: 'kim-nutzung',

@@ -128,6 +128,11 @@ const K = {
     if (j25 !== zk('2025-12-31') - zk('2024-12-31')) fehler.push('E-Rezepte 2025: Monatssumme ≠ Differenz der Jahresendstände')
     K['E-Rezepte 2025'] = `${Math.round(j25 / 1e6)} Millionen`
     if (Math.abs(j25 / 1e6 - 582) > 1) fehler.push(`E-Rezepte 2025: ${j25} weicht von der ABDA (582 Mio.) ab`) }
+  // eAU: Spitze und Jahressumme 2025 (auch in Post 7 als KIM-Anteil genannt).
+  { const E2 = D.EAU_MONAT, max = E2.rows.reduce((a, r) => (r[1] > a[1] ? r : a))
+    K['eAU Spitze'] = `${max[0] === '2023-03' ? 'März 2023' : max[0]} mit ${(max[1] / 1e6).toFixed(1).replace('.', ',')} Millionen`
+    const TIe = leseCsv(path.join(RAW, 'ti-nutzung.csv')), ze = (st) => Number(TIe.find((x) => x.reihe === 'kim_eau_an_kassen_kumuliert' && x.stichtag === st)?.wert)
+    if (E2.rows.filter((r) => r[0].startsWith('2025')).reduce((x, r) => x + r[1], 0) !== ze('2025-12-31') - ze('2024-12-31')) fehler.push('eAU 2025: Monatssumme ≠ Differenz der Jahresendstände') }
   // KIM-Verkehr 2025 aus den kumulierten Zählern (Jahresendstände), eArztbrief-Anteil daran (Post 7).
   const T = leseCsv(path.join(RAW, 'ti-nutzung.csv')), z = (r, st) => Number(T.find((x) => x.reihe === r && x.stichtag === st)?.wert)
   const j25 = (r) => z(r, '2025-12-31') - z(r, '2024-12-31')
@@ -255,7 +260,7 @@ const ERWARTET = {
   [`${H}/content/artikel/01-praxissoftware-arztpraxen-marktanteile.md`]: ['MEDISTAR 2025', 'MEDISTAR 2013', 'TURBOMED 2025', 'TURBOMED 2013', 'medatixx 2025', 'x.isynet 2025', 'Medical Office 2013', 'Medical Office 2025', 'tomedo 2025', 'T2med 2025', 'Summe Arztsysteme 2013', 'Summe Arztsysteme 2025', 'Rückgang Arztsysteme', 'CGM-Anteil 2013', 'CGM-Anteil 2025', 'MEDISTAR-Anteil 2025', 'CGM 2013', 'CGM 2025', 'Gerechnet kurz', 'Sichtbar gerechnet lang'],
   [`${H}/docs/linkedin/post-01-praxissoftware.md`]: ['MEDISTAR 2025', 'MEDISTAR 2013', 'TURBOMED 2025', 'TURBOMED 2013', 'Medical Office 2013', 'Medical Office 2025', 'tomedo 2025', 'T2med 2025', 'Gerechnet kurz'],
   [`${H}/seiten/artikel/datenherkunft.html`]: ['Gerechnet lang', 'Sichtbar gerechnet lang', 'E-Rezepte 2025'],
-  [`${H}/samples/index.ts`]: ['Gerechnet lang', 'Sichtbar gerechnet lang', 'E-Rezepte 2025'],
+  [`${H}/samples/index.ts`]: ['Gerechnet lang', 'Sichtbar gerechnet lang', 'E-Rezepte 2025', 'eAU Spitze', 'eAU 2025'],
   [`${H}/docs/DATASETS.md`]: ['Gerechnet lang'],
   [`${H}/content/artikel/06-labordaten-ldt-praxissoftware.md`]: ['LDT-Befund-Anteil', 'GOP 40092 Anteil'],
   [`${H}/content/artikel/05-praxissoftware-wechsel-gewinner-verlierer.md`]: ['Gewinner Zahl', 'Verlierer Zahl', 'Gewinner Summe', 'Verlierer Summe', 'Systeme mit 500', 'Summe Veränderung', 'Veränderung erfasst', 'CGM 2021–2025', 'Neue 2021–2025', 'Q4/25 Gewinner', 'Q4/25 Verlierer', 'Q4/25 Summe'],

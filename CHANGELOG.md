@@ -4,6 +4,11 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Kürzungsprüfung `check:kuerzung` (29.10.2026)
+
+- **Kern, betrifft beide Seiten:** `scripts/pruefe-kuerzung.mjs` (`npm run check:kuerzung`, gegen den Entwicklungsserver der Seite) lädt jeden Beispiel-Datensatz in 4:5, 1:1, 16:9 und 9:16 und meldet jeden Bühnentext, der mit „…“ abgeschnitten wird. Humanmedizin: alle 23 Datensätze ohne Kürzung.
+- **Für den Tiermedizin-Chat (nicht geändert, Inhalte gehören dir):** Stand 29.10.2026 kürzt die Bühne bei 11 Datensätzen, meist Reihennamen in 9:16 – `tieraerzteschaft-deutschland` („Praxisinhaber:inn…“, „Angestellte in Pra…“, „Außerhalb von Pr…“, „Hunde und Kat…“), `tierarztmangel-2000` (Untertitel in 4:5 und 1:1), `praxisschwerpunkte` (Reihenname und Quellenzeile in 9:16), `fachtieraerzte`, `heimtiere-alle`, `hunderassen`, `online-handel`, `online-handel-2005`, `tierarzneimittel`, `blutbank-uk` (je ein Reihenname in 9:16), `ketten-eigentuemer` (Quellenzeile in 9:16). Aufruf: `SITE=tiermedizin STUDIO_URL=http://localhost:5173/studio/ npm run check:kuerzung`.
+
 ### Studio behält seine h1 (29.10.2026)
 
 - **Kern, betrifft beide Seiten (Fehler):** Die vorgerenderte Studio-Seite hat eine `h1`; sobald React lud, ersetzte die App sie ohne eigene Überschrift. Jetzt eine `sr-only`-`h1` „Studio für animierte Diagramme“ in der Studio-Ansicht – für die Tiermedizin, wo das Studio indexiert ist, auch für Google. Layout unverändert.

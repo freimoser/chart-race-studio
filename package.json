@@ -16,6 +16,7 @@
     "artikel": "node scripts/site.mjs && node scripts/build-artikel.mjs --entwuerfe",
     "check:glaette": "node scripts/pruefe-glaette.mjs",
     "check:links": "node scripts/pruefe-verlinkung.mjs",
+    "check:kuerzung": "node scripts/pruefe-kuerzung.mjs",
     "check:mobil": "node scripts/pruefe-mobil.mjs",
     "check:grafiken": "node scripts/pruefe-grafiken.mjs",
     "daten": "node scripts/site.mjs && node scripts/daten.mjs",
