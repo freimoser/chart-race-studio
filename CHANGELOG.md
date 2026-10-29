@@ -4,6 +4,10 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Kleine Handys (320 px) (29.10.2026)
+
+- **Kern, betrifft beide Seiten (Fehler):** Überschriften mit langen Komposita („Praxisverwaltungssysteme“) schoben Seiten auf 320 px breit – `h1, h2, h3` jetzt mit `hyphens: auto` und `overflow-wrap: break-word` (`src/article.css`). Die Speicher-Tabelle der Datenschutzerklärung steht in einem eigenen Scrollbereich. Humanmedizin: alle Seiten auf 320, 360 und 414 px ohne Überlauf.
+
 ### Kürzungsprüfung `check:kuerzung` (29.10.2026)
 
 - **Kern, betrifft beide Seiten:** `scripts/pruefe-kuerzung.mjs` (`npm run check:kuerzung`, gegen den Entwicklungsserver der Seite) lädt jeden Beispiel-Datensatz in 4:5, 1:1, 16:9 und 9:16 und meldet jeden Bühnentext, der mit „…“ abgeschnitten wird. Humanmedizin: alle 23 Datensätze ohne Kürzung.

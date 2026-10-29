@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, FRAUENANTEIL, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, EAU_MONAT, EPA_NUTZUNG, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
+import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, FRAUENANTEIL, ANERKENNUNGEN, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, EAU_MONAT, EPA_NUTZUNG, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -362,6 +362,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: MVZ_ANZAHL.headers,
     rows: MVZ_ANZAHL.rows,
     suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'MVZ', colors: { 'MVZ gesamt': BLAU, 'davon Krankenhaus als Träger': ORANGE } },
+  },
+  {
+    id: 'facharzt-anerkennungen',
+    erstellt: '2026-10-29', geprueft: '2026-10-29',
+    category: 'versorgung',
+    title: 'Mehr neue Allgemeinärzte',
+    subtitle: 'Facharztanerkennungen je Jahr nach KBV-Arztgruppe, 2016 bis 2025',
+    source: 'Quelle: KBV-Gesundheitsdaten nach Ärztestatistik der Bundesärztekammer',
+    sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/gesundheitsdaten/weiterbildungsabschluesse',
+    unit: 'Anerkennungen',
+    description: 'Die Zahl neuer Allgemeinärzte stieg von 1.321 (2016) auf 2.147 (2025) und liegt seit 2018 über der neuer Chirurgen.',
+    dataInfo: [
+      'Gezählt werden Facharztanerkennungen im jeweiligen Jahr, zusammengefasst nach den Arztgruppen der KBV („Internisten“ einschließlich aller internistischen Schwerpunkte). Die KBV übernimmt die Zahlen aus der Ärztestatistik der Bundesärztekammer; für Allgemeinmedizin 2023 bis 2025 stimmen sie mit deren Tabelle 9 überein, der Generator prüft das. Alle Werte sind belegt.',
+      'Unabhängige Zweitquelle: Die Zahl der geförderten Ärztinnen und Ärzte in Weiterbildung Allgemeinmedizin hat sich laut KBV-Evaluationsberichten von 5.449 (2015) auf 10.752 (2024) fast verdoppelt – der Nachwuchs, aus dem die Anerkennungen kommen.',
+      'Eine Anerkennung heißt nicht, dass jemand eine Praxis übernimmt; viele bleiben angestellt oder in der Klinik.',
+    ],
+    headers: ANERKENNUNGEN.headers,
+    rows: ANERKENNUNGEN.rows,
+    suggested: { chartType: 'line', topN: 4, decimals: 0, primaryAxisLabel: 'Anerkennungen je Jahr', colors: { Internisten: '#6250d6', 'Allgemeinärzte': BLAU, Chirurgen: '#eda100', 'Kinderärzte': '#e87ba4' } },
   },
   {
     id: 'frauenanteil',
