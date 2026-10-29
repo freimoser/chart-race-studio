@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, FRAUENANTEIL, ANERKENNUNGEN, MEDIZINSTUDIUM, PRAXISNETZE, TSS, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, EAU_MONAT, AU_FAELLE, EPA_NUTZUNG, DIGITALE_ANGEBOTE, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
+import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, FRAUENANTEIL, ANERKENNUNGEN, MEDIZINSTUDIUM, PRAXISNETZE, TSS, EARZTBRIEF_MONAT, EREZEPT_MONAT, EREZEPT_QUOTE, KIM_NUTZUNG, EAU_MONAT, AU_FAELLE, EPA_NUTZUNG, DIGITALE_ANGEBOTE, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -571,6 +571,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: LABOR_AERZTE.headers,
     rows: LABOR_AERZTE.rows,
     suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'Personen', colors: { Angestellt: ORANGE, 'Mit Zulassung': BLAU } },
+  },
+  {
+    id: 'erezept-quote',
+    erstellt: '2026-10-29', geprueft: '2026-10-29',
+    category: 'vernetzung',
+    title: 'E-Rezept: Frauenärzte vorn, Kinderärzte hinten',
+    subtitle: 'Anteil der E-Rezepte an allen Rezepten je Fachgruppe, Prozent, Q1 2024 bis Q1 2026',
+    source: 'Quelle: KBV aus GAMSI-Daten des GKV-SV; auf 0,1 Prozentpunkte gerundet',
+    sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/gesundheitsdaten/erezept-quote',
+    unit: 'Prozent',
+    description: 'Seit der Pflicht 2024 stieg die E-Rezept-Quote bundesweit von 61,5 auf 77,9 Prozent; Frauenärzte liegen bei 85, Kinderärzte bei 66,6 Prozent.',
+    dataInfo: [
+      'Gezählt wird der Anteil der elektronisch ausgestellten Rezepte (eRezept) an allen Rezepten für verschreibungspflichtige Arzneimittel zulasten der GKV, also eRezept plus Papierrezept nach Muster 16. Die KBV rechnet aus den GAMSI-Daten des GKV-Spitzenverbands, je Quartal und Fachgruppe. Bundesweit über alle Gruppen: 61,5 Prozent im 1. Quartal 2024, 77,9 Prozent im 1. Quartal 2026.',
+      'Alle neun Quartale sind belegt, nichts ist gerechnet; gerundet auf 0,1 Prozentpunkte. Die Delle der Kinderärzte im 2. und 3. Quartal 2025 (64,8 → 61,8 → 60,4) steht so in der Quelle. Fachinternisten heißen bei der KBV „Fach-Internisten“.',
+      'Andere Quellen messen anders und kommen höher: Die AOK Bayern zählt für ihre Versicherten 64 Prozent im Januar und 81 Prozent im Dezember 2024 (KBV, KV Bayern, alle Kassen: 59,3 im 1. und 74,2 Prozent im 4. Quartal). Die ABDA nennt im Jahrbuch 2025 „mehr als 90 Prozent“, ohne Bezugsgröße. Papier bleibt Pflicht etwa für Betäubungsmittel, Hilfsmittel und Sonderfälle; ob solche Rezepte im Nenner stehen, entscheidet über die Quote.',
+    ],
+    headers: EREZEPT_QUOTE.headers,
+    rows: EREZEPT_QUOTE.rows,
+    suggested: { chartType: 'line', topN: 4, decimals: 1, primaryAxisLabel: 'Prozent E-Rezept', dateFormat: 'Q YYYY', colors: { 'Frauenärzte': '#6250d6', 'Hausärzte': BLAU, Fachinternisten: GRUEN, 'Kinderärzte': '#e87ba4' } },
   },
   {
     id: 'labor-honorar',

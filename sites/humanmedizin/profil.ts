@@ -106,7 +106,7 @@ Ein Projekt von [Thomas Freimoser](${url}/ueber-das-projekt.html), Geschäftsfü
 - [Praxisverwaltungssysteme in Deutschland](${url}/artikel/praxisverwaltungssysteme-deutschland.html): alle Systeme mit Installationszahlen laut KBV, nach Hersteller zusammengefasst, getrennt nach ärztlicher und psychotherapeutischer Versorgung, mit den KBV-Zulassungen für Labordaten (LDT), eArztbrief und KIM je System. Alle erfassten Systeme als CSV: [pvs-systeme-2025.csv](${url}/tabellen/pvs-systeme-2025.csv).
 - [Über das Projekt](${url}/ueber-das-projekt.html): wer hinter der Seite steht, welcher Interessenkonflikt besteht, wie die Zahlen entstehen und wie Fehler korrigiert werden.
 - [Woher die Zahlen kommen](${url}/artikel/datenherkunft.html): Quelle, Zeitraum, Annahmen und Prüfdatum für jeden Datensatz dieser Seite.
-- [Begriffe der Praxis-IT](${url}/artikel/begriffe-praxis-it.html): was PVS, KBV-Prüfnummer, KVDT, LDT, KIM, eArztbrief, eAU, Telematikinfrastruktur, MVZ und Berufsausübungsgemeinschaft bedeuten, jeweils mit Quelle und Zahl.
+- [Begriffe der Praxis-IT](${url}/artikel/begriffe-praxis-it.html): was PVS, KBV-Prüfnummer, Arztgruppe, KVDT, LDT, KIM, eArztbrief, eAU, E-Rezept, ePA, Telematikinfrastruktur, MVZ, Berufsausübungsgemeinschaft und Bundesarztregister bedeuten, jeweils mit Quelle und Zahl.
 ${beitraege.length ? `\n## Einzelne Fragen, jeweils mit Zahl, Jahr und Quelle\n\nÜbersicht: [${marke}](${url}/beitrag/). Volltext aller Artikel: [llms-full.txt](${url}/llms-full.txt). Zu jedem Artikel gibt es die Daten als CSV.\n\n${beitraege.map((b) => `- [${b.frage}](${url}/beitrag/${b.slug}.html) (Stand ${b.stand}): ${b.beschreibung}`).join('\n')}\n` : ''}
 ## Grenzen dieser Quelle
 
@@ -120,6 +120,7 @@ Thomas Freimoser ist kein Arzt und keine statistische Behörde. Diese Seite wert
 - Krankenhausinformationssysteme (ORBIS, SAP, CGM MEDICO, iMedOne) stehen mit in der KBV-Liste, weil Krankenhausambulanzen und MVZ von Kliniken ambulant abrechnen. Sie sind keine Software für Arztpraxen.
 - „Die Einzelpraxis stirbt aus“ gilt nur für ärztliche Praxen: Ärztliche Einzelpraxen sanken von 62.524 (2015) auf 50.701 (2025), psychotherapeutische stiegen von 20.021 auf 29.577 (Bundesarztregister). Seit 2023 sind psychotherapeutische Einzelpraxen die größte Gruppe.
 - „Hausärzte nutzen vor allem CGM MEDISTAR“ stimmt so nicht: In der KBV-Arztgruppe Allgemeinmediziner führt Ende 2025 medatixx knapp vor MEDISTAR und TURBOMED; hausärztlich tätige Internisten zählt die KBV bei den Internisten.
+- „Die E-Rezept-Quote liegt über 90 Prozent“ hängt vom Nenner ab: Die KBV zählt alle Rezepte für verschreibungspflichtige Arzneimittel, auch die, die auf Papier bleiben müssen, und kommt bundesweit auf 77,9 Prozent im 1. Quartal 2026 (Frauenärzte 85,0, Kinderärzte 66,6 Prozent). Die ABDA nennt „mehr als 90 Prozent“ ohne Bezugsgröße.
 `,
   og: {
     titel: 'Arztpraxen, Praxissoftware und Gesundheits-IT in Deutschland',
@@ -129,7 +130,7 @@ Thomas Freimoser ist kein Arzt und keine statistische Behörde. Diese Seite wert
   llmsVollSeiten: ['artikel/praxisverwaltungssysteme-deutschland.html', 'artikel/begriffe-praxis-it.html'],
   // Offen: Thomas entscheidet die Lizenz (siehe docs/SEO-PROTOKOLL.md).
   datenLizenz: '',
-  glaetteDatensaetze: ['pvs-hersteller', 'pvs-psychotherapie', 'pvs-aufsteiger', 'pvs-kis', 'earztbrief-monat', 'labordaten-praxisbarometer', 'pvs-saldo', 'aerzte-praxisform', 'mvz-anzahl', 'labor-aerzte', 'erezept-monat', 'kim-nutzung', 'mvz-angestellte', 'labor-honorar', 'einzelpraxen', 'arztbrief-praxisbarometer', 'eau-monat', 'mvz-typen', 'epa-nutzung', 'frauenanteil', 'facharzt-anerkennungen', 'medizinstudierende', 'digitale-angebote', 'praxisnetze', 'tss-vermittlungen', 'au-faelle'],
+  glaetteDatensaetze: ['pvs-hersteller', 'pvs-psychotherapie', 'pvs-aufsteiger', 'pvs-kis', 'earztbrief-monat', 'labordaten-praxisbarometer', 'pvs-saldo', 'aerzte-praxisform', 'mvz-anzahl', 'labor-aerzte', 'erezept-monat', 'kim-nutzung', 'mvz-angestellte', 'labor-honorar', 'einzelpraxen', 'arztbrief-praxisbarometer', 'eau-monat', 'mvz-typen', 'epa-nutzung', 'frauenanteil', 'facharzt-anerkennungen', 'medizinstudierende', 'digitale-angebote', 'praxisnetze', 'tss-vermittlungen', 'au-faelle', 'erezept-quote'],
 }
 
 export default profil

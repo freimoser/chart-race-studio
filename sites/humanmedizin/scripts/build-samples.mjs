@@ -449,6 +449,18 @@ const AU_FAELLE = {
 }
 for (const r of AU_FAELLE.rows) if (!(r[1] > 0)) throw new Error(`au-faelle: Wert fehlt ${r}`)
 
+// ---------- E-Rezept-Quote je Fachgruppe, Q1 2024 bis Q1 2026 (KBV aus GAMSI-Daten des GKV-SV) ----------
+// Alle neun Quartale belegt, auf 0,1 Prozentpunkte gerundet (Q4 2025 liefert die KBV mit drei Nachkommastellen).
+const EQ = csv('erezept-quote.csv')
+const eqQ = [...new Set(EQ.filter((z) => z.reihe === 'erezept_quote_gesamt').map((z) => z.stichtag))].sort()
+const eq = (st, n) => { const x = EQ.find((z) => z.stichtag === st && z.reihe === `erezept_quote_${n}`); return x ? Number(x.wert) : null }
+const EREZEPT_QUOTE = {
+  headers: ['Quartal', 'Frauenärzte', 'Hausärzte', 'Fachinternisten', 'Kinderärzte'],
+  rows: eqQ.map((st) => { const [j, m] = st.split('-').map(Number); return [`${j}-Q${Math.ceil(m / 3)}`, eq(st, 'frauenaerzte'), eq(st, 'hausaerzte'), eq(st, 'fachinternisten'), eq(st, 'kinderaerzte')] }),
+}
+if (eqQ.length !== 9) throw new Error(`erezept-quote: ${eqQ.length} statt 9 Quartale`)
+for (const r of EREZEPT_QUOTE.rows) if (r.slice(1).some((v) => !(v > 0 && v < 100))) throw new Error(`erezept-quote: Wert fehlt ${r}`)
+
 // ---------- Download zur Säulenseite (Praxisverwaltungssysteme in Deutschland) ----------
 // Liegt in public/tabellen/, nicht in public/daten/: Das leert build-artikel.mjs bei jedem Build.
 // Alle erfassten Systeme mit Installationen Q4/2025 und Q3/2025 und den KBV-Zulassungen (Stand des Verzeichnisses).
@@ -473,7 +485,7 @@ for (const r of AU_FAELLE.rows) if (!(r[1] > 0)) throw new Error(`au-faelle: Wer
 // ---------- Ausgabe ----------
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 fs.writeFileSync('sites/humanmedizin/samples/data.ts', `// Automatisch erzeugt von sites/humanmedizin/scripts/build-samples.mjs aus sites/humanmedizin/data/raw/ – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABOR_AERZTE', LABOR_AERZTE), emit('LABORDATEN_PB', LABORDATEN_PB), emit('PVS_ALLGEMEIN', PVS_ALLGEMEIN), emit('EREZEPT_MONAT', EREZEPT_MONAT), emit('KIM_NUTZUNG', KIM_NUTZUNG), emit('MVZ_STATUS', MVZ_STATUS), emit('LABOR_HONORAR', LABOR_HONORAR), emit('EINZELPRAXEN', EINZELPRAXEN), emit('ARZTBRIEF_PB', ARZTBRIEF_PB), emit('EAU_MONAT', EAU_MONAT), emit('PVS_INTERNISTEN', PVS_INTERNISTEN), emit('MVZ_TYPEN', MVZ_TYPEN), emit('EPA_NUTZUNG', EPA_NUTZUNG), emit('FRAUENANTEIL', FRAUENANTEIL), emit('ANERKENNUNGEN', ANERKENNUNGEN), emit('MEDIZINSTUDIUM', MEDIZINSTUDIUM), emit('DIGITALE_ANGEBOTE', DIGITALE_ANGEBOTE), emit('PRAXISNETZE', PRAXISNETZE), emit('TSS', TSS), emit('AU_FAELLE', AU_FAELLE)].join('\n'))
+  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABOR_AERZTE', LABOR_AERZTE), emit('LABORDATEN_PB', LABORDATEN_PB), emit('PVS_ALLGEMEIN', PVS_ALLGEMEIN), emit('EREZEPT_MONAT', EREZEPT_MONAT), emit('KIM_NUTZUNG', KIM_NUTZUNG), emit('MVZ_STATUS', MVZ_STATUS), emit('LABOR_HONORAR', LABOR_HONORAR), emit('EINZELPRAXEN', EINZELPRAXEN), emit('ARZTBRIEF_PB', ARZTBRIEF_PB), emit('EAU_MONAT', EAU_MONAT), emit('PVS_INTERNISTEN', PVS_INTERNISTEN), emit('MVZ_TYPEN', MVZ_TYPEN), emit('EPA_NUTZUNG', EPA_NUTZUNG), emit('FRAUENANTEIL', FRAUENANTEIL), emit('ANERKENNUNGEN', ANERKENNUNGEN), emit('MEDIZINSTUDIUM', MEDIZINSTUDIUM), emit('DIGITALE_ANGEBOTE', DIGITALE_ANGEBOTE), emit('PRAXISNETZE', PRAXISNETZE), emit('TSS', TSS), emit('AU_FAELLE', AU_FAELLE), emit('EREZEPT_QUOTE', EREZEPT_QUOTE)].join('\n'))
 const sortiert = (l) => [...l].sort((a, b) => a.system.localeCompare(b.system) || a.jahr - b.jahr)
 fs.writeFileSync(path.join(RAW, 'pvs-gerechnet.json'), JSON.stringify({
   hinweis: 'Von sites/humanmedizin/scripts/build-samples.mjs erzeugt. Jeder Wert der Datensätze, der nicht direkt aus einem KBV-Bericht (Jahresende) stammt, mit Methode. pvs-hersteller ist die Summe von pvs-installationen und hat dieselben gerechneten Werte. Alles andere ist belegt (pvs-kbv-installationen.csv, pvs-kbv-luecken-1998-2012.csv).',
