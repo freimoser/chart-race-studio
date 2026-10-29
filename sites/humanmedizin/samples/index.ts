@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, FRAUENANTEIL, ANERKENNUNGEN, MEDIZINSTUDIUM, PRAXISNETZE, TSS, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, EAU_MONAT, EPA_NUTZUNG, DIGITALE_ANGEBOTE, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
+import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, FRAUENANTEIL, ANERKENNUNGEN, MEDIZINSTUDIUM, PRAXISNETZE, TSS, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, EAU_MONAT, AU_FAELLE, EPA_NUTZUNG, DIGITALE_ANGEBOTE, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -187,6 +187,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: EPA_NUTZUNG.headers,
     rows: EPA_NUTZUNG.rows,
     suggested: { chartType: 'line', topN: 2, decimals: 1, primaryAxisLabel: 'Prozent der Praxen', colors: { Arztpraxen: BLAU, 'Psychotherapeutische Praxen': '#e87ba4' } },
+  },
+  {
+    id: 'au-faelle',
+    erstellt: '2026-10-29', geprueft: '2026-10-29',
+    category: 'vernetzung',
+    title: 'Krankschreibungen: der Sprung 2022',
+    subtitle: 'Fälle von Arbeitsunfähigkeit der GKV-Mitglieder, in Mio., 2015 bis 2024',
+    source: 'Quelle: Bundesministerium für Gesundheit, KG2-Statistik, über KBV-Gesundheitsdaten',
+    sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/gesundheitsdaten/arbeitsunfaehigkeit-tage-faelle',
+    unit: 'Mio. Fälle',
+    description: 'Die Zahl der Krankschreibungsfälle sprang von 39,7 Mio. (2021) auf 63,0 Mio. (2022), dem Jahr der elektronischen Krankschreibung – über die Ursache wird gestritten.',
+    dataInfo: [
+      'Gezählt werden Fälle von Arbeitsunfähigkeit der Mitglieder der gesetzlichen Krankenversicherung laut KG2-Statistik des Bundesgesundheitsministeriums, wie die KBV sie aufbereitet. Alle Werte sind belegt, nur auf 0,1 Mio. gerundet. Die Dauer je Fall sank im selben Jahr von 16,0 auf 12,7 Tage.',
+      'Gegenläufige Belege zur Ursache: Laut DAK-Analyse trieb vor allem das neue elektronische Meldeverfahren den Anstieg – Bescheinigungen, die früher beim Versicherten liegen blieben, kommen seit der eAU automatisch bei der Kasse an. Das DIW (Wochenbericht 20/2026) führt den Sprung dagegen vor allem auf die vielen Atemwegserkrankungen zurück und sieht die eAU nur bedingt als Grund. Beide sehen einen Bruch in der Zeitreihe.',
+      'Bezug zur Telematik: 2023 gingen laut gematik 116,6 Millionen eAU per KIM an die Kassen (siehe Datensatz eAU je Monat); eine eAU ist eine Bescheinigung, ein Fall kann mehrere haben.',
+    ],
+    headers: AU_FAELLE.headers,
+    rows: AU_FAELLE.rows,
+    suggested: { chartType: 'line', topN: 1, decimals: 1, primaryAxisLabel: 'Mio. AU-Fälle', colors: { 'AU-Fälle': BLAU } },
   },
   {
     id: 'kim-nutzung',

@@ -129,7 +129,7 @@ Thomas Freimoser ist kein Arzt und keine statistische Behörde. Diese Seite wert
   llmsVollSeiten: ['artikel/praxisverwaltungssysteme-deutschland.html', 'artikel/begriffe-praxis-it.html'],
   // Offen: Thomas entscheidet die Lizenz (siehe docs/SEO-PROTOKOLL.md).
   datenLizenz: '',
-  glaetteDatensaetze: ['pvs-hersteller', 'pvs-psychotherapie', 'pvs-aufsteiger', 'pvs-kis', 'earztbrief-monat', 'labordaten-praxisbarometer', 'pvs-saldo', 'aerzte-praxisform', 'mvz-anzahl', 'labor-aerzte', 'erezept-monat', 'kim-nutzung', 'mvz-angestellte', 'labor-honorar', 'einzelpraxen', 'arztbrief-praxisbarometer', 'eau-monat', 'mvz-typen', 'epa-nutzung', 'frauenanteil', 'facharzt-anerkennungen', 'medizinstudierende', 'digitale-angebote', 'praxisnetze', 'tss-vermittlungen'],
+  glaetteDatensaetze: ['pvs-hersteller', 'pvs-psychotherapie', 'pvs-aufsteiger', 'pvs-kis', 'earztbrief-monat', 'labordaten-praxisbarometer', 'pvs-saldo', 'aerzte-praxisform', 'mvz-anzahl', 'labor-aerzte', 'erezept-monat', 'kim-nutzung', 'mvz-angestellte', 'labor-honorar', 'einzelpraxen', 'arztbrief-praxisbarometer', 'eau-monat', 'mvz-typen', 'epa-nutzung', 'frauenanteil', 'facharzt-anerkennungen', 'medizinstudierende', 'digitale-angebote', 'praxisnetze', 'tss-vermittlungen', 'au-faelle'],
 }
 
 export default profil
