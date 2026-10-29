@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, FRAUENANTEIL, ANERKENNUNGEN, MEDIZINSTUDIUM, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, EAU_MONAT, EPA_NUTZUNG, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
+import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, FRAUENANTEIL, ANERKENNUNGEN, MEDIZINSTUDIUM, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, EAU_MONAT, EPA_NUTZUNG, DIGITALE_ANGEBOTE, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -149,6 +149,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: EAU_MONAT.headers,
     rows: EAU_MONAT.rows,
     suggested: { chartType: 'line', topN: 1, decimals: 0, primaryAxisLabel: 'eAU je Monat', dateFormat: 'MMM YYYY', colors: { eAU: BLAU } },
+  },
+  {
+    id: 'digitale-angebote',
+    erstellt: '2026-10-29', geprueft: '2026-10-29',
+    category: 'vernetzung',
+    title: 'Hausarztpraxis online: Rezept vor Termin',
+    subtitle: 'Hausärztliche Praxen mit digitalem Angebot für Patienten, in Prozent, 2018 bis 2025',
+    source: 'Quelle: PraxisBarometer Digitalisierung (KBV/IGES), über KBV-Gesundheitsdaten',
+    sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/gesundheitsdaten/digitale-angebote-praxen',
+    unit: 'Prozent der Praxen',
+    description: '2025 bieten 57,8 Prozent der Hausarztpraxen eine Online-Rezeptbestellung an, 35,2 Prozent eine Online-Terminbuchung.',
+    dataInfo: [
+      'Gezählt wird der Anteil befragter hausärztlicher Praxen, die ihren Patientinnen und Patienten das jeweilige digitale Angebot machen (PraxisBarometer Digitalisierung, jährliche Befragung; KBV-Gesundheitsdaten, gerundet auf 0,1). Alle Werte sind belegt, keiner ist gerechnet; der Einbruch der Terminerinnerung 2019 steht so in der Befragung.',
+      'Nicht im Bild: die Videosprechstunde (erst ab 2020 abgefragt, bei Hausärzten 2025 25,3 Prozent) und die Verordnung digitaler Gesundheitsanwendungen (ab 2022). Gezeigt werden nur Angebote, die alle acht Jahre abgefragt wurden.',
+      'Zweitquelle aus Sicht der Patienten: Laut Bitkom hatten 2019 26 Prozent und 2023 36 Prozent der Menschen ab 16 Jahren schon einmal online einen Arzttermin vereinbart – dieselbe Richtung.',
+    ],
+    headers: DIGITALE_ANGEBOTE.headers,
+    rows: DIGITALE_ANGEBOTE.rows,
+    suggested: { chartType: 'line', topN: 3, decimals: 1, primaryAxisLabel: 'Prozent der Hausarztpraxen', colors: { 'Online-Rezeptbestellung': GRUEN, 'Online-Terminbuchung': BLAU, Terminerinnerung: '#eda100' } },
   },
   {
     id: 'epa-nutzung',

@@ -625,3 +625,17 @@ export const MEDIZINSTUDIUM = {
     ["2023", 73244, 40139],
   ],
 }
+
+export const DIGITALE_ANGEBOTE = {
+  headers: ["Jahr","Online-Rezeptbestellung","Online-Terminbuchung","Terminerinnerung"],
+  rows: [
+    ["2018", 21.7, 9.7, 12.5],
+    ["2019", 20.6, 10.8, 7.7],
+    ["2020", 25.3, 13.6, 11],
+    ["2021", 25.5, 15.3, 10.9],
+    ["2022", 32.9, 20.3, 13],
+    ["2023", 44.2, 26, 15.1],
+    ["2024", 48.1, 26.4, 16.3],
+    ["2025", 57.8, 35.2, 21.5],
+  ],
+}
