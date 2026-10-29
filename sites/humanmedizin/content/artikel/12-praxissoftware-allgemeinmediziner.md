@@ -5,7 +5,7 @@ titel: Praxissoftware der Allgemeinmediziner: medatixx vorn
 beschreibung: Bei Allgemeinmedizinern führt seit Ende 2025 medatixx mit 1.892 Installationen vor CGM MEDISTAR und TURBOMED. T2med hat sich seit 2020 verdreifacht.
 frage: Welche Praxissoftware nutzen Allgemeinmediziner?
 suchbegriffe: praxissoftware hausarzt, praxissoftware allgemeinmedizin, praxissoftware hausarzt vergleich, pvs hausarztpraxis, praxissoftware allgemeinmedizin vergleich
-stand: 2026-10-26
+stand: 2026-10-29
 bereit: ja
 ---
 In der Arztgruppe Allgemeinmediziner der Kassenärztlichen Bundesvereinigung (KBV) führt Ende 2025 erstmals medatixx: 1.892 Installationen, knapp vor CGM MEDISTAR mit 1.857 und CGM TURBOMED mit 1.850. Drei Monate vorher lag medatixx noch auf Platz 3. T2med folgt mit 1.737 Installationen auf Platz 4; Ende 2020 waren es 505.
@@ -24,6 +24,8 @@ In der Gesamtliste der ärztlichen Systeme hat CompuGroup Medical 32,4 Prozent u
 Die KBV ordnet jede Installation der [Arztgruppe](../artikel/begriffe-praxis-it.html#arztgruppe) zu, in der abgerechnet wird; jede Gruppe hat deshalb ihren eigenen Markt. Warum Allgemeinmediziner anders wählen als andere Fachgruppen und warum eine Praxis wechselt, sagt die Statistik nicht.
 
 Für Anbieter von Schnittstellen heißt das: In der Allgemeinmedizin teilen sich vier Systeme die Spitze fast gleichauf, jedes hat für sich höchstens rund ein Zehntel der Installationen der 20 größten Systeme.
+
+Dazu kommt Nachwuchs: 2024 waren 10.752 Ärztinnen und Ärzte in einer geförderten ambulanten Weiterbildung zur Allgemeinmedizin, fast doppelt so viele wie 2015 mit 5.449 ([KBV, Förderung der Allgemeinmedizin](https://www.kbv.de/infothek/zahlen-und-fakten/gesundheitsdaten/foerderung-allgemeinmedizin), abgerufen am 29. Oktober 2026). Viele von ihnen arbeiten in Teilzeit: Den Köpfen entsprachen 2024 rund 6.130 Vollzeitstellen. Wie viele sich später niederlassen und dabei eine Praxissoftware neu wählen oder übernehmen, zählt keine Statistik.
 
 ## Was die Zahl nicht sagt
 

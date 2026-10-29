@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, FRAUENANTEIL, ANERKENNUNGEN, MEDIZINSTUDIUM, PRAXISNETZE, TSS, EARZTBRIEF_MONAT, EREZEPT_MONAT, EREZEPT_QUOTE, KIM_NUTZUNG, EAU_MONAT, AU_FAELLE, EPA_NUTZUNG, DIGITALE_ANGEBOTE, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
+import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, FRAUENANTEIL, ANERKENNUNGEN, MEDIZINSTUDIUM, PRAXISNETZE, TSS, EARZTBRIEF_MONAT, EREZEPT_MONAT, EREZEPT_QUOTE, KIM_NUTZUNG, WEITERBILDUNG_AM, EAU_MONAT, AU_FAELLE, EPA_NUTZUNG, DIGITALE_ANGEBOTE, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -590,6 +590,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: EREZEPT_QUOTE.headers,
     rows: EREZEPT_QUOTE.rows,
     suggested: { chartType: 'line', topN: 4, decimals: 1, primaryAxisLabel: 'Prozent E-Rezept', dateFormat: 'Q YYYY', colors: { 'Frauenärzte': '#6250d6', 'Hausärzte': BLAU, Fachinternisten: GRUEN, 'Kinderärzte': '#e87ba4' } },
+  },
+  {
+    id: 'weiterbildung-allgemeinmedizin',
+    erstellt: '2026-10-29', geprueft: '2026-10-29',
+    category: 'versorgung',
+    title: 'Hausarzt-Nachwuchs: NRW holt Bayern ein',
+    subtitle: 'Geförderte Ärzte in Weiterbildung Allgemeinmedizin, ambulant, Köpfe je Jahr, 2015 bis 2024',
+    source: 'Quelle: KBV aus den Evaluationsberichten zur Förderung nach § 75a SGB V',
+    sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/gesundheitsdaten/foerderung-allgemeinmedizin',
+    unit: 'Ärzte in Weiterbildung',
+    description: 'Bundesweit verdoppelte sich die geförderte Weiterbildung zum Hausarzt von 5.449 (2015) auf 10.752 (2024); Nordrhein-Westfalen wuchs von 756 auf 1.909.',
+    dataInfo: [
+      'Gezählt werden Ärztinnen und Ärzte in Weiterbildung zur Allgemeinmedizin, deren ambulanter Weiterbildungsabschnitt in einer Praxis nach § 75a SGB V gefördert wurde, als Köpfe im Jahr je Land. Der stationäre Teil der Förderung ist nicht enthalten. Bundesweit: 5.449 (2015), 10.752 (2024).',
+      'Alle Werte sind belegt, nichts ist gerechnet. Ab 2017 ergibt die Summe der Länder 39 bis 89 Köpfe mehr als der Bundeswert (2024: 10.841 statt 10.752), vermutlich weil Ärzte im Jahr die KV wechseln und doppelt zählen; der Generator prüft, dass die Abweichung unter 1 Prozent bleibt.',
+      'Zweitquelle: Der Evaluationsbericht 2022 von KBV, GKV-Spitzenverband und DKG nennt für die Köpfe dieselben Zuwächse (2019 +9,2, 2020 +6,1, 2021 +4,9, 2022 +7 Prozent). Für die Vollzeitäquivalente widerspricht er den Gesundheitsdaten: Dort sinken sie 2020 von 4.900 auf 4.760, im Bericht steigen sie um 7 Prozent. Deshalb zeigt die Grafik nur Köpfe; 2024 kamen laut KBV 6.130 Vollzeitäquivalente auf 10.752 Köpfe.',
+    ],
+    headers: WEITERBILDUNG_AM.headers,
+    rows: WEITERBILDUNG_AM.rows,
+    suggested: { chartType: 'line', topN: 4, decimals: 0, primaryAxisLabel: 'Ärzte in Weiterbildung', colors: { Bayern: BLAU, 'Nordrhein-Westfalen': ORANGE, 'Baden-Württemberg': GRUEN, Niedersachsen: '#6250d6' } },
   },
   {
     id: 'labor-honorar',
