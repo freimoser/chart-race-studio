@@ -21,7 +21,7 @@ Der Markt für Tierarzneimittel in Deutschland wuchs 2025 um 4,7 Prozent auf **1
 
 Der Name klingt nach „alles, was Tiergesundheit kostet“. Gemeint ist aber nur der Umsatz mit Tierarzneimitteln: Arzneimittel, Impfstoffe, Mittel gegen Parasiten und Antiinfektiva. Behandlungen, Operationen und Diagnostik, also die tierärztlichen Leistungen selbst, sind darin nicht enthalten.
 
-Umgekehrt ist der Arzneimittelumsatz nicht unabhängig vom Praxisumsatz. In Deutschland geben Tierärztinnen und Tierärzte Arzneimittel über die tierärztliche Hausapotheke selbst ab. Ein Teil der 1.098 Mio. Euro fließt deshalb über die Praxen, und dort steckt er auch in deren Umsatz. Beide Zahlen zu addieren, würde doppelt zählen.
+Umgekehrt ist der Arzneimittelumsatz nicht unabhängig vom Praxisumsatz. In Deutschland geben Tierärztinnen und Tierärzte Arzneimittel über die tierärztliche Hausapotheke selbst ab. Ein Teil der 1.098 Mio. Euro fließt deshalb über die Praxen, und dort steckt er auch in deren Umsatz. Beide Zahlen zu addieren, würde doppelt zählen. Blutkonserven für Hunde und Katzen stecken dagegen nicht im Markt: Eine Praxis darf sie nur für die eigenen Patienten herstellen und nicht an andere Tierärzte abgeben, siehe [Blutbank für Hunde](blutbank-hund-grossbritannien.html).
 
 ## Wie groß das im Vergleich ist
 

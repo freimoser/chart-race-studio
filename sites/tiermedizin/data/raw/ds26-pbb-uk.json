@@ -1,0 +1,340 @@
+{
+ "title": "Pet Blood Bank UK: Spender, gesammelte Einheiten und abgegebene Blutprodukte, Geschäftsjahre 2015–2025 (bis 31.03.)",
+ "abgerufen": "2026-10-19",
+ "geprueft": "2026-10-29",
+ "quelle": "Pet Blood Bank UK (Charity SC037745, Company SC313849), Trustees' Reports der Jahresabschlüsse bei Companies House, gelesen per Texterkennung (Scans); Gegenprobe 2025: OSCR-Kopie",
+ "quelleUrl": "https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history",
+ "oscr2025": "https://oscr-docs.s3.eu-west-2.amazonaws.com/signed-pet-blood-bank-uk-accounts-to-31-03-2025-0147GKMYM37JV65L6RGBCZ3ZOQLVKKKUKC.pdf",
+ "notes": [
+  "Geschäftsjahr endet am 31.03.: „2025“ = April 2024 bis März 2025. Neuester Abschluss (eingereicht 24.02.2026) ist GJ 2025.",
+  "Alle Werte stehen als „mehr als X“ bzw. beim Plasma ab 2020 als „knapp X“ im Bericht: gerundete Mindest- bzw. Näherungswerte, keine exakten Zählungen. Nichts gerechnet, keine Lücken 2015–2025; für 2008–2014 nennen die Abschlüsse keine Tätigkeitszahlen.",
+  "Spender = Registrierungen seit 2007 (kumuliert), nicht aktive Spender (Bericht 2025: „17,000th donor registration“).",
+  "Aus einer Spende (Einheit) entstehen Erythrozytenkonzentrat und Plasma; deshalb können abgegebene Produkte je Art die gesammelten Einheiten erreichen.",
+  "GJ 2021 (April 2020 bis März 2021): Einbruch durch Corona in der Aufzählung (2.500 Einheiten, knapp 1.000 Plasma); der Fließtext desselben Berichts nennt weiter „mehr als 3.000 Einheiten“ (Textbaustein). Werte aus der Aufzählung übernommen."
+ ],
+ "zweitquellen": [
+  "VN Times 28.11.2013: 5.000. Spender",
+  "National Geographic (2025): 14.000 Spender, >3.000 Einheiten/Jahr",
+  "Vet Times 09.12.2025: Neuregistrierungen −18 %, 800 Einheiten bis Weihnachten gebraucht",
+  "MRCVS: >3.500 Einheiten, >6.500 Produkte im Vorjahr",
+  "VN Times 28.11.2013: https://vnonline.co.uk/vn/news/11057/Pet-Blood-Bank-hits-5000-donors",
+  "National Geographic: https://www.nationalgeographic.com/animals/article/canine-blood-donors-dogs-uk"
+ ],
+ "deutschland": "DTBl 04/2026 (Kohn/Weingart): In Deutschland gibt es – „im Gegensatz zu anderen europäischen Ländern (z. B. Portugal, Niederlande)“ – keine kommerziellen Blutbanken; Blutprodukte nur innerhalb der eigenen tierärztlichen Hausapotheke. FU Berlin: rund 300 Hunde und 180 Katzen erhalten pro Jahr eine Transfusion (Flyer Hund_Blutspende_23.pdf).",
+ "rows": [
+  {
+   "date": "2015",
+   "name": "Spender registriert (kumuliert)",
+   "value": 6000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2015, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzEzODQ4NDU4MGFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2015",
+   "name": "Einheiten gesammelt",
+   "value": 2228,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2015, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzEzODQ4NDU4MGFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2015",
+   "name": "Erythrozytenkonzentrat abgegeben",
+   "value": 2286,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2015, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzEzODQ4NDU4MGFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2015",
+   "name": "Plasma abgegeben",
+   "value": 1700,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2015, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzEzODQ4NDU4MGFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2016",
+   "name": "Spender registriert (kumuliert)",
+   "value": 7000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2016, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzE2NTI1NjY2NGFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2016",
+   "name": "Einheiten gesammelt",
+   "value": 2352,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2016, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzE2NTI1NjY2NGFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2016",
+   "name": "Erythrozytenkonzentrat abgegeben",
+   "value": 2400,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2016, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzE2NTI1NjY2NGFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2016",
+   "name": "Plasma abgegeben",
+   "value": 1835,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2016, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzE2NTI1NjY2NGFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2017",
+   "name": "Spender registriert (kumuliert)",
+   "value": 8000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2017, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzE5Mzg0NDQzMWFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2017",
+   "name": "Einheiten gesammelt",
+   "value": 2700,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2017, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzE5Mzg0NDQzMWFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2017",
+   "name": "Erythrozytenkonzentrat abgegeben",
+   "value": 2900,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2017, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzE5Mzg0NDQzMWFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2017",
+   "name": "Plasma abgegeben",
+   "value": 2290,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2017, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzE5Mzg0NDQzMWFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2018",
+   "name": "Spender registriert (kumuliert)",
+   "value": 9000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2018, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzIyNTY0Njk0N2FkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2018",
+   "name": "Einheiten gesammelt",
+   "value": 2800,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2018, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzIyNTY0Njk0N2FkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2018",
+   "name": "Erythrozytenkonzentrat abgegeben",
+   "value": 3000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2018, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzIyNTY0Njk0N2FkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2018",
+   "name": "Plasma abgegeben",
+   "value": 2400,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2018, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzIyNTY0Njk0N2FkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2019",
+   "name": "Spender registriert (kumuliert)",
+   "value": 10000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2019, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzI1Mjc0NTE4MWFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2019",
+   "name": "Einheiten gesammelt",
+   "value": 3000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2019, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzI1Mjc0NTE4MWFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2019",
+   "name": "Erythrozytenkonzentrat abgegeben",
+   "value": 3000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2019, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzI1Mjc0NTE4MWFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2019",
+   "name": "Plasma abgegeben",
+   "value": 2000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2019, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzI1Mjc0NTE4MWFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2020",
+   "name": "Spender registriert (kumuliert)",
+   "value": 11000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2020, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzI5NDg2MDYyN2FkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2020",
+   "name": "Einheiten gesammelt",
+   "value": 3200,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2020, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzI5NDg2MDYyN2FkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2020",
+   "name": "Erythrozytenkonzentrat abgegeben",
+   "value": 3000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2020, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzI5NDg2MDYyN2FkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2020",
+   "name": "Plasma abgegeben",
+   "value": 2000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2020, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzI5NDg2MDYyN2FkaXF6a2N4/document?format=pdf)",
+   "hinweis": "im Bericht „knapp“ (nearly) X"
+  },
+  {
+   "date": "2021",
+   "name": "Spender registriert (kumuliert)",
+   "value": 12000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2021, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzMyMTg1MjA5MWFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2021",
+   "name": "Einheiten gesammelt",
+   "value": 2500,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2021, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzMyMTg1MjA5MWFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2021",
+   "name": "Erythrozytenkonzentrat abgegeben",
+   "value": 2000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2021, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzMyMTg1MjA5MWFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2021",
+   "name": "Plasma abgegeben",
+   "value": 1000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2021, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzMyMTg1MjA5MWFkaXF6a2N4/document?format=pdf)",
+   "hinweis": "im Bericht „knapp“ (nearly) X"
+  },
+  {
+   "date": "2022",
+   "name": "Spender registriert (kumuliert)",
+   "value": 13000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2022, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzM2MzI3NDI4NGFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2022",
+   "name": "Einheiten gesammelt",
+   "value": 3000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2022, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzM2MzI3NDI4NGFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2022",
+   "name": "Erythrozytenkonzentrat abgegeben",
+   "value": 2000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2022, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzM2MzI3NDI4NGFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2022",
+   "name": "Plasma abgegeben",
+   "value": 2000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2022, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzM2MzI3NDI4NGFkaXF6a2N4/document?format=pdf)",
+   "hinweis": "im Bericht „knapp“ (nearly) X"
+  },
+  {
+   "date": "2023",
+   "name": "Spender registriert (kumuliert)",
+   "value": 13000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2023, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzQwNTQzMjA1NWFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2023",
+   "name": "Einheiten gesammelt",
+   "value": 3500,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2023, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzQwNTQzMjA1NWFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2023",
+   "name": "Erythrozytenkonzentrat abgegeben",
+   "value": 3300,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2023, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzQwNTQzMjA1NWFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2023",
+   "name": "Plasma abgegeben",
+   "value": 3000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2023, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzQwNTQzMjA1NWFkaXF6a2N4/document?format=pdf)",
+   "hinweis": "im Bericht „knapp“ (nearly) X"
+  },
+  {
+   "date": "2024",
+   "name": "Spender registriert (kumuliert)",
+   "value": 15000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2024, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzQ1MDQ2OTMwM2FkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2024",
+   "name": "Einheiten gesammelt",
+   "value": 3700,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2024, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzQ1MDQ2OTMwM2FkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2024",
+   "name": "Erythrozytenkonzentrat abgegeben",
+   "value": 3400,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2024, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzQ1MDQ2OTMwM2FkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2024",
+   "name": "Plasma abgegeben",
+   "value": 3000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2024, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzQ1MDQ2OTMwM2FkaXF6a2N4/document?format=pdf)",
+   "hinweis": "im Bericht „knapp“ (nearly) X"
+  },
+  {
+   "date": "2025",
+   "name": "Spender registriert (kumuliert)",
+   "value": 17000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2025, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzUwNjkwMjYwMWFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2025",
+   "name": "Einheiten gesammelt",
+   "value": 3700,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2025, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzUwNjkwMjYwMWFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2025",
+   "name": "Erythrozytenkonzentrat abgegeben",
+   "value": 3300,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2025, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzUwNjkwMjYwMWFkaXF6a2N4/document?format=pdf)"
+  },
+  {
+   "date": "2025",
+   "name": "Plasma abgegeben",
+   "value": 3000,
+   "art": "Beleg (Mindestwert)",
+   "source": "Pet Blood Bank UK, Trustees' Report GJ bis 31.03.2025, Achievements and performance (Companies House SC313849, https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history/MzUwNjkwMjYwMWFkaXF6a2N4/document?format=pdf)",
+   "hinweis": "im Bericht „knapp“ (nearly) X"
+  }
+ ]
+}

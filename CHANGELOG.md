@@ -4,6 +4,10 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Post 34: Großbritannien hat eine Blutbank für Hunde (29.10.2026)
+
+- **Tiermedizin:** Datensatz `blutbank-uk` (Pet Blood Bank UK, GJ 2015–2025, drei Linien, Mindestwerte aus den Trustees' Reports, Rohdatei `ds26`), Artikel `/beitrag/blutbank-hund-grossbritannien` vorab online, Post-Text, Datenherkunft; Links aus Artikel 01 und 27. Auftakt der Serie Tierblutspende.
+
 ### Post 26: Online überholt das Zubehör, das Futter noch nicht (28.10.2026)
 
 - **Tiermedizin:** Datensatz `online-handel` (4 Linien 2013–2025: Online, Katzen-, Hundefutter, Zubehör im Laden), Artikel 26 vorab online (Gegenprobe NielsenIQ), Links aus Artikel 01 und 03, Post-Text, Datenherkunft.

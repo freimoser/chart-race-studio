@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { ANTIBIOTIKA, ANTIBIOTIKA_GESAMT, GOT_PFERD, ONLINE_HANDEL, ONLINE_HANDEL_2005, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
+import { ANTIBIOTIKA, ANTIBIOTIKA_GESAMT, GOT_PFERD, ONLINE_HANDEL, ONLINE_HANDEL_2005, BLUTBANK_UK, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -611,7 +611,7 @@ export const SAMPLES: SampleDataset[] = [
     source: 'Quelle: ZZF/IVH „Der Deutsche Heimtiermarkt“; Online 2005–2012 gerechnet aus bvh/TNS und zooplus-Geschäftsberichten',
     sourceUrl: 'https://www.ivh-online.de/der-verband/daten-fakten/der-deutsche-heimtiermarkt.html',
     unit: 'Mio. €',
-    description: 'Die lange Fassung zu „Online überholt das Zubehör“: Online wächst von rund 60 Mio. Euro (2005, gerechnet) auf 1.521 Mio. (2025). Bis 2012 eine geglättete Rechnung, ab 2013 Verbandszahlen.',
+    description: 'Online wächst von rund 60 Mio. Euro (2005, gerechnet) auf 1.521 Mio. (2025) und überholt 2022 das Zubehör im Laden. Bis 2012 geglättete Rechnung.',
     dataInfo: [
       "Show-Version von „Online überholt das Zubehör, das Futter noch nicht“. Ab 2013 (Online) bzw. 2011 (Laden) dieselben Werte von ZZF und IVH. Davor ist die Online-Linie keine Messung, sondern unsere Rechnung, geglättet, damit sie ohne Sprung an den ersten Verbandswert 2013 andockt.",
       "Laden 2005–2010: IVH-Zahlen für 2006, 2008 und 2010 (Datenblatt 2008; petcom und Lebensmittel Praxis geben die Jahre 2006 und 2010 wieder). 2005, 2007 und 2009 sind aus den dort genannten Veränderungen gegenüber dem Vorjahr zurückgerechnet. Hundefutter 2009: Die Quelle nennt 2010 „auf Vorjahresniveau“, der Wert ist gehalten.",
@@ -622,6 +622,27 @@ export const SAMPLES: SampleDataset[] = [
     headers: ONLINE_HANDEL_2005.headers,
     rows: ONLINE_HANDEL_2005.rows,
     suggested: { chartType: 'line', topN: 4, decimals: 0, suffix: ' Mio. €', primaryAxisLabel: 'Mio. Euro', colors: { 'Online-Handel': '#e36414', 'Katzenfutter im Laden': '#0f4c5c', 'Hundefutter im Laden': '#5b8e9e', 'Zubehör im Laden': '#8d99ae' } },
+  },
+  {
+    id: 'blutbank-uk',
+    erstellt: '2026-10-29', geprueft: '2026-10-29',
+    category: 'praxis',
+    title: 'Britische Blutbank für Hunde',
+    subtitle: 'Pet Blood Bank UK: Blutspenden und abgegebene Blutprodukte je Geschäftsjahr (bis 31. März)',
+    source: 'Quelle: Pet Blood Bank UK, Trustees’ Reports 2015–2025 (Companies House SC313849); Mindestwerte laut Bericht',
+    sourceUrl: 'https://find-and-update.company-information.service.gov.uk/company/SC313849/filing-history',
+    unit: 'Einheiten',
+    description: 'Großbritannien hat seit 2007 eine gemeinnützige Blutbank für Hunde: rund 3.700 Blutspenden im Jahr, 17.000 registrierte Spender. In Deutschland gibt es keine.',
+    dataInfo: [
+      "Pet Blood Bank UK ist laut eigenem Bericht die einzige gemeinnützige Tierblutbank Großbritanniens (Charity mit Sitz in Schottland, gegründet 2007). Sie sammelt Blut von Spenderhunden in mobilen Terminen, trennt es in Rote Blutkörperchen (Erythrozytenkonzentrat) und Plasma und liefert an Tierarztpraxen im ganzen Land. Nur Hunde: Ein Angebot für Katzen liegt laut Bericht 2025 auf Eis.",
+      "Alle Werte stammen aus dem Abschnitt „Achievements and performance“ der Jahresberichte bei Companies House und stehen dort als „mehr als X“, beim Plasma ab 2020 als „knapp X“: gerundete Mindestwerte, keine exakten Zählungen. Keine Lücken, nichts gerechnet. Ältere Berichte (2008–2014) nennen keine Tätigkeitszahlen.",
+      "Das Geschäftsjahr endet am 31. März: 2025 steht für April 2024 bis März 2025. Der Einbruch 2021 fällt in das erste Corona-Jahr; der Fließtext desselben Berichts nennt weiter „mehr als 3.000 Einheiten“, die Grafik folgt der Aufzählung (2.500).",
+      "Aus einer Spende entstehen Rote Blutkörperchen und Plasma, deshalb liegen die abgegebenen Produkte je Art in der Größenordnung der Spenden. Registrierte Spender (kumuliert seit 2007): über 6.000 (2015), über 17.000 (2025). Zweite Quellen für die Größenordnung: VN Times (5.000. Spender, 2013), National Geographic (über 3.000 Einheiten im Jahr), MRCVS (über 3.500 Einheiten).",
+      "Deutschland: Laut Deutschem Tierärzteblatt 4/2026 gibt es hier, anders als etwa in Portugal und den Niederlanden, keine kommerziellen Blutbanken. Eine vergleichbare Zahl für Deutschland gibt es nicht.",
+    ],
+    headers: BLUTBANK_UK.headers,
+    rows: BLUTBANK_UK.rows,
+    suggested: { chartType: 'line', topN: 3, decimals: 0, primaryAxisLabel: 'Einheiten', colors: { 'Blutspenden gesammelt': '#b5172b', 'Rote Blutkörperchen abgegeben': '#e36414', 'Plasma abgegeben': '#e9b949' } },
   },
   {
     id: 'got-pferd',

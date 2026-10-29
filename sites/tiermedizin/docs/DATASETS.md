@@ -258,3 +258,7 @@ Aus `heimtiermarkt` (ZZF/IVH) Online-Handel, Katzenfutter, Hundefutter und Bedar
 ## Online holt auf, seit 2005 (`online-handel-2005`, Show-Version zu Post 26)
 
 Rohdaten `data/raw/ds25-online-handel-2005-2012.json` (jede Zeile mit `art`: Beleg, aus Veränderungsrate, gerechnet) plus `ds2` ab 2011. Laden 2005–2010 IVH (2006/2008/2010 belegt, Vorjahre aus Raten). Online 2005–2012 gerechnet: bvh/TNS 2010 über 2011 verkettet (241), 2005 über zooplus Deutschland (62), geometrisch geglättet bis 2010, linear bis 400 (2013). Im Artikel als zweite Grafik, in `datensaetzeOhnePost`.
+
+## Britische Blutbank für Hunde (`blutbank-uk`, Post 34)
+
+Rohdaten `data/raw/ds26-pbb-uk.json` (Trustees' Reports der Pet Blood Bank UK, Companies House SC313849, GJ bis 31.03. 2015–2025, Mindestwerte). Drei Linien: Blutspenden gesammelt, Rote Blutkörperchen (Erythrozytenkonzentrat) und Plasma abgegeben. Spender kumuliert nur im Text. Nur Hunde. Auftakt der Serie Tierblutspende.

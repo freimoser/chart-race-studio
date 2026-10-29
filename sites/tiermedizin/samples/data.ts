@@ -434,6 +434,23 @@ export const ONLINE_HANDEL_2005 = {
   ],
 }
 
+export const BLUTBANK_UK = {
+  headers: ["Jahr","Blutspenden gesammelt","Rote Blutkörperchen abgegeben","Plasma abgegeben"],
+  rows: [
+    ["2015", 2228, 2286, 1700],
+    ["2016", 2352, 2400, 1835],
+    ["2017", 2700, 2900, 2290],
+    ["2018", 2800, 3000, 2400],
+    ["2019", 3000, 3000, 2000],
+    ["2020", 3200, 3000, 2000],
+    ["2021", 2500, 2000, 1000],
+    ["2022", 3000, 2000, 2000],
+    ["2023", 3500, 3300, 3000],
+    ["2024", 3700, 3400, 3000],
+    ["2025", 3700, 3300, 3000],
+  ],
+}
+
 export const PRAXISSCHWERPUNKTE = {
   headers: ["Jahr","Nur Kleintiere","Gemischt (Nutz- und Kleintiere)","Nur Nutz- und Großtiere","Ketten (Standorte in Deutschland)"],
   rows: [

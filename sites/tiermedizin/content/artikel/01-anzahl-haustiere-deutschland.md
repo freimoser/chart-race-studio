@@ -36,7 +36,7 @@ bereit: ja
 
 Die Katze zieht 1994 zum ersten Mal am Ziervogel vorbei, mit 5,8 zu 5,5 Millionen. Ganz sauber ist dieser erste Wechsel nicht: Im selben Jahr stellten die Verbände die Berechnung der Ziervögel um. 1999 liegen die Vögel nach einem Quellenwechsel noch einmal vorn, ab 2000 führt die Katze durchgehend. Der Hund überholt den Ziervogel endgültig 2002.
 
-Wenig bekannt ist die Phase dazwischen. Von 2001 bis 2009 zählten die Verbände mehr Kleintiere als Hunde, 2010 standen beide bei 5,3 Millionen. Seitdem liegen die Hunde vorn, mit Ausnahme des Umstellungsjahres 2012; die Kleintiere sind 2025 bei 4,4 Millionen. Die Statistik nennt dafür keine Gründe.
+Wenig bekannt ist die Phase dazwischen. Von 2001 bis 2009 zählten die Verbände mehr Kleintiere als Hunde, 2010 standen beide bei 5,3 Millionen. Seitdem liegen die Hunde vorn, mit Ausnahme des Umstellungsjahres 2012; die Kleintiere sind 2025 bei 4,4 Millionen. Die Statistik nennt dafür keine Gründe. Für die 10,0 Millionen Hunde gibt es in Deutschland übrigens keine zentrale Blutbank; wie das in Großbritannien gelöst ist, zeigt der Beitrag zur [Blutbank für Hunde](blutbank-hund-grossbritannien.html).
 
 ## Wie viel vom Wachstum echt ist
 

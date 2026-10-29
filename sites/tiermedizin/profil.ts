@@ -45,7 +45,7 @@ const profil: SeitenProfil = {
     { id: 'nutztiere', label: 'Nutztiere' },
     { id: 'exkurs', label: 'Exkurs: über die Tiermedizin hinaus' },
   ],
-  raum: (id) => id === 'hund-katze-welt' ? 'Welt' : id === 'oktoberfest' ? 'München' : 'Deutschland',
+  raum: (id) => id === 'hund-katze-welt' ? 'Welt' : id === 'oktoberfest' ? 'München' : id === 'blutbank-uk' ? 'Großbritannien' : 'Deutschland',
   leisten: [['beruf', 'Tierärzte und Praxen'], ['markt', 'Tiere, Markt und Geld']],
   start: {
     title: 'Tiermedizin in Zahlen: Tierärzte, Praxen und Haustiere',
@@ -115,7 +115,7 @@ Thomas Freimoser ist kein Tierarzt und keine statistische Behörde. Diese Seite 
   },
   llmsVollSeiten: [],
   datenLizenz: '',
-  glaetteDatensaetze: ['ketten', 'ketten-eigentuemer', 'geschlecht-praxis', 'inhaber-angestellte', 'heimtiere', 'tieraerzteschaft-deutschland', 'praxisschwerpunkte', 'heimtiermarkt', 'fachtieraerzte', 'oktoberfest', 'oktoberfest-preis', 'tierarzt-inflation', 'tierarzt-routinejahr', 'heimtiere-alle', 'heimtiere-dach', 'tierarztmangel', 'tierarztmangel-2000', 'praxis-alter', 'praxis-alter-wachstum', 'gehalt-preise', 'pferde-nutztiere', 'praxisarten-2010', 'online-handel-2005'],
+  glaetteDatensaetze: ['ketten', 'ketten-eigentuemer', 'geschlecht-praxis', 'inhaber-angestellte', 'heimtiere', 'tieraerzteschaft-deutschland', 'praxisschwerpunkte', 'heimtiermarkt', 'fachtieraerzte', 'oktoberfest', 'oktoberfest-preis', 'tierarzt-inflation', 'tierarzt-routinejahr', 'heimtiere-alle', 'heimtiere-dach', 'tierarztmangel', 'tierarztmangel-2000', 'praxis-alter', 'praxis-alter-wachstum', 'gehalt-preise', 'pferde-nutztiere', 'praxisarten-2010', 'online-handel-2005', 'blutbank-uk'],
 }
 
 export default profil

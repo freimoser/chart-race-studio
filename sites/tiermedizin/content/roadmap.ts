@@ -322,4 +322,13 @@ export const POSTS: RoadmapPost[] = [
     dataNote: 'GOT 1999/2008/2017/2022 (ds24-got-pferd.json), 1999–2007 aus 2017 zurückgerechnet (runde DM-Beträge als Probe). Einfacher Satz netto, Stand 31.12. Zweitquelle Landtag SH Umdruck 20/2275. Ist-Rechnungen erhebt niemand – im Post sagen. Post als Bildpost (docs/linkedin/grafik-got-pferd.png, Vergleich 2017 = 100), weil das Bar Race 1999–2021 nur gleich lange Balken zeigt (Nutzer 27.10.2026); Datensatz got-pferd bleibt für Studio und CSV.',
     refs: [24, 31],
   },
+  {
+    nr: 34, arc: 'praxis', status: 'geplant', vorabOnline: true,
+    title: 'Großbritannien hat eine Blutbank für Hunde',
+    hook: 'Rund 3.700 Blutspenden im Jahr, 17.000 registrierte Spenderhunde: Die Pet Blood Bank UK beliefert Praxen im ganzen Land. In Deutschland gibt es nichts Vergleichbares.',
+    figures: ['Blutspenden je Geschäftsjahr: über 2.228 (2015) → über 3.700 (2025)', 'Registrierte Spender seit 2007: über 6.000 (2015) → über 17.000 (2025)', 'Corona-Jahr 2020/21: 2.500 Spenden, knapp 1.000 Plasmaeinheiten', 'Deutschland: keine kommerzielle Blutbank (DTBl 4/2026)'],
+    sampleId: 'blutbank-uk', chart: 'line', dataStatus: 'belegt',
+    dataNote: 'Auftakt der Serie Tierblutspende. Trustees’ Reports der Pet Blood Bank UK (Companies House SC313849, ds26-pbb-uk.json), alle Werte Mindestwerte, GJ bis 31.03. Gegenprobe OSCR 2025 und Presse (VN Times, National Geographic, MRCVS).',
+    refs: [27],
+  },
 ]
