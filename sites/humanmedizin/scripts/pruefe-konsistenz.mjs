@@ -426,6 +426,7 @@ if (fs.existsSync(path.join(RAW, 'mvz.csv'))) {
     merke(m(j, 'bar_t5_psychotherapeutisch_ep_zulassung_mit_angestellten') + m(j, 'bar_t5_psychotherapeutisch_ep_zulassung_ohne_angestellte')) // psychotherapeutische Einzelpraxen aus Tabelle 5
     merke(m(j, 'bar_t5_aerztlich_einrichtung_anstellung') + m(j, 'bar_t5_aerztlich_einrichtung_zulassung')) // Ärzte in MVZ und Einrichtungen
     merke(m(j, 'bar_personen_mvz_einrichtung') - m(j, 'bar_psych_psychotherapeuten_mvz_einrichtung'))
+    merke(m(j, 'mvz_typ_nur_angestellte') + m(j, 'mvz_typ_gemischt') + m(j, 'mvz_typ_nur_vertragsaerzte')) // Summe der MVZ-Grundtypen
   }
 }
 // Redaktionsplan: Summen über Gewinner/Verlierer 2021–2025 und Summe der größten drei Arztsysteme 2025.

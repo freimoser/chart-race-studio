@@ -5,7 +5,7 @@ titel: Praxissoftware in Arztpraxen: Marktanteile seit 2013
 beschreibung: CGM MEDISTAR führt mit 9.617 Installationen. Doch CGM fällt von 50 auf 32 Prozent der Arztsysteme, Medical Office, tomedo und T2med wachsen.
 frage: Welche Praxissoftware nutzen Arztpraxen in Deutschland?
 suchbegriffe: praxissoftware marktanteile, praxisverwaltungssystem marktanteil, pvs marktanteile kbv, arztsoftware deutschland
-stand: 2026-10-20
+stand: 2026-10-29
 kennzahl: software/1 | 9.617 | Installationen von CGM MEDISTAR, Platz 1 der Arztsysteme | 2025
 bereit: ja
 ---
@@ -60,6 +60,7 @@ Drei Dinge fallen auf. MEDISTAR ist in jeder belegten Liste seit 1997 das größ
 - **Installationen sind keine Praxen und keine Ärzte.** Die KBV zählt Abrechnungen mit der Prüfnummer eines Systems. Ein MVZ mit 20 Ärztinnen und Ärzten zählt wie eine Einzelpraxis. Die KBV schreibt selbst, die Statistik sei kein genaues Abbild des tatsächlichen Marktes. Was Prüfnummer, KVDT und Installationsstatistik genau bedeuten, steht in den [Begriffen der Praxis-IT](../artikel/begriffe-praxis-it.html).
 - **Psychotherapie ist herausgenommen.** In der Gesamtliste führt Elefant, eine Software für psychotherapeutische Praxen, mit 10.967 Installationen. Diese Grafik zeigt nur Systeme für ärztliche Praxen; die Psychotherapie bekommt einen eigenen Beitrag.
 - **2017 bis 2020 sind gerechnet.** In diesen Jahren hat die KBV nur Anteile in Prozent veröffentlicht, ohne Installationszahlen. Die Werte sind aus diesen Anteilen und einer gerechneten Gesamtzahl entstanden, für Systeme ohne veröffentlichten Anteil linear zwischen 2016 und 2021.
+- **Je Fachgruppe sieht die Spitze anders aus.** Unter allen Arztsystemen führt CGM MEDISTAR, in der KBV-Arztgruppe Allgemeinmediziner Ende 2025 aber medatixx (1.892 Installationen), bei Augenärzten FIDUS. Alle Fachgruppen stehen in der [Übersicht nach Fachgruppen](../artikel/praxisverwaltungssysteme-deutschland.html#fachgruppen).
 - **Keine Aussage über Qualität.** Wie zufrieden Praxen mit ihrem System sind, misst die KBV-Statistik nicht.
 
 ## Gerechnet

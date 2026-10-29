@@ -284,6 +284,13 @@ const MVZ_STATUS = {
   rows: Array.from({ length: 22 }, (_, i) => 2004 + i).map((j) => [String(j), mv(j, 'mvz_aerzte_angestellt'), mv(j, 'mvz_aerzte_vertragsaerzte')]),
 }
 for (const r of MVZ_STATUS.rows) if (r.slice(1).some((v) => v == null)) throw new Error(`mvz-status: Wert fehlt ${r}`)
+// MVZ nach Grundtyp (nur Angestellte, gemischt, nur Vertragsärzte), 2006–2025, MVZ-Statistik, alle Jahre belegt. Erst ab 2006:
+// 2004/2005 fehlen in der Summe der Typen bis zu 13 Prozent der MVZ (recherche/mvz.md, Abschnitt 6).
+const MVZ_TYPEN = {
+  headers: ['Jahr', 'Nur Angestellte', 'Gemischt', 'Nur Vertragsärzte'],
+  rows: Array.from({ length: 20 }, (_, i) => 2006 + i).map((j) => [String(j), mv(j, 'mvz_typ_nur_angestellte'), mv(j, 'mvz_typ_gemischt'), mv(j, 'mvz_typ_nur_vertragsaerzte')]),
+}
+for (const r of MVZ_TYPEN.rows) if (r.slice(1).some((v) => v == null)) throw new Error(`mvz-typen: Wert fehlt ${r}`)
 // Einzelpraxen nach Versorgungsbereich, 2015–2025 (Bundesarztregister). 2015–2024 aus dem KBV-Datenportal; 2025 dort noch
 // nicht, deshalb aus Tabelle 5 der Registerstatistik summiert (Inhaber mit und ohne angestellte Ärzte; hausärztlich =
 // Hausärzte ohne Kinderärzte plus Kinder- und Jugendmedizin, fachärztlich = ärztlich minus hausärztlich) – gerechnet.
@@ -386,7 +393,7 @@ const PVS_INTERNISTEN = INT_REIHE.tabelle
 // ---------- Ausgabe ----------
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 fs.writeFileSync('sites/humanmedizin/samples/data.ts', `// Automatisch erzeugt von sites/humanmedizin/scripts/build-samples.mjs aus sites/humanmedizin/data/raw/ – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABOR_AERZTE', LABOR_AERZTE), emit('LABORDATEN_PB', LABORDATEN_PB), emit('PVS_ALLGEMEIN', PVS_ALLGEMEIN), emit('EREZEPT_MONAT', EREZEPT_MONAT), emit('KIM_NUTZUNG', KIM_NUTZUNG), emit('MVZ_STATUS', MVZ_STATUS), emit('LABOR_HONORAR', LABOR_HONORAR), emit('EINZELPRAXEN', EINZELPRAXEN), emit('ARZTBRIEF_PB', ARZTBRIEF_PB), emit('EAU_MONAT', EAU_MONAT), emit('PVS_INTERNISTEN', PVS_INTERNISTEN)].join('\n'))
+  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABOR_AERZTE', LABOR_AERZTE), emit('LABORDATEN_PB', LABORDATEN_PB), emit('PVS_ALLGEMEIN', PVS_ALLGEMEIN), emit('EREZEPT_MONAT', EREZEPT_MONAT), emit('KIM_NUTZUNG', KIM_NUTZUNG), emit('MVZ_STATUS', MVZ_STATUS), emit('LABOR_HONORAR', LABOR_HONORAR), emit('EINZELPRAXEN', EINZELPRAXEN), emit('ARZTBRIEF_PB', ARZTBRIEF_PB), emit('EAU_MONAT', EAU_MONAT), emit('PVS_INTERNISTEN', PVS_INTERNISTEN), emit('MVZ_TYPEN', MVZ_TYPEN)].join('\n'))
 const sortiert = (l) => [...l].sort((a, b) => a.system.localeCompare(b.system) || a.jahr - b.jahr)
 fs.writeFileSync(path.join(RAW, 'pvs-gerechnet.json'), JSON.stringify({
   hinweis: 'Von sites/humanmedizin/scripts/build-samples.mjs erzeugt. Jeder Wert der Datensätze, der nicht direkt aus einem KBV-Bericht (Jahresende) stammt, mit Methode. pvs-hersteller ist die Summe von pvs-installationen und hat dieselben gerechneten Werte. Alles andere ist belegt (pvs-kbv-installationen.csv, pvs-kbv-luecken-1998-2012.csv).',

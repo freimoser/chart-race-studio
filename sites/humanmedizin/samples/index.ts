@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, EINZELPRAXEN, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, EAU_MONAT, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
+import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, EAU_MONAT, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -362,6 +362,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: EINZELPRAXEN.headers,
     rows: EINZELPRAXEN.rows,
     suggested: { chartType: 'line', topN: 3, decimals: 0, primaryAxisLabel: 'Einzelpraxen', colors: { 'Hausärztlich': BLAU, 'Fachärztlich': GRUEN, 'Psychotherapeutisch': '#e87ba4' } },
+  },
+  {
+    id: 'mvz-typen',
+    erstellt: '2026-10-29', geprueft: '2026-10-29',
+    category: 'versorgung',
+    title: 'MVZ ohne einen einzigen Vertragsarzt',
+    subtitle: 'Medizinische Versorgungszentren nach Grundtyp, Jahresende 2006 bis 2025',
+    source: 'Quelle: KBV, Entwicklungen der Medizinischen Versorgungszentren (MVZ-Statistik 2004–2025)',
+    sourceUrl: 'https://www.kbv.de/documents/infothek/zahlen-und-fakten/mvz/mvz_entwicklungen.pdf',
+    unit: 'MVZ',
+    description: 'Seit 2006 sind MVZ, in denen nur Angestellte arbeiten, der häufigste Typ; Ende 2025 sind es 4.385 von 5.305.',
+    dataInfo: [
+      'Gezählt werden MVZ nach Grundtyp laut MVZ-Statistik der KBV: nur mit angestellten Ärztinnen und Ärzten, gemischt (Angestellte und Vertragsärzte) oder nur mit Vertragsärzten. Alle Werte sind belegt, keiner ist gerechnet.',
+      'Die Reihe beginnt 2006: In den Jahren davor fehlen in der Summe der drei Typen bis zu 13 Prozent der MVZ. 2011 bis 2013 liegt die Summe leicht unter der Zahl der MVZ (2013: 1.983 statt 2.006), weil die KV Hamburg in diesen Jahren mit älterem Stand gemeldet hat; die Werte sind so übernommen, wie sie veröffentlicht sind.',
+      'Zweitquelle: In MVZ arbeiten Ende 2025 32.062 Angestellte und 1.788 Vertragsärzte (MVZ-Statistik); das Bundesarztregister zählt für MVZ und andere Einrichtungen 31.168 Angestellte und 1.717 mit Zulassung – dieselbe Richtung.',
+    ],
+    headers: MVZ_TYPEN.headers,
+    rows: MVZ_TYPEN.rows,
+    suggested: { chartType: 'line', topN: 3, decimals: 0, primaryAxisLabel: 'MVZ', colors: { 'Nur Angestellte': ORANGE, Gemischt: GRUEN, 'Nur Vertragsärzte': BLAU } },
   },
   {
     id: 'mvz-angestellte',
