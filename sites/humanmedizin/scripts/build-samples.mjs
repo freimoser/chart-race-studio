@@ -212,6 +212,15 @@ for (let i = 1; i < kumRez.length; i++) {
   const [vj, vm] = kumRez[i - 1].stichtag.split('-').map(Number), [j, m] = kumRez[i].stichtag.split('-').map(Number)
   if ((j - vj) * 12 + m - vm !== 1) throw new Error(`ti-nutzung: Monatsende E-Rezept fehlt zwischen ${kumRez[i - 1].stichtag} und ${kumRez[i].stichtag}`)
 }
+// KIM-Nutzung laut TI-Atlas (gematik-Befragung, gewichtet): Anteil der Einrichtungen, die KIM mindestens einmal genutzt
+// haben, Umfragejahre 2021–2026. Alle Werte belegt. Zweitquelle im Text: PraxisBarometer („KIM als Kommunikationsweg“).
+const ta = (reihe) => Object.fromEntries(TI.filter((r) => r.reihe === reihe).map((r) => [r.stichtag.slice(0, 4), Number(r.wert)]))
+const kimArzt = ta('tiatlas_kim_mind_einmal_genutzt_arztpraxen'), kimPsy = ta('tiatlas_kim_mind_einmal_genutzt_psychotherapiepraxen')
+const KIM_NUTZUNG = {
+  headers: ['Jahr', 'Arztpraxen', 'Psychotherapeutische Praxen'],
+  rows: Array.from({ length: 6 }, (_, i) => String(2021 + i)).map((j) => [j, kimArzt[j], kimPsy[j]]),
+}
+for (const r of KIM_NUTZUNG.rows) if (r.slice(1).some((v) => !Number.isFinite(v))) throw new Error(`kim-nutzung: Wert fehlt ${r}`)
 // PraxisBarometer Digitalisierung (KBV/IGES): Anteil der Arztpraxen, die Labordaten digital empfangen bzw. senden.
 // Ab 2024 lautet die Antwort „Labordaten (inkl. Labordatenaufträgen und -ergebnissen)“ – Formulierungsbruch.
 const pb = (reihe) => Object.fromEntries(TI.filter((r) => r.reihe === reihe).map((r) => [r.stichtag.slice(0, 4), Number(r.wert)]))
@@ -312,7 +321,7 @@ const PVS_ALLGEMEIN = {
 // ---------- Ausgabe ----------
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 fs.writeFileSync('sites/humanmedizin/samples/data.ts', `// Automatisch erzeugt von sites/humanmedizin/scripts/build-samples.mjs aus sites/humanmedizin/data/raw/ – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABOR_AERZTE', LABOR_AERZTE), emit('LABORDATEN_PB', LABORDATEN_PB), emit('PVS_ALLGEMEIN', PVS_ALLGEMEIN), emit('EREZEPT_MONAT', EREZEPT_MONAT)].join('\n'))
+  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABOR_AERZTE', LABOR_AERZTE), emit('LABORDATEN_PB', LABORDATEN_PB), emit('PVS_ALLGEMEIN', PVS_ALLGEMEIN), emit('EREZEPT_MONAT', EREZEPT_MONAT), emit('KIM_NUTZUNG', KIM_NUTZUNG)].join('\n'))
 const sortiert = (l) => [...l].sort((a, b) => a.system.localeCompare(b.system) || a.jahr - b.jahr)
 fs.writeFileSync(path.join(RAW, 'pvs-gerechnet.json'), JSON.stringify({
   hinweis: 'Von sites/humanmedizin/scripts/build-samples.mjs erzeugt. Jeder Wert der Datensätze, der nicht direkt aus einem KBV-Bericht (Jahresende) stammt, mit Methode. pvs-hersteller ist die Summe von pvs-installationen und hat dieselben gerechneten Werte. Alles andere ist belegt (pvs-kbv-installationen.csv, pvs-kbv-luecken-1998-2012.csv).',

@@ -342,3 +342,15 @@ export const EREZEPT_MONAT = {
     ["2026-09", 49176540],
   ],
 }
+
+export const KIM_NUTZUNG = {
+  headers: ["Jahr","Arztpraxen","Psychotherapeutische Praxen"],
+  rows: [
+    ["2021", 8.7, 0.6],
+    ["2022", 42, 5.9],
+    ["2023", 86.3, 10.2],
+    ["2024", 94.6, 23.8],
+    ["2025", 94, 42],
+    ["2026", 96, 54],
+  ],
+}

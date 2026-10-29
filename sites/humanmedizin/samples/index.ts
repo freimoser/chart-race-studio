@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { AERZTE_PRAXISFORM, LABOR_AERZTE, MVZ_ANZAHL, EARZTBRIEF_MONAT, EREZEPT_MONAT, LABORDATEN_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
+import { AERZTE_PRAXISFORM, LABOR_AERZTE, MVZ_ANZAHL, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, LABORDATEN_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -130,6 +130,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: EREZEPT_MONAT.headers,
     rows: EREZEPT_MONAT.rows,
     suggested: { chartType: 'line', topN: 1, decimals: 0, primaryAxisLabel: 'E-Rezepte je Monat', dateFormat: 'MMM YYYY', colors: { 'E-Rezepte eingelöst': GRUEN } },
+  },
+  {
+    id: 'kim-nutzung',
+    erstellt: '2026-10-29', geprueft: '2026-10-29',
+    category: 'vernetzung',
+    title: 'KIM in Arzt- und Psychotherapiepraxen',
+    subtitle: 'Anteil der Praxen, die den TI-Mail-Dienst KIM mindestens einmal genutzt haben, laut TI-Atlas, 2021 bis 2026',
+    source: 'Quelle: gematik, TI-Atlas (gewichtete Befragung von Arzt- und Psychotherapiepraxen)',
+    sourceUrl: 'https://ti-lage.prod.ccs.gematik.solutions/d/hS_STZ744/nutzung-le',
+    unit: 'Prozent der Praxen',
+    description: 'Arztpraxen nutzen KIM fast alle, 96 Prozent 2026; psychotherapeutische Praxen kamen von 0,6 auf 54 Prozent.',
+    dataInfo: [
+      'Gezählt wird der Anteil befragter Praxen, die KIM mindestens einmal genutzt haben (TI-Atlas der gematik, gewichtete Online-Befragung, je Jahr eine Welle). Bei Arztpraxen zählt jede Nutzung mit, auch die Pflicht-Übermittlung der eAU an die Krankenkassen; die Zahl misst deshalb nicht den eArztbrief.',
+      'Alle Werte sind belegt, keiner ist gerechnet. 2025 und 2026 meldet die gematik ganze Prozent, davor mit einer Nachkommastelle.',
+      'Zweitquelle: Laut PraxisBarometer Digitalisierung (KBV/IGES) nutzten 2025 76,1 Prozent der Arztpraxen und 31,6 Prozent der psychotherapeutischen Praxen KIM als Weg der Kommunikation mit anderen Praxen. Die Werte liegen niedriger, weil dort nur der Austausch mit Kollegen zählt, zeigen aber denselben Abstand.',
+    ],
+    headers: KIM_NUTZUNG.headers,
+    rows: KIM_NUTZUNG.rows,
+    suggested: { chartType: 'line', topN: 2, decimals: 1, primaryAxisLabel: 'Prozent der Praxen', colors: { Arztpraxen: BLAU, 'Psychotherapeutische Praxen': '#e87ba4' } },
   },
   {
     id: 'labordaten-praxisbarometer',
