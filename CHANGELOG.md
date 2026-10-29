@@ -4,6 +4,10 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Endlosschleife am Ende der Vorschau (29.10.2026)
+
+- **Kern, betrifft beide Seiten (Fehler):** Lief eine Bar-Grafik (Startseite, Artikel, Studio) bis zum Ende, warf die Konsole „RangeError: Maximum call stack size exceeded“. `PreviewController.onEnd` hielt racing-bars an, solange der Zustand noch „playing“ war; racing-bars meldet beim Anhalten das letzte Datum erneut, das rief `onEnd` wieder auf. Jetzt wird der Zustand vor dem Anhalten gesetzt (`src/lib/preview/controller.ts`), Test `src/test/preview.test.ts` (schlägt ohne die Korrektur mit demselben RangeError fehl). Die Grafik sah man nicht stocken, die Konsole aber lief voll.
+
 ### Kleine Handys (320 px) (29.10.2026)
 
 - **Kern, betrifft beide Seiten (Fehler):** Überschriften mit langen Komposita („Praxisverwaltungssysteme“) schoben Seiten auf 320 px breit – `h1, h2, h3` jetzt mit `hyphens: auto` und `overflow-wrap: break-word` (`src/article.css`). Die Speicher-Tabelle der Datenschutzerklärung steht in einem eigenen Scrollbereich. Humanmedizin: alle Seiten auf 320, 360 und 414 px ohne Überlauf.

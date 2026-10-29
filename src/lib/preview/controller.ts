@@ -72,8 +72,11 @@ export class PreviewController {
   private onEnd() {
     const h = this.handle
     if (!h) return
-    h.pause()
+    // Erst den Zustand setzen, dann anhalten: racing-bars meldet beim Anhalten das letzte Datum noch einmal. Stand der
+    // Zustand dann noch auf „playing“, rief das onEnd erneut auf – endlos (RangeError, bis 29.10.2026 auf jeder Seite
+    // mit Bar-Grafik in der Konsole).
     this.set({ state: 'holdEnd' })
+    h.pause()
     this.timer = setTimeout(() => {
       if (this.loop) this.play()
       else this.set({ state: 'ended' })

@@ -410,6 +410,8 @@ for (const r of leseCsv(path.join(RAW, 'terminservicestellen.csv'))) merke(Numbe
 for (const r of leseCsv(path.join(RAW, 'erezept-quote.csv'))) merke(Number(r.wert))
 for (const r of leseCsv(path.join(RAW, 'weiterbildung-foerderung.csv'))) merke(Number(r.wert))
 merke(10841); merke(6130) // Ländersumme 2024, VZÄ 2024 gerundet
+for (const r of leseCsv(path.join(RAW, 'apotheken.csv'))) merke(Number(r.wert))
+merke(3134); merke(4743) // Hauptapotheken mit Filiale 2024 (12.530 − 9.396), Filialen 2021 gerechnet
 // Berichte je Arztgruppe: Rohwerte und Summen der Top 20 je Gruppe (Mindestwert der Gruppe).
 if (fs.existsSync(path.join(RAW, 'pvs-kbv-arztgruppen.csv'))) {
   const AG = leseCsv(path.join(RAW, 'pvs-kbv-arztgruppen.csv'))

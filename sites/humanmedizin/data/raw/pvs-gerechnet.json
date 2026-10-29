@@ -2696,5 +2696,61 @@
    "wert": 1504,
    "methode": "linear zwischen 2023-06-30 (1536) und 2024-12-31 (1440), KBV-Bericht Arztgruppe Internisten"
   }
+ ],
+ "apotheken-filialen": [
+  {
+   "jahr": 2016,
+   "system": "Filialapotheken",
+   "wert": 4353,
+   "methode": "linear zwischen 2015 und 2020 (ABDA-Jahrbuch 2025)"
+  },
+  {
+   "jahr": 2017,
+   "system": "Filialapotheken",
+   "wert": 4426,
+   "methode": "linear zwischen 2015 und 2020 (ABDA-Jahrbuch 2025)"
+  },
+  {
+   "jahr": 2018,
+   "system": "Filialapotheken",
+   "wert": 4498,
+   "methode": "linear zwischen 2015 und 2020 (ABDA-Jahrbuch 2025)"
+  },
+  {
+   "jahr": 2019,
+   "system": "Filialapotheken",
+   "wert": 4571,
+   "methode": "linear zwischen 2015 und 2020 (ABDA-Jahrbuch 2025)"
+  },
+  {
+   "jahr": 2021,
+   "system": "Filialapotheken",
+   "wert": 4743,
+   "methode": "Gesamtzahl − Haupt-/Einzelapotheken (ABDA 2024)"
+  },
+  {
+   "jahr": 2016,
+   "system": "Ohne Filiale",
+   "wert": 12443,
+   "methode": "linear zwischen 2015 und 2020 (ABDA-Jahrbuch 2025)"
+  },
+  {
+   "jahr": 2017,
+   "system": "Ohne Filiale",
+   "wert": 12035,
+   "methode": "linear zwischen 2015 und 2020 (ABDA-Jahrbuch 2025)"
+  },
+  {
+   "jahr": 2018,
+   "system": "Ohne Filiale",
+   "wert": 11627,
+   "methode": "linear zwischen 2015 und 2020 (ABDA-Jahrbuch 2025)"
+  },
+  {
+   "jahr": 2019,
+   "system": "Ohne Filiale",
+   "wert": 11219,
+   "methode": "linear zwischen 2015 und 2020 (ABDA-Jahrbuch 2025)"
+  }
  ]
 }

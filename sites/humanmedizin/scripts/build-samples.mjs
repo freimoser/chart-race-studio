@@ -477,6 +477,34 @@ for (let j = 2015; j <= 2024; j++) {
   if (summe < bund || summe - bund > bund * 0.01) throw new Error(`weiterbildung-allgemeinmedizin: Länder ${summe} ≠ Bund ${bund} (${j})`)
 }
 
+// ---------- Apotheken ohne Filiale und Filialapotheken, 2015–2024 (ABDA-Statistik) ----------
+// Belegt: 2015, 2020–2024 (Jahrbücher 2024 und 2025); Filialen 2021 = Gesamtzahl − Haupt-/Einzelapotheken.
+// 2016–2019 linear zwischen 2015 und 2020 (stuetze), markiert in pvs-gerechnet.json unter 'apotheken-filialen'.
+// Gegenprobe: In belegten Jahren ergeben Haupt-/Einzelapotheken + Filialen genau die Gesamtzahl.
+const APO = csv('apotheken.csv')
+const apo = (j, n) => { const x = APO.find((z) => z.stichtag === `${j}-12-31` && z.reihe === `apotheken_${n}`); return x ? Number(x.wert) : null }
+const apoGerechnet = []
+const apoPunkte = (n) => Object.fromEntries([2015, 2020, 2021, 2022, 2023, 2024].map((j) => [j, n === 'filialen' && j === 2021 ? apo(j, 'gesamt') - apo(j, 'haupt_einzel') : apo(j, n)]))
+const apoReihe = (n, name) => {
+  const p = apoPunkte(n)
+  return (j) => {
+    const v = Math.round(stuetze(p, j))
+    if (apo(j, n) == null) apoGerechnet.push({ jahr: j, system: name, wert: v, methode: j === 2021 ? 'Gesamtzahl − Haupt-/Einzelapotheken (ABDA 2024)' : 'linear zwischen 2015 und 2020 (ABDA-Jahrbuch 2025)' })
+    return v
+  }
+}
+const apoOhne = apoReihe('ohne_filiale', 'Ohne Filiale'), apoFil = apoReihe('filialen', 'Filialapotheken')
+const APOTHEKEN = {
+  headers: ['Jahr', 'Ohne Filiale', 'Filialapotheken'],
+  rows: Array.from({ length: 10 }, (_, i) => 2015 + i).map((j) => [String(j), apoOhne(j), apoFil(j)]),
+}
+for (const j of [2015, 2020, 2021, 2022, 2023, 2024]) if (apo(j, 'haupt_einzel') + apoPunkte('filialen')[j] !== apo(j, 'gesamt')) throw new Error(`apotheken: Haupt + Filialen ≠ Gesamt (${j})`)
+for (let j = 2016; j <= 2019; j++) {
+  const haupt = Math.round(stuetze(apoPunkte('haupt_einzel'), j)), abw = haupt + apoFil(j) - apo(j, 'gesamt')
+  if (Math.abs(abw) > 100) throw new Error(`apotheken: gerechnete Summe weicht ${abw} von der Gesamtzahl ab (${j})`)
+}
+apoGerechnet.splice(0, apoGerechnet.length, ...[...new Map(apoGerechnet.map((g) => [g.system + g.jahr, g])).values()])
+
 // ---------- Download zur Säulenseite (Praxisverwaltungssysteme in Deutschland) ----------
 // Liegt in public/tabellen/, nicht in public/daten/: Das leert build-artikel.mjs bei jedem Build.
 // Alle erfassten Systeme mit Installationen Q4/2025 und Q3/2025 und den KBV-Zulassungen (Stand des Verzeichnisses).
@@ -501,7 +529,7 @@ for (let j = 2015; j <= 2024; j++) {
 // ---------- Ausgabe ----------
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 fs.writeFileSync('sites/humanmedizin/samples/data.ts', `// Automatisch erzeugt von sites/humanmedizin/scripts/build-samples.mjs aus sites/humanmedizin/data/raw/ – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABOR_AERZTE', LABOR_AERZTE), emit('LABORDATEN_PB', LABORDATEN_PB), emit('PVS_ALLGEMEIN', PVS_ALLGEMEIN), emit('EREZEPT_MONAT', EREZEPT_MONAT), emit('KIM_NUTZUNG', KIM_NUTZUNG), emit('MVZ_STATUS', MVZ_STATUS), emit('LABOR_HONORAR', LABOR_HONORAR), emit('EINZELPRAXEN', EINZELPRAXEN), emit('ARZTBRIEF_PB', ARZTBRIEF_PB), emit('EAU_MONAT', EAU_MONAT), emit('PVS_INTERNISTEN', PVS_INTERNISTEN), emit('MVZ_TYPEN', MVZ_TYPEN), emit('EPA_NUTZUNG', EPA_NUTZUNG), emit('FRAUENANTEIL', FRAUENANTEIL), emit('ANERKENNUNGEN', ANERKENNUNGEN), emit('MEDIZINSTUDIUM', MEDIZINSTUDIUM), emit('DIGITALE_ANGEBOTE', DIGITALE_ANGEBOTE), emit('PRAXISNETZE', PRAXISNETZE), emit('TSS', TSS), emit('AU_FAELLE', AU_FAELLE), emit('EREZEPT_QUOTE', EREZEPT_QUOTE), emit('WEITERBILDUNG_AM', WEITERBILDUNG_AM)].join('\n'))
+  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABOR_AERZTE', LABOR_AERZTE), emit('LABORDATEN_PB', LABORDATEN_PB), emit('PVS_ALLGEMEIN', PVS_ALLGEMEIN), emit('EREZEPT_MONAT', EREZEPT_MONAT), emit('KIM_NUTZUNG', KIM_NUTZUNG), emit('MVZ_STATUS', MVZ_STATUS), emit('LABOR_HONORAR', LABOR_HONORAR), emit('EINZELPRAXEN', EINZELPRAXEN), emit('ARZTBRIEF_PB', ARZTBRIEF_PB), emit('EAU_MONAT', EAU_MONAT), emit('PVS_INTERNISTEN', PVS_INTERNISTEN), emit('MVZ_TYPEN', MVZ_TYPEN), emit('EPA_NUTZUNG', EPA_NUTZUNG), emit('FRAUENANTEIL', FRAUENANTEIL), emit('ANERKENNUNGEN', ANERKENNUNGEN), emit('MEDIZINSTUDIUM', MEDIZINSTUDIUM), emit('DIGITALE_ANGEBOTE', DIGITALE_ANGEBOTE), emit('PRAXISNETZE', PRAXISNETZE), emit('TSS', TSS), emit('AU_FAELLE', AU_FAELLE), emit('EREZEPT_QUOTE', EREZEPT_QUOTE), emit('WEITERBILDUNG_AM', WEITERBILDUNG_AM), emit('APOTHEKEN', APOTHEKEN)].join('\n'))
 const sortiert = (l) => [...l].sort((a, b) => a.system.localeCompare(b.system) || a.jahr - b.jahr)
 fs.writeFileSync(path.join(RAW, 'pvs-gerechnet.json'), JSON.stringify({
   hinweis: 'Von sites/humanmedizin/scripts/build-samples.mjs erzeugt. Jeder Wert der Datensätze, der nicht direkt aus einem KBV-Bericht (Jahresende) stammt, mit Methode. pvs-hersteller ist die Summe von pvs-installationen und hat dieselben gerechneten Werte. Alles andere ist belegt (pvs-kbv-installationen.csv, pvs-kbv-luecken-1998-2012.csv).',
@@ -513,5 +541,6 @@ fs.writeFileSync(path.join(RAW, 'pvs-gerechnet.json'), JSON.stringify({
   'pvs-kis': sortiert(D6.gerechnet),
   'pvs-allgemeinmediziner': sortiert(amGerechnet),
   'pvs-internisten': sortiert(INT_REIHE.gerechnet),
+  'apotheken-filialen': sortiert(apoGerechnet),
 }, null, 1) + '\n')
 console.log('PVS_ARZT', PVS_ARZT.headers.length - 1, 'Systeme,', D1.gerechnet.length, 'gerechnet; PVS_ARZT_2007', PVS_ARZT_2007.headers.length - 1, 'Systeme,', PVS_ARZT_2007.rows.length, 'Jahre,', D3.gerechnet.length, 'von', (PVS_ARZT_2007.headers.length - 1) * PVS_ARZT_2007.rows.length, 'gerechnet bzw. angenommen')

@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, FRAUENANTEIL, ANERKENNUNGEN, MEDIZINSTUDIUM, PRAXISNETZE, TSS, EARZTBRIEF_MONAT, EREZEPT_MONAT, EREZEPT_QUOTE, KIM_NUTZUNG, WEITERBILDUNG_AM, EAU_MONAT, AU_FAELLE, EPA_NUTZUNG, DIGITALE_ANGEBOTE, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
+import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, FRAUENANTEIL, ANERKENNUNGEN, MEDIZINSTUDIUM, PRAXISNETZE, TSS, EARZTBRIEF_MONAT, EREZEPT_MONAT, EREZEPT_QUOTE, KIM_NUTZUNG, WEITERBILDUNG_AM, APOTHEKEN, EAU_MONAT, AU_FAELLE, EPA_NUTZUNG, DIGITALE_ANGEBOTE, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -609,6 +609,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: WEITERBILDUNG_AM.headers,
     rows: WEITERBILDUNG_AM.rows,
     suggested: { chartType: 'line', topN: 4, decimals: 0, primaryAxisLabel: 'Ärzte in Weiterbildung', colors: { Bayern: BLAU, 'Nordrhein-Westfalen': ORANGE, 'Baden-Württemberg': GRUEN, Niedersachsen: '#6250d6' } },
+  },
+  {
+    id: 'apotheken-filialen',
+    erstellt: '2026-10-29', geprueft: '2026-10-29',
+    category: 'versorgung',
+    title: 'Apotheken: Die Einzelapotheke schwindet',
+    subtitle: 'Öffentliche Apotheken ohne Filiale und Filialapotheken in Deutschland, Jahresende, 2015 bis 2024',
+    source: 'Quelle: ABDA-Statistik (Jahrbücher 2024, 2025); 2016–2019 und Filialen 2021 gerechnet',
+    sourceUrl: 'https://www.abda.de/fileadmin/user_upload/assets/ZDF/Jahrbuch-ZDF-2025/ZDF_2025_ABDA_Statistisches_Jahrbuch.pdf',
+    unit: 'Apotheken',
+    description: 'Apotheken ohne Filiale sanken von 12.851 (2015) auf 9.396 (2024). Filialapotheken gab es 2024 mit 4.511 etwas mehr als 2015, aber weniger als 2022.',
+    dataInfo: [
+      'Gezählt werden öffentliche Apotheken laut ABDA-Statistik aus den Meldungen der Landesapothekerkammern, ohne Krankenhausapotheken, je Jahresende. „Ohne Filiale“ sind Einzelapotheken, deren Inhaber keine Filiale betreibt; Filialapotheken sind die bis zu drei Filialen einer Hauptapotheke. Die Hauptapotheken selbst (2024: 3.134) sind in keiner der beiden Linien.',
+      'Gerechnet: Die ABDA veröffentlicht die Filialstruktur nur für 2015 und 2020 bis 2024. 2016 bis 2019 sind für beide Linien linear zwischen 2015 und 2020 gerechnet, die Filialen 2021 als Gesamtzahl minus Haupt- und Einzelapotheken. Gegenprobe: In allen belegten Jahren ergeben Haupt- und Einzelapotheken plus Filialen genau die Gesamtzahl; in den gerechneten Jahren liegt die Summe 23 bis 97 Apotheken unter der belegten Gesamtzahl.',
+      'Zweitquelle für die Gesamtzahl: Die KBV-Gesundheitsdaten (I.4.1.1) zeigen 20.249 Apotheken Ende 2015 und 17.571 Ende 2023, dieselben Werte – sie übernehmen die ABDA-Statistik, eine unabhängige Zählung gibt es nicht. Ende 2025 waren es laut ABDA 16.601, der niedrigste Stand seit 1977. Die ABDA schreibt, die Filialisierung habe abgenommen; das gilt für die Zahl der Filialen erst seit 2021, davor stieg sie.',
+    ],
+    headers: APOTHEKEN.headers,
+    rows: APOTHEKEN.rows,
+    suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'Apotheken', colors: { 'Ohne Filiale': BLAU, Filialapotheken: ORANGE } },
   },
   {
     id: 'labor-honorar',
