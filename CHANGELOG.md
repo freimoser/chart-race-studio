@@ -4,6 +4,10 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Studio behält seine h1 (29.10.2026)
+
+- **Kern, betrifft beide Seiten (Fehler):** Die vorgerenderte Studio-Seite hat eine `h1`; sobald React lud, ersetzte die App sie ohne eigene Überschrift. Jetzt eine `sr-only`-`h1` „Studio für animierte Diagramme“ in der Studio-Ansicht – für die Tiermedizin, wo das Studio indexiert ist, auch für Google. Layout unverändert.
+
 ### Datumsformat: „Mär“ statt „3är“ (29.10.2026)
 
 - **Kern, betrifft beide Seiten (Fehler):** `formatPeriod` ersetzte die Platzhalter nacheinander; `\bM\b` traf dann das M im schon eingesetzten „Mär“/„März“ und machte „3är 2022“ (in Grafik und Video bei jedem März mit den Formaten „MMM YYYY“ und „MMMM YYYY“). Jetzt ein einziger Durchgang, mit Test. Glätteprüfung beider Seiten: 0 Sprünge. Neue Startkonfiguration `dev-tier-5189` (Tiermedizin-Studio ohne `site.mjs`, stört einen laufenden Humanmedizin-Server nicht).

@@ -277,6 +277,17 @@ const LABOR_AERZTE = {
   rows: Array.from({ length: 13 }, (_, i) => 2013 + i).map((j) => [String(j), lab(j, 'bar_labor_angestellt_einrichtungen'), lab(j, 'bar_labor_zulassung')]),
 }
 for (const r of LABOR_AERZTE.rows) if (r.slice(1).some((v) => v == null)) throw new Error(`labor-aerzte: Wert fehlt ${r}`)
+// GKV-Honorarumsatz der Laboratoriumsmedizin je Quartal (KBV-Honorarbericht, Bund), 1/2013–3/2024, in Mio. Euro gerundet.
+// Alle Quartale belegt; 4/2024 fehlt in der Quelle, deshalb endet die Reihe mit 3/2024.
+const hbQ = LAB.filter((x) => x.reihe === 'hb_labor_honorarumsatz').sort((a, b) => a.stichtag.localeCompare(b.stichtag))
+const LABOR_HONORAR = {
+  headers: ['Quartal', 'Honorarumsatz Laboratoriumsmedizin'],
+  rows: hbQ.map((x) => { const [j, m] = x.stichtag.split('-').map(Number); return [`${j}-Q${Math.ceil(m / 3)}`, Math.round(Number(x.wert) / 1e5) / 10] }),
+}
+for (let i = 1; i < hbQ.length; i++) {
+  const [vj, vm] = hbQ[i - 1].stichtag.split('-').map(Number), [j, m] = hbQ[i].stichtag.split('-').map(Number)
+  if ((j - vj) * 12 + m - vm !== 3) throw new Error(`labor-honorar: Quartal fehlt zwischen ${hbQ[i - 1].stichtag} und ${hbQ[i].stichtag}`)
+}
 
 // ---------- Allgemeinmediziner (Post 12) ----------
 // KBV-Berichte je Arztgruppe, Fachgruppe Allgemeinmediziner (Top 20), Quartale aus archivierten Berichten
@@ -327,7 +338,7 @@ const PVS_ALLGEMEIN = {
 // ---------- Ausgabe ----------
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 fs.writeFileSync('sites/humanmedizin/samples/data.ts', `// Automatisch erzeugt von sites/humanmedizin/scripts/build-samples.mjs aus sites/humanmedizin/data/raw/ – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABOR_AERZTE', LABOR_AERZTE), emit('LABORDATEN_PB', LABORDATEN_PB), emit('PVS_ALLGEMEIN', PVS_ALLGEMEIN), emit('EREZEPT_MONAT', EREZEPT_MONAT), emit('KIM_NUTZUNG', KIM_NUTZUNG), emit('MVZ_STATUS', MVZ_STATUS)].join('\n'))
+  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABOR_AERZTE', LABOR_AERZTE), emit('LABORDATEN_PB', LABORDATEN_PB), emit('PVS_ALLGEMEIN', PVS_ALLGEMEIN), emit('EREZEPT_MONAT', EREZEPT_MONAT), emit('KIM_NUTZUNG', KIM_NUTZUNG), emit('MVZ_STATUS', MVZ_STATUS), emit('LABOR_HONORAR', LABOR_HONORAR)].join('\n'))
 const sortiert = (l) => [...l].sort((a, b) => a.system.localeCompare(b.system) || a.jahr - b.jahr)
 fs.writeFileSync(path.join(RAW, 'pvs-gerechnet.json'), JSON.stringify({
   hinweis: 'Von sites/humanmedizin/scripts/build-samples.mjs erzeugt. Jeder Wert der Datensätze, der nicht direkt aus einem KBV-Bericht (Jahresende) stammt, mit Methode. pvs-hersteller ist die Summe von pvs-installationen und hat dieselben gerechneten Werte. Alles andere ist belegt (pvs-kbv-installationen.csv, pvs-kbv-luecken-1998-2012.csv).',

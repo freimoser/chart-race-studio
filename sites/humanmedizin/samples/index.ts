@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { AERZTE_PRAXISFORM, LABOR_AERZTE, MVZ_ANZAHL, MVZ_STATUS, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, LABORDATEN_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
+import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, LABORDATEN_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -324,6 +324,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: LABOR_AERZTE.headers,
     rows: LABOR_AERZTE.rows,
     suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'Personen', colors: { 'Angestellt in MVZ und Einrichtungen': ORANGE, 'Mit eigener Zulassung': BLAU } },
+  },
+  {
+    id: 'labor-honorar',
+    erstellt: '2026-10-29', geprueft: '2026-10-29',
+    category: 'versorgung',
+    title: 'Laborhonorar: der Corona-Berg',
+    subtitle: 'GKV-Honorarumsatz der Abrechnungsgruppe Laboratoriumsmedizin je Quartal, in Mio. Euro, 2013 bis 3. Quartal 2024',
+    source: 'Quelle: KBV, Honorarbericht (Tabellen, Bund); auf 0,1 Mio. Euro gerundet',
+    sourceUrl: 'https://www.kbv.de/documents/infothek/zahlen-und-fakten/honorarbericht/honorarbericht-tabellen.xlsx',
+    unit: 'Mio. Euro',
+    description: 'Das Kassenhonorar der Labore stieg mit den Corona-Tests von 413 Mio. Euro (Q4 2019) auf 813 Mio. Euro (Q1 2022) und fiel danach zurück.',
+    dataInfo: [
+      'Gezählt wird der Honorarumsatz der Abrechnungsgruppe Laboratoriumsmedizin aus der gesetzlichen Krankenversicherung laut KBV-Honorarbericht, je Quartal, für ganz Deutschland. Privat- und Krankenhausumsatz der Labore sind nicht enthalten, Ermächtigte ebenso nicht.',
+      'Alle Quartale von 1/2013 bis 3/2024 sind belegt; die Werte sind nur auf 0,1 Mio. Euro gerundet. Für 4/2024 fehlt der Wert in der Quelle, deshalb endet die Reihe vorher.',
+      'Zweitquelle für die Spitzen: Die KBV-Abrechnungsstatistik zählt für die SARS-CoV-2-PCR (GOP 32816) 5,1 Mio. Abrechnungen im 4. Quartal 2020 und 9,0 Mio. im 1. Quartal 2022, im Jahr 2023 noch je Quartal weniger als eine Million – dieselben Spitzen wie beim Honorar.',
+    ],
+    headers: LABOR_HONORAR.headers,
+    rows: LABOR_HONORAR.rows,
+    suggested: { chartType: 'line', topN: 1, decimals: 1, primaryAxisLabel: 'Mio. Euro je Quartal', dateFormat: 'Q YYYY', colors: { 'Honorarumsatz Laboratoriumsmedizin': ORANGE } },
   },
   {
     id: 'pvs-hersteller',

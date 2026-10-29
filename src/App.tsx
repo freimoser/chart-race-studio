@@ -95,6 +95,8 @@ export default function App() {
       // Breit: Bühne links, Bedienung rechts, beide mit eigenem Scrollbereich. Telefon: alles untereinander,
       // die Seite scrollt als Ganzes; die Bühne hat das Seitenverhältnis des Videos, höchstens 70 % der Höhe.
       <main className="grid flex-1 grid-cols-1 lg:min-h-0 lg:grid-cols-[minmax(0,1fr)_420px] xl:grid-cols-[minmax(0,1fr)_460px]">
+        {/* Die vorgerenderte Seite hat eine h1; ohne diese hier verlor das Studio sie, sobald React lädt (SEO, Screenreader). */}
+        <h1 className="sr-only">Studio für animierte Diagramme</h1>
         <section className="flex flex-col gap-3 p-3 lg:min-h-0 lg:p-5">
           <div
             className={`rounded-[var(--radius-brand)] bg-surface-2/60 p-2 lg:min-h-0 lg:flex-1 lg:p-5 ${hatDaten ? 'buehne-mobil' : ''}`}
