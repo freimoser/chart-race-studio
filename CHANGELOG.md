@@ -4,6 +4,10 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Post 27: Arzneimittel – Heimtiere und Pferde überholen die Nutztiere (29.10.2026)
+
+- **Tiermedizin:** Datensatz `tierarzneimittel` (BfT 2005–2025, zwei Linien, Euro je Tierart berechnet, Rohdatei `ds27`), Artikel 27 überarbeitet (Zeitreihe statt Einzelwert; „Kleintier“ = Heimtiere und Pferde) und vorab online, Post-Text, Datenherkunft.
+
 ### Post 34: Großbritannien hat eine Blutbank für Hunde (29.10.2026)
 
 - **Tiermedizin:** Datensatz `blutbank-uk` (Pet Blood Bank UK, GJ 2015–2025, drei Linien, Mindestwerte aus den Trustees' Reports, Rohdatei `ds26`), Artikel `/beitrag/blutbank-hund-grossbritannien` vorab online, Post-Text, Datenherkunft; Links aus Artikel 01 und 27. Auftakt der Serie Tierblutspende.

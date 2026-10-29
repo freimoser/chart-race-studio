@@ -258,12 +258,12 @@ export const POSTS: RoadmapPost[] = [
     refs: [25],
   },
   {
-    nr: 27, arc: 'markt', status: 'geplant',
-    title: 'Der Tiergesundheitsmarkt',
-    hook: 'Was in Deutschland mit Tierarzneimitteln umgesetzt wird, nicht mit Futter – und wie groß das Kleintiersegment daran ist.',
-    figures: ['2025: 1.098 Mio. Euro, plus 4,7 Prozent', 'Heimtiere stehen für 60,6 Prozent des Umsatzes', 'Zum Vergleich der ganze Markt: 5,1 Mrd. Euro Umsatz aller veterinärmedizinischen Unternehmen 2022 (Destatis, zitiert im Tierärzte Atlas)', 'Auf rund 1.000 Praxen entfällt die Hälfte des Branchenumsatzes'],
-    dataStatus: 'teilweise',
-    dataNote: 'Der Wert für 2025 stammt aus der Jahresmeldung des Bundesverbands für Tiergesundheit, die Umsatzverteilung aus dem Tierärzte Atlas 2024. Für ein Video fehlt die Reihe der Vorjahre, die der BfT jährlich veröffentlicht.',
+    nr: 27, arc: 'markt', status: 'geplant', vorabOnline: true,
+    title: 'Arzneimittel: Heimtiere und Pferde überholen die Nutztiere',
+    hook: 'Bis 2012 floss mehr Geld in Arzneimittel für Nutztiere. Heute sind es 665 Mio. Euro für Heimtiere und Pferde gegen 433 Mio. für Nutztiere.',
+    figures: ['Tierarzneimittel gesamt: 559 Mio. Euro (2005) → 1.098 Mio. (2025), fast verdoppelt', 'Heimtiere und Pferde: 268 → 665 Mio. (berechnet), Anteil 48 → 60,6 Prozent', 'Nutztiere: 291 → 433 Mio. (berechnet), 2012 bis 2023 fast unverändert', 'Antiinfektiva: 202 Mio. (2010) → 148 Mio. (2025)'],
+    sampleId: 'tierarzneimittel', chart: 'line', dataStatus: 'belegt',
+    dataNote: 'BfT-Marktzahlen 2005–2025 aus Pressemitteilungen und Marktgrafiken (ds27-bft-tierarzneimittel.json). Euro je Tierart = Gesamt × Anteil (berechnet), Anteil 2013/2015 linear, Gesamt 2005 aus Rate. „Kleintier“ inkl. Pferde. Brüche 2013/14 und 2022/23 (Basis korrigiert). Gegenprobe Richtung: BVL-Antibiotikamengen (Post 32), Hundezahl IVH.',
     refs: [25, 26, 6],
   },
   {

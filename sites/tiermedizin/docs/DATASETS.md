@@ -262,3 +262,7 @@ Rohdaten `data/raw/ds25-online-handel-2005-2012.json` (jede Zeile mit `art`: Bel
 ## Britische Blutbank für Hunde (`blutbank-uk`, Post 34)
 
 Rohdaten `data/raw/ds26-pbb-uk.json` (Trustees' Reports der Pet Blood Bank UK, Companies House SC313849, GJ bis 31.03. 2015–2025, Mindestwerte). Drei Linien: Blutspenden gesammelt, Rote Blutkörperchen (Erythrozytenkonzentrat) und Plasma abgegeben. Spender kumuliert nur im Text. Nur Hunde. Auftakt der Serie Tierblutspende.
+
+## Tierarzneimittel nach Tierart (`tierarzneimittel`, Post 27)
+
+Rohdaten `data/raw/ds27-bft-tierarzneimittel.json` (BfT 2005–2025: Gesamt, Anteil Kleintier inkl. Pferde, Segmente; jede Zeile mit `art`). Zwei Linien in Mio. Euro, berechnet als Gesamt × Anteil. Anteil 2013/2015 linear, Gesamt 2005 aus Rate. Brüche 2013/14, 2022/23.

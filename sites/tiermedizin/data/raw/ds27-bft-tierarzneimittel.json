@@ -1,0 +1,1328 @@
+{
+ "title": "Tierarzneimittelmarkt Deutschland laut BfT, 2005–2025: Gesamt, Anteil Heimtiere und Pferde, Segmente",
+ "abgerufen": "2026-10-29",
+ "quelle": "Bundesverband für Tiergesundheit (BfT), jährliche Pressemitteilungen und Marktgrafiken (bft-online.de, ältere über web.archive.org)",
+ "quelleUrl": "https://www.bft-online.de/pressemitteilungen/tiergesundheit-gestalten-innovation-sicherheit-und-nachhaltigkeit-im-fokus",
+ "notes": [
+  "Schätzung des BfT auf den Gesamtmarkt (Mitglieder decken laut BfT mehr als 95 % ab). Preisstufe nicht genannt.",
+  "„Kleintier“ bzw. bis 2012 „Hobbytier (Hund, Katze, Pferd)“ schließt Pferde ein (PM 2013, PM 2023) – hier „Heimtiere und Pferde“.",
+  "Gerechnet: Gesamt 2005 aus 2006 und Rate (577/1,032 = 559,1; BfT: „nahezu 6 %“, 528 × 1,059 passt). Anteil 2013 und 2015 nennt der BfT nicht: linear zwischen den Nachbarjahren (50; 51,5). Mio. Euro je Segment = Gesamt × Anteil (alle Jahre berechnet). Anteile sind bis 2023 gerundete Werte, 2014, 2016, 2017, 2022, 2023 mit „etwa“.",
+  "Brüche: 2013/2014 „Basis 2013 korrigiert“ (aus 771/1,042 folgt 740 statt 747); 2022/2023 Basis angehoben (902 × 1,061 = 957 statt 964,7); 2020/2021 klein (878 × 1,032 = 906 statt 900). Werte wie gemeldet, nicht verkettet.",
+  "Anteil 2025: BfT meldet erneut 60,6 % (PM 08.05.2026), wie 2024; zza-online schreibt „etwa 60 Prozent“.",
+  "Segmente (Mio. €) ab 2006 aus den Grafiken; 2004 in der Grafik 2004 (146/136/88/158)."
+ ],
+ "rows": [
+  {
+   "date": "2005",
+   "metric": "Gesamt",
+   "name": "Tierarzneimittel gesamt",
+   "value": 559.1,
+   "art": "aus Veränderungsrate (577 / 1,032)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheit-hat-hohen-stellenwert"
+  },
+  {
+   "date": "2005",
+   "metric": "Anteil",
+   "name": "Heimtiere und Pferde (Anteil %)",
+   "value": 48,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheit-hat-hohen-stellenwert"
+  },
+  {
+   "date": "2005",
+   "metric": "Umsatz",
+   "name": "Heimtiere und Pferde",
+   "value": 268,
+   "art": "berechnet: Gesamt × Anteil",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheit-hat-hohen-stellenwert"
+  },
+  {
+   "date": "2005",
+   "metric": "Umsatz",
+   "name": "Nutztiere",
+   "value": 291,
+   "art": "berechnet: Gesamt × (100 − Anteil)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheit-hat-hohen-stellenwert"
+  },
+  {
+   "date": "2006",
+   "metric": "Gesamt",
+   "name": "Tierarzneimittel gesamt",
+   "value": 577,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2007-in-weimar"
+  },
+  {
+   "date": "2006",
+   "metric": "Anteil",
+   "name": "Heimtiere und Pferde (Anteil %)",
+   "value": 47,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2007-in-weimar"
+  },
+  {
+   "date": "2006",
+   "metric": "Umsatz",
+   "name": "Heimtiere und Pferde",
+   "value": 271,
+   "art": "berechnet: Gesamt × Anteil",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2007-in-weimar"
+  },
+  {
+   "date": "2006",
+   "metric": "Umsatz",
+   "name": "Nutztiere",
+   "value": 306,
+   "art": "berechnet: Gesamt × (100 − Anteil)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2007-in-weimar"
+  },
+  {
+   "date": "2006",
+   "metric": "Segment",
+   "name": "Pharmazeutische Spezialitäten",
+   "value": 155,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2007-in-weimar"
+  },
+  {
+   "date": "2006",
+   "metric": "Segment",
+   "name": "Impfstoffe (Biologika)",
+   "value": 138,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2007-in-weimar"
+  },
+  {
+   "date": "2006",
+   "metric": "Segment",
+   "name": "Antiparasitika",
+   "value": 100,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2007-in-weimar"
+  },
+  {
+   "date": "2006",
+   "metric": "Segment",
+   "name": "Antiinfektiva",
+   "value": 184,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2007-in-weimar"
+  },
+  {
+   "date": "2007",
+   "metric": "Gesamt",
+   "name": "Tierarzneimittel gesamt",
+   "value": 626,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2008-in-westerland"
+  },
+  {
+   "date": "2007",
+   "metric": "Anteil",
+   "name": "Heimtiere und Pferde (Anteil %)",
+   "value": 48,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2008-in-westerland"
+  },
+  {
+   "date": "2007",
+   "metric": "Umsatz",
+   "name": "Heimtiere und Pferde",
+   "value": 300,
+   "art": "berechnet: Gesamt × Anteil",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2008-in-westerland"
+  },
+  {
+   "date": "2007",
+   "metric": "Umsatz",
+   "name": "Nutztiere",
+   "value": 326,
+   "art": "berechnet: Gesamt × (100 − Anteil)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2008-in-westerland"
+  },
+  {
+   "date": "2007",
+   "metric": "Segment",
+   "name": "Pharmazeutische Spezialitäten",
+   "value": 164,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2008-in-westerland"
+  },
+  {
+   "date": "2007",
+   "metric": "Segment",
+   "name": "Impfstoffe (Biologika)",
+   "value": 145,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2008-in-westerland"
+  },
+  {
+   "date": "2007",
+   "metric": "Segment",
+   "name": "Antiparasitika",
+   "value": 116,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2008-in-westerland"
+  },
+  {
+   "date": "2007",
+   "metric": "Segment",
+   "name": "Antiinfektiva",
+   "value": 201,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2008-in-westerland"
+  },
+  {
+   "date": "2008",
+   "metric": "Gesamt",
+   "name": "Tierarzneimittel gesamt",
+   "value": 660,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2009-in-augsburg"
+  },
+  {
+   "date": "2008",
+   "metric": "Anteil",
+   "name": "Heimtiere und Pferde (Anteil %)",
+   "value": 47,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2009-in-augsburg"
+  },
+  {
+   "date": "2008",
+   "metric": "Umsatz",
+   "name": "Heimtiere und Pferde",
+   "value": 310,
+   "art": "berechnet: Gesamt × Anteil",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2009-in-augsburg"
+  },
+  {
+   "date": "2008",
+   "metric": "Umsatz",
+   "name": "Nutztiere",
+   "value": 350,
+   "art": "berechnet: Gesamt × (100 − Anteil)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2009-in-augsburg"
+  },
+  {
+   "date": "2008",
+   "metric": "Segment",
+   "name": "Pharmazeutische Spezialitäten",
+   "value": 173,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2009-in-augsburg"
+  },
+  {
+   "date": "2008",
+   "metric": "Segment",
+   "name": "Impfstoffe (Biologika)",
+   "value": 165,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2009-in-augsburg"
+  },
+  {
+   "date": "2008",
+   "metric": "Segment",
+   "name": "Antiparasitika",
+   "value": 119,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2009-in-augsburg"
+  },
+  {
+   "date": "2008",
+   "metric": "Segment",
+   "name": "Antiinfektiva",
+   "value": 203,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2009-in-augsburg"
+  },
+  {
+   "date": "2009",
+   "metric": "Gesamt",
+   "name": "Tierarzneimittel gesamt",
+   "value": 688,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2010-in-koeln"
+  },
+  {
+   "date": "2009",
+   "metric": "Anteil",
+   "name": "Heimtiere und Pferde (Anteil %)",
+   "value": 48,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2010-in-koeln"
+  },
+  {
+   "date": "2009",
+   "metric": "Umsatz",
+   "name": "Heimtiere und Pferde",
+   "value": 330,
+   "art": "berechnet: Gesamt × Anteil",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2010-in-koeln"
+  },
+  {
+   "date": "2009",
+   "metric": "Umsatz",
+   "name": "Nutztiere",
+   "value": 358,
+   "art": "berechnet: Gesamt × (100 − Anteil)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2010-in-koeln"
+  },
+  {
+   "date": "2009",
+   "metric": "Segment",
+   "name": "Pharmazeutische Spezialitäten",
+   "value": 184,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2010-in-koeln"
+  },
+  {
+   "date": "2009",
+   "metric": "Segment",
+   "name": "Impfstoffe (Biologika)",
+   "value": 185,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2010-in-koeln"
+  },
+  {
+   "date": "2009",
+   "metric": "Segment",
+   "name": "Antiparasitika",
+   "value": 121,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2010-in-koeln"
+  },
+  {
+   "date": "2009",
+   "metric": "Segment",
+   "name": "Antiinfektiva",
+   "value": 198,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2010-in-koeln"
+  },
+  {
+   "date": "2010",
+   "metric": "Gesamt",
+   "name": "Tierarzneimittel gesamt",
+   "value": 714,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2011-in-berlin"
+  },
+  {
+   "date": "2010",
+   "metric": "Anteil",
+   "name": "Heimtiere und Pferde (Anteil %)",
+   "value": 49,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2011-in-berlin"
+  },
+  {
+   "date": "2010",
+   "metric": "Umsatz",
+   "name": "Heimtiere und Pferde",
+   "value": 350,
+   "art": "berechnet: Gesamt × Anteil",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2011-in-berlin"
+  },
+  {
+   "date": "2010",
+   "metric": "Umsatz",
+   "name": "Nutztiere",
+   "value": 364,
+   "art": "berechnet: Gesamt × (100 − Anteil)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2011-in-berlin"
+  },
+  {
+   "date": "2010",
+   "metric": "Segment",
+   "name": "Pharmazeutische Spezialitäten",
+   "value": 197,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2011-in-berlin"
+  },
+  {
+   "date": "2010",
+   "metric": "Segment",
+   "name": "Impfstoffe (Biologika)",
+   "value": 188,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2011-in-berlin"
+  },
+  {
+   "date": "2010",
+   "metric": "Segment",
+   "name": "Antiparasitika",
+   "value": 127,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2011-in-berlin"
+  },
+  {
+   "date": "2010",
+   "metric": "Segment",
+   "name": "Antiinfektiva",
+   "value": 202,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2011-in-berlin"
+  },
+  {
+   "date": "2011",
+   "metric": "Gesamt",
+   "name": "Tierarzneimittel gesamt",
+   "value": 736,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2012-in-muenchen"
+  },
+  {
+   "date": "2011",
+   "metric": "Anteil",
+   "name": "Heimtiere und Pferde (Anteil %)",
+   "value": 49,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2012-in-muenchen"
+  },
+  {
+   "date": "2011",
+   "metric": "Umsatz",
+   "name": "Heimtiere und Pferde",
+   "value": 361,
+   "art": "berechnet: Gesamt × Anteil",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2012-in-muenchen"
+  },
+  {
+   "date": "2011",
+   "metric": "Umsatz",
+   "name": "Nutztiere",
+   "value": 375,
+   "art": "berechnet: Gesamt × (100 − Anteil)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2012-in-muenchen"
+  },
+  {
+   "date": "2011",
+   "metric": "Segment",
+   "name": "Pharmazeutische Spezialitäten",
+   "value": 212,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2012-in-muenchen"
+  },
+  {
+   "date": "2011",
+   "metric": "Segment",
+   "name": "Impfstoffe (Biologika)",
+   "value": 191,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2012-in-muenchen"
+  },
+  {
+   "date": "2011",
+   "metric": "Segment",
+   "name": "Antiparasitika",
+   "value": 133,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2012-in-muenchen"
+  },
+  {
+   "date": "2011",
+   "metric": "Segment",
+   "name": "Antiinfektiva",
+   "value": 200,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2012-in-muenchen"
+  },
+  {
+   "date": "2012",
+   "metric": "Gesamt",
+   "name": "Tierarzneimittel gesamt",
+   "value": 739,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2013-in-bremerhaven"
+  },
+  {
+   "date": "2012",
+   "metric": "Anteil",
+   "name": "Heimtiere und Pferde (Anteil %)",
+   "value": 50,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2013-in-bremerhaven"
+  },
+  {
+   "date": "2012",
+   "metric": "Umsatz",
+   "name": "Heimtiere und Pferde",
+   "value": 370,
+   "art": "berechnet: Gesamt × Anteil",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2013-in-bremerhaven"
+  },
+  {
+   "date": "2012",
+   "metric": "Umsatz",
+   "name": "Nutztiere",
+   "value": 370,
+   "art": "berechnet: Gesamt × (100 − Anteil)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2013-in-bremerhaven"
+  },
+  {
+   "date": "2012",
+   "metric": "Segment",
+   "name": "Pharmazeutische Spezialitäten",
+   "value": 218,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2013-in-bremerhaven"
+  },
+  {
+   "date": "2012",
+   "metric": "Segment",
+   "name": "Impfstoffe (Biologika)",
+   "value": 194,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2013-in-bremerhaven"
+  },
+  {
+   "date": "2012",
+   "metric": "Segment",
+   "name": "Antiparasitika",
+   "value": 140,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2013-in-bremerhaven"
+  },
+  {
+   "date": "2012",
+   "metric": "Segment",
+   "name": "Antiinfektiva",
+   "value": 187,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2013-in-bremerhaven"
+  },
+  {
+   "date": "2013",
+   "metric": "Gesamt",
+   "name": "Tierarzneimittel gesamt",
+   "value": 747,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2014-in-dresden"
+  },
+  {
+   "date": "2013",
+   "metric": "Anteil",
+   "name": "Heimtiere und Pferde (Anteil %)",
+   "value": 50.0,
+   "art": "gerechnet (linear zwischen Nachbarjahren)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2014-in-dresden"
+  },
+  {
+   "date": "2013",
+   "metric": "Umsatz",
+   "name": "Heimtiere und Pferde",
+   "value": 374,
+   "art": "berechnet: Gesamt × Anteil",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2014-in-dresden"
+  },
+  {
+   "date": "2013",
+   "metric": "Umsatz",
+   "name": "Nutztiere",
+   "value": 374,
+   "art": "berechnet: Gesamt × (100 − Anteil)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2014-in-dresden"
+  },
+  {
+   "date": "2013",
+   "metric": "Segment",
+   "name": "Pharmazeutische Spezialitäten",
+   "value": 230,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2014-in-dresden"
+  },
+  {
+   "date": "2013",
+   "metric": "Segment",
+   "name": "Impfstoffe (Biologika)",
+   "value": 202,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2014-in-dresden"
+  },
+  {
+   "date": "2013",
+   "metric": "Segment",
+   "name": "Antiparasitika",
+   "value": 137,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2014-in-dresden"
+  },
+  {
+   "date": "2013",
+   "metric": "Segment",
+   "name": "Antiinfektiva",
+   "value": 178,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2014-in-dresden"
+  },
+  {
+   "date": "2014",
+   "metric": "Gesamt",
+   "name": "Tierarzneimittel gesamt",
+   "value": 771,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-in-essen"
+  },
+  {
+   "date": "2014",
+   "metric": "Anteil",
+   "name": "Heimtiere und Pferde (Anteil %)",
+   "value": 50,
+   "art": "Beleg („etwa“)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-in-essen"
+  },
+  {
+   "date": "2014",
+   "metric": "Umsatz",
+   "name": "Heimtiere und Pferde",
+   "value": 386,
+   "art": "berechnet: Gesamt × Anteil",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-in-essen"
+  },
+  {
+   "date": "2014",
+   "metric": "Umsatz",
+   "name": "Nutztiere",
+   "value": 386,
+   "art": "berechnet: Gesamt × (100 − Anteil)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-in-essen"
+  },
+  {
+   "date": "2014",
+   "metric": "Segment",
+   "name": "Pharmazeutische Spezialitäten",
+   "value": 241,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-in-essen"
+  },
+  {
+   "date": "2014",
+   "metric": "Segment",
+   "name": "Impfstoffe (Biologika)",
+   "value": 208,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-in-essen"
+  },
+  {
+   "date": "2014",
+   "metric": "Segment",
+   "name": "Antiparasitika",
+   "value": 152,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-in-essen"
+  },
+  {
+   "date": "2014",
+   "metric": "Segment",
+   "name": "Antiinfektiva",
+   "value": 170,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-in-essen"
+  },
+  {
+   "date": "2015",
+   "metric": "Gesamt",
+   "name": "Tierarzneimittel gesamt",
+   "value": 761,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2016-in-wuerzburg"
+  },
+  {
+   "date": "2015",
+   "metric": "Anteil",
+   "name": "Heimtiere und Pferde (Anteil %)",
+   "value": 51.5,
+   "art": "gerechnet (linear zwischen Nachbarjahren)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2016-in-wuerzburg"
+  },
+  {
+   "date": "2015",
+   "metric": "Umsatz",
+   "name": "Heimtiere und Pferde",
+   "value": 392,
+   "art": "berechnet: Gesamt × Anteil",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2016-in-wuerzburg"
+  },
+  {
+   "date": "2015",
+   "metric": "Umsatz",
+   "name": "Nutztiere",
+   "value": 369,
+   "art": "berechnet: Gesamt × (100 − Anteil)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2016-in-wuerzburg"
+  },
+  {
+   "date": "2015",
+   "metric": "Segment",
+   "name": "Pharmazeutische Spezialitäten",
+   "value": 258,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2016-in-wuerzburg"
+  },
+  {
+   "date": "2015",
+   "metric": "Segment",
+   "name": "Impfstoffe (Biologika)",
+   "value": 204,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2016-in-wuerzburg"
+  },
+  {
+   "date": "2015",
+   "metric": "Segment",
+   "name": "Antiparasitika",
+   "value": 148,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2016-in-wuerzburg"
+  },
+  {
+   "date": "2015",
+   "metric": "Segment",
+   "name": "Antiinfektiva",
+   "value": 151,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2016-in-wuerzburg"
+  },
+  {
+   "date": "2016",
+   "metric": "Gesamt",
+   "name": "Tierarzneimittel gesamt",
+   "value": 788,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2017-in-hamburg"
+  },
+  {
+   "date": "2016",
+   "metric": "Anteil",
+   "name": "Heimtiere und Pferde (Anteil %)",
+   "value": 53,
+   "art": "Beleg („etwa“)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2017-in-hamburg"
+  },
+  {
+   "date": "2016",
+   "metric": "Umsatz",
+   "name": "Heimtiere und Pferde",
+   "value": 418,
+   "art": "berechnet: Gesamt × Anteil",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2017-in-hamburg"
+  },
+  {
+   "date": "2016",
+   "metric": "Umsatz",
+   "name": "Nutztiere",
+   "value": 370,
+   "art": "berechnet: Gesamt × (100 − Anteil)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2017-in-hamburg"
+  },
+  {
+   "date": "2016",
+   "metric": "Segment",
+   "name": "Pharmazeutische Spezialitäten",
+   "value": 266,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2017-in-hamburg"
+  },
+  {
+   "date": "2016",
+   "metric": "Segment",
+   "name": "Impfstoffe (Biologika)",
+   "value": 221,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2017-in-hamburg"
+  },
+  {
+   "date": "2016",
+   "metric": "Segment",
+   "name": "Antiparasitika",
+   "value": 150,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2017-in-hamburg"
+  },
+  {
+   "date": "2016",
+   "metric": "Segment",
+   "name": "Antiinfektiva",
+   "value": 151,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/bft-mitgliederversammlung-2017-in-hamburg"
+  },
+  {
+   "date": "2017",
+   "metric": "Gesamt",
+   "name": "Tierarzneimittel gesamt",
+   "value": 811,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/07052018-bft-mitgliederversammlung-2018-in-potsdam"
+  },
+  {
+   "date": "2017",
+   "metric": "Anteil",
+   "name": "Heimtiere und Pferde (Anteil %)",
+   "value": 53,
+   "art": "Beleg („etwa“)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/07052018-bft-mitgliederversammlung-2018-in-potsdam"
+  },
+  {
+   "date": "2017",
+   "metric": "Umsatz",
+   "name": "Heimtiere und Pferde",
+   "value": 430,
+   "art": "berechnet: Gesamt × Anteil",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/07052018-bft-mitgliederversammlung-2018-in-potsdam"
+  },
+  {
+   "date": "2017",
+   "metric": "Umsatz",
+   "name": "Nutztiere",
+   "value": 381,
+   "art": "berechnet: Gesamt × (100 − Anteil)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/07052018-bft-mitgliederversammlung-2018-in-potsdam"
+  },
+  {
+   "date": "2017",
+   "metric": "Segment",
+   "name": "Pharmazeutische Spezialitäten",
+   "value": 280,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/07052018-bft-mitgliederversammlung-2018-in-potsdam"
+  },
+  {
+   "date": "2017",
+   "metric": "Segment",
+   "name": "Impfstoffe (Biologika)",
+   "value": 229,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/07052018-bft-mitgliederversammlung-2018-in-potsdam"
+  },
+  {
+   "date": "2017",
+   "metric": "Segment",
+   "name": "Antiparasitika",
+   "value": 151,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/07052018-bft-mitgliederversammlung-2018-in-potsdam"
+  },
+  {
+   "date": "2017",
+   "metric": "Segment",
+   "name": "Antiinfektiva",
+   "value": 151,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/07052018-bft-mitgliederversammlung-2018-in-potsdam"
+  },
+  {
+   "date": "2018",
+   "metric": "Gesamt",
+   "name": "Tierarzneimittel gesamt",
+   "value": 813,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesunheitsbranche-in-bewegung"
+  },
+  {
+   "date": "2018",
+   "metric": "Anteil",
+   "name": "Heimtiere und Pferde (Anteil %)",
+   "value": 54,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesunheitsbranche-in-bewegung"
+  },
+  {
+   "date": "2018",
+   "metric": "Umsatz",
+   "name": "Heimtiere und Pferde",
+   "value": 439,
+   "art": "berechnet: Gesamt × Anteil",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesunheitsbranche-in-bewegung"
+  },
+  {
+   "date": "2018",
+   "metric": "Umsatz",
+   "name": "Nutztiere",
+   "value": 374,
+   "art": "berechnet: Gesamt × (100 − Anteil)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesunheitsbranche-in-bewegung"
+  },
+  {
+   "date": "2018",
+   "metric": "Segment",
+   "name": "Pharmazeutische Spezialitäten",
+   "value": 299,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesunheitsbranche-in-bewegung"
+  },
+  {
+   "date": "2018",
+   "metric": "Segment",
+   "name": "Impfstoffe (Biologika)",
+   "value": 224,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesunheitsbranche-in-bewegung"
+  },
+  {
+   "date": "2018",
+   "metric": "Segment",
+   "name": "Antiparasitika",
+   "value": 146,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesunheitsbranche-in-bewegung"
+  },
+  {
+   "date": "2018",
+   "metric": "Segment",
+   "name": "Antiinfektiva",
+   "value": 143,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesunheitsbranche-in-bewegung"
+  },
+  {
+   "date": "2019",
+   "metric": "Gesamt",
+   "name": "Tierarzneimittel gesamt",
+   "value": 843.9,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheitsbranche-sieht-sich-neuen-herausforderungen"
+  },
+  {
+   "date": "2019",
+   "metric": "Anteil",
+   "name": "Heimtiere und Pferde (Anteil %)",
+   "value": 55,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheitsbranche-sieht-sich-neuen-herausforderungen"
+  },
+  {
+   "date": "2019",
+   "metric": "Umsatz",
+   "name": "Heimtiere und Pferde",
+   "value": 464,
+   "art": "berechnet: Gesamt × Anteil",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheitsbranche-sieht-sich-neuen-herausforderungen"
+  },
+  {
+   "date": "2019",
+   "metric": "Umsatz",
+   "name": "Nutztiere",
+   "value": 380,
+   "art": "berechnet: Gesamt × (100 − Anteil)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheitsbranche-sieht-sich-neuen-herausforderungen"
+  },
+  {
+   "date": "2019",
+   "metric": "Segment",
+   "name": "Pharmazeutische Spezialitäten",
+   "value": 315.19,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheitsbranche-sieht-sich-neuen-herausforderungen"
+  },
+  {
+   "date": "2019",
+   "metric": "Segment",
+   "name": "Impfstoffe (Biologika)",
+   "value": 235.66,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheitsbranche-sieht-sich-neuen-herausforderungen"
+  },
+  {
+   "date": "2019",
+   "metric": "Segment",
+   "name": "Antiparasitika",
+   "value": 149.46,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheitsbranche-sieht-sich-neuen-herausforderungen"
+  },
+  {
+   "date": "2019",
+   "metric": "Segment",
+   "name": "Antiinfektiva",
+   "value": 143.63,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheitsbranche-sieht-sich-neuen-herausforderungen"
+  },
+  {
+   "date": "2020",
+   "metric": "Gesamt",
+   "name": "Tierarzneimittel gesamt",
+   "value": 878,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheitsbranche-hochaktiv-bei-besonderen-bedingungen"
+  },
+  {
+   "date": "2020",
+   "metric": "Anteil",
+   "name": "Heimtiere und Pferde (Anteil %)",
+   "value": 57,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheitsbranche-hochaktiv-bei-besonderen-bedingungen"
+  },
+  {
+   "date": "2020",
+   "metric": "Umsatz",
+   "name": "Heimtiere und Pferde",
+   "value": 500,
+   "art": "berechnet: Gesamt × Anteil",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheitsbranche-hochaktiv-bei-besonderen-bedingungen"
+  },
+  {
+   "date": "2020",
+   "metric": "Umsatz",
+   "name": "Nutztiere",
+   "value": 378,
+   "art": "berechnet: Gesamt × (100 − Anteil)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheitsbranche-hochaktiv-bei-besonderen-bedingungen"
+  },
+  {
+   "date": "2020",
+   "metric": "Segment",
+   "name": "Pharmazeutische Spezialitäten",
+   "value": 333,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheitsbranche-hochaktiv-bei-besonderen-bedingungen"
+  },
+  {
+   "date": "2020",
+   "metric": "Segment",
+   "name": "Impfstoffe (Biologika)",
+   "value": 237,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheitsbranche-hochaktiv-bei-besonderen-bedingungen"
+  },
+  {
+   "date": "2020",
+   "metric": "Segment",
+   "name": "Antiparasitika",
+   "value": 156,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheitsbranche-hochaktiv-bei-besonderen-bedingungen"
+  },
+  {
+   "date": "2020",
+   "metric": "Segment",
+   "name": "Antiinfektiva",
+   "value": 152,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheitsbranche-hochaktiv-bei-besonderen-bedingungen"
+  },
+  {
+   "date": "2021",
+   "metric": "Gesamt",
+   "name": "Tierarzneimittel gesamt",
+   "value": 900,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/zu-viel-ist-zu-viel/perspektiven-fuer-die-tiergesundheit-chancen-neuer-rahmenbedingungen-nutzen"
+  },
+  {
+   "date": "2021",
+   "metric": "Anteil",
+   "name": "Heimtiere und Pferde (Anteil %)",
+   "value": 61,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/zu-viel-ist-zu-viel/perspektiven-fuer-die-tiergesundheit-chancen-neuer-rahmenbedingungen-nutzen"
+  },
+  {
+   "date": "2021",
+   "metric": "Umsatz",
+   "name": "Heimtiere und Pferde",
+   "value": 549,
+   "art": "berechnet: Gesamt × Anteil",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/zu-viel-ist-zu-viel/perspektiven-fuer-die-tiergesundheit-chancen-neuer-rahmenbedingungen-nutzen"
+  },
+  {
+   "date": "2021",
+   "metric": "Umsatz",
+   "name": "Nutztiere",
+   "value": 351,
+   "art": "berechnet: Gesamt × (100 − Anteil)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/zu-viel-ist-zu-viel/perspektiven-fuer-die-tiergesundheit-chancen-neuer-rahmenbedingungen-nutzen"
+  },
+  {
+   "date": "2021",
+   "metric": "Segment",
+   "name": "Pharmazeutische Spezialitäten",
+   "value": 365.5,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/zu-viel-ist-zu-viel/perspektiven-fuer-die-tiergesundheit-chancen-neuer-rahmenbedingungen-nutzen"
+  },
+  {
+   "date": "2021",
+   "metric": "Segment",
+   "name": "Impfstoffe (Biologika)",
+   "value": 229.0,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/zu-viel-ist-zu-viel/perspektiven-fuer-die-tiergesundheit-chancen-neuer-rahmenbedingungen-nutzen"
+  },
+  {
+   "date": "2021",
+   "metric": "Segment",
+   "name": "Antiparasitika",
+   "value": 163.5,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/zu-viel-ist-zu-viel/perspektiven-fuer-die-tiergesundheit-chancen-neuer-rahmenbedingungen-nutzen"
+  },
+  {
+   "date": "2021",
+   "metric": "Segment",
+   "name": "Antiinfektiva",
+   "value": 142.7,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/zu-viel-ist-zu-viel/perspektiven-fuer-die-tiergesundheit-chancen-neuer-rahmenbedingungen-nutzen"
+  },
+  {
+   "date": "2022",
+   "metric": "Gesamt",
+   "name": "Tierarzneimittel gesamt",
+   "value": 902,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheit-essentiell-fuer-tierschutz-umweltschutz-und-klimaschutz-zukunftsfaehiger-und-zuverlaessiger-rechtsrahmen-fuer-wirtschaftskraft-notwendig-aktuelle-kennzahlen-tierarzneimittelmarkt"
+  },
+  {
+   "date": "2022",
+   "metric": "Anteil",
+   "name": "Heimtiere und Pferde (Anteil %)",
+   "value": 62,
+   "art": "Beleg („etwa“)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheit-essentiell-fuer-tierschutz-umweltschutz-und-klimaschutz-zukunftsfaehiger-und-zuverlaessiger-rechtsrahmen-fuer-wirtschaftskraft-notwendig-aktuelle-kennzahlen-tierarzneimittelmarkt"
+  },
+  {
+   "date": "2022",
+   "metric": "Umsatz",
+   "name": "Heimtiere und Pferde",
+   "value": 559,
+   "art": "berechnet: Gesamt × Anteil",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheit-essentiell-fuer-tierschutz-umweltschutz-und-klimaschutz-zukunftsfaehiger-und-zuverlaessiger-rechtsrahmen-fuer-wirtschaftskraft-notwendig-aktuelle-kennzahlen-tierarzneimittelmarkt"
+  },
+  {
+   "date": "2022",
+   "metric": "Umsatz",
+   "name": "Nutztiere",
+   "value": 343,
+   "art": "berechnet: Gesamt × (100 − Anteil)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheit-essentiell-fuer-tierschutz-umweltschutz-und-klimaschutz-zukunftsfaehiger-und-zuverlaessiger-rechtsrahmen-fuer-wirtschaftskraft-notwendig-aktuelle-kennzahlen-tierarzneimittelmarkt"
+  },
+  {
+   "date": "2022",
+   "metric": "Segment",
+   "name": "Pharmazeutische Spezialitäten",
+   "value": 393.32,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheit-essentiell-fuer-tierschutz-umweltschutz-und-klimaschutz-zukunftsfaehiger-und-zuverlaessiger-rechtsrahmen-fuer-wirtschaftskraft-notwendig-aktuelle-kennzahlen-tierarzneimittelmarkt"
+  },
+  {
+   "date": "2022",
+   "metric": "Segment",
+   "name": "Impfstoffe (Biologika)",
+   "value": 214.18,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheit-essentiell-fuer-tierschutz-umweltschutz-und-klimaschutz-zukunftsfaehiger-und-zuverlaessiger-rechtsrahmen-fuer-wirtschaftskraft-notwendig-aktuelle-kennzahlen-tierarzneimittelmarkt"
+  },
+  {
+   "date": "2022",
+   "metric": "Segment",
+   "name": "Antiparasitika",
+   "value": 161.4,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheit-essentiell-fuer-tierschutz-umweltschutz-und-klimaschutz-zukunftsfaehiger-und-zuverlaessiger-rechtsrahmen-fuer-wirtschaftskraft-notwendig-aktuelle-kennzahlen-tierarzneimittelmarkt"
+  },
+  {
+   "date": "2022",
+   "metric": "Segment",
+   "name": "Antiinfektiva",
+   "value": 133.12,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheit-essentiell-fuer-tierschutz-umweltschutz-und-klimaschutz-zukunftsfaehiger-und-zuverlaessiger-rechtsrahmen-fuer-wirtschaftskraft-notwendig-aktuelle-kennzahlen-tierarzneimittelmarkt"
+  },
+  {
+   "date": "2023",
+   "metric": "Gesamt",
+   "name": "Tierarzneimittel gesamt",
+   "value": 964.7,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/schwerpunkte-der-tiergesundheitsbranche-und-marktanalyse-2023"
+  },
+  {
+   "date": "2023",
+   "metric": "Anteil",
+   "name": "Heimtiere und Pferde (Anteil %)",
+   "value": 62,
+   "art": "Beleg („etwa“)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/schwerpunkte-der-tiergesundheitsbranche-und-marktanalyse-2023"
+  },
+  {
+   "date": "2023",
+   "metric": "Umsatz",
+   "name": "Heimtiere und Pferde",
+   "value": 598,
+   "art": "berechnet: Gesamt × Anteil",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/schwerpunkte-der-tiergesundheitsbranche-und-marktanalyse-2023"
+  },
+  {
+   "date": "2023",
+   "metric": "Umsatz",
+   "name": "Nutztiere",
+   "value": 367,
+   "art": "berechnet: Gesamt × (100 − Anteil)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/schwerpunkte-der-tiergesundheitsbranche-und-marktanalyse-2023"
+  },
+  {
+   "date": "2023",
+   "metric": "Segment",
+   "name": "Pharmazeutische Spezialitäten",
+   "value": 425.7,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/schwerpunkte-der-tiergesundheitsbranche-und-marktanalyse-2023"
+  },
+  {
+   "date": "2023",
+   "metric": "Segment",
+   "name": "Impfstoffe (Biologika)",
+   "value": 220.9,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/schwerpunkte-der-tiergesundheitsbranche-und-marktanalyse-2023"
+  },
+  {
+   "date": "2023",
+   "metric": "Segment",
+   "name": "Antiparasitika",
+   "value": 175.1,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/schwerpunkte-der-tiergesundheitsbranche-und-marktanalyse-2023"
+  },
+  {
+   "date": "2023",
+   "metric": "Segment",
+   "name": "Antiinfektiva",
+   "value": 143.0,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/schwerpunkte-der-tiergesundheitsbranche-und-marktanalyse-2023"
+  },
+  {
+   "date": "2024",
+   "metric": "Gesamt",
+   "name": "Tierarzneimittel gesamt",
+   "value": 1048.4,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/pressemitteilung-zum-markt-2025"
+  },
+  {
+   "date": "2024",
+   "metric": "Anteil",
+   "name": "Heimtiere und Pferde (Anteil %)",
+   "value": 60.6,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/pressemitteilung-zum-markt-2025"
+  },
+  {
+   "date": "2024",
+   "metric": "Umsatz",
+   "name": "Heimtiere und Pferde",
+   "value": 635,
+   "art": "berechnet: Gesamt × Anteil",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/pressemitteilung-zum-markt-2025"
+  },
+  {
+   "date": "2024",
+   "metric": "Umsatz",
+   "name": "Nutztiere",
+   "value": 413,
+   "art": "berechnet: Gesamt × (100 − Anteil)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/pressemitteilung-zum-markt-2025"
+  },
+  {
+   "date": "2024",
+   "metric": "Segment",
+   "name": "Pharmazeutische Spezialitäten",
+   "value": 462.8,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/pressemitteilung-zum-markt-2025"
+  },
+  {
+   "date": "2024",
+   "metric": "Segment",
+   "name": "Impfstoffe (Biologika)",
+   "value": 237.9,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/pressemitteilung-zum-markt-2025"
+  },
+  {
+   "date": "2024",
+   "metric": "Segment",
+   "name": "Antiparasitika",
+   "value": 199.1,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/pressemitteilung-zum-markt-2025"
+  },
+  {
+   "date": "2024",
+   "metric": "Segment",
+   "name": "Antiinfektiva",
+   "value": 148.6,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/pressemitteilung-zum-markt-2025"
+  },
+  {
+   "date": "2025",
+   "metric": "Gesamt",
+   "name": "Tierarzneimittel gesamt",
+   "value": 1098,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheit-gestalten-innovation-sicherheit-und-nachhaltigkeit-im-fokus"
+  },
+  {
+   "date": "2025",
+   "metric": "Anteil",
+   "name": "Heimtiere und Pferde (Anteil %)",
+   "value": 60.6,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheit-gestalten-innovation-sicherheit-und-nachhaltigkeit-im-fokus"
+  },
+  {
+   "date": "2025",
+   "metric": "Umsatz",
+   "name": "Heimtiere und Pferde",
+   "value": 665,
+   "art": "berechnet: Gesamt × Anteil",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheit-gestalten-innovation-sicherheit-und-nachhaltigkeit-im-fokus"
+  },
+  {
+   "date": "2025",
+   "metric": "Umsatz",
+   "name": "Nutztiere",
+   "value": 433,
+   "art": "berechnet: Gesamt × (100 − Anteil)",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheit-gestalten-innovation-sicherheit-und-nachhaltigkeit-im-fokus"
+  },
+  {
+   "date": "2025",
+   "metric": "Segment",
+   "name": "Pharmazeutische Spezialitäten",
+   "value": 485.7,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheit-gestalten-innovation-sicherheit-und-nachhaltigkeit-im-fokus"
+  },
+  {
+   "date": "2025",
+   "metric": "Segment",
+   "name": "Impfstoffe (Biologika)",
+   "value": 264.8,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheit-gestalten-innovation-sicherheit-und-nachhaltigkeit-im-fokus"
+  },
+  {
+   "date": "2025",
+   "metric": "Segment",
+   "name": "Antiparasitika",
+   "value": 199.7,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheit-gestalten-innovation-sicherheit-und-nachhaltigkeit-im-fokus"
+  },
+  {
+   "date": "2025",
+   "metric": "Segment",
+   "name": "Antiinfektiva",
+   "value": 147.8,
+   "art": "Beleg",
+   "source": "BfT, https://www.bft-online.de/pressemitteilungen/tiergesundheit-gestalten-innovation-sicherheit-und-nachhaltigkeit-im-fokus"
+  }
+ ]
+}

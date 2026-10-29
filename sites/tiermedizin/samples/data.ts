@@ -451,6 +451,33 @@ export const BLUTBANK_UK = {
   ],
 }
 
+export const TIERARZNEIMITTEL = {
+  headers: ["Jahr","Heimtiere und Pferde","Nutztiere"],
+  rows: [
+    ["2005", 268, 291],
+    ["2006", 271, 306],
+    ["2007", 300, 326],
+    ["2008", 310, 350],
+    ["2009", 330, 358],
+    ["2010", 350, 364],
+    ["2011", 361, 375],
+    ["2012", 370, 370],
+    ["2013", 374, 374],
+    ["2014", 386, 386],
+    ["2015", 392, 369],
+    ["2016", 418, 370],
+    ["2017", 430, 381],
+    ["2018", 439, 374],
+    ["2019", 464, 380],
+    ["2020", 500, 378],
+    ["2021", 549, 351],
+    ["2022", 559, 343],
+    ["2023", 598, 367],
+    ["2024", 635, 413],
+    ["2025", 665, 433],
+  ],
+}
+
 export const PRAXISSCHWERPUNKTE = {
   headers: ["Jahr","Nur Kleintiere","Gemischt (Nutz- und Kleintiere)","Nur Nutz- und Großtiere","Ketten (Standorte in Deutschland)"],
   rows: [

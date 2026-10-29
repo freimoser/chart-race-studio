@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { ANTIBIOTIKA, ANTIBIOTIKA_GESAMT, GOT_PFERD, ONLINE_HANDEL, ONLINE_HANDEL_2005, BLUTBANK_UK, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
+import { ANTIBIOTIKA, ANTIBIOTIKA_GESAMT, GOT_PFERD, ONLINE_HANDEL, ONLINE_HANDEL_2005, BLUTBANK_UK, TIERARZNEIMITTEL, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -622,6 +622,27 @@ export const SAMPLES: SampleDataset[] = [
     headers: ONLINE_HANDEL_2005.headers,
     rows: ONLINE_HANDEL_2005.rows,
     suggested: { chartType: 'line', topN: 4, decimals: 0, suffix: ' Mio. €', primaryAxisLabel: 'Mio. Euro', colors: { 'Online-Handel': '#e36414', 'Katzenfutter im Laden': '#0f4c5c', 'Hundefutter im Laden': '#5b8e9e', 'Zubehör im Laden': '#8d99ae' } },
+  },
+  {
+    id: 'tierarzneimittel',
+    erstellt: '2026-10-29', geprueft: '2026-10-29',
+    category: 'praxis',
+    title: 'Tierarzneimittel nach Tierart',
+    subtitle: 'Umsatz mit Tierarzneimitteln in Deutschland nach Tierart, Mio. Euro',
+    source: 'Quelle: Bundesverband für Tiergesundheit (BfT), Marktzahlen 2005–2025; Mio. Euro je Tierart aus Gesamt × Anteil berechnet',
+    sourceUrl: 'https://www.bft-online.de/pressemitteilungen/tiergesundheit-gestalten-innovation-sicherheit-und-nachhaltigkeit-im-fokus',
+    unit: 'Mio. €',
+    description: 'Bis 2012 floss mehr Geld in Arzneimittel für Nutztiere, seit 2015 in die für Heimtiere und Pferde: 665 zu 433 Mio. Euro im Jahr 2025.',
+    dataInfo: [
+      "Der Bundesverband für Tiergesundheit (BfT) schätzt jedes Jahr den deutschen Markt für Tierarzneimittel (Impfstoffe, Antiparasitika, Antiinfektiva, pharmazeutische Spezialitäten) und nennt das Verhältnis von „Kleintier“ zu Nutztier. Kleintier schließt laut BfT die Pferde ein (bis 2012: „Hobbytier: Hund, Katze, Pferd“), deshalb „Heimtiere und Pferde“.",
+      "Gerechnet: Die Euro-Beträge je Tierart sind Gesamtumsatz mal Anteil, der BfT nennt nur Prozent. Die Anteile sind bis 2023 gerundet, 2014, 2016, 2017, 2022 und 2023 mit „etwa“. Für 2013 und 2015 nennt der BfT keinen Anteil: linear zwischen den Nachbarjahren (50 und 51,5 Prozent). Den Gesamtwert 2005 nennt nur die Rate „nahezu 6 Prozent“: aus 2006 zurückgerechnet (559 Mio.).",
+      "Brüche: 2014 meldet der BfT eine korrigierte Basis für 2013, 2023 eine angehobene Basis für 2022 (902 × 1,061 wären 957 statt 964,7). Die Werte stehen wie gemeldet. Für 2025 meldet der BfT dasselbe Verhältnis wie 2024 (60,6 zu 39,4).",
+      "Gegenprobe der Richtung: Die Antiinfektiva, vor allem für Nutztiere, sinken von 202 Mio. Euro (2010) auf 148 Mio. (2025); die vom BVL erfasste Abgabe von Antibiotika an Tierärzte fiel von 2011 bis 2024 um 67 Prozent (Mengen, nicht Euro). Die Zahl der Hunde stieg laut IVH/ZZF seit 2013 um 45 Prozent.",
+      "Eine Schätzung des Verbands, dessen Mitglieder nach eigener Angabe mehr als 95 Prozent des Marktes abdecken; Preisstufe nicht genannt. Nicht preisbereinigt.",
+    ],
+    headers: TIERARZNEIMITTEL.headers,
+    rows: TIERARZNEIMITTEL.rows,
+    suggested: { chartType: 'line', topN: 2, decimals: 0, suffix: ' Mio. €', primaryAxisLabel: 'Mio. Euro', colors: { 'Heimtiere und Pferde': '#e36414', 'Nutztiere': '#0f4c5c' } },
   },
   {
     id: 'blutbank-uk',
