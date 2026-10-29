@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, FRAUENANTEIL, ANERKENNUNGEN, MEDIZINSTUDIUM, PRAXISNETZE, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, EAU_MONAT, EPA_NUTZUNG, DIGITALE_ANGEBOTE, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
+import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, FRAUENANTEIL, ANERKENNUNGEN, MEDIZINSTUDIUM, PRAXISNETZE, TSS, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, EAU_MONAT, EPA_NUTZUNG, DIGITALE_ANGEBOTE, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -476,6 +476,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: MVZ_TYPEN.headers,
     rows: MVZ_TYPEN.rows,
     suggested: { chartType: 'line', topN: 3, decimals: 0, primaryAxisLabel: 'MVZ', colors: { 'Nur Angestellte': ORANGE, Gemischt: GRUEN, 'Nur Vertragsärzte': BLAU } },
+  },
+  {
+    id: 'tss-vermittlungen',
+    erstellt: '2026-10-29', geprueft: '2026-10-29',
+    category: 'versorgung',
+    title: 'Terminservice: Orthopädie holt auf',
+    subtitle: 'Von den Terminservicestellen vermittelte Termine je Jahr nach Arztgruppe, 2016 bis 2025',
+    source: 'Quelle: KBV, Evaluationsberichte Terminservicestellen (KBV-Gesundheitsdaten)',
+    sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/gesundheitsdaten/statistik-terminservicestellen',
+    unit: 'vermittelte Termine',
+    description: 'Die Terminservicestellen vermittelten 2025 1.937.494 Termine, 2016 waren es 106.838; bei Chirurgen und Orthopäden stieg die Zahl fast auf das 16-Fache.',
+    dataInfo: [
+      'Gezählt werden Termine, die die Terminservicestellen der Kassenärztlichen Vereinigungen (116117) im Jahr vermittelt haben, laut Evaluationsberichten der KBV. Alle Werte sind belegt, keiner ist gerechnet.',
+      'Gezeigt sind vier Arztgruppen, die seit 2016 vermittelt werden. Nicht im Bild: Psychotherapeuten (seit 2017, 2025 418.896 Termine, die größte Gruppe) und Hausärzte (seit 2019); Radiologen fehlt in der Quelle ein Jahr. Den Einbruch 2022 und den Sprung 2023 zeigen alle Gruppen.',
+      'Zweitquelle zur Einordnung: Das Zentralinstitut für die kassenärztliche Versorgung zählte Mitte 2024 rund 2,6 Millionen an die Terminservicestellen gemeldete Termine in zwölf Monaten, von denen 45 Prozent gebucht wurden – das Angebot ist größer als die Nachfrage.',
+    ],
+    headers: TSS.headers,
+    rows: TSS.rows,
+    suggested: { chartType: 'line', topN: 4, decimals: 0, primaryAxisLabel: 'vermittelte Termine', colors: { Fachinternisten: '#6250d6', 'Nervenärzte': GRUEN, 'Chirurgen, Orthopäden': '#eda100', 'Augenärzte': BLAU } },
   },
   {
     id: 'praxisnetze',

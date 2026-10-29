@@ -5,7 +5,7 @@ titel: Laborärzte: 88,5 Prozent angestellt, kaum noch Praxen
 beschreibung: Ende 2025 sind 1.226 von 1.386 Laborärztinnen und -ärzten der Kassenversorgung angestellt, fast alle im MVZ. Mit eigener Zulassung arbeiten noch 99.
 frage: Sind Laborärzte angestellt oder selbstständig?
 suchbegriffe: laborarzt angestellt, labor mvz anzahl, laboratoriumsmedizin niedergelassen, laborgruppen deutschland, labor schnittstelle praxis
-stand: 2026-10-22
+stand: 2026-10-29
 kennzahl: versorgung/2 | 88,5 % | der Laborärztinnen und -ärzte angestellt | 2025
 bereit: ja
 ---
@@ -24,6 +24,10 @@ Wer eine Schnittstelle zwischen Praxis und Labor baut, verbindet heute nicht zwe
 
 Das passt dazu, dass der digitale Auftrag selten aus der Praxissoftware kommt: Die Gegenseite ist groß genug, um ihre eigene Software in die Praxen zu bringen. Wie die Zulassungen der Praxissysteme aussehen, steht in [LDT-Befunde ja, Aufträge kaum](labordaten-ldt-praxissoftware.html).
 
+## Das Kassenhonorar der Labore
+
+Die gesetzlichen Krankenkassen zahlten der Laboratoriumsmedizin im 1. Quartal 2013 314,5 Millionen Euro, im 4. Quartal 2019 413,1 Millionen. Mit den Corona-Tests verdoppelte sich das Quartalshonorar fast, auf 813 Millionen Euro im 1. Quartal 2022. Seit dem 2. Quartal 2022 liegt es zwischen 520 und 578 Millionen, im 3. Quartal 2024 bei 553,2 Millionen (KBV-Honorarbericht). Die Spitzen fallen mit den Abrechnungen der PCR-Tests zusammen.
+
 ## Was die Zahl nicht sagt
 
 - **Personen, keine Labore.** Wie viele Laborpraxen und Labor-MVZ es gibt, veröffentlicht keine Statistik. Auch Marktanteile der Laborgruppen lassen sich nicht ehrlich rechnen: Die Umsätze enthalten Privat- und Krankenhausleistungen, sind in verschiedenen Währungen und Geschäftsjahren angegeben, und für die meisten Gruppen fehlen sie.
@@ -33,11 +37,11 @@ Das passt dazu, dass der digitale Auftrag selten aus der Praxissoftware kommt: D
 
 ## Gerechnet
 
-Alle Werte der Grafik sind belegt. Gerechnet sind die Anteile (angestellt an allen, Rückgang der Zulassungen) und die Zahl der Laborärztinnen und -ärzte mit Zulassung in Einzelpraxen, summiert aus Tabelle 5 des Bundesarztregisters (mit und ohne angestellte Ärzte). Der Umsatz von Sonic ist ein veröffentlichter Wert, gerundet.
+Alle Werte der Grafik sind belegt. Gerechnet sind die Anteile (angestellt an allen, Rückgang der Zulassungen) und die Zahl der Laborärztinnen und -ärzte mit Zulassung in Einzelpraxen, summiert aus Tabelle 5 des Bundesarztregisters (mit und ohne angestellte Ärzte). Der Umsatz von Sonic ist ein veröffentlichter Wert, gerundet. Die Quartalshonorare stehen so im Honorarbericht der KBV, auf 0,1 Millionen Euro gerundet.
 
 ## Quelle und Methode
 
-Kassenärztliche Bundesvereinigung, [Statistische Informationen aus dem Bundesarztregister](https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf), Stände 31.12.2013 bis 31.12.2025, Tabellen 1.0, 5 und 9; Bundesärztekammer, [Ärztestatistik](https://www.bundesaerztekammer.de/fileadmin/user_upload/BAEK/Ueber_uns/Statistik/AErztestatistik_2025.pdf), Tabelle 3, 2013 bis 2025 (ältere Jahrgänge über das Webarchiv); Sonic Healthcare, [Financial and Operational Review, Geschäftsjahr bis 30.06.2026](https://investors.sonichealthcare.com/FormBuilder/_Resource/_module/T8Ln_c4ibUqyFnnNe9zNRA/docs/CEO/Financial_and_Operational_Review_30_June_2026.pdf). Abgerufen am 22. Oktober 2026. Wie MVZ insgesamt wachsen, zeigt [MVZ wachsen, ärztliche Einzelpraxen schrumpfen](mvz-einzelpraxis-aerzte.html).
+Kassenärztliche Bundesvereinigung, [Honorarbericht](https://www.kbv.de/documents/infothek/zahlen-und-fakten/honorarbericht/honorarbericht-tabellen.xlsx) (Quartale 1/2013–3/2024) und [Statistische Informationen aus dem Bundesarztregister](https://www.kbv.de/documents/infothek/zahlen-und-fakten/Bundesarztregister/statistische-informationen-bar-2025.pdf), Stände 31.12.2013 bis 31.12.2025, Tabellen 1.0, 5 und 9; Bundesärztekammer, [Ärztestatistik](https://www.bundesaerztekammer.de/fileadmin/user_upload/BAEK/Ueber_uns/Statistik/AErztestatistik_2025.pdf), Tabelle 3, 2013 bis 2025 (ältere Jahrgänge über das Webarchiv); Sonic Healthcare, [Financial and Operational Review, Geschäftsjahr bis 30.06.2026](https://investors.sonichealthcare.com/FormBuilder/_Resource/_module/T8Ln_c4ibUqyFnnNe9zNRA/docs/CEO/Financial_and_Operational_Review_30_June_2026.pdf). Abgerufen am 22. Oktober 2026. Wie MVZ insgesamt wachsen, zeigt [MVZ wachsen, ärztliche Einzelpraxen schrumpfen](mvz-einzelpraxis-aerzte.html).
 
 ## Häufige Fragen
 
