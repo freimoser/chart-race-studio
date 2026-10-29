@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, FRAUENANTEIL, ANERKENNUNGEN, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, EAU_MONAT, EPA_NUTZUNG, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
+import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, FRAUENANTEIL, ANERKENNUNGEN, MEDIZINSTUDIUM, EARZTBRIEF_MONAT, EREZEPT_MONAT, KIM_NUTZUNG, EAU_MONAT, EPA_NUTZUNG, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -362,6 +362,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: MVZ_ANZAHL.headers,
     rows: MVZ_ANZAHL.rows,
     suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'MVZ', colors: { 'MVZ gesamt': BLAU, 'davon Krankenhaus als Träger': ORANGE } },
+  },
+  {
+    id: 'medizinstudierende',
+    erstellt: '2026-10-29', geprueft: '2026-10-29',
+    category: 'versorgung',
+    title: 'Medizinstudium: zwei Drittel Frauen',
+    subtitle: 'Studierende der Humanmedizin in Deutschland nach Geschlecht, 2014 bis 2023',
+    source: 'Quelle: KBV-Gesundheitsdaten nach Statistischem Bundesamt (Tabelle 21311)',
+    sourceUrl: 'https://www.kbv.de/infothek/zahlen-und-fakten/gesundheitsdaten/medizinstudierende',
+    unit: 'Studierende',
+    description: 'Die Zahl der Medizinstudierenden stieg von 87.863 auf 113.383; 73.244 davon sind Frauen, fast zwei Drittel.',
+    dataInfo: [
+      'Gezählt werden Studierende im Fach Humanmedizin in Deutschland laut Statistischem Bundesamt, wie die KBV sie aufbereitet; das Jahr 2023 entspricht dem Wintersemester 2022/23. Alle Werte sind belegt, keiner ist gerechnet.',
+      'Zweitquelle: Statista nennt nach Destatis für das Wintersemester 2022/23 113.383 Studierende, davon 73.244 Frauen – dieselben Werte; der Generator prüft das. 2018 ergeben Frauen und Männer zusammen 57 Studierende weniger als die Gesamtzahl, vermutlich ohne Angabe zum Geschlecht.',
+      'Nicht verwendet: die Studienanfänger. Dort meldet die KBV für 2017 9.149 Frauen und 3.511 Männer, aber nur 9.660 insgesamt – offenbar ein Fehler bei den Frauen; nicht aus den Gesamtzahlen nachgerechnet, solange die Quelle ihn nicht bestätigt.',
+    ],
+    headers: MEDIZINSTUDIUM.headers,
+    rows: MEDIZINSTUDIUM.rows,
+    suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'Studierende', colors: { Studentinnen: '#e87ba4', Studenten: BLAU } },
   },
   {
     id: 'facharzt-anerkennungen',

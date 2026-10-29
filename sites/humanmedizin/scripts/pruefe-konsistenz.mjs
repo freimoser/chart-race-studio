@@ -405,6 +405,7 @@ merke(['x.isynet (ehem. MCS-ISYNET)', 'x.concept (ehem. DOCconcept)', 'x.comfort
 bekannt.add('10.000')
 for (const r of leseCsv(path.join(RAW, 'aerzteschaft-geschlecht.csv'))) merke(Number(r.wert))
 for (const r of leseCsv(path.join(RAW, 'weiterbildung.csv'))) merke(Number(r.wert))
+for (const r of leseCsv(path.join(RAW, 'medizinstudium.csv'))) merke(Number(r.wert))
 // Berichte je Arztgruppe: Rohwerte und Summen der Top 20 je Gruppe (Mindestwert der Gruppe).
 if (fs.existsSync(path.join(RAW, 'pvs-kbv-arztgruppen.csv'))) {
   const AG = leseCsv(path.join(RAW, 'pvs-kbv-arztgruppen.csv'))

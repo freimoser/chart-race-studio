@@ -398,6 +398,17 @@ const ANERKENNUNGEN = {
 }
 for (const r of ANERKENNUNGEN.rows) if (r.slice(1).some((v) => v == null)) throw new Error(`facharzt-anerkennungen: Wert fehlt ${r}`)
 
+// ---------- Medizinstudierende nach Geschlecht, 2014–2023 (KBV-Gesundheitsdaten nach Destatis 21311) ----------
+// Alle Werte belegt. Gegenprobe: 2023 = Wintersemester 2022/23 laut Statista nach Destatis (113.383, davon 73.244 Frauen).
+const MS = csv('medizinstudium.csv')
+const ms = (j, r) => { const x = MS.find((z) => z.stichtag === `${j}-12-31` && z.reihe === r); return x ? Number(x.wert) : null }
+if (ms(2023, 'studierende_weiblich') !== ms(2023, 'statista_studierende_ws2022_23_weiblich') || ms(2023, 'studierende_gesamt') !== ms(2023, 'statista_studierende_ws2022_23_gesamt')) throw new Error('medizinstudierende: 2023 weicht von Destatis/Statista ab')
+const MEDIZINSTUDIUM = {
+  headers: ['Jahr', 'Studentinnen', 'Studenten'],
+  rows: Array.from({ length: 10 }, (_, i) => 2014 + i).map((j) => [String(j), ms(j, 'studierende_weiblich'), ms(j, 'studierende_maennlich')]),
+}
+for (const r of MEDIZINSTUDIUM.rows) if (r.slice(1).some((v) => v == null)) throw new Error(`medizinstudierende: Wert fehlt ${r}`)
+
 // ---------- Download zur Säulenseite (Praxisverwaltungssysteme in Deutschland) ----------
 // Liegt in public/tabellen/, nicht in public/daten/: Das leert build-artikel.mjs bei jedem Build.
 // Alle erfassten Systeme mit Installationen Q4/2025 und Q3/2025 und den KBV-Zulassungen (Stand des Verzeichnisses).
@@ -422,7 +433,7 @@ for (const r of ANERKENNUNGEN.rows) if (r.slice(1).some((v) => v == null)) throw
 // ---------- Ausgabe ----------
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 fs.writeFileSync('sites/humanmedizin/samples/data.ts', `// Automatisch erzeugt von sites/humanmedizin/scripts/build-samples.mjs aus sites/humanmedizin/data/raw/ – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABOR_AERZTE', LABOR_AERZTE), emit('LABORDATEN_PB', LABORDATEN_PB), emit('PVS_ALLGEMEIN', PVS_ALLGEMEIN), emit('EREZEPT_MONAT', EREZEPT_MONAT), emit('KIM_NUTZUNG', KIM_NUTZUNG), emit('MVZ_STATUS', MVZ_STATUS), emit('LABOR_HONORAR', LABOR_HONORAR), emit('EINZELPRAXEN', EINZELPRAXEN), emit('ARZTBRIEF_PB', ARZTBRIEF_PB), emit('EAU_MONAT', EAU_MONAT), emit('PVS_INTERNISTEN', PVS_INTERNISTEN), emit('MVZ_TYPEN', MVZ_TYPEN), emit('EPA_NUTZUNG', EPA_NUTZUNG), emit('FRAUENANTEIL', FRAUENANTEIL), emit('ANERKENNUNGEN', ANERKENNUNGEN)].join('\n'))
+  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABOR_AERZTE', LABOR_AERZTE), emit('LABORDATEN_PB', LABORDATEN_PB), emit('PVS_ALLGEMEIN', PVS_ALLGEMEIN), emit('EREZEPT_MONAT', EREZEPT_MONAT), emit('KIM_NUTZUNG', KIM_NUTZUNG), emit('MVZ_STATUS', MVZ_STATUS), emit('LABOR_HONORAR', LABOR_HONORAR), emit('EINZELPRAXEN', EINZELPRAXEN), emit('ARZTBRIEF_PB', ARZTBRIEF_PB), emit('EAU_MONAT', EAU_MONAT), emit('PVS_INTERNISTEN', PVS_INTERNISTEN), emit('MVZ_TYPEN', MVZ_TYPEN), emit('EPA_NUTZUNG', EPA_NUTZUNG), emit('FRAUENANTEIL', FRAUENANTEIL), emit('ANERKENNUNGEN', ANERKENNUNGEN), emit('MEDIZINSTUDIUM', MEDIZINSTUDIUM)].join('\n'))
 const sortiert = (l) => [...l].sort((a, b) => a.system.localeCompare(b.system) || a.jahr - b.jahr)
 fs.writeFileSync(path.join(RAW, 'pvs-gerechnet.json'), JSON.stringify({
   hinweis: 'Von sites/humanmedizin/scripts/build-samples.mjs erzeugt. Jeder Wert der Datensätze, der nicht direkt aus einem KBV-Bericht (Jahresende) stammt, mit Methode. pvs-hersteller ist die Summe von pvs-installationen und hat dieselben gerechneten Werte. Alles andere ist belegt (pvs-kbv-installationen.csv, pvs-kbv-luecken-1998-2012.csv).',
