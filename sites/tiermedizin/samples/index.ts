@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { ANTIBIOTIKA, ANTIBIOTIKA_GESAMT, GOT_PFERD, ONLINE_HANDEL, ONLINE_HANDEL_2005, BLUTBANK_UK, TIERARZNEIMITTEL, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
+import { ANTIBIOTIKA, ANTIBIOTIKA_GESAMT, GOT_PFERD, ONLINE_HANDEL, ONLINE_HANDEL_2005, BLUTBANK_UK, TIERARZNEIMITTEL, HUNDESTEUER, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -622,6 +622,26 @@ export const SAMPLES: SampleDataset[] = [
     headers: ONLINE_HANDEL_2005.headers,
     rows: ONLINE_HANDEL_2005.rows,
     suggested: { chartType: 'line', topN: 4, decimals: 0, suffix: ' Mio. €', primaryAxisLabel: 'Mio. Euro', colors: { 'Online-Handel': '#e36414', 'Katzenfutter im Laden': '#0f4c5c', 'Hundefutter im Laden': '#5b8e9e', 'Zubehör im Laden': '#8d99ae' } },
+  },
+  {
+    id: 'hundesteuer',
+    erstellt: '2026-11-04', geprueft: '2026-11-04',
+    category: 'heimtiere',
+    title: 'Hundesteuer: kein Plus mehr',
+    subtitle: 'Einnahmen der Gemeinden aus der Hundesteuer in Deutschland, Mio. Euro',
+    source: 'Quelle: Statistisches Bundesamt, Kassenmäßige Steuereinnahmen (GENESIS 71211-0001)',
+    sourceUrl: 'https://www-genesis.destatis.de/datenbank/online/statistic/71211/table/71211-0001',
+    unit: 'Mio. €',
+    description: 'Von 188 Mio. Euro (1999) auf 430 Mio. (2024): Die Hundesteuer stieg jedes Jahr. 2025 kam erstmals kein Plus, minus 0,1 Prozent.',
+    dataInfo: [
+      "Kassenmäßige Einnahmen der Gemeinden aus der Hundesteuer laut Statistischem Bundesamt, also das Geld, das im jeweiligen Jahr in die Kassen floss. Lückenlos 1999 bis 2025, nichts gerechnet; die Tausend-Euro-Werte der Quelle sind hier in Millionen gerundet.",
+      "Die Steuer hängt an zwei Dingen: der Zahl der gemeldeten Hunde und den Steuersätzen der Gemeinden, die vielerorts gestiegen sind. Eine bundesweite Statistik der Sätze gibt es nicht; die Reihe misst deshalb Einnahmen, keine Hunde.",
+      "Gegenprobe: Von 2013 bis 2025 stieg die Steuer um 43,8 Prozent, die Zahl der Hunde laut IVH/ZZF um 44,9 Prozent (beides berechnet). 2025 zählen IVH/ZZF 10,0 Mio. Hunde nach 10,5 Mio. 2024, im selben Jahr wuchs die Steuer erstmals nicht. 2012 wuchs die Steuer um 4,6 Prozent, die gezählten Hunde sprangen um 37 Prozent: ein Methodenwechsel der Verbände, kein Boom.",
+      "Zweite Quellen für einzelne Jahre: Destatis-Meldung zu 2010 (258 Mio. Euro), petcom zu 2024 (430 Mio. Euro).",
+    ],
+    headers: HUNDESTEUER.headers,
+    rows: HUNDESTEUER.rows,
+    suggested: { chartType: 'line', topN: 1, decimals: 0, suffix: ' Mio. €', primaryAxisLabel: 'Mio. Euro', colors: { Hundesteuer: '#0f4c5c' } },
   },
   {
     id: 'tierarzneimittel',

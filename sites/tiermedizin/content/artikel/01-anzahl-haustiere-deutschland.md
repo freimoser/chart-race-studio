@@ -54,7 +54,7 @@ Zwei Einschränkungen gehören dazu. Die 20 Jahre überspannen den Methodenwechs
 
 ## Was die Zahl nicht sagt
 
-- **Es gibt kein Haustierregister.** Hunde werden nur kommunal für die Hundesteuer erfasst, Katzen gar nicht, die Register von TASSO und FINDEFIX sind freiwillig. Alle Werte sind Hochrechnungen aus Umfragen.
+- **Es gibt kein Haustierregister.** Hunde werden nur kommunal für die [Hundesteuer](hundesteuer-deutschland.html) erfasst, Katzen gar nicht, die Register von TASSO und FINDEFIX sind freiwillig. Alle Werte sind Hochrechnungen aus Umfragen.
 - **Die Reihe hat mehrere Methodenbrüche.** 1994 neue Berechnung der Ziervögel, 1999 Wechsel der Quelle, 2000 neue Erhebungsmethoden, 2002 Aufteilung der Aquarien, 2012 erste repräsentative Erhebung, 2013 erneute Umstellung. Faktoren über den gesamten Zeitraum sind deshalb Größenordnungen, keine Wachstumsraten.
 - **1992 fehlt.** Die Verbandsreihe überspringt das Jahr selbst.
 - **Gezählt werden Tiere, keine Haushalte.** Wie viele Haushalte ein Haustier halten, steht in diesem Datensatz nicht.

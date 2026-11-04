@@ -266,3 +266,7 @@ Rohdaten `data/raw/ds26-pbb-uk.json` (Trustees' Reports der Pet Blood Bank UK, C
 ## Tierarzneimittel nach Tierart (`tierarzneimittel`, Post 27)
 
 Rohdaten `data/raw/ds27-bft-tierarzneimittel.json` (BfT 2005–2025: Gesamt, Anteil Kleintier inkl. Pferde, Segmente; jede Zeile mit `art`). Zwei Linien in Mio. Euro, berechnet als Gesamt × Anteil. Anteil 2013/2015 linear, Gesamt 2005 aus Rate. Brüche 2013/14, 2022/23.
+
+## Hundesteuer: kein Plus mehr (`hundesteuer`, Post 35)
+
+Rohdaten `data/raw/ds28-hundesteuer.json` (Destatis 71211-0001, kassenmäßige Einnahmen 1999–2025, Mio. Euro). Eine Linie. Misst Einnahmen (Hunde × Sätze), keine Hunde; Gegenprobe IVH-Hundezahl.

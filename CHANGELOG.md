@@ -25,6 +25,10 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 - **Kern, betrifft beide Seiten (Fehler):** `formatPeriod` ersetzte die Platzhalter nacheinander; `\bM\b` traf dann das M im schon eingesetzten „Mär“/„März“ und machte „3är 2022“ (in Grafik und Video bei jedem März mit den Formaten „MMM YYYY“ und „MMMM YYYY“). Jetzt ein einziger Durchgang, mit Test. Glätteprüfung beider Seiten: 0 Sprünge. Neue Startkonfiguration `dev-tier-5189` (Tiermedizin-Studio ohne `site.mjs`, stört einen laufenden Humanmedizin-Server nicht).
 
+### Post 35: Hundesteuer – kein Plus mehr (04.11.2026)
+
+- **Tiermedizin:** Datensatz `hundesteuer` (Destatis 71211-0001, 1999–2025, eine Linie, Rohdatei `ds28`), Artikel `/beitrag/hundesteuer-deutschland` vorab online, Post-Text, Datenherkunft; Links aus Artikel 01 und 03.
+
 ### Post 36: Welche Hunde Universalspender sind (04.11.2026)
 
 - **Tiermedizin:** Karussell `karussell-universalspender` (5 Bilder: DEA 1 negativ je Rasse, Durchschnitt/Deutschland, VDH-Welpen, warum die Blutgruppe zählt), Artikel `/beitrag/blutgruppe-hund-universalspender` vorab online, Post-Text; Link aus Artikel 34. Serie Tierblutspende Teil 2.

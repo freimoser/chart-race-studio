@@ -1,0 +1,202 @@
+{
+ "title": "Hundesteuer: kassenmäßige Einnahmen der Gemeinden in Deutschland, 1999–2025 (Mio. Euro)",
+ "abgerufen": "2026-11-04",
+ "quelle": "Statistisches Bundesamt, GENESIS-Online 71211-0001 (Kassenmäßige Steuereinnahmen, Steuerart Hundesteuer), API ohne Login",
+ "quelleUrl": "https://www-genesis.destatis.de/datenbank/online/statistic/71211/table/71211-0001",
+ "notes": [
+  "Werte in Tsd. Euro aus der API, hier in Mio. Euro (gerundet auf eine Nachkommastelle). Lückenlos 1999–2025, nichts gerechnet. Am 04.11.2026 gegen die API geprüft: alle 27 Werte unverändert.",
+  "Kassenmäßige Einnahmen: was im Jahr in die Kasse floss, nicht die Steuerschuld des Jahres. Die Steuer hängt an der Zahl der gemeldeten Hunde und an den Sätzen der Gemeinden (keine bundesweite Statistik der Sätze).",
+  "Zweitquellen: Destatis-Meldung 2010 (258 Mio. Euro, topagrar); petcom 30.12.2025 „430 Millionen Euro aus Hundesteuer im Jahr 2024“. Richtung: IVH/ZZF zählen 2025 10,0 Mio. Hunde nach 10,5 Mio. 2024."
+ ],
+ "rows": [
+  {
+   "date": "1999",
+   "name": "Hundesteuer",
+   "value": 187.7,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2000",
+   "name": "Hundesteuer",
+   "value": 197.8,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2001",
+   "name": "Hundesteuer",
+   "value": 209.0,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2002",
+   "name": "Hundesteuer",
+   "value": 211.6,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2003",
+   "name": "Hundesteuer",
+   "value": 217.9,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2004",
+   "name": "Hundesteuer",
+   "value": 225.9,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2005",
+   "name": "Hundesteuer",
+   "value": 234.3,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2006",
+   "name": "Hundesteuer",
+   "value": 236.9,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2007",
+   "name": "Hundesteuer",
+   "value": 240.5,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2008",
+   "name": "Hundesteuer",
+   "value": 243.5,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2009",
+   "name": "Hundesteuer",
+   "value": 247.6,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2010",
+   "name": "Hundesteuer",
+   "value": 258.1,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2011",
+   "name": "Hundesteuer",
+   "value": 275.2,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2012",
+   "name": "Hundesteuer",
+   "value": 287.8,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2013",
+   "name": "Hundesteuer",
+   "value": 298.9,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2014",
+   "name": "Hundesteuer",
+   "value": 308.7,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2015",
+   "name": "Hundesteuer",
+   "value": 322.0,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2016",
+   "name": "Hundesteuer",
+   "value": 335.9,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2017",
+   "name": "Hundesteuer",
+   "value": 348.9,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2018",
+   "name": "Hundesteuer",
+   "value": 359.4,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2019",
+   "name": "Hundesteuer",
+   "value": 370.0,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2020",
+   "name": "Hundesteuer",
+   "value": 380.2,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2021",
+   "name": "Hundesteuer",
+   "value": 400.7,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2022",
+   "name": "Hundesteuer",
+   "value": 413.9,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2023",
+   "name": "Hundesteuer",
+   "value": 420.6,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2024",
+   "name": "Hundesteuer",
+   "value": 429.9,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  },
+  {
+   "date": "2025",
+   "name": "Hundesteuer",
+   "value": 429.7,
+   "art": "Beleg",
+   "source": "Destatis GENESIS 71211-0001, Steuerart Hundesteuer (STEUERARTK42), kassenmäßige Einnahmen, Tsd. Euro / 1.000"
+  }
+ ]
+}

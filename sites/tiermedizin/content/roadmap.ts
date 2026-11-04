@@ -332,6 +332,15 @@ export const POSTS: RoadmapPost[] = [
     refs: [27],
   },
   {
+    nr: 35, arc: 'markt', status: 'geplant', vorabOnline: true,
+    title: 'Hundesteuer: erstmals kein Plus',
+    hook: '430 Mio. Euro nehmen die Gemeinden mit der Hundesteuer ein, mehr als doppelt so viel wie 1999. 2025 kam zum ersten Mal kein Plus, und die Verbände zählen weniger Hunde.',
+    figures: ['Hundesteuer: 187,7 Mio. Euro (1999) → 429,7 Mio. (2025), plus 129 Prozent', '2013 bis 2025: Steuer plus 43,8 Prozent, Hunde (IVH) plus 44,9 Prozent', '2025: minus 0,1 Prozent, erstes Jahr ohne Zuwachs seit 1999', '2012: Steuer plus 4,6 Prozent, gezählte Hunde plus 37 Prozent (Methodenwechsel)'],
+    sampleId: 'hundesteuer', chart: 'line', dataStatus: 'belegt',
+    dataNote: 'Destatis 71211-0001 über die API (ds28-hundesteuer.json), 1999–2025 lückenlos, am 04.11.2026 gegen die API geprüft. Zweitquellen Destatis-Meldung 2010, petcom 2024. Steuer = Hunde × Sätze, keine Hundezählung – im Post sagen.',
+    refs: [1, 3],
+  },
+  {
     nr: 36, arc: 'tiere', status: 'geplant', vorabOnline: true,
     title: 'Welche Hunde Universalspender sind',
     hook: 'Boxer und Schäferhund sind zu über 80 Prozent DEA 1 negativ und damit ideale Blutspender, Rottweiler nur zu 11 Prozent. Ausgerechnet die besten Spenderrassen werden seltener.',
