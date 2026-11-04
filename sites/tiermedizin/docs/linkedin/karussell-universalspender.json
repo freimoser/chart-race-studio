@@ -1,0 +1,130 @@
+{
+  "_herkunft": "Geprüft am 04.11.2026. Folien 1–3: Medina Valentin et al., Vet Med Int 2017 (PMC5632924), Tab. 1 (DEA 1 negativ je Rasse, n je Rasse dort), gesamt 38,8 % von 7.414 Hunden. Deutschland etwa 40 %: Kohn/Weingart, DTBl 4/2026. Folie 4: VDH-Welpenstatistik (Datensatz hunderassen). Folie 5: Risiko ohne Typisierung Mischling 22,8 % / 5,2 % (PMC5632924 Tab. 5); keine natürlichen Antikörper, Spender über 20–25 kg (DTBl 4/2026).",
+  "folien": [
+    {
+      "titel": "Welche Hunde Universalspender sind",
+      "untertitel": "Anteil mit Blutgruppe DEA 1 negativ je Rasse, Studie mit 7.414 Hunden",
+      "jahr": "2017",
+      "einheit": " %",
+      "max": 100,
+      "balken": [
+        {
+          "name": "Boxer",
+          "wert": 83
+        },
+        {
+          "name": "Deutscher Schäferhund",
+          "wert": 81
+        },
+        {
+          "name": "Dobermann",
+          "wert": 78
+        },
+        {
+          "name": "Französische Bulldogge",
+          "wert": 78
+        },
+        {
+          "name": "West Highland White Terrier",
+          "wert": 63
+        }
+      ],
+      "quelle": "Quelle: Medina Valentin et al., Vet Med Int 2017 (Italien, 7.414 Hunde); gerundet"
+    },
+    {
+      "titel": "Und bei wem sie selten sind",
+      "untertitel": "Anteil mit Blutgruppe DEA 1 negativ je Rasse",
+      "jahr": "2017",
+      "einheit": " %",
+      "max": 100,
+      "balken": [
+        {
+          "name": "Golden Retriever",
+          "wert": 25
+        },
+        {
+          "name": "Deutsch Kurzhaar",
+          "wert": 23
+        },
+        {
+          "name": "Mops",
+          "wert": 23
+        },
+        {
+          "name": "Berner Sennenhund",
+          "wert": 18
+        },
+        {
+          "name": "Rottweiler",
+          "wert": 11
+        }
+      ],
+      "quelle": "Quelle: Medina Valentin et al., Vet Med Int 2017 (Italien, 7.414 Hunde); gerundet, Rottweiler n = 57"
+    },
+    {
+      "titel": "Der Durchschnitt: gut jeder dritte Hund",
+      "untertitel": "Anteil mit Blutgruppe DEA 1 negativ",
+      "jahr": "2017",
+      "einheit": " %",
+      "max": 100,
+      "balken": [
+        {
+          "name": "Deutschland (etwa)",
+          "wert": 40
+        },
+        {
+          "name": "Alle Hunde der Studie",
+          "wert": 39
+        },
+        {
+          "name": "Mischlinge",
+          "wert": 35
+        },
+        {
+          "name": "Labrador Retriever",
+          "wert": 35
+        }
+      ],
+      "quelle": "Quelle: Medina Valentin et al., Vet Med Int 2017; Deutschland: Kohn/Weingart, Dt. Tierärzteblatt 4/2026"
+    },
+    {
+      "art": "paare",
+      "titel": "Die besten Spenderrassen werden seltener",
+      "untertitel": "Welpen im Verband für das Deutsche Hundewesen (VDH)",
+      "jahr": "2025",
+      "einheit": "",
+      "max": 28000,
+      "teile": [
+        "1992",
+        "2025"
+      ],
+      "balken": [
+        {
+          "name": "Deutscher Schäferhund",
+          "werte": [
+            28000,
+            6374
+          ]
+        },
+        {
+          "name": "Boxer",
+          "werte": [
+            2544,
+            1050
+          ]
+        }
+      ],
+      "quelle": "Quelle: VDH-Welpenstatistik (Datensatz Hunderassen auf tiermedizin-in-zahlen.org)"
+    },
+    {
+      "art": "text",
+      "titel": "Warum die Blutgruppe zählt",
+      "absaetze": [
+        "Hunde haben keine natürlichen Antikörper gegen fremde Blutgruppen. Die erste Transfusion geht meist gut.",
+        "Bekommt ein DEA-1-negativer Hund aber positives Blut, bildet er Antikörper. Ohne Bluttest liegt das Risiko bei Mischlingen bei rund 23 Prozent, bei der zweiten Transfusion droht 5 Prozent eine akute Reaktion."
+      ],
+      "hinweis": "Die Rassenwerte stammen aus Italien. Für Deutschland gibt es keine Erhebung je Rasse.",
+      "quelle": "Quelle: Medina Valentin et al., Vet Med Int 2017; Kohn/Weingart, Deutsches Tierärzteblatt 4/2026"
+    }
+  ]
+}

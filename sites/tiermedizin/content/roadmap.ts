@@ -331,4 +331,13 @@ export const POSTS: RoadmapPost[] = [
     dataNote: 'Auftakt der Serie Tierblutspende. Trustees’ Reports der Pet Blood Bank UK (Companies House SC313849, ds26-pbb-uk.json), alle Werte Mindestwerte, GJ bis 31.03. Gegenprobe OSCR 2025 und Presse (VN Times, National Geographic, MRCVS).',
     refs: [27],
   },
+  {
+    nr: 36, arc: 'tiere', status: 'geplant', vorabOnline: true,
+    title: 'Welche Hunde Universalspender sind',
+    hook: 'Boxer und Schäferhund sind zu über 80 Prozent DEA 1 negativ und damit ideale Blutspender, Rottweiler nur zu 11 Prozent. Ausgerechnet die besten Spenderrassen werden seltener.',
+    figures: ['DEA 1 negativ: Boxer 83 %, Schäferhund 81 %, Dobermann 78 %, Rottweiler 11 %', 'Alle Hunde der Studie 39 %, Deutschland etwa 40 %', 'Ohne Bluttest: 23 % Sensibilisierungsrisiko (Mischlinge), 5 % akute Reaktion bei der zweiten Transfusion', 'VDH-Welpen Schäferhund: 28.000 (1992) → 6.374 (2025)'],
+    dataStatus: 'belegt',
+    dataNote: 'Karussell (docs/linkedin/karussell-universalspender.json, 5 Bilder), kein Datensatz. Rassenwerte Italien (PMC5632924, n 7.414), Deutschland etwa 40 % (DTBl 4/2026), VDH-Welpen aus Datensatz hunderassen. Serie Tierblutspende, Teil 2.',
+    refs: [34, 17],
+  },
 ]

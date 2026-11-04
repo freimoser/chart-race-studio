@@ -41,7 +41,7 @@ Der Knick 2021 ist echt. In der Aufzählung des Jahresberichts stehen 2.500 Spen
 
 In Deutschland gibt es, anders als etwa in Portugal und den Niederlanden, keine kommerziellen Blutbanken für Tiere. Das schreiben Barbara Kohn und Christiane Weingart von der Freien Universität Berlin im [Deutschen Tierärzteblatt 4/2026](https://bundestieraerztekammer.de/btk/dtbl/archiv/2026/artikel/DTBl_04_2026_Transfusion-Hund.pdf). Der Grund liegt im Arzneimittelrecht: Eine Praxis oder Klinik darf Blut gewinnen und lagern, aber nur für Tiere verwenden, die sie selbst behandelt. Die Abgabe oder der Versand von Blut an einen anderen Tierarzt ist nach Auslegung von Bundestierärztekammer und Arzneimittelbehörden der Länder nicht erlaubt.
 
-Eine Zahl, wie viele Blutspenden bei Hunden in Deutschland jährlich gesammelt oder gebraucht werden, gibt es nicht. Genau das ist der Befund: Großbritannien kann seine Versorgung in Jahresberichten nachzählen, Deutschland nicht.
+Eine Zahl, wie viele Blutspenden bei Hunden in Deutschland jährlich gesammelt oder gebraucht werden, gibt es nicht. Genau das ist der Befund: Großbritannien kann seine Versorgung in Jahresberichten nachzählen, Deutschland nicht. Welche Hunde als Spender besonders gefragt sind, zeigt Teil 2 der Serie: [Welche Rassen Universalspender sind](blutgruppe-hund-universalspender.html).
 
 ## Was die Zahl nicht sagt
 
