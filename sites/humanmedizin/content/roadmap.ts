@@ -82,8 +82,8 @@ export const POSTS: RoadmapPost[] = [
   {
     nr: 7, arc: 'vernetzung', status: 'geplant',
     title: 'Der eArztbrief ist Alltag geworden',
-    hook: 'Im März 2022 gingen 150.450 eArztbriefe über KIM, im September 2026 waren es 4,3 Millionen im Monat. Zugelassen sind fast alle Systeme; genutzt wird er in Arztpraxen viel häufiger als in der Psychotherapie.',
-    figures: ['eArztbriefe über KIM: 14,4 Mio. (2023), 32,3 Mio. (2024), 45,2 Mio. (2025), 41,4 Mio. Januar bis September 2026 (gematik)', 'Höchster Monat bisher: März 2026 mit 5,2 Mio.', 'PraxisBarometer 2025: 82 Prozent der Arztpraxen mit TI nutzen den eArztbrief über KIM, 22 Prozent der Psychotherapiepraxen', 'Zulassung eArztbrief: Systeme mit 88,9 Prozent der Installationen; 1-Click-KIM 100 Prozent (Pflicht seit Abschaltung von KV-Connect am 20.10.2025)'],
+    hook: 'Im März 2022 gingen 150.450 eArztbriefe über KIM, im Oktober 2026 waren es 5,4 Millionen im Monat. Zugelassen sind fast alle Systeme; genutzt wird er in Arztpraxen viel häufiger als in der Psychotherapie.',
+    figures: ['eArztbriefe über KIM: 14,4 Mio. (2023), 32,3 Mio. (2024), 45,2 Mio. (2025), 46,8 Mio. Januar bis Oktober 2026 (gematik)', 'Höchster Monat bisher: Oktober 2026 mit 5,4 Mio., davor März 2026 mit 5,2 Mio.', 'PraxisBarometer 2025: 82 Prozent der Arztpraxen mit TI nutzen den eArztbrief über KIM, 22 Prozent der Psychotherapiepraxen', 'Zulassung eArztbrief: Systeme mit 88,9 Prozent der Installationen; 1-Click-KIM 100 Prozent (Pflicht seit Abschaltung von KV-Connect am 20.10.2025)'],
     sampleId: 'earztbrief-monat', chart: 'line', dataStatus: 'belegt',
     dataNote: 'Monatswerte als Differenz des kumulierten gematik-Zählers gerechnet (markieren). Medical Office steht derzeit nicht im eArztbrief-Verzeichnis (seit 02/2026) – „derzeit nicht im Verzeichnis“ schreiben, Zulassungen fallen bei Rezertifizierung zeitweise weg. Keine Nutzungszahlen je System verfügbar.',
     refs: [6],

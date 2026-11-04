@@ -54,6 +54,11 @@ Aktuell (Stand 21.10.2026, abgerufen 22.10.2026), Verzeichnis:
 | Übersichtsmatrix | `KBV_ITA_SIEX_Verzeichnis_Zert_Software.pdf` | 193 Produkte |
 | Prüfnummern-Definition (15.11.2023) | `KBV_ITV_VGEX_Definition_von_Pruefnummern.pdf` | – |
 
+Gegenprobe 04.11.2026 (Verzeichnisse mit Datum 04.11.2026): LDK jetzt 55 Einträge mit „LDT-Befund - Import“ (+1).
+Alle Systeme unserer Liste mit „ja“ für LDT-Befund-Import (26), eArztbrief (34) und 1-Click-KIM (41) stehen weiter
+darin; keines mit „nein“ ist neu zugelassen (DAVID hat nur „LDT-Befund - Export“). Die Anteile 95,8 und 88,9 Prozent
+bleiben, der Stand der Texte (21.10.2026) wird deshalb nicht geändert.
+
 Archivierte Stände (web.archive.org, CDX-Abfrage am 22.10.2026; Dateien unter
 `https://web.archive.org/web/<Zeitstempel>/https://update.kbv.de/ita-update/Service-Informationen/Zulassungsverzeichnisse/<Datei>`):
 

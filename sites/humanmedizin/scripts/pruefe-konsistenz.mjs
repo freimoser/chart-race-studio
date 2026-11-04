@@ -121,7 +121,7 @@ const K = {
   const E = D.EARZTBRIEF_MONAT, jahr = (j) => E.rows.filter((r) => r[0].startsWith(j)).reduce((x, r) => x + r[1], 0)
   const mio = (n) => (n / 1e6).toFixed(1).replace('.', ',') + ' Mio'
   for (const j of ['2023', '2024', '2025']) K[`eArztbriefe ${j}`] = mio(jahr(j))
-  K['eArztbriefe 2026 bis Sep'] = mio(jahr('2026'))
+  K['eArztbriefe 2026 bis Okt'] = mio(jahr('2026'))
   // E-Rezepte: Jahressumme der Monatswerte gleich Differenz der Jahresendstände; 2025 gegen die ABDA (582 Mio.).
   { const R = D.EREZEPT_MONAT, j25 = R.rows.filter((r) => r[0].startsWith('2025')).reduce((x, r) => x + r[1], 0)
     const TIk = leseCsv(path.join(RAW, 'ti-nutzung.csv')), zk = (st) => Number(TIk.find((x) => x.reihe === 'erezepte_eingeloest_kumuliert' && x.stichtag === st)?.wert)
@@ -267,13 +267,13 @@ const ERWARTET = {
   [`${H}/content/artikel/04-praxissoftware-aufsteiger-tomedo-t2med.md`]: ['tomedo 2025', 'T2med 2025', 'Medical Office 2013', 'Medical Office 2025', '2025 Veränderung tomedo', '2025 Veränderung T2med', '2025 Veränderung MEDISTAR', '2025 Veränderung TURBOMED', '2025 Veränderung Medical Office', '2025 Differenz tomedo', '2025 Differenz T2med', 'tomedo+T2med 2025', 'Mac-Linux-Browser 2025'],
   [`${H}/content/artikel/03-psychotherapie-software-elefant-psyprax.md`]: ['Elefant 2025', 'psyprax 2025', 'MEDISTAR 2025', 'Elefant 2023', 'MEDISTAR 2023', 'psyprax 2024', 'MEDISTAR 2024', 'Wachstum Elefant', 'Wachstum Epikur', 'Wachstum psyprax', 'Rückgang MEDISTAR', 'Gerechnet Psycho'],
   [`${H}/content/artikel/02-praxissoftware-hersteller-cgm-medatixx.md`]: ['CGM 2013', 'CGM 2025', 'medatixx 2013 (Hersteller)', 'medatixx 2025 (Hersteller)', 'Anteil CGM 2013', 'Anteil CGM 2025', 'Anteil medatixx 2025', 'Anteil Neue 2013', 'Anteil Neue 2025', 'Neue 2013', 'Neue 2025', 'medatixx ohne EL 2025', 'Summe Arztsysteme 2025', 'Rückgang Arztsysteme'],
-  [`${H}/content/artikel/07-earztbrief-kim-zahlen.md`]: ['eArztbrief-Anteil', 'eArztbriefe 2023', 'eArztbriefe 2024', 'eArztbriefe 2025', 'eArztbriefe 2026 bis Sep', 'KIM 2025', 'eAU 2025', 'eArztbrief am KIM 2025'],
+  [`${H}/content/artikel/07-earztbrief-kim-zahlen.md`]: ['eArztbrief-Anteil', 'eArztbriefe 2023', 'eArztbriefe 2024', 'eArztbriefe 2025', 'eArztbriefe 2026 bis Okt', 'KIM 2025', 'eAU 2025', 'eArztbrief am KIM 2025'],
   [`${H}/content/artikel/08-mvz-einzelpraxis-aerzte.md`]: ['Ärzte gesamt 2015', 'Ärzte gesamt 2025', 'MVZ-Anteil 2015', 'MVZ-Anteil 2025', 'Köpfe Einzelpraxis Rückgang', 'Arztsysteme 2015', 'Summe Arztsysteme 2025', 'Angestellte EP 2015', 'Angestellte EP 2025', 'Solo-EP Rückgang', 'KH-MVZ-Anteil', 'MVZ angestellt', 'ärztliche EP Rückgang'],
   [`${H}/content/artikel/09-krankenhaus-software-ambulant-kis.md`]: ['KIS 2013', 'KIS 2025', 'KIS-Anteil 2013', 'KIS-Anteil 2025', 'ORBIS-Anteil KIS', 'SAP Wachstum', 'KIS plus 2015–2025', 'KH-MVZ plus 2015–2025', 'Gerechnet KIS'],
   [`${H}/content/artikel/10-pvs-statistik-kbv-methode.md`]: ['Top 3 Anteil', 'Top 5 Anteil', 'Anteil CGM 2025', 'Anteil medatixx 2025', 'Anteil INDAMED 2025', 'Anteil Zollsoft 2025', 'Anteil T2med 2025', 'CGM+medatixx 2025', 'Summe alle 2025', 'medatixx 2025 (Hersteller)', 'KIS-Anteil 2025'],
   [`${H}/content/artikel/11-labor-angestellte-laboraerzte.md`]: ['Labor angestellt 2013', 'Labor angestellt 2025', 'Labor Zulassung Rückgang', 'Labor EP'],
   [`${H}/content/artikel/12-praxissoftware-allgemeinmediziner.md`]: ['AM Summe 2025', 'AM Rückgang TURBOMED', 'AM Rückgang MEDISTAR', 'AM medatixx-Gruppe', 'AM CGM', 'AM Neue', 'AM T2med-Anteil', 'AM Abstand 1–4', 'Anteil CGM 2025', 'Anteil T2med 2025'],
-  [`${H}/content/roadmap.ts`]: ['LDT-Befund-Anteil', 'eArztbrief-Anteil', 'eArztbriefe 2023', 'eArztbriefe 2024', 'eArztbriefe 2025', 'eArztbriefe 2026 bis Sep'],
+  [`${H}/content/roadmap.ts`]: ['LDT-Befund-Anteil', 'eArztbrief-Anteil', 'eArztbriefe 2023', 'eArztbriefe 2024', 'eArztbriefe 2025', 'eArztbriefe 2026 bis Okt'],
 }
 // Datenherkunft: jeder Datensatz hat einen Abschnitt mit seiner id, und die Zahl gerechneter Werte stimmt.
 {
