@@ -270,3 +270,7 @@ Rohdaten `data/raw/ds27-bft-tierarzneimittel.json` (BfT 2005–2025: Gesamt, Ant
 ## Hundesteuer: kein Plus mehr (`hundesteuer`, Post 35)
 
 Rohdaten `data/raw/ds28-hundesteuer.json` (Destatis 71211-0001, kassenmäßige Einnahmen 1999–2025, Mio. Euro). Eine Linie. Misst Einnahmen (Hunde × Sätze), keine Hunde; Gegenprobe IVH-Hundezahl.
+
+## Pferdeschlachtungen: −80 % (`pferdeschlachtungen`, Post 37)
+
+Rohdaten `data/raw/ds29-pferdeschlachtungen.json`: Destatis 41331-0001 (inländisch + ausländisch + Haus) ab 1993, Eurostat 1991–1992. Eine Linie 1991–2025. Vor 1991 Gebietsstand unklar.

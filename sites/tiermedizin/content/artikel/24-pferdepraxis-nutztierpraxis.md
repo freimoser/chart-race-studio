@@ -8,7 +8,7 @@ suchbegriffe: pferdetierarzt deutschland, pferdetierärzte, pferdepraxis, nutzti
 stand: 2026-10-27
 bereit: ja
 ---
-Ende 2025 führten in Deutschland **989 Tierärztinnen und Tierärzte eine reine Pferdepraxis** und **718 eine reine Nutztierpraxis** (Statistik der Bundestierärztekammer, Praxisinhaberinnen und Praxisinhaber). 2019 war es noch umgekehrt, 744 gegen 887. Seit 2021 gibt es mehr reine Pferde- als reine Nutztierpraxen. Dazu kommen 2.231 Inhaberinnen und Inhaber, die neben anderen Tieren auch Pferde behandeln, die reinen Pferdepraxen eingerechnet.
+Ende 2025 führten in Deutschland **989 Tierärztinnen und Tierärzte eine reine Pferdepraxis** und **718 eine reine Nutztierpraxis** (Statistik der Bundestierärztekammer, Praxisinhaberinnen und Praxisinhaber). 2019 war es noch umgekehrt, 744 gegen 887. Seit 2021 gibt es mehr reine Pferde- als reine Nutztierpraxen. Im selben Zeitraum sank die Zahl der geschlachteten Pferde auf rund 3.500 im Jahr ([Pferdeschlachtungen in Deutschland](pferdeschlachtungen-deutschland.html)). Dazu kommen 2.231 Inhaberinnen und Inhaber, die neben anderen Tieren auch Pferde behandeln, die reinen Pferdepraxen eingerechnet.
 
 ## Das Wichtigste in Kürze
 

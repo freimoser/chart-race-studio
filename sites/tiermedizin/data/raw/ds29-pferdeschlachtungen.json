@@ -1,0 +1,259 @@
+{
+ "title": "Geschlachtete Pferde in Deutschland 1991–2025 (Anzahl)",
+ "abgerufen": "2026-10-22",
+ "geprueft": "2026-11-04",
+ "quelle": "Destatis GENESIS 41331-0001 (Schlachtungsstatistik, Tierart Pferde) ab 1993; Eurostat apro_mt_pann 1991–1992",
+ "quelleUrl": "https://www-genesis.destatis.de/datenbank/online/statistic/41331/table/41331-0001",
+ "notes": [
+  "Ab 1993 Summe aus gewerblichen Schlachtungen von Tieren inländischer und ausländischer Herkunft und Hausschlachtungen (Destatis). 1991 und 1992 Eurostat (Tausend Tiere, zwei Nachkommastellen, also auf 10 gerundet).",
+  "Überlappung 1993–2008: Eurostat = Destatis gesamt auf ±30 Tiere (1993: 17,31 Tsd. gegen 17.306) – keine Verkettung nötig. 2024/2025 wechselt Eurostat die Abgrenzung (2024 gewerblich, 2025 nur inländisch), deshalb dort Destatis.",
+  "Vor 1991: Eurostat reicht bis 1970 (Höchststand 1984: 26,1 Tsd.), vermutlich nur früheres Bundesgebiet (Sprung 1990 15,23 → 1991 17,93); nicht gezeigt, bis der Gebietsstand geklärt ist."
+ ],
+ "rows": [
+  {
+   "date": "1991",
+   "name": "Geschlachtete Pferde",
+   "value": 17930,
+   "art": "Beleg (Eurostat, Tsd. mit zwei Nachkommastellen)",
+   "source": "Eurostat apro_mt_pann, SLAUGHT, B5000 (Pferde), THS_HD, DE"
+  },
+  {
+   "date": "1992",
+   "name": "Geschlachtete Pferde",
+   "value": 18100,
+   "art": "Beleg (Eurostat, Tsd. mit zwei Nachkommastellen)",
+   "source": "Eurostat apro_mt_pann, SLAUGHT, B5000 (Pferde), THS_HD, DE"
+  },
+  {
+   "date": "1993",
+   "name": "Geschlachtete Pferde",
+   "value": 17306,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "1994",
+   "name": "Geschlachtete Pferde",
+   "value": 16981,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "1995",
+   "name": "Geschlachtete Pferde",
+   "value": 16741,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "1996",
+   "name": "Geschlachtete Pferde",
+   "value": 18059,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "1997",
+   "name": "Geschlachtete Pferde",
+   "value": 18749,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "1998",
+   "name": "Geschlachtete Pferde",
+   "value": 17458,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "1999",
+   "name": "Geschlachtete Pferde",
+   "value": 16721,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2000",
+   "name": "Geschlachtete Pferde",
+   "value": 16539,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2001",
+   "name": "Geschlachtete Pferde",
+   "value": 18129,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2002",
+   "name": "Geschlachtete Pferde",
+   "value": 12561,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2003",
+   "name": "Geschlachtete Pferde",
+   "value": 11173,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2004",
+   "name": "Geschlachtete Pferde",
+   "value": 10666,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2005",
+   "name": "Geschlachtete Pferde",
+   "value": 9886,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2006",
+   "name": "Geschlachtete Pferde",
+   "value": 9570,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2007",
+   "name": "Geschlachtete Pferde",
+   "value": 9726,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2008",
+   "name": "Geschlachtete Pferde",
+   "value": 9498,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2009",
+   "name": "Geschlachtete Pferde",
+   "value": 9315,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2010",
+   "name": "Geschlachtete Pferde",
+   "value": 9875,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2011",
+   "name": "Geschlachtete Pferde",
+   "value": 11812,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2012",
+   "name": "Geschlachtete Pferde",
+   "value": 11923,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2013",
+   "name": "Geschlachtete Pferde",
+   "value": 10899,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2014",
+   "name": "Geschlachtete Pferde",
+   "value": 8852,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2015",
+   "name": "Geschlachtete Pferde",
+   "value": 9083,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2016",
+   "name": "Geschlachtete Pferde",
+   "value": 8308,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2017",
+   "name": "Geschlachtete Pferde",
+   "value": 7436,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2018",
+   "name": "Geschlachtete Pferde",
+   "value": 6862,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2019",
+   "name": "Geschlachtete Pferde",
+   "value": 5113,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2020",
+   "name": "Geschlachtete Pferde",
+   "value": 4363,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2021",
+   "name": "Geschlachtete Pferde",
+   "value": 3620,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2022",
+   "name": "Geschlachtete Pferde",
+   "value": 3422,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2023",
+   "name": "Geschlachtete Pferde",
+   "value": 3451,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2024",
+   "name": "Geschlachtete Pferde",
+   "value": 3653,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  },
+  {
+   "date": "2025",
+   "name": "Geschlachtete Pferde",
+   "value": 3586,
+   "art": "berechnet: gewerblich inländisch + gewerblich ausländisch + Hausschlachtungen",
+   "source": "Destatis GENESIS 41331-0001, Tierart Pferde"
+  }
+ ]
+}

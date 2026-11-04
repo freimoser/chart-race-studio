@@ -396,6 +396,17 @@
     "live": true
   },
   {
+    "post": 37,
+    "slug": "pferdeschlachtungen-deutschland",
+    "titel": "Pferdeschlachtungen: minus 80 Prozent seit 1991",
+    "beschreibung": "1991 wurden in Deutschland fast 18.000 Pferde geschlachtet, 2025 noch 3.586. Die Zahlen der Schlachtungsstatistik seit 1991 mit Quelle.",
+    "frage": "Wie viele Pferde werden in Deutschland geschlachtet?",
+    "stand": "2026-11-04",
+    "geaendert": "2026-11-04",
+    "bereit": true,
+    "live": true
+  },
+  {
     "art": "anleitung",
     "slug": "weltkarte-laender-einfaerben-animieren",
     "titel": "Weltkarte nach Daten einfärben und animieren – kostenlos",

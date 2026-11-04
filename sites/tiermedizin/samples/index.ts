@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { ANTIBIOTIKA, ANTIBIOTIKA_GESAMT, GOT_PFERD, ONLINE_HANDEL, ONLINE_HANDEL_2005, BLUTBANK_UK, TIERARZNEIMITTEL, HUNDESTEUER, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
+import { ANTIBIOTIKA, ANTIBIOTIKA_GESAMT, GOT_PFERD, ONLINE_HANDEL, ONLINE_HANDEL_2005, BLUTBANK_UK, TIERARZNEIMITTEL, HUNDESTEUER, PFERDESCHLACHTUNGEN, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -622,6 +622,26 @@ export const SAMPLES: SampleDataset[] = [
     headers: ONLINE_HANDEL_2005.headers,
     rows: ONLINE_HANDEL_2005.rows,
     suggested: { chartType: 'line', topN: 4, decimals: 0, suffix: ' Mio. €', primaryAxisLabel: 'Mio. Euro', colors: { 'Online-Handel': '#e36414', 'Katzenfutter im Laden': '#0f4c5c', 'Hundefutter im Laden': '#5b8e9e', 'Zubehör im Laden': '#8d99ae' } },
+  },
+  {
+    id: 'pferdeschlachtungen',
+    erstellt: '2026-11-04', geprueft: '2026-11-04',
+    category: 'nutztiere',
+    title: 'Pferdeschlachtungen: −80 %',
+    subtitle: 'Geschlachtete Pferde in Deutschland pro Jahr, gewerblich und Hausschlachtungen',
+    source: 'Quelle: Statistisches Bundesamt, Schlachtungsstatistik (GENESIS 41331-0001) ab 1993; Eurostat 1991–1992',
+    sourceUrl: 'https://www-genesis.destatis.de/datenbank/online/statistic/41331/table/41331-0001',
+    unit: 'Pferde',
+    description: '1991 wurden in Deutschland rund 17.900 Pferde geschlachtet, 2025 noch 3.586. Das Pferd ist vom Nutztier zum Sport- und Freizeitpartner geworden.',
+    dataInfo: [
+      "Geschlachtete Pferde (einschließlich Fohlen) laut Schlachtungsstatistik: ab 1993 die Summe aus gewerblichen Schlachtungen von Tieren inländischer und ausländischer Herkunft und Hausschlachtungen (Statistisches Bundesamt, Summe berechnet). 1991 und 1992 von Eurostat, dort in Tausend mit zwei Nachkommastellen, also auf zehn Tiere gerundet.",
+      "Quellenwechsel 1993: In den Überlappungsjahren 1993 bis 2008 stimmen Eurostat und Destatis auf 30 Tiere überein, deshalb ohne Verkettung. Eurostat beruht auf den Meldungen des Statistischen Bundesamts und ist keine unabhängige Zählung.",
+      "Vor 1991 reicht Eurostat bis 1970 (Höchststand 1984 mit 26.100 Pferden), vermutlich aber nur für das frühere Bundesgebiet. Diese Jahre sind deshalb nicht gezeigt.",
+      "Der Einbruch 2002 (minus 31 Prozent) und der Rückgang ab 2018 stehen so in der Statistik; Gründe nennt sie nicht.",
+    ],
+    headers: PFERDESCHLACHTUNGEN.headers,
+    rows: PFERDESCHLACHTUNGEN.rows,
+    suggested: { chartType: 'line', topN: 1, decimals: 0, primaryAxisLabel: 'Pferde', colors: { 'Geschlachtete Pferde': '#8a5a3c' } },
   },
   {
     id: 'hundesteuer',

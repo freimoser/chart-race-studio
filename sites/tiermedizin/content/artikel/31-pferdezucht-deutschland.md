@@ -8,7 +8,7 @@ suchbegriffe: pferdezucht deutschland, zuchtstuten, fohlen deutschland, wie viel
 stand: 2026-10-27
 bereit: ja
 ---
-Im Schnitt kommen in Deutschland auf 100 eingetragene Zuchtstuten rund 46 Fohlen im Jahr: 2025 waren es **74.950 Zuchtstuten und 34.424 registrierte Fohlen** (Deutsche Reiterliche Vereinigung, alle 25 Zuchtverbände). So wenige Zuchtstuten gab es in der Statistik noch nie, weniger als 1990. Die Zahl der Fohlen fiel seit dem Hoch 2022 um 19 Prozent, die Fohlen je Stute blieben dagegen gleich.
+Im Schnitt kommen in Deutschland auf 100 eingetragene Zuchtstuten rund 46 Fohlen im Jahr: 2025 waren es **74.950 Zuchtstuten und 34.424 registrierte Fohlen** (Deutsche Reiterliche Vereinigung, alle 25 Zuchtverbände). So wenige Zuchtstuten gab es in der Statistik noch nie, weniger als 1990. Die Zahl der Fohlen fiel seit dem Hoch 2022 um 19 Prozent, die Fohlen je Stute blieben dagegen gleich. Geschlachtet werden Pferde immer seltener: 2025 noch 3.586, 1991 fast 18.000 ([Pferdeschlachtungen in Deutschland](pferdeschlachtungen-deutschland.html)).
 
 ## Das Wichtigste in Kürze
 

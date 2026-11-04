@@ -31,6 +31,7 @@ const d25 = load('ds25-online-handel-2005-2012.json')
 const d26 = load('ds26-pbb-uk.json')
 const d27 = load('ds27-bft-tierarzneimittel.json')
 const d28 = load('ds28-hundesteuer.json')
+const d29 = load('ds29-pferdeschlachtungen.json')
 
 import { wide, byMetric, dedupe, stuetze, lueckenlos, kette, lit } from '../../../scripts/lib/reihen.mjs'
 
@@ -266,6 +267,8 @@ const w22 = wide(d26.rows, { names: ['Einheiten gesammelt', 'Erythrozytenkonzent
 const w23 = wide(byMetric(d27, 'Umsatz'), { names: ['Heimtiere und Pferde', 'Nutztiere'] })
 // 24 Hundesteuer der Gemeinden 1999–2025 in Mio. Euro (Destatis 71211-0001).
 const w24 = wide(d28.rows, { names: ['Hundesteuer'] })
+// 25 Geschlachtete Pferde 1991–2025 (Eurostat 1991–1992, Destatis gesamt ab 1993; Rechnung in ds29).
+const w25 = wide(d29.rows, { names: ['Geschlachtete Pferde'] })
 // 7 Praxisschwerpunkte 1990–2018. Die Kategorien heißen über die Jahre unterschiedlich, meinen aber
 // dasselbe Dreieck aus reiner Kleintierpraxis, gemischter Praxis und reiner Nutz-/Großtierpraxis.
 // Ende 2018, weil die BTK ab 2019 die Pferde als eigene Kategorie führt und selbst schreibt, dass
@@ -565,6 +568,6 @@ const w17b = wide([...d21.rows, ...d1.rows.filter((r) => r.name === NIEDER && r.
 
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 const out = `// Automatisch erzeugt von sites/tiermedizin/scripts/build-samples.mjs aus sites/tiermedizin/data/raw/*.json – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('TIERAERZTE_BUNDESLAND', w1), emit('TIERAERZTESCHAFT_DEUTSCHLAND', w2), emit('INHABER_ANGESTELLTE', w2b), emit('TIERARZTMANGEL', w2c), emit('TIERARZTMANGEL_2000', w2d), emit('HEIMTIERE', w3), emit('HEIMTIERE_ALLE', w3b), emit('HEIMTIERE_DACH', w3c), emit('HUNDERASSEN', w4), emit('RINDER_BUNDESLAND', w5), emit('HEIMTIERMARKT', w6), emit('ONLINE_HANDEL', w21), emit('ONLINE_HANDEL_2005', w21b), emit('BLUTBANK_UK', w22), emit('TIERARZNEIMITTEL', w23), emit('HUNDESTEUER', w24), emit('PRAXISSCHWERPUNKTE', w7), emit('FACHTIERAERZTE', w8), emit('KLEINTIERE_BUNDESLAND', w9), emit('KETTEN', w10), emit('KETTEN_EIGENTUEMER', w11), emit('GESCHLECHT_PRAXIS', w12), emit('OKTOBERFEST', w13), emit('OKTOBERFEST_PREIS', w13b), emit('TIERARZT_INFLATION', w14), emit('TIERARZT_ROUTINEJAHR', w14b), emit('PRAXIS_ALTER', w15), emit('PRAXIS_ALTER_WACHSTUM', w15b), emit('GEHALT_PREISE', w16), emit('PFERDE_NUTZTIERE', w17), emit('PRAXISARTEN_2010', w17b), emit('PFERDEZUCHT', w18), emit('ANTIBIOTIKA', w19), emit('ANTIBIOTIKA_GESAMT', w19b), emit('GOT_PFERD', w20), emit('HUND_KATZE_WELT', { headers: d13.headers ?? ['Jahr'], rows: d13.rows ?? [] })].join('\n')
+  [emit('TIERAERZTE_BUNDESLAND', w1), emit('TIERAERZTESCHAFT_DEUTSCHLAND', w2), emit('INHABER_ANGESTELLTE', w2b), emit('TIERARZTMANGEL', w2c), emit('TIERARZTMANGEL_2000', w2d), emit('HEIMTIERE', w3), emit('HEIMTIERE_ALLE', w3b), emit('HEIMTIERE_DACH', w3c), emit('HUNDERASSEN', w4), emit('RINDER_BUNDESLAND', w5), emit('HEIMTIERMARKT', w6), emit('ONLINE_HANDEL', w21), emit('ONLINE_HANDEL_2005', w21b), emit('BLUTBANK_UK', w22), emit('TIERARZNEIMITTEL', w23), emit('HUNDESTEUER', w24), emit('PFERDESCHLACHTUNGEN', w25), emit('PRAXISSCHWERPUNKTE', w7), emit('FACHTIERAERZTE', w8), emit('KLEINTIERE_BUNDESLAND', w9), emit('KETTEN', w10), emit('KETTEN_EIGENTUEMER', w11), emit('GESCHLECHT_PRAXIS', w12), emit('OKTOBERFEST', w13), emit('OKTOBERFEST_PREIS', w13b), emit('TIERARZT_INFLATION', w14), emit('TIERARZT_ROUTINEJAHR', w14b), emit('PRAXIS_ALTER', w15), emit('PRAXIS_ALTER_WACHSTUM', w15b), emit('GEHALT_PREISE', w16), emit('PFERDE_NUTZTIERE', w17), emit('PRAXISARTEN_2010', w17b), emit('PFERDEZUCHT', w18), emit('ANTIBIOTIKA', w19), emit('ANTIBIOTIKA_GESAMT', w19b), emit('GOT_PFERD', w20), emit('HUND_KATZE_WELT', { headers: d13.headers ?? ['Jahr'], rows: d13.rows ?? [] })].join('\n')
 fs.writeFileSync('sites/tiermedizin/samples/data.ts', out)
-for (const [n, w] of Object.entries({ w1, w2, w2b, w2c, w2d, w3, w3b, w3c, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w13b, w14, w14b, w15, w15b, w16, w17, w17b, w18, w19, w19b, w20, w21, w21b, w22, w23, w24 })) console.log(n, w.headers.length - 1, 'Kategorien,', w.rows.length, 'Perioden', w.rows[0]?.[0], '–', w.rows.at(-1)?.[0])
+for (const [n, w] of Object.entries({ w1, w2, w2b, w2c, w2d, w3, w3b, w3c, w4, w5, w6, w7, w8, w9, w10, w11, w12, w13, w13b, w14, w14b, w15, w15b, w16, w17, w17b, w18, w19, w19b, w20, w21, w21b, w22, w23, w24, w25 })) console.log(n, w.headers.length - 1, 'Kategorien,', w.rows.length, 'Perioden', w.rows[0]?.[0], '–', w.rows.at(-1)?.[0])

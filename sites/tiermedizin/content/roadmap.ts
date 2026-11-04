@@ -341,6 +341,15 @@ export const POSTS: RoadmapPost[] = [
     refs: [1, 3],
   },
   {
+    nr: 37, arc: 'tiere', status: 'geplant', vorabOnline: true,
+    title: 'Pferdeschlachtungen minus 80 Prozent',
+    hook: '1991 wurden in Deutschland fast 18.000 Pferde geschlachtet, 2025 noch 3.586. Das Pferd ist kein Nutztier mehr.',
+    figures: ['Geschlachtete Pferde: 17.930 (1991) → 3.586 (2025), minus 80 Prozent', 'Höchststand 1997: 18.749', '2002: minus 31 Prozent in einem Jahr', 'Seit 2021 etwa 3.400 bis 3.700 im Jahr'],
+    sampleId: 'pferdeschlachtungen', chart: 'line', dataStatus: 'belegt',
+    dataNote: 'Destatis 41331-0001 (inländisch + ausländisch + Haus) ab 1993, Eurostat 1991–1992 (ds29-pferdeschlachtungen.json); Überlappung 1993–2008 ±30 Tiere. Vor 1991 Gebietsstand unklar, nicht gezeigt. Bezug zu Post 24 (Pferdepraxis) und 31 (Pferdezucht).',
+    refs: [24, 31],
+  },
+  {
     nr: 36, arc: 'tiere', status: 'geplant', vorabOnline: true,
     title: 'Welche Hunde Universalspender sind',
     hook: 'Boxer und Schäferhund sind zu über 80 Prozent DEA 1 negativ und damit ideale Blutspender, Rottweiler nur zu 11 Prozent. Ausgerechnet die besten Spenderrassen werden seltener.',
