@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { ANTIBIOTIKA, ANTIBIOTIKA_GESAMT, GOT_PFERD, ONLINE_HANDEL, ONLINE_HANDEL_2005, BLUTBANK_UK, TIERARZNEIMITTEL, HUNDESTEUER, PFERDESCHLACHTUNGEN, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
+import { ANTIBIOTIKA, ANTIBIOTIKA_GESAMT, GOT_PFERD, ONLINE_HANDEL, ONLINE_HANDEL_2005, BLUTBANK_UK, TIERARZNEIMITTEL, HUNDESTEUER, PFERDESCHLACHTUNGEN, REITSPORT, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -622,6 +622,26 @@ export const SAMPLES: SampleDataset[] = [
     headers: ONLINE_HANDEL_2005.headers,
     rows: ONLINE_HANDEL_2005.rows,
     suggested: { chartType: 'line', topN: 4, decimals: 0, suffix: ' Mio. €', primaryAxisLabel: 'Mio. Euro', colors: { 'Online-Handel': '#e36414', 'Katzenfutter im Laden': '#0f4c5c', 'Hundefutter im Laden': '#5b8e9e', 'Zubehör im Laden': '#8d99ae' } },
+  },
+  {
+    id: 'reitsport',
+    erstellt: '2026-11-04', geprueft: '2026-11-04',
+    category: 'heimtiere',
+    title: 'Reitsport verliert Mitglieder',
+    subtitle: 'Mitglieder in den Vereinen der Deutschen Reiterlichen Vereinigung (FN)',
+    source: 'Quelle: Deutscher Olympischer Sportbund, Bestandserhebungen 2009–2025',
+    sourceUrl: 'https://www.dosb.de/medien-service/statistiken',
+    unit: 'Mitglieder',
+    description: 'Von 752.964 (2008) auf 657.994 (2025): Die Reitvereine haben fast 95.000 Mitglieder verloren, in 15 von 17 Jahren ging es abwärts.',
+    dataInfo: [
+      "Mitglieder der Vereine in der Deutschen Reiterlichen Vereinigung (FN) laut Bestandserhebung des Deutschen Olympischen Sportbunds (DOSB). Gezählt sind Vereinsmitgliedschaften, nicht alle, die reiten.",
+      "Lückenlos 2008 bis 2025, nichts gerechnet. Jede Erhebung nennt auch das Vorjahr; alle Vorjahreswerte stimmen mit der vorherigen Erhebung überein. Die eigenen Zahlen der FN weichen 2019 bis 2025 höchstens um 441 Mitglieder ab.",
+      "Berechnet: minus 94.970 Mitglieder oder 12,6 Prozent seit 2008. Nur 2016 (+795) und 2022 (+416) gab es ein Plus.",
+      "Zweite Quelle für die Richtung: Laut Pferdesport Westfalen (Jahresbericht 2010) begann der Rückgang im organisierten Pferdesport 2004.",
+    ],
+    headers: REITSPORT.headers,
+    rows: REITSPORT.rows,
+    suggested: { chartType: 'line', topN: 1, decimals: 0, primaryAxisLabel: 'Mitglieder', colors: { 'Mitglieder im Reitverein': '#8a5a3c' } },
   },
   {
     id: 'pferdeschlachtungen',

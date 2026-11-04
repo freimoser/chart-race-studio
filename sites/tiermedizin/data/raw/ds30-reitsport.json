@@ -1,0 +1,140 @@
+{
+ "title": "Mitglieder der Deutschen Reiterlichen Vereinigung (FN) laut DOSB-Bestandserhebung, 2008–2025",
+ "abgerufen": "2026-10-22",
+ "geprueft": "2026-11-04",
+ "quelle": "Deutscher Olympischer Sportbund, Bestandserhebung (Tabelle Spitzenverbände), Pflichtexemplare über epflicht-hessen.hebis.de; ab 2019 DOSB-Werte",
+ "quelleUrl": "https://www.dosb.de/medien-service/statistiken",
+ "notes": [
+  "Jede Erhebung nennt auch das Vorjahr; alle Vorjahreswerte stimmen mit der vorherigen Erhebung überein (2008–2018 geprüft). FN-eigene Zahlen 2019–2025 weichen höchstens 441 Mitglieder ab.",
+  "Lückenlos 2008–2025, nichts gerechnet. Gezählt werden Mitglieder in den Vereinen der Landesverbände, nicht Reiterinnen und Reiter insgesamt.",
+  "Zweitquelle Richtung: Pferdesport Westfalen, Jahresbericht 2010: erster Mitgliederrückgang im organisierten Pferdesport 2004."
+ ],
+ "rows": [
+  {
+   "date": "2008",
+   "name": "Mitglieder Reiterliche Vereinigung",
+   "value": 752964,
+   "art": "Beleg",
+   "source": "DOSB-Bestandserhebung 2009, Vorjahresspalte (https://epflicht-hessen.hebis.de/ubffm/download/pdf/8520576)"
+  },
+  {
+   "date": "2009",
+   "name": "Mitglieder Reiterliche Vereinigung",
+   "value": 748839,
+   "art": "Beleg",
+   "source": "DOSB-Bestandserhebung 2009 (https://epflicht-hessen.hebis.de/ubffm/download/pdf/8520576)"
+  },
+  {
+   "date": "2010",
+   "name": "Mitglieder Reiterliche Vereinigung",
+   "value": 737103,
+   "art": "Beleg",
+   "source": "DOSB-Bestandserhebung 2010 (https://epflicht-hessen.hebis.de/ubffm/download/pdf/8520575)"
+  },
+  {
+   "date": "2011",
+   "name": "Mitglieder Reiterliche Vereinigung",
+   "value": 727866,
+   "art": "Beleg",
+   "source": "DOSB-Bestandserhebung 2011 (https://epflicht-hessen.hebis.de/ubffm/download/pdf/8520574)"
+  },
+  {
+   "date": "2012",
+   "name": "Mitglieder Reiterliche Vereinigung",
+   "value": 718965,
+   "art": "Beleg",
+   "source": "DOSB-Bestandserhebung 2012 (https://epflicht-hessen.hebis.de/ubffm/download/pdf/8520573)"
+  },
+  {
+   "date": "2013",
+   "name": "Mitglieder Reiterliche Vereinigung",
+   "value": 708890,
+   "art": "Beleg",
+   "source": "DOSB-Bestandserhebung 2013 (https://epflicht-hessen.hebis.de/ubffm/download/pdf/8520572)"
+  },
+  {
+   "date": "2014",
+   "name": "Mitglieder Reiterliche Vereinigung",
+   "value": 697067,
+   "art": "Beleg",
+   "source": "DOSB-Bestandserhebung 2014 (https://epflicht-hessen.hebis.de/ubffm/download/pdf/8520571)"
+  },
+  {
+   "date": "2015",
+   "name": "Mitglieder Reiterliche Vereinigung",
+   "value": 690200,
+   "art": "Beleg",
+   "source": "DOSB-Bestandserhebung 2015 (https://epflicht-hessen.hebis.de/ubffm/download/pdf/8520570)"
+  },
+  {
+   "date": "2016",
+   "name": "Mitglieder Reiterliche Vereinigung",
+   "value": 690995,
+   "art": "Beleg",
+   "source": "DOSB-Bestandserhebung 2016 (https://epflicht-hessen.hebis.de/ubffm/download/pdf/8520569)"
+  },
+  {
+   "date": "2017",
+   "name": "Mitglieder Reiterliche Vereinigung",
+   "value": 687036,
+   "art": "Beleg",
+   "source": "DOSB-Bestandserhebung 2017 (https://epflicht-hessen.hebis.de/ubffm/download/pdf/8520568)"
+  },
+  {
+   "date": "2018",
+   "name": "Mitglieder Reiterliche Vereinigung",
+   "value": 686747,
+   "art": "Beleg",
+   "source": "DOSB-Bestandserhebung 2018 (https://epflicht-hessen.hebis.de/ubffm/download/pdf/8520567)"
+  },
+  {
+   "date": "2019",
+   "name": "Mitglieder Reiterliche Vereinigung",
+   "value": 682348,
+   "art": "Beleg",
+   "source": "DOSB-Bestandserhebung 2019"
+  },
+  {
+   "date": "2020",
+   "name": "Mitglieder Reiterliche Vereinigung",
+   "value": 678341,
+   "art": "Beleg",
+   "source": "DOSB-Bestandserhebung 2020"
+  },
+  {
+   "date": "2021",
+   "name": "Mitglieder Reiterliche Vereinigung",
+   "value": 664504,
+   "art": "Beleg",
+   "source": "DOSB-Bestandserhebung 2021"
+  },
+  {
+   "date": "2022",
+   "name": "Mitglieder Reiterliche Vereinigung",
+   "value": 664920,
+   "art": "Beleg",
+   "source": "DOSB-Bestandserhebung 2022"
+  },
+  {
+   "date": "2023",
+   "name": "Mitglieder Reiterliche Vereinigung",
+   "value": 663145,
+   "art": "Beleg",
+   "source": "DOSB-Bestandserhebung 2023"
+  },
+  {
+   "date": "2024",
+   "name": "Mitglieder Reiterliche Vereinigung",
+   "value": 662926,
+   "art": "Beleg",
+   "source": "DOSB-Bestandserhebung 2024"
+  },
+  {
+   "date": "2025",
+   "name": "Mitglieder Reiterliche Vereinigung",
+   "value": 657994,
+   "art": "Beleg",
+   "source": "DOSB-Bestandserhebung 2025"
+  }
+ ]
+}

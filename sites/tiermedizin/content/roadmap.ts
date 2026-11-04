@@ -350,6 +350,15 @@ export const POSTS: RoadmapPost[] = [
     refs: [24, 31],
   },
   {
+    nr: 39, arc: 'tiere', status: 'geplant', vorabOnline: true,
+    title: 'Reitsport verliert Mitglieder',
+    hook: 'Seit 2008 haben die Reitvereine fast 95.000 Mitglieder verloren, in 15 von 17 Jahren ging es abwärts.',
+    figures: ['Mitglieder FN-Vereine: 752.964 (2008) → 657.994 (2025), minus 12,6 Prozent', 'Nur 2016 (+795) und 2022 (+416) ein Plus', 'Rückgang laut Pferdesport Westfalen seit 2004'],
+    sampleId: 'reitsport', chart: 'line', dataStatus: 'belegt',
+    dataNote: 'DOSB-Bestandserhebungen 2009–2025 (ds30-reitsport.json), Vorjahresspalten geprüft. Turniere 2019–2025 (Pitch 10) als eigene Grafik später, nicht vermischen. Pferde-Reihe mit 24, 31, 37.',
+    refs: [31, 37],
+  },
+  {
     nr: 36, arc: 'tiere', status: 'geplant', vorabOnline: true,
     title: 'Welche Hunde Universalspender sind',
     hook: 'Boxer und Schäferhund sind zu über 80 Prozent DEA 1 negativ und damit ideale Blutspender, Rottweiler nur zu 11 Prozent. Ausgerechnet die besten Spenderrassen werden seltener.',

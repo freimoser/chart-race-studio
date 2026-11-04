@@ -36,7 +36,7 @@ In Deutschland wurden 2025 **3.586 Pferde geschlachtet**. 1991 waren es noch run
 
 ## Vom Nutztier zum Sportpartner
 
-Die Zahl passt zu dem, was andere Statistiken über das Pferd zeigen. Seit 2021 führen in Deutschland mehr Tierärztinnen und Tierärzte eine reine Pferdepraxis als eine reine Nutztierpraxis ([Pferdepraxis und Nutztierpraxis](pferdepraxis-nutztierpraxis.html)). Gezüchtet wird für Sport und Freizeit: 2025 registrierten die Zuchtverbände 34.424 Fohlen ([Pferdezucht in Deutschland](pferdezucht-deutschland.html)). Ein Pferd, das als Sport- oder Freizeitpartner lebt, wird seltener geschlachtet; viele Halterinnen und Halter lassen ihr Pferd im Equidenpass ausdrücklich als „nicht zur Schlachtung bestimmt“ eintragen. Wie viele das sind, erhebt allerdings keine Statistik.
+Die Zahl passt zu dem, was andere Statistiken über das Pferd zeigen. Seit 2021 führen in Deutschland mehr Tierärztinnen und Tierärzte eine reine Pferdepraxis als eine reine Nutztierpraxis ([Pferdepraxis und Nutztierpraxis](pferdepraxis-nutztierpraxis.html)). Gezüchtet wird für Sport und Freizeit: 2025 registrierten die Zuchtverbände 34.424 Fohlen ([Pferdezucht in Deutschland](pferdezucht-deutschland.html)). Ein Pferd, das als Sport- oder Freizeitpartner lebt, wird seltener geschlachtet; viele Halterinnen und Halter lassen ihr Pferd im Equidenpass ausdrücklich als „nicht zur Schlachtung bestimmt“ eintragen. Wie viele das sind, erhebt allerdings keine Statistik. Auch der Sport im Verein schrumpft: Die Reitvereine haben seit 2008 fast 95.000 Mitglieder verloren ([Reitsport](reitsport-mitglieder.html)).
 
 Die Gründe für einzelne Sprünge nennt die Statistik nicht. Der Einbruch 2002 und der starke Rückgang ab 2018 lassen sich aus den Zahlen allein nicht erklären.
 

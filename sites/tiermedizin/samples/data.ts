@@ -552,6 +552,30 @@ export const PFERDESCHLACHTUNGEN = {
   ],
 }
 
+export const REITSPORT = {
+  headers: ["Jahr","Mitglieder im Reitverein"],
+  rows: [
+    ["2008", 752964],
+    ["2009", 748839],
+    ["2010", 737103],
+    ["2011", 727866],
+    ["2012", 718965],
+    ["2013", 708890],
+    ["2014", 697067],
+    ["2015", 690200],
+    ["2016", 690995],
+    ["2017", 687036],
+    ["2018", 686747],
+    ["2019", 682348],
+    ["2020", 678341],
+    ["2021", 664504],
+    ["2022", 664920],
+    ["2023", 663145],
+    ["2024", 662926],
+    ["2025", 657994],
+  ],
+}
+
 export const PRAXISSCHWERPUNKTE = {
   headers: ["Jahr","Nur Kleintiere","Gemischt (Nutz- und Kleintiere)","Nur Nutz- und Großtiere","Ketten (Standorte in Deutschland)"],
   rows: [

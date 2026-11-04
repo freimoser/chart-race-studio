@@ -274,3 +274,7 @@ Rohdaten `data/raw/ds28-hundesteuer.json` (Destatis 71211-0001, kassenmäßige E
 ## Pferdeschlachtungen: −80 % (`pferdeschlachtungen`, Post 37)
 
 Rohdaten `data/raw/ds29-pferdeschlachtungen.json`: Destatis 41331-0001 (inländisch + ausländisch + Haus) ab 1993, Eurostat 1991–1992. Eine Linie 1991–2025. Vor 1991 Gebietsstand unklar.
+
+## Reitsport verliert Mitglieder (`reitsport`, Post 39)
+
+Rohdaten `data/raw/ds30-reitsport.json`: DOSB-Bestandserhebungen, Mitglieder FN-Vereine 2008–2025, eine Linie. Turniere 2019–2025 später als eigene Grafik.

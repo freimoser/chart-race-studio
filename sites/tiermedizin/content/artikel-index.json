@@ -407,6 +407,17 @@
     "live": true
   },
   {
+    "post": 39,
+    "slug": "reitsport-mitglieder",
+    "titel": "Reitsport: 95.000 Vereinsmitglieder weniger seit 2008",
+    "beschreibung": "Die Reitvereine der FN zählten 2025 noch 657.994 Mitglieder, 2008 waren es 752.964. In 15 von 17 Jahren ging es abwärts. Die Reihe mit Quelle.",
+    "frage": "Wie viele Mitglieder haben die Reitvereine in Deutschland?",
+    "stand": "2026-11-04",
+    "geaendert": "2026-11-04",
+    "bereit": true,
+    "live": true
+  },
+  {
     "art": "anleitung",
     "slug": "weltkarte-laender-einfaerben-animieren",
     "titel": "Weltkarte nach Daten einfärben und animieren – kostenlos",
