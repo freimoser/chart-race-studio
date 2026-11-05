@@ -268,16 +268,16 @@ const w22 = wide(d26.rows, { names: ['Einheiten gesammelt', 'Erythrozytenkonzent
 const w23 = wide(byMetric(d27, 'Umsatz'), { names: ['Heimtiere und Pferde', 'Nutztiere'] })
 // 24 Hundesteuer der Gemeinden 1999–2025 in Mio. Euro (Destatis 71211-0001).
 const w24 = wide(d28.rows, { names: ['Hundesteuer'] })
-// 24b Post 35, Video: Hundesteuer gegen Hunde und Verbraucherpreise, Index 2013 = 100, 2013–2025. Alle drei Reihen
-// berechnet (Index), keine Lücken. Start 2013, weil IVH/ZZF die Hunde erst ab 2013 mit derselben Methode zählen
+// 24b Post 35, Video: Hundesteuer gegen Hunde und Verbraucherpreise, Veränderung seit 2013 in Prozent, 2013–2025.
+// Alle drei Reihen berechnet, keine Lücken. Prozent statt Index 100, weil die Y-Achse des Line Race bei 0 beginnt. Start 2013, weil IVH/ZZF die Hunde erst ab 2013 mit derselben Methode zählen
 // (2012 IMR, davor Verbandsschätzung). Hunde aus der lückenlosen Heimtierreihe (deVoll), Verbraucherpreise
 // Destatis 61111-0001 (ds16). Steuer je Hund steht nur im Text, nicht als Linie (hängt ganz an der Hochrechnung).
 const hsWert = (j) => d28.rows.find((r) => r.date === String(j)).value
-const index13 = (f, j) => Math.round(f(j) / f(2013) * 1000) / 10
+const seit13 = (f, j) => Math.round((f(j) / f(2013) - 1) * 1000) / 10
 const w24b = {
   headers: ['Jahr', 'Hundesteuer', 'Hunde', 'Verbraucherpreise'],
   rows: Array.from({ length: 2025 - 2013 + 1 }, (_, k) => 2013 + k).map((j) => [String(j),
-    index13(hsWert, j), index13((x) => deWert('Hunde', x), j), index13((x) => d16.vpi_gesamt_2020_100[x], j)]),
+    seit13(hsWert, j), seit13((x) => deWert('Hunde', x), j), seit13((x) => d16.vpi_gesamt_2020_100[x], j)]),
 }
 // 25 Geschlachtete Pferde 1991–2025 (Eurostat 1991–1992, Destatis gesamt ab 1993; Rechnung in ds29).
 const w25 = wide(d29.rows, { names: ['Geschlachtete Pferde'] })

@@ -45,17 +45,17 @@ Als Gegenprobe zur Hundezahl taugt sie trotzdem, weil sie amtlich und lückenlos
 
 ## Steigt die Steuer pro Hund?
 
-Die Einnahmen allein trennen nicht zwischen mehr Hunden und höheren Sätzen. Legt man die Zahl der Hunde und die Verbraucherpreise daneben, wird es deutlicher. Alle drei Reihen als Index, 2013 = 100:
+Die Einnahmen allein trennen nicht zwischen mehr Hunden und höheren Sätzen. Legt man die Zahl der Hunde und die Verbraucherpreise daneben, wird es deutlicher. Alle drei Reihen als Veränderung seit 2013:
 
 ::grafik hundesteuer-relation line
 
 | Jahr | Hundesteuer | Hunde | Verbraucherpreise | Steuer je Hund |
 |---|---:|---:|---:|---:|
-| 2013 | 100 | 100 | 100 | 43,30 € |
-| 2020 | 127,2 | 155,1 | 107,4 | 35,50 € |
-| 2025 | 143,8 | 144,9 | 130,9 | 43,00 € |
+| 2013 | – | – | – | 43,30 € |
+| 2020 | +27,2 % | +55,1 % | +7,4 % | 35,50 € |
+| 2025 | +43,8 % | +44,9 % | +30,9 % | 43,00 € |
 
-*Index 2013 = 100 und Euro je gezähltem Hund, alles berechnet. Hunde: Haushaltsbefragung von IVH und ZZF. Verbraucherpreise: Statistisches Bundesamt, Jahresdurchschnitt.*
+*Veränderung gegenüber 2013 und Euro je gezähltem Hund, alles berechnet. Hunde: Haushaltsbefragung von IVH und ZZF. Verbraucherpreise: Statistisches Bundesamt, Jahresdurchschnitt.*
 
 Über die ganze Zeit kommt das Plus von den Hunden: Die Steuer stieg um 43,8 Prozent, die Zahl der Hunde um 44,9 Prozent. Pro gezähltem Hund sind es 2013 wie 2025 rund 43 Euro. Die Verbraucherpreise stiegen im selben Zeitraum um 30,9 Prozent. In Preisen von 2025 kamen 2013 noch 56,70 Euro auf jeden Hund, real ist die Steuer pro Hund also um 24 Prozent gesunken.
 
@@ -93,4 +93,4 @@ Nein. 2025 lagen die Einnahmen mit 429,7 Mio. Euro um 0,1 Prozent unter dem Vorj
 
 ## Quelle und Methode
 
-Statistisches Bundesamt, [Kassenmäßige Steuereinnahmen, Tabelle 71211-0001](https://www-genesis.destatis.de/datenbank/online/statistic/71211/table/71211-0001), Steuerart Hundesteuer, abgerufen über die öffentliche Schnittstelle am 22. Oktober und geprüft am 4. November 2026. Zahl der Hunde: IVH und ZZF, „Der Deutsche Heimtiermarkt“. Verbraucherpreise: Statistisches Bundesamt, [Verbraucherpreisindex, Tabelle 61111-0001](https://www-genesis.destatis.de/datenbank/online/statistic/61111/table/61111-0001). Futterpreise und Einordnung: [Destatis, Pressemitteilung N069](https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_N069_73.html) vom 7. Oktober 2026, abgerufen am 5. November 2026. Zweite Quelle für einzelne Jahre: [petcom zu 2024](https://petcom.at/deutschland/marktdaten/Deutschland-Statistik/rekordeinnahmen-hundesteuer-2024.html) (430 Mio. Euro). Berechnet sind die Veränderungsraten, der Index 2013 = 100 und die Steuer je Hund. Mehr zur Herkunft: [Datenherkunft, Hundesteuer](../artikel/datenherkunft.html#hundesteuer).
+Statistisches Bundesamt, [Kassenmäßige Steuereinnahmen, Tabelle 71211-0001](https://www-genesis.destatis.de/datenbank/online/statistic/71211/table/71211-0001), Steuerart Hundesteuer, abgerufen über die öffentliche Schnittstelle am 22. Oktober und geprüft am 4. November 2026. Zahl der Hunde: IVH und ZZF, „Der Deutsche Heimtiermarkt“. Verbraucherpreise: Statistisches Bundesamt, [Verbraucherpreisindex, Tabelle 61111-0001](https://www-genesis.destatis.de/datenbank/online/statistic/61111/table/61111-0001). Futterpreise und Einordnung: [Destatis, Pressemitteilung N069](https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_N069_73.html) vom 7. Oktober 2026, abgerufen am 5. November 2026. Zweite Quelle für einzelne Jahre: [petcom zu 2024](https://petcom.at/deutschland/marktdaten/Deutschland-Statistik/rekordeinnahmen-hundesteuer-2024.html) (430 Mio. Euro). Berechnet sind die Veränderungsraten und die Steuer je Hund. Mehr zur Herkunft: [Datenherkunft, Hundesteuer](../artikel/datenherkunft.html#hundesteuer).
