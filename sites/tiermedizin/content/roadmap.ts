@@ -249,7 +249,8 @@ export const POSTS: RoadmapPost[] = [
     refs: [1, 3],
   },
   {
-    nr: 26, arc: 'markt', status: 'geplant', vorabOnline: true,
+    nr: 26, arc: 'markt', status: 'veroeffentlicht', publishedOn: '2026-10-29', vorabOnline: true,
+    linkedInUrl: 'https://lnkd.in/p/egFM-hmX',
     title: 'Online überholt das Zubehör, das Futter noch nicht',
     hook: 'Online-Handel mit Heimtierbedarf: 400 Mio. Euro 2013, 1.521 Mio. 2025. 2022 zieht er am Zubehör im Laden vorbei, Katzen- und Hundefutter im Laden liegen noch vorn.',
     figures: ['Online-Handel: 400 Mio. Euro (2013) auf 1.521 Mio. (2025)', '2022 überholt er die Bedarfsartikel im stationären Handel (1.203 zu 1.091 Mio.)', 'Zubehör im Laden: 935 Mio. (2013), Hoch 1.121 Mio. (2023), 1.063 Mio. (2025)', 'Im Laden 2025: Katzenfutter 2.315 Mio., Hundefutter 1.753 Mio. (2024 veränderte Datenbasis)'],

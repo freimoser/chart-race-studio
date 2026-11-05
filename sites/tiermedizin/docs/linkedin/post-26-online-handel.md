@@ -1,8 +1,7 @@
 # LinkedIn-Post 26: Online überholt das Zubehör, das Futter noch nicht
 
 **Video (Show-Version, empfohlen):** Studio → „Heimtierbedarf: Online holt auf“ (Hinweis „gerechnet“ steht in der Quellenzeile im Bild und im ersten Kommentar, nicht im Titel) (`?beispiel=online-handel-2005`), Line Race 2005–2025, Online bis 2012 gerechnet und geglättet. **Alternative nur mit Verbandszahlen:** `?beispiel=online-handel`, Line Race 2013–2025 mit vier Linien (Online, Katzenfutter, Hundefutter, Zubehör im Laden), Format 4:5, MP4. Früher als 2013 geht nicht: Laut Bericht 2013 gab es vorher keine Online-Daten; bvh/TNS 2010–2012 sind anders erhoben (Prüfung 28.10.2026). 2026 nur als Rechnung im Text, nicht im Video.
-**Stand:** 28.10.2026. Post 26 `vorabOnline` (Post 33 bleibt „aktuell“), Artikel `26-heimtierbedarf-online-handel.md` live. Nach dem
-Posten: `status: 'veroeffentlicht'`, `publishedOn`, `linkedInUrl`.
+**Stand:** 05.11.2026. Veröffentlicht am 29.10.2026: https://lnkd.in/p/egFM-hmX · Artikel `26-heimtierbedarf-online-handel.md` live.
 **Zahlen:** ZZF/IVH „Der Deutsche Heimtiermarkt“ (Datensatz `online-handel`, aus `heimtiermarkt`).
 
 ---
