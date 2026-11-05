@@ -25,6 +25,10 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 - **Kern, betrifft beide Seiten (Fehler):** `formatPeriod` ersetzte die Platzhalter nacheinander; `\bM\b` traf dann das M im schon eingesetzten „Mär“/„März“ und machte „3är 2022“ (in Grafik und Video bei jedem März mit den Formaten „MMM YYYY“ und „MMMM YYYY“). Jetzt ein einziger Durchgang, mit Test. Glätteprüfung beider Seiten: 0 Sprünge. Neue Startkonfiguration `dev-tier-5189` (Tiermedizin-Studio ohne `site.mjs`, stört einen laufenden Humanmedizin-Server nicht).
 
+### Vier Artikel vorab online: 17, 18, 20, 25 (05.11.2026)
+
+- **Tiermedizin:** Schäferhund, Hunderassen, Tierärzte je Bundesland, Ausgaben für Haustiere nach Faktencheck vorab online (Abrufdaten, Links auf nicht-live Artikel ersetzt, „Kammermitglieder“, 23 statt 24 Jahre). Artikel 25 nutzt den neuen lückenlosen Datensatz `heimtiermarkt-2005` (Bar Race 2005–2025) statt `heimtiermarkt` (Lücken, bleibt unverändert), nennt den Gesamtumsatz 6.990 Mio. Euro; Suchbegriff-Dublette mit 26 entfernt. Links aus 02, 04, 36.
+
 ### Hundesteuer: Halbjahr 2026 ergänzt (05.11.2026)
 
 - **Tiermedizin:** Artikel 35, Dateninfo `hundesteuer` und Post-Text 35: erstes Halbjahr 2026 plus 1,9 Prozent (Destatis 71211-0003), damit „Ende des Booms?“ nicht schief steht.

@@ -278,3 +278,7 @@ Rohdaten `data/raw/ds29-pferdeschlachtungen.json`: Destatis 41331-0001 (inländi
 ## Reitsport verliert Mitglieder (`reitsport`, Post 39)
 
 Rohdaten `data/raw/ds30-reitsport.json`: DOSB-Bestandserhebungen, Mitglieder FN-Vereine 2008–2025, eine Linie. Turniere 2019–2025 später als eigene Grafik.
+
+## Futter und Zubehör: wohin das Geld geht (`heimtiermarkt-2005`, Post 25)
+
+Gleiche Daten wie `online-handel-2005` (Konstante ONLINE_HANDEL_2005), als Bar Race für Artikel 25. Ersetzt dort `heimtiermarkt`, das Lücken hat (Online ab 2013, kleine Segmente ab 2018) und unverändert bleibt.

@@ -184,7 +184,7 @@
     "stand": "2026-09-28",
     "geaendert": "2026-09-28",
     "bereit": true,
-    "live": false
+    "live": true
   },
   {
     "post": 18,
@@ -195,7 +195,7 @@
     "stand": "2026-09-23",
     "geaendert": "2026-09-23",
     "bereit": true,
-    "live": false
+    "live": true
   },
   {
     "post": 19,
@@ -212,12 +212,12 @@
     "post": 20,
     "slug": "tieraerzte-bundeslaender",
     "titel": "Tierärzte je Bundesland – Zahlen der Kammern 2002 bis 2025",
-    "beschreibung": "Bayern hat mit 8.938 die meisten Tierärztinnen und Tierärzte, vor NRW mit 7.432. Alle 16 Bundesländer von 2002 bis 2025, mit Wachstum und Quelle.",
+    "beschreibung": "Bayern hat mit 8.938 die meisten Kammermitglieder, vor NRW mit 7.432. Alle 16 Bundesländer von 2002 bis 2025, mit Wachstum und Quelle.",
     "frage": "Wie viele Tierärzte gibt es in den einzelnen Bundesländern?",
     "stand": "2026-09-23",
     "geaendert": "2026-09-23",
     "bereit": true,
-    "live": false
+    "live": true
   },
   {
     "post": 21,
@@ -269,10 +269,10 @@
     "titel": "Ausgaben für Haustiere in Deutschland: Futter und Zubehör",
     "beschreibung": "2025 setzte der Handel im Laden 2.315 Mio. Euro mit Katzenfutter um, 2011 waren es 1.486 Mio. Die Ausgaben für Haustiere nach Segment, mit Quelle.",
     "frage": "Wie viel geben die Deutschen für Haustiere aus?",
-    "stand": "2026-09-23",
-    "geaendert": "2026-09-23",
+    "stand": "2026-11-05",
+    "geaendert": "2026-11-05",
     "bereit": true,
-    "live": false
+    "live": true
   },
   {
     "post": 26,

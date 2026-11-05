@@ -2,7 +2,7 @@
 post: 20
 slug: tieraerzte-bundeslaender
 titel: Tierärzte je Bundesland – Zahlen der Kammern 2002 bis 2025
-beschreibung: Bayern hat mit 8.938 die meisten Tierärztinnen und Tierärzte, vor NRW mit 7.432. Alle 16 Bundesländer von 2002 bis 2025, mit Wachstum und Quelle.
+beschreibung: Bayern hat mit 8.938 die meisten Kammermitglieder, vor NRW mit 7.432. Alle 16 Bundesländer von 2002 bis 2025, mit Wachstum und Quelle.
 frage: Wie viele Tierärzte gibt es in den einzelnen Bundesländern?
 suchbegriffe: tierärzte bundesland, anzahl tierärzte bayern, tierärzte nrw anzahl, statistik tierärzte deutschland, tierärztekammer mitglieder
 stand: 2026-09-23
@@ -40,7 +40,7 @@ Ende 2025 waren in Bayern **8.938 Tierärztinnen und Tierärzte** Mitglied der L
 | Bremen | 167 | 182 | 191 | +14,4 % |
 | **Summe (berechnet)** | **31.461** | **42.147** | **46.089** | **+46,5 %** |
 
-An der Reihenfolge der großen Länder ändert sich in 24 Jahren nichts: Bayern führt in jedem Jahr, dahinter stehen durchgehend Nordrhein-Westfalen, Niedersachsen, Baden-Württemberg und Hessen. Bayern stellt 2002 wie 2025 knapp ein Fünftel aller Kammermitglieder (19,3 und 19,4 Prozent, berechnet). Nordrhein-Westfalen legt dagegen von 14,7 auf 16,1 Prozent zu, Niedersachsen von 13,9 auf 14,9 Prozent.
+An der Reihenfolge der großen Länder ändert sich in 23 Jahren nichts: Bayern führt in jedem Jahr, dahinter stehen durchgehend Nordrhein-Westfalen, Niedersachsen, Baden-Württemberg und Hessen. Bayern stellt 2002 wie 2025 knapp ein Fünftel aller Kammermitglieder (19,3 und 19,4 Prozent, berechnet). Nordrhein-Westfalen legt dagegen von 14,7 auf 16,1 Prozent zu, Niedersachsen von 13,9 auf 14,9 Prozent.
 
 ## Wo das Wachstum ungleich verteilt ist
 
@@ -53,10 +53,10 @@ Außerdem flacht das Wachstum insgesamt ab. Von 2002 bis 2018 kamen 34,0 Prozent
 ## Was die Zahl nicht sagt
 
 - **Kammermitglieder sind nicht Tätige.** Mitgezählt sind Ruheständler und Mitglieder, die nicht tierärztlich arbeiten. Bundesweit waren 2025 laut Bundestierärztekammer 34.476 Tierärztinnen und Tierärzte tätig, die Kammersumme liegt um 11.613 darüber (berechnet). Wie sich diese Differenz auf die Länder verteilt, weist die Reihe nicht aus.
-- **Absolute Zahlen bevorzugen große Länder.** Dass Bayern vorn liegt, sagt nichts über die Versorgung. Dafür braucht es die Zahl je Einwohner, siehe [Tierärzte je Einwohner](tierarztdichte-bundeslaender.html).
+- **Absolute Zahlen bevorzugen große Länder.** Dass Bayern vorn liegt, sagt nichts über die Versorgung. Dafür braucht es die Zahl je Einwohner oder je Tier, etwa die Hunde und Katzen je Tierärztin oder Tierarzt im Artikel [Tierarztmangel in Deutschland](tierarztmangel-deutschland.html).
 - **17 Kammern, 16 Länder.** Nordrhein-Westfalen hat zwei Kammern, Nordrhein und Westfalen-Lippe. Sie sind hier addiert.
 - **Einzelne Sprünge sind nicht erklärt.** Rheinland-Pfalz fällt von 2023 auf 2024 von 1.690 auf 1.516, das Saarland meldet 2019 307 Mitglieder zwischen 346 und 348 in den Nachbarjahren. Die Werte stehen so in der Quelle. Für 2017 und 2018 dokumentiert die Recherche außerdem kleine Summenabweichungen der Quelle von 18 und 10 Personen.
-- **Vor 2002 gibt es keine Kammerzahlen im Netz.** Die älteren Tabellen sind nur gedruckt erschienen.
+- **Vor 2002 gibt es keine vollständige Länderreihe im Netz.** Die älteren Tabellen sind nur gedruckt erschienen; online finden sich nur Einzelwerte, etwa für Sachsen.
 
 ## Häufige Fragen
 
@@ -74,4 +74,4 @@ Ende 2025 waren 34.476 Tierärztinnen und Tierärzte tätig. Die Mitgliederzahl 
 
 ## Quelle und Methode
 
-[Statistik der Deutschen Tierärzteschaft](https://www.bundestieraerztekammer.de/btk/statistik/) der Bundestierärztekammer, veröffentlicht im Deutschen Tierärzteblatt, Mitglieder je Landestierärztekammer zum 31. Dezember, 2002 bis 2025. Die Jahre 2002 bis 2005 stammen aus archivierten Statistik-PDFs und sind doppelt belegt. Nordrhein und Westfalen-Lippe sind zu Nordrhein-Westfalen addiert. Berechnet sind die Summen, die prozentualen Veränderungen, die Anteile und die Ländergruppen (Ost: Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt, Thüringen; Stadtstaaten: Berlin, Bremen, Hamburg; West: die übrigen acht). Die Zahl der Tätigen stammt aus der bundesweiten Reihe derselben Statistik. Mehr zur Herkunft der Zahlen: [Datenherkunft](../artikel/datenherkunft.html).
+[Statistik der Deutschen Tierärzteschaft](https://www.bundestieraerztekammer.de/btk/statistik/) der Bundestierärztekammer, veröffentlicht im Deutschen Tierärzteblatt, Mitglieder je Landestierärztekammer zum 31. Dezember, 2002 bis 2025, abgerufen am 5. November 2026. Die Jahre 2002 bis 2005 stammen aus archivierten Statistik-PDFs und sind doppelt belegt. Nordrhein und Westfalen-Lippe sind zu Nordrhein-Westfalen addiert. Berechnet sind die Summen, die prozentualen Veränderungen, die Anteile und die Ländergruppen (Ost: Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt, Thüringen; Stadtstaaten: Berlin, Bremen, Hamburg; West: die übrigen acht). Die Zahl der Tätigen stammt aus der bundesweiten Reihe derselben Statistik. Mehr zur Herkunft der Zahlen: [Datenherkunft](../artikel/datenherkunft.html).

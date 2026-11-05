@@ -54,7 +54,7 @@ Auffällig sind die Jahre 2020 und 2021: Der Labrador erreicht 2021 mit 3.219 We
 - **Ränge gelten nur bis Platz 20.** Der Datensatz enthält 47 Rassen, darunter alle, die seit 1992 einmal unter den ersten 20 waren. Ränge dahinter lassen sich daraus nicht ablesen.
 - **Die oft zitierten 113.702 Welpen für 2024** passen nicht zur Summe der VDH-Tabelle, die für 2024 auf 56.851 kommt. Sie wurden nicht übernommen.
 
-Wie stark die Verbandsstatistik bei Moderassen danebenliegen kann, zeigt der Artikel zur [Französischen Bulldogge](franzoesische-bulldogge-statistik.html).
+Wie stark die Verbandsstatistik bei Moderassen danebenliegen kann, zeigt die Französische Bulldogge: Sie ist in Haushalten verbreitet, im VDH-Zuchtbuch aber selten.
 
 ## Häufige Fragen
 
@@ -72,4 +72,4 @@ Im VDH wurden 2025 genau 2.401 Labrador-Welpen eingetragen, der Höchststand lag
 
 ## Quelle und Methode
 
-[Welpenstatistik der VDH-Mitgliedsvereine](https://www.vdh.de/ueber-den-vdh/welpenstatistik/), Verband für das Deutsche Hundewesen. 2011 bis 2025 aus der aktuellen Onlinetabelle, 1992 bis 2010 aus fünf archivierten Fassungen der früheren Tabelle im Internet Archive; alle Überschneidungen stimmen überein. 1990 und 1991 sind nicht online verfügbar. Berechnet sind die Faktoren, die prozentualen Veränderungen und die Anteile an allen Welpen; Grundlage für die Anteile ist die Gesamtzahl der VDH-Tabelle, die es nur für 2011 bis 2025 gibt. Die Ränge sind aus den 47 Rassen des Datensatzes gebildet. Mehr zur Herkunft der Zahlen: [Datenherkunft](../artikel/datenherkunft.html).
+[Welpenstatistik der VDH-Mitgliedsvereine](https://www.vdh.de/ueber-den-vdh/welpenstatistik/), Verband für das Deutsche Hundewesen, abgerufen am 5. November 2026. 2011 bis 2025 aus der aktuellen Onlinetabelle, 1992 bis 2010 aus fünf archivierten Fassungen der früheren Tabelle im Internet Archive; alle Überschneidungen stimmen überein. 1990 und 1991 sind nicht online verfügbar. Berechnet sind die Faktoren, die prozentualen Veränderungen und die Anteile an allen Welpen; Grundlage für die Anteile ist die Gesamtzahl der VDH-Tabelle, die es nur für 2011 bis 2025 gibt. Die Ränge sind aus den 47 Rassen des Datensatzes gebildet. Mehr zur Herkunft der Zahlen: [Datenherkunft](../artikel/datenherkunft.html).

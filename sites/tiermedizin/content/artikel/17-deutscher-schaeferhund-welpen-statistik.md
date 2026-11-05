@@ -44,7 +44,7 @@ Im selben Zeitraum verlor der Schäferhund 52,2 Prozent, der Teckel 28,5 Prozent
 
 Dass er dennoch vorn bleibt, liegt am Vorsprung, mit dem er gestartet ist. 1992 stand er für fast doppelt so viele Welpen wie der Teckel, 28.000 zu 14.208. Selbst nach drei Jahrzehnten Rückgang reicht dieser Vorsprung für Platz 1. Der Abstand zum Teckel ist dabei geschrumpft, von 13.792 auf 1.866 Welpen.
 
-Wer den Platz der klassischen deutschen Rassen einnimmt, ist Thema von Post 18, die Französische Bulldogge als Rasse, die in dieser Statistik kaum vorkommt, Thema von Post 19. Beide stehen im [Redaktionsplan](../studio/#redaktionsplan).
+Welche Rassen den Platz der klassischen deutschen Rassen einnehmen, zeigt der Artikel [Beliebteste Hunderassen in Deutschland](beliebteste-hunderassen-deutschland.html). Ausgerechnet Schäferhund und Boxer sind übrigens die Rassen mit den meisten Universalspendern für Bluttransfusionen ([Welche Hunde Universalspender sind](blutgruppe-hund-universalspender.html)).
 
 ## Was die Zahl nicht sagt
 
@@ -66,5 +66,5 @@ In VDH-Zuchtbüchern wurden 2025 6.374 Welpen des Deutschen Schäferhunds einget
 
 ## Quelle und Methode
 
-Verband für das Deutsche Hundewesen (VDH), [Welpenstatistik der VDH-Mitgliedsvereine](https://www.vdh.de/ueber-den-vdh/welpenstatistik/). 2011 bis 2025 aus der aktuellen Onlinetabelle, 1992 bis 2010 aus fünf archivierten Fassungen der alten Tabelle im Internet Archive; alle Überschneidungen stimmen überein. Der Datensatz enthält 47 Rassen, nämlich jede, die zwischen 1992 und 2025 mindestens einmal unter den ersten 20 war. Deshalb sind Platz 1 bis 3 in jedem Jahr sicher bestimmt. Veränderungen, Verhältnisse, Anteile und die Summe der 47 Rassen sind berechnet.
+Verband für das Deutsche Hundewesen (VDH), [Welpenstatistik der VDH-Mitgliedsvereine](https://www.vdh.de/ueber-den-vdh/welpenstatistik/), abgerufen am 5. November 2026. 2011 bis 2025 aus der aktuellen Onlinetabelle, 1992 bis 2010 aus fünf archivierten Fassungen der alten Tabelle im Internet Archive; alle Überschneidungen stimmen überein. Der Datensatz enthält 47 Rassen, nämlich jede, die zwischen 1992 und 2025 mindestens einmal unter den ersten 20 war. Deshalb sind Platz 1 bis 3 in jedem Jahr sicher bestimmt. Veränderungen, Verhältnisse, Anteile und die Summe der 47 Rassen sind berechnet.
 

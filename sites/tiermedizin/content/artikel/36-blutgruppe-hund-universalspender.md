@@ -58,6 +58,8 @@ Ausgerechnet die beiden Rassen mit dem höchsten Anteil an Universalspendern hab
 
 ![Bild 5 von 5: Hunde haben keine natürlichen Antikörper gegen fremde Blutgruppen, die erste Transfusion geht meist gut. Bekommt ein DEA-1-negativer Hund positives Blut, bildet er Antikörper; ohne Bluttest liegt das Risiko bei Mischlingen bei rund 23 Prozent, bei der zweiten Transfusion droht 5 Prozent eine akute Reaktion](blutgruppe-hund-universalspender/5.webp)
 
+Welche Rassen im VDH-Zuchtbuch insgesamt vorn liegen und welche aufsteigen, zeigt der Artikel [Beliebteste Hunderassen in Deutschland](beliebteste-hunderassen-deutschland.html).
+
 ## Was die Zahl nicht sagt
 
 - **Die Rassenwerte stammen aus Italien.** Für Deutschland gibt es keine Erhebung je Rasse. Die Gesamtwerte liegen nah beieinander (Italien 39 %, Deutschland etwa 40 %), ältere Studien aus anderen Ländern fanden beim Schäferhund bis zu 90 % und mehr.

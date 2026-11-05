@@ -172,7 +172,7 @@ export const POSTS: RoadmapPost[] = [
     refs: [2],
   },
   {
-    nr: 17, arc: 'tiere', status: 'geplant',
+    nr: 17, arc: 'tiere', status: 'geplant', vorabOnline: true,
     title: 'Der Absturz des Deutschen Schäferhunds',
     hook: 'Der leichte Post für Reichweite, und trotzdem eine echte Geschichte über 30 Jahre Geschmackswandel.',
     figures: ['1992: 28.000 Welpen im VDH-Zuchtbuch', '2025: 6.374', 'Der Teckel fällt von 14.208 auf 4.508'],
@@ -180,7 +180,7 @@ export const POSTS: RoadmapPost[] = [
     refs: [1],
   },
   {
-    nr: 18, arc: 'tiere', status: 'geplant',
+    nr: 18, arc: 'tiere', status: 'geplant', vorabOnline: true,
     title: 'Die neuen Lieblinge',
     hook: 'Wer den Platz eingenommen hat: Retriever und Hütehunde statt Wachhunde.',
     figures: ['Labrador: 685 (1992) auf 2.401', 'Golden Retriever: 943 auf 2.007', 'Australian Shepherd: 7 (1996) auf 493', 'Malinois: von null auf 884'],
@@ -197,7 +197,7 @@ export const POSTS: RoadmapPost[] = [
     refs: [18],
   },
   {
-    nr: 20, arc: 'karte', status: 'geplant',
+    nr: 20, arc: 'karte', status: 'geplant', vorabOnline: true,
     title: 'Tierärztinnen und Tierärzte je Bundesland',
     hook: 'Der Einstieg in die Regionalserie. 17 Kammern in 16 Ländern, 24 Jahre, und ein sehr ungleiches Wachstum.',
     figures: ['Bayern: 6.070 (2002) auf 8.938 (2025)', 'Nordrhein-Westfalen: 4.626 auf 7.432', 'Hamburg: 398 auf 654'],
@@ -241,11 +241,11 @@ export const POSTS: RoadmapPost[] = [
     refs: [16, 23],
   },
   {
-    nr: 25, arc: 'markt', status: 'geplant',
+    nr: 25, arc: 'markt', status: 'geplant', vorabOnline: true,
     title: 'Wofür Herrchen und Frauchen ihr Geld ausgeben',
     hook: 'Der Wechsel auf die Ausgabenseite. Relevant für jede Praxis, die noch Zubehör verkauft.',
     figures: ['Katzenfutter: 1.486 Mio. Euro (2011) auf 2.315 Mio. (2025)', 'Hundefutter: 1.146 auf 1.753', 'Bedarfsartikel im Laden: 916 auf nur 1.063'],
-    sampleId: 'heimtiermarkt', chart: 'bar', dataStatus: 'belegt',
+    sampleId: 'heimtiermarkt-2005', chart: 'bar', dataStatus: 'belegt',
     refs: [1, 3],
   },
   {

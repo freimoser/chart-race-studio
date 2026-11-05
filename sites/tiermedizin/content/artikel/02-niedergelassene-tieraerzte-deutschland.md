@@ -48,6 +48,8 @@ Seit ihrem Höchststand 2019 sinkt die Zahl der Praxisinhaber insgesamt (mehr da
 
 Alle Veränderungen sind berechnet. Die Kleintierpraxis gewinnt also weiter Anteile, aber nicht mehr, weil sie wächst, sondern weil sie langsamer schrumpft als die gemischte Praxis. Warum die Nutz- und Pferdepraxen seit 2019 zulegen und was davon echt ist, behandelt der Artikel [Die Großtierpraxis wird zur Pferdepraxis](pferdepraxis-nutztierpraxis.html).
 
+Die Zahlen je Bundesland, gezählt als Mitglieder der Landestierärztekammern, stehen im Artikel [Tierärzte je Bundesland](tieraerzte-bundeslaender.html).
+
 ## Was die Zahl nicht sagt
 
 - **Der Methodenbruch 2019 ist echt.** Seit 2019 fragt die Kammer Pferde getrennt ab, vorher zählten sie zu den Nutz- und Großtieren. Die gemischten Praxen fallen dadurch von 4.554 auf 3.640, ohne dass Praxen verschwinden. Wie dieser Bruch entsteht und wie man die Reihe trotzdem liest, erklärt [Warum das Pferd 2019 aus der Statistik fiel](statistik-tieraerzte-bruch-2019.html).

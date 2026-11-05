@@ -41,6 +41,8 @@ Die Statistik nennt keine Gründe, aber sie zeigt, wo sich die Gruppen untersche
 
 Offen bleibt, welche Rolle die Praxisgruppen spielen, die seit 2016 in Deutschland Praxen kaufen und gründen. Die Kammerstatistik erfasst Eigentum nicht, der Zusammenhang lässt sich aus ihr also nicht ablesen. Was über diesen Markt belegt ist, steht im Artikel [Wer betreibt die Tierarztpraxen in Deutschland?](../artikel/tierarztketten-deutschland.html), welchen Anteil an allen Praxen das ausmacht, im Artikel [Anteil der Tierarztketten](anteil-tierarztketten-deutschland.html).
 
+Wie sich die Kammermitglieder auf die 16 Bundesländer verteilen, von Bayern mit 8.938 bis Bremen, zeigt der Artikel [Tierärzte je Bundesland](tieraerzte-bundeslaender.html).
+
 ## Was die Zahl nicht sagt
 
 - **Gezählt werden Personen, keine Vollzeitstellen.** Weil unter den Angestellten deutlich mehr Menschen in Teilzeit arbeiten, fällt der Wechsel gemessen an der Arbeitszeit schwächer aus – und hat 2024 womöglich noch nicht stattgefunden.

@@ -5,10 +5,10 @@ titel: Ausgaben für Haustiere in Deutschland: Futter und Zubehör
 beschreibung: 2025 setzte der Handel im Laden 2.315 Mio. Euro mit Katzenfutter um, 2011 waren es 1.486 Mio. Die Ausgaben für Haustiere nach Segment, mit Quelle.
 frage: Wie viel geben die Deutschen für Haustiere aus?
 suchbegriffe: ausgaben haustiere deutschland, heimtiermarkt deutschland umsatz, umsatz katzenfutter deutschland, umsatz hundefutter deutschland
-stand: 2026-09-23
+stand: 2026-11-05
 bereit: ja
 ---
-2025 wurden im stationären Handel in Deutschland **2.315 Mio. Euro mit Katzenfutter**, **1.753 Mio. Euro mit Hundefutter** und **1.063 Mio. Euro mit Bedarfsartikeln und Zubehör** umgesetzt. Den Online-Handel über alle Segmente schätzen die Verbände getrennt davon auf 1.521 Mio. Euro. Quelle ist „Der Deutsche Heimtiermarkt“ von ZZF und IVH.
+2025 wurden im stationären Handel in Deutschland **2.315 Mio. Euro mit Katzenfutter**, **1.753 Mio. Euro mit Hundefutter** und **1.063 Mio. Euro mit Bedarfsartikeln und Zubehör** umgesetzt. Den Online-Handel über alle Segmente schätzen die Verbände getrennt davon auf 1.521 Mio. Euro. Zusammen mit dem übrigen Laden und dem Wildvogelfutter weist die Quelle für 2025 einen Gesamtumsatz von **6.990 Mio. Euro** aus. Quelle ist „Der Deutsche Heimtiermarkt“ von ZZF und IVH.
 
 ## Das Wichtigste in Kürze
 
@@ -21,7 +21,7 @@ bereit: ja
 
 | Jahr | Katzenfutter | Hundefutter | Bedarfsartikel | Online (alle Segmente) |
 |---|---:|---:|---:|---:|
-| 2011 | 1.486 | 1.146 | 916 | – |
+| 2011 | 1.486 | 1.146 | 916 | 294* |
 | 2013 | 1.538 | 1.204 | 935 | 400 |
 | 2016 | 1.602 | 1.354 | 977 | 510 |
 | 2019 | 1.596 | 1.507 | 1.017 | 705 |
@@ -31,7 +31,7 @@ bereit: ja
 | 2024 | 2.285 | 1.759 | 1.114 | 1.512 |
 | 2025 | 2.315 | 1.753 | 1.063 | 1.521 |
 
-*Millionen Euro zu Endverbraucherpreisen. Futter und Bedarfsartikel: stationärer Handel.*
+*Millionen Euro zu Endverbraucherpreisen. Futter und Bedarfsartikel: stationärer Handel. \*Online 2011 gerechnet, siehe Quelle und Methode.*
 
 Die Reihe hat zwei Phasen. Von 2015 bis 2019 wuchs Katzenfutter im Laden praktisch gar nicht: 1.610 Mio. Euro im Jahr 2015, 1.596 Mio. Euro vier Jahre später. Hundefutter legte in derselben Zeit stetig zu und kam bis auf 89 Mio. Euro an Katzenfutter heran. Ab 2020 ziehen beide Futtersegmente an, und 2022 und 2023 springt Katzenfutter um zusammen 513 Mio. Euro nach oben. Bedarfsartikel bewegen sich über die ganze Zeit in einem engen Band zwischen 916 und 1.121 Mio. Euro.
 
@@ -59,7 +59,7 @@ Wer in der Praxis Leinen, Näpfe oder Pflegeprodukte anbietet, steht in einem Se
 
 ## Was die Zahl nicht sagt
 
-- **Online ist keine vierte Warengruppe.** Der Online-Handel ist eine eigene Schätzung über alle Segmente. Er überschneidet sich inhaltlich mit den anderen Reihen: Katzenfutter, das im Netz bestellt wird, steckt im Online-Wert und nicht im Katzenfutter-Wert. Eine Gesamtsumme aus Laden und Online bildet dieser Artikel deshalb nicht.
+- **Online ist ein eigener Vertriebsweg, keine Warengruppe.** Der Online-Handel ist eine eigene Schätzung über alle Segmente: Katzenfutter, das im Netz bestellt wird, steckt im Online-Wert und nicht im Katzenfutter-Wert. Laden und Online zählen also getrennt. Die Quelle addiert sie selbst zu einem Gesamtumsatz: 2025 waren es 6.990 Mio. Euro (Laden 5.335, online 1.521, Wildvogelfutter 134).
 - **Die Werte sind nicht preisbereinigt.** Es sind Umsätze zu Endverbraucherpreisen des jeweiligen Jahres. Ein höherer Umsatz heißt nicht, dass mehr Futter verkauft wurde.
 - **2024 hat die Quelle ihre Datenbasis verändert.** Der Rückgang beim Hundefutter von 1.972 auf 1.759 Mio. Euro ist deshalb nicht als Einbruch zu lesen; der Verband selbst hält den Vergleich mit 2023 nur für bedingt möglich.
 - **Tierarztkosten sind nicht enthalten.** Behandlungen, Versicherungen und Tierarzneimittel sind in keinem Segment dieses Datensatzes ausgewiesen. Was über den Markt für Tierarzneimittel bekannt ist, steht im Artikel zum [Tiergesundheitsmarkt](tiergesundheitsmarkt-deutschland.html).
@@ -69,7 +69,7 @@ Wer in der Praxis Leinen, Näpfe oder Pflegeprodukte anbietet, steht in einem Se
 
 ### Wie viel geben die Deutschen für Haustiere aus?
 
-Im stationären Handel wurden 2025 in den sechs ausgewiesenen Segmenten zusammen rechnerisch 5.335 Mio. Euro umgesetzt, davon 2.315 Mio. mit Katzenfutter, 1.753 Mio. mit Hundefutter und 1.063 Mio. mit Bedarfsartikeln. Den Online-Handel schätzen die Verbände getrennt auf 1.521 Mio. Euro. Tierarztkosten sind in keiner dieser Zahlen enthalten.
+Für Futter und Zubehör nennen ZZF und IVH für 2025 einen Gesamtumsatz von 6.990 Mio. Euro: 5.335 Mio. im stationären Handel (davon 2.315 Mio. Katzenfutter, 1.753 Mio. Hundefutter, 1.063 Mio. Bedarfsartikel), 1.521 Mio. online und 134 Mio. Wildvogelfutter. Das sind Handelsumsätze, keine erhobenen Haushaltsausgaben. Tierarztkosten sind nicht enthalten.
 
 ### Wie viele Haustiere gibt es in Deutschland?
 
@@ -77,4 +77,4 @@ Im stationären Handel wurden 2025 in den sechs ausgewiesenen Segmenten zusammen
 
 ## Quelle und Methode
 
-Zentralverband Zoologischer Fachbetriebe (ZZF) und Industrieverband Heimtierbedarf (IVH), [„Der Deutsche Heimtiermarkt“](https://www.ivh-online.de/der-verband/daten-fakten/der-deutsche-heimtiermarkt.html), Jahrgänge 2011 bis 2025. Katzenfutter, Hundefutter und Bedarfsartikel liegen ab 2011 vor, der Online-Handel ab 2013, die kleineren Futtersegmente ab 2018. 2009 und 2010 fehlen in der Quelle. Tierbestände aus derselben Quelle, Datensatz „Heimtiere in Deutschland“. Berechnet sind alle Veränderungen in Prozent, die Anteile, die Summe der sechs Segmente und der Umsatz je Tier. Mehr zur Herkunft: [Datenherkunft, Heimtiermarkt](../artikel/datenherkunft.html#heimtiermarkt).
+Zentralverband Zoologischer Fachbetriebe (ZZF) und Industrieverband Heimtierbedarf (IVH), [„Der Deutsche Heimtiermarkt“](https://www.ivh-online.de/der-verband/daten-fakten/der-deutsche-heimtiermarkt.html), Jahrgänge 2011 bis 2025, abgerufen am 5. November 2026. Die animierte Grafik oben reicht weiter zurück, bis 2005: Die Ladenwerte 2005 bis 2010 sind IVH-Zahlen, der Online-Handel bis 2012 ist gerechnet und geglättet. Katzenfutter, Hundefutter und Bedarfsartikel liegen in dieser Tabelle ab 2011 vor, der Online-Handel ab 2013 als Schätzung der Verbände, die kleineren Futtersegmente ab 2018. *Der Online-Wert 2011 ist gerechnet (294 Mio. Euro): Wie die längere Reihe ab 2005 entsteht, steht im Beitrag [Online-Handel mit Haustierbedarf](heimtierbedarf-online-handel.html). Tierbestände aus derselben Quelle, Datensatz „Heimtiere in Deutschland“. Berechnet sind alle Veränderungen in Prozent, die Anteile, die Summe der sechs Segmente und der Umsatz je Tier. Mehr zur Herkunft: [Datenherkunft, Heimtiermarkt](../artikel/datenherkunft.html#heimtiermarkt).
