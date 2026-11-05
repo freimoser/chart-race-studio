@@ -430,6 +430,17 @@
   },
   {
     "art": "auswertung",
+    "slug": "blutspende-hund",
+    "titel": "Blutspende beim Hund: Voraussetzungen, Ablauf, Bedarf",
+    "beschreibung": "Welcher Hund darf Blut spenden, wie viel wird entnommen, warum gibt es in Deutschland keine Blutbank? Mit Hochrechnung, wie viel Blut fehlt.",
+    "frage": "Welcher Hund darf Blut spenden?",
+    "stand": "2026-11-05",
+    "geaendert": "2026-11-05",
+    "bereit": true,
+    "live": true
+  },
+  {
+    "art": "auswertung",
     "slug": "gehalt-tierarzt",
     "titel": "Gehalt Tierarzt: was angestellte Tierärzte verdienen",
     "beschreibung": "Angestellte Tierärzte verdienen zum Einstieg 3.701 Euro brutto im Monat, netto rund 2.440. Ärzte bekommen ein Drittel mehr, die Preise stiegen schneller.",
@@ -458,6 +469,17 @@
     "frage": "Sind Tierarztkosten stärker gestiegen als die Inflation?",
     "stand": "2026-10-07",
     "geaendert": "2026-10-07",
+    "bereit": true,
+    "live": true
+  },
+  {
+    "art": "auswertung",
+    "slug": "tierarztkosten-pferd",
+    "titel": "Tierarztkosten Pferd: Untersuchung, OP und Notdienst",
+    "beschreibung": "Was der Tierarzt fürs Pferd mindestens berechnen darf: Untersuchung ab 30,78 Euro, Kolik-OP ab 1.350 Euro, im Notdienst doppelt plus 50 Euro.",
+    "frage": "Was kostet der Tierarzt beim Pferd?",
+    "stand": "2026-11-05",
+    "geaendert": "2026-11-05",
     "bereit": true,
     "live": true
   },

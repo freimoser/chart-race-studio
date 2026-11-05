@@ -43,6 +43,8 @@ In Deutschland gibt es, anders als etwa in Portugal und den Niederlanden, keine 
 
 Eine Zahl, wie viele Blutspenden bei Hunden in Deutschland jährlich gesammelt oder gebraucht werden, gibt es nicht. Genau das ist der Befund: Großbritannien kann seine Versorgung in Jahresberichten nachzählen, Deutschland nicht. Welche Hunde als Spender besonders gefragt sind, zeigt Teil 2 der Serie: [Welche Rassen Universalspender sind](blutgruppe-hund-universalspender.html).
 
+Welche Hunde in Deutschland spenden können und wie eine Spende abläuft, steht im Ratgeber [Blutspende beim Hund](blutspende-hund.html).
+
 ## Was die Zahl nicht sagt
 
 - **Es sind Mindestwerte.** Die Jahresberichte nennen gerundete Werte mit „mehr als“. Exakte Zählungen veröffentlicht die Organisation nicht.

@@ -21,7 +21,7 @@ Die Operation einer Kolik mit Darmresektion kostet beim Pferd nach der Gebühren
 
 ## 23 Jahre Gleichschritt, dann der Sprung
 
-Die GOT legt für jede Leistung einen einfachen Satz fest. Tierärztinnen und Tierärzte dürfen bis zum Dreifachen berechnen, im Notdienst mehr, aber nie weniger. Zwischen 1999 und 2022 wurde die Verordnung nur zweimal angepasst, 2008 und 2017, beide Male um 12 Prozent für alle Leistungen gleich. Für das Pferd hieß das: Jede Gebühr lag 2021 genau 25,4 Prozent über 1999, während die Verbraucherpreise um 38,4 Prozent gestiegen waren.
+Die GOT legt für jede Leistung einen einfachen Satz fest. Tierärztinnen und Tierärzte dürfen bis zum Dreifachen berechnen, im Notdienst bis zum Vierfachen; was das in Euro heißt, rechnet die Übersicht [Tierarztkosten Pferd](tierarztkosten-pferd.html) durch. Zwischen 1999 und 2022 wurde die Verordnung nur zweimal angepasst, 2008 und 2017, beide Male um 12 Prozent für alle Leistungen gleich. Für das Pferd hieß das: Jede Gebühr lag 2021 genau 25,4 Prozent über 1999, während die Verbraucherpreise um 38,4 Prozent gestiegen waren.
 
 Die GOT 2022 hat die Sätze nicht nur erhöht, sondern jede Leistung neu bewertet. Darum unterscheiden sich die Änderungen je Leistung so stark, wie die Grafik oben zeigt:
 

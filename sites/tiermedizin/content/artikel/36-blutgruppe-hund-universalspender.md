@@ -48,7 +48,7 @@ Ein Hund mit der Blutgruppe **DEA 1 negativ** kann jedem anderen Hund Blut spend
 
 Hunde haben keine natürlich vorkommenden Antikörper gegen fremde Blutgruppen, anders als Katzen. Die erste Transfusion geht deshalb meist auch ohne passende Blutgruppe gut. Bekommt ein DEA-1-negativer Hund aber DEA-1-positives Blut, bildet er Antikörper. Bei einer zweiten Transfusion mit positivem Blut kann es dann zu einer schweren Reaktion kommen. Kohn und Weingart von der Freien Universität Berlin empfehlen deshalb im [Deutschen Tierärzteblatt 4/2026](https://bundestieraerztekammer.de/btk/dtbl/archiv/2026/artikel/DTBl_04_2026_Transfusion-Hund.pdf), DEA-1-negativen Hunden nur DEA-1-negatives Blut zu geben. DEA-1-positive Hunde vertragen beides.
 
-Die Studie rechnet aus, was ohne Bluttest passieren würde: Bei Mischlingen läge das Risiko einer Sensibilisierung bei 22,8 Prozent, das einer akuten Reaktion bei der zweiten Transfusion bei 5,2 Prozent. Bei den meisten Rassen liegt das Sensibilisierungsrisiko zwischen 20 und 25 Prozent. Als Spender eignen sich laut Tierärzteblatt gesunde Hunde ab etwa 20 bis 25 Kilo.
+Die Studie rechnet aus, was ohne Bluttest passieren würde: Bei Mischlingen läge das Risiko einer Sensibilisierung bei 22,8 Prozent, das einer akuten Reaktion bei der zweiten Transfusion bei 5,2 Prozent. Bei den meisten Rassen liegt das Sensibilisierungsrisiko zwischen 20 und 25 Prozent. Als Spender eignen sich laut Tierärzteblatt gesunde Hunde ab etwa 20 bis 25 Kilo; alle Voraussetzungen und den Ablauf beschreibt der Ratgeber [Blutspende beim Hund](blutspende-hund.html).
 
 ## Die besten Spenderrassen werden seltener
 

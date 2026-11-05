@@ -25,6 +25,10 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 - **Kern, betrifft beide Seiten (Fehler):** `formatPeriod` ersetzte die Platzhalter nacheinander; `\bM\b` traf dann das M im schon eingesetzten „Mär“/„März“ und machte „3är 2022“ (in Grafik und Video bei jedem März mit den Formaten „MMM YYYY“ und „MMMM YYYY“). Jetzt ein einziger Durchgang, mit Test. Glätteprüfung beider Seiten: 0 Sprünge. Neue Startkonfiguration `dev-tier-5189` (Tiermedizin-Studio ohne `site.mjs`, stört einen laufenden Humanmedizin-Server nicht).
 
+### Neue Ratgeber (05.11.2026)
+
+- **Tiermedizin:** Auswertung `/beitrag/blutspende-hund` (Voraussetzungen, Ablauf, Rechtslage, Hochrechnung Bedarf; Grafik blutbank-uk) und `/beitrag/tierarztkosten-pferd` (GOT-Sätze, Faktor, Notdienst, Wegegeld; ersetzt die Weiterleitung). Artikel 33: falscher Satz „nie weniger“ korrigiert (§ 5 GOT erlaubt Abweichung nach Vereinbarung). Links aus 01, 24, 33, 34, 36, Tierarztkosten-Inflation.
+
 ### Post 39: Reitsport verliert Mitglieder (04.11.2026)
 
 - **Tiermedizin:** Datensatz `reitsport` (DOSB 2008–2025, eine Linie, Rohdatei `ds30`), Artikel `/beitrag/reitsport-mitglieder` vorab online, Post-Text, Datenherkunft; Links aus Artikel 24, 31 und 37.
