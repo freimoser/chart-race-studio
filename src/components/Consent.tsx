@@ -66,7 +66,7 @@ export function Consent() {
           </p>
         </div>
         <div className="flex flex-none gap-2">
-          <button type="button" onClick={() => entscheide('denied')} className="btn-ghost flex-1 sm:flex-none">Nein danke</button>
+          <button type="button" onClick={() => entscheide('denied')} className="btn-primary flex-1 sm:flex-none">Nein danke</button>
           <button type="button" onClick={() => entscheide('granted')} className="btn-primary flex-1 sm:flex-none">Einverstanden</button>
         </div>
       </div>

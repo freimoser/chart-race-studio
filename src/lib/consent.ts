@@ -66,7 +66,7 @@ export function starteEinwilligung(gaId: string, datenschutz: string) {
           Details in der <a href="${datenschutz}">Datenschutzerklärung</a>.</p>
         </div>
         <div class="wahl">
-          <button type="button" class="knopf zweit" data-wahl="denied">Nein danke</button>
+          <button type="button" class="knopf" data-wahl="denied">Nein danke</button>
           <button type="button" class="knopf" data-wahl="granted">Einverstanden</button>
         </div>
       </div>`
