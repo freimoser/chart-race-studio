@@ -5,7 +5,7 @@ titel: Hundesteuer: 430 Mio. Euro, 2025 erstmals kein Plus
 beschreibung: Die Gemeinden nahmen 2025 rund 430 Mio. Euro Hundesteuer ein, mehr als doppelt so viel wie 1999. Erstmals gab es kein Plus. Die Reihe seit 1999.
 frage: Wie viel Hundesteuer nehmen die Gemeinden ein?
 suchbegriffe: hundesteuer deutschland einnahmen, hundesteuer einnahmen gemeinden, hundesteuer statistik, hundesteuer entwicklung
-stand: 2026-11-04
+stand: 2026-11-05
 bereit: ja
 ---
 Die Gemeinden in Deutschland nahmen 2025 **429,7 Mio. Euro Hundesteuer** ein, mehr als doppelt so viel wie 1999 mit 187,7 Mio. Euro. Seit Beginn der Reihe ist die Steuer jedes Jahr gestiegen, **2025 zum ersten Mal nicht**: minus 0,1 Prozent gegenüber 2024 (429,9 Mio.). So steht es in der Statistik der kassenmäßigen Steuereinnahmen des Statistischen Bundesamts.
@@ -46,6 +46,8 @@ Als Gegenprobe zur Hundezahl taugt sie trotzdem, weil sie amtlich und lückenlos
 
 Ein einzelnes Jahr ist noch kein Trend. Auffällig ist aber, dass zwei unabhängige Quellen 2025 in dieselbe Richtung zeigen: Die Steuer wuchs nicht mehr, und die Haushaltsbefragung der Verbände zählt eine halbe Million Hunde weniger als 2024. Kassenmäßige Einnahmen können sich außerdem verschieben, wenn Bescheide später bezahlt werden. Ob 2025 eine Wende ist, zeigt erst das nächste Jahr.
 
+**Nachtrag 2026:** Im ersten Halbjahr 2026 nahmen die Gemeinden 271,9 Mio. Euro Hundesteuer ein, 1,9 Prozent mehr als im ersten Halbjahr 2025 (266,7 Mio. Euro, berechnet aus den Quartalswerten). Das spricht eher für ein schwaches Jahr 2025 als für eine Wende. Die Zahlen für das zweite Halbjahr stehen noch aus ([Destatis, Tabelle 71211-0003](https://www-genesis.destatis.de/datenbank/online/statistic/71211/table/71211-0003), abgerufen am 5. November 2026).
+
 ## Was die Zahl nicht sagt
 
 - **Keine Hundezählung.** Die Steuer misst Einnahmen, nicht Hunde. Steigende Sätze heben sie, Befreiungen (etwa für Blindenhunde oder Tierheimhunde) senken sie.
@@ -61,7 +63,7 @@ Ein einzelnes Jahr ist noch kein Trend. Auffällig ist aber, dass zwei unabhäng
 
 ### Ist die Hundesteuer 2025 gestiegen?
 
-Nein. 2025 lagen die Einnahmen mit 429,7 Mio. Euro um 0,1 Prozent unter dem Vorjahr, zum ersten Mal seit Beginn der Reihe 1999.
+Nein. 2025 lagen die Einnahmen mit 429,7 Mio. Euro um 0,1 Prozent unter dem Vorjahr, zum ersten Mal seit Beginn der Reihe 1999. Im ersten Halbjahr 2026 lagen die Einnahmen wieder 1,9 Prozent über dem Vorjahreszeitraum.
 
 ## Quelle und Methode
 

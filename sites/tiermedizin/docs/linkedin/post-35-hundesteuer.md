@@ -1,7 +1,7 @@
 # LinkedIn-Post 35: Hundesteuer – kein Plus mehr
 
 **Video:** Studio → „Hundesteuer: kein Plus mehr“ (`?beispiel=hundesteuer`), Line Race 1999–2025, eine Linie, Format 4:5, MP4.
-**Stand:** 04.11.2026. Post 35 `vorabOnline`, Artikel `35-hundesteuer-deutschland.md` live. Datenpost zwischen den Blutspende-Teilen 2 und 3. Nach dem Posten: `status: 'veroeffentlicht'`, `publishedOn`, `linkedInUrl`.
+**Stand:** 05.11.2026 (Halbjahr 2026 ergänzt). Post 35 `vorabOnline`, Artikel `35-hundesteuer-deutschland.md` live. Datenpost zwischen den Blutspende-Teilen 2 und 3. Nach dem Posten: `status: 'veroeffentlicht'`, `publishedOn`, `linkedInUrl`.
 **Zahlen:** `sites/tiermedizin/data/raw/ds28-hundesteuer.json` (Destatis 71211-0001).
 
 ---
@@ -19,9 +19,9 @@ Zufall? Die Haushaltsbefragung von IVH und ZZF zählt 2025 ebenfalls weniger Hun
 
 Die Steuer ist auch ein guter Prüfstein für die Hundezahl: Von 2013 bis 2025 stieg sie um 43,8 Prozent, die Zahl der Hunde um 44,9 Prozent. Und als die Verbände 2012 ihre Methode umstellten und plötzlich zwei Millionen Hunde mehr zählten, wuchs die Steuer nur um 4,6 Prozent. Der „Boom“ von 2012 war also eine neue Zählweise.
 
-Ende des Hundebooms oder nur ein schwaches Jahr? Was meint ihr?
+Aber: Im ersten Halbjahr 2026 zieht die Steuer wieder an, plus 1,9 Prozent gegenüber dem ersten Halbjahr 2025. Nur ein schwaches Jahr also, oder doch das Ende des Hundebooms? Was meint ihr?
 
-Gerechnet / Quellen: Die Steuer ist die amtliche Statistik der kassenmäßigen Einnahmen der Gemeinden (Statistisches Bundesamt), lückenlos 1999 bis 2025, nichts geschätzt. Berechnet sind nur die Veränderungsraten. Die Steuer misst Einnahmen, keine Hunde: Sie steigt auch, wenn Gemeinden ihre Sätze erhöhen, und eine Statistik der Sätze gibt es nicht. Die Hundezahl stammt aus der Haushaltsbefragung von IVH und ZZF, einer Hochrechnung. Zweite Quelle für einzelne Jahre: petcom zu 2024 (430 Mio. Euro).
+Gerechnet / Quellen: Die Steuer ist die amtliche Statistik der kassenmäßigen Einnahmen der Gemeinden (Statistisches Bundesamt), lückenlos 1999 bis 2025, nichts geschätzt. Berechnet sind nur die Veränderungsraten, auch das Halbjahr 2026 (Summe der Quartale 1 und 2 aus Destatis-Tabelle 71211-0003). Die Steuer misst Einnahmen, keine Hunde: Sie steigt auch, wenn Gemeinden ihre Sätze erhöhen, und eine Statistik der Sätze gibt es nicht. Die Hundezahl stammt aus der Haushaltsbefragung von IVH und ZZF, einer Hochrechnung. Zweite Quelle für einzelne Jahre: petcom zu 2024 (430 Mio. Euro).
 
 Alle Zahlen und Methode:
 https://tiermedizin-in-zahlen.org/beitrag/hundesteuer-deutschland

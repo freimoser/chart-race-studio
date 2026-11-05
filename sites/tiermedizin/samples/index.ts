@@ -678,6 +678,7 @@ export const SAMPLES: SampleDataset[] = [
       "Die Steuer hängt an zwei Dingen: der Zahl der gemeldeten Hunde und den Steuersätzen der Gemeinden, die vielerorts gestiegen sind. Eine bundesweite Statistik der Sätze gibt es nicht; die Reihe misst deshalb Einnahmen, keine Hunde.",
       "Gegenprobe: Von 2013 bis 2025 stieg die Steuer um 43,8 Prozent, die Zahl der Hunde laut IVH/ZZF um 44,9 Prozent (beides berechnet). 2025 zählen IVH/ZZF 10,0 Mio. Hunde nach 10,5 Mio. 2024, im selben Jahr wuchs die Steuer erstmals nicht. 2012 wuchs die Steuer um 4,6 Prozent, die gezählten Hunde sprangen um 37 Prozent: ein Methodenwechsel der Verbände, kein Boom.",
       "Zweite Quellen für einzelne Jahre: Destatis-Meldung zu 2010 (258 Mio. Euro), petcom zu 2024 (430 Mio. Euro).",
+      "Nachtrag: Im ersten Halbjahr 2026 lagen die Einnahmen mit 271,9 Mio. Euro um 1,9 Prozent über dem ersten Halbjahr 2025 (Destatis 71211-0003, Quartale 1 und 2, berechnet). Das Jahr 2026 steht in der Grafik erst, wenn es vollständig ist.",
     ],
     headers: HUNDESTEUER.headers,
     rows: HUNDESTEUER.rows,
