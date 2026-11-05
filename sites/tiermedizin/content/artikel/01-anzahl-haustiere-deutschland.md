@@ -52,6 +52,8 @@ Der Tierärzte Atlas Deutschland beziffert den Zuwachs über 20 Jahre auf plus 5
 
 Zwei Einschränkungen gehören dazu. Die 20 Jahre überspannen den Methodenwechsel von 2012, das Plus ist also kein reines Wachstum. Und 2025 liegt dieselbe Summe mit 33,4 Millionen wieder unter 34 Millionen. Mit den Tieren wuchs der Handel: Der Online-Umsatz mit Heimtierbedarf stieg von 400 Mio. Euro (2013) auf 1.521 Mio. (2025), mehr im Artikel [Haustierbedarf online](heimtierbedarf-online-handel.html).
 
+Welche Hunderassen dabei im Zuchtbuch des VDH vorn liegen, zeigt der Artikel [Beliebteste Hunderassen in Deutschland](beliebteste-hunderassen-deutschland.html); wie stark der Deutsche Schäferhund dort verloren hat, der Artikel [Deutscher Schäferhund: Welpenzahlen seit 1992](deutscher-schaeferhund-welpen-statistik.html).
+
 ## Was die Zahl nicht sagt
 
 - **Es gibt kein Haustierregister.** Hunde werden nur kommunal für die [Hundesteuer](hundesteuer-deutschland.html) erfasst, Katzen gar nicht, die Register von TASSO und FINDEFIX sind freiwillig. Alle Werte sind Hochrechnungen aus Umfragen.

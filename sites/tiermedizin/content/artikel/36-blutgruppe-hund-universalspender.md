@@ -54,7 +54,7 @@ Die Studie rechnet aus, was ohne Bluttest passieren würde: Bei Mischlingen läg
 
 ![Bild 4 von 5: Welpen im VDH: Deutscher Schäferhund 28.000 (1992) und 6.374 (2025), Boxer 2.544 und 1.050](blutgruppe-hund-universalspender/4.webp)
 
-Ausgerechnet die beiden Rassen mit dem höchsten Anteil an Universalspendern haben im Verband für das Deutsche Hundewesen (VDH) stark an Nachwuchs verloren. Der Schäferhund fiel von rund 28.000 Welpen 1992 auf 6.374 im Jahr 2025, der Boxer von 2.544 auf 1.050. Wie viele Hunde in Deutschland insgesamt DEA 1 negativ sind, hängt aber auch an den vielen Mischlingen und Hunden ohne VDH-Papiere, die keine Statistik nach Rasse erfasst.
+Ausgerechnet die beiden Rassen mit dem höchsten Anteil an Universalspendern haben im Verband für das Deutsche Hundewesen (VDH) stark an Nachwuchs verloren. Der Schäferhund fiel von rund 28.000 Welpen 1992 auf 6.374 im Jahr 2025, der Boxer von 2.544 auf 1.050; die ganze Reihe steht im Artikel [Deutscher Schäferhund: Welpenzahlen seit 1992](deutscher-schaeferhund-welpen-statistik.html). Wie viele Hunde in Deutschland insgesamt DEA 1 negativ sind, hängt aber auch an den vielen Mischlingen und Hunden ohne VDH-Papiere, die keine Statistik nach Rasse erfasst.
 
 ![Bild 5 von 5: Hunde haben keine natürlichen Antikörper gegen fremde Blutgruppen, die erste Transfusion geht meist gut. Bekommt ein DEA-1-negativer Hund positives Blut, bildet er Antikörper; ohne Bluttest liegt das Risiko bei Mischlingen bei rund 23 Prozent, bei der zweiten Transfusion droht 5 Prozent eine akute Reaktion](blutgruppe-hund-universalspender/5.webp)
 
