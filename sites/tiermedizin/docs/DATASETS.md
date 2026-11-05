@@ -271,6 +271,8 @@ Rohdaten `data/raw/ds27-bft-tierarzneimittel.json` (BfT 2005–2025: Gesamt, Ant
 
 Rohdaten `data/raw/ds28-hundesteuer.json` (Destatis 71211-0001, kassenmäßige Einnahmen 1999–2025, Mio. Euro). Eine Linie. Misst Einnahmen (Hunde × Sätze), keine Hunde; Gegenprobe IVH-Hundezahl.
 
+**Video zu Post 35: `hundesteuer-relation`** (05.11.2026). Drei Linien, Index 2013 = 100, alles berechnet: Hundesteuer (ds28), Hunde (IVH/ZZF, lückenlose Heimtierreihe), Verbraucherpreise (ds16, Destatis 61111-0001). Start 2013 wegen des Methodenwechsels der Verbände 2012. Steuer je Hund (43,30 → 43,00 Euro) und Futterpreise (Destatis PM N069: +35,8 % 2020–2025) nur im Text.
+
 ## Pferdeschlachtungen: −80 % (`pferdeschlachtungen`, Post 37)
 
 Rohdaten `data/raw/ds29-pferdeschlachtungen.json`: Destatis 41331-0001 (inländisch + ausländisch + Haus) ab 1993, Eurostat 1991–1992. Eine Linie 1991–2025. Vor 1991 Gebietsstand unklar.

@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { ANTIBIOTIKA, ANTIBIOTIKA_GESAMT, GOT_PFERD, ONLINE_HANDEL, ONLINE_HANDEL_2005, BLUTBANK_UK, TIERARZNEIMITTEL, HUNDESTEUER, PFERDESCHLACHTUNGEN, REITSPORT, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
+import { ANTIBIOTIKA, ANTIBIOTIKA_GESAMT, GOT_PFERD, ONLINE_HANDEL, ONLINE_HANDEL_2005, BLUTBANK_UK, TIERARZNEIMITTEL, HUNDESTEUER, HUNDESTEUER_RELATION, PFERDESCHLACHTUNGEN, REITSPORT, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -702,6 +702,28 @@ export const SAMPLES: SampleDataset[] = [
     headers: HUNDESTEUER.headers,
     rows: HUNDESTEUER.rows,
     suggested: { chartType: 'line', topN: 1, decimals: 0, suffix: ' Mio. €', primaryAxisLabel: 'Mio. Euro', colors: { Hundesteuer: '#0f4c5c' } },
+  },
+  {
+    id: 'hundesteuer-relation',
+    erstellt: '2026-11-05', geprueft: '2026-11-05',
+    category: 'heimtiere',
+    title: 'Hundesteuer, Hunde und Preise',
+    subtitle: 'Index 2013 = 100: Einnahmen der Gemeinden aus der Hundesteuer, Hunde laut IVH/ZZF, Verbraucherpreise',
+    source: 'Quelle: Statistisches Bundesamt (GENESIS 71211-0001, 61111-0001); IVH/ZZF, Der Deutsche Heimtiermarkt. Index berechnet',
+    sourceUrl: 'https://www-genesis.destatis.de/datenbank/online/statistic/71211/table/71211-0001',
+    unit: 'Index',
+    description: 'Seit 2013 wuchs die Hundesteuer so stark wie die Zahl der Hunde (plus 44 Prozent), die Preise um 31 Prozent.',
+    dataInfo: [
+      "Drei Reihen als Index, 2013 = 100, alle drei berechnet: die kassenmäßigen Einnahmen der Gemeinden aus der Hundesteuer (Statistisches Bundesamt, 71211-0001), die Zahl der Hunde aus der Haushaltsbefragung von IVH und ZZF und der Verbraucherpreisindex (Statistisches Bundesamt, 61111-0001, Jahresdurchschnitt). Lückenlos 2013 bis 2025.",
+      "Die Reihe beginnt 2013, weil IVH und ZZF die Hunde erst seitdem mit derselben Methode zählen. 2012 gab es eine erste repräsentative Erhebung, davor eine Verbandsschätzung; über diesen Bruch hinweg wäre ein Index pro Hund nicht vergleichbar.",
+      "Lesart: Bis 2020 wuchs die Zahl der Hunde um 55 Prozent, die Steuer nur um 27 Prozent. Seit 2020 zählen die Verbände 6,5 Prozent weniger Hunde, die Steuer stieg trotzdem um 13 Prozent. Über die ganze Zeit liegen beide fast gleich: Steuer plus 43,8, Hunde plus 44,9 Prozent. Die Verbraucherpreise stiegen um 30,9 Prozent.",
+      "Steuer je gezähltem Hund (berechnet, nicht als Linie gezeigt, weil sie ganz an der Hochrechnung hängt): 43,30 Euro 2013, 35,50 Euro 2020, 43,00 Euro 2025. Seit 2020 plus 21 Prozent, fast genau die Inflation (plus 21,9 Prozent). In Preisen von 2025 waren es 2013 noch 56,70 Euro, ein Minus von 24 Prozent.",
+      "Grenzen: Die Hundezahl ist eine Hochrechnung. Nicht jeder Hund ist gemeldet, manche sind befreit, und die Gemeinden staffeln nach Zahl der Hunde oder Rasse; Destatis schreibt selbst, dass höhere Einnahmen nicht zwangsläufig mehr Hunde bedeuten. Halter oder Haushalte zählt die Steuerstatistik nicht, eine Steuer pro Person lässt sich deshalb nicht rechnen.",
+      "Futter zum Vergleich (nicht im Diagramm, weil die Reihe öffentlich erst ab 2020 vorliegt): Hunde- und Katzenfutter kostete 2025 laut Statistischem Bundesamt 35,8 Prozent mehr als 2020, die Verbraucherpreise insgesamt 21,9 Prozent mehr (Pressemitteilung N069 vom 7. Oktober 2026).",
+    ],
+    headers: HUNDESTEUER_RELATION.headers,
+    rows: HUNDESTEUER_RELATION.rows,
+    suggested: { chartType: 'line', topN: 3, decimals: 0, primaryAxisLabel: 'Index 2013 = 100', colors: { Hundesteuer: '#0f4c5c', Hunde: '#e36414', Verbraucherpreise: '#8a949e' } },
   },
   {
     id: 'tierarzneimittel',

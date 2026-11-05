@@ -6,7 +6,8 @@
  "notes": [
   "Werte in Tsd. Euro aus der API, hier in Mio. Euro (gerundet auf eine Nachkommastelle). Lückenlos 1999–2025, nichts gerechnet. Am 04.11.2026 gegen die API geprüft: alle 27 Werte unverändert.",
   "Kassenmäßige Einnahmen: was im Jahr in die Kasse floss, nicht die Steuerschuld des Jahres. Die Steuer hängt an der Zahl der gemeldeten Hunde und an den Sätzen der Gemeinden (keine bundesweite Statistik der Sätze).",
-  "Zweitquellen: Destatis-Meldung 2010 (258 Mio. Euro, topagrar); petcom 30.12.2025 „430 Millionen Euro aus Hundesteuer im Jahr 2024“. Richtung: IVH/ZZF zählen 2025 10,0 Mio. Hunde nach 10,5 Mio. 2024."
+  "Zweitquellen: Destatis-Meldung 2010 (258 Mio. Euro, topagrar); petcom 30.12.2025 „430 Millionen Euro aus Hundesteuer im Jahr 2024“. Richtung: IVH/ZZF zählen 2025 10,0 Mio. Hunde nach 10,5 Mio. 2024.",
+  "Vergleich (Datensatz hundesteuer-relation, 05.11.2026): Destatis-Pressemitteilung N069 vom 07.10.2026 (https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_N069_73.html): Hundesteuer 2025 +33,4 % gegenüber 2015; Hunde- und Katzenfutter (VPI-Position CC13-0934201400, Tabelle 61111-0005, Gewicht 4,20 Promille) 2025 +0,4 % zum Vorjahr und +35,8 % gegenüber 2020, Verbraucherpreise insgesamt +21,9 %. Destatis: höhere Steuereinnahmen bedeuten nicht zwangsläufig mehr Hunde (Sätze, Staffelung nach Zahl und Rasse). Die Futterreihe vor 2020 liegt in GENESIS nur mit Anmeldung vor und ist nicht übernommen."
  ],
  "rows": [
   {

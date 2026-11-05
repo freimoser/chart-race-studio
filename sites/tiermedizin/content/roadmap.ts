@@ -336,9 +336,9 @@ export const POSTS: RoadmapPost[] = [
     nr: 35, arc: 'markt', status: 'geplant', vorabOnline: true,
     title: 'Hundesteuer: erstmals kein Plus',
     hook: '430 Mio. Euro nehmen die Gemeinden mit der Hundesteuer ein, mehr als doppelt so viel wie 1999. 2025 kam zum ersten Mal kein Plus, und die Verbände zählen weniger Hunde.',
-    figures: ['Hundesteuer: 187,7 Mio. Euro (1999) → 429,7 Mio. (2025), plus 129 Prozent', '2013 bis 2025: Steuer plus 43,8 Prozent, Hunde (IVH) plus 44,9 Prozent', '2025: minus 0,1 Prozent, erstes Jahr ohne Zuwachs seit 1999', '2012: Steuer plus 4,6 Prozent, gezählte Hunde plus 37 Prozent (Methodenwechsel)'],
+    figures: ['Hundesteuer: 187,7 Mio. Euro (1999) → 429,7 Mio. (2025), plus 129 Prozent', '2013 bis 2025: Steuer plus 43,8 Prozent, Hunde (IVH) plus 44,9 Prozent', '2025: minus 0,1 Prozent, erstes Jahr ohne Zuwachs seit 1999', '2012: Steuer plus 4,6 Prozent, gezählte Hunde plus 37 Prozent (Methodenwechsel)', 'Pro gezähltem Hund 2013 wie 2025 rund 43 Euro, Verbraucherpreise plus 30,9 Prozent; seit 2020 pro Hund plus 21 Prozent, Inflation plus 21,9', 'Hunde- und Katzenfutter 2020–2025 plus 35,8 Prozent (Destatis)'],
     sampleId: 'hundesteuer', chart: 'line', dataStatus: 'belegt',
-    dataNote: 'Destatis 71211-0001 über die API (ds28-hundesteuer.json), 1999–2025 lückenlos, am 04.11.2026 gegen die API geprüft. Zweitquellen Destatis-Meldung 2010, petcom 2024. Steuer = Hunde × Sätze, keine Hundezählung – im Post sagen.',
+    dataNote: 'Destatis 71211-0001 über die API (ds28-hundesteuer.json), 1999–2025 lückenlos, am 04.11.2026 gegen die API geprüft. Zweitquellen Destatis-Meldung 2010, petcom 2024. Steuer = Hunde × Sätze, keine Hundezählung – im Post sagen. Video seit 05.11.2026: hundesteuer-relation (Index 2013 = 100 mit Hunden und Verbraucherpreisen, alles berechnet), Futter nur im Text (Destatis PM N069, öffentlich erst ab 2020).',
     refs: [1, 3],
   },
   {
