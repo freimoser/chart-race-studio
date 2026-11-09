@@ -418,6 +418,39 @@
     "live": true
   },
   {
+    "post": 43,
+    "slug": "tierarzt-umsatz-europa",
+    "titel": "Tierarzt-Umsatz in Europa: Deutschland 78 Euro je Kopf",
+    "beschreibung": "Tierärzte in Deutschland setzten 2024 rund 78 Euro je Einwohner um, Belgien 120, Italien 28. EU ohne Irland: 59 Euro. Alle Länder im Vergleich.",
+    "frage": "Wie viel Umsatz machen Tierärzte in Europa?",
+    "stand": "2026-11-09",
+    "geaendert": "2026-11-09",
+    "bereit": true,
+    "live": false
+  },
+  {
+    "post": 44,
+    "slug": "hunde-katzen-europa",
+    "titel": "Hunde und Katzen in Europa: die Länder im Vergleich",
+    "beschreibung": "In der EU leben rund 70 Mio. Hunde und 83 Mio. Katzen, 34 je 100 Einwohner. Deutschland liegt mit 32 im Mittelfeld, Ungarn mit 54 vorn.",
+    "frage": "In welchem Land in Europa gibt es die meisten Hunde?",
+    "stand": "2026-11-09",
+    "geaendert": "2026-11-09",
+    "bereit": true,
+    "live": false
+  },
+  {
+    "post": 45,
+    "slug": "tierarzt-umsatz-je-hund-katze",
+    "titel": "Tierarzt-Umsatz je Hund und Katze: Europa im Vergleich",
+    "beschreibung": "Je Hund und Katze setzen Tierärzte in Deutschland rund 247 Euro um, in der Schweiz 511, in Italien 80. Ein Vergleich von Umsatz und Tierbestand.",
+    "frage": "Wie viel Umsatz macht ein Tierarzt pro Tier?",
+    "stand": "2026-11-09",
+    "geaendert": "2026-11-09",
+    "bereit": true,
+    "live": false
+  },
+  {
     "art": "anleitung",
     "slug": "weltkarte-laender-einfaerben-animieren",
     "titel": "Weltkarte nach Daten einfärben und animieren – kostenlos",
