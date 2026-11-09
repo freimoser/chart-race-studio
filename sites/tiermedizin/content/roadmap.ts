@@ -368,4 +368,12 @@ export const POSTS: RoadmapPost[] = [
     dataNote: 'Karussell (docs/linkedin/karussell-universalspender.json, 5 Bilder), kein Datensatz. Rassenwerte Italien (PMC5632924, n 7.414), Deutschland etwa 40 % (DTBl 4/2026), VDH-Welpen aus Datensatz hunderassen. Serie Tierblutspende, Teil 2.',
     refs: [34, 17],
   },
+  {
+    nr: 43, arc: 'markt', status: 'geplant',
+    title: 'Was Tierärzte in Europa pro Kopf umsetzen',
+    hook: 'Belgien 120 Euro, Deutschland 78, Italien 28: So viel setzen die Tierarztpraxen je Einwohner um. Der EU-Schnitt liegt bei 65 Euro.',
+    figures: ['EU-27 2024: 29,1 Mrd. Euro, 65 Euro je Einwohner', 'Deutschland: 6,53 Mrd. Euro, 78 Euro je Einwohner, Platz 10 von 32', 'Spitze: Belgien 120, Schweiz 116, Schweden 110; Schluss: Italien 28, Bulgarien 10, Nordmazedonien 6', '2021–2024 in Euro: EU plus 42 Prozent, Deutschland plus 33, Polen plus 70', 'Gegenprobe Destatis (Umsatzsteuerstatistik WZ 75): 5,94 Mrd. Euro, 71 Euro je Einwohner'],
+    dataStatus: 'belegt',
+    dataNote: 'Karussell (docs/linkedin/karussell-tierarztumsatz-europa.json: Europakarte und Wachstum), kein Datensatz. Eurostat sbs_ovw_act M75 und tps00001 (data/raw/ds31-tierarztumsatz-europa.json), je Einwohner berechnet. Irland (Sprung 2024) und Großbritannien (keine Daten) grau. Serie Europa: 44 Heimtiere je Einwohner, 45 Umsatz je Hund und Katze, 46/47 Tierversicherung.',
+  },
 ]

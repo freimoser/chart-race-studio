@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Datenherkunft: Quellen und Methode aller Datensätze</title>
-    <meta name="dcterms.modified" content="2026-11-05" />
+    <meta name="dcterms.modified" content="2026-11-09" />
     <meta name="description" content="Für jeden Beispiel-Datensatz: Quelle, Zeitraum, Annahmen, was für die Grafik aufbereitet wurde und wann zuletzt geprüft." />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="../favicon-96.png" sizes="96x96" type="image/png" />
@@ -305,6 +305,26 @@
           laut Destatis nicht zwangsläufig mehr Hunde.
         </p>
         <p class="meta">Recherchiert 22.10.2026 · zuletzt geprüft 05.11.2026</p>
+
+        <h2 id="tierarztumsatz-europa">Tierarzt-Umsatz in Europa (Bildserie, kein Datensatz)</h2>
+        <p>
+          <strong>Quelle:</strong> Eurostat, Unternehmensstatistik sbs_ovw_act, Wirtschaftszweig M75 Veterinärwesen,
+          Nettoumsatz in Mio. Euro 2021 bis 2024; Bevölkerung am 1. Januar 2024 aus tps00001. Abgerufen über die öffentliche
+          Schnittstelle, Rohdaten in <code>data/raw/ds31-tierarztumsatz-europa.json</code>.
+        </p>
+        <p>
+          <strong>Gerechnet:</strong> Umsatz je Einwohner (Umsatz 2024 ÷ Bevölkerung 1.1.2024, auf ganze Euro gerundet) und
+          Veränderung 2021–2024 in Euro. 2021 ist das erste Jahr nach dem Methodenwechsel der Unternehmensstatistik. Irland
+          (2024: 3.052,81 Mio. Euro nach 863,48 Mio. 2022, 2023 fehlt) ist nicht vergleichbar und grau; Großbritannien liefert
+          keine Daten. Island liegt außerhalb des Kartenausschnitts und steht nur in der Tabelle.
+        </p>
+        <p>
+          <strong>Wo sich Quellen überschneiden:</strong> Für Deutschland meldet die Umsatzsteuerstatistik des Statistischen
+          Bundesamts (73311-0002, WZ 75) 5.941 Mio. Euro statt 6.526 Mio. bei Eurostat, je Einwohner 71 statt 78 Euro. Sie zählt
+          nur Unternehmen über der Kleinunternehmergrenze. Das Wachstum 2023 auf 2024 stimmt fast überein (6,1 gegenüber
+          5,8 Prozent). Erläutert im Artikel <a href="../beitrag/tierarzt-umsatz-europa.html">Tierarzt-Umsatz in Europa</a>.
+        </p>
+        <p class="meta">Recherchiert 08.11.2026 · zuletzt geprüft 09.11.2026</p>
 
         <h2 id="tierarzneimittel">Tierarzneimittel nach Tierart</h2>
         <p>
