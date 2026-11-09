@@ -1,0 +1,163 @@
+{
+  "art": "karte",
+  "titel": "Hunde und Katzen in Europa",
+  "untertitel": "Bestand 2024 je 100 Einwohner",
+  "quelle": "Quelle: FEDIAF Facts & Figures 2026 (Bestand 2024; nationale Verbände bzw. Schätzung FEDIAF), Bevölkerung Eurostat (tps00001) am 1.1.2024; je 100 Einwohner berechnet. In 22 der 37 gezeigten Länder schätzt FEDIAF ohne Verbandsdaten. Nicht dargestellt: Türkei, Ukraine, Kosovo",
+  "hervor": "DE",
+  "stufen": [
+    {
+      "ab": 0,
+      "name": "unter 20"
+    },
+    {
+      "ab": 20,
+      "name": "20–29"
+    },
+    {
+      "ab": 30,
+      "name": "30–39"
+    },
+    {
+      "ab": 40,
+      "name": "ab 40"
+    }
+  ],
+  "grau": [],
+  "grauText": "nicht dargestellt",
+  "werte": {
+    "AL": 8,
+    "AT": 31,
+    "BE": 44,
+    "BA": 11,
+    "BG": 24,
+    "HR": 32,
+    "CY": 24,
+    "CZ": 33,
+    "DK": 22,
+    "EE": 41,
+    "FI": 32,
+    "FR": 38,
+    "DE": 32,
+    "GR": 12,
+    "HU": 54,
+    "IS": 18,
+    "IE": 18,
+    "IT": 35,
+    "LV": 37,
+    "LT": 16,
+    "LU": 23,
+    "MT": 22,
+    "ME": 14,
+    "NL": 26,
+    "MK": 11,
+    "NO": 24,
+    "PL": 43,
+    "PT": 46,
+    "MD": 15,
+    "RO": 46,
+    "RS": 16,
+    "SK": 36,
+    "SI": 37,
+    "ES": 24,
+    "SE": 27,
+    "CH": 23,
+    "GB": 37
+  },
+  "lage": {
+    "LU": {
+      "kasten": true,
+      "dx": -95,
+      "dy": 45,
+      "groesse": 26
+    },
+    "MT": {
+      "kasten": true,
+      "dx": 0,
+      "dy": 45,
+      "groesse": 26
+    },
+    "SI": {
+      "kasten": true,
+      "dx": -80,
+      "dy": 5,
+      "groesse": 26
+    },
+    "CY": {
+      "kasten": true,
+      "dx": -10,
+      "dy": -55,
+      "groesse": 26
+    },
+    "NL": {
+      "x": 5.75,
+      "y": 52.35,
+      "groesse": 26
+    },
+    "CH": {
+      "x": 8.25,
+      "y": 46.8,
+      "groesse": 23
+    },
+    "DK": {
+      "x": 9.25,
+      "y": 56.2,
+      "groesse": 24
+    },
+    "IT": {
+      "x": 14.6,
+      "y": 42.2
+    },
+    "NO": {
+      "x": 9.2,
+      "y": 61.3
+    },
+    "FR": {
+      "x": 2.2,
+      "y": 46.2
+    },
+    "HR": {
+      "x": 16.3,
+      "y": 45.5,
+      "groesse": 26
+    },
+    "GR": {
+      "x": 22,
+      "y": 39.6
+    },
+    "SE": {
+      "x": 15.1,
+      "y": 60.9,
+      "groesse": 36
+    },
+    "FI": {
+      "x": 26,
+      "y": 62
+    },
+    "AT": {
+      "x": 14.4,
+      "y": 47.45,
+      "groesse": 26
+    },
+    "BE": {
+      "kasten": true,
+      "dx": -80,
+      "dy": -30,
+      "groesse": 26
+    },
+    "ME": {
+      "kasten": true,
+      "dx": -30,
+      "dy": 45,
+      "groesse": 24
+    },
+    "AL": {
+      "groesse": 22
+    },
+    "MK": {
+      "groesse": 22
+    }
+  },
+  "rand": 70,
+  "legendeOben": 905,
+  "unterBreite": 230
+}

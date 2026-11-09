@@ -12,13 +12,13 @@ In Belgien sind es 120 Euro, in Italien 28. Ich habe die Unternehmensstatistik v
 
 🥇 Belgien 120 €, Schweiz 116 €, Schweden 110 €
 🇩🇪 Deutschland 78 €, Platz 10 von 32 Ländern
-🇪🇺 EU-Schnitt 65 €, zusammen 29,1 Mrd. Euro Umsatz
+🇪🇺 EU ohne Irland 59 €, zusammen 26,0 Mrd. Euro Umsatz
 🔻 Italien 28 €, Bulgarien 10 €
-📈 2021 bis 2024: EU plus 42 Prozent, Deutschland plus 33, Polen plus 70
+📈 2021 bis 2024: EU plus 31 Prozent, Deutschland plus 33, Polen plus 70
 
 Warum setzt Italien nur ein Drittel von Belgien um? Weniger Tiere, seltener zum Tierarzt oder niedrigere Preise? Das schaue ich mir im nächsten Teil an: Umsatz je Hund und Katze.
 
-Gerechnet / Quellen: Umsatz der Unternehmen im Wirtschaftszweig Veterinärwesen laut Eurostat (Heim- und Nutztiere, Labore, Medikamente), nicht Ausgaben der Halter. Je Einwohner berechnet mit der Bevölkerung am 1. Januar 2024, das Wachstum 2021–2024 in Euro, also mit Inflation und Wechselkursen. Gegenprobe Deutschland: Die Umsatzsteuerstatistik von Destatis kommt auf 5,94 statt 6,53 Mrd. Euro, also 71 statt 78 Euro je Einwohner, weil sie Kleinunternehmer nicht zählt und anders abgrenzt. Irland (Sprung auf 3 Mrd. Euro, nicht vergleichbar) und Großbritannien (keine Daten) sind grau.
+Gerechnet / Quellen: Umsatz der Unternehmen im Wirtschaftszweig Veterinärwesen laut Eurostat (Heim- und Nutztiere, Labore, Medikamente), nicht Ausgaben der Halter. Je Einwohner berechnet mit der Bevölkerung am 1. Januar 2024, das Wachstum 2021–2024 in Euro, also mit Inflation und Wechselkursen. Gegenprobe Deutschland: Die Umsatzsteuerstatistik von Destatis kommt auf 5,94 statt 6,53 Mrd. Euro, also 71 statt 78 Euro je Einwohner, weil sie Kleinunternehmer nicht zählt und anders abgrenzt. Irland (Sprung auf 3 Mrd. Euro, nicht vergleichbar) ist grau und auch aus der EU-Summe herausgerechnet, Großbritannien (keine Daten) ebenfalls grau.
 
 Alle Länder und Methode:
 https://tiermedizin-in-zahlen.org/beitrag/tierarzt-umsatz-europa

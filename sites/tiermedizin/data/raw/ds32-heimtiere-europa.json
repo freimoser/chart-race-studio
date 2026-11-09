@@ -1,0 +1,3425 @@
+{
+ "titel": "Hunde und Katzen in Europa 2024, je Einwohner und Tierarzt-Umsatz je Tier",
+ "abgerufen": "2026-11-09",
+ "hinweis": "Bestand laut FEDIAF Facts & Figures 2026 (Bezugsjahr 2024). Je 100 Einwohner berechnet mit Eurostat tps00001 (1.1.2024; GB = Eurostat-Code UK). Umsatz je Hund und Katze berechnet: Eurostat sbs_ovw_act M75 2024 (ds31) / (Hunde + Katzen); der Umsatz enthält Nutztier- und Pferdepraxis, die Zahl ist deshalb eine Annäherung. FEDIAF hat nur für AT, BE, CZ, FR, DE, HU, IT, NL, NO, PL, SK, ES, SE, CH, GB Verbandsdaten, alle übrigen Länder schätzt FEDIAF (ab 2024 teils an EMA-Populationsdaten angeglichen). Gegenproben siehe recherche.werte (nationale Quellen) und recherche.abweichungen.",
+ "eu27": {
+  "hunde_katzen": 152649000,
+  "je100": 33.9,
+  "umsatz_je_tier_eur": 190.6,
+  "umsatz_je_tier_ohne_IE": 171.7
+ },
+ "berechnet": [
+  {
+   "land": "AL",
+   "hunde": 90000,
+   "katzen": 98000,
+   "bevoelkerung_1_1_2024": 2390942,
+   "hunde_je100": 3.8,
+   "katzen_je100": 4.1,
+   "zusammen_je100": 7.9
+  },
+  {
+   "land": "AT",
+   "hunde": 836000,
+   "katzen": 2019000,
+   "bevoelkerung_1_1_2024": 9158750,
+   "hunde_je100": 9.1,
+   "katzen_je100": 22.0,
+   "zusammen_je100": 31.2,
+   "umsatz_2024_mio_eur": 708.83,
+   "umsatz_je_hund_katze_eur": 248.3
+  },
+  {
+   "land": "BA",
+   "hunde": 184000,
+   "katzen": 199000,
+   "bevoelkerung_1_1_2024": 3417089,
+   "hunde_je100": 5.4,
+   "katzen_je100": 5.8,
+   "zusammen_je100": 11.2,
+   "umsatz_2024_mio_eur": 48.48,
+   "umsatz_je_hund_katze_eur": 126.6
+  },
+  {
+   "land": "BE",
+   "hunde": 2085000,
+   "katzen": 3128000,
+   "bevoelkerung_1_1_2024": 11817096,
+   "hunde_je100": 17.6,
+   "katzen_je100": 26.5,
+   "zusammen_je100": 44.1,
+   "umsatz_2024_mio_eur": 1414.14,
+   "umsatz_je_hund_katze_eur": 271.3
+  },
+  {
+   "land": "BG",
+   "hunde": 729000,
+   "katzen": 793000,
+   "bevoelkerung_1_1_2024": 6445481,
+   "hunde_je100": 11.3,
+   "katzen_je100": 12.3,
+   "zusammen_je100": 23.6,
+   "umsatz_2024_mio_eur": 67.34,
+   "umsatz_je_hund_katze_eur": 44.2
+  },
+  {
+   "land": "CH",
+   "hunde": 515000,
+   "katzen": 1520000,
+   "bevoelkerung_1_1_2024": 8962258,
+   "hunde_je100": 5.7,
+   "katzen_je100": 17.0,
+   "zusammen_je100": 22.7,
+   "umsatz_2024_mio_eur": 1039.14,
+   "umsatz_je_hund_katze_eur": 510.6
+  },
+  {
+   "land": "CY",
+   "hunde": 179000,
+   "katzen": 55000,
+   "bevoelkerung_1_1_2024": 966365,
+   "hunde_je100": 18.5,
+   "katzen_je100": 5.7,
+   "zusammen_je100": 24.2,
+   "umsatz_2024_mio_eur": 43.63,
+   "umsatz_je_hund_katze_eur": 186.5
+  },
+  {
+   "land": "CZ",
+   "hunde": 2229000,
+   "katzen": 1395000,
+   "bevoelkerung_1_1_2024": 10900555,
+   "hunde_je100": 20.4,
+   "katzen_je100": 12.8,
+   "zusammen_je100": 33.2,
+   "umsatz_2024_mio_eur": 371.09,
+   "umsatz_je_hund_katze_eur": 102.4
+  },
+  {
+   "land": "DE",
+   "hunde": 10500000,
+   "katzen": 15900000,
+   "bevoelkerung_1_1_2024": 83456045,
+   "hunde_je100": 12.6,
+   "katzen_je100": 19.1,
+   "zusammen_je100": 31.6,
+   "umsatz_2024_mio_eur": 6526.17,
+   "umsatz_je_hund_katze_eur": 247.2
+  },
+  {
+   "land": "DK",
+   "hunde": 618000,
+   "katzen": 670000,
+   "bevoelkerung_1_1_2024": 5961249,
+   "hunde_je100": 10.4,
+   "katzen_je100": 11.2,
+   "zusammen_je100": 21.6,
+   "umsatz_2024_mio_eur": 578.12,
+   "umsatz_je_hund_katze_eur": 448.9
+  },
+  {
+   "land": "EE",
+   "hunde": 254000,
+   "katzen": 313000,
+   "bevoelkerung_1_1_2024": 1374687,
+   "hunde_je100": 18.5,
+   "katzen_je100": 22.8,
+   "zusammen_je100": 41.2,
+   "umsatz_2024_mio_eur": 52.05,
+   "umsatz_je_hund_katze_eur": 91.8
+  },
+  {
+   "land": "ES",
+   "hunde": 6962000,
+   "katzen": 4939000,
+   "bevoelkerung_1_1_2024": 48619695,
+   "hunde_je100": 14.3,
+   "katzen_je100": 10.2,
+   "zusammen_je100": 24.5,
+   "umsatz_2024_mio_eur": 1958.46,
+   "umsatz_je_hund_katze_eur": 164.6
+  },
+  {
+   "land": "FI",
+   "hunde": 798000,
+   "katzen": 1003000,
+   "bevoelkerung_1_1_2024": 5603851,
+   "hunde_je100": 14.2,
+   "katzen_je100": 17.9,
+   "zusammen_je100": 32.1,
+   "umsatz_2024_mio_eur": 425.73,
+   "umsatz_je_hund_katze_eur": 236.4
+  },
+  {
+   "land": "FR",
+   "hunde": 9700000,
+   "katzen": 16700000,
+   "bevoelkerung_1_1_2024": 68669303,
+   "hunde_je100": 14.1,
+   "katzen_je100": 24.3,
+   "zusammen_je100": 38.4,
+   "umsatz_2024_mio_eur": 5882.85,
+   "umsatz_je_hund_katze_eur": 222.8
+  },
+  {
+   "land": "GB",
+   "hunde": 13400000,
+   "katzen": 12300000,
+   "bevoelkerung_1_1_2024": 68903810,
+   "hunde_je100": 19.4,
+   "katzen_je100": 17.9,
+   "zusammen_je100": 37.3
+  },
+  {
+   "land": "GR",
+   "hunde": 649000,
+   "katzen": 601000,
+   "bevoelkerung_1_1_2024": 10375764,
+   "hunde_je100": 6.3,
+   "katzen_je100": 5.8,
+   "zusammen_je100": 12.0,
+   "umsatz_2024_mio_eur": 163.85,
+   "umsatz_je_hund_katze_eur": 131.1
+  },
+  {
+   "land": "HR",
+   "hunde": 778000,
+   "katzen": 456000,
+   "bevoelkerung_1_1_2024": 3861967,
+   "hunde_je100": 20.1,
+   "katzen_je100": 11.8,
+   "zusammen_je100": 32.0,
+   "umsatz_2024_mio_eur": 145.29,
+   "umsatz_je_hund_katze_eur": 117.7
+  },
+  {
+   "land": "HU",
+   "hunde": 2773000,
+   "katzen": 2357000,
+   "bevoelkerung_1_1_2024": 9584627,
+   "hunde_je100": 28.9,
+   "katzen_je100": 24.6,
+   "zusammen_je100": 53.5,
+   "umsatz_2024_mio_eur": 181.56,
+   "umsatz_je_hund_katze_eur": 35.4
+  },
+  {
+   "land": "IE",
+   "hunde": 563000,
+   "katzen": 404000,
+   "bevoelkerung_1_1_2024": 5351681,
+   "hunde_je100": 10.5,
+   "katzen_je100": 7.5,
+   "zusammen_je100": 18.1,
+   "umsatz_2024_mio_eur": 3052.81,
+   "umsatz_je_hund_katze_eur": 3157.0
+  },
+  {
+   "land": "IS",
+   "hunde": 28000,
+   "katzen": 40000,
+   "bevoelkerung_1_1_2024": 383567,
+   "hunde_je100": 7.3,
+   "katzen_je100": 10.4,
+   "zusammen_je100": 17.7,
+   "umsatz_2024_mio_eur": 37.88,
+   "umsatz_je_hund_katze_eur": 557.1
+  },
+  {
+   "land": "IT",
+   "hunde": 9000000,
+   "katzen": 11900000,
+   "bevoelkerung_1_1_2024": 58971230,
+   "hunde_je100": 15.3,
+   "katzen_je100": 20.2,
+   "zusammen_je100": 35.4,
+   "umsatz_2024_mio_eur": 1664.4,
+   "umsatz_je_hund_katze_eur": 79.6
+  },
+  {
+   "land": "LI",
+   "hunde": 2000,
+   "katzen": 9000,
+   "bevoelkerung_1_1_2024": 40015,
+   "hunde_je100": 5.0,
+   "katzen_je100": 22.5,
+   "zusammen_je100": 27.5
+  },
+  {
+   "land": "LT",
+   "hunde": 312000,
+   "katzen": 163000,
+   "bevoelkerung_1_1_2024": 2885891,
+   "hunde_je100": 10.8,
+   "katzen_je100": 5.6,
+   "zusammen_je100": 16.5,
+   "umsatz_2024_mio_eur": 67.35,
+   "umsatz_je_hund_katze_eur": 141.8
+  },
+  {
+   "land": "LU",
+   "hunde": 47000,
+   "katzen": 105000,
+   "bevoelkerung_1_1_2024": 672050,
+   "hunde_je100": 7.0,
+   "katzen_je100": 15.6,
+   "zusammen_je100": 22.6,
+   "umsatz_2024_mio_eur": 65.45,
+   "umsatz_je_hund_katze_eur": 430.6
+  },
+  {
+   "land": "LV",
+   "hunde": 274000,
+   "katzen": 417000,
+   "bevoelkerung_1_1_2024": 1878575,
+   "hunde_je100": 14.6,
+   "katzen_je100": 22.2,
+   "zusammen_je100": 36.8,
+   "umsatz_2024_mio_eur": 37.86,
+   "umsatz_je_hund_katze_eur": 54.8
+  },
+  {
+   "land": "MD",
+   "hunde": 170000,
+   "katzen": 185000,
+   "bevoelkerung_1_1_2024": 2423287,
+   "hunde_je100": 7.0,
+   "katzen_je100": 7.6,
+   "zusammen_je100": 14.6
+  },
+  {
+   "land": "ME",
+   "hunde": 42000,
+   "katzen": 45000,
+   "bevoelkerung_1_1_2024": 623680,
+   "hunde_je100": 6.7,
+   "katzen_je100": 7.2,
+   "zusammen_je100": 13.9
+  },
+  {
+   "land": "MK",
+   "hunde": 98000,
+   "katzen": 106000,
+   "bevoelkerung_1_1_2024": 1826247,
+   "hunde_je100": 5.4,
+   "katzen_je100": 5.8,
+   "zusammen_je100": 11.2,
+   "umsatz_2024_mio_eur": 11.08,
+   "umsatz_je_hund_katze_eur": 54.3
+  },
+  {
+   "land": "MT",
+   "hunde": 100000,
+   "katzen": 23000,
+   "bevoelkerung_1_1_2024": 563443,
+   "hunde_je100": 17.7,
+   "katzen_je100": 4.1,
+   "zusammen_je100": 21.8,
+   "umsatz_2024_mio_eur": 18.05,
+   "umsatz_je_hund_katze_eur": 146.7
+  },
+  {
+   "land": "NL",
+   "hunde": 1667000,
+   "katzen": 3001000,
+   "bevoelkerung_1_1_2024": 17942942,
+   "hunde_je100": 9.3,
+   "katzen_je100": 16.7,
+   "zusammen_je100": 26.0,
+   "umsatz_2024_mio_eur": 1665.48,
+   "umsatz_je_hund_katze_eur": 356.8
+  },
+  {
+   "land": "NO",
+   "hunde": 553000,
+   "katzen": 787000,
+   "bevoelkerung_1_1_2024": 5550203,
+   "hunde_je100": 10.0,
+   "katzen_je100": 14.2,
+   "zusammen_je100": 24.1,
+   "umsatz_2024_mio_eur": 469.74,
+   "umsatz_je_hund_katze_eur": 350.6
+  },
+  {
+   "land": "PL",
+   "hunde": 8282000,
+   "katzen": 7463000,
+   "bevoelkerung_1_1_2024": 36620970,
+   "hunde_je100": 22.6,
+   "katzen_je100": 20.4,
+   "zusammen_je100": 43.0,
+   "umsatz_2024_mio_eur": 1725.06,
+   "umsatz_je_hund_katze_eur": 109.6
+  },
+  {
+   "land": "PT",
+   "hunde": 3071000,
+   "katzen": 2116000,
+   "bevoelkerung_1_1_2024": 11204347,
+   "hunde_je100": 27.4,
+   "katzen_je100": 18.9,
+   "zusammen_je100": 46.3,
+   "umsatz_2024_mio_eur": 441.78,
+   "umsatz_je_hund_katze_eur": 85.2
+  },
+  {
+   "land": "RO",
+   "hunde": 4258000,
+   "katzen": 4439000,
+   "bevoelkerung_1_1_2024": 19067576,
+   "hunde_je100": 22.3,
+   "katzen_je100": 23.3,
+   "zusammen_je100": 45.6,
+   "umsatz_2024_mio_eur": 487.32,
+   "umsatz_je_hund_katze_eur": 56.0
+  },
+  {
+   "land": "RS",
+   "hunde": 513000,
+   "katzen": 558000,
+   "bevoelkerung_1_1_2024": 6605168,
+   "hunde_je100": 7.8,
+   "katzen_je100": 8.4,
+   "zusammen_je100": 16.2,
+   "umsatz_2024_mio_eur": 129.3,
+   "umsatz_je_hund_katze_eur": 120.7
+  },
+  {
+   "land": "SE",
+   "hunde": 1155000,
+   "katzen": 1723000,
+   "bevoelkerung_1_1_2024": 10551707,
+   "hunde_je100": 10.9,
+   "katzen_je100": 16.3,
+   "zusammen_je100": 27.3,
+   "umsatz_2024_mio_eur": 1156.43,
+   "umsatz_je_hund_katze_eur": 401.8
+  },
+  {
+   "land": "SI",
+   "hunde": 305000,
+   "katzen": 471000,
+   "bevoelkerung_1_1_2024": 2123949,
+   "hunde_je100": 14.4,
+   "katzen_je100": 22.2,
+   "zusammen_je100": 36.5,
+   "umsatz_2024_mio_eur": 104.4,
+   "umsatz_je_hund_katze_eur": 134.5
+  },
+  {
+   "land": "SK",
+   "hunde": 1436000,
+   "katzen": 535000,
+   "bevoelkerung_1_1_2024": 5424687,
+   "hunde_je100": 26.5,
+   "katzen_je100": 9.9,
+   "zusammen_je100": 36.3,
+   "umsatz_2024_mio_eur": 87.42,
+   "umsatz_je_hund_katze_eur": 44.4
+  },
+  {
+   "land": "TR",
+   "hunde": 1466000,
+   "katzen": 4928000,
+   "bevoelkerung_1_1_2024": 85372377,
+   "hunde_je100": 1.7,
+   "katzen_je100": 5.8,
+   "zusammen_je100": 7.5
+  }
+ ],
+ "recherche": {
+  "abgerufen": "2026-11-09",
+  "hinweise_allgemein": [
+   "Bezugsjahr FEDIAF: Ausgaben bis FF 2021 tragen das Bezugsjahr im Titel und erschienen im Annual Report des Folgejahres; ab 2024 gilt ausdrücklich 'Daten zwei Jahre vor Veröffentlichung' (Ausgabe 2026 = 2024). Für 2022 gibt es zwei FEDIAF-Fassungen (2022a Erstfassung, 2022b Revision); 2022b verwenden.",
+   "FEDIAF warnt in den Ausgaben 2024 und 2025 ausdrücklich vor Vorjahresvergleichen (Methoden- und Länderwechsel).",
+   "Russland (in FEDIAF bis FF 2022) ist aus den werten entfernt.",
+   "Keine Werte berechnet; alle 'berechnet': false. Werte FF 2020/2021 aus Balkengrafiken abgelesen; FF 2020: Zeilensummen = gedruckte Totale (Europa und EU-28); FF 2021: Totale der Quelle inkonsistent (siehe Quelle fediaf-ff2021), Ablesung bei 200 dpi geprüft.",
+   "Downloads (PDF + Textauszug): /private/tmp/claude-501/-Users-thomasfreimoser-Claude-Code-Freimoser-ChartRace/01f37fd4-0692-4415-ad67-d30f3194a927/scratchpad/recherche/dl/"
+  ],
+  "quellen": [
+   {
+    "id": "fediaf-ff2024",
+    "titel": "FEDIAF Facts & Figures 2026 (European Overview 2024), im FEDIAF Annual Report 2026",
+    "url": "https://europeanpetfood.org/wp-content/uploads/2026/06/FEDIAF_Annual-Report_2026_WEBv1.1.pdf",
+    "url_spiegel": "https://www.zzf.de/fileadmin/ZZF/Dokumente/Heimtiermarkt/FEDIAF_Facts_Figures_2026.pdf",
+    "bezugsjahr": 2024,
+    "fundstelle": "S. 27 European Dog Population, S. 28 European Cat Population (gedruckte Seitenzahlen; im ZZF-Spiegel PDF-S. 5/6); Methodik Appendix S. 36",
+    "abgerufen": "2026-11-09",
+    "hinweis": "Ausgabe 2026 = Daten 2024 (zwei Jahre Verzug). Nationale Verbandsdaten: AT, BE, CZ, FR, DE, HU, IT, NL, NO, PL, SK, ES, SE, CH, UK; alle übrigen Länder Schätzung FEDIAF/Soulor Consulting. CH = Daten 2025 (neue Methode). FR: Methodenwechsel, 2023 restated. BE Hunde revidiert. Erstmals Abgleich mit EMA-Populationsdaten 2024; bei starken Abweichungen auf EMA-Wert gesetzt (betrifft u. a. CY, DK, FI, LT, LU, MT, SK)."
+   },
+   {
+    "id": "fediaf-ff2023",
+    "titel": "FEDIAF Facts & Figures 2025 (Facts & Figures 2023)",
+    "url": "https://europeanpetfood.org/wp-content/uploads/2025/06/FEDIAF-Facts-Figures-2025.pdf",
+    "bezugsjahr": 2023,
+    "fundstelle": "S. 05 European Dog Population, S. 06 European Cat Population (gedruckt; PDF-Doppelseite 3); Methodik S. 15",
+    "abgerufen": "2026-11-09",
+    "hinweis": "Ausgabe 2025 = Daten 2023. 11 Länder neu (AL, BA, CY, IS, LI, MT, ME, MK, MD, RS, XK), RU entfernt. FR = Populationsdaten 2022 übernommen; ES Population und Markt geschätzt (keine Verbandsdaten); CH = Daten 2025. FEDIAF rät ausdrücklich von Vorjahresvergleichen ab."
+   },
+   {
+    "id": "fediaf-ff2022b",
+    "titel": "FEDIAF Facts & Figures 2022, veröffentlicht mit Annual Report 2024 (revidierte Fassung)",
+    "url": "https://europeanpetfood.org/wp-content/uploads/2024/06/FEDIAF-Facts-Figures-2022_Online100.pdf",
+    "bezugsjahr": 2022,
+    "fundstelle": "S. 04 European Dog Population, S. 05 European Cat Population (gedruckt; PDF-Doppelseite 3)",
+    "abgerufen": "2026-11-09",
+    "hinweis": "Neue Methodik mit Soulor Consulting; ab hier Daten zwei Jahre vor Veröffentlichung. Gedruckte Katzensumme Europa 129.113.400, Summe der Zeilen 129.133.400 (Druckfehler um 20.000). Ohne CY, LU, MT, IS, RS, BA, MK."
+   },
+   {
+    "id": "fediaf-ff2022a",
+    "titel": "FEDIAF Facts & Figures 2022, im Annual Report 2023 (Erstfassung)",
+    "url": "https://europeanpetfood.org/wp-content/uploads/2023/06/FEDIAF_Annual-Report_2023_Facts-Figures.pdf",
+    "bezugsjahr": 2022,
+    "fundstelle": "S. 03 European Dog Population, S. 04 European Cat Population",
+    "abgerufen": "2026-11-09",
+    "hinweis": "Alte Methodik. BG, EE, LV, LT, SI aus dem Bericht 2021 übernommen (Sternchen in der Quelle). Ohne HR, CY, LU, MT. Durch fediaf-ff2022b ersetzt."
+   },
+   {
+    "id": "fediaf-ff2021",
+    "titel": "FEDIAF Facts & Figures 2021, im Annual Report 2022",
+    "url": "https://www.animalshealth.es/fileuploads/user/PDF/2022/06/FEDIAF_2021_Facts_and_Figures.pdf",
+    "bezugsjahr": 2021,
+    "fundstelle": "S. 4 European dog population, S. 5 European cat population (Werte nur als Grafik, bei 200 dpi abgelesen). Zeilensummen 96.247.732 Hunde / 117.588.248 Katzen liegen genau 3,3 Mio. bzw. 4,0 Mio. über den gedruckten Totalen 92.947.732 / 113.588.248 (auch EU-Total um denselben Betrag zu niedrig) – Inkonsistenz der Quelle; vermutlich wurden die Totale mit einem älteren Wert eines Landes gerechnet (Vermutung: UK 8,7 statt 12 Mio. Hunde, 8,0 statt 12 Mio. Katzen – nicht belegt)",
+    "abgerufen": "2026-11-09",
+    "hinweis": "Kopie auf animalshealth.es (Original auf fediaf.org nicht mehr abrufbar). Ohne HR, CY, LU, MT. Datenstand der Länder teils älter als 2021 (Quelle: 'estimations based thereupon when indicated')."
+   },
+   {
+    "id": "fediaf-ff2020",
+    "titel": "FEDIAF Facts & Figures 2020 (veröffentlicht mit Annual Report 2021)",
+    "url": "https://www.nvg-diervoeding.nl/assets/files/fediaf-facts-and-figures-2020.pdf",
+    "bezugsjahr": 2020,
+    "fundstelle": "S. 3 European dog population, S. 4 European cat population (Werte nur als Grafik, abgelesen; Zeilensummen = gedruckte Totale 89.821.097 / 110.148.139)",
+    "abgerufen": "2026-11-09",
+    "hinweis": "Kopie bei NVG (NL-Verband). Ohne HR, CY, LU, MT. Auch enthalten in https://europeanpetfood.org/wp-content/uploads/2022/02/FINAL_FEDIAF_AR_2021.pdf"
+   },
+   {
+    "id": "fediaf-ff2019",
+    "titel": "FEDIAF Facts & Figures 2019",
+    "url": "http://web.archive.org/web/20201111180106/https://fediaf.org/images/FEDIAF_facts_and_figs_2019_cor-35-48.pdf",
+    "bezugsjahr": 2019,
+    "fundstelle": "S. 36 European dog population, S. 37 European cat population (Seitenzählung des Annual Reports)",
+    "abgerufen": "2026-11-09",
+    "hinweis": "Nur noch im Internet Archive (Original fediaf.org/images/... offline). Ohne HR, CY, LU, MT."
+   },
+   {
+    "id": "fediaf-ff2018",
+    "titel": "FEDIAF Facts & Figures 2018",
+    "url": "http://web.archive.org/web/20191222152120/http://www.fediaf.org/images/FEDIAF_Facts__and_Figures_2018_ONLINE_final.pdf",
+    "bezugsjahr": 2018,
+    "fundstelle": "Page 1 of 10 European dog population, Page 2 of 10 European cat population (PDF-S. 3/4)",
+    "abgerufen": "2026-11-09",
+    "hinweis": "Nur noch im Internet Archive. Ohne HR, CY, LU, MT."
+   },
+   {
+    "id": "ivh-zzf-2025",
+    "titel": "IVH/ZZF: Der deutsche Heimtiermarkt 2025 (Skopos-Haushaltsbefragung)",
+    "url": "https://www.zzf.de/fileadmin/ZZF/Dokumente/Heimtiermarkt/Marktdaten_2025/ZZF_IVH_Der_deutsche_Heimtiermarkt_2025.pdf",
+    "bezugsjahr": 2025,
+    "fundstelle": "S. 4 (Heimtierpopulation): 15,7 Mio. Katzen (24 % der Haushalte), 10,0 Mio. Hunde (20 %)",
+    "abgerufen": "2026-11-09"
+   },
+   {
+    "id": "ivh-zzf-2024",
+    "titel": "IVH/ZZF: Der Deutsche Heimtiermarkt 2024",
+    "url": "https://www.zzf.de/fileadmin/ZZF/Dokumente/Heimtiermarkt/ZZF_IVH_Der_Deutsche_Heimtiermarkt_2024.pdf",
+    "bezugsjahr": 2024,
+    "fundstelle": "S. 4: 15,9 Mio. Katzen (25 %), 10,5 Mio. Hunde (21 %)",
+    "abgerufen": "2026-11-09"
+   },
+   {
+    "id": "ivh-zzf-2023",
+    "titel": "IVH/ZZF: Der Deutsche Heimtiermarkt 2023",
+    "url": "https://www.zzf.de/fileadmin/ZZF/Dokumente/Heimtiermarkt/ZZF_IVH_Der_Deutsche_Heimtiermarkt_2023.pdf",
+    "bezugsjahr": 2023,
+    "fundstelle": "S. 4: 15,7 Mio. Katzen, 10,5 Mio. Hunde",
+    "abgerufen": "2026-11-09"
+   },
+   {
+    "id": "ivh-zzf-2022",
+    "titel": "IVH/ZZF: Der Deutsche Heimtiermarkt 2022",
+    "url": "https://www.zzf.de/fileadmin/ZZF/Dokumente/Heimtiermarkt/Der_Deutsche_Heimtiermarkt_2022.pdf",
+    "bezugsjahr": 2022,
+    "fundstelle": "S. 4: 15,2 Mio. Katzen, 10,6 Mio. Hunde",
+    "abgerufen": "2026-11-09"
+   },
+   {
+    "id": "ivh-zzf-2021",
+    "titel": "IVH/ZZF: Der Deutsche Heimtiermarkt 2021 (Anzahl Heimtiere)",
+    "url": "https://www.zzf.de/fileadmin/ZZF/Dokumente/Heimtiermarkt/Der_Deutsche_Heimtiermarkt_Anzahl_Heimtiere_2021.pdf",
+    "bezugsjahr": 2021,
+    "fundstelle": "S. 4: 16,7 Mio. Katzen, 10,3 Mio. Hunde",
+    "abgerufen": "2026-11-09"
+   },
+   {
+    "id": "ivh-zzf-2020",
+    "titel": "IVH/ZZF: Datenblatt Der Deutsche Heimtiermarkt und Heimtiere 2020",
+    "url": "https://www.zzf.de/fileadmin/ZZF/Dokumente/Heimtiermarkt/ZZF_IVH_Datenblatt_Der_Deutsche_Heimtiermarkt_und_Heimtiere_2020.pdf",
+    "bezugsjahr": 2020,
+    "fundstelle": "S. 4: 15,7 Mio. Katzen, 10,7 Mio. Hunde",
+    "abgerufen": "2026-11-09"
+   },
+   {
+    "id": "ivh-zzf-2019",
+    "titel": "IVH/ZZF: Der Deutsche Heimtiermarkt 2019 (Anzahl Heimtiere)",
+    "url": "https://www.zzf.de/fileadmin/ZZF/Dokumente/Heimtiermarkt/ZZF_IVH_Der_Deutsche_Heimtiermarkt_Anzahl_Heimtiere_2019.pdf",
+    "bezugsjahr": 2019,
+    "fundstelle": "S. 4: 14,7 Mio. Katzen, 10,1 Mio. Hunde",
+    "abgerufen": "2026-11-09"
+   },
+   {
+    "id": "ivh-zzf-2018",
+    "titel": "IVH/ZZF: Deutscher Heimtiermarkt 2018 (Anzahl Heimtiere)",
+    "url": "https://www.zzf.de/fileadmin/ZZF/Dokumente/Heimtiermarkt/ZZF_IVH_Deutscher_Heimtiermarkt_Anzahl_Heimtiere_2018.pdf",
+    "bezugsjahr": 2018,
+    "fundstelle": "S. 4: 14,8 Mio. Katzen, 9,4 Mio. Hunde",
+    "abgerufen": "2026-11-09"
+   },
+   {
+    "id": "ukpetfood-hist",
+    "titel": "UK Pet Food: Historical Pet Population data",
+    "url": "https://www.ukpetfood.org/industry-hub/data-statistics-/historical-pet-data-.html",
+    "bezugsjahr": "2011-2024",
+    "fundstelle": "Abschnitte je Jahr (2024: 13,5 Mio. Hunde/12,5 Mio. Katzen; 2023: 12/11; 2022: 13/12; 2021: 12/12; 2019-20: 9/7,5; 2018-19: 9/7,5)",
+    "abgerufen": "2026-11-09",
+    "hinweis": "Werte auf 100.000 (ab 2021 teils auf 1 Mio.) gerundet. 2024 = Kantar/Soulor-Onlinebefragung, n = 8.956, veröffentlicht 21.03.2024 (Feldzeit also Ende 2023/Anfang 2024). Methodenwechsel 2021 (Sprung 9 -> 12 Mio.). UK Pet Food hat 2025 keine Zahlen veröffentlicht ('higher-than-expected dog population')."
+   },
+   {
+    "id": "ukpetfood-2024-pm",
+    "titel": "UK Pet Food: Paw-some new pet population data released (Pressemitteilung 21.03.2024)",
+    "url": "https://www.ukpetfood.org/resource/paw-some-new-pet-population-data-released-by-uk-pet-food.html",
+    "bezugsjahr": 2024,
+    "fundstelle": "Key highlights: 13.5 million dogs (36 % households), 12.5 million cats (29 %); Fußnote i: Kantar/Soulor, 8.956 Haushalte",
+    "abgerufen": "2026-11-09"
+   },
+   {
+    "id": "globalpets-uk-2026",
+    "titel": "GlobalPETS: Data: The UK gains half a million new pets in 2 years (Bericht über UK Pet Food 2026)",
+    "url": "https://globalpetindustry.com/news/data-the-uk-gains-half-a-million-new-pets-in-2-years/",
+    "bezugsjahr": 2026,
+    "fundstelle": "Abschnitt 'Cats and dogs in the lead': 15,5 Mio. Hunde (41 %), 13,1 Mio. Katzen (31 %)",
+    "abgerufen": "2026-11-09",
+    "hinweis": "Zweitquelle (Fachpresse) für UK-Pet-Food-Daten 2026; Primärseite listet 2026 nicht separat."
+   },
+   {
+    "id": "pdsa-paw",
+    "titel": "PDSA Animal Wellbeing (PAW) Report: UK pet populations",
+    "url": "https://www.pdsa.org.uk/what-we-do/pdsa-animal-wellbeing-report/uk-pet-populations-of-dogs-cats-and-rabbits",
+    "bezugsjahr": "2011-2026",
+    "fundstelle": "Tabelle 'Data from our 15 years of PAW Reports'",
+    "abgerufen": "2026-11-09",
+    "hinweis": "Repräsentative Befragung von Erwachsenen (YouGov), Hochrechnung über Erwachsene statt Haushalte; Feldzeit jeweils Anfang des Berichtsjahres. Unabhängig von der Futtermittelindustrie."
+   },
+   {
+    "id": "facco-2024",
+    "titel": "Lefil.vet: 75 millions d'animaux de compagnie en France (Bericht zum Sondage Odoxa für FACCO, 23.05.2024)",
+    "url": "https://www.lefil.vet/index.php?art=2428",
+    "bezugsjahr": 2024,
+    "fundstelle": "Artikeltext: 9,9 Mio. Hunde (7,6 in 2022), 16,6 Mio. Katzen (14,9 in 2022); Odoxa, n = 10.024, 21.02.-25.03.2024",
+    "abgerufen": "2026-11-09",
+    "hinweis": "FACCO stellte 2024 auf digitale Erhebung (Odoxa) um; vorher Kantar/TNS. Sprung 2022->2024 ist überwiegend Methodenwechsel (FACCO: bessere Erfassung junger, ländlicher und größerer Haushalte)."
+   },
+   {
+    "id": "facco-2026",
+    "titel": "La Dépêche Vétérinaire: Moins de chiens, plus de chats (Baromètre FACCO-Odoxa 2025-2026)",
+    "url": "https://www.depecheveterinaire.com/moins-de-chiens-plus-de-chats%C2%A0-la-tendance-se-confirme-selon-la-facco_67994D7EB768A566.html",
+    "bezugsjahr": 2025,
+    "fundstelle": "Artikeltext: 16,6 Mio. Katzen, 9,6 Mio. Hunde, '-100.000 gegenüber 2025, -300.000 gegenüber 2024'",
+    "abgerufen": "2026-11-09",
+    "hinweis": "Feldzeit Juni 2025 bis Februar 2026, n = 10.098 (lepointveterinaire.fr). Die FACCO-Seite selbst zeigt die Zahlen nur als Grafik."
+   },
+   {
+    "id": "facco-2020",
+    "titel": "FACCO/Kantar-TNS 2020, Anhang 5 Académie vétérinaire de France",
+    "url": "https://academie-veterinaire.fr/fileadmin/user_upload/EspaceMembres/Annexe_5_FACCO.pdf",
+    "bezugsjahr": 2020,
+    "fundstelle": "Tabelle 'Le détail de l'enquête FACCO/KANTAR-TNS (2020)': Chats 14,2 Mio., Chiens 7,6 Mio.",
+    "abgerufen": "2026-11-09",
+    "hinweis": "Nur über Suchtreffer-Auszug geprüft, PDF nicht heruntergeladen."
+   },
+   {
+    "id": "assalco-2025",
+    "titel": "Rapporto Assalco-Zoomark 2025 (XVIII edizione)",
+    "url": "https://www.petb2b.it/wp-content/uploads/2025/05/Rapporto-Assalco-Zoomark-2025.pdf",
+    "bezugsjahr": 2024,
+    "fundstelle": "S. 36/37 'La popolazione pet in Italia', Tabelle 'Esemplari stimati - 2024 (milioni)': Cani 9, Gatti 11,9",
+    "abgerufen": "2026-11-09",
+    "hinweis": "Assalco ist der italienische FEDIAF-Verband – keine unabhängige Quelle zu FEDIAF."
+   },
+   {
+    "id": "assalco-2024",
+    "titel": "ANMVI Oggi: Rapporto Assalco – in Italia 65 milioni di pet (Rapporto Assalco-Zoomark 2024)",
+    "url": "https://www.anmvioggi.it/in-evidenza/75951-in-italia-65-milioni-di-pet.html",
+    "bezugsjahr": 2023,
+    "fundstelle": "Artikeltext: Gatti 10,2 Mio., Cani 8,8 Mio.",
+    "abgerufen": "2026-11-09"
+   },
+   {
+    "id": "es-registros-2026",
+    "titel": "Ministerio de Derechos Sociales, Consumo y Agenda 2030: Un estudio del Gobierno estima que en España hay más de 15 millones de animales de compañía (05.06.2026)",
+    "url": "https://www.dsca.gob.es/es/comunicacion/notas-prensa/estudio-gobierno-estima-que-espana-hay-mas-15-millones-animales-compania",
+    "bezugsjahr": 2025,
+    "fundstelle": "Pressemitteilung: 7.562.893 Hunde, 5.619.967 Katzen (registriert, Stand 2025)",
+    "abgerufen": "2026-11-09",
+    "hinweis": "Auszählung der Register der Autonomen Gemeinschaften 2021-2025 – Registerbestand, keine Befragung; Abmeldungen verstorbener Tiere unvollständig möglich, nicht gechippte Katzen fehlen."
+   },
+   {
+    "id": "nl-ipsos-2026",
+    "titel": "Ipsos I&O: Huisdieren helpen te ontspannen en maken gelukkig (Huisdierenonderzoek Dibevo/NVG, 11.05.2026)",
+    "url": "https://www.ipsos-publiek.nl/actueel/huisdieren-helpen-te-ontspannen-en-maken-gelukkig/",
+    "bezugsjahr": 2026,
+    "fundstelle": "Abschnitt 'Vier op tien huishoudens hebben een huisdier': ca. 3,2 Mio. Katzen, 1,8 Mio. Hunde; Feldzeit 04.-25.02.2026, n = 4.318",
+    "abgerufen": "2026-11-09"
+   },
+   {
+    "id": "nl-licg-2025",
+    "titel": "LICG: Waar koopt de Nederlander zijn huisdier? (Huisdierenonderzoek Dibevo/NVG, Ipsos I&O, 29.04.2025)",
+    "url": "https://www.licg.nl/nieuws/waar-koopt-de-nederlander-zijn-huisdier/",
+    "bezugsjahr": 2025,
+    "fundstelle": "Liste: 1,7 Mio. Hunde (was 1,8), 3 Mio. Katzen (gleich geblieben)",
+    "abgerufen": "2026-11-09",
+    "hinweis": "Vorjahreswerte ('was') = Erhebung 2024."
+   },
+   {
+    "id": "se-novus",
+    "titel": "Agria/SKK Stora djurundersökningen (Novus), Zusammenstellung Manimalis",
+    "url": "https://www.manimalis.se/sallskapsdjur-i-sverige/",
+    "bezugsjahr": "2020/2024/2026",
+    "fundstelle": "Abschnitt 'Antal hundar och katter över tid': 2020 934.000/1.441.000; 2024 926.000/1.641.000; 2026 951.000/1.582.000",
+    "abgerufen": "2026-11-09",
+    "hinweis": "Zahlen 2024 bestätigt durch Veterinärmagazinet 10/2024 (https://www.veterinarmagazinet.se/2024/10/katter-befaster-sin-plats-pa-tronen/) und Ds 2026:10 der schwedischen Regierung."
+   },
+   {
+    "id": "se-hundregister",
+    "titel": "Jordbruksverket: Statistik ur hundregistret",
+    "url": "https://jordbruksverket.se/e-tjanster-databaser-och-appar/e-tjanster-och-databaser-djur/hundregistret/statistik-ur-hundregistret",
+    "bezugsjahr": 2026,
+    "fundstelle": "Kennzahl 'Registrerade hundar: 1 052 000' (Seite aktualisiert 02.11.2026)",
+    "abgerufen": "2026-11-09",
+    "hinweis": "Pflichtregister; enthält auch verstorbene, nicht abgemeldete Hunde."
+   },
+   {
+    "id": "at-oehtv-2024",
+    "titel": "ÖHTV/Österreichischer Zoofachhandel: Heimtierstudie (GfK), OTS 14.05.2024",
+    "url": "https://www.ots.at/presseaussendung/OTS_20240514_OTS0105/heimtierstudie-unsere-haustiere-werden-immer-aelter",
+    "bezugsjahr": 2023,
+    "fundstelle": "Pressetext: 2.019.000 Katzen (2022: 1.985.000), 836.000 Hunde (wie 2022)",
+    "abgerufen": "2026-11-09",
+    "hinweis": "ÖHTV ist FEDIAF-Mitglied, also keine unabhängige Quelle. Bezugsjahr der Erhebung im Text nicht genannt; veröffentlicht Mai 2024, daher vermutlich 2023."
+   },
+   {
+    "id": "ch-vhn-2025",
+    "titel": "VHN: Erhebung Heimtierpopulation 2025",
+    "url": "https://www.vhn.ch/dokumente/statistik-vhn-heimtierpopulation-2025.pdf",
+    "bezugsjahr": 2025,
+    "fundstelle": "S. 2 'Heimtiere in der Schweiz': Katzen 1,512 Mio., Hunde 515.000; CAWI, n = 2.000, März/April 2025",
+    "abgerufen": "2026-11-09",
+    "hinweis": "VHN ist FEDIAF-Mitglied; FEDIAF übernimmt diese Werte als CH 2023 und 2024."
+   }
+  ],
+  "werte": [
+   {
+    "land": "AL",
+    "jahr": 2024,
+    "hunde": 90000,
+    "katzen": 98000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert)"
+   },
+   {
+    "land": "AT",
+    "jahr": 2024,
+    "hunde": 836000,
+    "katzen": 2019000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "BE",
+    "jahr": 2024,
+    "hunde": 2085000,
+    "katzen": 3128000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Hundezahl 2024 nach Rücksprache mit Verband revidiert"
+   },
+   {
+    "land": "BA",
+    "jahr": 2024,
+    "hunde": 184000,
+    "katzen": 199000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert)"
+   },
+   {
+    "land": "BG",
+    "jahr": 2024,
+    "hunde": 729000,
+    "katzen": 793000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert)"
+   },
+   {
+    "land": "HR",
+    "jahr": 2024,
+    "hunde": 778000,
+    "katzen": 456000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert)"
+   },
+   {
+    "land": "CY",
+    "jahr": 2024,
+    "hunde": 179000,
+    "katzen": 55000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert); an EMA-Populationsdaten 2024 angeglichen"
+   },
+   {
+    "land": "CZ",
+    "jahr": 2024,
+    "hunde": 2229000,
+    "katzen": 1395000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "DK",
+    "jahr": 2024,
+    "hunde": 618000,
+    "katzen": 670000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert); an EMA-Populationsdaten 2024 angeglichen"
+   },
+   {
+    "land": "EE",
+    "jahr": 2024,
+    "hunde": 254000,
+    "katzen": 313000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert)"
+   },
+   {
+    "land": "FI",
+    "jahr": 2024,
+    "hunde": 798000,
+    "katzen": 1003000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert); an EMA-Populationsdaten 2024 angeglichen"
+   },
+   {
+    "land": "FR",
+    "jahr": 2024,
+    "hunde": 9700000,
+    "katzen": 16700000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Methodenwechsel FR; FEDIAF hat 2023 restated, restatete Werte aber nicht veröffentlicht"
+   },
+   {
+    "land": "DE",
+    "jahr": 2024,
+    "hunde": 10500000,
+    "katzen": 15900000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "GR",
+    "jahr": 2024,
+    "hunde": 649000,
+    "katzen": 601000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert)"
+   },
+   {
+    "land": "HU",
+    "jahr": 2024,
+    "hunde": 2773000,
+    "katzen": 2357000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "IS",
+    "jahr": 2024,
+    "hunde": 28000,
+    "katzen": 40000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert)"
+   },
+   {
+    "land": "IE",
+    "jahr": 2024,
+    "hunde": 563000,
+    "katzen": 404000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert)"
+   },
+   {
+    "land": "IT",
+    "jahr": 2024,
+    "hunde": 9000000,
+    "katzen": 11900000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "XK",
+    "jahr": 2024,
+    "hunde": 48000,
+    "katzen": 53000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert)"
+   },
+   {
+    "land": "LV",
+    "jahr": 2024,
+    "hunde": 274000,
+    "katzen": 417000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert)"
+   },
+   {
+    "land": "LI",
+    "jahr": 2024,
+    "hunde": 2000,
+    "katzen": 9000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert)"
+   },
+   {
+    "land": "LT",
+    "jahr": 2024,
+    "hunde": 312000,
+    "katzen": 163000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert); an EMA-Populationsdaten 2024 angeglichen"
+   },
+   {
+    "land": "LU",
+    "jahr": 2024,
+    "hunde": 47000,
+    "katzen": 105000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert); an EMA-Populationsdaten 2024 angeglichen"
+   },
+   {
+    "land": "MT",
+    "jahr": 2024,
+    "hunde": 100000,
+    "katzen": 23000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert); an EMA-Populationsdaten 2024 angeglichen"
+   },
+   {
+    "land": "ME",
+    "jahr": 2024,
+    "hunde": 42000,
+    "katzen": 45000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert)"
+   },
+   {
+    "land": "NL",
+    "jahr": 2024,
+    "hunde": 1667000,
+    "katzen": 3001000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "MK",
+    "jahr": 2024,
+    "hunde": 98000,
+    "katzen": 106000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert)"
+   },
+   {
+    "land": "NO",
+    "jahr": 2024,
+    "hunde": 553000,
+    "katzen": 787000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "PL",
+    "jahr": 2024,
+    "hunde": 8282000,
+    "katzen": 7463000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "PT",
+    "jahr": 2024,
+    "hunde": 3071000,
+    "katzen": 2116000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert)"
+   },
+   {
+    "land": "MD",
+    "jahr": 2024,
+    "hunde": 170000,
+    "katzen": 185000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert)"
+   },
+   {
+    "land": "RO",
+    "jahr": 2024,
+    "hunde": 4258000,
+    "katzen": 4439000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert)"
+   },
+   {
+    "land": "RS",
+    "jahr": 2024,
+    "hunde": 513000,
+    "katzen": 558000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert)"
+   },
+   {
+    "land": "SK",
+    "jahr": 2024,
+    "hunde": 1436000,
+    "katzen": 535000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "an EMA-Populationsdaten 2024 angeglichen"
+   },
+   {
+    "land": "SI",
+    "jahr": 2024,
+    "hunde": 305000,
+    "katzen": 471000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert)"
+   },
+   {
+    "land": "ES",
+    "jahr": 2024,
+    "hunde": 6962000,
+    "katzen": 4939000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "SE",
+    "jahr": 2024,
+    "hunde": 1155000,
+    "katzen": 1723000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "CH",
+    "jahr": 2024,
+    "hunde": 515000,
+    "katzen": 1520000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Daten 2025 (VHN), neue Methode"
+   },
+   {
+    "land": "TR",
+    "jahr": 2024,
+    "hunde": 1466000,
+    "katzen": 4928000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert)"
+   },
+   {
+    "land": "UA",
+    "jahr": 2024,
+    "hunde": 4536000,
+    "katzen": 6944000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": "Schätzung FEDIAF/Soulor (kein Verbandswert)"
+   },
+   {
+    "land": "GB",
+    "jahr": 2024,
+    "hunde": 13400000,
+    "katzen": 12300000,
+    "quelle": "fediaf-ff2024",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "AL",
+    "jahr": 2023,
+    "hunde": 105000,
+    "katzen": 114000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "AT",
+    "jahr": 2023,
+    "hunde": 836000,
+    "katzen": 2019000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "BE",
+    "jahr": 2023,
+    "hunde": 2052000,
+    "katzen": 3079000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "BA",
+    "jahr": 2023,
+    "hunde": 189000,
+    "katzen": 206000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "BG",
+    "jahr": 2023,
+    "hunde": 729000,
+    "katzen": 792000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "HR",
+    "jahr": 2023,
+    "hunde": 709000,
+    "katzen": 419000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "CY",
+    "jahr": 2023,
+    "hunde": 59000,
+    "katzen": 55000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "CZ",
+    "jahr": 2023,
+    "hunde": 2229000,
+    "katzen": 1395000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "DK",
+    "jahr": 2023,
+    "hunde": 641000,
+    "katzen": 696000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "EE",
+    "jahr": 2023,
+    "hunde": 250000,
+    "katzen": 308000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "FI",
+    "jahr": 2023,
+    "hunde": 805000,
+    "katzen": 1013000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "FR",
+    "jahr": 2023,
+    "hunde": 7600000,
+    "katzen": 14900000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": "Populationsdaten 2022 übernommen (laut Appendix)"
+   },
+   {
+    "land": "DE",
+    "jahr": 2023,
+    "hunde": 10500000,
+    "katzen": 15700000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "GR",
+    "jahr": 2023,
+    "hunde": 652000,
+    "katzen": 604000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "HU",
+    "jahr": 2023,
+    "hunde": 2772000,
+    "katzen": 2356000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "IS",
+    "jahr": 2023,
+    "hunde": 26000,
+    "katzen": 37000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "IE",
+    "jahr": 2023,
+    "hunde": 517000,
+    "katzen": 371000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "IT",
+    "jahr": 2023,
+    "hunde": 8766000,
+    "katzen": 10244000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "XK",
+    "jahr": 2023,
+    "hunde": 52000,
+    "katzen": 57000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "LV",
+    "jahr": 2023,
+    "hunde": 271000,
+    "katzen": 412000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "LI",
+    "jahr": 2023,
+    "hunde": 2000,
+    "katzen": 8000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "LT",
+    "jahr": 2023,
+    "hunde": 614000,
+    "katzen": 675000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "LU",
+    "jahr": 2023,
+    "hunde": 72000,
+    "katzen": 103000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "MT",
+    "jahr": 2023,
+    "hunde": 74000,
+    "katzen": 87000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "ME",
+    "jahr": 2023,
+    "hunde": 39000,
+    "katzen": 43000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "NL",
+    "jahr": 2023,
+    "hunde": 1777000,
+    "katzen": 3000000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "MK",
+    "jahr": 2023,
+    "hunde": 86000,
+    "katzen": 93000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "NO",
+    "jahr": 2023,
+    "hunde": 500000,
+    "katzen": 720000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "PL",
+    "jahr": 2023,
+    "hunde": 8440000,
+    "katzen": 7546000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "PT",
+    "jahr": 2023,
+    "hunde": 3008000,
+    "katzen": 2073000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "MD",
+    "jahr": 2023,
+    "hunde": 193000,
+    "katzen": 209000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "RO",
+    "jahr": 2023,
+    "hunde": 4251000,
+    "katzen": 4432000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "RS",
+    "jahr": 2023,
+    "hunde": 483000,
+    "katzen": 525000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "SK",
+    "jahr": 2023,
+    "hunde": 909000,
+    "katzen": 535000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "SI",
+    "jahr": 2023,
+    "hunde": 301000,
+    "katzen": 465000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "ES",
+    "jahr": 2023,
+    "hunde": 9463000,
+    "katzen": 5954000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": "von FEDIAF/Soulor geschätzt, keine Verbandsdaten"
+   },
+   {
+    "land": "SE",
+    "jahr": 2023,
+    "hunde": 1062000,
+    "katzen": 1732000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "CH",
+    "jahr": 2023,
+    "hunde": 515000,
+    "katzen": 1520000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": "Daten 2025 (VHN), neue Methode"
+   },
+   {
+    "land": "TR",
+    "jahr": 2023,
+    "hunde": 1453000,
+    "katzen": 4887000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "UA",
+    "jahr": 2023,
+    "hunde": 4913000,
+    "katzen": 7521000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "GB",
+    "jahr": 2023,
+    "hunde": 11700000,
+    "katzen": 11400000,
+    "quelle": "fediaf-ff2023",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "AT",
+    "jahr": 2022,
+    "hunde": 837000,
+    "katzen": 1985000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "BE",
+    "jahr": 2022,
+    "hunde": 2029000,
+    "katzen": 2536000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "BG",
+    "jahr": 2022,
+    "hunde": 752000,
+    "katzen": 817000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "HR",
+    "jahr": 2022,
+    "hunde": 735500,
+    "katzen": 434000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "CZ",
+    "jahr": 2022,
+    "hunde": 2208000,
+    "katzen": 1364000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "DK",
+    "jahr": 2022,
+    "hunde": 643000,
+    "katzen": 698000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "EE",
+    "jahr": 2022,
+    "hunde": 243500,
+    "katzen": 300400,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "FI",
+    "jahr": 2022,
+    "hunde": 797000,
+    "katzen": 1002000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "FR",
+    "jahr": 2022,
+    "hunde": 7600000,
+    "katzen": 14900000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "DE",
+    "jahr": 2022,
+    "hunde": 10600000,
+    "katzen": 15200000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "GR",
+    "jahr": 2022,
+    "hunde": 655000,
+    "katzen": 606000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "HU",
+    "jahr": 2022,
+    "hunde": 2800000,
+    "katzen": 2380000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "IE",
+    "jahr": 2022,
+    "hunde": 520000,
+    "katzen": 373000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "IT",
+    "jahr": 2022,
+    "hunde": 8755000,
+    "katzen": 10228000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "LV",
+    "jahr": 2022,
+    "hunde": 268000,
+    "katzen": 407000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "LT",
+    "jahr": 2022,
+    "hunde": 580000,
+    "katzen": 638000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "NL",
+    "jahr": 2022,
+    "hunde": 1830000,
+    "katzen": 3010000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "NO",
+    "jahr": 2022,
+    "hunde": 500000,
+    "katzen": 720000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "PL",
+    "jahr": 2022,
+    "hunde": 8109000,
+    "katzen": 7250000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "PT",
+    "jahr": 2022,
+    "hunde": 2840000,
+    "katzen": 1957000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "RO",
+    "jahr": 2022,
+    "hunde": 4244000,
+    "katzen": 4424000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "SK",
+    "jahr": 2022,
+    "hunde": 911000,
+    "katzen": 541000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "SI",
+    "jahr": 2022,
+    "hunde": 299000,
+    "katzen": 461000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "ES",
+    "jahr": 2022,
+    "hunde": 9313000,
+    "katzen": 5860000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "SE",
+    "jahr": 2022,
+    "hunde": 1051000,
+    "katzen": 1715000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "CH",
+    "jahr": 2022,
+    "hunde": 544000,
+    "katzen": 1853000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "TR",
+    "jahr": 2022,
+    "hunde": 1409000,
+    "katzen": 4737000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "UA",
+    "jahr": 2022,
+    "hunde": 4948000,
+    "katzen": 7575000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "GB",
+    "jahr": 2022,
+    "hunde": 12700000,
+    "katzen": 11900000,
+    "quelle": "fediaf-ff2022b",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "AT",
+    "jahr": 2022,
+    "hunde": 766000,
+    "katzen": 2047000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "BE",
+    "jahr": 2022,
+    "hunde": 2029000,
+    "katzen": 2536000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "BG",
+    "jahr": 2022,
+    "hunde": 750000,
+    "katzen": 815000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "aus FF 2021 übernommen; Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "CZ",
+    "jahr": 2022,
+    "hunde": 2211000,
+    "katzen": 1364000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "DK",
+    "jahr": 2022,
+    "hunde": 617000,
+    "katzen": 669000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "EE",
+    "jahr": 2022,
+    "hunde": 235000,
+    "katzen": 290000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "aus FF 2021 übernommen; Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "FI",
+    "jahr": 2022,
+    "hunde": 781000,
+    "katzen": 982000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "FR",
+    "jahr": 2022,
+    "hunde": 7600000,
+    "katzen": 14900000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "DE",
+    "jahr": 2022,
+    "hunde": 10600000,
+    "katzen": 15200000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "GR",
+    "jahr": 2022,
+    "hunde": 657000,
+    "katzen": 608000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "HU",
+    "jahr": 2022,
+    "hunde": 2172000,
+    "katzen": 2388000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "IE",
+    "jahr": 2022,
+    "hunde": 495000,
+    "katzen": 355000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "IT",
+    "jahr": 2022,
+    "hunde": 8755000,
+    "katzen": 10228000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "LV",
+    "jahr": 2022,
+    "hunde": 270000,
+    "katzen": 410000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "aus FF 2021 übernommen; Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "LT",
+    "jahr": 2022,
+    "hunde": 550000,
+    "katzen": 605000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "aus FF 2021 übernommen; Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "NL",
+    "jahr": 2022,
+    "hunde": 1500000,
+    "katzen": 1900000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "NO",
+    "jahr": 2022,
+    "hunde": 494000,
+    "katzen": 783000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "PL",
+    "jahr": 2022,
+    "hunde": 8019000,
+    "katzen": 7125000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "PT",
+    "jahr": 2022,
+    "hunde": 2605000,
+    "katzen": 1795000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "RO",
+    "jahr": 2022,
+    "hunde": 4193000,
+    "katzen": 4371000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "SK",
+    "jahr": 2022,
+    "hunde": 915000,
+    "katzen": 540000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "SI",
+    "jahr": 2022,
+    "hunde": 295000,
+    "katzen": 455000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "aus FF 2021 übernommen; Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "ES",
+    "jahr": 2022,
+    "hunde": 9313000,
+    "katzen": 5859000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "SE",
+    "jahr": 2022,
+    "hunde": 1044000,
+    "katzen": 1703000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "CH",
+    "jahr": 2022,
+    "hunde": 554000,
+    "katzen": 1793000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "TR",
+    "jahr": 2022,
+    "hunde": 1386000,
+    "katzen": 4660000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "UA",
+    "jahr": 2022,
+    "hunde": 4984000,
+    "katzen": 7630000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "GB",
+    "jahr": 2022,
+    "hunde": 13000000,
+    "katzen": 12000000,
+    "quelle": "fediaf-ff2022a",
+    "berechnet": false,
+    "hinweis": "Erstfassung 2022, durch fediaf-ff2022b ersetzt"
+   },
+   {
+    "land": "AT",
+    "jahr": 2021,
+    "hunde": 837000,
+    "katzen": 1985000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "BE",
+    "jahr": 2021,
+    "hunde": 1340000,
+    "katzen": 2085000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "BG",
+    "jahr": 2021,
+    "hunde": 750000,
+    "katzen": 815000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "CZ",
+    "jahr": 2021,
+    "hunde": 2205000,
+    "katzen": 1150000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "DK",
+    "jahr": 2021,
+    "hunde": 610000,
+    "katzen": 680000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "EE",
+    "jahr": 2021,
+    "hunde": 235000,
+    "katzen": 290000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "FI",
+    "jahr": 2021,
+    "hunde": 760000,
+    "katzen": 975000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "FR",
+    "jahr": 2021,
+    "hunde": 7500000,
+    "katzen": 15100000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "DE",
+    "jahr": 2021,
+    "hunde": 10300000,
+    "katzen": 16700000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "GR",
+    "jahr": 2021,
+    "hunde": 660000,
+    "katzen": 605000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "HU",
+    "jahr": 2021,
+    "hunde": 2800000,
+    "katzen": 2380000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "IE",
+    "jahr": 2021,
+    "hunde": 457000,
+    "katzen": 326000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "IT",
+    "jahr": 2021,
+    "hunde": 8700000,
+    "katzen": 10050000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "LV",
+    "jahr": 2021,
+    "hunde": 270000,
+    "katzen": 410000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "LT",
+    "jahr": 2021,
+    "hunde": 550000,
+    "katzen": 605000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "NL",
+    "jahr": 2021,
+    "hunde": 1850000,
+    "katzen": 3150000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "NO",
+    "jahr": 2021,
+    "hunde": 490000,
+    "katzen": 783000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "PL",
+    "jahr": 2021,
+    "hunde": 6466732,
+    "katzen": 4082248,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "PT",
+    "jahr": 2021,
+    "hunde": 2105000,
+    "katzen": 1510000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "RO",
+    "jahr": 2021,
+    "hunde": 4195000,
+    "katzen": 4380000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "SK",
+    "jahr": 2021,
+    "hunde": 920000,
+    "katzen": 550000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "SI",
+    "jahr": 2021,
+    "hunde": 295000,
+    "katzen": 455000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "ES",
+    "jahr": 2021,
+    "hunde": 9313000,
+    "katzen": 5859000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "SE",
+    "jahr": 2021,
+    "hunde": 890000,
+    "katzen": 1480000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "CH",
+    "jahr": 2021,
+    "hunde": 544000,
+    "katzen": 1853000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "TR",
+    "jahr": 2021,
+    "hunde": 1655000,
+    "katzen": 4380000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "GB",
+    "jahr": 2021,
+    "hunde": 12000000,
+    "katzen": 12000000,
+    "quelle": "fediaf-ff2021",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "AT",
+    "jahr": 2020,
+    "hunde": 827000,
+    "katzen": 2034000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "BE",
+    "jahr": 2020,
+    "hunde": 1325000,
+    "katzen": 2050000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "BG",
+    "jahr": 2020,
+    "hunde": 741000,
+    "katzen": 802000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "CZ",
+    "jahr": 2020,
+    "hunde": 2200000,
+    "katzen": 1120000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "DK",
+    "jahr": 2020,
+    "hunde": 607000,
+    "katzen": 670000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "EE",
+    "jahr": 2020,
+    "hunde": 235000,
+    "katzen": 285000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "FI",
+    "jahr": 2020,
+    "hunde": 755000,
+    "katzen": 965000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "FR",
+    "jahr": 2020,
+    "hunde": 7500000,
+    "katzen": 15100000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "DE",
+    "jahr": 2020,
+    "hunde": 10700000,
+    "katzen": 15700000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "GR",
+    "jahr": 2020,
+    "hunde": 660000,
+    "katzen": 600000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "HU",
+    "jahr": 2020,
+    "hunde": 2050000,
+    "katzen": 2330000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "IE",
+    "jahr": 2020,
+    "hunde": 455000,
+    "katzen": 325000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "IT",
+    "jahr": 2020,
+    "hunde": 8300000,
+    "katzen": 7930000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "LV",
+    "jahr": 2020,
+    "hunde": 265000,
+    "katzen": 400000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "LT",
+    "jahr": 2020,
+    "hunde": 560000,
+    "katzen": 600000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "NL",
+    "jahr": 2020,
+    "hunde": 1950000,
+    "katzen": 3100000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "NO",
+    "jahr": 2020,
+    "hunde": 480000,
+    "katzen": 770000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "PL",
+    "jahr": 2020,
+    "hunde": 7850000,
+    "katzen": 6800000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "PT",
+    "jahr": 2020,
+    "hunde": 2080000,
+    "katzen": 1500000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "RO",
+    "jahr": 2020,
+    "hunde": 4150000,
+    "katzen": 4320000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "SK",
+    "jahr": 2020,
+    "hunde": 890000,
+    "katzen": 550000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "SI",
+    "jahr": 2020,
+    "hunde": 295000,
+    "katzen": 450000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "ES",
+    "jahr": 2020,
+    "hunde": 6733097,
+    "katzen": 3795139,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "SE",
+    "jahr": 2020,
+    "hunde": 890000,
+    "katzen": 1480000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "CH",
+    "jahr": 2020,
+    "hunde": 503000,
+    "katzen": 1722000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "TR",
+    "jahr": 2020,
+    "hunde": 1220000,
+    "katzen": 4100000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "GB",
+    "jahr": 2020,
+    "hunde": 8500000,
+    "katzen": 7900000,
+    "quelle": "fediaf-ff2020",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "AT",
+    "jahr": 2019,
+    "hunde": 641000,
+    "katzen": 1815000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "BE",
+    "jahr": 2019,
+    "hunde": 1320000,
+    "katzen": 2030000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "BG",
+    "jahr": 2019,
+    "hunde": 740000,
+    "katzen": 800000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "CZ",
+    "jahr": 2019,
+    "hunde": 2000000,
+    "katzen": 1400000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "DK",
+    "jahr": 2019,
+    "hunde": 600000,
+    "katzen": 670000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "EE",
+    "jahr": 2019,
+    "hunde": 230000,
+    "katzen": 285000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "FI",
+    "jahr": 2019,
+    "hunde": 810000,
+    "katzen": 950000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "FR",
+    "jahr": 2019,
+    "hunde": 7600000,
+    "katzen": 14200000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "DE",
+    "jahr": 2019,
+    "hunde": 10100000,
+    "katzen": 14700000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "GR",
+    "jahr": 2019,
+    "hunde": 660000,
+    "katzen": 590000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "HU",
+    "jahr": 2019,
+    "hunde": 2050000,
+    "katzen": 2300000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "IE",
+    "jahr": 2019,
+    "hunde": 455000,
+    "katzen": 325000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "IT",
+    "jahr": 2019,
+    "hunde": 7011000,
+    "katzen": 7290000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "LV",
+    "jahr": 2019,
+    "hunde": 260000,
+    "katzen": 400000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "LT",
+    "jahr": 2019,
+    "hunde": 550000,
+    "katzen": 600000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "NL",
+    "jahr": 2019,
+    "hunde": 1690000,
+    "katzen": 2940000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "NO",
+    "jahr": 2019,
+    "hunde": 505000,
+    "katzen": 750000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "PL",
+    "jahr": 2019,
+    "hunde": 7750000,
+    "katzen": 6600000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "PT",
+    "jahr": 2019,
+    "hunde": 2050000,
+    "katzen": 1500000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "RO",
+    "jahr": 2019,
+    "hunde": 4150000,
+    "katzen": 4300000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "SK",
+    "jahr": 2019,
+    "hunde": 915000,
+    "katzen": 520000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "SI",
+    "jahr": 2019,
+    "hunde": 295000,
+    "katzen": 450000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "ES",
+    "jahr": 2019,
+    "hunde": 6733000,
+    "katzen": 3795000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "SE",
+    "jahr": 2019,
+    "hunde": 890000,
+    "katzen": 1480000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "CH",
+    "jahr": 2019,
+    "hunde": 505000,
+    "katzen": 1634000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "TR",
+    "jahr": 2019,
+    "hunde": 1200000,
+    "katzen": 3800000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "GB",
+    "jahr": 2019,
+    "hunde": 9000000,
+    "katzen": 7500000,
+    "quelle": "fediaf-ff2019",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "AT",
+    "jahr": 2018,
+    "hunde": 827000,
+    "katzen": 2034000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "BE",
+    "jahr": 2018,
+    "hunde": 1315000,
+    "katzen": 2050000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "BG",
+    "jahr": 2018,
+    "hunde": 740000,
+    "katzen": 800000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "CZ",
+    "jahr": 2018,
+    "hunde": 2000000,
+    "katzen": 1400000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "DK",
+    "jahr": 2018,
+    "hunde": 595000,
+    "katzen": 675000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "EE",
+    "jahr": 2018,
+    "hunde": 210000,
+    "katzen": 285000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "FI",
+    "jahr": 2018,
+    "hunde": 810000,
+    "katzen": 900000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "FR",
+    "jahr": 2018,
+    "hunde": 6950000,
+    "katzen": 13500000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "DE",
+    "jahr": 2018,
+    "hunde": 9400000,
+    "katzen": 14500000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "GR",
+    "jahr": 2018,
+    "hunde": 660000,
+    "katzen": 600000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "HU",
+    "jahr": 2018,
+    "hunde": 1180000,
+    "katzen": 2000000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "IE",
+    "jahr": 2018,
+    "hunde": 450000,
+    "katzen": 325000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "IT",
+    "jahr": 2018,
+    "hunde": 7002000,
+    "katzen": 7300000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "LV",
+    "jahr": 2018,
+    "hunde": 260000,
+    "katzen": 400000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "LT",
+    "jahr": 2018,
+    "hunde": 550000,
+    "katzen": 600000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "NL",
+    "jahr": 2018,
+    "hunde": 1520000,
+    "katzen": 2640000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "NO",
+    "jahr": 2018,
+    "hunde": 470000,
+    "katzen": 770000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "PL",
+    "jahr": 2018,
+    "hunde": 7600000,
+    "katzen": 6400000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "PT",
+    "jahr": 2018,
+    "hunde": 2100000,
+    "katzen": 1500000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "RO",
+    "jahr": 2018,
+    "hunde": 4000000,
+    "katzen": 4300000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "SK",
+    "jahr": 2018,
+    "hunde": 900000,
+    "katzen": 550000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "SI",
+    "jahr": 2018,
+    "hunde": 290000,
+    "katzen": 480000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "ES",
+    "jahr": 2018,
+    "hunde": 6270000,
+    "katzen": 3145000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "SE",
+    "jahr": 2018,
+    "hunde": 880000,
+    "katzen": 1440000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "CH",
+    "jahr": 2018,
+    "hunde": 505000,
+    "katzen": 1634000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "TR",
+    "jahr": 2018,
+    "hunde": 1200000,
+    "katzen": 3600000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "GB",
+    "jahr": 2018,
+    "hunde": 9000000,
+    "katzen": 7500000,
+    "quelle": "fediaf-ff2018",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "DE",
+    "jahr": 2018,
+    "hunde": 9400000,
+    "katzen": 14800000,
+    "quelle": "ivh-zzf-2018",
+    "berechnet": false,
+    "hinweis": "Haushaltsbefragung (Skopos, ca. 7.000 Haushalte); FEDIAF übernimmt diese Werte (IVH/ZZF = FEDIAF-Mitglied), daher keine unabhängige Prüfung"
+   },
+   {
+    "land": "DE",
+    "jahr": 2019,
+    "hunde": 10100000,
+    "katzen": 14700000,
+    "quelle": "ivh-zzf-2019",
+    "berechnet": false,
+    "hinweis": "Haushaltsbefragung (Skopos, ca. 7.000 Haushalte); FEDIAF übernimmt diese Werte (IVH/ZZF = FEDIAF-Mitglied), daher keine unabhängige Prüfung"
+   },
+   {
+    "land": "DE",
+    "jahr": 2020,
+    "hunde": 10700000,
+    "katzen": 15700000,
+    "quelle": "ivh-zzf-2020",
+    "berechnet": false,
+    "hinweis": "Haushaltsbefragung (Skopos, ca. 7.000 Haushalte); FEDIAF übernimmt diese Werte (IVH/ZZF = FEDIAF-Mitglied), daher keine unabhängige Prüfung"
+   },
+   {
+    "land": "DE",
+    "jahr": 2021,
+    "hunde": 10300000,
+    "katzen": 16700000,
+    "quelle": "ivh-zzf-2021",
+    "berechnet": false,
+    "hinweis": "Haushaltsbefragung (Skopos, ca. 7.000 Haushalte); FEDIAF übernimmt diese Werte (IVH/ZZF = FEDIAF-Mitglied), daher keine unabhängige Prüfung"
+   },
+   {
+    "land": "DE",
+    "jahr": 2022,
+    "hunde": 10600000,
+    "katzen": 15200000,
+    "quelle": "ivh-zzf-2022",
+    "berechnet": false,
+    "hinweis": "Haushaltsbefragung (Skopos, ca. 7.000 Haushalte); FEDIAF übernimmt diese Werte (IVH/ZZF = FEDIAF-Mitglied), daher keine unabhängige Prüfung"
+   },
+   {
+    "land": "DE",
+    "jahr": 2023,
+    "hunde": 10500000,
+    "katzen": 15700000,
+    "quelle": "ivh-zzf-2023",
+    "berechnet": false,
+    "hinweis": "Haushaltsbefragung (Skopos, ca. 7.000 Haushalte); FEDIAF übernimmt diese Werte (IVH/ZZF = FEDIAF-Mitglied), daher keine unabhängige Prüfung"
+   },
+   {
+    "land": "DE",
+    "jahr": 2024,
+    "hunde": 10500000,
+    "katzen": 15900000,
+    "quelle": "ivh-zzf-2024",
+    "berechnet": false,
+    "hinweis": "Haushaltsbefragung (Skopos, ca. 7.000 Haushalte); FEDIAF übernimmt diese Werte (IVH/ZZF = FEDIAF-Mitglied), daher keine unabhängige Prüfung"
+   },
+   {
+    "land": "DE",
+    "jahr": 2025,
+    "hunde": 10000000,
+    "katzen": 15700000,
+    "quelle": "ivh-zzf-2025",
+    "berechnet": false,
+    "hinweis": "Haushaltsbefragung (Skopos, ca. 7.000 Haushalte); FEDIAF übernimmt diese Werte (IVH/ZZF = FEDIAF-Mitglied), daher keine unabhängige Prüfung"
+   },
+   {
+    "land": "GB",
+    "jahr": 2018,
+    "hunde": 9000000,
+    "katzen": 7500000,
+    "quelle": "ukpetfood-hist",
+    "berechnet": false,
+    "hinweis": "Erhebung 2018-19"
+   },
+   {
+    "land": "GB",
+    "jahr": 2019,
+    "hunde": 9000000,
+    "katzen": 7500000,
+    "quelle": "ukpetfood-hist",
+    "berechnet": false,
+    "hinweis": "Erhebung 2019-20"
+   },
+   {
+    "land": "GB",
+    "jahr": 2021,
+    "hunde": 12000000,
+    "katzen": 12000000,
+    "quelle": "ukpetfood-hist",
+    "berechnet": false,
+    "hinweis": "auf 1 Mio. gerundet; Methodenwechsel 2021"
+   },
+   {
+    "land": "GB",
+    "jahr": 2022,
+    "hunde": 13000000,
+    "katzen": 12000000,
+    "quelle": "ukpetfood-hist",
+    "berechnet": false,
+    "hinweis": "auf 1 Mio. gerundet"
+   },
+   {
+    "land": "GB",
+    "jahr": 2023,
+    "hunde": 12000000,
+    "katzen": 11000000,
+    "quelle": "ukpetfood-hist",
+    "berechnet": false,
+    "hinweis": "auf 1 Mio. gerundet"
+   },
+   {
+    "land": "GB",
+    "jahr": 2024,
+    "hunde": 13500000,
+    "katzen": 12500000,
+    "quelle": "ukpetfood-hist",
+    "berechnet": false,
+    "hinweis": "Kantar/Soulor, n = 8.956, veröffentlicht 03/2024"
+   },
+   {
+    "land": "GB",
+    "jahr": 2026,
+    "hunde": 15500000,
+    "katzen": 13100000,
+    "quelle": "globalpets-uk-2026",
+    "berechnet": false,
+    "hinweis": "UK Pet Food 2026; 2025 nicht veröffentlicht"
+   },
+   {
+    "land": "GB",
+    "jahr": 2018,
+    "hunde": 8900000,
+    "katzen": 11100000,
+    "quelle": "pdsa-paw",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "GB",
+    "jahr": 2019,
+    "hunde": 9900000,
+    "katzen": 10900000,
+    "quelle": "pdsa-paw",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "GB",
+    "jahr": 2020,
+    "hunde": 10100000,
+    "katzen": 10900000,
+    "quelle": "pdsa-paw",
+    "berechnet": false,
+    "hinweis": "Februar-Erhebung; August-Erhebung 9,9/10,4"
+   },
+   {
+    "land": "GB",
+    "jahr": 2021,
+    "hunde": 9600000,
+    "katzen": 10700000,
+    "quelle": "pdsa-paw",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "GB",
+    "jahr": 2022,
+    "hunde": 10200000,
+    "katzen": 11100000,
+    "quelle": "pdsa-paw",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "GB",
+    "jahr": 2023,
+    "hunde": 11000000,
+    "katzen": 11000000,
+    "quelle": "pdsa-paw",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "GB",
+    "jahr": 2024,
+    "hunde": 10600000,
+    "katzen": 10800000,
+    "quelle": "pdsa-paw",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "GB",
+    "jahr": 2025,
+    "hunde": 11100000,
+    "katzen": 10500000,
+    "quelle": "pdsa-paw",
+    "berechnet": false,
+    "hinweis": "PAW Mini Report"
+   },
+   {
+    "land": "GB",
+    "jahr": 2026,
+    "hunde": 10200000,
+    "katzen": 11300000,
+    "quelle": "pdsa-paw",
+    "berechnet": false,
+    "hinweis": null
+   },
+   {
+    "land": "FR",
+    "jahr": 2020,
+    "hunde": 7600000,
+    "katzen": 14200000,
+    "quelle": "facco-2020",
+    "berechnet": false,
+    "hinweis": "FACCO/Kantar-TNS (alte Methode)"
+   },
+   {
+    "land": "FR",
+    "jahr": 2022,
+    "hunde": 7600000,
+    "katzen": 14900000,
+    "quelle": "facco-2024",
+    "berechnet": false,
+    "hinweis": "Vergleichswert 2022 laut Bericht (alte Methode)"
+   },
+   {
+    "land": "FR",
+    "jahr": 2024,
+    "hunde": 9900000,
+    "katzen": 16600000,
+    "quelle": "facco-2024",
+    "berechnet": false,
+    "hinweis": "Odoxa, neue digitale Methode"
+   },
+   {
+    "land": "FR",
+    "jahr": 2025,
+    "hunde": 9600000,
+    "katzen": 16600000,
+    "quelle": "facco-2026",
+    "berechnet": false,
+    "hinweis": "Barometer 2025-2026, Feldzeit 06/2025-02/2026"
+   },
+   {
+    "land": "IT",
+    "jahr": 2023,
+    "hunde": 8800000,
+    "katzen": 10200000,
+    "quelle": "assalco-2024",
+    "berechnet": false,
+    "hinweis": "Assalco = FEDIAF-Mitglied"
+   },
+   {
+    "land": "IT",
+    "jahr": 2024,
+    "hunde": 9000000,
+    "katzen": 11900000,
+    "quelle": "assalco-2025",
+    "berechnet": false,
+    "hinweis": "Assalco = FEDIAF-Mitglied; identisch mit FEDIAF 2024"
+   },
+   {
+    "land": "ES",
+    "jahr": 2025,
+    "hunde": 7562893,
+    "katzen": 5619967,
+    "quelle": "es-registros-2026",
+    "berechnet": false,
+    "hinweis": "Registerbestand der Autonomen Gemeinschaften, keine Befragung"
+   },
+   {
+    "land": "NL",
+    "jahr": 2024,
+    "hunde": 1800000,
+    "katzen": 3000000,
+    "quelle": "nl-licg-2025",
+    "berechnet": false,
+    "hinweis": "Vorjahreswerte im Bericht 2025 ('was 1,8'; Katzen 'gleich geblieben')"
+   },
+   {
+    "land": "NL",
+    "jahr": 2025,
+    "hunde": 1700000,
+    "katzen": 3000000,
+    "quelle": "nl-licg-2025",
+    "berechnet": false,
+    "hinweis": "Ipsos I&O, ca. 4.000 Befragte"
+   },
+   {
+    "land": "NL",
+    "jahr": 2026,
+    "hunde": 1800000,
+    "katzen": 3200000,
+    "quelle": "nl-ipsos-2026",
+    "berechnet": false,
+    "hinweis": "Feldzeit Februar 2026"
+   },
+   {
+    "land": "SE",
+    "jahr": 2020,
+    "hunde": 934000,
+    "katzen": 1441000,
+    "quelle": "se-novus",
+    "berechnet": false,
+    "hinweis": "Novus für Agria/SKK"
+   },
+   {
+    "land": "SE",
+    "jahr": 2024,
+    "hunde": 926000,
+    "katzen": 1641000,
+    "quelle": "se-novus",
+    "berechnet": false,
+    "hinweis": "Novus für Agria/SKK"
+   },
+   {
+    "land": "SE",
+    "jahr": 2026,
+    "hunde": 951000,
+    "katzen": 1582000,
+    "quelle": "se-novus",
+    "berechnet": false,
+    "hinweis": "Novus für Agria/SKK"
+   },
+   {
+    "land": "SE",
+    "jahr": 2026,
+    "hunde": 1052000,
+    "katzen": null,
+    "quelle": "se-hundregister",
+    "berechnet": false,
+    "hinweis": "Registerbestand Hunde (Stand 11/2026); Katzen nicht registriert"
+   },
+   {
+    "land": "AT",
+    "jahr": 2022,
+    "hunde": 836000,
+    "katzen": 1985000,
+    "quelle": "at-oehtv-2024",
+    "berechnet": false,
+    "hinweis": "Vorjahreswert laut OTS"
+   },
+   {
+    "land": "AT",
+    "jahr": 2023,
+    "hunde": 836000,
+    "katzen": 2019000,
+    "quelle": "at-oehtv-2024",
+    "berechnet": false,
+    "hinweis": "Bezugsjahr vermutet (veröffentlicht 05/2024); identisch mit FEDIAF 2023 und 2024"
+   },
+   {
+    "land": "CH",
+    "jahr": 2025,
+    "hunde": 515000,
+    "katzen": 1512000,
+    "quelle": "ch-vhn-2025",
+    "berechnet": false,
+    "hinweis": "identisch mit FEDIAF 2023/2024 (CH-Wert dort = 2025)"
+   }
+  ],
+  "abweichungen": [
+   {
+    "land": "ES",
+    "thema": "FEDIAF-Bruch 2023->2024 und Register",
+    "werte": "FEDIAF 2022: 9,31 Mio. Hunde / 5,86 Mio. Katzen; FEDIAF 2023: 9,46 / 5,95 (geschätzt, keine Verbandsdaten); FEDIAF 2024: 6,96 / 4,94 (Verbandsdaten ANFAAC); Register 2025: 7,56 / 5,62",
+    "erklaerung": "Die 9,3-9,5 Mio. Hunde (2021-2023) sind fortgeschriebene Altwerte; 2024 erstmals wieder Verbandsdaten, -26 % bei Hunden. Register (Bestand 2025) liegt 9 % (Hunde) bzw. 14 % (Katzen) über FEDIAF 2024. FEDIAF 2020 (6,73 Mio.) liegt nahe am neuen Niveau. Empfehlung: ES 2021-2023 aus FEDIAF nicht als Zeitreihe nutzen."
+   },
+   {
+    "land": "FR",
+    "thema": "Methodenwechsel FACCO 2024",
+    "werte": "FEDIAF 2022 und 2023: 7,6 Mio. Hunde / 14,9 Mio. Katzen; FACCO 2024 (Odoxa): 9,9 / 16,6; FEDIAF 2024: 9,7 / 16,7; FACCO 2025-26: 9,6 / 16,6",
+    "erklaerung": "+30 % Hunde ist überwiegend Methode (online statt Kantar/TNS), nicht Wachstum. FEDIAF hat 2023 intern restated, aber nicht veröffentlicht. FEDIAF 2024 (9,7) entspricht dem FACCO-Barometer 2025 (laut Dépêche 9,6 + 0,1), nicht der Erhebung Frühjahr 2024 (9,9)."
+   },
+   {
+    "land": "GB",
+    "thema": "Industrie- vs. Tierschutzbefragung",
+    "werte": "2024: FEDIAF 13,4 Mio. Hunde / 12,3 Mio. Katzen; UK Pet Food 13,5 / 12,5; PDSA 10,6 / 10,8. 2026: UK Pet Food 15,5 / 13,1; PDSA 10,2 / 11,3",
+    "erklaerung": "PDSA rechnet über Erwachsene (YouGov), UK Pet Food über Haushalte (Kantar/Soulor) – Differenz 2024 rund 27 % bei Hunden, 16 % bei Katzen; 2026 klafft es auf 52 % (Hunde) auseinander. UK Pet Food hielt 2025 die eigenen Zahlen wegen unplausibel hoher Hundezahl zurück. FEDIAF = UK Pet Food. Sprung 2020->2021 (8,5 -> 12 Mio. Hunde) ist Methodenwechsel von UK Pet Food."
+   },
+   {
+    "land": "SE",
+    "thema": "FEDIAF deutlich über nationaler Befragung",
+    "werte": "2024: FEDIAF 1,155 Mio. Hunde / 1,723 Mio. Katzen; Novus (Agria/SKK) 0,926 / 1,641; Hunderegister 1,052 Mio. (11/2026)",
+    "erklaerung": "FEDIAF liegt bei Hunden 25 % über Novus und 10 % über dem Register (Register enthält auch tote, nicht abgemeldete Hunde, ist also eher Obergrenze). FEDIAF-Hundewert für SE wahrscheinlich zu hoch. Katzen +5 %."
+   },
+   {
+    "land": "NL",
+    "thema": "Katzen in FEDIAF-Erstfassung 2022",
+    "werte": "FEDIAF 2022 Erstfassung: 1,9 Mio. Katzen, Revision: 3,01 Mio.; FEDIAF 2024: 1,667 Mio. Hunde / 3,001 Mio. Katzen; Ipsos 2024: 1,8 / 3,0; 2025: 1,7 / 3,0",
+    "erklaerung": "Revidierte FEDIAF-Werte passen zur Ipsos-Befragung (Hunde -7 %). Erstfassung 2022 (Katzen) offensichtlich fehlerhaft."
+   },
+   {
+    "land": "DE",
+    "thema": "FEDIAF = IVH/ZZF",
+    "werte": "2019-2025 identisch; Ausnahme FEDIAF 2018 Katzen 14,5 Mio. vs. IVH 14,8 Mio.",
+    "erklaerung": "IVH/ZZF liefern die FEDIAF-Zahl; keine unabhängige Zweitquelle gefunden (Steuer-/Registerdaten zu Hunden nicht bundesweit). Achtung: IVH 2025 meldet 10,0 Mio. Hunde (-0,5 Mio.)."
+   },
+   {
+    "land": "IT",
+    "thema": "FEDIAF = Assalco",
+    "werte": "2024: beide 9,0 Mio. Hunde / 11,9 Mio. Katzen; 2023: FEDIAF 8,766 / 10,244, Assalco 8,8 / 10,2",
+    "erklaerung": "Gleiche Herkunft; unabhängige Quelle (Anagrafe canina) nicht ausgewertet. Katzen +16 % 2023->2024 laut Assalco echte Zunahme (+1 Mio.)."
+   },
+   {
+    "land": "AT, CH",
+    "thema": "FEDIAF = nationaler Verband",
+    "werte": "AT 836.000 / 2.019.000 (ÖHTV und FEDIAF 2023/2024); CH 515.000 / 1.512.000 bzw. 1.520.000 (VHN 2025 und FEDIAF 2023/2024)",
+    "erklaerung": "Gleiche Herkunft. FEDIAF schreibt CH 2025 in die Jahre 2023 und 2024; FEDIAF CH 2022 war 544.000 / 1.853.000 (alte VHN-Erhebung)."
+   },
+   {
+    "land": "CY, LT, LU, MT, SK",
+    "thema": "FEDIAF-Sprünge durch EMA-Angleichung 2024",
+    "werte": "CY Hunde 59.000 -> 179.000; LT Hunde 614.000 -> 312.000, Katzen 675.000 -> 163.000; LU Hunde 72.000 -> 47.000; MT Hunde 74.000 -> 100.000, Katzen 87.000 -> 23.000; SK Hunde 909.000 -> 1.436.000",
+    "erklaerung": "FEDIAF hat 2024 auf EMA-Populationsdaten umgestellt und 2023 intern zurückgerechnet (nicht veröffentlicht). 2023er Werte dieser Länder nicht mit 2024 verketten. Malta-Katzen 23.000 wirkt unplausibel niedrig (EMA-Jahresbericht 2024, Annex 5.2, nennt selbst Korrekturen, z. B. Zypern-Katzen höher als bei FEDIAF)."
+   },
+   {
+    "land": "BE, HU, PL, PT",
+    "thema": "Weitere FEDIAF-Brüche",
+    "werte": "BE Hunde 1,34 Mio. (2021) -> 2,03 Mio. (2022); HU Hunde 1,18 Mio. (2018) -> 2,05 (2019), 2,17 (2022 Erstf.) vs. 2,80 (2022 rev.); PL Katzen 4,08 Mio. (2021) -> 7,13/7,25 (2022); PT Hunde 2,1 Mio. (2021) -> 2,6/2,84 (2022) -> 3,07 (2024)",
+    "erklaerung": "Methoden- und Quellenwechsel der Verbände bzw. Neuschätzung durch Soulor; nicht als Entwicklung lesen."
+   },
+   {
+    "land": "alle (vermutlich GB)",
+    "thema": "FF 2021: Totale passen nicht zu den Zeilen",
+    "werte": "Zeilensumme Hunde 96.247.732 vs. gedruckt 92.947.732 (-3,3 Mio.); Katzen 117.588.248 vs. 113.588.248 (-4,0 Mio.); EU-Total um dieselben Beträge zu niedrig",
+    "erklaerung": "Ein EU-28-Land wurde nach der Summenbildung geändert; UK (12/12 Mio. nach 8,5/7,9 Mio. 2020) ist der wahrscheinlichste Kandidat – unbelegt. Länderzeilen verwenden, Totale ignorieren."
+   },
+   {
+    "land": "alle",
+    "thema": "Druckfehler",
+    "werte": "FEDIAF FF 2022 (Ausgabe 2024): gedruckte Katzensumme Europa 129.113.400, Zeilensumme 129.133.400",
+    "erklaerung": "Für Länderwerte unerheblich."
+   }
+  ],
+  "luecken": [
+   {
+    "land": "HR",
+    "jahre": "2018-2021",
+    "grund": "In FEDIAF bis FF 2021 und in der Erstfassung 2022 nicht enthalten; erst ab FF 2022 (rev.)."
+   },
+   {
+    "land": "CY, LU, MT, IS, RS, BA, MK (auch AL, XK, ME, MD, LI)",
+    "jahre": "2018-2022",
+    "grund": "Erst ab FF 2023 (Ausgabe 2025) in FEDIAF. Für CY, LU, MT existieren laut FEDIAF intern rückgerechnete 2023er-Werte (EMA), unveröffentlicht."
+   },
+   {
+    "land": "alle",
+    "jahre": "2025",
+    "grund": "FEDIAF-Daten 2025 erscheinen erst Juni 2027. National vorhanden: DE, FR, NL, SE (2026), CH, GB (PDSA), ES (Register)."
+   },
+   {
+    "land": "alle FEDIAF-Schätzländer",
+    "jahre": "2023-2024",
+    "grund": "Für AL, BA, BG, HR, CY, DK, EE, FI, GR, IS, IE, XK, LV, LI, LT, LU, MT, ME, MK, PT, MD, RO, RS, SI keine Verbandsdaten – FEDIAF-Werte sind Modellschätzungen (Soulor). Keine nationale Zweitquelle recherchiert."
+   },
+   {
+    "land": "PL, BE, CZ, HU, SK, NO, IE, DK, FI, PT, RO, GR",
+    "jahre": "alle",
+    "grund": "Keine unabhängige nationale Zweitquelle gefunden bzw. nicht recherchiert (PL: Presseberichte zitieren nur FEDIAF)."
+   },
+   {
+    "land": "EU (EMA)",
+    "jahre": "2023-2024",
+    "grund": "EMA hat Hunde-/Katzenpopulationen 2024 je Land erhoben (ESUAvet-Bericht 2024, Annex 5.2 erwähnt Korrekturen). Die Ländertabelle war im Bericht-PDF nicht auffindbar; Download von ema.europa.eu scheiterte (HTTP 429). Wäre die beste unabhängige europaweite Zweitquelle – nächster Rechercheschritt (ESUAvet-Daten/Interactive Dashboard)."
+   },
+   {
+    "land": "FEDIAF FF 2017 und älter",
+    "jahre": "bis 2017",
+    "grund": "Nicht gesucht (nicht verlangt)."
+   }
+  ]
+ }
+}

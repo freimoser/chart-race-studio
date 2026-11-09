@@ -19,7 +19,7 @@
  *   text       titel, absaetze [...], hinweis, quelle
  *   karte      Europakarte wie ein Choroplethenbild: titel, untertitel, quelle, einheit, stufen [{ ab, name }] aufsteigend,
  *              werte { ISO-2: Zahl }, hervor (ISO-2, orange umrandet), grau [{ id, text }] für Länder ohne Wert mit Grund,
- *              lage { ISO-2: { dx, dy, kasten } } verschiebt Beschriftungen kleiner Länder (mit Linie zum Land).
+ *              unterBreite (px), legendeOben (px, Legende frei setzen, z. B. über Nordafrika), lage { ISO-2: { dx, dy, kasten } } verschiebt Beschriftungen kleiner Länder (mit Linie zum Land).
  *              Grenzen: sites/tiermedizin/data/geo/europa-50m.geojson (Natural Earth, gemeinfrei).
  * Eine Grafik, eine Aussage: Werte direkt am Balken, keine Achse; Quelle immer im Bild. Im Karussell zeigt jede
  * Folie oben, dass sie Teil einer Reihe ist (Leiste und „Bild 2 von 5“, auf Bild 1 „wischen →“).
@@ -100,12 +100,13 @@ h1 { font-size: 58px; line-height: 1.1; font-weight: 750; letter-spacing: -0.02e
 .karte svg.land { position: absolute; inset: 0; }
 .karte h1 { font-size: 58px; max-width: 400px; }
 .karte .unter { font-size: 26px; max-width: 370px; margin-top: 16px; color: #3d4248; }
+.karte .inhalt > .legende.frei { position: absolute; left: 56px; margin: 0; }
 .karte .legende { margin-top: 30px; gap: 12px; font-size: 27px; }
 .karte .legende span { width: 44px; height: 30px; }
 .karte .quelle { color: #4d555e; font-size: 20px; background: rgba(255,255,255,.88); margin: auto -56px -28px; padding: 14px 56px 18px; }`
 
 const kopf = (F) => `<div class="kopf"><h1>${esc(F.titel)}</h1>${F.jahr ? `<div class="jahr">${esc(F.jahr)}</div>` : ''}</div>
-${F.untertitel ? `<p class="unter">${esc(F.untertitel)}</p>` : ''}`
+${F.untertitel ? `<p class="unter"${F.unterBreite ? ` style="max-width:${F.unterBreite}px"` : ''}>${esc(F.untertitel)}</p>` : ''}`
 
 const ARTEN = {
   balken: (F) => {
@@ -181,7 +182,7 @@ ${hervor ? `<path d="${pfad(hervor)}" fill="none" stroke="#e36414" stroke-width=
 <g font-family="Inter" font-weight="750" text-anchor="middle" dominant-baseline="central" style="font-feature-settings:'tnum' 1">${schrift.join('')}</g>
 </svg>`
     return `${svg}${kopf(F)}
-<div class="legende">${[...stufen].reverse().map((st, i) => `<div><span style="background:${FL[stufen.length - 1 - i]}"></span>${esc(st.name)}</div>`).join('')}${F.grau?.length ? `<div><span style="background:#d9dcdf"></span>${esc(F.grauText ?? 'keine Daten')}</div>` : ''}</div>`
+<div class="legende${F.legendeOben != null ? ' frei' : ''}"${F.legendeOben != null ? ` style="top:${F.legendeOben}px"` : ''}>${[...stufen].reverse().map((st, i) => `<div><span style="background:${FL[stufen.length - 1 - i]}"></span>${esc(st.name)}</div>`).join('')}${F.grau?.length ? `<div><span style="background:#d9dcdf"></span>${esc(F.grauText ?? 'keine Daten')}</div>` : ''}</div>`
   },
   text: (F) => `<h2 class="gross">${esc(F.titel)}</h2>
 ${(F.absaetze ?? []).map((a) => `<p class="absatz">${esc(a)}</p>`).join('\n')}

@@ -1,0 +1,158 @@
+{
+  "art": "karte",
+  "titel": "Tierarzt-Umsatz je Hund und Katze",
+  "untertitel": "2024, in Euro je Tier",
+  "unterBreite": 260,
+  "quelle": "Quelle: Eurostat (sbs_ovw_act, M75 Veterinärwesen) und FEDIAF Facts & Figures 2026, 2024; Umsatz ÷ (Hunde + Katzen) berechnet. Der Umsatz enthält auch Nutztier- und Pferdepraxis, daher nur eine Annäherung. Grau: keine Daten (u. a. Großbritannien) oder nicht vergleichbar (Irland). Island (557 €) nicht im Ausschnitt",
+  "hervor": "DE",
+  "stufen": [
+    {
+      "ab": 0,
+      "name": "unter 100 €"
+    },
+    {
+      "ab": 100,
+      "name": "100–199 €"
+    },
+    {
+      "ab": 200,
+      "name": "200–299 €"
+    },
+    {
+      "ab": 300,
+      "name": "ab 300 €"
+    }
+  ],
+  "grau": [],
+  "grauText": "keine Daten",
+  "werte": {
+    "AT": 248,
+    "BA": 127,
+    "BE": 271,
+    "BG": 44,
+    "CH": 511,
+    "CY": 186,
+    "CZ": 102,
+    "DE": 247,
+    "DK": 449,
+    "EE": 92,
+    "ES": 165,
+    "FI": 236,
+    "FR": 223,
+    "GR": 131,
+    "HR": 118,
+    "HU": 35,
+    "IT": 80,
+    "LT": 142,
+    "LU": 431,
+    "LV": 55,
+    "MK": 54,
+    "MT": 147,
+    "NL": 357,
+    "NO": 351,
+    "PL": 110,
+    "PT": 85,
+    "RO": 56,
+    "RS": 121,
+    "SE": 402,
+    "SI": 134,
+    "SK": 44
+  },
+  "lage": {
+    "LU": {
+      "kasten": true,
+      "dx": -95,
+      "dy": 45,
+      "groesse": 26
+    },
+    "MT": {
+      "kasten": true,
+      "dx": 0,
+      "dy": 45,
+      "groesse": 26
+    },
+    "SI": {
+      "kasten": true,
+      "dx": -80,
+      "dy": 5,
+      "groesse": 26
+    },
+    "CY": {
+      "kasten": true,
+      "dx": -10,
+      "dy": -55,
+      "groesse": 26
+    },
+    "NL": {
+      "x": 5.75,
+      "y": 52.3,
+      "groesse": 21
+    },
+    "CH": {
+      "x": 8.25,
+      "y": 46.8,
+      "groesse": 20
+    },
+    "DK": {
+      "x": 9.2,
+      "y": 56.2,
+      "groesse": 21
+    },
+    "IT": {
+      "x": 14.6,
+      "y": 42.2
+    },
+    "NO": {
+      "x": 9.0,
+      "y": 61.3,
+      "groesse": 32
+    },
+    "FR": {
+      "x": 2.2,
+      "y": 46.2
+    },
+    "HR": {
+      "x": 16.3,
+      "y": 45.5,
+      "groesse": 26
+    },
+    "GR": {
+      "x": 22,
+      "y": 39.6
+    },
+    "SE": {
+      "x": 15.0,
+      "y": 61.3,
+      "groesse": 32
+    },
+    "FI": {
+      "x": 26,
+      "y": 62
+    },
+    "AT": {
+      "x": 14.4,
+      "y": 47.45,
+      "groesse": 24
+    },
+    "BE": {
+      "kasten": true,
+      "dx": -80,
+      "dy": -30,
+      "groesse": 26
+    },
+    "ME": {
+      "kasten": true,
+      "dx": -30,
+      "dy": 45,
+      "groesse": 24
+    },
+    "AL": {
+      "groesse": 22
+    },
+    "MK": {
+      "groesse": 22
+    }
+  },
+  "rand": 70,
+  "legendeOben": 910
+}
