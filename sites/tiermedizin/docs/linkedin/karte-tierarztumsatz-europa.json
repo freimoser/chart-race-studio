@@ -1,0 +1,138 @@
+{
+  "art": "karte",
+  "titel": "Was Tierärzte pro Kopf umsetzen",
+  "untertitel": "Umsatz der Tierarztpraxen und -kliniken 2024, in Euro je Einwohner",
+  "quelle": "Quelle: Eurostat, Unternehmensstatistik (sbs_ovw_act, Wirtschaftszweig M75 Veterinärwesen) und Bevölkerung (tps00001), 2024; je Einwohner berechnet. Umsatz der tierärztlichen Unternehmen für Heim- und Nutztiere, nicht Ausgaben der Halter. Grau: keine Daten (u. a. Großbritannien) oder nicht vergleichbar (Irland). Island (99 €) nicht im Ausschnitt",
+  "hervor": "DE",
+  "stufen": [
+    {
+      "ab": 0,
+      "name": "unter 40 €"
+    },
+    {
+      "ab": 40,
+      "name": "40–74 €"
+    },
+    {
+      "ab": 75,
+      "name": "75–99 €"
+    },
+    {
+      "ab": 100,
+      "name": "ab 100 €"
+    }
+  ],
+  "grau": [
+    {
+      "id": "GB",
+      "text": "keine Daten"
+    },
+    {
+      "id": "IE",
+      "text": "nicht vergleichbar"
+    }
+  ],
+  "grauText": "keine Daten",
+  "werte": {
+    "AT": 77,
+    "BA": 14,
+    "BE": 120,
+    "BG": 10,
+    "CH": 116,
+    "CY": 45,
+    "CZ": 34,
+    "DE": 78,
+    "DK": 97,
+    "EE": 38,
+    "GR": 16,
+    "ES": 40,
+    "FI": 76,
+    "FR": 86,
+    "HR": 38,
+    "HU": 19,
+    "IT": 28,
+    "LT": 23,
+    "LU": 97,
+    "LV": 20,
+    "MK": 6,
+    "MT": 32,
+    "NL": 93,
+    "NO": 85,
+    "PL": 47,
+    "PT": 39,
+    "RO": 26,
+    "RS": 20,
+    "SE": 110,
+    "SI": 49,
+    "SK": 16
+  },
+  "lage": {
+    "LU": {
+      "kasten": true,
+      "dx": -95,
+      "dy": 45,
+      "groesse": 26
+    },
+    "MT": {
+      "kasten": true,
+      "dx": 0,
+      "dy": 45,
+      "groesse": 26
+    },
+    "SI": {
+      "kasten": true,
+      "dx": -80,
+      "dy": 5,
+      "groesse": 26
+    },
+    "CY": {
+      "kasten": true,
+      "dx": -10,
+      "dy": -55,
+      "groesse": 26
+    },
+    "BE": {
+      "groesse": 28
+    },
+    "NL": {
+      "groesse": 28
+    },
+    "CH": {
+      "groesse": 30
+    },
+    "DK": {
+      "groesse": 28
+    },
+    "IT": {
+      "x": 14.6,
+      "y": 42.2
+    },
+    "NO": {
+      "x": 9.2,
+      "y": 61.3
+    },
+    "FR": {
+      "x": 2.2,
+      "y": 46.2
+    },
+    "HR": {
+      "x": 16.3,
+      "y": 45.5,
+      "groesse": 26
+    },
+    "GR": {
+      "x": 22,
+      "y": 39.6
+    },
+    "SE": {
+      "x": 15.2,
+      "y": 61.2,
+      "groesse": 48
+    },
+    "FI": {
+      "x": 26,
+      "y": 62
+    }
+  },
+  "rand": 70
+}

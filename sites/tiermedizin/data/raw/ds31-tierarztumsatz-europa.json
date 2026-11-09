@@ -1,0 +1,1288 @@
+{
+ "titel": "Umsatz Veterinärwesen (NACE M75) je Land, Eurostat",
+ "abgerufen": "2026-11-09",
+ "hinweis": "Umsatz der Unternehmen im Wirtschaftszweig Veterinärwesen (Tierarztpraxen, -kliniken, tierärztliche Labore; Heim- und Nutztiere), nicht Ausgaben der Halter. Je Einwohner berechnet: Umsatz 2024 / Bevölkerung 1.1.2024. Irland 2024 (3.052,81 Mio., 2022: 863,48 Mio., 2023 fehlt) nicht vergleichbar, in der Karte grau. Großbritannien bei Eurostat nicht enthalten.",
+ "daten": [
+  {
+   "date": "2021",
+   "name": "AL",
+   "value": 3.66,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "AL",
+   "value": 5.02,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "AL",
+   "value": 6.12,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "AT",
+   "value": 525.18,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "AT",
+   "value": 592.8,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "AT",
+   "value": 642.19,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "AT",
+   "value": 708.83,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "BA",
+   "value": 36.1,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "BA",
+   "value": 39.5,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "BA",
+   "value": 44.48,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "BA",
+   "value": 48.48,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "BE",
+   "value": 1231.93,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "BE",
+   "value": 1246.8,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "BE",
+   "value": 1233.03,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "BE",
+   "value": 1414.14,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "BG",
+   "value": 41.75,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "BG",
+   "value": 48.53,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "BG",
+   "value": 57.25,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "BG",
+   "value": 67.34,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "CH",
+   "value": 761.16,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "CH",
+   "value": 824.2,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "CH",
+   "value": 934.28,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "CH",
+   "value": 1039.14,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "CY",
+   "value": 31.99,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "CY",
+   "value": 33.36,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "CY",
+   "value": 37.91,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "CY",
+   "value": 43.63,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "CZ",
+   "value": 276.45,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "CZ",
+   "value": 307.67,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "CZ",
+   "value": 350.53,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "CZ",
+   "value": 371.09,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "DE",
+   "value": 4919.21,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "DE",
+   "value": 5082.1,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "DE",
+   "value": 6171.26,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "DE",
+   "value": 6526.17,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "DK",
+   "value": 504.63,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "DK",
+   "value": 531.42,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "DK",
+   "value": 581.32,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "DK",
+   "value": 578.12,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "EE",
+   "value": 34.3,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "EE",
+   "value": 38.71,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "EE",
+   "value": 45.67,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "EE",
+   "value": 52.05,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "EL",
+   "value": 115.23,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "EL",
+   "value": 125.72,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "EL",
+   "value": 149.33,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "EL",
+   "value": 163.85,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "ES",
+   "value": 1559.22,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "ES",
+   "value": 1600.34,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "ES",
+   "value": 1813.04,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "ES",
+   "value": 1958.46,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "EU27_2020",
+   "value": 20441.33,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "EU27_2020",
+   "value": 21900.0,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "EU27_2020",
+   "value": 29092.88,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "FI",
+   "value": 348.66,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "FI",
+   "value": 364.22,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "FI",
+   "value": 399.8,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "FI",
+   "value": 425.73,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "FR",
+   "value": 4701.15,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "FR",
+   "value": 4880.85,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "FR",
+   "value": 5497.49,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "FR",
+   "value": 5882.85,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "HR",
+   "value": 104.05,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "HR",
+   "value": 114.78,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "HR",
+   "value": 127.52,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "HR",
+   "value": 145.29,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "HU",
+   "value": 123.38,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "HU",
+   "value": 134.95,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "HU",
+   "value": 164.41,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "HU",
+   "value": 181.56,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "IE",
+   "value": 527.65,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "IE",
+   "value": 863.48,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "IE",
+   "value": 3052.81,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "IS",
+   "value": 26.22,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "IS",
+   "value": 30.02,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "IS",
+   "value": 32.88,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "IS",
+   "value": 37.88,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "IT",
+   "value": 1236.28,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "IT",
+   "value": 1341.86,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "IT",
+   "value": 1482.41,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "IT",
+   "value": 1664.4,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "LT",
+   "value": 38.74,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "LT",
+   "value": 45.68,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "LT",
+   "value": 56.11,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "LT",
+   "value": 67.35,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "LU",
+   "value": 51.75,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "LU",
+   "value": 54.39,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "LU",
+   "value": 60.17,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "LU",
+   "value": 65.45,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "LV",
+   "value": 27.28,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "LV",
+   "value": 32.23,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "LV",
+   "value": 33.71,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "LV",
+   "value": 37.86,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "MK",
+   "value": 8.84,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "MK",
+   "value": 9.31,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "MK",
+   "value": 10.38,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "MK",
+   "value": 11.08,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "MT",
+   "value": 12.25,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "MT",
+   "value": 15.07,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "MT",
+   "value": 18.05,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "NL",
+   "value": 1408.22,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "NL",
+   "value": 1497.42,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "NL",
+   "value": 1607.45,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "NL",
+   "value": 1665.48,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "NO",
+   "value": 448.56,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "NO",
+   "value": 487.66,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "NO",
+   "value": 458.56,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "NO",
+   "value": 469.74,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "PL",
+   "value": 1012.05,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "PL",
+   "value": 1169.74,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "PL",
+   "value": 1442.23,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "PL",
+   "value": 1725.06,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "PT",
+   "value": 336.81,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "PT",
+   "value": 362.84,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "PT",
+   "value": 404.72,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "PT",
+   "value": 441.78,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "RO",
+   "value": 335.55,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "RO",
+   "value": 383.78,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "RO",
+   "value": 439.88,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "RO",
+   "value": 487.32,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "RS",
+   "value": 108.8,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "RS",
+   "value": 106.63,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "RS",
+   "value": 122.05,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "RS",
+   "value": 129.3,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "SE",
+   "value": 792.69,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "SE",
+   "value": 850.34,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "SE",
+   "value": 1066.58,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "SE",
+   "value": 1156.43,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "SI",
+   "value": 85.54,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "SI",
+   "value": 89.39,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "SI",
+   "value": 98.45,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "SI",
+   "value": 104.4,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2021",
+   "name": "SK",
+   "value": 59.36,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2022",
+   "name": "SK",
+   "value": 69.02,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2023",
+   "name": "SK",
+   "value": 80.05,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "SK",
+   "value": 87.42,
+   "art": "Umsatz Mio. Euro",
+   "source": "Eurostat sbs_ovw_act, NACE M75, NETTUR_MEUR"
+  },
+  {
+   "date": "2024",
+   "name": "AD",
+   "value": 85101,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "AL",
+   "value": 2390942,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "AM",
+   "value": 2991201,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "AT",
+   "value": 9158750,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "AZ",
+   "value": 10180770,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "BA",
+   "value": 3417089,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "BE",
+   "value": 11817096,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "BG",
+   "value": 6445481,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "CH",
+   "value": 8962258,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "CY",
+   "value": 966365,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "CZ",
+   "value": 10900555,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "DE",
+   "value": 83456045,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "DK",
+   "value": 5961249,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "EA20",
+   "value": 350922318,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "EA21",
+   "value": 357367799,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "EE",
+   "value": 1374687,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "EL",
+   "value": 10375764,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "ES",
+   "value": 48619695,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "EU27_2020",
+   "value": 450054483,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "FI",
+   "value": 5603851,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "FR",
+   "value": 68669303,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "GE",
+   "value": 3694608,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "HR",
+   "value": 3861967,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "HU",
+   "value": 9584627,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "IE",
+   "value": 5351681,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "IS",
+   "value": 383567,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "IT",
+   "value": 58971230,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "LI",
+   "value": 40015,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "LT",
+   "value": 2885891,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "LU",
+   "value": 672050,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "LV",
+   "value": 1878575,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "MC",
+   "value": 38367,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "MD",
+   "value": 2423287,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "ME",
+   "value": 623680,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "MK",
+   "value": 1826247,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "MT",
+   "value": 563443,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "NL",
+   "value": 17942942,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "NO",
+   "value": 5550203,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "PL",
+   "value": 36620970,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "PT",
+   "value": 11204347,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "RO",
+   "value": 19067576,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "RS",
+   "value": 6605168,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "SE",
+   "value": 10551707,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "SI",
+   "value": 2123949,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "SK",
+   "value": 5424687,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "TR",
+   "value": 85372377,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  },
+  {
+   "date": "2024",
+   "name": "UK",
+   "value": 68903810,
+   "art": "Bevölkerung 1. Januar",
+   "source": "Eurostat tps00001"
+  }
+ ]
+}

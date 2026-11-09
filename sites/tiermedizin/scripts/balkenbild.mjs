@@ -17,6 +17,10 @@
  *   gestapelt  wie balken, dazu teile [Name je Abschnitt], balken [{ name, zusatz, werte [je Abschnitt] }]
  *   paare      zwei Balken je Zeile zum Vergleich: teile [Name je Balken], balken [{ name, werte [a, b] }]
  *   text       titel, absaetze [...], hinweis, quelle
+ *   karte      Europakarte wie ein Choroplethenbild: titel, untertitel, quelle, einheit, stufen [{ ab, name }] aufsteigend,
+ *              werte { ISO-2: Zahl }, hervor (ISO-2, orange umrandet), grau [{ id, text }] für Länder ohne Wert mit Grund,
+ *              lage { ISO-2: { dx, dy, kasten } } verschiebt Beschriftungen kleiner Länder (mit Linie zum Land).
+ *              Grenzen: sites/tiermedizin/data/geo/europa-50m.geojson (Natural Earth, gemeinfrei).
  * Eine Grafik, eine Aussage: Werte direkt am Balken, keine Achse; Quelle immer im Bild. Im Karussell zeigt jede
  * Folie oben, dass sie Teil einer Reihe ist (Leiste und „Bild 2 von 5“, auf Bild 1 „wischen →“).
  */
@@ -25,6 +29,7 @@ import path from 'node:path'
 import os from 'node:os'
 import { execFileSync } from 'node:child_process'
 import { pathToFileURL } from 'node:url'
+import { geoAzimuthalEqualArea, geoPath } from 'd3-geo'
 
 const CHROME = process.env.CHROME_BIN ?? [
   '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', '/usr/bin/google-chrome', '/usr/bin/chromium',
@@ -89,7 +94,15 @@ h1 { font-size: 58px; line-height: 1.1; font-weight: 750; letter-spacing: -0.02e
 .quelle { margin-top: auto; padding-top: 24px; font-size: 22px; line-height: 1.4; color: #6e7681; }
 .band { flex-shrink: 0; height: 112px; background: #0f4c5c; color: #fff; padding: 0 64px; display: flex; align-items: center; justify-content: space-between; border-top: 8px solid #e36414; }
 .marke { display: flex; align-items: center; gap: 18px; font-size: 32px; font-weight: 700; letter-spacing: -0.01em; }
-.adresse { font-size: 30px; font-weight: 600; color: #9adbcf; }`
+.adresse { font-size: 30px; font-weight: 600; color: #9adbcf; }
+.karte .inhalt { position: relative; padding: 56px 56px 28px; }
+.karte .inhalt > *:not(svg) { position: relative; }
+.karte svg.land { position: absolute; inset: 0; }
+.karte h1 { font-size: 58px; max-width: 400px; }
+.karte .unter { font-size: 26px; max-width: 370px; margin-top: 16px; color: #3d4248; }
+.karte .legende { margin-top: 30px; gap: 12px; font-size: 27px; }
+.karte .legende span { width: 44px; height: 30px; }
+.karte .quelle { color: #4d555e; font-size: 20px; background: rgba(255,255,255,.88); margin: auto -56px -28px; padding: 14px 56px 18px; }`
 
 const kopf = (F) => `<div class="kopf"><h1>${esc(F.titel)}</h1>${F.jahr ? `<div class="jahr">${esc(F.jahr)}</div>` : ''}</div>
 ${F.untertitel ? `<p class="unter">${esc(F.untertitel)}</p>` : ''}`
@@ -122,6 +135,54 @@ ${F.balken.map((b) => {
 ${F.balken.map((b) => `  <div><div class="name">${esc(b.name)}</div>${b.werte.map((w, i) => `<div class="zeile eng"><div class="spur"><div class="fuell" style="width:${(w / max * 100).toFixed(2)}%;background:${FARBEN[i]}"></div></div><div class="wert">${zahl(w, F.dezimalen)}${esc(F.einheit ?? '')}</div></div>`).join('')}</div>`).join('\n')}
 </div>`
   },
+  karte: (F) => {
+    const geo = lies('sites/tiermedizin/data/geo/europa-50m.geojson')
+    const B = 1080, H = 1350 - 112
+    // Flächentreue Projektion mit Mittelpunkt Mitteleuropa; der Ausschnitt reicht von Portugal bis Zypern und Finnland.
+    // Der Norden darf oben aus dem Bild laufen, damit Mittel- und Südeuropa groß genug für die Zahlen werden.
+    const ecken = { type: 'MultiPoint', coordinates: F.ausschnitt ?? [[-9.5, 37], [-9, 43.5], [34.6, 34.6], [26, 35], [14.5, 35.8], [28, 62], [5, 61]] }
+    const proj = geoAzimuthalEqualArea().rotate([-12, -52]).fitExtent([[F.rand ?? 24, 40], [B - 12, H - 130]], ecken)
+    const pfad = geoPath(proj)
+    const stufen = F.stufen
+    const stufe = (v) => stufen.reduce((s, st, i) => (v >= st.ab ? i : s), 0)
+    const FL = ['#d4e9e6', '#8fc6be', '#3a8a86', '#0f4c5c']
+    const TX = ['#1d2329', '#1d2329', '#fff', '#fff']
+    const flaechen = [], schrift = []
+    for (const f of geo.features) {
+      const id = f.properties.id === 'CYN' ? 'CY-N' : f.properties.id
+      const v = F.werte[id]
+      const hat = v != null
+      flaechen.push(`<path d="${pfad(f)}" fill="${hat ? FL[stufe(v)] : '#d9dcdf'}" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>`)
+      if (!hat) continue
+      // Beschriftung im größten Teil des Landes (Frankreich ohne Korsika, Norwegen ohne Inseln).
+      const teile = f.geometry.coordinates.map((c) => ({ type: 'Polygon', coordinates: c }))
+      const gross = teile.reduce((a, b) => (pfad.area(b) > pfad.area(a) ? b : a))
+      let [x, y] = pfad.centroid(gross)
+      const L = F.lage?.[id] ?? {}
+      if (L.x != null) [x, y] = proj([L.x, L.y])
+      const groesse = L.groesse ?? Math.max(24, Math.min(66, Math.sqrt(pfad.area(gross)) / 4.2))
+      const text = zahl(v, F.dezimalen)
+      if (L.kasten) {
+        const [ax, ay] = [x, y]
+        x += L.dx; y += L.dy
+        const w = text.length * groesse * 0.62 + 20, h = groesse + 14
+        schrift.push(`<line x1="${ax}" y1="${ay}" x2="${x}" y2="${y}" stroke="#3d4248" stroke-width="2"/><rect x="${x - w / 2}" y="${y - h / 2}" width="${w}" height="${h}" rx="5" fill="${FL[stufe(v)]}" stroke="#fff" stroke-width="2.5"/>`)
+        schrift.push(`<text x="${x}" y="${y}" font-size="${groesse}" fill="${TX[stufe(v)]}">${text}</text>`)
+      } else {
+        x += L.dx ?? 0; y += L.dy ?? 0
+        schrift.push(`<text x="${x}" y="${y}" font-size="${groesse}" fill="${TX[stufe(v)]}"${L.drehen ? ` transform="rotate(${L.drehen} ${x} ${y})"` : ''}>${text}</text>`)
+      }
+    }
+    const hervor = F.hervor ? geo.features.find((f) => f.properties.id === F.hervor) : null
+    const svg = `<svg class="land" width="${B}" height="${H}" viewBox="0 0 ${B} ${H}">
+<rect width="${B}" height="${H}" fill="#f4f7f8"/>
+${flaechen.join('')}
+${hervor ? `<path d="${pfad(hervor)}" fill="none" stroke="#e36414" stroke-width="5" stroke-linejoin="round"/>` : ''}
+<g font-family="Inter" font-weight="750" text-anchor="middle" dominant-baseline="central" style="font-feature-settings:'tnum' 1">${schrift.join('')}</g>
+</svg>`
+    return `${svg}${kopf(F)}
+<div class="legende">${[...stufen].reverse().map((st, i) => `<div><span style="background:${FL[stufen.length - 1 - i]}"></span>${esc(st.name)}</div>`).join('')}${F.grau?.length ? `<div><span style="background:#d9dcdf"></span>${esc(F.grauText ?? 'keine Daten')}</div>` : ''}</div>`
+  },
   text: (F) => `<h2 class="gross">${esc(F.titel)}</h2>
 ${(F.absaetze ?? []).map((a) => `<p class="absatz">${esc(a)}</p>`).join('\n')}
 ${F.hinweis ? `<p class="hinweis">${esc(F.hinweis)}</p>` : ''}`,
@@ -133,7 +194,7 @@ const seite = (F, nr = 0, gesamt = 0) => {
   const art = ARTEN[F.art ?? 'balken']
   if (!art) throw new Error(`Unbekannte Art „${F.art}“`)
   if (!F.quelle) throw new Error(`Folie „${F.titel}“ ohne Quelle – kein Bild ohne Quelle im Bild.`)
-  return `<section class="seite${gesamt > 1 ? ' mit-reihe' : ''}"><div class="inhalt">
+  return `<section class="seite${gesamt > 1 ? ' mit-reihe' : ''}${F.art === 'karte' ? ' karte' : ''}"><div class="inhalt">
 ${gesamt > 1 ? reihe(nr, gesamt) : ''}${art(F)}
 <p class="quelle">${esc(F.quelle)} · ${F.art === 'text' ? '' : 'Grafik: '}${esc(L.operator)}</p>
 </div>
