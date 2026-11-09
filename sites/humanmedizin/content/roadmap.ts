@@ -41,7 +41,7 @@ export const POSTS: RoadmapPost[] = [
     figures: ['CGM (MEDISTAR, TURBOMED, ALBIS, M1 PRO, DATA VITAL): 40.206 (2013) → 22.070 (2025), 50,2 → 32,4 Prozent der ärztlichen Systeme', 'medatixx (x.isynet, x.concept, x.comfort, medatixx, easymed, ab 2022 EL): 21.896 → 19.159, 27,3 → 28,1 Prozent', 'Medical Office, tomedo, T2med zusammen: 1.122 → 14.308, 1,4 → 21,0 Prozent', 'Übernahmen: medatixx 2007 aus DOCexpert und MCS, CGM kaufte MEDISTAR 2002/03 und TurboMed 12/2003'],
     sampleId: 'pvs-hersteller', chart: 'line', dataStatus: 'belegt',
     dataNote: 'Datensatz pvs-hersteller steht. EL kommt 2022 durch die Übernahme von Softland zu medatixx – im Post als Sprung erklären. 2017–2020 gerechnet wie im Datensatz pvs-installationen.',
-    refs: [1],
+    refs: [1, 10, 12],
   },
   {
     nr: 3, arc: 'software', status: 'geplant',
@@ -50,7 +50,7 @@ export const POSTS: RoadmapPost[] = [
     figures: ['Arztgruppe Psychotherapeuten: 10,6 Prozent aller Installationen (2007), rund 30 Prozent (2025)', 'Elefant 10.967, psyprax 10.519, Epikur 6.008, SMARTY 4.982, PsychoDat 1.705 (Ende 2025)', 'Elefant, psyprax, PsychoDat, Epikur, SMARTY: 84 bis 98 Prozent ihrer Installationen in dieser Arztgruppe', 'Ärztliche Abrechnungsstellen seit 2014 rund 13.000 weniger, psychotherapeutische rund 11.000 mehr'],
     sampleId: 'pvs-psychotherapie', chart: 'line', dataStatus: 'belegt',
     dataNote: 'Datensatz pvs-psychotherapie steht (22.10.2026): MEDISTAR gegen Elefant, psyprax, Epikur 2013–2025, 16 Werte 2017–2020 gerechnet. Größe der Arztgruppe Psychotherapeuten nur als Text (2007 und 2013–2016 belegt, 2021–2025 als Mindestwert aus den Top 20).',
-    refs: [1],
+    refs: [1, 10],
   },
   {
     nr: 4, arc: 'software', status: 'geplant',
@@ -59,7 +59,7 @@ export const POSTS: RoadmapPost[] = [
     figures: ['tomedo: 7 (2013) → 4.530 (2025); 2025 Quartal für Quartal 3.628, 3.883, 4.219, 4.530', 'T2med: 0 (Markteintritt 2015) → 4.078', 'ETERNO Cloud (Browser): 1 (2014) → 778', 'Medical Office: 1.115 → 5.700, seit 2021 nur noch leicht steigend'],
     sampleId: 'pvs-aufsteiger', chart: 'line', dataStatus: 'belegt',
     dataNote: 'Datensatz pvs-aufsteiger steht (22.10.2026), Jahresende 2013–2025, 17 Werte gerechnet. Quartalswerte 2021–2025 sind belegt und können eine feinere Fassung tragen. Medical-Office-Sprung 2017 offen nennen.',
-    refs: [1, 2],
+    refs: [1, 2, 5, 12],
   },
   {
     nr: 5, arc: 'software', status: 'geplant',
@@ -68,7 +68,7 @@ export const POSTS: RoadmapPost[] = [
     figures: ['Größte Zugewinne 2021–2025: medatixx +3.654, tomedo +2.872, T2med +2.595, Epikur +1.527', 'Größte Verluste: TURBOMED −3.385, MEDISTAR −2.375, x.isynet −1.541, x.concept −1.360, ALBIS −1.146', 'Gesamtzahl aller Installationen: 119.405 → 116.954', 'medatixx-intern: Gewinne des neuen medatixx entsprechen etwa den Verlusten von x.isynet, x.concept und x.comfort'],
     sampleId: 'pvs-saldo', chart: 'line', dataStatus: 'belegt',
     dataNote: 'Datensatz pvs-saldo steht (22.10.2026). Nettoveränderungen, keine Wechselströme: Die KBV sagt nicht, wer von wem zu wem wechselt. Im Post deutlich sagen. Datensatz pvs-saldo (Pflegeprotokoll A8). § 371 SGB V (Archivierungs- und Wechselschnittstelle) als Kontext.',
-    refs: [1, 4],
+    refs: [1, 2, 4, 12],
   },
   {
     nr: 6, arc: 'vernetzung', status: 'geplant',
@@ -77,7 +77,7 @@ export const POSTS: RoadmapPost[] = [
     figures: ['LDT-Befund-Import zugelassen: 22 von 28 ärztlichen Systemen, 95,8 Prozent der Installationen (KBV, Stand 21.10.2026)', 'LDT-Auftrag-Export: kein ärztliches Praxissystem, nur Epikur und Laborsysteme', 'PraxisBarometer 2025: 80 Prozent der Arztpraxen empfangen Labordaten digital, 39 Prozent senden (2018: 69 und 15)', 'Ab 2024 geänderte Antwortformulierung (inkl. Aufträgen) – Sprung beim Senden teils Methodik'],
     sampleId: 'labordaten-praxisbarometer', chart: 'line', dataStatus: 'belegt',
     dataNote: 'Recherche fertig: recherche/schnittstellen.md, data/raw/pvs-zulassungen.csv, ti-nutzung.csv. Basis der Anteile: die 28 ärztlichen Systeme mit mindestens 500 Installationen (Recherche nennt 96,2 Prozent über alle 51 Systeme). Wie viele Praxen tatsächlich LDT 3 statt LDT 2 nutzen, ist nicht belegt – nicht behaupten.',
-    refs: [1],
+    refs: [1, 7, 11],
   },
   {
     nr: 7, arc: 'vernetzung', status: 'geplant',
@@ -95,7 +95,7 @@ export const POSTS: RoadmapPost[] = [
     figures: ['MVZ: 70 (2004) → 2.156 (2015) → 5.305 (2025), davon mit Krankenhaus als Träger 2.659 (50,1 Prozent)', 'In MVZ tätig Ende 2025: 32.062 angestellte Ärztinnen und Ärzte, 1.788 Vertragsärzte (94,7 Prozent angestellt)', 'Ärztinnen und Ärzte in MVZ und anderen Einrichtungen (ohne Psychotherapeuten, Bundesarztregister): 13.826 (2015) → 32.885 (2025), 10,2 → 22,4 Prozent', 'Ärztliche Einzelpraxen: 62.524 (2015) → 50.701 (2025, aus der Registerstatistik summiert), minus 18,9 Prozent'],
     sampleId: 'aerzte-praxisform', chart: 'line', dataStatus: 'belegt',
     dataNote: 'Datensätze aerzte-praxisform (Leitgrafik, 2015–2025) und mvz-anzahl (2004–2025, im Artikel per ::grafik) stehen seit 22.10.2026. Recherche: recherche/mvz.md, data/raw/mvz.csv (MVZ-Statistik 2004–2025 lückenlos, Bundesarztregister 2015/2016–2025). Falle: Mit psychotherapeutischen Einzelpraxen (plus 48 Prozent) schrumpfen die Einzelpraxen nur um 2,7 Prozent – im Titel „ärztliche Einzelpraxis“. MVZ-Statistik und Bundesarztregister weichen bis 2 Prozent ab, nicht in einer Grafik mischen. Träger nicht als Linien zeigen (Mehrfachträgerschaft). Datensätze: Ärzte nach Praxisform 2015–2025 (Leitgrafik), MVZ gesamt und Krankenhaus-MVZ 2004–2025.',
-    refs: [5],
+    refs: [1, 3, 5, 9],
   },
   {
     nr: 9, arc: 'versorgung', status: 'geplant',
@@ -122,7 +122,7 @@ export const POSTS: RoadmapPost[] = [
     figures: ['Laborärzte im Bundesarztregister: 1.166 (2013) → 1.386 (2025), davon angestellt in MVZ und Einrichtungen 793 → 1.226', 'Mit eigener Zulassung: 288 → 99; Vertragsärzte in Einzelpraxen 92 → 35', 'Zweitquelle BÄK (FA Laboratoriumsmedizin): niedergelassen 337 → 113, angestellt 329 → 725 (Bruch 2021/2022 beachten)', 'Seit 2025 Pauschale für ein System zur digitalen Auftragserteilung (GOP 40092): im 1. Quartal 2025 bei 80,5 Prozent der Fälle mit Transportpauschale – misst Bereitstellung, nicht digitale Aufträge aus der Praxissoftware'],
     sampleId: 'labor-aerzte', chart: 'line', dataStatus: 'belegt',
     dataNote: 'Recherche fertig: recherche/labor.md, data/raw/labor.csv. Keine Quelle für die Zahl der Laborpraxen oder Labor-MVZ; Konzentration nur über Sonic (Umsatz DE 2011–2026) und SYNLAB 2022/2023, Limbach/amedes ohne Stichtag. FleXChange-Bezug (Labor-Order-Entry) nur als offener Hinweis.',
-    refs: [6],
+    refs: [6, 8],
   },
   {
     nr: 12, arc: 'software', status: 'geplant',
