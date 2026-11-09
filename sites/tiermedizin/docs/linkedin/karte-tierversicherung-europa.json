@@ -1,0 +1,149 @@
+{
+  "art": "karte",
+  "titel": "Versicherte Hunde und Katzen",
+  "untertitel": "Anteil mit Kranken- oder OP-Versicherung 2024",
+  "unterBreite": 225,
+  "quelle": "Quelle: eigene Berechnung aus Zahlen der Versicherer und Verbände (u. a. GDV, ABI, Finans Norge, UNESPA) geteilt durch den Tierbestand (FEDIAF, PDSA, IVH/ZZF). * nur Halterbefragungen oder Schätzungen ohne Zählung, vermutlich zu hoch: Wo beides vorliegt, liegen Befragungen 2- bis 3-mal über den Zahlen der Versicherer. Grau: keine oder widersprüchliche Daten",
+  "hervor": "DE",
+  "stufen": [
+    {
+      "ab": 0,
+      "name": "unter 5 %"
+    },
+    {
+      "ab": 5,
+      "name": "5–14 %"
+    },
+    {
+      "ab": 15,
+      "name": "15–29 %"
+    },
+    {
+      "ab": 30,
+      "name": "ab 30 %"
+    }
+  ],
+  "grau": [],
+  "werte": {
+    "SE": 72,
+    "DK": 42,
+    "NO": 27,
+    "FI": 28,
+    "GB": 22,
+    "AT": 16,
+    "CH": 10,
+    "IE": 8,
+    "DE": 8,
+    "FR": 6,
+    "BE": 4,
+    "CZ": 3,
+    "ES": 2,
+    "PT": 2,
+    "PL": 1,
+    "SK": 1
+  },
+  "markiert": [
+    "SE",
+    "DK",
+    "FI",
+    "AT",
+    "IE",
+    "FR"
+  ],
+  "lage": {
+    "LU": {
+      "kasten": true,
+      "dx": -95,
+      "dy": 45,
+      "groesse": 26
+    },
+    "MT": {
+      "kasten": true,
+      "dx": 0,
+      "dy": 45,
+      "groesse": 26
+    },
+    "SI": {
+      "kasten": true,
+      "dx": -80,
+      "dy": 5,
+      "groesse": 26
+    },
+    "CY": {
+      "kasten": true,
+      "dx": -10,
+      "dy": -55,
+      "groesse": 26
+    },
+    "NL": {
+      "x": 5.75,
+      "y": 52.35,
+      "groesse": 26
+    },
+    "CH": {
+      "x": 8.25,
+      "y": 46.8,
+      "groesse": 23
+    },
+    "DK": {
+      "x": 9.25,
+      "y": 56.2,
+      "groesse": 24
+    },
+    "IT": {
+      "x": 14.6,
+      "y": 42.2
+    },
+    "NO": {
+      "x": 9.2,
+      "y": 61.3
+    },
+    "FR": {
+      "x": 2.2,
+      "y": 46.2
+    },
+    "HR": {
+      "x": 16.3,
+      "y": 45.5,
+      "groesse": 26
+    },
+    "GR": {
+      "x": 22,
+      "y": 39.6
+    },
+    "SE": {
+      "x": 15.1,
+      "y": 60.9,
+      "groesse": 36
+    },
+    "FI": {
+      "x": 26,
+      "y": 62
+    },
+    "AT": {
+      "x": 14.4,
+      "y": 47.45,
+      "groesse": 26
+    },
+    "BE": {
+      "kasten": true,
+      "dx": -80,
+      "dy": -30,
+      "groesse": 26
+    },
+    "ME": {
+      "kasten": true,
+      "dx": -30,
+      "dy": 45,
+      "groesse": 24
+    },
+    "AL": {
+      "groesse": 22
+    },
+    "MK": {
+      "groesse": 22
+    }
+  },
+  "rand": 70,
+  "legendeOben": 905
+}

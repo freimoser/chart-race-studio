@@ -1,0 +1,3428 @@
+{
+ "titel": "Tierversicherung in Europa: versicherte Hunde und Katzen",
+ "abgerufen": "2026-11-09",
+ "hinweis": "Keine amtliche Statistik. Zwei Arten von Zahlen, die nicht zusammenpassen: (1) Marktzahlen der Versicherer bzw. ihrer Verbände (versicherte Tiere oder Verträge) geteilt durch den Tierbestand, (2) Halterbefragungen. Wo beides vorliegt, liegen die Befragungen 2- bis 3-mal höher (DE: GDV 7,6 % aller Hunde und Katzen 2024 gegen Uelzener-Umfrage rund 30 % der Hunde und 21 % der Katzen; GB: ABI/PDSA-Bestand 21,5 % gegen PDSA-Halterumfrage 61 % der Hunde und 46 % der Katzen). Der Datensatz tierversicherung (Chart Race) nutzt deshalb nur Marktzahlen. Die Karte zeigt Marktzahlen und kennzeichnet Länder, für die es nur Befragungen gibt.",
+ "markt": {
+  "DE": {
+   "versicherte": {
+    "2018": 805000,
+    "2019": 845000,
+    "2020": 1030000,
+    "2021": 1260000,
+    "2022": 1530000,
+    "2023": 1790000,
+    "2024": 2010000
+   },
+   "bestand": {
+    "2018": 24200000,
+    "2019": 24800000,
+    "2020": 26400000,
+    "2021": 27000000,
+    "2022": 25800000,
+    "2023": 26200000,
+    "2024": 26400000
+   },
+   "quelle": "Versicherte Tiere 2019–2024: GDV-Sonderumfrage bei 13 Unternehmen (Medieninformation 2025/2026, Grafiken 23degrees), Tierkrankenversicherung (OP und umfassend), ohne Hundehaftpflicht. 2018: Heimtierstudie 2019 (Ohr, Universität Göttingen), Mitte der Schätzung 650–800 Tsd. Hunde + 70–90 Tsd. Katzen = 805 Tsd. Bestand: IVH/ZZF, Hunde + Katzen.",
+   "hinweis": "Untergrenze: nur 13 meldende Unternehmen; der Zähler kann einzelne Pferde enthalten. 2018 ist eine Schätzung (Stützjahr)."
+  },
+  "GB": {
+   "versicherte": {
+    "2018": 4300000,
+    "2020": 4200000,
+    "2021": 4300000,
+    "2023": 4400000,
+    "2024": 4600000
+   },
+   "bestand": {
+    "2018": 20000000,
+    "2019": 20800000,
+    "2020": 21000000,
+    "2021": 20300000,
+    "2022": 21300000,
+    "2023": 22000000,
+    "2024": 21400000
+   },
+   "quelle": "Versicherte Tiere: Association of British Insurers (ABI), Pressemitteilungen 2019, 2022, 2024, 2025 (nur ABI-Mitglieder), zitiert u. a. bei Insurance Times; Bestand: PDSA Animal Wellbeing (PAW) Report, Hunde + Katzen.",
+   "hinweis": "2019 und 2022 ohne ABI-Wert: Quote linear zwischen den Nachbarjahren. Ein aus der ABI-Meldung 2025 rückgerechneter Wert für 2019 (3,46 Mio., vermutlich Versicherungsnehmer) passt nicht zur Reihe und ist nicht verwendet. Mit dem FEDIAF-Bestand (UK Pet Food) läge die Quote 2024 bei 18 %."
+  },
+  "NO": {
+   "versicherte": {
+    "2013": 112208,
+    "2014": 125646,
+    "2015": 138626,
+    "2016": 173868,
+    "2017": 190013,
+    "2018": 208133,
+    "2019": 225667,
+    "2020": 250414,
+    "2021": 276549,
+    "2022": 297886,
+    "2023": 312662,
+    "2024": 323127,
+    "2025": 325138
+   },
+   "bestand": {
+    "2018": 1240000,
+    "2019": 1255000,
+    "2020": 1250000,
+    "2021": 1273000,
+    "2022": 1220000,
+    "2023": 1220000,
+    "2024": 1210000
+   },
+   "quelle": "Private Verträge der Sparte Hobbydyr/Kjæledyr/Husdyr zum 31.12.: Finans Norge, Premiestatistikk (xlsx); Bestand 2018–2023: FEDIAF Facts & Figures, Hunde + Katzen; 2024: DyreID-Schätzung 1,21 Mio. (2025).",
+   "hinweis": "Private Verträge enthalten auch Pferde, die Quote ist dadurch etwas zu hoch. FEDIAF 2024 (1,34 Mio., Angleichung an EMA-Daten) wäre ein Methodenbruch; damit läge die Quote 2024 bei 24 %. Tryg nennt 2025 rund 30 %. Sprung 2016 (+25 % Verträge) ungeklärt."
+  }
+ },
+ "karte_2024": {
+  "werte": {
+   "SE": 72,
+   "DK": 42,
+   "NO": 27,
+   "FI": 28,
+   "GB": 22,
+   "AT": 16,
+   "CH": 10,
+   "IE": 8,
+   "DE": 8,
+   "FR": 6,
+   "BE": 4,
+   "CZ": 3,
+   "ES": 2,
+   "PT": 2,
+   "PL": 1,
+   "SK": 1
+  },
+  "nur_befragung": [
+   "SE",
+   "DK",
+   "FI",
+   "AT",
+   "IE",
+   "FR"
+  ],
+  "rechnung": {
+   "SE": "Novus für Agria/SKK: Hunde 92 % (2020) und gut 90 % (2026), Katzen 56 % und 65 %; 2024 linear (91 % / 62 %), gewichtet mit FEDIAF-Bestand 2024 = 73 %, mit Novus-Bestand 72 %. Gegenprobe Dina/Kantar Sifo 2023: 95 % / 69 %.",
+   "DK": "Agria (YouGov/Xtreme): Hunde 66 % (2023, Halterumfrage Nov. 2023), Katzen 19 % (2021); gewichtet mit FEDIAF 2024 = 42 %. Gegenbeleg: Umfrage 2023 Katzen 57 %.",
+   "FI": "Agria/Xtreme 2021: Hunde 48 %, Katzen 12 %, gehalten; gewichtet mit FEDIAF 2024 = 28 %. HelloSafe 2025: 23 %.",
+   "AT": "Online-Panel März 2022 (Sandøe et al. 2023, Frontiers in Veterinary Science): Hunde 29 %, Katzen 10 %; gewichtet mit FEDIAF 2024 = 16 %. HelloSafe: 4 % (ohne Beleg).",
+   "IE": "Agria 2023: Hunde 10 %, Katzen 5 %; gewichtet = 8 %. Newstalk 2023: 15 % der Halter, Veterinary Ireland 2024: 30 % der Halter.",
+   "FR": "HelloSafe, L'Argus, Assurland 2024/25: 5–7 % der Tiere, ohne Primärquelle; Mitte 6 %. Ifop für Boehringer 2024: 13 % der Halter.",
+   "CH": "Epona-Geschäftsführer, Dezember 2024: Hunde 17 %, Katzen 2,5 %, zusammen knapp 10 %; Sanitas und Allianz 2026: etwa 10 %.",
+   "BE": "Belfius (Statista) und Figo 2023: 3 % aller Tiere; HelloSafe 2025: 6 %; 2024 linear etwa 4 %.",
+   "CZ": "rund 100.000 Verträge 2024 ÷ FEDIAF-Bestand 3,62 Mio. = 2,8 % (Artikel nennt 4 %); PetExpert 2025: 3 %.",
+   "ES": "UNESPA/Estamos Seguros 2023/24: über 220.800 versicherte Tiere bei 15 Versicherern ÷ FEDIAF 11,9 Mio. = 1,9 % (inkl. Haftpflicht); HelloSafe, Petplan: 2 %.",
+   "PT": "Summe dreier Versicherer mindestens 122.500 Policen ÷ FEDIAF 5,19 Mio. = mindestens 2,4 %; HelloSafe 5 %.",
+   "PL": "TU Europa 2024: unter 1 % aller Haustiere.",
+   "SK": "etwa 1 % (Versicherer-Angabe).",
+   "DE": "GDV 2,01 Mio. ÷ IVH/ZZF 26,4 Mio. = 7,6 %.",
+   "GB": "ABI 4,6 Mio. ÷ PDSA 21,4 Mio. = 21,5 %.",
+   "NO": "Finans Norge 323.127 private Verträge ÷ DyreID 1,21 Mio. = 26,7 %."
+  },
+  "grau": {
+   "NL": "widersprüchlich: 5 % (HelloSafe 2025) bis 14 % (aus OHRA-Schätzung 25 % Hunde / 8 % Katzen)",
+   "IT": "keine Quote belegt (Umfragen messen vor allem Haftpflicht)",
+   "LU": "widersprüchlich",
+   "übrige": "keine Zahlen gefunden"
+  }
+ },
+ "recherche": {
+  "nordwest": {
+   "abgerufen": "2026-11-09",
+   "quellen": [
+    {
+     "id": "fn-premie-aar",
+     "titel": "Premie- og markedsstatistikk 1998-2025 (Tabell 1 Bestandspremie pr. 31.12)",
+     "herausgeber": "Finans Norge",
+     "url": "https://www.finansnorge.no/siteassets/statistikk-og-analyse/skadeforsikring---statistikk/premiestatistikk/premie--og-markedsstatistikk-1998-2025.xlsx",
+     "fundstelle": "Blatt Tab1, Zeile 'Hobbydyr / Kjæledyr / Husdyr / Pets /Animals', 1000 NOK, 2013-2025 (vor 2013 keine eigene Zeile)"
+    },
+    {
+     "id": "fn-premie-q4",
+     "titel": "Premiestatistikk skadeforsikring, 4. kvartal (je Jahr 2013-2025)",
+     "herausgeber": "Finans Norge",
+     "url": "https://www.finansnorge.no/siteassets/statistikk-og-analyse/skadeforsikring---statistikk/premiestatistikk/4.-kvartal/premiestatistikken_2025q4.xlsx",
+     "fundstelle": "Blatt Tab4 'Tabell 1.2 Antall forsikringer', Zeile 38 'Hobbydyr / Kjæledyr / Husdyr', Spalten Totalt/Privat/Næring; Dateien premiestatistikken_<jahr>q4.xlsx (2013q4 mit getrennten Zeilen Hobbydyr/Husdyr)"
+    },
+    {
+     "id": "tryg-ntb-2025",
+     "titel": "Rekordmange kjæledyr forsikret (Pressemitteilung Tryg Forsikring)",
+     "herausgeber": "Tryg Forsikring via NTB",
+     "url": "https://kommunikasjon.ntb.no/pressemelding/18587066/rekordmange-kjaeledyr-forsikret",
+     "fundstelle": "3.7.2025: knapp 350 000 forsikrede kjæledyr Ende Q1 2025 (Finans Norge); ca. 30 % der Hunde und Katzen; Bestand DyreID ca. 590 000 Hunde, 620 000 Katzen"
+    },
+    {
+     "id": "kkv-2018",
+     "titel": "Rapport 2018:6 Djurförsäkringar och djursjukvård",
+     "herausgeber": "Konkurrensverket",
+     "url": "https://www.konkurrensverket.se/contentassets/183303e08edd4c71bac1fe366b59add7/rapport_2018-6-djurforsakring.pdf",
+     "fundstelle": "S. 41 (Kap. 3): ca. 888 000 Hunde Okt. 2017, ca. 80 % versichert (Fn. 26: Schätzung von Marktakteuren), 1,2-1,4 Mio. Katzen, ca. ein Viertel versichert; S. 51-52 Kap. 4 / Fig. 12: Prämien Heimtierversicherung 1,7 Mrd. SEK 2007 -> knapp 4 Mrd. SEK 2017 (inkl. Pferde, ca. 1/3), Marktanteile 2017 Agria 55 %, Folksam 21 %, Sveland 9 %, If 9 %"
+    },
+    {
+     "id": "sveland-ar",
+     "titel": "Årsredovisning (Förvaltningsberättelse, Framtida utveckling)",
+     "herausgeber": "Sveland Djurförsäkringar ömsesidigt",
+     "url": "https://sveland.se/api/documents/file/arsredovisning-2024.pdf",
+     "fundstelle": "S. 4: Marktprämien Schweden 2023 6,0 Mrd. SEK (+4 %); Wachstum 2020 +11 %, 2021 +13 %, 2022 +7 % (Quelle Sveland, beruft sich auf Branchenstatistik)"
+    },
+    {
+     "id": "infosys-2024",
+     "titel": "The Landscape of Pet Insurance in the Nordics (White Paper)",
+     "herausgeber": "Infosys",
+     "url": "https://www.infosys.com/industries/insurance/white-papers/documents/pet-insurance-nordics.pdf",
+     "fundstelle": "Schweden: 90 % der Hunde, 50 % der Katzen; SEK 5,3 Mrd. Prämien 2021 (© 2024)"
+    },
+    {
+     "id": "agria-skk-2026",
+     "titel": "Rekordmånga försäkrade katter och hundar (Pressemitteilung)",
+     "herausgeber": "Agria Djurförsäkring / Svenska Kennelklubben, Novus",
+     "url": "https://via.tt.se/pressmeddelande/4324537/rekordmanga-forsakrade-katter-och-hundar",
+     "fundstelle": "14.4.2026; Novus, 10 284 Hunde- und Katzenhalter 18-89 J.; Hunde 'drygt 90 procent' stabil, Katzen 65 % (+9 Punkte in einigen Jahren); Lebensversicherung: Katzen gut ein Viertel, Hunde 63 %; Vorwelle 2024"
+    },
+    {
+     "id": "agria-skk-2021",
+     "titel": "Husdjur i vart tredje svenskt hem",
+     "herausgeber": "Agria / SKK (Novus)",
+     "url": "https://www2.skk.se/sv/Agria-skk-Forskningsfond/Nyhetsarkiv/2021/4/husdjur-i-vart-tredje-svenskt-hem",
+     "fundstelle": "April 2021 (Erhebung 2020): 92 % der Hunde versichert, 56 % der Katzen mit veterinärvårdsförsäkring (Inhalt über Suchauszug; Seite bei Abruf 503)"
+    },
+    {
+     "id": "dina-2023",
+     "titel": "Så många husdjur har en försäkring",
+     "herausgeber": "Dina Försäkringar (Kantar Sifo)",
+     "url": "https://www.mynewsdesk.com/se/dina-forsakringar/pressreleases/saa-maanga-husdjur-har-en-foersaekring-3240955",
+     "fundstelle": "22.3.2023; Kantar Sifo Webpanel 13.-21.2.2023, n=3 051 (18-79 J.); 95 % der Hunde, 69 % der Katzen; Art der Versicherung nicht getrennt"
+    },
+    {
+     "id": "yougov-2021",
+     "titel": "Global: Are dog owners more likely to insure their pet?",
+     "herausgeber": "YouGov",
+     "url": "https://yougov.com/en-gb/articles/34916-global-are-dog-owners-more-likely-insure-their-pet",
+     "fundstelle": "25.3.2021, YouGov Profiles: Anteil der Halter mit Tierversicherung - Schweden Hunde 53 %, Katzen 46 %; GB Hunde 30 %, Katzen 20 %"
+    },
+    {
+     "id": "abi-2025",
+     "titel": "Insurance payouts for pawly pets top £1 billion for third year in a row",
+     "herausgeber": "Association of British Insurers (ABI)",
+     "url": "https://www.abi.org.uk/news/news-articles/2025/5/insurance-payouts-for-pawly-pets-top-1-billion-for-third-year-in-a-row/",
+     "fundstelle": "Mai 2025 (Daten 2024): 4,6 Mio. (ABI: 'pet owners took out insurance'; Insurance Times: 'policies'), +3 % zu 2023, +33 % zu 2019; Zahlungen £1,23 Mrd.; 1,8 Mio. Schäden; Durchschnittsschaden £685 (Seite blockiert automatischen Abruf, Inhalt über Suchauszüge/Insurance Times)"
+    },
+    {
+     "id": "abi-2024",
+     "titel": "Record numbers take out pet insurance for their four-legged fur-ends",
+     "herausgeber": "ABI",
+     "url": "https://www.abi.org.uk/news/news-articles/2024/8/record-numbers-take-out-pet-insurance-for-their-four-legged-fur-ends/",
+     "fundstelle": "Aug. 2024 (Daten 2023): 4,4 Mio. (insured pets / owners, uneinheitlich formuliert), +1,7 Mio. ggü. 10 Jahre zuvor; Ø-Prämie £389,2 inkl. IPT (2022: £372); Zahlungen £1,2 Mrd."
+    },
+    {
+     "id": "abi-2022",
+     "titel": "Pet insurers processed a record £2.4 million a day in 2021",
+     "herausgeber": "ABI",
+     "url": "https://www.abi.org.uk/news/news-articles/2022/05/pet-insurers-processed-a-record-2.4-million-a-day-in-2021/",
+     "fundstelle": "Daten 2021: 4,3 Mio. versicherte Tiere (2020: 4,2 Mio.), 3,7 Mio. Versicherungsnehmer; Zahlungen £872 Mio. (über Suchauszüge actuarialpost/LBC)"
+    },
+    {
+     "id": "abi-2019",
+     "titel": "Record £785m paid out in 2018 by pet insurers",
+     "herausgeber": "ABI via Yahoo/PA",
+     "url": "https://uk.finance.yahoo.com/news/record-785m-paid-2018-pet-230100118.html",
+     "fundstelle": "Daten 2018: knapp 4,3 Mio. versicherte Tiere; Ø-Prämie £279 (2017: £281)"
+    },
+    {
+     "id": "abi-2016",
+     "titel": "Pet insurers paid out record £657 million in claims in 2015",
+     "herausgeber": "ABI via AOL/PA",
+     "url": "https://www.aol.co.uk/2016/03/28/pet-insurers-paid-out-record-657-million-in-claims-in-2015/",
+     "fundstelle": "Daten 2015: 3,9 Mio. versicherte Hunde und Katzen; Ø-Prämie £241"
+    },
+    {
+     "id": "globaldata-it-2019",
+     "titel": "Total GWP for UK pet insurance amounts to £1.2bn in 2018",
+     "herausgeber": "Insurance Times (Daten GlobalData)",
+     "url": "https://insurancetimes.co.uk/news/total-gwp-for-uk-pet-insurance-amounts-to-12bn-in-2018/1432214.article",
+     "fundstelle": "£1,2 Mrd. Bruttoprämien Ende 2018, CAGR 8,6 % seit 2013"
+    },
+    {
+     "id": "pdsa-paw",
+     "titel": "PDSA Animal Wellbeing (PAW) Report, Jahrgänge 2013-2025 (YouGov)",
+     "herausgeber": "PDSA / YouGov",
+     "url": "https://www.pdsa.org.uk/what-we-do/pdsa-animal-wellbeing-report",
+     "fundstelle": "PAW 2013 S. 'key indicators' (2011/2013); PAW 2017 S. 'Insurance' (45 % der Hunde nicht versichert); PAW 2018 (43 % Hunde / 62 % Katzen nicht versichert); PAW 2019 (Insured 57 %/37 %); PAW 2023 S. ~25 (61 % Hunde, 39 % Katzen); PAW 2025 Tabellenteil S. 17 (Fieldwork 17.12.2024-12.1.2025, n=5 387: Insured Hund 61 %, Katze 46 %)"
+    },
+    {
+     "id": "pdsa-pop",
+     "titel": "UK pet populations of dogs, cats and rabbits",
+     "herausgeber": "PDSA",
+     "url": "https://pdsa.org.uk/what-we-do/pdsa-animal-wellbeing-report/uk-pet-populations-of-dogs-cats-and-rabbits",
+     "fundstelle": "Tabelle 2011-2026: Hunde/Katzen in Mio. (2024: 10,6 / 10,8)"
+    },
+    {
+     "id": "agria-ie-2023",
+     "titel": "Pet owners are worried about the increasing costs of basic healthcare for their pets",
+     "herausgeber": "Agria Petinsure (Xtreme)",
+     "url": "https://news.cision.com/agria-petinsure/r/pet-owners-are-worried-about-the-increasing-costs-of-basic-healthcare-for-their-pets,c3739323",
+     "fundstelle": "23.3.2023; Xtreme Feb. 2023, 812 Halter; ca. 10 % der Hunde, 5 % der Katzen in Irland versichert"
+    },
+    {
+     "id": "irishtimes-2024",
+     "titel": "The cost of keeping a dog",
+     "herausgeber": "The Irish Times",
+     "url": "https://www.irishtimes.com/your-money/2024/07/17/the-cost-of-keeping-a-dog",
+     "fundstelle": "17.7.2024: Veterinary Ireland (Bill Cashman) vor Oireachtas-Ausschuss: nur ca. 30 % der Halter haben Tierversicherung (Paywall; Zitat über Suchauszug)"
+    },
+    {
+     "id": "newstalk-2023",
+     "titel": "Pet insurance just makes really good sense according to leading vet",
+     "herausgeber": "Newstalk",
+     "url": "https://newstalk.com/news/pet-insurance-just-makes-really-good-sense-according-to-leading-vet-1618828",
+     "fundstelle": "Nov. 2023: 'just 15% of pet owners are insured' (über Suchauszug)"
+    },
+    {
+     "id": "agria-dk-2021",
+     "titel": "Danskerne forsikrer kæledyr som aldrig før",
+     "herausgeber": "Agria Dyreforsikring Danmark",
+     "url": "https://news.cision.com/dk/agria-dyreforsikring-danmark/r/danskerne-forsikrer-kaeledyr-som-aldrig-for,c3317823",
+     "fundstelle": "31.3.2021: Hunde 2016 39 %, 2019 54 % (YouGov), 2021 64 % (Xtreme); Katzen 2016 11 %, 2019 16 %, 2021 19 %; Kranken-/Unfallversicherung"
+    },
+    {
+     "id": "agria-dk-2018",
+     "titel": "Kæledyr sygeforsikres som aldrig før",
+     "herausgeber": "Agria Dyreforsikring",
+     "url": "https://www.agria.dk/hund/artikel/om-hunden/kaledyr-sygeforsikres-som-aldrig-for/",
+     "fundstelle": "11.7.2018; YouGov 27.3.-14.4.2018, n=1 018 Dänen 18+: Hunde 46 % (2016: 39 %, 2011: 20 %), Katzen 14 % (2016: 11 %), Pferde 38 %"
+    },
+    {
+     "id": "hunden-2015",
+     "titel": "Ny undersøgelse: Flere hunde og katte får sygeforsikring",
+     "herausgeber": "Hunden.dk (YouGov für Agria)",
+     "url": "https://www.hunden.dk/nyheder/ny-undersogelse-flere-hunde-og-katte-far-sygeforsikring/10118",
+     "fundstelle": "3.2.2015: 35 % der Hunde, 10 % der Katzen sygeforsikret"
+    },
+    {
+     "id": "hunden-2024",
+     "titel": "Top 5 myter om sygeforsikring til kæledyr",
+     "herausgeber": "Hunden.dk (Xtreme Insight für Agria)",
+     "url": "https://www.hunden.dk/nyheder/top-5-myter-om-sygeforsikring-til-kaeledyr/71632",
+     "fundstelle": "22.2.2024; Nov. 2023, n=854 Halter: 34 % der Hundehalter und 43 % der Katzenhalter ohne Sygeforsikring"
+    },
+    {
+     "id": "epinion-dk-2017",
+     "titel": "2 ud af 3 dyreejere sygeforsikrer ikke deres dyr",
+     "herausgeber": "Gjensidige / Dyrenes Beskyttelse (Epinion) via Ritzau",
+     "url": "https://via.ritzau.dk/pressemeddelelse/10693750/2-ud-af-3-dyreejere-sygeforsikrer-ikke-deres-dyr?publisherId=9709319",
+     "fundstelle": "18.5.2017, Epinion März 2017: 65 % aller Tierhalter ohne Sygeforsikring"
+    },
+    {
+     "id": "agria-fi-2022",
+     "titel": "Yhä useammalla lemmikillä on vakuutus ja suosituin vakuutus lemmikille on hoitokuluvakuutus",
+     "herausgeber": "Agria Eläinvakuutus (Xtreme)",
+     "url": "https://news.cision.com/fi/agria-elainvakuutus--finland/r/yha-useammalla-lemmikilla-on-vakuutus-ja-suosituin-vakuutus-lemmikille-on-hoitokuluvakuutus,c3513709",
+     "fundstelle": "3.3.2022; Xtreme Jan. 2021, >900 Halter: Hunde 2016 23 % (Agria-Schätzung), Feb. 2019 43 %, Jan. 2021 48 %; Katzen 2016 'wenige Prozent', 2019 8 %, 2021 12 %; unter Versicherten 77 % Behandlungskosten, 38 % Leben"
+    },
+    {
+     "id": "verbond-2024",
+     "titel": "5 vragen over de dierenverzekering",
+     "herausgeber": "Verbond van Verzekeraars",
+     "url": "https://www.verzekeraars.nl/publicaties/actueel/5-vragen-over-de-dierenverzekering",
+     "fundstelle": "3.10.2024: Schätzung OHRA: ca. 25 % der Hunde und 8 % der Katzen gegen Behandlungskosten versichert"
+    },
+    {
+     "id": "kekmama-2026",
+     "titel": "De Tweede Kamer wil dat meer huisdieren verzekerd worden",
+     "herausgeber": "Kek Mama (Advertorial PetSecur)",
+     "url": "https://www.kekmama.nl/artikel/lifestyle/favorites/huisdierenverzekering-petsecur",
+     "fundstelle": "29.9.2026: 'slechts 5% van alle honden en 3% van alle katten verzekerd' (ohne Quellenangabe)"
+    },
+    {
+     "id": "belfius-2020",
+     "titel": "Werelddierendag: slechts 1,5% van de honden in België is verzekerd",
+     "herausgeber": "Corona Direct Verzekeringen (Belfius)",
+     "url": "https://www.belfius.be/about-us/dam/corporate/press-room/press-articles/downloads/nl/2020/Persbericht%20Corona%20Direct%20Verzekeringen%2002%2010%202020.pdf",
+     "fundstelle": "2.10.2020: ca. 1,5 % der 1,5 Mio. belgischen Hunde versichert; Vergleich: NL 5 %, GB 24 %, Skandinavien 80 %"
+    },
+    {
+     "id": "figo-2023",
+     "titel": "Lancering Figo Pet in België",
+     "herausgeber": "Figo Pet / Veterfina",
+     "url": "https://cdn.uc.assets.prezly.com/cd04d2cb-c7b1-4e2b-8ce8-db41c02817e7/-/inline/no/Persbericht%20-%20Lancering%20Figo%20Pet%20in%20Belgi%C3%AB_3feb.pdf",
+     "fundstelle": "3.2.2023: 'amper 3% van de Belgische huisdieren' mit Krankenversicherung"
+    },
+    {
+     "id": "belfius-2023",
+     "titel": "Persbericht Belfius Direct Verzekeringen – Tom&Co",
+     "herausgeber": "Belfius Direct Verzekeringen",
+     "url": "https://www.belfius.be/about-us/dam/corporate/press-room/press-articles/downloads/nl/2023/Persbericht%20Belfius%20Direct%20Verzekeringen_Tom%20and%20Co%2014122023.pdf",
+     "fundstelle": "14.12.2023: von 4,5 Mio. Hunden und Katzen 3 % versichert = 6 % der Hunde, 2 % der Katzen (Fußnote: Statista)"
+    },
+    {
+     "id": "vrt-2024",
+     "titel": "Huisdierenverzekering steeds populairder",
+     "herausgeber": "VRT NWS",
+     "url": "https://www.vrt.be/vrtnws/nl/2024/10/04/huisdierenverzekering-honden-katten-werelddierendag/",
+     "fundstelle": "5.10.2024: Belfius Direct: Hundeversicherungen +33 % 2020, +33 % 2021, +21 % 2022 (nur Wachstumsraten)"
+    },
+    {
+     "id": "overstappen-2024",
+     "titel": "Dierenverzekeringen in de lift",
+     "herausgeber": "Overstappen.nl",
+     "url": "https://www.overstappen.nl/nieuws/dierenverzekeringen-in-de-lift/",
+     "fundstelle": "10.1.2024: Neuabschlüsse (eigene Vergleichsportal-Daten) +21 % 2020, +23 % 2021, +20 % 2022, +36 % 2023"
+    },
+    {
+     "id": "bnnvara-2010",
+     "titel": "Aantal huisdierverzekeringen stijgt fors",
+     "herausgeber": "BNNVARA Vroege Vogels (Petplan)",
+     "url": "https://www.bnnvara.nl/vroegevogels/artikelen/aantal-huisdierverzekeringen-stijgt-fors",
+     "fundstelle": "5.3.2010: 'slechts 2% van de honden en katten verzekerd' (Petplan)"
+    },
+    {
+     "id": "hellosafe-2025",
+     "titel": "Barometer Dierenverzekering 2025/2026",
+     "herausgeber": "HelloSafe (Vergleichsportal)",
+     "url": "https://hellosafe.be/nl/dierenverzekering/markt",
+     "fundstelle": "Stand Juni 2025, Tabelle: SE 91 %, UK 25 %, FI 23 % (~345k), IE 9 % (~90k), BE 6 % (~190k), NL 5 % (240k), LU 4 % (~7k) der Hunde und Katzen; eigene Mischmethode, Quellen teils Marktberichte; hellosafe.ch nennt für LU dagegen <1 %"
+    }
+   ],
+   "werte": [
+    {
+     "land": "NO",
+     "jahr": 2013,
+     "groesse": "praemien_mio_lw",
+     "wert": 386.5,
+     "quelle": "fn-premie-aar",
+     "berechnet": false,
+     "hinweis": "Bestandsprämie 31.12., Linie Hobbydyr/Kjæledyr/Husdyr (Heim- UND Nutztiere/Pferde, privat+gewerblich); Mitgliedsgesellschaften Finans Norge",
+     "waehrung": "NOK"
+    },
+    {
+     "land": "NO",
+     "jahr": 2014,
+     "groesse": "praemien_mio_lw",
+     "wert": 441.2,
+     "quelle": "fn-premie-aar",
+     "berechnet": false,
+     "hinweis": "Bestandsprämie 31.12., Linie Hobbydyr/Kjæledyr/Husdyr (Heim- UND Nutztiere/Pferde, privat+gewerblich); Mitgliedsgesellschaften Finans Norge",
+     "waehrung": "NOK"
+    },
+    {
+     "land": "NO",
+     "jahr": 2015,
+     "groesse": "praemien_mio_lw",
+     "wert": 493.0,
+     "quelle": "fn-premie-aar",
+     "berechnet": false,
+     "hinweis": "Bestandsprämie 31.12., Linie Hobbydyr/Kjæledyr/Husdyr (Heim- UND Nutztiere/Pferde, privat+gewerblich); Mitgliedsgesellschaften Finans Norge",
+     "waehrung": "NOK"
+    },
+    {
+     "land": "NO",
+     "jahr": 2016,
+     "groesse": "praemien_mio_lw",
+     "wert": 628.5,
+     "quelle": "fn-premie-aar",
+     "berechnet": false,
+     "hinweis": "Bestandsprämie 31.12., Linie Hobbydyr/Kjæledyr/Husdyr (Heim- UND Nutztiere/Pferde, privat+gewerblich); Mitgliedsgesellschaften Finans Norge",
+     "waehrung": "NOK"
+    },
+    {
+     "land": "NO",
+     "jahr": 2017,
+     "groesse": "praemien_mio_lw",
+     "wert": 717.3,
+     "quelle": "fn-premie-aar",
+     "berechnet": false,
+     "hinweis": "Bestandsprämie 31.12., Linie Hobbydyr/Kjæledyr/Husdyr (Heim- UND Nutztiere/Pferde, privat+gewerblich); Mitgliedsgesellschaften Finans Norge",
+     "waehrung": "NOK"
+    },
+    {
+     "land": "NO",
+     "jahr": 2018,
+     "groesse": "praemien_mio_lw",
+     "wert": 810.2,
+     "quelle": "fn-premie-aar",
+     "berechnet": false,
+     "hinweis": "Bestandsprämie 31.12., Linie Hobbydyr/Kjæledyr/Husdyr (Heim- UND Nutztiere/Pferde, privat+gewerblich); Mitgliedsgesellschaften Finans Norge",
+     "waehrung": "NOK"
+    },
+    {
+     "land": "NO",
+     "jahr": 2019,
+     "groesse": "praemien_mio_lw",
+     "wert": 941.5,
+     "quelle": "fn-premie-aar",
+     "berechnet": false,
+     "hinweis": "Bestandsprämie 31.12., Linie Hobbydyr/Kjæledyr/Husdyr (Heim- UND Nutztiere/Pferde, privat+gewerblich); Mitgliedsgesellschaften Finans Norge",
+     "waehrung": "NOK"
+    },
+    {
+     "land": "NO",
+     "jahr": 2020,
+     "groesse": "praemien_mio_lw",
+     "wert": 1090.3,
+     "quelle": "fn-premie-aar",
+     "berechnet": false,
+     "hinweis": "Bestandsprämie 31.12., Linie Hobbydyr/Kjæledyr/Husdyr (Heim- UND Nutztiere/Pferde, privat+gewerblich); Mitgliedsgesellschaften Finans Norge",
+     "waehrung": "NOK"
+    },
+    {
+     "land": "NO",
+     "jahr": 2021,
+     "groesse": "praemien_mio_lw",
+     "wert": 1278.5,
+     "quelle": "fn-premie-aar",
+     "berechnet": false,
+     "hinweis": "Bestandsprämie 31.12., Linie Hobbydyr/Kjæledyr/Husdyr (Heim- UND Nutztiere/Pferde, privat+gewerblich); Mitgliedsgesellschaften Finans Norge",
+     "waehrung": "NOK"
+    },
+    {
+     "land": "NO",
+     "jahr": 2022,
+     "groesse": "praemien_mio_lw",
+     "wert": 1472.2,
+     "quelle": "fn-premie-aar",
+     "berechnet": false,
+     "hinweis": "Bestandsprämie 31.12., Linie Hobbydyr/Kjæledyr/Husdyr (Heim- UND Nutztiere/Pferde, privat+gewerblich); Mitgliedsgesellschaften Finans Norge",
+     "waehrung": "NOK"
+    },
+    {
+     "land": "NO",
+     "jahr": 2023,
+     "groesse": "praemien_mio_lw",
+     "wert": 1658.4,
+     "quelle": "fn-premie-aar",
+     "berechnet": false,
+     "hinweis": "Bestandsprämie 31.12., Linie Hobbydyr/Kjæledyr/Husdyr (Heim- UND Nutztiere/Pferde, privat+gewerblich); Mitgliedsgesellschaften Finans Norge",
+     "waehrung": "NOK"
+    },
+    {
+     "land": "NO",
+     "jahr": 2024,
+     "groesse": "praemien_mio_lw",
+     "wert": 1870.0,
+     "quelle": "fn-premie-aar",
+     "berechnet": false,
+     "hinweis": "Bestandsprämie 31.12., Linie Hobbydyr/Kjæledyr/Husdyr (Heim- UND Nutztiere/Pferde, privat+gewerblich); Mitgliedsgesellschaften Finans Norge",
+     "waehrung": "NOK"
+    },
+    {
+     "land": "NO",
+     "jahr": 2025,
+     "groesse": "praemien_mio_lw",
+     "wert": 2069.5,
+     "quelle": "fn-premie-aar",
+     "berechnet": false,
+     "hinweis": "Bestandsprämie 31.12., Linie Hobbydyr/Kjæledyr/Husdyr (Heim- UND Nutztiere/Pferde, privat+gewerblich); Mitgliedsgesellschaften Finans Norge",
+     "waehrung": "NOK"
+    },
+    {
+     "land": "NO",
+     "jahr": 2013,
+     "groesse": "policen",
+     "wert": 137421,
+     "quelle": "fn-premie-q4",
+     "berechnet": false,
+     "hinweis": "Anzahl Versicherungen 31.12., Linie Hobbydyr/Kjæledyr/Husdyr gesamt; davon privat 112208 (Heimtiere inkl. Pferde/Hobbytiere), gewerblich 25213 (v. a. Nutztiere). Privat-Prämie 258.5 Mio. NOK. 2013 aus getrennten Zeilen Hobbydyr/Husdyr."
+    },
+    {
+     "land": "NO",
+     "jahr": 2014,
+     "groesse": "policen",
+     "wert": 150272,
+     "quelle": "fn-premie-q4",
+     "berechnet": false,
+     "hinweis": "Anzahl Versicherungen 31.12., Linie Hobbydyr/Kjæledyr/Husdyr gesamt; davon privat 125646 (Heimtiere inkl. Pferde/Hobbytiere), gewerblich 24626 (v. a. Nutztiere). Privat-Prämie 305.6 Mio. NOK."
+    },
+    {
+     "land": "NO",
+     "jahr": 2015,
+     "groesse": "policen",
+     "wert": 162968,
+     "quelle": "fn-premie-q4",
+     "berechnet": false,
+     "hinweis": "Anzahl Versicherungen 31.12., Linie Hobbydyr/Kjæledyr/Husdyr gesamt; davon privat 138626 (Heimtiere inkl. Pferde/Hobbytiere), gewerblich 24342 (v. a. Nutztiere). Privat-Prämie 352.1 Mio. NOK."
+    },
+    {
+     "land": "NO",
+     "jahr": 2016,
+     "groesse": "policen",
+     "wert": 197757,
+     "quelle": "fn-premie-q4",
+     "berechnet": false,
+     "hinweis": "Anzahl Versicherungen 31.12., Linie Hobbydyr/Kjæledyr/Husdyr gesamt; davon privat 173868 (Heimtiere inkl. Pferde/Hobbytiere), gewerblich 23889 (v. a. Nutztiere). Privat-Prämie 479.4 Mio. NOK. Sprung 2016 (+25 % privat) evtl. Melderkreis-Änderung, ungeklärt."
+    },
+    {
+     "land": "NO",
+     "jahr": 2017,
+     "groesse": "policen",
+     "wert": 213315,
+     "quelle": "fn-premie-q4",
+     "berechnet": false,
+     "hinweis": "Anzahl Versicherungen 31.12., Linie Hobbydyr/Kjæledyr/Husdyr gesamt; davon privat 190013 (Heimtiere inkl. Pferde/Hobbytiere), gewerblich 23302 (v. a. Nutztiere). Privat-Prämie 556.1 Mio. NOK."
+    },
+    {
+     "land": "NO",
+     "jahr": 2018,
+     "groesse": "policen",
+     "wert": 235421,
+     "quelle": "fn-premie-q4",
+     "berechnet": false,
+     "hinweis": "Anzahl Versicherungen 31.12., Linie Hobbydyr/Kjæledyr/Husdyr gesamt; davon privat 208133 (Heimtiere inkl. Pferde/Hobbytiere), gewerblich 27288 (v. a. Nutztiere). Privat-Prämie 638.1 Mio. NOK."
+    },
+    {
+     "land": "NO",
+     "jahr": 2019,
+     "groesse": "policen",
+     "wert": 255193,
+     "quelle": "fn-premie-q4",
+     "berechnet": false,
+     "hinweis": "Anzahl Versicherungen 31.12., Linie Hobbydyr/Kjæledyr/Husdyr gesamt; davon privat 225667 (Heimtiere inkl. Pferde/Hobbytiere), gewerblich 29526 (v. a. Nutztiere). Privat-Prämie 732.4 Mio. NOK."
+    },
+    {
+     "land": "NO",
+     "jahr": 2020,
+     "groesse": "policen",
+     "wert": 278555,
+     "quelle": "fn-premie-q4",
+     "berechnet": false,
+     "hinweis": "Anzahl Versicherungen 31.12., Linie Hobbydyr/Kjæledyr/Husdyr gesamt; davon privat 250414 (Heimtiere inkl. Pferde/Hobbytiere), gewerblich 28141 (v. a. Nutztiere). Privat-Prämie 870.8 Mio. NOK."
+    },
+    {
+     "land": "NO",
+     "jahr": 2021,
+     "groesse": "policen",
+     "wert": 302653,
+     "quelle": "fn-premie-q4",
+     "berechnet": false,
+     "hinweis": "Anzahl Versicherungen 31.12., Linie Hobbydyr/Kjæledyr/Husdyr gesamt; davon privat 276549 (Heimtiere inkl. Pferde/Hobbytiere), gewerblich 26104 (v. a. Nutztiere). Privat-Prämie 1046.3 Mio. NOK."
+    },
+    {
+     "land": "NO",
+     "jahr": 2022,
+     "groesse": "policen",
+     "wert": 323105,
+     "quelle": "fn-premie-q4",
+     "berechnet": false,
+     "hinweis": "Anzahl Versicherungen 31.12., Linie Hobbydyr/Kjæledyr/Husdyr gesamt; davon privat 297886 (Heimtiere inkl. Pferde/Hobbytiere), gewerblich 25219 (v. a. Nutztiere). Privat-Prämie 1222.1 Mio. NOK."
+    },
+    {
+     "land": "NO",
+     "jahr": 2023,
+     "groesse": "policen",
+     "wert": 337040,
+     "quelle": "fn-premie-q4",
+     "berechnet": false,
+     "hinweis": "Anzahl Versicherungen 31.12., Linie Hobbydyr/Kjæledyr/Husdyr gesamt; davon privat 312662 (Heimtiere inkl. Pferde/Hobbytiere), gewerblich 24378 (v. a. Nutztiere). Privat-Prämie 1385.1 Mio. NOK."
+    },
+    {
+     "land": "NO",
+     "jahr": 2024,
+     "groesse": "policen",
+     "wert": 346742,
+     "quelle": "fn-premie-q4",
+     "berechnet": false,
+     "hinweis": "Anzahl Versicherungen 31.12., Linie Hobbydyr/Kjæledyr/Husdyr gesamt; davon privat 323127 (Heimtiere inkl. Pferde/Hobbytiere), gewerblich 23615 (v. a. Nutztiere). Privat-Prämie 1562.0 Mio. NOK."
+    },
+    {
+     "land": "NO",
+     "jahr": 2025,
+     "groesse": "policen",
+     "wert": 348038,
+     "quelle": "fn-premie-q4",
+     "berechnet": false,
+     "hinweis": "Anzahl Versicherungen 31.12., Linie Hobbydyr/Kjæledyr/Husdyr gesamt; davon privat 325138 (Heimtiere inkl. Pferde/Hobbytiere), gewerblich 22900 (v. a. Nutztiere). Privat-Prämie 1728.1 Mio. NOK."
+    },
+    {
+     "land": "NO",
+     "jahr": 2025,
+     "groesse": "policen",
+     "wert": 350000,
+     "quelle": "tryg-ntb-2025",
+     "berechnet": false,
+     "hinweis": "'nesten 350 000 kjæledyr forsikret' Ende Q1 2025 laut Finans Norge (Tryg-Pressemitteilung); vermutlich Gesamtlinie inkl. Nutztiere, passt zu 348 038 per 31.12.2025"
+    },
+    {
+     "land": "NO",
+     "jahr": 2025,
+     "groesse": "quote_tiere",
+     "wert": 30,
+     "quelle": "tryg-ntb-2025",
+     "berechnet": false,
+     "hinweis": "Aussage Tryg: 'rundt 30 prosent av norske hunder og katter' versichert (gerundet, ohne Rechenweg)"
+    },
+    {
+     "land": "NO",
+     "jahr": 2025,
+     "groesse": "quote_tiere",
+     "wert": 26.9,
+     "quelle": "fn-premie-q4",
+     "berechnet": true,
+     "hinweis": "berechnet: 325 138 private Tierversicherungen 31.12.2025 / 1 210 000 Hunde+Katzen (DyreID-Schätzung 590 000 + 620 000, Quelle tryg-ntb-2025). Überschätzt leicht, da privat auch Pferde/andere Tiere; unterschätzt, falls ein Vertrag mehrere Tiere deckt"
+    },
+    {
+     "land": "NO",
+     "jahr": 2024,
+     "groesse": "quote_tiere",
+     "wert": 26.7,
+     "quelle": "fn-premie-q4",
+     "berechnet": true,
+     "hinweis": "berechnet: 323 127 private Verträge 31.12.2024 / 1 210 000 Hunde+Katzen (Bestand 2025 gehalten, kein Beleg für 2024)"
+    },
+    {
+     "land": "NO",
+     "jahr": 2024,
+     "groesse": "praemien_mio_eur",
+     "wert": 160.8,
+     "quelle": "fn-premie-aar",
+     "berechnet": true,
+     "hinweis": "berechnet: Bestandsprämie gesamt (inkl. Nutztiere) / EZB-Jahresdurchschnittskurs EUR/NOK ≈ 11.629 (Kurs aus Gedächtnis, vor Verwendung prüfen)"
+    },
+    {
+     "land": "NO",
+     "jahr": 2023,
+     "groesse": "praemien_mio_eur",
+     "wert": 145.2,
+     "quelle": "fn-premie-aar",
+     "berechnet": true,
+     "hinweis": "berechnet: Bestandsprämie gesamt (inkl. Nutztiere) / EZB-Jahresdurchschnittskurs EUR/NOK ≈ 11.425 (Kurs aus Gedächtnis, vor Verwendung prüfen)"
+    },
+    {
+     "land": "SE",
+     "jahr": 2017,
+     "groesse": "quote_hunde",
+     "wert": 80,
+     "quelle": "kkv-2018",
+     "berechnet": false,
+     "hinweis": "ca. 80 % der 888 000 registrierten Hunde (Okt. 2017) versichert; 'Bedömningar från aktörer på marknaden', Art (Veterinär/Leben) nicht getrennt"
+    },
+    {
+     "land": "SE",
+     "jahr": 2017,
+     "groesse": "quote_katzen",
+     "wert": 25,
+     "quelle": "kkv-2018",
+     "berechnet": false,
+     "hinweis": "'ungefär en fjärdedel' von 1,2-1,4 Mio. Katzen; Marktschätzung"
+    },
+    {
+     "land": "SE",
+     "jahr": 2020,
+     "groesse": "quote_hunde",
+     "wert": 92,
+     "quelle": "agria-skk-2021",
+     "berechnet": false,
+     "hinweis": "Novus für Agria/SKK, Erhebung 2020 (veröff. April 2021); jede Tierversicherung"
+    },
+    {
+     "land": "SE",
+     "jahr": 2020,
+     "groesse": "quote_katzen",
+     "wert": 56,
+     "quelle": "agria-skk-2021",
+     "berechnet": false,
+     "hinweis": "'56 procent av katterna har en veterinärvårdsförsäkring'; Widerspruch zu KKV 2017 (25 %) - Sprung zu groß für 3 Jahre, unterschiedliche Methode (Halterbefragung vs. Marktschätzung)"
+    },
+    {
+     "land": "SE",
+     "jahr": 2023,
+     "groesse": "quote_hunde",
+     "wert": 95,
+     "quelle": "dina-2023",
+     "berechnet": false,
+     "hinweis": "Kantar Sifo Feb. 2023, Bevölkerungsstichprobe; Versicherungsart nicht getrennt; Auftraggeber Versicherer"
+    },
+    {
+     "land": "SE",
+     "jahr": 2023,
+     "groesse": "quote_katzen",
+     "wert": 69,
+     "quelle": "dina-2023",
+     "berechnet": false,
+     "hinweis": "Kantar Sifo Feb. 2023; Text nennt zusätzlich '83 procent' für Hunde und Katzen zusammen"
+    },
+    {
+     "land": "SE",
+     "jahr": 2026,
+     "groesse": "quote_hunde",
+     "wert": 90,
+     "quelle": "agria-skk-2026",
+     "berechnet": false,
+     "hinweis": "'drygt 90 procent' (stabil in den letzten Jahren), Novus n=10 284; Lebensversicherung Hunde 63 %"
+    },
+    {
+     "land": "SE",
+     "jahr": 2026,
+     "groesse": "quote_katzen",
+     "wert": 65,
+     "quelle": "agria-skk-2026",
+     "berechnet": false,
+     "hinweis": "65 %, +9 Punkte 'på bara några år' (Basis vermutlich Welle 2020/2024, nicht angegeben); Lebensversicherung Katzen gut ein Viertel"
+    },
+    {
+     "land": "SE",
+     "jahr": 2021,
+     "groesse": "quote_hunde",
+     "wert": 90,
+     "quelle": "infosys-2024",
+     "berechnet": false,
+     "hinweis": "Sekundär, ohne Jahr der Primärquelle (Bezugsjahr geschätzt); Sweden 90 % dogs / 50 % cats"
+    },
+    {
+     "land": "SE",
+     "jahr": 2021,
+     "groesse": "quote_katzen",
+     "wert": 50,
+     "quelle": "infosys-2024",
+     "berechnet": false,
+     "hinweis": "Sekundär, Bezugsjahr geschätzt"
+    },
+    {
+     "land": "SE",
+     "jahr": 2021,
+     "groesse": "quote_hunde",
+     "wert": 53,
+     "quelle": "yougov-2021",
+     "berechnet": false,
+     "hinweis": "YouGov Profiles: Anteil der HUNDEHALTER mit Tierversicherung (nicht Tiere); deutlich niedriger als Agria/SKK - Fragewortlaut/Panel-Effekt, Widerspruch offen"
+    },
+    {
+     "land": "SE",
+     "jahr": 2021,
+     "groesse": "quote_katzen",
+     "wert": 46,
+     "quelle": "yougov-2021",
+     "berechnet": false,
+     "hinweis": "YouGov Profiles: Anteil der Katzenhalter mit Tierversicherung"
+    },
+    {
+     "land": "SE",
+     "jahr": 2007,
+     "groesse": "praemien_mio_lw",
+     "wert": 1700,
+     "quelle": "kkv-2018",
+     "berechnet": false,
+     "hinweis": "Prämieneinnahmen Heimtierversicherungen inkl. Hund, Katze, Pferd, Kleintiere (ca. 1/3 Pferd); FI/Svensk Försäkring",
+     "waehrung": "SEK"
+    },
+    {
+     "land": "SE",
+     "jahr": 2017,
+     "groesse": "praemien_mio_lw",
+     "wert": 4000,
+     "quelle": "kkv-2018",
+     "berechnet": false,
+     "hinweis": "'knappt fyra miljarder' inkl. Pferde (~1/3); ab 2016 nicht mehr separat ausgewiesen, daher 'något osäkra'",
+     "waehrung": "SEK"
+    },
+    {
+     "land": "SE",
+     "jahr": 2021,
+     "groesse": "praemien_mio_lw",
+     "wert": 5300,
+     "quelle": "infosys-2024",
+     "berechnet": false,
+     "hinweis": "SEK 5,3 Mrd. 'paid in 2021' (Sekundärquelle)",
+     "waehrung": "SEK"
+    },
+    {
+     "land": "SE",
+     "jahr": 2023,
+     "groesse": "praemien_mio_lw",
+     "wert": 6000,
+     "quelle": "sveland-ar",
+     "berechnet": false,
+     "hinweis": "Marktprämie Tierversicherung Schweden 2023, +4 % (vermutlich inkl. Pferde)",
+     "waehrung": "SEK"
+    },
+    {
+     "land": "SE",
+     "jahr": 2022,
+     "groesse": "praemien_mio_lw",
+     "wert": 5769,
+     "quelle": "sveland-ar",
+     "berechnet": true,
+     "hinweis": "berechnet rückwärts aus 6,0 Mrd. (2023) und Wachstumsraten 2023 +4 %, 2022 +7 %, 2021 +13 %, 2020 +11 % (Sveland): 6000/1,04. 2021: 5,39 vs. Infosys 5,3 - konsistent",
+     "waehrung": "SEK"
+    },
+    {
+     "land": "SE",
+     "jahr": 2021,
+     "groesse": "praemien_mio_lw",
+     "wert": 5392,
+     "quelle": "sveland-ar",
+     "berechnet": true,
+     "hinweis": "berechnet rückwärts aus 6,0 Mrd. (2023) und Wachstumsraten 2023 +4 %, 2022 +7 %, 2021 +13 %, 2020 +11 % (Sveland): 5769/1,07. 2021: 5,39 vs. Infosys 5,3 - konsistent",
+     "waehrung": "SEK"
+    },
+    {
+     "land": "SE",
+     "jahr": 2020,
+     "groesse": "praemien_mio_lw",
+     "wert": 4771,
+     "quelle": "sveland-ar",
+     "berechnet": true,
+     "hinweis": "berechnet rückwärts aus 6,0 Mrd. (2023) und Wachstumsraten 2023 +4 %, 2022 +7 %, 2021 +13 %, 2020 +11 % (Sveland): 5392/1,13. 2021: 5,39 vs. Infosys 5,3 - konsistent",
+     "waehrung": "SEK"
+    },
+    {
+     "land": "SE",
+     "jahr": 2019,
+     "groesse": "praemien_mio_lw",
+     "wert": 4299,
+     "quelle": "sveland-ar",
+     "berechnet": true,
+     "hinweis": "berechnet rückwärts aus 6,0 Mrd. (2023) und Wachstumsraten 2023 +4 %, 2022 +7 %, 2021 +13 %, 2020 +11 % (Sveland): 4771/1,11. 2021: 5,39 vs. Infosys 5,3 - konsistent",
+     "waehrung": "SEK"
+    },
+    {
+     "land": "SE",
+     "jahr": 2023,
+     "groesse": "praemien_mio_eur",
+     "wert": 523,
+     "quelle": "sveland-ar",
+     "berechnet": true,
+     "hinweis": "berechnet: 6 000 Mio. SEK / EZB-Jahresdurchschnitt EUR/SEK ≈ 11,479 (Kurs prüfen); inkl. Pferde"
+    },
+    {
+     "land": "GB",
+     "jahr": 2015,
+     "groesse": "policen",
+     "wert": 3900000,
+     "quelle": "abi-2016",
+     "berechnet": false,
+     "hinweis": "'3.9 million dogs and cats' versichert; nur ABI-Mitglieder (nicht ganzer Markt)"
+    },
+    {
+     "land": "GB",
+     "jahr": 2018,
+     "groesse": "policen",
+     "wert": 4300000,
+     "quelle": "abi-2019",
+     "berechnet": false,
+     "hinweis": "'nearly 4.3 million pets'; nur ABI-Mitglieder (nicht ganzer Markt)"
+    },
+    {
+     "land": "GB",
+     "jahr": 2020,
+     "groesse": "policen",
+     "wert": 4200000,
+     "quelle": "abi-2022",
+     "berechnet": false,
+     "hinweis": "4,2 Mio. versicherte Tiere 2020 (Vorjahreswert in ABI-Meldung 2022); nur ABI-Mitglieder (nicht ganzer Markt)"
+    },
+    {
+     "land": "GB",
+     "jahr": 2021,
+     "groesse": "policen",
+     "wert": 4300000,
+     "quelle": "abi-2022",
+     "berechnet": false,
+     "hinweis": "4,3 Mio. versicherte Tiere; 3,7 Mio. Versicherungsnehmer; nur ABI-Mitglieder (nicht ganzer Markt)"
+    },
+    {
+     "land": "GB",
+     "jahr": 2023,
+     "groesse": "policen",
+     "wert": 4400000,
+     "quelle": "abi-2024",
+     "berechnet": false,
+     "hinweis": "4,4 Mio., ABI formuliert teils 'insured pets', teils 'pet owners'; nur ABI-Mitglieder (nicht ganzer Markt)"
+    },
+    {
+     "land": "GB",
+     "jahr": 2024,
+     "groesse": "policen",
+     "wert": 4600000,
+     "quelle": "abi-2025",
+     "berechnet": false,
+     "hinweis": "4,6 Mio.; ABI: 'pet owners took out insurance', Insurance Times: 'policies'; nur ABI-Mitglieder (nicht ganzer Markt)"
+    },
+    {
+     "land": "GB",
+     "jahr": 2019,
+     "groesse": "policen",
+     "wert": 3460000,
+     "quelle": "abi-2025",
+     "berechnet": true,
+     "hinweis": "berechnet: 4,6 Mio. (2024) / 1,33 ('33 % higher than before the pandemic (2019)'); Widerspruch: ABI 2018 nennt 4,3 Mio. Tiere - 2019-Basis zählt offenbar Versicherungsnehmer, nicht Tiere"
+    },
+    {
+     "land": "GB",
+     "jahr": 2015,
+     "groesse": "quote_tiere",
+     "wert": 19.1,
+     "quelle": "pdsa-pop",
+     "berechnet": true,
+     "hinweis": "berechnet: ABI 3.9 Mio. versicherte Tiere / PDSA-Bestand 9.3 Mio. Hunde + 11.1 Mio. Katzen = 20.4 Mio. ABI-Zahl enthält auch Kaninchen etc., deckt nur ABI-Mitglieder ab"
+    },
+    {
+     "land": "GB",
+     "jahr": 2018,
+     "groesse": "quote_tiere",
+     "wert": 21.5,
+     "quelle": "pdsa-pop",
+     "berechnet": true,
+     "hinweis": "berechnet: ABI 4.3 Mio. versicherte Tiere / PDSA-Bestand 8.9 Mio. Hunde + 11.1 Mio. Katzen = 20.0 Mio. ABI-Zahl enthält auch Kaninchen etc., deckt nur ABI-Mitglieder ab"
+    },
+    {
+     "land": "GB",
+     "jahr": 2020,
+     "groesse": "quote_tiere",
+     "wert": 20.0,
+     "quelle": "pdsa-pop",
+     "berechnet": true,
+     "hinweis": "berechnet: ABI 4.2 Mio. versicherte Tiere / PDSA-Bestand 10.1 Mio. Hunde + 10.9 Mio. Katzen = 21.0 Mio. ABI-Zahl enthält auch Kaninchen etc., deckt nur ABI-Mitglieder ab (PDSA Februar-Erhebung 2020)"
+    },
+    {
+     "land": "GB",
+     "jahr": 2021,
+     "groesse": "quote_tiere",
+     "wert": 21.2,
+     "quelle": "pdsa-pop",
+     "berechnet": true,
+     "hinweis": "berechnet: ABI 4.3 Mio. versicherte Tiere / PDSA-Bestand 9.6 Mio. Hunde + 10.7 Mio. Katzen = 20.3 Mio. ABI-Zahl enthält auch Kaninchen etc., deckt nur ABI-Mitglieder ab"
+    },
+    {
+     "land": "GB",
+     "jahr": 2023,
+     "groesse": "quote_tiere",
+     "wert": 20.0,
+     "quelle": "pdsa-pop",
+     "berechnet": true,
+     "hinweis": "berechnet: ABI 4.4 Mio. versicherte Tiere / PDSA-Bestand 11.0 Mio. Hunde + 11.0 Mio. Katzen = 22.0 Mio. ABI-Zahl enthält auch Kaninchen etc., deckt nur ABI-Mitglieder ab"
+    },
+    {
+     "land": "GB",
+     "jahr": 2024,
+     "groesse": "quote_tiere",
+     "wert": 21.5,
+     "quelle": "pdsa-pop",
+     "berechnet": true,
+     "hinweis": "berechnet: ABI 4.6 Mio. versicherte Tiere / PDSA-Bestand 10.6 Mio. Hunde + 10.8 Mio. Katzen = 21.4 Mio. ABI-Zahl enthält auch Kaninchen etc., deckt nur ABI-Mitglieder ab"
+    },
+    {
+     "land": "GB",
+     "jahr": 2011,
+     "groesse": "quote_hunde",
+     "wert": 52,
+     "quelle": "pdsa-paw",
+     "berechnet": false,
+     "hinweis": "PAW 2013, Spalte 2011; Halterbefragung YouGov (Online-Panel), bezogen auf 'your pet'"
+    },
+    {
+     "land": "GB",
+     "jahr": 2011,
+     "groesse": "quote_katzen",
+     "wert": 31,
+     "quelle": "pdsa-paw",
+     "berechnet": false,
+     "hinweis": "PAW 2013, Spalte 2011"
+    },
+    {
+     "land": "GB",
+     "jahr": 2013,
+     "groesse": "quote_hunde",
+     "wert": 54,
+     "quelle": "pdsa-paw",
+     "berechnet": false,
+     "hinweis": "PAW 2013, Spalte 2013; Halterbefragung YouGov (Online-Panel), bezogen auf 'your pet'"
+    },
+    {
+     "land": "GB",
+     "jahr": 2013,
+     "groesse": "quote_katzen",
+     "wert": 34,
+     "quelle": "pdsa-paw",
+     "berechnet": false,
+     "hinweis": "PAW 2013, Spalte 2013"
+    },
+    {
+     "land": "GB",
+     "jahr": 2017,
+     "groesse": "quote_hunde",
+     "wert": 55,
+     "quelle": "pdsa-paw",
+     "berechnet": false,
+     "hinweis": "PAW 2017: 45 % (4,2 Mio.) der Hunde nicht versichert; Halterbefragung YouGov (Online-Panel), bezogen auf 'your pet'"
+    },
+    {
+     "land": "GB",
+     "jahr": 2018,
+     "groesse": "quote_hunde",
+     "wert": 57,
+     "quelle": "pdsa-paw",
+     "berechnet": false,
+     "hinweis": "PAW 2018: 43 % Hunde / 62 % Katzen nicht versichert; Grafik 'Insured (57%)' / '(38%)'; Halterbefragung YouGov (Online-Panel), bezogen auf 'your pet'"
+    },
+    {
+     "land": "GB",
+     "jahr": 2018,
+     "groesse": "quote_katzen",
+     "wert": 38,
+     "quelle": "pdsa-paw",
+     "berechnet": false,
+     "hinweis": "PAW 2018: 43 % Hunde / 62 % Katzen nicht versichert; Grafik 'Insured (57%)' / '(38%)'"
+    },
+    {
+     "land": "GB",
+     "jahr": 2019,
+     "groesse": "quote_hunde",
+     "wert": 57,
+     "quelle": "pdsa-paw",
+     "berechnet": false,
+     "hinweis": "PAW 2019: 'Insured (57%)' Hund, '(37%)' Katze; Halterbefragung YouGov (Online-Panel), bezogen auf 'your pet'"
+    },
+    {
+     "land": "GB",
+     "jahr": 2019,
+     "groesse": "quote_katzen",
+     "wert": 37,
+     "quelle": "pdsa-paw",
+     "berechnet": false,
+     "hinweis": "PAW 2019: 'Insured (57%)' Hund, '(37%)' Katze"
+    },
+    {
+     "land": "GB",
+     "jahr": 2023,
+     "groesse": "quote_hunde",
+     "wert": 61,
+     "quelle": "pdsa-paw",
+     "berechnet": false,
+     "hinweis": "PAW 2023: 61 % der Hunde (wie 2022), 39 % der Katzen; Halterbefragung YouGov (Online-Panel), bezogen auf 'your pet'"
+    },
+    {
+     "land": "GB",
+     "jahr": 2023,
+     "groesse": "quote_katzen",
+     "wert": 39,
+     "quelle": "pdsa-paw",
+     "berechnet": false,
+     "hinweis": "PAW 2023: 61 % der Hunde (wie 2022), 39 % der Katzen"
+    },
+    {
+     "land": "GB",
+     "jahr": 2024,
+     "groesse": "quote_hunde",
+     "wert": 61,
+     "quelle": "pdsa-paw",
+     "berechnet": false,
+     "hinweis": "PAW 2025, Fieldwork 17.12.2024-12.1.2025, n=5 387, Frage 'Which, if any, of these has your pet had done? ... Insured'; Halterbefragung YouGov (Online-Panel), bezogen auf 'your pet'"
+    },
+    {
+     "land": "GB",
+     "jahr": 2024,
+     "groesse": "quote_katzen",
+     "wert": 46,
+     "quelle": "pdsa-paw",
+     "berechnet": false,
+     "hinweis": "PAW 2025, Fieldwork 17.12.2024-12.1.2025, n=5 387, Frage 'Which, if any, of these has your pet had done? ... Insured'"
+    },
+    {
+     "land": "GB",
+     "jahr": 2015,
+     "groesse": "quote_tiere",
+     "wert": 40,
+     "quelle": "pdsa-paw",
+     "berechnet": false,
+     "hinweis": "PAW 2015: '40% of pet owners have insured their pet' (Halter, alle Arten); Grafik mit 42 %/38 % nicht eindeutig zuordenbar (Hund/Katze oder 2015/2011)"
+    },
+    {
+     "land": "GB",
+     "jahr": 2021,
+     "groesse": "quote_hunde",
+     "wert": 30,
+     "quelle": "yougov-2021",
+     "berechnet": false,
+     "hinweis": "YouGov Profiles: Hundehalter mit Tierversicherung; Widerspruch zu PAW (57-61 %)"
+    },
+    {
+     "land": "GB",
+     "jahr": 2021,
+     "groesse": "quote_katzen",
+     "wert": 20,
+     "quelle": "yougov-2021",
+     "berechnet": false,
+     "hinweis": "YouGov Profiles: Katzenhalter mit Tierversicherung"
+    },
+    {
+     "land": "GB",
+     "jahr": 2020,
+     "groesse": "quote_hunde",
+     "wert": 24,
+     "quelle": "belfius-2020",
+     "berechnet": false,
+     "hinweis": "Sekundär (Corona Direct, BE): 24 % in Großbritannien, ohne Quellenangabe"
+    },
+    {
+     "land": "GB",
+     "jahr": 2015,
+     "groesse": "praemien_mio_lw",
+     "wert": 940,
+     "quelle": "abi-2016",
+     "berechnet": true,
+     "hinweis": "berechnet: 3,9 Mio. × £241 Ø-Prämie; ABI-Mitglieder",
+     "waehrung": "GBP"
+    },
+    {
+     "land": "GB",
+     "jahr": 2018,
+     "groesse": "praemien_mio_lw",
+     "wert": 1200,
+     "quelle": "abi-2019",
+     "berechnet": true,
+     "hinweis": "berechnet: 4,3 Mio. × £279; ABI-Mitglieder",
+     "waehrung": "GBP"
+    },
+    {
+     "land": "GB",
+     "jahr": 2023,
+     "groesse": "praemien_mio_lw",
+     "wert": 1712,
+     "quelle": "abi-2024",
+     "berechnet": true,
+     "hinweis": "berechnet: 4,4 Mio. × £389,2 (inkl. IPT); ABI-Mitglieder",
+     "waehrung": "GBP"
+    },
+    {
+     "land": "GB",
+     "jahr": 2018,
+     "groesse": "praemien_mio_lw",
+     "wert": 1200,
+     "quelle": "globaldata-it-2019",
+     "berechnet": false,
+     "hinweis": "Bruttoprämie (GWP) £1,2 Mrd. laut GlobalData - deckt sich mit Rechnung 4,3 Mio. × £279",
+     "waehrung": "GBP"
+    },
+    {
+     "land": "IE",
+     "jahr": 2023,
+     "groesse": "quote_hunde",
+     "wert": 10,
+     "quelle": "agria-ie-2023",
+     "berechnet": false,
+     "hinweis": "Agria/Xtreme Feb. 2023; 'about 10%' - Herleitung unklar (Halterumfrage n=812 würde eher höhere Quote liefern)"
+    },
+    {
+     "land": "IE",
+     "jahr": 2023,
+     "groesse": "quote_katzen",
+     "wert": 5,
+     "quelle": "agria-ie-2023",
+     "berechnet": false,
+     "hinweis": "Agria/Xtreme Feb. 2023"
+    },
+    {
+     "land": "IE",
+     "jahr": 2023,
+     "groesse": "quote_tiere",
+     "wert": 15,
+     "quelle": "newstalk-2023",
+     "berechnet": false,
+     "hinweis": "'just 15% of pet owners are insured' (Halter)"
+    },
+    {
+     "land": "IE",
+     "jahr": 2024,
+     "groesse": "quote_tiere",
+     "wert": 30,
+     "quelle": "irishtimes-2024",
+     "berechnet": false,
+     "hinweis": "Veterinary Ireland vor Oireachtas: ca. 30 % der Halter versichert - Widerspruch zu Agria (10 %/5 %)"
+    },
+    {
+     "land": "IE",
+     "jahr": 2025,
+     "groesse": "quote_tiere",
+     "wert": 9,
+     "quelle": "hellosafe-2025",
+     "berechnet": false,
+     "hinweis": "HelloSafe-Barometer (Mischschätzung, Stand Juni 2025): 9 %, ~90 000 Tiere"
+    },
+    {
+     "land": "DK",
+     "jahr": 2011,
+     "groesse": "quote_hunde",
+     "wert": 20,
+     "quelle": "agria-dk-2018",
+     "berechnet": false,
+     "hinweis": "Agria-Erstmessung 2011; Sygeforsikring (Krankheit/Unfall), ohne lovpligtige Hundeansvarsforsikring"
+    },
+    {
+     "land": "DK",
+     "jahr": 2014,
+     "groesse": "quote_hunde",
+     "wert": 35,
+     "quelle": "hunden-2015",
+     "berechnet": false,
+     "hinweis": "YouGov für Agria, veröff. 3.2.2015 (Erhebung vermutlich 2014); Sygeforsikring (Krankheit/Unfall), ohne lovpligtige Hundeansvarsforsikring"
+    },
+    {
+     "land": "DK",
+     "jahr": 2014,
+     "groesse": "quote_katzen",
+     "wert": 10,
+     "quelle": "hunden-2015",
+     "berechnet": false,
+     "hinweis": "YouGov für Agria, veröff. 3.2.2015 (Erhebung vermutlich 2014)"
+    },
+    {
+     "land": "DK",
+     "jahr": 2016,
+     "groesse": "quote_hunde",
+     "wert": 39,
+     "quelle": "agria-dk-2021",
+     "berechnet": false,
+     "hinweis": "YouGov (Katzenwert ohne Quellenangabe); Sygeforsikring (Krankheit/Unfall), ohne lovpligtige Hundeansvarsforsikring"
+    },
+    {
+     "land": "DK",
+     "jahr": 2016,
+     "groesse": "quote_katzen",
+     "wert": 11,
+     "quelle": "agria-dk-2021",
+     "berechnet": false,
+     "hinweis": "YouGov (Katzenwert ohne Quellenangabe)"
+    },
+    {
+     "land": "DK",
+     "jahr": 2018,
+     "groesse": "quote_hunde",
+     "wert": 46,
+     "quelle": "agria-dk-2018",
+     "berechnet": false,
+     "hinweis": "YouGov März/April 2018, n=1 018; Sygeforsikring (Krankheit/Unfall), ohne lovpligtige Hundeansvarsforsikring"
+    },
+    {
+     "land": "DK",
+     "jahr": 2018,
+     "groesse": "quote_katzen",
+     "wert": 14,
+     "quelle": "agria-dk-2018",
+     "berechnet": false,
+     "hinweis": "YouGov März/April 2018, n=1 018"
+    },
+    {
+     "land": "DK",
+     "jahr": 2019,
+     "groesse": "quote_hunde",
+     "wert": 54,
+     "quelle": "agria-dk-2021",
+     "berechnet": false,
+     "hinweis": "YouGov; Sygeforsikring (Krankheit/Unfall), ohne lovpligtige Hundeansvarsforsikring"
+    },
+    {
+     "land": "DK",
+     "jahr": 2019,
+     "groesse": "quote_katzen",
+     "wert": 16,
+     "quelle": "agria-dk-2021",
+     "berechnet": false,
+     "hinweis": "YouGov"
+    },
+    {
+     "land": "DK",
+     "jahr": 2021,
+     "groesse": "quote_hunde",
+     "wert": 64,
+     "quelle": "agria-dk-2021",
+     "berechnet": false,
+     "hinweis": "Xtreme, Instituts-/Methodenwechsel ggü. YouGov; Sygeforsikring (Krankheit/Unfall), ohne lovpligtige Hundeansvarsforsikring"
+    },
+    {
+     "land": "DK",
+     "jahr": 2021,
+     "groesse": "quote_katzen",
+     "wert": 19,
+     "quelle": "agria-dk-2021",
+     "berechnet": false,
+     "hinweis": "Xtreme, Instituts-/Methodenwechsel ggü. YouGov"
+    },
+    {
+     "land": "DK",
+     "jahr": 2023,
+     "groesse": "quote_hunde",
+     "wert": 66,
+     "quelle": "hunden-2024",
+     "berechnet": true,
+     "hinweis": "berechnet: 100 - 34 % Hundehalter ohne Sygeforsikring (Xtreme Nov. 2023, n=854 Halter); Halterbasis, nicht Tierbasis"
+    },
+    {
+     "land": "DK",
+     "jahr": 2023,
+     "groesse": "quote_katzen",
+     "wert": 57,
+     "quelle": "hunden-2024",
+     "berechnet": true,
+     "hinweis": "berechnet: 100 - 43 % Katzenhalter ohne Sygeforsikring; starker Widerspruch zu 19 % (2021) - Stichprobe aus Haltern, die online antworten, vermutlich verzerrt"
+    },
+    {
+     "land": "DK",
+     "jahr": 2017,
+     "groesse": "quote_tiere",
+     "wert": 35,
+     "quelle": "epinion-dk-2017",
+     "berechnet": true,
+     "hinweis": "berechnet: 100 - 65 % der Tierhalter ohne Sygeforsikring (Epinion März 2017)"
+    },
+    {
+     "land": "FI",
+     "jahr": 2016,
+     "groesse": "quote_hunde",
+     "wert": 23,
+     "quelle": "agria-fi-2022",
+     "berechnet": false,
+     "hinweis": "Agria-Schätzung beim Markteintritt Sommer 2016 (Kennelliitto: 'etwa ein Viertel'); Katzen 'nur wenige Prozent'"
+    },
+    {
+     "land": "FI",
+     "jahr": 2019,
+     "groesse": "quote_hunde",
+     "wert": 43,
+     "quelle": "agria-fi-2022",
+     "berechnet": false,
+     "hinweis": "Feb. 2019, Quelle im Text nicht benannt (Agria)"
+    },
+    {
+     "land": "FI",
+     "jahr": 2019,
+     "groesse": "quote_katzen",
+     "wert": 8,
+     "quelle": "agria-fi-2022",
+     "berechnet": false,
+     "hinweis": "Feb. 2019, Quelle im Text nicht benannt (Agria)"
+    },
+    {
+     "land": "FI",
+     "jahr": 2021,
+     "groesse": "quote_hunde",
+     "wert": 48,
+     "quelle": "agria-fi-2022",
+     "berechnet": false,
+     "hinweis": "Xtreme Jan. 2021, >900 Halter (je 50 % Hund/Katze)"
+    },
+    {
+     "land": "FI",
+     "jahr": 2021,
+     "groesse": "quote_katzen",
+     "wert": 12,
+     "quelle": "agria-fi-2022",
+     "berechnet": false,
+     "hinweis": "Xtreme Jan. 2021, >900 Halter (je 50 % Hund/Katze)"
+    },
+    {
+     "land": "FI",
+     "jahr": 2025,
+     "groesse": "quote_tiere",
+     "wert": 23,
+     "quelle": "hellosafe-2025",
+     "berechnet": false,
+     "hinweis": "HelloSafe (Stand Juni 2025): 23 %, ~345 000 Tiere bei ~1,5 Mio. Hunden+Katzen - Mischschätzung, nicht belegt"
+    },
+    {
+     "land": "NL",
+     "jahr": 2009,
+     "groesse": "quote_tiere",
+     "wert": 2,
+     "quelle": "bnnvara-2010",
+     "berechnet": false,
+     "hinweis": "Petplan 2010: 2 % der Hunde und Katzen versichert"
+    },
+    {
+     "land": "NL",
+     "jahr": 2020,
+     "groesse": "quote_hunde",
+     "wert": 5,
+     "quelle": "belfius-2020",
+     "berechnet": false,
+     "hinweis": "Corona Direct (BE): 5 % der Hunde in NL, ohne Quelle"
+    },
+    {
+     "land": "NL",
+     "jahr": 2024,
+     "groesse": "quote_hunde",
+     "wert": 25,
+     "quelle": "verbond-2024",
+     "berechnet": false,
+     "hinweis": "Schätzung OHRA (Versicherer) auf Seite des Verbond van Verzekeraars: 25 % der Hunde"
+    },
+    {
+     "land": "NL",
+     "jahr": 2024,
+     "groesse": "quote_katzen",
+     "wert": 8,
+     "quelle": "verbond-2024",
+     "berechnet": false,
+     "hinweis": "Schätzung OHRA: 8 % der Katzen"
+    },
+    {
+     "land": "NL",
+     "jahr": 2026,
+     "groesse": "quote_hunde",
+     "wert": 5,
+     "quelle": "kekmama-2026",
+     "berechnet": false,
+     "hinweis": "Advertorial, ohne Quelle; Widerspruch zu OHRA (25 %)"
+    },
+    {
+     "land": "NL",
+     "jahr": 2026,
+     "groesse": "quote_katzen",
+     "wert": 3,
+     "quelle": "kekmama-2026",
+     "berechnet": false,
+     "hinweis": "Advertorial, ohne Quelle"
+    },
+    {
+     "land": "NL",
+     "jahr": 2025,
+     "groesse": "quote_tiere",
+     "wert": 5,
+     "quelle": "hellosafe-2025",
+     "berechnet": false,
+     "hinweis": "HelloSafe: 5 %, 240 000 Tiere bei ~4,8 Mio."
+    },
+    {
+     "land": "BE",
+     "jahr": 2020,
+     "groesse": "quote_hunde",
+     "wert": 1.5,
+     "quelle": "belfius-2020",
+     "berechnet": false,
+     "hinweis": "Corona Direct: 1,5 % der 1,5 Mio. Hunde, 'uit cijfers van directe...' (eigene Marktsicht)"
+    },
+    {
+     "land": "BE",
+     "jahr": 2023,
+     "groesse": "quote_tiere",
+     "wert": 3,
+     "quelle": "figo-2023",
+     "berechnet": false,
+     "hinweis": "Figo: 'amper 3%' der Haustiere mit Krankenversicherung (Feb. 2023)"
+    },
+    {
+     "land": "BE",
+     "jahr": 2023,
+     "groesse": "quote_tiere",
+     "wert": 3,
+     "quelle": "belfius-2023",
+     "berechnet": false,
+     "hinweis": "3 % von 4,5 Mio. Hunden+Katzen (Dez. 2023, Fußnote Statista)"
+    },
+    {
+     "land": "BE",
+     "jahr": 2023,
+     "groesse": "quote_hunde",
+     "wert": 6,
+     "quelle": "belfius-2023",
+     "berechnet": false,
+     "hinweis": "6 % der Hunde (Statista)"
+    },
+    {
+     "land": "BE",
+     "jahr": 2023,
+     "groesse": "quote_katzen",
+     "wert": 2,
+     "quelle": "belfius-2023",
+     "berechnet": false,
+     "hinweis": "2 % der Katzen (Statista)"
+    },
+    {
+     "land": "BE",
+     "jahr": 2023,
+     "groesse": "policen",
+     "wert": 135000,
+     "quelle": "belfius-2023",
+     "berechnet": true,
+     "hinweis": "berechnet: 3 % × 4,5 Mio. Hunde+Katzen"
+    },
+    {
+     "land": "BE",
+     "jahr": 2025,
+     "groesse": "quote_tiere",
+     "wert": 6,
+     "quelle": "hellosafe-2025",
+     "berechnet": false,
+     "hinweis": "HelloSafe: 6 %, ~190 000 Tiere bei ~3,2 Mio. (anderer Bestand als Belfius 4,5 Mio.)"
+    },
+    {
+     "land": "LU",
+     "jahr": 2025,
+     "groesse": "quote_tiere",
+     "wert": 4,
+     "quelle": "hellosafe-2025",
+     "berechnet": false,
+     "hinweis": "HelloSafe-Tabelle (hellosafe.be): 4 %, ~7 000 Tiere bei ~170 000; hellosafe.ch nennt dagegen <1 % - in sich widersprüchlich, kaum belastbar"
+    }
+   ],
+   "einschaetzung": {
+    "GB": "Belastbarste Größe: ABI-Zahl versicherter Tiere (4,6 Mio. 2024; 3,9 Mio. 2015) geteilt durch PDSA-Bestand Hunde+Katzen -> ca. 21 % (2024), über 2015-2024 erstaunlich stabil 19-22 %. Halterbefragungen liefern viel höhere Werte (PAW 2024/25: Hunde 61 %, Katzen 46 %; YouGov 2021: 30 %/20 %) - PAW fragt 'has your pet been insured' im Online-Panel und ist vermutlich nach oben verzerrt. Empfehlung: Karte 2024 'Tiere je Bestand' = 21 % (ABI/PDSA, berechnet), getrennt nach Art nur PAW (61/46) mit Hinweis. Reihe: ABI/PDSA für 2015, 2018, 2020, 2021, 2023, 2024 belegt; 2016, 2017, 2019, 2022 linear interpolieren (2019-ABI-Basis 3,46 Mio. zählt Versicherungsnehmer, nicht nutzen). Vor 2015 nur PAW-Halterwerte (2011: 52 %/31 %) oder Rückrechnung über ABI '+1,7 Mio. in 10 Jahren' (2013: ca. 2,7 Mio. -> ca. 15 %, berechnet). Zeitreihe 2011/2013-2025 möglich.",
+    "IE": "Keine Register-/Verbandszahl gefunden (Insurance Ireland veröffentlicht keine Tierversicherungsdaten). Werte reichen von 10 % Hunde / 5 % Katzen (Agria 2023) über 15 % der Halter (2023) bis 30 % der Halter (Veterinary Ireland 2024). Für 2024 würde ich ca. 10 % (Tiere) ansetzen, Spanne 9-15 % angeben. Eine Zeitreihe ist nicht belastbar: nur Punkte 2017 (<10 %, Irish Vet Journal laut Suchauszug, nicht verifiziert), 2023, 2025; dazwischen linear, deutlich als gerechnet markieren.",
+    "SE": "Höchste Quote Europas, aber Messung uneinheitlich: Marktschätzung 2017 (KKV) Hunde 80 %, Katzen 25 %; Agria/SKK-Novus 2020 92 %/56 %, Dina/Sifo 2023 95 %/69 %, Agria/SKK 2026 >90 %/65 %. Halterbasierte YouGov-Profile 2021 nur 53 %/46 %. Oft wird Lebens- mit Tierarztversicherung vermischt (2026: Leben 63 % Hunde). Für 2024: Hunde ca. 92 %, Katzen ca. 60-65 % (Agria/SKK-Welle 2024 nicht gefunden -> zwischen 2023 (69 Dina) und 2026 (65) liegt Agria-Reihe; linear zwischen 56 (2020) und 65 (2026) gibt 2024 = 62 %, berechnet). Für die Karte 'Tiere insgesamt' ca. 70 % (gewichtet ~0,95 Mio. Hunde, ~1,6 Mio. Katzen: 0,92·0,95+0,62·1,58 ≈ 1,85/2,53 = 73 %, berechnet). Prämien als Zweitreihe: 1,7 Mrd. SEK 2007, ~4,0 2017, 6,0 2023 (inkl. Pferde ~1/3). Reihe der Quote 2010-2025 nur mit Interpolation aus 3-4 Stützpunkten; der Sprung Katzen 25 % (2017) -> 56 % (2020) ist ein Methodenwechsel, nicht Marktbewegung - Kette über Prämienwachstum wäre die sauberere Rückschreibung.",
+    "NO": "Beste Datenlage der Region: Finans Norge veröffentlicht jährlich (31.12.) Anzahl Verträge und Bestandsprämie der Linie 'Hobbydyr/Kjæledyr/Husdyr' 2013-2025, davon privat (Heimtiere inkl. Pferde). Quote 2024 = 323 127 private Verträge / ca. 1,21 Mio. Hunde+Katzen (DyreID 2025) ≈ 27 %, konsistent mit Tryg 'rund 30 %'. Reihe 2013-2025 vollständig für Verträge; Nenner (Bestand je Jahr) fehlt - DyreID-/SSB-Bestände je Jahr nachrecherchieren oder Bestand halten und als gerechnet markieren. 2010-2012: nur über Prämienwachstum rückschreiben (keine eigene Zeile vor 2013). Achtung Sprung 2016 (+25 % privat), Ursache (neuer Melder?) offen.",
+    "DK": "Nur Agria-Auftragsumfragen (YouGov bis 2019, Xtreme ab 2021), aber lange Reihe: Hunde 20 % (2011), 35 % (2014), 39 % (2016), 46 % (2018), 54 % (2019), 64 % (2021); Katzen 10 %, 11 %, 14 %, 16 %, 19 %. Halterbasierte Xtreme-Umfrage Nov. 2023 ergibt 66 % Hunde / 57 % Katzen - Katzenwert widerspricht der Reihe stark. Keine Prämien-/Vertragsstatistik gefunden (Forsikring & Pension weist Tierversicherung nicht aus). Für 2024: Hunde ca. 66 % (Fortschreibung + Halterwert 2023), Katzen ca. 20-22 % (Fortschreibung der Agria-Tierreihe; 57 % nur als Gegenbeleg nennen). Reihe 2011-2025 mit linearer Interpolation machbar; nach 2021 Werte halten bzw. vorsichtig fortschreiben. Hundehaftpflicht (Pflicht, ~590 000 Policen 2020) nicht mitzählen.",
+    "FI": "Nur Agria-Werte: Hunde 23 % (2016), 43 % (2019), 48 % (2021); Katzen wenige % (2016), 8 % (2019), 12 % (2021). Keine Prämienstatistik (Finanssiala weist Tierversicherung nicht separat aus). Für 2024: Hunde ca. 50 %, Katzen ca. 14 % (Fortschreibung, gerechnet; Agria-Wachstum hat sich nach 2019 verlangsamt). HelloSafe 23 % aller Tiere (2025) passt grob dazu (0,5·0,7 Mio. + 0,14·0,6 Mio. ≈ 0,43 Mio./1,3 Mio. ≈ 33 %, berechnet - HelloSafe niedriger). Reihe 2016-2025 mit Interpolation, vor 2016 keine Daten (Agria-Eintritt; ältere Anbieter LähiTapiola/If existierten, Quote unbekannt).",
+    "IS": "Keine Daten gefunden (weder Verband SFF noch Versicherer VÍS, Sjóvá, TM veröffentlichen Quoten). Produkte existieren (Lebens- und Behandlungskostenversicherung für Hunde/Katzen). Für Karte: 'keine Daten'.",
+    "NL": "Sehr widersprüchlich: 2 % aller Hunde/Katzen (Petplan 2010), 5 % Hunde (2020, belgische Sekundärquelle), OHRA-Schätzung 2024 25 % Hunde / 8 % Katzen (vom Verbond van Verzekeraars veröffentlicht), dagegen 5 %/3 % (2026, ohne Quelle) und HelloSafe 5 % (2025). Keine Verbands-/DNB-Statistik zu Policen oder Prämien gefunden. Für 2024 würde ich Hunde 10-25 % nicht festlegen, sondern eine Spanne zeigen; wenn ein Wert nötig: Tiere insgesamt ca. 5-8 % (Mittel der unabhängigen Schätzungen), OHRA als Obergrenze nennen. Zeitreihe nur über Wachstumsraten der Neuabschlüsse (Overstappen 2020-2023: +21/+23/+20/+36 %) ab 2 % (2010) verkettbar - schwach.",
+    "BE": "Wenige, aber konsistente Belege niedriger Durchdringung: Hunde 1,5 % (2020), Tiere 3 % (Figo Feb. 2023; Belfius Dez. 2023: 6 % Hunde, 2 % Katzen), HelloSafe 6 % (2025). Assuralia weist Tierversicherung nicht aus. 2024: ca. 4 % aller Hunde+Katzen (zwischen 3 % 2023 und 6 % 2025 linear, berechnet), Hunde ca. 7 %, Katzen ca. 2-3 %. Reihe 2020-2025 aus Wachstumsraten Belfius (+33/+33/+21 %) rückwärts verkettbar; vor 2020 gegen 0 (Markt erst um 2015-2020 aufgebaut).",
+    "LU": "Praktisch keine Daten: HelloSafe nennt 4 % (~7 000 Tiere) bzw. auf der Schweizer Seite <1 %. Kein Verband (ACA) oder STATEC-Wert. Für die Karte 'keine belastbaren Daten' oder Nachbarwert Belgien mit Hinweis."
+   }
+  },
+  "mittesued": {
+   "abgerufen": "2026-11-09",
+   "quellen": [
+    {
+     "id": "de-gdv-2026-tiere",
+     "titel": "Tierkrankenversicherung wächst rasant: Mehr als zwei Millionen Hunde, Katzen und Co. abgesichert",
+     "herausgeber": "GDV",
+     "url": "https://www.gdv.de/gdv/medien/medieninformationen/tierkrankenversicherung-waechst-rasant-mehr-als-zwei-millionen-hunde-katzen-und-co-abgesichert-205370",
+     "fundstelle": "Medieninformation (aktualisiert 11.08.2026); eingebettete 23degrees-Grafiken 'Anzahl der versicherten Tiere' (https://app.23degrees.eu/embed/XvobJGV7vNChnOaI-bar-vertical-anzahl-der-versicherten-tiere) und 'Verteilung der versicherten Tiere' (https://app.23degrees.eu/embed/sFCZTqXZVWs9zWqm-bar-stacked-vertical-tierkrankenversicherung); Fußnote: GDV-Sonderumfrage 2025 zum Geschäftsverlauf 2019-2024, 13 Unternehmen beteiligt",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "de-gdv-2026-beitraege",
+     "titel": "Beiträge in der Tierkrankenversicherung steigen stark",
+     "herausgeber": "GDV",
+     "url": "https://www.gdv.de/gdv/medien/medieninformationen/beitraege-in-der-tierkrankenversicherung-steigen-stark-205374",
+     "fundstelle": "Medieninformation 11.08.2026; Grafik 'Tierkrankenversicherung: Beitragsentwicklung, verdiente Brutto-Beiträge' (https://app.23degrees.eu/embed/0npp4tcsdMouYQ2i-bar-vertical-tierkrankenversicherung); GDV-Sonderumfrage 2025, 13 Unternehmen",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "de-ohr-2019",
+     "titel": "Heimtierstudie 2019: Ökonomische und soziale Bedeutung der Heimtierhaltung in Deutschland (R. Ohr, Uni Göttingen, unterstützt von AGILA)",
+     "herausgeber": "Universität Göttingen",
+     "url": "https://uni-goettingen.de/de/document/download/52bbce3b8ebcfef2faa77d50d72a0b21.pdf/Heimtierstudie%202019%20final%20korr..pdf",
+     "fundstelle": "Kap. III C 'Tierversicherungen', S. 25-26, Tab. 3 und Fußnoten 61-63",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "de-strohbuecker-2026",
+     "titel": "Strohbücker et al.: Umfrage zur Tierkrankenversicherung in Deutschland aus tierärztlicher Sicht, BMTW 139 (2026), DOI 10.2376/1439-0299-2026-12",
+     "herausgeber": "Berliner und Münchener Tierärztliche Wochenschrift / FU Berlin",
+     "url": "https://vetline.de/system/files/frei/bmtw-10.23761439-0299-2026-12-strohbuecker.pdf",
+     "fundstelle": "Einleitung S. 1 (Zitate Rosin 2015, Fiedermutz 2020, Dick 2023, ZZF&IVH 2025); Ergebnisse (Schätzung der Tierärzte); Feldzeit 27.08.-07.10.2025",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "de-zzf-ivh",
+     "titel": "Der deutsche Heimtiermarkt / Heimtierpopulation (Skopos-Haushaltsbefragung, jährlich)",
+     "herausgeber": "IVH / ZZF",
+     "url": "https://www.presseportal.de/download/document/661e3f1f270000fd2cdf049b-zzf-ivh-pm-heimtiere-eutschland-2023.pdf",
+     "fundstelle": "Jährliche Pressemitteilungen; 2024: 15,9 Mio. Katzen, 10,5 Mio. Hunde (zitiert in Strohbücker 2026 als ZZF&IVH 2025); 2019 10,1 Mio. Hunde; 2020 15,7 Mio. Katzen, 10,7 Mio. Hunde; 2021 10,3 Mio. Hunde (PM April 2022); 2022 15,2 Mio. Katzen, 10,6 Mio. Hunde; 2023 15,7 Mio. Katzen, 10,5 Mio. Hunde; Katzen 2019 (14,7 Mio.) und 2021 (16,7 Mio.) nicht live gegengeprüft",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "de-check24-2023",
+     "titel": "Umfrage zu Tierversicherungen",
+     "herausgeber": "CHECK24",
+     "url": "https://www.check24.de/tierversicherung/umfrage-zu-tierversicherungen/",
+     "fundstelle": "Online-Umfrage Aug. 2023, 1.003 Haustierbesitzer; laut Suchauszug 53 % der Hunde ohne Krankenversicherung",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "de-hellosafe-2025",
+     "titel": "Tierkrankenversicherung Barometer 2025",
+     "herausgeber": "HelloSafe",
+     "url": "https://hello-safe.de/tierversicherung/markt",
+     "fundstelle": "Barometer, Ländertabelle; keine Einzelbelege (Quellenliste pauschal)",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "de-fellakte-2026",
+     "titel": "Marktanalyse 08: Wie viele Hunde und Katzen sind in Deutschland krankenversichert?",
+     "herausgeber": "FellAkte Research",
+     "url": "https://fellakte.de/forschung/tierkrankenversicherung-deutschland",
+     "fundstelle": "Zusammenstellung Juni 2026, Tabelle Versicherungsquoten (Zweitquelle)",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "de-tonline-2026",
+     "titel": "Tierversicherungen boomen: Zahl der Verträge hat sich mehr als verdoppelt",
+     "herausgeber": "t-online",
+     "url": "https://www.t-online.de/finanzen/aktuelles/id_101383944/tierversicherungen-boomen-zahl-der-vertraege-hat-sich-mehr-als-verdoppelt.html",
+     "fundstelle": "Artikel 12.08.2026 (gibt GDV-Anteil 'umfassend versichert' fälschlich als Anteil der Halter wieder)",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "hellosafe-fr-2026",
+     "titel": "Baromètre 2026 de l'assurance animaux (Ländertabelle Europa)",
+     "herausgeber": "HelloSafe",
+     "url": "https://hellosafe.fr/assurance-animaux/marche",
+     "fundstelle": "Tableau comparatif, 22 Länder; Werte ohne Einzelquelle; innere Widersprüche (UK 25 % von 26 Mio. ≠ 4,8 Mio.)",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "fr-ifop-bi-2024",
+     "titel": "La santé animale et l'image des vétérinaires auprès des Français (Ergebnisse)",
+     "herausgeber": "Ifop für Boehringer Ingelheim",
+     "url": "https://www.ifop.com/wp-content/uploads/2024/04/120646-resultats.pdf",
+     "fundstelle": "Folie 'Le bénéfice d'une assurance santé pour animal', S. 23; Methodik S. 2–3 (2.032 Befragte, davon 1.197 Tierhalter, online 12.–14.03.2024)",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "fr-ifop-fidanimo-2023",
+     "titel": "Les Français sous-estiment les frais de vétérinaires des animaux de compagnie (Enquête Fidanimo/Ifop)",
+     "herausgeber": "Fidanimo / Ifop",
+     "url": "https://www.fidanimo.com/article-enquete-ifop",
+     "fundstelle": "Fließtext ('seuls 15% des sondés ont souscrit une assurance'); Methodik am Ende: 1.001 Halter von Hund und/oder Katze ab 18 J., 30.08.–05.09.2023. Ifop-Meldung vom 15.01.2024: https://www.ifopgroup.com/article/les-francais-animaux-de-compagnie-frais-veterinaires",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "fr-sollyazar-2025",
+     "titel": "Baromètre de l'assurance santé Chien Chat Solly Azar, 2e édition (Pressemitteilung 26.06.2025)",
+     "herausgeber": "Solly Azar / OpinionWay",
+     "url": "https://groupe.sollyazar.com/sites/default/files/2025-07/Solly%20Azar_CP_Barom%C3%A8tre%20de%20l'assurance%20sant%C3%A9%20Chien%20Chat.pdf",
+     "fundstelle": "Abschnitt 'Un manque d'adhésion et d'information sur l'assurance santé animale' (25 %, −5 Punkte ggü. 2024); Méthodologie S. 3: 28.05.–02.06.2025, 1.861 Befragte, davon 1.040 Hunde-/Katzenhalter, Quoten",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "fr-sollyazar-2024",
+     "titel": "Baromètre Chien/Chat Solly Azar x OpinionWay, 1re édition (Meldung 11.10.2024)",
+     "herausgeber": "Solly Azar / OpinionWay",
+     "url": "https://courtier.sollyazar.com/taxonomy/term/304",
+     "fundstelle": "Meldung vom 11.10.2024: 'Seulement 30% possèdent une assurance pour leur compagnon'; Methodik dort nicht angegeben, Bestätigung über −5 Punkte in fr-sollyazar-2025",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "fr-besse-2017",
+     "titel": "Les assurances santé pour les chiens et les chats (Thèse d'exercice vétérinaire, E. Besse)",
+     "herausgeber": "DUMAS / ENV Toulouse",
+     "url": "https://dumas.ccsd.cnrs.fr/dumas-04541817/file/Besse_25311.pdf",
+     "fundstelle": "Teil I, Kap. 4.1 'Proportion de chats et chiens assurés – En France' (S. 19: 2016 4 % nach Goffart, La Semaine Vétérinaire ASV n°100, Juni 2016; 2009 2 % nach Truffert 2009); Kap. 5.1 (S. 20–21: INSEE-Enquête Budget de Famille 2011, Auswertung Cendrier 2016: 5 % der Hunde, 0,6 % der Katzen versichert, Bezugsjahr 2010); Teil III Diskussion (3 % 2013 nach Trouillet, La Semaine Vétérinaire 2013)",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "fr-santevet-2011",
+     "titel": "Les Français, leurs chiens et chats et l'assurance santé animale",
+     "herausgeber": "SantéVet",
+     "url": "https://www.santevet.com/articles/les-francais-leurs-chiens-et-chats-et-l-assurance-animale",
+     "fundstelle": "Einleitung ('quelque 4 % à assurer leur compagnon'); Artikel vom 13.05.2011, Quelle 'Base ensemble de la clientèle SantéVet, avril 2011'",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "fr-hellosafe-2025",
+     "titel": "Baromètre 2026 de l'assurance animaux: analyse, tendances et chiffres clés",
+     "herausgeber": "HelloSafe (Vergleichsportal)",
+     "url": "https://hellosafe.fr/assurance-animaux/marche",
+     "fundstelle": "Abschnitte 'Où en est l'assurance santé animale en France ?' (7 % Hunde, 4 % Katzen) und 'Marché de l'assurance santé animale' (600 Mio. € 2025, 400 Mio. € 2020); veröffentlicht 17.07.2025, geändert 05.09.2025; keine Primärquelle genannt. Übernommen von Le Figaro 01.08.2025 und La Dépêche Vétérinaire n°1800 (1,3 Mio. Tiere = 5 %)",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "fr-depecheveto-2026",
+     "titel": "Assurances de santé pour animaux de compagnie : promotrices de l'activité vétérinaire ?",
+     "herausgeber": "La Dépêche Vétérinaire n°1800",
+     "url": "https://www.depecheveterinaire.com/assurances-de-sante-pour-animaux-de-compagnie-promotrices-de-l-activite-veterinaire_67994E873F70AD6E.html",
+     "fundstelle": "Absatz zum europäischen Vergleich: 'couvre environ 1,3 million d'animaux (soit 5 %)', Fußnote 6 = HelloSafe; 'la France stagne autour de 5-6 % de couverture'",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "fr-argus-santevet-2025",
+     "titel": "Comment SantéVet s'impose sur le marché de l'assurance des animaux de compagnie",
+     "herausgeber": "L'Argus de l'assurance (G. Perrin), 16.06.2025",
+     "url": "https://www.argusdelassurance.com/assurance-de-personnes/sante/comment-santevet-s-impose-sur-le-marche-de-l-assurance-des-animaux-de-compagnie.235909",
+     "fundstelle": "Kasten 'SantéVet en chiffres' (frei lesbarer Teil): 120 Mio. € Prämien 2024 (+20 %), 24 % Ausland; Taux d'équipement 7 % in Frankreich. Rest hinter Bezahlschranke, nicht gelesen",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "fr-assurland-2025",
+     "titel": "L'état du marché de l'assurance santé animale en 2025",
+     "herausgeber": "Assurland (Vergleichsportal), 28.01.2025",
+     "url": "https://www.assurland.com/assurance-chiens-chats/actualites/frais-veterinaires-l-importance-de-l-assurance-animale_141829.html",
+     "fundstelle": "Einleitung: 6 % der Hunde und Katzen versichert, ohne Quelle/Jahr",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "fr-sammut-2024",
+     "titel": "Perception de l'assurance santé pour animaux de compagnie dans la profession vétérinaire en France (Thèse M. Sammut, Lyon 2024)",
+     "herausgeber": "DUMAS / VetAgro Sup",
+     "url": "https://dumas.ccsd.cnrs.fr/dumas-04678358v1/file/2024lyon043.pdf",
+     "fundstelle": "S. 32, unter Abb. 1 (FACCO 2023): 'seuls 5% de ces animaux sont assurés' (ohne eigene Quelle)",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "it-facile-2026",
+     "titel": "Vacanze: 6,3 milioni di padroni viaggeranno con l'amico a 4 zampe (comunicato 07.07.2026)",
+     "herausgeber": "Facile.it / EMG",
+     "url": "https://www.facile.it/ufficio-stampa/comunicati/vacanze-63-milioni-di-padroni-viaggeranno-con-lamico-a-4-zampe.html",
+     "fundstelle": "Abschnitt 'Le polizze per gli amici a 4 zampe'; Methodik-Fußnote: EMG, 1.500 Befragte ab 18 J., CAWI, 4.–8.06.2026",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "it-facile-2025",
+     "titel": "Vacanze: più di 7 milioni partiranno con il proprio amico a 4 zampe (comunicato 02.07.2025)",
+     "herausgeber": "Facile.it / EMG Different",
+     "url": "https://www.facile.it/ufficio-stampa/comunicati/vacanze-piu-di-7-milioni-partiranno-con-il-proprio-amico-a-4-zampe.html",
+     "fundstelle": "Abschnitt 'Le assicurazioni per Fido e Micio'; Methodik-Fußnote: 1.502 Befragte ab 18 J., CAWI, 12.–18.06.2025",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "it-facile-2020",
+     "titel": "Animali: solo il 15,3% dei proprietari li assicura (comunicato Okt. 2020, PDF)",
+     "herausgeber": "Facile.it / EMG Acqua",
+     "url": "https://media.cdn.facile.it/facile/comunicati/pdf/355/original.pdf?v=20210326191432",
+     "fundstelle": "S. 1 (15,3 % = 3.122.096 Halter, 'lo assicurano o lo hanno assicurato in passato'; 89,5 % davon RC und Rechtsschutz); Nota metodologica: 1.000 Befragte 18–74 J., CAWI, 10.–12.07.2020",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "it-nomisma-unisalute-2025",
+     "titel": "Salute dei pet: poca prevenzione, piacciono le polizze (Bericht über Osservatorio UniSalute/Nomisma)",
+     "herausgeber": "ANMVI Oggi, 09.09.2025 (Studie: Nomisma für UniSalute)",
+     "url": "https://www.anmvioggi.it/in-evidenza/77882-nomisma-proprietari-di-pet-fanno-poca-prevenzione.html",
+     "fundstelle": "Teaser und Fließtext: 'Il 22% ha una polizza per le spese veterinarie'; bestätigt durch Insurance Trade 15.09.2025 (https://www.insurancetrade.it/insurance/contenuti/mercato/15530/unisalute-cresce-l-interesse-per-le-polizze-pet: '53% ... conoscerle e ... 22% ne ha sottoscritta una'). Stichprobe/Methode in beiden Berichten nicht genannt",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "it-ivass-2024",
+     "titel": "Indagine sulle polizze per animali domestici (Ottobre 2024)",
+     "herausgeber": "IVASS",
+     "url": "https://www.ivass.it/consumatori/azioni-tutela/indagini-tematiche/documenti/2024/Report_Polizze_per_animali_domestici_ottobre_2024.pdf",
+     "fundstelle": "Kap. 2 'Perimetro dell'analisi': 81 Produkte von 32 Versicherern am 31.07.2024 (23 stand-alone, 56 in Casa/Famiglia, 2 Reise); Kap. 6 Conclusioni: ca. 19 Mio. Hunde und Katzen (Assalco-Zoomark 2024). Keine Policen- oder Prämienzahlen",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "it-pltv-2025",
+     "titel": "Pet Insurance ferma a mezzo Miliardo: dall'Rc al Funerale, cresce l'Offerta",
+     "herausgeber": "PLTV.it (G. Gaetano), 08.09.2025",
+     "url": "https://www.pltv.it/news-assicurazioni/compagnie/pet-insurance-ferma-a-mezzo-miliardo-dallrc-al-funerale-cresce-lofferta",
+     "fundstelle": "Vorletzte Absätze: 'meno di 2 milioni di proprietari, neanche il 15% del totale' ('confrontando diversi report'); 'il nostro mercato assicurativo si aggira ancora sul mezzo miliardo' (ohne Einheit/Quelle/Jahr)",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "it-corriere-2024",
+     "titel": "Assicurazioni per animali domestici: come funzionano, quali sono le più vendute e come sceglierle",
+     "herausgeber": "Corriere della Sera (S. Tirrito), 28.04.2024",
+     "url": "https://www.corriere.it/economia/consumi/24_aprile_28/assicurazioni-per-animali-domestici-come-funzionano-quali-sono-le-piu-vendute-e-come-sceglierle-fcaa4429-531b-450f-a54f-8696477a1xlk.shtml",
+     "fundstelle": "Fließtext nach Europ-Assistance-Erhebung: 63 % der Hunde-/Katzenhalter mit RC-Deckung; 49 % derer mit spezifischer Tierpolice wegen Gesundheitskosten; +30 % Policen 2023",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "it-assalco-2025",
+     "titel": "XVIII edizione Rapporto Assalco – Zoomark 2025 (Sintesi)",
+     "herausgeber": "Assalco / Zoomark",
+     "url": "https://www.zoomark.it/media/zoomark/pressrelease/2025/comunicati%20stampa/Rapporto_Assalco_-_Zoomark_2025_-_Sintesi.pdf",
+     "fundstelle": "Area sociale: 9 Mio. Hunde, 11,9 Mio. Katzen (Stand 2024); Versicherung nur als Forderung nach Steuerabzug für 'polizze veterinarie', keine Quote",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "es-unespa-2025",
+     "titel": "Los percances de mascotas tienen un coste medio de 239 euros (Informe El seguro de mascotas 2023-2024, Estamos Seguros)",
+     "herausgeber": "UNESPA / Estamos Seguros",
+     "url": "https://www.unespa.es/notasdeprensa/seguro-mascotas-2023-2024/",
+     "fundstelle": "Pressemitteilung 20.01.2025, Absatz zur Methodik: Stichprobe >220.800 versicherte Tiere, >64.000 Schäden, Aug. 2023–Jul. 2024, 15 Versicherer; Leistungsmix RC Sachschaden 52 %, Tierarzt 37,9 %; ohne Hausratversicherung",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "es-unespa-2017",
+     "titel": "7 de cada 10 solicitudes para mascotas se deben a prestaciones veterinarias (Informe Estamos Seguros 2016)",
+     "herausgeber": "UNESPA",
+     "url": "https://www.unespa.es/main-files/uploads/2017/05/NdP-Unespa-Seguros-Mascotas-20170523.pdf",
+     "fundstelle": "S. 1: 16.000 versicherte Schadensfälle/Jahr, 98,5 % Hunde; S. 2 Grafik 1: Tierarzt 69,3 %, RC 10,7 %; nur reine Tierversicherungen. Keine Zahl versicherter Tiere",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "es-icea-2026",
+     "titel": "El 42% de los hogares dispone ya de algún tipo de protección para sus mascotas (ICEA Monitor del Seguro de Mascotas / Observatorio Comercial)",
+     "herausgeber": "Grupo Aseguranza (nach ICEA)",
+     "url": "https://www.grupoaseguranza.com/noticias-de-seguros/n-42-hogares-dispone-ya-algun-tipo-proteccion-para-mascotas",
+     "fundstelle": "Meldung 28.10.2026, erster Absatz: 42 % der Haushalte mit Hund oder Katze haben irgendeinen Schutz (eigene Tierpolice ODER Klausel in Hausrat-, Kranken-, Sterbegeldpolice), Haushalte mit Hund 55 %",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "es-redaccionmedica-2026",
+     "titel": "La salud animal gana terreno: el 42% de los propietarios de mascotas cuenta con un seguro veterinario",
+     "herausgeber": "Redacción Médica",
+     "url": "https://www.redaccionmedica.com/profesionales/veterinaria/20261030/la-salud-animal-gana-terreno-el-de-los-propietarios-mascotas-cuenta-con-un-seguro-veterinario/363944_0.html",
+     "fundstelle": "30.10.2026: ICEA-Monitor, Online-Befragung von 8.000 Haushalten mit Tier; Überschrift spricht irreführend von 'seguro veterinario'",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "es-icea-2025",
+     "titel": "La experiencia del cliente en seguros de mascotas obtiene un notable",
+     "herausgeber": "ICEA",
+     "url": "https://www.icea.es/es-ES/noticias/Noticias/Noticias0725/Dia-02/mascotas.aspx",
+     "fundstelle": "02.07.2025: 18 % der Nichtversicherten wollen bald abschließen; Stichprobe 8.000 Haushalte; keine Quote veröffentlicht",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "es-mapfre-2019",
+     "titel": "Mapfre consigue casi 5 millones en primas asegurando perros y gatos",
+     "herausgeber": "Merca2",
+     "url": "https://www.merca2.es/2019/11/27/mapfre-millones-perros-gatos-226983/",
+     "fundstelle": "27.11.2019: Mapfre knapp 41.000 Tierpolicen, ca. 67.000 versicherte Tiere, ca. 4,8 Mio. EUR Prämien, Durchschnittsprämie ca. 120 EUR",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "es-petplan",
+     "titel": "Comparativa mejores coberturas seguro mascotas",
+     "herausgeber": "Petplan España (Versicherer)",
+     "url": "https://petplan.es/corredores/comparativa-mejores-coberturas-seguro-mascota.html",
+     "fundstelle": "Einleitung: 'más de 9 millones de perros y 6 millones de gatos ... sólo un 2% tienen seguro de salud'; ohne Quelle und Jahr (Footer 2025)",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "es-segurosnews-2023",
+     "titel": "Solo un 3% de los dueños de perros en España cuentan con un seguro de Salud para su mascota",
+     "herausgeber": "SegurosNews",
+     "url": "https://segurosnews.com/ultimas-noticias/solo-un-3-de-los-duenos-de-perros-en-espana-cuentan-con-un-seguro-de-salud-para-su-mascota",
+     "fundstelle": "26.01.2023: 'tan solo un 3% cuenta con un seguro de salud', ohne Quellenangabe",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "es-imveterinaria-2025",
+     "titel": "Solo el 3% de los perros censados en España tiene un seguro de salud",
+     "herausgeber": "IM Veterinaria",
+     "url": "https://www.imveterinaria.es/noticia/13448/solo-el-3-de-los-perros-censados-en-espana-tiene-un-seguro-de-salud.html",
+     "fundstelle": "26.11.2025: 3 % der Hunde, 16 % der (registrierten) Katzen mit Krankenversicherung, ohne Quelle; REIAC 2023: 10.165.498 Hunde, 967.834 Katzen",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "es-elcierre-2026",
+     "titel": "El auge de los seguros para mascotas en España",
+     "herausgeber": "El Cierre Digital",
+     "url": "https://elcierredigital.com/economia/el-auge-de-los-seguros-para-mascotas-en-espana-los-perros-salen-mas-caros-y-varias-polizas-incluyen-ya-psicologos",
+     "fundstelle": "15.02.2026: Markt ca. 550 Mio. EUR 2024, ca. 50 % der Hunde und 16 % der Katzen mit 'irgendeiner Deckung' – alles ohne Quelle",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "es-hellosafe-forbespt-2025",
+     "titel": "Mais de metade dos lares portugueses têm animais de estimação, mas apenas 5% têm seguros (HelloSafe Barómetro 2025)",
+     "herausgeber": "Forbes Portugal (nach HelloSafe)",
+     "url": "https://www.forbespt.com/mais-de-metade-dos-lares-portugueses-tem-animais-de-estimacao-mas-apenas-5-tem-seguros/",
+     "fundstelle": "24.07.2025: PT 5 % der Haushalte mit Tier, ca. 255.000 versicherte Tiere; ES 2 % von ca. 15 Mio. Tieren (>300.000), Rang 19 von 22; keine Methodik",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "es-ministerio-2026",
+     "titel": "Un estudio del Gobierno estima que en España hay más de 15 millones de animales de compañía",
+     "herausgeber": "Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+     "url": "https://www.dsca.gob.es/va/comunicacion/notas-prensa/estudio-gobierno-estima-que-espana-hay-mas-15-millones-animales-compania",
+     "fundstelle": "05.06.2026: 15.171.569 Heimtiere aus den Registern der Comunidades 2021–2025; 7.562.893 Hunde, 5.619.967 Katzen; +14 % seit 2021",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "fediaf-2026",
+     "titel": "FEDIAF Facts & Figures 2026 (Daten 2024)",
+     "herausgeber": "FEDIAF EuropeanPetFood",
+     "url": "https://www.zzf.de/fileadmin/ZZF/Dokumente/Heimtiermarkt/FEDIAF_Facts_Figures_2026.pdf",
+     "fundstelle": "S. 26 European Dog Population: ES 6.962.000, PT 3.071.000, PL 8.282.000; S. 27 European Cat Population: ES 4.939.000, PT 2.116.000, PL 7.463.000; S. 34 Haushalte mit Hund/Katze: ES 70/56 %, PL 52/42 %, PT 39/32 %; Datenjahr 2024",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "es-estamosseguros-ley",
+     "titel": "Nueva Ley de Bienestar Animal: ¿Debo asegurar a mi perro?",
+     "herausgeber": "Estamos Seguros (UNESPA)",
+     "url": "https://www.estamos-seguros.es/nueva-ley-de-bienestar-animal-debo-asegurar-a-mi-perro/",
+     "fundstelle": "Ley 7/2023 verlangt Haftpflicht für Hunde; Pflicht greift laut Text erst mit Durchführungsverordnung",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "pt-eco-2024",
+     "titel": "Mercado de seguros de animais cresce rapidamente em Portugal e mobiliza seguradoras (Lusa)",
+     "herausgeber": "ECO (Lusa), auch Jornal de Negócios, Observador",
+     "url": "https://eco.sapo.pt/2024/08/11/mercado-de-seguros-de-animais-cresce-rapidamente-em-portugal-e-mobiliza-seguradoras/",
+     "fundstelle": "11.08.2024: Fidelidade 82.000 Policen in Kraft Ende Juli 2024 (+ca. 50 %); Ageas ca. 20.500 Policen, Tierversicherung ca. 11 % der RC-Sparte (Prämien Ende 2023); Mapfre >20.000 Policen, seit 2022 stabil; Generali Tranquilidade Volumen seit 2022 fast +50 %, >1 Mio. EUR",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "pt-marktest-2023",
+     "titel": "373 mil portugueses contam com seguro para animais de companhia (Marktest Basef Seguros)",
+     "herausgeber": "Veterinária Atual (nach Marktest)",
+     "url": "https://www.veterinaria-atual.pt/sem-categoria/373-mil-portugueses-contam-com-seguro-para-animais-de-companhia/",
+     "fundstelle": "26.05.2023: 2022 hatten 373.000 Einwohner ab 15 Jahren (4,1 %) eine Tierversicherung; leicht unter den Vorjahren, über dem Mittel des Zeitraums",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "pt-marketeer-2026",
+     "titel": "Está entre os 15% de tutores com seguro de saúde animal? (PetPulse Insights, UPPartner)",
+     "herausgeber": "Marketeer",
+     "url": "https://marketeer.sapo.pt/esta-entre-os-15-de-tutores-com-seguro-de-saude-animal/",
+     "fundstelle": "29.01.2026: 15 % der Halter mit Tierkrankenversicherung, 40 % Absicht; n=483 Halter",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "pt-ey-2026",
+     "titel": "Seguros para animais de companhia: um mercado ainda por explorar",
+     "herausgeber": "EY Portugal (auch als Brands' ECO)",
+     "url": "https://www.ey.com/pt_pt/insights/assurance/seguros-para-animais-de-companhia-um-mercado-ainda-por-explorar",
+     "fundstelle": "12.05.2026: 'apenas uma minoria, 15%, está protegida por seguro' nach PetPulse 2025 (dort Halter-Basis, hier als Tier-Anteil wiedergegeben)",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "pt-cnn-2026",
+     "titel": "Seguros para animais disparam em Portugal com aumento da longevidade e custos veterinários (Revista de Imprensa nach JN)",
+     "herausgeber": "CNN Portugal / Jornal de Notícias",
+     "url": "https://cnnportugal.iol.pt/caes/gatos/seguros-para-animais-disparam-em-portugal-com-aumento-da-longevidade-e-custos-veterinarios/20260506/69fae2fdd34e28842c83b212",
+     "fundstelle": "06.05.2026: ein (ungenannter) Versicherer >105.000 Policen, ein anderer >10 % Wachstum p. a.",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "pl-rp-2024",
+     "titel": "Polisa dla kota lub psa? Aż 40 proc. właścicieli nawet nie wie, że są takie ubezpieczenia",
+     "herausgeber": "Rzeczpospolita (nach Bericht ARC Rynek i Opinia für TU Europa)",
+     "url": "https://www.rp.pl/ubezpieczenia/art40326111-polisa-dla-kota-lub-psa-az-40-proc-wlascicieli-nawet-nie-wie-ze-sa-takie-ubezpieczenia",
+     "fundstelle": "10.05.2024: 13 % der Hunde-/Katzenhalter mit Versicherung (Hundehalter 16 %, Katzenhalter 8 %); Schätzung TU Europa: weniger als 1 % aller Heimtiere versichert; Marktanteile unter Versicherten: PZU ca. 1/3, Generali 1/10, Petcover 8 %, Allianz 8 %",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "pl-tvn24-2024",
+     "titel": "Ubezpieczenie dla psów i kotów 2024. Ich popularność rośnie",
+     "herausgeber": "TVN24 Biznes",
+     "url": "https://tvn24.pl/biznes/pieniadze/ubezpieczenie-dla-psow-i-kotow-2024-ich-popularnosc-rosnie-st7895312",
+     "fundstelle": "06.05.2024: laut ARC-Bericht für TU Europa 'ubezpieczone jest tylko około co dziesiąte zwierzę'; TUZ: Policen in 2 Jahren verfünffacht",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "pl-tueuropa-2025",
+     "titel": "Wciąż rzadko ubezpieczamy zwierzęta domowe. Jak wypadamy na tle Europy?",
+     "herausgeber": "TU Europa (Pressemitteilung)",
+     "url": "https://media.tueuropa.pl/396613-wciaz-rzadko-ubezpieczamy-zwierzeta-domowe-jak-wypadamy-na-tle-europy",
+     "fundstelle": "09.04.2025: Studie ARC Rynek i Opinia 'Ubezpieczenia dla zwierząt', 2024, CAWI, N=836 Heimtierhalter; Anteil PL nur 'znikomy' ohne Zahl",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "pl-bankier-2026",
+     "titel": "Operacja psa może kosztować ponad 10 tys. zł (Koszty leczenia psów i kotów rosną...)",
+     "herausgeber": "Bankier.pl",
+     "url": "https://www.bankier.pl/wiadomosc/Koszty-leczenia-psow-i-kotow-rosna-Coraz-wiecej-wlascicieli-siega-po-polisy-9177780.html",
+     "fundstelle": "05.08.2026: PL 'mniej niż 1 proc. psów i kotów' versichert, Schätzung der Plattform Umbrex (ohne Methodik)",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "pl-forbes-2024",
+     "titel": "Rośnie popyt na polisy dla zwierząt. Oferta ubezpieczycieli jest jednak skromna",
+     "herausgeber": "Forbes Polska",
+     "url": "https://www.forbes.pl/biznes/rosnie-popyt-na-polisy-dla-zwierzat-oferta-ubezpieczycieli-jest-jednak-skromna/wdcv4ce",
+     "fundstelle": "11.04.2024: Pethelp-Chef: Potenzial derzeit ca. 2,5 % des Marktes = ca. 370.000 Tiere; Pethelp Kundenzahl verdoppelt sich jährlich; TUZ x5 in 2 Jahren; bezpieczny.pl (Generali) Verträge verdoppeln sich jährlich",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "pl-rankomat-2024",
+     "titel": "Niemal co drugie gospodarstwo domowe w Polsce posiada psa lub kota",
+     "herausgeber": "Rankomat.pl (nach FEDIAF 2023)",
+     "url": "https://rankomat.pl/o-nas/biuro-prasowe/niemal-co-drugie-gospodarstwo-domowe-w-polsce-posiada-psa-lub-kota-analiza-rankomat-pl",
+     "fundstelle": "31.10.2024: ca. 8,1 Mio. Hunde, 7,25 Mio. Katzen; 49 % der Haushalte mit Hund, 41 % mit Katze",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "pl-rf-2024",
+     "titel": "Ubezpieczenia zwierząt domowych (Poradnik)",
+     "herausgeber": "Rzecznik Finansowy",
+     "url": "https://rf.gov.pl/wp-content/uploads/2024/10/Ubezpieczenia-Zwierzat-Domowych-1.pdf",
+     "fundstelle": "Okt. 2024, S. 1–2: Tierversicherung als eigener Vertrag oder als Klausel in Wohn- oder Privathaftpflichtpolice; keine Marktzahlen",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "sandoe2023",
+     "titel": "Sandøe et al. (2023): Cat and dog owners' expectations and attitudes towards advanced veterinary care (AVC) in the UK, Austria and Denmark, Frontiers in Veterinary Science 10:1237547",
+     "herausgeber": "Frontiers in Veterinary Science",
+     "url": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2023.1237547/full",
+     "fundstelle": "Table 5 (Anteil versicherter Hunde/Katzen je Tier) und Table 6 (Haushalte); Feldzeit 11.–25.03.2022 (AT), Online-Panel, n AT 1.500 Befragte, 526 Hunde/921 Katzen",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "springer2026",
+     "titel": "Springer, Lund, Sandøe, Corr (2026): Investigating dog and cat owners' uptake of pet health insurance and spending on veterinary treatment, Veterinary Record, doi 10.1002/vetr.70621 (Zusammenfassung Uni Kopenhagen)",
+     "herausgeber": "Universität Kopenhagen, Animal Ethics",
+     "url": "https://animalethics.ku.dk/companion-animals/ownership-of-companion-animals/investigating-dog-and-cat-owners-uptake-of-pet-health-insurance-and-spending-on-veterinary-treatment/",
+     "fundstelle": "Projektseite: 41,7 % versichert gesamt, Österreich 78,7 % unversichert; N = 2.117, März 2022",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "tt2026",
+     "titel": "In Österreich selten Versicherung für Hund und Katz (APA-Meldung zu Springer et al.)",
+     "herausgeber": "Tiroler Tageszeitung / APA",
+     "url": "https://www.tt.com/artikel/30932440/in-oesterreich-selten-versicherung-fuer-hund-und-katz",
+     "fundstelle": "Artikel vom 22.04.2026: „mit 21,3 Prozent noch relativ selten“; 78,7 % unversichert, 800 Teilnehmer in Österreich; Erhebung NORSTAT",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "strohbuecker2026",
+     "titel": "Strohbücker et al. (2026): Tierkrankenversicherung aus Sicht kurativ tätiger Tierärzt:innen, Berliner und Münchener Tierärztliche Wochenschrift",
+     "herausgeber": "Vetline / Schlütersche",
+     "url": "https://vetline.de/system/files/frei/bmtw-10.23761439-0299-2026-12-strohbuecker.pdf",
+     "fundstelle": "Einleitung S. 1: zitiert Sandøe et al. 2023 mit AT 29 % Hunde / 10 % Katzen (Gegenprobe der Zitierung)",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "vvo2023",
+     "titel": "VVO Jahresbericht 2023 – Datenteil",
+     "herausgeber": "Versicherungsverband Österreich (VVO)",
+     "url": "https://www.vvo.at/cms/wp-content/uploads/2024/05/VVO_Jahresbericht2023_Datenteil_end.pdf",
+     "fundstelle": "Kap. 7.1 Kleine Versicherungsvereine a.G., Zeile „Tierversicherungsvereine“ (Prämien in 1.000 €, 2020–2023) – Nutztier-Vereine, keine Heimtierversicherung",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "hellosafe_ch",
+     "titel": "Barometer Haustierversicherung Schweiz 2026: Alle Zahlen und Trends",
+     "herausgeber": "HelloSafe",
+     "url": "https://hellosafe.ch/de/tierversicherung/markt",
+     "fundstelle": "Ländertabelle „Stand Juni 2025“ (CH 9 %, AT 4 %/120.000, CZ 2,5 %/83.000) und Fließtext (Seyna 2024: 15 % Hunde, 7 % Katzen) – keine Einzelbelege",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "srf2026",
+     "titel": "Krankenversicherung für Tiere: Sanitas versichert als erste Schweizer Krankenkasse Haustiere",
+     "herausgeber": "SRF",
+     "url": "https://www.srf.ch/news/wirtschaft/krankenversicherung-fuer-tiere-sanitas-versichert-als-erste-schweizer-krankenkasse-haustiere",
+     "fundstelle": "Artikel vom 15.08.2026: „rund zwei Millionen Hunde und Katzen registriert, aber nur etwa zehn Prozent davon versichert“ (SRF-Text, ohne Quellenangabe, Abschnitt zu Sanitas/Michel Kull)",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "swissquote2024",
+     "titel": "Interview mit Charles Perraudin, CEO des Tierversicherers Epona",
+     "herausgeber": "Swissquote",
+     "url": "https://www.swissquote.com/de-ch/interview-charles-perraudin-ceo-pet-insurance-provider-epona",
+     "fundstelle": "Interview vom 23.12.2024: „knapp 10 Prozent der Haustiere“, „17 Prozent der Hunde“, „2,5 Prozent der Katzen“; vor rund zehn Jahren „weniger als 5 Prozent“; Vaudoise-Gruppe (Animalia+Epona) Marktanteil fast 60 %",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "allianzch2026",
+     "titel": "Allianz Suisse baut mit Haustierversicherung ihr Produktportfolio aus",
+     "herausgeber": "Allianz Suisse",
+     "url": "https://www.allianz.ch/de/ueber-uns/medien/medienmitteilungen-pressekit/2026/allianz-suisse-baut-mit-haustierversicherung-ihr-produktportfoli.html",
+     "fundstelle": "Medienmitteilung 13.01.2026: „weniger als 10 Prozent der Tiere versichert“; 43 % der Haushalte mit Haustieren",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "moneycab2025",
+     "titel": "Calingo überzeugt die Löwen",
+     "herausgeber": "moneycab",
+     "url": "https://www.moneycab.com/?p=2018445",
+     "fundstelle": "Artikel 03.09.2025: „Weniger als 10 % aller Haustiere sind versichert“",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "erv2025",
+     "titel": "Zum Weltkatzentag: Das ist uns die Gesundheit unserer Katzen und Hunde wert (Medienmitteilung ERV/Helvetia)",
+     "herausgeber": "ERV, Zweigniederlassung der Helvetia Versicherungen Schweiz",
+     "url": "https://mailing-ircockpit.eqs.com/crm-mailing/5b6e7b68-ea7c-11e8-902f-2c44fd856d8c/76c9f250-12a9-41a7-9d38-b6791c75e5b4/76f80743-fb0b-4ca7-bde8-6eacb22d7eca/20250806_MM_Tierliebe_DE.pdf",
+     "fundstelle": "Medienmitteilung Basel 06.08.2025: „mehr als 20 000 Tierversicherungspolicen analysiert“; wau-miau-Policen seit 2020 „mehr als vervierfacht“; 76 % der Verträge Deutschschweiz",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "epona_fcr2024",
+     "titel": "Rapport sur la situation financière d'Epona SA 2024",
+     "herausgeber": "Epona, Société d'assurance générale des animaux SA (Vaudoise-Gruppe)",
+     "url": "https://www.epona.ch/assets/pdf/rapports/rapport-sur-la-situation-financiere-d-epona-sa-2024-yc-annexes-egu-per-1745862049.pdf",
+     "fundstelle": "Kap. 1.2 und 3.1.1, Tabelle „Primes brutes“: 13 960 (2024) und 14 309 (2023), Beträge in 1.000 CHF (Kopf fälschlich „MCHF“); Kap. 2.1.1: Pferde und Heimtiere (Hunde, Katzen) ≈ 99 % der Prämien",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "letemps2016",
+     "titel": "Faut-il s'assurer pour réduire le coût des chiens et chats?",
+     "herausgeber": "Le Temps",
+     "url": "https://www.letemps.ch/economie/finance/fautil-sassurer-reduire-cout-chiens-chats",
+     "fundstelle": "Artikel 22.06.2016: „En Suisse, seulement 3 à 4% selon l'assureur Animalia“; Epona-Prämien 6 Mio. CHF 2015, 5,16 Mio. 2014; Animalia 4,5 Mio. 2014",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "ta2012",
+     "titel": "Tigerli, werd gesund (Erika Burri)",
+     "herausgeber": "Tages-Anzeiger (Archiv Stiftung Tier im Recht)",
+     "url": "https://www.tierimrecht.org/documents/675/20121203_TagesAnzeiger_Tigerli-werd-gesund.pdf",
+     "fundstelle": "Ausgabe 03.12.2012: „In der Schweiz, schätzen Experten, sind es gegen 10 Prozent“; Mobiliar: 3000 Hunde, 2100 Katzen, Prämienvolumen 1,15 Mio. CHF",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "bonus2010",
+     "titel": "Santé animalière en Suisse: quand on aime, on ne compte pas (communiqué)",
+     "herausgeber": "bonus.ch",
+     "url": "https://www.bonus.ch/ND/Sante-animaliere-en-suisse-quand-on-aime-on-ne-compte-pas-ID201009162P16.aspx",
+     "fundstelle": "Medienmitteilung 16.09.2010: „seuls 5.6% des participants ont souscrit une telle assurance“, ca. 2.500 Befragte",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "bonus2011",
+     "titel": "Ob behaart, gefiedert oder geschuppt – in der Schweiz … (Pressemitteilung)",
+     "herausgeber": "bonus.ch",
+     "url": "https://www.bonus.ch/ND/Ob-behaart-gefiedert-oder-geschuppt-in-der-schweiz-ID201107011U3I.aspx",
+     "fundstelle": "Pressemitteilung 01.07.2011: „Nur 7% der Besitzer haben eine Haustierversicherung abgeschlossen“, über 8.000 Teilnehmende",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "be2021",
+     "titel": "Interpellation 224-2021 „Hundehaltung ohne und mit Kurs“ (von Arx, glp)",
+     "herausgeber": "Grosser Rat des Kantons Bern",
+     "url": "https://ogd.parl.apps.be.ch/pdf-upload/c2c92ed692ad44d784b181eaffd9d0df-332.pdf",
+     "fundstelle": "Vorstosstext, eingereicht 26.11.2021: „Gemäss Schätzungen von Tierversicherungen sind 90 bis 95 Prozent der Hunde in der Schweiz nicht versichert“",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "forbescz2025a",
+     "titel": "Češi milují psy a kočky, ale pojistky zanedbávají. Trh má miliardový potenciál",
+     "herausgeber": "Forbes Česko",
+     "url": "https://forbes.cz/milujeme-psy-a-kocky-ale-pojistky-zanedbavame/",
+     "fundstelle": "Artikel 11.01.2025 (Direct pojišťovna): „u nás jsou to pouhá čtyři procenta“; „zhruba sto tisíc smluv s průměrným ročním pojistným kolem pěti tisíc korun“; 2,5 Mio. Hunde, 1,3 Mio. Katzen",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "forbescz2025b",
+     "titel": "Měli nás za blázny. Jak Brit v Česku vybudoval největší pojišťovnu pro zvířata",
+     "herausgeber": "Forbes Česko",
+     "url": "https://forbes.cz/meli-nas-za-blazny-jak-brit-v-cesku-vybudoval-nejvetsi-pojistovnu-pro-zvirata/",
+     "fundstelle": "Artikel 05.05.2025, PetExpert-Chef Cummins: CZ „přibližně o tři procenta“ der relevanten (versicherbaren) Hunde, 2017 „půl procenta“; Slowakei „sotva jedno procento“",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "financecz2021",
+     "titel": "Zájem o pojištění domácích mazlíčků roste …",
+     "herausgeber": "finance.cz",
+     "url": "https://www.finance.cz/539331-zajem-o-pojisteni-domacich-mazlicku-roste-veterinarni-naklady-u-stredne-velkeho-psa-se-za-jeho-zivot-vysplhaji-az-na-statisice",
+     "fundstelle": "Artikel 25.10.2021 (PetExpert, Jan Moravec): „sjednáno asi 2 % jejich majitelů“; „blížíme k celkovému počtu 50 tisíc klientů“",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "cccz2026",
+     "titel": "Česko je velmoc psů a koček … Čím dál víc majitelů jim platí i pojištění",
+     "herausgeber": "CzechCrunch (Partnerinhalt Direct pojišťovna)",
+     "url": "https://cc.cz/cesko-je-velmoc-psu-a-kocek-utracime-za-ne-miliardy-cim-dal-vic-majitelu-jim-plati-i-pojisteni/",
+     "fundstelle": "Artikel 15.04.2026, gesponsert: „Pojištění mají zatím jen přibližně 4 procenta mazlíčků“",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "sita2025",
+     "titel": "500 eur za ošetrenie, 2 000 za operáciu. Záujem Slovákov o poistenie domácich miláčikov raketovo rastie",
+     "herausgeber": "SITA / Startitup",
+     "url": "https://www.startitup.sk/?p=1081318",
+     "fundstelle": "Artikel 07.06.2025 (Superpoistenie.sk): CZ +70 % abgeschlossene Verträge 2023→2024; Prämie SK 30–60 € p. a.",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "penzcentrum2018",
+     "titel": "Magyarok milliói élnek így: imádják, pedig százezrekbe fájhat",
+     "herausgeber": "Pénzcentrum",
+     "url": "https://www.penzcentrum.hu/egeszseg/20180722/magyarok-millioi-elnek-igy-imadjak-pedig-szazezrekbe-fajhat-1068482",
+     "fundstelle": "Artikel 22.07.2018: Aegon 1.163 eigenständige Verträge + 7.660 als Zusatz zur Haushaltsversicherung; K&H 2 % der Haushaltskunden; Generali jeder 20. Kunde; Groupama 6 %",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "penzcentrum2020",
+     "titel": "Alig ismert termékkel faraghatsz az állatorvosi számlából",
+     "herausgeber": "Pénzcentrum",
+     "url": "https://www.penzcentrum.hu/biztositas/20200816/alig-ismert-termekkel-faraghatsz-az-allatorvosi-szamlabol-kutyaknal-cicaknal-is-mukodik-1100918/amp",
+     "fundstelle": "Artikel 16.08.2020: K&H „2018-ban még csak a lakásbiztosítások 2-3 százalékánál“",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "zurnal2023",
+     "titel": "Ker so cene veterinarskih storitev visoke, se splača preveriti to rešitev",
+     "herausgeber": "Žurnal24",
+     "url": "https://www.zurnal24.si/slovenija/ker-so-cene-veterinarskih-storitev-visoke-se-splaca-preveriti-to-resitev-400535",
+     "fundstelle": "Artikel 12.02.2023, Zavarovalnica Triglav: „zavarovanje koristi le približno 10 % lastnikov malih živali“",
+     "abgerufen": "2026-11-09"
+    },
+    {
+     "id": "svet2025",
+     "titel": "Zavarovanje živali: kunci, dihurji, psi, mačke",
+     "herausgeber": "Svet24",
+     "url": "https://svet24.si/zivali/zavarovanje-zivali-kunci-dihurji-psi-macke-1795593",
+     "fundstelle": "Artikel 15.02.2025, Triglav: „le okoli 10 odstotkov lastnikov malih živali v Sloveniji“; Triglav „več tisoč malih živali“",
+     "abgerufen": "2026-11-09"
+    }
+   ],
+   "werte": [
+    {
+     "land": "DE",
+     "jahr": 2019,
+     "groesse": "policen",
+     "wert": 845000,
+     "quelle": "de-gdv-2026-tiere",
+     "berechnet": false,
+     "hinweis": "Anzahl versicherter Tiere in der Tierkrankenversicherung (OP + umfassend), GDV-Sonderumfrage 2025 bei 13 Unternehmen – keine Vollerhebung, eher Untergrenze; enthält 'Hunde, Katzen und Co.' (Pferde nicht ausgeschlossen, nicht aufgeschlüsselt). Grafikwerte gerundet (1,03 Mio. usw.)."
+    },
+    {
+     "land": "DE",
+     "jahr": 2020,
+     "groesse": "policen",
+     "wert": 1030000,
+     "quelle": "de-gdv-2026-tiere",
+     "berechnet": false,
+     "hinweis": "Anzahl versicherter Tiere in der Tierkrankenversicherung (OP + umfassend), GDV-Sonderumfrage 2025 bei 13 Unternehmen – keine Vollerhebung, eher Untergrenze; enthält 'Hunde, Katzen und Co.' (Pferde nicht ausgeschlossen, nicht aufgeschlüsselt). Grafikwerte gerundet (1,03 Mio. usw.)."
+    },
+    {
+     "land": "DE",
+     "jahr": 2021,
+     "groesse": "policen",
+     "wert": 1260000,
+     "quelle": "de-gdv-2026-tiere",
+     "berechnet": false,
+     "hinweis": "Anzahl versicherter Tiere in der Tierkrankenversicherung (OP + umfassend), GDV-Sonderumfrage 2025 bei 13 Unternehmen – keine Vollerhebung, eher Untergrenze; enthält 'Hunde, Katzen und Co.' (Pferde nicht ausgeschlossen, nicht aufgeschlüsselt). Grafikwerte gerundet (1,03 Mio. usw.)."
+    },
+    {
+     "land": "DE",
+     "jahr": 2022,
+     "groesse": "policen",
+     "wert": 1530000,
+     "quelle": "de-gdv-2026-tiere",
+     "berechnet": false,
+     "hinweis": "Anzahl versicherter Tiere in der Tierkrankenversicherung (OP + umfassend), GDV-Sonderumfrage 2025 bei 13 Unternehmen – keine Vollerhebung, eher Untergrenze; enthält 'Hunde, Katzen und Co.' (Pferde nicht ausgeschlossen, nicht aufgeschlüsselt). Grafikwerte gerundet (1,03 Mio. usw.)."
+    },
+    {
+     "land": "DE",
+     "jahr": 2023,
+     "groesse": "policen",
+     "wert": 1790000,
+     "quelle": "de-gdv-2026-tiere",
+     "berechnet": false,
+     "hinweis": "Anzahl versicherter Tiere in der Tierkrankenversicherung (OP + umfassend), GDV-Sonderumfrage 2025 bei 13 Unternehmen – keine Vollerhebung, eher Untergrenze; enthält 'Hunde, Katzen und Co.' (Pferde nicht ausgeschlossen, nicht aufgeschlüsselt). Grafikwerte gerundet (1,03 Mio. usw.)."
+    },
+    {
+     "land": "DE",
+     "jahr": 2024,
+     "groesse": "policen",
+     "wert": 2010000,
+     "quelle": "de-gdv-2026-tiere",
+     "berechnet": false,
+     "hinweis": "Anzahl versicherter Tiere in der Tierkrankenversicherung (OP + umfassend), GDV-Sonderumfrage 2025 bei 13 Unternehmen – keine Vollerhebung, eher Untergrenze; enthält 'Hunde, Katzen und Co.' (Pferde nicht ausgeschlossen, nicht aufgeschlüsselt). Grafikwerte gerundet (1,03 Mio. usw.)."
+    },
+    {
+     "land": "DE",
+     "jahr": 2019,
+     "groesse": "praemien_mio_eur",
+     "wert": 173,
+     "quelle": "de-gdv-2026-beitraege",
+     "berechnet": false,
+     "hinweis": "Verdiente Bruttobeiträge Tierkrankenversicherung (ohne Hundehaftpflicht), 13 Unternehmen; nicht BaFin-Sparte 'Tierversicherung'."
+    },
+    {
+     "land": "DE",
+     "jahr": 2020,
+     "groesse": "praemien_mio_eur",
+     "wert": 217,
+     "quelle": "de-gdv-2026-beitraege",
+     "berechnet": false,
+     "hinweis": "Verdiente Bruttobeiträge Tierkrankenversicherung (ohne Hundehaftpflicht), 13 Unternehmen; nicht BaFin-Sparte 'Tierversicherung'."
+    },
+    {
+     "land": "DE",
+     "jahr": 2021,
+     "groesse": "praemien_mio_eur",
+     "wert": 284,
+     "quelle": "de-gdv-2026-beitraege",
+     "berechnet": false,
+     "hinweis": "Verdiente Bruttobeiträge Tierkrankenversicherung (ohne Hundehaftpflicht), 13 Unternehmen; nicht BaFin-Sparte 'Tierversicherung'."
+    },
+    {
+     "land": "DE",
+     "jahr": 2022,
+     "groesse": "praemien_mio_eur",
+     "wert": 369,
+     "quelle": "de-gdv-2026-beitraege",
+     "berechnet": false,
+     "hinweis": "Verdiente Bruttobeiträge Tierkrankenversicherung (ohne Hundehaftpflicht), 13 Unternehmen; nicht BaFin-Sparte 'Tierversicherung'."
+    },
+    {
+     "land": "DE",
+     "jahr": 2023,
+     "groesse": "praemien_mio_eur",
+     "wert": 520,
+     "quelle": "de-gdv-2026-beitraege",
+     "berechnet": false,
+     "hinweis": "Verdiente Bruttobeiträge Tierkrankenversicherung (ohne Hundehaftpflicht), 13 Unternehmen; nicht BaFin-Sparte 'Tierversicherung'."
+    },
+    {
+     "land": "DE",
+     "jahr": 2024,
+     "groesse": "praemien_mio_eur",
+     "wert": 720,
+     "quelle": "de-gdv-2026-beitraege",
+     "berechnet": false,
+     "hinweis": "Verdiente Bruttobeiträge Tierkrankenversicherung (ohne Hundehaftpflicht), 13 Unternehmen; nicht BaFin-Sparte 'Tierversicherung'."
+    },
+    {
+     "land": "DE",
+     "jahr": 2019,
+     "groesse": "quote_tiere",
+     "wert": 3.4,
+     "quelle": "de-gdv-2026-tiere",
+     "berechnet": true,
+     "hinweis": "Berechnet: GDV versicherte Tiere 845.000 / (Hunde 10.1 Mio. + Katzen 14.7 Mio. laut IVH/ZZF. Quelle de-zzf-ivh). Zähler kann wenige andere Tiere enthalten. Nenner nur Hunde+Katzen; Untergrenze. da 13 Unternehmen."
+    },
+    {
+     "land": "DE",
+     "jahr": 2020,
+     "groesse": "quote_tiere",
+     "wert": 3.9,
+     "quelle": "de-gdv-2026-tiere",
+     "berechnet": true,
+     "hinweis": "Berechnet: GDV versicherte Tiere 1.030.000 / (Hunde 10.7 Mio. + Katzen 15.7 Mio. laut IVH/ZZF. Quelle de-zzf-ivh). Zähler kann wenige andere Tiere enthalten. Nenner nur Hunde+Katzen; Untergrenze. da 13 Unternehmen."
+    },
+    {
+     "land": "DE",
+     "jahr": 2021,
+     "groesse": "quote_tiere",
+     "wert": 4.7,
+     "quelle": "de-gdv-2026-tiere",
+     "berechnet": true,
+     "hinweis": "Berechnet: GDV versicherte Tiere 1.260.000 / (Hunde 10.3 Mio. + Katzen 16.7 Mio. laut IVH/ZZF. Quelle de-zzf-ivh). Zähler kann wenige andere Tiere enthalten. Nenner nur Hunde+Katzen; Untergrenze. da 13 Unternehmen."
+    },
+    {
+     "land": "DE",
+     "jahr": 2022,
+     "groesse": "quote_tiere",
+     "wert": 5.9,
+     "quelle": "de-gdv-2026-tiere",
+     "berechnet": true,
+     "hinweis": "Berechnet: GDV versicherte Tiere 1.530.000 / (Hunde 10.6 Mio. + Katzen 15.2 Mio. laut IVH/ZZF. Quelle de-zzf-ivh). Zähler kann wenige andere Tiere enthalten. Nenner nur Hunde+Katzen; Untergrenze. da 13 Unternehmen."
+    },
+    {
+     "land": "DE",
+     "jahr": 2023,
+     "groesse": "quote_tiere",
+     "wert": 6.8,
+     "quelle": "de-gdv-2026-tiere",
+     "berechnet": true,
+     "hinweis": "Berechnet: GDV versicherte Tiere 1.790.000 / (Hunde 10.5 Mio. + Katzen 15.7 Mio. laut IVH/ZZF. Quelle de-zzf-ivh). Zähler kann wenige andere Tiere enthalten. Nenner nur Hunde+Katzen; Untergrenze. da 13 Unternehmen."
+    },
+    {
+     "land": "DE",
+     "jahr": 2024,
+     "groesse": "quote_tiere",
+     "wert": 7.6,
+     "quelle": "de-gdv-2026-tiere",
+     "berechnet": true,
+     "hinweis": "Berechnet: GDV versicherte Tiere 2.010.000 / (Hunde 10.5 Mio. + Katzen 15.9 Mio. laut IVH/ZZF. Quelle de-zzf-ivh). Zähler kann wenige andere Tiere enthalten. Nenner nur Hunde+Katzen; Untergrenze. da 13 Unternehmen."
+    },
+    {
+     "land": "DE",
+     "jahr": 2024,
+     "groesse": "quote_hunde",
+     "wert": 17.0,
+     "quelle": "de-gdv-2026-tiere",
+     "berechnet": true,
+     "hinweis": "Berechnet: 2,01 Mio. versicherte Tiere (GDV) × 89 % Hundeanteil an Verträgen / 10,5 Mio. Hunde (IVH/ZZF). Der Hundeanteil 88-90 % stammt aus Heimtierstudie 2019 (Katzen 10-12 % der Verträge, Stand 2018, de-ohr-2019) und ist für 2024 nicht belegt – Katzenanteil dürfte gestiegen sein, dann sinkt die Hundequote. Grobe Schätzung."
+    },
+    {
+     "land": "DE",
+     "jahr": 2024,
+     "groesse": "quote_katzen",
+     "wert": 1.4,
+     "quelle": "de-gdv-2026-tiere",
+     "berechnet": true,
+     "hinweis": "Berechnet: 2,01 Mio. × 11 % Katzenanteil (Stand 2018 laut de-ohr-2019) / 15,9 Mio. Katzen. Grobe Schätzung, wahrscheinlich zu niedrig, falls Katzenanteil gestiegen."
+    },
+    {
+     "land": "DE",
+     "jahr": 2024,
+     "groesse": "anteil_vollschutz_an_versicherten",
+     "wert": 39.6,
+     "quelle": "de-gdv-2026-tiere",
+     "berechnet": false,
+     "hinweis": "NICHT Versichertenquote: Anteil 'umfassende Tierkrankenversicherung' an allen versicherten Tieren (Rest 60,4 % OP-Versicherung); Reihe 2020 21,8 / 2021 24,4 / 2022 28,7 / 2023 35,1 / 2024 39,6 %. Nur als Hintergrund – nicht in Karte verwenden. t-online (12.08.2026) hat diesen Wert fälschlich als 'knapp 40 % der Halter' wiedergegeben."
+    },
+    {
+     "land": "DE",
+     "jahr": 2018,
+     "groesse": "policen",
+     "wert": 805000,
+     "quelle": "de-ohr-2019",
+     "berechnet": true,
+     "hinweis": "Berechnet als Mitte der Schätzung der Heimtierstudie 2019: Hunde 650.000-800.000 + Katzen 70.000-90.000 Verträge (Stand 2018/Frühjahr 2019, aus Angaben auskunftsbereiter Versicherer; 8 Anbieter). Spanne 720.000-890.000. Passt zu GDV 2019 (845.000)."
+    },
+    {
+     "land": "DE",
+     "jahr": 2018,
+     "groesse": "quote_hunde",
+     "wert": 8,
+     "quelle": "de-ohr-2019",
+     "berechnet": false,
+     "hinweis": "Heimtierstudie 2019: '7-9 % der Hunde' krankenversichert (Versicherer-Schätzung, Stand 2018); Mitte 8 %."
+    },
+    {
+     "land": "DE",
+     "jahr": 2018,
+     "groesse": "quote_katzen",
+     "wert": 0.8,
+     "quelle": "de-ohr-2019",
+     "berechnet": false,
+     "hinweis": "Heimtierstudie 2019: 'weniger als 1 % der Katzen'; 0,8 % als Platzhalter für <1 %."
+    },
+    {
+     "land": "DE",
+     "jahr": 2018,
+     "groesse": "praemien_mio_eur",
+     "wert": 232,
+     "quelle": "de-ohr-2019",
+     "berechnet": false,
+     "hinweis": "Tab. 3 geschätzte Umsätze 2018: Krankenvoll 84 + OP 148 Mio. € (ohne Hundehaftpflicht 400 Mio. €). WIDERSPRUCH zu GDV 2019 = 173 Mio. € (13 Unternehmen) – Schätzung über Durchschnittsprämien, eher zu hoch."
+    },
+    {
+     "land": "DE",
+     "jahr": 2018,
+     "groesse": "quote_haushalte",
+     "wert": 23,
+     "quelle": "de-ohr-2019",
+     "berechnet": false,
+     "hinweis": "AGILA-Marktforschung 'Hunde- und Katzen(halter) 2018' (Fußnote 61): über 23 % der Hundehalter, ca. 8 % der Katzenhalter mit Tierkrankenversicherung (n=1.444/1.669). Halteranteil, Auftraggeber Versicherer; hier Hundehalter."
+    },
+    {
+     "land": "DE",
+     "jahr": 2017,
+     "groesse": "quote_haushalte",
+     "wert": 21,
+     "quelle": "de-ohr-2019",
+     "berechnet": false,
+     "hinweis": "Statista-Umfrage Haustiere 2017 (zit. in Fußnote 61): 21 % der Hundebesitzer, 11 % der Katzenbesitzer mit Tierkrankenversicherung. Halteranteil, hier Hundebesitzer."
+    },
+    {
+     "land": "DE",
+     "jahr": 2018,
+     "groesse": "quote_hunde",
+     "wert": 5,
+     "quelle": "de-strohbuecker-2026",
+     "berechnet": false,
+     "hinweis": "Tierärzte-Umfrage 2018 (Fiedermutz 2020, zit. in Strohbücker 2026): Median-Schätzung 5 % der Hunde, 1 % der Katzen versichert."
+    },
+    {
+     "land": "DE",
+     "jahr": 2012,
+     "groesse": "quote_tiere",
+     "wert": 15,
+     "quelle": "de-strohbuecker-2026",
+     "berechnet": false,
+     "hinweis": "Rosin 2015 (zit. in Strohbücker 2026): 2012 Anteil versicherter Hunde und Katzen 'nach Angabe von fünf Versicherungsunternehmen' auf 15 % geschätzt. WIDERSPRICHT allen anderen Belegen (2018 7-9 % Hunde, <1 % Katzen; GDV 2019 ≈3,4 %) – nicht verwenden, nur nennen."
+    },
+    {
+     "land": "DE",
+     "jahr": 2023,
+     "groesse": "quote_haushalte",
+     "wert": 25,
+     "quelle": "de-strohbuecker-2026",
+     "berechnet": false,
+     "hinweis": "Dick 2023 (zit. in Strohbücker 2026): 'fast ein Viertel der Haustierbesitzer' hat eine Tierkrankenversicherung. Halteranteil."
+    },
+    {
+     "land": "DE",
+     "jahr": 2025,
+     "groesse": "quote_hunde",
+     "wert": 35.5,
+     "quelle": "de-strohbuecker-2026",
+     "berechnet": false,
+     "hinweis": "Schätzung kurativer Kleintierärzte (Umfrage Aug.-Okt. 2025): Mittel 35,46 % der Hunde (21,56 % OP, 13,90 % Voll). Wahrnehmung in der Praxis, überhöht durch versicherte Patienten (die häufiger kommen). Keine Bestandsquote."
+    },
+    {
+     "land": "DE",
+     "jahr": 2025,
+     "groesse": "quote_katzen",
+     "wert": 20.2,
+     "quelle": "de-strohbuecker-2026",
+     "berechnet": false,
+     "hinweis": "Schätzung Tierärzte 2025: Mittel 20,19 % der Katzen (11,64 % OP, 8,55 % Voll). Wie oben überhöht."
+    },
+    {
+     "land": "DE",
+     "jahr": 2023,
+     "groesse": "quote_hunde",
+     "wert": 47,
+     "quelle": "de-check24-2023",
+     "berechnet": true,
+     "hinweis": "Check24-Umfrage Aug. 2023 (1.003 Halter): 53 % der Hunde ohne Krankenversicherung → 47 % mit (berechnet 100-53). Halterangabe, Vergleichsportal, schließt OP-Versicherung ein; deutlich über Marktdaten."
+    },
+    {
+     "land": "DE",
+     "jahr": 2025,
+     "groesse": "quote_hunde",
+     "wert": 19,
+     "quelle": "de-hellosafe-2025",
+     "berechnet": false,
+     "hinweis": "HelloSafe Barometer 2025: 19 % der Hunde, ohne Einzelbeleg; passt grob zur eigenen Berechnung aus GDV (≈17 %)."
+    },
+    {
+     "land": "DE",
+     "jahr": 2025,
+     "groesse": "quote_katzen",
+     "wert": 8,
+     "quelle": "de-hellosafe-2025",
+     "berechnet": false,
+     "hinweis": "HelloSafe 2025: 8 % der Katzen, ohne Einzelbeleg."
+    },
+    {
+     "land": "DE",
+     "jahr": 2025,
+     "groesse": "quote_tiere",
+     "wert": 20,
+     "quelle": "hellosafe-fr-2026",
+     "berechnet": false,
+     "hinweis": "HelloSafe 2026: DE 20 % (5,3 Mio. versicherte Tiere von 26,4 Mio.). WIDERSPRUCH zu GDV 2,01 Mio. (2024). Ohne Beleg – nicht verwenden."
+    },
+    {
+     "land": "DE",
+     "jahr": 2022,
+     "groesse": "quote_hunde",
+     "wert": 30,
+     "quelle": "de-fellakte-2026",
+     "berechnet": false,
+     "hinweis": "Universität Leipzig / Nordlight Research 2022 (Zweitquelle FellAkte): 30 % Hunde, 23 % Katzen; vermutlich Halterbefragung, Primärquelle nicht eingesehen."
+    },
+    {
+     "land": "DE",
+     "jahr": 2024,
+     "groesse": "quote_hunde",
+     "wert": 30,
+     "quelle": "de-fellakte-2026",
+     "berechnet": false,
+     "hinweis": "Uelzener Haustier-Umfrage 2024 (1.100 Befragte, über FellAkte): ca. 30 % Hunde, 21 % Katzen; Halterbefragung eines Versicherers, Primärquelle nicht eingesehen."
+    },
+    {
+     "land": "FR",
+     "jahr": 2009,
+     "groesse": "quote_tiere",
+     "wert": 2,
+     "quelle": "fr-besse-2017",
+     "berechnet": false,
+     "hinweis": "Zweitquelle: Tierarzt-Dissertation zitiert Truffert 2009 ('seulement 2% des animaux de compagnie étaient assurés'). Primärherkunft unklar, vermutlich Branchenschätzung (SantéVet). Krankenversicherung Hund/Katze."
+    },
+    {
+     "land": "FR",
+     "jahr": 2010,
+     "groesse": "quote_hunde",
+     "wert": 5,
+     "quelle": "fr-besse-2017",
+     "berechnet": false,
+     "hinweis": "Einzige INSEE-gestützte Zahl: Enquête Budget de Famille 2011 (Ausgaben 2010), ausgewertet von Cendrier (Tierarzt-Diss. 2016), zitiert bei Besse 2017, S. 21. Anteil der Hunde mit Versicherungsausgaben im Haushaltsbudget. Zweitquelle, Primärtabelle nicht eingesehen."
+    },
+    {
+     "land": "FR",
+     "jahr": 2010,
+     "groesse": "quote_katzen",
+     "wert": 0.6,
+     "quelle": "fr-besse-2017",
+     "berechnet": false,
+     "hinweis": "Wie Hunde 2010: INSEE Budget de Famille 2011 via Cendrier 2016, zitiert bei Besse 2017."
+    },
+    {
+     "land": "FR",
+     "jahr": 2011,
+     "groesse": "quote_tiere",
+     "wert": 4,
+     "quelle": "fr-santevet-2011",
+     "berechnet": false,
+     "hinweis": "SantéVet (Marktführer) April 2011: 'quelque 4 % des maîtres' versichern ihr Tier – formuliert als Halteranteil, gemeint wohl Tieranteil; Herkunft nicht offengelegt (Anbieterangabe)."
+    },
+    {
+     "land": "FR",
+     "jahr": 2013,
+     "groesse": "quote_tiere",
+     "wert": 3,
+     "quelle": "fr-besse-2017",
+     "berechnet": false,
+     "hinweis": "Zweitquelle: Besse 2017 zitiert Trouillet, La Semaine Vétérinaire 2013 ('3% d'animaux assurés en France en 2013'). Widerspricht leicht 4 % (2011) – Größenordnung 2–5 % ist alles, was belegt ist."
+    },
+    {
+     "land": "FR",
+     "jahr": 2016,
+     "groesse": "quote_tiere",
+     "wert": 4,
+     "quelle": "fr-besse-2017",
+     "berechnet": false,
+     "hinweis": "Zweitquelle: Besse 2017 zitiert Goffart, La Semaine Vétérinaire ASV Juni 2016: 4 % der Hunde und Katzen versichert."
+    },
+    {
+     "land": "FR",
+     "jahr": 2023,
+     "groesse": "quote_haushalte",
+     "wert": 15,
+     "quelle": "fr-ifop-fidanimo-2023",
+     "berechnet": false,
+     "hinweis": "Ifop-Umfrage für Fidanimo (Makler), Feld 30.08.–05.09.2023, n=1.001 Halter von Hund und/oder Katze: 15 % haben eine Versicherung für ihr Tier abgeschlossen. Halter (= Haushalte), nicht Tiere; Art der Deckung nicht ganz eindeutig (Kontext Tierarztkosten). Veröffentlicht 15.01.2024, daher oft als 'Januar 2024' zitiert."
+    },
+    {
+     "land": "FR",
+     "jahr": 2024,
+     "groesse": "quote_haushalte",
+     "wert": 13,
+     "quelle": "fr-ifop-bi-2024",
+     "berechnet": false,
+     "hinweis": "Ifop für Boehringer Ingelheim, online 12.–14.03.2024, Basis 1.197 Tierhalter (alle Arten): 'Bénéficiez-vous actuellement d'une assurance santé pour les frais de santé de vos animaux ?' Ja 13 %. Nach Tierart: Hundehalter 18 %, Katzenhalter 13 %, andere 7 %. Halteranteil, nicht Tieranteil – Halter mit mehreren Tieren versichern oft nur eines."
+    },
+    {
+     "land": "FR",
+     "jahr": 2024,
+     "groesse": "quote_haushalte",
+     "wert": 30,
+     "quelle": "fr-sollyazar-2024",
+     "berechnet": false,
+     "hinweis": "OpinionWay für Solly Azar (Makler), 1. Welle 2024: 30 % der Hunde-/Katzenhalter 'possèdent une assurance'. Methodik der Welle 2024 nicht eingesehen. Doppelt so hoch wie Ifop 2023/2024 – Selbstauskunft, Online-Panel, Auftraggeber verkauft Tierversicherungen; Verwechslung mit Haftpflicht möglich."
+    },
+    {
+     "land": "FR",
+     "jahr": 2025,
+     "groesse": "quote_haushalte",
+     "wert": 25,
+     "quelle": "fr-sollyazar-2025",
+     "berechnet": false,
+     "hinweis": "OpinionWay für Solly Azar, 28.05.–02.06.2025, n=1.040 Hunde-/Katzenhalter: 25 % haben eine 'assurance santé' für ihr Tier (−5 Punkte ggü. 2024). Rückgang innerhalb eines Jahres um 5 Punkte ist bei Policenbeständen unplausibel → Stichprobenschwankung; nicht als Trend verwenden."
+    },
+    {
+     "land": "FR",
+     "jahr": 2024,
+     "groesse": "quote_hunde",
+     "wert": 7,
+     "quelle": "fr-argus-santevet-2025",
+     "berechnet": false,
+     "hinweis": "L'Argus (Fachpresse) nennt im frei lesbaren Teil einen 'taux d'équipement' von 7 % in Frankreich (vermutlich Hunde, evtl. Hunde+Katzen; Quelle hinter Bezahlschranke nicht einsehbar). Deckt sich mit HelloSafe 7 % Hunde."
+    },
+    {
+     "land": "FR",
+     "jahr": 2025,
+     "groesse": "quote_hunde",
+     "wert": 7,
+     "quelle": "fr-hellosafe-2025",
+     "berechnet": false,
+     "hinweis": "HelloSafe-Barometer (Vergleichsportal), ohne Primärquelle, Bezugsjahr unklar (Stand Juli 2025)."
+    },
+    {
+     "land": "FR",
+     "jahr": 2025,
+     "groesse": "quote_katzen",
+     "wert": 4,
+     "quelle": "fr-hellosafe-2025",
+     "berechnet": false,
+     "hinweis": "HelloSafe-Barometer, ohne Primärquelle; von Le Figaro (01.08.2025) übernommen."
+    },
+    {
+     "land": "FR",
+     "jahr": 2025,
+     "groesse": "quote_tiere",
+     "wert": 5,
+     "quelle": "fr-hellosafe-2025",
+     "berechnet": false,
+     "hinweis": "HelloSafe: 5 % der Haustiere versichert, ohne Primärquelle; übernommen von Le Figaro und La Dépêche Vétérinaire (1,3 Mio. Tiere = 5 %). Ähnlich Assurland 6 % (Jan. 2025) und Sammut 2024 (5 %, ohne Quelle)."
+    },
+    {
+     "land": "FR",
+     "jahr": 2025,
+     "groesse": "policen",
+     "wert": 1300000,
+     "quelle": "fr-depecheveto-2026",
+     "berechnet": false,
+     "hinweis": "Versicherte Tiere (nicht Verträge) ca. 1,3 Mio. laut Dépêche Vétérinaire, Fußnote auf HelloSafe – keine Primärquelle. Widersprüchliche Umlauf-Zahlen: 1,5 Mio. (ratdomestique.fr), 2,1 Mio. für 2024 (france-epargne.fr mit Verweis auf MoneyVox – dort nicht auffindbar), 3,2 Mio. (mypawscribe.com). Keine davon belegt. Probe: 1,3 Mio. / (7,5 Mio. Hunde + 15,1 Mio. Katzen laut HelloSafe) = 5,8 % – konsistent mit 5–7 %."
+    },
+    {
+     "land": "FR",
+     "jahr": 2020,
+     "groesse": "praemien_mio_eur",
+     "wert": 400,
+     "quelle": "fr-hellosafe-2025",
+     "berechnet": false,
+     "hinweis": "HelloSafe, ohne Primärquelle. Keine Statistik von France Assureurs oder ACPR zu Tierkrankenversicherung gefunden (France Assureurs hat nur eine Ratgeberseite, keine Zahlen)."
+    },
+    {
+     "land": "FR",
+     "jahr": 2025,
+     "groesse": "praemien_mio_eur",
+     "wert": 600,
+     "quelle": "fr-hellosafe-2025",
+     "berechnet": false,
+     "hinweis": "HelloSafe, ohne Primärquelle; vielfach kopiert (Dépêche Vétérinaire schreibt es fälschlich SantéVet als Umsatz 2024 zu). Plausibilitätsprobe: SantéVet (Marktführer) 120 Mio. € Prämien 2024, davon 24 % Ausland → ca. 91 Mio. € Frankreich (gerechnet: 120 × 0,76) – mit 600 Mio. Markt wäre der Marktführer bei nur ~15 %, das ist bei stark zersplittertem Markt (>20 Marken) möglich, aber nicht geprüft. 1,3 Mio. Tiere × ~25 €/Monat × 12 ≈ 390 Mio. € (grobe Gegenrechnung, nicht belastbar)."
+    },
+    {
+     "land": "IT",
+     "jahr": 2020,
+     "groesse": "quote_haushalte",
+     "wert": 15.3,
+     "quelle": "it-facile-2020",
+     "berechnet": false,
+     "hinweis": "Facile.it/EMG Acqua, CAWI 10.–12.07.2020, n=1.000 (18–74 J.): 15,3 % der Halter (alle Tierarten) versichern ihr Tier oder haben es früher versichert (= 3,12 Mio. Personen). ACHTUNG: 89,5 % dieser Policen sind Haftpflicht + Rechtsschutz, also KEINE Krankenversicherung. Nur als Obergrenze verwendbar."
+    },
+    {
+     "land": "IT",
+     "jahr": 2025,
+     "groesse": "quote_haushalte",
+     "wert": 32.2,
+     "quelle": "it-facile-2025",
+     "berechnet": false,
+     "hinweis": "Facile.it/EMG Different, CAWI 12.–18.06.2025, n=1.502: 32,2 % der Hunde-/Katzenhalter (7,5 Mio. Personen) haben 'una copertura assicurativa'; Hundehalter 42,8 %, Katzenhalter 17,5 %. Jede Tierpolice zählt, überwiegend Haftpflicht (RC) – nicht Krankenversicherung. Absender ist ein Versicherungsvergleich."
+    },
+    {
+     "land": "IT",
+     "jahr": 2026,
+     "groesse": "quote_haushalte",
+     "wert": 47.3,
+     "quelle": "it-facile-2026",
+     "berechnet": false,
+     "hinweis": "Facile.it/EMG, CAWI 4.–8.06.2026, n=1.500: '6,2 Mio. Halter … 47,3 % in totale, 40,9 % tra i proprietari di un cane, 17,3 % … gatto'. INTERN WIDERSPRÜCHLICH: Gesamtwert kann nicht über beiden Teilwerten liegen; zudem weniger Personen (6,2 Mio.) als 2025 (7,5 Mio.) bei höherer Quote. Vermutlich Tipp-/Basisfehler. Nicht verwenden; Hundehalter 40,9 % / Katzenhalter 17,3 % sind konsistent mit 2025."
+    },
+    {
+     "land": "IT",
+     "jahr": 2025,
+     "groesse": "quote_haushalte",
+     "wert": 22,
+     "quelle": "it-nomisma-unisalute-2025",
+     "berechnet": false,
+     "hinweis": "Nomisma für UniSalute (Krankenversicherer der Unipol-Gruppe), veröffentlicht Sept. 2025: 22 % der Halter haben eine Police für Tierarztkosten ('polizza sulla salute'). Einziger italienischer Wert, der ausdrücklich Krankenversicherung meint. Stichprobe/Methode in den Berichten nicht genannt; Selbstauskunft, Auftraggeber verkauft Tierpolicen – vermutlich deutlich überhöht gegenüber dem Tieranteil."
+    },
+    {
+     "land": "IT",
+     "jahr": 2025,
+     "groesse": "quote_haushalte",
+     "wert": 15,
+     "quelle": "it-pltv-2025",
+     "berechnet": false,
+     "hinweis": "Fachportal PLTV: 'weniger als 2 Mio. Halter, nicht einmal 15 %' haben eine Hunde-/Katzenpolice, 'aus mehreren Berichten'. Grenzwert ('unter 15 %'), Deckungsart unklar (RC eingeschlossen). Schwache Quelle."
+    },
+    {
+     "land": "ES",
+     "jahr": 2024,
+     "groesse": "policen",
+     "wert": 220800,
+     "quelle": "es-unespa-2025",
+     "berechnet": false,
+     "hinweis": "Versicherte Tiere in der Stichprobe von 15 Versicherern (Aug. 2023–Jul. 2024), nur eigene Tierpolicen, enthält reine Haftpflicht- (RC) Policen; keine Marktgesamtzahl, sondern Untergrenze. Jahr = Mitte des Zeitraums."
+    },
+    {
+     "land": "ES",
+     "jahr": 2024,
+     "groesse": "quote_tiere",
+     "wert": 1.9,
+     "quelle": "es-unespa-2025",
+     "berechnet": true,
+     "hinweis": "Berechnet: 220.800 / (6.962.000 Hunde + 4.939.000 Katzen, FEDIAF 2024) = 1,86 %. Untergrenze (nur Stichprobe), schließt RC-only ein, Hausrat aus. Mit Registerzahlen des Ministeriums (13,18 Mio.) 1,68 %."
+    },
+    {
+     "land": "ES",
+     "jahr": 2025,
+     "groesse": "quote_tiere",
+     "wert": 2,
+     "quelle": "es-hellosafe-forbespt-2025",
+     "berechnet": false,
+     "hinweis": "HelloSafe-Barometer: 2 % von ca. 15 Mio. Heimtieren (>300.000). Ohne Methodik und Primärquelle; schwach. Passt aber größenordnungsmäßig zu UNESPA-Stichprobe."
+    },
+    {
+     "land": "ES",
+     "jahr": 2025,
+     "groesse": "policen",
+     "wert": 300000,
+     "quelle": "es-hellosafe-forbespt-2025",
+     "berechnet": false,
+     "hinweis": "HelloSafe: 'mehr als 300.000' versicherte Tiere (aus 2 % x 15 Mio. abgeleitet). Unbelegt."
+    },
+    {
+     "land": "ES",
+     "jahr": 2025,
+     "groesse": "quote_tiere",
+     "wert": 2,
+     "quelle": "es-petplan",
+     "berechnet": false,
+     "hinweis": "Petplan (Versicherer): 2 % der Hunde und Katzen mit Krankenversicherung (seguro de salud). Ohne Quelle/Jahr; Jahr = Footer 2025."
+    },
+    {
+     "land": "ES",
+     "jahr": 2023,
+     "groesse": "quote_hunde",
+     "wert": 3,
+     "quelle": "es-segurosnews-2023",
+     "berechnet": false,
+     "hinweis": "3 % 'de los dueños de perros' mit Krankenversicherung – Basis (Halter vs. Hunde) unklar, ohne Quelle. Später (IM Veterinaria 2025) als 3 % der registrierten Hunde wiederholt."
+    },
+    {
+     "land": "ES",
+     "jahr": 2025,
+     "groesse": "quote_katzen",
+     "wert": 16,
+     "quelle": "es-imveterinaria-2025",
+     "berechnet": false,
+     "hinweis": "16 % der registrierten Katzen mit Krankenversicherung – ohne Quelle, unplausibel (höher als Hunde 3 %); bei El Cierre Digital 16 % der Katzen mit 'irgendeiner Deckung'. Nicht verwenden ohne Primärquelle."
+    },
+    {
+     "land": "ES",
+     "jahr": 2026,
+     "groesse": "quote_haushalte",
+     "wert": 42,
+     "quelle": "es-icea-2026",
+     "berechnet": false,
+     "hinweis": "ICEA-Monitor (Befragung 8.000 Haushalte mit Hund/Katze): 42 % haben IRGENDEINEN Versicherungsschutz für das Tier, einschließlich Klauseln in Hausrat-, Kranken- und Sterbegeldpolicen und Haftpflicht. Keine Tierkrankenversicherungsquote."
+    },
+    {
+     "land": "ES",
+     "jahr": 2026,
+     "groesse": "quote_haushalte",
+     "wert": 55,
+     "quelle": "es-icea-2026",
+     "berechnet": false,
+     "hinweis": "ICEA: Haushalte mit Hund, irgendein Schutz (inkl. Haftpflicht/Hausratklausel; Hundehaftpflicht durch Ley 7/2023 und Gefahrhunderegel getrieben). Nicht mit Krankenversicherung gleichsetzen."
+    },
+    {
+     "land": "ES",
+     "jahr": 2019,
+     "groesse": "policen",
+     "wert": 41000,
+     "quelle": "es-mapfre-2019",
+     "berechnet": false,
+     "hinweis": "Nur Mapfre: knapp 41.000 Tierpolicen (ca. 67.000 Tiere), ca. 4,8 Mio. EUR Prämien. Einzelner Versicherer, keine Marktzahl."
+    },
+    {
+     "land": "ES",
+     "jahr": 2019,
+     "groesse": "praemien_mio_eur",
+     "wert": 4.8,
+     "waehrung": "EUR",
+     "quelle": "es-mapfre-2019",
+     "berechnet": false,
+     "hinweis": "Nur Mapfre (41.000 Policen x ca. 120 EUR). Keine Marktzahl."
+    },
+    {
+     "land": "ES",
+     "jahr": 2024,
+     "groesse": "praemien_mio_eur",
+     "wert": 550,
+     "waehrung": "EUR",
+     "quelle": "es-elcierre-2026",
+     "berechnet": false,
+     "hinweis": "Unbelegte Pressezahl ('movió alrededor de 550 millones'); widerspricht der Größenordnung aus UNESPA (ca. 220.000–300.000 Tiere x 100–300 EUR = ca. 30–90 Mio. EUR, berechnet). Vermutlich andere Abgrenzung oder Fehler – nicht verwenden."
+    },
+    {
+     "land": "PT",
+     "jahr": 2022,
+     "groesse": "quote_haushalte",
+     "wert": 4.1,
+     "quelle": "pt-marktest-2023",
+     "berechnet": false,
+     "hinweis": "Marktest Basef Seguros: 4,1 % der Einwohner ab 15 Jahren (373.000 Personen) haben eine Tierversicherung – Personenbasis, nicht Haushalte/Tiere; enthält vermutlich auch RC-Policen. Leicht unter den 3 Vorjahren."
+    },
+    {
+     "land": "PT",
+     "jahr": 2024,
+     "groesse": "policen",
+     "wert": 122500,
+     "quelle": "pt-eco-2024",
+     "berechnet": true,
+     "hinweis": "Berechnet als Summe genannter Bestände Mitte 2024: Fidelidade 82.000 + Ageas ca. 20.500 + Mapfre >20.000 = >122.500 Policen (ohne Generali Tranquilidade, CA, Barkibu u. a.). Untergrenze. Kombi-Policen Gesundheit+RC."
+    },
+    {
+     "land": "PT",
+     "jahr": 2024,
+     "groesse": "quote_tiere",
+     "wert": 2.4,
+     "quelle": "pt-eco-2024",
+     "berechnet": true,
+     "hinweis": "Berechnet: >122.500 Policen / (3.071.000 Hunde + 2.116.000 Katzen, FEDIAF 2024) = 2,4 % – Untergrenze, Policen ≈ Tiere angenommen."
+    },
+    {
+     "land": "PT",
+     "jahr": 2025,
+     "groesse": "quote_haushalte",
+     "wert": 5,
+     "quelle": "es-hellosafe-forbespt-2025",
+     "berechnet": false,
+     "hinweis": "HelloSafe-Barometer: 5 % der Haushalte mit Tier versichert; ohne Methodik."
+    },
+    {
+     "land": "PT",
+     "jahr": 2025,
+     "groesse": "policen",
+     "wert": 255000,
+     "quelle": "es-hellosafe-forbespt-2025",
+     "berechnet": false,
+     "hinweis": "HelloSafe: ca. 255.000 versicherte Tiere (von >5 Mio. registrierten). Unbelegt; = 4,9 % von 5,19 Mio. Hunden+Katzen (FEDIAF 2024, berechnet). Plausibel ggü. Versicherer-Summe >122.500 (2024) und einem Versicherer >105.000 (2026)."
+    },
+    {
+     "land": "PT",
+     "jahr": 2025,
+     "groesse": "quote_haushalte",
+     "wert": 15,
+     "quelle": "pt-marketeer-2026",
+     "berechnet": false,
+     "hinweis": "PetPulse Insights (UPPartner), n=483 Halter: 15 % der Halter mit Tierkrankenversicherung. Kleine, vermutlich online rekrutierte Stichprobe; EY gibt dieselben 15 % fälschlich als Anteil der Tiere wieder. Widerspricht HelloSafe 5 %."
+    },
+    {
+     "land": "PT",
+     "jahr": 2026,
+     "groesse": "policen",
+     "wert": 105000,
+     "quelle": "pt-cnn-2026",
+     "berechnet": false,
+     "hinweis": "Nur ein ungenannter Versicherer (vermutlich Fidelidade, 2024: 82.000) >105.000 Policen. Einzelwert, keine Marktzahl."
+    },
+    {
+     "land": "PT",
+     "jahr": 2024,
+     "groesse": "policen",
+     "wert": 82000,
+     "quelle": "pt-eco-2024",
+     "berechnet": false,
+     "hinweis": "Nur Fidelidade, Policen in Kraft Ende Juli 2024, Wachstum ca. 50 %."
+    },
+    {
+     "land": "PL",
+     "jahr": 2024,
+     "groesse": "quote_tiere",
+     "wert": 1,
+     "quelle": "pl-rp-2024",
+     "berechnet": false,
+     "hinweis": "Schätzung TU Europa: 'mniej niż 1 proc.' aller Heimtiere versichert (Obergrenze). Gleiche Größenordnung bei Umbrex (Bankier 2026: <1 % der Hunde und Katzen)."
+    },
+    {
+     "land": "PL",
+     "jahr": 2026,
+     "groesse": "quote_tiere",
+     "wert": 1,
+     "quelle": "pl-bankier-2026",
+     "berechnet": false,
+     "hinweis": "Umbrex-Schätzung: weniger als 1 % der Hunde und Katzen (Obergrenze), ohne Methodik."
+    },
+    {
+     "land": "PL",
+     "jahr": 2024,
+     "groesse": "quote_haushalte",
+     "wert": 13,
+     "quelle": "pl-rp-2024",
+     "berechnet": false,
+     "hinweis": "Befragung ARC Rynek i Opinia für TU Europa (CAWI, N=836 Halter, 2024): 13 % der Hunde-/Katzenhalter sagen, sie haben eine Versicherung. Halterbasis, Selbstauskunft, schließt vermutlich Unfallklauseln in Wohnpolicen (PZU-Anteil 1/3!) ein. Widerspricht <1 % der Tiere deutlich."
+    },
+    {
+     "land": "PL",
+     "jahr": 2024,
+     "groesse": "quote_hunde",
+     "wert": 16,
+     "quelle": "pl-rp-2024",
+     "berechnet": false,
+     "hinweis": "ARC/TU Europa: 16 % der HUNDEHALTER (nicht der Hunde) mit Versicherung, Selbstauskunft inkl. Klauseln in Wohnpolicen."
+    },
+    {
+     "land": "PL",
+     "jahr": 2024,
+     "groesse": "quote_katzen",
+     "wert": 8,
+     "quelle": "pl-rp-2024",
+     "berechnet": false,
+     "hinweis": "ARC/TU Europa: 8 % der KATZENHALTER (nicht der Katzen) mit Versicherung, Selbstauskunft."
+    },
+    {
+     "land": "PL",
+     "jahr": 2024,
+     "groesse": "quote_tiere",
+     "wert": 10,
+     "quelle": "pl-tvn24-2024",
+     "berechnet": false,
+     "hinweis": "TVN24 gibt denselben ARC-Bericht als 'około co dziesiąte zwierzę' wieder – vermutlich Umformulierung der 13 % Halter; nicht als Tierquote verwenden."
+    },
+    {
+     "land": "PL",
+     "jahr": 2024,
+     "groesse": "policen",
+     "wert": 157000,
+     "quelle": "pl-rp-2024",
+     "berechnet": true,
+     "hinweis": "Berechnet (Obergrenze): <1 % x (8.282.000 Hunde + 7.463.000 Katzen, FEDIAF 2024) = <157.000 versicherte Tiere. Keine veröffentlichte Policenzahl von KNF/PIU (Tierversicherung nicht als eigene Sparte ausgewiesen)."
+    },
+    {
+     "land": "PL",
+     "jahr": 2024,
+     "groesse": "policen",
+     "wert": 370000,
+     "quelle": "pl-forbes-2024",
+     "berechnet": false,
+     "hinweis": "Kein Bestand: Pethelp-Chef beziffert das derzeitige POTENZIAL auf ca. 2,5 % = ca. 370.000 Tiere. Nur als Kontext."
+    },
+    {
+     "land": "AT",
+     "jahr": 2022,
+     "groesse": "quote_hunde",
+     "wert": 29,
+     "quelle": "sandoe2023",
+     "berechnet": false,
+     "hinweis": "Anteil versicherter Hunde (je Tier, bis 3 Tiere je Haushalt), Online-Panel März 2022, n=526 Hunde. Panel eher versicherungsaffin; deutlich höher als alle Marktschätzungen (HelloSafe 4 %). Zitierung gegengeprüft in Strohbücker et al. 2026."
+    },
+    {
+     "land": "AT",
+     "jahr": 2022,
+     "groesse": "quote_katzen",
+     "wert": 10,
+     "quelle": "sandoe2023",
+     "berechnet": false,
+     "hinweis": "Anteil versicherter Katzen (je Tier), Online-Panel März 2022, n=921 Katzen."
+    },
+    {
+     "land": "AT",
+     "jahr": 2022,
+     "groesse": "quote_haushalte",
+     "wert": 21.3,
+     "quelle": "tt2026",
+     "berechnet": false,
+     "hinweis": "Anteil der Hunde- und/oder Katzenhalter mit Tierkrankenversicherung (Halterquote, nicht Tierquote), selbe Erhebung März 2022 (NORSTAT), 800 Teilnehmende in AT; Veröffentlichung Springer et al., Vet Record 2026. Zusätzlich Sandøe Table 6: 31 % der Hundehaushalte, 12 % der Katzenhaushalte."
+    },
+    {
+     "land": "AT",
+     "jahr": 2025,
+     "groesse": "quote_tiere",
+     "wert": 4,
+     "quelle": "hellosafe_ch",
+     "berechnet": false,
+     "hinweis": "Unbelegte Ländertabelle (Stand Juni 2025), Bezug ~3,0 Mio. Heimtiere. Schwach, widerspricht Umfrage (29 %/10 %)."
+    },
+    {
+     "land": "AT",
+     "jahr": 2025,
+     "groesse": "policen",
+     "wert": 120000,
+     "quelle": "hellosafe_ch",
+     "berechnet": false,
+     "hinweis": "Unbelegte HelloSafe-Angabe (versicherte Tiere). Kein Versicherer und kein Verband (VVO, FMA) weist Heimtierversicherung gesondert aus."
+    },
+    {
+     "land": "CH",
+     "jahr": 2010,
+     "groesse": "quote_haushalte",
+     "wert": 5.6,
+     "quelle": "bonus2010",
+     "berechnet": false,
+     "hinweis": "Anteil der Tierhalter mit Tierversicherung unter ca. 2.500 Teilnehmern einer Online-Umfrage des Vergleichsportals bonus.ch (nicht repräsentativ)."
+    },
+    {
+     "land": "CH",
+     "jahr": 2011,
+     "groesse": "quote_haushalte",
+     "wert": 7,
+     "quelle": "bonus2011",
+     "berechnet": false,
+     "hinweis": "Anteil der Besitzer mit Haustierversicherung, Online-Umfrage bonus.ch mit über 8.000 Teilnehmenden (nicht repräsentativ)."
+    },
+    {
+     "land": "CH",
+     "jahr": 2012,
+     "groesse": "quote_tiere",
+     "wert": 10,
+     "quelle": "ta2012",
+     "berechnet": false,
+     "hinweis": "„Gegen 10 Prozent“, Expertenschätzung ohne Quelle; Bezug Hunde und Katzen. Widerspricht der Animalia-Angabe 2016 (3–4 %)."
+    },
+    {
+     "land": "CH",
+     "jahr": 2012,
+     "groesse": "policen",
+     "wert": 5100,
+     "quelle": "ta2012",
+     "berechnet": false,
+     "hinweis": "Nur Mobiliar: 3.000 Hunde + 2.100 Katzen versichert (Anbieterzahl, kein Markt)."
+    },
+    {
+     "land": "CH",
+     "jahr": 2012,
+     "groesse": "praemien_mio_lw",
+     "wert": 1.15,
+     "quelle": "ta2012",
+     "berechnet": false,
+     "hinweis": "Nur Mobiliar, Prämienvolumen Tierversicherung (Anbieterzahl).",
+     "waehrung": "CHF"
+    },
+    {
+     "land": "CH",
+     "jahr": 2014,
+     "groesse": "praemien_mio_lw",
+     "wert": 5.16,
+     "quelle": "letemps2016",
+     "berechnet": false,
+     "hinweis": "Nur Epona (Marktführer, inkl. Pferde), Prämieneinnahmen laut Epona-Direktion.",
+     "waehrung": "CHF"
+    },
+    {
+     "land": "CH",
+     "jahr": 2014,
+     "groesse": "praemien_mio_lw",
+     "wert": 4.5,
+     "quelle": "letemps2016",
+     "berechnet": false,
+     "hinweis": "Nur Animalia (Nr. 2, Hunde und Katzen), Prämien 2014.",
+     "waehrung": "CHF"
+    },
+    {
+     "land": "CH",
+     "jahr": 2014,
+     "groesse": "quote_tiere",
+     "wert": 5,
+     "quelle": "swissquote2024",
+     "berechnet": false,
+     "hinweis": "Obergrenze: „vor rund zehn Jahren weniger als 5 Prozent der Katzen und Hunde“ (Epona-CEO, Rückblick aus 2024; Jahr ungefähr)."
+    },
+    {
+     "land": "CH",
+     "jahr": 2015,
+     "groesse": "praemien_mio_lw",
+     "wert": 6.0,
+     "quelle": "letemps2016",
+     "berechnet": false,
+     "hinweis": "Nur Epona, Prämieneinnahmen 2015 (inkl. Pferde).",
+     "waehrung": "CHF"
+    },
+    {
+     "land": "CH",
+     "jahr": 2016,
+     "groesse": "quote_tiere",
+     "wert": 3.5,
+     "quelle": "letemps2016",
+     "berechnet": false,
+     "hinweis": "„3 à 4%“ der Hunde und Katzen laut Animalia (Mitte des Bereichs). Deutlich tiefer als die TA-Schätzung 2012 (10 %) – Schätzungen nicht vergleichbar."
+    },
+    {
+     "land": "CH",
+     "jahr": 2021,
+     "groesse": "quote_hunde",
+     "wert": 7.5,
+     "quelle": "be2021",
+     "berechnet": false,
+     "hinweis": "Mitte von 5–10 %: „Schätzungen von Tierversicherungen“, 90–95 % der Hunde nicht versichert (Vorstosstext Grosser Rat BE, Nov. 2021)."
+    },
+    {
+     "land": "CH",
+     "jahr": 2023,
+     "groesse": "praemien_mio_lw",
+     "wert": 14.309,
+     "quelle": "epona_fcr2024",
+     "berechnet": false,
+     "hinweis": "Epona SA, Bruttoprämien (Pferde + Hunde/Katzen ≈ 99 %, nicht getrennt). Anbieterzahl, nicht Markt.",
+     "waehrung": "CHF"
+    },
+    {
+     "land": "CH",
+     "jahr": 2024,
+     "groesse": "praemien_mio_lw",
+     "wert": 13.96,
+     "quelle": "epona_fcr2024",
+     "berechnet": false,
+     "hinweis": "Epona SA, Bruttoprämien 2024 (−2 % durch Sanierung), inkl. Pferde. Vaudoise-Gruppe (Epona+Animalia) hält laut Epona-CEO fast 60 % Marktanteil; Animalia-Prämien nicht veröffentlicht.",
+     "waehrung": "CHF"
+    },
+    {
+     "land": "CH",
+     "jahr": 2024,
+     "groesse": "quote_hunde",
+     "wert": 17,
+     "quelle": "swissquote2024",
+     "berechnet": false,
+     "hinweis": "Epona-CEO, Interview 23.12.2024, ohne Methodik. Höchster CH-Wert; Bern-Vorstoss 2021: 5–10 %."
+    },
+    {
+     "land": "CH",
+     "jahr": 2024,
+     "groesse": "quote_katzen",
+     "wert": 2.5,
+     "quelle": "swissquote2024",
+     "berechnet": false,
+     "hinweis": "Epona-CEO, Interview 23.12.2024."
+    },
+    {
+     "land": "CH",
+     "jahr": 2024,
+     "groesse": "quote_tiere",
+     "wert": 10,
+     "quelle": "swissquote2024",
+     "berechnet": false,
+     "hinweis": "„knapp 10 Prozent der Haustiere“ (Epona-CEO)."
+    },
+    {
+     "land": "CH",
+     "jahr": 2025,
+     "groesse": "quote_tiere",
+     "wert": 9,
+     "quelle": "hellosafe_ch",
+     "berechnet": false,
+     "hinweis": "HelloSafe-Tabelle Stand Juni 2025, unbelegt; 9 % von ~3,0 Mio. wären ~270.000, Tabelle nennt ~230.000 (interner Rechenfehler). Fließtext nennt „Seyna (2024): 15 % Hunde, 7 % Katzen“ – Ursprung nicht auffindbar, Seyna (FR) ist in CH nicht tätig."
+    },
+    {
+     "land": "CH",
+     "jahr": 2025,
+     "groesse": "quote_tiere",
+     "wert": 10,
+     "quelle": "moneycab2025",
+     "berechnet": false,
+     "hinweis": "Obergrenze: „Weniger als 10 % aller Haustiere“ (Calingo-Artikel, 03.09.2025)."
+    },
+    {
+     "land": "CH",
+     "jahr": 2025,
+     "groesse": "policen",
+     "wert": 20000,
+     "quelle": "erv2025",
+     "berechnet": false,
+     "hinweis": "Untergrenze, nur ERV/Helvetia (wau-miau): „mehr als 20 000 Tierversicherungspolicen analysiert“; seit 2020 mehr als vervierfacht. Anbieterzahl."
+    },
+    {
+     "land": "CH",
+     "jahr": 2026,
+     "groesse": "quote_tiere",
+     "wert": 10,
+     "quelle": "allianzch2026",
+     "berechnet": false,
+     "hinweis": "Obergrenze: „weniger als 10 Prozent der Tiere versichert“ (Allianz Suisse, 13.01.2026)."
+    },
+    {
+     "land": "CH",
+     "jahr": 2026,
+     "groesse": "quote_tiere",
+     "wert": 10,
+     "quelle": "srf2026",
+     "berechnet": false,
+     "hinweis": "„etwa zehn Prozent“ von rund 2 Mio. registrierten Hunden und Katzen (SRF-Text zum Sanitas-Start, 15.08.2026, ohne Quellenangabe). Gleiche Grössenordnung wie Epona 2024 und Allianz 2026."
+    },
+    {
+     "land": "CH",
+     "jahr": 2026,
+     "groesse": "policen",
+     "wert": 200000,
+     "quelle": "srf2026",
+     "berechnet": true,
+     "hinweis": "Gerechnet: 10 % × 2 Mio. registrierte Hunde und Katzen = rund 200.000 versicherte Tiere (Grössenordnung)."
+    },
+    {
+     "land": "CZ",
+     "jahr": 2017,
+     "groesse": "quote_hunde",
+     "wert": 0.5,
+     "quelle": "forbescz2025b",
+     "berechnet": false,
+     "hinweis": "PetExpert-CEO: „půl procenta“ bei Markteintritt 2017; Bezug versicherbare („relevante“) Hunde, nicht alle Hunde."
+    },
+    {
+     "land": "CZ",
+     "jahr": 2021,
+     "groesse": "quote_haushalte",
+     "wert": 2,
+     "quelle": "financecz2021",
+     "berechnet": false,
+     "hinweis": "PetExpert: „asi 2 % jejich majitelů“ (Halterquote), Okt. 2021."
+    },
+    {
+     "land": "CZ",
+     "jahr": 2021,
+     "groesse": "policen",
+     "wert": 50000,
+     "quelle": "financecz2021",
+     "berechnet": false,
+     "hinweis": "Nur PetExpert: „blížíme k … 50 tisíc klientů“ (Kunden, Anbieterzahl)."
+    },
+    {
+     "land": "CZ",
+     "jahr": 2024,
+     "groesse": "quote_tiere",
+     "wert": 4,
+     "quelle": "forbescz2025a",
+     "berechnet": false,
+     "hinweis": "„pouhá čtyři procenta“ der Haustiere (Direct pojišťovna, Forbes 11.01.2025). Gegenrechnung ergibt nur ~2,6 % (s. u.); PetExpert nennt 2025 ~3 % der relevanten Hunde; HelloSafe 2,5 %."
+    },
+    {
+     "land": "CZ",
+     "jahr": 2024,
+     "groesse": "policen",
+     "wert": 100000,
+     "quelle": "forbescz2025a",
+     "berechnet": false,
+     "hinweis": "„zhruba sto tisíc smluv“ (Marktschätzung, Verträge). Wachstum laut Superpoistenie.sk +70 % Abschlüsse 2023→2024."
+    },
+    {
+     "land": "CZ",
+     "jahr": 2024,
+     "groesse": "praemien_mio_lw",
+     "wert": 500,
+     "quelle": "forbescz2025a",
+     "berechnet": true,
+     "hinweis": "Gerechnet: ~100.000 Verträge × ~5.000 CZK durchschnittliche Jahresprämie = ~500 Mio. CZK (Grössenordnung).",
+     "waehrung": "CZK"
+    },
+    {
+     "land": "CZ",
+     "jahr": 2024,
+     "groesse": "praemien_mio_eur",
+     "wert": 20,
+     "quelle": "forbescz2025a",
+     "berechnet": true,
+     "hinweis": "Gerechnet: 500 Mio. CZK / 25,1 CZK je EUR (EZB-Jahresmittel 2024 ≈ 25,1) ≈ 20 Mio. EUR."
+    },
+    {
+     "land": "CZ",
+     "jahr": 2024,
+     "groesse": "quote_tiere",
+     "wert": 2.6,
+     "quelle": "forbescz2025a",
+     "berechnet": true,
+     "hinweis": "Gerechnet: 100.000 Verträge / (2,5 Mio. Hunde + 1,3 Mio. Katzen laut selbem Artikel) = 2,6 %. Widerspricht den im Artikel genannten 4 %."
+    },
+    {
+     "land": "CZ",
+     "jahr": 2025,
+     "groesse": "quote_hunde",
+     "wert": 3,
+     "quelle": "forbescz2025b",
+     "berechnet": false,
+     "hinweis": "PetExpert-CEO (Mai 2025): ~3 % der versicherbaren („relevanten“) Hunde."
+    },
+    {
+     "land": "CZ",
+     "jahr": 2025,
+     "groesse": "quote_tiere",
+     "wert": 2.5,
+     "quelle": "hellosafe_ch",
+     "berechnet": false,
+     "hinweis": "HelloSafe (Stand Juni 2025), ~83.000 von ~3,3 Mio. Heimtieren, unbelegt."
+    },
+    {
+     "land": "CZ",
+     "jahr": 2026,
+     "groesse": "quote_tiere",
+     "wert": 4,
+     "quelle": "cccz2026",
+     "berechnet": false,
+     "hinweis": "Gesponserter Artikel (Direct pojišťovna), 15.04.2026: „přibližně 4 procenta mazlíčků“."
+    },
+    {
+     "land": "SK",
+     "jahr": 2025,
+     "groesse": "quote_tiere",
+     "wert": 1,
+     "quelle": "forbescz2025b",
+     "berechnet": false,
+     "hinweis": "PetExpert-CEO: Slowakei „sotva jedno procento“ der Hunde und Katzen (Mai 2025), Schätzung ohne Methodik."
+    },
+    {
+     "land": "HU",
+     "jahr": 2018,
+     "groesse": "policen",
+     "wert": 1163,
+     "quelle": "penzcentrum2018",
+     "berechnet": false,
+     "hinweis": "Nur Aegon: eigenständige Kleintierverträge; zusätzlich 7.660 als Baustein der Haushaltsversicherung. Kein Marktwert veröffentlicht (MABISZ/MNB weisen die Sparte nicht aus)."
+    },
+    {
+     "land": "SI",
+     "jahr": 2023,
+     "groesse": "quote_haushalte",
+     "wert": 10,
+     "quelle": "zurnal2023",
+     "berechnet": false,
+     "hinweis": "Schätzung Zavarovalnica Triglav: ~10 % der Halter kleiner Haustiere (Feb. 2023)."
+    },
+    {
+     "land": "SI",
+     "jahr": 2025,
+     "groesse": "quote_haushalte",
+     "wert": 10,
+     "quelle": "svet2025",
+     "berechnet": false,
+     "hinweis": "Schätzung Triglav unverändert ~10 % der Halter kleiner Haustiere (Feb. 2025); Triglav versichert „mehrere tausend“ Kleintiere."
+    }
+   ],
+   "einschaetzung": {
+    "AT": "Beste Größe: Online-Panel März 2022 (Sandøe et al. 2023): 29 % der Hunde, 10 % der Katzen je Tier – vermutlich überhöht (Panel), HelloSafe 4 % (unbelegt) extrem gegenläufig. Keine 2024-Zahl; 2024 nur durch Halten von 2022 oder Fortschreibung mit DE-Wachstum (als gerechnet markieren). Keine Reihe; VVO 'Tierversicherungsvereine' sind Nutztiere. Recherchenotiz: Beste Zahl: Umfrage März 2022 (Sandøe et al. 2023 / Springer et al. 2026): 29 % der Hunde, 10 % der Katzen, 21,3 % der Halter. Kein 2024er-Wert aus belastbarer Quelle. VVO und FMA weisen Heimtierversicherung nicht aus; die VVO-Zeile „Tierversicherungsvereine“ (Kleine VVaG, Prämien 173/178/183/159 Tsd. € 2020–2023) betrifft Nutztier-Vereine und ist NICHT verwendbar. Keine Polizzenzahlen von Uniqa, Wiener Städtische, Allianz, Helvetia AT, HanseMerkur (seit März 2024 in AT) gefunden. HelloSafe 4 %/120.000 ist unbelegt und steht im Widerspruch zur Umfrage (Panel vermutlich versicherungsaffin, Umfragequote je Tier vs. Bestandsquote).",
+    "BG": "Recherchenotiz: Keine Zahl gefunden (KFN/Assoziation). Produkte z. B. Colonnade „Zashtiteni lapi“.",
+    "CH": "Beste Größe: Versicherer-Schätzungen, Anteil der Tiere: Epona-CEO 12/2024 Hunde 17 %, Katzen 2,5 %, gesamt knapp 10 %; 2026 'etwa 10 %' (Sanitas/SRF, Allianz). Reihe Stützpunkte 2012 (~10 %, Tages-Anzeiger – widersprüchlich), 2016 (3-4 %, Animalia), 2021 (Hunde 5-10 %), 2024 (≈10 %), 2026 (~10 %); linear zwischen 2016 und 2024, 2012 als Widerspruch nennen. Epona-Prämien 2014-2024 als Wachstumsindikator. Recherchenotiz: Kein amtlicher Wert; FINMA/SVV weisen Tierversicherung nicht gesondert aus (Branche B9 gemischt). Reihe aus Schätzungen: Halterquote bonus.ch 5,6 % (2010), 7 % (2011); Tierquote ~10 % (Experten 2012) vs. 3–4 % (Animalia 2016) vs. <5 % vor zehn Jahren (Epona 2024) – Schätzungen widersprechen sich für 2012–2016. Ab 2021: Hunde 5–10 % (Versicherer laut BE-Vorstoss), 2024 Hunde 17 %/Katzen 2,5 %/gesamt knapp 10 % (Epona-CEO); 2025/26 durchgehend „weniger als / etwa 10 %“ (Calingo, Allianz Suisse, SRF/Sanitas). Gerechnet ~200.000 versicherte Tiere 2026. Prämien nur je Anbieter: Epona 5,16 (2014), 6,0 (2015), 14,3 (2023), 13,96 Mio. CHF (2024, inkl. Pferde); Animalia 4,5 Mio. CHF (2014); Mobiliar 1,15 Mio. CHF (2012). Vaudoise (Epona+Animalia) ~60 % Marktanteil → Markt grob 2024 in der Grössenordnung 30–40 Mio. CHF, aber nur grobe Ableitung (Epona inkl. Pferde, Animalia unbekannt), nicht als Wert erfasst. Seyna-2024-Angabe (15 %/7 %) nicht verifizierbar; petfinder 8 % nicht gefunden; Comparis „weniger als 10 % der Tierhaltenden“ (Seite gesperrt, undatiert); die Comparis-Angabe „3–5 % drei Jahre früher“ nicht auffindbar.",
+    "CY": "Recherchenotiz: Keine Zahl gefunden.",
+    "CZ": "Beste Größe: ~100.000 Verträge 2024 (Direct pojišťovna, Forbes 01/2025) → berechnet 2,6 % der Hunde+Katzen; Artikel selbst sagt 4 %. PetExpert: 0,5 % (2017) → 3 % (2025) der versicherbaren Hunde – ergibt kurze Reihe 2017-2025 (linear, gerechnet). Recherchenotiz: Beste Zahl 2024: ~100.000 Verträge, Ø-Prämie ~5.000 CZK (Direct/Forbes 01/2025) → gerechnet ~500 Mio. CZK ≈ 20 Mio. EUR. Quote: genannt 4 % der Haustiere, gerechnet 2,6 % (100.000/3,8 Mio.), PetExpert ~3 % der versicherbaren Hunde (2025, 0,5 % 2017), HelloSafe 2,5 %. ČAP veröffentlicht keine Spartenzahl. Wachstum +70 % Abschlüsse 2023→2024 (Superpoistenie.sk).",
+    "DE": "Belastbarste Größe: GDV-Sonderumfrage 2025 (13 Unternehmen) mit versicherten Tieren 2019-2024 (845 Tsd. → 2,01 Mio.) und verdienten Bruttobeiträgen (173 → 720 Mio. €). Quote 2024: 2,01 Mio. / 26,4 Mio. Hunde+Katzen (IVH/ZZF) = 7,6 % aller Hunde und Katzen (Untergrenze, da 13 Unternehmen; Zähler kann Pferde u. a. enthalten). Nach Hund/Katze grob (Vertragsmix 2018 89/11 aus Heimtierstudie): Hunde ≈17 %, Katzen ≈1,4 % – Katzenanteil vermutlich höher, also Hunde eher 14-16 %, Katzen 2-3 %. Reihe: 2019-2024 direkt aus GDV / IVH-Bestand; 2018 Heimtierstudie (720-890 Tsd. Verträge ≈ 3,3 %) als Überlappungsjahr-Stütze; 2010-2017 nur durch Rückschreibung (z. B. Wachstumsrate 2018→2019 von ~5 %/Jahr oder Halten), kein Beleg – als gerechnet markieren. 2025 fehlt: Fortschreibung mit Wachstum 2023→2024 (+12 %) möglich. Halterumfragen (Check24 47 % Hunde, Uelzener 30 %, Statista 2017 21 %, AGILA 2018 23 %) und Tierärzte-Schätzungen (35 %/20 % 2025) liegen 2-4fach über den Marktdaten und gehören nicht in dieselbe Reihe. Ausreißer: Rosin 2015 '15 % (2012)', HelloSafe 5,3 Mio. – widersprechen GDV.",
+    "EE": "Recherchenotiz: Keine Zahl (Finantsinspektsioon, Kindlustusseltside Liit). Produkte If, ERGO (nur mit Hausratversicherung).",
+    "ES": "Beste Größe: UNESPA/Estamos Seguros 'El seguro de mascotas 2023-2024': >220.800 versicherte Tiere bei 15 Versicherern (inkl. reiner RC-Policen). Quote 2024 berechnet ≈1,9 % der Hunde+Katzen (FEDIAF) – eher Obergrenze für Krankenschutz, da RC enthalten, aber Untergrenze für Markt (15 Versicherer). Kein zweiter marktweiter Stützpunkt (Mapfre 2019 nur Einzelversicherer); eine Reihe ist nicht belastbar – allenfalls 2024 halten bzw. mit HelloSafe/Petplan 2 % (2025) bestätigen. Ley 7/2023 verschiebt den Mix zu RC (Schadenmix 2016: 69 % Tierarzt, 2023/24: 52 % RC). Recherchenotiz: Keine amtliche Gesamtzahl versicherter Tiere oder Prämien: DGSFP und ICEA weisen Tierversicherung nicht als eigene Sparte aus (fällt unter Multirriesgos/RC/Otros daños). Beste harte Zahl: UNESPA/Estamos Seguros, Stichprobe 220.800 versicherte Tiere bei 15 Versicherern (Aug. 2023–Jul. 2024), nur eigene Tierpolicen inkl. reiner Haftpflicht -> ca. 1,7–1,9 % der Hunde+Katzen (berechnet, Untergrenze). Deckt sich mit HelloSafe (2 %, >300.000) und Petplan (2 % Krankenversicherung). Hohe Werte (ICEA 2026: 42 % der Haushalte, 55 % mit Hund; Línea Directa '7 von 10'; Guidewire 49,6 %) messen IRGENDEINEN Schutz inkl. Hausrat-/Haftpflichtklauseln – nicht mischen. Leistungsmix kippt: 2016 Tierarzt 69 %/RC 11 %, 2023/24 RC 52 %/Tierarzt 38 % -> Wachstum stark haftpflichtgetrieben (Ley 7/2023 Hundehaftpflicht, laut Estamos Seguros erst mit Verordnung verpflichtend; Gefahrhunde seit 1999 pflichtversichert). Prämienzahl 550 Mio. EUR (El Cierre Digital) unbelegt und unplausibel. Population widersprüchlich: FEDIAF 2024 6,96 Mio. Hunde/4,94 Mio. Katzen; Ministerium (Register 2021–2025) 7,56/5,62 Mio.; REIAC 2023 10,17 Mio. Hunde (Register mit Altlasten), ANFAAC 2021 9,28 Mio. Hunde. Keine durchgehende Jahresreihe 2005–2026 auffindbar.",
+    "FR": "Keine Markt-/Bestandsstatistik (France Assureurs, ACPR). Am belastbarsten für Tiere: grober Anteil 5-7 % der Hunde+Katzen 2024/25 (HelloSafe 5 %, L'Argus 7 %, Assurland 6 %, alle ohne Primärquelle) vs. 2-4 % 2009-2016 (INSEE-BdF-Auswertung 2010: 5 % Hunde / 0,6 % Katzen). Halteranteil methodisch offen: Ifop/Boehringer März 2024 13 % (Hund 18 %, Katze 13 %). Reihe: Stützpunkte 2009/2010/2011/2013/2016 und 2024/25 linear verbinden – als gerechnet markieren, Quellenwechsel nennen. Nicht verwenden: 'INSEE 12 %→19 %'. Recherchenotiz: Es gibt in Frankreich KEINE amtliche oder Verbandsstatistik (France Assureurs, ACPR) zu Policen, versicherten Tieren oder Prämien der Tierkrankenversicherung – gesucht auf franceassureurs.fr (nur Ratgeberseite) und in Presse/Fachpresse. Belegbar sind zwei Sorten Zahlen, die nicht vermischt werden dürfen: (a) Tieranteil 2–7 %: 2 % 2009 (Truffert), 5 % Hunde / 0,6 % Katzen 2010 (einzige INSEE-gestützte Zahl, Budget de Famille 2011 via Dissertation Cendrier 2016), 4 % 2011 (SantéVet), 3 % 2013 (Trouillet), 4 % 2016 (Goffart), 5–7 % 2024/25 (HelloSafe, L'Argus 7 %, Assurland 6 %; alle ohne offengelegte Primärquelle). (b) Halteranteil laut Umfragen 13–30 %: Ifop/Fidanimo 2023 15 % der Hunde-/Katzenhalter; Ifop/Boehringer März 2024 13 % aller Tierhalter (Hundehalter 18 %, Katzenhalter 13 %) – beste, methodisch offengelegte Zahl für 2024; OpinionWay/Solly Azar 30 % (2024) und 25 % (2025) – doppelt so hoch, Auftraggeber Makler, Sprung −5 Punkte unplausibel. Halteranteil > Tieranteil ist erklärbar (Halter mit mehreren Tieren, Katzen selten versichert), aber 25–30 % passen nicht zu 5 % der Tiere. Die behauptete INSEE-Reihe 'Hunde 12 % 2019 → 19 % 2023' ließ sich NICHT finden; INSEE erhebt Versicherungsausgaben nur im Budget de Famille (letzte veröffentlichte Tierauswertung bezieht sich auf 2010/2011: 5 % Hunde). Die Zahl ist vermutlich eine Verwechslung mit Umfrage-Halteranteilen (Ifop 18 % Hundehalter 2024 kommt ihr nahe) – nicht verwenden. Prämien 400 Mio. € (2020) / 600 Mio. € (2025) stammen allein von HelloSafe; Dépêche Vétérinaire macht daraus fälschlich 'SantéVet 600 Mio. € Umsatz 2024'. Firmenzahl als Anker: SantéVet 120 Mio. € Prämien 2024 (+20 %), 24 % Ausland (L'Argus 06/2025), 2018 ca. 200.000 Verträge und 65 Mio. € Prämien inkl. Bulle Bleue (Le Point Vétérinaire), rund 300.000 aktuell versicherte Tiere (santevet.com). Versicherte Tiere insgesamt kursieren mit 1,3 / 1,5 / 2,1 / 3,2 Mio. – alle unbelegt. Tierbestand: FACCO/Odoxa 2024–25 bzw. HelloSafe 15,1 Mio. Katzen, 7,5 Mio. Hunde; andere Seiten 16,6–16,7 Mio. Katzen, 9,7 Mio. Hunde.",
+    "GR": "Recherchenotiz: Keine Quote/Policenzahl (EAEE/HAIC veröffentlicht nur Wohngebäude). Fachportal nextdeal nennt Ø-Prämie ~90 € Hund / ~80 € Katze, ohne Bestandszahl.",
+    "HR": "Recherchenotiz: Keine Zahl gefunden (HUO/HANFA weisen die Sparte nicht aus). Anbieter: Croatia, Jadransko, Triglav, Allianz, seit 2023 LAQO; Interesse laut Jadransko 2012 „schwach“.",
+    "HU": "Keine Marktzahl; 2018 Aegon 1.163 Einzelverträge + 7.660 Zusatzbausteine. Für Karte 'keine Daten / <1 %'. Recherchenotiz: Keine Marktzahl (MABISZ, MNB). Nur Anbieterangaben 2018: Aegon 1.163 eigenständige + 7.660 Zusatzbausteine; K&H 2–3 % der Haushaltspolizzen mit Tierbaustein; Generali jeder 20. Kunde; Groupama 6 % der neuen Haushaltskunden. Bestand laut Presse ~2,5–3 Mio. Hunde.",
+    "IT": "Kein Anteil krankenversicherter Tiere belegt. Facile.it-Umfragen messen v. a. Haftpflicht (2020: 89,5 % der Policen RC); Nomisma/UniSalute 2025: 22 % der Halter mit Tierarztkosten-Police (Methode unveröffentlicht). Für Karte allenfalls 'keine belastbaren Daten' oder sehr grob 'unter 5 %' (HelloSafe 6 %, unbelegt). Keine Reihe möglich. Recherchenotiz: Auch in Italien keine Bestands- oder Prämienstatistik: ANIA veröffentlicht keine eigene Sparte für Tierpolicen (die Deckung steckt meist in Casa/Famiglia- oder RC-Policen); IVASS (Okt. 2024) zählt nur Produkte (81 Produkte, 32 Versicherer, davon nur 23 stand-alone, Stand 31.07.2024), keine Policen. Assalco-Zoomark enthält keine Versicherungsquote (nur die Forderung, Tierpolicen steuerlich absetzbar zu machen). Alle Quoten sind Online-Umfragen unter Haltern und zählen überwiegend Haftpflicht (RC), keine Krankenversicherung: Facile.it/EMG 2020 15,3 % (89,5 % davon RC+Rechtsschutz), 2025 32,2 % (Hund 42,8 %, Katze 17,5 %), 2026 Hund 40,9 %, Katze 17,3 %, Gesamt '47,3 %' (in sich widersprüchlich, vermutlich Fehler). Europ Assistance (Corriere 04/2024): 63 % der Halter haben RC, und nur 49 % derer mit spezifischer Tierpolice nutzen sie für Gesundheitskosten. Einzige ausdrücklich gesundheitsbezogene Zahl: Nomisma/UniSalute 2025, 22 % der Halter mit Police für Tierarztkosten (Methode nicht veröffentlicht, Auftraggeber Versicherer). Ein Tieranteil für Krankenversicherung ist nicht belegt; Marktforscher-Seiten nennen für Italien '<2 %' (bestpetinsuranceguide.com, ohne Quelle) bzw. einen Markt von 972 Mio. USD 2024 (Verified Market Research) – beide unbelegt und untereinander unvereinbar, daher nicht aufgenommen. PLTV (09/2025) schreibt 'mercato … mezzo miliardo' ohne Einheit/Quelle, inkl. RC – nicht aufgenommen. Tierbestand laut Assalco-Zoomark 2025: 9,0 Mio. Hunde, 11,9 Mio. Katzen (Stand 2024); IVASS nennt nach Assalco 2024 ca. 19 Mio. Hunde und Katzen; ISTAT 2024: 22,1 % der Familien mit Hund, 17,4 % mit Katze. Für eine Grafik zur Tierkrankenversicherung taugt Italien nicht ohne große Unsicherheit; allenfalls Halteranteil 'irgendeine Tierpolice' (Facile.it 2020/2025) mit deutlicher Kennzeichnung.",
+    "LT": "Recherchenotiz: Keine Zahl (Lietuvos bankas weist die Sparte nicht aus). Produkte If, BTA, ERGO/Gjensidige.",
+    "LV": "Recherchenotiz: Keine Zahl. Nur Register: ~168.000–176.000 registrierte Hunde. Bachelorarbeit Univ. Lettland zu Heimtierversicherung (dspace.lu.lv/handle/7/60907) gesperrt.",
+    "MT": "Recherchenotiz: Keine Zahl gefunden.",
+    "PL": "Nur Schätzung TU Europa 2024 '<1 % aller Haustiere' (≈<157 Tsd. Tiere). Halterumfrage ARC/TU Europa 2024 13 % (Hundehalter 16 %) enthält Klauseln in Hausratpolicen. Für Karte '<1 %'; keine Reihe. Recherchenotiz: Dünnste Datenlage. KNF und PIU weisen Heimtierversicherung nicht aus (PIU-Datenbanken nur Nutztiere mit Subvention); Produkt oft Klausel in Wohn- oder Privathaftpflichtpolice (Rzecznik Finansowy 2024), eigenständige Krankenversicherung nur bei wenigen Anbietern (Generali/bezpieczny.pl, PetExpert by Trupanion, Petcover, Pethelp, PZU, seit 2026 Barkibu). Beste Tierquote: Schätzung TU Europa 2024 '<1 % aller Heimtiere' (ebenso Umbrex 2026) -> <157.000 Tiere (berechnet mit FEDIAF 2024: 8,28 Mio. Hunde, 7,46 Mio. Katzen). Gegenläufig: ARC Rynek i Opinia für TU Europa (CAWI, N=836, 2024) 13 % der Halter (Hund 16 %, Katze 8 %) – Selbstauskunft, inkl. Wohnpolice-Klauseln (PZU 1/3 der Versicherten); TVN24 macht daraus 'jedes zehnte Tier'. Keine Policen- oder Prämienzahlen; nur Wachstumsangaben (TUZ x5 in 2 Jahren, Pethelp/bezpieczny.pl Verdopplung p. a.). Keine Jahresreihe.",
+    "PT": "Keine Marktstatistik (Tierpolicen in RC-Sparte gebucht). Quote 2024 berechnet aus Summe Fidelidade+Ageas+Mapfre ≥122.500 Policen / 5,19 Mio. Hunde+Katzen ≈ ≥2,4 %; HelloSafe 5 % passt als Obergrenze. Reihe kaum möglich (Fidelidade-Wachstum +50 % 2023→24 als Rückschreibungshilfe). Recherchenotiz: ASF/APS veröffentlichen keine eigene Sparte; laut Ageas wird Tierversicherung in der Haftpflichtsparte (RC) gebucht (Ageas: ca. 11 % der RC-Prämien 2023), daher in ASF-Statistik nicht trennbar. Harte Werte nur je Versicherer: Fidelidade 82.000 Policen (Jul. 2024, +50 %), Ageas 20.500, Mapfre >20.000 (stabil seit 2022), Generali >1 Mio. EUR Prämien; Summe >122.500 = >2,4 % der Hunde+Katzen (FEDIAF 2024, berechnet). 2026 hat ein Versicherer >105.000 Policen. HelloSafe 2025: 5 % der Haushalte, ca. 255.000 Tiere (≈4,9 % der Tiere, berechnet) – unbelegt, aber konsistent. Widerspruch: PetPulse (n=483) 15 % der Halter; Marktest Basef 2022: 4,1 % der Personen ab 15 (373.000), leicht rückläufig ggü. 2019–2021 – Personenbasis, inkl. RC. Pflicht-Haftpflicht nur für gefährliche/potenziell gefährliche Hunde.",
+    "RO": "Recherchenotiz: Keine Zahl gefunden (ASF/UNSAR). Nur Pflicht-Haftpflicht für Listenhunde; freiwillige Tierkrankenversicherung z. B. Asirom, Eurolife.",
+    "SI": "Nur Triglav-Schätzung ~10 % der Kleintierhalter (Halteranteil, 2023/2025) – nicht mit Tierquoten vergleichbar. Recherchenotiz: Triglav schätzt ~10 % der Halter kleiner Haustiere (2023, 2025). Eine Angabe „nur wenige Prozent der registrierten Hunde“ tauchte in einer Suchzusammenfassung auf, Originalquelle nicht verifiziert. Keine SZZ-Zahl.",
+    "SK": "Nur PetExpert-Schätzung ~1 % (2025). Für Karte '~1 %', keine Reihe. Recherchenotiz: Nur PetExpert-Schätzung ~1 % (2025). Keine SLASPO/NBS-Zahl gefunden."
+   },
+   "hinweis_groessen": "Zusätzlich zu den vorgegebenen Größen: 'quote_haushalte' = Anteil der Halter/Haushalte mit Tierkranken-/OP-Versicherung (nicht Anteil der Tiere!); 'anteil_vollschutz_an_versicherten' = Struktur, keine Quote. Bevölkerungsnenner für Rechnungen: IVH/ZZF (DE), sonst FEDIAF Facts & Figures (Quelle fediaf-2026)."
+  }
+ }
+}

@@ -395,4 +395,22 @@ export const POSTS: RoadmapPost[] = [
     dataNote: 'Einzelbild (docs/linkedin/karte-umsatz-je-tier-europa.json), kein Datensatz. Eurostat M75 (ds31) ÷ FEDIAF Hunde + Katzen (ds32), berechnet. Umsatz enthält Nutztiere – Annäherung, im Post sagen.',
     refs: [43, 44],
   },
+  {
+    nr: 46, arc: 'markt', status: 'geplant',
+    title: 'Wie viele Hunde und Katzen versichert sind',
+    hook: '2,01 Mio. Tiere sind in Deutschland krankenversichert, mehr als doppelt so viele wie 2019. Trotzdem sind es nur knapp 8 von 100 Hunden und Katzen, in Norwegen gut jedes vierte.',
+    figures: ['Deutschland: 845.000 (2019) → 2,01 Mio. versicherte Tiere (2024), 3,4 → 7,6 Prozent', 'Beiträge 173 → 720 Mio. Euro, rund 358 Euro je Tier', 'Vollschutz-Anteil 22 (2020) → 40 Prozent (2024)', 'Norwegen 16,8 → 26,7 Prozent, seit 2021 vor Großbritannien (20–21,5 Prozent)', 'Umfragen: rund 30 Prozent der Hunde (Uelzener 2024), 2- bis 3-mal über den Versicherer-Zahlen'],
+    sampleId: 'tierversicherung', chart: 'line', dataStatus: 'belegt',
+    dataNote: 'Line Race 2018–2024 (ds33-tierversicherung-europa.json): nur Marktzahlen (GDV, ABI, Finans Norge) ÷ Bestand. GB 2019/2022 linear, DE 2018 Schätzung Heimtierstudie, NO 2024 Bestand DyreID. Umfragen bewusst nicht im Chart – im Post sagen.',
+    refs: [47, 45],
+  },
+  {
+    nr: 47, arc: 'markt', status: 'geplant',
+    title: 'Tierversicherung in Europa',
+    hook: '72 Prozent in Schweden, 8 in Deutschland, 2 in Spanien: So unterschiedlich ist der Anteil versicherter Hunde und Katzen in Europa.',
+    figures: ['Schweden 72 % (Umfrage), Dänemark 42, Finnland 28, Norwegen 27, Großbritannien 22', 'Schweiz 10, Deutschland 8, Frankreich 6, Belgien 4', 'Tschechien 3, Spanien 2, Portugal 2, Polen 1', 'Umfragen 2- bis 3-mal über Versicherer-Zahlen (GB: 61 % der Hunde laut PDSA gegen 22 %)'],
+    dataStatus: 'teilweise',
+    dataNote: 'Einzelbild (docs/linkedin/karte-tierversicherung-europa.json), kein Datensatz. Rechnung je Land in ds33 (karte_2024). Sternwerte = nur Umfragen/Schätzungen. Italien, Niederlande grau.',
+    refs: [46, 44],
+  },
 ]

@@ -595,6 +595,19 @@ export const REITSPORT = {
   ],
 }
 
+export const TIERVERSICHERUNG = {
+  headers: ["Jahr","Norwegen","Großbritannien","Deutschland"],
+  rows: [
+    ["2018", 16.8, 21.5, 3.3],
+    ["2019", 18, 20.8, 3.4],
+    ["2020", 20, 20, 3.9],
+    ["2021", 21.7, 21.2, 4.7],
+    ["2022", 24.4, 20.6, 5.9],
+    ["2023", 25.6, 20, 6.8],
+    ["2024", 26.7, 21.5, 7.6],
+  ],
+}
+
 export const PRAXISSCHWERPUNKTE = {
   headers: ["Jahr","Nur Kleintiere","Gemischt (Nutz- und Kleintiere)","Nur Nutz- und Großtiere","Ketten (Standorte in Deutschland)"],
   rows: [

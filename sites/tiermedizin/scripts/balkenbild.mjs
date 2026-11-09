@@ -19,7 +19,7 @@
  *   text       titel, absaetze [...], hinweis, quelle
  *   karte      Europakarte wie ein Choroplethenbild: titel, untertitel, quelle, einheit, stufen [{ ab, name }] aufsteigend,
  *              werte { ISO-2: Zahl }, hervor (ISO-2, orange umrandet), grau [{ id, text }] für Länder ohne Wert mit Grund,
- *              unterBreite (px), legendeOben (px, Legende frei setzen, z. B. über Nordafrika), lage { ISO-2: { dx, dy, kasten } } verschiebt Beschriftungen kleiner Länder (mit Linie zum Land).
+ *              markiert [ISO-2] (Zahl mit *), unterBreite (px), legendeOben (px, Legende frei setzen, z. B. über Nordafrika), lage { ISO-2: { dx, dy, kasten } } verschiebt Beschriftungen kleiner Länder (mit Linie zum Land).
  *              Grenzen: sites/tiermedizin/data/geo/europa-50m.geojson (Natural Earth, gemeinfrei).
  * Eine Grafik, eine Aussage: Werte direkt am Balken, keine Achse; Quelle immer im Bild. Im Karussell zeigt jede
  * Folie oben, dass sie Teil einer Reihe ist (Leiste und „Bild 2 von 5“, auf Bild 1 „wischen →“).
@@ -162,7 +162,7 @@ ${F.balken.map((b) => `  <div><div class="name">${esc(b.name)}</div>${b.werte.ma
       const L = F.lage?.[id] ?? {}
       if (L.x != null) [x, y] = proj([L.x, L.y])
       const groesse = L.groesse ?? Math.max(24, Math.min(66, Math.sqrt(pfad.area(gross)) / 4.2))
-      const text = zahl(v, F.dezimalen)
+      const text = zahl(v, F.dezimalen) + (F.markiert?.includes(id) ? '*' : '')
       if (L.kasten) {
         const [ax, ay] = [x, y]
         x += L.dx; y += L.dy

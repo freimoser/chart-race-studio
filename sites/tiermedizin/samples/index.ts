@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { ANTIBIOTIKA, ANTIBIOTIKA_GESAMT, GOT_PFERD, ONLINE_HANDEL, ONLINE_HANDEL_2005, BLUTBANK_UK, TIERARZNEIMITTEL, HUNDESTEUER, HUNDESTEUER_RELATION, PFERDESCHLACHTUNGEN, REITSPORT, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
+import { ANTIBIOTIKA, ANTIBIOTIKA_GESAMT, GOT_PFERD, ONLINE_HANDEL, ONLINE_HANDEL_2005, BLUTBANK_UK, TIERARZNEIMITTEL, HUNDESTEUER, HUNDESTEUER_RELATION, TIERVERSICHERUNG, PFERDESCHLACHTUNGEN, REITSPORT, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -724,6 +724,27 @@ export const SAMPLES: SampleDataset[] = [
     headers: HUNDESTEUER_RELATION.headers,
     rows: HUNDESTEUER_RELATION.rows,
     suggested: { chartType: 'line', topN: 3, decimals: 0, prefix: '+', suffix: ' %', primaryAxisLabel: 'Veränderung seit 2013', colors: { Hundesteuer: '#0f4c5c', Hunde: '#e36414', Verbraucherpreise: '#8a949e' } },
+  },
+  {
+    id: 'tierversicherung',
+    erstellt: '2026-11-09', geprueft: '2026-11-09',
+    category: 'heimtiere',
+    title: 'Versicherte Hunde und Katzen',
+    subtitle: 'Anteil der Hunde und Katzen mit Krankenversicherung, aus Zahlen der Versicherer berechnet, in Prozent',
+    source: 'Quellen: GDV, Heimtierstudie 2019 (DE); ABI, PDSA (GB); Finans Norge, FEDIAF, DyreID (NO); IVH/ZZF. Anteile berechnet',
+    sourceUrl: 'https://www.gdv.de/gdv/medien/medieninformationen/tierkrankenversicherung-waechst-rasant-mehr-als-zwei-millionen-hunde-katzen-und-co-abgesichert-205370',
+    unit: 'Prozent',
+    description: 'In Deutschland sind knapp 8 von 100 Hunden und Katzen krankenversichert, mehr als doppelt so viele wie 2019. Norwegen überholte Großbritannien 2021.',
+    dataInfo: [
+      "Anteil der Hunde und Katzen mit Tierkranken- oder OP-Versicherung, berechnet als versicherte Tiere bzw. Verträge laut Versicherern geteilt durch den Bestand an Hunden und Katzen. Eine amtliche Statistik gibt es in keinem Land. Halterbefragungen sind bewusst nicht enthalten: Sie liegen in Deutschland und Großbritannien zwei- bis dreimal über den Zahlen der Versicherer (Deutschland: Uelzener-Umfrage 2024 rund 30 Prozent der Hunde; Großbritannien: PDSA-Umfrage 61 Prozent der Hunde und 46 Prozent der Katzen).",
+      "Deutschland: versicherte Tiere 2019 bis 2024 aus der Sonderumfrage des GDV bei 13 Unternehmen (845.000 auf 2,01 Mio.), 2018 aus der Heimtierstudie 2019 der Universität Göttingen (Mitte der Schätzung, 805.000); Bestand IVH/ZZF. Eine Untergrenze, weil nicht alle Versicherer melden.",
+      "Großbritannien: versicherte Tiere laut Association of British Insurers (nur Mitglieder) 2018, 2020, 2021, 2023, 2024; Bestand laut PDSA. 2019 und 2022 ohne ABI-Wert, der Anteil ist dort linear zwischen den Nachbarjahren gerechnet. Mit dem höheren Bestand von FEDIAF läge Großbritannien 2024 bei 18 statt 21,5 Prozent.",
+      "Norwegen: private Verträge der Sparte Haustiere zum 31.12. laut Finans Norge, enthalten auch Pferde; Bestand 2018 bis 2023 laut FEDIAF, 2024 laut DyreID (1,21 Mio.), weil FEDIAF 2024 die Methode wechselte (mit FEDIAF wären es 24 statt 26,7 Prozent). Der Versicherer Tryg nennt für 2025 rund 30 Prozent.",
+      "Nicht in der Grafik, weil es dort nur Halterbefragungen gibt: Schweden (gut 90 Prozent der Hunde, rund 60 Prozent der Katzen laut Agria/SKK), Dänemark, Finnland. Mehr in der Datenherkunft.",
+    ],
+    headers: TIERVERSICHERUNG.headers,
+    rows: TIERVERSICHERUNG.rows,
+    suggested: { chartType: 'line', topN: 3, decimals: 1, suffix: ' %', primaryAxisLabel: 'Anteil versichert, Prozent', colors: { Norwegen: '#0f4c5c', 'Großbritannien': '#8a949e', Deutschland: '#e36414' } },
   },
   {
     id: 'tierarzneimittel',
