@@ -451,6 +451,28 @@
     "live": false
   },
   {
+    "post": 46,
+    "slug": "tierkrankenversicherung-statistik",
+    "titel": "Tierkrankenversicherung: Wie viele Tiere versichert sind",
+    "beschreibung": "2024 waren in Deutschland 2,01 Mio. Tiere krankenversichert, knapp 8 von 100 Hunden und Katzen, 2019 erst 845.000. Dazu Großbritannien und Norwegen.",
+    "frage": "Wie viele Hunde und Katzen sind versichert?",
+    "stand": "2026-11-09",
+    "geaendert": "2026-11-09",
+    "bereit": true,
+    "live": false
+  },
+  {
+    "post": 47,
+    "slug": "tierversicherung-europa",
+    "titel": "Tierversicherung in Europa: Schweden vorn, Süden kaum",
+    "beschreibung": "In Schweden sind laut Umfragen über 70 Prozent der Hunde und Katzen versichert, in Deutschland 8, in Spanien 2. Die Länder im Vergleich, mit Methode.",
+    "frage": "In welchem Land sind die meisten Haustiere versichert?",
+    "stand": "2026-11-09",
+    "geaendert": "2026-11-09",
+    "bereit": true,
+    "live": false
+  },
+  {
     "art": "anleitung",
     "slug": "weltkarte-laender-einfaerben-animieren",
     "titel": "Weltkarte nach Daten einfärben und animieren – kostenlos",
