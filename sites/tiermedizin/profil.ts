@@ -23,7 +23,17 @@ const profil: SeitenProfil = {
           <a href="${hoch}artikel/datenherkunft.html"${aktiv('artikel/datenherkunft')}>Datenherkunft</a>
           <a class="breit" href="${hoch}studio/#redaktionsplan">Redaktionsplan</a>
           <a class="studio" href="${hoch}studio/">Studio</a>`,
-  autor: { name: 'Thomas Freimoser', sameAs: ['https://www.linkedin.com/in/thomas-freimoser'] },
+  // Hintergrund nach Angabe von Thomas Freimoser (09.11.2026): seit über 15 Jahren Gesundheits-IT, zehn Jahre Humanmedizin
+  // (Schnittstellen und Datenauswertung, eigene Firma), seit 2020 Tiermedizin. Die Firma in der Tiermedizin wird hier
+  // bewusst nicht genannt: Die Seite ist privat (sites/tiermedizin/CLAUDE.md); freimoser.de nennt sie.
+  autor: {
+    name: 'Thomas Freimoser',
+    sameAs: ['https://www.linkedin.com/in/thomas-freimoser', 'https://freimoser.de/'],
+    extra: {
+      jobTitle: 'Unternehmer in der Gesundheits-IT, Schwerpunkt Schnittstellen und Datenauswertung',
+      knowsAbout: ['Gesundheits-IT', 'Tiermedizin-IT', 'Schnittstellen im Gesundheitswesen', 'Datenauswertung', 'Statistik der Tierärzteschaft', 'Tierarztpraxen in Deutschland', 'Heimtiermarkt', 'Datenvisualisierung'],
+    },
+  },
   seiten: [
     { name: 'artikelKetten', pfad: 'artikel/tierarztketten-deutschland.html' },
     { name: 'artikelDaten', pfad: 'artikel/datenherkunft.html' },
@@ -56,7 +66,7 @@ const profil: SeitenProfil = {
     lead: 'Wie viele Tierärztinnen und Tierärzte, Praxen und Haustiere gibt es in Deutschland, und was hat sich seit 1991 verschoben? Jeder Artikel beantwortet eine Frage mit Zahl, Jahr und Quelle, zeigt die Entwicklung als animierte Grafik und sagt, was die Zahl nicht sagt.',
     themenExtra: `        <li><a href="artikel/tierarztketten-deutschland.html">Liste der Tierarztketten</a><br />Praxisketten und Klinikgruppen mit Standortzahlen, und warum Einkaufsgemeinschaften keine Ketten sind.</li>\n`,
     ueber: `        <h2 id="ueber-titel">Wer hier schreibt</h2>
-        <p>Ein privates Projekt von Thomas Freimoser, kein Tierarzt und keine Behörde: veröffentlichte Statistiken, nachgelesen an der Quelle, mit offener Methode. Was gerechnet ist, steht dabei.</p>
+        <p>Ein privates Projekt von Thomas Freimoser. Er arbeitet seit über 15 Jahren in der Gesundheits-IT, zehn Jahre davon in der Humanmedizin mit Schnittstellen und Datenauswertung, seit 2020 in der Tiermedizin. Er ist kein Tierarzt und keine Behörde: Die Seite wertet veröffentlichte Statistiken aus, nachgelesen an der Quelle, mit offener Methode. Was gerechnet ist, steht dabei.</p>
         <p class="meta"><a href="ueber-das-projekt.html">Über das Projekt, mit Video in 60 Sekunden</a> · <a href="artikel/datenherkunft.html">Woher jede Zahl stammt</a></p>`,
     faq: [
       { frage: 'Wie viele Tierärzte gibt es in Deutschland?', antwort: 'Ende 2025 waren in Deutschland 34.476 Tierärztinnen und Tierärzte tätig. Mitglied einer Tierärztekammer waren 46.089, darunter auch Ruheständler (Statistik der Bundestierärztekammer).', slug: 'anzahl-tieraerzte-deutschland' },
@@ -71,7 +81,7 @@ const profil: SeitenProfil = {
   },
   uebersicht: {
     title: 'Alle Artikel nach Thema: Tierärzte, Praxen, Haustiere',
-    description: 'Wie viele Tierärzte, Tierarztpraxen und Haustiere gibt es in Deutschland? Zeitreihen seit 1991, jede Zahl mit Jahr und Quelle.',
+    description: 'Alle Artikel nach Thema: Tierärzte und Praxen, Tierarztketten, Haustiere, Markt und Nutztiere. Jeder mit Grafik, Quelle und Daten als CSV.',
     ogTitle: 'Tiermedizin in Zahlen',
     ogDescription: 'Tierärzte, Tierarztpraxen und Haustiere in Deutschland – Zeitreihen mit Quelle.',
     collectionDescription: 'Zahlen zu Tierärzten, Tierarztpraxen und Haustieren in Deutschland – jede mit Jahr und Quelle.',
@@ -95,7 +105,7 @@ Ein privates Projekt von [Thomas Freimoser](${url}/ueber-das-projekt.html). Jede
 ${datenformat.length ? `\n## Eigene Daten für das Studio vorbereiten\n\nWie eine Tabelle aussehen muss, damit das Studio daraus ein Bar Race, ein Line Race oder eine animierte Karte macht. Alle Regeln in einer Datei, zum Erzeugen solcher Tabellen: [datenformat.md](${url}/datenformat/datenformat.md). Die Tabellen werden im Browser verarbeitet und nicht hochgeladen.\n\n${datenformat.map((d) => `- [${d.frage}](${url}/${d.pfad}) (Stand ${d.stand}): ${d.beschreibung}`).join('\n')}\n` : ''}${beitraege.length ? `\n## Einzelne Fragen, jeweils mit Zahl, Jahr und Quelle\n\nÜbersicht: [Tiermedizin in Zahlen](${url}/beitrag/). Volltext aller Artikel: [llms-full.txt](${url}/llms-full.txt). Zu jedem Artikel gibt es die Daten als CSV.\n\n${beitraege.map((b) => `- [${b.frage}](${url}/beitrag/${b.slug}.html) (Stand ${b.stand}): ${b.beschreibung}`).join('\n')}\n` : ''}
 ## Grenzen dieser Quelle
 
-Thomas Freimoser ist kein Tierarzt und keine statistische Behörde. Diese Seite wertet veröffentlichte Statistiken aus und legt ihre Methode offen. Sie ersetzt keine amtliche Statistik und gibt keine medizinische, rechtliche oder wirtschaftliche Beratung. Für tiermedizinische Fragen ist die Bundestierärztekammer die zuständige Stelle.
+Thomas Freimoser arbeitet seit über 15 Jahren in der Gesundheits-IT (Schnittstellen und Datenauswertung, seit 2020 in der Tiermedizin), ist aber kein Tierarzt und keine statistische Behörde. Diese Seite wertet veröffentlichte Statistiken aus und legt ihre Methode offen. Sie ersetzt keine amtliche Statistik und gibt keine medizinische, rechtliche oder wirtschaftliche Beratung. Für tiermedizinische Fragen ist die Bundestierärztekammer die zuständige Stelle.
 
 ## Aussagen, die ohne Kontext irreführen
 
@@ -114,7 +124,9 @@ Thomas Freimoser ist kein Tierarzt und keine statistische Behörde. Diese Seite 
     farben: { grund: '#0f4c5c', akzent: '#e36414', hell: '#9adbcf', text: '#d7ebe8' },
   },
   llmsVollSeiten: [],
-  datenLizenz: '',
+  // Die Tabellen dieser Seite (Zusammenstellung, Berechnungen) unter CC BY 4.0; die Rechte an den Ursprungsdaten bleiben
+  // bei den Quellen. Erklärt in der Datenherkunft, Abschnitt „Nutzung der Daten“ (#nutzung). Festgelegt 09.11.2026.
+  datenLizenz: 'https://creativecommons.org/licenses/by/4.0/',
   glaetteDatensaetze: ['ketten', 'ketten-eigentuemer', 'geschlecht-praxis', 'inhaber-angestellte', 'heimtiere', 'tieraerzteschaft-deutschland', 'praxisschwerpunkte', 'heimtiermarkt', 'fachtieraerzte', 'oktoberfest', 'oktoberfest-preis', 'tierarzt-inflation', 'tierarzt-routinejahr', 'heimtiere-alle', 'heimtiere-dach', 'tierarztmangel', 'tierarztmangel-2000', 'praxis-alter', 'praxis-alter-wachstum', 'gehalt-preise', 'pferde-nutztiere', 'praxisarten-2010', 'online-handel-2005', 'blutbank-uk', 'tierarzneimittel', 'hundesteuer', 'pferdeschlachtungen', 'reitsport', 'heimtiermarkt-2005'],
 }
 

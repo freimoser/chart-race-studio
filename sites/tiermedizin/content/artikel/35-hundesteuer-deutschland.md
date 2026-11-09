@@ -1,7 +1,7 @@
 ---
 post: 35
 slug: hundesteuer-deutschland
-titel: Hundesteuer: 430 Mio. Euro, 2025 erstmals kein Plus
+titel: Hundesteuer-Einnahmen 2025: 430 Mio. Euro, kein Plus
 beschreibung: Die Gemeinden nahmen 2025 rund 430 Mio. Euro Hundesteuer ein, mehr als doppelt so viel wie 1999. Erstmals gab es kein Plus. Die Reihe seit 1999.
 frage: Wie viel Hundesteuer nehmen die Gemeinden ein?
 suchbegriffe: hundesteuer deutschland einnahmen, hundesteuer einnahmen gemeinden, hundesteuer statistik, hundesteuer entwicklung

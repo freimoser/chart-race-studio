@@ -53,6 +53,8 @@ const DATENSAETZE = Object.fromEntries(fs.readFileSync(sitePfad('samples/index.t
 // LinkedIn-Beitrag erscheint, sonst läuft der Link im ersten Kommentar ins Leere.
 const FREIGABEFAEHIG = new Set(['veroeffentlicht', 'naechster'])
 
+// Beiträge, deren Grafik nur ein Beispiel für das Studio ist (Exkurs, Anleitung), nicht eine Auswertung der Seite.
+const istBeispiel = (a) => a.art === 'exkurs' || a.art === 'anleitung'
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 const datumDe = (iso) => new Date(iso + 'T12:00:00Z').toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' })
 
@@ -190,10 +192,28 @@ function grafikVon(kopfwert, sampleId, { mussFrei = false } = {}) {
   if (art && !['bar', 'line', 'map'].includes(art)) throw new Error(`grafik: Diagrammart „${art}“ unbekannt (bar, line oder map)`)
   return { id, art }
 }
+// Standbild unter dem iframe (scripts/grafik-standbilder.mjs): sichtbar, bis die Grafik geladen ist, und für alle, die
+// kein JavaScript ausführen, das Bild der Grafik. Der Alternativtext nennt den letzten Stand mit den größten Werten.
+function standbildAlt(ds) {
+  const zeilen = ds.daten?.rows ?? []
+  const letzte = [...zeilen].reverse().find((r) => r.slice(1).some((v) => typeof v === 'number'))
+  if (!letzte) return `Grafik: ${ds.titel}`
+  const werte = ds.daten.headers.slice(1).map((h, i) => [h, letzte[i + 1]]).filter(([, v]) => typeof v === 'number')
+    .sort((x, y) => y[1] - x[1]).slice(0, 4)
+  const einheit = ds.einheit && !/^(anzahl|personen)$/i.test(ds.einheit) ? ` ${ds.einheit}` : ''
+  return `Grafik: ${ds.titel}. Stand ${letzte[0]}: ${werte.map(([h, v]) => `${h} ${v.toLocaleString('de-DE')}${einheit}`).join(', ')}`
+}
+function standbild(g, tiefe) {
+  const name = `${g.id}${g.art ? `-${g.art}` : ''}`
+  const da = (f) => fs.existsSync(path.join(PUBLIC, 'grafik-bild', `${name}-${f}.webp`))
+  if (!da('169') || !da('45')) return ''
+  const alt = esc(standbildAlt(DATENSAETZE[g.id]))
+  return `<img class="standbild breit" src="${tiefe}grafik-bild/${name}-169.webp" alt="${alt}" width="1056" height="594" loading="lazy" decoding="async" /><img class="standbild schmal" src="${tiefe}grafik-bild/${name}-45.webp" alt="" width="800" height="1000" loading="lazy" decoding="async" />`
+}
 function grafikFigur(g, { tiefe, csv, hinweis }) {
   const ds = DATENSAETZE[g.id]
   return `<figure class="grafik">
-          <div class="grafik-rahmen"><iframe src="${tiefe}grafik.html?d=${g.id}${g.art ? `&amp;art=${g.art}` : ''}" title="Animierte Grafik: ${esc(ds.titel)}" loading="lazy"></iframe></div>
+          <div class="grafik-rahmen">${standbild(g, tiefe)}<iframe src="${tiefe}grafik.html?d=${g.id}${g.art ? `&amp;art=${g.art}` : ''}" title="Animierte Grafik: ${esc(ds.titel)}" loading="lazy"></iframe></div>
           <figcaption><span>${hinweis ?? esc(ds.titel)}${csv ? ` · <a href="${csv}" download>Daten als CSV</a>` : ''}</span><a class="knopf" href="${tiefe}studio/?beispiel=${g.id}">Im Studio öffnen</a></figcaption>
         </figure>`
 }
@@ -251,12 +271,14 @@ function seite(a, { entwurf, alle }) {
   }]
   // Der Datensatz als eigenes Objekt: macht ihn für die Google-Datensatzsuche auffindbar und
   // gibt Antwortmaschinen eine zitierfähige Quelle mit Zeitraum und Herkunft.
-  if (ds?.daten) {
+  // Exkurse und Anleitungen (Oktoberfest, Weltkarte) zeigen eine Grafik als Beispiel, sind aber kein Datensatz dieser
+  // Seite: Als Dataset ausgezeichnet, verwässerten sie das Profil in der Datensatzsuche (SEO-Prüfung 09.11.2026).
+  if (ds?.daten && !istBeispiel(a)) {
     const jahre = ds.daten.rows.map((r) => String(r[0])).filter((j) => /^\d{4}$/.test(j))
     jsonld.push({
       '@context': 'https://schema.org', '@type': 'Dataset',
       name: ds.titel, description: `${ds.untertitel ?? ds.titel}. ${a.beschreibung}`,
-      creator: AUTOR, inLanguage: 'de-DE', isAccessibleForFree: true,
+      creator: AUTOR, publisher: AUTOR, inLanguage: 'de-DE', isAccessibleForFree: true,
       ...(a.suchbegriffe ? { keywords: a.suchbegriffe.split(',').map((k) => k.trim()).filter(Boolean) } : {}),
       // Lizenz nur, wenn der Herausgeber eine festgelegt hat (Profil); ohne Angabe meldet die Datensatzsuche eine Warnung.
       ...(PROFIL.datenLizenz ? { license: PROFIL.datenLizenz } : {}),
@@ -332,7 +354,7 @@ ${entwurf ? `    <p class="entwurf">Entwurf · ${a.bereit ? 'bereit zur Freigabe
     <main class="wrap">
       <article>
         <nav class="brotkrumen" aria-label="Brotkrumen"><ol>${krumen.map((k) => `<li><a href="${k.href}">${esc(k.name)}</a></li>`).join('')}</ol></nav>
-        <p class="meta">${a.art === 'exkurs' ? 'Exkurs · Neu im Studio' : a.art === 'auswertung' ? 'Sonderauswertung' : a.anleitung ? 'Anleitung' : `Visite ${visiteVon(post.nr)} · Post ${post.nr}: ${esc(post.title)}`}</p>
+        <div class="meta kennzeile">${a.art === 'exkurs' ? 'Exkurs · Neu im Studio' : a.art === 'auswertung' ? 'Sonderauswertung' : a.anleitung ? 'Anleitung' : `Visite ${visiteVon(post.nr)} · Post ${post.nr}: ${esc(post.title)}`}</div>
         <h1>${esc(a.titel)}</h1>
         ${lead}
         <p class="meta">Stand ${datumDe(a.stand)} · von <a href="${tiefe}ueber-das-projekt.html">${esc(L.operator)}</a>${post.publishedOn ? ` · auf LinkedIn seit ${datumDe(post.publishedOn)}` : ''}</p>
@@ -425,14 +447,17 @@ function uebersicht(live) {
     <meta property="og:title" content="${esc(PROFIL.uebersicht.ogTitle)}" />
     <meta property="og:description" content="${esc(PROFIL.uebersicht.ogDescription)}" />
     <meta property="og:locale" content="de_DE" />
-    <script type="application/ld+json">${JSON.stringify(jsonld)}</script>
+    <script type="application/ld+json">${JSON.stringify(BASIS ? [jsonld, { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: L.siteName, item: `${BASIS}/` },
+      { '@type': 'ListItem', position: 2, name: 'Alle Artikel', item: `${BASIS}/${ZIEL}/` },
+    ] }] : jsonld)}</script>
     <script type="module" src="/src/article.ts"></script>
   </head>
   <body>
     <!--rahmen:kopf-->
     <div class="mit-leisten">
     <main class="wrap">
-      <p class="meta">Archiv</p>
+      <div class="meta kennzeile">Archiv</div>
       <h1>Alle Artikel nach Thema</h1>
       <p class="lead">${PROFIL.uebersicht.lead(live.length)}</p>
 ${kennzahlBand(live, '')}${nachKapitel.map((k) => `      <h2 id="${k.arc.id ?? 'mehr'}">${esc(k.arc.label)}</h2>
@@ -475,17 +500,18 @@ function startseite(live) {
   for (const a of live) {
     const dsId = POSTS.find((p) => p.nr === a.post)?.sampleId ?? (a.grafik && a.grafik !== 'keine' ? a.grafik.split(/\s+/)[0] : undefined)
     const ds = dsId && DATENSAETZE[dsId]
-    if (!ds?.daten || !freigegeben(ds.id) || katalog.some((k) => k.id === ds.id)) continue
+    if (!ds?.daten || istBeispiel(a) || !freigegeben(ds.id) || katalog.some((k) => k.id === ds.id)) continue
     const jahre = ds.daten.rows.map((r) => String(r[0])).filter((j) => /^\d{4}$/.test(j))
     katalog.push({ id: ds.id, ld: {
       '@type': 'Dataset', name: ds.titel, description: `${ds.untertitel ?? ds.titel}. ${a.beschreibung}`,
       ...(jahre.length ? { temporalCoverage: `${jahre[0]}/${jahre.at(-1)}` } : {}),
-      spatialCoverage: PROFIL.raum(ds.id), creator: AUTOR,
+      spatialCoverage: PROFIL.raum(ds.id), creator: AUTOR, publisher: AUTOR,
+      ...(PROFIL.datenLizenz ? { license: PROFIL.datenLizenz } : {}),
       ...(ds.quelle ? { citation: ds.quelle } : {}),
       ...(BASIS ? { url: `${BASIS}/${ZIEL}/${a.slug}.html`, distribution: { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: `${BASIS}/daten/${ds.id}.csv` } } : {}),
     } })
   }
-  const katalogLd = katalog.length && BASIS ? `\n    <script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'DataCatalog', name: `${L.siteName}: Datensätze`, inLanguage: 'de-DE', url: `${BASIS}/`, creator: AUTOR, dataset: katalog.map((k) => k.ld) }).replace(/</g, '\\u003c')}</script>` : ''
+  const katalogLd = katalog.length && BASIS ? `\n    <script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'DataCatalog', name: `${L.siteName}: Datensätze`, inLanguage: 'de-DE', url: `${BASIS}/`, creator: AUTOR, publisher: AUTOR, ...(PROFIL.datenLizenz ? { license: PROFIL.datenLizenz } : {}), dataset: katalog.map((k) => k.ld) }).replace(/</g, '\\u003c')}</script>` : ''
   return `<!doctype html>
 <html lang="de" data-brand="klar">
   <head>
@@ -512,7 +538,7 @@ function startseite(live) {
     <main class="wrap">
       <h1>${esc(PROFIL.start.h1)}</h1>
       <p class="lead">${PROFIL.start.lead}</p>
-${neu ? `      <section class="neu" aria-labelledby="neu-titel">
+${kennzahlBand(live, 'beitrag/')}${neu ? `      <section class="neu" aria-labelledby="neu-titel">
         <p class="meta">Neu${neu.veroeffentlicht && !aktuell(neu) ? ` · ${datumDe(neu.veroeffentlicht)}` : ''}</p>
         <h2 id="neu-titel"><a href="beitrag/${neu.slug}.html">${esc(neu.titel)}</a></h2>
         <p>${esc(neu.beschreibung)}</p>
@@ -561,8 +587,10 @@ if (doppelt('post').length) throw new Error(`Zwei Entwürfe für Post ${doppelt(
 for (const a of artikel) {
   const post = POSTS.find((p) => p.nr === a.post)
   a.live = Boolean(FREIGABE.artikelLive && (a.anleitung || FREIGABEFAEHIG.has(post?.status) || post?.vorabOnline) && a.bereit)
-  // Veröffentlichungsdatum des Artikels: das LinkedIn-Datum, sonst der Stand beim Freischalten.
-  a.veroeffentlicht = post?.publishedOn ?? a.linkedin_datum ?? (a.live ? a.stand : undefined)
+  // Veröffentlichungsdatum des Artikels: das LinkedIn-Datum, sonst `erschienen` aus dem Kopf, sonst der Stand beim
+  // Freischalten. `erschienen` braucht, wer den Stand eines schon erschienenen Beitrags ohne Post nachzieht – sonst
+  // wanderte das Erscheinungsdatum mit und der Beitrag stünde wieder als „Neu“ auf der Startseite.
+  a.veroeffentlicht = post?.publishedOn ?? a.linkedin_datum ?? a.erschienen ?? (a.live ? a.stand : undefined)
   // Geändert kann eine Seite erst sein, nachdem sie erschienen ist: Liegt der Stand (Prüfdatum der Zahlen) vor dem
   // Erscheinen, gilt für Schema, Meta und Sitemap das Erscheinungsdatum. Sichtbar bleibt „Stand“ das Prüfdatum.
   a.geaendert = a.veroeffentlicht && a.veroeffentlicht > a.stand ? a.veroeffentlicht : a.stand
@@ -632,18 +660,19 @@ function dfSeite(s, alle) {
   const { html, faq } = markdown(s.text)
   const [ersterBlock, ...rest] = html.split('\n\n')
   if (!ersterBlock.startsWith('<p>')) throw new Error(`${s.datei}: Der Text muss mit einem Absatz beginnen, der die Frage beantwortet`)
-  const haupt = alle.find((x) => x.slug === 'index')
   const url = BASIS ? `${BASIS}/${dfPfad(s)}` : ''
   const jsonld = [{
     '@context': 'https://schema.org', '@type': 'TechArticle',
     headline: s.titel, description: s.beschreibung, inLanguage: 'de-DE',
-    author: AUTOR, dateModified: s.stand, about: s.frage,
+    author: AUTOR, publisher: AUTOR, dateModified: s.stand, about: s.frage,
+    ...(BASIS ? { image: `${BASIS}/og-standard.png` } : {}),
     ...(url ? { mainEntityOfPage: url } : {}),
   }, {
     '@context': 'https://schema.org', '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: L.siteName, ...(BASIS ? { item: `${BASIS}/` } : {}) },
-      { '@type': 'ListItem', position: 2, name: haupt?.menue ?? 'Datenformat', ...(BASIS ? { item: `${BASIS}/${DF_ZIEL}/` } : {}) },
+      // Die Hauptseite heißt im Menü „Überblick“; als Brotkrume steht sie für den ganzen Bereich.
+      { '@type': 'ListItem', position: 2, name: 'Datenformat', ...(BASIS ? { item: `${BASIS}/${DF_ZIEL}/` } : {}) },
       ...(s.slug === 'index' ? [] : [{ '@type': 'ListItem', position: 3, name: s.menue, ...(url ? { item: url } : {}) }]),
     ],
   }]
@@ -688,7 +717,7 @@ function dfSeite(s, alle) {
 
     <main class="wrap">
       <article>
-        <p class="meta">${s.slug === 'index' ? 'Datenformat' : `<a href="./">Datenformat</a> · ${esc(s.menue)}`}</p>
+        <div class="meta kennzeile">${s.slug === 'index' ? 'Datenformat' : `<a href="./">Datenformat</a> · ${esc(s.menue)}`}</div>
         <h1>${esc(s.titel)}</h1>
         ${ersterBlock.replace(/^<p>/, '<p class="lead">')}
         <p class="meta">Stand ${datumDe(s.stand)} · Datenstandard 1.0 · von ${esc(L.operator)} · <a href="${s.slug}.md">als Markdown</a></p>

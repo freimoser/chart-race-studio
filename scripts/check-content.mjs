@@ -66,6 +66,27 @@ for (const b of sm.split('    id: ').slice(1)) {
   if (!url) melde('hinweis', `Datensatz ${id}`, 'keine Quellen-URL')
 }
 
+// ---------- Vorschaubilder ----------
+// Jeder Live-Artikel braucht sein eigenes Vorschaubild (scripts/og-bilder.mjs). Fehlt es, zeigen LinkedIn und
+// Google die Standardkarte, und das Article-Schema hat kein Bild. Am 09.11.2026 fehlten fünf, darunter Hundesteuer.
+const INDEX_DATEI = sitePfad('content/artikel-index.json')
+if (fs.existsSync(INDEX_DATEI)) {
+  for (const a of JSON.parse(lies(INDEX_DATEI)).filter((x) => x.live)) {
+    if (!fs.existsSync(sitePfad(`public/beitrag/og/${a.slug}.png`))) melde('mangel', `Artikel ${a.slug}`, `kein Vorschaubild – SITE=… node scripts/og-bilder.mjs ${a.slug}`)
+  }
+}
+
+// ---------- Standbilder der Grafiken ----------
+// Jede eingebettete Grafik trägt ein Standbild (scripts/grafik-standbilder.mjs), sonst sehen Crawler ohne JavaScript
+// nur einen leeren Rahmen. Geprüft an den gebauten Seiten.
+for (const ordner of ['beitrag', 'artikel']) {
+  for (const f of fs.existsSync(ordner) ? fs.readdirSync(ordner).filter((x) => x.endsWith('.html')) : []) {
+    for (const [rahmen] of lies(`${ordner}/${f}`).matchAll(/<div class="grafik-rahmen">[\s\S]*?<\/div>/g)) {
+      if (!/class="standbild/.test(rahmen)) melde('hinweis', `${ordner}/${f}`, `Grafik ohne Standbild (${rahmen.match(/d=([a-z0-9-]+)/)?.[1]}) – node scripts/grafik-standbilder.mjs`)
+    }
+  }
+}
+
 // ---------- Artikel ----------
 for (const f of fs.existsSync('artikel') ? fs.readdirSync('artikel').filter((x) => x.endsWith('.html')) : []) {
   const h = lies(`artikel/${f}`)

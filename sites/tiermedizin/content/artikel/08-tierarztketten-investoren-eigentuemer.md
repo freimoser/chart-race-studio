@@ -97,4 +97,13 @@ Tierarzt Plus Partner gehört ECONA und dem Finanzinvestor Inflexion. Die Gruppe
 
 ## Quelle und Methode
 
-Standortzahlen aus dem Datensatz „Der Aufstieg der Tierarztketten“ dieser Seite, Stand 17. September 2026, mit Belegmarkierung je Wert. Eigentümerangaben nach Betreiberangaben und Fachpresse, zusammengestellt im Artikel [Wer betreibt die Tierarztpraxen in Deutschland?](../artikel/tierarztketten-deutschland.html). Die Anteile sind berechnet, Summe 505; mit Altano nach dem letzten Beleg von 2023 sind es 501, die Summe im Übersichtsartikel. Einen amtlichen Nachweis über Eigentümer von Tierarztpraxen gibt es nicht. Gesamtanker des Marktes ist der [Tierärzte Atlas Deutschland 2024](https://www.bundestieraerztekammer.de/btk/dtbl/archiv/2025/artikel/DTBl_02_2025_Tieraerzte-Atlas.pdf) mit rund 450 Standorten von 16 Ketten im August 2024.
+Standortzahlen aus dem Datensatz „Der Aufstieg der Tierarztketten“ dieser Seite, Stand 17. September 2026, mit Belegmarkierung je Wert. Eigentümerangaben nach Betreiberangaben und Fachpresse, zusammengestellt im Artikel [Wer betreibt die Tierarztpraxen in Deutschland?](../artikel/tierarztketten-deutschland.html). Die Anteile sind berechnet, Summe 505; mit Altano nach dem letzten Beleg von 2023 sind es 501, die Summe im Übersichtsartikel. Einen amtlichen Nachweis über Eigentümer von Tierarztpraxen gibt es nicht.
+
+Belege zu den Eigentümern, jeweils von den Eigentümern selbst, abgerufen am 9. November 2026:
+
+- IVC Evidensia: [EQT](https://eqtgroup.com/news/ivc-evidensia-expands-partnership-to-drive-next-phase-of-accelerating-growth-2021-02-09) (Übernahme 2016, erweiterte Beteiligung 2021) und [Silver Lake](https://www.silverlake.com/portfolio/ivc-evidensia/).
+- Tierarzt Plus Partner: [ECONA](https://econa.com/en/companies/) (Mitgründer 2019) und [Inflexion](https://www.inflexion.com/news-and-insights/news/2024/inflexion-partners-with-tpp-founders-to-support-further-growth/) (Beteiligung 2024).
+- VetGruppen (Vetopia): [Axcel](https://axcel.com/company/vetgruppen/) (2021).
+- VetPartners: [BC Partners](https://www.bcpartners.com/portfolio/vetpartners/) (2018).
+- Medivet: [CVC](https://www.cvc.com/media/news/2021/2021-09-16-cvc-capital-partners-viii-to-invest-in-medivet/) (2021).
+- AniCura: [Mars Petcare](https://www.mars.com/news-and-stories/press-releases/anicura-completion) (Abschluss der Übernahme November 2018). Gesamtanker des Marktes ist der [Tierärzte Atlas Deutschland 2024](https://www.bundestieraerztekammer.de/btk/dtbl/archiv/2025/artikel/DTBl_02_2025_Tieraerzte-Atlas.pdf) mit rund 450 Standorten von 16 Ketten im August 2024.

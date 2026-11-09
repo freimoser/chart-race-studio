@@ -6,8 +6,21 @@
  *  editorial – IBM Plex Sans, Anthrazit + Bernstein, Papierton
  *  signal    – Manrope, Tiefblau + Smaragd, klare Technik-Anmutung
  */
+/*
+ * Ersatzschrift mit den Maßen von Inter: Bis die Webfont geladen ist, steht der Text in Arial, gestreckt auf
+ * Inters Breite und Zeilenhöhe. Ohne sie bricht eine Überschrift nach dem Laden anders um und schiebt die Seite
+ * (Lighthouse maß am 09.11.2026 einen Layout-Shift von 0,238 auf einem Artikel). Werte wie fontaine/next/font.
+ */
+@font-face {
+  font-family: 'Inter Fallback';
+  src: local('Arial'), local('ArialMT'), local('Helvetica'), local('Roboto');
+  ascent-override: 90.44%;
+  descent-override: 22.52%;
+  line-gap-override: 0%;
+  size-adjust: 107.12%;
+}
 :root, [data-brand='klar'] {
-  --brand-font: 'Inter Variable', Inter, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --brand-font: 'Inter Variable', Inter, 'Inter Fallback', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --brand-primary: #0f4c5c;
   --brand-primary-strong: #0a3641;
   --brand-accent: #e36414;

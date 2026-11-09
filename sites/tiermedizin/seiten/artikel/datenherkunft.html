@@ -31,7 +31,7 @@
           Wie eine eigene Tabelle aufgebaut sein muss, damit das Studio sie liest, steht in der
           <a href="../beitrag/weltkarte-laender-einfaerben-animieren.html">Anleitung mit unserem Datenstandard</a>.
         </p>
-        <p class="meta">Stand 8. Oktober 2026 · von <a href="../ueber-das-projekt.html">Thomas Freimoser</a></p>
+        <p class="meta">Stand 9. November 2026 · von <a href="../ueber-das-projekt.html">Thomas Freimoser</a></p>
 
         <div class="note">
           <strong>Warum das Datum wichtig ist:</strong> Amtliche Statistiken erscheinen jährlich, Unternehmensangaben
@@ -60,6 +60,21 @@
           <strong>Gegenprobe an der Quelle selbst.</strong> Wo eine Quelle irgendwo einen Anteil oder eine
           Größenordnung nennt, wird die eigene Aufbereitung daran gemessen. Eine Zuordnung, die der eigenen Quelle
           widerspricht, wird verworfen – auch wenn sie plausibler aussieht.
+        </p>
+
+        <h2 id="nutzung">Nutzung der Daten</h2>
+        <p>
+          Die Tabellen dieser Seite, also die CSV-Dateien zu den Artikeln, die Zusammenstellung der Reihen und alle
+          Berechnungen, stehen unter der Lizenz
+          <a href="https://creativecommons.org/licenses/by/4.0/deed.de" rel="noopener license">Creative Commons
+          Namensnennung 4.0 (CC BY 4.0)</a>. Sie dürfen sie weiterverwenden, auch kommerziell, wenn Sie
+          „Tiermedizin in Zahlen, Thomas Freimoser“ und die Originalquelle nennen.
+        </p>
+        <p>
+          Die Rechte an den Ursprungsdaten bleiben bei den Quellen, etwa der Bundestierärztekammer, dem Statistischen
+          Bundesamt (Datenlizenz Deutschland) oder den Verbänden IVH und ZZF. Wer eine Reihe in größerem Umfang
+          übernimmt, prüft deren Nutzungsbedingungen; welche Quelle hinter welcher Reihe steht, sagt der jeweilige
+          Abschnitt unten.
         </p>
 
         <h2 id="tieraerzteschaft-deutschland">Tierarztpraxen im Wandel: Inhaber vs. Angestellte</h2>
@@ -349,7 +364,15 @@
           <strong>Aufbereitet:</strong> Balken statt Linien, weil alle Sätze bis 2021 im Gleichschritt stiegen und Linien
           23 Jahre übereinander lägen (<code>got-pferd</code>).
         </p>
-        <p class="meta">Recherchiert 22.10.2026 · zuletzt geprüft 27.10.2026</p>
+        <p>
+          <strong>Zweite Quelle, was tatsächlich berechnet wird:</strong> AFC-Abschlussbericht zur Prüfung der GOT im Auftrag
+          des Bundeslandwirtschaftsministeriums (Februar 2021, S. 66 f.): 877 Tierärzt:innen berechneten 2019 im Schnitt den
+          1,44-fachen Satz, im Notdienst den 2,25-fachen, über alle Tierarten. Im Artikel
+          <a href="../beitrag/tierarztkosten-pferd.html">Tierarztkosten Pferd</a> damit berechnet: Kolik-OP 1.944 € netto
+          (×1,44), im Notdienst 3.087,50 € (×2,25 plus 50 €). Gesamtkosten einer Kolik nennen nur Versicherer und Makler
+          (z. B. 7.500 bis 35.000 €); das ist im Artikel als nicht nachprüfbar gekennzeichnet.
+        </p>
+        <p class="meta">Recherchiert 22.10.2026 · zuletzt geprüft 09.11.2026</p>
 
         <h2 id="ketten">Der Aufstieg der Tierarztketten</h2>
         <p>
@@ -692,10 +715,14 @@
         <p>
           <strong>Wo sich Quellen überschneiden:</strong> Die Studie meldet +19 % gegenüber ihrer Befragung von 2020 und schreibt,
           dass die Löhne langsamer stiegen als im Landesdurchschnitt; Destatis bestätigt mit +23,1 %. Für Ärzt:innen nennt der
-          BaT 31,58 €, nach der Tariftabelle ab August 2025 sind es 32,36 €. Erläutert im Artikel
-          <a href="../beitrag/gehalt-tierarzt.html">Gehalt Tierarzt</a>.
+          BaT 31,58 €, nach der Tariftabelle ab August 2025 sind es 32,36 €. Zweite Quelle für das Gehalt selbst: der
+          Entgeltatlas der Bundesagentur für Arbeit (Datenstand 2025, Meldungen der Arbeitgeber, nicht Selbstauskunft) nennt
+          für Tierärzt:innen für Haus- und Heimtiere einen Median von 4.630 € über alle Altersgruppen (Quartile 3.811 € und
+          5.896 €); die Befragung liegt nach fünf Berufsjahren bei 4.500 €, nach zehn bei 5.099 €. GEHALT.de nennt 6.798 €
+          (ohne Angabe zu Fallzahl und Abgrenzung Angestellte/Inhaber) und wird deshalb nur als Gegenbeleg genannt. Erläutert im
+          Artikel <a href="../beitrag/gehalt-tierarzt.html">Gehalt Tierarzt</a>.
         </p>
-        <p class="meta">Recherchiert 13.–14.10.2026 · zuletzt geprüft 14.10.2026</p>
+        <p class="meta">Recherchiert 13.–14.10.2026, Entgeltatlas und GEHALT.de 09.11.2026 · zuletzt geprüft 09.11.2026</p>
 
         <h2 id="ueberstunden">Überstunden in der Tierarztpraxis (Bildserie, kein Datensatz)</h2>
         <p>
@@ -788,7 +815,7 @@
     <!--rahmen:fuss-->
 
     <script type="application/ld+json">
-      {
+      [{
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": "Woher die Zahlen kommen: Datenherkunft der Beispiel-Datensätze",
@@ -796,9 +823,19 @@
         "description": "Für alle Datensätze aus der deutschen Tiermedizin: Quelle, Zeitraum, Annahmen, Aufbereitung und Stand der Recherche.",
         "inLanguage": "de-DE",
         "datePublished": "2026-09-17",
-        "dateModified": "2026-11-05",
-        "author": { "@type": "Person", "@id": "https://tiermedizin-in-zahlen.org/ueber-das-projekt.html#thomas-freimoser", "name": "Thomas Freimoser", "url": "https://tiermedizin-in-zahlen.org/ueber-das-projekt.html", "sameAs": ["https://www.linkedin.com/in/thomas-freimoser"] }
-      }
+        "dateModified": "2026-11-09",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "author": { "@type": "Person", "@id": "https://tiermedizin-in-zahlen.org/ueber-das-projekt.html#thomas-freimoser", "name": "Thomas Freimoser", "url": "https://tiermedizin-in-zahlen.org/ueber-das-projekt.html", "sameAs": ["https://www.linkedin.com/in/thomas-freimoser", "https://freimoser.de/"] },
+        "publisher": { "@id": "https://tiermedizin-in-zahlen.org/ueber-das-projekt.html#thomas-freimoser" },
+        "mainEntityOfPage": "https://tiermedizin-in-zahlen.org/artikel/datenherkunft.html"
+      }, {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Tiermedizin in Zahlen", "item": "https://tiermedizin-in-zahlen.org/" },
+          { "@type": "ListItem", "position": 2, "name": "Woher die Zahlen kommen", "item": "https://tiermedizin-in-zahlen.org/artikel/datenherkunft.html" }
+        ]
+      }]
     </script>
   </body>
 </html>

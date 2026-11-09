@@ -376,7 +376,7 @@
   {
     "post": 35,
     "slug": "hundesteuer-deutschland",
-    "titel": "Hundesteuer: 430 Mio. Euro, 2025 erstmals kein Plus",
+    "titel": "Hundesteuer-Einnahmen 2025: 430 Mio. Euro, kein Plus",
     "beschreibung": "Die Gemeinden nahmen 2025 rund 430 Mio. Euro Hundesteuer ein, mehr als doppelt so viel wie 1999. Erstmals gab es kein Plus. Die Reihe seit 1999.",
     "frage": "Wie viel Hundesteuer nehmen die Gemeinden ein?",
     "stand": "2026-11-05",
@@ -442,11 +442,11 @@
   {
     "art": "auswertung",
     "slug": "gehalt-tierarzt",
-    "titel": "Gehalt Tierarzt: was angestellte Tierärzte verdienen",
+    "titel": "Gehalt Tierarzt 2025: brutto und netto nach Berufsjahren",
     "beschreibung": "Angestellte Tierärzte verdienen zum Einstieg 3.701 Euro brutto im Monat, netto rund 2.440. Ärzte bekommen ein Drittel mehr, die Preise stiegen schneller.",
     "frage": "Was verdient ein Tierarzt?",
-    "stand": "2026-10-14",
-    "geaendert": "2026-10-14",
+    "stand": "2026-11-09",
+    "geaendert": "2026-11-09",
     "bereit": true,
     "live": true
   },
@@ -478,8 +478,8 @@
     "titel": "Tierarztkosten Pferd: Untersuchung, OP und Notdienst",
     "beschreibung": "Was der Tierarzt fürs Pferd mindestens berechnen darf: Untersuchung ab 30,78 Euro, Kolik-OP ab 1.350 Euro, im Notdienst doppelt plus 50 Euro.",
     "frage": "Was kostet der Tierarzt beim Pferd?",
-    "stand": "2026-11-05",
-    "geaendert": "2026-11-05",
+    "stand": "2026-11-09",
+    "geaendert": "2026-11-09",
     "bereit": true,
     "live": true
   },

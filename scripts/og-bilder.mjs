@@ -53,6 +53,21 @@ ${text ? `<p>${esc(text)}</p>` : ''}
 </body></html>`
 }
 
+// Erster Satz einer Beschreibung. Ein Punkt nach einer Abkürzung („430 Mio. Euro“, „ca.“, „z. B.“) oder vor einem
+// Kleinbuchstaben beendet den Satz nicht; bis 09.11.2026 brach die Hundesteuer-Karte nach „Mio.“ ab.
+const ABK = /(?:^|\s)(?:Mio|Mrd|Tsd|ca|Nr|bzw|vgl|Dr|St|inkl|zzgl|u\. a|z\. B|d\. h|B|a|h)\.$/
+export function ersterSatz(text) {
+  for (const m of text.matchAll(/[.!?](?=\s|$)/g)) {
+    const bis = text.slice(0, m.index + 1)
+    const danach = text.slice(m.index + 1).trimStart()
+    // Nach „Mio.“ beginnt trotzdem ein neuer Satz, wenn ein typischer Satzanfang folgt („… 1.486 Mio. Die Ausgaben …“).
+    const neuerSatz = /^(Die|Der|Das|In|Im|Seit|Mit|Und|Es|Sie|Er|Ein|Eine|Dazu|Davon|Damit|Auch|Doch|Aber|Wer|Was|Wie)\b/.test(danach)
+    if (m[0] === '.' && ((ABK.test(bis) && !neuerSatz) || /^[a-zäöü]/.test(danach))) continue
+    return bis.trim()
+  }
+  return text
+}
+
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'og-'))
 function render(html, ziel) {
   const f = path.join(tmp, 'karte.html')
@@ -67,8 +82,7 @@ const NUR = process.argv.slice(2)
 if (!NUR.length) render(karte({ oben: L.siteName, titel: PROFIL.og.titel, text: PROFIL.og.text }), sitePfad('public/og-standard.png'))
 let n = NUR.length ? 0 : 1
 for (const a of INDEX.filter((x) => x.bereit && (!NUR.length || NUR.includes(x.slug)))) {
-  const ersterSatz = a.beschreibung.match(/^.*?[.!?](\s|$)/)?.[0].trim() ?? a.beschreibung
-  render(karte({ oben: L.siteName, titel: a.titel, text: ersterSatz }), sitePfad(`public/beitrag/og/${a.slug}.png`))
+  render(karte({ oben: L.siteName, titel: a.titel, text: ersterSatz(a.beschreibung) }), sitePfad(`public/beitrag/og/${a.slug}.png`))
   n++
 }
 // Handgeschriebene Seiten (Säulenseiten, Glossar, Über das Projekt) nur beim Lauf ohne Slugs. Der Build nimmt das Bild,
@@ -78,7 +92,7 @@ if (!NUR.length) for (const s of PROFIL.seiten) {
   const meta = (p) => html.match(new RegExp(`<meta property="og:${p}" content="([^"]*)"`))?.[1]?.replace(/&amp;/g, '&').replace(/&quot;/g, '"')
   if (!meta('title') || /property="og:image"/.test(html)) continue
   const text = meta('description') ?? ''
-  render(karte({ oben: L.siteName, titel: meta('title'), text: text.match(/^.*?[.!?](\s|$)/)?.[0].trim() ?? text }), sitePfad(`public/og/${s.pfad.replace(/\.html$/, '').replace(/\//g, '-')}.png`))
+  render(karte({ oben: L.siteName, titel: meta('title'), text: ersterSatz(text) }), sitePfad(`public/og/${s.pfad.replace(/\.html$/, '').replace(/\//g, '-')}.png`))
   n++
 }
 fs.rmSync(tmp, { recursive: true, force: true })

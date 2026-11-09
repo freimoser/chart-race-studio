@@ -4,6 +4,14 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### SEO-Prüfung umgesetzt (09.11.2026)
+
+- **Kern, betrifft beide Seiten:** Standbilder der eingebetteten Grafiken – `scripts/grafik-standbilder.mjs` fotografiert das Schlussbild jeder Grafik (16:9 und 4:5, WebP) nach `sites/<seite>/public/grafik-bild/`; `build-artikel.mjs` legt es mit Alternativtext (letzter Stand, größte Werte) unter das iframe. Ohne Bilder bleibt alles wie bisher. `check:content` meldet Grafiken ohne Standbild als Hinweis. Für Humanmedizin: `SITE=humanmedizin npm run build && npm run preview`, dann `SITE=humanmedizin node scripts/grafik-standbilder.mjs`, neu bauen.
+- **Kern, betrifft beide Seiten:** Ersatzschrift „Inter Fallback“ mit Inters Maßen (`src/brand/tokens.css`), gegen das Springen beim Laden der Webfont (Lighthouse: Layout-Shift 0,238 auf einem Artikel). Nur die Marke `klar`.
+- **Kern, betrifft beide Seiten:** Kennzeile über der Überschrift („Visite · Post“, „Archiv“, „Datenformat“) als `div.meta.kennzeile` statt Absatz – Antwortmaschinen nahmen sie als ersten Absatz. Dataset und DataCatalog mit `publisher` und, wenn im Profil gesetzt, `license`; Exkurse und Anleitungen ohne Dataset (`istBeispiel`). Brotkrumen der Übersicht (`beitrag/`) und des Studios (nur wo indexiert); Datenformat-Brotkrume heißt „Datenformat“ statt „Überblick“, TechArticle mit `publisher` und Bild. Startseite zeigt das Kennzahlenband auch schmal.
+- **Kern, betrifft beide Seiten (Fehler):** `scripts/og-bilder.mjs` schnitt den ersten Satz nach „Mio.“ ab („Die Gemeinden nahmen 2025 rund 430 Mio.“); jetzt `ersterSatz()` mit Abkürzungen. `check:content` meldet Live-Artikel ohne Vorschaubild (fünf fehlten).
+- **Tiermedizin:** Autor mit Hintergrund (Über das Projekt, Startseite, llms.txt, `jobTitle`, `knowsAbout`, `sameAs` freimoser.de), Datenlizenz CC BY 4.0 für die eigenen Tabellen (Datenherkunft #nutzung), Gehalt mit Entgeltatlas als zweiter Quelle und Tabelle nach Berufsjahren, Pferdekosten mit Abrechnungsfaktor aus dem AFC-Bericht als zweiter Quelle, Hundesteuer-Titel mit „Einnahmen“, Eigentümerbelege im Investoren-Artikel, VDH-Link im Blutgruppen-Artikel.
+
 ### Endlosschleife am Ende der Vorschau (29.10.2026)
 
 - **Kern, betrifft beide Seiten (Fehler):** Lief eine Bar-Grafik (Startseite, Artikel, Studio) bis zum Ende, warf die Konsole „RangeError: Maximum call stack size exceeded“. `PreviewController.onEnd` hielt racing-bars an, solange der Zustand noch „playing“ war; racing-bars meldet beim Anhalten das letzte Datum erneut, das rief `onEnd` wieder auf. Jetzt wird der Zustand vor dem Anhalten gesetzt (`src/lib/preview/controller.ts`), Test `src/test/preview.test.ts` (schlägt ohne die Korrektur mit demselben RangeError fehl). Die Grafik sah man nicht stocken, die Konsole aber lief voll.

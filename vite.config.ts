@@ -142,6 +142,14 @@ function integrationen(env: Record<string, string>) {
       })}</script>`)
       // Studio: KI-Crawler wie GPTBot, ClaudeBot oder PerplexityBot führen kein JavaScript aus
       // und sähen sonst ein leeres <div id="root">. React ersetzt diesen Inhalt beim Start.
+      // Brotkrumen für das Studio, nur wo es indexiert wird (die übrigen Seiten tragen sie selbst).
+      if (pfad === 'studio/index.html' && PROFIL.studioIndexieren && env.VITE_SITE_URL) {
+        const basis = env.VITE_SITE_URL.replace(/\/$/, '')
+        tags.push(`<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+          { '@type': 'ListItem', position: 1, name: MARKE, item: `${basis}/` },
+          { '@type': 'ListItem', position: 2, name: 'Studio', item: `${basis}/studio/` },
+        ] })}</script>`)
+      }
       if (pfad === 'studio/index.html') {
         html = html.replace('<div id="root"></div>', `<div id="root"><main style="max-width:44rem;margin:0 auto;padding:2rem 1.25rem;font-family:system-ui,sans-serif">
       <h1>Studio für animierte Diagramme</h1>

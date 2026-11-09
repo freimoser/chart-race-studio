@@ -5,7 +5,8 @@ titel: Tierarztkosten Pferd: Untersuchung, OP und Notdienst
 beschreibung: Was der Tierarzt fürs Pferd mindestens berechnen darf: Untersuchung ab 30,78 Euro, Kolik-OP ab 1.350 Euro, im Notdienst doppelt plus 50 Euro.
 frage: Was kostet der Tierarzt beim Pferd?
 suchbegriffe: tierarztkosten pferd, tierarzt pferd kosten, kolik op pferd kosten, notdienst tierarzt pferd kosten, got pferd faktor, tierarzt anfahrt pferd kosten
-stand: 2026-11-05
+stand: 2026-11-09
+erschienen: 2026-11-05
 grafik: keine
 bereit: ja
 ---
@@ -18,6 +19,7 @@ Was ein Tierarzt für ein Pferd berechnet, regelt die **Gebührenordnung für Ti
 - Notdienst: mindestens doppelter Satz plus 50 Euro. Eine Untersuchung kostet nachts so mindestens 111,56 Euro netto, mit Umsatzsteuer 132,76 Euro.
 - Wegegeld bei Hausbesuchen: 3,50 Euro je Doppelkilometer, mindestens 13 Euro.
 - Alle GOT-Beträge verstehen sich ohne Umsatzsteuer; auf der Rechnung kommen 19 Prozent hinzu.
+- Zweite Quelle: In einer Befragung für das Bundeslandwirtschaftsministerium gaben 877 Tierärztinnen und Tierärzte an, 2019 im Schnitt den 1,44-fachen Satz berechnet zu haben, im Notdienst den 2,25-fachen. Für die Kolik-OP wären das 1.944 Euro netto (berechnet).
 
 ## Was die wichtigsten Leistungen kosten
 
@@ -38,6 +40,19 @@ Wie sich diese Sätze seit 1999 entwickelt haben und warum die GOT 2022 manche L
 
 ![Vorher und nachher: Gebühren für Pferde nach der GOT 2017 und 2022 im Vergleich, 2017 = 100](got-gebuehren-pferd.png)
 
+## Was Praxen tatsächlich berechnen
+
+Die GOT nennt nur den Rahmen. Wie viel Praxen in diesem Rahmen wirklich berechnen, hat bisher nur eine Untersuchung erhoben: Für den Abschlussbericht zur Prüfung der GOT im Auftrag des Bundeslandwirtschaftsministeriums gaben 877 Tierärztinnen und Tierärzte an, 2019 im Normalbetrieb im Durchschnitt den **1,44-fachen Satz** berechnet zu haben, im Notdienst den **2,25-fachen**. Die Befragung trennt nicht nach Tierart, sie gilt für Klein- und Großtierpraxen zusammen, und sie stammt aus der Zeit vor der GOT 2022. Wie hoch der Faktor heute ist, hat niemand erhoben.
+
+| Leistung beim Pferd | einfacher Satz | Faktor 1,44 (Durchschnitt 2019) | Notdienst, Faktor 2,25 plus 50 € |
+|---|---:|---:|---:|
+| Allgemeine Untersuchung mit Beratung | 30,78 € | 44,32 € | 119,26 € |
+| Kolik-OP (Darmresektion) | 1.350,00 € | 1.944,00 € | 3.087,50 € |
+
+*Netto, ohne Umsatzsteuer. Sätze aus der GOT 2022, Faktoren aus dem Abschlussbericht (Befragung 2019), Beträge berechnet. Mit 19 Prozent Umsatzsteuer kostet die Kolik-OP beim Faktor 1,44 rund 2.313 Euro.*
+
+Was eine Kolik am Ende insgesamt kostet, mit Narkose, Klinikaufenthalt, Medikamenten und Nachsorge, erhebt keine amtliche Stelle und keine unabhängige Studie. Zahlen dazu veröffentlichen vor allem Versicherer und Versicherungsmakler, die OP-Versicherungen verkaufen; ein Makler nennt etwa 7.500 bis 35.000 Euro für eine Kolik-OP. Solche Spannen sind Einzelfälle aus Schadenmeldungen und lassen sich nicht nachprüfen. Sie zeigen aber, dass die GOT-Gebühr für die Operation selbst nur ein Teil der Rechnung ist.
+
 ## Wovon der Faktor abhängt
 
 Innerhalb des Rahmens vom Einfachen bis zum Dreifachen bestimmt die Praxis die Gebühr „nach billigem Ermessen“. Die GOT nennt dafür ausdrücklich fünf Kriterien (§ 2): die Schwierigkeit der Leistung, den Zeitaufwand, den Zeitpunkt, den Wert des Tieres und die örtlichen Verhältnisse. Ein Turnierpferd darf also teurer abgerechnet werden als ein Freizeitpony, eine schwierige Untersuchung teurer als eine einfache.
@@ -54,7 +69,7 @@ Eine Kolik, die nachts operiert werden muss, kostet allein für die Operation na
 
 ## Was die Zahlen nicht sagen
 
-- **Mindestsätze, keine Rechnungen.** Die GOT legt fest, was mindestens und höchstens berechnet werden darf. Was Pferdebesitzer tatsächlich zahlen, erhebt keine Statistik.
+- **Mindestsätze, keine Rechnungen.** Die GOT legt fest, was mindestens und höchstens berechnet werden darf. Was Pferdebesitzer tatsächlich zahlen, erhebt keine Statistik. Der durchschnittliche Faktor 1,44 ist eine Selbstauskunft der Praxen für 2019, über alle Tierarten.
 - **Nebenkosten fehlen.** Narkose, Medikamente, Verbrauchsmaterial und Unterbringung in der Klinik sind eigene Positionen.
 - **Abweichungen sind möglich.** Im begründeten Einzelfall dürfen Praxis und Halter vor der Behandlung in Textform vereinbaren, über das Dreifache hinauszugehen oder unter den einfachen Satz (§ 5).
 
@@ -74,4 +89,4 @@ Mindestens das Doppelte des einfachen Satzes plus 50 Euro Notdienstgebühr. Eine
 
 ## Quelle und Methode
 
-[Gebührenordnung für Tierärztinnen und Tierärzte (GOT) 2022](https://www.gesetze-im-internet.de/got_2022/), insbesondere [§ 2 Gebührenhöhe](https://www.gesetze-im-internet.de/got_2022/__2.html), [§ 4 Notdienst](https://www.gesetze-im-internet.de/got_2022/__4.html), [§ 5 abweichende Sätze](https://www.gesetze-im-internet.de/got_2022/__5.html) und [§ 10 Wegegeld](https://www.gesetze-im-internet.de/got_2022/__10.html), dazu das [Gebührenverzeichnis](https://www.gesetze-im-internet.de/got_2022/anlage.html). Abgerufen am 5. November 2026. Berechnet sind der dreifache Satz, die Notdienstbeträge, die Bruttobeträge mit 19 Prozent Umsatzsteuer und das Wegegeld-Beispiel. Die Entwicklung der Sätze seit 1999 steht in der [Datenherkunft](../artikel/datenherkunft.html#got-pferd).
+[Gebührenordnung für Tierärztinnen und Tierärzte (GOT) 2022](https://www.gesetze-im-internet.de/got_2022/), insbesondere [§ 2 Gebührenhöhe](https://www.gesetze-im-internet.de/got_2022/__2.html), [§ 4 Notdienst](https://www.gesetze-im-internet.de/got_2022/__4.html), [§ 5 abweichende Sätze](https://www.gesetze-im-internet.de/got_2022/__5.html) und [§ 10 Wegegeld](https://www.gesetze-im-internet.de/got_2022/__10.html), dazu das [Gebührenverzeichnis](https://www.gesetze-im-internet.de/got_2022/anlage.html). Abgerufen am 5. November 2026. Abrechnungsfaktor: [AFC-Abschlussbericht zur Prüfung der GOT](https://www.bmel.de/SharedDocs/Downloads/DE/_Tiere/Tiergesundheit/abschlussbericht-pruefung-tieraerztegebuehrenverordnung.pdf?__blob=publicationFile&v=2) im Auftrag des Bundeslandwirtschaftsministeriums, Februar 2021, S. 66 f., abgerufen am 9. November 2026. Kosten einer Kolik-OP laut Versicherungsmakler: [Schütz & Thies, ipzv-versicherungen.de](https://www.ipzv-versicherungen.de/kolik-op-pferd), abgerufen am 9. November 2026. Berechnet sind die Beträge mit Faktor 1,44 und 2,25, der dreifache Satz, die Notdienstbeträge, die Bruttobeträge mit 19 Prozent Umsatzsteuer und das Wegegeld-Beispiel. Die Entwicklung der Sätze seit 1999 steht in der [Datenherkunft](../artikel/datenherkunft.html#got-pferd).

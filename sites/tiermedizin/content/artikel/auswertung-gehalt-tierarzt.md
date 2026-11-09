@@ -1,11 +1,12 @@
 ---
 art: auswertung
 slug: gehalt-tierarzt
-titel: Gehalt Tierarzt: was angestellte Tierärzte verdienen
+titel: Gehalt Tierarzt 2025: brutto und netto nach Berufsjahren
 beschreibung: Angestellte Tierärzte verdienen zum Einstieg 3.701 Euro brutto im Monat, netto rund 2.440. Ärzte bekommen ein Drittel mehr, die Preise stiegen schneller.
 frage: Was verdient ein Tierarzt?
-suchbegriffe: gehalt tierarzt, tierarzt gehalt angestellt, tierarzt gehalt netto, was verdient ein tierarzt, gehalt tierärztin berufseinstieg, tierarzt gehalt vergleich arzt
-stand: 2026-10-14
+suchbegriffe: gehalt tierarzt, tierarzt gehalt 2025, tierarzt gehalt angestellt, tierarzt gehalt netto, was verdient ein tierarzt, gehalt tierärztin berufseinstieg, tierarzt gehalt vergleich arzt
+stand: 2026-11-09
+erschienen: 2026-10-14
 kennzahl: markt/6 | 3.701 € | brutto im Monat zum Berufseinstieg, angestellt in Vollzeit | 2025
 grafik: gehalt-preise line
 bereit: ja
@@ -19,6 +20,25 @@ Angestellte Tierärztinnen und Tierärzte verdienen zum Berufseinstieg **3.701 E
 - Ärztinnen und Ärzte an kommunalen Kliniken verdienen im ersten Jahr 5.610 Euro brutto (Tarif ab August 2025), ein Drittel mehr. Gesetzlicher Mindestlohn bei Vollzeit 2025: 2.222 Euro.
 - Seit 2020: Gehalt der Angestellten +19 Prozent, Löhne in Deutschland +23 Prozent, Verbraucherpreise +22 Prozent, Tierarztpreise +39 Prozent.
 - Der bereinigte Gender Pay Gap liegt laut Studie bei rund 7 Prozent.
+- Zweite Quelle: Die Bundesagentur für Arbeit nennt für Tierärztinnen und Tierärzte für Haus- und Heimtiere einen Median von 4.630 Euro brutto über alle Altersgruppen. Das passt zur Befragung nach etwa fünf Berufsjahren (4.500 Euro).
+
+## Gehalt nach Berufsjahren auf einen Blick
+
+| Angestellt, Vollzeit | brutto im Monat | netto im Monat (Beispiel) |
+|---|---:|---:|
+| Berufseinstieg (0–1 Jahre) | 3.701 € | 2.441 € |
+| nach 5 Jahren | 4.500 € | |
+| nach 10–11 Jahren | 5.099 € | 3.176 € |
+| nach 20–24 Jahren | 5.933 € | |
+| Alle Berufsjahre, Haus- und Heimtiere (Bundesagentur für Arbeit) | 4.630 € | |
+
+*Befragung Ende 2025, Median laut Vertrag ohne Bonus, auf 40 Wochenstunden hochgerechnet. Netto: Steuerklasse I, ohne Kinder, ohne Kirchensteuer, Stand 2025; für die übrigen Zeilen nicht gerechnet. Letzte Zeile: Entgeltatlas 2025, Median aller sozialversicherungspflichtig Beschäftigten in Vollzeit.*
+
+## Warum Gehaltsportale höhere Zahlen nennen
+
+Wer „Tierarzt Gehalt“ sucht, findet meist eine einzige Zahl über alle Berufsjahre, oft zwischen 4.500 und 5.000 Euro. Die erste Zahl dieses Artikels ist dagegen das Gehalt zum Berufseinstieg. Beide widersprechen sich nicht: Der Entgeltatlas der Bundesagentur für Arbeit, gerechnet aus den Meldungen der Arbeitgeber zur Sozialversicherung und nicht aus Selbstauskünften, nennt für Tierärztinnen und Tierärzte für Haus- und Heimtiere einen Median von 4.630 Euro brutto im Monat bei Vollzeit. Das untere Viertel verdient bis 3.811 Euro, das obere ab 5.896 Euro. In der Befragung liegt der Median nach fünf Berufsjahren bei 4.500 Euro, nach zehn Jahren bei 5.099 Euro. Zwei unabhängige Quellen, eine Meldestatistik und eine Befragung, landen damit in derselben Spanne.
+
+Deutlich höher liegt GEHALT.de mit einem Median von 6.798 Euro bei 40 Wochenstunden. Die Berufsseite sagt nicht, wie viele Angaben dahinterstehen und ob nur Angestellte gezählt sind. Neben einer Meldestatistik und einer Befragung mit offener Methode ist der Wert deshalb kein guter Maßstab für angestellte Tierärztinnen und Tierärzte.
 
 ## Was Tierärztinnen und Tierärzte in der Praxis verdienen
 
@@ -126,6 +146,8 @@ Ja. Zum Berufseinstieg verdienen angestellte Tierärztinnen und Tierärzte rund 
 - Bundesministerium der Finanzen: [Lohnsteuerrechner 2025](https://www.bmf-steuerrechner.de/bl/bl2025/eingabeformbl2025.xhtml). Berechnet am 14. Oktober 2026.
 - Beitragssätze und Beitragsbemessungsgrenzen 2025: Rentenversicherung 18,6 Prozent, Arbeitslosenversicherung 2,6 Prozent, Pflegeversicherung 3,6 Prozent plus 0,6 Prozent für Kinderlose ([Bundesgesundheitsministerium](https://www.bundesgesundheitsministerium.de/themen/pflege/online-ratgeber-pflege/die-pflegeversicherung/finanzierung)), Krankenversicherung 14,6 Prozent plus durchschnittlicher Zusatzbeitrag 2,5 Prozent.
 - Statistisches Bundesamt: [Entwicklung der Reallöhne, der Nominallöhne und der Verbraucherpreise](https://www.destatis.de/DE/Themen/Arbeit/Verdienste/Realloehne-Nominalloehne/Tabellen/liste-reallohnentwicklung.html) und [Pressemitteilung Nr. 068 vom 27. Februar 2026](https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/02/PD26_068_62321.html) (Jahr 2025). Abgerufen am 14. Oktober 2026.
+- Bundesagentur für Arbeit: [Entgeltatlas, Tierarzt/-ärztin – Haus- und Heimtiere](https://web.arbeitsagentur.de/entgeltatlas/beruf/90611), Datenstand Entgeltatlas 2025, Median des monatlichen Bruttoentgelts sozialversicherungspflichtig Beschäftigter in Vollzeit. Abgerufen am 9. November 2026.
+- GEHALT.de: [Tierarzt/-ärztin, Gehalt](https://www.gehalt.de/beruf/tierarzt), Median bei 40 Wochenstunden. Abgerufen am 9. November 2026.
 - Bundesministerium für Arbeit und Soziales: [Mindestlohn steigt zum 1. Januar 2026 auf 13,90 Euro](https://www.bmas.de/DE/Service/Presse/Pressemitteilungen/2025/mindestlohn-steigt-zum-ersten-januar-2026.html). Abgerufen am 14. Oktober 2026.
 
 Die Bilder entstehen mit einem Skript aus einer Datei mit allen Werten und ihrer Fundstelle. Mehr unter [Datenherkunft](../artikel/datenherkunft.html#gehalt).
