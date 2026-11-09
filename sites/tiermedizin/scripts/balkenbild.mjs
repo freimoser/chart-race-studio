@@ -170,7 +170,7 @@ ${F.balken.map((b) => `  <div><div class="name">${esc(b.name)}</div>${b.werte.ma
         schrift.push(`<text x="${x}" y="${y}" font-size="${groesse}" fill="${TX[stufe(v)]}">${text}</text>`)
       } else {
         x += L.dx ?? 0; y += L.dy ?? 0
-        schrift.push(`<text x="${x}" y="${y}" font-size="${groesse}" fill="${TX[stufe(v)]}"${L.drehen ? ` transform="rotate(${L.drehen} ${x} ${y})"` : ''}>${text}</text>`)
+        schrift.push(`<text x="${x}" y="${y}" font-size="${groesse}" fill="${TX[stufe(v)]}" stroke="${FL[stufe(v)]}" stroke-width="5" paint-order="stroke"${L.drehen ? ` transform="rotate(${L.drehen} ${x} ${y})"` : ''}>${text}</text>`)
       }
     }
     const hervor = F.hervor ? geo.features.find((f) => f.properties.id === F.hervor) : null
