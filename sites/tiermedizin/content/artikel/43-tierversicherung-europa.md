@@ -1,5 +1,5 @@
 ---
-post: 47
+post: 43
 slug: tierversicherung-europa
 titel: Tierversicherung in Europa: Schweden vorn, Süden kaum
 beschreibung: In Schweden sind laut Umfragen über 70 Prozent der Hunde und Katzen versichert, in Deutschland 8, in Spanien 2. Die Länder im Vergleich, mit Methode.

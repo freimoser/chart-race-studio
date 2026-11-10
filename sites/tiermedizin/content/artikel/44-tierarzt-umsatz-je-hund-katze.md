@@ -1,5 +1,5 @@
 ---
-post: 45
+post: 44
 slug: tierarzt-umsatz-je-hund-katze
 titel: Tierarzt-Umsatz je Hund und Katze: Europa im Vergleich
 beschreibung: Je Hund und Katze setzen Tierärzte in Deutschland rund 247 Euro um, in der Schweiz 511, in Italien 80. Ein Vergleich von Umsatz und Tierbestand.

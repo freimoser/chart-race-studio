@@ -1,5 +1,5 @@
 ---
-post: 43
+post: 47
 slug: tierarzt-umsatz-europa
 titel: Tierarzt-Umsatz in Europa: Deutschland 78 Euro je Kopf
 beschreibung: Tierärzte in Deutschland setzten 2024 rund 78 Euro je Einwohner um, Belgien 120, Italien 28. EU ohne Irland: 59 Euro. Alle Länder im Vergleich.

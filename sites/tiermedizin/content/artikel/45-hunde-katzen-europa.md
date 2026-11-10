@@ -1,5 +1,5 @@
 ---
-post: 44
+post: 45
 slug: hunde-katzen-europa
 titel: Hunde und Katzen in Europa: die Länder im Vergleich
 beschreibung: In der EU leben rund 70 Mio. Hunde und 83 Mio. Katzen, 34 je 100 Einwohner. Deutschland liegt mit 32 im Mittelfeld, Ungarn mit 54 vorn.

@@ -12,6 +12,7 @@
  * Dokument), die PNGs für Instagram. Eine Folie mit `aus: "<datei>.json"` übernimmt ein vorhandenes Einzelbild, so
  * stehen die Werte nur an einer Stelle.
  *
+ * `serie` (alle Arten): Kennzeile über dem Titel, z. B. „Europa im Vergleich · 1/5“.
  * Arten (`art`):
  *   balken     (Standard) titel, untertitel, jahr, quelle, einheit, max, balken [{ name, wert }]
  *   gestapelt  wie balken, dazu teile [Name je Abschnitt], balken [{ name, zusatz, werte [je Abschnitt] }]
@@ -95,6 +96,9 @@ h1 { font-size: 58px; line-height: 1.1; font-weight: 750; letter-spacing: -0.02e
 .band { flex-shrink: 0; height: 112px; background: #0f4c5c; color: #fff; padding: 0 64px; display: flex; align-items: center; justify-content: space-between; border-top: 8px solid #e36414; }
 .marke { display: flex; align-items: center; gap: 18px; font-size: 32px; font-weight: 700; letter-spacing: -0.01em; }
 .adresse { font-size: 30px; font-weight: 600; color: #9adbcf; }
+.serie { font-size: 22px; font-weight: 750; color: #e36414; letter-spacing: .05em; text-transform: uppercase; margin-bottom: 12px; }
+.karte .reihe { z-index: 1; max-width: 460px; margin-bottom: 28px; }
+.karte .segmente { min-width: 150px; }
 .karte .inhalt { position: relative; padding: 56px 56px 28px; }
 .karte .inhalt > *:not(svg) { position: relative; }
 .karte svg.land { position: absolute; inset: 0; }
@@ -105,7 +109,7 @@ h1 { font-size: 58px; line-height: 1.1; font-weight: 750; letter-spacing: -0.02e
 .karte .legende span { width: 44px; height: 30px; }
 .karte .quelle { color: #4d555e; font-size: 20px; background: rgba(255,255,255,.88); margin: auto -56px -28px; padding: 14px 56px 18px; }`
 
-const kopf = (F) => `<div class="kopf"><h1>${esc(F.titel)}</h1>${F.jahr ? `<div class="jahr">${esc(F.jahr)}</div>` : ''}</div>
+const kopf = (F) => `${F.serie ? `<div class="serie">${esc(F.serie)}</div>` : ''}<div class="kopf"><h1>${esc(F.titel)}</h1>${F.jahr ? `<div class="jahr">${esc(F.jahr)}</div>` : ''}</div>
 ${F.untertitel ? `<p class="unter"${F.unterBreite ? ` style="max-width:${F.unterBreite}px"` : ''}>${esc(F.untertitel)}</p>` : ''}`
 
 const ARTEN = {

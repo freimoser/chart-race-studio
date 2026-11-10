@@ -1,10 +1,14 @@
-# LinkedIn-Post 44: Hunde und Katzen in Europa
+# LinkedIn-Post 45: Hunde und Katzen in Europa
 
 **Bilder:** Karussell `karussell-heimtiere-europa.pdf` (LinkedIn) bzw. `-1.png` bis `-3.png`: Hunde und Katzen je 100 Einwohner, Hunde, Katzen.
-**Stand:** 09.11.2026. Post 44 `geplant`, Artikel `44-hunde-katzen-europa.md`. Nach dem Posten: `status: 'veroeffentlicht'`, `publishedOn`, `linkedInUrl`.
+**Stand:** 09.11.2026. Post 45 `geplant`, Artikel `45-hunde-katzen-europa.md`. Nach dem Posten: `status: 'veroeffentlicht'`, `publishedOn`, `linkedInUrl`.
 **Zahlen:** FEDIAF Facts & Figures 2026 (Bestand 2024), Eurostat tps00001; `data/raw/ds32-heimtiere-europa.json`.
 
+**Serie:** Europa im Vergleich, Teil 3 von 5 (im Bild als „3/5“; Reihenfolge nach Spannung, 11.11.2026).
+
 ---
+
+🇪🇺 Europa im Vergleich, Teil 3/5
 
 54 Hunde und Katzen auf 100 Einwohner. So viele hat Ungarn, mehr als jedes andere Land in Europa. 🐕🐈
 
