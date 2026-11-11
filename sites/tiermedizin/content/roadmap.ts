@@ -401,7 +401,7 @@ export const POSTS: RoadmapPost[] = [
     hook: '2,01 Mio. Tiere sind in Deutschland krankenversichert, mehr als doppelt so viele wie 2019. Trotzdem sind es nur knapp 8 von 100 Hunden und Katzen, in Norwegen gut jedes vierte.',
     figures: ['Deutschland: 845.000 (2019) → 2,01 Mio. versicherte Tiere (2024), 3,4 → 7,6 Prozent', 'Beiträge 173 → 720 Mio. Euro, rund 358 Euro je Tier', 'Vollschutz-Anteil 22 (2020) → 40 Prozent (2024)', 'Norwegen 16,8 → 26,7 Prozent, seit 2021 vor Großbritannien (20–21,5 Prozent)', 'Umfragen: rund 30 Prozent der Hunde (Uelzener 2024), 2- bis 3-mal über den Versicherer-Zahlen'],
     sampleId: 'tierversicherung', chart: 'line', dataStatus: 'belegt',
-    dataNote: 'Line Race 2018–2024 (ds33-tierversicherung-europa.json): nur Marktzahlen (GDV, ABI, Finans Norge) ÷ Bestand. GB 2019/2022 linear, DE 2018 Schätzung Heimtierstudie, NO 2024 Bestand DyreID. Umfragen bewusst nicht im Chart – im Post sagen.',
+    dataNote: 'Einzelbild docs/linkedin/grafik-tierversicherung-entwicklung.json (2018 und 2024), wahlweise Line Race 2018–2024 (ds33-tierversicherung-europa.json): nur Marktzahlen (GDV, ABI, Finans Norge) ÷ Bestand. GB 2019/2022 linear, DE 2018 Schätzung Heimtierstudie, NO 2024 Bestand DyreID. Umfragen bewusst nicht im Chart – im Post sagen.',
     refs: [43, 44],
   },
   {

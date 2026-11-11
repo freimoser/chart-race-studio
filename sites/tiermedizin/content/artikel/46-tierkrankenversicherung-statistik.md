@@ -18,6 +18,8 @@ In Deutschland waren 2024 rund **2,01 Mio. Tiere** kranken- oder OP-versichert, 
 - Großbritannien liegt seit 2018 fast unverändert zwischen 20 und 21,5 Prozent; Norwegen stieg von 16,8 auf 26,7 Prozent und überholte Großbritannien 2021.
 - Halterbefragungen nennen deutlich mehr: In Deutschland sagen rund 30 Prozent der Hundehalter, ihr Tier sei versichert.
 
+![Anteil der Hunde und Katzen mit Krankenversicherung 2018 und 2024: Norwegen 16,8 und 26,7 Prozent, Großbritannien 21,5 und 21,5, Deutschland 3,3 und 7,6](tierkrankenversicherung-statistik/1.webp)
+
 ## Warum Deutschland so schnell wächst
 
 Seit der neuen Gebührenordnung für Tierärzte (GOT) von November 2022 kosten viele Behandlungen deutlich mehr; wie stark, zeigt der Artikel [Tierarztkosten und Inflation](tierarztkosten-inflation.html). Genau in diese Zeit fällt der steilste Anstieg: 2022 kamen 270.000 versicherte Tiere hinzu, 2023 260.000, 2024 220.000. Die Beiträge stiegen 2023 um 41 Prozent und 2024 um 38 Prozent, deutlich schneller als die Zahl der Verträge. Darin stecken höhere Prämien und der Wechsel vom reinen OP-Schutz zur Vollversicherung.

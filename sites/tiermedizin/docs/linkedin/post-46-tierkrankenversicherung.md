@@ -1,10 +1,10 @@
 # LinkedIn-Post 46: Wie viele Hunde und Katzen versichert sind
 
-**Video:** Studio → „Versicherte Hunde und Katzen“ (`?beispiel=tierversicherung`), Line Race 2018–2024, Format 4:5, MP4. Prüfung auf Sprünge: 0 (09.11.2026).
+**Bild:** `grafik-tierversicherung-entwicklung.png` (Einzelbild, 1080 × 1350, 2018 und 2024 im Vergleich). Wahlweise **Video:** Studio → „Versicherte Hunde und Katzen“ (`?beispiel=tierversicherung`), Line Race 2018–2024, Format 4:5, MP4. Prüfung auf Sprünge: 0 (09.11.2026).
 **Stand:** 09.11.2026. Post 46 `geplant`, Artikel `46-tierkrankenversicherung-statistik.md`. Nach dem Posten: `status: 'veroeffentlicht'`, `publishedOn`, `linkedInUrl`.
 **Zahlen:** Datensatz `tierversicherung` (`data/raw/ds33-tierversicherung-europa.json`).
 
-**Serie:** Europa im Vergleich, Teil 4 von 8 (Video ohne Kennzeile, Teil nur im Post-Text; Reihenfolge nach Spannung, 11.11.2026).
+**Serie:** Europa im Vergleich, Teil 4 von 8 (im Bild als „Teil 4 von 8“, das Video hat keine Kennzeile; Reihenfolge nach Spannung, 11.11.2026).
 
 ---
 

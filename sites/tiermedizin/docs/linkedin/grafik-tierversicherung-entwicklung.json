@@ -1,0 +1,38 @@
+{
+  "_herkunft": "Datensatz tierversicherung (data/raw/ds33-tierversicherung-europa.json): versicherte Tiere bzw. Verträge ÷ Hunde und Katzen, berechnet. DE 2018 Schätzung Heimtierstudie 2019 (805.000 ÷ 24,2 Mio.), 2024 GDV 2,01 Mio. ÷ IVH/ZZF 26,4 Mio.; GB ABI 4,3 bzw. 4,6 Mio. ÷ PDSA 20,0 bzw. 21,4 Mio.; NO Finans Norge 208.133 bzw. 323.127 private Verträge ÷ FEDIAF 1,24 Mio. bzw. DyreID 1,21 Mio.",
+  "art": "paare",
+  "serie": "Europa im Vergleich · Teil 4 von 8",
+  "titel": "Norwegen zieht davon, Deutschland holt auf",
+  "untertitel": "Anteil der Hunde und Katzen mit Krankenversicherung, aus Zahlen der Versicherer berechnet",
+  "einheit": " %",
+  "dezimalen": 1,
+  "max": 30,
+  "teile": [
+    "2018",
+    "2024"
+  ],
+  "balken": [
+    {
+      "name": "Norwegen",
+      "werte": [
+        16.8,
+        26.7
+      ]
+    },
+    {
+      "name": "Großbritannien",
+      "werte": [
+        21.5,
+        21.5
+      ]
+    },
+    {
+      "name": "Deutschland",
+      "werte": [
+        3.3,
+        7.6
+      ]
+    }
+  ],
+  "quelle": "Quellen: GDV, Heimtierstudie 2019, IVH/ZZF (DE); ABI, PDSA (GB); Finans Norge, FEDIAF, DyreID (NO). Versicherte Tiere ÷ Hunde und Katzen, berechnet; Deutschland 2018 Schätzung. Umfragen unter Haltern liegen 2- bis 3-mal höher"
+}
