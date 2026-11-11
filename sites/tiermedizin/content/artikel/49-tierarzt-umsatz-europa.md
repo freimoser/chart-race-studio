@@ -1,5 +1,5 @@
 ---
-post: 47
+post: 49
 slug: tierarzt-umsatz-europa
 titel: Tierarzt-Umsatz in Europa: Deutschland 78 Euro je Kopf
 beschreibung: Tierärzte in Deutschland setzten 2024 rund 78 Euro je Einwohner um, Belgien 120, Italien 28. EU ohne Irland: 59 Euro. Alle Länder im Vergleich.
@@ -19,7 +19,7 @@ Die Tierarztpraxen und -kliniken in der EU setzten 2024 ohne Irland rund **26,0 
 - Von 2021 bis 2024 wuchs der Umsatz in der EU ohne Irland um 31 Prozent, in Deutschland um 33, in Polen um 70 Prozent (berechnet, in Euro).
 - Die deutsche Umsatzsteuerstatistik kommt für 2024 auf 5,94 Mrd. Euro, also rund 71 Euro je Einwohner. Die Größenordnung bestätigt sich, der Wert liegt etwa zehn Prozent tiefer.
 
-![Bild 1 von 2: Europakarte, Umsatz der Tierarztpraxen und -kliniken 2024 in Euro je Einwohner: Belgien 120, Schweiz 116, Schweden 110, Frankreich 86, Deutschland 78, Polen 47, Spanien 40, Italien 28, Bulgarien 10](tierarzt-umsatz-europa/1.webp)
+![Europakarte, Umsatz der Tierarztpraxen und -kliniken 2024 in Euro je Einwohner: Belgien 120, Schweiz 116, Schweden 110, Frankreich 86, Deutschland 78, Polen 47, Spanien 40, Italien 28, Bulgarien 10](tierarzt-umsatz-europa/1.webp)
 
 ## Alle Länder im Vergleich
 
@@ -69,9 +69,7 @@ Wie viele Tiere hinter dem Umsatz stehen, zeigt ein eigener Beitrag dieser Reihe
 
 ## Wo der Markt am schnellsten wächst
 
-![Bild 2 von 2: Veränderung des Umsatzes 2021 bis 2024 in Euro: Polen plus 70 Prozent, Schweden plus 46, EU ohne Irland plus 31, Deutschland plus 33, Frankreich plus 25](tierarzt-umsatz-europa/2.webp)
-
-Von 2021 bis 2024 stieg der Umsatz in der EU ohne Irland von 19,9 auf 26,0 Mrd. Euro, um 31 Prozent. Deutschland liegt mit 33 Prozent knapp darüber, Frankreich mit 25 Prozent darunter. Mit Irland käme die EU auf 42 Prozent, allein wegen des irischen Sprungs. Am stärksten wuchsen Litauen (plus 74 Prozent), Polen (plus 70) und Bulgarien (plus 61), am schwächsten Norwegen (plus 5), Belgien und Dänemark (je plus 15). Alle Werte sind in Euro gerechnet: In Polen und Schweden steckt darin auch eine stärkere Währung, in Norwegen eine schwächere Krone, überall die Inflation.
+Von 2021 bis 2024 stieg der Umsatz in der EU ohne Irland um 31 Prozent, in Deutschland um 33 und in Polen um 70 Prozent (berechnet, in Euro). Alle Länder und was hinter dem Wachstum steckt, zeigt der Beitrag [Tierarzt-Umsatz: Wachstum in Europa](tierarzt-umsatz-wachstum-europa.html).
 
 ## Passt die Zahl für Deutschland?
 

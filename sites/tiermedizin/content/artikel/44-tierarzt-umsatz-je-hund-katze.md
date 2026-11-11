@@ -50,7 +50,7 @@ Italien bleibt auffällig: 35 Hunde und Katzen je 100 Einwohner, mehr als Deutsc
 ## Was die Zahl nicht sagt
 
 - **Nutztiere sind im Umsatz enthalten.** Länder mit viel Viehhaltung, etwa Dänemark, die Niederlande oder Irland, kommen dadurch je Hund und Katze zu hoch heraus. Eine Aufteilung nach Tierart veröffentlicht Eurostat nicht.
-- **Keine Ausgaben der Halter.** Gezählt ist der Umsatz der Praxen, nicht was ein Haushalt zahlt; Medikamente aus der Apotheke und Versicherungen fehlen.
+- **Keine Ausgaben der Halter.** Gezählt ist der Umsatz der Praxen, nicht was ein Haushalt zahlt; Medikamente aus der Apotheke fehlen, ebenso die Frage, wie viele Tiere versichert sind ([Tierversicherung in Europa](tierversicherung-europa.html)).
 - **Unsichere Tierzahlen.** In 22 von 37 Ländern schätzt FEDIAF den Bestand. In Schweden zählt eine nationale Befragung 20 Prozent weniger Hunde; mit diesen Zahlen wären es dort 450 statt 402 Euro je Tier (berechnet).
 - **Irland und Großbritannien fehlen**, Irland wegen eines nicht vergleichbaren Umsatzsprungs, Großbritannien mangels Umsatzdaten. Island (557 Euro) liegt außerhalb des Kartenausschnitts.
 

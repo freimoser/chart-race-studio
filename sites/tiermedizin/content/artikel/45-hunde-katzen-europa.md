@@ -19,19 +19,11 @@ Die meisten Hunde in Europa leben in **Großbritannien (13,4 Mio.)**, **Deutschl
 - In 13 Ländern gibt es mehr Hunde als Katzen, darunter Großbritannien, Polen, Spanien und Ungarn. In Deutschland kommen auf 10 Hunde 15 Katzen.
 - In 22 der 37 Länder schätzt FEDIAF den Bestand selbst, weil kein nationaler Verband Zahlen liefert.
 
-![Bild 1 von 3: Europakarte, Hunde und Katzen 2024 je 100 Einwohner: Ungarn 54, Portugal 46, Rumänien 46, Belgien 44, Polen 43, Frankreich 38, Großbritannien 37, Deutschland 32, Spanien 24, Griechenland 12](hunde-katzen-europa/1.webp)
+![Europakarte, Hunde und Katzen 2024 je 100 Einwohner: Ungarn 54, Portugal 46, Rumänien 46, Belgien 44, Polen 43, Frankreich 38, Großbritannien 37, Deutschland 32, Spanien 24, Griechenland 12](hunde-katzen-europa/1.webp)
 
-## Hunde je Einwohner
+## Hund oder Katze?
 
-![Bild 2 von 3: Hunde 2024 je 100 Einwohner: Ungarn 29, Portugal 27, Slowakei 26, Polen 23, Rumänien 22, Großbritannien 19, Deutschland 13, Niederlande 9, Österreich 9, Schweiz 6](hunde-katzen-europa/2.webp)
-
-Viele Hunde je Einwohner gibt es vor allem im Osten und Süden: Ungarn, Slowakei, Polen, Rumänien, Tschechien und Kroatien liegen bei 20 oder mehr. In Mitteleuropa sind es deutlich weniger, Deutschland hat 13, die Niederlande und Österreich je 9, die Schweiz 6. Dort ist die Katze das häufigere Tier.
-
-## Katzen je Einwohner
-
-![Bild 3 von 3: Katzen 2024 je 100 Einwohner: Belgien 26, Ungarn 25, Frankreich 24, Rumänien 23, Estland 23, Österreich 22, Deutschland 19, Spanien 10, Irland 8, Griechenland 6](hunde-katzen-europa/3.webp)
-
-Bei den Katzen liegt Westeuropa vorn: Belgien, Frankreich, Österreich. Spanien hat mit 10 Katzen je 100 Einwohner nur halb so viele wie Deutschland, Irland 8, Griechenland 6.
+Im Osten und Süden ist der Hund das häufigere Tier: Ungarn, Slowakei, Polen, Rumänien, Tschechien und Kroatien haben 20 oder mehr Hunde je 100 Einwohner. In West- und Mitteleuropa führt die Katze, etwa in Belgien, Frankreich und Österreich. Die Karten nach Tierart stehen in eigenen Beiträgen: [Hunde je Einwohner in Europa](hunde-europa.html) und [Katzen je Einwohner in Europa](katzen-europa.html).
 
 ## Die Länder im Vergleich
 

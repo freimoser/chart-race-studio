@@ -1,14 +1,14 @@
 # LinkedIn-Post 43: Tierversicherung in Europa
 
-**Bild:** `karte-tierversicherung-europa.png` (Einzelbild).
+**Bild:** `karte-tierversicherung-europa.png` (Einzelbild, 1080 × 1350).
 **Stand:** 09.11.2026. Post 43 `geplant`, Artikel `43-tierversicherung-europa.md`. Nach dem Posten: `status: 'veroeffentlicht'`, `publishedOn`, `linkedInUrl`.
 **Zahlen:** `data/raw/ds33-tierversicherung-europa.json` (karte_2024).
 
-**Serie:** Europa im Vergleich, Teil 1 von 5 (im Bild als „Teil 1 von 5“; Reihenfolge nach Spannung, 11.11.2026).
+**Serie:** Europa im Vergleich, Teil 1 von 8 (im Bild als „Teil 1 von 8“; Reihenfolge nach Spannung, 11.11.2026).
 
 ---
 
-🇪🇺 Europa im Vergleich, Teil 1 von 5
+🇪🇺 Europa im Vergleich, Teil 1 von 8
 
 72 Prozent in Schweden, 8 in Deutschland, 2 in Spanien. So unterschiedlich ist der Anteil versicherter Hunde und Katzen in Europa. 🇪🇺🛡️
 

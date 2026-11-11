@@ -426,7 +426,7 @@
     "stand": "2026-11-09",
     "geaendert": "2026-11-09",
     "bereit": true,
-    "live": false
+    "live": true
   },
   {
     "post": 44,
@@ -437,7 +437,7 @@
     "stand": "2026-11-09",
     "geaendert": "2026-11-09",
     "bereit": true,
-    "live": false
+    "live": true
   },
   {
     "post": 45,
@@ -448,7 +448,7 @@
     "stand": "2026-11-09",
     "geaendert": "2026-11-09",
     "bereit": true,
-    "live": false
+    "live": true
   },
   {
     "post": 46,
@@ -459,10 +459,32 @@
     "stand": "2026-11-09",
     "geaendert": "2026-11-09",
     "bereit": true,
-    "live": false
+    "live": true
   },
   {
     "post": 47,
+    "slug": "hunde-europa",
+    "titel": "Hunde in Europa: Wo die meisten Hunde je Einwohner leben",
+    "beschreibung": "Ungarn hat 29 Hunde je 100 Einwohner, Portugal 27, die Slowakei 26. Deutschland liegt mit 13 im Mittelfeld, die Schweiz bei 6. Alle Länder.",
+    "frage": "Welches Land hat die meisten Hunde pro Einwohner?",
+    "stand": "2026-11-11",
+    "geaendert": "2026-11-11",
+    "bereit": true,
+    "live": true
+  },
+  {
+    "post": 48,
+    "slug": "katzen-europa",
+    "titel": "Katzen in Europa: Wo die meisten Katzen je Einwohner leben",
+    "beschreibung": "Belgien hat 26 Katzen je 100 Einwohner, Ungarn 25, Frankreich 24. Deutschland liegt bei 19, Spanien bei 10, Griechenland bei 6. Alle Länder.",
+    "frage": "Welches Land hat die meisten Katzen?",
+    "stand": "2026-11-11",
+    "geaendert": "2026-11-11",
+    "bereit": true,
+    "live": true
+  },
+  {
+    "post": 49,
     "slug": "tierarzt-umsatz-europa",
     "titel": "Tierarzt-Umsatz in Europa: Deutschland 78 Euro je Kopf",
     "beschreibung": "Tierärzte in Deutschland setzten 2024 rund 78 Euro je Einwohner um, Belgien 120, Italien 28. EU ohne Irland: 59 Euro. Alle Länder im Vergleich.",
@@ -470,7 +492,18 @@
     "stand": "2026-11-09",
     "geaendert": "2026-11-09",
     "bereit": true,
-    "live": false
+    "live": true
+  },
+  {
+    "post": 50,
+    "slug": "tierarzt-umsatz-wachstum-europa",
+    "titel": "Tierarzt-Umsatz in Europa: Polen wächst doppelt so stark",
+    "beschreibung": "Von 2021 bis 2024 stieg der Umsatz der Tierarztpraxen in Polen um 70 Prozent, in Deutschland um 33, in der EU ohne Irland um 31. Alle Länder.",
+    "frage": "Wie stark wächst der Tiermedizin-Markt in Europa?",
+    "stand": "2026-11-11",
+    "geaendert": "2026-11-11",
+    "bereit": true,
+    "live": true
   },
   {
     "art": "anleitung",

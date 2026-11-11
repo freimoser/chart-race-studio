@@ -4,11 +4,11 @@
 **Stand:** 09.11.2026. Post 46 `geplant`, Artikel `46-tierkrankenversicherung-statistik.md`. Nach dem Posten: `status: 'veroeffentlicht'`, `publishedOn`, `linkedInUrl`.
 **Zahlen:** Datensatz `tierversicherung` (`data/raw/ds33-tierversicherung-europa.json`).
 
-**Serie:** Europa im Vergleich, Teil 4 von 5 (Video ohne Kennzeile, Teil nur im Post-Text; Reihenfolge nach Spannung, 11.11.2026).
+**Serie:** Europa im Vergleich, Teil 4 von 8 (Video ohne Kennzeile, Teil nur im Post-Text; Reihenfolge nach Spannung, 11.11.2026).
 
 ---
 
-🇪🇺 Europa im Vergleich, Teil 4 von 5
+🇪🇺 Europa im Vergleich, Teil 4 von 8
 
 2,01 Millionen. So viele Hunde, Katzen und andere Tiere sind in Deutschland krankenversichert. 2019 waren es 845.000. 🐕🐈📈
 

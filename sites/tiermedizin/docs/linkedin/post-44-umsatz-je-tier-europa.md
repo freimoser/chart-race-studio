@@ -1,14 +1,14 @@
 # LinkedIn-Post 44: Tierarzt-Umsatz je Hund und Katze
 
-**Bild:** `karte-umsatz-je-tier-europa.png` (Einzelbild).
+**Bild:** `karte-umsatz-je-tier-europa.png` (Einzelbild, 1080 × 1350).
 **Stand:** 09.11.2026. Post 44 `geplant`, Artikel `44-tierarzt-umsatz-je-hund-katze.md`. Nach dem Posten: `status: 'veroeffentlicht'`, `publishedOn`, `linkedInUrl`.
 **Zahlen:** Eurostat sbs_ovw_act M75 2024 (`ds31`) ÷ Hunde und Katzen FEDIAF 2024 (`ds32`), berechnet.
 
-**Serie:** Europa im Vergleich, Teil 2 von 5 (im Bild als „Teil 2 von 5“; Reihenfolge nach Spannung, 11.11.2026).
+**Serie:** Europa im Vergleich, Teil 2 von 8 (im Bild als „Teil 2 von 8“; Reihenfolge nach Spannung, 11.11.2026).
 
 ---
 
-🇪🇺 Europa im Vergleich, Teil 2 von 5
+🇪🇺 Europa im Vergleich, Teil 2 von 8
 
 247 Euro. So viel setzen Tierarztpraxen in Deutschland je Hund und Katze um. In der Schweiz sind es 511, in Italien 80. 💶🐾
 
