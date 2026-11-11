@@ -1,8 +1,8 @@
 {
   "art": "karte",
-  "titel": "Was Tierärzte pro Kopf umsetzen",
-  "untertitel": "Umsatz der Tierarztpraxen und -kliniken 2024, in Euro je Einwohner",
-  "quelle": "Quelle: Eurostat, Unternehmensstatistik (sbs_ovw_act, Wirtschaftszweig M75 Veterinärwesen) und Bevölkerung (tps00001), 2024; je Einwohner berechnet. Umsatz der tierärztlichen Unternehmen für Heim- und Nutztiere, nicht Ausgaben der Halter. Grau: keine Daten (u. a. Großbritannien) oder nicht vergleichbar (Irland). Island (99 €) nicht beschriftet",
+  "titel": "Tierarzt-Umsatz je Einwohner",
+  "untertitel": "2024, Euro je Einwohner",
+  "quelle": "Umsatz der Tierarztpraxen und -kliniken (Heim- und Nutztiere), nicht Ausgaben der Halter. Quelle: Eurostat (sbs_ovw_act, M75, tps00001), je Einwohner berechnet. Grau: keine Daten (u. a. Großbritannien) oder nicht vergleichbar (Irland). Island (99 €) nicht beschriftet",
   "hervor": "DE",
   "stufen": [
     {
@@ -22,8 +22,6 @@
       "name": "ab 100 €"
     }
   ],
-  "grau": [],
-  "grauText": "keine Daten",
   "werte": {
     "AT": 77,
     "BA": 14,
@@ -55,7 +53,8 @@
     "RS": 20,
     "SE": 110,
     "SI": 49,
-    "SK": 16
+    "SK": 16,
+    "IS": 99
   },
   "lage": {
     "LU": {
@@ -141,5 +140,7 @@
   },
   "rand": 70,
   "serie": "Europa im Vergleich · 5/5",
-  "legendeOben": 910
+  "ohneZahl": [
+    "IS"
+  ]
 }

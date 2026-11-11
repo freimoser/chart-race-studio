@@ -1,8 +1,8 @@
 {
   "art": "karte",
-  "titel": "Hunde in Europa",
-  "untertitel": "Bestand 2024 je 100 Einwohner",
-  "quelle": "Quelle: FEDIAF Facts & Figures 2026 (Bestand 2024; nationale Verbände bzw. Schätzung FEDIAF), Bevölkerung Eurostat (tps00001) am 1.1.2024; je 100 Einwohner berechnet. In 22 der 37 gezeigten Länder schätzt FEDIAF ohne Verbandsdaten. Nicht dargestellt: Türkei, Ukraine, Kosovo",
+  "titel": "Hunde je Einwohner",
+  "untertitel": "2024, Hunde je 100 Einwohner",
+  "quelle": "Hunde. Quelle: FEDIAF Facts & Figures 2026 (nationale Verbände bzw. Schätzung FEDIAF, in 22 von 37 Ländern) und Eurostat (Bevölkerung 1.1.2024), je 100 Einwohner berechnet. Nicht dargestellt: Türkei, Ukraine, Kosovo. Island (7) nicht beschriftet",
   "hervor": "DE",
   "stufen": [
     {
@@ -22,8 +22,6 @@
       "name": "ab 20"
     }
   ],
-  "grau": [],
-  "grauText": "nicht dargestellt",
   "werte": {
     "AL": 4,
     "AT": 9,
@@ -40,7 +38,6 @@
     "DE": 13,
     "GR": 6,
     "HU": 29,
-    "IS": 7,
     "IE": 11,
     "IT": 15,
     "LV": 15,
@@ -61,7 +58,8 @@
     "ES": 14,
     "SE": 11,
     "CH": 6,
-    "GB": 19
+    "GB": 19,
+    "IS": 7
   },
   "lage": {
     "LU": {
@@ -158,7 +156,8 @@
     }
   },
   "rand": 70,
-  "legendeOben": 905,
-  "unterBreite": 230,
-  "serie": "Europa im Vergleich · 3/5"
+  "serie": "Europa im Vergleich · 3/5",
+  "ohneZahl": [
+    "IS"
+  ]
 }

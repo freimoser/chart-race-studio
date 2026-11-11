@@ -19,8 +19,10 @@
  *   paare      zwei Balken je Zeile zum Vergleich: teile [Name je Balken], balken [{ name, werte [a, b] }]
  *   text       titel, absaetze [...], hinweis, quelle
  *   karte      Europakarte wie ein Choroplethenbild: titel, untertitel, quelle, einheit, stufen [{ ab, name }] aufsteigend,
- *              werte { ISO-2: Zahl }, hervor (ISO-2, orange umrandet), grau [{ id, text }] für Länder ohne Wert mit Grund,
- *              markiert [ISO-2] (Zahl mit *), unterBreite (px), legendeOben (px, Legende frei setzen, z. B. über Nordafrika), lage { ISO-2: { dx, dy, kasten } } verschiebt Beschriftungen kleiner Länder (mit Linie zum Land).
+ *              werte { ISO-2: Zahl }, hervor (ISO-2, orange umrandet); Länder ohne Wert grau, Grund in der Quellenzeile.
+ *              Festes Layout für alle Karten: Kennzeile, Titel, Untertitel oben links, Legende unten links; im Karussell
+ *              steht „Bild x von y“ in der Kennzeile.
+ *              markiert [ISO-2] (Zahl mit *), ohneZahl [ISO-2] (eingefärbt, nicht beschriftet, z. B. Island unter dem Titel), lage { ISO-2: { dx, dy, kasten } } verschiebt Beschriftungen kleiner Länder (mit Linie zum Land).
  *              Grenzen: sites/tiermedizin/data/geo/europa-50m.geojson (Natural Earth, gemeinfrei).
  * Eine Grafik, eine Aussage: Werte direkt am Balken, keine Achse; Quelle immer im Bild. Im Karussell zeigt jede
  * Folie oben, dass sie Teil einer Reihe ist (Leiste und „Bild 2 von 5“, auf Bild 1 „wischen →“).
@@ -97,20 +99,18 @@ h1 { font-size: 58px; line-height: 1.1; font-weight: 750; letter-spacing: -0.02e
 .marke { display: flex; align-items: center; gap: 18px; font-size: 32px; font-weight: 700; letter-spacing: -0.01em; }
 .adresse { font-size: 30px; font-weight: 600; color: #9adbcf; }
 .serie { font-size: 22px; font-weight: 750; color: #e36414; letter-spacing: .05em; text-transform: uppercase; margin-bottom: 12px; }
-.karte .reihe { z-index: 1; max-width: 460px; margin-bottom: 28px; }
-.karte .segmente { min-width: 150px; }
 .karte .inhalt { position: relative; padding: 56px 56px 28px; }
 .karte .inhalt > *:not(svg) { position: relative; }
 .karte svg.land { position: absolute; inset: 0; }
-.karte h1 { font-size: 58px; max-width: 400px; }
-.karte .unter { font-size: 26px; max-width: 370px; margin-top: 16px; color: #3d4248; }
-.karte .inhalt > .legende.frei { position: absolute; left: 56px; margin: 0; }
-.karte .legende { margin-top: 30px; gap: 12px; font-size: 27px; }
+.karte .serie { margin-bottom: 14px; }
+.karte h1 { font-size: 54px; max-width: 420px; }
+.karte .unter { font-size: 25px; max-width: 200px; margin-top: 14px; color: #3d4248; }
+.karte .inhalt > .legende { position: absolute; left: 56px; top: 910px; margin: 0; gap: 12px; font-size: 27px; }
 .karte .legende span { width: 44px; height: 30px; }
 .karte .quelle { color: #4d555e; font-size: 20px; background: rgba(255,255,255,.88); margin: auto -56px -28px; padding: 14px 56px 18px; }`
 
 const kopf = (F) => `${F.serie ? `<div class="serie">${esc(F.serie)}</div>` : ''}<div class="kopf"><h1>${esc(F.titel)}</h1>${F.jahr ? `<div class="jahr">${esc(F.jahr)}</div>` : ''}</div>
-${F.untertitel ? `<p class="unter"${F.unterBreite ? ` style="max-width:${F.unterBreite}px"` : ''}>${esc(F.untertitel)}</p>` : ''}`
+${F.untertitel ? `<p class="unter">${esc(F.untertitel)}</p>` : ''}`
 
 const ARTEN = {
   balken: (F) => {
@@ -158,7 +158,7 @@ ${F.balken.map((b) => `  <div><div class="name">${esc(b.name)}</div>${b.werte.ma
       const v = F.werte[id]
       const hat = v != null
       flaechen.push(`<path d="${pfad(f)}" fill="${hat ? FL[stufe(v)] : '#d9dcdf'}" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>`)
-      if (!hat) continue
+      if (!hat || F.ohneZahl?.includes(id)) continue
       // Beschriftung im größten Teil des Landes (Frankreich ohne Korsika, Norwegen ohne Inseln).
       const teile = f.geometry.coordinates.map((c) => ({ type: 'Polygon', coordinates: c }))
       const gross = teile.reduce((a, b) => (pfad.area(b) > pfad.area(a) ? b : a))
@@ -186,7 +186,7 @@ ${hervor ? `<path d="${pfad(hervor)}" fill="none" stroke="#e36414" stroke-width=
 <g font-family="Inter" font-weight="750" text-anchor="middle" dominant-baseline="central" style="font-feature-settings:'tnum' 1">${schrift.join('')}</g>
 </svg>`
     return `${svg}${kopf(F)}
-<div class="legende${F.legendeOben != null ? ' frei' : ''}"${F.legendeOben != null ? ` style="top:${F.legendeOben}px"` : ''}>${[...stufen].reverse().map((st, i) => `<div><span style="background:${FL[stufen.length - 1 - i]}"></span>${esc(st.name)}</div>`).join('')}${F.grau?.length ? `<div><span style="background:#d9dcdf"></span>${esc(F.grauText ?? 'keine Daten')}</div>` : ''}</div>`
+<div class="legende">${[...stufen].reverse().map((st, i) => `<div><span style="background:${FL[stufen.length - 1 - i]}"></span>${esc(st.name)}</div>`).join('')}</div>`
   },
   text: (F) => `<h2 class="gross">${esc(F.titel)}</h2>
 ${(F.absaetze ?? []).map((a) => `<p class="absatz">${esc(a)}</p>`).join('\n')}
@@ -195,12 +195,14 @@ ${F.hinweis ? `<p class="hinweis">${esc(F.hinweis)}</p>` : ''}`,
 
 // Reihe oben: Leiste mit einem Abschnitt je Folie und „Bild n von m“. Fehlt bei Einzelbildern und im Web-Modus.
 const reihe = (nr, gesamt) => `<div class="reihe"><div class="segmente">${Array.from({ length: gesamt }, (_, i) => `<i class="${i + 1 < nr ? 'war' : i + 1 === nr ? 'jetzt' : ''}"></i>`).join('')}</div><span class="zaehler">Bild ${nr} von ${gesamt}${nr === 1 && !reel ? ' · wischen →' : ''}</span></div>`
+// Karten und Folien mit Kennzeile (`serie`) zeigen „Bild x von y“ in der Kennzeile statt in der Leiste – gleiches Layout.
+const inKennzeile = (F) => F.art === 'karte' || Boolean(F.serie)
 const seite = (F, nr = 0, gesamt = 0) => {
   const art = ARTEN[F.art ?? 'balken']
   if (!art) throw new Error(`Unbekannte Art „${F.art}“`)
   if (!F.quelle) throw new Error(`Folie „${F.titel}“ ohne Quelle – kein Bild ohne Quelle im Bild.`)
-  return `<section class="seite${gesamt > 1 ? ' mit-reihe' : ''}${F.art === 'karte' ? ' karte' : ''}"><div class="inhalt">
-${gesamt > 1 ? reihe(nr, gesamt) : ''}${art(F)}
+  return `<section class="seite${gesamt > 1 && !inKennzeile(F) ? ' mit-reihe' : ''}${F.art === 'karte' ? ' karte' : ''}"><div class="inhalt">
+${gesamt > 1 && !inKennzeile(F) ? reihe(nr, gesamt) : ''}${art(inKennzeile(F) && gesamt > 1 ? { ...F, serie: [F.serie, `Bild ${nr} von ${gesamt}`].filter(Boolean).join(' · ') } : F)}
 <p class="quelle">${esc(F.quelle)} · ${F.art === 'text' ? '' : 'Grafik: '}${esc(L.operator)}</p>
 </div>
 <div class="band"><div class="marke">${LOGO}${esc(L.siteName)}</div><div class="adresse">${ADRESSE}</div></div></section>`

@@ -1,8 +1,8 @@
 {
   "art": "karte",
-  "titel": "Hunde und Katzen in Europa",
-  "untertitel": "Bestand 2024 je 100 Einwohner",
-  "quelle": "Quelle: FEDIAF Facts & Figures 2026 (Bestand 2024; nationale Verbände bzw. Schätzung FEDIAF), Bevölkerung Eurostat (tps00001) am 1.1.2024; je 100 Einwohner berechnet. In 22 der 37 gezeigten Länder schätzt FEDIAF ohne Verbandsdaten. Nicht dargestellt: Türkei, Ukraine, Kosovo",
+  "titel": "Hunde und Katzen je Einwohner",
+  "untertitel": "2024, Tiere je 100 Einwohner",
+  "quelle": "Hunde und Katzen. Quelle: FEDIAF Facts & Figures 2026 (nationale Verbände bzw. Schätzung FEDIAF, in 22 von 37 Ländern) und Eurostat (Bevölkerung 1.1.2024), je 100 Einwohner berechnet. Nicht dargestellt: Türkei, Ukraine, Kosovo. Island (18) nicht beschriftet",
   "hervor": "DE",
   "stufen": [
     {
@@ -22,8 +22,6 @@
       "name": "ab 40"
     }
   ],
-  "grau": [],
-  "grauText": "nicht dargestellt",
   "werte": {
     "AL": 8,
     "AT": 31,
@@ -40,7 +38,6 @@
     "DE": 32,
     "GR": 12,
     "HU": 54,
-    "IS": 18,
     "IE": 18,
     "IT": 35,
     "LV": 37,
@@ -61,7 +58,8 @@
     "ES": 24,
     "SE": 27,
     "CH": 23,
-    "GB": 37
+    "GB": 37,
+    "IS": 18
   },
   "lage": {
     "LU": {
@@ -158,7 +156,8 @@
     }
   },
   "rand": 70,
-  "legendeOben": 905,
-  "unterBreite": 230,
-  "serie": "Europa im Vergleich · 3/5"
+  "serie": "Europa im Vergleich · 3/5",
+  "ohneZahl": [
+    "IS"
+  ]
 }

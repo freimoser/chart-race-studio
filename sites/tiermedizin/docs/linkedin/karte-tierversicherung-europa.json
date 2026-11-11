@@ -1,9 +1,8 @@
 {
   "art": "karte",
   "titel": "Versicherte Hunde und Katzen",
-  "untertitel": "Anteil mit Kranken- oder OP-Versicherung 2024",
-  "unterBreite": 225,
-  "quelle": "Quelle: eigene Berechnung aus Zahlen der Versicherer und Verbände (u. a. GDV, ABI, Finans Norge, UNESPA) geteilt durch den Tierbestand (FEDIAF, PDSA, IVH/ZZF). * nur Halterbefragungen oder Schätzungen ohne Zählung, vermutlich zu hoch: Wo beides vorliegt, liegen Befragungen 2- bis 3-mal über den Zahlen der Versicherer. Grau: keine oder widersprüchliche Daten",
+  "untertitel": "2024, Anteil in Prozent",
+  "quelle": "Anteil der Hunde und Katzen mit Kranken- oder OP-Versicherung. Quelle: Zahlen der Versicherer (u. a. GDV, ABI, Finans Norge, UNESPA) ÷ Tierbestand (FEDIAF, PDSA, IVH/ZZF), berechnet. * nur Umfragen oder Schätzungen, vermutlich zu hoch: Umfragen liegen 2- bis 3-mal über den Versicherer-Zahlen. Grau: keine oder widersprüchliche Daten",
   "hervor": "DE",
   "stufen": [
     {
@@ -23,7 +22,6 @@
       "name": "ab 30 %"
     }
   ],
-  "grau": [],
   "werte": {
     "SE": 72,
     "DK": 42,
@@ -145,6 +143,5 @@
     }
   },
   "rand": 70,
-  "legendeOben": 905,
   "serie": "Europa im Vergleich · 1/5"
 }

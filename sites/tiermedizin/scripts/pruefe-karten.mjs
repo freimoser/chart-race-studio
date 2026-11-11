@@ -16,7 +16,7 @@ for (const datei of process.argv.slice(2)) {
   const ids = new Set(geo.features.map((f) => f.properties.id))
   for (const id of Object.keys(F.werte)) if (!ids.has(id)) fehler.push(`${id}: nicht in den Grenzen`)
   for (const f of geo.features) {
-    const id = f.properties.id; if (F.werte[id] == null) continue
+    const id = f.properties.id; if (F.werte[id] == null || F.ohneZahl?.includes(id)) continue
     const L = F.lage?.[id] ?? {}
     const teile = f.geometry.coordinates.map((c) => ({ type: 'Polygon', coordinates: c }))
     const gross = teile.reduce((a, b) => (pfad.area(b) > pfad.area(a) ? b : a))

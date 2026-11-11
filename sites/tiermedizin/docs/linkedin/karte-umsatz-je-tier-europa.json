@@ -1,9 +1,8 @@
 {
   "art": "karte",
   "titel": "Tierarzt-Umsatz je Hund und Katze",
-  "untertitel": "2024, in Euro je Tier",
-  "unterBreite": 260,
-  "quelle": "Quelle: Eurostat (sbs_ovw_act, M75 Veterinärwesen) und FEDIAF Facts & Figures 2026, 2024; Umsatz ÷ (Hunde + Katzen) berechnet. Der Umsatz enthält auch Nutztier- und Pferdepraxis, daher nur eine Annäherung. Grau: keine Daten (u. a. Großbritannien) oder nicht vergleichbar (Irland). Island (557 €) nicht beschriftet",
+  "untertitel": "2024, Euro je Hund und Katze",
+  "quelle": "Umsatz der Tierarztpraxen und -kliniken je Hund und Katze, inklusive Nutztierpraxis, daher Annäherung. Quelle: Eurostat (sbs_ovw_act, M75) ÷ FEDIAF Facts & Figures 2026, berechnet. Grau: keine Daten (u. a. Großbritannien) oder nicht vergleichbar (Irland). Island (557 €) nicht beschriftet",
   "hervor": "DE",
   "stufen": [
     {
@@ -23,8 +22,6 @@
       "name": "ab 300 €"
     }
   ],
-  "grau": [],
-  "grauText": "keine Daten",
   "werte": {
     "AT": 248,
     "BA": 127,
@@ -56,7 +53,8 @@
     "RS": 121,
     "SE": 402,
     "SI": 134,
-    "SK": 44
+    "SK": 44,
+    "IS": 557
   },
   "lage": {
     "LU": {
@@ -154,6 +152,8 @@
     }
   },
   "rand": 70,
-  "legendeOben": 910,
-  "serie": "Europa im Vergleich · 2/5"
+  "serie": "Europa im Vergleich · 2/5",
+  "ohneZahl": [
+    "IS"
+  ]
 }
