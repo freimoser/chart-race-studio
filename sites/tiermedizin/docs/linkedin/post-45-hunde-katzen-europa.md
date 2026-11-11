@@ -4,11 +4,11 @@
 **Stand:** 09.11.2026. Post 45 `geplant`, Artikel `45-hunde-katzen-europa.md`. Nach dem Posten: `status: 'veroeffentlicht'`, `publishedOn`, `linkedInUrl`.
 **Zahlen:** FEDIAF Facts & Figures 2026 (Bestand 2024), Eurostat tps00001; `data/raw/ds32-heimtiere-europa.json`.
 
-**Serie:** Europa im Vergleich, Teil 3 von 5 (im Bild als „3/5“; Reihenfolge nach Spannung, 11.11.2026).
+**Serie:** Europa im Vergleich, Teil 3 von 5 (im Bild als „Teil 3 von 5“; Reihenfolge nach Spannung, 11.11.2026).
 
 ---
 
-🇪🇺 Europa im Vergleich, Teil 3/5
+🇪🇺 Europa im Vergleich, Teil 3 von 5
 
 54 Hunde und Katzen auf 100 Einwohner. So viele hat Ungarn, mehr als jedes andere Land in Europa. 🐕🐈
 

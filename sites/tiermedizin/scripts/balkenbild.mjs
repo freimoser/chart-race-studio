@@ -12,7 +12,7 @@
  * Dokument), die PNGs für Instagram. Eine Folie mit `aus: "<datei>.json"` übernimmt ein vorhandenes Einzelbild, so
  * stehen die Werte nur an einer Stelle.
  *
- * `serie` (alle Arten): Kennzeile über dem Titel, z. B. „Europa im Vergleich · 1/5“.
+ * `serie` (alle Arten): Kennzeile über dem Titel, z. B. „Europa im Vergleich · Teil 1 von 5“ (dunkles Schild); im Karussell daneben „Bild x von y“ (helles Schild).
  * Arten (`art`):
  *   balken     (Standard) titel, untertitel, jahr, quelle, einheit, max, balken [{ name, wert }]
  *   gestapelt  wie balken, dazu teile [Name je Abschnitt], balken [{ name, zusatz, werte [je Abschnitt] }]
@@ -98,18 +98,19 @@ h1 { font-size: 58px; line-height: 1.1; font-weight: 750; letter-spacing: -0.02e
 .band { flex-shrink: 0; height: 112px; background: #0f4c5c; color: #fff; padding: 0 64px; display: flex; align-items: center; justify-content: space-between; border-top: 8px solid #e36414; }
 .marke { display: flex; align-items: center; gap: 18px; font-size: 32px; font-weight: 700; letter-spacing: -0.01em; }
 .adresse { font-size: 30px; font-weight: 600; color: #9adbcf; }
-.serie { font-size: 22px; font-weight: 750; color: #e36414; letter-spacing: .05em; text-transform: uppercase; margin-bottom: 12px; }
+.serie { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; font-size: 24px; font-weight: 750; line-height: 1; }
+.serie span { padding: 9px 14px 10px; border-radius: 7px; background: #0f4c5c; color: #fff; }
+.serie span.bild { background: #fff; color: #0f4c5c; box-shadow: inset 0 0 0 2px #0f4c5c; }
 .karte .inhalt { position: relative; padding: 56px 56px 28px; }
 .karte .inhalt > *:not(svg) { position: relative; }
 .karte svg.land { position: absolute; inset: 0; }
-.karte .serie { margin-bottom: 14px; }
 .karte h1 { font-size: 54px; max-width: 420px; }
 .karte .unter { font-size: 25px; max-width: 200px; margin-top: 14px; color: #3d4248; }
 .karte .inhalt > .legende { position: absolute; left: 56px; top: 910px; margin: 0; gap: 12px; font-size: 27px; }
 .karte .legende span { width: 44px; height: 30px; }
 .karte .quelle { color: #4d555e; font-size: 20px; background: rgba(255,255,255,.88); margin: auto -56px -28px; padding: 14px 56px 18px; }`
 
-const kopf = (F) => `${F.serie ? `<div class="serie">${esc(F.serie)}</div>` : ''}<div class="kopf"><h1>${esc(F.titel)}</h1>${F.jahr ? `<div class="jahr">${esc(F.jahr)}</div>` : ''}</div>
+const kopf = (F) => `${F.serie ? `<div class="serie"><span>${esc(F.serie)}</span>${F.bild ? `<span class="bild">${esc(F.bild)}</span>` : ''}</div>` : ''}<div class="kopf"><h1>${esc(F.titel)}</h1>${F.jahr ? `<div class="jahr">${esc(F.jahr)}</div>` : ''}</div>
 ${F.untertitel ? `<p class="unter">${esc(F.untertitel)}</p>` : ''}`
 
 const ARTEN = {
@@ -201,8 +202,8 @@ const seite = (F, nr = 0, gesamt = 0) => {
   const art = ARTEN[F.art ?? 'balken']
   if (!art) throw new Error(`Unbekannte Art „${F.art}“`)
   if (!F.quelle) throw new Error(`Folie „${F.titel}“ ohne Quelle – kein Bild ohne Quelle im Bild.`)
-  return `<section class="seite${gesamt > 1 && !inKennzeile(F) ? ' mit-reihe' : ''}${F.art === 'karte' ? ' karte' : ''}"><div class="inhalt">
-${gesamt > 1 && !inKennzeile(F) ? reihe(nr, gesamt) : ''}${art(inKennzeile(F) && gesamt > 1 ? { ...F, serie: [F.serie, `Bild ${nr} von ${gesamt}`].filter(Boolean).join(' · ') } : F)}
+  return `<section class="seite${gesamt > 1 && F.art !== 'karte' ? ' mit-reihe' : ''}${F.art === 'karte' ? ' karte' : ''}"><div class="inhalt">
+${gesamt > 1 && !inKennzeile(F) ? reihe(nr, gesamt) : ''}${art(inKennzeile(F) && gesamt > 1 ? { ...F, serie: F.serie ?? ' ', bild: `Bild ${nr} von ${gesamt}` } : F)}
 <p class="quelle">${esc(F.quelle)} · ${F.art === 'text' ? '' : 'Grafik: '}${esc(L.operator)}</p>
 </div>
 <div class="band"><div class="marke">${LOGO}${esc(L.siteName)}</div><div class="adresse">${ADRESSE}</div></div></section>`

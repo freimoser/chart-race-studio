@@ -8,7 +8,7 @@
 
 ---
 
-🇪🇺 Europa im Vergleich, Teil 4/5
+🇪🇺 Europa im Vergleich, Teil 4 von 5
 
 2,01 Millionen. So viele Hunde, Katzen und andere Tiere sind in Deutschland krankenversichert. 2019 waren es 845.000. 🐕🐈📈
 

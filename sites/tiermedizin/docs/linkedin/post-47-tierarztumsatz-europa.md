@@ -4,11 +4,11 @@
 **Stand:** 09.11.2026. Post 47 `geplant`, Artikel `47-tierarzt-umsatz-europa.md`. Nach dem Posten: `status: 'veroeffentlicht'`, `publishedOn`, `linkedInUrl`.
 **Zahlen:** Eurostat sbs_ovw_act (M75) und tps00001, `data/raw/ds31-tierarztumsatz-europa.json`; Gegenprobe Destatis 73311-0002 (`ds17`).
 
-**Serie:** Europa im Vergleich, Teil 5 von 5 (im Bild als „5/5“; Reihenfolge nach Spannung, 11.11.2026).
+**Serie:** Europa im Vergleich, Teil 5 von 5 (im Bild als „Teil 5 von 5“; Reihenfolge nach Spannung, 11.11.2026).
 
 ---
 
-🇪🇺 Europa im Vergleich, Teil 5/5
+🇪🇺 Europa im Vergleich, Teil 5 von 5
 
 78 Euro. So viel setzen die Tierarztpraxen in Deutschland je Einwohner um. 🇪🇺🐾
 
