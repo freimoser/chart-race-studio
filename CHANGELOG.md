@@ -4,6 +4,10 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Favicon nicht mehr abgeschnitten (11.11.2026)
+
+- **Kern, betrifft beide Seiten (Fehler):** `scripts/gen-icons.mjs` las beim abgerundeten Rechteck `rx=` als `x=`, die PNG-Icons (32, 96, Apple-Touch, ICO) waren links abgeschnitten. Für beide Seiten neu erzeugt (Humanmedizin mit OK des Nutzers vom 11.11.2026); `check:launch` vergleicht jetzt die Form des 96er-Icons mit dem SVG und blockiert den Deploy, wenn sie abweicht.
+
 ### SEO-Prüfung umgesetzt (09.11.2026)
 
 - **Kern, betrifft beide Seiten:** Standbilder der eingebetteten Grafiken – `scripts/grafik-standbilder.mjs` fotografiert das Schlussbild jeder Grafik (16:9 und 4:5, WebP) nach `sites/<seite>/public/grafik-bild/`; `build-artikel.mjs` legt es mit Alternativtext (letzter Stand, größte Werte) unter das iframe. Ohne Bilder bleibt alles wie bisher. `check:content` meldet Grafiken ohne Standbild als Hinweis. Für Humanmedizin: `SITE=humanmedizin npm run build && npm run preview`, dann `SITE=humanmedizin node scripts/grafik-standbilder.mjs`, neu bauen.
