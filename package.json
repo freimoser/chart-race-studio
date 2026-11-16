@@ -36,7 +36,7 @@
     "gifenc": "^1.0.3",
     "lucide-react": "^1.45.0",
     "mp4-muxer": "^5.2.2",
-    "papaparse": "^5.7.0",
+    "papaparse": "^5.7.1",
     "racing-bars": "^0.5.1",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
