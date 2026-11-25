@@ -4,6 +4,11 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Standbilder: Bildbeschreibung auch auf dem Handy (25.11.2026)
+
+- **Kern, betrifft beide Seiten:** Das schmale Standbild (4:5, unter 560 px sichtbar) hatte `alt=""`; die Beschreibung trug nur das breite Bild, das auf dem Handy per `display:none` verschwindet. Damit fehlte sie genau dort, wo Google seit Mobile-First indexiert. `scripts/build-artikel.mjs` gibt jetzt beiden Bildern denselben Text (das CSS zeigt immer nur eins, Screenreader lesen ihn einmal). Gefunden im lokalen SEO-Audit der Humanmedizin.
+- **Für den Tiermedizin-Chat:** Handgeschriebene Seiten mit Standbild ziehen das nicht automatisch mit – `sites/tiermedizin/seiten/artikel/tierarztketten-deutschland.html` hat am schmalen Bild noch `alt=""`.
+
 ### Favicon nicht mehr abgeschnitten (11.11.2026)
 
 - **Kern, betrifft beide Seiten (Fehler):** `scripts/gen-icons.mjs` las beim abgerundeten Rechteck `rx=` als `x=`, die PNG-Icons (32, 96, Apple-Touch, ICO) waren links abgeschnitten. Für beide Seiten neu erzeugt (Humanmedizin mit OK des Nutzers vom 11.11.2026); `check:launch` vergleicht jetzt die Form des 96er-Icons mit dem SVG und blockiert den Deploy, wenn sie abweicht.

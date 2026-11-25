@@ -63,3 +63,17 @@ Trailing Slash, Header) erst danach.
 - **Datenfehler gefunden und behoben:** Zulassungsstand 19.10. statt 21.10.; „126 Systeme“ statt „126 Zeilen“; zwei tote KBV-Links.
 - **Neue Prüfungen:** Säulenseiten-Tabellen und Fachgruppen gegen Rohdaten, Startseiten-FAQ gegen Artikel, Glossar-Anker, Datenschutz-Pflichtangaben, Mobilprüfung gegen fremde Server.
 - **Offen (Entscheidung Thomas):** Push, Datenlizenz (`datenLizenz` im Profil), Artikel vor dem LinkedIn-Post online stellen, Livegang (Domain, Repo, Deploy-Key) – erst danach Search Console und Live-Prüfungen.
+## Lokales SEO-Audit vor dem Livegang (25.11.2026)
+
+Gegen den Produktions-Build (`VITE_SITE_URL=https://humanmedizin-in-zahlen.org`, `npm run preview`), mit den Werkzeugen
+des Plugins claude-seo 2.5.0 (parse_html, content_quality; agentic_check sperrt localhost und läuft nach dem Livegang).
+
+| Bereich | Befund | Ergebnis |
+|---|---|---|
+| Technik (12 Seiten) | Titel 34–55, Beschreibungen 69–149 Zeichen; je eine h1; Canonical auf allen indexierbaren Seiten; Rechtstexte, 404, Studio, Export `noindex`; og:image überall | in Ordnung |
+| Strukturierte Daten | Article + Dataset (CSV-Download) + BreadcrumbList; WebSite/DataCatalog mit Person (sameAs LinkedIn, Tiermedizin), DefinedTermSet im Glossar | in Ordnung; **Dataset ohne Lizenz** (Entscheidung Nutzer, Tiermedizin nutzt CC BY 4.0); FAQPage bleibt (seit 7.5.2026 kein Rich Result mehr, schadet nicht) |
+| Bilder | schmales Standbild (Handy) mit `alt=""` – Beschreibung fehlte im Mobile-First-Index | **behoben im Kern** (build-artikel.mjs, Säulenseite) |
+| Inhalt | content_quality 85–96, keine Füllwörter, keine KI-Muster; Übersicht nur 140 Wörter, weil erst ein Artikel live ist | **Entscheidung Nutzer:** Artikel 2–12 vorab online |
+| GEO | robots.txt erlaubt alle Crawler, Sitemap verlinkt; llms.txt und llms-full.txt vorhanden | in Ordnung |
+| Leistung | Startseite rund 70 KB (Standbild 33, Schrift 24, CSS 7), Grafiken per `loading="lazy"` | in Ordnung |
+| Mobil | 320 und 360 px ohne Überlauf | in Ordnung |

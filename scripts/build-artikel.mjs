@@ -203,12 +203,15 @@ function standbildAlt(ds) {
   const einheit = ds.einheit && !/^(anzahl|personen)$/i.test(ds.einheit) ? ` ${ds.einheit}` : ''
   return `Grafik: ${ds.titel}. Stand ${letzte[0]}: ${werte.map(([h, v]) => `${h} ${v.toLocaleString('de-DE')}${einheit}`).join(', ')}`
 }
+// Beide Bilder tragen denselben Alternativtext: Das CSS blendet je nach Breite eines per display:none aus (article.css),
+// Screenreader lesen also nur eins. Mit alt="" am schmalen Bild fehlte die Beschreibung genau auf dem Handy – dort, wo
+// Google seit Mobile-First indexiert (lokales SEO-Audit 25.11.2026).
 function standbild(g, tiefe) {
   const name = `${g.id}${g.art ? `-${g.art}` : ''}`
   const da = (f) => fs.existsSync(path.join(PUBLIC, 'grafik-bild', `${name}-${f}.webp`))
   if (!da('169') || !da('45')) return ''
   const alt = esc(standbildAlt(DATENSAETZE[g.id]))
-  return `<img class="standbild breit" src="${tiefe}grafik-bild/${name}-169.webp" alt="${alt}" width="1056" height="594" loading="lazy" decoding="async" /><img class="standbild schmal" src="${tiefe}grafik-bild/${name}-45.webp" alt="" width="800" height="1000" loading="lazy" decoding="async" />`
+  return `<img class="standbild breit" src="${tiefe}grafik-bild/${name}-169.webp" alt="${alt}" width="1056" height="594" loading="lazy" decoding="async" /><img class="standbild schmal" src="${tiefe}grafik-bild/${name}-45.webp" alt="${alt}" width="800" height="1000" loading="lazy" decoding="async" />`
 }
 function grafikFigur(g, { tiefe, csv, hinweis }) {
   const ds = DATENSAETZE[g.id]
