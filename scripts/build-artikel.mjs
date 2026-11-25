@@ -35,7 +35,9 @@ const BASIS = (process.env.VITE_SITE_URL ?? '').replace(/\/$/, '')
 // Autor: eine Person mit eigener Seite und Profil, damit Suchmaschinen sie zuordnen können (E-E-A-T).
 // @id wie auf „Über das Projekt“: Antwortmaschinen führen Autor, Herausgeber und Profilseite so als eine Person zusammen.
 const AUTOR_ID = `${BASIS || ''}/ueber-das-projekt.html#${L.operator.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ß/g, 'ss').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`
-const AUTOR = { '@type': 'Person', '@id': AUTOR_ID, name: L.operator, url: `${BASIS || ''}/ueber-das-projekt.html`, sameAs: PROFIL.autor.sameAs, ...PROFIL.autor.extra }
+// Die vollständige Person (Beschreibung, Fachgebiete, Beruf) steht einmal auf ueber-das-projekt.html; Artikel,
+// Datensätze und Katalog verweisen per @id darauf, statt sie jedes Mal auszuschreiben (SEO-Audit 25.11.2026).
+const AUTOR = { '@type': 'Person', '@id': AUTOR_ID, name: L.operator, url: `${BASIS || ''}/ueber-das-projekt.html`, sameAs: PROFIL.autor.sameAs }
 const PUBLIC = sitePfad('public')
 const DATEN_ZIEL = path.join(PUBLIC, 'daten')
 

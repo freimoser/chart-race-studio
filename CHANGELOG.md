@@ -15,6 +15,7 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ### Banner und Überschriften auf dem Handy (25.11.2026)
 
+- **Kern, betrifft beide Seiten:** Tippziele der Navigation und der Brotkrumen auf dem Handy mindestens 44 px (vorher 36). Schema: Artikel, Datensätze und Katalog verweisen auf die Person nur noch per `@id` (Name, URL, sameAs); die vollständige Person mit Beschreibung, Beruf und – bei der Humanmedizin – `worksFor` steht auf `ueber-das-projekt.html` und im WebSite-Block der Startseite (`PROFIL.autor.extra`).
 - **Kern, betrifft beide Seiten:** Einwilligungsbanner unter 640 px kompakter (kleinere Schrift, weniger Abstand, Knöpfe mindestens 44 px hoch); es deckte auf dem Handy bis zu 30 % des Bildschirms ab, jetzt rund 20 %. Text unverändert. Überschriften trennen kurze Wörter nicht mehr („Euro-pa“): `hyphenate-limit-chars: 10 6 4` in `src/article.css`; lange Komposita werden weiter getrennt, `check:mobil` ohne Überlauf auf beiden Seiten.
 
 ### Standbilder: Bildbeschreibung auch auf dem Handy (25.11.2026)
