@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, FRAUENANTEIL, ANERKENNUNGEN, MEDIZINSTUDIUM, PRAXISNETZE, TSS, EARZTBRIEF_MONAT, EREZEPT_MONAT, EREZEPT_QUOTE, KIM_NUTZUNG, WEITERBILDUNG_AM, APOTHEKEN, EAU_MONAT, AU_FAELLE, EPA_NUTZUNG, DIGITALE_ANGEBOTE, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
+import { AERZTE_PRAXISFORM, LABOR_AERZTE, LABOR_HONORAR, MVZ_ANZAHL, MVZ_STATUS, MVZ_TYPEN, EINZELPRAXEN, FRAUENANTEIL, ANERKENNUNGEN, MEDIZINSTUDIUM, PRAXISNETZE, TSS, EARZTBRIEF_MONAT, EREZEPT_MONAT, EREZEPT_QUOTE, KIM_NUTZUNG, WEITERBILDUNG_AM, APOTHEKEN, PVS_1991, EAU_MONAT, AU_FAELLE, EPA_NUTZUNG, DIGITALE_ANGEBOTE, LABORDATEN_PB, ARZTBRIEF_PB, PVS_ARZT, PVS_ARZT_2007, PVS_ALLGEMEIN, PVS_INTERNISTEN, PVS_AUFSTEIGER, PVS_HERSTELLER, PVS_KIS, PVS_PSYCHO, PVS_SALDO } from './data.ts'
 
 /**
  * Beispiel-Datensätze von „Humanmedizin in Zahlen“, alle mit recherchierten Zahlen.
@@ -26,6 +26,21 @@ const LEGENDE = [
 const farbenFuer = (headers: string[]) => Object.fromEntries(headers.slice(1).map((n) => [n, GRUPPE[n] ?? GRAU]))
 const farben = farbenFuer(PVS_ARZT.headers)
 
+// Langfassung ab 1991: Farbe nach dem Eigentümer von heute, über die Übernahmen hinweg (CompuMED mit ARCOS, DORSYMED,
+// SYSMED-KDV und M1 sowie Data Vital mit DAVID gingen in CompuGroup Medical auf; DOCexpert mit LEISYS und SISYMED, MCS
+// mit S + N sowie promedico mit easymed in medatixx). Belege: recherche/pvs-kbv-historie.md, Nachtrag 2.
+const GRUPPE_1991: Record<string, string> = {
+  MEDISTAR: BLAU, TURBOMED: BLAU, ALBIS: BLAU, 'CGM M1 PRO': BLAU, ARCOS: BLAU, DORSYMED: BLAU, 'SYSMED-KDV': BLAU, DAVID: BLAU,
+  'DOCexpert / x.comfort': GRUEN, 'MCS-INA': GRUEN, 'x.isynet': GRUEN, 'x.concept': GRUEN, LEISYS: GRUEN, SISYMED: GRUEN, 'S + N': GRUEN, easymed: GRUEN, medatixx: GRUEN,
+  'Medical Office': ORANGE, tomedo: ORANGE, T2med: ORANGE,
+}
+const LEGENDE_1991 = [
+  { label: 'heute CompuGroup Medical', color: BLAU },
+  { label: 'heute medatixx', color: GRUEN },
+  { label: 'Medical Office, tomedo, T2med', color: ORANGE },
+  { label: 'übrige', color: GRAU },
+]
+
 export const SAMPLES: SampleDataset[] = [
   {
     id: 'pvs-installationen',
@@ -47,6 +62,26 @@ export const SAMPLES: SampleDataset[] = [
     headers: PVS_ARZT.headers,
     rows: PVS_ARZT.rows,
     suggested: { chartType: 'bar', topN: 12, decimals: 0, colors: farben, legende: LEGENDE, labelsPosition: 'outside' },
+  },
+  {
+    id: 'pvs-installationen-1991',
+    erstellt: '2026-11-25', geprueft: '2026-11-25',
+    category: 'software',
+    title: 'Praxissoftware in Arztpraxen seit 1991',
+    subtitle: 'Installationen je System, Jahresende; bis 1996 aus KBV-Anteilen und EDV-Quote modelliert, danach KBV',
+    source: 'Quelle: KBV (EDV-Statistik im Dt. Ärzteblatt 1989–1998, Installationsstatistik ab 1997); 69 % der Werte gerechnet',
+    sourceUrl: 'https://www.aerzteblatt.de/pdf/95/12/s8-12.pdf',
+    unit: 'Installationen',
+    description: 'Von Pitney Bowes und MCS zu MEDISTAR, TURBOMED und den Neuen: 35 Jahre Praxissoftware, bis 1996 modelliert aus den KBV-Statistiken der 90er.',
+    dataInfo: [
+      'Eine Schätzung, kein Messwert: Vor 1997 hat die KBV keine Installationszahlen je System veröffentlicht. Belegt sind (KBV-Prüfstelle über das Deutsche Ärzteblatt) die EDV-Quote je Jahr (Anteil der Kassenärzte, die per Computer abrechnen: 16,5 % Ende 1991, 36 % Ende 1993, 66,99 % Ende 1997), die Anteile der Anbieter am Bestand 1989 (Top 60) und 1990/1991 (Top 5) sowie die Anteile an den Verkäufen 1992 (Top 15), 1993 (Top 5, 12.184 Verkäufe) und 1994 (Top 20, 19.668 Verkäufe). Für 1995 und 1996 gibt es keine Anbieterzahlen.',
+      'Gerechnet, 1991–1996 (alle Werte): Gesamtbestand = EDV-Quote × Vertragsärzte × Installationen je EDV-Arzt. Vertragsärzte = ambulant tätige Ärzte laut Bundesärztekammer × 0,944 (Verhältnis Ende 1993, als 38.336 EDV-Ärzte 36 % waren); Installationen je EDV-Arzt linear zwischen 0,882 (September 1989: 5.761 Anlagen, 6.533 Ärzte) und dem Wert 1997. Ergebnis: rund 13.800 Installationen 1991, 34.100 (1993), 51.300 (1994), 63.600 (1996), belegt 69.252 Ende 1997. Je System: 1991 Anteil × Bestand; 1992–1994 Vorjahresbestand plus Anteil an den Verkäufen, auf den Gesamtbestand skaliert; 1995/1996 Anteil linear zwischen 1994 und 1997.',
+      'Gerechnet, 1997–2006: KBV-Werte je System liegen für Ende 1997, Mitte 1998, Anfang 1999, Mitte 2000, Mitte 2001, Ende 2005 (Top 20, Dissertation Kersting) und Ende 2007 vor; die Jahresenden dazwischen sind linear gerechnet. DOS- und Windows-Versionen eines Programms (MEDISTAR, TURBOMED, ALBIS, DOCexpert → DOCcomfort/x.comfort, Quincy PCNet → Quincy Win) sind zusammengefasst. Ab 2007 die Werte des Datensatzes „Praxissoftware seit 2007“. Insgesamt sind 69 % der Werte gerechnet: 1991–1996 alle, 1997–2006 87 %, ab 2007 44 %. Jeder Wert mit Methode in data/raw/pvs-gerechnet.json.',
+      'Annahmen, die man kennen sollte: Wer nicht in einer Liste steht, bekommt die halbe Listengrenze (1989: 0,1 %; Verkäufe 1992: 0,65 %, 1994: 0,7 %; 1997: 52 Installationen). Der Anbieter Siemens von 1989 ist SISYMED, dazu kamen 1991 die Nixdorf-Kunden. Pitney Bowes, Compudent und Tappeser stehen 1997 nicht mehr unter den 60 größten Systemen. Gezählt wird wie heute je Abrechnungsnummer, nicht je Praxis; ohne Psychotherapie- und Klinik-Systeme. 1991 enthält die Quote die neuen Länder mit nur 5 %.',
+    ],
+    headers: PVS_1991.headers,
+    rows: PVS_1991.rows,
+    suggested: { chartType: 'bar', topN: 15, decimals: 0, colors: Object.fromEntries(PVS_1991.headers.slice(1).map((n) => [n, GRUPPE_1991[n] ?? GRAU])), legende: LEGENDE_1991, labelsPosition: 'outside', animationSec: 50 },
   },
   {
     id: 'pvs-installationen-2007',

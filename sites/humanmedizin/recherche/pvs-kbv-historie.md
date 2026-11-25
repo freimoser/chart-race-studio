@@ -598,3 +598,35 @@ Laut KBV-Installationsstatistik (Stand 31.12.2014 und 31.12.2025, Id 721) ist de
 der Anbieter nicht nachgeprüft; ob DAVID damals zu Data Vital/CGM gehörte und wann es zu Medat kam, ist offen. Im Race
 ab 2007 heißt es deshalb nur „DAVID“ und ist grau (Eigentümer 2025). In `pvs-hersteller` war DAVID nie enthalten
 (unter 500 Installationen seit 2013).
+
+## Nachtrag 3 (25.11.2026): Race ab 1991 – Quellen und Modell
+
+Wunsch des Nutzers: Praxissoftware seit 1991, „jegliche Quelle, rechne es zusammen, belege gut“. Datensatz
+`pvs-installationen-1991`, Rohdaten `data/raw/pvs-frueh-1989-1997.csv`, Rechenweg im Generator (Abschnitt
+„Praxissoftware seit 1991“), jeder Wert mit Methode in `pvs-gerechnet.json`.
+
+**Neue Quellen (alle KBV-Prüfstelle, Gilbert Mohr, im Deutschen Ärzteblatt, abgerufen 25.11.2026):**
+
+| Fundstelle | Inhalt |
+|---|---|
+| DÄ 1989 A-3621 <https://www.aerzteblatt.de/pdf/86/47/a3621.pdf> | 30.09.1989: 5.761 EDV-Anlagen, 6.533 EDV-Ärzte (8,5 %); Top 60 Anbieter in % (MCS 13,9, Pitney 11,9, Medistar 9,2, Arcos 5,2, Compudent 5,2, Siemens 5,0, Nixdorf 4,2 …) |
+| DÄ 1992 A-846 <https://www.aerzteblatt.de/pdf/89/10/a846.pdf> | Jahresrückblick '91: Top 5 Anbieter 1989/90/91 (Medistar 9,7/14,1/17,4; MCS 14,0/12,0/10,2; Pitney Bowes 12,0/9,6/8,2; Sisymed 5,2/6,0/7,5; Arcos 5,7/5,7/5,3); Medias-Kunden (ehem. Nixdorf) jetzt bei Sisymed; Quote alte Länder 1982–1991 |
+| DÄ 1992 A-3935 <https://www.aerzteblatt.de/pdf/89/46/a3935.pdf> | Verkaufsanteile 1992 (Top 15), Quote alle KVen 14,1/16,5/23 % (1990–92), alte/neue Länder getrennt; 7.000–8.000 Neuinstallationen 1992 erwartet |
+| DÄ 1994 A-683 <https://www.aerzteblatt.de/pdf/91/10/a683.pdf> | Verkäufe 1993: 12.184, Top 5 (Medistar 1.744, Doc Expert 1.306, MCS 1.228, Arcos 659, Frey 647) |
+| DÄ 1994 A-3039 <https://www.aerzteblatt.de/pdf/91/44/a3039.pdf> | Ende 1993: 38.336 Vertragsärzte rechnen per Computer ab (rund 36 %) |
+| DÄ 1995 A-864 <https://www.aerzteblatt.de/pdf/92/12/a864.pdf> | Verkaufsanteile 1994 (Top 20, 19.668 Verkäufe); Quote 52,92 % zum Jahreswechsel 1994/95; medev übernimmt Arcos zum 01.01.1995 |
+| DÄ PraxisComputer 2/1998 <https://www.aerzteblatt.de/pdf/95/12/s8-12.pdf> | EDV-Quote 1986–1997 (1991 20,3 · 1992 24 · 1993 36 · 1994 53 · 1995 59 · 1996 62,9 · 1997 66,99 %), Top 20 Anbieter und Systeme Ende 1997 |
+| KBV-Grunddaten 2009 <http://www.thorwart-online.de/KBV-Grunddaten%202009.pdf> | ambulant tätige Ärzte (BÄK) 1991–1997, Netto-Zugang Vertragsärzte 1994–1996 |
+
+**Nicht gefunden:** Anbieter- oder Systemzahlen für 1995 und 1996 (DÄ-Inhaltsverzeichnisse 1993–1997 maschinell
+durchsucht; Beilage PraxisComputer online erst ab 1998). Eine amtliche Reihe der Vertragsärzte 1991–1997.
+
+**Widersprüche:** Quote Ende 1991: 16,5 % (alle KVen, DÄ 1992 A-3935), 20,3 % bzw. 20,7 % (alte Länder) – verwendet
+16,5 %, weil der Nenner gesamtdeutsch ist. DÄ 1995 A-864 Abb. 1 hat die Achse um ein Jahr verschoben (passt nicht zu
+36 % Ende 1993) – verwendet die Reihe von 1998. Gegenprobe Vertragsärzte: aus dem Verhältnis 0,944 folgen 1994–1996
+Werte, die 0,4–1,6 % neben der Fortschreibung mit den KBV-Netto-Zugängen liegen. Installationen je EDV-Arzt: 0,882
+(1989) und 0,898 (1997, gerechnet) – das Verhältnis ist stabil, das stützt den Ansatz.
+
+**Ergebnis Gesamtbestand (gerechnet):** 1991 13.757 · 1992 20.991 · 1993 34.074 · 1994 51.318 · 1995 58.504 ·
+1996 63.576 · 1997 69.252 (belegt). 69 % aller Werte des Datensatzes sind gerechnet (1991–1996 alle, 1997–2006 87 %,
+ab 2007 44 %).

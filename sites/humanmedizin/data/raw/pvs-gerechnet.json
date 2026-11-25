@@ -2752,5 +2752,2098 @@
    "wert": 11219,
    "methode": "linear zwischen 2015 und 2020 (ABDA-Jahrbuch 2025)"
   }
- ]
+ ],
+ "pvs-installationen-1991": [
+  {
+   "jahr": 1991,
+   "system": "ALBIS",
+   "wert": 52,
+   "methode": "KBV-Anteil 1989, auf den Rest neben den Top 5 von 1991 skaliert, × Gesamtbestand"
+  },
+  {
+   "jahr": 1992,
+   "system": "ALBIS",
+   "wert": 99,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "ALBIS",
+   "wert": 305,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "ALBIS",
+   "wert": 780,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "ALBIS",
+   "wert": 1256,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "ALBIS",
+   "wert": 1764,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1998,
+   "system": "ALBIS",
+   "wert": 2737,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1999,
+   "system": "ALBIS",
+   "wert": 3071,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2000,
+   "system": "ALBIS",
+   "wert": 3625,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2001,
+   "system": "ALBIS",
+   "wert": 4345,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2002,
+   "system": "ALBIS",
+   "wert": 5006,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2003,
+   "system": "ALBIS",
+   "wert": 5667,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2004,
+   "system": "ALBIS",
+   "wert": 6328,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2006,
+   "system": "ALBIS",
+   "wert": 7230,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1991,
+   "system": "ARCOS",
+   "wert": 729,
+   "methode": "KBV-Anteil am Bestand 1991 × gerechneter Gesamtbestand"
+  },
+  {
+   "jahr": 1992,
+   "system": "ARCOS",
+   "wert": 1098,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "ARCOS",
+   "wert": 1804,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "ARCOS",
+   "wert": 2512,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "ARCOS",
+   "wert": 2680,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "ARCOS",
+   "wert": 2713,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1998,
+   "system": "ARCOS",
+   "wert": 2645,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1999,
+   "system": "ARCOS",
+   "wert": 2488,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2000,
+   "system": "ARCOS",
+   "wert": 2346,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2001,
+   "system": "ARCOS",
+   "wert": 2117,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2002,
+   "system": "ARCOS",
+   "wert": 1764,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2003,
+   "system": "ARCOS",
+   "wert": 1411,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2004,
+   "system": "ARCOS",
+   "wert": 1058,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2005,
+   "system": "ARCOS",
+   "wert": 706,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2006,
+   "system": "ARCOS",
+   "wert": 353,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1991,
+   "system": "CGM M1 PRO",
+   "wert": 0,
+   "methode": "vor Markteintritt: 0"
+  },
+  {
+   "jahr": 1992,
+   "system": "CGM M1 PRO",
+   "wert": 0,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "CGM M1 PRO",
+   "wert": 0,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "CGM M1 PRO",
+   "wert": 0,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "CGM M1 PRO",
+   "wert": 0,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "CGM M1 PRO",
+   "wert": 0,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1997,
+   "system": "CGM M1 PRO",
+   "wert": 213,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1998,
+   "system": "CGM M1 PRO",
+   "wert": 213,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1999,
+   "system": "CGM M1 PRO",
+   "wert": 213,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2000,
+   "system": "CGM M1 PRO",
+   "wert": 582,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2001,
+   "system": "CGM M1 PRO",
+   "wert": 1320,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2002,
+   "system": "CGM M1 PRO",
+   "wert": 2058,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2003,
+   "system": "CGM M1 PRO",
+   "wert": 2797,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2004,
+   "system": "CGM M1 PRO",
+   "wert": 3535,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2006,
+   "system": "CGM M1 PRO",
+   "wert": 4536,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1991,
+   "system": "Compudent",
+   "wert": 671,
+   "methode": "KBV-Anteil 1989, auf den Rest neben den Top 5 von 1991 skaliert, × Gesamtbestand"
+  },
+  {
+   "jahr": 1992,
+   "system": "Compudent",
+   "wert": 818,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "Compudent",
+   "wert": 1015,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "Compudent",
+   "wert": 1101,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "Compudent",
+   "wert": 852,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV: nicht unter den Top 60, 52 = halbe Listengrenze angenommen) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "Compudent",
+   "wert": 487,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV: nicht unter den Top 60, 52 = halbe Listengrenze angenommen) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1997,
+   "system": "Compudent",
+   "wert": 52,
+   "methode": "nicht unter den Top 60 der KBV 1997 (unter 104): 52 = halbe Listengrenze angenommen, danach 0"
+  },
+  {
+   "jahr": 1991,
+   "system": "DAVID",
+   "wert": 387,
+   "methode": "KBV-Anteil 1989, auf den Rest neben den Top 5 von 1991 skaliert, × Gesamtbestand"
+  },
+  {
+   "jahr": 1992,
+   "system": "DAVID",
+   "wert": 819,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "DAVID",
+   "wert": 1480,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "DAVID",
+   "wert": 2220,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "DAVID",
+   "wert": 2508,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "DAVID",
+   "wert": 2701,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1998,
+   "system": "DAVID",
+   "wert": 2967,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1999,
+   "system": "DAVID",
+   "wert": 2920,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2000,
+   "system": "DAVID",
+   "wert": 2813,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2001,
+   "system": "DAVID",
+   "wert": 2694,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2002,
+   "system": "DAVID",
+   "wert": 2600,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2003,
+   "system": "DAVID",
+   "wert": 2507,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2004,
+   "system": "DAVID",
+   "wert": 2413,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2006,
+   "system": "DAVID",
+   "wert": 2205,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1991,
+   "system": "DOCexpert / x.comfort",
+   "wert": 14,
+   "methode": "1989 nicht unter den Top 60 (unter 0,2 %): 0,1 % angenommen"
+  },
+  {
+   "jahr": 1992,
+   "system": "DOCexpert / x.comfort",
+   "wert": 606,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "DOCexpert / x.comfort",
+   "wert": 1964,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "DOCexpert / x.comfort",
+   "wert": 3491,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "DOCexpert / x.comfort",
+   "wert": 4211,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "DOCexpert / x.comfort",
+   "wert": 4827,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1998,
+   "system": "DOCexpert / x.comfort",
+   "wert": 5752,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1999,
+   "system": "DOCexpert / x.comfort",
+   "wert": 5982,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2000,
+   "system": "DOCexpert / x.comfort",
+   "wert": 6530,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2001,
+   "system": "DOCexpert / x.comfort",
+   "wert": 7009,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2002,
+   "system": "DOCexpert / x.comfort",
+   "wert": 7128,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2003,
+   "system": "DOCexpert / x.comfort",
+   "wert": 7247,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2004,
+   "system": "DOCexpert / x.comfort",
+   "wert": 7366,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2006,
+   "system": "DOCexpert / x.comfort",
+   "wert": 7231,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1991,
+   "system": "DORSYMED",
+   "wert": 14,
+   "methode": "1989 nicht unter den Top 60 (unter 0,2 %): 0,1 % angenommen"
+  },
+  {
+   "jahr": 1992,
+   "system": "DORSYMED",
+   "wert": 62,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "DORSYMED",
+   "wert": 286,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "DORSYMED",
+   "wert": 817,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "DORSYMED",
+   "wert": 1177,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "DORSYMED",
+   "wert": 1546,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1998,
+   "system": "DORSYMED",
+   "wert": 1951,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1999,
+   "system": "DORSYMED",
+   "wert": 1823,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2000,
+   "system": "DORSYMED",
+   "wert": 1653,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2001,
+   "system": "DORSYMED",
+   "wert": 1445,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2002,
+   "system": "DORSYMED",
+   "wert": 1204,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2003,
+   "system": "DORSYMED",
+   "wert": 963,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2004,
+   "system": "DORSYMED",
+   "wert": 722,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2005,
+   "system": "DORSYMED",
+   "wert": 482,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2006,
+   "system": "DORSYMED",
+   "wert": 241,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1991,
+   "system": "DURIA",
+   "wert": 14,
+   "methode": "1989 nicht unter den Top 60 (unter 0,2 %): 0,1 % angenommen"
+  },
+  {
+   "jahr": 1992,
+   "system": "DURIA",
+   "wert": 62,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "DURIA",
+   "wert": 229,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "DURIA",
+   "wert": 594,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "DURIA",
+   "wert": 792,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "DURIA",
+   "wert": 985,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1998,
+   "system": "DURIA",
+   "wert": 1264,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1999,
+   "system": "DURIA",
+   "wert": 1296,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2000,
+   "system": "DURIA",
+   "wert": 1391,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2001,
+   "system": "DURIA",
+   "wert": 1497,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2002,
+   "system": "DURIA",
+   "wert": 1541,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2003,
+   "system": "DURIA",
+   "wert": 1584,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2004,
+   "system": "DURIA",
+   "wert": 1628,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2006,
+   "system": "DURIA",
+   "wert": 1690,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1991,
+   "system": "easymed",
+   "wert": 14,
+   "methode": "1989 nicht unter den Top 60 (unter 0,2 %): 0,1 % angenommen"
+  },
+  {
+   "jahr": 1992,
+   "system": "easymed",
+   "wert": 117,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "easymed",
+   "wert": 327,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "easymed",
+   "wert": 669,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "easymed",
+   "wert": 891,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "easymed",
+   "wert": 1107,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1998,
+   "system": "easymed",
+   "wert": 1533,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1999,
+   "system": "easymed",
+   "wert": 1646,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2000,
+   "system": "easymed",
+   "wert": 1852,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2001,
+   "system": "easymed",
+   "wert": 2037,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2002,
+   "system": "easymed",
+   "wert": 2100,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2003,
+   "system": "easymed",
+   "wert": 2163,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2004,
+   "system": "easymed",
+   "wert": 2227,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2006,
+   "system": "easymed",
+   "wert": 2193,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1991,
+   "system": "LEISYS",
+   "wert": 14,
+   "methode": "1989 nicht unter den Top 60 (unter 0,2 %): 0,1 % angenommen"
+  },
+  {
+   "jahr": 1992,
+   "system": "LEISYS",
+   "wert": 62,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "LEISYS",
+   "wert": 336,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "LEISYS",
+   "wert": 1015,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "LEISYS",
+   "wert": 1335,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "LEISYS",
+   "wert": 1643,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1998,
+   "system": "LEISYS",
+   "wert": 2162,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1999,
+   "system": "LEISYS",
+   "wert": 2233,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2000,
+   "system": "LEISYS",
+   "wert": 2138,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2001,
+   "system": "LEISYS",
+   "wert": 1876,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2002,
+   "system": "LEISYS",
+   "wert": 1563,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2003,
+   "system": "LEISYS",
+   "wert": 1250,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2004,
+   "system": "LEISYS",
+   "wert": 938,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2005,
+   "system": "LEISYS",
+   "wert": 625,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2006,
+   "system": "LEISYS",
+   "wert": 313,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1991,
+   "system": "MCS-INA",
+   "wert": 1403,
+   "methode": "KBV-Anteil am Bestand 1991 × gerechneter Gesamtbestand"
+  },
+  {
+   "jahr": 1992,
+   "system": "MCS-INA",
+   "wert": 2156,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "MCS-INA",
+   "wert": 3476,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "MCS-INA",
+   "wert": 5066,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "MCS-INA",
+   "wert": 5548,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "MCS-INA",
+   "wert": 5783,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1998,
+   "system": "MCS-INA",
+   "wert": 6221,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1999,
+   "system": "MCS-INA",
+   "wert": 5899,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2000,
+   "system": "MCS-INA",
+   "wert": 5120,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2001,
+   "system": "MCS-INA",
+   "wert": 4174,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2002,
+   "system": "MCS-INA",
+   "wert": 3390,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2003,
+   "system": "MCS-INA",
+   "wert": 2605,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2004,
+   "system": "MCS-INA",
+   "wert": 1821,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2005,
+   "system": "MCS-INA",
+   "wert": 1037,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2006,
+   "system": "MCS-INA",
+   "wert": 519,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1991,
+   "system": "medatixx",
+   "wert": 0,
+   "methode": "vor Markteintritt: 0"
+  },
+  {
+   "jahr": 1992,
+   "system": "medatixx",
+   "wert": 0,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "medatixx",
+   "wert": 0,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "medatixx",
+   "wert": 0,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "medatixx",
+   "wert": 0,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV: nicht unter den Top 60, 52 = halbe Listengrenze angenommen) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "medatixx",
+   "wert": 0,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV: nicht unter den Top 60, 52 = halbe Listengrenze angenommen) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1997,
+   "system": "medatixx",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1998,
+   "system": "medatixx",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1999,
+   "system": "medatixx",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2000,
+   "system": "medatixx",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2001,
+   "system": "medatixx",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2002,
+   "system": "medatixx",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2003,
+   "system": "medatixx",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2004,
+   "system": "medatixx",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2005,
+   "system": "medatixx",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2006,
+   "system": "medatixx",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1991,
+   "system": "Medical Office",
+   "wert": 0,
+   "methode": "vor Markteintritt: 0"
+  },
+  {
+   "jahr": 1992,
+   "system": "Medical Office",
+   "wert": 0,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "Medical Office",
+   "wert": 0,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "Medical Office",
+   "wert": 0,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "Medical Office",
+   "wert": 0,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "Medical Office",
+   "wert": 0,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1997,
+   "system": "Medical Office",
+   "wert": 576,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1998,
+   "system": "Medical Office",
+   "wert": 576,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1999,
+   "system": "Medical Office",
+   "wert": 576,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2000,
+   "system": "Medical Office",
+   "wert": 576,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2001,
+   "system": "Medical Office",
+   "wert": 576,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2002,
+   "system": "Medical Office",
+   "wert": 576,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2003,
+   "system": "Medical Office",
+   "wert": 576,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2004,
+   "system": "Medical Office",
+   "wert": 576,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2005,
+   "system": "Medical Office",
+   "wert": 576,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2006,
+   "system": "Medical Office",
+   "wert": 576,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1991,
+   "system": "MEDISTAR",
+   "wert": 2394,
+   "methode": "KBV-Anteil am Bestand 1991 × gerechneter Gesamtbestand"
+  },
+  {
+   "jahr": 1992,
+   "system": "MEDISTAR",
+   "wert": 3815,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "MEDISTAR",
+   "wert": 5710,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "MEDISTAR",
+   "wert": 7424,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "MEDISTAR",
+   "wert": 8423,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "MEDISTAR",
+   "wert": 9110,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1998,
+   "system": "MEDISTAR",
+   "wert": 10555,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1999,
+   "system": "MEDISTAR",
+   "wert": 11021,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2000,
+   "system": "MEDISTAR",
+   "wert": 12015,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2001,
+   "system": "MEDISTAR",
+   "wert": 13017,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2002,
+   "system": "MEDISTAR",
+   "wert": 13448,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2003,
+   "system": "MEDISTAR",
+   "wert": 13879,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2004,
+   "system": "MEDISTAR",
+   "wert": 14310,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2006,
+   "system": "MEDISTAR",
+   "wert": 14790,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1991,
+   "system": "Pitney Bowes",
+   "wert": 1128,
+   "methode": "KBV-Anteil am Bestand 1991 × gerechneter Gesamtbestand"
+  },
+  {
+   "jahr": 1992,
+   "system": "Pitney Bowes",
+   "wert": 1506,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "Pitney Bowes",
+   "wert": 1923,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "Pitney Bowes",
+   "wert": 1967,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "Pitney Bowes",
+   "wert": 1510,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV: nicht unter den Top 60, 52 = halbe Listengrenze angenommen) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "Pitney Bowes",
+   "wert": 844,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV: nicht unter den Top 60, 52 = halbe Listengrenze angenommen) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1997,
+   "system": "Pitney Bowes",
+   "wert": 52,
+   "methode": "nicht unter den Top 60 der KBV 1997 (unter 104): 52 = halbe Listengrenze angenommen, danach 0"
+  },
+  {
+   "jahr": 1991,
+   "system": "QUINCY",
+   "wert": 181,
+   "methode": "KBV-Anteil 1989, auf den Rest neben den Top 5 von 1991 skaliert, × Gesamtbestand"
+  },
+  {
+   "jahr": 1992,
+   "system": "QUINCY",
+   "wert": 526,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "QUINCY",
+   "wert": 1205,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "QUINCY",
+   "wert": 1996,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "QUINCY",
+   "wert": 2552,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "QUINCY",
+   "wert": 3073,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1998,
+   "system": "QUINCY",
+   "wert": 3687,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1999,
+   "system": "QUINCY",
+   "wert": 3824,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2000,
+   "system": "QUINCY",
+   "wert": 4096,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2001,
+   "system": "QUINCY",
+   "wert": 4399,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2002,
+   "system": "QUINCY",
+   "wert": 4508,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2003,
+   "system": "QUINCY",
+   "wert": 4617,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2004,
+   "system": "QUINCY",
+   "wert": 4726,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2006,
+   "system": "QUINCY",
+   "wert": 4552,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1991,
+   "system": "S + N",
+   "wert": 142,
+   "methode": "KBV-Anteil 1989, auf den Rest neben den Top 5 von 1991 skaliert, × Gesamtbestand"
+  },
+  {
+   "jahr": 1992,
+   "system": "S + N",
+   "wert": 188,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "S + N",
+   "wert": 428,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "S + N",
+   "wert": 991,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "S + N",
+   "wert": 1157,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "S + N",
+   "wert": 1286,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1998,
+   "system": "S + N",
+   "wert": 1416,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1999,
+   "system": "S + N",
+   "wert": 1335,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2000,
+   "system": "S + N",
+   "wert": 1285,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2001,
+   "system": "S + N",
+   "wert": 1186,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2002,
+   "system": "S + N",
+   "wert": 988,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2003,
+   "system": "S + N",
+   "wert": 791,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2004,
+   "system": "S + N",
+   "wert": 593,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2005,
+   "system": "S + N",
+   "wert": 395,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2006,
+   "system": "S + N",
+   "wert": 198,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1991,
+   "system": "SISYMED",
+   "wert": 1032,
+   "methode": "KBV-Anteil am Bestand 1991 × gerechneter Gesamtbestand"
+  },
+  {
+   "jahr": 1992,
+   "system": "SISYMED",
+   "wert": 1226,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "SISYMED",
+   "wert": 1535,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "SISYMED",
+   "wert": 1766,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "SISYMED",
+   "wert": 1709,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "SISYMED",
+   "wert": 1527,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1998,
+   "system": "SISYMED",
+   "wert": 1243,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1999,
+   "system": "SISYMED",
+   "wert": 1134,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2000,
+   "system": "SISYMED",
+   "wert": 1040,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2001,
+   "system": "SISYMED",
+   "wert": 928,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2002,
+   "system": "SISYMED",
+   "wert": 773,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2003,
+   "system": "SISYMED",
+   "wert": 618,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2004,
+   "system": "SISYMED",
+   "wert": 464,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2005,
+   "system": "SISYMED",
+   "wert": 309,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2006,
+   "system": "SISYMED",
+   "wert": 155,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1991,
+   "system": "SYSMED-KDV",
+   "wert": 206,
+   "methode": "KBV-Anteil 1989, auf den Rest neben den Top 5 von 1991 skaliert, × Gesamtbestand"
+  },
+  {
+   "jahr": 1992,
+   "system": "SYSMED-KDV",
+   "wert": 396,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "SYSMED-KDV",
+   "wert": 764,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "SYSMED-KDV",
+   "wert": 1312,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "SYSMED-KDV",
+   "wert": 1358,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "SYSMED-KDV",
+   "wert": 1327,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1998,
+   "system": "SYSMED-KDV",
+   "wert": 1051,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1999,
+   "system": "SYSMED-KDV",
+   "wert": 941,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2000,
+   "system": "SYSMED-KDV",
+   "wert": 815,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2001,
+   "system": "SYSMED-KDV",
+   "wert": 698,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2002,
+   "system": "SYSMED-KDV",
+   "wert": 582,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2003,
+   "system": "SYSMED-KDV",
+   "wert": 466,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2004,
+   "system": "SYSMED-KDV",
+   "wert": 349,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2005,
+   "system": "SYSMED-KDV",
+   "wert": 233,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2006,
+   "system": "SYSMED-KDV",
+   "wert": 116,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1991,
+   "system": "T2med",
+   "wert": 0,
+   "methode": "vor Markteintritt: 0"
+  },
+  {
+   "jahr": 1992,
+   "system": "T2med",
+   "wert": 0,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "T2med",
+   "wert": 0,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "T2med",
+   "wert": 0,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "T2med",
+   "wert": 0,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV: nicht unter den Top 60, 52 = halbe Listengrenze angenommen) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "T2med",
+   "wert": 0,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV: nicht unter den Top 60, 52 = halbe Listengrenze angenommen) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1997,
+   "system": "T2med",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1998,
+   "system": "T2med",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1999,
+   "system": "T2med",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2000,
+   "system": "T2med",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2001,
+   "system": "T2med",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2002,
+   "system": "T2med",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2003,
+   "system": "T2med",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2004,
+   "system": "T2med",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2005,
+   "system": "T2med",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2006,
+   "system": "T2med",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1991,
+   "system": "Tappeser",
+   "wert": 400,
+   "methode": "KBV-Anteil 1989, auf den Rest neben den Top 5 von 1991 skaliert, × Gesamtbestand"
+  },
+  {
+   "jahr": 1992,
+   "system": "Tappeser",
+   "wert": 617,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "Tappeser",
+   "wert": 972,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "Tappeser",
+   "wert": 1379,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "Tappeser",
+   "wert": 1062,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV: nicht unter den Top 60, 52 = halbe Listengrenze angenommen) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "Tappeser",
+   "wert": 601,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV: nicht unter den Top 60, 52 = halbe Listengrenze angenommen) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1997,
+   "system": "Tappeser",
+   "wert": 52,
+   "methode": "nicht unter den Top 60 der KBV 1997 (unter 104): 52 = halbe Listengrenze angenommen, danach 0"
+  },
+  {
+   "jahr": 1991,
+   "system": "tomedo",
+   "wert": 0,
+   "methode": "vor Markteintritt: 0"
+  },
+  {
+   "jahr": 1992,
+   "system": "tomedo",
+   "wert": 0,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "tomedo",
+   "wert": 0,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "tomedo",
+   "wert": 0,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "tomedo",
+   "wert": 0,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV: nicht unter den Top 60, 52 = halbe Listengrenze angenommen) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "tomedo",
+   "wert": 0,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV: nicht unter den Top 60, 52 = halbe Listengrenze angenommen) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1997,
+   "system": "tomedo",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1998,
+   "system": "tomedo",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1999,
+   "system": "tomedo",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2000,
+   "system": "tomedo",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2001,
+   "system": "tomedo",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2002,
+   "system": "tomedo",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2003,
+   "system": "tomedo",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2004,
+   "system": "tomedo",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2005,
+   "system": "tomedo",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2006,
+   "system": "tomedo",
+   "wert": 0,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1991,
+   "system": "TURBOMED",
+   "wert": 14,
+   "methode": "1989 nicht unter den Top 60 (unter 0,2 %): 0,1 % angenommen"
+  },
+  {
+   "jahr": 1992,
+   "system": "TURBOMED",
+   "wert": 62,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "TURBOMED",
+   "wert": 655,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "TURBOMED",
+   "wert": 2278,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "TURBOMED",
+   "wert": 3625,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "TURBOMED",
+   "wert": 5056,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1998,
+   "system": "TURBOMED",
+   "wert": 7857,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1999,
+   "system": "TURBOMED",
+   "wert": 8535,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2000,
+   "system": "TURBOMED",
+   "wert": 9591,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2001,
+   "system": "TURBOMED",
+   "wert": 10452,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2002,
+   "system": "TURBOMED",
+   "wert": 10657,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2003,
+   "system": "TURBOMED",
+   "wert": 10862,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2004,
+   "system": "TURBOMED",
+   "wert": 11068,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2006,
+   "system": "TURBOMED",
+   "wert": 12010,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1991,
+   "system": "x.concept",
+   "wert": 0,
+   "methode": "vor Markteintritt: 0"
+  },
+  {
+   "jahr": 1992,
+   "system": "x.concept",
+   "wert": 0,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "x.concept",
+   "wert": 0,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "x.concept",
+   "wert": 0,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "x.concept",
+   "wert": 0,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "x.concept",
+   "wert": 0,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1997,
+   "system": "x.concept",
+   "wert": 149,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1998,
+   "system": "x.concept",
+   "wert": 149,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1999,
+   "system": "x.concept",
+   "wert": 228,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2000,
+   "system": "x.concept",
+   "wert": 471,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2001,
+   "system": "x.concept",
+   "wert": 976,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2002,
+   "system": "x.concept",
+   "wert": 1607,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2003,
+   "system": "x.concept",
+   "wert": 2239,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2004,
+   "system": "x.concept",
+   "wert": 2870,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2006,
+   "system": "x.concept",
+   "wert": 4389,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1991,
+   "system": "x.isynet",
+   "wert": 0,
+   "methode": "vor Markteintritt: 0"
+  },
+  {
+   "jahr": 1992,
+   "system": "x.isynet",
+   "wert": 0,
+   "methode": "Bestand 1991 + KBV-Verkaufsanteil 1992 × 7500 Verkäufe, × 0.987 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1993,
+   "system": "x.isynet",
+   "wert": 0,
+   "methode": "Bestand 1992 + KBV-Verkaufsanteil 1993 × 12184 Verkäufe, × 1.027 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1994,
+   "system": "x.isynet",
+   "wert": 0,
+   "methode": "Bestand 1993 + KBV-Verkaufsanteil 1994 × 19668 Verkäufe, × 0.955 auf den Gesamtbestand"
+  },
+  {
+   "jahr": 1995,
+   "system": "x.isynet",
+   "wert": 0,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 58504"
+  },
+  {
+   "jahr": 1996,
+   "system": "x.isynet",
+   "wert": 0,
+   "methode": "Anteil linear zwischen 1994 (Modell) und 1997 (KBV) × Gesamtbestand 63576"
+  },
+  {
+   "jahr": 1997,
+   "system": "x.isynet",
+   "wert": 158,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1998,
+   "system": "x.isynet",
+   "wert": 158,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 1999,
+   "system": "x.isynet",
+   "wert": 734,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2000,
+   "system": "x.isynet",
+   "wert": 1998,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2001,
+   "system": "x.isynet",
+   "wert": 3504,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2002,
+   "system": "x.isynet",
+   "wert": 4759,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2003,
+   "system": "x.isynet",
+   "wert": 6014,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2004,
+   "system": "x.isynet",
+   "wert": 7268,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  },
+  {
+   "jahr": 2006,
+   "system": "x.isynet",
+   "wert": 8642,
+   "methode": "linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0"
+  }
+ ],
+ "gesamtbestand_1991_1997": {
+  "1991": 13757,
+  "1992": 20991,
+  "1993": 34074,
+  "1994": 51318,
+  "1995": 58504,
+  "1996": 63576,
+  "1997": 69252
+ }
 }

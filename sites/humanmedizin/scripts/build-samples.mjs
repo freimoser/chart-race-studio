@@ -505,6 +505,129 @@ for (let j = 2016; j <= 2019; j++) {
 }
 apoGerechnet.splice(0, apoGerechnet.length, ...[...new Map(apoGerechnet.map((g) => [g.system + g.jahr, g])).values()])
 
+// ---------- Praxissoftware seit 1991 (Wunsch des Nutzers 25.11.2026: „rechne es zusammen, aber belege es gut“) ----------
+// Vor 1997 gibt es keine Installationszahlen je System. Belegt sind (data/raw/pvs-frueh-1989-1997.csv, alles KBV über
+// das Deutsche Ärzteblatt): die EDV-Quote je Jahr, Bestandsanteile der Anbieter 1989 (Top 60) und 1990/91 (Top 5),
+// Verkaufsanteile 1992 (Top 15), 1993 (Top 5) und 1994 (Top 20) mit der Zahl der Verkäufe. Das Modell:
+//  1. Gesamtbestand G(j) = EDV-Quote(j) × Vertragsärzte(j) × Installationen je EDV-Arzt(j).
+//     Vertragsärzte = BÄK-Zahl der ambulant tätigen Ärzte × 0,944 (Verhältnis Ende 1993: 38.336 EDV-Ärzte = 36 %,
+//     also 106.489 Vertragsärzte, zu 112.773 ambulant Tätigen). Installationen je EDV-Arzt linear zwischen 0,882
+//     (30.09.1989: 5.761 Anlagen, 6.533 Ärzte) und dem Wert 1997 (69.252 Installationen).
+//  2. Bestand 1991 je Linie: Top 5 belegt (Anteil × G), übrige aus dem Anteil 1989, skaliert auf den Rest; nicht unter
+//     den Top 60 von 1989 = 0,1 % (halbe Listengrenze).
+//  3. 1992–1994: Bestand = (Vorjahr + Anteil an den Verkäufen × Verkäufe) × k, k so, dass die Summe G ergibt.
+//     Verkaufsanteil nicht gelistet = halbe Listengrenze; 1993 außerhalb der Top 5 linear zwischen 1992 und 1994.
+//  4. 1995, 1996: Anteil am Bestand linear zwischen 1994 (Modell) und 1997 (KBV-Liste) × G.
+//  5. Ab 1997 die KBV-Systemwerte (1997, Mitte 1998, Anfang 1999, Mitte 2000, Mitte 2001, 2005, 2007), Jahresenden
+//     linear dazwischen; fehlt ein System in einer Top-Liste, höchstens die Listengrenze; ab 2007 der Datensatz
+//     pvs-installationen-2007 (gleiche Rechenwege). Nicht mehr in der vollständigen Liste 2007 = 0.
+const FR = csv('pvs-frueh-1989-1997.csv')
+const fr = (reihe, st) => { const x = FR.find((z) => z.reihe === reihe && (!st || z.stichtag === st)); return x ? Number(x.wert) : null }
+const AMB = (j) => fr('aerzte_ambulant_baek', `${j}-12-31`)
+const VERH = fr('edv_abrechnende_vertragsaerzte') / 0.36 / AMB(1993)
+const QUOTE = { 1991: fr('edv_quote_alle_kven', '1991-12-31'), 1992: fr('edv_quote', '1992-12-31'), 1993: fr('edv_quote', '1993-12-31'), 1994: fr('edv_quote', '1994-12-31'), 1995: fr('edv_quote', '1995-12-31'), 1996: fr('edv_quote', '1996-12-31'), 1997: fr('edv_quote', '1997-12-31') }
+const SUMME97 = Number(INST.find((r) => r.stichtag === '1997-12-31' && r.system === '__SUMME__').installationen)
+const r89 = fr('edv_anlagen', '1989-09-30') / fr('edv_abrechnende_aerzte', '1989-09-30')
+const r97 = SUMME97 / (QUOTE[1997] / 100 * AMB(1997) * VERH)
+const jeArzt = (j) => r89 + (r97 - r89) * (j - 1989.75) / (1997 - 1989.75)
+const GESAMT = Object.fromEntries([1991, 1992, 1993, 1994, 1995, 1996].map((j) => [j, QUOTE[j] / 100 * AMB(j) * VERH * jeArzt(j)]))
+GESAMT[1997] = SUMME97
+// Linien: Name im Video → Systeme der KBV-Listen (ab 1997), Namen in den Anbieter-/Verkaufslisten 1989–1994, Spalte in
+// pvs-installationen-2007. Zuordnungen mit Beleg in recherche/pvs-kbv-historie.md (Nachtrag 2, „Zuordnung der 1997er
+// Namen“); SISYMED 1989 = Anbieter Siemens, dazu ab 1991 die Nixdorf-Kunden (Medias, DÄ 1992 A-846).
+const LINIEN = [
+  ['MEDISTAR', ['CGM MEDISTAR (BLACK PRO)', 'MEDISTAR (Prolog-Version)', 'MEDISTAR (Windows-Version)'], ['Medistar', 'MEDISTAR'], 'CGM MEDISTAR'],
+  ['TURBOMED', ['TURBOMED', 'TURBOMED (DOS-Version)', 'TURBOMED (Windows-Version)'], ['TURBOMED'], 'CGM TURBOMED'],
+  ['MCS-INA', ['MCS-INA'], ['MCS'], null],
+  ['DOCexpert / x.comfort', ['DOC EXPERT (Systemfamilie 1997)', 'x.comfort (ehem. DOCcomfort)', 'DOCexpert (KBV-Zeile 2005)'], ['DOC EXPERT'], 'x.comfort'],
+  ['Pitney Bowes', [], ['Pitney', 'PITNEY BOWES'], null],
+  ['SISYMED', ['SISYMED'], ['Siemens', 'SISYMED'], null],
+  ['ARCOS', ['ARCOS'], ['Arcos', 'ARCOS'], null],
+  ['DAVID', ['DAVID'], ['Data-Vital', 'DATA-VITAL'], 'DAVID'],
+  ['QUINCY', ['QUINCY PCNET', 'QUINCY WIN'], ['Frey', 'FREY', 'FREY ADV'], 'QUINCY WIN'],
+  ['Compudent', [], ['Compudent', 'COMPUDENT'], null],
+  ['Tappeser', [], ['Tappeser', 'TAPPESER'], null],
+  ['SYSMED-KDV', ['SYSMED-KDV'], ['Sysmed', 'SYSMED'], null],
+  ['ALBIS', ['ALBIS', 'ALBIS DOS (Altversion)', 'ALBIS ON WINDOWS (eigene KBV-Zeile 1997)'], ['Albis', 'ALBIS'], 'CGM ALBIS'],
+  ['LEISYS', ['LEISYS'], ['LEISYS'], null],
+  ['DORSYMED', ['DORSYMED'], ['DORSYMED'], null],
+  ['S + N', ['S + N ARZTSYSTEM'], ['S + N'], null],
+  ['easymed', ['easymed'], ['PROMEDICO'], 'easymed'],
+  ['DURIA', ['DURIA'], ['DURIA'], 'DURIA'],
+  ['x.isynet', ['x.isynet (ehem. MCS-ISYNET)'], [], 'x.isynet'],
+  ['x.concept', ['x.concept (ehem. DOCconcept)'], [], 'x.concept'],
+  ['CGM M1 PRO', ['CGM M1 PRO (ehem. CompuMED M1)'], [], 'CGM M1 PRO'],
+  ['Medical Office', ['Medical Office'], [], 'Medical Office'],
+  ['tomedo', [], [], 'tomedo'],
+  ['T2med', [], [], 'T2med'],
+  ['medatixx', [], [], 'medatixx'],
+]
+const frGerechnet = []
+const merkeF = (jahr, linie, wert, methode) => { frGerechnet.push({ jahr, system: linie, wert: Math.round(wert), methode }); return wert }
+// Bestand 1991
+const top5 = (namen) => namen.map((n) => fr(`anbieteranteil_top5:${n}`, '1991-12-31')).find((v) => v != null)
+const a89 = (namen) => namen.map((n) => fr(`anbieteranteil:${n}`, '1989-09-30')).find((v) => v != null)
+const TOP5_89 = ['MCS', 'Pitney', 'Medistar', 'Arcos', 'Siemens'].reduce((a, n) => a + fr(`anbieteranteil:${n}`, '1989-09-30'), 0)
+const TOP5_91 = ['MEDISTAR', 'MCS', 'PITNEY BOWES', 'SISYMED', 'ARCOS'].reduce((a, n) => a + fr(`anbieteranteil_top5:${n}`, '1991-12-31'), 0)
+const bestand = { 1991: {} }
+for (const [name, , alt] of LINIEN) {
+  const t = top5(alt), a = a89(alt)
+  const anteil = t != null ? t : a != null ? a * (100 - TOP5_91) / (100 - TOP5_89) : alt.length ? 0.1 : 0
+  bestand[1991][name] = anteil / 100 * GESAMT[1991]
+  merkeF(1991, name, bestand[1991][name], t != null ? 'KBV-Anteil am Bestand 1991 × gerechneter Gesamtbestand' : a != null ? 'KBV-Anteil 1989, auf den Rest neben den Top 5 von 1991 skaliert, × Gesamtbestand' : alt.length ? '1989 nicht unter den Top 60 (unter 0,2 %): 0,1 % angenommen' : 'vor Markteintritt: 0')
+}
+// Verkäufe 1992–1994
+const LISTE = { 1992: ['1992-09-30', 1.3], 1993: ['1993-12-31', null], 1994: ['1994-12-31', 1.4] }
+const vk = (alt, j) => { const [st, grenze] = LISTE[j]; const v = alt.map((n) => fr(`verkaufsanteil:${n}`, st)).find((x) => x != null); return v != null ? v : alt.length ? grenze / 2 : 0 }
+for (const j of [1992, 1993, 1994]) {
+  const verk = fr('verkaeufe_gesamt', `${j}-12-31`), roh = {}
+  for (const [name, , alt] of LINIEN) {
+    const anteil = j === 1993 ? (alt.map((n) => fr(`verkaufsanteil:${n}`, '1993-12-31')).find((x) => x != null) ?? (vk(alt, 1992) + vk(alt, 1994)) / 2) : vk(alt, j)
+    roh[name] = bestand[j - 1][name] + anteil / 100 * verk
+  }
+  const k = GESAMT[j] / (GESAMT[j - 1] + verk)
+  bestand[j] = Object.fromEntries(Object.entries(roh).map(([n, v]) => [n, merkeF(j, n, v * k, `Bestand ${j - 1} + KBV-Verkaufsanteil ${j} × ${verk} Verkäufe, × ${k.toFixed(3)} auf den Gesamtbestand`)]))
+}
+// Ab 1997: KBV-Systemwerte je Linie
+const sysPunkte = (system) => Object.fromEntries(INST.filter((r) => r.system === system).map((r) => [zeitpunkt(r.stichtag), Number(r.installationen)]))
+// Stützpunkte einer Linie: Summe ihrer Systeme je Stichtag (ein Teilsystem, das an dem Stichtag nicht gelistet ist, zählt
+// dort nicht – erst summieren, dann interpolieren, sonst hielte stuetze() die Windows-Version rückwärts bis 1997).
+const LISTEN_GRENZE_2005 = 1038
+const linPunkte = (systeme) => {
+  const p = {}
+  for (const r of INST) if (systeme.includes(r.system)) { const z = zeitpunkt(r.stichtag); p[z] = (p[z] ?? 0) + Number(r.installationen) }
+  if (!Object.keys(p).length) return p
+  if (!(2007 in p)) p[2007] = 0
+  if (!(2005 in p)) p[2005] = Math.min(stuetze(p, 2005), LISTEN_GRENZE_2005 - 1)
+  return p
+}
+const D3SP = PVS_ARZT_2007.headers
+const linieAb97 = (systeme, d3, j) => {
+  if (j >= 2007) return d3 ? PVS_ARZT_2007.rows[j - 2007][D3SP.indexOf(d3)] : 0
+  const p = linPunkte(systeme)
+  return Object.keys(p).length ? stuetze(p, j) ?? 0 : 0
+}
+const JAHRE_91 = jahre(1991, 2025)
+const anteil97 = (systeme) => systeme.reduce((a, s) => a + (sysPunkte(s)[1997] ?? 0), 0) / SUMME97
+const PVS_1991 = {
+  headers: ['Jahr', ...LINIEN.map(([n]) => n)],
+  rows: JAHRE_91.map((j) => [String(j), ...LINIEN.map(([name, systeme, alt, d3]) => {
+    if (j <= 1994) return Math.round(bestand[j][name])
+    if (j <= 1996) {
+      const a97 = systeme.length ? anteil97(systeme) : alt.length ? 52 / SUMME97 : 0
+      const a = bestand[1994][name] / GESAMT[1994] + (a97 - bestand[1994][name] / GESAMT[1994]) * (j - 1994) / 3
+      return Math.round(merkeF(j, name, a * GESAMT[j], `Anteil linear zwischen 1994 (Modell) und 1997 (KBV${systeme.length ? '' : ': nicht unter den Top 60, 52 = halbe Listengrenze angenommen'}) × Gesamtbestand ${Math.round(GESAMT[j])}`))
+    }
+    if (!systeme.length && !d3) return j === 1997 ? Math.round(merkeF(j, name, 52, 'nicht unter den Top 60 der KBV 1997 (unter 104): 52 = halbe Listengrenze angenommen, danach 0')) : 0
+    const v = Math.round(linieAb97(systeme, d3, j))
+    const belegtJ = systeme.some((s) => INST.some((r) => r.system === s && r.stichtag === `${j}-12-31`))
+    if (j < 2007 && !belegtJ) merkeF(j, name, v, 'linear zwischen den KBV-Belegen (1997, 1998, 1999, 2000, 2001, 2005, 2007); fehlt in einer Top-Liste: höchstens Listengrenze, 2007 nicht gelistet = 0')
+    return v
+  })]),
+}
+for (const r of PVS_1991.rows) if (r.slice(1).some((v) => !(v >= 0))) throw new Error(`pvs-installationen-1991: Wert fehlt ${r}`)
+const GESAMT_1991 = Object.fromEntries(Object.entries(GESAMT).map(([j, v]) => [j, Math.round(v)]))
+
 // ---------- Download zur Säulenseite (Praxisverwaltungssysteme in Deutschland) ----------
 // Liegt in public/tabellen/, nicht in public/daten/: Das leert build-artikel.mjs bei jedem Build.
 // Alle erfassten Systeme mit Installationen Q4/2025 und Q3/2025 und den KBV-Zulassungen (Stand des Verzeichnisses).
@@ -529,7 +652,7 @@ apoGerechnet.splice(0, apoGerechnet.length, ...[...new Map(apoGerechnet.map((g) 
 // ---------- Ausgabe ----------
 const emit = (name, w) => `export const ${name} = {\n  headers: ${JSON.stringify(w.headers)},\n  rows: [\n${w.rows.map((r) => '    [' + r.map(lit).join(', ') + '],').join('\n')}\n  ],\n}\n`
 fs.writeFileSync('sites/humanmedizin/samples/data.ts', `// Automatisch erzeugt von sites/humanmedizin/scripts/build-samples.mjs aus sites/humanmedizin/data/raw/ – nicht von Hand editieren.\n/* eslint-disable */\n` +
-  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABOR_AERZTE', LABOR_AERZTE), emit('LABORDATEN_PB', LABORDATEN_PB), emit('PVS_ALLGEMEIN', PVS_ALLGEMEIN), emit('EREZEPT_MONAT', EREZEPT_MONAT), emit('KIM_NUTZUNG', KIM_NUTZUNG), emit('MVZ_STATUS', MVZ_STATUS), emit('LABOR_HONORAR', LABOR_HONORAR), emit('EINZELPRAXEN', EINZELPRAXEN), emit('ARZTBRIEF_PB', ARZTBRIEF_PB), emit('EAU_MONAT', EAU_MONAT), emit('PVS_INTERNISTEN', PVS_INTERNISTEN), emit('MVZ_TYPEN', MVZ_TYPEN), emit('EPA_NUTZUNG', EPA_NUTZUNG), emit('FRAUENANTEIL', FRAUENANTEIL), emit('ANERKENNUNGEN', ANERKENNUNGEN), emit('MEDIZINSTUDIUM', MEDIZINSTUDIUM), emit('DIGITALE_ANGEBOTE', DIGITALE_ANGEBOTE), emit('PRAXISNETZE', PRAXISNETZE), emit('TSS', TSS), emit('AU_FAELLE', AU_FAELLE), emit('EREZEPT_QUOTE', EREZEPT_QUOTE), emit('WEITERBILDUNG_AM', WEITERBILDUNG_AM), emit('APOTHEKEN', APOTHEKEN)].join('\n'))
+  [emit('PVS_ARZT', PVS_ARZT), emit('PVS_HERSTELLER', PVS_HERSTELLER), emit('PVS_ARZT_2007', PVS_ARZT_2007), emit('PVS_PSYCHO', PVS_PSYCHO), emit('PVS_AUFSTEIGER', PVS_AUFSTEIGER), emit('PVS_KIS', PVS_KIS), emit('PVS_SALDO', PVS_SALDO), emit('EARZTBRIEF_MONAT', EARZTBRIEF_MONAT), emit('AERZTE_PRAXISFORM', AERZTE_PRAXISFORM), emit('MVZ_ANZAHL', MVZ_ANZAHL), emit('LABOR_AERZTE', LABOR_AERZTE), emit('LABORDATEN_PB', LABORDATEN_PB), emit('PVS_ALLGEMEIN', PVS_ALLGEMEIN), emit('EREZEPT_MONAT', EREZEPT_MONAT), emit('KIM_NUTZUNG', KIM_NUTZUNG), emit('MVZ_STATUS', MVZ_STATUS), emit('LABOR_HONORAR', LABOR_HONORAR), emit('EINZELPRAXEN', EINZELPRAXEN), emit('ARZTBRIEF_PB', ARZTBRIEF_PB), emit('EAU_MONAT', EAU_MONAT), emit('PVS_INTERNISTEN', PVS_INTERNISTEN), emit('MVZ_TYPEN', MVZ_TYPEN), emit('EPA_NUTZUNG', EPA_NUTZUNG), emit('FRAUENANTEIL', FRAUENANTEIL), emit('ANERKENNUNGEN', ANERKENNUNGEN), emit('MEDIZINSTUDIUM', MEDIZINSTUDIUM), emit('DIGITALE_ANGEBOTE', DIGITALE_ANGEBOTE), emit('PRAXISNETZE', PRAXISNETZE), emit('TSS', TSS), emit('AU_FAELLE', AU_FAELLE), emit('EREZEPT_QUOTE', EREZEPT_QUOTE), emit('WEITERBILDUNG_AM', WEITERBILDUNG_AM), emit('APOTHEKEN', APOTHEKEN), emit('PVS_1991', PVS_1991)].join('\n'))
 const sortiert = (l) => [...l].sort((a, b) => a.system.localeCompare(b.system) || a.jahr - b.jahr)
 fs.writeFileSync(path.join(RAW, 'pvs-gerechnet.json'), JSON.stringify({
   hinweis: 'Von sites/humanmedizin/scripts/build-samples.mjs erzeugt. Jeder Wert der Datensätze, der nicht direkt aus einem KBV-Bericht (Jahresende) stammt, mit Methode. pvs-hersteller ist die Summe von pvs-installationen und hat dieselben gerechneten Werte. Alles andere ist belegt (pvs-kbv-installationen.csv, pvs-kbv-luecken-1998-2012.csv).',
@@ -542,5 +665,7 @@ fs.writeFileSync(path.join(RAW, 'pvs-gerechnet.json'), JSON.stringify({
   'pvs-allgemeinmediziner': sortiert(amGerechnet),
   'pvs-internisten': sortiert(INT_REIHE.gerechnet),
   'apotheken-filialen': sortiert(apoGerechnet),
+  'pvs-installationen-1991': sortiert(frGerechnet),
+  gesamtbestand_1991_1997: GESAMT_1991,
 }, null, 1) + '\n')
 console.log('PVS_ARZT', PVS_ARZT.headers.length - 1, 'Systeme,', D1.gerechnet.length, 'gerechnet; PVS_ARZT_2007', PVS_ARZT_2007.headers.length - 1, 'Systeme,', PVS_ARZT_2007.rows.length, 'Jahre,', D3.gerechnet.length, 'von', (PVS_ARZT_2007.headers.length - 1) * PVS_ARZT_2007.rows.length, 'gerechnet bzw. angenommen')

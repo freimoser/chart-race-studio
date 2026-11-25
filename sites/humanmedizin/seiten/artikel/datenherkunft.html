@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Datenherkunft: Quellen und Methode aller Datensätze</title>
-    <meta name="dcterms.modified" content="2026-11-04" />
+    <meta name="dcterms.modified" content="2026-11-25" />
     <meta name="description" content="Für jeden Datensatz von Humanmedizin in Zahlen: Quelle, Zeitraum, Annahmen, was gerechnet ist und wann zuletzt gegen die Quelle geprüft." />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="../favicon-96.png" sizes="96x96" type="image/png" />
@@ -106,6 +106,37 @@
         </p>
         <p><strong>Erstellt</strong> 20.10.2026 · <strong>geprüft</strong> 20.10.2026 · Artikel:
           <a href="../beitrag/praxissoftware-arztpraxen-marktanteile.html">Welche Praxissoftware Arztpraxen nutzen</a></p>
+
+        <h2 id="pvs-installationen-1991">Datensatz: Praxissoftware in Arztpraxen seit 1991</h2>
+        <p>
+          <strong>Inhalt:</strong> Installationen ärztlicher Praxissysteme je Jahresende 1991 bis 2025, ohne Psychotherapie- und
+          Klinik-Systeme. <strong>Bis 1996 eine Schätzung:</strong> Die KBV hat damals keine Installationszahlen je System
+          veröffentlicht, nur Anteile der Anbieter am Bestand und an den Verkäufen.
+        </p>
+        <p>
+          <strong>Quellen bis 1997</strong> (KBV-Prüfstelle im Deutschen Ärzteblatt):
+          <a href="https://www.aerzteblatt.de/pdf/86/47/a3621.pdf">1989</a> (Bestand 5.761 Anlagen, Top 60 Anbieter),
+          <a href="https://www.aerzteblatt.de/pdf/89/10/a846.pdf">1992</a> (Top 5 Anbieter 1989–1991, EDV-Quote),
+          <a href="https://www.aerzteblatt.de/pdf/89/46/a3935.pdf">1992</a> (Verkaufsanteile 1992, Quote alte und neue Länder),
+          <a href="https://www.aerzteblatt.de/pdf/91/10/a683.pdf">1994</a> (Verkäufe 1993),
+          <a href="https://www.aerzteblatt.de/pdf/91/44/a3039.pdf">1994</a> (38.336 EDV-Ärzte Ende 1993),
+          <a href="https://www.aerzteblatt.de/pdf/92/12/a864.pdf">1995</a> (Verkaufsanteile 1994, 19.668 Verkäufe),
+          <a href="https://www.aerzteblatt.de/pdf/95/12/s8-12.pdf">1998</a> (EDV-Quote 1986–1997, Top 20 Ende 1997);
+          Ärztezahlen aus den <a href="http://www.thorwart-online.de/KBV-Grunddaten%202009.pdf">KBV-Grunddaten 2009</a>.
+          Ab 1997 die KBV-Listen wie beim Datensatz ab 2007. Alle abgerufen am 25.11.2026.
+        </p>
+        <p>
+          <strong>Gerechnet:</strong> Gesamtbestand = EDV-Quote × Vertragsärzte × Installationen je EDV-Arzt; je System 1991
+          der Bestandsanteil, 1992–1994 Vorjahr plus Verkaufsanteil, 1995/1996 linear bis zur KBV-Liste 1997; 1998–2006
+          linear zwischen den KBV-Stichtagen. 69 Prozent aller Werte sind gerechnet (1991–1996 alle). Jeder Wert mit Methode
+          in <code>data/raw/pvs-gerechnet.json</code>.
+        </p>
+        <p>
+          <strong>Gegenläufige Belege:</strong> Die KBV nennt für Ende 1991 je nach Grafik 16,5 % (alle KVen), 20,3 % oder
+          20,7 % (alte Länder); verwendet sind 16,5 %. In der Grafik von 1995 ist die Achse um ein Jahr verschoben
+          (52,92 % steht bei 1995, gemeint ist der Jahreswechsel 1994/95); verwendet ist die Reihe von 1998.
+        </p>
+        <p><strong>Erstellt</strong> 25.11.2026 · <strong>geprüft</strong> 25.11.2026</p>
 
         <h2 id="pvs-installationen-2007">Datensatz: Praxissoftware in Arztpraxen seit 2007</h2>
         <p>
