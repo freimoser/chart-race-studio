@@ -24,6 +24,7 @@ export const ARCS: RoadmapArc[] = [
   { id: 'fach', label: 'Die Spezialisierung', claim: 'Die Tiermedizin teilt sich in Kleintier-Spezialgebiete und schrumpfende Nutztierfächer.' },
   { id: 'karte', label: 'Die Landkarte', claim: 'Versorgung ist keine Bundeszahl, sie ist regional sehr ungleich.' },
   { id: 'markt', label: 'Markt & Menschen', claim: 'Wer zahlt, wer arbeitet, und was die Statistik nicht sagt.' },
+  { id: 'europa', label: 'Europa im Vergleich', claim: 'Versicherung, Umsatz, Hunde und Katzen: wo Deutschland in Europa steht.' },
 ]
 
 export const POSTS: RoadmapPost[] = [
@@ -369,16 +370,16 @@ export const POSTS: RoadmapPost[] = [
     refs: [34, 17],
   },
   {
-    nr: 43, arc: 'markt', status: 'geplant', vorabOnline: true,
+    nr: 43, arc: 'europa', status: 'geplant', vorabOnline: true,
     title: 'Tierversicherung in Europa',
     hook: '72 Prozent in Schweden, 8 in Deutschland, 2 in Spanien: So unterschiedlich ist der Anteil versicherter Hunde und Katzen in Europa.',
-    figures: ['Schweden 72 % (Umfrage), Dänemark 42, Finnland 28, Norwegen 27, Großbritannien 22', 'Schweiz 10, Deutschland 8, Frankreich 6, Belgien 4', 'Tschechien 3, Spanien 2, Portugal 2, Polen 1', 'Umfragen 2- bis 3-mal über Versicherer-Zahlen (GB: 61 % der Hunde laut PDSA gegen 22 %)'],
+    figures: ['Schweden 72 % (Umfrage), Dänemark 42, Finnland 28, Norwegen 27, Großbritannien 22', 'Schweiz 10, Deutschland 8, Frankreich 6, Belgien 4', 'Tschechien 3, Spanien 2, Portugal 2, Polen 1', 'Umfragen rund 2- bis 2,5-mal über Versicherer-Zahlen (GB: 61 % der Hunde laut PDSA gegen 22 %)'],
     dataStatus: 'teilweise',
     dataNote: 'Einzelbild (docs/linkedin/karte-tierversicherung-europa.json), kein Datensatz. Rechnung je Land in ds33 (karte_2024). Sternwerte = nur Umfragen/Schätzungen. Italien, Niederlande grau.',
     refs: [46, 45],
   },
   {
-    nr: 44, arc: 'markt', status: 'geplant', vorabOnline: true,
+    nr: 44, arc: 'europa', status: 'geplant', vorabOnline: true,
     title: 'Tierarzt-Umsatz je Hund und Katze',
     hook: '247 Euro setzen Tierarztpraxen in Deutschland je Hund und Katze um. In der Schweiz sind es 511, in Italien 80. Belgien, Spitzenreiter je Einwohner, fällt je Tier zurück.',
     figures: ['Umsatz je Hund und Katze 2024: Schweiz 511 €, Dänemark 449, Schweden 402, Niederlande 357', 'Belgien 271, Österreich 248, Deutschland 247, Frankreich 223', 'Italien 80, Ungarn 35', 'EU ohne Irland: rund 172 € je Tier'],
@@ -387,7 +388,7 @@ export const POSTS: RoadmapPost[] = [
     refs: [49, 45],
   },
   {
-    nr: 45, arc: 'tiere', status: 'geplant', vorabOnline: true,
+    nr: 45, arc: 'europa', status: 'geplant', vorabOnline: true,
     title: 'Hunde und Katzen in Europa',
     hook: 'Ungarn hat 54 Hunde und Katzen auf 100 Einwohner, mehr als jedes andere Land in Europa. Deutschland liegt mit 32 im Mittelfeld.',
     figures: ['Je 100 Einwohner 2024: Ungarn 54, Portugal 46, Rumänien 46, Belgien 44, Polen 43; Deutschland 32', 'EU: 69,6 Mio. Hunde, 83,1 Mio. Katzen, 34 je 100 Einwohner', 'Hunde je 100: Ungarn 29, Portugal 27, Slowakei 26; Deutschland 13', 'Katzen je 100: Belgien 26, Ungarn 25, Frankreich 24; Deutschland 19', 'Gegenproben: PDSA (GB 10,6 statt 13,4 Mio. Hunde), Novus (SE 0,93 statt 1,16 Mio.), Register Spanien'],
@@ -396,16 +397,16 @@ export const POSTS: RoadmapPost[] = [
     refs: [49, 47, 48],
   },
   {
-    nr: 46, arc: 'markt', status: 'geplant', vorabOnline: true,
+    nr: 46, arc: 'europa', status: 'geplant', vorabOnline: true,
     title: 'Wie viele Hunde und Katzen versichert sind',
     hook: '2,01 Mio. Tiere sind in Deutschland krankenversichert, mehr als doppelt so viele wie 2019. Trotzdem sind es nur knapp 8 von 100 Hunden und Katzen, in Norwegen gut jedes vierte.',
-    figures: ['Deutschland: 845.000 (2019) → 2,01 Mio. versicherte Tiere (2024), 3,4 → 7,6 Prozent', 'Beiträge 173 → 720 Mio. Euro, rund 358 Euro je Tier', 'Vollschutz-Anteil 22 (2020) → 40 Prozent (2024)', 'Norwegen 16,8 → 26,7 Prozent, seit 2021 vor Großbritannien (20–21,5 Prozent)', 'Umfragen: rund 30 Prozent der Hunde (Uelzener 2024), 2- bis 3-mal über den Versicherer-Zahlen'],
+    figures: ['Deutschland: 845.000 (2019) → 2,01 Mio. versicherte Tiere (2024), 3,4 → 7,6 Prozent', 'Beiträge 173 → 720 Mio. Euro, rund 358 Euro je Tier', 'Vollschutz-Anteil 22 (2020) → 40 Prozent (2024)', 'Norwegen 16,8 → 26,7 Prozent, seit 2021 vor Großbritannien (20–21,5 Prozent)', 'Umfragen: rund 30 Prozent der Hunde (Uelzener 2024), rund 2- bis 2,5-mal über den Versicherer-Zahlen'],
     sampleId: 'tierversicherung', chart: 'line', dataStatus: 'belegt',
     dataNote: 'Einzelbild docs/linkedin/grafik-tierversicherung-entwicklung.json (2018 und 2024), wahlweise Line Race 2018–2024 (ds33-tierversicherung-europa.json): nur Marktzahlen (GDV, ABI, Finans Norge) ÷ Bestand. GB 2019/2022 linear, DE 2018 Schätzung Heimtierstudie, NO 2024 Bestand DyreID. Umfragen bewusst nicht im Chart – im Post sagen.',
     refs: [43, 44],
   },
   {
-    nr: 47, arc: 'tiere', status: 'geplant', vorabOnline: true,
+    nr: 47, arc: 'europa', status: 'geplant', vorabOnline: true,
     title: 'Hunde je Einwohner in Europa',
     hook: 'Ungarn hat 29 Hunde auf 100 Einwohner, mehr als jedes andere Land in Europa. Deutschland liegt mit 13 im Mittelfeld, die Schweiz bei 6.',
     figures: ['Hunde je 100 Einwohner 2024: Ungarn 29, Portugal 27, Slowakei 26, Polen 23, Rumänien 22', 'Deutschland 13 (10,5 Mio.), Großbritannien 19 (13,4 Mio., absolut die meisten)', 'Schweiz und Griechenland je 6, Albanien 4', 'EU: 69,6 Mio. Hunde, 15 je 100 Einwohner'],
@@ -414,7 +415,7 @@ export const POSTS: RoadmapPost[] = [
     refs: [45, 48],
   },
   {
-    nr: 48, arc: 'tiere', status: 'geplant', vorabOnline: true,
+    nr: 48, arc: 'europa', status: 'geplant', vorabOnline: true,
     title: 'Katzen je Einwohner in Europa',
     hook: 'Belgien hat 26 Katzen auf 100 Einwohner, mehr als jedes andere Land in Europa. Deutschland kommt auf 19, Spanien auf 10.',
     figures: ['Katzen je 100 Einwohner 2024: Belgien 26, Ungarn 25, Frankreich 24, Rumänien und Estland je 23', 'Deutschland 19 (15,9 Mio.), Frankreich absolut vorn (16,7 Mio.)', 'Spanien 10, Griechenland 6, Albanien und Malta je 4', 'EU: 83,1 Mio. Katzen, 18 je 100 Einwohner'],
@@ -423,7 +424,7 @@ export const POSTS: RoadmapPost[] = [
     refs: [45, 47],
   },
   {
-    nr: 49, arc: 'markt', status: 'geplant', vorabOnline: true,
+    nr: 49, arc: 'europa', status: 'geplant', vorabOnline: true,
     title: 'Was Tierärzte in Europa pro Kopf umsetzen',
     hook: 'Belgien 120 Euro, Deutschland 78, Italien 28: So viel setzen die Tierarztpraxen je Einwohner um. Die EU ohne Irland liegt bei 59 Euro.',
     figures: ['EU-27 ohne Irland 2024: 26,0 Mrd. Euro, 59 Euro je Einwohner (mit Irland 29,1 Mrd., 65 Euro)', 'Deutschland: 6,53 Mrd. Euro, 78 Euro je Einwohner, Platz 10 von 32', 'Spitze: Belgien 120, Schweiz 116, Schweden 110; Schluss: Italien 28, Bulgarien 10, Nordmazedonien 6', '2021–2024 in Euro: EU ohne Irland plus 31 Prozent, Deutschland plus 33, Polen plus 70', 'Gegenprobe Destatis (Umsatzsteuerstatistik WZ 75): 5,94 Mrd. Euro, 71 Euro je Einwohner'],
@@ -432,7 +433,7 @@ export const POSTS: RoadmapPost[] = [
     refs: [45, 44],
   },
   {
-    nr: 50, arc: 'markt', status: 'geplant', vorabOnline: true,
+    nr: 50, arc: 'europa', status: 'geplant', vorabOnline: true,
     title: 'Tierarzt-Umsatz in Europa wächst',
     hook: 'Plus 70 Prozent in drei Jahren: So stark wuchs der Umsatz der Tierarztpraxen in Polen, mehr als doppelt so stark wie in Deutschland.',
     figures: ['Umsatz 2021–2024 in Euro: Litauen plus 74 Prozent, Polen plus 70, Schweden plus 46', 'Deutschland plus 33 (4,92 auf 6,53 Mrd. Euro), EU ohne Irland plus 31', 'Belgien und Dänemark je plus 15, Norwegen plus 5', 'In Landeswährung: Polen plus 61, Schweden plus 64, Norwegen plus 20', 'Gegenprobe Destatis: Deutschland plus 29 Prozent'],

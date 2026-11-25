@@ -1,11 +1,11 @@
 ---
 post: 46
 slug: tierkrankenversicherung-statistik
-titel: Tierkrankenversicherung: Wie viele Tiere versichert sind
+titel: Tierkrankenversicherung Statistik: 2,01 Mio. versichert
 beschreibung: 2024 waren in Deutschland 2,01 Mio. Tiere krankenversichert, knapp 8 von 100 Hunden und Katzen, 2019 erst 845.000. Dazu Großbritannien und Norwegen.
 frage: Wie viele Hunde und Katzen sind versichert?
 suchbegriffe: tierkrankenversicherung statistik, wie viele hunde sind versichert, anteil versicherte hunde, tierversicherung deutschland zahlen, op versicherung hund statistik
-stand: 2026-11-09
+stand: 2026-11-25
 bereit: ja
 ---
 In Deutschland waren 2024 rund **2,01 Mio. Tiere** kranken- oder OP-versichert, meldet der Gesamtverband der Versicherer (GDV). Bei 26,4 Mio. Hunden und Katzen sind das knapp **8 von 100** (7,6 Prozent, berechnet). 2019 waren es 845.000 versicherte Tiere und 3,4 Prozent. In **Großbritannien** ist seit Jahren rund jedes fünfte Tier versichert (21,5 Prozent), in **Norwegen** gut jedes vierte (26,7 Prozent).
@@ -22,7 +22,7 @@ In Deutschland waren 2024 rund **2,01 Mio. Tiere** kranken- oder OP-versichert, 
 
 ## Warum Deutschland so schnell wächst
 
-Seit der neuen Gebührenordnung für Tierärzte (GOT) von November 2022 kosten viele Behandlungen deutlich mehr; wie stark, zeigt der Artikel [Tierarztkosten und Inflation](tierarztkosten-inflation.html). Genau in diese Zeit fällt der steilste Anstieg: 2022 kamen 270.000 versicherte Tiere hinzu, 2023 260.000, 2024 220.000. Die Beiträge stiegen 2023 um 41 Prozent und 2024 um 38 Prozent, deutlich schneller als die Zahl der Verträge. Darin stecken höhere Prämien und der Wechsel vom reinen OP-Schutz zur Vollversicherung.
+Der stärkste Zuwachs kam 2022: 270.000 versicherte Tiere mehr, schon vor der neuen Gebührenordnung für Tierärzte (GOT), die erst am 22. November 2022 in Kraft trat. Danach blieb das Wachstum hoch, 2023 mit 260.000 und 2024 mit 220.000 Tieren. Wie stark die GOT viele Behandlungen verteuert hat, zeigt der Artikel [Tierarztkosten und Inflation](tierarztkosten-inflation.html). Die Beiträge stiegen 2023 um 41 Prozent und 2024 um 38 Prozent, deutlich schneller als die Zahl der Verträge. Darin stecken höhere Prämien und der Wechsel vom reinen OP-Schutz zur Vollversicherung.
 
 Trotzdem bleibt der Anteil niedrig. Selbst 2024 sind mehr als 92 von 100 Hunden und Katzen in Deutschland ohne Krankenversicherung, gemessen an den Zahlen der Versicherer.
 
@@ -32,14 +32,14 @@ Getrennt nach Tierart meldet der GDV nicht. Nach der Heimtierstudie 2019 der Uni
 
 ## Was Umfragen sagen
 
-Fragt man die Halter, kommen viel höhere Werte heraus. Eine Umfrage der Uelzener Versicherung 2024 nennt rund 30 Prozent der Hunde und 21 Prozent der Katzen, eine Check24-Umfrage 2023 47 Prozent der Hunde. Kleintierärzte schätzten 2025 im Mittel 35 Prozent der Hunde und 20 Prozent der Katzen ([Strohbücker, BMTW 2026](https://vetline.de/system/files/frei/bmtw-10.23761439-0299-2026-12-strohbuecker.pdf)). Dasselbe Muster zeigt Großbritannien: In der PDSA-Umfrage sagen 61 Prozent der Hundehalter und 46 Prozent der Katzenhalter, ihr Tier sei versichert, die Zahlen der Versicherer ergeben 21,5 Prozent aller Tiere.
+Fragt man die Halter, kommen viel höhere Werte heraus. Eine Umfrage der Uelzener Versicherung 2024 nennt rund 30 Prozent der Hunde und 21 Prozent der Katzen ([über FellAkte](https://fellakte.de/forschung/tierkrankenversicherung-deutschland)), eine [Check24-Umfrage 2023](https://www.check24.de/tierversicherung/umfrage-zu-tierversicherungen/) 47 Prozent der Hunde. Aus den GDV-Zahlen ergeben sich grob 17 Prozent der Hunde (berechnet), die Uelzener-Umfrage liegt also knapp doppelt so hoch. Kleintierärzte schätzten 2025 im Mittel 35 Prozent der Hunde und 20 Prozent der Katzen ([Strohbücker, BMTW 2026](https://vetline.de/system/files/frei/bmtw-10.23761439-0299-2026-12-strohbuecker.pdf)). Dasselbe Muster zeigt Großbritannien: In der [PDSA-Umfrage](https://www.pdsa.org.uk/what-we-do/pdsa-animal-wellbeing-report) sagen 61 Prozent der Hundehalter und 46 Prozent der Katzenhalter, ihr Tier sei versichert, gewichtet rund 53 Prozent; die Zahlen der Versicherer ergeben 21,5 Prozent aller Tiere, etwa ein Zweieinhalbfaches.
 
 Mögliche Gründe: Wer ein versichertes Tier hat, nimmt eher an solchen Umfragen teil; Halter zählen Haftpflicht- oder Zahnschutz mit; und der GDV erfasst nur 13 Unternehmen. Die Grafik zeigt deshalb nur Zahlen der Versicherer, die Umfragen sind eine Obergrenze.
 
 ## Was die Zahl nicht sagt
 
 - **Untergrenze für Deutschland.** An der Sonderumfrage des GDV nahmen 13 Unternehmen teil, nicht der ganze Markt. 2018 ist eine Schätzung der Heimtierstudie (805.000 Tiere).
-- **Unterschiedliche Zähler.** Großbritannien zählt versicherte Tiere der Mitglieder des Versichererverbands ABI, Norwegen private Verträge laut Finans Norge, die auch Pferde enthalten.
+- **Unterschiedliche Zähler.** Großbritannien zählt versicherte Tiere der Mitglieder des Versichererverbands ABI, Norwegen private Verträge laut Finans Norge, die auch Pferde enthalten. Der GDV meldet „Hunde, Katzen und Co“; andere Tiere im Zähler heben den deutschen Anteil etwas.
 - **Bestand ist eine Schätzung.** Mit dem höheren Tierbestand des Heimtiernahrungsverbands FEDIAF läge Großbritannien bei 18 statt 21,5 Prozent, Norwegen bei 24 statt 26,7 Prozent.
 - **Nur Kranken- und OP-Versicherung.** Die Hundehaftpflicht ist nicht enthalten.
 
@@ -55,8 +55,8 @@ Rechnerisch nahmen die Versicherer 2024 rund 358 Euro je versichertem Tier ein (
 
 ### In welchem Land sind die meisten Haustiere versichert?
 
-In Schweden: Laut Befragungen für den Versicherer Agria sind gut 90 Prozent der Hunde und rund 60 Prozent der Katzen versichert. Den Vergleich aller Länder zeigt der Beitrag [Tierversicherung in Europa](tierversicherung-europa.html).
+In Schweden: Laut Befragungen für den Versicherer Agria sind gut 90 Prozent der Hunde und 2024 rund 62 Prozent der Katzen versichert (zwischen den Befragungen 2020 und 2026 gerechnet, 2026: 65 Prozent). Den Vergleich aller Länder zeigt der Beitrag [Tierversicherung in Europa](tierversicherung-europa.html).
 
 ## Quelle und Methode
 
-Gesamtverband der Deutschen Versicherungswirtschaft (GDV), [Medieninformation zur Zahl der versicherten Tiere](https://www.gdv.de/gdv/medien/medieninformationen/tierkrankenversicherung-waechst-rasant-mehr-als-zwei-millionen-hunde-katzen-und-co-abgesichert-205370) und [zu den Beiträgen](https://www.gdv.de/gdv/medien/medieninformationen/beitraege-in-der-tierkrankenversicherung-steigen-stark-205374), Sonderumfrage bei 13 Unternehmen, Jahreswerte 2019 bis 2024 aus den Grafiken; 2018: [Heimtierstudie 2019](https://uni-goettingen.de/de/document/download/52bbce3b8ebcfef2faa77d50d72a0b21.pdf/Heimtierstudie%202019%20final%20korr..pdf), Universität Göttingen. Bestand Deutschland: IVH/ZZF. Großbritannien: Association of British Insurers (Pressemitteilungen 2019 bis 2025) und PDSA Animal Wellbeing Report. Norwegen: Finans Norge, Prämienstatistik, Bestand FEDIAF und DyreID. Alle abgerufen am 9. November 2026. Berechnet sind alle Anteile, die Beiträge je Tier und die Aufteilung nach Hund und Katze; Großbritannien 2019 und 2022 linear zwischen den Nachbarjahren. Mehr zur Herkunft: [Datenherkunft, Tierversicherung](../artikel/datenherkunft.html#tierversicherung).
+Gesamtverband der Deutschen Versicherungswirtschaft (GDV), [Medieninformation zur Zahl der versicherten Tiere](https://www.gdv.de/gdv/medien/medieninformationen/tierkrankenversicherung-waechst-rasant-mehr-als-zwei-millionen-hunde-katzen-und-co-abgesichert-205370) und [zu den Beiträgen](https://www.gdv.de/gdv/medien/medieninformationen/beitraege-in-der-tierkrankenversicherung-steigen-stark-205374), Sonderumfrage bei 13 Unternehmen, Jahreswerte 2019 bis 2024 aus den Grafiken; 2018: [Heimtierstudie 2019](https://uni-goettingen.de/de/document/download/52bbce3b8ebcfef2faa77d50d72a0b21.pdf/Heimtierstudie%202019%20final%20korr..pdf), Universität Göttingen. Bestand Deutschland: IVH/ZZF. Großbritannien: Association of British Insurers, Pressemitteilungen [2022](https://www.abi.org.uk/news/news-articles/2022/05/pet-insurers-processed-a-record-2.4-million-a-day-in-2021/), [2024](https://www.abi.org.uk/news/news-articles/2024/8/record-numbers-take-out-pet-insurance-for-their-four-legged-fur-ends/) und [2025](https://www.abi.org.uk/news/news-articles/2025/5/insurance-payouts-for-pawly-pets-top-1-billion-for-third-year-in-a-row/) (2018 zitiert bei [Yahoo Finance](https://uk.finance.yahoo.com/news/record-785m-paid-2018-pet-230100118.html)), Bestand: [PDSA](https://pdsa.org.uk/what-we-do/pdsa-animal-wellbeing-report/uk-pet-populations-of-dogs-cats-and-rabbits). Norwegen: [Finans Norge, Prämienstatistik](https://www.finansnorge.no/siteassets/statistikk-og-analyse/skadeforsikring---statistikk/premiestatistikk/4.-kvartal/premiestatistikken_2025q4.xlsx), Bestand [FEDIAF](https://europeanpetfood.org/wp-content/uploads/2026/06/FEDIAF_Annual-Report_2026_WEBv1.1.pdf) und DyreID; Tryg zu 2025: [Pressemitteilung](https://kommunikasjon.ntb.no/pressemelding/18587066/rekordmange-kjaeledyr-forsikret). Alle abgerufen am 9. November 2026. Berechnet sind alle Anteile, die Beiträge je Tier und die Aufteilung nach Hund und Katze; Großbritannien 2019 und 2022 linear zwischen den Nachbarjahren. Mehr zur Herkunft: [Datenherkunft, Tierversicherung](../artikel/datenherkunft.html#tierversicherung).

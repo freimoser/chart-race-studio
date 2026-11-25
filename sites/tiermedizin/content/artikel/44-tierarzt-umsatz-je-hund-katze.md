@@ -37,8 +37,8 @@ Auf der Karte des [Tierarzt-Umsatzes je Einwohner](tierarzt-umsatz-europa.html) 
 | Frankreich | 86 € | 38 | 223 € |
 | Spanien | 40 € | 24 | 165 € |
 | Polen | 47 € | 43 | 110 € |
-| Italien | 28 € | 35 | 80 € |
 | Portugal | 39 € | 46 | 85 € |
+| Italien | 28 € | 35 | 80 € |
 | Ungarn | 19 € | 54 | 35 € |
 
 *Umsatz: Eurostat, Wirtschaftszweig Veterinärwesen, 2024. Hunde und Katzen: FEDIAF, Bestand 2024. Alle Quotienten berechnet.*
@@ -66,4 +66,4 @@ Je Hund und Katze setzen Schweizer Praxen mit 511 Euro gut doppelt so viel um wi
 
 ## Quelle und Methode
 
-Umsatz: Eurostat, [sbs_ovw_act](https://ec.europa.eu/eurostat/databrowser/view/sbs_ovw_act/default/table), Wirtschaftszweig M75 Veterinärwesen, 2024, abgerufen am 8. November 2026. Hunde und Katzen: FEDIAF, [Facts & Figures 2026](https://europeanpetfood.org/wp-content/uploads/2026/06/FEDIAF_Annual-Report_2026_WEBv1.1.pdf), Bestand 2024, abgerufen am 9. November 2026. Berechnet ist der Umsatz geteilt durch die Summe aus Hunden und Katzen; für die EU ohne Irland die EU-Summe von Eurostat minus Irland, geteilt durch die Hunde und Katzen der übrigen 26 Länder. Mehr zur Herkunft: [Datenherkunft, Umsatz je Hund und Katze](../artikel/datenherkunft.html#umsatz-je-tier-europa).
+Umsatz: Eurostat, [sbs_ovw_act](https://ec.europa.eu/eurostat/databrowser/view/sbs_ovw_act/default/table), Wirtschaftszweig M75 Veterinärwesen, 2024, abgerufen am 8. November 2026. Hunde und Katzen: FEDIAF, [Facts & Figures 2026](https://europeanpetfood.org/wp-content/uploads/2026/06/FEDIAF_Annual-Report_2026_WEBv1.1.pdf), Bestand 2024, abgerufen am 9. November 2026. Berechnet ist der Umsatz geteilt durch die Summe aus Hunden und Katzen; für die EU ohne Irland die EU-Summe von Eurostat minus Irland, geteilt durch die Hunde und Katzen der übrigen 26 Länder. Mehr zur Herkunft: [Datenherkunft, Umsatz je Hund und Katze](../artikel/datenherkunft.html#umsatz-je-tier-europa). Alle Werte als Tabelle: [CSV herunterladen](tierarzt-umsatz-je-hund-katze/tierarzt-umsatz-je-hund-katze-2024.csv) (Lizenz CC BY 4.0).

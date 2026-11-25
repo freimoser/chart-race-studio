@@ -1,0 +1,18 @@
+iso2,land,anteil_versichert_prozent,grundlage,rechnung
+SE,Schweden,72,Umfrage oder Schätzung,"Novus für Agria/SKK: Hunde 92 % (2020) und gut 90 % (2026), Katzen 56 % und 65 %; 2024 linear (91 % / 62 %), gewichtet mit FEDIAF-Bestand 2024 = 73 %, mit Novus-Bestand 72 %. Gegenprobe Dina/Kantar Sifo 2023: 95 % / 69 %."
+DK,Dänemark,42,Umfrage oder Schätzung,"Agria (YouGov/Xtreme): Hunde 66 % (2023, Halterumfrage Nov. 2023), Katzen 19 % (2021); gewichtet mit FEDIAF 2024 = 42 %. Gegenbeleg: Umfrage 2023 Katzen 57 %."
+FI,Finnland,28,Umfrage oder Schätzung,"Agria/Xtreme 2021: Hunde 48 %, Katzen 12 %, gehalten; gewichtet mit FEDIAF 2024 = 28 %. HelloSafe 2025: 23 %."
+NO,Norwegen,27,Zahlen der Versicherer,"Finans Norge 323.127 private Verträge ÷ DyreID 1,21 Mio. = 26,7 %."
+GB,Großbritannien,22,Zahlen der Versicherer,"ABI 4,6 Mio. ÷ PDSA 21,4 Mio. = 21,5 %."
+AT,Österreich,16,Umfrage oder Schätzung,"Online-Panel März 2022 (Sandøe et al. 2023, Frontiers in Veterinary Science): Hunde 29 %, Katzen 10 %; gewichtet mit FEDIAF 2024 = 16 %. HelloSafe: 4 % (ohne Beleg)."
+CH,Schweiz,10,Zahlen der Versicherer,"Epona-Geschäftsführer, Dezember 2024: Hunde 17 %, Katzen 2,5 %, zusammen knapp 10 %; Sanitas und Allianz 2026: etwa 10 %."
+IE,Irland,8,Umfrage oder Schätzung,"Agria 2023: Hunde 10 %, Katzen 5 %; gewichtet = 8 %. Newstalk 2023: 15 % der Halter, Veterinary Ireland 2024: 30 % der Halter."
+DE,Deutschland,8,Zahlen der Versicherer,"GDV 2,01 Mio. ÷ IVH/ZZF 26,4 Mio. = 7,6 %."
+FR,Frankreich,6,Umfrage oder Schätzung,"HelloSafe, L'Argus, Assurland 2024/25: 5–7 % der Tiere, ohne Primärquelle; Mitte 6 %. Ifop für Boehringer 2024: 13 % der Halter."
+BE,Belgien,4,Zahlen der Versicherer,Belfius (Statista) und Figo 2023: 3 % aller Tiere; HelloSafe 2025: 6 %; 2024 linear etwa 4 %.
+CZ,Tschechien,3,Zahlen der Versicherer,"rund 100.000 Verträge 2024 ÷ FEDIAF-Bestand 3,62 Mio. = 2,8 % (Artikel nennt 4 %); PetExpert 2025: 3 %."
+ES,Spanien,2,Zahlen der Versicherer,"UNESPA/Estamos Seguros 2023/24: über 220.800 versicherte Tiere bei 15 Versicherern ÷ FEDIAF 11,9 Mio. = 1,9 % (inkl. Haftpflicht); HelloSafe, Petplan: 2 %."
+PT,Portugal,2,Zahlen der Versicherer,"Summe dreier Versicherer mindestens 122.500 Policen ÷ FEDIAF 5,19 Mio. = mindestens 2,4 %; HelloSafe 5 %."
+PL,Polen,1,Zahlen der Versicherer,TU Europa 2024: unter 1 % aller Haustiere.
+SK,Slowakei,1,Zahlen der Versicherer,etwa 1 % (Versicherer-Angabe).
+# Anteil der Hunde und Katzen mit Kranken- oder OP-Versicherung 2024, berechnet aus Zahlen der Versicherer bzw. Umfragen und Tierbestand (FEDIAF, PDSA, IVH/ZZF, DyreID); Quellen je Land in der Spalte rechnung. tiermedizin-in-zahlen.org, CC BY 4.0

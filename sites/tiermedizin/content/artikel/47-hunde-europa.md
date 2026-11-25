@@ -1,15 +1,15 @@
 ---
 post: 47
 slug: hunde-europa
-titel: Hunde in Europa: Wo die meisten Hunde je Einwohner leben
-beschreibung: Ungarn hat 29 Hunde je 100 Einwohner, Portugal 27, die Slowakei 26. Deutschland liegt mit 13 im Mittelfeld, die Schweiz bei 6. Alle Länder.
+titel: Wie viele Hunde gibt es in Europa? Alle Länder 2024
+beschreibung: In Europa leben 91,2 Mio. Hunde, in der EU 69,6 Mio. Je Einwohner führt Ungarn mit 29 je 100, Deutschland hat 13. Alle 37 Länder.
 frage: Welches Land hat die meisten Hunde pro Einwohner?
 suchbegriffe: hunde pro einwohner europa, meiste hunde europa, hunde europa anzahl, hundedichte europa, wie viele hunde gibt es in europa
 stand: 2026-11-11
 grafik: keine
 bereit: ja
 ---
-Die meisten Hunde je Einwohner in Europa hat **Ungarn**: 29 Hunde auf 100 Menschen. Es folgen **Portugal (27)**, die **Slowakei (26)**, Polen (23) und Rumänien (22). **Deutschland** liegt mit **13 Hunden je 100 Einwohner** im Mittelfeld, die Schweiz mit 6 fast am Ende. Absolut leben die meisten Hunde in Großbritannien (13,4 Mio.), Deutschland (10,5 Mio.) und Frankreich (9,7 Mio.). So steht es in den Facts & Figures des Heimtiernahrungsverbands FEDIAF für 2024, je Einwohner berechnet.
+In Europa leben laut dem Heimtiernahrungsverband FEDIAF **91,2 Mio. Hunde** (2024, mit Großbritannien, der Schweiz, Norwegen, der Türkei und der Ukraine), in der EU **69,6 Mio.** Die meisten Hunde je Einwohner hat **Ungarn**: 29 Hunde auf 100 Menschen. Es folgen **Portugal (27)**, die **Slowakei (26)**, Polen (23) und Rumänien (22). **Deutschland** liegt mit **13 Hunden je 100 Einwohner** im Mittelfeld, die Schweiz mit 6 fast am Ende. Absolut leben die meisten Hunde in Großbritannien (13,4 Mio.), Deutschland (10,5 Mio.) und Frankreich (9,7 Mio.). So steht es in den Facts & Figures des Heimtiernahrungsverbands FEDIAF für 2024, je Einwohner berechnet.
 
 ## Das Wichtigste in Kürze
 
@@ -76,6 +76,10 @@ Hohe Werte haben vor allem Länder in Mittelost- und Südosteuropa sowie Portuga
 
 ## Häufige Fragen
 
+### Wie viele Hunde gibt es in Europa?
+
+Laut FEDIAF 91,2 Mio. im Jahr 2024, davon 69,6 Mio. in der EU. Die meisten leben in Großbritannien (13,4 Mio.), Deutschland (10,5 Mio.) und Frankreich (9,7 Mio.).
+
 ### Welches Land hat die meisten Hunde?
 
 Absolut Großbritannien mit 13,4 Mio. Hunden, je Einwohner Ungarn mit 29 Hunden je 100 Einwohner.
@@ -86,4 +90,4 @@ Laut IVH und ZZF 10,5 Mio. im Jahr 2024 und 10,0 Mio. im Jahr 2025, das sind 13 
 
 ## Quelle und Methode
 
-FEDIAF, [Facts & Figures 2026](https://europeanpetfood.org/wp-content/uploads/2026/06/FEDIAF_Annual-Report_2026_WEBv1.1.pdf), S. 27, Bestand 2024; Bevölkerung: Eurostat, [tps00001](https://ec.europa.eu/eurostat/databrowser/view/tps00001/default/table). Abgerufen am 9. November 2026. Berechnet sind die Werte je 100 Einwohner. Gegenproben und alle Ausgaben seit 2018: [Datenherkunft, Hunde und Katzen in Europa](../artikel/datenherkunft.html#heimtiere-europa).
+FEDIAF, [Facts & Figures 2026](https://europeanpetfood.org/wp-content/uploads/2026/06/FEDIAF_Annual-Report_2026_WEBv1.1.pdf), S. 27, Bestand 2024; Bevölkerung: Eurostat, [tps00001](https://ec.europa.eu/eurostat/databrowser/view/tps00001/default/table). Abgerufen am 9. November 2026. Berechnet sind die Werte je 100 Einwohner. Gegenproben und alle Ausgaben seit 2018: [Datenherkunft, Hunde und Katzen in Europa](../artikel/datenherkunft.html#heimtiere-europa). Alle Werte als Tabelle: [CSV herunterladen](hunde-katzen-europa/hunde-katzen-europa-2024.csv) (Lizenz CC BY 4.0).

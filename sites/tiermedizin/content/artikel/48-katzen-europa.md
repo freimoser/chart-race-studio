@@ -1,15 +1,15 @@
 ---
 post: 48
 slug: katzen-europa
-titel: Katzen in Europa: Wo die meisten Katzen je Einwohner leben
-beschreibung: Belgien hat 26 Katzen je 100 Einwohner, Ungarn 25, Frankreich 24. Deutschland liegt bei 19, Spanien bei 10, Griechenland bei 6. Alle Länder.
+titel: Wie viele Katzen gibt es in Europa? Alle Länder 2024
+beschreibung: In Europa leben 110,9 Mio. Katzen, in der EU 83,1 Mio. Je Einwohner führt Belgien mit 26 je 100, Deutschland hat 19. Alle 37 Länder.
 frage: Welches Land hat die meisten Katzen?
 suchbegriffe: katzen europa anzahl, katzen pro einwohner europa, meiste katzen europa, wie viele katzen gibt es in europa, katzen frankreich anzahl
 stand: 2026-11-11
 grafik: keine
 bereit: ja
 ---
-Die meisten Katzen je Einwohner in Europa hat **Belgien**: 26 Katzen auf 100 Menschen. Es folgen **Ungarn (25)**, **Frankreich (24)**, Rumänien und Estland (je 23). **Deutschland** kommt auf **19 Katzen je 100 Einwohner**, Spanien nur auf 10 und Griechenland auf 6. Absolut leben die meisten Katzen in Frankreich (16,7 Mio.), Deutschland (15,9 Mio.) und Großbritannien (12,3 Mio.). So steht es in den Facts & Figures des Heimtiernahrungsverbands FEDIAF für 2024, je Einwohner berechnet.
+In Europa leben laut dem Heimtiernahrungsverband FEDIAF **110,9 Mio. Katzen** (2024, mit Großbritannien, der Schweiz, Norwegen, der Türkei und der Ukraine), in der EU **83,1 Mio.** Die meisten Katzen je Einwohner hat **Belgien**: 26 Katzen auf 100 Menschen. Es folgen **Ungarn (25)**, **Frankreich (24)**, Rumänien und Estland (je 23). **Deutschland** kommt auf **19 Katzen je 100 Einwohner**, Spanien nur auf 10 und Griechenland auf 6. Absolut leben die meisten Katzen in Frankreich (16,7 Mio.), Deutschland (15,9 Mio.) und Großbritannien (12,3 Mio.). So steht es in den Facts & Figures des Heimtiernahrungsverbands FEDIAF für 2024, je Einwohner berechnet.
 
 ## Das Wichtigste in Kürze
 
@@ -76,6 +76,10 @@ In West- und Mitteleuropa ist die Katze das häufigste Haustier. Frankreich hat 
 
 ## Häufige Fragen
 
+### Wie viele Katzen gibt es in Europa?
+
+Laut FEDIAF 110,9 Mio. im Jahr 2024, davon 83,1 Mio. in der EU. Die meisten leben in Frankreich (16,7 Mio.), Deutschland (15,9 Mio.) und Großbritannien (12,3 Mio.).
+
 ### Welches Land hat die meisten Katzen?
 
 Absolut Frankreich mit 16,7 Mio. Katzen, je Einwohner Belgien mit 26 Katzen je 100 Einwohner.
@@ -86,4 +90,4 @@ Laut IVH und ZZF 15,9 Mio. im Jahr 2024 und 15,7 Mio. im Jahr 2025, rund 19 je 1
 
 ## Quelle und Methode
 
-FEDIAF, [Facts & Figures 2026](https://europeanpetfood.org/wp-content/uploads/2026/06/FEDIAF_Annual-Report_2026_WEBv1.1.pdf), S. 28, Bestand 2024; Bevölkerung: Eurostat, [tps00001](https://ec.europa.eu/eurostat/databrowser/view/tps00001/default/table). Abgerufen am 9. November 2026. Berechnet sind die Werte je 100 Einwohner. Gegenproben und alle Ausgaben seit 2018: [Datenherkunft, Hunde und Katzen in Europa](../artikel/datenherkunft.html#heimtiere-europa).
+FEDIAF, [Facts & Figures 2026](https://europeanpetfood.org/wp-content/uploads/2026/06/FEDIAF_Annual-Report_2026_WEBv1.1.pdf), S. 28, Bestand 2024; Bevölkerung: Eurostat, [tps00001](https://ec.europa.eu/eurostat/databrowser/view/tps00001/default/table). Abgerufen am 9. November 2026. Berechnet sind die Werte je 100 Einwohner. Gegenproben und alle Ausgaben seit 2018: [Datenherkunft, Hunde und Katzen in Europa](../artikel/datenherkunft.html#heimtiere-europa). Alle Werte als Tabelle: [CSV herunterladen](hunde-katzen-europa/hunde-katzen-europa-2024.csv) (Lizenz CC BY 4.0).

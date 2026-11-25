@@ -1,7 +1,7 @@
 {
  "titel": "Tierversicherung in Europa: versicherte Hunde und Katzen",
  "abgerufen": "2026-11-09",
- "hinweis": "Keine amtliche Statistik. Zwei Arten von Zahlen, die nicht zusammenpassen: (1) Marktzahlen der Versicherer bzw. ihrer Verbände (versicherte Tiere oder Verträge) geteilt durch den Tierbestand, (2) Halterbefragungen. Wo beides vorliegt, liegen die Befragungen 2- bis 3-mal höher (DE: GDV 7,6 % aller Hunde und Katzen 2024 gegen Uelzener-Umfrage rund 30 % der Hunde und 21 % der Katzen; GB: ABI/PDSA-Bestand 21,5 % gegen PDSA-Halterumfrage 61 % der Hunde und 46 % der Katzen). Der Datensatz tierversicherung (Chart Race) nutzt deshalb nur Marktzahlen. Die Karte zeigt Marktzahlen und kennzeichnet Länder, für die es nur Befragungen gibt.",
+ "hinweis": "Keine amtliche Statistik. Zwei Arten von Zahlen, die nicht zusammenpassen: (1) Marktzahlen der Versicherer bzw. ihrer Verbände (versicherte Tiere oder Verträge) geteilt durch den Tierbestand, (2) Halterbefragungen. Wo beides vorliegt, liegen die Befragungen rund 2- bis 2,5-mal höher (DE, nur Hunde: aus GDV-Zahlen grob 17 % gegen Uelzener-Umfrage rund 30 %, Faktor 1,8; GB: ABI/PDSA-Bestand 21,5 % gegen PDSA-Halterumfrage 61 % der Hunde und 46 % der Katzen, gewichtet 53 %, Faktor 2,5). Der Datensatz tierversicherung (Chart Race) nutzt deshalb nur Marktzahlen. Die Karte zeigt Marktzahlen und kennzeichnet Länder, für die es nur Befragungen gibt.",
  "markt": {
   "DE": {
    "versicherte": {

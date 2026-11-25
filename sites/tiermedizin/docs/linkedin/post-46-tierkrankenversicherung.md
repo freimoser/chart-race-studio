@@ -22,7 +22,7 @@ Trotzdem sind es nur knapp 8 von 100 Hunden und Katzen. In Großbritannien ist j
 
 Und in Umfragen? Da sagen rund 30 Prozent der Hundehalter, ihr Tier sei versichert. Wer hat recht? Ich vermute: beide, denn wer versichert ist, antwortet eher. Ist euer Tier versichert?
 
-Gerechnet / Quellen: Alle Anteile berechnet als versicherte Tiere laut Versicherern geteilt durch den Bestand an Hunden und Katzen. Deutschland: GDV-Sonderumfrage bei 13 Unternehmen 2019–2024 (eine Untergrenze), 2018 Schätzung der Heimtierstudie 2019, Bestand IVH/ZZF. Großbritannien: Versichererverband ABI (nur Mitglieder) und Bestand laut PDSA; 2019 und 2022 ohne ABI-Wert, dort linear gerechnet. Mit dem FEDIAF-Bestand wären es 18 Prozent. Norwegen: private Verträge laut Finans Norge (mit Pferden), Bestand FEDIAF, 2024 DyreID. Umfragen liegen in Deutschland und Großbritannien zwei- bis dreimal höher und sind deshalb nicht in der Grafik.
+Gerechnet / Quellen: Alle Anteile berechnet als versicherte Tiere laut Versicherern geteilt durch den Bestand an Hunden und Katzen. Deutschland: GDV-Sonderumfrage bei 13 Unternehmen 2019–2024 (eine Untergrenze), 2018 Schätzung der Heimtierstudie 2019, Bestand IVH/ZZF. Großbritannien: Versichererverband ABI (nur Mitglieder) und Bestand laut PDSA; 2019 und 2022 ohne ABI-Wert, dort linear gerechnet. Mit dem FEDIAF-Bestand wären es 18 Prozent. Norwegen: private Verträge laut Finans Norge (mit Pferden), Bestand FEDIAF, 2024 DyreID. Umfragen liegen in Deutschland und Großbritannien rund doppelt bis zweieinhalbmal höher und sind deshalb nicht in der Grafik.
 
 Alle Zahlen und Methode:
 https://tiermedizin-in-zahlen.org/beitrag/tierkrankenversicherung-statistik
