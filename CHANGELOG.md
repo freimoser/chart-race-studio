@@ -4,6 +4,15 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Humanmedizin ist live (25.11.2026)
+
+- **Betrifft beide Seiten (Hinweis):** https://humanmedizin-in-zahlen.org ist live – DNS bei Cloudflare, GitHub Pages
+  aus dem Repo `freimoser/humanmedizin-in-zahlen`, HTTPS erzwungen. Jeder Push auf `main` deployt jetzt **beide**
+  Seiten wirklich (vorher wurde die Humanmedizin übersprungen); ein Fehler im Kern bricht also auch dort den Deploy.
+- **Für den Tiermedizin-Chat:** Die Links Tiermedizin → Humanmedizin sind jetzt fällig (`docs/VERLINKUNG.md`: Fuß,
+  Über-Seite „Wo es weitergeht“, llms.txt, `sameAs` in `profil.ts`). Die Regel „erst setzen, wenn sie live ist“ in
+  `sites/tiermedizin/CLAUDE.md` ist damit erfüllt.
+
 ### Banner und Überschriften auf dem Handy (25.11.2026)
 
 - **Kern, betrifft beide Seiten:** Einwilligungsbanner unter 640 px kompakter (kleinere Schrift, weniger Abstand, Knöpfe mindestens 44 px hoch); es deckte auf dem Handy bis zu 30 % des Bildschirms ab, jetzt rund 20 %. Text unverändert. Überschriften trennen kurze Wörter nicht mehr („Euro-pa“): `hyphenate-limit-chars: 10 6 4` in `src/article.css`; lange Komposita werden weiter getrennt, `check:mobil` ohne Überlauf auf beiden Seiten.

@@ -29,7 +29,7 @@ Stand 20.10.2026. Gilt für tiermedizin-in-zahlen.org, humanmedizin-in-zahlen.or
 | Humanmedizin | Tiermedizin | Fuß (Schwesterseite), Startseite „Wer hier schreibt“, Über-Seite, Datenherkunft, Leitartikel, llms.txt, `sameAs` | erledigt 20.10.2026 |
 | Humanmedizin | Tiermedizin | Studio-Hinweis „Datenformat“ | erledigt (Profil `datenformatUrl`) |
 | Humanmedizin | FleXChange | Fuß, Startseite, Über-Seite, llms.txt, `worksFor` | erledigt 20.10.2026 |
-| Tiermedizin | Humanmedizin | Fuß (zweiter Satz unter „Schwesterseite“), Über-Seite „Wo es weitergeht“, llms.txt, `sameAs` in `profil.ts` | **offen – erst, wenn humanmedizin-in-zahlen.org live ist** (sonst tote Links) |
+| Tiermedizin | Humanmedizin | Fuß (zweiter Satz unter „Schwesterseite“), Über-Seite „Wo es weitergeht“, llms.txt, `sameAs` in `profil.ts` | **jetzt fällig** – humanmedizin-in-zahlen.org ist seit 25.11.2026 live (HTTPS); Aufgabe des Tiermedizin-Chats |
 | FleXChange | Humanmedizin | Website-Relaunch: „Marktdaten“ im Fuß, Verweis aus Produktseite FLX Suite auf den PVS-Leitartikel | offen, gehört zum FleXChange-Projekt |
 | beide | beide | Vergleichsartikel (siehe oben) | offen, Redaktionsplan |
 

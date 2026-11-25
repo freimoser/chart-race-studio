@@ -88,6 +88,12 @@ SITE=humanmedizin node scripts/gen-icons.mjs   # Favicons aus sites/<seite>/publ
   5. Workflow einmal von Hand starten. Danach im Repo `humanmedizin-in-zahlen`: Pages → Deploy from a branch →
      `gh-pages` / root, Custom Domain eintragen, HTTPS erzwingen.
 
+  **Stand 25.11.2026: erledigt, die Seite ist live.** DNS zusätzlich mit AAAA-Records auf GitHub Pages
+  (`2606:50c0:8000::153` bis `8003::153`), SPF `v=spf1 -all` und `_dmarc` `p=reject` (keine Mails von der Domain),
+  DNSSEC an. Fallstrick: Das Let's-Encrypt-Zertifikat kam erst, nachdem die Custom Domain per API entfernt und neu
+  eingetragen war (`gh api -X PUT repos/freimoser/humanmedizin-in-zahlen/pages -F cname=null …`, dann wieder mit
+  `cname=humanmedizin-in-zahlen.org`); danach `-F https_enforced=true`.
+
 ## Eine weitere Seite anlegen
 
 `sites/<neu>/` mit denselben Dateien wie `sites/humanmedizin/` anlegen (Profil zuerst, `src/content/profil.ts` sagt,
