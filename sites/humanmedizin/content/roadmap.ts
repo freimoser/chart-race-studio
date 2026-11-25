@@ -35,7 +35,7 @@ export const POSTS: RoadmapPost[] = [
     dataNote: 'Zeitreihe der KBV-Installationsstatistik wird recherchiert (Archiv der Quartals-PDFs). KBV-Hinweis „kein genaues Abbild des Marktes“ in den Post. Psychotherapie-Systeme (Elefant, psyprax, PsychoDat) und KIS-Zeilen getrennt zeigen, sonst führen sie die Liste.',
   },
   {
-    nr: 2, arc: 'hersteller', status: 'geplant',
+    nr: 2, arc: 'hersteller', status: 'geplant', vorabOnline: true,
     title: 'CGM verliert, die Herausforderer holen auf',
     hook: 'Nicht die Produkte, die Hersteller zählen: 2013 lief jede zweite Installation einer Arztsoftware auf einem CGM-System, 2025 knapp jede dritte. Medical Office, tomedo und T2med kommen zusammen von 1 auf 21 Prozent.',
     figures: ['CGM (MEDISTAR, TURBOMED, ALBIS, M1 PRO, DATA VITAL): 40.206 (2013) → 22.070 (2025), 50,2 → 32,4 Prozent der ärztlichen Systeme', 'medatixx (x.isynet, x.concept, x.comfort, medatixx, easymed, ab 2022 EL): 21.896 → 19.159, 27,3 → 28,1 Prozent', 'Medical Office, tomedo, T2med zusammen: 1.122 → 14.308, 1,4 → 21,0 Prozent', 'Übernahmen: medatixx 2007 aus DOCexpert und MCS, CGM kaufte MEDISTAR 2002/03 und TurboMed 12/2003'],
@@ -44,7 +44,7 @@ export const POSTS: RoadmapPost[] = [
     refs: [1, 10, 12],
   },
   {
-    nr: 3, arc: 'software', status: 'geplant',
+    nr: 3, arc: 'software', status: 'geplant', vorabOnline: true,
     title: 'Psychotherapie hat ihre eigene Software',
     hook: 'Das meistinstallierte System der KBV-Statistik ist seit Ende 2023 keine Arztsoftware: Elefant überholt MEDISTAR (11.026 zu 10.966). Der Grund ist eine Arztgruppe, die sich seit 2007 fast verdreifacht hat.',
     figures: ['Arztgruppe Psychotherapeuten: 10,6 Prozent aller Installationen (2007), rund 30 Prozent (2025)', 'Elefant 10.967, psyprax 10.519, Epikur 6.008, SMARTY 4.982, PsychoDat 1.705 (Ende 2025)', 'Elefant, psyprax, PsychoDat, Epikur, SMARTY: 84 bis 98 Prozent ihrer Installationen in dieser Arztgruppe', 'Ärztliche Abrechnungsstellen seit 2014 rund 13.000 weniger, psychotherapeutische rund 11.000 mehr'],
@@ -53,7 +53,7 @@ export const POSTS: RoadmapPost[] = [
     refs: [1, 10],
   },
   {
-    nr: 4, arc: 'software', status: 'geplant',
+    nr: 4, arc: 'software', status: 'geplant', vorabOnline: true,
     title: 'Die Aufsteiger: Mac, Linux und Cloud',
     hook: 'tomedo und T2med gab es 2013 noch nicht. Ende 2025 haben sie zusammen 8.608 Installationen, und sie wachsen jedes Quartal, während die großen Windows-Systeme verlieren.',
     figures: ['tomedo: 7 (2013) → 4.530 (2025); 2025 Quartal für Quartal 3.628, 3.883, 4.219, 4.530', 'T2med: 0 (Markteintritt 2015) → 4.078', 'ETERNO Cloud (Browser): 1 (2014) → 778', 'Medical Office: 1.115 → 5.700, seit 2021 nur noch leicht steigend'],
@@ -62,7 +62,7 @@ export const POSTS: RoadmapPost[] = [
     refs: [1, 2, 5, 12],
   },
   {
-    nr: 5, arc: 'software', status: 'geplant',
+    nr: 5, arc: 'software', status: 'geplant', vorabOnline: true,
     title: 'Wer seit 2021 Praxen gewinnt und wer verliert',
     hook: 'Zwischen Ende 2021 und Ende 2025 gewannen 14 Systeme zusammen 13.667 Installationen, 25 verloren 15.139 (Systeme mit mindestens einmal 500 Installationen). Die Gesamtzahl sinkt nur um 2.451 – darunter wird kräftig gewechselt.',
     figures: ['Größte Zugewinne 2021–2025: medatixx +3.654, tomedo +2.872, T2med +2.595, Epikur +1.527', 'Größte Verluste: TURBOMED −3.385, MEDISTAR −2.375, x.isynet −1.541, x.concept −1.360, ALBIS −1.146', 'Gesamtzahl aller Installationen: 119.405 → 116.954', 'medatixx-intern: Gewinne des neuen medatixx entsprechen etwa den Verlusten von x.isynet, x.concept und x.comfort'],
@@ -71,7 +71,7 @@ export const POSTS: RoadmapPost[] = [
     refs: [1, 2, 4, 12],
   },
   {
-    nr: 6, arc: 'vernetzung', status: 'geplant',
+    nr: 6, arc: 'vernetzung', status: 'geplant', vorabOnline: true,
     title: 'Laborbefunde kommen digital, Aufträge nicht',
     hook: 'Systeme mit Zulassung für den LDT-3-Befund-Import tragen 95,8 Prozent der Installationen ärztlicher Systeme. Den digitalen Laborauftrag hat kein einziges ärztliches Praxissystem bei der KBV zertifiziert.',
     figures: ['LDT-Befund-Import zugelassen: 22 von 28 ärztlichen Systemen, 95,8 Prozent der Installationen (KBV, Stand 21.10.2026)', 'LDT-Auftrag-Export: kein ärztliches Praxissystem, nur Epikur und Laborsysteme', 'PraxisBarometer 2025: 80 Prozent der Arztpraxen empfangen Labordaten digital, 39 Prozent senden (2018: 69 und 15)', 'Ab 2024 geänderte Antwortformulierung (inkl. Aufträgen) – Sprung beim Senden teils Methodik'],
@@ -80,7 +80,7 @@ export const POSTS: RoadmapPost[] = [
     refs: [1, 7, 11],
   },
   {
-    nr: 7, arc: 'vernetzung', status: 'geplant',
+    nr: 7, arc: 'vernetzung', status: 'geplant', vorabOnline: true,
     title: 'Der eArztbrief ist Alltag geworden',
     hook: 'Im März 2022 gingen 150.450 eArztbriefe über KIM, im Oktober 2026 waren es 5,4 Millionen im Monat. Zugelassen sind fast alle Systeme; genutzt wird er in Arztpraxen viel häufiger als in der Psychotherapie.',
     figures: ['eArztbriefe über KIM: 14,4 Mio. (2023), 32,3 Mio. (2024), 45,2 Mio. (2025), 46,8 Mio. Januar bis Oktober 2026 (gematik)', 'Höchster Monat bisher: Oktober 2026 mit 5,4 Mio., davor März 2026 mit 5,2 Mio.', 'PraxisBarometer 2025: 82 Prozent der Arztpraxen mit TI nutzen den eArztbrief über KIM, 22 Prozent der Psychotherapiepraxen', 'Zulassung eArztbrief: Systeme mit 88,9 Prozent der Installationen; 1-Click-KIM 100 Prozent (Pflicht seit Abschaltung von KV-Connect am 20.10.2025)'],
@@ -89,7 +89,7 @@ export const POSTS: RoadmapPost[] = [
     refs: [6],
   },
   {
-    nr: 8, arc: 'versorgung', status: 'geplant',
+    nr: 8, arc: 'versorgung', status: 'geplant', vorabOnline: true,
     title: 'Das MVZ wächst, die ärztliche Einzelpraxis schrumpft',
     hook: '2004 gab es 70 Medizinische Versorgungszentren, 2025 sind es 5.305. Jedes zweite gehört einem Krankenhaus, und fast alle, die dort arbeiten, sind angestellt. Für die Software heißt das: mehrere Standorte, eine Datenbank, angestellte statt selbstständige Nutzer.',
     figures: ['MVZ: 70 (2004) → 2.156 (2015) → 5.305 (2025), davon mit Krankenhaus als Träger 2.659 (50,1 Prozent)', 'In MVZ tätig Ende 2025: 32.062 angestellte Ärztinnen und Ärzte, 1.788 Vertragsärzte (94,7 Prozent angestellt)', 'Ärztinnen und Ärzte in MVZ und anderen Einrichtungen (ohne Psychotherapeuten, Bundesarztregister): 13.826 (2015) → 32.885 (2025), 10,2 → 22,4 Prozent', 'Ärztliche Einzelpraxen: 62.524 (2015) → 50.701 (2025, aus der Registerstatistik summiert), minus 18,9 Prozent'],
@@ -98,7 +98,7 @@ export const POSTS: RoadmapPost[] = [
     refs: [1, 3, 5, 9],
   },
   {
-    nr: 9, arc: 'versorgung', status: 'geplant',
+    nr: 9, arc: 'versorgung', status: 'geplant', vorabOnline: true,
     title: 'Krankenhaus-Software in der ambulanten Versorgung',
     hook: 'ORBIS, SAP, CGM MEDICO und iMedOne stehen in der KBV-Liste der Praxissysteme: 7.948 Installationen Ende 2025, 6,8 Prozent aller. So rechnen Klinikambulanzen und Klinik-MVZ ab.',
     figures: ['Krankenhaussysteme zusammen: 7.302 (2013) → 7.948 (2025), Anteil 6,2 → 6,8 Prozent', 'ORBIS 4.073, SAP 1.543, CGM MEDICO 1.363, iMedOne 969 (Ende 2025)', 'Anbieter von ORBIS: Agfa HealthCare bis 2016, Dedalus ab 2021'],
@@ -107,7 +107,7 @@ export const POSTS: RoadmapPost[] = [
     refs: [1, 8],
   },
   {
-    nr: 10, arc: 'versorgung', status: 'geplant',
+    nr: 10, arc: 'versorgung', status: 'geplant', vorabOnline: true,
     title: 'Wer zählt die Praxissoftware?',
     hook: 'Für Arztpraxen zählt die KBV jedes Praxissystem, weil jedes eine Prüfnummer braucht: Zwei Hersteller halten 60,5 Prozent der Installationen ärztlicher Systeme. Für die rund 10.000 Tierarztpraxen gibt es keine Statistik, nur Werbeangaben der Hersteller.',
     figures: ['Humanmedizin Ende 2025 (KBV): größte drei Systeme 32,3 Prozent, größte fünf 49,6 Prozent der Installationen ärztlicher Systeme', 'Nach Herstellern: CGM 32,4, medatixx 28,1, INDAMED 8,4, Zollsoft 6,6, T2med 6,0 Prozent', 'Tiermedizin: nur Herstellerangaben in verschiedenen Einheiten, Gebieten und Jahren (z. B. Praxen in Europa oder DACH) – keine Anteile rechenbar'],
@@ -116,7 +116,7 @@ export const POSTS: RoadmapPost[] = [
     refs: [1, 2],
   },
   {
-    nr: 11, arc: 'vernetzung', status: 'geplant',
+    nr: 11, arc: 'vernetzung', status: 'geplant', vorabOnline: true,
     title: 'Das Labor ist ein Angestelltenfach geworden',
     hook: 'Ende 2025 sind 88,5 Prozent der Laborärztinnen und -ärzte in der Kassenversorgung angestellt, 2013 waren es 68,0 Prozent. Mit eigener Zulassung arbeiten noch 99. Für alle, die Schnittstellen bauen: Die Gegenseite der Praxissoftware ist ein Labor-MVZ, keine Einzelpraxis.',
     figures: ['Laborärzte im Bundesarztregister: 1.166 (2013) → 1.386 (2025), davon angestellt in MVZ und Einrichtungen 793 → 1.226', 'Mit eigener Zulassung: 288 → 99; Vertragsärzte in Einzelpraxen 92 → 35', 'Zweitquelle BÄK (FA Laboratoriumsmedizin): niedergelassen 337 → 113, angestellt 329 → 725 (Bruch 2021/2022 beachten)', 'Seit 2025 Pauschale für ein System zur digitalen Auftragserteilung (GOP 40092): im 1. Quartal 2025 bei 80,5 Prozent der Fälle mit Transportpauschale – misst Bereitstellung, nicht digitale Aufträge aus der Praxissoftware'],
@@ -125,7 +125,7 @@ export const POSTS: RoadmapPost[] = [
     refs: [6, 8],
   },
   {
-    nr: 12, arc: 'software', status: 'geplant',
+    nr: 12, arc: 'software', status: 'geplant', vorabOnline: true,
     title: 'Welche Praxissoftware Allgemeinmediziner nutzen',
     hook: 'Bei den Allgemeinmedizinern führt nicht CGM MEDISTAR, sondern medatixx: 1.892 Installationen Ende 2025, knapp vor MEDISTAR (1.857) und TURBOMED (1.850). T2med steht hier auf Platz 4 (1.737). In jeder Fachgruppe sieht die Spitze anders aus – bei Augenärzten führt FIDUS, bei Radiologen medavis RIS.',
     figures: ['Allgemeinmediziner Q4/2025 (KBV, Top 20 je Fachgruppe): medatixx 1.892, CGM MEDISTAR 1.857, TURBOMED 1.850, T2med 1.737, Medical Office 1.548', 'Top 20 der Fachgruppe zusammen 18.909 Installationen (Mindestwert der Gruppe)', 'Spitzenreiter je Fachgruppe: Frauenärzte und Orthopäden MEDISTAR, Augenärzte FIDUS, Chirurgen ORBIS, Radiologen medavis RIS, Psychotherapeuten Elefant'],

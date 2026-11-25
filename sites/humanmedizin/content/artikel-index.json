@@ -19,7 +19,7 @@
     "stand": "2026-10-22",
     "geaendert": "2026-10-22",
     "bereit": true,
-    "live": false
+    "live": true
   },
   {
     "post": 3,
@@ -30,7 +30,7 @@
     "stand": "2026-10-29",
     "geaendert": "2026-10-29",
     "bereit": true,
-    "live": false
+    "live": true
   },
   {
     "post": 4,
@@ -41,7 +41,7 @@
     "stand": "2026-10-22",
     "geaendert": "2026-10-22",
     "bereit": true,
-    "live": false
+    "live": true
   },
   {
     "post": 5,
@@ -52,7 +52,7 @@
     "stand": "2026-10-29",
     "geaendert": "2026-10-29",
     "bereit": true,
-    "live": false
+    "live": true
   },
   {
     "post": 6,
@@ -63,7 +63,7 @@
     "stand": "2026-10-22",
     "geaendert": "2026-10-22",
     "bereit": true,
-    "live": false
+    "live": true
   },
   {
     "post": 7,
@@ -74,7 +74,7 @@
     "stand": "2026-11-04",
     "geaendert": "2026-11-04",
     "bereit": true,
-    "live": false
+    "live": true
   },
   {
     "post": 8,
@@ -85,7 +85,7 @@
     "stand": "2026-10-22",
     "geaendert": "2026-10-22",
     "bereit": true,
-    "live": false
+    "live": true
   },
   {
     "post": 9,
@@ -96,7 +96,7 @@
     "stand": "2026-10-22",
     "geaendert": "2026-10-22",
     "bereit": true,
-    "live": false
+    "live": true
   },
   {
     "post": 10,
@@ -107,7 +107,7 @@
     "stand": "2026-10-22",
     "geaendert": "2026-10-22",
     "bereit": true,
-    "live": false
+    "live": true
   },
   {
     "post": 11,
@@ -118,7 +118,7 @@
     "stand": "2026-10-29",
     "geaendert": "2026-10-29",
     "bereit": true,
-    "live": false
+    "live": true
   },
   {
     "post": 12,
@@ -129,6 +129,6 @@
     "stand": "2026-10-29",
     "geaendert": "2026-10-29",
     "bereit": true,
-    "live": false
+    "live": true
   }
 ]
