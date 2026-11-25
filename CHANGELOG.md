@@ -4,6 +4,10 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Banner und Überschriften auf dem Handy (25.11.2026)
+
+- **Kern, betrifft beide Seiten:** Einwilligungsbanner unter 640 px kompakter (kleinere Schrift, weniger Abstand, Knöpfe mindestens 44 px hoch); es deckte auf dem Handy bis zu 30 % des Bildschirms ab, jetzt rund 20 %. Text unverändert. Überschriften trennen kurze Wörter nicht mehr („Euro-pa“): `hyphenate-limit-chars: 10 6 4` in `src/article.css`; lange Komposita werden weiter getrennt, `check:mobil` ohne Überlauf auf beiden Seiten.
+
 ### Standbilder: Bildbeschreibung auch auf dem Handy (25.11.2026)
 
 - **Kern, betrifft beide Seiten:** Das schmale Standbild (4:5, unter 560 px sichtbar) hatte `alt=""`; die Beschreibung trug nur das breite Bild, das auf dem Handy per `display:none` verschwindet. Damit fehlte sie genau dort, wo Google seit Mobile-First indexiert. `scripts/build-artikel.mjs` gibt jetzt beiden Bildern denselben Text (das CSS zeigt immer nur eins, Screenreader lesen ihn einmal). Gefunden im lokalen SEO-Audit der Humanmedizin.
