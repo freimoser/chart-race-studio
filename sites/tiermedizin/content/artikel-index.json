@@ -551,6 +551,28 @@
   },
   {
     "art": "auswertung",
+    "slug": "telemedizin-tierarzt",
+    "titel": "Telemedizin beim Tierarzt: was erlaubt ist, was es kostet",
+    "beschreibung": "Die Gebührenordnung für Tierärzte kennt keine Videosprechstunde, abgerechnet wird als Beratung ab 11,26 Euro. Wie oft Praxen sie anbieten, misst niemand.",
+    "frage": "Ist eine Videosprechstunde beim Tierarzt erlaubt?",
+    "stand": "2026-11-26",
+    "geaendert": "2026-11-26",
+    "bereit": true,
+    "live": true
+  },
+  {
+    "art": "auswertung",
+    "slug": "tierarztbesuche-hund-katze",
+    "titel": "Wie oft gehen Hunde und Katzen zum Tierarzt?",
+    "beschreibung": "81 Prozent der Hunde und 84 Prozent der Katzen gehen mindestens einmal im Jahr zum Tierarzt. Aktuell geimpft ist aber nur knapp jeder zweite Hund.",
+    "frage": "Wie oft muss ein Hund zum Tierarzt?",
+    "stand": "2026-11-26",
+    "geaendert": "2026-11-26",
+    "bereit": true,
+    "live": true
+  },
+  {
+    "art": "auswertung",
     "slug": "tierarztkosten-inflation",
     "titel": "Tierarztkosten vs. Inflation: plus 54 Prozent seit 2010",
     "beschreibung": "Seit 2010 stiegen Tierarztpreise um 54 Prozent, die Inflation um 42. Am meisten die Routine: Untersuchung und Impfung der Katze kosten fast das Dreifache.",

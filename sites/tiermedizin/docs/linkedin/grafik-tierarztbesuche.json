@@ -1,0 +1,44 @@
+{
+  "_herkunft": "IVH/ZZF-Halterbefragung 2018, wiedergegeben in Ohr, Heimtierstudie 2019, Abb. 17 (Hunde n=1.278, Katzen n=1.582). Rohdaten data/raw/ds34-tierarztbesuche.json.",
+  "art": "paare",
+  "serie": "Sonderauswertung",
+  "titel": "Wie oft Hunde und Katzen zum Tierarzt gehen",
+  "untertitel": "Tierarztbesuche im Jahr laut Halterbefragung 2018, Anteil der Tiere in Prozent",
+  "einheit": " %",
+  "max": 60,
+  "teile": [
+    "Hunde",
+    "Katzen"
+  ],
+  "balken": [
+    {
+      "name": "3-mal oder öfter",
+      "werte": [
+        14,
+        6
+      ]
+    },
+    {
+      "name": "2-mal",
+      "werte": [
+        26,
+        18
+      ]
+    },
+    {
+      "name": "1-mal",
+      "werte": [
+        41,
+        60
+      ]
+    },
+    {
+      "name": "seltener als einmal im Jahr",
+      "werte": [
+        19,
+        16
+      ]
+    }
+  ],
+  "quelle": "Quelle: Halterbefragung von IVH und ZZF 2018 (Hunde n = 1.278, Katzen n = 1.582), wiedergegeben in Ohr, Heimtierstudie 2019 (Universität Göttingen), Abb. 17. „Seltener als einmal“ = „etwa alle 2 Jahre“ + „seltener“, berechnet"
+}

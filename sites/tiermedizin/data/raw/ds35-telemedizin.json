@@ -1,0 +1,413 @@
+{
+ "abgerufen": "2026-11-26",
+ "quellen": [
+  {
+   "id": "got",
+   "titel": "Gebührenordnung für Tierärztinnen und Tierärzte (GOT) vom 15.08.2022, Stand: geändert durch Art. 2 V v. 15.3.2023 I Nr. 70, Anlage Gebührenverzeichnis",
+   "url": "https://www.gesetze-im-internet.de/got_2022/BJNR140100022.html",
+   "jahr": 2022,
+   "art": "Rechtsverordnung (Primärquelle, XML-Fassung geprüft)"
+  },
+  {
+   "id": "tamg",
+   "titel": "Tierarzneimittelgesetz (TAMG), Neufassung Bek. v. 21.5.2026 I Nr. 160, § 44a Versand",
+   "url": "https://www.gesetze-im-internet.de/tamg/",
+   "jahr": 2026,
+   "art": "Gesetz (Primärquelle)"
+  },
+  {
+   "id": "taehav",
+   "titel": "Verordnung über tierärztliche Hausapotheken (TÄHAV 2025), Ausfertigung 01.11.2024, § 9 Abgabe",
+   "url": "https://www.gesetze-im-internet.de/t_hav_2025/__9.html",
+   "jahr": 2024,
+   "art": "Rechtsverordnung (Primärquelle)"
+  },
+  {
+   "id": "eu2019_6",
+   "titel": "Verordnung (EU) 2019/6 über Tierarzneimittel, Art. 105 Abs. 3 (Wortlaut über gesetze.legal, Spiegel von EUR-Lex)",
+   "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32019R0006",
+   "jahr": 2019,
+   "art": "EU-Verordnung (Primärquelle; Wortlaut über https://gesetze.legal/eu/vo_eu_2019_6/105 gelesen)"
+  },
+  {
+   "id": "hwg",
+   "titel": "Heilmittelwerbegesetz (HWG) § 9 Fernbehandlung, § 10",
+   "url": "https://www.gesetze-im-internet.de/heilmwerbg/__9.html",
+   "jahr": 2019,
+   "art": "Gesetz (Primärquelle; Satz 2 seit 2019)"
+  },
+  {
+   "id": "btk2020",
+   "titel": "Empfehlungen der Bundestierärztekammer zur Anwendung der veterinärmedizinischen Telemedizin (Ad-hoc-AG Telemedizin), 01.04.2020",
+   "url": "https://www.bundestieraerztekammer.de/d.php?id=5861",
+   "jahr": 2020,
+   "art": "Empfehlung Berufsorganisation (Primärquelle, PDF)"
+  },
+  {
+   "id": "bpt_moder2023",
+   "titel": "S. Moder (bpt): Telemedizin aus deutscher Sicht, Vortrag ÖTK-Zukunftstalk Wien, 07.06.2023 (zitiert Wortlaut § 12 Abs. 6-8 MBO-BTK und BTK-Leitlinien)",
+   "url": "https://www.tieraerztekammer.at/fileadmin/templates/img/Zukunftstalk2023/Praesentationen/Moder-Siegfried_bpt.pdf",
+   "jahr": 2023,
+   "art": "Vortragsfolien (Zweitquelle für MBO-Wortlaut)"
+  },
+  {
+   "id": "bo_hh",
+   "titel": "Berufsordnung der Tierärztekammer Hamburg, Fassung vom 23.11.2022, § 13 Abs. 2",
+   "url": "https://tieraerztekammer-hamburg.de/uploads/Gesetze-und-Verordnungen-T%C3%84K-HH/Berufsordnung-der-T%C3%84K-HH.pdf",
+   "jahr": 2022,
+   "art": "Satzung Landestierärztekammer (Primärquelle)"
+  },
+  {
+   "id": "bo_by",
+   "titel": "Berufsordnung für Tierärztinnen und Tierärzte in Bayern (BOT), § 2 Abs. 7, zuletzt geändert 04.06.2025 (in Kraft 01.07.2025)",
+   "url": "https://www.bltk.de/kammer/rechtsgrundlagen/berufsordnung-bot",
+   "jahr": 2025,
+   "art": "Satzung Landestierärztekammer (Primärquelle, Webfassung)"
+  },
+  {
+   "id": "bpt2021",
+   "titel": "bpt-Position zur Veterinär-Telemedizin, 15.02.2021 (nur über vetline-Bericht erfasst)",
+   "url": "https://www.tieraerzteverband.de/bpt/berufspolitik/Positionen/veterinaer-telemedizin/dokumente/bpt-Position-zur-Veterinaer-Telemedizin_15.02.2021.pdf",
+   "jahr": 2021,
+   "art": "Positionspapier Verband (nicht selbst gelesen)"
+  },
+  {
+   "id": "becker2023",
+   "titel": "Becker B, Tipold A, Ehlers J, Kleinsorgen C: Veterinarians' perspective on telemedicine in Germany. Front Vet Sci 10:1062046 (2023), doi:10.3389/fvets.2023.1062046",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9975549/",
+   "jahr": 2023,
+   "art": "Peer-reviewte Studie (Gelegenheitsstichprobe, Befragung Mai-Aug 2020)"
+  },
+  {
+   "id": "karsch2026",
+   "titel": "Karsch C, Tipold A, Kleinsorgen C: SWOT analysis on veterinary telemedicine from pet owner and expert perspectives – a mixed-methods survey and interview study in Germany. Front Vet Sci (2026), doi:10.3389/fvets.2026.1731577",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12872521/",
+   "jahr": 2026,
+   "art": "Peer-reviewte Studie (Gelegenheitsstichprobe, Befragung Apr 2023-Apr 2024)"
+  },
+  {
+   "id": "springer2024",
+   "titel": "Springer S, Lund TB, Corr SA, Sandøe P: Seeing the benefits, but not taking advantage of them: Dog and cat owners' beliefs about veterinary telemedicine. Vet Rec (2023/24), doi:10.1002/vetr.3312; Zahlen über vetline-Bericht",
+   "url": "https://bvajournals.onlinelibrary.wiley.com/doi/10.1002/vetr.3312",
+   "jahr": 2023,
+   "art": "Peer-reviewte Studie (AT, DK, UK; nicht Deutschland); Zahlen aus https://vetline.de/telemedizin-noch-wenig-genutzt"
+  },
+  {
+   "id": "dadirekt2023",
+   "titel": "DA Direkt Pressemitteilung 23.10.2023: Kostenfaktor Tiergesundheit … Interesse an Telemedizin steigt (infas quo, n=1.409, Sept. 2023)",
+   "url": "https://newsroom.da-direkt.de/pressreleases/kostenfaktor-tiergesundheit-tierhalter-finanziell-oft-belastet-interesse-an-telemedizin-steigt-3281316",
+   "jahr": 2023,
+   "art": "Versicherer-Pressemitteilung, Auftragsumfrage (Ergebnisband nur auf Anfrage) + eigene Kundendaten"
+  },
+  {
+   "id": "firstvet",
+   "titel": "FirstVet Startseite Deutschland (Selbstangabe '1 Million Videokonsultationen')",
+   "url": "https://firstvet.com/de",
+   "jahr": 2026,
+   "art": "Anbieterseite (Selbstangabe, nicht DE-spezifisch)"
+  },
+  {
+   "id": "rtl2026",
+   "titel": "RTL Ratgeber: Online-Tierarzt – Kosten, Grenzen … (04.11.2026), Preise Dr. Fressnapf/FirstVet",
+   "url": "https://www.rtl.de/tools/tierversicherung/online-tierarzt/",
+   "jahr": 2026,
+   "art": "Verbraucherratgeber (Preise sind Anbieterangaben)"
+  },
+  {
+   "id": "afc2021",
+   "titel": "AFC Public Services: Prüfung der finanziellen und strukturellen Auswirkungen hinsichtlich der Angemessenheit der Gebührensätze der GOT, Abschlussbericht, Bonn 25.02.2021 (für BMEL)",
+   "url": "https://www.bmel.de/SharedDocs/Downloads/DE/_Tiere/Tiergesundheit/abschlussbericht-pruefung-tieraerztegebuehrenverordnung.pdf",
+   "jahr": 2021,
+   "art": "Gutachten im Auftrag des BMEL (Online-Befragung 2020, knapp 1.300 Teilnehmer, + Interviews)"
+  },
+  {
+   "id": "lgl2022",
+   "titel": "LGL Bayern / LMU: Veterinärmedizinische Versorgung von Nutztieren in Bayern, Abschlussbericht (Projekt 10/2020-11/2021), PDF erstellt 05/2022",
+   "url": "https://www.lgl.bayern.de/downloads/forschung/doc/veterinaermedizinische_versorgung_nutztieren_abschlussbericht.pdf",
+   "jahr": 2022,
+   "art": "Behördenbericht mit Befragung von Nutztierpraxis-Inhabern (N ca. 60)"
+  },
+  {
+   "id": "kersebohm2018",
+   "titel": "Kersebohm JC: Praktiker im Wandel: Untersuchung der Arbeitsbedingungen und Zufriedenheiten praktizierender Tiermediziner in Deutschland (2016). Diss. FU Berlin 2018 (nur über LGL 2022 zitiert)",
+   "url": "https://refubium.fu-berlin.de/handle/fub188/7585",
+   "jahr": 2018,
+   "art": "Dissertation (nicht selbst gelesen: Refubium mit Bot-Sperre)"
+  },
+  {
+   "id": "vetguide_varovet",
+   "titel": "VaroVet Ratgeber: Telemedizin und Fernbehandlung in der Tierarztpraxis (nur zur Quellenfindung genutzt)",
+   "url": "https://varovet.com/de/ratgeber/telemedizin-und-fernbehandlung-tierarztpraxis/",
+   "jahr": 2026,
+   "art": "Anbieter-Ratgeber (Software-Hersteller); nicht als Beleg verwenden"
+  },
+  {
+   "id": "zi2024",
+   "titel": "Zi-Trendreport 2024: Anzahl der Videosprechstunden auf 2,7 Millionen gestiegen, Gesamtfallzahl 2024 mit 579 Millionen",
+   "url": "https://www.zi.de/detailansicht/anzahl-der-videosprechstunden-auf-27-millionen-gestiegen-gesamtfallzahl-2024-mit-579-millionen-leicht-ueber-hohem-vorjahresniveau-zum-teil-deutliches-plus-bei-frueherkennungsuntersuchungen",
+   "jahr": 2025,
+   "art": "Zentralinstitut kassenärztliche Versorgung (Abrechnungsdaten, nur Titel/Snippet gelesen)"
+  },
+  {
+   "id": "kbv_video",
+   "titel": "KBV: Videosprechstunde (Obergrenze 50 % der Patienten je Quartal seit 01.04.2025)",
+   "url": "https://www.kbv.de/praxis/digitalisierung/anwendungen/videosprechstunde",
+   "jahr": 2025,
+   "art": "KBV (nur Snippet gelesen)"
+  },
+  {
+   "id": "vetion_goteval",
+   "titel": "Vetion: GOT-Evaluation – Online-Befragung von Tierhaltenden und Tierärzten läuft (29.06.2026)",
+   "url": "https://www.vetion.de/newsdetail/got-evaluation-tierhaltende-sind-zur-onlinebefragung-aufgerufen/",
+   "jahr": 2026,
+   "art": "Fachnachricht"
+  }
+ ],
+ "got_positionen": [
+  {
+   "nr": "1",
+   "text": "Beratung im einzelnen Fall ohne Untersuchung (auch schriftlich oder fernmündlich)",
+   "einfacher_satz_eur": 11.26,
+   "fundstelle": "GOT 2022, Anlage, Teil A Grundleistungen, lfd. Nr. 1"
+  },
+  {
+   "nr": "2",
+   "text": "Eingehende Anamneseerhebung oder Beratung, jeweils das gewöhnliche Maß übersteigend, einschließlich eingehender Vorbereitung, beispielsweise bei Verhaltensstörungen, Physikalischer Therapie und im Rahmen von Naturheilverfahren, z. B. Akupunktur, Homöopathie etc.",
+   "einfacher_satz_eur": 30.78,
+   "fundstelle": "GOT 2022, Anlage, Teil A, lfd. Nr. 2 (nicht ausdrücklich fernmündlich; BTK empfahl 2020 die damaligen Nrn. 10/11 der GOT 1999, inhaltlich heute Nr. 1/2 – Zuordnung ist eigene Ableitung)"
+  },
+  {
+   "nr": "16 (Vergleich)",
+   "text": "Allgemeine Untersuchung mit Beratung, Hund, Katze, Frettchen",
+   "einfacher_satz_eur": 23.62,
+   "fundstelle": "GOT 2022, Anlage, Teil A, lfd. Nr. 16 – zum Vergleich: Präsenzuntersuchung kostet im einfachen Satz rund das Doppelte von Nr. 1"
+  },
+  {
+   "nr": "§ 2",
+   "text": "Die Höhe der einzelnen Gebühr bemisst sich, soweit nichts anderes bestimmt ist, nach dem Einfachen bis Dreifachen des Gebührensatzes.",
+   "einfacher_satz_eur": null,
+   "fundstelle": "§ 2 Abs. 1 Satz 1 GOT; gerechnet: Nr. 1 = 11,26 / 22,52 / 33,78 € netto (1-/2-/3-fach), § 1 Abs. 3: USt nicht enthalten"
+  },
+  {
+   "nr": "§ 8",
+   "text": "Für eine Leistung, die in dem Gebührenverzeichnis nicht aufgeführt ist, bestimmt sich die Gebühr nach dem Gebührensatz, der für eine gleichwertige Leistung vorgesehen ist.",
+   "einfacher_satz_eur": null,
+   "fundstelle": "§ 8 Satz 1 GOT (Außerordentliche Leistungen) – einziger Weg für eine Videosprechstunde als eigene Leistung"
+  },
+  {
+   "nr": "§ 10",
+   "text": "Das Wegegeld beträgt bei eigener Benutzung eines Kraftfahrzeuges je Doppelkilometer 3,50 Euro, insgesamt jedoch mindestens 13 Euro.",
+   "einfacher_satz_eur": 3.5,
+   "fundstelle": "§ 10 Abs. 2 Satz 1 GOT; Abs. 1: hierdurch sind Zeitversäumnisse … abgegolten (Fahrzeit wird nicht gesondert vergütet)"
+  }
+ ],
+ "got_hinweis": "Die GOT 2022 enthält keine Position 'Videosprechstunde', 'Telemedizin' oder 'Video-Beratung' und keinen Paragraphen zur Fernbehandlung (Volltextsuche XML nach fernm/telefon/video/telemed/Fernbehandl). 'Video' kommt nur als Nr. 157 Video-Otoskopie vor. Das AFC-Gutachten 2021 (S. ca. 75) gibt die Forderung aus Interviews wieder, Telemedizin/Online-Beratungen künftig in den Katalog aufzunehmen; die Novelle 2022 hat das nicht umgesetzt. Die GOT wird 2026 evaluiert (BMLEH-Befragung bis 26.07.2026).",
+ "recht": [
+  {
+   "thema": "Musterberufsordnung BTK (MBO) § 12",
+   "aussage": "(6) Tierärztinnen und Tierärzte behandeln Tiere oder Tierbestände grundsätzlich nach vorheriger Untersuchung und im persönlichen Kontakt. (7) Abweichend vom Grundsatz des persönlichen Kontakts können niedergelassene, bei diesen angestellte und mit diesen kooperierenden Tierärztinnen und Tierärzte telemedizinische Leistungen als Teil der tierärztlichen Praxisausübung erbringen. Eine ausschließliche Beratung durch Kommunikationsmedien ist erlaubt, wenn dies tierärztlich vertretbar ist und die erforderliche tierärztliche Sorgfalt gewahrt wird. … Patientenbesitzer sind über die Besonderheiten aufzuklären.",
+   "fundstelle": "Wortlaut nach Folie bpt/Moder 07.06.2023 (Zweitquelle); Primärtext der MBO nicht gefunden; Änderung laut vetline (2021) bereits 2020/21 erfolgt – Datum des BTK-Beschlusses offen"
+  },
+  {
+   "thema": "Landesberufsordnung Hamburg § 13 Abs. 2",
+   "aussage": "'Tierärzte und Tierärztinnen beraten und behandeln Tiere im persönlichen Kontakt. Sie können dabei digitale Kommunikationsmedien unterstützend einsetzen. Eine tierärztliche Tätigkeit über digitale Kommunikationsmedien ist erlaubt, wenn dies tierärztlich vertretbar ist und die erforderliche tierärztliche Sorgfalt insbesondere durch die Art und Weise der Befunderhebung, Beratung sowie Dokumentation gewahrt wird und der/die Patientenbesitzer/in über die Besonderheiten der ausschließlich tierärztlichen Tätigkeit über Kommunikationsmedien aufgeklärt wurden.'",
+   "fundstelle": "BO TÄK Hamburg, Fassung 23.11.2022, § 13 Abs. 2"
+  },
+  {
+   "thema": "Landesberufsordnung Bayern § 2 Abs. 7",
+   "aussage": "Telemedizinische Leistungen 'ausnahmsweise' als Teil der Praxisausübung durch Niedergelassene/Angestellte; ausschließliche Beratung über Kommunikationsmedien 'ausnahmsweise' erlaubt, wenn tierärztlich vertretbar und Sorgfalt gewahrt; Aufklärungspflicht. (Bayern formuliert enger als MBO: zweimal 'ausnahmsweise'.)",
+   "fundstelle": "BOT Bayern, § 2 Abs. 7, zuletzt geändert 04.06.2025, in Kraft 01.07.2025 (Webfassung bltk.de)"
+  },
+  {
+   "thema": "Landesberufsordnung Nordrhein (erste Kammer)",
+   "aussage": "Laut Fachpresse hat die TÄK Nordrhein als erste Landestierärztekammer (Nov. 2020) die Tätigkeit über digitale Kommunikationsmedien in die Berufsordnung aufgenommen.",
+   "fundstelle": "vetline.de 10.03.2021 'Der Online-Tierarzt: Telemedizin für Praktiker'; mensch-tierarzt.de 07/2021 (Zweitquellen, BO-Text Nordrhein nicht gelesen)"
+  },
+  {
+   "thema": "BTK-Empfehlungen 2020: Diagnose",
+   "aussage": "'Eine telemedizinische Befunderhebung bzw. -auswertung kann nicht in einer klinischen Diagnose, sondern im besten Falle in einer vorläufigen bzw. Verdachtsdiagnose münden. Eine abschließende Diagnose setzt eine eingehende klinische Untersuchung voraus.' Ausnahmen: Bagatellfälle oder Ausnahmesituationen.",
+   "fundstelle": "BTK, Empfehlungen zur Anwendung der veterinärmedizinischen Telemedizin, 01.04.2020"
+  },
+  {
+   "thema": "BTK-Empfehlungen 2020: Verschreibung",
+   "aussage": "'Arzneimittel, die unter die Verschreibungspflicht fallen, können nicht aufgrund einer telemedizinischen Befunderhebung bzw. –auswertung verordnet werden. Hiervon ausgenommen sind Folgeverordnungen, denen eine eingehende klinische Untersuchung durch den telemedizinisch verordnenden Tierarzt voraus gegangen war.'",
+   "fundstelle": "BTK 01.04.2020"
+  },
+  {
+   "thema": "BTK-Empfehlungen 2020: Bindung und Abrechnung",
+   "aussage": "Telemedizin an Niederlassung oder Anstellung bei Niedergelassenen gebunden (MBO § 11); Abrechnung nach GOT, empfohlen damals GOT-Positionen 10 und 11 (GOT vom 14.02.2020), steigerbar. Ausdrücklich Ländersache.",
+   "fundstelle": "BTK 01.04.2020"
+  },
+  {
+   "thema": "EU-Tierarzneimittelrecht, Verschreibung",
+   "aussage": "'Eine tierärztliche Verschreibung wird erst nach einer klinischen Untersuchung oder einer anderen angemessenen Prüfung des Gesundheitszustands des Tieres oder der Gruppe von Tieren durch einen Tierarzt ausgestellt.' Antimikrobielle Verschreibung 5 Tage gültig (Abs. 10). Verstoß ist Ordnungswidrigkeit nach TAMG (Nr. 20a: 'entgegen Artikel 105 Absatz 3 eine tierärztliche Verschreibung ausstellt').",
+   "fundstelle": "VO (EU) 2019/6 Art. 105 Abs. 3 und 10 (gilt seit 28.01.2022); TAMG Bußgeldvorschrift"
+  },
+  {
+   "thema": "TÄHAV 2025 § 9: Abgabe nur bei ordnungsgemäßer Behandlung",
+   "aussage": "Abs. 1: Abgabe apothekenpflichtiger Arzneimittel 'nur im Rahmen einer ordnungsgemäßen Behandlung'. Abs. 2: Behandlung schließt ein, dass '1. eine Untersuchung oder eine andere gleichwertige Prüfung des Gesundheitszustandes der Tiere oder des Tierbestandes in angemessenem Umfang … durchgeführt worden ist und 2. die Anwendung und der Behandlungserfolg tierärztlich kontrolliert werden.' Bei Antibiotika 'ist in jedem Behandlungsfall eine tierärztliche klinische Untersuchung oder eine andere gleichwertige tierärztliche Prüfung des Gesundheitszustandes der zu behandelnden Tiere durchzuführen.'",
+   "fundstelle": "TÄHAV 2025 (Ausfertigung 01.11.2024) § 9 Abs. 1 und 2; Vorgänger: § 12 TÄHAV alt, § 56a AMG alt (bis 27.01.2022)"
+  },
+  {
+   "thema": "TAMG § 44a: Versand",
+   "aussage": "Versand verschreibungspflichtiger Tierarzneimittel grundsätzlich verboten; Tierarzt darf aus der Hausapotheke 'im Einzelfall' an Halter der von ihm behandelten Nicht-Lebensmitteltiere versenden, beschränkt auf die Menge für eine kurzfristige Weiterbehandlung; Verschreibung muss vom versendenden Tierarzt selbst stammen; Art. 105 Abs. 3 EU 2019/6 bleibt unberührt.",
+   "fundstelle": "TAMG § 44a Abs. 1, 3, 4 (Neufassung 21.05.2026)"
+  },
+  {
+   "thema": "HWG § 9: Werbung für Fernbehandlung",
+   "aussage": "Werbung für Behandlung, 'die nicht auf eigener Wahrnehmung an dem zu behandelnden Menschen oder Tier beruht (Fernbehandlung)', ist unzulässig. Die Ausnahme in Satz 2 (Kommunikationsmedien) gilt nur, wenn 'ein persönlicher ärztlicher Kontakt mit dem zu behandelnden Menschen nicht erforderlich ist' – dem Wortlaut nach nicht für Tiere.",
+   "fundstelle": "HWG § 9 Satz 1 und 2"
+  },
+  {
+   "thema": "Vergleich Österreich",
+   "aussage": "ÖTK-Richtlinie TeleVetRL (2024): Verschreibung rezeptpflichtiger Mittel per Telemedizin nur bei bestehendem Behandlungs-/Betreuungsverhältnis; Abrechnung in gleicher Höhe wie Präsenzleistung empfohlen.",
+   "fundstelle": "https://www.tieraerztekammer.at/fileadmin/daten/Oeffentlicher_Bereich/Kammer/Kundmachungen/2024/Richtlinie_Veterinaermedizinische_Telemedezin_Endversion.pdf (nur Suchauszug gelesen)"
+  },
+  {
+   "thema": "Humanmedizin (Kontext)",
+   "aussage": "MBO-Ä § 7 Abs. 4 seit 121. Ärztetag 2018: ausschließliche Fernbehandlung im Einzelfall erlaubt. Vertragsärztlich seit 01.04.2025 bis 50 % der Patienten je Quartal per Video.",
+   "fundstelle": "Bundesärztekammer; KBV https://www.kbv.de/praxis/digitalisierung/anwendungen/videosprechstunde (Snippet)"
+  }
+ ],
+ "nutzung": [
+  {
+   "wert": "169 auswertbare Antworten; 93,5 % (n=158) halten Telemedizin im Rechtsrahmen für unzureichend geregelt; 77,5 % (n=131) fühlen sich nicht ausreichend informiert; 72,19 % (n=122) kannten die BTK-Empfehlungen nicht",
+   "was_gemessen": "Einstellung/Kenntnis deutscher Tierärzte; Video laut Text 'selten genutzt', Telefon nach Präsenz häufigster Kanal – keine Prozentwerte zur Nutzung",
+   "jahr": 2020,
+   "quelle": "becker2023",
+   "repraesentativ": false
+  },
+  {
+   "wert": "Stichprobe: 76 % Kleintier, 45 % Nutztier, 22 % Pferd (Mehrfachnennung); 67,5 % Frauen",
+   "was_gemessen": "Zusammensetzung der Becker-Stichprobe (Rekrutierung über Facebook-Gruppen, Newsletter TK Niedersachsen)",
+   "jahr": 2020,
+   "quelle": "becker2023",
+   "repraesentativ": false
+  },
+  {
+   "wert": "48,76 % nutzen digitale Kontaktwege zur Praxis (ohne Terminbuchung); 61,63 % kennen den Begriff Telemedizin; audiovisuelle Formate 'spielen eine geringe Rolle' (ohne Prozentwert)",
+   "was_gemessen": "Tierhalter (n=404, Papier in 4 Kleintierpraxen + online via Social Media)",
+   "jahr": 2024,
+   "quelle": "karsch2026",
+   "repraesentativ": false
+  },
+  {
+   "wert": "93,36 % würden für Videoberatung zahlen, meist 11-20 €; 67,13 % für Telefonberatung (meist 1-10 €); 55,59 % gegen Flatrate",
+   "was_gemessen": "Zahlungsbereitschaft Tierhalter (Basis unklar, Abb. 4 n=286)",
+   "jahr": 2024,
+   "quelle": "karsch2026",
+   "repraesentativ": false
+  },
+  {
+   "wert": "54 % der Haustierbesitzer können sich vorstellen, eine Online-Sprechstunde beim Tierarzt zu besuchen",
+   "was_gemessen": "Vorstellbarkeit, nicht Nutzung; infas quo, n=1.409 Personen 18-79 J., CAWI-Panel, 'repräsentativ nach Geschlecht und Bundesland' (Selbstangabe Auftraggeber)",
+   "jahr": 2023,
+   "quelle": "dadirekt2023",
+   "repraesentativ": false
+  },
+  {
+   "wert": "in rund der Hälfte der Online-Sprechstunden keine Überweisung zum Tierarzt vor Ort nötig",
+   "was_gemessen": "Auswertung eigener Kundendaten DA Direkt / Dr. Fressnapf – Selbstangabe, keine Fallzahl genannt",
+   "jahr": 2023,
+   "quelle": "dadirekt2023",
+   "repraesentativ": false
+  },
+  {
+   "wert": "12 % der Hundehalter und 6 % der Katzenhalter haben schon eine telemedizinische Konsultation genutzt",
+   "was_gemessen": "Halterbefragung N=2.117 in Österreich, Dänemark, Großbritannien – NICHT Deutschland",
+   "jahr": 2023,
+   "quelle": "springer2024",
+   "repraesentativ": false
+  },
+  {
+   "wert": "'1 Million Videokonsultationen'",
+   "was_gemessen": "Selbstangabe FirstVet, kumuliert, alle Länder, ohne Zeitraum – für Deutschland nicht verwendbar",
+   "jahr": 2026,
+   "quelle": "firstvet",
+   "repraesentativ": false
+  },
+  {
+   "wert": "Preis je Videoberatung ohne Versicherung: Dr. Fressnapf 21,90 €; FirstVet 27 € (Mo-Fr 9-18 Uhr), sonst 32 €; für Versicherte mehrerer Tierkrankenversicherer kostenlos",
+   "was_gemessen": "Anbieterpreise (Selbstangaben, über Ratgeber 04.11.2026)",
+   "jahr": 2026,
+   "quelle": "rtl2026",
+   "repraesentativ": false
+  },
+  {
+   "wert": "'Telemedizinische Modelle sind in der deutschen Nutztiermedizin bisher nicht gängig.'",
+   "was_gemessen": "qualitative Einschätzung Literaturteil",
+   "jahr": 2022,
+   "quelle": "lgl2022",
+   "repraesentativ": false
+  },
+  {
+   "wert": "2,7 Mio. Videosprechstunden 2024 bei 579 Mio. Behandlungsfällen insgesamt (gerechnet ca. 0,5 %, Einheiten nicht deckungsgleich: Sprechstunden vs. Fälle)",
+   "was_gemessen": "Humanmedizin vertragsärztlich, Abrechnungsdaten (Kontext, nicht Tiermedizin)",
+   "jahr": 2024,
+   "quelle": "zi2024",
+   "repraesentativ": true
+  }
+ ],
+ "fahrzeiten": [
+  {
+   "wert": "Praxisinhaber: im Mittel 56 % produktive Arbeitszeit (N=611); Angestellte: 69 % (N=324). Rest = Verwaltung, Personal, 'Fahrtzeiten sowie sonstige Rüstzeiten'",
+   "was_gemessen": "Anteil 'Arbeit am Tier zuzüglich Beratungsleistungen' an der Tagesarbeitszeit, alle Praxisarten zusammen; Fahrzeit-Anteil wurde im Fragebogen (Frage 11) abgefragt, im Bericht aber nicht ausgewiesen",
+   "jahr": 2020,
+   "quelle": "afc2021",
+   "fundstelle": "AFC-Abschlussbericht S. 65 f., Abb. 43/44"
+  },
+  {
+   "wert": "qualitativ: abnehmende Zahl landwirtschaftlicher Betriebe führt 'besonders in veredlungsarmen Regionen zu sehr weiten Fahrtstrecken'; Rüstzeiten steigen durch längere Fahrtzeiten im Nutztierbereich; längere Anfahrtswege im Notdienst",
+   "was_gemessen": "Interviewaussagen, keine Zahl",
+   "jahr": 2020,
+   "quelle": "afc2021",
+   "fundstelle": "AFC-Abschlussbericht S. ca. 82 und Interviewteil"
+  },
+  {
+   "wert": "Kfz-Haltung 2,7 bis 4,7 % der Einnahmen je Einnahmegrößenklasse",
+   "was_gemessen": "Kostenstruktur Tierarztpraxen nach Destatis (2007), im AFC-Bericht zitiert – alt",
+   "jahr": 2007,
+   "quelle": "afc2021",
+   "fundstelle": "AFC-Abschlussbericht S. 42 f."
+  },
+  {
+   "wert": "Fahrtzeiten rund ein Drittel der täglichen Arbeitszeit in allen kurativen Feldern außer Kleintier; Nutztierpraktiker nur ca. 40 % der Zeit am Tier",
+   "was_gemessen": "Arbeitszeitbefragung praktizierender Tierärzte 2016 (Kersebohm, Diss. FU Berlin 2018) – Zweitzitat",
+   "jahr": 2016,
+   "quelle": "lgl2022 (zitiert kersebohm2018)",
+   "fundstelle": "LGL-Bericht Kap. 4 (Abb. 21) und S. ca. 9149 Textzeilen"
+  },
+  {
+   "wert": "Ø Entfernung Praxis-Betrieb 23,5 km (N=62): Rind 18 km, gemischt 25 km, Schwein 55 km; Ø maximale Entfernung 53,6 km (3-250 km)",
+   "was_gemessen": "Selbstangabe Nutztierpraxis-Inhaber Bayern",
+   "jahr": 2021,
+   "quelle": "lgl2022",
+   "fundstelle": "LGL-Bericht Kap. 9.2.6.6, S. 204 f."
+  },
+  {
+   "wert": "Ø Anfahrtszeit im Notfall 18 min (N=60), Ø maximale 42 min (N=61), Spitze 180 min; Rind 14, gemischt 21, Schwein 30 min; Unterfranken 32 min; als tierschutzrechtlich akzeptabel genannt Ø 39 min (Median 30, N=59)",
+   "was_gemessen": "Selbstangabe Nutztierpraxis-Inhaber Bayern",
+   "jahr": 2021,
+   "quelle": "lgl2022",
+   "fundstelle": "LGL-Bericht Kap. 9.2.6.6, S. 205"
+  },
+  {
+   "wert": "Wegegeld 3,50 € je Doppelkilometer, mindestens 13 €; damit sind Zeitversäumnisse abgegolten",
+   "was_gemessen": "Rechtslage GOT",
+   "jahr": 2022,
+   "quelle": "got",
+   "fundstelle": "§ 10 Abs. 1 und 2 GOT"
+  }
+ ],
+ "luecken": [
+  "Keine repräsentative Erhebung, wie viele deutsche Tierarztpraxen Videosprechstunden anbieten oder wie viele Fernkonsultationen stattfinden. Es gibt keine Abrechnungsstatistik (anders als KBV/Zi in der Humanmedizin), weil Tierarztleistungen privat abgerechnet werden.",
+  "Keine repräsentative Halterbefragung zur tatsächlichen Nutzung in Deutschland; nur Vorstellbarkeit (DA Direkt 54 %) und Gelegenheitsstichproben (Karsch 2026). Der einzige Nutzungswert (12 %/6 %) stammt aus AT/DK/UK.",
+  "Tierärzte Atlas Deutschland (englische Fassung 2025 durchsucht) enthält keine Angaben zu Telemedizin; Atlas 2026 (vorgestellt 24./25.09.2026) nicht frei als PDF geprüft.",
+  "Becker et al. 2023 nennen zu Kanälen und Bereitschaft nur Abbildungen ohne Prozentwerte; Dissertation Becker / Vortrag TK Niedersachsen 2022 nicht abrufbar (HTTP 403).",
+  "AFC 2021 hat den Fahrzeitanteil abgefragt, aber nicht nach Praxisart (Pferd/Nutztier) veröffentlicht. Zahlen zu Fahrzeit stammen daher nur aus Kersebohm 2016/2018 (Zweitzitat über LGL) und LGL Bayern (nur Nutztier, nur Bayern, N≈60). Kersebohm-Volltext nicht gelesen (Bot-Sperre Refubium).",
+  "Primärtext der BTK-Musterberufsordnung (§ 12 Abs. 6-8) und Beschlussdatum nicht gefunden; Wortlaut nur über bpt-Folie 2023. Landesberufsordnung Schleswig-Holstein 05.11.2025 ist ein Scan ohne Textebene; Nordrhein, Niedersachsen u. a. nicht geprüft.",
+  "BTK-Leitlinien 'Telemedizin in der veterinärmedizinischen Praxis' (nach 2020) nur hinter Login (vetstage) bzw. über Folienauszug; bpt-Positionspapier 2021 nicht selbst gelesen.",
+  "Keine Anbieterzahlen für Deutschland (Dr. Fressnapf, Pfotendoctor, FirstVet DE): nur Preise und eine globale FirstVet-Selbstangabe.",
+  "Zi-Zahlen nur aus Titel/Snippets; für den Vergleich vor Nutzung die Zi-Seite lesen."
+ ]
+}

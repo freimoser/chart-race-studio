@@ -1,0 +1,29 @@
+{
+  "_herkunft": "GOT 2022, Anlage Teil A, lfd. Nr. 1, 2 und 16; dreifacher Satz nach § 2 berechnet. Rohdaten data/raw/ds35-telemedizin.json.",
+  "art": "balken",
+  "serie": "Sonderauswertung",
+  "titel": "Was eine Beratung per Telefon oder Video kostet",
+  "untertitel": "Gebühren nach GOT 2022, einfacher Satz, netto in Euro",
+  "einheit": " €",
+  "dezimalen": 2,
+  "max": 35,
+  "balken": [
+    {
+      "name": "Beratung ohne Untersuchung, auch telefonisch (Nr. 1)",
+      "wert": 11.26
+    },
+    {
+      "name": "dieselbe Beratung zum dreifachen Satz",
+      "wert": 33.78
+    },
+    {
+      "name": "Untersuchung mit Beratung, Hund oder Katze (Nr. 16)",
+      "wert": 23.62
+    },
+    {
+      "name": "eingehende Beratung (Nr. 2)",
+      "wert": 30.78
+    }
+  ],
+  "quelle": "Quelle: Gebührenordnung für Tierärzte (GOT) 2022, Gebührenverzeichnis Teil A, Nr. 1, 2 und 16; dreifacher Satz nach § 2 berechnet. Eine eigene Position für Videosprechstunden gibt es nicht"
+}

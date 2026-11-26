@@ -1,0 +1,29 @@
+{
+  "_herkunft": "Eschle, Dissertation LMU 2021 (Online-Umfrage 2018/19, n=3.881): jemals geimpft 99,0 %, aktuell nach Leitlinie 46,8 %, Leptospirose im letzten Jahr 50,1 %. BfT/Skopos 2020: 89 % der Hundehalter 'lassen impfen'.",
+  "art": "balken",
+  "serie": "Sonderauswertung",
+  "titel": "Geimpft ja, aktuell nein",
+  "untertitel": "Hunde in Deutschland, Anteil in Prozent, aus zwei Studien mit verschiedenen Fragen",
+  "jahr": "2019",
+  "einheit": " %",
+  "max": 100,
+  "balken": [
+    {
+      "name": "jemals geimpft (Umfrage LMU)",
+      "wert": 99
+    },
+    {
+      "name": "Halter sagen, sie lassen impfen (BfT 2020)",
+      "wert": 89
+    },
+    {
+      "name": "Leptospirose im letzten Jahr (Umfrage LMU)",
+      "wert": 50
+    },
+    {
+      "name": "nach Leitlinie aktuell geimpft (Umfrage LMU)",
+      "wert": 47
+    }
+  ],
+  "quelle": "Quellen: Eschle, Dissertation LMU München 2021 (Online-Umfrage 2018/19, 3.881 Hunde, eher engagierte Halter); BfT/Skopos-Befragung 2020 (nicht gefragt: wie oft, wogegen, wann zuletzt). Verschiedene Studien und Fragen, gerundet"
+}

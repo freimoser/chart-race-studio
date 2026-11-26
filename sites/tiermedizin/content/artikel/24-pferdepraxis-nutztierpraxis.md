@@ -50,6 +50,8 @@ Getrennt gezählt werden Pferde erst seit 2019, bis dahin steckten sie in den Nu
 
 ::grafik pferde-nutztiere line
 
+Wie weit Nutztierpraxen zu ihren Betrieben fahren und was Telemedizin daran ändern kann, steht im Beitrag [Telemedizin beim Tierarzt](telemedizin-tierarzt.html).
+
 ## Was die Zahl nicht sagt
 
 - **2010 bis 2018 sind gerechnet, nicht erhoben.** Die Kammer schließt einen Vergleich mit den Jahren vor 2019 selbst aus. Die Rückrechnung bildet die alten Kategorien am Bruch 2018/2019 auf die neuen ab und schreibt die Pferde über die Zahl der Fachtierärzte für Pferde fort. Belastbar ist die Richtung, nicht die genaue Höhe.

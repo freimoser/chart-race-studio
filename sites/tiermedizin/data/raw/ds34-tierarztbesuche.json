@@ -1,0 +1,809 @@
+{
+ "abgerufen": "2026-11-26",
+ "thema": "Wie oft gehen Hunde und Katzen zum Tierarzt? Besuche, Impfungen, Vorsorge in Deutschland",
+ "quellen": [
+  {
+   "id": "ohr2019",
+   "titel": "Ohr, R.: Heimtierstudie 2019 (Uni Göttingen), Abb. 17 nach IVH/ZZF-Halterbefragung Erhebungswelle 2018; Abb. 18/20 eigene Online-Befragung 2019",
+   "url": "https://uni-goettingen.de/de/document/download/52bbce3b8ebcfef2faa77d50d72a0b21.pdf/Heimtierstudie%202019%20final%20korr..pdf",
+   "jahr": 2019,
+   "abgerufen": "2026-11-26",
+   "art": "Sekundärquelle (Studie) mit Umfragedaten",
+   "fundstelle": "S. 19 f. (Abb. 17, Abb. 18), S. 52 f. (Abb. 20, Fußnoten 102/103)"
+  },
+  {
+   "id": "ivh2014",
+   "titel": "IVH/ZZF, Skopos-Erhebung zur Heimtierhaltung 2014, wiedergegeben bei PETCOM.at „28 Millionen Heimtiere leben in Deutschland“",
+   "url": "https://petcom.at/deutschland/marktdaten/Heimtier-Populationen-Deutschland/Heimtiere-Deutschland-2014.html",
+   "jahr": 2014,
+   "abgerufen": "2026-11-26",
+   "art": "Zweitquelle (Branchenportal) einer repräsentativen Verbandsumfrage; Primärmeldung IVH/ZZF nicht abgerufen",
+   "fundstelle": "Absätze Katzen und Hunde"
+  },
+  {
+   "id": "gothaer_hund",
+   "titel": "Gothaer, PM 30.05.2023: „84 Prozent der Hundebesitzer*innen gehen regelmäßig zum Tierarzt“ (Forsa, 3.–10.03.2023, n=1.001 Hunde- und/oder Katzenbesitzer, davon 527 Hundebesitzer, forsa.omninet)",
+   "url": "https://www.mynewsdesk.com/de/barmeniagothaer/pressreleases/gothaer-studie-84-prozent-der-hundebesitzer-stern-innen-gehen-regelmaessig-zum-tierarzt-3252897",
+   "jahr": 2023,
+   "abgerufen": "2026-11-26",
+   "art": "Umfrage im Auftrag eines Versicherers",
+   "fundstelle": "Text und Fußnote 2"
+  },
+  {
+   "id": "gothaer_katze",
+   "titel": "Gothaer, PM 26.04.2023: „75 Prozent der Katzenbesitzer*innen geben bis zu 500 Euro im Jahr beim Tierarzt aus“ (Forsa, 3.–10.03.2023, davon 590 Katzenbesitzer)",
+   "url": "https://www.mynewsdesk.com/de/barmeniagothaer/pressreleases/gothaer-studie-75-prozent-der-katzenbesitzer-stern-innen-geben-bis-zu-500-euro-im-jahr-beim-tierarzt-aus-3248090",
+   "jahr": 2023,
+   "abgerufen": "2026-11-26",
+   "art": "Umfrage im Auftrag eines Versicherers",
+   "fundstelle": "Abschnitt „94 Prozent aller Katzenbesitzer*innen besuchen den Tierarzt“, Fußnoten 4–6"
+  },
+  {
+   "id": "vetline2023",
+   "titel": "vetline.de „Regelmäßig in der Praxis“ (fasst Gothaer/Forsa 2023 zusammen)",
+   "url": "https://vetline.de/regelmaessig-in-der-praxis",
+   "jahr": 2023,
+   "abgerufen": "2026-11-26",
+   "art": "Zweitquelle (Fachpresse), nur zur Gegenprüfung"
+  },
+  {
+   "id": "dadirekt2023",
+   "titel": "DA Direkt: „Haustiere in Deutschland“ (infas quo, Online-Befragung September 2023, >1.000 Personen 18–79 J.)",
+   "url": "https://www.da-direkt.de/hundekrankenversicherung/ratgeber/haustiere-deutschland",
+   "jahr": 2023,
+   "abgerufen": "2026-11-26",
+   "art": "Umfrage im Auftrag eines Versicherers; Halterzahl je Tierart nicht genannt"
+  },
+  {
+   "id": "bft2020",
+   "titel": "BfT, PM 18.06.2020: „Mehrzahl der Hunde- und Katzenhalter misst Schutzimpfungen Bedeutung zu“ (Skopos im Auftrag des BfT)",
+   "url": "https://www.bft-online.de/pressemitteilungen/mehrzahl-der-hunde-und-katzenhalter",
+   "jahr": 2020,
+   "abgerufen": "2026-11-26",
+   "art": "Umfrage im Auftrag des Industrieverbands; n und Erhebungszeitraum in der PM nicht genannt",
+   "fundstelle": "Absatz 1 und „Warum wird geimpft?“"
+  },
+  {
+   "id": "eschle",
+   "titel": "Eschle, S. M.: Untersuchung zur Besitzer-Compliance in Bezug auf Impfungen bei Hunden in Deutschland, Diss. LMU München 2021 (Online-Umfrage Aug. 2018–Feb. 2019, n=3.881); Artikel: Eschle et al., PLOS ONE 2020, doi:10.1371/journal.pone.0238371",
+   "url": "https://edoc.ub.uni-muenchen.de/28243/7/Eschle_Simone_Maria.pdf",
+   "jahr": 2021,
+   "abgerufen": "2026-11-26",
+   "art": "Dissertation / Peer-Review, Online-Selbstauskunft (Selbstselektion)"
+  },
+  {
+   "id": "gehrig",
+   "titel": "Gehrig, A.-C.: Untersuchung zur Besitzercompliance in Bezug auf Impfungen bei Katzen in Deutschland, Diss. LMU München 2019 (Online-Umfrage, n=920 auswertbar); Artikel: Gehrig et al., J Feline Med Surg 2019, doi:10.1177/1098612X18759838",
+   "url": "https://edoc.ub.uni-muenchen.de/24312/1/Gehrig_Anne-Claire.pdf",
+   "jahr": 2019,
+   "abgerufen": "2026-11-26",
+   "art": "Dissertation / Peer-Review, Online-Selbstauskunft (Selbstselektion)"
+  },
+  {
+   "id": "mende",
+   "titel": "Mende, K. et al.: Prevalence of antibodies against feline panleukopenia virus in client-owned cats in Southern Germany, Vet J 2014; Diss. LMU",
+   "url": "https://edoc.ub.uni-muenchen.de/17414/1/Mende_Katherina.pdf",
+   "jahr": 2014,
+   "abgerufen": "2026-11-26",
+   "art": "Seroprävalenzstudie (Blutproben), regional Süddeutschland; PubMed https://pubmed.ncbi.nlm.nih.gov/24461646/"
+  },
+  {
+   "id": "petbook2023",
+   "titel": "PETBOOK, 28.11.2023: „Nur 49 % der Haustiere in Deutschland hat aktuellen Impfschutz“ (Leser-Voting, 10.714 Stimmen)",
+   "url": "https://www.petbook.de/news/haustiere-deutschland-aktueller-impfschutz",
+   "jahr": 2023,
+   "abgerufen": "2026-11-26",
+   "art": "Nicht repräsentatives Leser-Voting (Redaktion sagt das selbst) – nicht als Statistik verwenden"
+  },
+  {
+   "id": "bft_impfempf",
+   "titel": "BfT, FAQ „Impfempfehlung Kleintier“ (70-%-Schwelle)",
+   "url": "https://www.bft-online.de/themen/krankheiten-vorbeugen/bedeutung-von-impfstoffen/haeufig-gestellte-fragen/impfempfehlung-kleintier",
+   "jahr": null,
+   "abgerufen": "2026-11-26",
+   "art": "Verbandsaussage, keine Messung"
+  },
+  {
+   "id": "bft_markt",
+   "titel": "BfT-Marktzahlen, Segment Impfstoffe (Biologika), alle Tierarten – Projektdatei ds27-bft-tierarzneimittel.json",
+   "url": "https://www.bft-online.de/pressemitteilungen/tiergesundheit-gestalten-innovation-sicherheit-und-nachhaltigkeit-im-fokus",
+   "jahr": 2025,
+   "abgerufen": "2026-10-29 (Projektdatei)",
+   "art": "Verbandsschätzung Gesamtmarkt (Mitglieder >95 %)"
+  },
+  {
+   "id": "gdv2025",
+   "titel": "GDV, Medieninformation „Tierkrankenversicherung wächst rasant: Mehr als zwei Millionen Hunde, Katzen und Co. abgesichert“",
+   "url": "https://www.gdv.de/gdv/medien/medieninformationen/tierkrankenversicherung-waechst-rasant-mehr-als-zwei-millionen-hunde-katzen-und-co-abgesichert-205370",
+   "jahr": 2024,
+   "abgerufen": "2026-11-26",
+   "art": "Versichererverband; nicht alle Versicherer erfasst (Tierärzte Atlas 2026, S. 93)"
+  },
+  {
+   "id": "atlas2024",
+   "titel": "Tierärzte Atlas Deutschland 2024",
+   "url": "https://www.tieraerzteatlas.de/wp-content/uploads/2024/10/Tieraerzte_Atlas_online_2024_10_09-komplett.pdf",
+   "jahr": 2024,
+   "abgerufen": "2026-11-26",
+   "art": "Branchenatlas – enthält keine Besuchsfrequenz"
+  },
+  {
+   "id": "atlas2026",
+   "titel": "Tierärzte Atlas Deutschland 2026",
+   "url": "https://www.tieraerzteatlas.de/wp-content/uploads/2026/09/2026-ATLAS-24.09.2026-KL.pdf",
+   "jahr": 2026,
+   "abgerufen": "2026-11-26",
+   "art": "Branchenatlas – enthält keine Besuchsfrequenz; S. 78 BfT-Markt, S. 93 GDV"
+  },
+  {
+   "id": "ohr2025",
+   "titel": "Ohr, R.: Heimtierstudie 2025",
+   "url": "https://renate-ohr.de/.cm4all/uproc.php/0/Heimtierstudie%202025/Heimtierstudie%202025.pdf?cdp=a&_=19c326c43d0",
+   "jahr": 2025,
+   "abgerufen": "2026-11-26",
+   "art": "Studie – keine Besuchsfrequenz mehr; Heimtiergesundheit 2024 gesamt 4,0–4,2 Mrd. €; TKV-Durchdringung Branchenschätzung"
+  },
+  {
+   "id": "pdsa2026",
+   "titel": "PDSA Animal Wellbeing (PAW) Report 2026 – Preventive",
+   "url": "https://www.pdsa.org.uk/what-we-do/pdsa-animal-wellbeing-report/paw-report-2026/preventive",
+   "jahr": 2026,
+   "abgerufen": "2026-11-26",
+   "art": "Repräsentative Halterbefragung UK (Kontext)"
+  },
+  {
+   "id": "avma2016",
+   "titel": "JAVMA News 15.01.2019 „Pet ownership stable, veterinary care variable“ (AVMA Pet Ownership and Demographics Sourcebook 2017/18, Daten 2016)",
+   "url": "https://www.avma.org/javma-news/2019-01-15/pet-ownership-stable-veterinary-care-variable",
+   "jahr": 2016,
+   "abgerufen": "2026-11-26",
+   "art": "Haushaltsbefragung USA (Kontext)"
+  }
+ ],
+ "werte": [
+  {
+   "tierart": "Hund",
+   "groesse": "Tierarztbesuche pro Jahr: 3x oder öfter",
+   "wert": 14,
+   "einheit": "% der Tiere (Halterangabe)",
+   "jahr": 2018,
+   "grundgesamtheit": "Hundehalter bzw. Katzenhalter, IVH/ZZF-Befragung Welle 2018 (Hunde n=1.278, Katzen n=1.582)",
+   "quelle": "ohr2019",
+   "hinweis": "Umfrage, Selbstauskunft. Primärdaten IVH/ZZF nicht öffentlich, nur über Ohr 2019 Abb. 17 belegt."
+  },
+  {
+   "tierart": "Hund",
+   "groesse": "Tierarztbesuche pro Jahr: 2x",
+   "wert": 26,
+   "einheit": "% der Tiere (Halterangabe)",
+   "jahr": 2018,
+   "grundgesamtheit": "Hundehalter bzw. Katzenhalter, IVH/ZZF-Befragung Welle 2018 (Hunde n=1.278, Katzen n=1.582)",
+   "quelle": "ohr2019",
+   "hinweis": "Umfrage, Selbstauskunft. Primärdaten IVH/ZZF nicht öffentlich, nur über Ohr 2019 Abb. 17 belegt."
+  },
+  {
+   "tierart": "Hund",
+   "groesse": "Tierarztbesuche pro Jahr: 1x",
+   "wert": 41,
+   "einheit": "% der Tiere (Halterangabe)",
+   "jahr": 2018,
+   "grundgesamtheit": "Hundehalter bzw. Katzenhalter, IVH/ZZF-Befragung Welle 2018 (Hunde n=1.278, Katzen n=1.582)",
+   "quelle": "ohr2019",
+   "hinweis": "Umfrage, Selbstauskunft. Primärdaten IVH/ZZF nicht öffentlich, nur über Ohr 2019 Abb. 17 belegt."
+  },
+  {
+   "tierart": "Hund",
+   "groesse": "Tierarztbesuche pro Jahr: ca. alle 2 Jahre",
+   "wert": 16,
+   "einheit": "% der Tiere (Halterangabe)",
+   "jahr": 2018,
+   "grundgesamtheit": "Hundehalter bzw. Katzenhalter, IVH/ZZF-Befragung Welle 2018 (Hunde n=1.278, Katzen n=1.582)",
+   "quelle": "ohr2019",
+   "hinweis": "Umfrage, Selbstauskunft. Primärdaten IVH/ZZF nicht öffentlich, nur über Ohr 2019 Abb. 17 belegt."
+  },
+  {
+   "tierart": "Hund",
+   "groesse": "Tierarztbesuche pro Jahr: seltener als alle 2 Jahre",
+   "wert": 3,
+   "einheit": "% der Tiere (Halterangabe)",
+   "jahr": 2018,
+   "grundgesamtheit": "Hundehalter bzw. Katzenhalter, IVH/ZZF-Befragung Welle 2018 (Hunde n=1.278, Katzen n=1.582)",
+   "quelle": "ohr2019",
+   "hinweis": "Umfrage, Selbstauskunft. Primärdaten IVH/ZZF nicht öffentlich, nur über Ohr 2019 Abb. 17 belegt."
+  },
+  {
+   "tierart": "Katze",
+   "groesse": "Tierarztbesuche pro Jahr: 3x oder öfter",
+   "wert": 6,
+   "einheit": "% der Tiere (Halterangabe)",
+   "jahr": 2018,
+   "grundgesamtheit": "Hundehalter bzw. Katzenhalter, IVH/ZZF-Befragung Welle 2018 (Hunde n=1.278, Katzen n=1.582)",
+   "quelle": "ohr2019",
+   "hinweis": "Umfrage, Selbstauskunft. Primärdaten IVH/ZZF nicht öffentlich, nur über Ohr 2019 Abb. 17 belegt."
+  },
+  {
+   "tierart": "Katze",
+   "groesse": "Tierarztbesuche pro Jahr: 2x",
+   "wert": 18,
+   "einheit": "% der Tiere (Halterangabe)",
+   "jahr": 2018,
+   "grundgesamtheit": "Hundehalter bzw. Katzenhalter, IVH/ZZF-Befragung Welle 2018 (Hunde n=1.278, Katzen n=1.582)",
+   "quelle": "ohr2019",
+   "hinweis": "Umfrage, Selbstauskunft. Primärdaten IVH/ZZF nicht öffentlich, nur über Ohr 2019 Abb. 17 belegt."
+  },
+  {
+   "tierart": "Katze",
+   "groesse": "Tierarztbesuche pro Jahr: 1x",
+   "wert": 60,
+   "einheit": "% der Tiere (Halterangabe)",
+   "jahr": 2018,
+   "grundgesamtheit": "Hundehalter bzw. Katzenhalter, IVH/ZZF-Befragung Welle 2018 (Hunde n=1.278, Katzen n=1.582)",
+   "quelle": "ohr2019",
+   "hinweis": "Umfrage, Selbstauskunft. Primärdaten IVH/ZZF nicht öffentlich, nur über Ohr 2019 Abb. 17 belegt."
+  },
+  {
+   "tierart": "Katze",
+   "groesse": "Tierarztbesuche pro Jahr: ca. alle 2 Jahre",
+   "wert": 6,
+   "einheit": "% der Tiere (Halterangabe)",
+   "jahr": 2018,
+   "grundgesamtheit": "Hundehalter bzw. Katzenhalter, IVH/ZZF-Befragung Welle 2018 (Hunde n=1.278, Katzen n=1.582)",
+   "quelle": "ohr2019",
+   "hinweis": "Umfrage, Selbstauskunft. Primärdaten IVH/ZZF nicht öffentlich, nur über Ohr 2019 Abb. 17 belegt."
+  },
+  {
+   "tierart": "Katze",
+   "groesse": "Tierarztbesuche pro Jahr: seltener als alle 2 Jahre",
+   "wert": 10,
+   "einheit": "% der Tiere (Halterangabe)",
+   "jahr": 2018,
+   "grundgesamtheit": "Hundehalter bzw. Katzenhalter, IVH/ZZF-Befragung Welle 2018 (Hunde n=1.278, Katzen n=1.582)",
+   "quelle": "ohr2019",
+   "hinweis": "Umfrage, Selbstauskunft. Primärdaten IVH/ZZF nicht öffentlich, nur über Ohr 2019 Abb. 17 belegt."
+  },
+  {
+   "tierart": "Hund",
+   "groesse": "Tierarztkosten je Tier und Jahr (Mittel)",
+   "wert": 227,
+   "einheit": "€",
+   "jahr": 2019,
+   "grundgesamtheit": "Teilnehmer eigene Online-Befragung Ohr 2019 (Hunde n=4.413)",
+   "quelle": "ohr2019",
+   "hinweis": "Laut Autorin eher überdurchschnittlich engagierte Halter, nicht repräsentativ; Ausreißer bereinigt. Vor GOT 2022."
+  },
+  {
+   "tierart": "Katze",
+   "groesse": "Tierarztkosten je Tier und Jahr (Mittel)",
+   "wert": 121,
+   "einheit": "€",
+   "jahr": 2019,
+   "grundgesamtheit": "Teilnehmer eigene Online-Befragung Ohr 2019 (Katzen n=2.885)",
+   "quelle": "ohr2019",
+   "hinweis": "wie Hund"
+  },
+  {
+   "tierart": "Hund",
+   "groesse": "Anteil ohne jede tierärztliche Behandlung",
+   "wert": 1.5,
+   "einheit": "% der Hunde",
+   "jahr": 2019,
+   "grundgesamtheit": "Online-Befragung Ohr 2019",
+   "quelle": "ohr2019",
+   "hinweis": "nicht repräsentativ"
+  },
+  {
+   "tierart": "Katze",
+   "groesse": "Anteil ohne jede tierärztliche Behandlung",
+   "wert": 5,
+   "einheit": "% der Katzen (\"über 5 %\")",
+   "jahr": 2019,
+   "grundgesamtheit": "Online-Befragung Ohr 2019",
+   "quelle": "ohr2019",
+   "hinweis": "nicht repräsentativ; Wert als Untergrenze"
+  },
+  {
+   "tierart": "Hund",
+   "groesse": "mindestens einmal im Jahr beim Tierarzt",
+   "wert": 87,
+   "einheit": "% der Halter",
+   "jahr": 2014,
+   "grundgesamtheit": "Hundehalter, repräsentative Skopos-Erhebung im Auftrag IVH/ZZF",
+   "quelle": "ivh2014",
+   "hinweis": "Zweitquelle; Fragewortlaut nicht bekannt"
+  },
+  {
+   "tierart": "Katze",
+   "groesse": "mindestens einmal im Jahr beim Tierarzt",
+   "wert": 70,
+   "einheit": "% der Halter",
+   "jahr": 2014,
+   "grundgesamtheit": "Katzenhalter, repräsentative Skopos-Erhebung im Auftrag IVH/ZZF",
+   "quelle": "ivh2014",
+   "hinweis": "Zweitquelle; Fragewortlaut nicht bekannt"
+  },
+  {
+   "tierart": "Hund",
+   "groesse": "mindestens einmal im Jahr beim Tierarzt (gerechnet: 100 − 15 % „seltener als einmal“)",
+   "wert": 85,
+   "einheit": "% der Halter",
+   "jahr": 2023,
+   "grundgesamtheit": "Hundebesitzer, Forsa-Panel (n=527), bezogen auf den ältesten Hund",
+   "quelle": "gothaer_hund",
+   "hinweis": "Gerechnet aus 68 % (bis 3x) + 16 % (>3x) = 84 %; Gothaer nennt 84 % „regelmäßig“. Kategorie „bis zu 3x“ schließt 1x ein."
+  },
+  {
+   "tierart": "Hund",
+   "groesse": "seltener als einmal pro Jahr beim Tierarzt",
+   "wert": 15,
+   "einheit": "% der Halter",
+   "jahr": 2023,
+   "grundgesamtheit": "Hundebesitzer, Forsa (n=527)",
+   "quelle": "gothaer_hund",
+   "hinweis": "Umfrage im Auftrag eines Versicherers"
+  },
+  {
+   "tierart": "Hund",
+   "groesse": "häufiger als 3x pro Jahr beim Tierarzt",
+   "wert": 16,
+   "einheit": "% der Halter",
+   "jahr": 2023,
+   "grundgesamtheit": "Hundebesitzer, Forsa (n=527)",
+   "quelle": "gothaer_hund",
+   "hinweis": ""
+  },
+  {
+   "tierart": "Hund",
+   "groesse": "Anlass im letzten Jahr: Impfung",
+   "wert": 74,
+   "einheit": "% der Halter",
+   "jahr": 2023,
+   "grundgesamtheit": "Hundebesitzer, Forsa (n=527), Mehrfachnennung",
+   "quelle": "gothaer_hund",
+   "hinweis": "Kein Impfstatus, sondern Besuchsanlass"
+  },
+  {
+   "tierart": "Katze",
+   "groesse": "nie beim Tierarzt",
+   "wert": 6,
+   "einheit": "% der Halter",
+   "jahr": 2023,
+   "grundgesamtheit": "Katzenbesitzer, Forsa (n=590), älteste Katze",
+   "quelle": "gothaer_katze",
+   "hinweis": ""
+  },
+  {
+   "tierart": "Katze",
+   "groesse": "seltener als einmal pro Jahr beim Tierarzt",
+   "wert": 27,
+   "einheit": "% der Halter",
+   "jahr": 2023,
+   "grundgesamtheit": "Katzenbesitzer, Forsa (n=590)",
+   "quelle": "gothaer_katze",
+   "hinweis": "Bezugsbasis der Häufigkeitsfrage laut Fußnote unklar (alle oder die 94 %, die zum Tierarzt gehen); Summe 6+57+27+4+6=100 spricht für alle Katzenbesitzer"
+  },
+  {
+   "tierart": "Katze",
+   "groesse": "1–2x pro Jahr beim Tierarzt",
+   "wert": 57,
+   "einheit": "% der Halter",
+   "jahr": 2023,
+   "grundgesamtheit": "Katzenbesitzer, Forsa (n=590)",
+   "quelle": "gothaer_katze",
+   "hinweis": ""
+  },
+  {
+   "tierart": "Katze",
+   "groesse": "3x pro Jahr",
+   "wert": 4,
+   "einheit": "% der Halter",
+   "jahr": 2023,
+   "grundgesamtheit": "Katzenbesitzer, Forsa (n=590)",
+   "quelle": "gothaer_katze",
+   "hinweis": ""
+  },
+  {
+   "tierart": "Katze",
+   "groesse": "häufiger als 3x pro Jahr",
+   "wert": 6,
+   "einheit": "% der Halter",
+   "jahr": 2023,
+   "grundgesamtheit": "Katzenbesitzer, Forsa (n=590)",
+   "quelle": "gothaer_katze",
+   "hinweis": ""
+  },
+  {
+   "tierart": "Katze",
+   "groesse": "Anlass: Impfung",
+   "wert": 63,
+   "einheit": "% der Halter",
+   "jahr": 2023,
+   "grundgesamtheit": "Katzenbesitzer, die zum Tierarzt gehen (94 %), Forsa, Mehrfachnennung",
+   "quelle": "gothaer_katze",
+   "hinweis": "Besuchsanlass, kein Impfstatus"
+  },
+  {
+   "tierart": "Hund",
+   "groesse": "einmal jährlich / zweimal jährlich / nur bei Krankheit",
+   "wert": "50 / 32 / 13",
+   "einheit": "% der Halter",
+   "jahr": 2023,
+   "grundgesamtheit": "Hundehalter unter >1.000 Online-Befragten (infas quo, Sept. 2023)",
+   "quelle": "dadirekt2023",
+   "hinweis": "Versicherer-Umfrage, Teilstichprobe nicht beziffert; Kategorien anders geschnitten als Gothaer/IVH"
+  },
+  {
+   "tierart": "Katze",
+   "groesse": "einmal jährlich / zweimal jährlich / nur bei Krankheit",
+   "wert": "49 / 21 / 17",
+   "einheit": "% der Halter",
+   "jahr": 2023,
+   "grundgesamtheit": "Katzenhalter unter >1.000 Online-Befragten (infas quo, Sept. 2023)",
+   "quelle": "dadirekt2023",
+   "hinweis": "wie Hund"
+  },
+  {
+   "tierart": "Hund",
+   "groesse": "lassen ihr Tier impfen",
+   "wert": 89,
+   "einheit": "% der Halter",
+   "jahr": 2020,
+   "grundgesamtheit": "Hundehalter, Skopos im Auftrag BfT",
+   "quelle": "bft2020",
+   "hinweis": "Laut BfT nicht abgefragt: wie oft, wogegen, wann zuletzt – also KEIN aktueller Impfschutz"
+  },
+  {
+   "tierart": "Katze",
+   "groesse": "lassen ihr Tier impfen",
+   "wert": 74,
+   "einheit": "% der Halter",
+   "jahr": 2020,
+   "grundgesamtheit": "Katzenhalter, Skopos im Auftrag BfT",
+   "quelle": "bft2020",
+   "hinweis": "wie Hund; reine Wohnungskatzen und Freigänger je etwa ein Drittel ungeimpft"
+  },
+  {
+   "tierart": "Hund",
+   "groesse": "jemals geimpft",
+   "wert": 99.0,
+   "einheit": "% der Hunde",
+   "jahr": 2019,
+   "grundgesamtheit": "Online-Teilnehmer (n=3.851 gültig), Aug. 2018–Feb. 2019",
+   "quelle": "eschle",
+   "hinweis": "Selbstselektion, eher engagierte Halter"
+  },
+  {
+   "tierart": "Hund",
+   "groesse": "aktueller Impfstatus nach Leitlinie (Tollwut, Staupe, Parvo ≤3 J., Lepto ≤1 J.)",
+   "wert": 46.8,
+   "einheit": "% der Hunde",
+   "jahr": 2019,
+   "grundgesamtheit": "Online-Teilnehmer (1.818/3.881)",
+   "quelle": "eschle",
+   "hinweis": "Kernbeleg für „weniger als die Hälfte“; Lepto (jährlich) ist der Engpass: 50,1 %"
+  },
+  {
+   "tierart": "Hund",
+   "groesse": "Leptospirose-Impfung im letzten Jahr",
+   "wert": 50.1,
+   "einheit": "% der Hunde",
+   "jahr": 2019,
+   "grundgesamtheit": "Online-Teilnehmer (1.941/3.874)",
+   "quelle": "eschle",
+   "hinweis": ""
+  },
+  {
+   "tierart": "Katze",
+   "groesse": "in den letzten 3 Jahren geimpft (leitliniengerecht für Core)",
+   "wert": 77.9,
+   "einheit": "% der Katzen",
+   "jahr": 2018,
+   "grundgesamtheit": "Online-Teilnehmer (717/920)",
+   "quelle": "gehrig",
+   "hinweis": "Selbstselektion; Erhebungsjahr vor Publikation 2018/19, genaues Jahr in Abfrage nicht ermittelt"
+  },
+  {
+   "tierart": "Katze",
+   "groesse": "nie geimpft",
+   "wert": 5.4,
+   "einheit": "% der Katzen",
+   "jahr": 2018,
+   "grundgesamtheit": "Online-Teilnehmer (50/920)",
+   "quelle": "gehrig",
+   "hinweis": ""
+  },
+  {
+   "tierart": "Katze",
+   "groesse": "Antikörper gegen Katzenseuche (FPV) nachweisbar",
+   "wert": 70.6,
+   "einheit": "% der Katzen",
+   "jahr": 2014,
+   "grundgesamtheit": "350 Katzen in Tierarztpraxen/Klinik, Süddeutschland",
+   "quelle": "mende",
+   "hinweis": "Gemessener Schutz, nicht Impfquote; regional; nur Tiere, die beim Tierarzt waren"
+  },
+  {
+   "tierart": "Heimtiere (Hund/Katze/Kleintier)",
+   "groesse": "„aktueller Impfschutz“ laut Leser-Voting",
+   "wert": 49,
+   "einheit": "% der Stimmen",
+   "jahr": 2023,
+   "grundgesamtheit": "PETBOOK-Leser, 10.714 Stimmen",
+   "quelle": "petbook2023",
+   "hinweis": "NICHT repräsentativ, nicht verwenden; nur als Beispiel für zirkulierende Zahl"
+  },
+  {
+   "tierart": "alle Tierarten",
+   "groesse": "Umsatz Impfstoffe (Biologika), Tierarzneimittelmarkt",
+   "wert": 138,
+   "einheit": "Mio. €",
+   "jahr": 2006,
+   "grundgesamtheit": "Gesamtmarkt Deutschland, Nutz- und Heimtiere zusammen",
+   "quelle": "bft_markt",
+   "hinweis": "Keine Heimtier-Aufteilung des Impfstoffsegments; Basiskorrekturen 2013/14, 2020/21, 2022/23 laut ds27"
+  },
+  {
+   "tierart": "alle Tierarten",
+   "groesse": "Umsatz Impfstoffe (Biologika), Tierarzneimittelmarkt",
+   "wert": 145,
+   "einheit": "Mio. €",
+   "jahr": 2007,
+   "grundgesamtheit": "Gesamtmarkt Deutschland, Nutz- und Heimtiere zusammen",
+   "quelle": "bft_markt",
+   "hinweis": "Keine Heimtier-Aufteilung des Impfstoffsegments; Basiskorrekturen 2013/14, 2020/21, 2022/23 laut ds27"
+  },
+  {
+   "tierart": "alle Tierarten",
+   "groesse": "Umsatz Impfstoffe (Biologika), Tierarzneimittelmarkt",
+   "wert": 165,
+   "einheit": "Mio. €",
+   "jahr": 2008,
+   "grundgesamtheit": "Gesamtmarkt Deutschland, Nutz- und Heimtiere zusammen",
+   "quelle": "bft_markt",
+   "hinweis": "Keine Heimtier-Aufteilung des Impfstoffsegments; Basiskorrekturen 2013/14, 2020/21, 2022/23 laut ds27"
+  },
+  {
+   "tierart": "alle Tierarten",
+   "groesse": "Umsatz Impfstoffe (Biologika), Tierarzneimittelmarkt",
+   "wert": 185,
+   "einheit": "Mio. €",
+   "jahr": 2009,
+   "grundgesamtheit": "Gesamtmarkt Deutschland, Nutz- und Heimtiere zusammen",
+   "quelle": "bft_markt",
+   "hinweis": "Keine Heimtier-Aufteilung des Impfstoffsegments; Basiskorrekturen 2013/14, 2020/21, 2022/23 laut ds27"
+  },
+  {
+   "tierart": "alle Tierarten",
+   "groesse": "Umsatz Impfstoffe (Biologika), Tierarzneimittelmarkt",
+   "wert": 188,
+   "einheit": "Mio. €",
+   "jahr": 2010,
+   "grundgesamtheit": "Gesamtmarkt Deutschland, Nutz- und Heimtiere zusammen",
+   "quelle": "bft_markt",
+   "hinweis": "Keine Heimtier-Aufteilung des Impfstoffsegments; Basiskorrekturen 2013/14, 2020/21, 2022/23 laut ds27"
+  },
+  {
+   "tierart": "alle Tierarten",
+   "groesse": "Umsatz Impfstoffe (Biologika), Tierarzneimittelmarkt",
+   "wert": 191,
+   "einheit": "Mio. €",
+   "jahr": 2011,
+   "grundgesamtheit": "Gesamtmarkt Deutschland, Nutz- und Heimtiere zusammen",
+   "quelle": "bft_markt",
+   "hinweis": "Keine Heimtier-Aufteilung des Impfstoffsegments; Basiskorrekturen 2013/14, 2020/21, 2022/23 laut ds27"
+  },
+  {
+   "tierart": "alle Tierarten",
+   "groesse": "Umsatz Impfstoffe (Biologika), Tierarzneimittelmarkt",
+   "wert": 194,
+   "einheit": "Mio. €",
+   "jahr": 2012,
+   "grundgesamtheit": "Gesamtmarkt Deutschland, Nutz- und Heimtiere zusammen",
+   "quelle": "bft_markt",
+   "hinweis": "Keine Heimtier-Aufteilung des Impfstoffsegments; Basiskorrekturen 2013/14, 2020/21, 2022/23 laut ds27"
+  },
+  {
+   "tierart": "alle Tierarten",
+   "groesse": "Umsatz Impfstoffe (Biologika), Tierarzneimittelmarkt",
+   "wert": 202,
+   "einheit": "Mio. €",
+   "jahr": 2013,
+   "grundgesamtheit": "Gesamtmarkt Deutschland, Nutz- und Heimtiere zusammen",
+   "quelle": "bft_markt",
+   "hinweis": "Keine Heimtier-Aufteilung des Impfstoffsegments; Basiskorrekturen 2013/14, 2020/21, 2022/23 laut ds27"
+  },
+  {
+   "tierart": "alle Tierarten",
+   "groesse": "Umsatz Impfstoffe (Biologika), Tierarzneimittelmarkt",
+   "wert": 208,
+   "einheit": "Mio. €",
+   "jahr": 2014,
+   "grundgesamtheit": "Gesamtmarkt Deutschland, Nutz- und Heimtiere zusammen",
+   "quelle": "bft_markt",
+   "hinweis": "Keine Heimtier-Aufteilung des Impfstoffsegments; Basiskorrekturen 2013/14, 2020/21, 2022/23 laut ds27"
+  },
+  {
+   "tierart": "alle Tierarten",
+   "groesse": "Umsatz Impfstoffe (Biologika), Tierarzneimittelmarkt",
+   "wert": 204,
+   "einheit": "Mio. €",
+   "jahr": 2015,
+   "grundgesamtheit": "Gesamtmarkt Deutschland, Nutz- und Heimtiere zusammen",
+   "quelle": "bft_markt",
+   "hinweis": "Keine Heimtier-Aufteilung des Impfstoffsegments; Basiskorrekturen 2013/14, 2020/21, 2022/23 laut ds27"
+  },
+  {
+   "tierart": "alle Tierarten",
+   "groesse": "Umsatz Impfstoffe (Biologika), Tierarzneimittelmarkt",
+   "wert": 221,
+   "einheit": "Mio. €",
+   "jahr": 2016,
+   "grundgesamtheit": "Gesamtmarkt Deutschland, Nutz- und Heimtiere zusammen",
+   "quelle": "bft_markt",
+   "hinweis": "Keine Heimtier-Aufteilung des Impfstoffsegments; Basiskorrekturen 2013/14, 2020/21, 2022/23 laut ds27"
+  },
+  {
+   "tierart": "alle Tierarten",
+   "groesse": "Umsatz Impfstoffe (Biologika), Tierarzneimittelmarkt",
+   "wert": 229,
+   "einheit": "Mio. €",
+   "jahr": 2017,
+   "grundgesamtheit": "Gesamtmarkt Deutschland, Nutz- und Heimtiere zusammen",
+   "quelle": "bft_markt",
+   "hinweis": "Keine Heimtier-Aufteilung des Impfstoffsegments; Basiskorrekturen 2013/14, 2020/21, 2022/23 laut ds27"
+  },
+  {
+   "tierart": "alle Tierarten",
+   "groesse": "Umsatz Impfstoffe (Biologika), Tierarzneimittelmarkt",
+   "wert": 224,
+   "einheit": "Mio. €",
+   "jahr": 2018,
+   "grundgesamtheit": "Gesamtmarkt Deutschland, Nutz- und Heimtiere zusammen",
+   "quelle": "bft_markt",
+   "hinweis": "Keine Heimtier-Aufteilung des Impfstoffsegments; Basiskorrekturen 2013/14, 2020/21, 2022/23 laut ds27"
+  },
+  {
+   "tierart": "alle Tierarten",
+   "groesse": "Umsatz Impfstoffe (Biologika), Tierarzneimittelmarkt",
+   "wert": 235.66,
+   "einheit": "Mio. €",
+   "jahr": 2019,
+   "grundgesamtheit": "Gesamtmarkt Deutschland, Nutz- und Heimtiere zusammen",
+   "quelle": "bft_markt",
+   "hinweis": "Keine Heimtier-Aufteilung des Impfstoffsegments; Basiskorrekturen 2013/14, 2020/21, 2022/23 laut ds27"
+  },
+  {
+   "tierart": "alle Tierarten",
+   "groesse": "Umsatz Impfstoffe (Biologika), Tierarzneimittelmarkt",
+   "wert": 237,
+   "einheit": "Mio. €",
+   "jahr": 2020,
+   "grundgesamtheit": "Gesamtmarkt Deutschland, Nutz- und Heimtiere zusammen",
+   "quelle": "bft_markt",
+   "hinweis": "Keine Heimtier-Aufteilung des Impfstoffsegments; Basiskorrekturen 2013/14, 2020/21, 2022/23 laut ds27"
+  },
+  {
+   "tierart": "alle Tierarten",
+   "groesse": "Umsatz Impfstoffe (Biologika), Tierarzneimittelmarkt",
+   "wert": 229.0,
+   "einheit": "Mio. €",
+   "jahr": 2021,
+   "grundgesamtheit": "Gesamtmarkt Deutschland, Nutz- und Heimtiere zusammen",
+   "quelle": "bft_markt",
+   "hinweis": "Keine Heimtier-Aufteilung des Impfstoffsegments; Basiskorrekturen 2013/14, 2020/21, 2022/23 laut ds27"
+  },
+  {
+   "tierart": "alle Tierarten",
+   "groesse": "Umsatz Impfstoffe (Biologika), Tierarzneimittelmarkt",
+   "wert": 214.18,
+   "einheit": "Mio. €",
+   "jahr": 2022,
+   "grundgesamtheit": "Gesamtmarkt Deutschland, Nutz- und Heimtiere zusammen",
+   "quelle": "bft_markt",
+   "hinweis": "Keine Heimtier-Aufteilung des Impfstoffsegments; Basiskorrekturen 2013/14, 2020/21, 2022/23 laut ds27"
+  },
+  {
+   "tierart": "alle Tierarten",
+   "groesse": "Umsatz Impfstoffe (Biologika), Tierarzneimittelmarkt",
+   "wert": 220.9,
+   "einheit": "Mio. €",
+   "jahr": 2023,
+   "grundgesamtheit": "Gesamtmarkt Deutschland, Nutz- und Heimtiere zusammen",
+   "quelle": "bft_markt",
+   "hinweis": "Keine Heimtier-Aufteilung des Impfstoffsegments; Basiskorrekturen 2013/14, 2020/21, 2022/23 laut ds27"
+  },
+  {
+   "tierart": "alle Tierarten",
+   "groesse": "Umsatz Impfstoffe (Biologika), Tierarzneimittelmarkt",
+   "wert": 237.9,
+   "einheit": "Mio. €",
+   "jahr": 2024,
+   "grundgesamtheit": "Gesamtmarkt Deutschland, Nutz- und Heimtiere zusammen",
+   "quelle": "bft_markt",
+   "hinweis": "Keine Heimtier-Aufteilung des Impfstoffsegments; Basiskorrekturen 2013/14, 2020/21, 2022/23 laut ds27"
+  },
+  {
+   "tierart": "alle Tierarten",
+   "groesse": "Umsatz Impfstoffe (Biologika), Tierarzneimittelmarkt",
+   "wert": 264.8,
+   "einheit": "Mio. €",
+   "jahr": 2025,
+   "grundgesamtheit": "Gesamtmarkt Deutschland, Nutz- und Heimtiere zusammen",
+   "quelle": "bft_markt",
+   "hinweis": "Keine Heimtier-Aufteilung des Impfstoffsegments; Basiskorrekturen 2013/14, 2020/21, 2022/23 laut ds27"
+  },
+  {
+   "tierart": "Hund und Katze (und andere)",
+   "groesse": "krankenversicherte Tiere",
+   "wert": 845000,
+   "einheit": "Tiere",
+   "jahr": 2019,
+   "grundgesamtheit": "vom GDV erfasste Versicherer",
+   "quelle": "gdv2025",
+   "hinweis": "nicht alle Versicherer erfasst"
+  },
+  {
+   "tierart": "Hund und Katze (und andere)",
+   "groesse": "krankenversicherte Tiere",
+   "wert": ">2.000.000",
+   "einheit": "Tiere",
+   "jahr": 2024,
+   "grundgesamtheit": "vom GDV erfasste Versicherer",
+   "quelle": "gdv2025",
+   "hinweis": "Anteil umfassender TKV ~40 % (2020: ~22 %); versicherte Tiere sind keine Stichprobe aller Tiere"
+  },
+  {
+   "tierart": "Hund",
+   "groesse": "Primärimpfung / regelmäßige Booster (UK)",
+   "wert": "82 / 82",
+   "einheit": "% der Halter",
+   "jahr": 2026,
+   "grundgesamtheit": "Hundehalter UK, PAW 2026",
+   "quelle": "pdsa2026",
+   "hinweis": "Kontext, nicht Deutschland"
+  },
+  {
+   "tierart": "Katze",
+   "groesse": "Primärimpfung / regelmäßige Booster (UK)",
+   "wert": "75 / 66",
+   "einheit": "% der Halter",
+   "jahr": 2026,
+   "grundgesamtheit": "Katzenhalter UK, PAW 2026",
+   "quelle": "pdsa2026",
+   "hinweis": "Kontext"
+  },
+  {
+   "tierart": "Hund",
+   "groesse": "Tierarztbesuche je Tier und Jahr (USA)",
+   "wert": 1.5,
+   "einheit": "Besuche",
+   "jahr": 2016,
+   "grundgesamtheit": "US-Haushalte, AVMA Sourcebook",
+   "quelle": "avma2016",
+   "hinweis": "Kontext; einzige gefundene Kennzahl „Besuche je Tier“"
+  },
+  {
+   "tierart": "Katze",
+   "groesse": "Tierarztbesuche je Tier und Jahr (USA)",
+   "wert": 0.7,
+   "einheit": "Besuche",
+   "jahr": 2016,
+   "grundgesamtheit": "US-Haushalte, AVMA Sourcebook",
+   "quelle": "avma2016",
+   "hinweis": "Kontext"
+  }
+ ],
+ "luecken": [
+  "Keine amtliche oder registerbasierte Zahl zu Tierarztbesuchen je Hund/Katze in Deutschland; alle Werte sind Halterbefragungen (Selbstauskunft).",
+  "Keine Kennzahl „Besuche je Tier und Jahr“ für Deutschland gefunden (nur Häufigkeitsklassen). Ein Mittelwert ließe sich aus IVH 2018 nur mit Annahmen für die offene Klasse „3x oder öfter“ schätzen – müsste als gerechnet markiert werden.",
+  "Keine Zeitreihe: Befragungen 2014 (IVH/Skopos), 2018 (IVH via Ohr), 2023 (Forsa/Gothaer, infas/DA Direkt) haben unterschiedliche Fragen, Kategorien und Bezugsgrößen (Halter vs. ältestes Tier). Nicht als Linie verketten.",
+  "IVH/ZZF „Der Deutsche Heimtiermarkt“ (Broschüren 2019–2025) enthält nach allem Gefundenen nur Tierzahlen und Umsätze Heimtierbedarf, keine Besuchsfrequenz oder Tierarztausgaben je Tier; die Besuchsfrage stammt aus der (nicht öffentlichen) IVH/ZZF-Halterbefragung und ist nur über Ohr 2019 belegt. Broschüren selbst in dieser Runde nicht geöffnet.",
+  "Tierärzte Atlas 2024 und 2026: keine Besuchsfrequenz, kein Anteil „nie beim Tierarzt“ (Volltext geprüft).",
+  "Heimtierstudie 2025 (Ohr): keine Besuchsfrequenz mehr, keine Tierarztkosten je Tier; nur Gesamtumsatz Heimtiergesundheit (4,0–4,2 Mrd. € 2024).",
+  "StIKo Vet: Keine Aussage zu einer gemessenen Durchimpfungsrate („unter 50 %“) mit Fundstelle gefunden. Die Zahl „weniger als die Hälfte“ stammt aus Eschle et al. 2020 (46,8 % der Hunde leitliniengerecht). Die 70-%-Schwelle steht beim BfT (FAQ), nicht als StIKo-Zitat belegt. Leitlinie 2025 (openagrar) war nicht abrufbar (HTML statt PDF).",
+  "Versichererdaten: Keine öffentlichen Schadenhäufigkeiten (Rechnungen/Besuche je versichertem Tier) von GDV, Agria, Uelzener gefunden; GDV nennt nur Bestand. Versicherte Tiere wären ohnehin nicht repräsentativ (jünger, Rassehunde, zahlungsbereite Halter).",
+  "BfT-Impfstoffumsatz nur für alle Tierarten zusammen; kein Heimtier-Anteil des Impfstoffsegments. Als Indikator für Impfverhalten bei Hund/Katze ungeeignet (Seuchenlage Rind, Pferde-West-Nil 2025).",
+  "Check24/YouGov/AGILA: keine öffentliche Besuchsfrequenz-Umfrage gefunden (YouGov, Artikel 55305, Datum nicht geprüft, nur Versicherungsquote: 54 % Hunde-, 71 % Katzenhalter ohne TKV). Statista nicht genutzt (Paywall).",
+  "Gehrig: genaues Erhebungsjahr der Online-Umfrage nicht ermittelt (vor 2018).",
+  "Primärmeldung IVH/ZZF 2014 nicht abgerufen; Wert nur über PETCOM.at."
+ ]
+}

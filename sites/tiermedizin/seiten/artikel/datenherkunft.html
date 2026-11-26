@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Datenherkunft: Quellen und Methode aller Datensätze</title>
-    <meta name="dcterms.modified" content="2026-11-25" />
+    <meta name="dcterms.modified" content="2026-11-26" />
     <meta name="description" content="Für jeden Beispiel-Datensatz: Quelle, Zeitraum, Annahmen, was für die Grafik aufbereitet wurde und wann zuletzt geprüft." />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="../favicon-96.png" sizes="96x96" type="image/png" />
@@ -394,6 +394,35 @@
           (Umfragen messen vor allem Haftpflicht), Niederlande und Luxemburg (widersprüchlich), übrige Länder ohne Zahlen.
         </p>
         <p class="meta">Recherchiert 09.11.2026 · zuletzt geprüft 09.11.2026</p>
+
+        <h2 id="tierarztbesuche">Tierarztbesuche und Impfschutz (Sonderauswertung)</h2>
+        <p>
+          <strong>Quelle:</strong> Halterbefragung von IVH und ZZF 2018 (Hunde n = 1.278, Katzen n = 1.582), nur zugänglich über
+          Ohr, Heimtierstudie 2019 (Universität Göttingen), Abb. 17. Gegenproben: Forsa für die Gothaer 2023, infas quo für DA
+          Direkt 2023. Impfung: BfT/Skopos 2020, Eschle (Dissertation LMU 2021, 3.881 Hunde), Gehrig (Dissertation LMU 2019, 920
+          Katzen). Alle Werte mit Fundstelle in <code>data/raw/ds34-tierarztbesuche.json</code>.
+        </p>
+        <p>
+          <strong>Gerechnet:</strong> „mindestens einmal im Jahr“ als Summe der Klassen (Hunde 14 + 26 + 41 = 81 Prozent, Katzen
+          6 + 18 + 60 = 84 Prozent), „seltener als einmal“ als Summe der beiden unteren Klassen, Gothaer-Wert Hunde 100 minus 15
+          Prozent. Keine Zeitreihe, weil die Umfragen 2014, 2018 und 2023 verschieden fragen. Nicht verwendet: ein Leser-Voting
+          („49 Prozent aktueller Impfschutz“) und der Impfstoffumsatz des BfT, der alle Tierarten zusammen zählt.
+        </p>
+        <p class="meta">Recherchiert 26.11.2026 · zuletzt geprüft 26.11.2026</p>
+
+        <h2 id="telemedizin">Telemedizin in der Tierarztpraxis (Sonderauswertung)</h2>
+        <p>
+          <strong>Quelle:</strong> GOT 2022 (Nr. 1, 2, 16; §§ 2, 8, 10), Berufsordnungen Hamburg und Bayern, Musterberufsordnung der
+          BTK (Wortlaut über eine bpt-Präsentation 2023), BTK-Empfehlungen 2020, EU-Verordnung 2019/6, TÄHAV 2025, HWG; Studien
+          Becker u. a. 2023, Karsch u. a. 2026, Springer u. a. 2024; LGL Bayern 2022. Alles in
+          <code>data/raw/ds35-telemedizin.json</code>.
+        </p>
+        <p>
+          <strong>Gerechnet:</strong> dreifacher Satz (11,26 × 3 = 33,78 Euro). Die Zuordnung der 2020 von der BTK empfohlenen
+          Positionen 10/11 zu den heutigen Nr. 1/2 ist eine eigene Ableitung aus dem Wortlaut. Eine repräsentative Nutzungszahl
+          für Deutschland gibt es nicht.
+        </p>
+        <p class="meta">Recherchiert 26.11.2026 · zuletzt geprüft 26.11.2026</p>
 
         <h2 id="tierarzneimittel">Tierarzneimittel nach Tierart</h2>
         <p>

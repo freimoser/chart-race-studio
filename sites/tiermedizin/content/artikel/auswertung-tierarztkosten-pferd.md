@@ -67,6 +67,8 @@ Pferde werden oft im Stall behandelt. Für die Anfahrt mit dem Auto berechnet di
 
 Eine Kolik, die nachts operiert werden muss, kostet allein für die Operation nach GOT mindestens 2.750 Euro netto (doppelter Satz plus Notdienstgebühr), mit Umsatzsteuer 3.272,50 Euro. Beim vierfachen Satz wären es 5.450 Euro netto. Narkose, Klinikaufenthalt, Medikamente, Laboruntersuchungen und Nachsorge kommen hinzu, und sie machen in der Praxis oft einen großen Teil der Rechnung aus. Was eine Kolik-Behandlung am Ende tatsächlich kostet, erhebt keine amtliche Stelle.
 
+Wo eine Beratung per Telefon oder Video Fahrten spart und wie sie abgerechnet wird, steht im Beitrag [Telemedizin beim Tierarzt](telemedizin-tierarzt.html).
+
 ## Was die Zahlen nicht sagen
 
 - **Mindestsätze, keine Rechnungen.** Die GOT legt fest, was mindestens und höchstens berechnet werden darf. Was Pferdebesitzer tatsächlich zahlen, erhebt keine Statistik. Der durchschnittliche Faktor 1,44 ist eine Selbstauskunft der Praxen für 2019, über alle Tierarten.

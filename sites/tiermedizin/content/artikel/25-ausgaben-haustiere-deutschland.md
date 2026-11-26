@@ -57,6 +57,8 @@ Zwischen 2013 und 2020 sinkt der Ladenumsatz je Katze um gut 26 Euro, obwohl die
 
 Wer in der Praxis Leinen, Näpfe oder Pflegeprodukte anbietet, steht in einem Segment, das seit 2011 kaum wächst und 2025 sogar geschrumpft ist. Das Wachstum liegt beim Futter und im Online-Handel, den der [nächste Beitrag der Reihe](heimtierbedarf-online-handel.html) genauer zeigt. Ob und wie Verkäufe in Tierarztpraxen in diesen Zahlen stecken, geht aus dem Datensatz allerdings nicht hervor.
 
+Wie häufig Hunde und Katzen zum Tierarzt gehen, zeigt die Sonderauswertung [Wie oft gehen Hunde und Katzen zum Tierarzt?](tierarztbesuche-hund-katze.html).
+
 ## Was die Zahl nicht sagt
 
 - **Online ist ein eigener Vertriebsweg, keine Warengruppe.** Der Online-Handel ist eine eigene Schätzung über alle Segmente: Katzenfutter, das im Netz bestellt wird, steckt im Online-Wert und nicht im Katzenfutter-Wert. Laden und Online zählen also getrennt. Die Quelle addiert sie selbst zu einem Gesamtumsatz: 2025 waren es 6.990 Mio. Euro (Laden 5.335, online 1.521, Wildvogelfutter 134).

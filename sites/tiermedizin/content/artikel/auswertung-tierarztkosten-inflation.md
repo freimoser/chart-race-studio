@@ -101,6 +101,8 @@ Bei Operationen sieht die Reform ganz anders aus. Die Kastration einer Hündin k
 
 Wer die Praxen heute führt und wer dort arbeitet, steht in den Artikeln über [die Eigentümer der Tierarztketten](tierarztketten-investoren-eigentuemer.html) und über [angestellte Tierärzte und Praxisinhaber](anzahl-tieraerzte-deutschland.html). Wie sich der Bierpreis auf der Wiesn gegen die Inflation entwickelt hat, zeigt der Exkurs [Oktoberfest in Zahlen](oktoberfest-masspreis-inflation.html).
 
+Wie oft die Tiere überhaupt in die Praxis kommen, steht in der Sonderauswertung [Wie oft gehen Hunde und Katzen zum Tierarzt?](tierarztbesuche-hund-katze.html); was eine Beratung per Telefon oder Video nach der GOT kostet, im Beitrag [Telemedizin beim Tierarzt](telemedizin-tierarzt.html).
+
 ## Was die Zahlen nicht sagen
 
 - **Das Routinejahr ist eine Auswahl.** Labor, Medikamente, Röntgen und Operationen fehlen. Gerade bei Grundleistungen hat die GOT 2022 stark erhöht; ein Korb mit Operationen stiege weniger.

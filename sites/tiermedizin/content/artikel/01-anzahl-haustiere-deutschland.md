@@ -54,6 +54,8 @@ Zwei Einschränkungen gehören dazu. Die 20 Jahre überspannen den Methodenwechs
 
 Welche Hunderassen dabei im Zuchtbuch des VDH vorn liegen, zeigt der Artikel [Beliebteste Hunderassen in Deutschland](beliebteste-hunderassen-deutschland.html); wie stark der Deutsche Schäferhund dort verloren hat, der Artikel [Deutscher Schäferhund: Welpenzahlen seit 1992](deutscher-schaeferhund-welpen-statistik.html).
 
+Wie oft Hunde und Katzen tatsächlich zum Tierarzt gehen und wie viele aktuell geimpft sind, zeigt die Sonderauswertung [Wie oft gehen Hunde und Katzen zum Tierarzt?](tierarztbesuche-hund-katze.html).
+
 ## Was die Zahl nicht sagt
 
 - **Es gibt kein Haustierregister.** Hunde werden nur kommunal für die [Hundesteuer](hundesteuer-deutschland.html) erfasst, Katzen gar nicht, die Register von TASSO und FINDEFIX sind freiwillig. Alle Werte sind Hochrechnungen aus Umfragen.
