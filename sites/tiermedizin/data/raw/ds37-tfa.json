@@ -629,6 +629,58 @@
     "stichtag": "30.06.2015",
     "quelle": "ba_bo"
    },
+   "2016": {
+    "svb": 17149,
+    "maenner": 1549,
+    "frauen": 15600,
+    "vollzeit": 12511,
+    "teilzeit": 4638,
+    "teilzeitquote_prozent": 27.0,
+    "darunter_azubis": 4139,
+    "gb_minijob": 3309,
+    "stichtag": "30.06.2016",
+    "quelle": "ba_bo",
+    "fundstelle": "SVB - Tabelle I (Insgesamt, Männer, Frauen, Auszubildende), SVB - Tabelle II (Vollzeit, Teilzeit), GB - Tabelle I"
+   },
+   "2017": {
+    "svb": 18022,
+    "maenner": 1583,
+    "frauen": 16439,
+    "vollzeit": 13056,
+    "teilzeit": 4966,
+    "teilzeitquote_prozent": 27.6,
+    "darunter_azubis": 4285,
+    "gb_minijob": 3430,
+    "stichtag": "30.06.2017",
+    "quelle": "ba_bo",
+    "fundstelle": "SVB - Tabelle I (Insgesamt, Männer, Frauen, Auszubildende), SVB - Tabelle II (Vollzeit, Teilzeit), GB - Tabelle I"
+   },
+   "2018": {
+    "svb": 18991,
+    "maenner": 1647,
+    "frauen": 17344,
+    "vollzeit": 13616,
+    "teilzeit": 5375,
+    "teilzeitquote_prozent": 28.3,
+    "darunter_azubis": 4441,
+    "gb_minijob": 3606,
+    "stichtag": "30.06.2018",
+    "quelle": "ba_bo",
+    "fundstelle": "SVB - Tabelle I (Insgesamt, Männer, Frauen, Auszubildende), SVB - Tabelle II (Vollzeit, Teilzeit), GB - Tabelle I"
+   },
+   "2019": {
+    "svb": 19977,
+    "maenner": 1690,
+    "frauen": 18287,
+    "vollzeit": 14209,
+    "teilzeit": 5768,
+    "teilzeitquote_prozent": 28.9,
+    "darunter_azubis": 4788,
+    "gb_minijob": 3637,
+    "stichtag": "30.06.2019",
+    "quelle": "ba_bo",
+    "fundstelle": "SVB - Tabelle I (Insgesamt, Männer, Frauen, Auszubildende), SVB - Tabelle II (Vollzeit, Teilzeit), GB - Tabelle I"
+   },
    "2020": {
     "svb": 21055,
     "vollzeit": 14958,
@@ -636,7 +688,33 @@
     "teilzeitquote_prozent": 29.0,
     "stichtag": "30.06.2020",
     "quelle": "ba_bo",
-    "hinweis": "per Firecrawl-Extraktion aus der xlsx gelesen (eigener Download blockiert, HTTP 429) – vor Veröffentlichung selbst nachprüfen"
+    "hinweis": "per Firecrawl-Extraktion aus der xlsx gelesen (eigener Download weiter HTTP 429, zuletzt 26.11.2026); plausibel zwischen 2019 (19.977, Teilzeit 28,9 %) und 2021 (22.785, 29,9 %), nicht selbst aus der Datei geprüft"
+   },
+   "2021": {
+    "svb": 22785,
+    "maenner": 1781,
+    "frauen": 21004,
+    "vollzeit": 15983,
+    "teilzeit": 6802,
+    "teilzeitquote_prozent": 29.9,
+    "darunter_azubis": 5352,
+    "gb_minijob": 4216,
+    "stichtag": "30.06.2021",
+    "quelle": "ba_bo",
+    "fundstelle": "SVB - Tabelle I (Insgesamt, Männer, Frauen, Auszubildende), SVB - Tabelle II (Vollzeit, Teilzeit), GB - Tabelle I"
+   },
+   "2022": {
+    "svb": 24347,
+    "maenner": 1906,
+    "frauen": 22441,
+    "vollzeit": 16938,
+    "teilzeit": 7409,
+    "teilzeitquote_prozent": 30.4,
+    "darunter_azubis": 5777,
+    "gb_minijob": 4281,
+    "stichtag": "30.06.2022",
+    "quelle": "ba_bo",
+    "fundstelle": "SVB - Tabelle I (Insgesamt, Männer, Frauen, Auszubildende), SVB - Tabelle II (Vollzeit, Teilzeit), GB - Tabelle I"
    },
    "2024": {
     "svb": 26258,
@@ -843,7 +921,7 @@
    "Ausbildungsverträge 30.09. (BIBB) 2010-2025: keine Lücke, aber 2010-2017 nur aus Zweitquelle vmf; vmf-Wert 2024 (3.039) weicht von BIBB (3.093) ab.",
    "Auszubildende, Lösungen, Prüfungen 2010-2025 (Destatis): keine Lücke.",
    "BIBB-Lösungsquote (Schichtenmodell) und Erfolgsquote nur 2008, 2023-2025 (DAZUBI-Datenblatt); Zwischenjahre nicht abgerufen.",
-   "BA-Beschäftigte (SVB, Teilzeit): vorhanden 2013, 2014, 2015, 2020 (ungeprüft), 2024, 2025. Fehlend 2016-2019, 2021-2023 (HTTP 429 der BA, gleiche URL-Struktur, später nachladbar) sowie 2010-2012 (Tabelle in dieser Form 404; KldB 2010 erst ab 2013 in diesem Produkt).",
+   "BA-Beschäftigte (SVB, Teilzeit): selbst aus den Heften gelesen 2013-2019, 2021, 2022, 2024, 2025; 2020 nur über Firecrawl-Extraktion (plausibel, ungeprüft); 2023 fehlt (HTTP 429 der BA bei jedem Abruf am 26.11.2026); 2010-2012 nicht in diesem Produkt (KldB 2010 erst ab 2013).",
    "Entgeltatlas nur aktueller Stand (2025), keine Zeitreihe abgerufen.",
    "Engpassanalyse: Einstufung TFA nicht aus BA-Primärquelle belegt.",
    "GENESIS-API (21211) mit Gastzugang nicht nutzbar (Code 15, nur logincheck erlaubt) – stattdessen Publikations-xlsx verwendet."
