@@ -606,6 +606,17 @@
   },
   {
     "art": "auswertung",
+    "slug": "tiermedizinische-fachangestellte",
+    "titel": "Tiermedizinische Fachangestellte: Zahl, Ausbildung, Gehalt",
+    "beschreibung": "27.198 Tiermedizinische Fachangestellte arbeiten sozialversicherungspflichtig, fast doppelt so viele wie 2013. Neue Ausbildungsverträge sinken seit 2021.",
+    "frage": "Wie viele Tiermedizinische Fachangestellte gibt es?",
+    "stand": "2026-11-26",
+    "geaendert": "2026-11-26",
+    "bereit": true,
+    "live": true
+  },
+  {
+    "art": "auswertung",
     "slug": "ueberstunden-tierarztpraxis",
     "titel": "Überstunden in der Tierarztpraxis: was die Zahlen zeigen",
     "beschreibung": "7 von 10 angestellten Tierärzten machen Überstunden, Inhaber arbeiten 50 Stunden pro Woche. Drei Befragungen zu Arbeitszeit, Notdienst und Pausen.",

@@ -1,5 +1,5 @@
 import type { SampleDataset } from '../../../src/lib/data/types.ts'
-import { ANTIBIOTIKA, ANTIBIOTIKA_GESAMT, GOT_PFERD, ONLINE_HANDEL, ONLINE_HANDEL_2005, BLUTBANK_UK, TIERARZNEIMITTEL, HUNDESTEUER, HUNDESTEUER_RELATION, TIERVERSICHERUNG, PFERDESCHLACHTUNGEN, REITSPORT, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
+import { ANTIBIOTIKA, ANTIBIOTIKA_GESAMT, GOT_PFERD, ONLINE_HANDEL, ONLINE_HANDEL_2005, BLUTBANK_UK, TIERARZNEIMITTEL, HUNDESTEUER, HUNDESTEUER_RELATION, TIERVERSICHERUNG, TFA_AUSBILDUNG, PFERDESCHLACHTUNGEN, REITSPORT, PFERDEZUCHT, PFERDE_NUTZTIERE, PRAXISARTEN_2010, TIERARZTMANGEL, TIERARZTMANGEL_2000, PRAXIS_ALTER, PRAXIS_ALTER_WACHSTUM, GEHALT_PREISE, HEIMTIERE_ALLE, HEIMTIERE_DACH, OKTOBERFEST, OKTOBERFEST_PREIS, TIERARZT_INFLATION, TIERARZT_ROUTINEJAHR, FACHTIERAERZTE, HEIMTIERE, HUND_KATZE_WELT, INHABER_ANGESTELLTE, KETTEN, KETTEN_EIGENTUEMER, GESCHLECHT_PRAXIS, HEIMTIERMARKT, HUNDERASSEN, KLEINTIERE_BUNDESLAND, PRAXISSCHWERPUNKTE, RINDER_BUNDESLAND, TIERAERZTESCHAFT_DEUTSCHLAND, TIERAERZTE_BUNDESLAND } from './data.ts'
 
 /**
  * Mitgelieferte Beispiel-Datensätze (alle mit recherchierten, realen Zahlen).
@@ -745,6 +745,25 @@ export const SAMPLES: SampleDataset[] = [
     headers: TIERVERSICHERUNG.headers,
     rows: TIERVERSICHERUNG.rows,
     suggested: { chartType: 'line', topN: 3, decimals: 1, suffix: ' %', primaryAxisLabel: 'Anteil versichert, Prozent', colors: { Norwegen: '#0f4c5c', 'Großbritannien': '#8a949e', Deutschland: '#e36414' } },
+  },
+  {
+    id: 'tfa-ausbildung',
+    erstellt: '2026-11-26', geprueft: '2026-11-26',
+    category: 'praxis',
+    title: 'Neue TFA-Ausbildungsverträge',
+    subtitle: 'Tiermedizinische Fachangestellte: neue Verträge je Jahr, Destatis (am 31.12. bestehend) und BIBB (bis 30.09.)',
+    source: 'Quellen: Statistisches Bundesamt, Berufsbildungsstatistik (Stichtag 31.12.); BIBB-Erhebung zum 30.09.',
+    sourceUrl: 'https://www.bibb.de/dienst/dazubi/dazubi/datasheet/download/30-1210.pdf',
+    unit: 'Verträge',
+    description: 'Von 1.833 (2010) auf 3.102 (2021): Die Zahl neuer TFA-Ausbildungsverträge stieg um 69 Prozent. Seitdem sinkt sie wieder, 2025 auf 2.466.',
+    dataInfo: [
+      "Neu abgeschlossene Ausbildungsverträge im Beruf Tiermedizinische Fachangestellte (TFA), lückenlos 2010 bis 2025, nichts gerechnet. Zwei amtliche Zählweisen: Die Berufsbildungsstatistik der statistischen Ämter zählt die im Kalenderjahr geschlossenen Verträge, die am 31.12. noch bestehen. Das Bundesinstitut für Berufsbildung (BIBB) zählt alle vom 1. Oktober des Vorjahres bis 30. September geschlossenen Verträge, die am 30.09. noch bestehen.",
+      "Der Abstand zwischen beiden wächst: 2025 zählt das BIBB 3.138 neue Verträge, Destatis 2.466. Ein Teil der Verträge wird zwischen September und Dezember wieder gelöst; die Zahl der vorzeitig gelösten Verträge stieg von 537 (2010) auf 960 (2025, Destatis).",
+      "Destatis 2010 und 2011 unter dem alten Berufsschlüssel 8563, ab 2012 81142, derselbe Ausbildungsberuf. Die statistischen Ämter runden auf Vielfache von 3. Für 2025 nennt das BIBB-Datenblatt (Stand 12.10.2026) 2.484 statt 2.466. BIBB-Werte 2018 bis 2025 aus Tabelle 53, 2010 bis 2017 über die Broschüre „Zahlen und Fakten“ des Verbands medizinischer Fachberufe, der das BIBB als Quelle nennt.",
+    ],
+    headers: TFA_AUSBILDUNG.headers,
+    rows: TFA_AUSBILDUNG.rows,
+    suggested: { chartType: 'line', topN: 2, decimals: 0, primaryAxisLabel: 'neue Ausbildungsverträge', colors: { 'Destatis (31.12.)': '#0f4c5c', 'BIBB (30.09.)': '#e36414' } },
   },
   {
     id: 'tierarzneimittel',

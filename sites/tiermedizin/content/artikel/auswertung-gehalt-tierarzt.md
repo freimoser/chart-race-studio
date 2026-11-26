@@ -112,6 +112,8 @@ Die animierte Grafik oben stellt dem die Preise beim Tierarzt gegenüber: Sie st
 
 Mit der neuen Gebührenordnung für Tierärzte stiegen die Tierarztpreise 2023 laut Verbraucherpreisindex um 32 Prozent, mehr dazu im Artikel [Tierarztkosten im Vergleich zur Inflation](tierarztkosten-inflation.html). Die Studie kommt zu dem Schluss, dass die höheren Gebühren nicht dazu geführt haben, dass die Gehälter der Angestellten überdurchschnittlich stiegen. Wie sich Praxisgruppen und Nachfolge auf die Arbeitgeberseite auswirken, steht im Artikel [Nachfolge in der Tierarztpraxis](nachfolge-tierarztpraxis.html).
 
+Was Tiermedizinische Fachangestellte verdienen und wie viele es gibt, steht in der Sonderauswertung [Tiermedizinische Fachangestellte](tiermedizinische-fachangestellte.html).
+
 ## Was die Zahl nicht sagt
 
 - **Freiwillige Befragung.** Wer teilnimmt, entscheidet selbst; Frauen sind laut Studie überrepräsentiert. Die Studie schließt nicht aus, dass manche ihr Netto statt Brutto angegeben haben.

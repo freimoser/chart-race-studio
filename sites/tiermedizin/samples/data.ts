@@ -608,6 +608,28 @@ export const TIERVERSICHERUNG = {
   ],
 }
 
+export const TFA_AUSBILDUNG = {
+  headers: ["Jahr","Destatis (31.12.)","BIBB (30.09.)"],
+  rows: [
+    ["2010", 1833, 1829],
+    ["2011", 1899, 1850],
+    ["2012", 1968, 2061],
+    ["2013", 1986, 2097],
+    ["2014", 2025, 2070],
+    ["2015", 2103, 2103],
+    ["2016", 2121, 2283],
+    ["2017", 2403, 2721],
+    ["2018", 2463, 2850],
+    ["2019", 2388, 2727],
+    ["2020", 2706, 2748],
+    ["2021", 3102, 3393],
+    ["2022", 2976, 3402],
+    ["2023", 2760, 3072],
+    ["2024", 2820, 3093],
+    ["2025", 2466, 3138],
+  ],
+}
+
 export const PRAXISSCHWERPUNKTE = {
   headers: ["Jahr","Nur Kleintiere","Gemischt (Nutz- und Kleintiere)","Nur Nutz- und Großtiere","Ketten (Standorte in Deutschland)"],
   rows: [

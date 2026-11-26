@@ -45,6 +45,8 @@ Wie sich die Kammermitglieder auf die 16 Bundesländer verteilen, von Bayern mit
 
 Fast alle Kammermitglieder bekommen das Deutsche Tierärzteblatt. Wie groß die übrigen Fachzeitschriften sind, zeigt die Sonderauswertung [Fachmedien für Tierärzte](fachmedien-tiermedizin.html).
 
+In der Kammerstatistik fehlen die Tiermedizinischen Fachangestellten; ihre Zahl und Ausbildung zeigt die Sonderauswertung [Tiermedizinische Fachangestellte](tiermedizinische-fachangestellte.html).
+
 ## Was die Zahl nicht sagt
 
 - **Gezählt werden Personen, keine Vollzeitstellen.** Weil unter den Angestellten deutlich mehr Menschen in Teilzeit arbeiten, fällt der Wechsel gemessen an der Arbeitszeit schwächer aus – und hat 2024 womöglich noch nicht stattgefunden.

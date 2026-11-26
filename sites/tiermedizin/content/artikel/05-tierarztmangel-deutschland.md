@@ -70,6 +70,8 @@ Für Tierhalter zeigt sich die Lage auch im Preis: Seit der neuen Gebührenordnu
 
 Wie sich die Kammermitglieder auf die Bundesländer verteilen, steht im Artikel [Tierärzte je Bundesland](tieraerzte-bundeslaender.html).
 
+Zum Personal der Praxen gehören auch die Tiermedizinischen Fachangestellten: 27.198 sozialversicherungspflichtig Beschäftigte 2025, Zahlen in der Sonderauswertung [Tiermedizinische Fachangestellte](tiermedizinische-fachangestellte.html).
+
 ## Was die Zahl nicht sagt
 
 - **Es ist eine Rechengröße, kein Versorgungsmaß.** Nicht jede Inhaberin und jeder Inhaber behandelt Hunde und Katzen: 2025 gaben 1.932 eine reine Nutztier- oder Pferdepraxis an. Und Hunde und Katzen sind nicht die einzigen Patienten, dazu kommen 4,4 Millionen Kleintiere.
