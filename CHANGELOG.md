@@ -4,6 +4,21 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### Eine Kopfzeile für alle Seiten (26.11.2026)
+
+- **Kern, betrifft beide Seiten:** Das Studio hatte einen eigenen Kopf (volle Breite, Name zweizeilig mit
+  „Thomas Freimoser“, eigene Navigation, Auswahl der Design-Richtung) und startete mit „Klar (Inter)“ statt der
+  Farbrichtung der Seite – beim Wechsel zwischen Artikel und Studio sprangen Breite, Schrift und Farben. Jetzt:
+  - Markup aus einer Quelle, `src/content/kopf.ts` (Zeichen, Name, `PROFIL.navigation`), genutzt von
+    `vite.config.ts` (alle statischen Seiten) und `src/App.tsx` (Studio). Die Wordmark-Komponente ist entfallen.
+  - Aussehen aus einer Datei, `src/kopf.css`, eingebunden in `src/article.css` und `src/index.css`.
+  - `html { scrollbar-gutter: stable }`, damit der zentrierte Kopf nicht um die Breite des Scrollbalkens springt.
+  - Das Studio startet in der Farbrichtung der Seite (`PROFIL.marke`); die gespeicherte alte Wahl wird einmal
+    verworfen (Store-Version 3). Die Auswahl der Design-Richtung steht jetzt unter „Gestaltung“.
+  - Im Studio schalten „Studio“ und „Redaktionsplan“ die Ansicht um, ohne die Seite neu zu laden.
+  Gemessen bei 1440 px: Höhe, Breite und Lage des Kopfes in Studio und Artikeln identisch (Humanmedizin 46,2 px,
+  Tiermedizin 51,4 px mit Studio-Knopf), auf dem Handy ebenso; beide Builds, test:alle, mobil 320/360/414 grün.
+
 ### Humanmedizin ist live (25.11.2026)
 
 - **Betrifft beide Seiten (Hinweis):** https://humanmedizin-in-zahlen.org ist live – DNS bei Cloudflare, GitHub Pages

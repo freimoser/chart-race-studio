@@ -7,6 +7,7 @@ import { DEFAULT_ANIMATION_SEC, DEFAULT_HOLD_END, DEFAULT_SETTINGS, stepDuration
 import type { BrandId } from '@/lib/fonts'
 import { defaultTemplateFor } from '@/lib/data/dates'
 import { beispielLaden } from '@/lib/beispiel'
+import { PROFIL } from '@/content/site'
 
 export interface AppState {
   brand: BrandId
@@ -47,7 +48,8 @@ function rebuild(table: RawTable, mapping: ColumnMapping): Dataset {
 export const useApp = create<AppState>()(
   persist(
     (set, get) => ({
-      brand: 'klar',
+      // Farbrichtung der Seite (Profil), damit Studio und Magazin gleich aussehen.
+      brand: PROFIL.marke,
       setBrand: (brand) => set({ brand }),
 
       table: null,
@@ -151,11 +153,13 @@ export const useApp = create<AppState>()(
     }),
     {
       name: 'chart-race-studio',
-      version: 2,
+      version: 3,
       // v2: neue Voreinstellung für das Standbild am Ende; einmalig auf den neuen Wert setzen.
+      // v3: Farbrichtung folgt der Seite; die alte gespeicherte Wahl (meist „klar“ als frühere Voreinstellung) verwerfen.
       migrate: (persisted, from) => {
-        const p = persisted as { settings?: Partial<ChartSettings> } | undefined
+        const p = persisted as { settings?: Partial<ChartSettings>; brand?: unknown } | undefined
         if (from < 2 && p?.settings) p.settings.holdEnd = DEFAULT_HOLD_END
+        if (from < 3 && p) delete p.brand
         return p as never
       },
       // Nur Einstellungen und Brand persistieren, keine Daten (können groß sein)

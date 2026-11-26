@@ -6,6 +6,7 @@ import { resolve } from 'node:path'
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { pathToFileURL } from 'node:url'
 import { freigegebeneDatensaetze } from './src/content/freigabe-regel.ts'
+import { kopfInhalt } from './src/content/kopf.ts'
 import type { SeitenProfil } from './src/content/profil.ts'
 import type { SampleDataset } from './src/lib/data/types.ts'
 import type { RoadmapPost } from './src/content/redaktion.ts'
@@ -53,21 +54,12 @@ const DATENFORMAT: DatenformatSeite[] = existsSync(seite('content/datenformat-in
  * Ohne gesetzte Variable wird nichts eingefügt.
  */
 /** Kopfzeile: nur Navigation. Rechtliches steht im Fuß – so erwarten es Leser, und der Kopf bleibt kurz. */
-// Dasselbe Zeichen wie im Studio (Wordmark in src/components/ui.tsx), damit Magazin und Werkzeug als eine Seite erkennbar sind.
-const ZEICHEN = `<svg class="zeichen" width="26" height="26" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="7" fill="var(--brand-primary)"/><rect x="6" y="7" width="16" height="3.2" rx="1.6" fill="#fff"/><rect x="6" y="12.4" width="11" height="3.2" rx="1.6" fill="var(--brand-accent)"/><rect x="6" y="17.8" width="7" height="3.2" rx="1.6" fill="#fff" opacity=".75"/></svg>`
 function rahmenKopf(hoch: string, seitePfad = '') {
-  // Der Bereich, in dem die Seite liegt, wird markiert – Leser sehen, wo sie sind.
+  // Der Bereich, in dem die Seite liegt, wird markiert – Leser sehen, wo sie sind. Markup aus src/content/kopf.ts,
+  // dieselbe Quelle wie der Kopf des Studios.
   const aktiv = (bereich: string) => (seitePfad.startsWith(bereich) ? ' aria-current="page"' : '')
-  // Die Marke führt zur Startseite, dem Magazin. Das Studio steht als letzter Punkt, umrandet statt
-  // gefüllt: erreichbar, aber nicht der erste Weg. Der Redaktionsplan fehlt auf dem Telefon (Klasse
-  // „breit“), damit die Navigation in eine Zeile passt; er steht im Fuß jeder Seite.
   return `<header class="site">
-      <div class="wrap">
-        <a class="marke" href="${hoch}">${ZEICHEN}<span>${MARKE}</span></a>
-        <nav aria-label="Hauptnavigation">
-          ${PROFIL.navigation(hoch, aktiv)}
-        </nav>
-      </div>
+      ${kopfInhalt(PROFIL, MARKE, hoch, aktiv)}
     </header>`
 }
 function rahmenFuss(hoch: string, cookieWahl: boolean) {

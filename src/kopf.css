@@ -1,0 +1,35 @@
+/* Kopfzeile aller Seiten – Magazin, Datenformat, Rechtstexte und Studio. Eine Datei, eingebunden in
+   src/article.css und src/index.css; das Markup kommt aus src/content/kopf.ts. Vorher hatte das Studio einen
+   eigenen, volle Breite nutzenden Kopf mit anderem Schriftzug, und die Seite sprang beim Wechsel (26.11.2026). */
+
+/* Platz für den Scrollbalken immer freihalten: Sonst rückt der zentrierte Kopf auf Seiten ohne Scrollbalken
+   (Studio auf dem Desktop) um dessen Breite nach rechts. */
+html { scrollbar-gutter: stable; }
+
+/* Kopfzeile bleibt beim Scrollen stehen. Nur Navigation – Impressum und Datenschutz stehen im Fuß.
+   Etwas breiter als der Text, damit Zeichen, Navigation und Studio-Knopf in eine Zeile passen. */
+header.site { line-height: 1.4; font-family: var(--brand-font); position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--brand-line);
+  background: color-mix(in srgb, var(--brand-surface) 92%, transparent); backdrop-filter: saturate(1.4) blur(8px); -webkit-backdrop-filter: saturate(1.4) blur(8px); }
+header.site .wrap { max-width: 56rem; margin: 0 auto; padding: 0.6rem 1.25rem; display: flex; gap: 0.5rem 1.5rem; align-items: center; }
+header.site a { color: var(--brand-ink-muted); text-decoration: none; font-size: 0.875rem; white-space: nowrap; }
+header.site a:hover { color: var(--brand-ink); }
+header.site .marke { display: inline-flex; align-items: center; gap: 0.6rem; font-size: 0.95rem; font-weight: 700; letter-spacing: -0.01em; color: var(--brand-ink); margin-right: auto; }
+header.site .zeichen { flex: none; display: block; }
+header.site nav { display: flex; gap: 1.25rem; align-items: center; }
+header.site nav a[aria-current] { color: var(--brand-ink); font-weight: 600; }
+/* Das Studio umrandet statt gefüllt: erreichbar, aber der Weg der Seite führt über die Artikel. */
+header.site .studio { color: var(--brand-primary); border: 1px solid color-mix(in srgb, var(--brand-primary) 45%, transparent); font-weight: 600; padding: 0.3rem 0.85rem; border-radius: 999px; }
+header.site .studio:hover { color: #fff; background: var(--brand-primary); border-color: var(--brand-primary); }
+/* Schmal: Zeichen oben, die Navigation darunter in einer Zeile. Der Redaktionsplan steht dort nicht
+   (er ist im Fuß), damit die Zeile auf 360 Pixel passt. Tippziele mindestens 44 Pixel hoch (SEO-Audit 25.11.2026, vorher 36). */
+@media (max-width: 40rem) {
+  header.site .wrap { flex-wrap: wrap; padding: 0.55rem 1rem 0; }
+  header.site nav { order: 3; width: 100%; overflow-x: auto; gap: 1.1rem; padding: 0.1rem 0 0.15rem; scrollbar-width: none; }
+  header.site nav::-webkit-scrollbar { display: none; }
+  header.site nav a { font-size: 0.875rem; padding: 0.5rem 0; min-height: 44px; display: inline-flex; align-items: center; }
+  header.site nav .breit { display: none; }
+  /* Auf dem Telefon ein Link wie die anderen, nur in der Markenfarbe: Für den Knopf reicht die Zeile nicht. */
+  header.site nav .studio { border: 0; padding: 0.5rem 0; min-height: 44px; border-radius: 0; color: var(--brand-ink-muted); font-weight: 400; }
+  header.site nav .studio:hover { background: none; color: var(--brand-ink); }
+  header.site .marke { padding: 0.25rem 0; }
+}

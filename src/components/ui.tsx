@@ -1,6 +1,5 @@
 import { type ReactNode, useId, useState } from 'react'
 import { ChevronDown } from 'lucide-react'
-import { SITE } from '@/content/site'
 
 export function Section({ title, children, defaultOpen = true, hint }: { title: string; children: ReactNode; defaultOpen?: boolean; hint?: string }) {
   const [open, setOpen] = useState(defaultOpen)
@@ -75,25 +74,6 @@ export function NumberInput({ value, onChange, min, max, step = 1, suffix, class
       <input type="number" className="input pr-8 text-right tabular-nums" value={Number.isFinite(value) ? value : ''} min={min} max={max} step={step}
         onChange={(e) => { const v = Number(e.target.value); if (Number.isFinite(v)) onChange(min !== undefined && v < min ? min : max !== undefined && v > max ? max : v) }} />
       {suffix && <span className="pointer-events-none absolute right-2 text-xs text-ink-faint">{suffix}</span>}
-    </span>
-  )
-}
-
-export function Wordmark({ compact = false }: { compact?: boolean }) {
-  return (
-    <span className="inline-flex items-center gap-2.5">
-      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
-        <rect width="28" height="28" rx="7" fill="var(--brand-primary)" />
-        <rect x="6" y="7" width="16" height="3.2" rx="1.6" fill="#fff" />
-        <rect x="6" y="12.4" width="11" height="3.2" rx="1.6" fill="var(--brand-accent)" />
-        <rect x="6" y="17.8" width="7" height="3.2" rx="1.6" fill="#fff" opacity=".75" />
-      </svg>
-      {!compact && (
-        <span className="leading-tight">
-          <span className="block text-[15px] font-bold tracking-tight text-ink">{SITE.name}</span>
-          <span className="block text-[11px] font-medium tracking-wide text-ink-faint uppercase">Thomas Freimoser</span>
-        </span>
-      )}
     </span>
   )
 }

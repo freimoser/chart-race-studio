@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState, type MouseEvent } from 'react'
 import { Database, Palette, Share2 } from 'lucide-react'
 import { useApp } from '@/state/store'
 import { Stage } from '@/components/Stage'
@@ -11,8 +11,7 @@ import { Consent } from '@/components/Consent'
 import { AnsichtSchalter } from '@/components/AnsichtSchalter'
 import { FEATURES, PROFIL, SITE } from '@/content/site'
 import { SICHTBARE_SAMPLES } from '@/content/freigabe'
-import { Wordmark } from '@/components/ui'
-import type { BrandId } from '@/lib/fonts'
+import { kopfInhalt } from '@/content/kopf'
 import { wurzel } from '@/lib/pfade'
 import { formatById } from '@/lib/formats'
 
@@ -29,7 +28,6 @@ const HASH: Record<View, string> = { studio: '', roadmap: '#redaktionsplan' }
 
 export default function App() {
   const brand = useApp((s) => s.brand)
-  const setBrand = useApp((s) => s.setBrand)
   const dataset = useApp((s) => s.dataset)
   const format = formatById(useApp((s) => s.settings.format))
   const hatDaten = Boolean(dataset && dataset.periods.length >= 2 && dataset.names.length > 0)
@@ -60,32 +58,27 @@ export default function App() {
     window.location.hash = HASH[v]
   }
 
-  // Navigationspunkt der Kopfzeile, gleich gestaltet wie auf den Artikelseiten (article.css, header.site).
-  const navLink = 'shrink-0 whitespace-nowrap py-2 text-sm text-ink-muted transition-colors hover:text-ink aria-[current=page]:font-semibold aria-[current=page]:text-ink'
+  // Kopfzeile wie auf allen anderen Seiten: Markup aus src/content/kopf.ts, Aussehen aus src/kopf.css.
+  // Markiert wird die Ansicht, in der man ist (Studio oder Redaktionsplan).
+  const kopf = useMemo(() => {
+    let html = kopfInhalt(PROFIL, SITE.name, wurzel(), () => '')
+    if (view === 'roadmap') html = html.replace(/(<a\b[^>]*href="[^"]*#redaktionsplan")/, '$1 aria-current="page"')
+    else html = html.replace('class="studio"', 'class="studio" aria-current="page"')
+    return html
+  }, [view])
+  // Links auf das Studio selbst (Studio, Redaktionsplan) schalten nur die Ansicht um, statt die Seite neu zu laden.
+  function kopfKlick(e: MouseEvent<HTMLElement>) {
+    const a = (e.target as HTMLElement).closest('a')
+    if (!a || e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return
+    const ziel = new URL(a.href, window.location.href)
+    if (ziel.origin !== window.location.origin || ziel.pathname !== window.location.pathname) return
+    e.preventDefault()
+    zeige(ziel.hash.startsWith('#redaktionsplan') ? 'roadmap' : 'studio')
+  }
 
   return (
     <div className="flex min-h-dvh flex-col lg:h-full lg:min-h-0">
-      {/* Telefon: Marke oben, darunter die Navigation in einer Zeile. Breit: alles in einer Zeile. */}
-      <header className="border-b border-line bg-surface">
-        <div className="flex flex-wrap items-center gap-x-6 px-4 pt-2.5 lg:flex-nowrap lg:py-2">
-          <a href={wurzel()} className="mr-auto" title="Zur Startseite"><Wordmark /></a>
-          <nav aria-label="Hauptnavigation" className="order-3 -mx-4 flex w-[calc(100%+2rem)] gap-5 overflow-x-auto px-4 pb-0.5 [scrollbar-width:none] lg:order-none lg:mx-0 lg:w-auto lg:px-0 lg:pb-0">
-            <a href={wurzel('beitrag/')} className={navLink}>Artikel</a>
-            <a href={PROFIL.datenformatUrl(wurzel())} className={navLink}>Datenformat</a>
-            <a href={wurzel('artikel/datenherkunft.html')} className={`${navLink} hidden sm:inline`}>Datenherkunft</a>
-            <a href="#redaktionsplan" onClick={(e) => { e.preventDefault(); zeige('roadmap') }} aria-current={view === 'roadmap' ? 'page' : undefined} className={navLink}>Redaktionsplan</a>
-            <a href="#" onClick={(e) => { e.preventDefault(); zeige('studio') }} aria-current={view === 'studio' ? 'page' : undefined} className={navLink}>Studio</a>
-          </nav>
-          <label className="hidden items-center lg:flex" title="Design-Richtung">
-            <span className="sr-only">Design-Richtung</span>
-            <select className="input !w-auto !py-1 text-xs" value={brand} onChange={(e) => setBrand(e.target.value as BrandId)}>
-              <option value="klar">Klar (Inter)</option>
-              <option value="editorial">Editorial (IBM Plex)</option>
-              <option value="signal">Signal (Manrope)</option>
-            </select>
-          </label>
-        </div>
-      </header>
+      <header className="site" onClick={kopfKlick} dangerouslySetInnerHTML={{ __html: kopf }} />
 
       {view === 'roadmap' ? (
         <main className="flex-1 bg-surface-2/40 lg:min-h-0 lg:overflow-y-auto">

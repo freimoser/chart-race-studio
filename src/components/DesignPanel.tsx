@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import { BarChart3, ImagePlus, LineChart, Moon, Sun, X, Map, ChartColumnBig } from 'lucide-react'
 import { useApp } from '@/state/store'
+import type { BrandId } from '@/lib/fonts'
 import { FORMATS, formatById } from '@/lib/formats'
 import { PALETTES } from '@/lib/palettes'
 import { DATE_TEMPLATES } from '@/lib/data/dates'
@@ -10,6 +11,8 @@ import { CategoryList } from './CategoryList'
 import { Field, NumberInput, Section, Segmented, Slider, Toggle } from './ui'
 
 export function DesignPanel() {
+  const brand = useApp((s) => s.brand)
+  const setBrand = useApp((s) => s.setBrand)
   const settings = useApp((s) => s.settings)
   const dataset = useApp((s) => s.dataset)
   const update = useApp((s) => s.updateSettings)
@@ -204,6 +207,15 @@ export function DesignPanel() {
             <Slider label="Größe" value={settings.watermarkScale} min={0.6} max={1.8} step={0.05} onChange={(watermarkScale) => update({ watermarkScale })} format={(v) => `${Math.round(v * 100)} %`} />
           </>
         )}
+      </Section>
+      {/* Früher im Kopf der Seite; dort steht jetzt dieselbe Navigation wie auf allen Seiten (src/content/kopf.ts).
+          Voreinstellung ist die Farbrichtung der Seite. */}
+      <Section title="Design-Richtung" defaultOpen={false} hint="Schrift und Farben von Studio und Video">
+        <select className="input text-sm" value={brand} onChange={(e) => setBrand(e.target.value as BrandId)} aria-label="Design-Richtung">
+          <option value="klar">Klar (Inter)</option>
+          <option value="editorial">Editorial (IBM Plex)</option>
+          <option value="signal">Signal (Manrope)</option>
+        </select>
       </Section>
       <div className="px-4 py-3 text-[11px] text-ink-faint">Format {formatById(settings.format).width}×{formatById(settings.format).height}, 30 fps, H.264 MP4.</div>
     </div>
