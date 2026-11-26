@@ -78,7 +78,7 @@ Hohe Werte haben vor allem Länder in Mittelost- und Südosteuropa sowie Portuga
 
 ### Wie viele Hunde gibt es in Europa?
 
-Laut FEDIAF 91,2 Mio. im Jahr 2024, davon 69,6 Mio. in der EU. Die meisten leben in Großbritannien (13,4 Mio.), Deutschland (10,5 Mio.) und Frankreich (9,7 Mio.).
+Laut FEDIAF 91,2 Mio. im Jahr 2024, davon 69,6 Mio. in der EU. Oft zitiert wird auch „106 Mio.“: Das ist die Zahl für 2022 aus der FEDIAF-Ausgabe 2024, damals einschließlich Russland mit 17,6 Mio. Hunden; seit der Ausgabe 2025 fehlt Russland. Die meisten leben in Großbritannien (13,4 Mio.), Deutschland (10,5 Mio.) und Frankreich (9,7 Mio.).
 
 ### Welches Land hat die meisten Hunde?
 

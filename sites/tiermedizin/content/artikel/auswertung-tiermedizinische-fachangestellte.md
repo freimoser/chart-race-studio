@@ -21,7 +21,7 @@ In Deutschland arbeiten **27.198 Tiermedizinische Fachangestellte (TFA)** sozial
 
 ## Ausbildung: erst Boom, dann Rückgang
 
-Die Zahl neuer Ausbildungsverträge stieg von 2010 bis 2021 um 69 Prozent, den größten Sprung gab es 2020 und 2021. Seitdem geht es abwärts, 2025 lag sie mit 2.466 Verträgen wieder auf dem Stand von 2018. Die Grafik zeigt beide amtlichen Zählweisen: Das Statistische Bundesamt zählt Verträge, die am 31. Dezember noch bestehen, das Bundesinstitut für Berufsbildung (BIBB) alle bis zum 30. September geschlossenen. Der Abstand ist größer geworden, 2025 sind es 672 Verträge. Ein Teil der neuen Verträge wird also schon in den ersten Monaten wieder gelöst.
+Die Zahl neuer Ausbildungsverträge stieg von 2010 bis 2021 um 69 Prozent, den größten Sprung gab es 2020 und 2021. Seitdem geht es abwärts, 2025 lag sie mit 2.466 Verträgen wieder auf dem Stand von 2018. Die Grafik zeigt beide amtlichen Zählweisen: Das Statistische Bundesamt zählt Verträge, die am 31. Dezember noch bestehen, das Bundesinstitut für Berufsbildung (BIBB) alle bis zum 30. September geschlossenen. Der Abstand ist größer geworden, 2025 sind es 672 Verträge. Das liegt an den verschiedenen Zeiträumen (Kalenderjahr gegen Oktober bis September) und Erhebungswegen, vermutlich aber auch daran, dass ein Teil der neuen Verträge schon in den ersten Monaten wieder gelöst wird.
 
 Fast alle, die die Ausbildung beginnen, sind Frauen: zwischen 93 und 97 Prozent der neuen Verträge in jedem Jahr seit 2010.
 
@@ -35,7 +35,7 @@ Fast alle, die die Ausbildung beginnen, sind Frauen: zwischen 93 und 97 Prozent 
 | 2024 | 26.258 | 31,3 % |
 | 2025 | 27.198 | 32,2 % |
 
-*Bundesagentur für Arbeit, Beschäftigte nach Berufen, Berufsuntergruppe 8114, Stichtag 30. Juni; darunter 5.617 Auszubildende (2025). Die Jahre 2016 bis 2023 waren beim Abruf nicht erreichbar und fehlen deshalb in der Tabelle.*
+*Bundesagentur für Arbeit, Beschäftigte nach Berufen, Berufsuntergruppe 8114, Stichtag 30. Juni; darunter 5.617 Auszubildende (2025). Die Berufsbildungsstatistik zählt zum 31. Dezember 6.357 Auszubildende; Stichtag und Erhebung unterscheiden sich. Die Jahre 2016 bis 2023 waren beim Abruf nicht erreichbar und fehlen deshalb in der Tabelle.*
 
 Auf 23.546 praktizierende Tierärzte kamen 2025 rund 1,2 TFA (berechnet). Wie viele Tierärzte es gibt und wo sie arbeiten, steht im Artikel [Wie viele Tierärzte gibt es in Deutschland?](anzahl-tieraerzte-deutschland.html).
 
@@ -46,7 +46,7 @@ Der mittlere Bruttolohn in Vollzeit liegt laut Entgeltatlas der Bundesagentur be
 ## Was die Zahl nicht sagt
 
 - **Nur sozialversicherungspflichtig Beschäftigte.** Minijobs (4.405) und Selbstständige sind nicht enthalten, Auszubildende schon.
-- **Zwei Zählweisen bei der Ausbildung.** Die Werte von Destatis (31.12.) und BIBB (30.09.) unterscheiden sich, beide sind amtlich. Für 2025 nennt das BIBB-Datenblatt 2.484 statt 2.466 Verträge, vermutlich eine spätere Korrektur.
+- **Zwei Zählweisen bei der Ausbildung.** Die Werte von Destatis (31.12.) und BIBB (30.09.) unterscheiden sich, beide sind amtlich. Das Datenblatt des BIBB zur Ausbildung (DAZUBI) beruht auf der Zählung der statistischen Ämter zum 31.12. und nennt für 2025 2.484 statt 2.466 Verträge, vermutlich eine spätere Korrektur; die eigene BIBB-Erhebung zum 30.09. kommt auf 3.138.
 - **Praxenzahl teils geschätzt.** Die Zahl der Praxen (10.385) haben wir aus den Angaben der 17 Kammern zusammengezählt; einige Kammern schätzen.
 - **Kein Engpassnachweis.** Ob TFA in der Engpassanalyse der Bundesagentur als Engpassberuf geführt werden, konnten wir nicht aus der Primärquelle prüfen.
 
