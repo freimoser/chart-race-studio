@@ -1,0 +1,15 @@
+{
+  "_herkunft": "Mediadaten Schlütersche 2022 und 2026, Jahresdurchschnitt je Ausgabe (Juli–Juni).",
+  "art": "paare",
+  "serie": "Sonderauswertung",
+  "titel": "Verkauft schrumpft, verschenkt wächst",
+  "untertitel": "Exemplare je Ausgabe laut Verlag, 2020/21 und 2024/25",
+  "teile": ["2020/21", "2024/25"],
+  "max": 5000,
+  "balken": [
+    { "name": "Der Praktische Tierarzt: verkauft", "werte": [4566, 3744] },
+    { "name": "Der Praktische Tierarzt: Freistücke", "werte": [2353, 3839] },
+    { "name": "Kleintierpraxis: verkauft", "werte": [1876, 1629] }
+  ],
+  "quelle": "Quelle: Mediadaten der Schlüterschen Fachmedien 2022 und 2026 (Selbstangaben), Jahresdurchschnitt je Ausgabe, jeweils Juli bis Juni"
+}

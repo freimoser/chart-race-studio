@@ -47,6 +47,8 @@ Belgien hat viele Tiere je Einwohner, je Tier ist der Umsatz deshalb durchschnit
 
 Italien bleibt auffällig: 35 Hunde und Katzen je 100 Einwohner, mehr als Deutschland, aber nur 80 Euro Umsatz je Tier, ein Drittel des deutschen Werts.
 
+Wie schnell der Umsatz von 2021 bis 2024 in den einzelnen Ländern gewachsen ist, zeigt der Beitrag [Tierarzt-Umsatz: Wachstum in Europa](tierarzt-umsatz-wachstum-europa.html).
+
 ## Was die Zahl nicht sagt
 
 - **Nutztiere sind im Umsatz enthalten.** Länder mit viel Viehhaltung, etwa Dänemark, die Niederlande oder Irland, kommen dadurch je Hund und Katze zu hoch heraus. Eine Aufteilung nach Tierart veröffentlicht Eurostat nicht.

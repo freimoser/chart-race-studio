@@ -529,6 +529,17 @@
   },
   {
     "art": "auswertung",
+    "slug": "fachmedien-tiermedizin",
+    "titel": "Fachmedien für Tierärzte: Auflagen und Reichweiten",
+    "beschreibung": "Das Deutsche Tierärzteblatt erreicht 45.390 Exemplare, andere Fachzeitschriften 1.500 bis 7.600. Verkauft wird weniger, verschenkt und online mehr.",
+    "frage": "Welche Fachzeitschriften gibt es für Tierärzte?",
+    "stand": "2026-11-26",
+    "geaendert": "2026-11-26",
+    "bereit": true,
+    "live": true
+  },
+  {
+    "art": "auswertung",
     "slug": "gehalt-tierarzt",
     "titel": "Gehalt Tierarzt 2025: brutto und netto nach Berufsjahren",
     "beschreibung": "Angestellte Tierärzte verdienen zum Einstieg 3.701 Euro brutto im Monat, netto rund 2.440. Ärzte bekommen ein Drittel mehr, die Preise stiegen schneller.",

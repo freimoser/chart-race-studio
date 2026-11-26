@@ -1,0 +1,31 @@
+{
+  "_herkunft": "Verlagsangaben (Mediadaten): Schlütersche 2026 (Zeitraum 07/2024–06/2025), Biermann 2026 (IVW I/2025 laut Verlag), Thieme Preislisten gültig ab 1.10.2024 (1. Hj. 2024). Rohdaten data/raw/ds36-fachmedien.json.",
+  "art": "balken",
+  "serie": "Sonderauswertung",
+  "titel": "Fachzeitschriften für Tierärzte",
+  "untertitel": "Verbreitete Auflage je Ausgabe laut Verlag, ohne Deutsches Tierärzteblatt (45.390, geht an alle Kammermitglieder)",
+  "max": 8000,
+  "balken": [
+    {
+      "name": "Der Praktische Tierarzt (2024/25)",
+      "wert": 7583
+    },
+    {
+      "name": "KOMPAKT VetMed (1. Quartal 2025)",
+      "wert": 6512
+    },
+    {
+      "name": "Kleintierpraxis (2024/25)",
+      "wert": 2558
+    },
+    {
+      "name": "Kleintier konkret (1. Halbjahr 2024)",
+      "wert": 2460
+    },
+    {
+      "name": "Pferdespiegel (1. Halbjahr 2024)",
+      "wert": 1462
+    }
+  ],
+  "quelle": "Quelle: Mediadaten der Verlage Schlütersche, Biermann und Thieme (Selbstangaben; IVW-Prüfung, wo genannt, laut Verlag). Der Praktische Tierarzt heißt seit 2026 Die Praktische Tierärztin"
+}

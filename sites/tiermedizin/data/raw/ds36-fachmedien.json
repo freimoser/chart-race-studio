@@ -1,0 +1,1371 @@
+{
+ "abgerufen": "2026-11-26",
+ "quellen": [
+  {
+   "id": "dtbl-md-2022",
+   "titel": "Mediadaten 2022 Deutsches Tierärzteblatt",
+   "herausgeber": "Schlütersche Fachmedien (Verlag des DTBl, Organ der BTK)",
+   "url": "https://vetline.de/sites/default/files/Deutsches%20Tieraerzteblatt_Mediadaten_2022_Online_1.pdf",
+   "jahr": 2021,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "dtbl-md-2023",
+   "titel": "Mediadaten 2023 Deutsches Tierärzteblatt",
+   "herausgeber": "Schlütersche Fachmedien",
+   "url": "https://vetline.de/sites/default/files/Deutsches%20Tieraerzteblatt_Mediadaten_2023_Online.pdf",
+   "jahr": 2022,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "dtbl-md-2024",
+   "titel": "Mediadaten 2024 Deutsches Tierärzteblatt",
+   "herausgeber": "Schlütersche Fachmedien",
+   "url": "https://web.archive.org/web/20240913180547/https://www.vetline.de/sites/default/files/2024-05/schl_deutsches_tieraerzteblatt_mediadaten_2024.pdf",
+   "jahr": 2023,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "dtbl-md-2025",
+   "titel": "Mediadaten 2025 Deutsches Tierärzteblatt",
+   "herausgeber": "Schlütersche Fachmedien",
+   "url": "https://web.archive.org/web/20250827025914/https://www.vetline.de/sites/default/files/2024-12/deutsches-tieraerzteblatt_mediadaten_2025_1.pdf",
+   "jahr": 2024,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "dtbl-md-2026",
+   "titel": "Mediadaten 2026 Deutsches Tierärzteblatt",
+   "herausgeber": "Schlütersche Fachmedien",
+   "url": "https://www.vetline.de/sites/default/files/2026-04/deutsches_tieraerzteblatt_2026.pdf",
+   "jahr": 2025,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "dpt-md-2022",
+   "titel": "Mediadaten 2022 Der Praktische Tierarzt",
+   "herausgeber": "Schlütersche Fachmedien (Organ des bpt)",
+   "url": "https://web.archive.org/web/20220708063551/https://www.vetline.de/sites/default/files/DPT_Mediadaten_2022_Online.pdf",
+   "jahr": 2021,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "dpt-md-2023",
+   "titel": "Mediadaten 2023 Der Praktische Tierarzt",
+   "herausgeber": "Schlütersche Fachmedien",
+   "url": "https://vetline.de/sites/default/files/DPT_Mediadaten_2023_Online.pdf",
+   "jahr": 2022,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "dpt-md-2024",
+   "titel": "Mediadaten 2024 Der Praktische Tierarzt",
+   "herausgeber": "Schlütersche Fachmedien",
+   "url": "https://web.archive.org/web/20240530015710/https://www.vetline.de/sites/default/files/2024-05/schl_dpt_mediadaten_2024.pdf",
+   "jahr": 2023,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "dpt-md-2025",
+   "titel": "Mediadaten 2025 Der Praktische Tierarzt",
+   "herausgeber": "Schlütersche Fachmedien",
+   "url": "https://web.archive.org/web/20250827002020/https://www.vetline.de/sites/default/files/2025-01/dpt_mediadaten_2025.pdf",
+   "jahr": 2024,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "dpt-md-2026",
+   "titel": "Mediadaten 2026 Die Praktische Tierärztin (vormals Der Praktische Tierarzt)",
+   "herausgeber": "Schlütersche Fachmedien",
+   "url": "https://www.vetline.de/sites/default/files/2026-03/dpt_mediadaten_2026.pdf",
+   "jahr": 2025,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "ktp-md-2022",
+   "titel": "Mediadaten 2022 Kleintierpraxis",
+   "herausgeber": "Schlütersche Fachmedien",
+   "url": "https://vetline.de/sites/default/files/KTP_Mediadaten_2022_Online.pdf",
+   "jahr": 2021,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "ktp-md-2023",
+   "titel": "Mediadaten 2023 Kleintierpraxis",
+   "herausgeber": "Schlütersche Fachmedien",
+   "url": "https://vetline.de/sites/default/files/KTP_Mediadaten_2023_Online.pdf",
+   "jahr": 2022,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "ktp-md-2024",
+   "titel": "Mediadaten 2024 Kleintierpraxis",
+   "herausgeber": "Schlütersche Fachmedien",
+   "url": "https://web.archive.org/web/20240529043032/https://www.vetline.de/sites/default/files/2024-05/schl_ktp_mediadaten_2024.pdf",
+   "jahr": 2023,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "ktp-md-2025",
+   "titel": "Mediadaten 2025 Kleintierpraxis",
+   "herausgeber": "Schlütersche Fachmedien",
+   "url": "https://web.archive.org/web/20250907093134/https://www.vetline.de/sites/default/files/2025-06/250610_schluetersche_fachmedien_mediatdaten_ktp_d.pdf",
+   "jahr": 2024,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "ktp-md-2026",
+   "titel": "Mediadaten 2026 Kleintierpraxis",
+   "herausgeber": "Schlütersche Fachmedien",
+   "url": "https://www.vetline.de/sites/default/files/2026-03/kleintierpraxis_2026.pdf",
+   "jahr": 2025,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "n4v-md-2026",
+   "titel": "Mediadaten 2026 News4Vets",
+   "herausgeber": "Schlütersche Fachmedien",
+   "url": "https://www.vetline.de/sites/default/files/2026-03/news4vets_2026.pdf",
+   "jahr": 2025,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "vetline-md-2026",
+   "titel": "Mediadaten 2026 vetline.de",
+   "herausgeber": "Schlütersche Fachmedien",
+   "url": "https://www.vetline.de/sites/default/files/2026-03/vetline_mediadaten_2026.pdf",
+   "jahr": 2025,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "vetline-md-2025",
+   "titel": "Mediadaten 2025 vetline.de",
+   "herausgeber": "Schlütersche Fachmedien",
+   "url": "https://web.archive.org/web/20250831222753/https://www.vetline.de/sites/default/files/2024-12/schl_mediadaten_vetline_2025.pdf",
+   "jahr": 2024,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "thieme-ueberblick-2024",
+   "titel": "Thieme Tiermedizin – 2024 im Überblick",
+   "herausgeber": "Georg Thieme Verlag",
+   "url": "https://web.archive.org/web/20240612022135/https://vet.thieme.de/fileadmin/vet/Mediadaten/Download/Ueberblick_Tiermedizin.pdf",
+   "jahr": 2024,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "thieme-tp-pl38",
+   "titel": "Tierärztliche Praxis G/K – Preisliste Nr. 38 (gültig ab 1.10.2024)",
+   "herausgeber": "Georg Thieme Verlag / Thieme Media",
+   "url": "https://thieme-media.thieme.com/fileadmin/user_upload/PDF_Daten/Tieraerztliche_Praxis.pdf",
+   "jahr": 2024,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "thieme-kk-pl28",
+   "titel": "Kleintier konkret – Preisliste Nr. 28 (gültig ab 1.10.2024)",
+   "herausgeber": "Georg Thieme Verlag / Thieme Media",
+   "url": "https://thieme-media.thieme.com/fileadmin/user_upload/PDF_Daten/Kleintier_konkret.pdf",
+   "jahr": 2024,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "thieme-ps-pl17",
+   "titel": "Pferdespiegel – Preisliste Nr. 17 (gültig ab 1.10.2024)",
+   "herausgeber": "Georg Thieme Verlag / Thieme Media",
+   "url": "https://thieme-media.thieme.com/fileadmin/user_upload/PDF_Daten/Pferdespiegel.pdf",
+   "jahr": 2024,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "thieme-vet-md-2025",
+   "titel": "Mediadaten 2025 Thieme Vet",
+   "herausgeber": "Georg Thieme Verlag / Thieme Media",
+   "url": "https://thieme-media.thieme.com/fileadmin/user_upload/PDF_Daten/Mediadaten_Thieme_Vet.pdf",
+   "jahr": 2025,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "biermann-2025",
+   "titel": "KOMPAKT VetMed – Mediadaten/Preisliste 2025",
+   "herausgeber": "Biermann Verlag (biermann-medizin.de)",
+   "url": "https://biermann-medizin.de/content/uploads/2024/10/Mediadaten_2025_K_VetMed.pdf",
+   "jahr": 2024,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "biermann-2026",
+   "titel": "KOMPAKT VetMed – Mediadaten/Preisliste 2026",
+   "herausgeber": "Biermann Verlag",
+   "url": "https://biermann-medizin.de/content/uploads/filr/457256/Mediadaten_2026_K_VetMed.pdf",
+   "jahr": 2025,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "vetimpulse-md-2026",
+   "titel": "VETimpulse Mediadaten 2026",
+   "herausgeber": "Veterinär Verlag",
+   "url": "https://www.vetimpulse.de/wp-content/uploads/2026/03/Mediadaten_2026.pdf",
+   "jahr": 2026,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "hippiatrika-adverts",
+   "titel": "Pferdeheilkunde – Advertising Information",
+   "herausgeber": "Hippiatrika Verlag, Baden-Baden",
+   "url": "https://www.hippiatrika.com/en/adverts/",
+   "jahr": null,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "vetion-portfolio-2025",
+   "titel": "Vetion.de Agentur-Portfolio (21.08.2025)",
+   "herausgeber": "Vetion.de GmbH (Betreiber MyVetlearn)",
+   "url": "https://agentur.vetion.de/wp-content/uploads/2025/08/vetion-portfolio-fin-21-Aug-2025-ONLINE.pdf",
+   "jahr": 2025,
+   "art": "selbstangabe"
+  },
+  {
+   "id": "btk-statistik-2025",
+   "titel": "Statistik 2025: Tierärzteschaft in der Bundesrepublik Deutschland (Stand 31.12.2025)",
+   "herausgeber": "Bundestierärztekammer",
+   "url": "https://bundestieraerztekammer.de/btk/statistik/downloads/2025_korr.pdf",
+   "jahr": 2025,
+   "art": "amtlich"
+  },
+  {
+   "id": "btk-statistik-reihe",
+   "titel": "BTK-Statistik 2019–2025, Kammermitglieder gesamt (Projektdatensatz ds1-tieraerzte.json)",
+   "herausgeber": "Bundestierärztekammer",
+   "url": "https://www.bundestieraerztekammer.de/btk/statistik/",
+   "jahr": 2025,
+   "art": "amtlich"
+  },
+  {
+   "id": "haimerl-2013",
+   "titel": "Haimerl P, Arlt S, Heuwieser W: Entscheidungsfindung in der tierärztlichen Praxis. Tierärztl Prax K 2013;41(4):229-36 (PMID 23958706)",
+   "herausgeber": "FU Berlin / Thieme",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/23958706/",
+   "jahr": 2013,
+   "art": "studie"
+  },
+  {
+   "id": "atzmueller-2012",
+   "titel": "Atzmüller C et al.: Fortbildung in der Rinderpraxis – Ergebnisse einer Umfrage. Tierärztl Prax G 2012;40(4):217-24 (PMID 22911229)",
+   "herausgeber": "Vetmeduni Wien / Thieme",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/22911229/",
+   "jahr": 2012,
+   "art": "studie"
+  },
+  {
+   "id": "entenfellner-2020",
+   "titel": "Entenfellner J, Drillich M: Umfrage zum Fortbildungsverhalten in der Nutztierpraxis. Der Praktische Tierarzt 101 (2020) 1228–1235",
+   "herausgeber": "Schlütersche / vetline.de",
+   "url": "https://vetline.de/umfrage-zum-fortbildungsverhalten-in-der-nutztierpraxis",
+   "jahr": 2020,
+   "art": "studie"
+  },
+  {
+   "id": "huntley-2016",
+   "titel": "Huntley SJ et al.: International EBM Survey of the Veterinary Profession: Information Sources Used by Veterinarians. PLoS One 2016 (PMC4961404)",
+   "herausgeber": "Univ. Nottingham",
+   "url": "https://doi.org/10.1371/journal.pone.0159732",
+   "jahr": 2016,
+   "art": "studie"
+  },
+  {
+   "id": "wirsindtierarzt-archiv",
+   "titel": "wir-sind-tierarzt.de – Wayback-Snapshots 05/2026 (Portal) und 06/2026 (Platzhalter webgo)",
+   "herausgeber": "Internet Archive",
+   "url": "https://web.archive.org/web/20260606052202/https://www.wir-sind-tierarzt.de/",
+   "jahr": 2026,
+   "art": "selbstangabe"
+  }
+ ],
+ "werte": [
+  {
+   "titel_medium": "Deutsches Tierärzteblatt",
+   "groesse": "Druckauflage",
+   "wert": 43485,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2020/21",
+   "quelle": "dtbl-md-2022",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni). Kein IVW-Prüfvermerk im Dokument (Verlagsangabe nach IVW-Schema). Geht an Kammermitglieder (Mitgliederstücke)."
+  },
+  {
+   "titel_medium": "Deutsches Tierärzteblatt",
+   "groesse": "tatsächlich verbreitete Auflage (tvA)",
+   "wert": 43043,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2020/21",
+   "quelle": "dtbl-md-2022",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni). Kein IVW-Prüfvermerk im Dokument (Verlagsangabe nach IVW-Schema). Geht an Kammermitglieder (Mitgliederstücke)."
+  },
+  {
+   "titel_medium": "Deutsches Tierärzteblatt",
+   "groesse": "verkaufte Auflage",
+   "wert": 42671,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2020/21",
+   "quelle": "dtbl-md-2022",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni). Kein IVW-Prüfvermerk im Dokument (Verlagsangabe nach IVW-Schema). Geht an Kammermitglieder (Mitgliederstücke)."
+  },
+  {
+   "titel_medium": "Deutsches Tierärzteblatt",
+   "groesse": "davon Mitgliederstücke",
+   "wert": 42247,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2020/21",
+   "quelle": "dtbl-md-2022",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni). Kein IVW-Prüfvermerk im Dokument (Verlagsangabe nach IVW-Schema). Geht an Kammermitglieder (Mitgliederstücke)."
+  },
+  {
+   "titel_medium": "Deutsches Tierärzteblatt",
+   "groesse": "Druckauflage",
+   "wert": 44193,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2021/22",
+   "quelle": "dtbl-md-2023",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni). Kein IVW-Prüfvermerk im Dokument (Verlagsangabe nach IVW-Schema). Geht an Kammermitglieder (Mitgliederstücke)."
+  },
+  {
+   "titel_medium": "Deutsches Tierärzteblatt",
+   "groesse": "tatsächlich verbreitete Auflage (tvA)",
+   "wert": 43757,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2021/22",
+   "quelle": "dtbl-md-2023",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni). Kein IVW-Prüfvermerk im Dokument (Verlagsangabe nach IVW-Schema). Geht an Kammermitglieder (Mitgliederstücke)."
+  },
+  {
+   "titel_medium": "Deutsches Tierärzteblatt",
+   "groesse": "verkaufte Auflage",
+   "wert": 43392,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2021/22",
+   "quelle": "dtbl-md-2023",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni). Kein IVW-Prüfvermerk im Dokument (Verlagsangabe nach IVW-Schema). Geht an Kammermitglieder (Mitgliederstücke)."
+  },
+  {
+   "titel_medium": "Deutsches Tierärzteblatt",
+   "groesse": "davon Mitgliederstücke",
+   "wert": 42958,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2021/22",
+   "quelle": "dtbl-md-2023",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni). Kein IVW-Prüfvermerk im Dokument (Verlagsangabe nach IVW-Schema). Geht an Kammermitglieder (Mitgliederstücke)."
+  },
+  {
+   "titel_medium": "Deutsches Tierärzteblatt",
+   "groesse": "Druckauflage",
+   "wert": 44356,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2022/23",
+   "quelle": "dtbl-md-2024",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni). Kein IVW-Prüfvermerk im Dokument (Verlagsangabe nach IVW-Schema). Geht an Kammermitglieder (Mitgliederstücke)."
+  },
+  {
+   "titel_medium": "Deutsches Tierärzteblatt",
+   "groesse": "tatsächlich verbreitete Auflage (tvA)",
+   "wert": 44210,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2022/23",
+   "quelle": "dtbl-md-2024",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni). Kein IVW-Prüfvermerk im Dokument (Verlagsangabe nach IVW-Schema). Geht an Kammermitglieder (Mitgliederstücke)."
+  },
+  {
+   "titel_medium": "Deutsches Tierärzteblatt",
+   "groesse": "verkaufte Auflage",
+   "wert": 43888,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2022/23",
+   "quelle": "dtbl-md-2024",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni). Kein IVW-Prüfvermerk im Dokument (Verlagsangabe nach IVW-Schema). Geht an Kammermitglieder (Mitgliederstücke)."
+  },
+  {
+   "titel_medium": "Deutsches Tierärzteblatt",
+   "groesse": "davon Mitgliederstücke",
+   "wert": 43477,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2022/23",
+   "quelle": "dtbl-md-2024",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni). Kein IVW-Prüfvermerk im Dokument (Verlagsangabe nach IVW-Schema). Geht an Kammermitglieder (Mitgliederstücke)."
+  },
+  {
+   "titel_medium": "Deutsches Tierärzteblatt",
+   "groesse": "Druckauflage",
+   "wert": 44780,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2023/24",
+   "quelle": "dtbl-md-2025",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni). Kein IVW-Prüfvermerk im Dokument (Verlagsangabe nach IVW-Schema). Geht an Kammermitglieder (Mitgliederstücke)."
+  },
+  {
+   "titel_medium": "Deutsches Tierärzteblatt",
+   "groesse": "tatsächlich verbreitete Auflage (tvA)",
+   "wert": 44707,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2023/24",
+   "quelle": "dtbl-md-2025",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni). Kein IVW-Prüfvermerk im Dokument (Verlagsangabe nach IVW-Schema). Geht an Kammermitglieder (Mitgliederstücke)."
+  },
+  {
+   "titel_medium": "Deutsches Tierärzteblatt",
+   "groesse": "verkaufte Auflage",
+   "wert": 44387,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2023/24",
+   "quelle": "dtbl-md-2025",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni). Kein IVW-Prüfvermerk im Dokument (Verlagsangabe nach IVW-Schema). Geht an Kammermitglieder (Mitgliederstücke)."
+  },
+  {
+   "titel_medium": "Deutsches Tierärzteblatt",
+   "groesse": "davon Mitgliederstücke",
+   "wert": 43978,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2023/24",
+   "quelle": "dtbl-md-2025",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni). Kein IVW-Prüfvermerk im Dokument (Verlagsangabe nach IVW-Schema). Geht an Kammermitglieder (Mitgliederstücke)."
+  },
+  {
+   "titel_medium": "Deutsches Tierärzteblatt",
+   "groesse": "Druckauflage",
+   "wert": 45443,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2024/25",
+   "quelle": "dtbl-md-2026",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni). Kein IVW-Prüfvermerk im Dokument (Verlagsangabe nach IVW-Schema). Geht an Kammermitglieder (Mitgliederstücke)."
+  },
+  {
+   "titel_medium": "Deutsches Tierärzteblatt",
+   "groesse": "tatsächlich verbreitete Auflage (tvA)",
+   "wert": 45390,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2024/25",
+   "quelle": "dtbl-md-2026",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni). Kein IVW-Prüfvermerk im Dokument (Verlagsangabe nach IVW-Schema). Geht an Kammermitglieder (Mitgliederstücke)."
+  },
+  {
+   "titel_medium": "Deutsches Tierärzteblatt",
+   "groesse": "verkaufte Auflage",
+   "wert": 45032,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2024/25",
+   "quelle": "dtbl-md-2026",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni). Kein IVW-Prüfvermerk im Dokument (Verlagsangabe nach IVW-Schema). Geht an Kammermitglieder (Mitgliederstücke)."
+  },
+  {
+   "titel_medium": "Deutsches Tierärzteblatt",
+   "groesse": "davon Mitgliederstücke",
+   "wert": 44650,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2024/25",
+   "quelle": "dtbl-md-2026",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni). Kein IVW-Prüfvermerk im Dokument (Verlagsangabe nach IVW-Schema). Geht an Kammermitglieder (Mitgliederstücke)."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "Druckauflage",
+   "wert": 6978,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2020/21",
+   "quelle": "dpt-md-2022",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "tvA",
+   "wert": 6919,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2020/21",
+   "quelle": "dpt-md-2022",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "verkaufte Auflage",
+   "wert": 4566,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2020/21",
+   "quelle": "dpt-md-2022",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "abonnierte Exemplare",
+   "wert": 1621,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2020/21",
+   "quelle": "dpt-md-2022",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "Freistücke",
+   "wert": 2353,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2020/21",
+   "quelle": "dpt-md-2022",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "Druckauflage",
+   "wert": 7367,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2021/22",
+   "quelle": "dpt-md-2023",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "tvA",
+   "wert": 7309,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2021/22",
+   "quelle": "dpt-md-2023",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "verkaufte Auflage",
+   "wert": 4379,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2021/22",
+   "quelle": "dpt-md-2023",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "abonnierte Exemplare",
+   "wert": 1588,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2021/22",
+   "quelle": "dpt-md-2023",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "Freistücke",
+   "wert": 2930,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2021/22",
+   "quelle": "dpt-md-2023",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "Druckauflage",
+   "wert": 7360,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2022/23",
+   "quelle": "dpt-md-2024",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "tvA",
+   "wert": 7300,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2022/23",
+   "quelle": "dpt-md-2024",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "verkaufte Auflage",
+   "wert": 4168,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2022/23",
+   "quelle": "dpt-md-2024",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "abonnierte Exemplare",
+   "wert": 1519,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2022/23",
+   "quelle": "dpt-md-2024",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "Freistücke",
+   "wert": 3132,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2022/23",
+   "quelle": "dpt-md-2024",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "Druckauflage",
+   "wert": 7284,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2023/24",
+   "quelle": "dpt-md-2025",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "tvA",
+   "wert": 7238,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2023/24",
+   "quelle": "dpt-md-2025",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "verkaufte Auflage",
+   "wert": 3967,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2023/24",
+   "quelle": "dpt-md-2025",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "abonnierte Exemplare",
+   "wert": 1477,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2023/24",
+   "quelle": "dpt-md-2025",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "Freistücke",
+   "wert": 3271,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2023/24",
+   "quelle": "dpt-md-2025",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "Druckauflage",
+   "wert": 7629,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2024/25",
+   "quelle": "dpt-md-2026",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "tvA",
+   "wert": 7583,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2024/25",
+   "quelle": "dpt-md-2026",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "verkaufte Auflage",
+   "wert": 3744,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2024/25",
+   "quelle": "dpt-md-2026",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "abonnierte Exemplare",
+   "wert": 1438,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2024/25",
+   "quelle": "dpt-md-2026",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Der Praktische Tierarzt / Die Praktische Tierärztin (bpt-Organ)",
+   "groesse": "Freistücke",
+   "wert": 3839,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2024/25",
+   "quelle": "dpt-md-2026",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft, nicht direkt in der IVW-Datenbank verifiziert. Hoher Freistückanteil."
+  },
+  {
+   "titel_medium": "Kleintierpraxis",
+   "groesse": "Druckauflage",
+   "wert": 2743,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2020/21",
+   "quelle": "ktp-md-2022",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft; rund 10 % Ausland."
+  },
+  {
+   "titel_medium": "Kleintierpraxis",
+   "groesse": "tvA",
+   "wert": 2700,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2020/21",
+   "quelle": "ktp-md-2022",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft; rund 10 % Ausland."
+  },
+  {
+   "titel_medium": "Kleintierpraxis",
+   "groesse": "verkaufte Auflage",
+   "wert": 1876,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2020/21",
+   "quelle": "ktp-md-2022",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft; rund 10 % Ausland."
+  },
+  {
+   "titel_medium": "Kleintierpraxis",
+   "groesse": "abonnierte Exemplare",
+   "wert": 1876,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2020/21",
+   "quelle": "ktp-md-2022",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft; rund 10 % Ausland."
+  },
+  {
+   "titel_medium": "Kleintierpraxis",
+   "groesse": "Druckauflage",
+   "wert": 2325,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2021/22",
+   "quelle": "ktp-md-2023",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft; rund 10 % Ausland."
+  },
+  {
+   "titel_medium": "Kleintierpraxis",
+   "groesse": "tvA",
+   "wert": 2271,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2021/22",
+   "quelle": "ktp-md-2023",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft; rund 10 % Ausland."
+  },
+  {
+   "titel_medium": "Kleintierpraxis",
+   "groesse": "verkaufte Auflage",
+   "wert": 1825,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2021/22",
+   "quelle": "ktp-md-2023",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft; rund 10 % Ausland."
+  },
+  {
+   "titel_medium": "Kleintierpraxis",
+   "groesse": "abonnierte Exemplare",
+   "wert": 1817,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2021/22",
+   "quelle": "ktp-md-2023",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft; rund 10 % Ausland."
+  },
+  {
+   "titel_medium": "Kleintierpraxis",
+   "groesse": "Druckauflage",
+   "wert": 2475,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2022/23",
+   "quelle": "ktp-md-2024",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft; rund 10 % Ausland."
+  },
+  {
+   "titel_medium": "Kleintierpraxis",
+   "groesse": "tvA",
+   "wert": 2416,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2022/23",
+   "quelle": "ktp-md-2024",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft; rund 10 % Ausland."
+  },
+  {
+   "titel_medium": "Kleintierpraxis",
+   "groesse": "verkaufte Auflage",
+   "wert": 1764,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2022/23",
+   "quelle": "ktp-md-2024",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft; rund 10 % Ausland."
+  },
+  {
+   "titel_medium": "Kleintierpraxis",
+   "groesse": "abonnierte Exemplare",
+   "wert": 1711,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2022/23",
+   "quelle": "ktp-md-2024",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft; rund 10 % Ausland."
+  },
+  {
+   "titel_medium": "Kleintierpraxis",
+   "groesse": "Druckauflage",
+   "wert": 2484,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2023/24",
+   "quelle": "ktp-md-2025",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft; rund 10 % Ausland."
+  },
+  {
+   "titel_medium": "Kleintierpraxis",
+   "groesse": "tvA",
+   "wert": 2435,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2023/24",
+   "quelle": "ktp-md-2025",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft; rund 10 % Ausland."
+  },
+  {
+   "titel_medium": "Kleintierpraxis",
+   "groesse": "verkaufte Auflage",
+   "wert": 1688,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2023/24",
+   "quelle": "ktp-md-2025",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft; rund 10 % Ausland."
+  },
+  {
+   "titel_medium": "Kleintierpraxis",
+   "groesse": "abonnierte Exemplare",
+   "wert": 1604,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2023/24",
+   "quelle": "ktp-md-2025",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft; rund 10 % Ausland."
+  },
+  {
+   "titel_medium": "Kleintierpraxis",
+   "groesse": "Druckauflage",
+   "wert": 2591,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2024/25",
+   "quelle": "ktp-md-2026",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft; rund 10 % Ausland."
+  },
+  {
+   "titel_medium": "Kleintierpraxis",
+   "groesse": "tvA",
+   "wert": 2558,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2024/25",
+   "quelle": "ktp-md-2026",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft; rund 10 % Ausland."
+  },
+  {
+   "titel_medium": "Kleintierpraxis",
+   "groesse": "verkaufte Auflage",
+   "wert": 1629,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2024/25",
+   "quelle": "ktp-md-2026",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft; rund 10 % Ausland."
+  },
+  {
+   "titel_medium": "Kleintierpraxis",
+   "groesse": "abonnierte Exemplare",
+   "wert": 1513,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2024/25",
+   "quelle": "ktp-md-2026",
+   "hinweis": "Jahresdurchschnitt je Ausgabe (Juli–Juni); laut Verlag IVW-geprüft; rund 10 % Ausland."
+  },
+  {
+   "titel_medium": "News4Vets",
+   "groesse": "Druckauflage",
+   "wert": 3334,
+   "einheit": "Exemplare je Ausgabe",
+   "jahr": "2024/25",
+   "quelle": "n4v-md-2026",
+   "hinweis": "laut Verlag IVW-geprüft"
+  },
+  {
+   "titel_medium": "vetline.de",
+   "groesse": "Page Impressions je Monat (Ø)",
+   "wert": 98000,
+   "einheit": "Aufrufe/Monat",
+   "jahr": "06/2020–06/2021",
+   "quelle": "dtbl-md-2022",
+   "hinweis": "Google Analytics, Verlagsangabe. Bruch: bis Mediadaten 2023 'Page Impressions/Visits' (Universal Analytics), ab 2024 'Aufrufe/Nutzer/Sitzungen' (GA4) – nicht verketten. Zeiträume uneinheitlich."
+  },
+  {
+   "titel_medium": "vetline.de",
+   "groesse": "Visits je Monat (Ø)",
+   "wert": 42600,
+   "einheit": "Visits/Monat",
+   "jahr": "06/2020–06/2021",
+   "quelle": "dtbl-md-2022",
+   "hinweis": "Google Analytics, Verlagsangabe. Bruch: bis Mediadaten 2023 'Page Impressions/Visits' (Universal Analytics), ab 2024 'Aufrufe/Nutzer/Sitzungen' (GA4) – nicht verketten. Zeiträume uneinheitlich."
+  },
+  {
+   "titel_medium": "vetline.de",
+   "groesse": "Page Impressions je Monat (Ø)",
+   "wert": 112500,
+   "einheit": "Aufrufe/Monat",
+   "jahr": "07/2021–06/2022",
+   "quelle": "dtbl-md-2023",
+   "hinweis": "Google Analytics, Verlagsangabe. Bruch: bis Mediadaten 2023 'Page Impressions/Visits' (Universal Analytics), ab 2024 'Aufrufe/Nutzer/Sitzungen' (GA4) – nicht verketten. Zeiträume uneinheitlich."
+  },
+  {
+   "titel_medium": "vetline.de",
+   "groesse": "Visits je Monat (Ø)",
+   "wert": 62500,
+   "einheit": "Visits/Monat",
+   "jahr": "07/2021–06/2022",
+   "quelle": "dtbl-md-2023",
+   "hinweis": "Google Analytics, Verlagsangabe. Bruch: bis Mediadaten 2023 'Page Impressions/Visits' (Universal Analytics), ab 2024 'Aufrufe/Nutzer/Sitzungen' (GA4) – nicht verketten. Zeiträume uneinheitlich."
+  },
+  {
+   "titel_medium": "vetline.de",
+   "groesse": "Aufrufe je Monat (Ø)",
+   "wert": 100400,
+   "einheit": "Aufrufe/Monat",
+   "jahr": "07/2022–06/2023",
+   "quelle": "dtbl-md-2024",
+   "hinweis": "Google Analytics, Verlagsangabe. Bruch: bis Mediadaten 2023 'Page Impressions/Visits' (Universal Analytics), ab 2024 'Aufrufe/Nutzer/Sitzungen' (GA4) – nicht verketten. Zeiträume uneinheitlich."
+  },
+  {
+   "titel_medium": "vetline.de",
+   "groesse": "Nutzer je Monat (Ø)",
+   "wert": 45300,
+   "einheit": "Nutzer/Monat",
+   "jahr": "07/2022–06/2023",
+   "quelle": "dtbl-md-2024",
+   "hinweis": "Google Analytics, Verlagsangabe. Bruch: bis Mediadaten 2023 'Page Impressions/Visits' (Universal Analytics), ab 2024 'Aufrufe/Nutzer/Sitzungen' (GA4) – nicht verketten. Zeiträume uneinheitlich."
+  },
+  {
+   "titel_medium": "vetline.de",
+   "groesse": "Sitzungen je Monat (Ø)",
+   "wert": 58600,
+   "einheit": "Sitzungen/Monat",
+   "jahr": "07/2022–06/2023",
+   "quelle": "dtbl-md-2024",
+   "hinweis": "Google Analytics, Verlagsangabe. Bruch: bis Mediadaten 2023 'Page Impressions/Visits' (Universal Analytics), ab 2024 'Aufrufe/Nutzer/Sitzungen' (GA4) – nicht verketten. Zeiträume uneinheitlich."
+  },
+  {
+   "titel_medium": "vetline.de",
+   "groesse": "Aufrufe je Monat (Ø)",
+   "wert": 111150,
+   "einheit": "Aufrufe/Monat",
+   "jahr": "01/2024–06/2024",
+   "quelle": "vetline-md-2025",
+   "hinweis": "Google Analytics, Verlagsangabe. Bruch: bis Mediadaten 2023 'Page Impressions/Visits' (Universal Analytics), ab 2024 'Aufrufe/Nutzer/Sitzungen' (GA4) – nicht verketten. Zeiträume uneinheitlich."
+  },
+  {
+   "titel_medium": "vetline.de",
+   "groesse": "Nutzer je Monat (Ø)",
+   "wert": 60050,
+   "einheit": "Nutzer/Monat",
+   "jahr": "01/2024–06/2024",
+   "quelle": "vetline-md-2025",
+   "hinweis": "Google Analytics, Verlagsangabe. Bruch: bis Mediadaten 2023 'Page Impressions/Visits' (Universal Analytics), ab 2024 'Aufrufe/Nutzer/Sitzungen' (GA4) – nicht verketten. Zeiträume uneinheitlich."
+  },
+  {
+   "titel_medium": "vetline.de",
+   "groesse": "Sitzungen je Monat (Ø)",
+   "wert": 74250,
+   "einheit": "Sitzungen/Monat",
+   "jahr": "01/2024–06/2024",
+   "quelle": "vetline-md-2025",
+   "hinweis": "Google Analytics, Verlagsangabe. Bruch: bis Mediadaten 2023 'Page Impressions/Visits' (Universal Analytics), ab 2024 'Aufrufe/Nutzer/Sitzungen' (GA4) – nicht verketten. Zeiträume uneinheitlich."
+  },
+  {
+   "titel_medium": "vetline.de",
+   "groesse": "Aufrufe je Monat (Ø)",
+   "wert": 115000,
+   "einheit": "Aufrufe/Monat",
+   "jahr": "07/2024–06/2025",
+   "quelle": "vetline-md-2026",
+   "hinweis": "Google Analytics, Verlagsangabe. Bruch: bis Mediadaten 2023 'Page Impressions/Visits' (Universal Analytics), ab 2024 'Aufrufe/Nutzer/Sitzungen' (GA4) – nicht verketten. Zeiträume uneinheitlich."
+  },
+  {
+   "titel_medium": "vetline.de",
+   "groesse": "Nutzer je Monat (Ø)",
+   "wert": 48500,
+   "einheit": "Nutzer/Monat",
+   "jahr": "07/2024–06/2025",
+   "quelle": "vetline-md-2026",
+   "hinweis": "Google Analytics, Verlagsangabe. Bruch: bis Mediadaten 2023 'Page Impressions/Visits' (Universal Analytics), ab 2024 'Aufrufe/Nutzer/Sitzungen' (GA4) – nicht verketten. Zeiträume uneinheitlich."
+  },
+  {
+   "titel_medium": "vetline.de",
+   "groesse": "Sitzungen je Monat (Ø)",
+   "wert": 66500,
+   "einheit": "Sitzungen/Monat",
+   "jahr": "07/2024–06/2025",
+   "quelle": "vetline-md-2026",
+   "hinweis": "Google Analytics, Verlagsangabe. Bruch: bis Mediadaten 2023 'Page Impressions/Visits' (Universal Analytics), ab 2024 'Aufrufe/Nutzer/Sitzungen' (GA4) – nicht verketten. Zeiträume uneinheitlich."
+  },
+  {
+   "titel_medium": "vetline.de-Newsletter",
+   "groesse": "Empfänger je Aussand",
+   "wert": 2850,
+   "einheit": "Empfänger",
+   "jahr": "07/2021",
+   "quelle": "dtbl-md-2022",
+   "hinweis": "Verlagsangabe, gerundet ('~')"
+  },
+  {
+   "titel_medium": "vetline.de-Newsletter",
+   "groesse": "Empfänger je Aussand",
+   "wert": 4000,
+   "einheit": "Empfänger",
+   "jahr": "08/2022",
+   "quelle": "dtbl-md-2023",
+   "hinweis": "Verlagsangabe, gerundet ('~')"
+  },
+  {
+   "titel_medium": "vetline.de-Newsletter",
+   "groesse": "Empfänger je Aussand",
+   "wert": 5000,
+   "einheit": "Empfänger",
+   "jahr": "07/2023",
+   "quelle": "dtbl-md-2024",
+   "hinweis": "Verlagsangabe, gerundet ('~')"
+  },
+  {
+   "titel_medium": "vetline.de-Newsletter",
+   "groesse": "Empfänger je Aussand",
+   "wert": 5200,
+   "einheit": "Empfänger",
+   "jahr": "07/2024",
+   "quelle": "dtbl-md-2025",
+   "hinweis": "Verlagsangabe, gerundet ('~')"
+  },
+  {
+   "titel_medium": "vetline.de-Newsletter",
+   "groesse": "Empfänger je Aussand",
+   "wert": 5300,
+   "einheit": "Empfänger",
+   "jahr": "07/2025",
+   "quelle": "dtbl-md-2026",
+   "hinweis": "Verlagsangabe, gerundet ('~')"
+  },
+  {
+   "titel_medium": "Tierärztliche Praxis K (Klein-/Heimtiere)",
+   "groesse": "verbreitete Auflage",
+   "wert": 807,
+   "einheit": "Exemplare",
+   "jahr": "1. Hj. 2024",
+   "quelle": "thieme-tp-pl38",
+   "hinweis": "Druckauflage 1.033; 6 Hefte/Jahr"
+  },
+  {
+   "titel_medium": "Tierärztliche Praxis G (Groß-/Nutztiere)",
+   "groesse": "verbreitete Auflage",
+   "wert": 581,
+   "einheit": "Exemplare",
+   "jahr": "1. Hj. 2024",
+   "quelle": "thieme-tp-pl38",
+   "hinweis": "Druckauflage 1.028"
+  },
+  {
+   "titel_medium": "Tierärztliche Praxis K (Klein-/Heimtiere)",
+   "groesse": "verbreitete Auflage",
+   "wert": 921,
+   "einheit": "Exemplare",
+   "jahr": "vor 2024 (Überblick 2024, Stand nicht genannt)",
+   "quelle": "thieme-ueberblick-2024",
+   "hinweis": "Druckauflage 1.025; älterer Stand als Preisliste 38"
+  },
+  {
+   "titel_medium": "Tierärztliche Praxis G (Groß-/Nutztiere)",
+   "groesse": "verbreitete Auflage",
+   "wert": 652,
+   "einheit": "Exemplare",
+   "jahr": "vor 2024 (Überblick 2024)",
+   "quelle": "thieme-ueberblick-2024",
+   "hinweis": "Druckauflage 1.025"
+  },
+  {
+   "titel_medium": "Kleintier konkret",
+   "groesse": "verbreitete Auflage",
+   "wert": 2460,
+   "einheit": "Exemplare",
+   "jahr": "1. Hj. 2024",
+   "quelle": "thieme-kk-pl28",
+   "hinweis": "Druckauflage 2.500; 6 Hefte + 2 Sonderhefte"
+  },
+  {
+   "titel_medium": "Kleintier konkret",
+   "groesse": "verbreitete Auflage",
+   "wert": 2700,
+   "einheit": "Exemplare",
+   "jahr": "vor 2024 (Überblick 2024)",
+   "quelle": "thieme-ueberblick-2024",
+   "hinweis": "Druckauflage 2.750; Zuordnung im PDF-Layout plausibel, aber Spaltenlayout"
+  },
+  {
+   "titel_medium": "Pferdespiegel",
+   "groesse": "verbreitete Auflage",
+   "wert": 1462,
+   "einheit": "Exemplare",
+   "jahr": "1. Hj. 2024",
+   "quelle": "thieme-ps-pl17",
+   "hinweis": "Druckauflage 1.482"
+  },
+  {
+   "titel_medium": "Pferdespiegel",
+   "groesse": "verbreitete Auflage",
+   "wert": 1488,
+   "einheit": "Exemplare",
+   "jahr": "vor 2024 (Überblick 2024)",
+   "quelle": "thieme-ueberblick-2024",
+   "hinweis": "Druckauflage 1.521"
+  },
+  {
+   "titel_medium": "Team konkret (für TFA, nicht Tierärzte)",
+   "groesse": "verbreitete Auflage",
+   "wert": 4400,
+   "einheit": "Exemplare",
+   "jahr": "vor 2024 (Überblick 2024)",
+   "quelle": "thieme-ueberblick-2024",
+   "hinweis": "Zielgruppe TFA – nicht in Tierarzt-Grafik"
+  },
+  {
+   "titel_medium": "ZGTM Zeitschrift für Ganzheitliche Tiermedizin",
+   "groesse": "verbreitete Auflage",
+   "wert": 1550,
+   "einheit": "Exemplare",
+   "jahr": "vor 2024 (Überblick 2024)",
+   "quelle": "thieme-ueberblick-2024",
+   "hinweis": "Druckauflage 1.600"
+  },
+  {
+   "titel_medium": "Thieme Vet (vet.thieme.de)",
+   "groesse": "Visits je Monat",
+   "wert": 45000,
+   "einheit": "Visits/Monat",
+   "jahr": 2025,
+   "quelle": "thieme-vet-md-2025",
+   "hinweis": "Verlagsangabe, Messmethode nicht genannt"
+  },
+  {
+   "titel_medium": "Thieme Vet (vet.thieme.de)",
+   "groesse": "Page Impressions je Monat",
+   "wert": 60000,
+   "einheit": "PI/Monat",
+   "jahr": 2025,
+   "quelle": "thieme-vet-md-2025",
+   "hinweis": ""
+  },
+  {
+   "titel_medium": "Thieme-Newsletter Tiermedizin",
+   "groesse": "Abonnenten",
+   "wert": 6600,
+   "einheit": "Abonnenten",
+   "jahr": 2025,
+   "quelle": "thieme-vet-md-2025",
+   "hinweis": "wöchentlich; 2024: ca. 6.200 (05/2024, Öffnungsrate ca. 47 %) laut Überblick 2024"
+  },
+  {
+   "titel_medium": "Thieme-Newsletter Tiermedizin",
+   "groesse": "Abonnenten",
+   "wert": 6200,
+   "einheit": "Abonnenten",
+   "jahr": "05/2024",
+   "quelle": "thieme-ueberblick-2024",
+   "hinweis": "Ø Öffnungsrate ca. 47 %"
+  },
+  {
+   "titel_medium": "KOMPAKT VetMed",
+   "groesse": "verbreitete Auflage",
+   "wert": 6747,
+   "einheit": "Exemplare",
+   "jahr": "IVW I/2024",
+   "quelle": "biermann-2025",
+   "hinweis": "Druckauflage 6.760; Verlag beruft sich auf IVW-Quartal"
+  },
+  {
+   "titel_medium": "KOMPAKT VetMed",
+   "groesse": "verbreitete Auflage",
+   "wert": 6512,
+   "einheit": "Exemplare",
+   "jahr": "IVW I/2025",
+   "quelle": "biermann-2026",
+   "hinweis": "Druckauflage 6.530"
+  },
+  {
+   "titel_medium": "VETimpulse",
+   "groesse": "Leser mit ausschließlichem Online-Bezug",
+   "wert": 4150,
+   "einheit": "Leser",
+   "jahr": "02/2025",
+   "quelle": "vetimpulse-md-2026",
+   "hinweis": "dazu rund 1.500 Probe-Abos; Print erscheint nur noch alle 4 Wochen"
+  },
+  {
+   "titel_medium": "VETimpulse",
+   "groesse": "Verbreitung Online + Print",
+   "wert": 7700,
+   "einheit": "Exemplare (mindestens)",
+   "jahr": "03/2026",
+   "quelle": "vetimpulse-md-2026",
+   "hinweis": "keine IVW-Prüfung genannt; 'mindestens'"
+  },
+  {
+   "titel_medium": "Pferdeheilkunde",
+   "groesse": "Druckauflage",
+   "wert": 1000,
+   "einheit": "Exemplare",
+   "jahr": "ohne Jahr",
+   "quelle": "hippiatrika-adverts",
+   "hinweis": "davon 950 Abonnenten; Jahr der Angabe unbekannt"
+  },
+  {
+   "titel_medium": "MyVetlearn (Vetion/ATF)",
+   "groesse": "Teilnehmer gesamt",
+   "wert": 7000,
+   "einheit": "Teilnehmer (mehr als)",
+   "jahr": "2025",
+   "quelle": "vetion-portfolio-2025",
+   "hinweis": "kumuliert seit 2004?, Zeitraum nicht genannt; >300 ATF-anerkannte Online-Kurse; Werbebroschüre"
+  },
+  {
+   "titel_medium": "Leserschaft: Kammermitglieder (alle Tierärzt:innen)",
+   "groesse": "Kammermitglieder 31.12.",
+   "wert": 42709,
+   "einheit": "Personen",
+   "jahr": 2019,
+   "quelle": "btk-statistik-reihe",
+   "hinweis": "inkl. Ruheständler und nicht tätige"
+  },
+  {
+   "titel_medium": "Leserschaft: Kammermitglieder (alle Tierärzt:innen)",
+   "groesse": "Kammermitglieder 31.12.",
+   "wert": 43461,
+   "einheit": "Personen",
+   "jahr": 2020,
+   "quelle": "btk-statistik-reihe",
+   "hinweis": "inkl. Ruheständler und nicht tätige"
+  },
+  {
+   "titel_medium": "Leserschaft: Kammermitglieder (alle Tierärzt:innen)",
+   "groesse": "Kammermitglieder 31.12.",
+   "wert": 44049,
+   "einheit": "Personen",
+   "jahr": 2021,
+   "quelle": "btk-statistik-reihe",
+   "hinweis": "inkl. Ruheständler und nicht tätige"
+  },
+  {
+   "titel_medium": "Leserschaft: Kammermitglieder (alle Tierärzt:innen)",
+   "groesse": "Kammermitglieder 31.12.",
+   "wert": 44618,
+   "einheit": "Personen",
+   "jahr": 2022,
+   "quelle": "btk-statistik-reihe",
+   "hinweis": "inkl. Ruheständler und nicht tätige"
+  },
+  {
+   "titel_medium": "Leserschaft: Kammermitglieder (alle Tierärzt:innen)",
+   "groesse": "Kammermitglieder 31.12.",
+   "wert": 45163,
+   "einheit": "Personen",
+   "jahr": 2023,
+   "quelle": "btk-statistik-reihe",
+   "hinweis": "inkl. Ruheständler und nicht tätige"
+  },
+  {
+   "titel_medium": "Leserschaft: Kammermitglieder (alle Tierärzt:innen)",
+   "groesse": "Kammermitglieder 31.12.",
+   "wert": 45645,
+   "einheit": "Personen",
+   "jahr": 2024,
+   "quelle": "btk-statistik-2025",
+   "hinweis": "inkl. Ruheständler und nicht tätige"
+  },
+  {
+   "titel_medium": "Leserschaft: Kammermitglieder (alle Tierärzt:innen)",
+   "groesse": "Kammermitglieder 31.12.",
+   "wert": 46089,
+   "einheit": "Personen",
+   "jahr": 2025,
+   "quelle": "btk-statistik-2025",
+   "hinweis": "inkl. Ruheständler und nicht tätige"
+  },
+  {
+   "titel_medium": "Leserschaft: tierärztlich Tätige",
+   "groesse": "tierärztlich Tätige 31.12.",
+   "wert": 34476,
+   "einheit": "Personen",
+   "jahr": 2025,
+   "quelle": "btk-statistik-2025",
+   "hinweis": ""
+  },
+  {
+   "titel_medium": "Leserschaft: Ruhestand",
+   "groesse": "Tierärzt:innen im Ruhestand",
+   "wert": 7103,
+   "einheit": "Personen",
+   "jahr": 2025,
+   "quelle": "btk-statistik-2025",
+   "hinweis": ""
+  },
+  {
+   "titel_medium": "Studie Haimerl 2013 (n=293, DE, 2010/11)",
+   "groesse": "lesen Fachzeitschriften nicht regelmäßig",
+   "wert": 10.4,
+   "einheit": "%",
+   "jahr": "2010–2011",
+   "quelle": "haimerl-2013",
+   "hinweis": "Befragung auf 5 Fortbildungskursen – Auswahlverzerrung zugunsten Fortbildungsaktiver"
+  },
+  {
+   "titel_medium": "Studie Haimerl 2013",
+   "groesse": "lesen regelmäßig englischsprachige Fachzeitschriften",
+   "wert": 20.8,
+   "einheit": "%",
+   "jahr": "2010–2011",
+   "quelle": "haimerl-2013",
+   "hinweis": ""
+  },
+  {
+   "titel_medium": "Studie Haimerl 2013",
+   "groesse": "nutzen Fachbücher",
+   "wert": 92.6,
+   "einheit": "%",
+   "jahr": "2010–2011",
+   "quelle": "haimerl-2013",
+   "hinweis": ""
+  },
+  {
+   "titel_medium": "Studie Atzmüller 2012 (n=195, Rinderpraktiker Steiermark/AT)",
+   "groesse": "ohne E-Learning-Erfahrung",
+   "wert": 71.5,
+   "einheit": "%",
+   "jahr": "~2010",
+   "quelle": "atzmueller-2012",
+   "hinweis": "Österreich, nicht Deutschland"
+  },
+  {
+   "titel_medium": "Studie Entenfellner/Drillich 2020 (n=151, Nutztierpraktiker AT)",
+   "groesse": "nennen Onlinefortbildung",
+   "wert": 40,
+   "einheit": "% (über)",
+   "jahr": "vor 2020",
+   "quelle": "entenfellner-2020",
+   "hinweis": "Österreich; Präsenz höchste Nutzung; 71,5 % finden, Onlinekurse sollten günstiger sein"
+  },
+  {
+   "titel_medium": "Studie Huntley 2016 (n=2.137, international)",
+   "groesse": "Kliniker nutzen Fachzeitschriften",
+   "wert": 65.8,
+   "einheit": "%",
+   "jahr": "2014/15",
+   "quelle": "huntley-2016",
+   "hinweis": "international, kaum DE; elektronische Ressourcen 58,7 %"
+  }
+ ],
+ "luecken": [
+  "IVW-Datenbank (ausweisung-gesamtzahl.ivw.de) ist ein Power-BI-Dashboard und ließ sich nicht automatisiert abfragen; alle 'IVW-geprüft'-Werte stammen aus Verlags-Mediadaten und sind nicht gegen die IVW gegengeprüft. Manuell im Browser prüfen (Titel: Der Praktische Tierarzt, Kleintierpraxis, News4Vets, KOMPAKT VetMed).",
+  "Deutsches Tierärzteblatt: kein IVW-Prüfvermerk in den Mediadaten 2022–2026 – reine Verlagsangabe.",
+  "Zeitreihe Print nur 2020/21–2024/25 (5 Werte) für DTBl, DPT, KTP; Mediadaten vor 2022 lagen nicht unter vetline.de (vermutlich schluetersche.de) und wurden nicht gefunden.",
+  "Digitale Reichweite: vetline.de-Metriken wechseln 2024 von UA (PI/Visits) auf GA4 (Aufrufe/Nutzer/Sitzungen); Zeitfenster 2025er Mediadaten nur 01–06/2024. Keine konsistente Zeitreihe.",
+  "Keine Website-/Newsletter-Zahlen öffentlich für BTK, bpt, Vetion-Newsletter, VETimpulse online (außer Leserzahl), wir-sind-tierarzt.de.",
+  "wir-sind-tierarzt.de: Seite laut Wayback zwischen 05/2026 und 06/2026 durch Platzhalter des Hosters webgo ersetzt – offenbar eingestellt; keine Reichweitenzahlen gefunden.",
+  "Tierärztliche Umschau (Terra Verlag): keine Mediadaten gefunden; ein Bibliothekskatalog (via Suche, nicht selbst geprüft) führt sie als eingestellt (1946–2020) – unbestätigt.",
+  "Pferdeheilkunde: Auflage 1.000 ohne Jahresangabe.",
+  "Thieme-Titel: nur Stand 1. Hj. 2024 plus älterer Überblick; Thieme-Connect-Studienseiten sind bot-geschützt (nicht umgangen).",
+  "Keine aktuelle repräsentative Studie zum Informationsverhalten deutscher Tierärzte gefunden (Haimerl 2013 ist alt und nicht repräsentativ). ATF-Statistik zu Fortbildungsstunden/Online-Anteil nicht öffentlich gefunden; Fortbildungspflicht laut BTK-Musterberufsordnung 20 h/Jahr (Fachtierärzte 30 h) nur aus Suchsnippet, nicht am Original geprüft.",
+  "MyVetlearn '>7000 Teilnehmer' ohne Zeitraum – für Grafik ungeeignet."
+ ]
+}

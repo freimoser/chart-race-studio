@@ -43,6 +43,8 @@ Offen bleibt, welche Rolle die Praxisgruppen spielen, die seit 2016 in Deutschla
 
 Wie sich die Kammermitglieder auf die 16 Bundesländer verteilen, von Bayern mit 8.938 bis Bremen, zeigt der Artikel [Tierärzte je Bundesland](tieraerzte-bundeslaender.html).
 
+Fast alle Kammermitglieder bekommen das Deutsche Tierärzteblatt. Wie groß die übrigen Fachzeitschriften sind, zeigt die Sonderauswertung [Fachmedien für Tierärzte](fachmedien-tiermedizin.html).
+
 ## Was die Zahl nicht sagt
 
 - **Gezählt werden Personen, keine Vollzeitstellen.** Weil unter den Angestellten deutlich mehr Menschen in Teilzeit arbeiten, fällt der Wechsel gemessen an der Arbeitszeit schwächer aus – und hat 2024 womöglich noch nicht stattgefunden.

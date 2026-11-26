@@ -44,7 +44,7 @@ Reine Online-Anbieter verlangen laut eigenen Angaben 21,90 bis 32 Euro je Videob
 
 Eine repräsentative Zahl gibt es nicht, weder für Praxen noch für Halter. Was es gibt:
 
-- In der Befragung von 169 Tierärztinnen und Tierärzten 2020 (Becker u. a., Gelegenheitsstichprobe) wurde Video laut den Autoren selten genutzt; 77,5 Prozent fühlten sich schlecht informiert.
+- In der Befragung von 169 Tierärztinnen und Tierärzten 2020 (Becker u. a., Gelegenheitsstichprobe) wurde Video laut den Autoren selten genutzt; 77,5 Prozent fühlten sich schlecht informiert. Wie sich Tierärzte überhaupt informieren, zeigt die Sonderauswertung [Fachmedien für Tierärzte](fachmedien-tiermedizin.html).
 - In einer Befragung von 404 Haltern (Karsch u. a. 2026, ebenfalls nicht repräsentativ) nahmen 48,8 Prozent digital Kontakt zur Praxis auf, Video spielte eine geringe Rolle. Für eine Videoberatung würden die meisten 11 bis 20 Euro zahlen.
 - 54 Prozent der Haustierhalter können sich eine Online-Sprechstunde vorstellen (infas quo für DA Direkt 2023). Das misst die Bereitschaft, nicht die Nutzung.
 - In Österreich, Dänemark und Großbritannien hatten 12 Prozent der Hundehalter und 6 Prozent der Katzenhalter schon einmal eine telemedizinische Beratung (Springer u. a. 2024). Für Deutschland fehlt eine solche Zahl.
