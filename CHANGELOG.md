@@ -4,6 +4,10 @@ Alle nennenswerten Änderungen dieses Projekts. Format lose nach [Keep a Changel
 
 ## [Unveröffentlicht]
 
+### SEO-Audit 26.11.2026 (Kern, betrifft beide Seiten)
+
+- **Kern, betrifft beide Seiten:** Alternativtext der Standbilder nennt bei Zeitreihen zusätzlich den Verlauf der größten Reihe (Anfang, Höchststand). Dataset-Schema: Beschreibung aus dem Kachel-Text des Datensatzes statt aus dem Artikel, `datePublished`, `variableMeasured` als PropertyValue mit Einheit. Tippziele Brotkrumen (mobil) und Kapitel-Links der Startseite mindestens 44 px.
+
 ### Eine Kopfzeile für alle Seiten (26.11.2026)
 
 - **Kern, betrifft beide Seiten:** Das Studio hatte einen eigenen Kopf (volle Breite, Name zweizeilig mit

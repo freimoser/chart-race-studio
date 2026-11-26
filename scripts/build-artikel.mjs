@@ -48,7 +48,7 @@ const DATENSAETZE = Object.fromEntries(fs.readFileSync(sitePfad('samples/index.t
   const g = (re) => (b.match(re) ?? [])[1]
   const id = g(/^'(.*?)'/)
   const quelle = DATEN[g(/headers: (\w+)\.headers/)]
-  return [id, { id, titel: g(/title: '(.*?)',\n/), untertitel: g(/subtitle: '(.*?)',\n/), quelle: g(/source: '(.*?)',\n/), quelleUrl: g(/sourceUrl: '(.*?)'/), einheit: g(/unit: '(.*?)'/), daten: quelle }]
+  return [id, { id, titel: g(/title: '(.*?)',\n/), untertitel: g(/subtitle: '(.*?)',\n/), quelle: g(/source: '(.*?)',\n/), quelleUrl: g(/sourceUrl: '(.*?)'/), einheit: g(/unit: '(.*?)'/), kachel: g(/description: ['"](.*?)['"],\n/), daten: quelle }]
 }))
 
 // Ein Post gilt ab „naechster“ als freigabefähig: Der Artikel muss online sein, wenn der
@@ -203,7 +203,16 @@ function standbildAlt(ds) {
   const werte = ds.daten.headers.slice(1).map((h, i) => [h, letzte[i + 1]]).filter(([, v]) => typeof v === 'number')
     .sort((x, y) => y[1] - x[1]).slice(0, 4)
   const einheit = ds.einheit && !/^(anzahl|personen)$/i.test(ds.einheit) ? ` ${ds.einheit}` : ''
-  return `Grafik: ${ds.titel}. Stand ${letzte[0]}: ${werte.map(([h, v]) => `${h} ${v.toLocaleString('de-DE')}${einheit}`).join(', ')}`
+  const stand = `Grafik: ${ds.titel}. Stand ${letzte[0]}: ${werte.map(([h, v]) => `${h} ${v.toLocaleString('de-DE')}${einheit}`).join(', ')}`
+  // Zeitreihen: dazu der Verlauf der größten Reihe (Anfang und Höchststand), sonst beschreibt der Text nur das Ende
+  // (SEO-Audit 26.11.2026).
+  const i = ds.daten.headers.indexOf(werte[0][0])
+  const reihe = zeilen.filter((r) => typeof r[i] === 'number')
+  if (reihe.length < 3) return stand
+  const erste = reihe[0], hoch = reihe.reduce((m, r) => (r[i] > m[i] ? r : m))
+  const z = (v) => `${v.toLocaleString('de-DE')}${einheit}`
+  const verlauf = hoch === letzte || hoch[i] === letzte[i] ? `${erste[0]}: ${z(erste[i])}` : `${erste[0]}: ${z(erste[i])}, Höchststand ${hoch[0]}: ${z(hoch[i])}`
+  return `${stand}. Verlauf ${werte[0][0]}: ${verlauf}`
 }
 // Beide Bilder tragen denselben Alternativtext: Das CSS blendet je nach Breite eines per display:none aus (article.css),
 // Screenreader lesen also nur eins. Mit alt="" am schmalen Bild fehlte die Beschreibung genau auf dem Handy – dort, wo
@@ -282,14 +291,17 @@ function seite(a, { entwurf, alle }) {
     const jahre = ds.daten.rows.map((r) => String(r[0])).filter((j) => /^\d{4}$/.test(j))
     jsonld.push({
       '@context': 'https://schema.org', '@type': 'Dataset',
-      name: ds.titel, description: `${ds.untertitel ?? ds.titel}. ${a.beschreibung}`,
+      // Beschreibung des Datensatzes selbst (Kachel-Text), nicht des Artikels – der Artikel nennt oft Zahlen, die nicht im
+      // Datensatz stehen (SEO-Audit 26.11.2026).
+      name: ds.titel, description: `${ds.untertitel ?? ds.titel}. ${ds.kachel || a.beschreibung}`,
+      ...(a.veroeffentlicht ? { datePublished: a.veroeffentlicht } : {}),
       creator: AUTOR, publisher: AUTOR, inLanguage: 'de-DE', isAccessibleForFree: true,
       ...(a.suchbegriffe ? { keywords: a.suchbegriffe.split(',').map((k) => k.trim()).filter(Boolean) } : {}),
       // Lizenz nur, wenn der Herausgeber eine festgelegt hat (Profil); ohne Angabe meldet die Datensatzsuche eine Warnung.
       ...(PROFIL.datenLizenz ? { license: PROFIL.datenLizenz } : {}),
       ...(jahre.length ? { temporalCoverage: `${jahre[0]}/${jahre.at(-1)}` } : {}),
       spatialCoverage: PROFIL.raum(ds.id),
-      variableMeasured: ds.daten.headers.slice(1),
+      variableMeasured: ds.daten.headers.slice(1).map((h) => ({ '@type': 'PropertyValue', name: ds.titel.includes(h) ? h : `${ds.titel}: ${h}`, ...(ds.einheit ? { unitText: ds.einheit } : {}) })),
       ...(ds.quelleUrl ? { isBasedOn: ds.quelleUrl } : {}),
       ...(ds.quelle ? { citation: ds.quelle } : {}),
       dateModified: a.geaendert,

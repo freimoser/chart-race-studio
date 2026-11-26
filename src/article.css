@@ -20,7 +20,7 @@ body {
   font-feature-settings: 'tnum' 1;
 }
 .wrap { max-width: 44rem; margin: 0 auto; padding: 1.5rem 1.25rem 4rem; }
-@media (max-width: 40rem) { .brotkrumen a { display: inline-block; padding: 0.6rem 0; } }
+@media (max-width: 40rem) { .brotkrumen a { display: inline-block; padding: 0.75rem 0; } .liste.themen li > a:first-child { display: inline-block; padding: 0.7rem 0; } }
 /* Sprungziele nicht unter der Kopfzeile verstecken */
 h2[id], h3[id], [id] { scroll-margin-top: 4.5rem; }
 
